@@ -1,0 +1,390 @@
+QuickCash stable currency system
+white paper
+
+— CA) A ~
+
+V2.0 2019
+QuickCash team
+
+http://quickcash.com
+Content
+
+1. BACKGROUND .....cassssssssessssssesssesseesssssenssssseesessseseessessennseesssnseesessseesesseessenssenseanueesssneesenueesseanseeseauessesnessenneessenneesseaneeeseanees 3
+2. QUICKCASH STABLE CURRENCY SYSTEM. .....sssssssssssssssssssesssssessessssssesseesssnseessssseeeessseeseenseesssnseesssaneessenneesenneensenneensen 4
+2.1 QUICKCASH STABLE COINS ..ssessssssssssessseesensteesseesssnsnsseeesesnsnseeseesesunseeesessssnunseeeesessssaeeseesunanseeesessnanaeseseseeseseaseesssananseseseessanseseseesenanateessessane
+
+2.2 QUICKCASH ROADMAP ....sssssssssssssssssessseesensnseesessnsnansesessesnsnseeseessnunseeseesssnuuseceesessssesteceesunanseesessnananseeeseesesseseeessnanansesessessanseeeseesenaeaeeessesssne?
+
+3.1 COLLATERALIZED DEBT POSITIONS ( CDP )
+
+3.2 CDP CLEARANCE CLEARING ..csssssssssssssssssssssssssssusssssnssssesssssssssssssassesosesossssossssssssuiusssssssssscsasasasaesesssaseesososasosssssssssuaeseassssssssssasacaesssssses 7
+3.3 PRICE STABILIZATION MECHANISM ...ssssssssssssssssssssssssssssssssssssssssesssesosssssonssssssssssususssussssssesasasasaesessssesasasosessussssssssuuesesssssassssssasassesesenens 7
+3.4 RISK PARAMETER vesscsssssssssssssssssssssssessssssssssosssossssuussnsnssususesssasasassssaeaeaesososossssossssssssubuusssssususcsasasasaeseessensasososessussssssssuuassassesssssssasassessssssssO
+
+9
+
+3.5 IMPORTANT EXTERNAL PARTICIPANTS ...sssssssssssssssssssssscssssssessssesssesosssossssunsssnssssussssssasssassseaeaeaesossseesssosossssususssunsssitsesaeasaeseeseassesananans
+1. Background
+
+Bitcoin, Ethereum and other popular digital currencies want to become a currency
+recognized by the mainstream market, must have higher profit, and this high-yield
+behind is greater volatility, while the value of money has a value scale that excludes this
+High volatility. Therefore, the stable currency represented by USDT was on the stage.
+Specifically, these digital currencies are either exchanged at a fixed rate for a particular
+asset, or the currency is stabilized by an algorithm that regulates the money supply and
+is therefore called a stable currency.
+
+There are two demand for stable currency. One is safe-haven demand. When the digital
+currency falls, the requirement for stable currency is very strong. Investors need to
+convert the digital currency they hold into stable currency to reduce losses. The second
+is, Since the development of digital currency, it has to enter the circulation field, and the
+circulation field needs a currency with relatively stable value.
+
+At present, the stable currencies in the current market can be mainly divided into three
+types:
+
+e Fiat currency credit guarantee
+e Digital asset collateral guarantee
+e Unsecured algorithm release
+
+No matter by what means, a stable currency should try to solve exchange rate stability,
+free flow problem, and give money over, so that all users have reached their
+Aconsensus of values. The unsecured algorithm issuance is difficult to guarantee the
+stability of the exchange rate because it lacks the underlying trust foundation. The legal
+currency credit guarantee and the digital asset mortgage guarantee are two more
+mainstream methods. Aside from the problem that the legal currency credit guarantee
+itself is too centralized, it also has certain drawbacks as a currency attribute.
+
+The stable currency market is fundamentally different from other cryptocurrency
+markets (such as Ethereum, EOS, etc.). The stable currency market is the money
+market, while other cryptocurrencies are closer to the stock market. The money market
+is fundamentally different from the stock market. The stock market is to provide risk
+sharing, while the currency is the market to provide liquidity. The stable currency such
+as TUSD and GUSD lies in the fact that once the market is deflated, due to its strong
+supervision, it requires cumbersome steps such as KYC, which leads to the inability to
+issue more currencies in a short time to meet market demand, resulting in large price
+fluctuations. TUSD is on the line, and the increase of 30% in half a day can be seen.
+Digital asset mortgage guarantee is a possible breakthrough point, presenting a
+more rational equilibrium paradigm . This requires a fundamental difference
+between the USDT (above the regulatory and auditing levels) and efficient
+liquidity.
+
+2.QuickCash stable currency system
+
+QuickCash is one of the first projects and institutions in the world to offer stable
+currency solutions. With the continuous development of blockchain technology, we have
+been exploring and optimizing our stable currency solutions to provide better use of
+stable coins for the market with the aim of decentralization, free circulation, exchange
+rate stability and safety compliance. Create a frictionless, faster global trading network.
+
+QucikCash 's design philosophy is based on smart contracts that provide liquidity at a
+low cost (anyone can gain liquidity through over-collateralized digital assets). The
+issuance model of asset collateral on the chain has stimulated people to spontaneously
+collateralize funds, enrich the source of liquidity, and eliminate the need for centralized
+gateways and hosting, eliminating the need for central institutions to question (since the
+mortgage process is on the chain, provided Sufficient transparency) .
+
+2.1 QuickCash stable coins
+
+At present, the market is mainly a stable currency anchoring the US dollar, which is
+actually not friendly to countries whose fiat currency is not US dollar . Based on the
+QuickCash stable currency system, we offer different products and solutions for users in
+different regions of the world to reduce exchange friction.
+
+QuickCash's stable currency is QuickCash CNY, referred to as QC. The 1 QC’s value is
+$0.15 (1CNY) and is issued through digital currency overcollateralized credit
+guarantees.
+
+QC is divided into two versions, Qtum and ETH. Qtum is released earlier, with larger
+circulation and transaction volume. ETH is a new system, and its smart contracts issued
+by pledge are more excellent. Together with the integrity and acceptance of the
+Ethereum ecosystem, the scope of use of QC is further expanded.
+
+2.2 QuickCash Roadmap
+
+2.2.1 Phase |: Application stage
+
+This phase is a transitional mechanism based on product and market demand . In the
+past, our first QC stable currency was released on Qtum and tested for its stable and
+safe features in long-term market circulation.
+Now, we are releasing a stable currency in ERC-20 mode through smart contracts on
+Ethereum . And the choice of Ethernet Square because of its diverse ecology, the high
+demand for a stable currency and ERC-20 token is satisfied that most mining center
+and to the center of the exchange. QuickCash supports Ether Assets to issue stable
+currencies for mortgages. Supported Ether assets include ETH and our selection of
+stable currencies such as TUSD, GUSD, USDC, PAX, etc.
+
+The QucikCash system can be quickly extended to any blockchain platform that can
+implement smart contracts. Soon we will also release the corresponding version
+of QuickCash stable currency on EOS and TRX .
+
+2.2.2 Phase Il : Governance and upgrade
+
+In the coming year, we will launch our public blockchain QuickCash , cross-chain
+integration, support multi-chain digital asset mortgage to obtain stable currencies in
+different 1 to many different chains. The evolution from Phase | to Phase II is smooth.
+
+Everyone can easily mortgage BTC, ETH and ERC20 stable currencies, EOS and other
+popular mainstream digital assets to obtain QuickCash stable currency in different main
+chain versions.
+
+At the same time, we will continue to integrate with the global financial market to
+diversify the mortgage assets and include other digital assets such as gold certificates
+and stocks in the QC mortgage assets basket.
+
+The greater significance QucikCash Chain is that QuickCash 's governance will be fully
+transferred to community autonomy, with a more transparent, fairer and
+broader QuickCashstable currency.
+
+3.QC
+
+QC is our decentralized stable currency product based on Ethereum Smart Contract.
+With the extensive market acceptance of Ethereum and rich stable currency ecology, it
+will become our key product to be built and launched at this stage. In this section, we
+will set forth in detail the process of QNCY issue of price stabilization mechanisms and
+risk control.
+
+3.1 Collateralized Debt Positions (CDP )
+Anyone can do a leveraged mortgage assets generated
+QC on QuickCash platform, through QuickCash Collateralized Debt Positions( CDP ).
+
+The CDP holds the mortgage assets stored by the user and allows the user to generate
+QC, but generating QC means generating a debt. The debt will lock the mortgage
+assets in the CDP until the user repays the QC before returning the mortgage
+assets. Effective CDP are all over-collateralization, which means the value of the
+collateral is higher than the value of debt.
+
+The entire CDP process can be represented by the following figure:
+
+</>
+
+Smart contract
+
+User CDP QuickCash
+
+Liquidator Liquidation platform Profit < 0 orders
+Figure 1: CDP business diagram
+QC pledged debt warehouse use process:
+Step 1: Create a CDP and store the collateral
+
+The user first sends a transaction to QuickCash create CDP, and then sends another
+transaction details and collateral type and quantity of assets used to generate QC
+stored in the CDP. At this point, CDP has a mortgage.
+
+Step 2: Generate QC from CDP
+
+The CDP holder sends a transaction and details the amount of QC that will be
+generated from the CDP, and the CDP will also generate the same amount of debt,
+which will lock the collateral until the outstanding debt is paid.
+
+Step 3: Repayment of debt and stabilization costs
+
+When users want to redeem mortgage assets, they need to repay the debt in the CDP
+and the stable cost of the debt. Stabe fees can be paid in QC and ETH. When the user
+pays the QC and the stable fee to the CDP, the debt in the CDP will be paid off.
+
+Step 4: Take back the mortgaged assets and close the CDP
+When debt and stable fee are repaid, CDP holders can send a transaction to the QC
+platform and get back all the mortgaged assets.
+
+3.2 CDP clearance clearing
+
+When the mortgaged Equity Asset falls to the liquidation ratio and the mortgaged user
+does not add collateral before then, it will enter the short-selling smart contract to
+perform the liquidation and liquidation. The pledge after the bankruptcy will enter the
+auction, and the clearing commercial QC will quote and participate in the auction.
+Finally, the highest bidder will receive the pledge, and the QC paid by the clearer
+
+will pay the stable fee and fill in the liabilities arising from CDP (That is, destroy).
+
+Liquidation ratio = value of pledged assets / (QC value of borrowing + stable fee)
+
+Set different clearing ratios for different Ethereum assets, combined with their volatility
+characteristics :
+
+e ETH: 150%
+e US dollar stable currency PAX / GUSD / TUSD/USDC: 105%
+
+3.3 Price stabilization mechanism
+QC target price
+In the QC system, the QC target price has two important functions:
+
+1. The proportion of mortgage debt used to calculate the mortgage debt
+2. Determine the value of the mortgaged asset that the QC holder will receive upon
+global liquidation.
+
+QC's initial target price is equal to 1 CNY, and will gradually be anchored with CNY.
+
+3.2.1 Target price feedback mechanism
+
+When the market is unstable, the target price change rate feedback mechanism will be
+activated. The target price change rate feedback mechanism will allow QC to maintain
+the CNY price, but off a fixed percentage of the CNY.
+
+The target price change rate feedback mechanism means that the QC stable monetary
+system mobilizes market forces to maintain the stability of the QC market price by
+adjusting the target price change rate. The target price change rate determines the
+change in the target price and can motivate people to hold QC (when the target rate of
+change is positive) or borrow QC (in case the target rate of change is negative). In the
+stage where the target price change rate feedback mechanism is not activated, the
+target price change rate will be set to 0%, meaning that the target price will not change,
+and QC and CNY are hard anchored.
+When the target price change rate feedback mechanism is activated, the target price
+change rate and the target price itself will dynamically change to balance the demand
+and supply of QC to adjust the way users generate and hold QC incentives. This
+feedback mechanism moves QC's market price to the target price, mitigating price
+volatility in QC and providing liquidity in the event of a demand shock.
+
+Under the target price change rate feedback mechanism, when the market price of QC
+is lower than the target price, the target price change rate will increase. This will raise
+the target price and make it more expensive to generate QC using CDP. At the same
+time, increase the target price rate of change will increase the return on capital QC hold,
+leading to increased demand for the purchase QC. Reduced supply and increased
+demand will increase the market price of QC and approach its target price.
+
+The same mechanism applies when the market price of QC is higher than the target
+
+price: the target rate of change decreases, resulting in increased demand for QC and
+reduced demand for QC, thus causing QC's market price to fall and approaching the
+
+target price.
+
+Such a mechanism is a reverse feedback loop: QC's market price deviates in one
+direction of the target price and also produces forces in the opposite direction.
+
+3.4 Risk parameter
+
+The QC CDP has multiple risk parameters. Each CDP category has its own unique risk
+parameter settings that determine the risk profile of the CDP type and will be public and
+require the participants to focus on it.
+
+Key CDP risk parameters include:
+
+Debt cap : The cap on debt is the maximum amount of debt a single type of CDP can
+create. Once the debt created by a certain type of CDP reaches the upper limit, it will
+not be able to create a new QC unless the existing CDP is redeemed. The debt ceiling
+is used to ensure that the mortgage portfolio is sufficiently diversified.
+
+Liquidation ratio : The liquidation ratio is the ratio of mortgage/debt at the time the
+CDP is liquidated. A lower liquidation ratio means that the price of the mortgaged asset
+is less volatile, and a higher liquidation ratio means a higher price fluctuation of the
+mortgaged asset.
+
+Stable fee : Stable fee are the fees that each CDP will pay. An annualized proportion of
+debt generated based on CDP must be paid by the CDP holder. Stable cost to QC
+price and payment, we will soon be implemented in other assets to pay
+
+Ethernet, Ethernet assets amount to be paid depends on the market price of the
+Ethernet assets of feed.
+Penalty ratio : The penalty ratio is the clearing agent's fee when the CDP is
+liquidated, and the remaining mortgage assets in the CD P will be returned to the holder
+of the CDP before the liquidation .
+
+3.5 Important external participants
+
+In addition to the smart contract infrastructure, the QuickCash platform relies on some
+external participants to keep running. The acceptor and external participants will use the
+economic incentives of the QuickCash platform to act.
+
+e Underwriter
+
+The acceptor is an independent participant (often automated) that is driven by economic
+incentives to contribute to the decentralized system. The acceptor will trade QC around
+the target price.When the market price is higher than the target price, the acceptor will
+sell QC. Similarly, when the market price is lower than the target price, the acceptance
+providers will buy QC. This is done to benefit from the long-term price convergence of
+the market target price. In the QC stable currency system, the acceptor also participates
+in debt auctions and mortgaged asset auctions at the time of CDP liquidation, ie as a
+liquidator.
+
+e Price provider
+
+The QuickCash platform requires real-time price information on the mortgaged assets to
+determine when to trigger liquidation. The Q uickCash platform also requires QC's
+market price to trigger a target price change rate feedback mechanism when it deviates
+from the target price. Mainstream platform for digital currency will be chosen to
+
+be Q uickCash price of feed suppliers to ensure to avoid non-normal price.
+
+e Liquidator
+
+The liquidator is an external participant who participates in the auction at the time of
+CDP's liquidation auction. The clearer needs to hold a certain QC to ensure that it can
+quickly sell QC to the QuickCash platform for asset repurchase.
+
+4 Potential market
+
+As the preface, has a price stability of monetary encryption is the basic needs of the
+vast majority of decentralized applications, which makes it a potential market of at least
+QuickCash larger than the entire block chain industry. As a stable price encrypted digital
+currency and can be used as a decentralized leveraged trading platform, the following is
+a QuickCash stable monetary system ready for immediate use potential market
+(including the block chain industry and other industries) incomplete List:
+
+Predicting Markets and Gaming Applications : In forecasts that are not related to betting
+currencies, people are reluctant to use a price-constant cryptocurrency to place a bet.
+Especially for those who bet the price of an asset to future price instability for a long
+time dimension of gambling can not be achieved. Alternatively, similar to the QuickCash
+stable currency coins encrypted with the predicted market price stability for the user is
+betting and natural selection.
+
+Financial markets : hedging risks, derivatives, leveraged trading, etc. CDP makes it
+
+easier for users to make leveraged transactions. QuickCash Stabilizer is a stable and
+reliable collateral asset that can be used in custom derivative smart contracts such as
+options and CFDs.
+
+Business receipts, remittances and cross-border transactions: reducing foreign
+exchange fluctuations, and remove the middleman, which means that QuickCash stable
+currency able to significantly reduce the transaction costs of international trade.
+
+Transparent accounting system: charitable, non-profit organizations and government
+departments can achieve more efficient and low corruption by using QuickCash stable
+currency accounting system.
+
+5 Main risk
+
+Malicious hacking against smart contract infrastructure
+Competition & User Ease of Use
+
+Price error, irrational & unanticipated events
+Centralized architecture problem
+
+6 Conclusion
+
+QuickCash stabilizes the monetary system to address the important issue of stable
+value exchange in the blockchain economy and in the broader global financial
+markets. We believe QuickCash create a stable currency, repurchase transactions and
+mechanisms to effectively maintain price stability QuickCash stable currency. The
+QuickCash team has established a prudent management roadmapand governance
+approach that is suitable for both short-term agile development and long-term
+decentralized design. We have ambitious development plans, and to ensure a stable
+currency QuickCash responsibility can be widely used.
+7 Glossary of terms
+
+QuickCash : A stable currency system for managing and distributing a variety of
+
+stable currency products. With the continuous development of blockchaintechnology
+and the continuous integration with traditional finance, the technical architecture and
+operation of QuickCash will continue to change.
+
+QucikCash Team: development and introduction of decentralized intelligence
+contract developer team QucikCash platform.
+
+QC : Ethereum ERC- 20 token, QuickCash stable currency system based on
+
+the Ethereum smart contract issued and operated CNY stable currency products.
+CDP: for accepting asset-backed and issued the corresponding QC intelligence
+contracts.
+
+Liquidation Auction: sell mortgage assets to be liquidated in the CDP, first
+consider the design process in the CDP can pay the debt, and then returned to the
+owner's mortgage assets at the best price.
+
+Risk parameters: deciding when QC stable monetary system automatically
+determine a CDP risks are too high, and variable contracts allow only for its
+liquidation.
+
+Target price rate of change feedback mechanism: QC stable monetary system
+to adjust the target price rate of change makes the market price remained stable in
+the vicinity of the target price mechanism.

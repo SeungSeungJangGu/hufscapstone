@@ -1,0 +1,2302 @@
+The Chia Network Blockchain
+
+Bram Cohen! and Krzysztof Pietrzak?
+
+‘Chia Network — bram@chia.net
+71ST Austria pietrzak@ist.ac.at
+
+July 9, 2019
+
+Abstract
+
+This document outlines the basic design principles of the consensus
+layer (the blockchain) of the Chia network. It is inspired by and similar
+to the Bitcoin blockchain, which achieves consensus when a majority of
+the computing power dedicated towards securing it is controlled by honest
+parties. In Chia the resource is not computing power, but disk space.
+
+To achieve this, the proofs of work used in Bitcoin are replaced by
+proofs of space. To get a mining dynamic like in the Bitcoin blockchain,
+Chia alternates proofs of space with verifiable delay functions.
+
+We provide an initial security analysis of the Chia backbone, showing
+that as long as at least ~ 61.5% of the space is controlled by honest parties
+Chia satisfies basic blockchain security properties.
+
+Glossary
+
+We reserve the following letters throughout this writeup:
+
+w € Z* asecurity parameter that we use for various things, such as the output
+of H below or the size of a challenge: w = 256 is sufficient for all cases.
+
+H : {0,1}* — {0,1}” a cryptographic hash function, modelled as a random
+oracle for proofs.
+
+T € Z*: Chia difficulty parameter (has a function similar to the difficulty
+parameter in Bitcoin).
+
+« € Z*: honest farmers work on the « best paths (presumably « = 3 in Chia).
+
+4; € [0,1]: speedup factor one gets by using K = i compared to « = 1 (illus-
+trated in Figure 2).
+
+u“=1l- ws € [0, 1] fraction of space honest farmers must hold if they use
+« = i (illustrated in Figure 2).
+n € Rt: seconds required to compute one step (a squaring in a group of
+unknown order) of the verifiable delay function (VDF).
+
+€ € Rt: max. fluctuation of T allowed in consecutive epochs (in Bitcoin the
+corresponding parameter is 4, and this will be adapted in Chia).
+
+Contents
+0 Outline 3
+1 Introduction 4
+-l Bitcom... 2. ee 4
+2 Attacks . 2... 5
+.3 Replacing PoW with PoSpace . . . 5
+4 Digging attacks... ee 6
+1.4.1 Splitting the chain... 2... 0.0.2.0... .004. 6
+1.4.2 Unique primitives 2... 2... 0.000.000.0000. 7
+1.4.3 Careful with difficulty resets... 2... 0.00. 000. 7
+.5 Double dipping attacks... 2... ee 8
+1.5.1 Punishment is not asolution ..........20000. 8
+1.5.2 Smoothing out grinding advantage ............. 8
+1.5.3 How Chia adresses double dipping ............. 8
+.6 Chain Quality of Chia... 2... 2 ee en 9
+1.6.1 Chain quality... 2... 0.2.2 ee ee, 9
+1.6.2 The underlying probabilistic experiment .......... 10
+-7 Long range attacks ©... ee 13
+1.7.1 Long range attacks on PoStake using old money ..... 14
+1.7.2 Long range attack on PoSpace using resource variation. . 14
+1.7.3. Solving long range attacks using VDFs........... 14
+2 Building Blocks: PoSpace, VDFs and Signatures 15
+2.1 (Unique) Digital Signatures... 2... 2. 15
+2.2 (Unique) Proofs Of Space ..... 15
+2.2.1 Algorithms for PoSpace 15
+2.2.2 Security of PoSpace 16
+2.2.3 Unique PoSpace ...... 17
+2.2.4 The [AACT17] PoSpace . . 17
+2.3 Verifiable Delay Functions... 2... ......-.. 00.0000. 18
+2.3.1 The [Wes18, Piel8] VDFs ................05 19
+3 The Blockchain 19
+3.1 Trunk and Foliage 2.2... ee 19
+3.2 Block Format... 2... 0.0. ee 20
+4 Algorithms for Farmers and Time Lords 21
+
+4.1 Chain Management... . 2.0.0.0. 000 00.0000 000.4 22
+4.2 Space Farmer Algorithms 23
+4.3. Time Lord Algorithms ...................0000. 25
+5 Difficulty Adjustment 27
+5.1 Difficulty adjustment in Bitcon.. 2... 2.0.0... .0.000. 28
+5.2 A grinding attack using difficulty resets .............0. 29
+5.3. Difficulty adjustment in Chia... 2... 20... 0... .0000. 30
+5.4 Onthe importance of4 2... 2.0... 0.000000 00000 31
+5.4.1 AnattackifE<e .... 2... ee ee 32
+5.4.2 Optimality of the attack... 2... 2.0... ee 34
+6 Chain Growth and « 34
+6.1 Our idealized setting... 2.0... ee ee 35
+6.2 The random variable Cc modelling chain growth ........ 35
+6.3 Analytical bounds on C6, 00. 00 ee 36
+64 uand@ 2... ee 37
+6.5 The Chia Backbone... . 2... 2.0.00... 002000002 39
+A Missing Proofs for Chain Quality 42
+0 Outline
+
+In Section §1 we discuss the main challenges one encounters when designing a
+blockchain without relying of proofs of work, and how they are solved in Chia.
+
+In §2 we introduce the main building blocks of Chia. Apart from standard
+primitives like unique signatures and cryptographic hash functions, these include
+new proof systems which have been developed more recently, namely, proofs of
+space (PoSpace) and verifiable delay functions (VDF).
+
+In §3 we specify the blockchain format of Chia which differs in some cru-
+cial points from the Bitcoin blockchain. Instead of using proofs of work, Chia
+alternates proofs of space with verifiable delay functions. This results in a chain
+than in many aspects is similar to Bitcoin, in particular, as in Bitcoin no syn-
+chronisation is needed and we can prove rigorous security guarantees assuming
+a sufficient fraction of the resource (space in Chia, computation in Bitcoin) is
+controlled by honest parties.
+
+To prevent grinding attacks (as discussed in §1) the Chia chain is split into
+two chains, one “ungrindable” chain called the trunk, which only contains the
+PoSpace and VDF outputs, and another chain called foliage, which contains
+everything else.
+
+Section §4 contains the (pseudo)code for the algorithms used by the farm-
+ers, who compute the proofs of space, and the time lords who compute the VDF
+outputs.
+In §5 we discuss the difficulty adjustment in Chia. It differs from the
+way difficulty adjustment work in Bitcoin as a subtle grinding attack would be
+possible if one would naively adapt it.
+
+We also make an observation which seems not be generally known, but
+Nakamoto — the anonymous Bitcoin designer(s) — might have been aware of
+as it explains why the factor by which the difficulty can vary in consecutive
+epochs (an epoch refers to a sequence of blocks using the same difficulty pa-
+rameter, in Bitcoin that’s 2016 blocks) is set to the rather large value of 4. We
+show an attack that is possible if that factor was less than e ¥ 2.718.
+
+In §6 we provide an initial security analysis for Chia. We discuss this
+in more detail below in §1.1, but in a nutshell, for the most basic design we
+prove security as long as the honest farmers control at least ~ 73.1% of the
+total space. This can be improved by having the honest farmers extending not
+just the first, but the first « > 1 chains for every depth. Which value of « to
+use is a “social convention” rather than a protocol parameter. By using « = 3
+the honest farmers just need to control + 61.5% of the space.
+
+1 Introduction
+
+1.1 Bitcoin
+
+We assume the reader has some familiarity with Bitcoin, and just mention the
+aspects and results that are relevant for discussing Chia. Recall that in the
+Bitcoin blockchain, to extend a block 3, the miner must provide a proof of work
+for a challenge c = H(8,data) derived by hashing the block 6 to be extended
+and the payload data (transactions and a timestamp) of the block to be added.
+The proof is a nonce vy such that!
+
+0.H(c,v) < 1/D
+
+where D is the difficulty parameter and H is a cryptographic hash function
+(SHA256). If H is modelled as a random function, in expectation D invocations
+of H are necessary and required to find such a proof.
+
+Bitcoin specifies that miners should always work towards extending the
+longest chain they are aware of.? A malicious miner controlling more than
+half of the hashing power has full control over the chain. He can ignore blocks
+contributed by other parties so only his blocks appear in the chain, and thus
+get all the rewards and censor transactions. Even worse, such a 51% adversary
+can double spend.
+
+Presumably it was assumed by Nakamoto that a malicious miner who con-
+trols less than half of the total hashing power can’t gain anything by deviating
+from the honest mining strategy. This intuition was shown to be wrong due
+to subtle selfish mining attacks [ES14]: a miner controlling a < 1 times the
+
+1Here, for X € {0,1} we denote with 0.X a binary value, thus 0.X = 37, 27*!4 € (0,1).
+?Technically, it is the chain that accumulates proofs of work of highest total difficulty,
+typically (but not necessarily) that will be the chain with the largest number of blocks.
+hashing power of the honest miners (i.e., less than half of the total) can add an
+a fraction of the blocks to the chain (compared to the 7; fraction they would
+get by following the rules). On the positive side, [GKL15] show that there is
+no better attack. They define the chain quality as the fraction of blocks an
+adversarial miner can push into the chain, and show that for an adversary as
+
+above, this fraction is at most 7f5.
+
+1.2 Attacks
+
+Grinding attacks. Unfortunately, the simple analysis of the Bitcoin back-
+bone from [GKL15] does not extend to blockchains that use proof systems other
+than proofs of work, like proofs of stake (PoStake) or proofs of space (PoSpace).
+The reason is that in a PoW-based blockchain one can use the mining resource
+(the hardware and electricity required for doing the computation) only towards
+extending one particular block for one particular challenge. On the other hand,
+proof systems like proofs of space (or stake) are very cheap to compute, so a
+malicious miner can potentially launch a grinding attack by deviating from the
+honest mining rules and computing many more proofs than specified by the
+protocol (in the context of proofs of stake these attacks are called “nothing at
+stake” problems). We distinguish two types of grinding attacks.
+
+digging refers to grinding attacks where the adversary tries to extend one par-
+ticular block in many different ways.?
+
+double dipping refers to grinding attacks where the adversary tries to extend
+many different blocks, not just the one(s) specified by the protocol.
+
+We discuss digging and double dipping, and how they are handled in Chia, in
+more detail in §1.4 and §1.5 below.
+
+Short and long-range attacks. Grinding attacks are not the only security
+problems that come up once we replace proofs of work with proofs of space (or
+stake) in a Bitcoin like blockchain. Another issue is long-range attacks, which
+refer to attacks where an adversary tries to generate a chain that forked from
+the chain the honest farmers saw a long time ago. We will discuss long range
+attacks and how Chia avoids these using verifiable delay functions (on top of
+PoSpace) in §1.7.
+
+1.3. Replacing PoW with PoSpace
+
+In this section we discuss what it means to replace PoW with PoSpace* in a
+blockchain, which (even ignoring security issues) is not obvious as PoW and
+
+3In Bitcoin the honest mining strategy is basically digging: miners hash different nonces
+until a lucky miner finds a nonce whose hash is below the difficulty. In Chia a farmer should
+just get a single shot at extending a block, thus one can think of digging as “illegal mining”.
+
+4or proofs of stake, or any other proof system where proofs can be efficiently computed
+and where the proof systems is a one round public-coin challenge response protocol.
+
+a
+PoSpace are syntactically different: In Bitcoin the miners race to find a PoW,
+the miner who finds it announces a new block to the network, the block gets
+attached, the miner gets its reward, and the miners switch to extending this
+new block. Using a proof system like PoSpace, every miner can immediately
+compute a PoSpace, so we somehow need to specify who “wins” and when to
+
+continue with the next block.
+
+The
+
+PoSpace-based Spacemint [PPK*15] blockchain assigns a quality to
+
+each PoSpace (this quality is simply the hash of the proof), and the protocol
+specifies that the PoSpace of best quality announced should be considered as
+the extension of the chain. In Chia this basic idea is developed further. We also
+assign a quality to each PoSpace, but to finalize the block one must augment this
+PoSpace with the output of a verifiable delay function. The time parameter for
+the VDF ~— which specifies how many sequential computational steps are required
+to compute the output — is linear in the quality of the PoSpace, which means
+the PoSpace with best quality (best meaning lowest value) can be finalized
+rst. Alternating PoSpace with VDFs like this gives the Chia blockchain a
+farming dynamic similar to mining in Bitcoin. In particular, we don’t need any
+synchronisation like Spacemint or PoStake-based blockchains like Ourborors.
+
+fi
+
+1.4 Digging attacks
+
+As already outlined, when a Bitcoin miner wants to extend a block 3, they
+
+Pp
+
+repare
+
+he payload data and must then find a PoW for challenge c = H({, data)
+
+and difficulty D, ie., a nonce vy such that 0.H(c,v) < 1/D. As the miner
+
+Cc
+
+t.
+a
+S]
+t.
+
+Cc
+
+NoOoses:
+
+e.g. by
+he timestamp). In principle, a Bitcoin miner could now choose to search for
+
+PoW
+plitting
+
+In shi
+
+t.
+
+he best
+
+hus they gain no advantage by doing so.
+
+data, they can actually compute many different challenges ci, c2,...
+aking various subsets of the available transactions or slightly changing
+
+‘or two (or more) challenges simultaneously, but that would require
+he resource (hardware and electricity) amongst those challenges, and
+
+arp contrast to this, if we naively used a proof system like PoSpace in a
+
+Bitcoin-like design, a malicious miner could generate proofs for many different
+hallenges cy, ¢:
+
+., and then cherry pick the one that is most promising (say,
+one as outlined above). By trying out X challenges, the miner would
+
+increase his chances of winning (as compared to honest mining) by a factor of
+X. Thus in some sense we’re back to a PoW-based scheme as rational miners
+would not follow the honest mining rule, but race to compute as many PoSpace
+as possible. We refer to such grinding attacks — where an adversary tries to
+extend a block in many different ways — as digging.
+
+In $1
+
+.4.1 to §1.4.3 we outline how digging attacks are prevented in Chia.
+
+1.4.1 Splitting the chain
+
+To prevent digging by grinding through different values for data as outlined
+above, Chia adapts an idea from Spacemint. The chain is composed of two
+chains as illustrated in Figure 1; one chain is called the trunk and contains just
+
+Foliage = —(— serra —{% fs)
+
+1 challenge
+
+eUBIS
+2S
+2S
+rn
+
+a
+
+i
+Trunk 6) Oe (0 time”
+parameter
+
+Figure 1: Illustration of the Chia blockchain that will be explained in §3. A block
+B = (0,7) in the (ungrindable) trunk chain contains a proof of space o followed
+by a VDF output 7. A block a in the foliage contains the payload (transactions,
+timestamp), a signature of the previous block in foliage (to chain these blocks),
+and a signature of the proof of space (to bind the foliage to the trunk). This
+figure just illustrates the three deepest blocks of a chain, Figure 5 on page 20
+illustrates a “richer” view that contains forks and non-finalized blocks.
+
+the proofs (PoSpace and VDF outputs), the other chain is called the foliage
+and contains the payload data (and some signatures to bind the foliage to the
+trunk). All the challenges (for PoSpace and VDF) come from previous values
+in the trunk, and thus are not susceptible to grinding attacks where one tries
+
+out various values of data in the foliage (if we take difficulty resets into account,
+that’s not quite true, as we'll discuss in §1.4.3).
+
+1.4.2 Unique primitives
+
+To prevent digging it is also crucial that the cryptographic primitives used in
+the trunk are unique. In particular, Chia uses a unique signature scheme, where
+uniqueness means that for every public-key/message pair there exits exactly one
+valid signature. The PoSpace we use are unique and a verifiable delay function
+is unique by definition.®
+
+1.4.3 Careful with difficulty resets
+
+Even after outsourcing the payload data to the foliage and make sure all prim-
+itives in the trunk are unique, it turns out that there is still a possible digging
+attack if the difficulty reset mechanism is directly adapted from Bitcoin. We
+discuss this in §5, but in a nutshell, the attack is possible because the difficulty
+parameter depends on the timestamps, which are (as part of data) in the foliage
+and thus can be ground. As a VDF output depends on the difficulty parameter,
+the VDF outputs can be indirectly ground via this connection. For this attack to
+work, the difficulty reset must apply to blocks immediately following the block
+whose timestamp was used to recompute the difficulty parameter (as is the case
+
+5The definition of a VDF basically matches the definition of a unique proof of sequential
+work; the reason we cannot use simple proofs of sequential work like [CP 18] in Chia is precisely
+because they’re not uinque.
+in Bitcoin). This can be easily prevented by specifying that the difficulty reset
+only applies after sufficiently many blocks have passed.
+
+1.5 Double dipping attacks
+
+In the previous section we outlined how Chia prevents digging attacks. We now
+discuss the other type of grinding attacks called double dipping. Recall that
+digging refers to attacks where an adversary tries to extend a particular block
+in many different ways, whereas double dipping refers to attacks where they try
+to extend different blocks, not just the one(s) specified by the protocol.
+
+1.5.1 Punishment is not a solution
+
+Penalties were suggested® as a means to disincentivize double dipping in 2014.
+Spacemint [PPK*15] also specified a form of penalties’. Unfortunately, penal-
+ties don’t really solve the issue. In particular, penalties can only be a deterrent
+against attacks where the potential gain is less than the potential penalty, so
+they might disincentivize things like selfish mining, but not double spending.
+Penalties are also no deterrent against long range attacks (discussed in §1.7)
+where an adversary tries to generate a long chain in private, simply because
+then there is no one around to trigger the penalty.
+
+1.5.2 Smoothing out grinding advantage
+
+One idea to countering double dipping and also digging attacks that was in-
+troduced in Spacemint (and later used e.g. in Ourborors Praos) is to deviate
+from a blockchain-like design by using the same challenge for several consecu-
+tive blocks. The reason this makes grinding attacks less attractive is that it is
+unlikely that a challenge will be good for many consecutive blocks. To get back
+to the cherry picking analogy: you can choose the best cherries going through
+them one by one, but if you must pick one entire bucket out of many buckets
+full of cherries, then the quality of the cherries in the best bucket will only be
+ightly better than the average.
+
+i
+
+1.5.3 How Chia adresses double dipping
+
+The specification of the Chia blockchain has no built-in mechanism to prevent
+louble dipping at all, instead we first quantify the advantage one gets from
+louble dipping. Then we show how to decrease this advantage by changing the
+farming rules and having the honest farmers extend more than just one block
+at every depth.
+
+We explain the result in more detail in $1.6 below, but in a nutshell, we show
+that the basic design is secure (in the sense of having non-zero chain quality) as
+
+Shttps: //blog. ethereum. org/2014/01/15/slasher-a-punitive-proof-of-stake-algorithm/
+7In Spacemint, whenever a space miner publishes two blocks for the same block position but
+extending different blocks, this pair of blocks can be used (within a special type of transactions)
+to steal half the block reward of the cheating miner while the other half is destroyed.
+long as at least 73.1% of the space® is controlled by honest farmers. As proofs
+of work are not susceptible to double dipping, Bitcoin only requires the honest
+miners to control > 50% of the hashing power to be secure. To narrow this
+gap, we also let honest farmers double dip to some extent: a parameter « € Z*
+specifies that the honest farmers should compute a PoSpace for the first « (not
+just the first) blocks at every depth. Setting « = 3 seems like a good choice;
+this doesn’t increase the work for farmers by too much, and now the honest
+farmers just need to control © 61.5%. Figure 2 shows how this fraction drops
+as « increases.
+
+Remark 1 (Social convention of choosing «). Let us stress that the value of k
+is not part of the specification of Chia. Rather, it is a social convention by the
+honest farmers and thus can easily be adapted the future, in particular, this will
+not need a fork. One might chose to lower k to speed up consensus, or increase
+it to improve security (this not only means raising the fraction of space required
+for double spending, but also e.g. making selfish mining less profitable).
+
+1.6 Chain Quality of Chia.
+
+We provide an initial security analysis for Chia in an idealized setting so we can
+focus on the core problems. Concretely, we assume that
+
+i. we have no network delays,
+
+ii. an adversary can compute the VDF no faster than the honest parties (but
+they can compute an unlimited amount of VDF outputs in parallel),
+
+iii. the proofs of space are ideal (i.e., allow for absolutely no time-memory
+trade-offs) and
+
+iv. we have no difficulty resets.
+
+1.6.1 Chain quality
+
+Chain quality for « = 1. In this idealized setting we prove for the most
+basic & = 1 case — where the honest farmers compute a PoSpace only for the
+first block they see at each depth — the following
+
+(Corollary of Lemma 2) An adversary who controls less than a ik ~
+0.269 fraction of the total space cannot (in private) grow a chain
+
+faster than the honest parties.
+
+As illustrated in Figure 1, in Chia the challenge to compute the PoSpace o; is
+derived from the last VDF output 7;~1. This challenge is not simply the hash
+of 7:1, but the hash of a signature of 7;_;. This means a potential adversary
+will not be able to predict the challenge for a farmer, which in turn allows us
+to prove the following
+
+8This number is 1 — (1/e)(1 + 1/e) © 0.731 where e © 2.718 is Euler’s number.
+(Informal statement of the “no slowdown” Lemma 4) An adversary
+who cannot break the security of the signature scheme (but otherwise
+can be unbounded, in particular, has unlimited space and even can
+compute VDF outputs in zero time) cannot slow down the rate at
+which the honest farmers grow the chain.
+
+As a corollary of Lemmas 2 and 4 we get the following statement
+
+As long as the honest farmers control at least a 1 — ik = 0.731
+fraction of the total space, the blockchain is secure in the sense that
+a non-zero fraction of the blocks in the chain were provided by honest
+farmers (chain quality property), and a block that is sufficiently deep
+in the chain will almost certainly remain there forever (common
+prefix property).
+
+It is clear that as the fraction of the space controlled by the honest farmers
+increases beyond the minimal 0.731 fraction, the chain quality — i.e., the fraction
+of blocks in the chain contributed by honest farmers — will also increase, but at
+this point we can’t prove any non-trivial quantitive bounds for this.
+
+Chain quality for « > 1. The reason for the gap between the ¥ 0.731 fraction
+(of space) we need to be under honest control in Chia and the 0.5 fraction (of
+computing power) in Bitcoin is due to double dipping attacks. If we specify that
+honest farmers must extend every block they see, then we’d also only require a
+0.5 fraction, as the most extreme double dipping attack would then coincide with
+the honest farming strategy. Of course that would be completely impractical.
+We will consider settings in between the two extreme cases where a parameter
+« € Z* specifies that the honest farmers should compute a PoSpace for the first
+« blocks they see at every depth. At the same time, every time lord should
+work towards finalizing « blocks at every depth (so the extreme cases above
+correspond to & = 1 and K = 00).
+
+Setting a value for « is a trade-off: higher values of « give better security
+guarantees, but increase the work required of the farmers as they must compute
+« proofs for every depth. To set a value for « in Chia it helps to know how fast
+the fraction of space required to be controlled by honest farmers approaches 0).5
+as we increase k, and we denote these values by u,. We can only analytically
+compute this fraction for « = 1, where it is 47 = 1—(1/e)(1+1/e) © 0.731, and
+it follows from the definition that 1. is 0.5. To determine the other values we
+ran simulations (which will be discussed in §6.2). As one would expect the 1;
+converge very quickly towards 0.5 as illustrated in Figure 2. Chia will use « = 3,
+which corresponds to 3 & 0.615.
+
+1.6.2. The underlying probabilistic experiment
+
+The technical statement of Lemma 2 considers the following simple probabilistic
+experiment. For positive integers h, ¢, consider an h-ary tree of depth ¢. Assign
+each edge of the tree a weight sampled uniformly iid in [0,1]. We then consider
+the following random variables (also illustrated in Figure 4).
+
+10
+08
+
+0.6
+0.4
+1 2 3 4 5 6 7 8 9 10 20 30 40 50 60 70 80 90 100
+BK: o1 2 3 4 5 6 7 8 9
+0, : 1.00107 0.68468 0.58789 0.54136 0.51296 0.49626 0.48197 0.47395 0.46567
+Us 0.73127 0.65049 0.61510 0.59540 0.58235 0.57428 0.56712 0.56300 0.55866
+Kg: 10 20 30 40 50 60 70 80 90
+0, : 0.45830 0.43062 0.41910 0.41282 0.40913 0.40607 0.40377 0.40252 0.40030 0.39992.
+tx: 0.55472 0.53929 0.53254 0.52878 0.52655 0.52468 0.52326 0.52249 0.52110 0.52087
+Figure 2: The red values shows (simulated values for) 1; ...c199, the neces-
+
+sary fraction of space that honest farmers must hold to outpace a malicious
+farmer who has an infinite number of VDF servers. It approaches 0.5 (red
+dotted line) as & (on x-axis, note the step size increases from 1 to 10 at
+« = 10) increases. The blue values show (simulated values for) 0 . . . 100, where
+9; = lime-+00,h+00 E[Ch ,]/E[C{,] specifies what speedup can be achieved by ex-
+
+tending the k (
+
+s opposed to just one) blocks at every depth; it approaches 1/e
+
+as K — oo. To simulate 6; we sampled Ch (cf. 81.6.2) for h = 999, £ = 100000
+and approximated 6,, © Ch /EICE pl: The 1, were computed from the 0, as
+
+=j,-_/_
+us = 1— teem:
+
+11
+oe» 0 2 00 00 2 0 s0-« 0
+
+os
+
+L
+0 0.367879
+
+1
+
+Figure 3: Visualization of chain growths for « = 1 (bottom) to K = 4
+simulated with h = 29,¢ = 30. z-axis is time, the green line connects the k
+blocks (red dots) at the same level. The chain (or for « > 1 tree) is in blue.
+
+(top),
+
+Figure 4: Illustration of the probabilistic experiment outlined in §1.6.2. The
+globally shortest path has weight 0.54; the path we get by greedily following the
+
+best edge at every node has weight 0.80.
+
+12
+e (greedy path) Let Cf, be the total edge weight of the path we get by
+starting at the root, following the edge with lowest weight at every node,
+and ending at a leaf.
+
+e (globally shortest path) Let C& ;, be the minimum of the total edge weight
+of all hé paths from the root to the leaves.
+
+Cf, » basically captures the time honest miners with total space h need to grow
+a path of length @, whereas C& ,, captures the time an adversary who tries to
+extend all possible paths needs (i.e., an adversary launching the most extreme
+double dipping attack). It follows from simple order statistics (cf. Lemma 1)
+that
+
+£
+L _
+EIChl=
+and Lemma 2 states that
+E[Cty] SE[Cx a] -e- (1)
+
+We derive eq.(1) analytically, and simulations indicate that it is tight as h, ¢ go
+to infinity.
+
+We also define random variables oan for any « € Z*, where Cf,
+the time h honest farmers need to grow a path of length ¢ assuming they try to
+extend the first « blocks they see at every depth.
+
+We define 0, as the factor by which one can speed up chain growth by
+extending « chains instead just one chain
+
+captures
+
+On. = lim ECE nl/E[Ct al =
+
+L-00,h>00
+
+Although we define this value in the limit for large @ and h, this value converges
+very fast so we can get good approximations by sampling oan for fairly small
+finite £,h. We will show that the fraction v,, discussed in the previous section
+can be computed from 6,, as
+
+0, and v, are illustrated in Figure 2.
+
+1.7 Long range attacks
+
+Most attacks on blockchains can be roughly classified as short range or long
+range attacks. Short range attacks refer to attacks which only involve the last
+few blocks, whereas long range attacks are attacks where an adversary tries to
+generate a chain that forked (from the chain seen by the honest parties) many
+blocks in the past.
+
+Short range attacks against Bitcoin include selfish mining [ES14] — where
+the adversary strategically withholds blocks to get an unfair share of the block
+
+13
+rewards — or double spending — where the adversary tries to generate a chain in
+private that is sufficiently long to double spend. As Bitcoin specifies that a block
+at depth 6 can be considered confirmed, even an adversary with significantly less
+than 50% of the hashing power has a good chance is succeeding in this attack
+(which requires growing a chain of length 6 faster than the honest miners).
+
+Long range attacks are not an issue for Bitcoin,® but they are a major prob-
+lem for blockchains based on efficient proof systems like proofs of space or proofs
+of stake.
+
+1.7.1 Long range attacks on PoStake using old money
+
+A particularly annoying longe range attack against proof of stake blockchains
+uses the observation that it is sufficient to hold a large stake (i.e., the secret
+keys allowing to spend coins) that was valid at some point in the past (but
+given the current chain can be worthless). Such old keys can be used to fork
+the chain at the point where the coins where valid, and then one can bootstrap
+a chain that looks valid in the present. An adversary could potentially acquire
+such a stake at low cost, e.g. by buying a large fraction of the coins and then
+immediately selling them. There doesn’t seem to be a solution to this attack
+unless one assumes trusted parties or requires parties to come online sufficiently
+frequently so one can acquire check-points at sufficiently short intervals.
+
+1.7.2 Long range attack on PoSpace using resource variation
+
+Recall that in Bitcoin the “longest chain” does not really mean the chain with
+most blocks, but rather it is the “heaviest chain”, the one that required most
+hashing power to generate (this can be computed by summing up the difficulty
+parameter over each block). We can adapt this rule to a PoSpace-based chain
+by saying that the “heaviest chain” is the one whose sum of qualities of the
+PoSpace (the quality of a block reflects the amount of space that was used
+to generate the block) over all blocks is maximal. This is delicate for various
+reasons, but the most serious is that now it is possible to generate a chain
+that is heavier than the honestly generated chain using space that is only the
+average of the space that was used for farming the honest chain, which can be
+much lower than the current amount of space dedicated towards mining (e.g.
+
+because mining became much more lucrative over time or disk space became
+much cheaper). Spacemint [PPK*15] addresses this problem in an ad-hoc way
+by putting more weight on more recent blocks when calculating the weight of a
+chain.
+
+1.7.3 Solving long range attacks using VDFs
+
+The two long range attacks outlined above make crucial use of the property
+that PoStake and PoSpace can be computed quickly, so one can bootstrap a
+
+9A 51% adversary can generate an arbitrary long fork, but against this adversary everything
+is lost anyways.
+
+14
+heavy chain in very short time once one has sufficient (old) stake or space. For
+PoW-based blockchains like Bitcoin this is not possible: one can generate a
+chain that is heavier than the current Bitcoin blockchain using hashing power
+that is slightly higher than the average hashing power that was dedicated since
+genesis, but this will (in 2019) require a decade, at which point it is useless as
+the honest chain will also have advanced by a decade.
+
+Chia achieves this desirable property (i.e., that a chain cannot be boot-
+strapped quickly) without relying on wasting massive computing power as re-
+quired by PoW. Instead, Chia alternates PoSpace with VDFs. This way, the
+main resource is space, while the VDFs guarantee that one cannot bootstrap a
+chain much faster than honestly farming it.
+
+2 Building Blocks: PoSpace, VDFs and Signa-
+tures
+
+In this section we sketch the main building blocks used in the Chia blockchain:
+unique digital signatures, proofs of space [DFKP15] and verifiable delay func-
+tions [BBBF18, Wes18, Piel8, BBF18]. The definitions are not fully general,
+but instead tailored to the particular constructions of PoSpace from [AAC* 17]
+and the VDFs [Wes18, Piel8, BBF18] based on sequential squaring.
+
+2.1 (Unique) Digital Signatures
+
+A digital signature scheme is specified by three algorithms; a (probabilistic)
+key-generation algorithm Sig.keygen, a signing algorithm py < Sig.sign(sk, m)
+and a verification algorithm Sig.verify. We assume the standard security notion
+(unforgeability under chosen message attacks) and perfect completeness, that
+is, a correctly generated signature will always verify:
+
+Ym, Pr[Sig.verify(pk, m, 4) = accept] = 1
+where (pk, sk) <— Sig.keygen ; ju + Sig.sign(sk,m) .
+
+Chia uses signatures in the foliage (to chain foliage blocks and to bind them to
+the trunk) and also in the trunk (so only the farmer can compute the challenge).
+To avoid grinding attacks, the signatures used in the trunk must be unique, that
+is for every pk (this includes maliciously generated public keys) and message m
+there can be at most one accepting signature
+
+Vpk,m, (Sig.verify(pk, m, j1) = accept) A (Sig.verify(pk, m, wu’) = accept) > (ju = pr’) «
+2.2 (Unique) Proofs Of Space
+
+2.2.1 Algorithms for PoSpace
+
+A proof of space is specified by the four algorithms given below
+PoSpace.init on input a space parameter N € N (where NV C Z* is some
+set of valid parameters) and a unique identifier pk (we use pk to denote
+the identifier as in Chia it will be the public key of a signature scheme)
+outputs!?
+
+S=(SA,S.N=N , S.pk = pk) < PoSpace.init(N, pk)
+
+Here S.A is the large file of size |S.A| + N the prover needs to store. We
+also keep N, pk as part of S' as it will be convenient.
+
+PoSpace.prove on input S' and a challenge c € {0,1}” outputs a proof
+o=(07,0 =0N=S.N, opk=S pk, o.c=c) < PoSpace.prove(S, c)
+
+Here o.7 is the actual proof, the other entries in o are just convenient to
+keep around.
+
+PoSpace.verify on input a proof o outputs accept or reject
+PoSpace.verify(a) € {reject, accept} .
+We assume perfect completeness
+
+VN €N,c€ {0,1}”, Pr[PoS
+S' < PoSpace.init(N, pk) and
+
+pace.verify(a) = accept] = 1 where
+
+a + PoSpace.prove(S,,c)
+
+2.2.2 Security of PoSpace
+
+We will not give the formal security definition for PoSpace here, but informally
+it states that an adversary who stores a file of size significantly less than N bits
+
+should not be able to produce a valid
+invests a significant amount of comput
+
+proof for a random challenge unless he
+ation (ideally close to what it costs to
+
+run the full initialization PoSpace.init(N, pk)). Moreover it must be impossible
+
+to amortize space, that is, initalizing s
+
+pace for m > 1 different identities must
+
+require m times as much space.
+To prevent grinding attacks, we need our PoSpace to be unique as defined
+below.
+
+10The first constructions of PoSpace from [DFKP15] were based on depth-robust graphs.
+The initialization phase in these PoSpace was not just a function as it is here, but an in-
+teractive protocol. The definition we give here captures the [AACt17] PoSpace (which was
+developed for Chia) where the initialization phase is non-interactive, this makes its use in
+a blockchain design much simpler. The Spacemint ([PPK* 15] proposal is using graph-based
+PoSpace and because of that must bootstrap the blockchain itself to make initialization non-
+interactive: farmers must post a commitment to their space to the blockchain via a special
+type of transaction before it can be used for farming. Without this, Spacemint would succumb
+to grinding attacks (on the message send to the verifier during the initialization phase).
+
+16
+2.2.3. Unique PoSpace
+A PoSpace is unique if for any identity pk and any challenge c there is exactly
+one proof, i.e.,
+VN, pk, c,
+{oa : (PoSpace.verify(o) = accept) A ((o.N, o.pk,0.c) = (N, pk, c))}| =1
+
+We call a PoSpace weakly unique if the expected number of proofs is close to 1,
+ie.,
+
+VN, pk, c,
+{a : (PoSpace.verify(7) = accept}) A ((o.N, o.pk,o.c) = (N, pk, c)) |]
+
+xl
+
+Eee{o,1}" [
+
+For weakly unique PoSpace we assume that whenever there is more than one
+proof for a given challenge which passes verification, PoSpace.prove(S, c) outputs
+all of them.
+
+The [AACt17] PoSpace used in Chia is only weakly unique. To be able to
+focus on the main challenges, we will nonetheless assume a unique PoSpace when
+analyzing Chia but our analysis can be extended without major difficulties to
+handle weakly unique PoSpace, things just get a bit more messy.
+
+2.2.4 The [AACt17] PoSpace
+
+We give a very high level outline of the PoSpace from [AACt17]. The space
+parameter is given implicitly by a value ¢ € Z*, the actual space required is
+approximately N ~ ¢-2- 2° bits (e.g. for @ = 40 that’s 10 terabytes). Let
+L := {0,1} denote the set of ¢ bit strings. Below we denote with X\¢ the £ bit
+prefix of a string X.
+
+The identity id := pk together with a hash function H defines two functions
+f:LoL,g:bLxLoLas
+
+f(x) = H(id,x)\¢ and g(x, 2’) = H(id, 2, 2") |¢ .
+
+Note that if we model H as a random function, then f,g are also random func-
+tions. On a challenge y € L the prover must answer with a tuple
+
+id, (x, x") where c#2x', f(x) = f(a’), g(z,2')=y
+
+if it exists. In this construction, for roughly a (1 — 1/e) + 0.632 fraction of the
+challenges y € L there will be at least one proof, and the expected number of
+proofs is 1 (so it is a weakly unique PoSpace).
+
+The prover will generate and store two tables so they can efficiently generate
+proofs. They first compute and store a table with the values (x, f(x)) sorted
+by the 2nd entry. With this table, the prover can now efficiently enumerate
+all tuples (x, x’) where x # x’ and f(x) = f(x’) to generate a table containing
+
+17
+all triples (a, x’, y = g(a,2’)); the expected number of such triples is |L| = 2°.
+This table is then sorted by the thrid value. Now given a challenge y one can
+efficiently look up proofs in the second table as it is sorted by the y values.
+Storing the second table requires ~ 3|L|log(|L|) = 241 bits, and this can be
+brought down to ¥ 2|L|log(|L|) bits by encoding it in a more clever way.
+
+Chia is based on this PoSpace, but to further minimize the effect of time/space
+trade-offs (where a malicious farmer tries to save on space at the cost of doing
+more computations), a nested version of this construction is used. We omit the
+details in this writeup.
+
+2.3 Verifiable Delay Functions
+A VDF is specified by the two algorithms given below.
+
+VDF.solve on input a challenge c € {0,1}” and time parameter ¢ € Z* outputs
+a proof
+
+T=(TY, 7TH, T.C=c, Tt=t) — VDF.solve(c, t)
+
+and runs in (not much more than) ¢ sequential steps (what a step is de-
+pends on the particular VDF). Here 7.y is the output and 7.7 is a proof
+that r.y has been correctly computed. For convenience we also keep (c, t)
+as part of T.
+
+VDF.verify on input 7 outputs accept or reject.
+VDF.verify(r) € {reject, accept}
+
+Verifying must be possible in < t steps, for existing VDFs verification just
+takes log(t) [Piel18] or even constant [Wes18] time.
+
+We have perfect completeness
+Vt,c : VDF.verify(VDF.solve(c, t)) = accept
+The two security properties we require are
+uniqueness: It is hard to come up with any statement and an accepting proof
+for a wrong output. More precisely, it is computationally difficult to find
+any tT’ where for 7 <— VDF.solve(r’.c, 7’.t) we have
+
+VDF.verify(r’) = accept and r.yATy.
+
+Note that we only need 7.y (but not 7.7) to be unique, ie., the proof
+7.7 showing that 7.y is the correct value can be malleable. This seems
+sufficient for all applications of VDFs, but let us mention that in the
+[Pie18, Wes18] VDFs discussed below also 7.7 is unique.
+
+18
+sequentialitiy: Informally, sequentiality states that for any t, an adversary A
+who makes less than t sequential steps will notfind an accepting proof on
+a random challenge. L.e., for some tiny €
+
+Pr[VDF.verify(r) = accept A r.c=c A Tt=t: rgnd {0,1}",7 + A(e,t)] <e
+
+Let us stress that A is only bounded by the number of sequential steps, but
+they can use high parallelism. Thus the VDF output cannot be computed
+faster by adding parallelism beyond what can be used to speed up a single
+step of the VDF computation.
+
+2.3.1 The [Wes18, Pie18] VDFs
+
+The VDFs proposed in [Wes18, Pie18] (see [BBF18] for an overview of those
+constructions) are both based on squaring in a group of unknown order, for
+concreteness let the group be Zi, where N = pq is the product of two large
+primes p,q. On input (c € Ziy,t) the ouput of VDF.solve(c,t) is (y,7) with
+y= ce mod N. This y can be computed by squaring c sequentially t times
+CHC ae ce, and it is conjectured that there is no shortcut to
+this computation if one doesn’t know the factorization of N.
+
+The VDFs from [Wes18, Pie18] differ in how the proof 7 that certifies that
+y= c”’ mod N is defined. The proof in [Wes18] is shorter (1 vs. log(T) el-
+ements), but soundness of the proof requires an additional assumption (that
+taking random roots is hard).
+
+If one uses an RSA group as above, a trusted setup or a multiparty com-
+putation is needed to sample the modulus N in a way that nobody learns its
+factorization. [Wes18, BBF18] suggest using the class group of an imaginary
+quadratic field as the underlying group of unknown order. These groups can
+be obliviously sampled — this means given random bits one can sample a group
+without learning its order — and thus there is no need for a trusted setup.
+
+3 The Blockchain
+3.1 Trunk and Foliage
+
+In this section we specify the blockchain format using the building blocks we
+introduced in §2. As outlined in the introduction, Chia uses two separate chains
+called the trunk and the foliage to prevent grinding attacks. Blocks in the
+trunk 0, 31,... contain the proofs (the PoSpace and the VDF outputs required
+to finalize the block). The foliage contains a block a; for every block §; in the
+trunk. This block contains the payload (transactions and timestamps) of the
+blockchain and a signature to bind the foliage to the trunk and at the same time
+chain the blocks in the foliage.
+
+19
+signature
+
+Bi-1
+
+Figure 5: Illustration of a possible view of the blockchain (as stored in C in
+
+§4.1). The longest path has i+ 2 blocks and its head is the finalized block 7442.
+There is a fork at block 7;~1; the block 7/,, is non-finalized. The (presumably
+malicious) farmer who generated the PoSpace o;+1 signed off two distinct foliage
+blocks aj; and aj,,. The farmer of oj42 extended the foliage block aj+1.
+
+3.2. Block Format
+A block y; = (8;,a;) contains a block from the trunk
+
+Bi = (1,01, 7%)
+
+where 0; = (0;.7,0;.N, 0;.pk, 0;.c, 0;.44) is a proof of space with an extra entry
+oj. (explained below) and 7; = (7;-y,7;.7,7.¢,7.t) is a VDF output. Moreover,
+7; must contain a block from the foliage
+
+a; = (¢;,data;)
+
+We call a block +; as just described finalized, and if the VDF output 7; is missing
+we say the block is non-finalized.
+
+A (finalized or non-finalized) block y; = (8;,a;) extends a previous block
+Vi-1 = (Gi-1, ;—1) if the following conditions are satisfied (if the block is non-
+finalized point 2 below is omitted).
+
+1. 0; is a valid PoSpace
+
+PoSpace.verify(o;) = accept
+where the challenge is the hash o;.c = H(o;.) of the unique signature
+oj. of the previous VDF output 7;_1, so we also check (see also Remark 2
+
+below)
+
+Sig.verify(o;.pk, o;.u, 71-1) = accept and oj.c = H(o;.) . (2)
+
+20
+2. 7; is a valid VDF output
+VDF.verify(7;) = accept
+
+where the challenge is the (hash of the) previous trunk block (see also
+Remark 3 below) and the time parameter is the hash of the previous
+PoSpace multiplied by the current difficulty parameter T.
+
+7.c =H(8;-1) and 7;.t =0.H(o;)-T (3)
+
+3. ¢j is a signature (under the pk used in the current PoSpace) of (the hash
+of) the previous block in the foliage, the proof of space in the trunk and
+the data.
+
+Sig.verify(o;.pk, H(ai_1, 0%, data;),¢;) = accept
+
+4. data; is the actual data contained in the block. In this document we just
+discuss the consensus layer of Chia, and for this it is not relevant how this is
+specified exactly. But, like in Bitcion, it is essentially a list of transactions
+that must be consistent with the transactions datag,...,data;_; in the
+previous blocks.
+
+Remark 2 (Why the PoSpace challenge is a signature). The reason the PoSpace
+challenge in eq.(2) is defined as the hash of a signature instead simply the hash
+of the VDF output, i.e., o;.c = H(7_1), is so that only the farmer (who knows
+the secret key for o;.pk) can compute the challenge. This will be crucial later to
+prove the “no slowdown” Lemma 4.
+
+Remark 3 (Why the VDF challenge comes from the previous block). The
+reason the VDF challenge in eq.(3) is defined as the hash of the previous trunk
+block instead of simply using the previous PoSpace to derive the challenge, i.e.,
+7;.c = H(a;), is so a time lord who has finished computing T;-1 can release it and
+immediately start computing T;. The farmers can now compute the PoSpace 0;
+for this block, and if the time lord receives a 0; before it made 7;.t = 0.H(o;)-T
+sequential steps it can finalize this block and continue with T41 right away.
+This way the honest parties will notget slowed down because there is a network
+delay. This is important as an adversary who has his VDF servers and storage
+physically close would not have this disadvantage. In rare cases where the best
+PoSpace has extremely good quality (and thus can be finalized in just a few
+seconds) there is a chance the time lord will not receive the PoSpace in time.
+To avoid this the time parameter in Chia will have an additive term to enforce a
+lower bound on the running time of the VDF so the network delay should never
+slow down the honest parties.
+
+4 Algorithms for Farmers and Time Lords
+In this section we provide the pseudocode for the farmers, who dedicate space
+
+towards securing the chain, and the time lords, who compute the VDF outputs
+to finalize blocks.
+
+21
+4.1 Chain Management
+
+Space farmers and time lords keep their local view on the chain stored in a data
+structure C, Figure 5 illustrates the highest blocks in a possible view.
+
+Chain.init takes no input and outputs a current view C of the chain as received
+from the network.
+
+Chain.update is invoked whenever new blocks are received from the network
+or a proof is locally generated (this proof is a VDF output for time lords
+and a PoSpace for farmers). It expects as inputs either a finalized or non-
+finalized block ¥ (it is convenient to also allow an index/VDF output pair
+(i,7) as input, in which case it checks if this input finalizes some known
+non-finalized block, and continues as if its input were this finalized block).
+
+It updates the local view C and sometimes further disseminates these
+blocks — e.g. using a gossip protocol like Bitcoin — to make sure all honest
+farmers will ultimately get it.
+
+The output are two (possibly both empty) sets ([y,[',), where Ty ([n)
+contains all the valid, fresh and finalized (non-finalized) blocks (as defined
+below) that were just attached to C. For every block in T’,, we also add
+he hash of the trunk block before it as it will be required to compute the
+next VDF challenge.
+
+We will not fully specify the pseudocode of the Chain.update functionalitiy as
+it is not particular to Chia. It will be convenient to define the following three
+predicates that a block (which is given as input to Chain.update) can have
+
+(non-)finalized: (as already defined in §3.2) a block 7 = (8 = (i,0,7)),a =
+(o, data)) is called finalized; if the VDF output 7 is missing it is called
+non-finalized.
+
+valid: a (finalized or non-finalized) block is valid if it extends (as defined in
+§3.2) a block already in C.
+
+fresh: a block is fresh if it is valid and not already in C (we also consider it
+fresh if it is finalized, but only its non-finalized version was already in C).
+
+Remark 4 (Multiple foliage blocks). An honest farmer will sign exactly one
+foliage block for each PoSpace they find (cf. line 13 in Algorithm 3 below),
+but a malicious farmer might sign and gossip more than one foliage block for
+the same PoSpace. We specify that Chain.update will usually consider the first
+foliage block it sees for any given PoSpace as the valid one, but one must deviate
+from this rule if the PoSpace gets finalized and extended with a new block, and
+this new block extends a different foliage block than the one we saw first. E.g.
+in the view in Figure 5 we’d consider a;4, to be the correct foliage block even if
+we saw aj, first.
+
+22
+4.2 Space Farmer Algorithms
+
+To simplify the exposition, we assume that all parties who want to dedicate
+space dedicate the same amount of N bits, but this is not necessary, as we’ll
+discuss in Remark 8. A party that wants to act as a space farmer first initializes
+their space S (and some other variables) running the SpaceFarmer.init algorithm
+below.
+
+Algorithm 1 SpaceFarmer.init
+
+1: Global Parameters: N
+
+2: C © Chain. init > extract view from network
+3: (pk, sk) ~ Sig.keygen > sample public/secret signature key pair
+4: S' < PoSpace.init(N, pk) > initialize space of size N with identity pk
+5: Sisk := sk > add sk to the stored file
+6: Initalize a vector pos_count to all 0 > see Remark 5
+7; Output:
+
+8: S = (S.A,S.N, S.pk, S.sk), pos_count > State for SpaceFarmer.farm
+9: C > State for Chain.update
+
+Remark 5 (Storing “infinite” vectors). The i’th entry of the vector pos_count
+stores how many proofs were generated at depth i. We think of pos_count as
+infinite, but it will always only have a tiny active window j,...,j +6 such that
+Vi < j,pos_count[j] = K, and Vi > j,pos_count[j] = 0, so it can be efficiently
+stored. The same holds for the finalized and running vectors used by time lords
+in the pseudocode below.
+
+After initializing, the space farmer runs the infinite loop SpaceFarmer.loop.
+In this loop, on every valid, fresh and finalized block that was received from the
+network, SpaceFarmer.farm is invoked, which decides whether to compute a proof
+of space to extend this block. The parts of the SpaceFarmer.farm pseudocode
+that only affect the foliage are shown in purple.
+
+Algorithm 2 SpaceFarmer.loop
+1: loop
+2: Wait for block(s) I’ to be received from the network
+3: (Py, Pn) < Chain.update(L)
+4 Vy € Ty : SpaceFarmer.farm(7) > Algorithm 3
+5: end loop
+
+Remark 6 (Taking difficulty resets into account). The SpaceFarmer.farm Al-
+gorithm 3 as well as the TimeLord.finalize Algorithm 6 below become more com-
+plicated if we take difficulty resets into account. Concretely, these algorithms
+might then have to extend/finalize a block at depth i even if they have already
+extended/seen « blocks at this depth if this new block is the head of a chain
+that has a higher “cumulative work” than the « chains we’ve seen so far at this
+
+23
+Algorithm 3 SpaceFarmer.farm
+1: Global Parameters: > # of proofs per slot (K = 3 in Chia)
+2: Input: 7; = (8; = (%,0:,7;), a:). > finalized, fresh & valid block at depth i
+3: State: S = (S.A, S.N,S.pk,S.sk), pos_count
+4
+
+: if pos_count(? + 1) =« then > if already generated « PoSpace
+5: return without output > at depth i + 1 ignore this block
+6: end if
+7: pos_count(i +1) + pos_count(i +1) +1
+8: pe + Sig.sign(S.sk, 7;) > compute signature of last VDF output
+9: c+ H(p) > challenge is hash of this signature
+
+10: 0;41 < PoSpace.prove(S,c) > compute PoSpace
+LL: Oj 41. = fb > keep signature as part of the proof
+12: Generate dataj+1 > create payload for this block
+13: O41 + Sig.sign(S.sk, (aj, 0141, dataj41) > signature for foliage
+14: Chain.update(i + 1, 0441, @i41 = (41, data;+1)) > Cf. Remark 7
+
+depth. This could happen if, for example, we had a network split, the farmer
+landed in the part of the network controlling a smaller fraction of the space, and
+as the split is over we want them to switch back to the heavier chain generated
+in the other partition. We omit the details in this writeup.
+
+Remark 7 (Keeping the network load small). [f SpaceFarmer.farm generated a
+fresh (non-finalized) block, it will invoke Chain.update to update C and dissemi-
+nate this fresh block. Disseminating every block created by a space farmer would
+generate substantial network load.
+
+To avoid this, we can specify Chain.update so it does not disseminate blocks
+(finalized or not, locally generated or received from the network) which have
+basically no chance of ending up in the blockchain. This brings down the network
+load from quadratic (in the number of farmers) to linear (and the communication
+for each individual farmer from linear to constant).
+
+Remark 8 (Dealing with non-equal space). We assume that each space farmer
+dedicates exactly N bits of space, but in practice farmers will have vastly different
+amounts of space that they want to contribute. A simple solution to deal with
+this is by letting N be some arbitrary unit of space (1 bit, or 100GB) and now a
+farmer with k-N,k > 1 bits of space can emulate k space farmers, each having N
+space. This solution incurs a computational cost during farming which is linear
+in the dedicated space.'' A better solution to allow space farmers to initialize
+just one proof of space of size N-k (that is, replace line 4 in SpaceFarmer.init
+“9 < PoSpace.init(NV)” with “S < PoSpace.init(N-k)”).
+
+If the space farmer now generates a proof of space a, the time to finalize
+the block is not just given by a value t that is uniform in [0,T| (computed as
+t := 0.H(u)-T in line 8 of Algorithm 6 below), but instead we let the farmer
+sample k random values t; := 0.H(a,1)-T,...,t := 0.H(o,k)-T and they can
+
+11But note that using Remark 7, the communication cost remains unchanged.
+
+24
+then use the smallest of these values. From the farmer’s view, having k proofs
+and getting one random value for each is as good as having one proof that gives
+k random values, but the latter is more efficient, as in only requires to compute
+one — not k — proofs of space.
+
+The cost of the above solution is still in some sense linear in k, as one has
+to evaluate H k times to find the smallest t;. In Spacemint [PPK* 15] a solution
+is described whose asymptotic cost is really just ploylogarithmic. In a nutshell,
+one uses H(c) as random coins to sample from a distribution which corresponds
+to the minimum of k iid values sampled uniformly from [0,1]. This way the
+farmer is efficient even if the granularity N of the space is just a bit, or even
+goes to 0.
+
+4.3. Time Lord Algorithms
+
+Besides space farmers, sustaining the blockchain requires at least one time lord
+participating to finalize blocks. Recall that to finalize a block with PoSpace o
+requires computing a VDF on challenge H() running for sequential time 0.H(c)-
+T. To participate as a time lord, the party first runs the simple initialization
+below which retrieves the current blockchain from the network and initializes
+two vectors used to keep track of how many VDF outputs have already been
+computed and are currently being computed at every depth.
+
+Algorithm 4 TimeLord. init
+1: C © Chain. init > extract view from network
+2: Initalize vectors running and finalized where for every i running[i] = 0 and
+finalized[i] is the number of finalized blocks in C at depth i.
+
+3: Output:
+4: finalized, running > State for TimeLord.finalize/start VDF /restore
+5: C > State for Chain.update
+
+After initializing, the time lord runs the infinite loop TimeLord.loop.
+
+Algorithm 5 TimeLord.loop
+
+1
+
+2 Wait for block(s) I’ to be received from the network
+3: (Py, Pn) < Chain.update(L)
+4
+
+V((i,a),0,c) €Pn : TimeLord.finalize(i, o, c) > Algorithm 6
+5 V((i,0,7),a@) ET : TimeLord.restore(i) > Algorithm 8
+6: end loop
+
+In this loop, whenever a valid, fresh and non-finalized block is received, TimeLord.finalize
+is invoked. This algorithm then decides whether to start a thread to compute a
+
+VDF output to finalize this block. In addition, for every valid, fresh and final-
+
+ized block received, TimeLord.restore is invoked, which adapts the local view to
+
+take this block into account.
+The time lord’s state contains two vectors, finalize and running, where at any
+timepoint, for any i € Z
+
+finalized[i] € {0,1,...,%} contains the number of finalized (either by the time
+lord itself, or received from the network) blocks at depth i (once this
+counter reaches « it is no longer increased).
+
+running[i] € {0,1,...,«} contains the number of threads currently running that
+compute a VDF which will finalize a block at depth i.
+
+In a nutshell, the goal of the time lord algorithms is to generate x finalized
+blocks at every depth i as fast as possible. As we just want « blocks, for any
+depth i at any timepoint it holds that
+
+0 < finalized{i] + running[i] < «
+
+and moreover for every i, the running{i] VDF threads are the ones which —
+given the view of the time lord — are the ones which can be finalized earliest.
+Concretely, this means that after receiving a finalized block from the network,
+the time lord might have abort the VDF thread scheduled to finish last because
+this thread would create the (« + 1)th block at this depth. After receiving a
+non-finalized block, the time lord might have to start finalizing this block, and
+in this case might also have to abort the VDF thread scheduled to finish last.
+
+Algorithm 6 TimeLord.finalize
+
+1: Global Parameters: T, &
+
+2: Input: 6; = (i,0;) > non-finalized, fresh & valid block for depth i received
+3: ¢ (= H(G,-1)) > hash of previous trunk block
+4; State: finalized, running
+
+5: if finalize[i] = « then > already finalized « blocks for this slot
+
+0:
+
+6 return with no output
+
+7: end if
+
+8: t:=0.H(o;)-T > VDF time parameter required to finalize this block
+9: if finalize[i] + running[i] <« then p> less than « proofs finalized or running
+10: start thread TimeLord.startVDF (i, c, t) > to finish at time now + t
+ll: running[é] := running[é] + 1
+
+12: end if
+13: if finalize[i] + running[?] = then > exactly « proofs finalized or running
+14: if the slowest VDF thread for slot i will finish at time > t + now then
+
+15: abort the thread of this VDF
+
+16: start thread TimeLord.startVDF(?, c, t)
+17: end if
+
+1s: end if
+
+Remark 9 (Time lord parallelism). Jf « = 1, a time lord will never have more
+than one VDF thread running at once. If k > 1, then in theory there is no upper
+
+26
+Algorithm 7 TimeLord.start VDF
+1: State: finalized, running
+2: Input: i, (c,t)
+7; < VDF.solve(c, t) > start thread computing VDF, if this thread does not
+get aborted it will output 7; in time required for t sequential steps
+4: finalized[i] := finalized [i] + 1
+5: running[i] := running[i] — 1
+6: Chain.update(i, 7;)
+
+Algorithm 8 TimeLord.restore
+1: State: finalized, running
+2: Input: i > fresh, valid & finalized block for depth i was received
+3: if running[i] > 0 and running[é]+finalized[i] = « then
+4 abort the thread TimeLord.startVDF for slot i scheduled to finish last
+5 running[?] := running[i] — 1
+6: end if
+7: finalized[i] := min{finalized[i] + 1, «}
+
+bound on the number of threads. If K = 2, then we can have many threads, if
+at many consecutive depths the second best proof of space is much worse than
+the best one, as illustrated in Figure 6. Such a constellation with p > 7 parallel
+threads is unlikely (its probability drops exponentially in p), and in practice being
+able to run, say, 2 VDFs in parallel will be sufficient most of the time. In the
+rare cases where it is not, one just pauses the VDF scheduled to finish last
+(this will decrease the chance of this block ending up in the final chain, but in
+this particular configuration this block would have an extremely low chance of
+catching up and not getting orphaned anyways).
+
+Remark 10 (Same « for space and time). Note that we use the same parameter
+« for the number of PoSpace generated by space farmers at every depth and the
+number of VDF outputs generated by time lords at every depth. This way we’re
+guaranteed that — if there is at least one honest space farmer — a time lord will
+always have enough (i.e., &) blocks to finalize at every depth. And — if there is
+at least one honest time lord — every space farmer will always get enough (i.e.,
+«) finalized blocks to extend. But it is of course possible (due to network latency
+or adversarial behavior) to see more than x finalized blocks at some depth.
+
+5 Difficulty Adjustment
+
+In this section we will discuss how the difficulty parameter T is adjusted to
+ensure blocks appear at roughly the same intervals even as the space dedicated
+towards securing Chia or the speed of the VDF computation varies over time.
+Recall that this parameter is used in the TimeLord.finalize Algorithm 6 where
+the time parameter for the VDF required to finalize a block with a PoSpace o
+
+27
+t time
+
+best and 2nd best PoSpace at depth 2
+
+Figure 6: Illustration of a configuration as discussed in Remark 9 where at time
+t as many as 7 VDF threads (shown in red) are running in parallel.
+
+is computed as t := 0.H(o) - T.
+
+5.1 Difficulty adjustment in Bitcoin
+
+The parameter T plays a role similar to the difficulty parameter D in Bitcoin.
+There D specifies how hard it is to solve the proof of work required to extend
+a block: to attach a block 8, one needs to find a nonce v such that 0.H(8,v) <
+1/D. Assuming H behaves like a random function, an expected D evaluations
+of H are necessary and sufficient to find such a proof. To keep the rate at which
+new blocks are attached to the blockchain at around 600 seconds (= 10 minutes)
+on average — despite the fact that the hashing power dedicated towards mining
+varies greatly over time — the parameter D is adjusted every 2016 blocks (~
+every two weeks) as follows: Every block in Bitcoin contains a timestamp (an
+integer stating the number of seconds since January 1, 1970). Consider a chain
+of length i, where 7 is a multiple of 2016. Let x; denote the timestamp in the
+jth block and D, the current difficulty (which was used for blocks i — 2015 to
+i). The difficulty D, for the next 2016 blocks is computed as follows. Let
+
+target time for 2016 blocks (10min per block)
+
+D! :
+time required for the last 2016 blocks (according to timestamps) ~ °
+2016 - 6
+_ 016-600 D.
+Xi — Xi-2016
+
+If we set the new difficulty to D,, := D’, this would change the block arrival time
+for the next blocks to 10 minutes (in expectation) assuming the hashing power
+is the same as it was (on average) for the last 2016 blocks. That’s basically how
+Bitcoin difficulty adjustment works,!? except that there is an additional rule
+that does not allow the difficulty to vary by more than a factor of 4 in every
+
+12Bitcoin only takes the time used for the last 2015 blocks (not 2016 as above) into account.
+This seems to be a bug in the original implementation.
+
+28
+difficulty reset (using time stamps in a7)
+
+Figure 7: Illustration of the grinding attack on the difficulty parameter discussed
+in §5.2, where slightly different timestamps in the foliage blocks at, a?, a3 right
+before the difficulty reset at depth ¢ lead to different PoSpace challenges cj, c2, ¢3
+
+for the blocks at depth 7 + 2.
+
+adjustment, so the actual difficulty is set to
+
+pf min{D'4-D.} if D'> De 4)
+ne | max{D’,D,/4} if D'< D.
+
+As we'll explain in §5.4 below setting this value to 4 seems to have a specific
+reason that is not generally known.
+
+5.2 A grinding attack using difficulty resets
+
+As we discussed in §1.4, by splitting the chain into trunk and foliage and only
+using unique primitives in the trunk we prevent any kind of digging attacks
+(recall these refer to grinding attacks where an adversary tries to extend a block
+in many different ways) as the blocks in the trunk cannot be ground in any way.
+This simple argument ignores the difficulty parameter T, and we observe that
+using the same difficulty reset mechanism as in Bitcoin would allow for a subtle
+digging attack on Chia. On a high level, the reason is that the (ungrindable)
+trunk is not completely independent from the (grindable) foliage because the
+time parameter for the VDF depends on the difficulty parameter T, which itself
+is computed from the timestamps in the foliage.
+
+Using this connection one can launch a digging attack as illustrated in Fig-
+ure 7. Concretely, consider a chain of depth i — 1 (with head block y~1 =
+(8:1, a;—-1)) for an i that is a multiple of 2016, so after the ith block we'll have
+a difficulty reset. A malicious farmer with space S now
+
+1. Generates a trunk block 8; = (o;,7;) at depth i that extends 7;_1.
+
+29
+time (as indicated by timestamps)
+
+Bitcoin difficulty adjustment
+
+D D, = —tet_. pp.
+“ a XiTXi-2016 ©
+= ial
+Xi-2016 Xi Xi+2016
+Chia difficulty adjustment
+Tp T. Th
+< a o >
+Xi-3528 Xi-1512 Xi Xits04 Xi+2016
+Xi-2016 Ni+2528
+Ty, = LeTSstarmet py O.2Starget op
+nm XimXinisi2 ° Xi-1512—Xi-2016 P
+
+Figure 8: Illustration o
+the difl
+
+the difficulty adjustment in Bitcoin and Chia. In Bitcoin
+ficulty for the new epoch D,, (in red) is computed using the timestamps
+
+of the epoch D, right before it (in orange). In Chia the period to compute the
+
+new difficulty T), is shifte
+
+2. Generates many
+
+one fourth of an epoch backwards.
+
+foliage blocks (say 3, as illustrated in Figure 7) a}, a?, a
+
+3
+
+a
+
+which differ by containing slightly different timestamps. The farmer now
+
+has three ¢
+
+Each chain defines a
+used for blocks ai
+a different
+
+Extends each block 77
+
+i?
+
+slightly different difficulty parameter 7}, ..
+depth 7 +1,...,i +2016 as each T; is computed using
+imestamp.
+
+hains with head blocks y! = (8;,07), 9 € {1,2,3} at depth i.
+
+.,T3 to be
+
+J € {1, 2, 3} with a block hes = ((oi41, Teer), oa41)-
+
+As we use different time parameters t; = 0.H(oi41)-Tj, the VDF outputs
+
+Ti41 will be different
+PoSpace at
+
+, and then also the challenges c; = H(r},,) for the
+depth i + 2 will be distinct.
+
+The above constitutes a grinding attack where the malicious farmer can get
+
+arbitrary many challenges
+he can compute in paralle'
+
+) for blocks that are one block after a
+
+(the number is only limited by the number of VDFs
+if
+
+ficulty ad-
+
+justment. Being able to grind one block every 2016 blocks might not seem like
+
+a serious threat, but a mal
+can compute many VDFs
+the honest chain and thus
+outline Chia’s adjustment
+
+5.3 Difficulty adjustment in Chia
+
+The adjustment for the difl
+
+icious farmer with a small fraction of the
+in parallel could create fairly long forks t
+allow for double spending.!? In the nex!
+rocedure, which prevents this grinding a
+
+space who
+hat outrun
+section we
+tack.
+
+ficulty T' in Chia works similarly to the a
+
+Bitcoin discussed in §5.1, but to avoid the grinding attack outline
+
+justment in
+
+in §5.2 the
+
+13Consider a malicious farmer who controls 10% of the space and can compute 1000 VDFs
+in parallel. Then with probability ~ (0.1)? = 0.01 he’ll be able to finalize the two blocks at
+depth i and i+1 required for the grinding attack as quickly as the honest farmers, but he now
+has 1000 challenges for the block at depth i + 2. The malicious farmer can now compute the
+blocks at depth i+ 2,i+3,...as quickly as the honest chain if at every depth he discards the
+= 90% of the blocks that need longest to finalize. This way he can outrun the honest chain
+for © log;g(1000) = 4 blocks before no blocks are left. At this point he has generated a fork
+
+of depth 6 that is longer than t
+
+he honest chain.
+
+30
+adjustment does not kick in right after the timestamp used to compute it has
+been published, but is delayed by a few blocks.
+
+For concreteness, we discuss below the setting where an epoch in Chia has
+2016 blocks (i.e., as in Bitcoin), the target arrival time is 200 seconds (in Bitcoin
+it is 600), and we set the delay before the difficulty reset applies to one fourth
+of an epoch, or 504 blocks.
+
+Assume we have a chain of length ¢ where 2016 divides i, and let T. be the
+current difficulty parameter (used for blocks i — 1511 to i + 504), let T, be the
+previous difficulty parameter (used for blocks i — 3527 to i — 1512). Recall that
+xj denotes the timestamp in the jth block, let
+
+T': 512 - 200 T.4 504 - 200 Tr
+“Xi = Ninisi2 ° | Xi-1512 — Xi-2016
+
+Setting the next difficulty parameter T,, (for blocks i + 505 to i + 2520) to T’
+would result in an (expected) block-arrival time of 200 seconds assuming the
+space dedicated towards farming and the speed of the VDF is on average what
+it was for the last 2016 blocks. We basically set T,, to T’, but as in Bitcoin we
+don’t allow for a fluctuation larger than a factor of 4 in consecutive difficulty
+parameters
+To { min{7’,4-T,} if 7’ > T.
+me | max{T’,T./4} if I” < T.
+
+Let us give the intuition why this adjustment prevents the attack from §5.2. A
+malicious farmer can theoretically still launch a grinding attack as in §5.2, but
+now it is not sufficient to compute a (trunk) chain that is two blocks deep (i.e.,
+the blocks at depth 7 and i + 1 in Figure 7) before they get distinct challenges
+for the PoSpace (at depth i + 2). But now, they need to compute a chain of
+length two plus the 504 blocks one must wait before the difficulty adjustment
+kicks in, which is up to depth 7+ 505. If this 506-block fork lags way behind the
+honest chain, then the fact that the adversary gets many challenges at depth
+74+ 505 will not be enough for the adversary to catch up. If, on the other hand,
+the adversary is powerful enough to compute a very long (506 blocks) fork at
+a speed close to the honest chain then this adversary will already be able to
+generate shorter chains (but still long enough for double spending) faster than
+the honest parties with good probability due to variance in block generation
+times.
+
+5.4 On the importance of 4
+
+As outlined in §5.1, Bitcoin does not allow the difficulty parameter in adjacent
+epochs to vary by more than a factor of 4, and we adapt this rule in Chia.
+
+The choice of 4 might seem arbitrary, but in this section we’ll outline an
+attack against Bitcoin that would be possible if Nakamoto had bounded the
+fluctuation in-between epochs not by 4, but some value € less than e © 2.718.
+
+The attack is mostly theoretical for several reasons: it requires a 51% ad-
+versary, the gain to the adversary is rather marginal and the attack generates a
+
+31
+chain with very unbalanced timestamps and is thus easy to detect. We nonethe-
+less explain the attack in more detail as it is surprising that the value of the
+fluctuation bound opens an attack vector and it should guide the choice of this
+seemingly rather irrelevant parameter.
+As mentioned, in this attack we consider an adversary who controls the
+majority of the hashing power, called a 51% adversary. Such an adversary can
+louble spend, but they might choose not to do so in order to not undermine
+the trust in the currency, but instead use their resources to squeeze as much
+rofit from block rewards and transaction fees as possible. A 51% adversary
+can make sure 100% of the blocks in the longest chain are his (and thus get
+all the rewards) by simply ignoring all blocks generated by other miners, this
+way generating a block every 10 minutes in expectation. The adversary can
+increase this frequency by adding more hashing power, but this will only increase
+the frequency for one epoch as the next difficulty adjustment will bring the
+time down to the target frequency of 10 minutes again. If the adversary later
+lecreases the hashing power again to the original level, they will pay for the
+previous increase by creating blocks at a rate slower than 10 minutes for an
+entire epoch. A simple calculation shows that the best strategy is to just keep
+the hashing power constant.!4 This argument ignores the fluctuation bound €.
+In the next section we show that it is possible for a 51% adversary to publish
+blocks at a rate faster than the target time of 10 min while keeping the difficulty
+constant if and only if the fluctuation bound € is less than e + 2.718.
+
+5.4.1 An attack if €<e
+
+Assume Bitcoin used a fluctuation bound € < e © 2.718 instead of € = 4. Then
+for a positive constant 5 = 5(€) > 0 and some c = c(é) € Z*, there exists a
+chain of epochs (each of length c blocks) where the difficulty for the first epoch is
+Dstart and after the last epoch the difficulty (as computed from the timestamps
+contained in the chain) is Dena such that
+
+1) The difficulty drops by a constant factor Dena = Dstart : (1 — 4).
+
+2) The average block arrival time (as indicated by the timestamps) of the
+chain is at most 10 minutes.
+
+By the two points above a 51% adversary can generate a chain with an average
+
+block arrival time strictly below 10 minutes while not increasing the difficulty
+
+parameter as follows: They generate and publish the chain as above, and then
+attach an epoch with an average block-arrival time
+
+Dena
+
+Dstart
+
+-10 minutes = (1 — 6) - 10 minutes
+
+14F g. consider an adversary who first generates blocks every 10/2 = 5 min for one epoch.
+This will double the hardness parameter, and to get it down to the original value they will
+have to generate blocks at a 10-2 = 20 minute frequency for one epoch. This gives an average
+time of 5420 = 12.5 minutes over those two epochs and thus is slower than just sticking with
+the 10 minute frequency.
+
+32
+f i
+0.1 1.2 2.3 3.4 4.5 5.6 6.7 7.8 8.9 10
+
+Figure 9: Illustration of the attack from §5.4.1 for € = 2,e = 0.1. One unit
+on the x-axis is the target time for one epoch, the y-axis shows the difficulty
+(normalized so it starts with 1). We have 10 epochs in blue, the first of length
+€ = 0.1 which increases the difficulty by a factor of € = max{1/e,€}, followed
+by 9 epochs of length (1 + €) = 1.1, each decreasing the difficulty by a factor
+(1+e). These 10 epochs take exactly 10 units of time (one unit being the target
+time for an epoch), and the difficulty at the end is strictly below the difficulty
+at the start (in this example Dena = Dstart -0-84820). We then add an eleventh
+epoch shown in red which takes time Dena/Dstart = 0.84820 and thus brings the
+difficulty back to Dstart. So we fit 11 epochs in 10.84820 target times without
+changing the difficulty.
+
+which is strictly less than 10 minutes. After this epoch the difficulty becomes
+Dena Sse = Detart, 80 it is back to the initial difficulty, while the block-
+arrival time of the last epoch — and thus also the entire chain — is strictly below
+10 minutes.
+
+We will now explain how to construct a chain that satisfies points 1) and 2)
+above. An illustration is given in Figure 9. Let € < e © 2.718 and € > 0 be some
+small constant. Let Z := 2016 - 600 denote the target time (in seconds) for an
+epoch in Bitcoin. We will consider a chain that contains 1/e epochs, and let X;
+denote the time for the ith epoch divided by Z (here time means the difference
+between the timestamp in the last block of this and the previous epoch), so e.g.
+X; = 1 means the average block arrival time is exactly 10 minutes in the ith
+epoch. We set the timestamps in the blocks so the first epoch passes extremely
+quickly, while the others need slightly longer than the target. Concretely, we
+set the X; to
+
+Xy=e , X,=(1+6) fori=2,...,1/e
+
+The total time for this chain of 1/¢ epochs is
+
+et (2-+9=-
+
+We assume 1/e > €, then the difficulty grows by (the maximum allowed factor
+of) € after the first epoch. After that it decreases by a factor 1/(1+e) for 1/e—1
+epochs, and thus at the end is
+
+1 1/e-1
+Dena = Dstart (5 : -)
+
+As € goes to 0, the last term above goes to 1/e, ie.,
+
+1
+lt+e
+
+1/e-1
+lim Dena = lim Dstart - € - ( ) = Detart -E/e
+«0 «30
+
+33
+
+an) *
+anpatseaion tor frag
+
+pom ip Fis
+pews
+
+pent
+a b'ar2 be eprdpida
+
+Seer Se Sy
+
+> LEE EROS RO 25s Ba 2 9 2 OP AS PP SP SBS SDA AEP A
+
+10-0 ©en@0 0 a ame_00- 0-000 eb an 0000 _ © 0 000 meoweweur_cue_ce_emcme__o__0 emma
+
+0.367879
+Figure 10: Illustration of simulated samples of ce ; as computed by Algorithm 9
+for £= 100, h = 99 and & = 1 to 10 (bottom « = 1, top & = 10). We see how the
+time to grow a chain (of length ¢ by h honest farmers) drops from 1 (= ¢/(h+1))
+towards 1/e © 0.3678 as « increases.
+
+Thus, for any € < e, we can choose an € > 0 such that Dena is strictly smaller
+than Detar, as claimed.
+5.4.2 Optimality of the attack
+
+The particular attack we described only works if € < e, but it is not hard to see
+that this is not only sufficient, but also necessary. That is, a chain with average
+block arrival times below the target and where the difficulty at the end is no
+larger than at the beginning exists if and only if € < e.
+
+6 Chain Growth and «
+
+In this section we provide an initial security analysis of the Chia blockchain. We
+take inspiration from [GKL15] who introduce and analyze the Bitcoin backbone.
+
+34
+6.1 Our idealized setting
+As discussed in the introduction our analysis is in an idealized setting where
+
+i. we have no network delays,
+
+ii. we have no difficulty rese
+iii. an adversary can compute the VDF no faster than the honest parties,
+
+iv. and the PoSpace are ideal, i.e., they allow for absolutely no time-memory
+trade-offs.
+
+We consider this idealized setting so we can focus on the actual challenges.
+The analysis of Chia is non-trivial even with the above restrictions. This is
+in contrast to Bitcoin, where showing basic security properties (non-zero chain
+quality, liveliness and persistence) is trivial once we make assumptions i., ii. and
+the analog of assumption iv. which for Bitcoin means the PoW are ideal.
+
+We are confident — but haven’t worked out the details — that removing the
+above restrictions in our current analysis can be done using existing or straight-
+forward techniques (at the price of achieving weaker quantitative bounds and
+having more technical proofs).
+
+More concretely, the Bitcoin backbone paper [GKL15] takes network delays
+into account, and their follow-up work [GKL17] also considers difficulty resets.
+Removing restrictions i. and ii. should be possible along the same lines for Chia.
+As outlined in Remark 3, in Chia we can actually tolerate significant network
+delays without any degradation in security. As for iii., allowing the adversary
+to compute the VDF a factor ¢ > 1 faster than the honest parties has the same
+effect as increasing the adversarial space by a factor of ¢, so this can easily be
+taken into account.
+
+Let us also recall that we assume that every farmer dedicates exactly the
+
+same amount (N bits) of space, and we discussed in Remark 8 how to drop this
+assumption.
+
+Apart from the assumption discussed above, we of course always assume
+that the cryptographic building blocks are secure. In particular, we assume
+that the signature scheme satisfies the standard security notion of unforgeability
+
+under chosen message attacks, and that the hash function is collision resistant
+(whenever used for chaining) or (the stronger assumption) that it behaves like a
+random function (when used to map unpredictable values to uniform challenges).
+
+6.2 The random variable Chan modelling chain growth
+
+To formally argue and simulate the security of Chia we define — for K,h,@ € Z+
+—a random variable Cc whose distribution is the time required for the first
+path of length ¢ to appear in our idealized setting where h honest farmers grow
+a chain using parameters «, T = 1,7 = 1 (and there is at least one honest time
+lord to finalize blocks).
+We fix the difficulty T and the time 7 required to compute one step of the
+VDF to 1 simply because the time to grow a chain is linear in T and 7, so those
+parameters are uninteresting and we can keep the number of parameters low by
+fixing them (though, as outlined in Remark 6, the fact that difficulty can be
+reset complicates things).
+
+We will denote the expected value of this variable by
+
+Chan = BICK. a -
+
+Crh
+The pseudocode of sampling Ch is given in Algorithm 9.
+
+Remark 11 (How to start sampling oan if > 17). One difficulty we encounter
+when defining oan for & > 1 is how to define the “starting configuration” for
+sampling. We could assume that there is just one block to extend at the begin-
+ning, but (except for the genesis block) the honest farmers have k > 1 blocks to
+extend at every depth, so this would overestimate the time required to grow the
+chain. We can assume there are k blocks at the starting time, but this would
+underestimate the time, as in an actual chain those x blocks at a given depth
+will be finalized at different times. When defining C“ ,, we nevertheless opt for
+this option (i.e., in Algorithm 9 at line 2 we start with K blocks at time 0), but
+as the chain starts to behave in a “typical” way almost immediately after we
+start sampling it (this can be seen in Figure 3) Ch, is a good approximation
+for the actual time required to grow a chain no matter what the actual starting
+configuration is. Looking ahead, the reason we define 0, in §6.4 for large £ (in
+fact for lime_,..) is just so the exact starting configuration doesn’t matter.
+
+Algorithm 9 sample Ch,
+
+1: Input: «,¢,h
+
+2: s[1 sk] = > initially we have « paths of length 0
+3: fori =1 to ldo > sample ¢ steps
+4: for j =1toKdo > extend each of the « states...
+5: for k = 1 toh do > by A values...
+6: ply, k] = s[j] + rand((0, 1]) > each chosen uniformly from (0, 1]
+7: end for
+
+8: end for
+
+9: z = sort(p{1, 1],...,p[K, h]) > sort the «- h values
+10: s=2[l,...,4] > new state in the « shortest paths
+11: end for
+
+12: Return min(s)
+
+6.3 Analytical bounds on Cha,
+
+For « = 1 it is not hard to determine the exact expectation of Ch using the
+following fact
+
+36
+Proposition 1 (kth order statistics for uniform random variables). Let X1,...,Xn
+be iid each uniform in [0,1]. Then the expectation of the kth smallest value of
+those X; is
+
+k
+
+n+1
+
+Lemma 1 (« = 1 chain growth).
+
+£
+lth
+
+def
+
+Ch = BIC, nl = (5)
+
+Proof. Let Z; be sampled by sampling h random variables X1,..., Xp iid with
+uniform distribution in [0,1], then Cf, = > Z;. By Proposition 1 we have
+E[Z;] = , and by linearity of expectation
+
+e
+Cin = E[Ct,] = E ya] = Lee = — Oo
+
+As following a strictly larger number paths will always increase the growth
+speed, for any ¢,4,h we have
+
+Ctl >on (6)
+
+Fortunately, this speedup is not unbounded. Even as « goes to infinity, it can
+speed up chain growth by at most a factor e + 2.718
+
+Lemma 2 (upper bound on chain growth). For any ¢,h
+
+: £ -1 a -1 £
+lim ¢. 7, >€ =e CLh-
+K-00 Mh = l+h Se th
+0.3678
+
+The proof is in Appendix A
+
+6.4 1; and 6;
+
+It is crucial to understand how om ,, behaves as a function of « for two reasons.
+First, we need to know what happens in the limit « > oo to understand how fast
+a potential adversary (who can run an unlimited number of VDF servers) can
+grow the chain. Second, we would like to understand what happens for small «
+so we can set a good value for the honest farmers. Looking ahead, setting kK = 3
+seems to offer the best trade-off.
+
+As we only have analytical bounds for the extreme cases & = 1 and & = 00,
+we’ll rely on simulations for the values in between. Figure 3 on page 12 illustrates
+simulations for chain growth for 1 < « < 4. This figure might lead us to believe
+that, in contrast to the case k = 1, the chain does grow faster by an unbounded
+factor as K goes to oo. Fortunately, by Lemma 2 this is not the case, and the
+
+37
+maximum speedup one can get by using a larger k is e © 2.718. In Figure 10 we
+show a simulation up to a larger & = 10 where this convergence becomes visible.
+
+We define 0, € [0,1] as the factor by which one can speed up chain growth
+by extending « instead of just one chain:
+
+14h tim BICL)
+
+L £-400,h—00
+
+Oc = tim ELC l/EICi n] =
+£—00,h—-400 ’ ’
+We define this value in the limit for large @ and h, but it converges very fast
+so we can get good approximations by sampling C% ,, for fairly small finite @, h.
+The reason we consider the limit in @ is the issue with the starting configuration
+for sampling outlined in Remark 11. We have
+
+e 6, =1 by definition.
+© O5, > 1/e & 0.367 (by Lemma 1 and 2).
+
+e Vi : 6:41 < 6; (as following more paths always gives strictly more advan-
+tage).
+
+Simulated values for 0;,i = 1,..., 100 are shown (by the blue line) in Figure 2
+on page 11.
+
+We define 1; as the fraction of the space honest farmers following a K = i
+strategy must control so they can grow a chain faster than a malicious farmer
+who controls the remaining 1 — 1; fraction of the space and follows a k = co
+strategy. We will use this value in the next section to state interesting security
+properties of Chia. We claim that
+
+1
+
+~ 1+e-6 (7)
+
+“Ss
+Before we prove this simple claim, let us observe as a sanity check that for i = co
+we get to, < 1/2 (using 0. > 1/e) which makes sense as here the honest and
+malicious farmer do exactly the same thing, so having half the space (i.e., as
+much as the malicious farmer) is sufficient. In the remainder of this section we
+will derive eq.(7). Farmers following a « = i strategy with space s can grow a
+chain at the same speed as an adversary (who follows a & = oo strategy) with
+space s’ if s/0; = s'/0,.. Using 0. > 1/e this gives
+
+8/0; = 8' [0x <e-s'.
+
+Using this in the last step below, we can give a lower bound of the fraction —_
+
+of the total space the malicious farmer can control as
+
+s! 1 s 1
+sits 14+s/s' ~ 1+e-6;
+
+1-4
+
+38
+pi : :
+g vA
+E ff
+3 4
+508 1
+= /
+E va
+2 va
+2 4
+zB 4
+3 O6F A 4
+3
+Fi y
+= wa
+5 . Y
+8 Fair share p =e ~~
+3 y ;
+S oat 4 ; 4
+3 So K = 00
+e /
+§ :
+£  Bitcoin upper and/ ~ K=1
+Poa} SO lower bound /— : |
+z p=1-t K=3
+g u Je
+£ Yo ;
+5
+a [
+£ ty ra
+
+05 0.6151 0.73106 1
+fraction of resource (hashing power/space) controlled by honest miners/farmers  L
+
+Figure 11: This figure illustrates the achieved chain quality — i.e., the fraction
+p of blocks (y-axis) that are guaranteed to come from honest miners/farmers —
+assuming they hold a z fraction (x-axis) of the total hashing power/space. The
+green line shows the wishful ideal bound p =. where no strategy is better than
+the honest mining strategy. The blue line illustrates the Bitcoin chain quality
+p = 1— +, which is matched by selfish mining attacks [ES14]. For Chia we
+show that p > 0 if . > 1; whenever the honest farmers follow a « = i strategy.
+The figure shows 4; = e/(1 + e) © 0.73106 (proven analytically), 13 * 0.6151
+(by simulations, Chia will use « = 3) and 14. = 0.5 (trivially). In all cases we
+don’t know exactly how p goes from 0 to 1 as u increases from 1; to 1 (the dotted
+lines).
+
+6.5 The Chia Backbone
+
+In §6.4 we established that honest farmers following a « = i strategy can grow
+a chain faster than a malicious farmer who can compute an unlimited number
+of VDFs in parallel (and thus follow a % = oo strategy) if the honest farmers
+control at least a 1; fraction of the total space. We proved analytically that
+41 © 0.731 and, using simulations, that 13 ~ 0.615. In Chia the honest farmers
+will follow a «& = 3 strategy for farming.
+
+Thus, it is necessary to assume the honest farmers following a « strategy
+control at least a 1, fraction of the space, as otherwise attacks like double
+spending would be possible. In this section we show that assuming this is also
+sufficient to guarantee a meaningful security property for Chia.
+
+Concretely, we consider the notion of chain quality which was introduced
+for Bitcoin in [GKL15] : the chain quality is p € [0,1] if in any sufficiently long
+part of the chain (as seen by honest parties) at least a p fraction of the blocks
+
+39
+must have been contributed by honest miners. If the miners control av € (0, 1]
+fraction of the hashing power, we ideally want them to contribute a p =z fraction
+of the blocks so their share of block rewards corresponds to their share of the
+contributed resource, this is illustrated by the green line in Figure 11. Chain
+quality might not seem like the most important property of a blockchain, but
+it implies natural properties like persistence (once a block is sufficiently deep in
+the chain it will stay there forever) and liveness (all transactions will ultimately
+be added to the chain and end up sufficiently deep so they can be considered
+confirmed).
+GKL15] show that Bitcoin achieves a chain quality of p = 1 — iS, as
+illustrated by the blue line in Figure 11. Although this is much worse than the
+“fair” p =, it is the best one can hope for as this upper bound is matched by
+selfish mining attacks [ES14]. For Chia we prove that if the honest farmers use
+ak =i strategy, then the chain quality is non-zero whenever ¢ > 1; (where 1; is
+the fraction of space required to grow a chain faster than the malicious farmers
+introduced in the previous section). Unlike for Bitcoin, we currently don’t know
+how exactly the chain quality p improves as the fraction « of space controlled by
+the honest farmers increases from 1; to 1, that is, how exactly the dotted lines
+between the (z;,0) and (1,1) points behave in Figure 11.1°
+
+Lemma 3 (Chain Quality of Chia). In the idealized setting from §6.1, the fol-
+lowing holds for any i € Z*: if the honest farmers follow a « =i strategy and
+control more than a u; fraction of the space (that is, we have h honest farmers
+each controlling N bits of space, and one malicious farmer with m-N bits of
+
+space where wan > ;) then the chain quality is non-zero.
+
+Before we can prove this lemma we first need to prove the following
+
+Lemma 4 (No Slowdown Lemma). Jn the idealized setting from §6.1, an ad-
+versary cannot slow down chain growth. That is, no matter what the adversary
+does, the honest parties will see a chain that (in expectation) is at least as long
+as if the adversary were not present. This even holds if the adversary has a
+much larger amount of space and can compute the VDFs much faster than the
+honest farmers (but we need to assume the signature scheme is secure).
+
+Note that this lemma by itself gives no meaningful security guarantee, it
+only says there always will be a chain in the view of the honest parties that is
+at least as long as if the adversary was not present, but this chain could contain
+only adversarially generated blocks (0 chain quality) and the adversary might
+even replace the entire chain (no persistence).
+
+Proof of Lemma 4. We do assume that the adversary knows the identities, that
+is the public keys pk of all the honest farmers, but does not know the corre-
+sponding secret keys. As already discussed in Remark 2, because of this an
+adversary will not be able to predict the quality of the PoSpace of the honest
+farmers.
+
+15(1, 1) is on this curve as for . = 1 we trivially have p = 1 because the honest miners/farmers
+will trivially get all the blocks if the malicious miner/farmer has no resources whatsoever.
+
+40
+We claim that because of this, whenever the adversary publishes a block, this
+can (in expectation) only increase the speed at which the chain grows. If this
+block is ignored by the honest farmers (because it is not within the first « blocks
+at this depth) this is clear. Otherwise the honest farmers will extend this block
+instead of some other block they would have extended. But from the viewpoint
+of the adversary, who does not know the secret keys, the distribution of qualities
+those blocks will have is exactly the same for the new and the kicked-out block.
+Because the new block must be finalized before the kicked-out block, this can
+only increase the speed at which the chain grows.
+
+Proof of Lemma 8. Assume for contradiction that the chain quality is zero. This
+means the entire chain as viewed by the honest parties only contains blocks
+armed by the adversary. By Lemma 4, this chain is at least as long as the
+chain the honest farmers would have mined if the adversary were not there.
+This is a contradiction as by definition, an adversary controlling less than a
+1 — 4; fraction of the space cannot grow a chain faster than honest farmers
+ollowing a i = « strategy.
+
+References
+
+AACt17| Hamza Abusalah, Joél Alwen, Bram Cohen, Danylo Khilko,
+Krzysztof Pietrzak, and Leonid Reyzin. Beyond hellman’s time-
+memory trade-offs with applications to proofs of space. In Tsuyoshi
+Takagi and Thomas Peyrin, editors, ASTACRYPT 2017, Part II, vol-
+ume 10625 of LNCS, pages 357-379. Springer, Heidelberg, December
+2017.
+
+BBBF18] Dan Boneh, Joseph Bonneau, Benedikt Biinz, and Ben Fisch. Veri-
+fiable delay functions. In Hovav Shacham and Alexandra Boldyreva,
+editors, CRYPTO 2018, Part I, volume 10991 of LNCS, pages 757—
+788. Springer, Heidelberg, August 2018.
+
+BBF18] Dan Boneh, Benedikt Biinz, and Ben Fisch. A survey of two verifi-
+able delay functions. Cryptology ePrint Archive, Report 2018/712,
+2018. https: //eprint.iacr.org/2018/712.
+
+CP 18] Bram Cohen and Krzysztof Pietrzak. Simple proofs of sequential
+work. In Jesper Buus Nielsen and Vincent Rijmen, editors, EU-
+ROCRYPT 2018, Part II, volume 10821 of LNCS, pages 451-467.
+Springer, Heidelberg, April / May 2018.
+
+DFKP15] Stefan Dziembowski, Sebastian Faust, Vladimir Kolmogorov, and
+Krzysztof Pietrzak. Proofs of space. In Rosario Gennaro and
+Matthew J. B. Robshaw, editors, CRYPTO 2015, Part II, volume
+9216 of LNCS, pages 585-605. Springer, Heidelberg, August 2015.
+
+41
+ES14
+
+GKL15]
+
+GKL17|
+
+Piel8
+
+org/2018/627.
+
+Wes 18]
+
+Juan A. Garay, Aggelos Kiayias, an
+backbone protocol: Analysis and applications. In Elisabeth Oswald
+and Marc Fischlin, editors, EUROCRYPT 2015, Part II, volume
+9057 of LNCS, pages 281-310. Springer, Heidelberg, April 2015.
+
+Juan A. Garay, Aggelos Kiayias, an
+backbone protocol with chains of variable difficulty. In Jonathan
+Katz and Hovav Shacham, editors, CRYPTO 2017, Part I, volume
+10401 of LNCS, pages 291-323. Springer, Heidelberg, August 2017.
+
+Krzysztof Pietrzak. Simple verifiab
+ePrint Archive, Report 2018/627, 2018.
+
+PPK+15] Sunoo Park, Krzysztof Pietrzak, Al
+Fuchsbauer, and Peter Gazi. Spacemint: A cryptocurrency based on
+proofs of space. Cryptology ePrint Archive, Report 2015/528, 2015.
+http://eprint.iacr.org/2015/528.
+
+Benjamin Wesolowski. Efficient veri!
+
+Ittay Eyal and Emin Giin Sirer. Majority is not enough: Bitcoin
+mining is vulnerable. In Nicolas Christin and Reihaneh Safavi-Naini,
+editors, FC 2014, volume 8437 of LNCS, pages 436-454. Springer,
+Heidelberg, March 2014.
+
+Nikos Leonardos. The bitcoin
+
+Nikos Leonardos. The bitcoin
+
+e delay functions. Cryptology
+https://eprint.iacr.
+
+bert Kwon, Joél Alwen, Georg
+
+fiable delay functions. Cryptol-
+
+ogy ePrint Archive, Report 2018/623, 2018. https: //eprint.iacr.
+
+org/2018/623.
+
+A Mi*issing Proofs for Chain Quality
+
+In this section we prove state and prove Theorem 1, Lemma 2 follows as a
+
+corollary of this lemma.
+
+For h,¢ € Z*, let Ty,¢ denote the full h-ary tree of depth ¢ where each edge
+is labelled with a value iid chosen from [0, 1]. The weight of a path in this tree
+
+is the sum of the labels of t
+random variables:
+
+(el
+
+Kh?
+
+he edges on this path. We consider the following
+
+As sampled by Algorithm 9. That is, given Th,, we consider the paths
+
+from the root to the leaves, where we start at the root, and in every level
+
+keep track of the « pat
+
+hs with lowest weight (if « < h, there are h* of
+
+them). For the important special cases where we just keep track of one or
+
+all paths we introduce
+
+Hy e Ch : is the weight of
+where at each node we
+a leaf).
+
+def
+Alf oe
+
+oo,h #
+
+42
+
+he following variables.
+
+the path (of length £) starting at the root of Th,
+ollow the edge with smallest value (until we reach
+
+: is the minimum weight of any path from the root to a leaf in Th, ¢.
+Tas? &
+
+Figure 12: Illustration of outcomes of the variables Th, Hi, Ay, Ze for h = 2 and
+l=3.
+
+Y‘ : is the sum of @ iid values chosen uniformly from [0, 1].
+Z + is min{Y“[]],...,¥‘[h“]} where each Y“[i] is iid as above.
+
+We use the corresponding small letters to denote the expected values of those
+variables, e.g., hy, denotes E[Hy].
+
+: Note that for ¢ = 1 we have!® Hj ~ A} ~ Z}, and in particular h} = aj =
+Zhe
+
+Hy corresponds to the time required to farm a path of length @ using h space
+
+by the honest farmers, who always extend the best proof found. Aj, corresponds
+to adversarial (or rational) farming where one extends every possible chain. Z/
+is just introduced for technical reasons, it is much easier to analyze than At,
+and by Lemma 5 it is a lower bound for A‘.
+
+Lemma 5. For any h,¢, the following holds for all x € {0, 4]
+Pr[Zp < a] > Pr[Ah < a]
+
+and thus also
+a < ay, :
+
+Proof sketch. Pr[Zf < a] as well as Pr[Aj, < a] both consider the event that at
+least one of h‘ paths, each of length ¢ and each edge assigned a weight that is
+a uniform value in [0,1], has weight at most x. The only difference is that the
+in the latter, the edge weights are correlated (as many paths in the tree share
+edges). The expected number of paths of length < x (or any other predicate) is
+exactly the same in Zh as in AY. But intuitively in Zi the probability of at least
+one path being short can be larger because the lengths are positively correlate
+in A’. We omit making this argument formal.
+
+We proved Lemma 1 which states
+
+£ yp def 0 L
+hy, chan, = E[Chn lth’
+
+164 ~ B means the random variables are identically distributed.
+
+43
+= ay, < hi, = Ch ns and to prove Lemma 2 we have to
+
+By definition Con
+bound how much smaller ay, can be than hi.
+
+The concrete question we ask is, if honest farmers have space h, what’s an
+upper bound on the space M = M(h) we can give an adversary (that expands
+all paths) such that they can’t grow a chain faster than the honest guys. By
+
+the following theorem, setting M = h/e is sufficient.
+Theorem 1. With h = eM (where e © 2.718) and l/h <1
+Pr[A4, > hj,] > 1—1/e > 0.632
+
+Proof. The cumulative distribution function of Y¢ is!”
+
+le]
+Pr[Y* < a] = a a (a—k)*.
+~~ k=0
+
+We will consider the case x = ¢/eM = ¢/h, as £/h <1, the above sum just has
+one term. Using ¢'/e'! < fl, we get
+
+Ui iQ £ x e 1
+Pr/y’< =-S\(-1)' e—k)f= t= .
+“| S =a a >| ) @r Y= > Tear < oar
+Thus, by the union bound
+pr zi, <——| <prfy?< | ut <1/e
+M~eM|~— ~ eM ~
+
+Using Lemma 5 in the first step and hi, = ¢/(eM +1) together with the above
+equation in the second step
+
+Pr [Ay < hj] < Pr[Zh, < hj] <1/e.
+
+Equivalently,
+Pr [A§, > hh] > 1—1/e > 0.63 .
+
+https: //en.wikipedia.org/wiki/Irwin-Hall_distribution
+
+44

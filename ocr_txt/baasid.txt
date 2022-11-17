@@ -1,0 +1,3836 @@
+Blockchain as a Service for ID
+
+The English version of whitepaper is the main official source of
+BAAS token-related information. The whitepaper will be translated
+into other languages as needed and used in writing or verbal
+communication with existing and potential customers, partners, etc.
+During translation or communication, some of the information may
+be lost, damaged or inaccurate. The accuracy of such alternative
+communication cannot be guaranteed. If there is any conflict or
+inconsistency in such translation and communication, the original
+English version of whitepaper will be referred to as the benchmark.
+
+White Paper
+V3.4.33
+
+aN
+
+&83 BaaSid.com
+
+as
+
+oN
+Instant Private Certification Platform
+Based on
+
+the Public Network of Blockchain
+
+“Independence from the Database”
+
+White Paper
+
+(patent application)
+
+, 23 BaaSid.com
+
+NZS,
+
+Definition of terminology
+
+For a clear explanation and understanding of the "BaaSid" project, this white paper will place a priority on
+using descriptions that use both correlating words and unfamiliar words.
+
+Terminology
+
+BaaS
+
+"BaaSid"
+
+BAAS
+
+COPN
+
+Split ID
+
+Split Block
+
+Instant
+Access
+
+Hyper
+Confirm
+
+Content
+
+"Blockchain as a Service" is a concept that means enabling many unspecified internet
+suppliers to easily borrow blockchain based technology and infrastructure. (Example) SaaS :
+Software as a Service
+
+As one BaaS project, this project means various login, personal identification, and other
+certification services developed on a public network.
+BaaS + [D(dentification)
+
+"BaaSid" refers to the unit of cryptocurrency all internet service providers and users
+(participants) provide, use or exchange with one another that originates through the service.
+
+The abbreviation for Certification of Public Network, which is a public network
+infrastructure where an internet service provider’s database or a third party certification
+authority, user or device all have a centralized database, or through the voluntary
+participation of nodes (participants) in a non-storage public network, important personal
+information is split into other fragments and divided among each other before splitting,
+distributing and saving.
+
+These are the smallest units of encrypted data that are split, distributed and stored in ways
+different from each other on the fastest, most optimized nodes for the user after personal
+information in a wide variety of formats (text, images) is encrypted, and split into thousands
+of small fragments using a split engine.
+
+This is the smallest block unit that is composed of one participant group where split IDs that
+are split and divided in ways different from each other on the fastest, most optimized nodes
+(unspecified partcipants) for the user.
+
+This means a one-time instant access privilege where Split IDs are called, which were saved
+in ways different from each other by an unspecified number of providers within the split
+block one belongs to, to quickly and safety proceed with login, instant membership, and
+payment authentication.
+
+Through a safe and easy verification via instant access, login, instant membership, payments,
+and wire transfers can be performed through the Certification of Public Network (COPN)
+without any intervention by a provider database, third party certification authority or Payment
+Gateway (PG).
+
+¢23 BaaSid.com
+5
+
+2569
+BaaSid”
+
+Index
+
+1. Background of “BaaSid”
+
+- What is "BaaSid“ page 7
+
+- Decentralization page 8
+
+- Why "BaaSid“ page 10
+- Split & Distribution Engine page 11
+- Split ID page 12
+- Combination Engine Descrambling and Verification Stage page 13
+- One Pass: an all-in-in sophisticated verification page 14
+- BaaS Certification API Service pgae 15
+- "DB Governance” of BaaSid Participants page 16
+
+2. Introduction
+
+- Limitations of and problems with blockchain page 18
+- Borrowing the DB of BaaS based participants page 19
+- Split & Distribute Data page 20
+- Verification that is user-centered based on the Certification
+Certification of Public Network (COPN) page 21
+- Split Block and Crypto exchange Block page 22
+- Proof of integrity for Split & Distribute data page 23
+
+3. BaaS (Blockchain as a Service)
+
+- “BaaS Union” page 25
+- The Benefit of User and OSP using "BaaSid“ page 26
+
+“
+
+4. “BaaSid” Component
+
+- Instant Access API page 30
+
+- “BaaS” User Database page 30
+
+- PoA(Proof of Access) & PoH(Proof of Holding) page 31
+
+- Transaction validator page 32
+
+- BaaS (Blockchain as a Service) page 32
+
+- Specifications page 33
+er 4
+&1) BaaSid.com
+Index
+
+5.
+
+Vision of “BaaSid”
+
+- Standard of BaaS
+
+5
+
+2569
+BaaSid”
+
+- Internet Service Market
+
+- Big Data Service “BigBaaS”
+
+- Use and Circulation of
+
+6. Team & Partners
+
+7.
+
+8.
+
+- Organization
+
+- BaaSid’s Business and
+- BaaSid’s R&D / BaaS
+- BaaSid’s Marketing
+
+- BaaSid’s Advisor
+
+BAAS Token
+
+Operating
+Lab
+
+- BaaSid’s Legal Support
+
+- Global Business Partner
+Roadmap
+- Roadmap
+- Simple Work Breakdown Structure
+- BAAS Token issuance
+- Use of the raised funds
+
+- Legal Announcement
+
+Know more about BaaSid
+
+- News
+- Channel information
+
+en
+Or
+
+er08)
+
+BaaSid.com
+
+page 35
+page 35
+page 36
+page 38
+
+page 40
+page 41
+page 44
+page 49
+page 52
+page 54
+page 55
+
+page 60
+page 61
+page 62
+page 63
+page 64
+
+page 66
+page 92
+Gs.
+-:
+b?
+
+&
+YS
+
+BaaSid”
+
+“100% Decentralization”
+
+oak
+
+1} BaaSid.com
+
+LES,
+1. Background of "BaaSid"
+
+1.1 What is "BaaSid"?
+
+In this white paper, BaaS is the abbreviation for Blockchain as a Service, which is a
+concept where a blockchain infrastructure is borrowed partially, or in its entirety, for the
+development of internet services related to exisiting web services, app services, and
+
+blockchain services (cryptocurrency exchanges, etc.).
+
+In this BaaS infrastructure, “BaaSid" will offer certificate services to the internet service
+provider from an unspecified number from a P2P based split and divided powerful, yet
+
+safe database that is based on a public network.
+
+Also, it is intended to replace a third party certification authority, or payment gateway (PG)
+
+with a shortened procedure that is safer and more convenient.
+
+All the unspecified OSP providers on the internet have partially borrowed existing SasS,
+
+IaaS, PaaS or ASP services to use according to their business goals.
+
+In the new world of the blockchain, via the concept of BaaS, diverse software and
+technology will be borrowed from the necessary parts of the Blockchain Infra API,
+database, or going one step further, the mobilization of node members (users or
+participants), network resources, and other diverse forms of blockchain infrastructure that
+
+are experiencing explosive growth.
+
+Government
+& Third parties
+
+Payment
+Gateway
+
+ASH Online
+Banking
+
+oer
+
+R83
+
+S
+
+‘ers
+BaaSid”
+Connected
+C0) Shopping
+@
+‘+ Crypto Currency
+Exchange
+
+["BaaSid" : Blockchain as a Service for Identification]
+
+"BaaSid" was designed to help process the various phases of verification, offering all
+internet service providers and all users a more convenient and safer way to login, and this
+could act as an enabler for more lively communication between the providers and user.
+
+13} BaaSid.com
+1. Background of "BaaSid"
+
+1.2 Decentralization?
+
+The most central goal of blockchain from a technological standpoint lies in the technology
+that offers tight security and perpetuality for participants' property using a public ledger to
+block any forgery or falsifications by hackers.
+
+In all internet services, various forms of personal information is saved and used on the
+database servers of many online service providers (OSP), third party certification
+authorities, and user devices. Based on this, many important activities take place over the
+internet, uninterrupted such as login, various verifications, shopping, and financial
+payments among others.
+
+Even in blockchain services that are oriented towards decentralization, this shows the
+limits that already exist in other types of centralization.
+
+ckchain side
+Decentrali: ation
+
+Ser vice side
+
+(7
+
+Centralization (ra)
+Security
+System
+
+ifth m
+
+Government - Third Parties
+
+ms Eid
+PG
+
+Identification Certificate
+
+User Log-in & Certification
+
+[General internet service (including block chain service) environment]
+
+(3 BaaSid.com 8
+1.3 Decentralization!
+
+In the "BaaSid," via "one-time instant access" that utilizes a certification of public
+network, participants and providers alike can attain quicker verification with tighter
+security and greater ease.
+
+In particular, sensitive personal information including, name, phone number, email
+address, ID, password, credit car numbers, biometric information, etc. is split, after which
+it is split into data fragments unique to the hundreds and thousands of nodes, which are
+then distributed and saved different from one another, enabling verification, login and
+other functions to be peformed in the absense of a source of such personal information.
+
+@ Crypto Exchange 0 e@
+@ ad Block -B
+
+Stock Market
+
+©
+
+Split Block-B
+
+© @
+
+e
+e Split Block-A
+
+@.
+
+on
+
+Shopping
+
+Tell Block-K
+
+USER
+lit Block]
+999~9,999 members
+
+o Kh eo
+@ sir vox @
+
+Blockchain ‘side
+
+Decentralization
+@ plit Block-H
+
+©
+
+Shopping
+
+[COPN : Certification of Public Network]
+
+Here, this means that an individual temporarily makes oneself centralized, then summons,
+descrambles and combines the split ID that was encrypted thousands of times from the
+Certification of Public Network of the “BaaSid" via a “biometrics verification key,” after
+which the information is instantly discarded the instant the “one-time instant access” is
+complete.
+
+ve
+
+IF.
+oO.
+
+§13 BaaSid.com
+
+9
+The "BaaSid one-time instant verification" is a method where an internet service provider
+develops and maintains another centralized database, or undergoes a "third party
+certification authority" or in the absence of a source to compare, based on the Certification
+of Public Network of "BaaSid," an unspecified number of participants are verified.
+
+This is the total opposite method that has been employed so far on the internet which was
+composed of an individual certification structure for everyone. Yet, the goal of "BaaSid" is
+to create a link between blockchain and non-blockchain methods, perform verification in
+the absense of a source, and to achieve complete decentralization through a public network
+consisting entirely of participants (users or nodes) without the necessity of an authenticated
+certificate from a third party certification authority.
+
+1.4 Why "BaaSid"?
+
+The philosophy behind the blockchain dreams of world that is free from the centralization
+of existing vested interests such as governments, banks, institutions, corporations (various
+forms of political, economical, social and cultural powers and for-profit or non-profit
+powers of concerned groups) from where asset trading and credibility is maintained by
+means of a public ledger for individuals to create proactive opportunites for themselves
+amongst a wide range of parties concerned.
+
+The direction the era is taking greatly demands transcending the distrust that arises when a
+centralized power group, that takes many forms, supplants the public sphere, and replacing
+this with a massive network consisting of individuals directly taking part.
+
+Blockchain is significant in that it protects the various forms of individual property (money,
+real estate, intellectual property, and all other types of property) through decentralization,
+with the same information promised to the public by organizations or corporations that are
+susceptible to hacking, loss and falsification, enabling individuals to enjoy a higher quality
+of life and obtain better value.
+
+However, with such blockchain technology and use, other types of centralization continue
+to come into being and there are doubts and limitations as to how they stand up to the threat
+of hacking. And this situation is spawning a slew of diverse companies and services.
+
+The most prominent case is centralizing, saving and maintaining information on various
+internet service users based on the blockchain.
+
+Already, there were many cases where databases (DB) with personal information stored, or
+other centralized databases were hacked. And event today little can be done to ease the
+anxiety surrounding such cases.
+
+The blockchain technology itself nearly completely guarantees permanence and security
+against forgery or falsification, but the various services that are linked to this are already
+showing many limitations.
+
+Despite these limitations, in virtual currency exchanges that use blockchain technology and
+in the various free and charged services attempts to collect and hack important and
+sensitive personal information is still a source of anxiety for participants, users, and service
+providers.
+
+(3 BaaSid.com
+
+10
+Even among services that are not based on the blockchain, when it comes to various
+internet based services, regardless if blockchain technology is being applied or not for:
+login information (ID & PW), new registration for services (entering personal information),
+virtual currency wallet (development of a DB through personal information registration)
+shopping payments (registration and exposure of credit card numbers and other sensitive
+information) IT corporations or institutions face a wide range of threats and challenges
+from the severe storage and leakage of personal information at all stages of internet
+services.
+
+And a more serious problem is that one's personal information can be leaked anytime,
+anywhere, anyhow with the individual unaware about how this information is being abused,
+and even if the individual becomes aware, by that time it is too late.
+
+1.5 Split & Distribution Engine
+
+:
+
+E-mail address
+Phone number
+ID number
+Ete...
+
+| Encryption
+
+Image data
+ID card
+Privacy image
+Finger printing
+FIDO image
+Ete...
+
+Private Key
++Split ID
+
+Public Key
++ Split ID
+
+Distribution Engine
+(Allocation)
+
+Split Engine
+Text data
+Name Data on personal information is
+Birth day encrypted, then split into
+
+thousands of small fragments
+after which a split ID with a
+characteristic value is created.
+At this time, the source is
+discarded and simply no longer
+exists anywhere.
+
+Distribution Engine
+
+The encrypted data fragments
+(Split ID) that were thoroughly
+split are then split and
+distributed to the fastest nodes
+(split block).
+
+Split Block
+Split Block
+
+Split Block
+
+Split Block
+
+Split Block
+
+Split Block
+Split Block
+
+Split Block
+Split Block
+
+ez9h
+
+11
+1.6 Split ID
+
+The personal information of participants is split into thousands of fragments using the split
+engine and all these fragmented Split IDs are then encrypted and the Split IDs that are
+different from one another are then stored within the split blocks they belong to.
+
+This resembles the process of the biggest advantage of Peer to Peer (P2P), taking the values
+of separated data allocation and split and distributed fragments and finding the fastest nodes
+and data most rationally, then combining them to form something that resembles the one
+source that can be downloaded or restored.
+
+Does not exist
+anywhere
+
+Personel
+information 3 |
+
+Anonymgiaia Anonymous F
+go ll
+Split ID Split ID
+
+ll
+
+AnonymoZB
+
+Be
+
+Split ID
+
+W
+
+Anonymous G
+
+f7 | [>|
+
+Split ID
+
+W
+
+Distribute Distribute e
+Anonymggs Anonymous H
+goo gnc
+Split ID i
+
+ll
+
+AnonymgiiD
+
+Bae
+le oY
+
+i}
+Pees
+Bone
+
+Anonymous I
+
+Le [=| |
+
+Anonym@if Anonymous J
+PEE PTs] +
+Split ID Split ID
+[Creation of a Split ID and Splitting Distribution]
+13 BaaSid.com 0
+Yer .
+1.7 Combination Engine Descrambling and Verification Stage
+
+The split IDs of the participants maintain each of the unique password codes along with
+the public key, and this unique split data will be maintained continuously and safety
+through the virtual currency wallet of "BaaSid" and through ongoing transactions.
+
+And when participants and an unspecified number of partcipants participate to access a
+specific internet service, they will be mutually granted one-time instant access which
+confirms the verification.
+
+!
+
+i
+Instant (on) 1 third party |
+Internet access Jo Y---> 1 certification!
+. ———— --- i !
+
+Ice... i
+
+Service — ! t authority t
+i !
+
+L
+
+Start
+No need of service provider DB _-~} Verification cota!
+
+No need of a third part
+ee eX ed of a third party
+
+i certification authority
+1
+1 a) er : .
+| Server | Split ID Call Signal
+Anon fete fe [af Seeman
+
+Split ID
+
+Anonymous G
+
+Split ID W
+Gathering )
+Anonymous H
+Combining & Decryption fo |= | x |
+sib 7X sib
+| | MW / Biometrics | | pit
+Anonymg@@gD e Verification ®@ Anonymous I
+Pe lsl>| D | tvs Pets
+56 55 39
+yi) (Instant
+ie ID W Access Key) l ", ID W
+‘Anonymagy Verification Complete Anonymous J
+Etats ele f«|
+Split ID Split ID
+[Participation and Verification of a Split ID]
+
+‘Oo 1) BaaSid. com
+
+1.8 One Pass: an all-in-in sophisticated ver ification
+
+“BaaSid” sanctions and confirms all verifications based on the consent of an unspecified
+number of participants.
+
+This is based on participation by a number of blockchains, and values that are more creative
+and unique from one another give it more value.
+
+The logic where it would seem personal information or privacy should be respected and
+protected.
+
+Even within the blockchain service, the practice of saving personal information on a third
+party institution's or provider's server that persists is no different from the centralization of
+banks, financial institutions and certain groupsthat preceded the start of the block chain.
+However, the blockchain still has no answer to that no offers any guarantees.
+
+“BaaSid's” BaaS API enables providers to free themselves from the accountability of such
+
+protections and of the management of unique important information, and offers various
+services to release providers from the personal information policy, implementation and
+
+stages that can prove to be puzzling.
+
+Phone SMS Verification
+
+ird party certification authority
+ID& PW authenticated certificate
+
+x
+
+1*
+
+xx
+
+OTP
+(One time password)
+
+Biometrics
+
+E-mail Verification = Identification
+
+Credit card
+information
+
+aN
+
+¢23 BaaSid.com
+
+“EG:
+
+14
+1.9 BaaS Certification API Service
+
+For personal originality and privacy protection “BaaSid” saves the small fragments on an
+unspecified number of nodes after a random splitting and distributing of the characteristic
+values, and through the exchange of BAAS tokens, and various verifications, ledgers of
+verification, which creates and preserves credibility.
+
+This uses a verification method known as Proof of Access (POA), which is an active
+ecosystem that periodically verifies utilization through major activities on line including
+the login and all other aspects of internet service by the user.
+
+The BaaS based Certification of public Network (COPN) API verifies and continually
+connects based on the active and natural activity of such users.
+
+-
+( eoee fal Absense of a Original copy
+
+1234
+
+No need for ID& PW Tight 2-tier confirmation
+Public & Private key Instant Access
+Double Lock
+
+EY;
+
+Personel information protection J In case a web, app, deletion, key loss,
+
+Privacy smart device is lost
+a quick and easy restore is possible
+Quick access
+AR i 15
+&1) BaaSid.com ;
+1.10 "DB Governance” of BaaSid Participants
+
+"BaaSid" does not particularly discriminate between blockchain based services and web
+or app based services. The user (participant) needs both services, and this is because the
+users benefit providers in various ways.
+
+"BaaSid" participants are clients that are already aggressive and have potential, and
+they make up the database for a safe login and verification where they trust one
+another and verify one another.
+
+In other words, "BaaSid" participants can access all websites (application standard of
+"BaaSid's" API) including those of financial institutions, banks, brokerages, and retail
+with tight security and convenience, quickly and safely. "BaaSid" has this type of
+potential customer infrastructure and users and is also a form of "verification managed
+governance."
+
+3 y i O
+oe, © — fr
+C)
+fey “sy J | 7
+Crypto Exchange oO Web Portal 6 oO." {
+Market Servite Internet Barking
+0 0
+C ‘\ C } \ Ki
+~ ©
+O Go} C)
+
+69
+dH 2h
+
+Payment eeo65 ? Online Shopping
+
+oO Bate way < ) - = he Man a
+BaaSid 6 2
+\/
+Ss) QO o (6)
+2 a
+O ) mo
+. \ Jan . iplA/
+Web/App Login Personal Identification/ Various certificates
+No sigp.up r 7 Digital Signing / sued
+" a { \
+aN
+
+13 BaaSid.com
+
+<E5:
+“Authorization based on public network of Blockchain”
+
+oak
+
+1} BaaSid.com
+
+EG:
+2. Introduction
+
+2.1. Limitations of and problems with blockchain
+
+As was mentioned above, all intenet services store and later use a large amount of
+personal information that is stored on databases. Based on this, login, information
+confirmation, payment and all other user requests are verified by a provider and a third
+party verification authority.
+
+This goes for services other than those that apply blockchain technology and includes all
+agencies, organizations, corporations and all free and charged services. And as a given,
+various security systems are developed and operated to protect such databases.
+
+Also, the problem major leaks and hacking has resulted in governments of several
+countries to enact protecive legislation regarding personal information over the internet,
+and along with messages condemning the leakage and piracy of such personal information,
+many individuals, and all companies, financial institutions, agencies and organizations
+that have an online presence are requesting more effort be devoted to this problem.
+Further, the blockchain world that is oriented towards decentralization is continually
+becoming more centralized, and with various targets susceptible to hacking and new
+problems that arise as a results, more ironic limitations are taking shape.
+
+¢ User Database server
+¢ Private information
+
+¢ Identification
+
+* Original Certificate
+
+Ser vice side DB Server
+
+Normal Blockchain network
+
+[ Blockchain service that shows other limitations of centralization ]
+
+13 BaaSid.com 18
+2.2. Borrowing the DB of BaaS based participants
+
+All blockchains save transactions records the same way and offer tight security against
+forgery or falsification. This is because the same data, users’ sensitive personal
+information and important information, and verifications keys are held by everyone
+making it difficult to store any of that information.
+
+"BaaSid" takes the most fundamental uniform data storage problems and limitations of
+blockchain, and offers an interpretation in a completely new perspective.
+
+When verifying information required for the personal verification a "BaaSid" participant,
+there is no source to forge because it is not stored anywhere thus blocking any hacking
+attempts.
+
+In other words, with "BaaSid" the personal information, biometric images and any other
+information of a user does not exist in any format whatsoever and does not even exist on
+one's device. It is only saved after being split and distributed (means some of the
+encrypted data fragments are separated from one another and distributed to participants)
+as fragments on the nodes of public participants (users).
+
+wD 7 ®
+wah @
+@ Service side © @  @
+Split Block-C
+e @ @ Split Block-B 6 @ @
+Split Block-A
+{ ) . Split Block-F
+
+@ @ Blockchain side
+
+T ) Split Block- Split Block-S © @
+© ©
+“What am i Hacking?”
+
+* No User Database server
+* No Private information
+¢ No Identification
+
+“Who am i?” * No Original Certificate
+
+"BaaSid" COPN(Certification of public network)
+
+[Highest form of decentralization through a blockchain database infrastructure]
+
+{1 BaaSid.com 19
+
+ez9h
+2.3. Split & Distribute Data
+
+The personal information of all participants of the COPN(Certification of Public Network)
+is split into thousands of fragments, and the encrypted data fragments are split up and
+saved among hundreds of thousands of unspecified individuals participating in the split.
+The encrypted, split personal information fragments are called the Split ID, and the
+thousands of split fragments are then again split and divided into hundreds and thousands
+of split blocks.
+
+The capacity, distributing and saving will be optimized to increase the real-time speed of
+recognition, and the node numbers of the split block that were distributed based on the
+
+safety of blockchain against hacking attempts will be optimized as well.
+
+Split ID(Split data of private information)
+(ee
+
+\ aA Split Block-A } | Split Block-B | | Split Block-C
+
+Split into Puzzle Data _ Distributed to Node
+
+~\
+Exchange Shopping Instant
+Aco Original copy
+<_—_ 5
+Don’t save to any
+Device
+Ne Banking Contents wy, * DB Server
+1 Servi + Third Parties
+nternet Service *PC/ Tablet
+
+FIDO(Fast Identity Online)}+OTP(One time password) * Smart Device
+
+[Instant Access Verification]
+
+} BaaSid.com
+
+ez9h
+
+20
+2.4. Verification that is user-centered based on the Certification of Public Network (COPN)
+
+When logging in to an internet service, applying for membership, or performing other
+major activities such as shopping, wire transfer or the movement of other financial assets,
+the split password fragments are saved on a split block and then temporarily the split ID
+(split data) fragments are verified via the instant verification that uses an individual's
+biometrics (fingerprint, iris, voice recognition, etc.) or a password (option) and One Time
+Password (OTP) that reminds an individual of the password and immediately discards the
+source afterwards.
+
+Split Block - N
+
+ih Bow
+aS aS af
+
+Split ID. (13) Split ID. (14)
+
+a) |
+
+Split ID\(2)
+
+1. Encryption 2. Split ID Spfit ID. (8)
+
+NAG
+us Pe.
+
+3. Distributed
+
+data é
+; Teg 4. Split Data call WSLS aN
+Ee
+—
+
+Split ID. (6)
+
+ft ID. (10)
+
+5. Combination Split ID. (11)
+
+6. Decryption
+
+Instant Access Instant Access
+
+Instant Access
+
+Web Service... Banking / stock...
+
+Online shopping
+
+[Temporary Centralization based on an Individual]
+
+(3 BaaSid.com
+
+21
+2.5 Split Block and Crypto Exchange Block
+
+As if recognizing the uniqueness of each participant, the unique split ID is encrypted data
+that is uniquely different from other data. A block of a participant group where one
+participant has such a split ID is called a Split Block.
+
+Also, all public ledgers that engage in transactions with such participants are stored
+separately on the Crypto Exchange Block.
+
+re Split Block
+Split 1D.7
+
+Split ID8
+
+Split ID.9
+5 22 8 J 9
+3
+
+‘ Private data
+i ig eo.
+Cube Block Split Block Sons Source spit1D.11
+
+i
+
+! 2 scrapped 2 !
+res are sass esses cscs 1 Split 1D.6 splitib.2
+
+Split Block
+
+Split IDs that consists of finely split
+data, are divided and distributed to
+small scale blocks and each one is
+saved enabling each of the nodes
+(participants) in the block to obtain
+data, piece by piece.
+
+Crypto Exchange Block
+
+Only the ledger of virtual currency is
+saved separately on a small block.
+
+Cube Block Chain
+
+Small blocks that are saved
+separately from above are bundled
+together in a cube format called a
+Cube Blockchain.
+
+Crypto Exchange Block
+Ree eee ee eee ee eee ee ee ee eee L)
+
+[Split Block & Crypto Exchange Block]
+
+(3 BaaSid.com 2
+2.6 Proof of integrity for Split & Distribute data
+
+BLOCK
+HEADER
+
+Previous block hash
+
+Timestamp
+
+Difficulty target
+
+Nonce
+
+mre F-- Transaction Merkle root
+
+coopera Allocation Merkle root
+
+--|-p Transaction a
+
+Transaction z
+
+Hash of Shared data hash a
+arn >| DHT Shared data hash b
+Map
+Personal Information >» Encryption ——> Split 7—j7—_ Distribution
+(Text / Images / Fido) }
+Allocation Hash
+Distribution according to the ratio
+Partial hash storage }
+
+Personal Information
+
+Owner (Wallet App) UBilotclisitetin
+
+[Structure of BaaSid Block]
+
+IP
+
+23 BaaSid.com 23
+“Blockchain as a Service”
+
+GF,
+
+&t} BaaSid.com
+
+EG:
+3. BaaS (Blockchain as a Service)
+
+3.1 “BaaS Union”
+
+All individuals or internet service companies agencies and others participating in BaaSid
+protect one another, but also free from being responsible for each other. And they look to a
+large cooperation and community that is reliable and that has responsibility, and they intend
+to present the standards and goals for the compensation and sharing for each entity.
+
+Based on "BaaS," this links existing online service providers (OSP), blockchain service
+providers (BSP), and all individuals participating in the Certification of Public Network
+(COPN) in a large cooperation of trust known as the "BaaS Union" which is how the mutual
+trust and balance can persist.
+
+To accomplish this, "BaaS Union" was designed for all the OSPs, BSPs, and users
+(participants) taking part in the BaaSid to share in the mutual benefit through the solidarity of
+each stakeholder's role, responsibility and activity.
+
+“BaaS Union”
+
+i Payment Gateway O S P ra B S P
+H Internet i Blockchain
+NS Third parties Service ‘ pervice
+— Certificate, etc... Provider Tovider
+Oe _
+aN
+ate
+Hyper Confirm +) BaaSid Instant Access
+
+ANKE Block
+
+Split Block
+
+[Mutual credibility, responsibility, and compensation with the "BaaS Union“]
+
+(3 BaaSid.com 25
+3. BS (Blockchain as a Service)
+
+3.2 The Benefit of User and OSP using "BaaSid"
+Benefit.1) Vast database & security system “Reduction of both development and maintenance costs”
+
+The COPN API of "BaaSid" is provided to all internet service providers enabling easy
+application for all. Internet service providers are no longer required to invest large sums in
+the installation and operation of a database and security system for relevant proprietary
+services.
+
+Log in Side
+
+LJ
+Router & Firewall
+
+(
+=
+
+: =
+! Web Firewall
+
+Security Side
+
+“Dangerous”
+“Complicate”
+“Expensive”
+
+Monitoring
+
+USER USER
+
+[Comparison between general internet service systems and the BaaSid “BaaS”
+Infrastructure]
+
+Benefit. 2) "Removal of the legal risks" regarding personal information leaks
+There are no legal risks involving hacking attempts and exposure as all internet service
+
+providers that apply the COPN (Certification of Public Network) of "BaaSid," do not
+receive or store personal information on a separate database.
+
+13} BaaSid.com 26
+Benefit.3) The “Instant Access API” simplifies the process for membership application and
+the verification stage
+
+"BaaSid" participants (users) gain one-time instant access
+through[encryption>fragmentation>summon>correlation>descrambling>biometric
+verification] through a temporary centralization through instant verification via fingerprints,
+iris scans or other biometrics enabling participants to immediately obtain membership on
+their own, and enable them to gain immediate access without any additional verification
+steps. From a service providers standpoint, this prevents many customers from being lost
+due to the procedure for membership application.
+
+The irksome development of various databases for login and other verification steps, and
+for other verification or all the access steps not necessary.
+
+In other words, it means that the services of all providers can be quickly and easily used.
+This equates to freeing providers from marketing costs and the various difficulties in
+attracting members to apply for membership. As an optimal method for enhancing the
+marketing effectiveness of internet service suppliers this is a dramatic simplification and
+credibility enabler for both procedure for membership application, and the verification
+steps that actions within the service entail, which could become an important strategy for
+enhancing the service revenue of suppliers.
+
+The development of an _ JIA-API(instant Access API) based on _ "BaaSid's"
+COPN(Certification of Public Network)is expected to be completed by the first quarter of
+2019 and ready for distribution.
+
+*OSP(IA-
+API)
+TA-Instant
+
+Access
+
+boot, boot,
+
+USER USER
+
+[Comparison between Regular Login/Verification and Instant Access]
+
+(3 BaaSid.com
+
+27
+Benefit .4) Quick and easy important verification: “Hyper Confirm API”
+
+All banks, financial institutions, brokerages, retail and other paid content payments
+require a diverse and complex series of steps that includes a certification procedure from a
+third party certification authority, and a link-up with a Payment Gateway (PG).
+
+With "BaaSid," there is plan to develop and offer a HC-API(Hyper Confirm API) which
+can more easily and safely resolve current complex and inefficient verification steps that
+should be followed with a COPN(Certification of Public Network) infrastructure.
+
+Fi BaaS
+BaaSid User(COPN)
+
+*OSP
+s (PG-API) |
+LT ‘
+Payment |
+@ Gateway |
+LT Peer ZA:
+OSP (IA-
+
+Government |
+
+Banking Certification |
+fon] User
+USER USER
+
+[Comparision between Regular Internet Payment Verification BaaSid
+Hyper Confirm]
+
+23 BaaSid.com
+
+28
+“No Original Copy”
+
+BaaSid.com
+
+aren
+i
+
+Nees
+4."BaaSid" component
+
+4.1. Instant Access API
+
+"BaaSid" is an easy, quick and safe verification service for logging in to all internet
+services (no membership application required) and performing important activities online
+as it takes the Certification of Public Network and personal information and divides it into
+thousands of fragments, after which it randomly saves the information on participants!
+nodes, which is then encrypted and descrambled temporarily.
+
+| USER OsP COPN api |
+
+Request BaaSid
+
+Authorization
+Response
+
+Response BaaSid
+
+Reward BAAS Token
+
+T
+1
+1
+1
+> Authorization
+Request
+ne
+St
+1
+1
+1
+1
+1
+|
+|
+|
+q
+p
+
+[Instant Access API Diagram]
+4.2. “BaaS” User Database
+
+The goal of "BaaSid" is to create instant access for internet services without storing
+personal information or any source of a user's personal information on any service
+provider database, with any national verification agency, with any third party verification
+agency, or even on any storage device of users.
+
+Yea ®
+
+Non- Non- Non- Non-
+DB Server Private information Identification Original Certificate
+
+[Four things that do not exist with BaaSid]
+
+13} BaaSid.com
+4.2.1 Non-existence of User Database
+
+No database exists for the internet service provider to operate enabling near perfect
+decentralization.
+
+4.2.2 Non-existence of Private information
+
+Name, phone number, email address, bankbook number, credit card number and other
+sensitive information is divided into small bits divided to optimal node groups, distributed
+and stored, without leaving a source of personal information.
+
+4.2.3 Non-existence of Identification
+
+Nothing is saved anywhere, not a personal identification card, or other information used to
+
+verify who one is or verification information creating a situation where one is safe from
+hacking or loss.
+
+4.2.4 Non-existence Original Certificate
+
+No certificate or source data exists either on a third party certification authority's server,
+
+or any user's device (smart phone, PC, tablet pc). This means certificates nor biometrics
+information is not saved anywhere.
+
+4.3. PoA(Proof of Access) & PoH(Proof of Holding)
+
+“BaaSid” Basically follows the mining policy of Ethereum, but has another unique
+verification method. This method is PoA and PoH.
+
+—_| Proof-of-Access —__—. Proof-of-Holding
+) \
+|
+Validity Block Validity Block
+“Prev. Hash “Prev. Hash
+*Nonce *Nonce
+*Transaction ‘Transaction
+-Split ID -Storage Space
+-Access Validity -Time Stamp
+-etc -etc
+
+4.4 Transaction validator
+
+The login of all of “BaaSid’s” block groups (split block, exchange block), the verification
+and history of all internet activity and transaction verification of the ledger includes minor
+and separate participants.
+
+PoW(PoS)
+PoW uses Ethereum mining (plans to change to PoS) as is, and pays BAAS tokens as a
+form of compensation for blocks generated. Also, transaction fees are paid separately to
+PoW miner.
+
+PoA(Proof of Access)
+
+The Online Service Provider (OSP) or Blockchain Service Provider (BSP) provides part
+of the fee occurring from the instant access of the participant and pays it to the data
+storage provider of "BaaSid" (PoH miner).
+
+PoH(Proof of Holding)
+
+Blocks are generated separately for Split ID (Split data) management in the interplanetary
+file system of the Certification of Public Network (COPN), and the compensation when
+creating a new block is paid out using BAAS tokens. Also, part of the fee occurring from
+PoA is paid to the PoH miner.
+
+4.5 BaaS (Blockchain as a Service)
+
+Even without suppliers developing and operating a separate centralized database (DB)
+required for login, payment or any other verification procedures, “BaaSid” Blockchain
+can provide a high fidelity simple verification by using a “BaaSid” blockchain network
+among users instead.
+
+BaaS takes the split ID information of mine that was stored under an anonymous
+community that focuses on individuals, calls it up and combines it, and uses a new form of
+verification that can divide, distribute, save, encrypt and descramble, making it
+completely different from the diverse verification methods and verification systems we
+have seen so far.
+
+Ultimately, BaaS means one large verification system of a “BaaSid" blockchain network
+linked to many individuals. All companies and agencies can be free from the authority and
+accountability that comes with a separate centralized database (DB) and can offer services
+and perform verification activities to all users via the certification of public network based
+on the “BaaSid” Blockchain that has a completely credible public ledger with a high
+degree of reliability.
+
+This way, we do not save individuals’ or users’ sensitive information on the provider's
+database, but rather enable the possibilities for the services of all providers to be safely
+and conveniently accessed without the risk of leaking personal information by using the
+certification of public network, which is based on the “BaaSid" Blockchain among users.
+
+13} BaaSid.com
+
+4.6 Specifications
+
+“BAAS,” which is a “BaaSid” token, is an important form of the exchange value of a
+
+public network verification infrastructure achieved by all participants who take part in
+BaaSid.
+
+The major goals of BAAS are to enable network participants to be compensated for the
+value of their user activities and to enable instant access and hyper confirm.
+
+Token name "BaaSid" token
+
+Token symbol BAAS
+
+Token type ERC 20
+Token issuing body BaaSid International Lab (S) Pte Ltd.
+
+Total supply 10,000,000,000 BAAS
+Mining & Verification PoW/PoS & PoA/PoH
+method
+
+wo
+we
+
+€43 BaaSid.com
+“Big data Platform based on BaaS”
+
+SD
+
+672 .
+1} BaaSid.com
+
+£5,
+5. Vision of "BaaSid"
+
+5.1. Standard of BaaS
+
+Various services that borrow the use of the BaaS are provided with blockchain services,
+and connectivity to web and app services.
+
+By connecting this blockchain service and web and app services, and providing the
+highest level of decentralization to both users and providers to implement a safer and
+more active form of service, “BaaSid” will open to the door to safe and convenient
+internet service.
+
+This will provide more fundamental solutions to the even more sensitive and important
+activities taking place on the internet compared to when the internet was first invented.
+
+A wide range of service providers and users participating in the Certificate of Public
+Network can create new services and broaden the service offerings through the Certificate
+of Public Network based on such safety, convenience and efficiency.
+
+5.2 Internet Service Market
+
+The Certificate of Public Network of the “BaaSid” frees service providers from the most
+sensitive field of operation, the database, security system, various payment gateways and
+all other verifications. This will enable efficiency and autonomy to be enjoyed in the
+current internet service market as in the future, each country, organization, and agency
+will increase the requirements of rules and regulations.
+
+Agencies and financial markets will confirm and verify personal information easier and
+more conveniently. Banks can perform safer more reliable verifications and Certification
+of Public Network for personal wire transfers and transfers.
+
+The Certificate of Public Network of "BaaSid" in the insurance market can provide
+convenient personal verification, and offer the safer sharing of personal information such
+as medical history with hospitals and other organization, and inter-operabilit can be
+achieved among various systems for various transactions with external agencies.
+
+The market for online shopping malls can secure higher profits and more users through
+the access to users and convenient purchase procedures. Further, this can be widely
+applied as schools, hospitals, healthcare facilities and other diverse markets will require
+the personal Certificate of Public Network of "BaaSid".
+
+€43 BaaSid.com
+
+5.3. Big Data Service “BigBaaS”
+
+Online service providers (OSP) perform various login, payment, and finance verifications service by
+receiving a user verification from "BaaSid." Then, because there is no DB held in-house, OSPs are
+unable to perform other services requiring a DB such as various independent promotions or events.
+
+Therefore, there is a plan for "BigBaas,” which is developed and operated based on “BaaS,” to
+provide internet service providers with the various activity data gathered from the instant access of
+users (participants) and even provide email and various alert services to users (participants) that
+accessed the relevant internet service even once. )
+
+The BaaS User (node or device) will safely ensure the anonymity and personal privacy of the
+websites accessed, what was viewed, how long the user remained on that site, what was purchased,
+and what activity was engaged in while enabling such information to be recorded and effective and
+clear target marketing can be performed based on this information.
+
+“BaaS UTMS"(BaaS User Target Marketing Service)" is a big data service with such power security
+features, and it will help accelerate the spread of “BaaSid.”
+
+S2@ ave Tea S
+O30 o ° i
+Gruss
+
+oO
+
+[“BigBaaS” BaaS User Target Marketing Service]
+
+IP .
+‘O) BaaSid.com
+
+5.4. Big Data Service “BigBaaS”
+
+“Big BaaS”
+
+OSP OSP
+
+“Big BaaS” Analysis
+[Big Data Analysis & Mining]
+
+* POS(Point of sale)
+* CIS(Computer Integrated Manufacturing)
+¢ OLTP(Online Transaction Process)
+
+“Big BaaS” HDFS
+[Hadoop Distributed File System]
+
+Block.1 Block.2_ Block.3_ Block.3
+
+AD Targeting Data Crawling Engine
+Smart Marketing IoT data / FinTech
+Service
+
+“BaaS”
+
+User split DB infra
+
+Split Block
+
+Split Block
+
+[“BigBaaS” HDFS & Analysis System]
+
+eek
+
+(23 BaaSid.com 37
+
+ID
+5
+
+2569
+BaaSid”
+
+5.5. Use and Circulation of BAAS Token
+
+PoA & PoH compensation system and BAAS token demand / supply
+
+OSP (Online Service Provider) and BSP (Blockchain Service Provider) shall be pay to BaaSid by
+BAAS token for users and miners (PoA / PoH). Because, they are saving the cost from database
+construction / operation and security system construction / operation cost through use from BaaSid
+infra. In addition, for the use of BigBaaS, OSP/BSP must pay the BAAS token for costs.
+
+Also, BaaSid will be positioning to PG(Payment Gateway) for online Payment Market.
+
+OsP \\
+/BSP /
+
+Payment
+
+Exchange
+Market
+
+\ / BaaSid \ f \
+| PoA | | & } |
+
+\ / BigBaaS
+a Exchange
+Market i a
+
+Payment
+
+Online
+\ Payment }
+\ Market (PG) 7
+
+[Use and Circulation of BAAS Token]
+
+€43 BaaSid.com 38
+
+<E5:
+“We create what we need”
+
+SD
+
+GD,
+€1} BaaSid.com
+
+£5,
+6. Team & Partners
+
+6.1. Organization
+
+! » Seongwoo Park
+
+&
+
+5
+Xerg6?
+BaaSid”
+
+I ‘ae: I
+. BaaSid Singapore
+BaaSid I BeeSid Jape I
+Multinational tion 48 le) |! BaaSi¢ Japan I
+(Multinational operation 48 people BaaSid Taiwan
+, BaaS Lab R&D Center ,
+CEO --------- -
+Legal Team ___| > Otaka Jun » James Huang
+& » Nicholas Ng S.L
+ON l
+| » Joshua C.S. Lo : :
+— |
+| Ronald H. Chen Project Advisor
+' > K.S. Lu > Kumakiri Yasutomo I
+CTO I, Harrison Moon » Hajin Jhun |
+Global R&D Leader) =) 1 - Jongbeom Kim
+- Atsushi In | > Jin Kim I
+SUSI | Technical Advisor > Yang Lin |
+BaaS Lab
+(Baas Lab L ey = Business (Operating)
+.  Sanub whee (Business Leader) CMO
+angpum Wee [| N/A,EU Leader: Niiyama Takeshi [| (Global Marketing Leader)
+eee ASIA Leader : Inshic Moon Tetsuya Saito / LeRoy Zen Lau
+BaaS Lab R&D Team | China/HK/Global Leader : Jay Liang =
+| (GitHub co-work : 15 people) |! Marketing & Strategy |
+er , ;
+» Masakazu Sato» Koji Ogata | Business Development & I & Design Team (7 people)
+° pasunire roe I Support Team (6 people) I | + Takashi Kosuga I
+ume isnt I ; I | » Takafumi Osada I
+| > Hiroaki Kaneko I !»AdamGeri > Joseph Hung - Jane Misun
+|  Shuhei Arakawa |__ J» Vincent Tai 41 vans’ I
+- Taisei Hoshi I - Kevin D I | * Kang jihoon I
+I aise1 Hoshino | evin Dose > Yan: eowool
+>» Ryota Dohi | j ° Andrew Wasylewicz I l ig BY I
+. : > Chris G KIM
+Naoki Izaki I j * Daesung Yang ||. Hsu Hsin Jui (Blues) I
+>» Masahide Saito l i I I I
+> Tsukasa Adachi I I
+I
+I
+
+{ > Sungjun Kim > Jin An
+| > Chiang Yung Ho(Ayasuke)
+
+83} BaaSid.com
+
+SG,
+6. Team & Partners
+
+6.2 BaaSid’s Business and Operating
+
+7 Otaka Jun (JAPAN)
+
+CEO of BaaSid Lab Japan
+
+Chairman of PRO Group
+
+In charge of Network design at NTT
+
+HITACHI Nuclear Power, MITSUBISHI Nuclear Power, TOSHIBA Nuclear
+Power Plant Design
+
+Development of 3D-CAD System for Tokyo Gas application drawing
+
+https://www.linkedin.com/in/
++ - %EO%BD%A4-%ES %A4 GAT LEI %AB%98-54167456/
+
+James Huang (CHINA/ASIA)
+
+President of Leadhope Inc.
+
+Special Assistant to Chairman of Leadtek Research Inc.(TWSE)
+
+Baasid co founder
+
+Ktrade board director
+
+Locus chain advisor, Big point advisor, Starbit advisor
+
+AT&T(USA) Technical Assistant center manager, AT&T(ChengDu) Technical manager
+Taiwan Mobile Company senior Director of project department
+
+ChongHong Cable TV company VP / chief engineer
+
+Japan GONZO Rosso Board Director / CEO of Global business
+
+https://www.linkedin.com/in/james-huang-
+TEI%BB%83%ES %IS HIF%EB %AAAOD-11001ab2/
+
+Nicholas Ng S.L. (SINGAPORE/EV)
+
+President of BaaSid Lab Singapore
+
+Chairman, Leadhope Philippines Inc
+
+CEO, Neosonics Network
+
+Director, BioWave Korea / Global Business Development
+
+GRETA) ttps://www linkedin .com/in/nicholas-ng-swee-lian-16288917/
+
+Niiyama Takeshi (JAPAN/USA)
+
+BaaSid USA/EU Business Leader
+
+Security Expert more than 17 years
+
+Ph.D in 2016 Technology and Innovative Management (TIM) from Doshisha University
+
+M.S._E in 2006 Information Security from Carnegie Mellon University
+
+Assistant CISO of Nippon Telegraph and Telephone (NTT)
+
+Business Analyst and Product Manager of Intel Security (McAfee)
+
+The first Japanese VIP guest speaker of Cyber Security Romania Sibiu 2014
+
+The Smartphone Application Privacy Policy Dissemination and Verification Promotion Task Force
+Member
+
+(Ministry of Internal Affairs and Communications was Observer) 2014
+
+https://www linkedin.com/in/takeshi-niiyama-52783b48/
+
+(3 BaaSid.com 4
+
+6.2 BaaSid’s Business and Operating
+
+Joseph Hung (ASIA)
+
+CEO, InterServ International Inc. (TSE )
+Chairman and CEO, Game Storm Co. Ltd.
+
+VP and GM of Telecom, Gold sky Digital Co. Ltd.
+VP of Strategic Development, Clarent Telecom
+Director of IT, Pacific Broadband Co. Ltd.
+Established global telecommunication data hub.
+
+GET https://www.linkedin.com/in/hung-joseph-48968728/
+Adam Geri (Australia/EU)
+
+Vice President of Hcash Foundation / Founding member of the Hcash Foun
+dation. Specialist in business management and business development
+Gaining collaborations between governments
+
+“Tam looking forward to the future! The world is about to become a much b
+etter place, finding real solutions for real world issues due to the developme
+nt of Blockchain technologies, the most disruptive technology that has been
+seen in our life time”
+
+EET nttps://www linkedin.com/in/adam-geri-94550068/
+
+Vincent Tai (SINGAPORE/EU)
+
+Director, SRV Trading Pte. Ltd.
+
+Derivatives Trading Director, China Evernice Investment Pte. Ltd.
+Director, Derivatives Trading, DBS Vickers Securities Pte. Ltd.
+Assistant Vice President, ABN AMRO Futures (Singapore) Pte. Ltd.
+Assistant Vice President, Refco (Singapore) Pte. Ltd.
+
+Co-Founder, KYCK!
+
+Member of Singapore Institute of Directors
+
+Andrew Wasylewicz (Australia/EU)
+
+Business Development Manager at Hcash / Business Development Manager at
+
+Heash.
+
+Masters of Applied Science and has a background in strategic roles within the i
+nsurance and superannuation industries. He understands the ongoing challenges
+these companies face with storing and managing customers identification. He is
+excited about the real world application Blockchain technology has to offer and
+
+sees the enormous advantage BaaSid has.
+PEE Thtps:/inkedin.com/in/andrew-wasylewicz-962b2247
+
+¢23 BaaSid.com
+
+<E5:
+
+42
+6.2 BaaSid’s Business and Operating
+
+Jay Liang (China/HK/Global)
+
+BaaSid China / HK / Global Business Leader
+
+Director of BaaSid
+
+Founder and Co-chairman of Hong Kong Blockchain Association
+Orient ES Capital Group, Managing Partner
+
+The Association for the Future Studies of Yangmingshan, Vice President
+Chinese CEO Organization, Honorary
+
+Inshic Moon (KOREA/ASIA)
+
+BaaSid Asia Business Leader
+
+Director of PRO Japan
+
+KBIPA(Korea Blockchain Industry Promotion Association)
+Chairman of international cooperation committee
+
+Advisor of Aston
+
+Director of BUGS Music (KOSDAQ)
+
+Online Game Producer of Playwith(YNK Korea) (KOSDAQ)
+
+https://www linkedin.comv/in/inshic-moon-134429155/
+
+Kevin Dose (China/USA)
+
+Business Development Manager, BaaSid Singapore
+
+Global Director, Hyundai Infracore
+
+Senior Account Manager, TLScontact
+
+More than 10 years of work experience at several global companies
+(Volkswagen, Teleperformance etc.) in China, Australia and Korea
+
+https://www linkedin .com/in/kevin-dose-363 19950/
+
+Daeseung Yang (KOREA)
+
+Director of Blockchain Dev Team, BaasLab
+
+Director of Blockchain Dev Team, Nextinnovator
+PMO(Project Management Officer) of SHUB/SCAP Project, kt
+PMO(Project Management Officer) of IOT project(Intelligence
+Home), Samsung SDS
+
+https://www linkedin .com/in/%EB%8C%80%EC%8A %B9-
+%EC%96%91-06b0aab7/
+
+¢23 BaaSid.com
+
+<E5:
+6.3 BaaSid’s R&D / BaaS Lab
+
+Tr
+wal
+
+Atsushi Inoue (USA)
+
+CTO of BaaSid
+
+PhD in Computer Science and Engineering, University of Cincinnati (USA)
+Professor of Information Technologies and Business Analytics,
+
+Eastern Washington University (USA)
+
+Professor of Information Assurance, Carnegie Mellon University (USA)
+
+Senior Research Scientist, Laboratory for International Fuzzy Engineering (Japan)
+Research Scientist, HITACHI Ltd. (Japan)
+
+[Linkedin | https://www.linkedin.com/in/inoueatsushij/
+
+Jin An (USA)
+
+CTO/Co-founder of Cyflyer Inc. USA
+General Manager of Imua Management USA
+Director of Metro Pacific Inc.
+
+General Manager of Taeryoung Development
+University of Manoa, Computer science
+
+https://www.linkedin.com/in/jin-an-029292163/
+
+Masakazu Sato (JAPAN)
+
+The General Manager of System Development Department of SI
+Project Headquarters at P.R.O corporation
+
+The CEO of PRO ID Inc of PRO Group
+
+Involved in various system development such as CAD system
+development, large-scale EC site development, etc
+
+Responsible for Tohoku SI Division at present
+
+Yasunori Matsuzaki (JAPAN)
+
+Leader of BaaSlab R&D Center
+
+PRO development leader
+
+Development experience 14 years
+
+Work experience as environmental consultant / GIS engineer
+
+€43 BaaSid.com 44
+6.3 BaaSid’s R&D / BaaS Lab
+
+Masahide Saito (JAPAN)
+
+The CEO of necomata Inc. at P.R.O Group
+
+Join the COI TOHOKU and create a Smart Chair
+
+Developed upper motion function measurement system using Kinect V 2
+in collaboration with Tohoku University
+
+Developed a tax return system and voting acceptance system for election
+
+Sangbum Lee (KOREA)
+
+CEO of BaaSlab Korea.
+
+I have experienced a lot of IT related development almost 20 years, and
+leading project, managing business and finance management are my skills.
+Data security solution, peer to peer solution and blockchain technology
+are my strong point of IT related development experience. It would be my
+best experience that I can join with BaaSid project and I will lead BaaSid
+project to global success.
+
+Yung Ho Chiang (Taiwan)
+
+Previous CTO of Soft World which is the No.1 game company in Ta
+iwan. He is proficient in coding and server application. More than 3
+0 years experience of programing , 20 years experince for game in
+online game industry , and 6 years in IDC industry.
+
+Sungjun Kim (KOREA)
+
+DIRECTOR of PRO Global Co Ltd
+R&D Center chief of Monster Holdings Co Ltd
+Seoul national university of Technology, Department of Industrial Engineering
+
+https://www.linkedin.com/in/sungjun-kim-93a0 18 167/
+
+€43 BaaSid.com 45
+6.3 BaaSid’s R&D / BaaS Lab
+
+Yasuhiro Goto (JAPAN)
+
+Engineer of PRO Japan
+
+News distribution system for communications company
+
+Business Web System for electric maker
+
+Engaged in development of client & server system for distribution
+Years of experience: 15 years
+
+Seongwoo Park (KOREA)
+
+DIRECTOR of PRO Global Co,.Ltd
+System Engineer of SmileServ Internet Data Center
+
+https://www.linkedin.com/in/seongwoo-park-923172146/
+
+Koji Ogata (JAPAN)
+19 years of development experience
+
+Engaged in all processes in package - web - mobile development
+Building infrastructure as well
+
+Kimiko ishii (JAPAN)
+
+Belongs to P.R.O. Tohoku SI Project Headquarters
+Engaged in developing web system using PHP at present
+
+€43 BaaSid.com 46
+6.3 BaaSid’s R&D / BaaS Lab
+
+Naoki Izaki (JAPAN)
+
+In addition to Web application development experience with the
+Java framework
+
+Experienced designing, developing and bridging with offshore of the
+financial system with C ++
+
+Interested in blockchain and big data in outside the business
+Willingness to work ambitiously on everything
+
+Shuhei Arakawa (JAPAN)
+
+Belongs to System Development Department of SI Project
+Headquarters at P.R.O corporation
+Participating in the development of WEB APP mainly on iOS
+
+Tsukasa Adachi (JAPAN)
+
+The CTO of necomata Inc. at P.R.O Group
+
+Involved in machine learning model construction by myoelectric
+measurement
+
+Developed upper motion function measurement system using Kinect
+V 2 in collaboration with Tohoku University
+
+Developed key unlock application with smartphone
+
+Hiroaki Kaneko (JAPAN)
+
+The Project Leader of System Development Department of SI
+Project Headquarters at P.R.O corporation
+
+The Leader of Server log analysis system development.
+
+The Leader of Electronic money settlement system development
+The Programmer of Financial system development
+
+13 BaaSid.com 47
+6.3 BaaSid’s R&D / BaaS Lab
+
+Taisei Hosino (JAPAN)
+
+Graduated from the Faculty of Economics, Hosei University
+Smartphone App Engineer
+
+Ryota Dohi JAPAN)
+
+Web application development using the Java framework
+
+Having an extensive experience of Java language, such as Android
+native application development
+
+A process that is particularly good at detailed design and
+implementation
+
+€43 BaaSid.com
+
+48
+6.4 BaaSid’s Marketing
+
+LeRoy Zen Lau (SINGAPORE/EU)
+
+CMO Of BaaSid
+
+Director, DMG & Partners Securities Pte Ltd.
+
+Director, RHB Securities Singapore Pte Ltd.
+
+Capital raising experience for Listed companies and bringing
+
+companies to IPO as a Senior Dealing Director.
+https://www.linkedin.com/in/leroy-zen-lau-
+TE6%IBUBEGES %88%98 GES %B3%9I9I GES 9B %84-baI5b8 15a/
+
+Takafumi Osada (JAPAN)
+
+Manager of Business Partners, Inc
+Japan Country Manager of DNO-Group
+Sales Director of Billing System Corporation (Tokyo Stock Exchange, Mothers)
+
+https://www.linkedin.com/in/takafumi-osada-35a47172/
+
+Misun Jang (JAPAN/KOREA)
+
+Head of Blockchain Business Team, PRO
+
+MBC C&I (Content & Infrastructure) Special Producer of contents business tea
+m production
+
+Ewha Womans University Graduate School of Policy Science / Master's degree
+Chugye University of Arts Graduate School of Culture and Art Administration /
+PhD in progress
+
+https://www.linkedin.com/in/misun-jang-5648aa164/
+
+Tetsuya Saito (JAPAN)
+
+CMO of BaaSid
+
+Ph.D. / State University of New York at Buffalo in USA
+Associate Professor of College of Economics, Nihon University
+Master of Economics(Kobe University)
+
+Bachelor of Business Administration(Kwansei Gakuin University)
+
+13 BaaSid.com
+
+49
+6.4 BaaSid’s Marketing
+
+Takashi Kosuga (JAPAN)
+
+Director of PRO (App producer)
+
+Operating officer of IMAGICA group
+
+Web service producer of CCC group
+
+Virtual reality system planner of JFE group
+Space development engineer of TOSHIBA group
+
+https://www.linkedin.com/in/takashi-kosuga-477466 15a/
+
+Jihoon Kang (KOREA/ASIA)
+
+Ericsson Digital Service consultant
+
+Ericsson DCS(Data Integrity Assurance as a Service)
+IoT Cloud & Feature as a Service
+
+Softbank Commerce Korea Cloud consultant & BDM
+HP / Citrix / Data Domain consultant
+
+FERRETS = hutps://www linkedin. com/in/jihoon-kang-b2520643/
+
+Hsu Hsin Jui (Blues) (Taiwan)
+
+18 years work experince of online game , successful project
+manager and team leader of Soft world in Taiwan. Many
+experinces for online game product launch and success in
+Taiwan. He knows very well about how to make a project
+planning and execute smoothly.
+
+https://www linkedin .com/in/%E5%80%96%E7%9 1 %9E-%E8 %A8%B 1-b64790a4/
+
+Gyeowool Yang (KOREA)
+
+Global Business Team -- Japan Country Manager, PRO GLOBAL
+Japanese Literature Graduate with a lot of interest in Blockchain
+Technology
+
+Excited about the BaaSid project and currently working hard to make
+this project a success.
+
+https://www.linkedin.com/in/gyeowool-yang-8a2687 160/
+
+13 BaaSid.com 50
+5
+
+2569
+BaaSid”
+
+6.4 BaaSid’s Marketing
+
+Chris G. Kim (KOREA)
+
+PISHON | Design Agency | CEO
+
+GNP LINK | Advertising Agency | Design Director
+
+STUDIO RYU | PHOTO STUDIO | CEO
+
+WELCOMM DESIGN HOUSE | Design Agency | CEO
+
+IDO COMMUNICATIONS | Advertising Agency | Design Director
+ADVERTISING WORLD | Advertising Agency | Senior Designer
+WELCOMM PUBLICIS WORLDWIDE | Advertising Agency | Designer
+
+13 BaaSid.com 51
+6.5 BaaSid’s Advisor
+
+K.S. Lu (ASIA)
+
+Chairman of Leadtek Research Inc.(TWSE)
+
+Awarded National outstanding SMEs
+
+The president of Chinese Taipei Football Association
+
+The executive committee of East Asian Football Federation / Th
+e marketing committee of Asian Football Confederation
+https://www. linkedin .com/in/ks-lu-a13097b/
+
+Kumakiri Yasutomo (JAPAN)
+
+Vice President(COO) of Creators Guild.Co,ltd(Impress Group)
+
+CEO of Creators Guild.Co,ltd(Nippon Group)
+
+Director of Electronic publication
+
+Director of Web planning & production
+
+Manager of Advertising dep(international telecommunications company)
+
+Jongbeon Kim (KOREA/ASIA)
+
+MBA from Yonsei Univ. in Korea
+
+CEO of JNDS
+
+Vice President(CFO) of OCON(Animation Company)
+
+Director of Venturelife(Investor, PEF)
+
+Director of Internetiz(Venture Start-up Incubator)
+
+PR and Public business planning for LG-CNS(System Integrator)
+
+EET bttps://www linkedin.com/in/ 4-3 4-304501164
+
+Harrison Moon (USA)
+
+PH.D / MBA from Yonsei Univ. in Korea
+
+Bachelor of Architecture from S.N.U. (Seoul National Univ.) in Korea
+President of Pharos Asset Co., Ltd.
+
+Fund manager in Consus Asset Management Company.
+
+Vice president of CB Richard Ellis
+
+Strategic planning team for SAMSUNG C&T (KOSPI)
+
+CMC.MSS, Korea / CPM , IREM, USA
+
+€43 BaaSid.com
+
+52
+6.5 BaaSid’s Advisor
+
+Hajin Jnun (KOREA/ASIA)
+
+Chairman of the KBA self-regulatory committee
+(Korea Blockchain Association)
+
+CEO of Siti Plan, Inc.
+
+Chairman of S-Life Forum
+
+PhD. of Real Estate Studies
+
+19‘ Member of the National Assembly (KOREA)
+Former Chairperson of Digital Party of Sunnuri Party
+Former CEO of HANCOM(KOSDAQ)
+
+Former Vice President of Venture Business Association
+
+Yang Lin (CHINA/ASIA)
+
+Technical Advisor of BaaSid
+
+General Manager of VisualSoft Information, Jinan, China.
+
+CEO of wayStorms
+
+Director of Accton and experienced solution providers of digital
+marketing, loT , FinTech, Telecom, and big data applications.
+
+Jin Kim (KOREA)
+
+Professor at Sungkyul University. College of Faidea.
+
+PhD. of Real Estate Management
+
+Director of Korea real estate academy (KREA)
+
+Vice Chairmen of Residential Environment Institute of Korea (REIK)
+
+Vice Chairman of Ethics of Korea Association of Property Appraisers (KAPA)
+International Chairperson of Korea Real Estate Society
+
+A member of Deliberation committee of Korea Land and Geospatial
+Informatix Corporation (LX)
+
+A member of Deliberation committee of Korea Agency for Infrastructure
+Technology Advancement (KAIA)
+
+GREET) bttps://www linkedin.convin/!-2-4275a3 17b/
+
+13 BaaSid.com
+
+<E5:
+
+BaaSid”
+
+6.6 BaaSid’s Legal Support
+
+Ronald H. Chen (CHINA/ASIA)
+
+MBA, JD
+
+Director of T-Star Telecomm Corp.
+
+Supervisor of the Board, CSun Manufacturing LTD.
+Independent Director of Advancision Corp.,Cayman
+
+Joshua C.S. Lo (CHINA/ASIA)
+
+MSEE, JD
+
+Independent Director, Redwood Group Ltd. (Taipei
+Exchange)
+
+Independent Director, Shinkong Life Insurance, (TWSE)
+
+€43 BaaSid.com 4
+
+<E5:
+BaaSid”
+
+6.7 Global Business Partners
+
+Please see below the list of BaaSid's Global Business Partners.
+Further information on the content of the partnership will be announced during a later stage.
+
+Partners in Japan
+
+i] Lid “PRO Japan” — SI developer with many achievement in the
+technical field, founded in 1990.
+PRO.
+“Crypto Lab” — ICO platform providing blockchain system
+development and evaluation service.
+CryptoLab
+“RS coin” — Blockchain-based soccer business platform
+combining digital and real world. Participants include WSC
+and Brazilian national soccer player Ronaldinho.
+RS coin
+
+Partners in Singapore
+
+“VisionGroup” — Blockchain enthusiast, technology and finance
+\/ Vision Group entrepreneurs and industry specialists has combined experience
+=“ of more than 100 years in the technology and finance industry.
+
+23 BaaSid.com 55
+
+25)
+BaaSid”
+
+6.7 Global Business Partners
+
+Please see below the list of BaaSid's Global Business Partners.
+Further information on the content of the partnership will be announced during a later stage.
+
+Partners in Korea
+
+“Aston Alliance” — Global electronic document alliance
+consisting of 7 companies including Handy Soft, Korea
+Trade Network, Hancom Secure, Sejong Telecom, X
+Block Systems, BaaSid and PRO Japan.
+
+“Oracle Digital Prime” — BaaSid and Oracle Digital
+
+. Prime prioritize the Korean health care business model.
+eee Partner We cooperate to develop a business model that can be
+
+developed in the whole Asia Region.
+
+Partners in Europe
+
+“DACONOMY” — DACONOMY Interrnational Ltd. is a
+European blockchain company operating in partnership with
+the Schober Information Group, a well-known German
+DB) DACONOMY company operating in data base solutions. It introduces the
+world’s first decentralized, secure, easy-to-use transactional
+Data Ecosystem for all kind of data and all stakeholders.
+
+823 BaaSid.com 56
+BaaSid”
+
+6.7 Global Business Partners
+
+Please see below the list of BaaSid's Global Business Partners.
+Further information on the content of the partnership will be announced during a later stage.
+
+Partners in Taiwan
+
+Co.
+Ser “BaaSinfra(Blockchain as a Service for infrastructure)” —
+Racy) Blockchain-based data center, developing a separately
+eee distributed/decentralized IDC platform using IPFS nodes.
+BaaSinfra™
+
+“STARBIT®EX” — Asian’s first Decentralized Crypto
+Currency Exchange (DEX)
+
+“Gamania” - Based on 12 million user databases, Gamania
+Group and BaaSid decided to apply User DB Governance
+gamani a and authentication (real life) service for payment and
+
+content service.
+
+“BITPoint Taiwan” - The Taiwanese site of one of Japan's
+leading crypto currency exchanges "BITPoint", has
+decided to cooperate with BaaSid to develop and use
+BaaSid's De-KYC (Decentralized-Know Your Customer)
+TAIWAN certification, login and identity verification technologies
+
+BITPOINT on centralized exchange markets.
+
+23 BaaSid.com 37
+
+B59"
+2569
+BaaSid”
+
+6.7 Global Business Partners
+
+Please see below the list of BaaSid's Global Business Partners.
+Further information on the content of the partnership will be announced during a later stage.
+
+Partners in Taiwan
+
+“Leadtek” — Leadtek worked together with Nvidia to develop
+
+QLEADTEK and distribute GeForce Graphics cards to more than 150
+
+RE = ESI #2 countries around the world, which led to an explosive growth
+in the worldwide PC market.
+
+Partners in US
+
+‘ “Super Micro Computer, Inc” - NASDAQ-listed company
+UPERME providing PC servers and hardware products. Established
+in 1993.
+&13 BaaSid.com 58
+GO
+:
+9
+
+&
+*
+
+BaaSid”
+
+“The Beginning of new standard”
+
+x
+
+1} BaaSid.com
+
+LES,
+7. Roadmap
+
+Category
+
+Contents Schedule
+
+ICO
+
+GitHub
+
+Pre-sale & ICO 2018 / 1~2Q
+
+Private GitHub open 2018/2Q
+
+BAAS listing
+
+Commencement of official Listing at cryptocurrency
+
+exchange 2018/3Q
+
+Decrntiony Encryption and decryption of personal information 2018/3Q
+
+Split Engine
+(Split ID)
+
+Fragment distribution engine for encrypted personal
+
+information 2018 /3Q
+
+Distribute Engine re . .
+(Allocation) Distribution engine of the encrypted split ID 2018/3Q
+Wallet App Connected Test Net(POW) 2018/3Q
+
+Combination Engine
+
+Combination engine of the encrypted split ID 2018/4Q
+
+POA/ POH
+
+Instant Access Engine
+
+(OTP)
+
+Instant Access API
+(for Provider)
+
+POS
+
+Verification and validation (MainNet) 2018/4Q
+
+OTP for one-time instant access 2018 /4Q
+
+IA-API provided to the internet provider
+
+(Instant Access API) 2019/1Q
+
+MainNet Commercialize 2019/1Q
+
+Token / Coin Swap
+
+Hyper Confirm API
+
+BigBaaS
+
+BAAS Coin Swap 2019/1Q
+
+A verification API that replaces the providers, third
+party certification authority and payment gateway (PG 2019/2Q ~ 3Q
+and offers verification for participants and providers
+
+BaaS User Target Marketing Service
+
+(Big Data Service) 2019/4Q
+
+Gry BaaSid.com 60
+2569
+BaaSid”
+
+7.1 Simple WBS
+
+Simple Work Breakdown Structure of PoA/PoH ( MainNet )
+
+Analysis nec cccccccccccccescs eeeee 2018 4Q
+Map out & seccccccccccees eccccccceed 2018 40
+Development
+
+Coinnet forDev —s | ese}eeeeeeece 2018 4Q
+
+BaaSid Function ©0900000¢ 2018 4Q
+
+Full-test MainNet 909000000 2018 4Q
+
+Test FileNet sececeece 2018 4Q
+
+Encryption & Decryption | ...)..cccceee 2018 3Q
+
+Split Engine(Split ID) ceecccees 2018 3Q
+
+Distribution Engine
+(Allocation)
+
+900000000 2018 3Q
+
+ow
+
+} BaaSid.com 61
+
+Qed)
+7.2 BAAS Token issuance
+With "BaaSid," plans are underway to issue a total of 10 billion BAAS Tokens.
+
+BAAS Token share BAAS Share Lock up
+
+Sale (Pre-sale & ICO) 1,215,000,000 | 12.15% No Lock up
+
+Private Sale
+(BaaSid Partner Sale) 400,000,000 No Lock up
+
+Private Sale
+
+(Strategic Partner Sale) 1,800,000,000 18% Lock up (1 year)
+
+Team(Advisor) 1,000,000,000 10% Lock up (1 year)
+
+Business Cooperation 1.5% Lock up (1 year)
+(Lockup quantities are depends on circumstances ) 1,485,000,000 13.35% No Lock Up
+
+7:000,000.000 boc up ( yean
+
+Mining / Reserve 2,100,000,000 Lock up (1 year)
+
+Lock up 70.5%
+No Lock Up 29.5%
+
+Total Supply 10,000,000,000
+
+The founder and team are not allowed to sell BAAS tokens for 1 year.
+
+¢23 BaaSid.com 62
+7.3 Use of the raised funds
+
+Funds raised by ICO for "BaaSid" will be used in the following ways:
+
+2"4 Pre-sale & ICO
+
+"BaaSid* core Development 30%
+Operation expense 10%
+
+Reserve 20%
+
+74 Official Channel of "BaaSid"
+
+"BaaSid" only uses https://baasid.com https://baasid.io for communications, and all other
+channels are not directly related to "BaaSid.“
+
+When using channels other than the official channels, one should be wary of "fund-raising
+businesses without permission."
+
+All content regarding information on how to sell tokens wll be posted on the homepage,
+
+and during the ICO and presale, "BaaSid" will not separately operate another email, SMS,
+phone number or other homepage that does not carry the Ethereum trademark.
+
+7.5 Public trading of BAAS tokens
+Within 90 days that the ICO is completed for BAAS tokens, they planned to be released in
+stages for sale publicly at various exchanges throughout the world. We will do our best to
+
+ensure transactions with a high level of completion and liquidity, and will strive for the
+quickest public sale as possible.
+
+7.6 Ongoing Optimization
+
+"BaaSid" will closely observe the schedule on the planned roadmap that was laid out.
+
+¢23 BaaSid.com
+7.7 Legal Announcement
+
+The purpose of this white paper is to have internet service providers use the “BaaSid”
+project to base their database or other centralized, saved or otherwise existing user
+information list on blockchain or the public network of blockchain which temporarily
+centralizes personal information on its own then uses instant verification to provide all
+potential internet service providers with the login and membership application procedure
+for users, verifications for payments for retail purchases, internet banking verifications,
+and important activities for all other internet services based on the safe and quick
+verification service based on the BaaS infrastructure.
+
+The information provided in this document is not complete and does not constitute a
+contractual obligation. Also, the purpose of this white paper is to provide potential token
+holders will important detailed information, to offer understanding and share in the vision
+of projects offered by the company, and to offer help in making a decision for the initial
+provision of BAAS tokens.
+
+This white paper is not to be misread as a type of allotment, or prospectus.
+
+BAAS tokens are not limited to the jurisdiction of any one country, nor are sold as a type
+of security.
+
+BAAS tokens can be purchased by people and/or corporations from around the world, and
+according to the law, those deemed to not have the legal eligibility or competence to make
+a purchase will not be entitled to participate in the ICO or make a purchase.
+
+Even if a person is entitled, if that person's country of residence, eligibility for taking part
+in an ICO, or eligibility to purchase BAAS tokens are not clear, please inquire with a
+finance consultant, tax consultant or other consultant.
+
+This document was drafted irregardless of the jurisdiction of the law or regulatory actions
+for protecting investors and will not regulate investors.
+
+Prior to taking part in the ICO, please read the following carefully and confirm that you
+were explained and understand the risk involved. Also, by accepting the conditions to
+participate in the crowd funding donation campaign, the assurances and guarantees
+provided to you are a precondition for taking part in the ICO and our company verifies
+that this information is true and accurate.
+
+The ICO is a central and voluntary Crowd funding Donation Campaign. Partipants
+wishing to take part must consent to the Crowd funding Donation Campaign Terms and
+Conditions.
+
+The participation of our company's ICO is on a voluntary BAAS.
+
+The statements, calculations, and balance sheets in this white paper are for illustrative
+purposes only. This is based on known and unknown risk factors and uncertainties. That
+is why the estimations can be directly or indirectly different from the results of actual
+
+circumstances.
+
+Participation in the purchase of ICOs and BAAS tokens will not be possible in case the
+above assurances or statements cannot be provided.
+
+Legal Opinion : https://baasidcdn.blob.core.windows.net/img/paper/Legal_Opinion.pdf
+
+(3 BaaSid.com
+
+64
+“Know more about BaaSid”
+
+SD
+
+672
+1} BaaSid.com
+
+£5,
+Bergh
+
+BaaSid”
+
+8-1. Welcome to the partnership between BaaSid and Korea Electronic
+Certification Authority(crosscert)!
+
+= Korea Electronic Certification Authority Co., Ltd. is the only company that is qualified
+to provide services to the certification-related fields of public institutions.
+
+= Through cooperation with the Korea Electronic Certification Authority, BaaSid can be
+applied to various public organizations in Korea.
+
+= http://www.paxetv.com/news/article View.html?idxno=72006
+
+8-2. on April 12, 2019, BaaSid signed an agreement to supply its
+certification technology to the Korean Government's cloud support
+project for companies, which is led by the Korea Association of Cloud
+Industry (KACI).
+
+= In the sense that Korea's first commercialization Cc Ks AC |
+
+contract is a public institution. we very pleased
+UIs Se 2] ° EAreisig|
+
+with this.
+Korea Association of Cloudl is
+
+= This can be regarded as BaaSid's first commercialization agreement for deploying its
+verification technology consisting of multi-chain/separation, distribution, combination
+and decryption technology, BaaSid is currently in the process of negotiating real business
+services with potential customers - not only in Korea but also in countries such as Taiwan,
+Singapore, Hong Kong, Malaysia, Japan and Thailand - and will do its best to spread the
+technology on a wide scope.
+
+13 BaaSid.com 66
+
+252)
+5
+
+‘er68
+
+BaaSid"
+
+8-3. We hereby announce the successful launch of the BaaSid Mainnet
+
+= We hereby announce the successful launch of the BaaSid Mainnet. BaaSid implemented
+its main block chain as well as its decentralized authentication chain (Split & Combine
+engine) at 00:00 on March 27 and 2019, March 31, 2019 (Singapore), succeeded in
+interlocking it also. We would like to inform you that the block is stable and is running.
+
+BaaSid realizes its 100% decentralized
+authentication service as well as_ its
+decentralized database security model as an
+end-to end-solution for user applications by
+achieving split, decentralization, storage
+and combination of data within each node
+in the decentralized data environment.
+
+= Currently, BaaSid prepares for commercialization with banks, cryptographic exchanges,
+cloud companies and other IT companies in each country. BaaSid is the world’s first
+security solution that achieves strong security in all serviceable areas through
+decentralization, utilizing block chain for data security purposes. It also provides various
+security services for companies and organizations such as banks, insurance companies,
+cryptographic exchanges, cloud service companies, IT security and infrastructure
+companies. The consultation for the use of BaaSid technology is in progress on a global
+scale. In addition, some of the companies have requested for a POC process and plan to
+commercialize the BaaSid solution in the second quarter of this year. (Schedules may
+change according to the situation of the local company) In addition to personal
+information protection and authentication, we will also disclose the linkage and business
+progress of de- storage projects to protect various files and documents.
+
+= BaaSid Main Net currently operates all of its block providers (BPs) directly in order to
+work with potential customers faster and more resiliently. In addition, to protect core
+technology of source and R & D achievements, we are making some public disclosures
+only to companies that are conducting POC for the application of our new technology.
+Please understand that we cannot publicly open critical technical information to
+participants.
+
+«3 BaaSid.com 67
+
+L5?
+5
+
+5
+BaaSid”
+
+8-4. On April 1, Baasid’s BAAS token was listed on the Korean STO-type
+mining exchange PIKCO
+
+= http://www.pikco.co.kr/
+
+ES)
+BaaSid" °
+
+BaaSid launch on Pikco
+
+= Date : April 1, 2019, 13:00 (UTC + 8 )
+Trading Pair : BAAS / KRW
+
+= We are in the process of developing a more active Korean market together with PIKCO
+Exchange, which is a new exchange, and we are also in the process of negotiating the
+BAAS coin swap related to the completion of main net development.
+
+O_D>.
+AB
+
+692 .
+1) BaaSid.com 68
+5
+
+559
+BaaSid”
+
+8-5. Made an additional Partnership with Institute for Information Industry
+in Taiwan
+
+= Taiwan "III" will cooperates with BaaSid to promote BaaSid's security technology
+solutions, business cooperation and global advancement in order to promote the
+development of block chain technology and secure various industrial resources.
+
+= iii evaluates the requirements of BaaSid's technology application in various industries,
+and maintains its role as a publicity and bridgehead through various media. BaaSid
+cooperates with iii in various organizations, organizations, companies Or promote the
+adoption of BaaSid's security technology into the organization.
+
+= BaaSid has an opportunity to expand into a broader field through its partnership with iii.
+
+GPs,
+
+(2) BaaSid.com 69
+5
+
+‘er68
+
+BaaSid”
+
+8-6. BaaSid signs a partnership with Malaysia SME to supply
+BaaSid security authentication technology and infrastructure
+
+. www.smisme.com www.smeam.org
+
+= Founded on July 13, 1995 to provide initial
+public relations, support, services and solutions
+to the IT industry and services sector of the first
+SMEs, it provides various services, education
+and support for large enterprises and large-scale
+services and government cooperation.
+
+= Tt consists of over 3,000 indirect members and 5
+00 direct members. There are 13 regional offices
+throughout Malaysia.
+
+= SME, through its dialogue with the Malaysian g
+overnment, is the largest small and medium-size
+
+: : : BaaSid signs a partnership with
+d company in Malaysia, with 99% of the Malays Malaysia SME to supply
+ian economy, strengthening the competitiveness BaaSid security authentication technology and
+
+of proven and active SMEs and large IT industry infrastructure
+organizations.
+
+The Official Portal of
+SMS SME ASSOCIATION OF MALAYSIA
+— —— SS «= PERSATUAN PENGUSAHA KECIL DAN SEDERHANA MALAYSIA
+
+MALAYSIA [Formerly knows as SMI Association of Malaysia)
+
+= Through this partnership, BaaSid provides distributed storage for critical information
+storage of SMEs, large companies and associations in Malaysia.
+
+= About 3,500 SMEs, large corporations and government partner companies from
+Malaysia participated in the supply of BaaSid's ASP service, built-in system and other
+Blockchain technology.
+
+EN
+
+ary BaaSid.com 70
+
+<E5:
+5
+
+‘er68
+
+BaaSid”
+
+8-7. BaaSid and NCCU hold their own seminar in Taipei
+= The National Political University of Taiwan (National Chengchi University, NCCU) and
+BaaSid held their own seminar on March 6th, 2019, in Taipei.
+
+= The seminar was held at Esun Hall of NCCU, with keynote speeches followed by
+discussions on information security issues in the form of a round table forum.
+
+Leeman)
+RREGER
+
+ARSC FAY
+ABR ARA RASS
+nate
+
+eee AO RR NEPA
+aris SREAURN=) Kiam maT SLE «mE
+ANCHORED, ROR RR
+
+SukORMANERRER mR
+RMARREREAIROwANA Ree alm
+
+_—€
+
+=" The Head of International Cooperation at NCCU,
+Wang Li Ling, as well as other experts in financial
+technology services related to information security,
+privacy, compliance & risk management,
+monitoring and identification & access control plan
+to hold presentations and discussions on how to
+proceed with the appropriate transformation of data
+security as soon as possible without lagging behind
+with the newest technical developments.
+
+= Through participating in the round table, BaaSid
+presents a high-level solution to ensure an upgrade
+of protection for information security and
+compliance with information security laws
+
+23 BaaSid.com
+5
+
+‘er68
+
+BaaSid"
+
+8-8. BaaSid presents its technology at various Oracle events in January 2019
+
+= SEOUL—Based on the recent results of the discussions between BaaSid and Oracle
+concerning the creation of new business models and new business establishments,
+BaaSid Business Development Manager Kevin Dose introduced future BaaSid-Oracle
+business models at various Oracle events in January 2019, ending with a 20 minute
+presentation at the “Oracle World Seoul 2019”, which was attended by 3,000
+participants..
+
+= BaaSid has been officially invited to present its project as well as its cooperation model
+with Oracle during these event, including the “Nyanbo” online streaming service in the
+Japanese market as well as the BaaSid-Oracle Smart Health Care Platform, which has
+already attracted potential investors and users in Korea.
+
+= At “Oracle World Seoul” on January 29, Mr. Dose took a 20-minutes-speech, where he
+also explained the reason of choosing Oracle Autonomous Data Warehouse as well as
+the Oracle Analytics Cloud to prepare the future business services.
+
+= At the “Oracle CEO Events” on January 24, Business
+Development Manager Kevin Dose took a 30-
+minutes-speech with the title called ‘Introduction of
+Business Model between Oracle and BaaSid’. During
+the event, Mr. Dose also gave a live demonstration of
+the Nyanbo Test Application.
+
+= Starting with this event, BaaSid is planning to further
+open up its cooperation model with Oracle and
+introduce its pilot projects further in detail to the
+public.
+
+5
+
+265)
+BaaSid"
+
+8-9. BaaSid Review on famous Spanish Crypto Platform "Criptomonedas
+e ICOs”
+
+= at the beginning of 2019, a review on the BaaSid project has been published by the
+famous Spanish Crypto Platform “Criptomonedas e ICOs”.
+
+= “Criptomonedas e ICOs” is a leading news source about Bitcoin and blockchain in
+the Spanish-speaking Hispanic market. The website is viewed over 230,000 times
+per month by readers from Spain, Mexiko as well as South American countries
+such as Argentina and Venezuela
+
+= This can be considered as the first step for BaaSid into entering the Hispanic
+countries, which crypto markets are considered to have a huge potential in the
+upcoming years.
+
+Review Baasid*
+
+8-10. BaaSid launch on BITPoint APEC
+
+= BaaSid Token (“BAAS”) has been
+successfully listed on the Global Exchange
+Platform “BITPoint Apec
+
+OR ee
+= — https://www.bitpoint-apec.com 1) BaaSid
+
+‘BaaSid launch on BITPoint APEC
+
+it
+€13 BaaSid.com
+5
+
+‘Sr69
+
+BaaSid”
+
+8-11. BaaSid closes business alliance with BINARIES, a Korean online
+game company specialized in block chain
+
+= Strategic business agreement for mutual cooperation, such as alliance for
+blockchain technology, business development and joint promotion
+
+= Consultation to apply BaaSid's distributed personal authentication service to the
+authentication part of Binary's self-developed block-chain-based game platform
+
+rh ~
+a BINARIES
+
+BaaSid closes. business alliance with BINARIES,
+a Korean online game company specialized in block chain
+
+8-12. Bimax Official Announcement of BAAS Token Listing
+
+= on this Friday, December 14th, the BaaSid Token will be listed on the Korean Exchange
+BIMAX
+
+= BAAS/KRW Trading will be possible on
+this platform.
+
+BaaSid’ piss FZ Bmax
+
+On this Friday, December 14th, the BaaSid Token
+will be listed on the Korean Exchange BIMAX
+
+6F Ry .
+1) BaaSid.com 74
+ero
+
+BaaSid”
+
+8-13. BaaSid Meetup held in Seoul, Korea
+
+= On November 28, 2018, the first official BaaSid Meetup was successfully held in Seoul,
+Korea.
+
+= During the meetup event, BaaSid officially introduces its 2019 Business Model as well
+as its major business partners and their partnership content.
+= https://youtu.be/ZLIVKJjTWNM
+
+“SiN weelip
+
+GROWTH Wednesday, Nlovember 28 2018
+
+a Jam2go, IF
+20:00 ~ 22:00
+
+8-14. BaaSid Introduction on famous Korean Youtube Channel
+
+= on December 3rd, an interview with BaaSid Taiwan Team Members and Partners conduc
+ted by the famous Korean Crypto Youtuber "Brain of God" Shin Du was broadcasted on
+Youtube.
+
+= BaaSid Taiwan's CEO, Mr. James Huang,
+and BaaSid Taiwan’s Technical Advisor,
+Lin Yang, explained the legal system and
+atmosphere of virtual currency and i :
+BaaSid's personal authentication platform t} Idd | AS38%h, TA OPT!
+technology in the Taiwanese Market. = }
+
+= https://youtu.be/jECON1hxYVQ
+
+692 . 7
+(23 BaaSid.com 15
+ero
+
+BaaSid”
+
+8-15. BaaSid and LeadTek agree on partnership to create new values in
+medical services
+
+= LeadTek worked together with Nvidia to develop and distribute GeForce Graphics cards
+to more than 150 countries around the world, which led to an explosive growth in the
+worldwide PC market
+
+= LeadTek’s lineup of health care products and medical businesses is used in around 200
+hospitals and medical institutions in Taiwan. BaaSid will be involved in business areas
+such as 'medical certificate verification' and ‘customer certification’ through the
+subsidiary of Leadtek
+
+8-16. BaaSid Presentation at "It Coin" Program on Digital Chosun TV
+Channel
+
+= BaaSid Presentation broadcasted on
+Digital Chosun TV
+
+= Blockchain Expert Lee Won-jae Today's |
+"It Coin" — BaaSid
+
+GIR
+
+23 BaaSid.com 76
+
+<E5:
+5
+
+‘Sr69
+
+BaaSid”
+
+8-17. BaaSid — International Conference Session Announcement
+
+BaaSid Business Development Manager, Kevin Dose, hold a speech at the 16th Internation
+al (Korea-China-Japan) Residential Environment Conference held in Seoul from Thursday,
+
+October 25 to Saturday October 27.
+
+In the afternoon session of the 3rd conference
+day (October 27), BaaSid introduced the
+encryption/decentralization storage and instant
+access technology of block-chain-based personal
+authentication information as part of the third
+theme "Fourth Industry Technology and Smart
+City Recovery“.
+
+ee!
+
+a cerca
+A163]
+AFZA=Als]2I
+
+HSB = HI 68)
+N 2HAISE OLAOLOU
+
+ADSNSION WSShS SAY
+
+SEARHCES AOE
+
+BQ g:20180 SUS)-272(=)
+© ADIL}: 10 2721(E) 9A] (244 830844)
+BA 2A:MB MONBEIA Se (eA oHiaT)
+
+BT Bs Seal (AIDILY BHI, SA & A
+SKIS 2 Bol
+~ MALIN, O18 (SEAS BOY
+~ AZHHS : 140-007-8402191
+
+8 Ee)
+
+BURA D
+wolaazigiaeal
+- al9tBta
+-2esiae|
+
+#1 010-8629-3456
+Aw 010-2038-0830
+
+(MESFtABSHS 1B USt
+
+8-18. Decentralized Personal Authentication Platform "BaaSid“ enters
+business partnership with Singapore "VisionGroup"
+
+BaaSid has signed an official partnership with Singapore's block chain and pin-tech
+
+specialist VisionGroup.
+
+Through this alliance with Vision Group,
+BaaSid hopes to achieve a joint effort to
+develop a business model, including
+consulting to identify various strategic
+partners that can apply the BaaSid
+platform.
+
+In particular, cooperation with Vision
+Group is important for commercialization
+of BaaSid platform as a market maker role
+for various countries and companies.
+
+6F Ry .
+1) BaaSid.com 77
+ero
+
+BaaSid”
+
+8-19. Cooperation between “BITPoint Taiwan” and BaaSid
+
+8-20.
+
+BITPoint Taiwan, the Taiwanese site of one of Japan's leading crypto currency exchanges
+"BITPoint", has decided to cooperate with BaaSid to develop and use BaaSid's De-KYC
+(Decentralized-Know Your Customer) certification, login and identity verification
+technologies on centralized exchange markets.
+
+It was agreed to commercialize the decentralized KYC authentication service based on 'Inst
+ant Personal Access' utilizing BaaSid's decentralized blockchain-based data encryption and
+decentralized data splitting/distribution platform.
+
+“BITPOINT
+
+Cooperation between “BITPoint Taiwan” and BaaSid
+to use BaaSid KYC & Authentication Technology
+
+BaaSid project introduced on Korean TV
+
+BaaSid was introduced at | pm Korean time on Friday, October 26 2018, on the Asian Economi
+c TV channel "Coin Favorite" program.
+
+http://www.aktv.co.kr/tv/view.html?prt_idxno=58
+
+BaaSid was featured in "Lee Young-sik's “Hot Hot Hot Coin Corner” program of the Asia
+Economy TV broadcast on the theme "What is the alternative for ID verification?“. The
+"instant personal authentication" utilizing the BaaSid Decentralized Blockchain Access “ was
+introduced for about 10 minutes.
+
+HLAOfO|C] ES .
+
+_(BaaSid) me! ES
+
+Ce:
+
+23 BaaSid.com 78
+
+Et
+2-69
+8-21.
+
+8-22.
+
+BaaSid”
+
+BaaSid and Gamania prepare for new security business paradigm
+
+Based on 12 million user databases, Gamania Group and BaaSid decided to apply User DB
+Governance and authentication (real life) service for payment and content service.
+
+BaaSid's decentralized blockchain-
+based "Instant Access" Authentication
+Service uses a decentralized Data
+Split & Distribution Platform. It is
+also. planned to build = and
+commercialize user authentication
+services sequentially in near future to
+realize efficient DB User Governance.
+
+BaaSid Guest Speech at Microsoft Azure Migration Seminar 2018
+
+BaaSid hold a presentation at the Migration Strategy Seminar event hosted by Micros
+oft Korea last week.
+
+During the presentation, BaaSid explained its
+strategical background for choosing the
+Microsoft solution for the development of the
+BaaSid Verification Platform
+
+&23 BaaSid.com 79
+
+2-69
+ero
+
+BaaSid”
+
+8-23. BaaSid sponsors overseas performance of “Running Man”
+
+On October 6, 2018, the BaaSid team participated as a sponsor in a Korean performing arts
+"Running Man" concert in Taiwan.
+
+= On the day of the concert, a promotion video of BaaSid was screened.
+
+This is one of the process of implementing a new "business model" based on the BaaSid
+platform, aiming at the implementation of decentralized content separation, distribution and
+copyright protection (video, music, etc.).
+
+RUNNING MAN
+
+KEEP RUNNING
+
+LIVE IN TAIPEI
+
+8-24. BAAS Token list CoinZest
+
+= https://www.value-press.com/pressrelease/209657
+
+= On October 11, 2018, BaaSid was listed
+on CoinZest, the third-largest Korean
+crypto currency exchange following
+Bithump and Upbit
+
+" This "CoinZest" listing is significant in
+that it makes it possible to trade with the
+Korean currency for the first time by
+enabling transactions between BAAS
+Tokens and the Korean Won (KRW).
+
+a
+
+23 BaaSid.com 80
+
+LEG,
+5
+
+2569
+BaaSid”
+
+8-25. BaaSid and DACONOMY sign MOU Agreement to enforce mutual
+cooperation
+
+= https://www.value-press.com/pressrelease/209 152
+
+= On September 30 2018, the official MOU agreement between BaaSid and
+DACONOMY International Ltd. has successfully been signed, adding a new strong
+European partner to BaaSid’s portfolio.
+
+* DACONOMY Interrnational Ltd. is a European blockchain company operating in
+partnership with the Schober Information Group, a well-known German company
+operating in data base solutions.
+
+= DACONOMY International Ltd. will
+implement a decentralized personal identity
+verification process through BaaSid—a
+highly secure, distributed database company
+using 100% split-distribution authentication.
+
+= Furthermore, BaaSid and DACONOMY also DA C 0 N 0 M Vv
+plan to co-market Europe and Asia partner BAe ae
+events (= BaaSid supports Asian events,
+DACONOMY supports European events) to
+share market information in Asia/Europe and
+finding mutual partners to collaborate with.
+
+8-26. BAAS Token Listed on IDAX
+
+= On September 26, 2018, BaaSid is listed on the IDAX, a virtual currency exchange
+established by the Global Blockchain Research Center (GBC).
+
+= BaaSid is a personal authentication solution that utilizes a block chain. It distributes and
+stores authentication information in a secure and fast manner.
+
+en :
+Q 2) BaaSid * J} IDAX
+\er59
+
+6:
+§23 BaaSid.com 81
+5
+
+2569
+BaaSid”
+
+8-27. The 2018 Smart Geospatial Expo in Seoul
+
+= BaaSid joined Smart Geospatial Expo in 2018 on September 12,2018.
+
+= Industrial Revolution. It was talked
+BaaSid was invited to speak on the use ahs. Aneyers-g aratal 2018 AULE RECA”
+of geospatial data in the era of the SUE. an] BI BOSE MOLLE
+Fourth about the decentralization of
+blockchain technology that could be
+combined with future geospatial data
+applications.
+
+8-28. Seoul BlockChain Expo
+
+= BaaSid successfully participated at the "Block Chain Seoul Expo 2018" held from 17th
+to 19th September, 2018
+
+= https://www.youtube.com/watch? v=ZI65FM6zNOQg
+
+= At the booth, BaaSid's separate / distributed personal authentication technology using
+blockchain technology was wildly discussed, and project leaders were interviewed by
+several media organizations
+
+692 . ,
+(23 BaaSid.com 82
+5
+
+2569
+BaaSid”
+
+8-29. BaaSid expanded its business range by listing at DEX “STAR BIT”
+
+* BAASid 's BAAS token was listed on the
+decentralization exchange "STAR BIT",
+which launched a formal KYC technology
+agreement with BaaSid on August 20, 2018.
+
+= In the future, a comprehensive distributed
+BaaSid" STAR BITCEX application service will be provided utilizing
+
+STABETTE METRE Vall oliguale ik the technology combination of the two
+technical cooperation to support Decentralized database companies.
+
+= — https://www.starbitex.com/trade
+
+8-30. BaaSid participates in "Blockchain Technology Summit" in Shanghai,
+China
+
+Blockchain Technology Summit ‘|
+
+Aug.24-25 + Hyatt Regency Shanghai, Wujiaothang
+
+= BaaSid successfully participated at the Blockchain Technology Summit (BLC) Summit
+2018, which took place in Shanghai.
+
+= The conferences held at BLC was dedicated to the new advanced trends in blockchain
+technology, cryptographic currencies and blockchain-based commercial application.
+
+= Through its participation at the BLC summit, BaaSid was able to increase its knowledge
+range on the Chinese market and engage into wide-ranging interactions, which also
+includes the purposes discovering business models.
+
+= BaaSid’s partner BaaSInfra was also present at the booth to presents its node technology.
+
+Ce:
+
+13} BaaSid.com 83
+
+rah
+5
+
+‘Sr69
+
+BaaSid”
+
+8-31. BaaSid announces new partners at “BaaSid x Hcash” Meetup
+
+= On July 20th 2018, BaaSid Business Development Manager Kevin Dose participated at
+the “BaaSid x Hcash” Meetup to present the recent progress of the BaaSid Global Project.
+Mr. Dose also used this opportunity to introduced two new partners of the BaaSid
+Project—RSC (Ronaldinho Soccer Coin) and Super Micro Computer, Inc.
+
+"= RSC (Ronaldino Soccer Coin) is a
+revolutionary soccer business offering
+both digital and real services The
+addition of our new strong partner
+Super Micro Computer, Inc., an
+officially registered NASDAQ company,
+will clearly accelerate the development
+and distribution of BaaSid Private
+Nodes.
+
+with,
+
+8-32. Participation at Blockchain Expo Korea (BCEK) 2018
+
+=" On July 26 &27, BaaSid participated at the “Blockchain Expo Korea 2018” hold in Busan,
+South Korea.
+
+= Being represented with their own booth, BaaSid provided international visitors and
+
+exhibitors from all over the world with a great range of information concerning the
+
+BaaSid project, including the recent progress on coin listing and partnership
+
+establishments.
+
+BLOCKCHAIN
+
+the future core technology of the 4th industrial revolution
+
+26-27 July 2018
+BPEX, BUSAN KOREA
+
+BCEK 2018
+
+BLOCKCHAIN EXPO KOREA
+
+692 .
+1) BaaSid.com 84
+b
+559
+
+BaaSid"
+
+= On July 19, 2018, BaaSid is listed on
+CoinBene, one of the world's largest cr
+ypto currency exchanges in more than
+150 countries.
+
+= BaaSid will be listed on various BaaSid"
+exchanges in the future along with the
+completion of the official initial listing.
+
+CoinBene
+
+BaaSid launch on CoinBene
+
+8-34. DeCentral Exchange (DEX) "Starbite (www.starbitex.com)", BaaSid
+and KYC technical cooperation
+
+= KOREA StarBit, the No. | decentralized exchange (DEX) in Asia, will support the new
+KYC (Know Your Customer) procedure based on technical cooperation with BaaSid
+(baasid.com), a decentralized database company.
+
+= http://www.etnews.com/20180817000272
+
+= Decentralized Know Your Customer (DK YC) will provide various online services and
+blockchain- related services through one-time instant access
+
+= Through this KYC procedure, which will eliminate the biggest business weaknesses of
+DEX Exchanges, is expected to significantly improve security and stability due to the
+application of BaaSid's decentralized decentralization service.
+
+STRATEGIC PARTNERSHIP
+
+?*
+
+x
+
+STAR BIT'EX BaaSid
+
+6:
+13 BaaSid.com
+BaaSid”
+
+8-35. Applying the world's first 100% decentralized database to the RSC
+project of Ronaldinho
+
+=" WSC launches a revolutionary soccer business offering both digital and real services in
+cooperation with a former member of the Brazil soccer team, Ronaldo de Assis Moreira.
+
+Based on the BaaSid Authentication
+
+= A payment system, RSC platform (Ronaldinho Soccer
+Coin) with safety and speed will be developed based on Applications
+block chain technology-NEO. This system will become
+a core service which has worldwide availability.
+
+= RSC Platform in collaboration with BaaSid, blockchain €@)BaaSid.com De-Centralzed DB
+based authentication platform will provide the high- :
+level security with 100% decentralized application
+login. :
+
+Online Shopping Digital Stadium
+(Off Line Shopping) Payment
+
+RSC Pass
+(uti Wade)
+
+NEO Blockchain fr NEO
+
+Bet System RSC Wallet
+Health
+ce oye ‘Por’ (Proot of Referee)
+(Proof of Referee) (Debit Card)
+
+Baasif —— - RSeoin
+
+BaaSid and RSC engage in Research & Business Collaboration
+for various Identification procedures.
+
+Based on the NEO Blockchain
+
+8-36. BaaSid & BaaSinfra signed coopertation contract with Super Micro
+Computer, Inc. (NASDAQ)
+
+= BaaSid and its Dapp concept, BaaSinfra, have
+partnered with Super Micro Computer, Inc.
+(NADAQ).
+
+= Based on BaaSid's MainNet, BaaSinfra works
+with Super Micro Computer, Inc. (Nasdaq), the
+world's top 3 server maker, to develop and BaaSinfra™
+distribute BaaSid Private Node servers.
+
+= After that, BaaSid Private Node developed by this
+project will be provided to various major
+companies. > =>
+SUPE!
+
+r ‘O) )} BaaSid.com 86
+
+5
+
+2569
+BaaSid”
+
+8-37. BaaSid and Crypto Lab hold speech at Aston Alliance Meet-up
+
+= 23th May 2018 (Wednesday), Seoul
+
+= http://www.thebchain.co.kr/news/article View htm] ?idxno=587
+
+= Meet-up organized by our partner Aston Alliance, Speeches held by BaaSid International
+Lab (Singapore) and Crypto Lab (Japan)
+
+= “On this day, BaaSid International Lab (Singapore) presented their technology, which is
+able to split encrypted data into hundreds, thousands of parts. Crypto LAB(Japan)
+provides explanations for ICO evaluation platforms.”
+
+8-38. BaaSid and Crypto Lab participate at WIS (World IT Show) 2018
+
+= May 23" — May 26" 2018, COEX B Hall in Seoul, KOREA
+
+= http://www.etnews.com/20180524000262
+
+= PRO Group (Japan) and BaaSid International (Singapore) participated at WIS 2018
+being part of joint exhibition booth of “Aston Alliance”. The exhibition event was
+also combined with a speech event held on May 23". BaaSid experts explained their
+data-split blockchain technology to visitors of the exhibition.
+
+Qppsasi”
+
+as eet
+
+23 BaaSid.com 87
+
+255,
+Bergh
+
+BaaSid”
+
+8-39. Cooperation on blockchain-based electronic document processing
+
+" — http://www.fnnews.com/news/201805041420472667
+BaaSid, P.R.O japan and 7 other IT companies sign cooperation agreement on blockchain-
+
+based electronic document project
+
+Seven companies related to blockchain-based electronic documents, security and
+communication technology (namely the global project BaaSid, the Japanese company PRO
+Group and the Korea's Handysoft (Kosdaq)
+
+, Sejong Telecom (Kosdaq), Korea Trade
+Information & Communication, Hancom 2 HIOl J|HE teu AXA
+Secure (Kosdaq) and Xblock Systems) signed
+an agreement to collaborate on _ the
+blockchain-based processing of electronic
+documents.
+Through this agreement, the consortium
+members will join hands in developing a
+Blockchain Network especially optimized for
+electronic documents to activate Blockchain- \
+based electronic documents and expand their electronic document processing technology to
+domestic and global markets.
+
+According to the Korea Electronics Association, the size of the electronic document market in
+Korea is expected to exceed 5 trillion won by 2020 and the global electronic document
+management system market by about 20 billion dollars.
+
+(May 5" 2018, Financial News)
+8-40. Japan Impress & BaaSid Seminar
+
+= http://www.aktv.co.kr/news/article View.html?idxno=54084
+
+“Private ID security based on the Blockchain technology — Seminar held by Impress
+(Japan) and BaaSid”
+
+On April 13, BaaSid participated at the “Business Changes with Blockchain” in Tokyo.
+Organized by the Japanese IT Media Experts “Impress” and “IT Leaders”, Mr. Moon Inshic,
+Member of the BaaSid Project, hold a speech titled “Reboot the Internet”, introducing the
+concept of a blockchain-based decentralized database for personal ID information.
+
+(April 30" 2018, Asia Economy TV )
+
+692
+‘83 BaaSid.com 88
+
+asd
+5
+
+2569
+BaaSid”
+
+8-41. BaaSid & BaaSInfra — Create an ideal Blockchain Environment
+
+= http://www.zdnet.co.kr/column/column_view.asp?artice_id=20180419142626&type=det&re=
+
+“The Next Human Life by Blockchain”
+
+In the not so distant future, you will meet a new
+global life structure. Already today, we can see the
+efforts of creating new business forms that will be
+able to change the world. One of these new
+business forms is the blockchain technology.
+
+(..)
+
+One of the new global players in the blockchain
+technology will be BaaSid, which serves as a huge
+data storage utilized by smart phones and
+computers, based on the business model from
+BaaSinfra.
+
+The target is not to make a product for selling, but to utilize remaining resources. Once Token
+will be distributed to the providers of the storage space, the user of the storage space will have
+to pay tokens, which creates an ideal crypto environment.
+
+(April 20" 2018, Zdnet News)
+
+8-42. BaaSid — The Decentralized Platform
+
+= https://it.impressbm.co.jp/articles/-/15876
+= https://internet.watch.impress.co.jp/docs/event/1118011.html
+
+“BaaSid opens the door for decentralization of personal data”
+The personal information in the BaaSid network will not be
+stored on a centralized database, which lifts lots of concerns
+concerning data security. If data is storage on a centralized
+device, it can be unwillingly provided to some people.
+BaaSid information can only be accessed through instant
+access by the user himself and is therefore a completely safe
+way of data saving.
+
+YEA ALLK BER
+
+AF Poms LMT, +
+Ie ECD MML TL EBATIE
+a
+
+(March 28 2018, Japan IT Leaders)
+
+6 Gr, HERE Ontl AMARONE,
+
+&13 BaaSid.com 89
+5
+
+‘er68
+
+BaaSid”
+
+8-43. Minimize costs for database set-up and database management
+
+= March 21* 2018, Asian Economy TV Coin Interview
+https://www.youtube.com/watch?v=CBK yHA 10cmU
+
+orga TV
+
+ge voueg
+of} BR ORS A
+
+Professor Inoue, R & D leader of BaaSid, appeared on “Coin Interview” at Asia Economy
+TV to explain the BaaSid technology to the viewers. Professor Inoue mainly mentioned the
+cost advantages that many online service providers can profit from by using the BaaSid
+system. BaaSid is a 100% decentralized platform that dramatically reduces the huge data m
+anagement costs which are normally caused by the set-up and management of a centralized
+database.
+
+8-44. BaaSid Global Members Day
+
+"March 14" 2018, Seoul Imperial Palace 6F
+"The new technology of encrypted data splitting will further develop the blockchain industry“
+== = ——— +
+
+On March 14, Nicholas Ng S.L, CEO of BaaSid International Lab (S) Pte in Singapore,
+BaaSid International Lab CFO Leroy Zen Lau, Taiwan BaaSInfra CEO James Hwang,
+Professor, Japan PRO Group Chairman Otaka Jun, Buffalo University Economics Professor
+Tetsuya Saito, Security Technology Advisor Takeshi Doshisha and the main members in
+Korea gathered for the annual BaaSid Global Members Day.
+
+Participants are focusing on further developing the entire Blockchain industry by introducing
+a new technology called 'BaaSid's Data Encryption Separation / Distributed Storage and
+Association’. To ensure the success of the global project BaaSid, everybody promised to do
+their best in their respective areas such as research and development, marketing and technical
+
+consul ting .
+(PZ
+@
+
+13} BaaSid.com 90
+
+rah
+5
+
+2569
+BaaSid”
+
+8-45. BaaSid participates “Blockchain Meets Asia” Event
+
+= — http://it.chosun.com/news/article.html?no=2848024
+
+“BaaSid - Blockchain Meets Asia "
+
+“Blockchain Meets Asia”was held by the team of the
+Blockchain Marketing Company team (teamw.e) to provide
+a forum for sharing the vision of the future and expanding BLOCKCHAIN
+the network. MEETSASIA
+BaaSid announces Blockchain technology to prevent
+forgery and tampering from hackers and to maintain the
+security and permanence of participants through public
+transaction books.
+
+(March 13" 2018, Chosun Ibo)
+
+8-46. Strong Partners in Blockchain Industry
+
+= — http://www.fnnews.com/news/20180205 1027005526
+
+“Korean Blockchain Expert Company XBlock Systems participates in BaaSid project”
+BaaSid, a project operated by the Japanese IT Security 3
+Company “P.R.O”gained another valuable cooperation
+partner with the Korean Blockchain Expert Company
+“XBlock Systems”.
+
+BaaS is the abbreviation for Blockchain as a Service, which
+is a concept where a blockchain infrastructure is borrowed
+
+partially, or in its entirety, for the development of
+internet services related to existing web services, app
+services, and blockchain services (cryptocurrency
+exchanges, etc.).
+
+(February 5‘* 2018, Financial News)
+
+Ce:
+
+13} BaaSid.com 91
+
+rah
+5
+
+25-69)
+BaaSid”
+
+8-47. Major Channel
+
+Twitter Followers : i) 580 1 |
+Telegram Members : 13,615
+‘N
+
+BAAS Holders
+
+Youtube Viewers : 278 657
+
+https://www.youtube.com/channel/UCj9J016 Llx_ MTX Wj54FaXGA/videos
+
+v What Is BaaSid? v BaaSid’s Technology v The Egg of Columbus :
+BaaSid’s Story
+
+v The New Trend of vY BaaSid’s New perception VY Who makes
+Cryptocurrency and philosophy
+
+2
+
+23 BaaSid.com 92
+
+B59"
+BaaSid"
+
+8-48. Major Channel and Information
+
+. @ BaaSid Official Website : www.baasid.com // www.baasid.io
+
+7 © Youtube Review : https://youtu.be/Rz VRYVY-hm0
+
+" © Telegram : https://t.me/BaaSidOfficial
+
+" .) Kakao opentalk : https://open.kakao.com/o/gJsIUMJ
+
+" @Q Twitter : https://twitter.com/baa sid
+
+" ) Medium : https://medium.com/@baasid.info
+
+" © Youtube :
+https://www.youtube.com/channel/UCj9J016 11x_MTXWj54FaXGA/featu
+red
+
+Global Introduction (Japan) :
+https://www.watch.impress.co.jp/topics/baasid1803/
+
+= Global Introduction (China) :
+http://www.qukuaiwang.com.cn/news/6934 html
+
+= Global Introduction (USA) :
+https://theusacommerce.com/baasid-BAS-secure-id-verification-in-an-
+instant-with-Blockchain-technology/
+
+€43 BaaSid.com 93
+
+<E5:

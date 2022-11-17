@@ -1,0 +1,1117 @@
+AAVE
+
+Protocol Whitepaper
+V1.0
+
+wow @aave.com
+
+January 2020
+
+Abstract
+
+This document describes the definitions and theory behind the Aave Protocol explaining the different aspects
+of the implementation.
+Contents
+
+1 Introduction 1
+> Concepts] ee 1
+1.2 Formal Definitions)... 3
+
+2 Protocol Architecture!
+2.1 Lending Pool Core|
+
+2.4 Lending Pool Configurator
+2.5 Interest Rate Strategy]... 6 ee
+2.6 OverMance) ow ee
+
+3
+
+The LendingPool Contract
+3.1 Deposit] 2... ee
+ee
+ee
+
+37 Flash Loans}... 2. 5
+3.8 ‘Tokenization) .. 2... ee 6
+
+4 Stable Rate Theory] 1
+
+4.4 Stabk e Rate Rebalancing ee
+
+4.5 The Rebalancing Process] .. 6... ee
+20
+1 Introduction
+
+The birth of the Aave Protocol marks Aave’s shift from a decentralized P2P lending strategy (direct loan relationship
+between lenders and borrowers, like in ETHLend) to a pool-based strategy. Lenders provide liquidity by depositing
+cryptocurrencies in a pool contract. Simultaneously, in the same contract, the pooled funds can be borrowed by
+placing a collateral. Loans do not need to be individually matched, instead they rely on the pooled funds, as well as
+the amounts borrowed and their collateral. This enables instant loans with characteristics based on the state of the
+pool. A simplified scheme of the protocol is presented in figure [1] below.
+
+AAVE
+
+Protocol
+
+a -. - @
+
+Figure 1: The Aave Protocol
+
+The interest rate for both borrowers and lenders is decided algorithmically:
+
+e For borrowers, it depends on the cost of money - the amount of funds available in the pool at a specific time.
+As funds are borrowed from the pool, the amount of funds available decreases which raises the interest rate.
+
+e For lenders, this interest rate corresponds to the earn rate, with the algorithm safeguarding a liquidity reserve
+to guarantee withdrawals at any time.
+
+1.1. Basic Concepts
+
+Lending Pool
+
+336666
+
+v
+Borrows
+
+e.'| @
+ae @«
+
+Borrower Depositor
+
+Figure 2: Lending Pool Basics
+
+At the heart of a lending pool is the concept of reserve: every pool holds reserves in multiple currencies, with
+the total amount in Ethereum defined as total liquidity. A reserve accepts deposits from lenders. Users can
+borrow these funds, granted that they lock a greater value as collateral, which backs the borrow position.
+Specific currencies in the pooled reserves can be configured as collateral or not for borrow positions, only low risk
+tokens should be considered. The amount one can borrow depends on the currencies deposited still available in the
+reserves. Every reserve has a specific Loan-To- Value (LTV), calculated as the weighted average of the different
+LTVs of the currencies composing the collateral, where the weight for each LT'V is the equivalent amount of the
+collateral in ETH; figure [3] shows an example of parameters.
+
+Every borrow position can be opened with a stable or variable rate. Borrows have infinite duration, and there is
+no repayment schedule: partial or full repayments can be made anytime.
+
+Lending Pool
+
+ion ratio: 30 %
+
+Figure 3: Lending Pool Parameters
+
+In case of price fluctuations, a borrow position might be liquidated. A liquidation event happens when the price of
+the collateral drops below the threshold, Lg, called liquidation threshold. Reaching this ratio channels a liquida-
+tion bonus, which incentivizes liquidators to buy the collateral at a discounted price. Every reserve has a specific
+liquidation threshold, following the same approach as for the LTV. Calculation of the average liquidation threshold Lg
+is performed dynamically, using the weighted average of the liquidation thresholds of the collateral’s underlying assets.
+
+At any point in time, a borrow position is characterized by its health factor Hy, a function for the total col-
+lateral and the total borrows which determines if a loan is undercollateralized:
+
+TotalCollateralETH*L% . . . .
+Ay Total Borvoas ETH eT otal FesETH when Hy <1, a loan is considered undercollateralized and can be liquidated
+
+Further details on liquidation can be found in section [3.6]
+1.2 Formal Definitions
+
+Variable
+
+Description
+
+T, current times-
+tamp
+
+T, last
+timestamp
+
+updated
+
+AT, delta time
+Tyeary Seconds
+
+AT year,
+riod
+
+yearly pe-
+
+I,, total liquidity
+
+B,, total stable bor-
+rows
+
+B,, total
+borrows
+
+variable
+
+B,, total borrows
+
+U, utilization rate
+Uoptimal, target uti-
+lization rate
+
+Ry, base variable
+borrow rate
+
+Relope1, interest rate
+slope below Upptimai
+
+Relope2, interest rate
+slope above Upptimal
+
+Ry, variable borrow
+rate
+
+Rs, stable rate
+
+M,, average market
+lending rate
+
+Current number of seconds defined by block.timestamp.
+
+Timestamp of the last update of the reserve data. T; is updated every time a
+borrow, deposit, redeem, repay, swap or liquidation event occurs.
+
+AT=T-T,
+Number of seconds in a year.
+
+Tyear = 31536000
+
+AT
+Tyear
+
+AT year =
+Total amount of liquidity available in the reserve. The decimals of this value
+depend on the decimals of the currency.
+
+Total amount of liquidity borrowed at a stable rate. The decimals of this value
+depend on the decimals of the currency.
+
+Total amount of liquidity borrowed at a variable rate. The decimals of this value
+depend on the decimals of the currency.
+
+Total amount of liquidity borrowed. The deci- B,= B,+ By,
+mals of this value depend on the decimals of the
+currency.
+
+0, if Ly =0
+Representing the utilization of the deposited U=
+
+; Be:
+funds. Be, ifL,>0
+The utilization rate targeted by the model, beyond the variable interest rate rises
+sharply.
+
+Constant for B, = 0. Expressed in ray.
+
+Constant representing the scaling of the interest rate versus the utilization, when
+U < Uoptimat. Expressed in ray.
+
+Constant representing the scaling of the interest rate versus the utilization, when
+U > Uoptimat. Expressed in ray.
+
+R Ry + URetoper, if U < Uoptimal
+Ly =
+
+U-U,
+
+optimal ‘
+Ruy + Retoper + TUsprmar Pslope2s if U > Uoptimat
+
+Implemented in section Expressed in ray.
+
+Base stable borrow rate, defined for i platforms
+with P? the lending rate and P? the borrowing
+volume. Expressed in ray.
+
+M, = Sue PPI
+
+Variable
+
+Description
+
+t
+Roa» average stable
+rate borrow rate
+
+Ro, overall borrow
+rate
+
+Ri, current liquidity
+rate
+
+Ci, cumulated liq-
+uidity index
+
+rt
+
+ny reserve normal-
+ized income
+
+Bt, cumulated vari-
+able borrow index
+
+Bien) user cumu-
+lated variable bor-
+
+row index
+
+B,, user principal
+borrow balance
+
+Bres user com-
+pounded borrow
+balance
+
+Ay, health factor
+
+When a stable borrow of amount Brew is issued
+at rate R,:
+
+When a user repays an amount B,, at stable rate
+
+Rx:
+
+Bs Riz! +BnewRs
+Roa = Bet Bnew
+Roa =
+0, if B, — B, =0
+
+s— By
+
+Check the methods decreaseTotalBorrowsStableAndUpdateAverageRate()
+and increaseTotalBorrowsStableAndUpdateAverageRate(). Expressed in ray.
+
+Overall borrow rate of the reserve, calculated as
+the weighted average between the total variable
+borrows B, and the total stable borrows B,.
+
+Function of the overall borrow rate Ro and the
+utilization rate U.
+
+Interest cumulated by the reserve during the time
+interval Ay, updated whenever a borrow, deposit,
+repay, redeem, swap, liquidation event occurs.
+
+Ongoing interest cumulated by the reserve.
+
+Interest cumulated by the variable borrows B,, at
+rate R,, updated whenever a borrow, deposit, repay,
+redeem, swap, liquidation event occurs.
+
+Variable borrow index of the specific user, stored
+when a user opens a variable borrow position.
+
+Ct = (RAT year + 1)Ci*
+
+CP =1x 10?7 = 1 ray
+
+Tt = (RiATyear + 1)C!!
+
+Boe = (1+ 7B AP Bie!
+
+vear
+B®, =1x 10?7 =1 ray
+Bi, = Bi
+
+Balance stored when a user opens a borrow position. In case of multiple borrows,
+the compounded interest is cumulated each time and it becomes the new principal
+
+borrow balance.
+
+Principal B, plus the cumulated interests.
+For a variable position:
+
+For a stable position:
+
+when Hy <1, a loan is considered undercollater-
+alized and can be liquidated
+
+Boe = Pe (1 t+ 7e)AY B,
+we Boca ( Tan) aa
+Rs_)AT»
+Bre = (1+ Tan) Be
+Hy a LolalCollateralET H« Le,
+f B,+TotalFeesETH
+
+2 Protocol Architecture
+
+The current implementation of the protocol is as follows:
+
+‘ > User
+v
+Burns aTokens Receives aTokens 4 e
+on redeem on deposit T T | t)
+a Flash Loans* Deposit Borrow Repay Redeem = Swap Kiguidators
+v v v v v vse
+Liquidation Manager Lending Pool <+_
+Mint / Burn
+>
+Tokenization (aTokens)
+>
+v Lending Pool
+v Configurator
+Price Oracle nd Lending Pool Data Provider
+banging Rate > Core Library Lending Pool Core +
+
+Oracle
+: :
+v
+
+Interest Rate Strategy *,
+e
+
+State Data
+
+*needs to be a smart contract
+
+Figure 4: Protocol Architecture
+
+2.1 Lending Pool Core
+The LendingPoolCore contract is the center of the protocol, it:
+e holds the state of every reserve and all the assets deposited,
+
+e handles the basic logic (cumulation of the indexes, calculation of the interest rates...).
+
+2.2 Lending Pool Data Provider
+The LendingPoolDataProvider contract performs calculations on a higher layer of abstraction than the LendingPoolCore
+and provides data for the LendingPool; specifically:
+
+e Calculates the ETH equivalent a user’s balances (Borrow Balance, Collateral Balance, Liquidity Balance) to
+assess how much a user is allowed to borrow and the health factor.
+
+e Aggregates data from the LendingPoolCore to provide high level information to the LendingPool.
+
+e Calculate of the Average Loan to Value and Average Liquidation Ratio.
+
+ot
+2.3 Lending Pool
+
+The LendingPool contract uses the LendingPoolCore and LendingPoolDataProvider to interact with the reserves
+through the actions:
+
+e Deposit e Borrow e Rate swap e Flash loan
+
+e Redeem e Repay e Liquidation
+
+One of the advanced features implemented in the LendingPool contract is the tokenization of the lending position.
+When a user deposits in a specific reserve, he receives a corresponding amount of aTokens, tokens that map the
+liquidity deposited and accrue the interests of the deposited underlying assets. Atokens are minted upon deposit,
+their value increases until they are burned on redeem or liquidated. Whenever a user opens a borrow position, the
+tokens used as collateral are locked and cannot be transferred. Further details on the tokenization are in section 3.8]
+
+2.4 Lending Pool Configurator
+
+The LendingPoolConfigurator provides main configuration functions for LendingPool and LendingPoolCore:
+e Reserve initialization
+e Reserve configuration
+e Enable/disable borrowing on a reserve
+e Enable/disable the usage of a specific reserve as collateral.
+
+The LendingPoolConfigurator contract will be integrated in Aave Protocol governance.
+
+2.5 Interest Rate Strategy
+
+The InterestRateStrategy contract holds the information needed to update the interest rates of a specific reserve
+and implements the update of the interest rates. Every reserve has a specific InterestRateStrategy contract.
+Specifically, within the base strategy contract DefaultReserveInterestRateStrategy the following are defined:
+e Base variable borrow rate Ry,
+e Interest rate slope below optimal utilisation Rsiope1
+
+e Interest rate slope beyond optimal utilisation Rstope2
+
+The current variable borrow rate is:
+
+optimal .
+ot Rstoper, if U > Uoptimat
+
+R Ry + URetopers if U < Uoptimat
+= l
+° Ryo + Rstoper + F=
+
+Uoptimal
+
+This interest rate model allows for calibration of key interest rates:
+e AU=0, R, = Ry,
+e AtU= Voptimal, Ry = Roy + Retoper
+e Above Upptimal, the interest rate rises sharply to take into account the cost of capital.
+
+The stable borrow rate follows the same model described in section [4.2]
+2.6 Governance
+
+The rights of the protocol are controlled by the LEND token. Initially, the Aave Protocol will be launched with
+a decentralized on-chain governance based on the DAOStack framework which will evolve to a fully autonomous
+protocol. On-chain implies all votes are binding: actions that follow a vote are hard-coded and must be executed.
+
+To understand the scope of the governance it’s important to make the distinction:
+
+e The Aave Protocol is bound to evolve and will allow the creation of multiple lending pools with segregated
+liquidity, parameters, permissions, and type of assets.
+
+e The Aave Lending Pool is the first pool of the Aave protocol until the Pool Factory Update is released and
+anyone can create their own pool.
+
+Within the Aave Protocol, the governance will take place at two level :
+
+1. The Protocol’s Governance voting is weighted by LEND for decisions related to protocol parameters and
+upgrades of the smart contract. It can be compared to MakerDAO’s governance where stakeholders vote on
+current and future parameters of the protocol.
+
+2. The Pool’s Governance where your vote is weighted based on your share of pool liquidity expressed in
+aTokens. The votes cover pool specific parameters such as assets used as collateral or to be borrowed.
+
+Each Pool will have its own governance, under the umbrella of the Protocol’s Governance.
+
+More details on the Governance will be published in a Governance Proposal to the community.
+3 The LendingPool Contract
+
+The actions implemented within LendingPool allow users to interact with the reserve. All the actions follow this
+specific sequence:
+
+Actor
+
+Check state
+
+v
+
+Check conditions
+
+State and No
+
+conditions
+satisfy
+
+the action
+
+> Revert
+
+Yes
+
+v
+Update
+
+borrow/liquidity
+indexes
+
+v
+
+Change state
+To execute action
+
+v
+
+Update interest
+rates
+
+v
+
+External
+interactions
+(Transfers etc)
+
+v
+
+Done
+
+Figure 5: The LendingPool Contract
+3.1 Deposit
+
+The deposit action is the simplest one and does not have any particular state check. The sequence of action is:
+
+Update
+borrow/liquidity
+indexes
+
+|
+v
+
+Increase total
+liquidity
+
+|
+v
+
+Update interest
+rates
+
+|
+v
+
+Mint equivalent
+aTokens
+
+|
+¥
+
+Transfer underlying
+asset to reserve
+
+Done
+
+Figure 6: Deposit funds
+3.2 Redeem
+
+The redeem action allows users to exchange an amount of aTokens for the underlying asset. The actual amount
+to redeem is calculated using the aToken/underlying exchange rate E; in sectio The action is defined as follows:
+
+Actor
+v v
+Check user Burn
+aToken balance requested aTokens
+’ ’
+Balance is “ Health factor 4
+enough —> Revert is above 1 > Revert
+Yes t Yes ¥
+Calculate amount Decrease total
+underlying to liquidity
+redeem
+v v
+Update interest
+rates
+Reserve available __yp Revert
+liquidity is
+enough v
+Transfer underlying
+| asset to user
+Yes ¥
+Update ¥v
+Borrow/liquidity
+indexes
+Done
+
+Figure 7: Redeem funds
+
+10
+3.3. Borrow
+
+The borrow action transfers to the user a specific amount of underlying asset, in exchange of a collateral that remains
+locked. The flow of action can be described as follows:
+
+Actor
+
+Updates reserve
+There is total borrows by rate
+enough liquidity >
+the borrow mode Revert |
+is valid ¥
+Sets user
+interest rate mode
+Yes
+User collateral Increases the reserve
+balance is enough, > Revert total liquidity by
+health factor the accrued interest
+Is above 1 (ifany)
+|
+‘ Update interest
+rates
+Update
+borrow/liquidity
+indexes |
+4 Calculates and
+sets the user
+Adds the accrued liquidation ratio
+interest to the
+current borrower
+balance +
+4 Transfer
+underlying asset
+Adds the new borrow to user
+amount to the current
+borrow balance ff
+Done
+
+Figure 8: Borrow funds
+
+11
+3.4 Repay
+
+The repay action allows the user to repay completely or partially the borrowed amount plus the origination fee and
+the accrued interest.
+
+Actor
+(rt~—<“=i<isiCSsSCCSXY
+’ °
+Sets user interest
+rate mode
+Check the user
+has actual amount = —3> Revert
+to repay +
+Increases the reserve
+total liquidity by
+the accrued interest
+Yes t (if any)
+
+v
+
+User collateral
+balance is enough, —»p»
+health factor
+Is above 1
+
+MM
++ Calculates and
+
+sets the user
+liquidation ratio
+
+Revert Update interest
+rates
+
+Amount Yes
+
+Transfer to fee
+torepayis smaller = —9p> Ungar fe aad destination v
+or equal than address
+the fees Transfer
+underlying asset
+to reserve
+M ¥
+Update Eng
+borrow/liquidity
+indexes
+Done
+v
+
+Adds the accrued
+interest to the
+current borrow balance
+
+v
+
+Subtracts
+the amount to repay
+(minus fees)
+
+v
+
+Updates reserve
+total borrows
+by rate
+
+Figure 9: Repay a loan
+
+12
+3.5 Swap Rate
+
+The swap rate action allows a user with a borrow in progress to swap between variable and stable borrow rate.
+
+Actor
+
+User
+has a borrow — Revert
+in progress
+
+Yes +
+
+Update
+borrow/liquidity
+indexes
+
+7
+
+Yes
+Decrease total
+—- borrows stable, ama
+increase variable
+
+Rate mode
+is stable
+
+Change rate mode
+to variable
+
+*
+
+Increase total
+borrows stable,
+decrease variable
+
+“
+
+Set user
+interest rate mode
+
+.
+
+Increases the reserve
+total liquidity by «+
+the accrued interest
+(if any)
+
+‘
+
+Done
+
+Figure 10: Swap Rate
+
+13
+3.6 Liquidation Call
+
+The liquidationcall contract allows any external actor to purchase part of a collateral at a discounted price. In
+case of a liquidation event, a maximum of 50% of the loan can be liquidated, which will bring the health factor back
+
+above 1.
+
+Actor
+t |
+Calculate the amount
+of collateral in
+principal currency
+Borrow is in (including discount)
+liquidation status __yy Revert
+(health factor <1) t
+Yes $ Amount not above
+50% of the principle > Revert
+borrow balance
+The user
+has borrowed the
+specific currency and has = 3 Revert
+the collateral the
+caller wants Yes &
+to buy v
+Decrease reserve
+total borrows
+Yes Y by rate mode
+Update +
+borrow/liquidity
+indexes
+Decrease user
+principal borrow
+¥ balance
+Calculate accrued ¥
+interest in the
+principal balance
+Transfer to user
+Increases the ¥
+reserve total liquidity
+by the accrued interest
+| Done
+
+Figure 11: Liquidation
+
+14
+3.7 Flash Loans
+
+The flash loan action will allow users to borrow from the reserves within a single transaction, as long as the user
+returns more liquidity that has been taken.
+
+Check the
+reserve has enough > Revert
+liquidity
+
+Yes
+
+v
+
+Transfer funds
+to the action
+contract
+
+v
+Execute action
+on the contract
+
+v
+
+Funds plus
+fee have been > Revert
+returned
+ves J
+s
+v
+Update
+borrow/liquidity
+indexes
+v
+
+Accrue the fee
+to the reserve
+liquidity
+
+v
+
+Done
+
+Figure 12: Flash Loan
+
+Flash loans temporarily transfer the funds to a smart contract that respects the IFlashLoanEnabledContract.sol
+interface. The address of the contract is a parameter of the action. After the funds are transferred, the method
+executeOperation() is executed on the external contract. The contract can do whatever action is needed with the
+borrowed funds. After the method executeOperation() is completed, a check is performed to verify that the funds
+plus fee have been returned to the LendingPool contract. The fee is then accrued to the reserve, and the state of
+the reserve is updated. If less funds than what was borrowed have been returned to the reserve, the transaction is
+reverted.
+3.8
+
+Tokenization
+
+The Aave protocol implements a tokenization strategy for liquidity providers. Upon deposit, the depositor receives a
+corresponding amount of derivative tokens, called Aave Tokens (aTokens for short) that map 1:1 the underlying
+assets. The balance of aTokens of every depositor grows over time, driven by the perpetual accrual of interest of
+deposits. aTokens are fully ERC20 compliant.
+
+aTokens also natively implement the concept of interest rate redirection. Indeed, the value accrued over time by
+the borrowers’ interest rate payments is distinct from the principal value. Once there is a balance of aTokens, the
+accrued value can be redirected to any address, effectively splitting the balance and the generated interest. We call
+the continuous flow of accumulated interest over time the interest stream.
+
+To implement this tokenization strategy, Aave introduced the following concepts in the aToken contract:
+
+User x balance index J!: I
+the last action by the user.
+
+Principal balance B,: Is the balance stored in the balances ma:
+principal balance gets updated on every action that the user execut:
+transfer, liquidation, interest rate redirection)
+
+s the value of the reserve normalized income I‘ at the moment of execution of
+
+ping of the ERC20 aToken contract. The
+es on the aToken contract (deposit, redeem,
+
+Redirection address A,: When a user decides to redirect his interest stream to another address, a new
+redirection address A, is provided. If no redirection of the interest stream is performed, A, is 0
+
+Redirected Balance B?: Whenever a user redirects his interes
+
+added to the redirected balan
+
+ce B, of the address specified by B,. Defined as follows:
+
+Br = “x By
+
+Where X is the set of users redirecting the interest stream to the user x
+
+stream, the balance of user redirecting is
+
+Current balance B,: Is the balance returned by the balanceOf() function of the aToken contract. Defined
+
+as follows:
+
+0, if BY = 0 and Bt =0
+Br = By + Br 1), if A, <>0
+
+Brin + Bris — 1), if A, =0
+
+4 Stable Rate Theory
+
+The following chapter explains how
+
+Implementation of a fixe
+algorithmically, as the cos
+might therefore be situatio
+
+the stable rates are applied to the system and the limitations.
+
+would need using specific heuristics based on time or economical constraints. Following this reasoning, we i
+two possible ways of handling fixed
+
+rates:
+
+1. Imposing time constraints: fixed rates might work perfectly fine in a time constrained fashion. I
+
+has a stable duration, it shou
+the loan period. Unfortunate
+open ended loan. It would re
+multiple loans with different
+
+ly, time constrained fixed rate loans aren’t suitable for our specific use
+uire a certain degree of UX friction where users would need to create an
+imes constraints.
+
+rate model on top of a pool is complicated. Indeed, fixed rates are hard to handle
+t of borrowing money varies with market conditions and the liquidity available. There
+ms (sudden market changes, bank runs ...) in which handling stable rate borrow positions
+
+entified
+
+a loan
+
+d survive extreme market conditions, as the borrower must repay at the end of
+
+case of
+handle
+
+Imposing rates constraints: An interest rate calculated at the beginning of a loan might be impacted by
+
+market conditions, keeping i
+
+from staying fixed. If the rate diverges too much from the market, it
+
+readjusted. This would not be a pure fixed rate, open term loan - as the rate might vary throughout
+duration — yet users will experience actual fixed rates during specific time periods, or when there is enough
+
+liquidity available. This par
+under the name stable rate.
+
+16
+
+can be
+
+he loan
+
+icular implementation has been chosen to be integrated into Aave’s Protocol
+4.1 Lending Rate Oracle
+
+Platform 1 Platform 2 Platform N
+
+' ' '
+
+Lending Rate Oracle
+
+'
+
+Interest Rate Strategy
+
+Figure 13: Lending Rate Oracle
+
+The first component to be integrated into the Protocol protocol is a Lending Rate Oracle, which will provide
+information to the contracts on the actual market rates that other lending platforms, both centralized and
+decentralized, are providing. The average market lending rate M,. is defined for i platforms with P’ the lending rate
+and P! the borrowing volume:
+
+Mi, = Sue PPh
+
+The market rate will be updated daily, initially by Aave.
+
+4.2 Current Stable Borrow Rate R,
+The current stable borrow rate is calculated as follows:
+
+fi { My, + U Retoper, if U < Uoptimat
+Ri= U-U,
+
+My + Retoper + Gao Rstope2, if U > Uoptimal
+
+optimal
+
+With:
+- M, the average market lending rate.
+- Rstoper the interest rate slope below Upptimal, increases the rate as U increases.
+
+- Rstope2 the interest rate slope beyond Upptimai, increases as the difference between U and Upptimai increases.
+- U is the utilization rate.
+
+Note: R, does NOT impact existing stable rates positions — this is applied only to new opened positions.
+
+4.3 Limitations on Stable Rate Positions
+
+To avoid abuses on stable rate loans, the following limitations have been applied to the stable rate borrowing model:
+
+1. Users cannot deposit as collateral more liquidity than what they are trying to borrow. Eg. a user deposits 10
+million DAI collateral, tries to borrow 1 million DAI. This is to prevent the following attack vector:
+
+Given: B, = 18%APR, M, =9%APR, R, = 12% APR
+
+Users might try to artificially lower B, to the value of M, by depositing a huge amount of liquidity which
+would cause B, to drop, then borrow from the same liquidity at a lower rate, withdraw the liquidity previously
+deposited to cause B, and the liquidity rate R; to raise again; then finally deposit the amount borrowed to
+earn interest on the previously borrowed funds. Although this attack can still be carried out using multiple
+accounts, this particular constraint makes the attack more complicated as it requires more money (and a
+different collateral currency). This works well in combination with the interest rate rebalancing in the next
+section.
+
+17
+2. Borrowers will only be able to borrow up to T,. of the available liquidity at the current borrow rate. So, for
+every specific value of B,, there is only up to T, of liquidity available for a single borrower. This is to avoid
+that a specific borrower would borrow too much available liquidity at a too competitive rate.
+
+4.4 Stable Rate Rebalancing
+
+The last and perhaps most important constraint of the stable rate model is the rate rebalancing. This is to work
+around changes in market conditions or increased cost of money within the pool.
+The stable rate rebalancing will happen in two specific situations:
+
+1. Rebalancing up. The stable rate of a user x is rebalanced to the most recent value of B, when a user could
+earn interest by borrowing:
+
+Be < R; with BY the stable borrow rate of user x
+2. Rebalancing down. The stable rate of a user x is rebalanced to the most recent value of B,, if:
+B? > B(1+ Ags)
+
+with Ag, a rate delta established by governance which defines the window above B, to rebalance interest
+rates. If a user pays too much interest beyond that range, the rate is balanced down.
+
+4.5 The Rebalancing Process
+
+The LendingPool contract exposes a function rebalanceStableBorrowRate(address reserve, address_user)
+which allows to rebalance the stable rate interest of a specific user. Anybody can call this function: however, there
+isn’t any direct incentive for the caller to rebalance the rate of a specific user. For this reason, Aave will provide
+an agent that will periodically monitor all the stable rates positions and rebalance the ones that will be deemed
+necessary. The rebalance strategy will be decided offchain by the agent, this means that users that satisfy the
+rebalance conditions may not be rebalanced immediately. Since those conditions depend on the liquidity avail-
+able and the state of market, there might be some transitory situations in which an immediate rebalance is not needed.
+
+This does not add any element of centralization to the protocol. Even if the agent stops working, anybody can call
+the rebalance function of the LendingPool contract. Although there isn’t any direct incentive in doing it (“why
+should I do it?”) there is an indirect incentive for the ecosystem. In fact, even if the agent should cease to exist,
+depositors might still want to trigger a rebalance up of the lowest borrow rate positions, to increase the liquidity
+
+rate and/or force borrowers to close up their positions, increasing the available liquidity. In case of a rescale down,
+instead, borrowers have a direct incentive in performing a rebalance of their positions to lower the interest rate.
+
+The following flowchart explains the sequence of actions of the function rebalanceStableBorrowRate(). The
+
+compounded balance that is accumulated until the instant at which the rebalance happens, is not affected by the
+rebalance.
+
+18
+Actor
+
+Rate mode p
+is stable Rete
+
+Yes +
+
+User has
+borrow ongoing Revert
+
+Yes
+v
+
+Update
+cumulative indexes
+
+v
+
+Increase total liquidity,
+total borrows by
+compounded balance
+
+v
+
+Conditions
+for rebalance — Revert
+are met
+
+Yes t
+
+Update stable rate
+of the user
+
+’
+
+Done
+
+Figure 14: Rebalancing
+
+19
+5 Conclusion
+
+The Aave Protocol relies on a lending pool model to offer high liquidity. Loans are backed by collateral and
+represented by aTokens, derivative tokens which accrue the interests. The parameters such as interest rate and
+Loan-To-Value are token specific.
+Aave improves Decentralized Finance’s current offering, bringing two key innovations to the lending ecosystem:
+
+e Stable Rates to help borrowers’ financial planning;
+
+e Flash Loans to borrow without collateral during a single transaction.
+
+Following the launch of the mainnet, Aave will uphold its commitment to decentralization through additional features.
+The Pool Factory will allow anyone to launch their own lending pool based on our smart-contracts. Governance will
+be on-chain with rights represented by:
+
+e The LEND token at Protocol level for updates of the smart contract;
+
+e aTokens at Pool level for pool specific parameters.
+
+20

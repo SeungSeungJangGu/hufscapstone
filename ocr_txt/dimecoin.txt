@@ -1,0 +1,1112 @@
+XN
+
+4
+a]
+'
+'
+!
+!
+'
+'
+I
+'
++
+|
+
+a
+Li
+ait
+aie
+aie
+18
+ate
+aia
+vik
+ain
+aber
+at et
+t |
+a
+at
+a
+'
+a
+&
+LJ
+]
+J
+
+»
+
+‘ > . -
+SSNS
+
+is
+
+DIMECOIN
+
+FOR THE COMMUNITY. BY THE COMMUNITY
+
+an Tae ha 1 a |
+
+“af
+
+“ 5 Tes yin SFL hs i"
+* Petes 4
+
+OP
+
+30 APRIL 2018
+VERSION 1.04
+
+EDITOR IN CHIEF
+Douglas Hopping
+
+EDITORS
+Alan Cabrera
+
+WRITERS
+
+Anthony Engelken
+Budd Seeto
+
+Kyle Dittmar
+Jordan Musto
+
+CONTACT
+
+Dimecoin
+
+PO Box 1196
+
+Palm Harbor, FL 34682
+support@dimecoin.com.co
+
+DISCLAIMER: The information provided
+in this document is provided “as is”
+without warranty of any kind. Dimecoin
+disclaims all warranties, either express
+or implied, including the warranties
+
+of merchantability and fitness for a
+particular purpose. In no event shall
+Dimecoin be liable for any damages
+whatsoever including direct, indirect,
+incidental, consequential, loss of
+business profits or special damages,
+even if Dimecoin or its suppliers have
+been advised of the possibility of such
+damages. This is a preliminary draft. The
+ideas and specifications proposed in this
+draft are subject to significant revision
+or change based on further discussions
+with partners, advisors and the Dimecoin
+
+community.
+
+DIMECOIN - FOR THE COMMUNITY. BY THE COMMUNITY
+A Message From Our
+CEO
+
+Simply stated, thank you. Without the support from the community,
+our current successes and future accomplishments would not be pos-
+sible. | cannot express the amount of gratitude | have for the support
+everyone has shown. | recognize this and want to emphasize that our
+main goal is to make the community our priority and deliver the best
+experience possible. The feedback that you provide is what aids in
+our improvement and growth, so let it be known your voice will be
+
+Ryan Downey heard. | am excited for what our future holds and what we will achieve
+CEO together.
+Sincerely,
+
+Lo.
+Contents
+
+A Message From OurCEO ... 2.2... ee ee eee 3
+Contents... 2... ee 4
+The Birth of Blockchain.. 2... 2... 2... 0.0.0.0. 0.00000. 6
+Preface
+Bitcoin
+Quarkcoin
+Quark Algorithm
+The Evolution of Dimecoin ...................0000. 9
+
+Dimecoin Origin
+Dimecoin Hiatus
+Dimecoin Revival
+
+Our Mission
+
+Our Vision
+
+Our Focus
+
+Progress Report
+
+The Future of Dimecoin
+
+Benefits of Dimecoin... 2... 2... ee ee eee 14
+Fast Transactions
+Fee Structure
+Asset Availability
+Suitability for Micro-Transactions
+Decentralized Network
+Mobile Payments
+Wallets
+Support
+
+Use Case... ee 7
+Payment Gateways: Both Online and Off-line
+Video Games : Micro-Transactions
+Under Developed Countries
+
+For the community. By the community. ................. 19
+Dime Donation
+Dime Non Profit Organization (NPO)
+
+4 DIMECOIN - FOR THE COMMUNITY. BY THE COMMUNITY
+Intro
+DIMECOIN | PAST AND FUTURE
+
+The Birth of Blockchain
+
+The secret of getting ahead is getting started. - Mark Twain
+
+There has also been
+speculation in the
+past about the
+practical security of
+the SHA-256 hashing
+algorithm, given
+future technological
+advances. Particular
+concern has
+centered around
+
+the advancement of
+quantum computing,
+and the hypothetical
+reduction of brute
+force diffculty over
+time.
+
+Preface
+
+Originally created in December of 2013, with
+several exchanges of authority since, the
+Dimecoin project has, until now, existed without
+a formal summary of technology or intent.
+This document is an attempt at providing this
+information in a clear and succinct format;
+otherwise only acquired by arduous research
+through numerous websites, source code
+repositories, message boards, and hear-say.
+
+For sake of brevity, this document makes the
+assumption about its audience of having a
+good general understanding of cryptography,
+cryptocurrency, and blockchain. Where further
+research may be desired to supplement this
+piece, outside links are provided.
+
+Broad assumptions are also made about
+development intent of derived projects and
+legacy teams that have contributed in some
+way to the Dimecoin project. Because they
+are not active participants in the project’s
+current development, one can only make
+educated guesses as to their past concerns
+and motivations.
+
+Bitcoin
+
+Before discussing Dimecoin and its objectives,
+it is important to provide some fundamental
+information on Bitcoin and blockchain
+(abstract), of which Dimecoin was originally
+built upon -
+
+-Bitcoin (https://bitcoin.org/bitcoin.pdf) -
+The cryptocurrency managed by the Bitcoin
+blockchain.
+
+*Blockchain - The data store adhering to
+a public consensus strategy implemented
+by Bitcoin for trust-less management of a
+cryptocurrency.
+
+*Mining - The storing of public data on the
+blockchain, authenticated by performing
+“difficult work”, as to create an investment
+of time and energy required for said activity.
+
++*Miner - The computing software/equipment
+that engages in mining.
+
+Since the invention of blockchain, and its
+Bitcoin implementation, countless other
+cryptocurrencies have attempted to utilize
+its innovative data storage strategy, while also
+conforming to its behavior (protocol) to better
+suit more specific objectives.
+
+Quarkcoin
+
+Originally released July 21st, 2013, Quarkcoin
+attempted to solve the community
+perceived issue of mining centralization that
+was prevalent on the Bitcoin blockchain;
+that mining was no longer possible with
+budget computing resources and was
+
+only accomplished with any success after
+
+a large financial investment in expensive
+ASIC (application specific integrated circuit)
+based mining facilities. SEE FIG.1
+
+There has also been speculation in the
+past about the practical security of the
+SHA-256 hashing algorithm, given future
+technological advances. Particular concern
+as centered around the advancement of
+
+DIMECOIN - FOR THE COMMUNITY. BY THE COMMUNITY
+DIMECOIN | PAST AND FUTURE
+
+An example implementation of the Quark
+hashing algorithm can be found on Github
+at: (https://bit.ly/2HHxSfV
+
+quantum computing, and the hypothetical
+reduction of brute force difficulty over time.
+
+Although there have been no security flaws
+found in the SHA-256 algorithm to this date
+that could compromise its application to the
+blockchain, it is not unusual in cryptography
+for interested parties to discover, share,
+
+and implement more secure cryptographic
+algorithms and strategies.
+
+Quarkcoin’s solution to these concerns FIGURE 1
+was to deviate from SHA-256 block hash
+discovery and turn to a newly created
+cryptographic algorithm called Quark.
+
+‘The Big Difference
+
+‘Quark has built in stronger security, faster
+
+Quark Algorithm
+
+The Quark cryptographic hashing algorithm
+provides an output from chain hashing
+(SHA-512) 6 different cryptographic digests
+9 times. The type and order of these digests
+are as follows:
+
+. blake — —o-
+. bmw
+Difficul
+. groestl or skein 20 Biocs 2,016 socks
+. groestl
+: ih ecur
+: blake or bmw SHA-3 SHA-2
+. sha-3 (keccak) PF. - aS =
+. skein
+. sha-3 (keccak) or jh $35 ' ze
+This pattern is understandably more secure www.quarkcoin.com
+
+than Bitcoin’s SHA-256 itself, even if
+SHA-256’s security is not necessarily in
+question. Although the Quark algorithm in
+turn requires more computing time than
+SHA-256, in a proof-of-work environment
+where hashing diffculty is desirable, this has
+no negative effect.
+
+Beside security, at the time of its creation,
+this algorithm allowed for inexpensive
+computing equipment to participate in
+mining, as no commercial ASIC was available
+with Quark algorithm hashing capability.
+Our History
+DIMECOIN | PAST AND FUTURE
+
+The Evolution of Dimecoin
+
+An abridged history and glimpse of things to come.
+
+Following the release
+of the Android wallet,
+it has never been
+easier to accept
+Dimecoin in your
+business.
+
+Dimecoin Origin
+
+The Dimecoin project was announced
+
+on December 23rd, 2013 on the Bitcoin
+Forum (https://bitcointalk.org/index.
+php?topic=382164.0) as “Based on Quark”
+“Only better”. The motivation for its
+release can only be supposed, like many
+new blockchains at the time, as the
+implementation of a “better” protocol
+configuration, and the intent of wealth
+accumulation of blockchain assets (coins).
+
+Dimecoin, like both Bitcoin and Quarkcoin,
+was created as a proof-of-work mineable
+blockchain, with a software foundation of
+Bitcoin-qt (https://github.com/bitcoin/
+bitcoin) (wallet) and eventually Bitcoinj
+(https://github.com/bitcoinj/bitcoinj) to
+support its protocol.
+
+Because Quark by this point had already
+found some popularity, and maintained
+its ASIC resistance, this algorithm was a
+reasonable selection for a new blockchain
+meant to be community maintained,
+
+and mineable using budget computing
+resources.
+
+For the most part, the Bitcoin Forum
+community initially rejected the Dimecoin
+project announcement, considering it
+“spam”, “already dead”, and “premined
+garbage”. It still did not fail however to
+attract some early participants (miners,
+nodes) to spread and propagate the
+
+network that exists to this day.
+
+Dimecoin Hiatus
+
+It’s unclear exactly when, or why, but
+interest in development and maintenance
+of the Dimecoin blockchain appears to have
+broken down some time toward the end
+
+of 2014, with few active discussions on the
+Bitcoin Forum to give clear insight into the
+community opinion of the project.
+
+Examining the blockchain itself, there looks
+to have been an aggressive drop in coin
+inflation at that time, suggesting a possible
+shut down of active mining operations. If
+reliable pools were unavailable at the time,
+there may have been little opportunity
+
+for individuals to effectively participate in
+Dimecoin’s network operations.
+
+**Let this be a living document; if any of
+this conjecture is claimed to be inaccurate
+at a later time by those parties who were
+involved, this documentation should be
+amended to disclose those more accurate
+accounts of what took place.**
+DIMECOIN | PAST AND FUTURE
+
+10
+
+* (Block Height (a
+
+Dimecoin Revival
+
+Timed nicely with the 2017 surge of interest
+in cryptocurrency trading, the addition of
+Dimecoin to the livecoin.net exchange on
+March 29th, 2017 sparked new interest and
+awareness of the project. Active discussion
+returned to the Bitcoin Forum that Summer
+with piqued interest in operation of wallet
+nodes, and trading Dimecoin on exchanges.
+
+This interest in the digital asset escalated
+as community members volunteered
+time to moderate social media channels,
+promotional websites, and create
+
+new media to promote Dimecoin. This
+enthusiasm continued through the recent
+cryptocurrency market surge that took
+place in the Winter of 2017/2018, which
+led to the official project adoption by the
+newly created management group Dimecoin
+Network, LLC.
+
+Our Mission
+
+For the community. By the community.
+
+We realize that the future of Dimecoin
+depends on widespread adoption. We are
+committed to bringing this plan to fruition.
+It is the focus of our mission.
+
+Dimecoin’s commitment is to maintain
+security for our community, to support them
+in fostering growth, to assist in achieving
+financial liberty, and to enable them to
+empower us to exceed their expectations
+through optimum utilization of blockchain
+technology.
+
+In the United States—where crypto-
+payments are on a brink of becoming fully
+mainstream—we assist in the mass adoption
+process, not only for Dimecoin, but for all
+valuable cryptocurrencies, by reaching
+
+out to small businesses, and landing key
+partnerships with larger businesses, to
+expand globally.
+
+We help businesses accept crypto-payments
+utilizing a decentralized, secure, and trusted
+money transfer, offering extremely fast
+transactions with a near zero fee.
+
+FIGURE 2
+
+DIMECOIN VS BITCOIN VS QUARKCOIN (CURRENT)
+
+PROTOCOL ALGORITHM
+
+Proof of
+
+BLOCK TIME BLOCK REWARD
+
+DIFF.
+CHANGE
+
+Proof of 2016
+one 288 v ° ote v milton
+
+* (Block Height (b) % 1024) where (a)
+
+*
+Work Quark 64sec see formula
+Proof of
+Work/Proof aqrk
+of Stake Quark 30sec (curently)
+Hybrid
+
+20 blocks
+
+gets cut in half every 512000 blocks and modulus 0 equals 1024.
+
+DIMECOIN - FOR THE COMMUNITY. BY THE COMMUNITY
+
+CIRCULATION
+
+~539 billion
+
+~255 million
+Our Vision
+
+The Dimecoin team will lay the foundation
+to solidify Dimecoin’s blockchain for
+longevity into future endeavors.
+
+How we aim to achieve this is by making
+Dimecoin available everywhere through
+the natural dedication of a global
+collected human effort, and by our desire
+to demonstrate and deliver the best of
+what cryptocurrency offers. It’s for the
+community, by the community.
+
+Dimecoin is on its way to being heavily
+marketed, and many key relationships
+
+are currently being forged. Worldwide
+
+mass adoption of cryptocurrencies has
+barely been embarked on, but Dimecoin is
+planning to lead the charge. Most crypto-
+payments now occur online. We believe the
+next step is for cryptocurrencies to become
+heavily involved in point-of-sale purchases.
+
+The Dimecoin team has initiated the mass
+adoption process of cryptocurrency locally.
+We started with mom-and-pop shops,
+
+retail, the parking industry, and other small
+businesses. The next phase includes moving
+to large business investors and affiliates
+
+in an aligned international effort. We are
+planning and executing this endeavor
+aimed at small and medium enterprises,
+and easing into larger enterprises to
+expand outwardly. We will be a leader in the
+adoption of cryptocurrencies.
+
+Dimecoin plans to amaze the world with
+
+its affiliations, partnerships, and business
+integrations. Our intention is to make this
+happen within a three-year timeframe,
+
+but with the support of the community, we
+are confident that we can and do it much
+sooner. We understand, and are motivated
+by, the fact that Dimecoin is powered by the
+laws of mathematics.
+
+The Dimecoin community and its
+development team insist on flawless
+updates and timely communication for both
+the Dimecoin community and Dimecoin
+
+DIMECOIN | PAST AND FUTURE
+
+investors. The future of Dimecoin will
+
+be guided by the collective voice of its
+community members and the development
+team. Dimecoin is a crypto-coin; a way of
+money transfer. It is based on transparency,
+mathematics, cryptography, and the human
+nature of people around the world who
+want to give back to their community.
+
+Please join us as we bring new features
+and the best user experience to Dimecoin.
+We invite you to be part of the Dimecoin
+community as we write history.
+
+Our Focus
+
+The idea for merchants and customers to
+
+transact with the least resistance could be
+summed up as “high fluidity.” Fluidity can
+be broken down into three attributes:
+
++ — Rapid movement with lowest cost of
+micro and macro-transactions.
+
++ — Accessibility to readily interactive
+gateways.
+
++ An ever-increasing demand to exchange
+cryptocurrency for goods and services.
+
+The more fees a cryptocurrency has, the
+higher chance that users will resist utilizing
+it on a daily basis. Dimecoin will be easy to
+use, easy to spend, and easy to accept.
+
+Every adult, child, and business around
+
+the world will be able to accept Dimecoin.
+As the percentage of the gross domestic
+product (GDP) of cryptocurrency inevitably
+and exponentially grows, so will its
+acceptance. Celebrities will begin speaking
+positively about trusted cryptocurrencies,
+and its usage will be seen in movies and on
+television. This will assist in allowing mass
+adoption.
+
+11
+DIMECOIN | PAST AND FUTURE
+
+Revenue (USS Bn}
+
+Progress Report
+
+January
+
+February
+
+March
+
+Ryan named as new CEO of Dimecoin
+Dimecoin launches new
+
+website and re-branding
+
+Dimecoin partners Skeincoin
+Dimecoin partners Keene FC
+Dimecoin partners with Check Coin
+Dimecoin partners Bargain Depot
+Dimecoin releases Windows wallet
+Dimecoin partners with My Cafe Box
+Android Wallet internal testing begins
+
+Internal team restructure commences
+Linux wallet update
+Setup guide released
+
+Partnered with Down Town Tampa
+Parking Accepts Dimecoin as payment.
+Launched multiple languages
+
+for Telegram social media
+
+Android wallet overhaul and SPV
+(simplified payment verification)
+improvement begins with Anthony
+leading the development
+
+Android Wallet test phase 2
+FreiExchange lists DIME
+
+under DIME/BTC pairing
+
+Website embedded with
+multi-language support.
+
+Windows 64-bit beta wallet released
+Announces additional team members;
+developers and marketers: Doug, David,
+Alex, Anthony, Budd, Jordan and Mat
+
+FIGURE 3
+
+Global Mobile PoS Terminals Market Revenue and Volume,
+
+2032018
+
+2013-2022 (US$Bn)(MIn Units)
+
+2197
+
+2015 20% «201720182019 2020 2022 2022
+Mame Reverue (USS Bn) =tb=Volume (Mn Units}
+
+The Future of
+Dimecoin
+SIMPLIFIED POINT OF SALE (POS)
+
+With the release of the Android wallet, it
+has never been easier for your business to
+accept Dimecoin. A QR code is generated
+by the convenient “Request Coin” feature.
+This allows anyone to simply scan the QR
+code with their mobile device and send the
+appropriate amount of coins for that item.
+
+This creates security for the merchant:
+knowing the correct amount of money is
+being received. A pending sale notification
+is shown in the wallet within approximately
+10 seconds of the funds being sent. There is
+a transaction history for merchants to verify
+that the customer sent the correct amount.
+This payment process is irreversible so theft
+is not possible.
+
+A handy currency converter is included in
+
+the Android wallet, making it effortless to
+
+calculate your native currency to correlate
+with Dimecoin.
+
+We will continue to expand upon the
+Android wallet, as well as all Dimecoin
+products, adding more features based on
+input received by the community.
+
+FIGURE 4
+
+US Mobile Payments Will Reach $1.42 Billion By 2019
+
+Peer-to-peer transfer
+@iln-person payment
+
+Remote payment
+= $90,680
+
+$81,349
+a $72,269
+$5301
+§3,737 942,555
+
+$63,351
+2014 2015 2016 207 2018 2019
+
+Note: Forecast does not include purchases made on a tablet or card
+payments made at mobile point of sale (mPOS) or with a moble card reader.
+Source: Forrester Research Mobile Payments Forecast 2014 to 2019 (US)
+
+12
+
+DIMECOIN - FOR THE COMMUNITY. BY THE COMMUNITY
+Network
+Overview
+DIMECOIN | PAST AND FUTURE
+
+Benefits of Dimecoin
+
+Reason often overturns experience. -Edward Counsel
+
+Fast Transactions
+
+A Dimecoin transaction will show up in the
+recipient’s wallet in less than 10 seconds.
+That transaction will be confirmed in a block
+(on average) in 64 seconds
+
+Fee Structure
+
+As of this writing, the Android wallet has
+transaction fees of - 3e-7/kb, 1e-4 min.
+These fees may need to be increased in the
+future, but it will still be nearly free to send
+Dimecoin.
+
+Asset Availability
+
+Having billions of available coins in
+
+the Dimecoin ecosystem benefits
+micro-transactions and “everyday use” a
+number of ways
+
++ Once the market has settled ona
+general valuation of the currency, it is
+not likely to experience the volatility
+observed in other cryptocurrencies.
+
++  Agreater supply should encourage
+real world use, opposed to only being
+traded on exchanges for financial gain
+like a security.
+
++ Lower risk perception by real world
+adopters, as overall market capital
+is spread across a greater number of
+units.
+
+Suitability For
+Micro-Transactions
+The value of Dimecoin’s protocol, as
+
+identified by community members, and by
+Dimecoin Network, is its suitability for
+
+“every day” micro-transactions. Because
+
+of its speed, pairings, and non-compulsory
+transaction fees, Dimecoin is recognized and
+promoted as an ideal candidate for daily
+trading and real-world use.
+
+Block creation is currently supported
+primarily by a mining reward, effectively
+inflating the currency supply equal to or
+less than most fiat currencies. The inflation
+rate is observed to be declining over time
+with a ~3.6% increase in supply from April
+25th, 2017 to April 25th, 2018, expecting less
+inflation over the next year due to the block
+reward halving policy (see block reward
+formula FIGURE 2).
+
+For a step by step
+guide on how to mine
+Dimecoin, please refer
+to our mining manual.
+It can be located
+
+here : (https://t.me/
+DimecoinMining/1160)
+
+or found on our
+website under the
+F.A.Q section.
+
+Decentralized
+Network
+
+Although there are now commercially
+available Quark algorithm ASICs, they are
+still in the minority when compared to
+SHA-256. This allows for the economically
+viable creation of mining pools of common
+computing equipment to participate in
+mining network activity. Today, there are
+many active pool mining participants, which
+encourages community involvement and
+longevity of project interest.
+
+Mobile Payments
+
+Send Dimecoin through the Android wallet
+application. These types of crypto-payments
+are becoming the way of the future. More
+and more people are using their phones to
+make payments in neighboring countries.
+See figure 3 (pg. 12) which reflects a
+staggering growth of interest in payment
+methods involving mobile devices.
+
+14
+
+DIMECOIN - FOR THE COMMUNITY. BY THE COMMUNITY
+Wallets
+
+MULTI-PLATFORM SUPPORTED WALLETS
+
++ — Windows 32-bit
++ — Windows 64-bit
+
++ Linux
++ Paper
++ Android
+
++ Mac - (Compiled. In internal testing)
++ iOS - (Under development)
+
+24/7 Real Time
+Support
+
+The Dimecoin core team members and staff
+support the community 24 hours a day,
+
+7 days a week, 365 days a year. Dimecoin
+believes this service is a requirement
+
+of any trusted cryptocurrency company.
+
+We facilitate this through Telegram at:
+https://t.me/dimeofficialsupport
+
+DIMECOIN | PAST AND FUTURE
+
+15
+Use
+Case
+Dimecoin Use Cases
+
+DIMECOIN | PAST AND FUTURE
+
+Your problem is to bridge the gap which exists between where
+you are now and the goal you intend to reach. -Earl Nightingale
+
+Payment Gateways:
+Both Online & Offline
+
+With Dimecoin’s quick transfer speeds,
+along with it’s [virtually] free transaction
+costs, users can buy/sell goods & services
+by utilizing the Dimecoin blockchain.
+Whether it be an online store, a mom & pop
+shop, buying/selling an item on Craigslist,
+users paying with Dimecoin can be confident
+that their financial assets and personal
+identity will never be compromised.
+
+Under Developed
+Countries
+
+Strengthening Currencies
+
+There are several underdeveloped countries
+that won't even hold their country’s native
+currency due to its instability. This results in
+a lot of people exchanging their native legal
+tender for either gold or another country’s
+currency. Shopkeepers will even refuse
+payment in some cases. So by introducing
+Dimecoin to these countries, it would not
+only bring more financial stability to the
+people, but it would also bring with it the
+freedom and peace of mind.
+
+Video Games:
+Micro-Transactions
+
+The explosion of growth in the gaming
+industry brought with it new ways to spend
+money within games. Unfortunately, this has
+created a problem for gamers to sustain the
+enjoyment they get out of their experience.
+The most popular revenue-generating
+methods, that have been introduced in
+recent years, are mostly due to the rise of
+mobile games. Users are essentially forced
+to pay for in-game items to win. Did you
+know that both Google and Apple take
+
+a 30% cut from all mobile apps/games?
+With Dimecoin being the currency of
+
+choice to pay for digital items, that means
+game developers will have an immediate
+30% increase in revenue. Thus, allowing
+developers to charge significantly less for
+their products. This ultimately delivers a
+much greater user experience and brings
+enjoyment back to the gaming industry.
+
+7
+“For the community.
+By the community.”
+DIMECOIN | PAST AND FUTURE
+
+GIVING BACK
+
+Giving is not just about making a donation. It’s about making a difference. - Kathy Calvin
+
+° °
+Dime Dime Non-Profit
+
+e e e
+Donation Organization (NPO)
+Dimecoin being a community based coin The “DimeDonation” will be managed by a
+does not only mean that it only caters to the = NPO. This organization will be responsible
+crypto-community. Our vision of changing for the accepting and securing the
+
+the world based on how individuals use this donations, receiving community input on
+the recipient of the donations and finally,
+
+-coin as means of paying for goods & the distribution of the donations.
+
+services is not our only goal, we also have
+
+a burning desire to help people who are
+
+less fortunate around the world. Whether
+
+it be from a natural disaster, or people
+
+who are born into an underdeveloped
+
+country where food & water is a scarcity.
+
+By becoming a leader in the cryptocurrency
+
+space, Dimecoin will gain the ability to
+
+donate funds that will feed & clothe the less
+
+fortunate.
+
+A special fee will be introduced with the
+next generation of wallets expected during
+the summer of 2018. This fee is yet to
+
+be negotiated and will be done with the
+community at a later date.
+
+The DimeDonation fee will apply to all
+Dimecoin transactions (except for trading
+transactions on the exchanges) This very
+small fee will be used to support charities
+and non-profit organizations all over
+
+the world. The Dimecoin community will
+determine who gets these donations and
+when. The donations will be sent via check
+to the charity or non-profit organization
+unless they prefer to receive DIME instead.
+This is a very important part of Dimecoin
+and sets us apart. This “DimeDonation” was
+inspired by the Dimecoin community and it
+is how we will give back to our communities
+all over the world.
+
+19
+DIMECOIN | PAST AND FUTURE
+
+The goal of this whitepaper is to present Dimecoin. It is for informational purposes only.
+
+The information provided in this document is not exhaustive and does not imply contractual obligations. Its purpose is to
+provide summary information regarding Dimecoin.
+
+No money or other consideration is being solicited at this time via this presentation or any other communication and, if sent
+to Dimecoin will not be accepted and will be promptly returned. Any indications of interest in Dimecoin’s offering involves
+no obligation or commitment of any kind. In the event Dimecoin elects to raise investment capital, the applicable offering
+will be made under Regulation D or Regulation S under the Securities Act of 1933, as amended.
+
+This document and the information contained herein do not constitute an offer to sell or a solicitation of an offer to buy
+any security, commodity, instrument, or related derivative, nor do they constitute an offer or commitment to lend, syndicate,
+or arrange a financing, underwrite or purchase, or act as an agent or advisor or in any other capacity with respect to any
+transaction, or commit capital, or to participate in any trading strategies, and do not constitute legal, regulatory, accounting,
+or tax advice to the recipient. This document does not constitute and should not be considered as any form of financial
+opinion or recommendation by Dimecoin or any of its affiliates. This document is not a research report.
+
+Some of the statements, calculations, and financial indicators in this whitepaper are projected preliminary information. They
+can be based on known and unknown risk factors and uncertainties, as a result of which actual circumstances and results
+may differ significantly from the presented calculations and results, directly or indirectly provided for by such preliminary
+forecasts. These statements are forward-looking and are subject to risks and uncertainties, so actual results may vary
+materially. You can identify these forward-looking statements by words such as “may,” “should,” “expect,” “anticipate,” “believe,”
+“estimate,” “intend,” “plan,” and other similar expressions. Our actual results could differ materially from those anticipated
+in these forward-looking statements as a result of certain factors not within the control of the company. Dimecoin cautions
+readers not to place undue reliance on any such forward-looking statements, which speak only as of the date made. Dimecoin
+disclaims any obligation subsequently to revise any forward-looking statements to reflect events or circumstances after the
+date of such statements or to reflect the occurrence of anticipated or unanticipated events.
+
+This presentation does not purport to be all-inclusive or necessarily to contain all the information that an interested party
+might desire in investigating Dimecoin and any recipient hereof should conduct its own investigation and analysis and
+should consult such person’s own professional advisors. Neither the recipient nor its directors, officers, employees, agents,
+advisors and affiliates may use the information contained in this document in any manner whatsoever, in whole or in part,
+other than in connection with evaluating Dimecoin. This document may contain material, non-public information concerning
+Dimecoin’s securities. The recipient and its directors, officers, employees, agents, advisors, and affiliates must only use such
+information in accordance Dimecoin’s policies and procedures, contractual obligations, and applicable laws and regulations.
+Some or all of the information contained herein is or may be price sensitive information and the use of such information
+may be regulated or prohibited by applicable legislation relating to insider dealing.
+
+20 DIMECOIN - FOR THE COMMUNITY. BY THE COMMUNITY
+DIMECOIN | PAST AND FUTURE
+
+Trademarks
+
+Dimecoin, (DIME), and all associated logos are registered trademarks of Dimecoin Network. All other trademarks or registered
+trademarks are the property of their respective owners.
+
+Disclaimer
+
+The information provided in this document is provided “as is” without warranty of any kind. Dimecoin disclaims all warranties,
+either expressed or implied, including the warranties of merchantability and fitness for a particular purpose. In no event
+shall Dimecoin be liable for any damages whatsoever including direct, indirect, incidental, consequential, loss of business
+profits or special damages, even if Dimecoin or its suppliers have been advised of the possibility of such damages. This is
+a preliminary draft. The ideas and specifications proposed in this draft are subject to significant revision or change based
+on further discussions with partners, advisors and the Dimecoin community.
+
+Document Lifetime
+
+Dimecoin may occasionally update online documentation as the company and application change over time, and in between
+releases of the related software. Consequently, if this document was not obtained recently, it may not contain the most up-
+to-date information. Please refer to www.dimecoin.com.co for the most current information.
+
+Product information
+
+Documentation, release notes, software updates, and information about Dimecoin products, licensing, and service, will be
+found at the Dimecoin website: www.dimecoin.com.co
+
+Feedback
+
+Your comments and your suggestions will help us continue to improve the accuracy, organization, and overall quality of user
+publications. Please send your comments and questions of this document to: info@dimecoin.com.co
+
+Technical support
+If you require support please join the live community support group on Telegram (https://t.me/DimeOfficialSupport)
+©Dimecoin - (www.dimecoin.com.co) - info@dimecoin.com.co
+
+©2018 Dimecoin Network, LLC. All rights reserved.
+
+21
+@DIMECOIN
+
+©DIMECOIN
+PO Box 1196
+Palm Harbor, FL 34682
+www.dimecoin.com.co

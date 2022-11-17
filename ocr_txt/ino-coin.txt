@@ -1,0 +1,311 @@
+IC
+
+INO COIN
+WHITEPAPER
+Team of Developers and Experts:
+
+CEO - Metin Ismetov
+
+CFO - Yan Wen Cheong
+
+Blockchain Expert - Daniel Fletcher
+
+Business Development - Lubomir Blagov
+
+Legal Advisor - Sanli Bas
+
+Senior Software Engineer - Alexander Makedonski
+
+Senior Software Engineer - Burkay Celik
+Contents
+
+Abstract
+
+-_
+°
+
+iS)
+
+. Blockchain technology
+
+. Smart contracts
+
+. What problems InoCoin solves?
+. Assets
+
+. Mobile apps
+
+. Team
+
+. Token supply
+
+Co w~weytan»n f} Ww
+
+. Roadmap
+
+10. Ino Platform as the core ofour project
+Inthis white paper we present InoCoin, abrand new technology for securely
+transferring money between anonymous peers. Our solution is based on the
+Ethereum Codebase and keys/addresses system including multisignature
+outputs and ring signatures.
+
+The main purpose of this technology is to help young entrepreneurs and
+startups to secure financing and develop their idea. At the same time, the
+technology enables anyone to become an investor and earn a return on their
+investment.
+1. Abstract
+
+Unlike other projects, InoCoin is a universal payment tool, but aside from
+serving as a platform for procuring venture capital, it also provides an
+opportunity for any person to take advantage of the innovations and benefits
+
+that new projectsoffer.
+
+InoCoinisa global platform for funding and provision of knowhow to new
+Blockchain projects. Asacurrency, itis backed by ateam of people with great
+technical and commercial skills, people who willshare advice and showright
+direction to young teams in addition to providing funds. It is a unique
+decentralized system forjoint decision making between the lead team, project
+representatives and all investors as well as owners of the currency. It enables
+sharing of knowledge, ideas and wealth through InoCoin.
+2. Blockchain technology
+
+Before the blockchain era, commerce required building trust between the
+transacting parties, which in practice meant proving that each party was
+actually capable of fulfilling their obligations in accordance with the terms
+agreed beforehand. Failing to stick to one’s promises would wreak havoc in the
+markets.
+
+As aconsequence, there was aneed fora third party, a financial intermediary,
+that would take the risks of the counterparty default unto itself. Whether due
+to practical reasons following from market necessity or because ofimposed
+regulations by government agencies, middlemen became an integral part of
+the market landscape to ensure every party kept up their end of the bargain.
+
+The blockchain technology removes the need for a middleman as the validity of
+a transaction is confirmed by the network of independent nodes. A
+decentralized, distributed one-way ledger existing in thousands of copies
+across the world removes the overhead introduced by third parties, with a
+bonus of greatly diminishing the time it takes to confirm a transaction.
+
+Blockchain has marked the beginning of a truly new era. Now, the blockchain
+technology makes old payment systems redundant and outdated. With
+blockchain, there is no more need for complex auditing systems as it has its
+own audit system built in, which provides reliable accountability right out of
+the box. Transactions which get written to the blockchain are literally set in
+stone and time. Once a transaction gets confirmed, there is no way back as all
+transactions are intentionally made irreversible. No one can change them.
+
+This becomes possible through a consensus mechanism. The two major ways
+to reach a consensus in the blockchain network are Proof of Work and Proof of
+Stake. Their effect is that they render the efforts to compromise a blockchain
+prohibitively expensive even for those who can spend billions of dollars, for
+example, government agencies, and yet more costly for major decentralized
+currencies like Bitcoin.
+
+The security of the network is guaranteed by the distributed nature of
+decentralized blockchains and cryptographic algorithms used. Moreover, the
+costs of preventing new transactions from receiving confirmations are rising
+exponentially as the network expands, so this attack vector will be even less
+feasible in the future when the blockchain technology gains more traction in
+the Internet.
+Currencies based on decentralized blockchains don’t need a trusted third party
+as is the case with a centralized payment system, for example, a Central bank.
+This eliminates a single point of failure by making decentralized systems
+immune and invulnerable to things like blackmail, bribes, corruption, virtually
+everything which regularly overruns legacy systems.
+
+As a result, decentralized blockchains are operating beyond the reach and
+outside the control of financial structures and oligopolies which are more often
+than not pursuing their own ends incompatible or even directly hostile and
+antagonistic to the idea of an open market, which the blockchain technology
+greatly contributes to.
+3. Smart contracts
+
+It is possible to implement a Turing-complete programming language within
+the blockchain itself. A piece of computer code stored and replicated on the
+blockchain system is called a smart contract. These contracts got a lot of
+traction over the last few years. As Turing-complete, they can store, convert,
+and process arbitrary data in a formally specified (algorithmic) manner,
+depending on specific conditions set beforehand. And it is not only about
+storing and processing information related to account balances, which is what
+the Bitcoin blockchain mostly deals with, as any data including but definitely
+not limited to data about data (metadata), sets of rules, restrictions,
+transaction conditions can be entered into a smart contract, i.e. virtually
+anything that can be processed by a modern desktop PC.
+
+First smart contracts were implemented using the Bitcoin blockchain but due
+to the limitations of the underlying protocol, it was not possible to execute
+complex logic procedures inan efficient way ontop ofit. Thus, the most widely
+used Turing-complete blockchain dubbed Ethereum was born which enables
+execution of complex smart contracts mostly involving financial operations.
+For example, a small smart contract consisting of just a few lines of code can
+set rules about transferring assets or executing predefined operations once
+certain conditions are met. These conditions can be triggered immediately or
+at some point in the future.
+
+Smart contracts allow to strike a bargain between two parties without running
+the risk of default by either. The contract is either carried out fully or gets
+cancelled completely, so no party is in fact risking anything. If one side fails to
+deliver, the other retains what belongs to it. And all of this comes with the
+benefits which a plain vanilla blockchain enjoys.
+4. What problems InoCoin solves?
+And How it Works?
+
+Within the InoCoin platform, there are several main features that are of
+interest to future users. The “like” button is the first such feature as it is
+intended to allow the community to vote on what projects should get financial
+support. This occurs every three months as our managerial team redirects
+InoCoins in order to fund a project.
+
+The second feature is the “boost” button which allows investors to fund
+projects on an individual basis. There is no limit as to how much or how little
+can be invested. Each project individually details the benefits the investors
+receive. InoCoin provides every single person with a chance to be an investor or
+innovator. Age, knowledge, wealth, etc. are not important.
+
+Atthe same time, InoCoin provides an opportunity to every person witha great
+idea even though they don’t have sufficient financial resources.
+
+InoCoin makes the world a better place as it connects investors with innovators
+thanks to its being an investment platform, enabling them to improve upon
+new or existing technologies. And all this comes without any taxes. Everyone
+with a good idea is welcome to share it, and we will do our best in raising the
+money required to implement it.
+
+Youcan register at https://platform.inocoin.eu and choose the role you want to
+take, either as an investor or innovator, or both.
+
+Allows the community to
+vote on which project
+should be financed.
+
+Occurs every three months.
+
+Allows investors to
+fund project on an
+
+| individual basis.
+Has no limit.
+
+with
+
+IC
+
+ino coin
+5. Assets
+
+InoCoinisthecore utility token that powers the InoCoin Platform. Thetokenis
+astandard ERC20 token. At the heart ofthe InoCoin platform area set ofsmart
+contracts called InoCoin Chaincode. These serve to coordinate interactions
+between project participants. InoCoin smart contracts are deployed on
+Ethereum, but can also be linked to other platforms.
+
+< @
+
+6. Mobile apps
+
+Our team has developed mobile applications meeting the requirements of the
+InoCoin Investment Platform. We believe that investing should be as easy as
+possible for potential investors, unlike the complicated process that comes
+with the old banking system.
+
+‘You can use our mobile apps on all major operating systems such as iOS,
+Android, Windows, and Linux. You can create your own wallets, introduce your
+
+own projects and get funding, or simply invest in the best startup.
+7. Team
+
+InoCoin enjoys an international team with a vision, ability, innovative
+thinking, open mindedness, management skills, marketing knowledge, and
+developers coming from various backgrounds such as IT, accounting, finance,
+Blockchain and more. A complete profile of our team is available at
+https:/Awww.inocoin.eu
+
+In Blockchain - We are highly experienced Blockchain developers. As a result, we have
+built our platform in the Ethereum blockchain net. This will take investment and
+crowdfunding to the next level.
+
+In Finance - Our financial team has a huge amount of experience in the banking sector
+
+and investment area. However, we believe that the future belongs to Blockchain as it
+will completely transform the world of investment and entrepreneurship.
+
+In Business - Several big business developers are part ofour team. They possess
+extensive experience inconsulting andhelping entrepreneurs growtheir business.
+8. Token supply
+
+Token Supply: 1,000,000,000 INO tokens are available for distribution in
+cryptocurrency markets.
+
+200,000,000 INO are available to contributors.
+10,000,000 INO are bound for the team, advisors, bounties etc.
+
+300,000,000 INO tokens will be kept for financing new projects during 2018
+and 2019.
+
+The remaining 490,000,000 INO tokens will be kept as a reserve and locked for
+one year, solely to develop partnerships and future acquisitions that will help
+us become a dominant market leader.
+
+TOKEN SUPPLY
+
+@Contributors mTeam, Advisors, Bounty m@FinancingProjects m®Reserve
+
+9. Roadmap
+
+The idea of the project was worked out during Q4 of 2017. Since then we have
+designed and developed the investment platform InoCoin. The InoCoin token is
+not like any other, that’s why we are not following the common Initial Coin
+Offering (ICO) route. We are aiming to be listed on the public markets and
+provide everyone with a chance to be a part of this huge project.
+
+By the end of 2018, at least one startup will be financed and developed with our
+help and the help of our investors.
+
+ROADMAP
+FUTURE PLANS
+
+Finishing the first version of cep . Listing to masternodes referencing Asking community for
+inoceine Investment een Seer un sts ising to new exchanges idene/feedback. Welcoming
+pp Store and Google Play. (community invo! r choices). A
+pisctorm Submitting for coinmarketcap.com aid eae aia
+
+JANUARY DECEMBER
+2019 2018
+
+FEBRUARY
+2018
+
+Every quarter major Developing new StartUps Major Update of the To fund first StartUp project
+updates on platform every quarter. platform with new features in our platform that wins
+the investor's vote
+10. Ino Platform as the core of our project
+
+Wewouldliketomakeaconclusion why the InoCoin investment platform is
+
+superior to othermore conventional means ofinvesting. Our platform allows
+investors ofall sizes to participate. This is the key factor that differentiates us
+from the traditional systems which usually restrict investment opportunities
+toasmall circle ofindividuals. We areremoving these high barriers for entry.
+
+Using our platform anyone can invest regardless of whether it’s $1 or
+$1,000,000. The platform is capable of calculating profit as a percentage of
+investment automatically, depending on the size of the investment. Inocoin is
+a utility token that will be the future of crowdfunding. After investing in INO,
+you are able to receive smart services and all kinds of products from the
+projects you support.
+
+The InoCoin Investment Platform places no restrictions on startups. We
+believe this is the key to a successful business in the new age. These new
+ventures need to be innovative above all else, not constrained by the limits of
+old ideas. Due to these requirements, the more interesting and fresh the idea
+is, the more likely the project is to secure funding. If you believe you will
+struggle to secure investment because your idea is too unproven or overly
+optimistic, then you would be an ideal candidate to apply for funding through
+InoCoin. Many of the great innovators of our time were thought to be too
+forward thinking at first, struggling to secure the funding and trust necessary
+to realize their ideas.
+
+If you have more questions, please go to https://platform.inocoin.eu/faq
+

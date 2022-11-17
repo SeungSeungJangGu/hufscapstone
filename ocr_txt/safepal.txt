@@ -1,0 +1,678 @@
+White Paper
+
+Published & Copyright by: SAFEPAL LTD. All rights reserved.
+Table Of Content
+
+e Disclaimers e Products ¢ Tokenomics
+— SafePal Hardware Wallets & — About SFP
+¢ Introduction Accessories — Token Utilities
+— About SafePal — SafePal Software Wallet
+— Value Proposition — SafePal App
+— Our Mission
+
+— SafePal Swap
+
+— Growth Path — SafePal Trade
+
+— Ecological Synergies — SafePal Earn
+
+Disclaimers
+
+The SafePal White Paper has been published and issued by SafePal Wallet for informational purposes only
+and is required to be read alongside the Terms if the prospective purchaser plans to use any of the SafePal
+products. This Whitepaper is a working document and is subject to changes and errors. Any purchase or use
+of services from SafePal creates a binding arbitration agreement between SafePal and the user/purchaser as
+the Terms are outlined. This Whitepaper does not constitute a prospectus for the purposes of [Directive
+2003/71/EEC, and the amending directive 2010/73/EU] [Regulation (EU) 2017/1129], and is not intended to
+constitute an offer of securities or a solicitation for investments in securities in any jurisdiction. The purpose
+of this Whitepaper is to provide potential purchasers with the information on SafePal’s ecosystem to allow
+the purchasers to make their own decision as to whether or not it wishes to proceed to purchase SafePal
+Tokens and use any of the SafePal ecosystem of products.
+
+Disclaimers
+
+This Whitepaper does not constitute an offer or invitation, or any other sale or purchase of shares, securities,
+or any of the assets. Any possession of SFP shall not grant any rights in any form to the user, including but
+not limited to any rights of ownership, interest, profit, redemption, property or intellectual property, decision
+making, or any other such rights, such as any rights of financial or legal nature, in SafePal the corporation or
+its affiliates. SFP may be used for protocol and ecosystem governance which has no bearing to the
+corporation or its affiliates.
+
+Users from the following countries or regions will not be able to participate in the SFP token sales:
+
+Australia, Belarus, China, Democratic Republic of Congo,Cuba, Iraq, Iran, North Korea, Sudan, Syria, United
+States of America and its territories (American Samoa, Guam, the Northern Mariana Islands, Puerto Rico, and
+the U.S. Virgin Islands), Zimbabwe.
+
+Risks
+
+You acknowledge and agree that there are numerous risks associated with purchasing SFP, holding SFP, and
+using SFP for participation in the SafePal Platform. In the worst scenario, this could lead to the loss of all or
+part of the SFP which had been purchased. IF YOU DECIDE TO PURCHASE SFP, YOU EXPRESSLY ACKNOWLEDGE,
+ACCEPT AND ASSUME THE FOLLOWING RISKS:
+
+1. Uncertain Regulations and Enforcement Actions
+
+The regulatory status of SFP and distributed ledger technology is unclear or unsettled in many jurisdictions.
+The regulation of virtual currencies has become a primary target of regulation in all major countries in the
+world. It is impossible to predict how, when or whether regulatory agencies may apply existing regulations
+or create new regulations with respect to such technology and its applications, including SFP and/or the
+SafePal Platform. Regulatory actions could negatively impact SFP and/or the SafePal Platform in various
+ways. The Foundation, the Distributor (or their respective affiliates) may cease operations in a jurisdiction in
+the event that regulatory actions, or changes to law or regulation, make it illegal to operate in such
+jurisdiction, or commercially undesirable to obtain the necessary regulatory approval(s) to operate in such
+jurisdiction. After consulting with a wide range of legal advisors and continuous analysis of the development
+and legal structure of virtual currencies, a cautious approach will be applied towards the sale of SFP.
+Therefore, for the token sale, the sale strategy may be constantly adjusted in order to avoid relevant legal
+risks as much as possible.
+
+Risks
+
+2. Inadequate disclosure of information
+As at the date hereof, the SafePal Platform is still under development and its design concepts, codes, and
+other technical details and parameters may be constantly and frequently updated and changed. Although
+this white paper contains the most current information relating to the SafePal Platform, it is not absolutely
+complete and may still be adjusted and updated by the SafePal team from time to time. The SafePal team
+has no ability and obligation to keep holders of SFP informed of every detail (including development
+progress and expected milestones) regarding the project to develop the SafePal Platform, hence insufficient
+information disclosure is inevitable and reasonable.
+
+3. Competitors
+
+Various types of crypto management platforms are emerging at a rapid rate, and the industry is increasingly
+competitive. It is possible that alternative parties could be established that utilize the same or similar code
+and protocol underlying the SafePal Open Wallet Platform and attempt to re-create similar facilities. The
+SafePal Platform may be required to compete with these alternative parties, which could negatively impact
+SFP and/or the SafePal Platform.
+
+Risks
+
+4. Loss of Talent
+
+The development of the SafePal Platform greatly depends on the continued co-operation of the existing
+technical team and expert consultants, who are highly knowledgeable and experienced in their respective
+sectors. The loss of any member may adversely affect the SafePal Platform or its future development. Further,
+stability and cohesion within the team is critical to the overall development of the SafePal Platform. There is
+the possibility that conflict within the team and/or departure of core personnel may occur, resulting in
+negative influence on the project in the future.
+
+5. Failure to develop
+
+There is the risk that the development of the SafePal Platform will not be executed or implemented as
+planned, for a variety of reasons, including without limitation the event of a decline in the prices of any
+digital asset, virtual currency or SFP, unforeseen technical difficulties, and shortage of development funds
+for activities.
+
+Risks
+
+6.Security weaknesses
+Hackers or other malicious groups or organizations may attempt to interfere with SFP and/or the SafePal
+Platform in a variety of ways, including, but not limited to, malware attacks, phishing attacks, supply chain
+attacks, and brutal attacks. Furthermore, there is a risk that a third party or a member of the Foundation, the
+Distributor or their respective affiliates may intentionally or unintentionally introduce weaknesses into the
+core infrastructure of SFP and/or the SafePal Platform, which could negatively affect SFP and/or the SafePal
+Platform.
+
+Further, the future of cryptography and security innovations are highly unpredictable and advances in
+cryptography, or technical advances (including without limitation development of quantum computing),
+could present unknown risks to SFP and/or the SafePal Platform by rendering ineffective the cryptographic
+consensus mechanism that underpins that blockchain protocol.
+
+7.Other risks
+
+In addition, the potential risks briefly mentioned above are not exhaustive and there are other risks
+associated with your purchase, holding and use of SFP, including those that the Foundation or the Distributor
+cannot anticipate. Such risks may further materialize as unanticipated variations or combinations of the
+aforementioned risks. You should conduct full due diligence on the Foundation, the Distributor, their
+respective affiliates, and the SafePal team, as well as understand the overall framework, mission and vision
+for the SafePal Platform prior to purchasing SFP. 8
+
+Introduction
+
+SafePal aims to make crypto
+secure and simple for the masses.
+
+About SafePal
+
+Founded in 2018, SafePal is the first hardware wallet invested and backed by Binance,
+now serving users from more than 100 countries globally.
+
+SafePal is powered by 4 core components
+
+SafePal Wallets SafePal Wealth SFP Token Ecosystem
+The key component The powerful asset The core incentives that This includes the
+that provides secure, management platform drive the growth of SafePal partners,
+diversified and user- that enables users to SafePal products and developers, and
+friendly non-custodian buy, swap, trade services, and empower community who
+wallet solutions for the crypto and access the governance of together build and
+
+masses. Dapps frictionlessly. community . form our ecosystem.
+
+10
+
+Value Proposition
+
+SafePal brings value to our users by focusing on:
+
+Security
+
+Security is the fundamental
+user demand of asset
+management. SafePal
+technology strives to
+protect users' assets from
+any malicious attacks.
+
+User Experience
+
+Usability is the key factor
+to drive crypto adoption.
+SafePal aims to provide
+frictionless experiences to
+all kinds of users in the
+easiest way.
+
+Completeness
+
+Users won't have to move
+their assets and key around
+in order to fulfill different
+tasks or join different DeFi
+projects. SafePal provides
+one-stop platform for
+complete asset
+management.
+
+Our Mission
+
+SafePal shoulders the mission to help users to
+Secure and Grow crypto wealth.
+
+A decentralized, offline, open- A reliable, powerful and easy-to-use
+sourced hardware wallet that wealth creation platform that provides
+enables advanced security diversified APY programs suited for
+features including but not limited different risk preferences regardless of
+to multi-sig, Passphrase, etc. DeFi or CeFi.
+
+CEP SafePal
+
+Growth Path
+018.01) —— Go1810)—— (2019.05) —— ors.) —— Go1s.07) ——Goisi2)
+
+* SafePal was founded * Received Binance * Opened sales for * Supported Binance * Integrated Binance * Integrated Simplex
+strategic investment SafePal S1 Mainnet and added DEX and Dapps login Buy Crypto Feature
+GER SafePal
+a BNB protocol
+“<y° BINANCE @ stmolex
+.@, BINANCE ($j BINANCE P
+9" —— CHAIN Us —— dex
+
+=~
+WPA WalletConnect
+
+Gax008) ——— Goao.a8) —_— Goasae) Goro.)
+
++ Integrated with Binance » Embedded with Binance * Completed integration with 19 * Released SafePal
+Smart Chain and supported exchange blockchains and 10.000 tokens Software Wallet
+BEP20 tokens
+
+SC -S: BINANCE 04%xO1O0025 2080
+
+» Added Dapp entrance and 9) @ ‘D) @ LD) © Pi « @
+
+supported all popular Dapps from
+
+- Released cross-chain swap,
+Ethereum and Tron
+
+supporting frictionless swap between
+
+() OQ 10,000+ tokens from 19 blockchains
+2020.10 ) 2021.01
+
+- Fully supported ERC721, » SafePal issued its utility
+
+ERC1155 and BSC NFT token---SFP.
+
+standards @
+
+®606
+
+Ecological Synergies
+
+“The security of user
+
+assets always remains
+top priority throughout
+
+2 our product and
+a 4 business activities.
+A WS Lowering the hurdle for
+
+SafePal fs users to own and use a
+
+safe hardware wallet in
+an easy and user
+‘ friendly way is one of
+Ling Zhang
+the unique values we
+VP of Mergers & ‘é tee
+Acquisitions at Binance identified when we
+looked into SafePal
+products. "
+
+SafePal is the first hardware wallet
+invested and backed by Binance.
+
+Ecological Synergies
+& a "(> testing ic osatera  @ sams .
+
+Received.a branded @ hardware ocol team are proudly holding safepal hardware wallets.
+
+is available on , a secure and user-
+wallet, pretty cool. we're so impressed by the product design and the security that our peer friendly hardware wallet designed for the masses. All
+bonus is distributed as ONE tokens on & t : ‘ ;
+okens including , ; ,
+congrats again! grateful to be collaborating w/ another 8 are live now.
+
+portfolio
+
+>SAFU_H
+
+68 Harmony
+/SINGAP OP
+
+4
+nony oP
+
+are now available on
+
+\\)
+
+i al
+
+Trust - Crypto Wallet
+is Now supported by
+
+t) Tatiana Koffman 9 Retwe
+
+Forbes Crypto
+Ifyou hold a rrency, it is highly - oe :
+
+Flare is very happy to announce that SafePal is now an lel a ore ae HO reanraneSecurTye Sale aah eel sl seatcs on he fest hertnate
+official Flare wallet partner. This means the SafePal will
+be working with Flare to provide advanced dune entey
+
+to SafePal Spark ($FLR) wallet users.
+
+© sSafePal Wallet @iS
+@isafepal is excited to be an official wallet partner of @FlareNetworks
+
+#XRP holders can now register their $XRP account to Claim their Spark Token
+Airdrop using @iSafePal App
+
+[B Download @iSafePal App
+safepal.io/download
+
+Follow the Guide f t 15
+blog.safepal.io/how-to-claim-f... sete now supports Trust Wallet Token
+
+Products
+
+SafePal's consumer and enterprise products
+
+SafePal Hardware Wallets & Accessories
+
+SafePal S1 Hardware Wallet
+
+¢ Built with advanced security schemes including EAL5+
+chip, TRNG, self-destruct mechanism and more
+
+¢ Incorporated air-gapped signing mechanism
+
+¢ Paired and managed through the SafePal App, born to be
+mobile-friendly
+
+¢ Supports 20 coins, 10,000+ tokens and all NFT standards
+
+¢ The most valued price at $39.99
+
+SafePal Hardware Wallets & Accessories
+
+SafePal Cypher Metallic Seed Board
+
+¢ Made of 304-grade stainless steel
+
+¢ Resistant to water, salt, fire and corrosion
+
+¢ Indestructible with a fireproof limit of 1398°C
+* Retail price at $39.99
+
+SafePal Leather Cover
+
+¢ Premium quality made with high-quality PU leather
+¢ Light and compact to carry around
+
+¢ Protect your wallet from scraches, water and bumps
+¢ Multi-functional as a card/wallet holder
+
+¢ Retail price at $9.9
+
+SafePal Software Wallet
+
+Create or import wallet via mnemonic phrase,
+private key, keystore or observation mode
+
+Built-in with Passphrase, security password,
+fingerprint lock and pattern lock
+
+Simple and intuitive UI design that is friendly
+to all types of users
+
+Software Wallet
+
+Create Wallet
+
+Import Wallet
+
+Import via Mnemonic Phrase
+
+Import via Private Key
+
+Import via Key
+
+Observation mode
+
+Harry-B3U
+
+x$ 9429.53 ©
+= 1.01442426 BTC
+
+© Collectibles }
+
+a
+
+0.708284
+6.67519732
+=$ 3.45
+0.0037094
+x$ 28.14
+
+0.00037094
+
+$
+
+1.87467289
+
+12
+
+0.09986318
+
+a a9
+cons ao
+
+SafePal App
+
+Manage software wallet, hardware wallet and
+exchange account in one Application
+
+Buy crypto with credit card, bank account, iDEAL,
+Bancontact, EPS, Giropay and Sofortbanking
+
+Swap and exchange one cryptocurrency for any
+other cryptocurrency instantly
+
+Enjoy the best APY from the powerful aggregator
+of DeFi and CeFi
+
+Access and store your favorite Dapps across
+different blockchains
+
+Wallet
+
+Software Wallet
+@ hold-W32
+a
+Build Tim
+
+B Veronica-61U
+%P e
+
+K
+
+6 =$ 2874.87
+
+CS) Sijmen Immens-OD6
+
+=$ 1785.45,
+
+AVyDhTV¢
+
+Build x$ 613.30
+
+Hardware wallet
+
+© Harry-B3U
+
+Binance
+
+@ Harr
+Total
+1.92 BTC = $ 21059.65
+
+=$ 36591.3
+
+Hot Favorites ETH BSC BTC
+
+Be
+
+TRADE BTCB ON BSC he
+
+Td
+
+SafePal Swap
+
+Harry-B3U « Swap History
+
+Wea) Start: fi] End: ff] 2021-01-29
+
+SafePal Swap is an automated market 7
+
+making protocol that enables users to swap Sa, cee
+
+0.01 0931 @ @ USDT 232.66829700
+
+@ USDT 237.66829700
+
+tokens/coins instantly across different = Cn gee
+blockchains including but not limited to sss CS usor 23677700
+
+Ethereum, Bitcoin, and Binance Smart Chain. MIN vsor  s9an00000
+
+)  29.88000004
+
+Pricing will fluctuate based on the market = 199 20.90000000
+
+29.88314094
+
+S itu a t ion. BNB BUSD BTC ETH DT — 30.00000000
+
+)  29.89994008
+
+SafePal Trade
+
+SafePal Trade integrates with the Binance
+Spot Trading Platform, one of the most
+powerful trading engines on the market, into
+the SafePal App with a frictionless experience.
+
+SafePal users can a enjoy smooth and
+
+seamless trading experience at their fingertips.
+
+Binance
+
+3.060
+
+0.16968
+
+-0.56%
+
++6.23%
+
++8.46%
+
++14.64%
+
++6.90%
+
++19.16%
+
+BTC / USDT
+
+2,766,613,477
+19,484.21
+16,334.00
+
+SafePal Earn
+
+SafePal Earn is a aggregator that aggregates all wealth
+creation programs on the market regardless of CeFi or DeFi.
+Users can view, search and select programs with diversified
+APYs according to their personal risk preferences.
+
+SafePal Earn will be launched in Q1 2021. In the future SFP
+holders who stake SFP and participate in SafePal Earn
+programs that are issued by SafePal official will enjoy extra
+yields out of each program.
+
+Harry-B3U
+
+#$146200.38
+
+@ BNB
+
+@ susp/pai
+
+#D UspT/BusD
+
+@® USDC
+
+Tokenomics
+
+Introducing SFP, the fuel of the SafePal ecosystem
+
+SFP Token
+
+The SFP token is the native cryptocurrency issued on the Binance Smart Chain to
+power the SafePal ecosystem and govern the community.
+
+Total Token Supply 500,000,000 SFP
+Token Allocation
+
+Foundation Reserve 20%
+Team 20%
+Community & Airdrop
+
+Product & Marketing 15%
+Seed Sale 2%
+
+Public Sale
+
+Private Sale 4%
+Strategic Sale 9%
+
+25
+
+SFP Token
+
+Key Utilities
+
+Fees & Discounts
+
+‘eS, Users may use SFP for fees and discounts on the SafePal products and services
+including but not limited to:
+
+¢ discounts on purchasing SafePal Hardware Products including wallets and accessories
+
+¢ discounts on the swap and trading services within the App
+
+¢ fees for submissions to the SafePal repository
+
+¢ fees for publishing AD banners within the App
+
+¢ fees for DApps ranking within the DApp store
+
+¢ fees for customized hardware wallet solutions
+
+¢ fees for future services such as the collectible marketplace
+
+26
+
+SFP Token
+
+Key Utilities
+
+© Staking Rewards
+
+SafePal users can stake SFP to yield extra interests from the SafePal Earn programs.
+
+4 Bonus & Candies
+SFP token holders have the privilege to:
+* enjoy special coupons from SafePal and its partners
+¢ join exclusive campaigns launched on the SafePal platform
+« claim special collectibles from SafePal and its partners
+
+27
+
+SFP Token
+
+Key Utilities
+
+A Community Governance
+
+SFP token holders can create proposals and vote for the Treasury fund usage and
+new features such as adding new blockchains on the SafePal products.
+
+¢ Require a minimum of 500,000 SFP BEP20 tokens to submit a proposal
+
+¢ The total amount of votes is equal to at least 4% of the total SFP BEP20
+circulating.
+
+* 1$SFP=1 Vote
+
+¢« 51% or higher voted “Yes”
+
+¢ The voting period should be at least 5 days.
+
+Treasury
+vl
+
+--- Each quarter, a certain percentage of the SafePal net profit will be used in SFP token
+cr buyback and deposit into the Treasury for community governance. The percentage
+will be released in the next whitepaper update.
+
+28
+
+SFP Token
+
+Key Utilities
+
+Ecosystem
+SFP will be the key driver of the SafePal Open Platform to provide open-sourced
+hardware wallet solution for the industry so that developers can:
+
+¢ integrate QRcode communication protocol into their systems (Dapps, wallets, etc.) to
+easily onboard secure and user-friendly hardware wallet solutions
+
+¢ build custom applications based on the SafePal hardware architecture and utilize the
+solution in diversified user cases such as F2U
+
+29
+
+&~ .
+WwW www.safepal.io
+© twitter.com/iSafePal
+
+a] t.me/SafePalWallet
+

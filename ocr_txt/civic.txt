@@ -1,0 +1,1544 @@
+D Alerts
+
+COPYRIGHT © 2017 CIVIC TECHNOLOGIES, INC. ALL RIGHTS RESERVED.
+
+Abstract
+
+The ability to store and share information digitally offers
+so many benefits that the digitization of data has become
+aconsistent and growing trend. However, alongside the
+advantages of cost and convenience, a new set of concerns
+has developed. The ability to copy and share data has
+raised questions about the security of personal data.
+
+There have been countless high-profile
+hacks and leaks of personal information, as
+well as cases where unencrypted data has
+simply been lost or left vulnerable to theft.
+Some services have been slow adopters
+of digital record-keeping, especially where
+data is particularly sensitive, such as in
+the government and healthcare sectors.
+The security risk in these sectors is higher,
+and the consequences potentially more
+severe, both for the individuals whose data
+is lost and for the organizations who have
+to deal with the legal and reputational
+
+implications.
+
+“Switching to EHR (Electronic Health
+Records) implies a whole new set of
+responsibilities and challenges...With
+electronic records, there is a higher
+risk of compromising sensitive data
+because of the possibility of hacking
+attacks or unauthorized access...”
+
+Civic is building an ecosystem that
+is designed to facilitate on-demand,
+secure and low-cost access to identity
+verification (“IDV”) services via the
+blockchain, such that background
+and personal information verification
+checks will no longer need to be
+undertaken from the ground up every
+time. Civic also intends to introduce a
+Civic token, or CVC, that participants
+in the ecosystem will use to transact
+in IDV-related services. Civic hopes
+this ecosystem can reduce the overall
+costs of IDV, remove inefficiencies,
+enhance security and privacy, greatly
+
+improve user experience and disrupt
+the current IDV supply chain.
+
+Center for Health Journalism?
+Blockchain offers a compelling solution to the problem of
+combining accessibility with privacy and security. Records
+can be held securely, using end-to-end encryption, and
+yet openly authenticated, referenced and documented,
+so that data can still be trusted as reliable. This approach
+would not even have been possible just five years ago, but
+by using modern cryptographic techniques, coupled with
+the use of Blockchain technology and smart contracts, this
+ideal has now become a reality. This solves the problem
+of dealing with highly sensitive or classified information in
+away that still enforces all the privacy and confidentiality
+rights that consumers and regulators expect.
+
+1 http://www.informationisbeautiful.net/visualizations/worlds-biggest-data-breaches-hacks/
+2 https://www.centerforhealthjournalism.org/2017/02/12/electronic-health-records-2017-adop-
+tion-and-barriers
+
+Copyright © 2017 Civic Technologies, Inc. All Rights Reserved.
+
+Background
+
+Financial Regulation
+
+As the execution and administration of financial
+transactions has moved progressively into the electronic
+realm over the past 50 years, financial institutions,
+consumers, and law enforcement have been faced with
+new challenges. In the United States, the Bank Secrecy
+Act of 1970 (the “BSA”) first required individuals and
+financial institutions to keep records that would enable
+authorities to detect and prevent money laundering by
+verifying the provenance of financial transactions. More
+extensive anti-money laundering (“AML”) laws were
+introduced in the 1980s, followed in subsequent years
+by a series of laws designed to combat financial crime
+and certain activities associated with it, including drug
+trafficking and terrorism.
+
+The trend was broadly followed in almost every country,
+with consumers and businesses growing accustomed to
+the need for financial institutions to conduct know your
+customer (“KYC”) and IDV processes to verify the identi-
+ty of a customer and the authenticity of the information
+provided by that customer when seeking access to anew
+product or service, for example, when opening a new ac-
+count or applying for a loan.
+
+3 http://javelinstrategy.com/press-release/identity-fraud-hits-record-high-154-million-us-vic-
+tims-2016-16-percent-according-new
+
+4.563.8m were stolen in 2015. See https://digitalhubshare.symantec.com/content/dam/Atlan-
+tis/campaigns-and-launches/FY17/Threat%20Protection/ISTR22_Main-FINAL-APR24.pdf
+
+Copyright © 2017 Civic Technologies, Inc. All Rights Reserved.
+
+Broader Market Context
+
+Though largely born out of financial regulation, the trend
+quickly spilled over into other sectors, particularly in light of
+the rise in e-commerce and our increasingly digital lives. Asa
+result of this trend towards ever-more extensive collection of
+personal information, the overall IDV sector is large and grow-
+ing, as are security breaches and data theft.
+
+@ In 2016 alone, 15.4 million adults in the U.S. were
+victims of identity fraud, 16% more than in 2015. Vic-
+tims suffered losses amounting to $16 billion, almost
+$1 billion more than 2015.3
+
+e Globally, almost 1.1 billion identities were stolen in
+2016 alone, nearly double the number stolen in 2015.4
+
+e Personal Identity Information (or “PII”) was the most
+common form of data stolen, accounting for 42.9%
+of data breaches, followed by Personal Financial
+Information (“PFI”) at 39.2%, and Personal Health
+Information (“PHI”) at 6.8%.
+
+e In 2016, the services industry was most affected by
+data breaches, accounting for almost 45% of breaches,
+followed by the finance, insurance, and real estate
+sectors at 22%.
+
+@ The underground market price for an item of Pll (e.g.,
+a name, SSN, or date of birth) can be as little as $0.10
+- §1.50. There is also a thriving market for scanned
+passports and other documents such as utility bills.
+
+Background
+
+Frictions and inefficiencies in the IDV industry have both
+financial and social costs. Without proof of identity, an
+individual may be unable to exercise a range of legal
+rights, including the ability to vote, access to education
+or health care, and receiving social welfare.® As of
+January 2016, 1.5 billion people in the developing world
+lacked proof of legal identity, including 172 million
+children aged 4 and younger.®
+
+Due to a lack of identity documentation and the high
+
+costs of obtaining it, many individuals in the U.S. and
+
+globally are wholly or partially denied access to banking
+
+facilities, resulting in populations of “unbanked” or
+
+“underbanked” individuals. In the U.S., individuals
+
+with a limited financial history . a
+
+can face significant hurdles in Approximately 9.0 million U.S. households,
+gaining a foothold in traditional made up of 15.6 million adults and 7.6
+
+financial services. Minorities are tittion children, were unbanked in 2015...
+disproportionately impacted by
+
+a lack of, or limited, financial approximately 24.5 million U.S. households...
+history. For example, 29% of were underbanked in 2015” - FDIC ®
+
+Hispanics and 25% of African
+
+Americans have been denied access to a service due to
+
+a mistaken or unverified identity, a significantly higher
+
+proportion than the corresponding figure for all U.S.
+
+consumers, at 19%.’
+
+Another widespread problem, particularly in many low-
+income countries, is that new births go unregistered
+because parents struggle to acquire the necessary
+documentation to have verified and recorded reliably by
+the relevant authorities.
+
+Simple Multi-factor Authentication
+
+As demonstrated above, there is a substantial and
+growing global market for IDV services. Due to the high
+costs and inefficiencies involved, and the clear and
+compelling interests at stake, the IDV industry presents Qesreriann
+
+Login to your account
+
+a highly competitive landscape for newcomers who can
+offer innovative technical solutions. Driving down the
+costs of IDV-related services will increase access to, and
+thereby increase the size of the underlying market for, ~ See esas
+
+such services.
+
+5 http://documents.worldbank.org/curated/en/213581486378184357/pdf/112614-RE-
+VISED-4-25-web-English-final-ID4D-IdentificationPrinciples.pdf
+
+6 ID4D Global Data Set http://data.worldbank.org/data-catalog/id4d-dataset
+
+7 http://javelinstrategy.com/coverage-area/giving-consumers-identity-control
+
+8 https://www.fdic.gov/householdsurvey/2015/2015execsumm.pdf
+
+Copyright © 2017 Civic Technologies, Inc. All Rights Reserved.
+
+Background
+
+The Costs of Data Acquisition
+
+Not only are traditional IDV processes often seen as
+intrusive or time-consuming by consumers, but they
+come at a significant cost to the financial institutions
+required to carry them out as a matter of law and to
+avoid commercial losses due to fraud.
+‘There’s a high risk of getting KYC wrong...
+
+Due to the differences in regulation, You need to carry out rigorous tests on major
+
+the information required for different . 5
+activities, and the varying efficiency of clients at least every 12 months, and that’s
+
+different institutions’ IDV processes, it very expensive. Many global banks are finding
+is impossible to derive a flat cost per that their relationships with smaller regional
+
+customer. Anecdotally, it costs a financial . . . .
+institution such as a bank approximately banks and financial services firms are not worth
+
+$15-20toon-boardasinglecustomerwith the cost anymore, and they are exiting those
+full KYC, despite the process being similar _yelationships. Five years ago there was a strong
+
+(if not identical) for most organizations . .
+and being repeated every time the same correspondent banking network, and that is
+
+customer attempts to access another Now being dismantled’
+
+product or service (e.g. to open another
+
+account or apply for a loan). These processes and their . oo.
+
+associated costs pose significant challenges for financial Joachim von Hanisch, former
+
+institutions. director for Standard Chartered?
+
+Moreover, the time taken to conduct a KYC audit is also
+
+increasing year-on-year, as more stringent regulations
+
+continue to be introduced. This has a
+
+detrimental effect on customer relations “[G]lobal surveys revealed a single clear
+
+and invariably also impacts customer message: the costs and complexity of KYC are
+
+acquisition and conversion rates, since a d havi eo hei
+customers are forced to fill in lengthy rising, and are having a negative impact on their
+
+application forms and provide extensive businesses. While financial firms’ average costs
+personal information. Additionally, t9 meet their obligations are $60 million, some
+
+institutions are being forced to collect . cays .
+sensitive data that they arguably do not are spending up to $500 million on compliance
+
+need, such as a Social Security Number, with KYC and Customer Due Diligence (CDD).”*°
+in order to transact with a customer. As
+
+a result, the costs of KYC are spiraling for the financial
+industry, and are inevitably passed on to customers in
+one way or another.
+
+Thomson Reuters
+The same overheads and inefficiencies are present in
+other sectors where highly sensitive data may need to be
+verified, including in background checks for employment,
+
+working with vulnerable people, and driver checks for 9 http://www.bankingtech.com/195632/cost-of-kyc-too-high-says-swiss-
+. . . . . . start-up/
+ridesharing. The sharing economy, which relies heavily so hetps://mww.thomsonreuters.com/en/press-teleases/2016/may/thom-
+Of 11 son-reuters-2016-know-your-customer-surveys.html
+on trust, grew an average of 32.4 % . per annum from 2014 11 Compounded annual growth rate; in 2014 there were 15.4 million users.
+to 2016, and now comprises 27 million adults in the U.S.,2 12 https://www.emarketer.com/Article/How-Popular-Sharing-Econo-
+
+my/1014135
+
+demonstrating the growth and scale driving demand for
+IDV services beyond the financial services sector.
+
+Cultural
+factors
+
+13 https://blog.linkedin.com/2016/04/12/will-this-
+year_s-college-grads-job-hop-more-than-previous-
+grads
+
+14 https://techcrunch.com/2016/11/02/
+how-banks-can-tackle-millennial-skepticism/
+
+18 http://adage.com/article/digitalnext/millenni-
+als-party-brand-terms/236444/
+
+16 https://www.fastcompany.com/3062475/your-
+guide-to-generation-z-the-frugal-brand-wary-deter-
+mined-anti-millen
+
+Compounding these data acquisition challenges are the cultural shifts
+that have taken place over recent decades. While it was once the
+norm to settle on a career early in life and to remain within the same
+organization for many years, if not permanently, it is now common
+for individuals to have many jobs and even different careers over
+the course of their lives. In the first five years after graduation, those
+who graduated between 2006 and 2010 had approximately 2.85 jobs,
+compared to just 1.6 jobs for those graduating between 1986 and 1990."
+
+A similar churn is seen in consumer markets, with customers more
+likely to switch banks, credit card companies, and energy or internet
+providers as new or more cost-efficient options become available.
+Greater transparency and access to information has led to greater
+competition in both the jobs and utilities markets, along with a
+growing demand for IDV, demonstrating that the existing rubber-
+stamp methods of bureaucracy that were established in the 1950s
+are no longer fit-for-purpose.
+
+Internet-savvy Millennials and Generation Z will be good partners in
+this new IDV ecosystem. Millennials are often frustrated by the friction
+involved in the banking world, and they will happily swap providers
+to simply avoid it.* With this group estimated to spend over $10
+trillion over their lifetimes, organizations would be savvy to be more
+accommodating of seamless onboarding experiences. Generation Z,
+although not price-conscious, is reported to be financially cautious
+and supremely interested in value and authenticity, and may respect
+amore practical IDV ecosystem.?®
+
+Of course, the cultural revolution inherent in the digitization of
+information brings with it another broad trend and set of concerns
+in relation to personal privacy.
+
+2017 Civic Technologies, Inc. All Rights Reserved.
+
+Privacy and
+
+security
+
+17 http://time.com/3639275/the-interview-sony-hack-
+north-korea/
+
+18 https://www.washingtonpost.com/news/the-
+switch/wp/2015/09/23/opm-now-says-more-than-
+five-million-fingerprints-compromised-in-breaches/
+
+19 https://digitalguardian.com/blog/27-data-se-
+curity-experts-reveal-1-information-security-is-
+sue-most-companies-face-cloud
+
+20 https://phys.org/news/2017-04-businesses-breach-
+es.html#jCp
+
+___ Gramm.-Leach Bliley Act; Fair Credit Reporting Act -
+Wai, hitps://www.ftc.gov
+
+22 hittps/{www.servers.global/meeting-the-chal-
+
+lenge-of-data-localization-laws
+
+Privacy concerns arise whenever personal
+information is collected, processed, or
+stored. There have been many high-profile
+hacks, leaks, and thefts of personal data
+inrecentyears. The hack of Sony Pictures
+in November 2014 demonstrates the
+scale of the problem,’ as well as the fact
+that hacks are no longer just perpetrated
+by individuals and small groups of
+hackers. Large amounts of employee
+data, including salary information and
+personnel records, as well as extensive
+email correspondence, movie scripts,
+and unreleased films were obtained.
+
+In June 2015, the United States Office of
+Personnel Management admitted thatits
+systems had been breached,” resulting
+in one of the largest ever breaches of
+government-held data, with the records
+of over 21 million people, including
+names, birth dates, addresses, Social
+Security Numbers, and even fingerprints,
+being stolen.
+
+One of the unintended consequences of
+growing awareness and regulation around
+personal privacy is that organizations are
+now replicating the storage of personal
+data on an unprecedented scale,? and
+with varying levels of security. This
+approach has resulted in many high
+profile data breaches, costing billions
+of dollars in total. 7°
+
+The |DVindustry has grown up in response
+to this changing cultural and regulatory
+landscape concerning personal data,
+and a number of service providers now
+offer easy API access to multiple sources
+of consumer data for IDV purposes. The
+
+Copyright © 2017 Civic Technologies, Inc. All Rights Reserved.
+
+largely ad hoc approach has resulted in an
+outdated, costly, and inefficient system
+that serves neither customers nor the
+institutions tasked with undertaking IDV.
+
+In many cases, companies are
+paying high fees to verify an
+individual who was already
+verified just hours ago by
+
+the same provider, but for a
+different company.
+
+Any system that shares Pll has to take
+personal privacy into account. With legacy
+KYC systems, maintaining the security of
+Pllis a significant concern and regulations
+prevent such sharing from occurring in
+practice.2+ Some jurisdictions even have
+data localization laws that mandate the
+physical location of the servers storing
+his PIl.22
+
+A transformative solution would allow
+organizations to easily obtain proof that
+DV information has been authenticated by
+a trusted institution without organizations
+sharing any PII between them, hence
+maintaining the user’s privacy. Ideally the
+institution that initially paid a substantial
+cost to perform the initial IDV would be
+compensated with asmall fee for providing
+this proof, thereby incentivizing both
+institutions to participate. This would
+lower the overall cost of KYC, thereby
+disrupting the entire IDV supply chain.
+Blockchain technology and in particular
+smart contract functionality is ideally
+suited to this application.
+
+Blockchain
+
+The suite of technologies known as blockchain or distributed ledgers that have emerged in recent years offers a qualitatively
+different solution to the problems faced by organizations in the process of conducting IDV on their customers. In particular,
+smart contracts, or code executed on the blockchain, bring significant advantages over existing applications and frameworks
+of thinking. The following is an overview of those technologies. Open blockchains like Bitcoin have a number of properties that
+set them apart from the centralized databases typically used to record information. While they cannot be considered uniformly
+better or worse in general, their relative advantages include:
+
+Low-cost
+
+With no middlemen to impose
+uncompetitive fees and with a
+reward mechanism built into the
+protocol, transfers require only small
+transaction fees.
+
+Irreversibility
+
+Because the ledger is immutable, a
+transfer that has been accepted into
+the network cannot be reversed.
+With no trusted intermediary to
+act on behalf of users or control
+the movement of their funds,
+bitcoin transactions are immune
+to chargebacks and are like paying
+in physical cash, but online.
+
+Immutability
+
+The ledger is policed by every member
+of the network and its integrity
+checked and agreed by the network
+as a whole on an ongoing basis. Any
+changes that one or other party
+attempts to make to the blockchain
+are recognized and rejected by the
+majority.
+
+Pseudonymity
+
+Blockchain addresses are effectively
+just strings of random characters that
+cannot intrinsically be associated
+with a specific individual. While it
+is easy for the owner to prove they
+control an address if they wish, and
+it is often possible to build up a
+picture of transaction relationships
+due to the transparent nature of the
+blockchain, the address itself does
+not contain the owner’s PII. Assuming
+best practice, this enables a high
+degree of privacy when required.
+
+Copyright © 2017 Civic Technologies, Inc. All Rights Reserved.
+
+ro’
+
+Transparency
+
+Everything that takes place on the
+ledger is visible to anyone. It is
+possible to see everything that has
+ever been recorded on the blockchain.
+
+(a
+
+Security
+
+Because the blockchain is maintained
+by a large network of participants,
+no one actor can easily gain enough
+influence to submit a fraudulent
+transaction or successfully alter
+recorded data. Although possible
+in theory with enough resources,
+it would be prohibitively expensive
+in practice. The more valuable
+the token, the larger the network
+and the more resources would be
+required, meaning that the cost
+always outpaces the benefit.
+
+Blockchain
+
+Bitcoin
+
+In its early years, blockchain was
+synonymous with bitcoin, the peer-to-
+peer currency launched in January of
+2009 as blockchain’s first application.”
+Bitcoin’s innovation was solving the
+so-called ‘double-spend’ problem in
+online financial transfers: the issue
+that data is readily copied, and that it
+is therefore impossible to prevent the
+same funds from being sent to more
+than one recipient unless there is a
+trusted intermediary to keep accounts.
+This centralized model was used by all
+banks and payment processors who
+dealt with electronic funds transfers.
+
+Such a centralized approach always
+involves trust, because there must be an
+authority whose job it is to organize the
+transfer of money from one account to
+another. In the physical world, money
+is handed over directly from person to
+person. Online, however, there must be
+intermediaries. Rather than transferring
+funds from their account directly to
+the recipient, the user instructs the
+intermediary to move funds on the
+user’s behalf.
+
+This centralized system has a number
+of potential drawbacks. The trusted
+intermediary may prove untrustworthy,
+has control over the end user’s funds,
+and can unilaterally block or reverse
+transactions. The centralized nature of
+online banking and other online money
+transfer protocols leaves users vulnerable
+to intervention by these gatekeepers
+and comes with security risks, because
+there is always a single point of failure.
+Centralized databases can be hacked,
+and their administrators compromised
+or coerced by a range of actors.
+
+Bitcoin’s innovation was a system that
+allowed peer-to-peer online transfers of
+value for the first time ever. No trusted
+intermediary was necessary, thereby
+
+mitigating the single point of failure
+problem. Instead of the centralized
+accounting used by traditional payment
+processors, the blockchain is a shared
+ledger. While centralized systems are
+restricted and can only be accessed by
+trusted intermediaries, anyone can access
+the decentralized bitcoin blockchain
+directly. Similarly, it is maintained by
+the whole network, rather than security
+being tasked to the trusted authority.
+
+This innovation was achieved by
+contriving a system in which itis difficult
+to add transactions to the ledger, but
+easy for anyone to check whether they
+are valid - that is, if the funds being
+transferred really belong to the transferor
+in the first place. The difficulty (from the
+standpoint of computational resources)
+means that there is a cost involved in
+attempting to process transactions and
+rewards (in the form of new bitcoins and
+transaction fees) for doing so legitimately.
+
+Fraudulent transactions are quickly
+identified and discarded from the
+ledger. Attempting to add a fraudulent
+transaction is costly, entails foregoing
+the financial incentives for acting
+honestly, and is highly unlikely to succeed
+in the first place because no single party
+in the overall network has more than a
+small proportion of the overall ‘authority’
+to validate transactions. In practice, it
+is simpler and more profitable to act
+honestly and so there is little point
+attempting to double-spend funds.
+
+Smart contracts
+
+The bitcoin blockchain was designed
+for peer-to-peer online transfers of
+value, effectively acting as digital cash.
+It achieves this not by actually moving
+money from one address to another, but
+by maintaining and updating the ledger
+
+Copyright © 2017 Civic Technologies, Inc. All Rights Reserved.
+
+to reflect how much money is registered
+to each address. The same approach to
+recording data transparently, securely,
+and immutably by consensus of the
+entire network can be extended to many
+other applications (since the financial
+value in the bitcoin network is simply
+information about who owns what). For
+example, messages can be stored on the
+blockchain, either encrypted orin plain
+text. Additionally, secondary tokens
+representing assets, such as shares in a
+business, securities, commodities, and
+other currencies, can be secured on the
+original blockchain.
+
+Itis also possible to create a system that
+takes a similar approach to the execution
+of computer code. Smart contracts are
+code that is executed on the blockchain.
+Software is typically run on a single
+computer or centralized server, just as
+online money transfers are typically
+centralized, for the reasons explained
+above. However, it is now possible to
+extend the blockchain’s functionality
+to software, creating decentralized
+applications or “dApps.” Once uploaded
+to the blockchain, these are stored
+immutably and run when the required
+conditions are met.
+
+The most famous smart contracts
+platform is Ethereum, which was
+launched in 2016 after a highly successful
+crowdfund in the summer of 2015.75
+Ethereum, which has become extremely
+well-known in the cryptocurrency world
+due to its soaring value, as well as some
+high-profile problems including The DAO
+and the ensuing controversial hard fork,26
+is a completely new platform, coded
+from scratch. Although other smart
+contracts and dApps platforms have
+been created, including Lisk,2” none
+have had the popularity and prominence
+of Ethereum.
+
+Blockchain
+
+Rootstock
+
+Early versions of the bitcoin soft-
+ware included more extensive fun-
+ctionality than simple payment,
+and the scripting language allowed
+for more complex operations, until
+these were removed in 2010 due to
+the potential vulnerabilities they
+introduced.
+
+Since then, there have been numerous
+initiatives to bring ‘2.0’ functionality to
+the bitcoin blockchain in various ways.
+Rather than these features being included
+in the core, they have been created as
+platforms operating as a layer built on
+top of the bitcoin network, for reasons
+that include:
+
+Security
+
+The bitcoin network is the largest and
+most secure cryptocurrency network.
+No other platform has the hashrate or
+history of bitcoin.
+
+v) Popularity
+
+Bitcoin has more users and
+community members than
+
+any other platform by an order of
+magnitude over competing networks.
+
+Awareness
+
+Bitcoin is better known than
+newer platforms that have not yet
+established the same profile.
+
+Rootstock (or “RSK”), one such layer on
+top of the bitcoin network, is asecure and
+scalable smart contracts solution that
+supports the existing bitcoin ecosystem.
+
+The bitcoin network requires that
+transaction fees are paid in the native
+currency of bitcoin (or “BTC”), including
+any smart contracts or other ‘2.0’ activity
+secured on the bitcoin blockchain.
+Similarly, the Ethereum network requires
+the use of its native currency, Ethereum
+(or “ETH”) as gas. Fees for executing
+smart contracts on Rootstock, however,
+are paid in smart BTC, which has a one-
+to-one peg with BTC.
+
+RSKalso allows for the creation of separate
+blockchain tokens. As noted above, these
+tokens are digital assets, cryptographically
+secured upon the blockchain, which can
+represent whatever the issuer wants and is
+prepared to back (if necessary), and which
+can play whatever role in the ecosystem
+thatits rule-set determines. These tokens
+can be transferred on a peer-to-peer basis
+for a minimal transaction fee, just like
+native tokens (e.g., BTC in the bitcoin
+protocol and ETH on Ethereum). They
+can be incorporated into smart contracts
+as an integral part of the ecosystem.
+
+‘As RSK does not mint, nor has pre-mined
+coins, then it has no speculative value
+and does not compete with Bitcoin’ 7°
+
+Copyright © 2017 Civic Technologies, Inc. All Rights Reserved.
+
+‘RSK is the first open-source
+smart contract platform with
+a 2-way peg to Bitcoin that
+also rewards the Bitcoin min-
+ers via merge-mining, allow-
+ing them to actively partic-
+ipate in the Smart Contract
+revolution. RSK goal is to add
+value and functionality to the
+Bitcoin ecosystem by enabling
+smart-contracts, near instant
+payments and _ higher-scala-
+bi y? 28
+
+28 Bitcoin was first articulated in 2008, on the Cryptography
+Mailing List, see http://www.metzdowd.com/mailman/listinfo/
+cryptography and in a white paper published by Satoshi Naka-
+moto, see https://bitcoin.org/bitcoin.pdf. Satoshi Nakamoto is
+widely accepted to be a pseudonym for an individual or group
+of people who created bitcoin. Despite numerous theories
+and news headlines to the contrary, Nakamoto’s true identity
+remains unknown to the public.
+
+24 This is often expressed in terms of a ‘51% attack’. That is, an
+attacker would require over half of the computational resources
+of the entire bitcoin network in order to create a fraudulent
+transaction.
+
+25 Ethereum’s crowdfund collected 30,000 BTC, then worth around
+$16 million. At the time of writing, the platform has a market
+cap of over $17 billion.
+
+26 The DAO (Distributed Autonomous Organization) took a smart
+contracts approach to investment. Decisions about which pro-
+jects to fund were intended to be taken collectively by investors,
+and funds dispersed automatically. However, a hacker was able
+to exploit a loophole in The DAO’s smart contracts and drain
+tens of millions of dollars from the pool of invested funds.
+
+27 Lisk grossed $5.5 million in its crowdsale in 2016.
+
+28 http://www.rsk.co/ for more information
+
+28 See http://www.rsk.co/ for more information
+
+Product
+Description
+
+The IDV industry as it presently exists
+relies on each institution obtaining
+and keeping records of clients’ Pll. As
+discussed, there are both significant
+overheads and security risks to this
+approach. Civic, already a trusted player
+in the IDV space, intends to leverage
+the above-described innovations
+in blockchain and smart contracts
+technologies to build on its success to
+date to introduce a “2.0” version of its own
+ecosystem. The key innovation enabled
+by this blockchain-based approach is
+the efficient and secure verification of
+previously-audited Pll by third parties
+without the need to share the underlying
+Pil between those parties, retaining User
+control over the data.
+
+The following is a description of Civic’s
+existing identity products and services,
+which will act as foundational elements
+of, and reference implementation for,
+the new product that Civic now intends
+to introduce.
+
+Civic’s existing identity
+products and services
+
+At present, Civic provides a digital identity
+platform known as the Civic Secure
+Identity Platform (the “SIP”), which
+individuals can access by downloading
+the Civic Secure Identity App (the “Civic
+App”), setting up their digital identity
+on the their device, and verifying their
+identity to become a Civic user. The Civic
+App stores a user’s PII securely on the
+user’s phone using high-level encryption
+and biometric locks (such as a fingerprint
+ID). By keeping this data in the user’s
+control, the Civic App makes it harder
+for hackers and other malicious groups
+to gain access to a user’s information.
+
+Through its decentralized architecture
+with the blockchain and biometrics on
+the mobile device, the CivicApp enables
+users to share and manage their fully
+verified identity data. Initially the user
+captures their Pll as requested into the
+Civic App which then goes through a
+thorough verification process by Civic.
+Once fully verified, the attestations to
+this data are written by Civic to the
+blockchain which can then be used
+by recipients of the data to verify the
+PIl’s authenticity and ownership.
+
+Civic’s identity partners can request
+a user’s information through custom
+QR codes to be scanned by the user
+with the Civic App. Once a user has
+unlocked the Civic App with his or
+her biometrics, the user can scan
+these codes, review exactly which
+information is being requested, and
+choose whether to approve or deny
+the request.
+
+Civic Architecture
+
+Civic or Identity Partner
+
+Copyright © 2017 Civic Technologies, Inc. All Rights Reserved.
+
+Thus, the SIP allows for a voluntary
+information exchange between the user
+and the identity requestor, according
+to requirements set by the requestor.
+In this way, the SIP allows for real-time
+authentication of identity data verified
+by Civic or a Civic identity partner and
+secure sharing of that data.
+
+equest F Supply re
+
+or other data pro
+
+Civic’s planned
+identity ecosystem
+
+In its next phase of development,
+facilitated by a token sale, Civic intends
+to go beyond its existing products and
+services to develop a fully decentralized
+Civic ecosystem for IDV services (the
+“Ecosystem”). The Ecosystem will consist
+of three new components: (1) a variety
+of smart contracts; (2) an indigenous
+utility token known as the Civic token or
+“CVC”; and (3) new software applications,
+introduced by Civic and others, that
+allow participants to interact within the
+Ecosystem.
+
+Civic’s Ecosystem will be designed to
+incentivize participation by trustworthy IDV
+providers known as “Validators,” who may
+include financial institutions, government
+entities, and utility companies, among
+others.*° Just as Civic currently validates
+the identity information of users of the
+Civic App, Validators will be able to verify
+the identity of an individual or business,
+known as a “User,” and ‘stamp’ this
+approval on the blockchain in the form
+of a record known as an “attestation.”
+Such attestation is effectively the hash of
+an underlying element of Pll, plus certain
+metadata relating to that hashed element
+(as further described below). Parties
+known as “Service Providers” who are
+seeking to verify the same information
+about a given User, and who may include
+other Validators, would no longer need
+to independently verify that information
+and could instead leverage the work
+already performed by trusted Validators.
+
+Civic intends for this kind of robust and
+decentralized IDV Ecosystem to emerge
+through the use of smart contracts,
+hich will ideally be built on RSK to give
+stem the same security as the
+ork, while enabling smart
+
+Copyright
+
+contracts, a high degree of scalability,
+and near instant transactions.*! The
+ecosystem is intended to ensure that
+Users remain in complete control over
+their Pll, by requiring the User’s consent
+before the IDV transaction between the
+Validator and the Service Provider can
+be completed.
+
+The smart contracts will enable Validators
+to offer their attestations for sale to
+Service Providers (subject to obtaining the
+User’s approval), and Service Providers to
+determine which Validators are offering
+attestations and at what price. Each
+Validator can publish a price at which
+it is prepared to sell its attestation of
+a User’s PII. Prices can be updated by
+Validators at any time, but any such
+updates will take a minimum of the time
+taken for the validation of a transaction on
+Rootstock (typically about 10 seconds) to
+appear. Prices can be offered for existing
+attestations and new attestations to be
+made.
+
+Once the Validator, Service Provider and
+User all sign-off on the transaction via
+the smart contract system, the Service
+Provider will pay the Validator in CVC.
+The smart contract will then allocate a
+set portion of the paid CVC to the User
+to incentivize User participation in the
+Ecosystem. Users will be able to use their
+CVC to purchase identity-related products
+and services from Civic, including some or
+all of the products and services currently
+available (as described below). Civic
+envisions that other service providers
+will also make their identity-related
+products and services available through
+the Ecosystem, and that Users will use
+their CVC to obtain those third-party
+offerings.
+
+2017 Civic Technologies, Inc. All Rights Reserved.
+
+In addition to the RSK or other smart
+contracts, the Civic ecosystem will also
+include Civic’s existing Civic App (through
+which Userswill share their Pll with chosen
+Validators and consent to transactions
+by interacting with the smart contracts),
+and additional software to be developed
+by Civic (and others) through which
+Validators and Service Providers will
+themselves be able to interact with the
+smart contracts. While Civic intends to
+develop the initial smart contracts and
+software, the Ecosystem is intentionally
+open to third-party providers.
+
+The Users will store their data on a
+personal device using the Civic App, and
+optionally backed up toa personal account
+ona cloud-based or distributed storage
+platform.*? Civic will not handle the
+storage of the data in this form, not least
+due to the regulatory implications of being
+responsible for this information; different
+jurisdictions have varying approaches to
+data storage, and some require that Pll
+is stored in the same country as the User
+(where storage is dealt with by a third party
+such asa financial institution). For Civic’s
+contemplated Ecosystem, it is enough
+that Validators have access to the data
+they require, with the permission of the
+User. This approach has the additional
+benefit of decentralizing data storage,
+shifting the responsibility onto the User
+who has to prove ownership, which is
+ultimately through each User’s device.**
+
+30 In the financial services sector, this typically means banks and oth-
+er financial organizations carrying out Know Your Customer (‘KYC’)
+processes, but Identity Verification is a broader trend that takes many
+forms, according toned. These entities will be able to verify theiden-
+tity of an individual or business (a ‘User’) and ‘stamp’ this approval on
+a blockchain. Through the use of smart contracts, built on RSK (Root-
+stock) and the bitcoin blockchain, a robust and decentralized identity
+verification ecosystem will emerge, in which Pll and other sensitive
+data can be exchanged securely and privately. 31 Subject to the avail-
+ability of all necessary features on the Rootstock platform. 32 Or any
+subsequently developed app available in the Ecosystem for this pur-
+pose. 33 This will be subject to the availability of the cloud services
+and to the requirements of the country laws applicable to the Users
+34 Depending on the regulatory environment for Users, there is also
+the option of storing data using InterPlanetary File System (“IPFS”),
+which will be explored in future iterations of the project and has many
+benefits outside of just backing up the data. This is however outside
+the scope of this paper. IPFS is a protocol designed to create a per-
+manent and decentralized method of storing and sharing files. Itis a
+content-addressable, peer-to-peer hypermedia distribution protocol.
+Nodes in the IPFS network form a distributed file system, see https://
+en.wikipedia.org/wiki/InterPlanetary_File_System.
+
+Civic’s planned
+
+identity ecosystem
+
+The mechanics of attestation
+
+The Pll that is stored on a User’s device can be attested to by
+Validators. The user can share the Pll and any attestations
+with any other participants in the Ecosystem that trust a given
+Validator. An attestation gives a participant confidence in the
+adequacy of the process used to verify specific fields of PIl with
+potentially greater efficiency and lower costs.
+
+A User’s Pll is structured in a hierarchy, with elements like SSN,
+address, city, country, and date of birth, among others. This
+data follows a defined model and Civic’s intention is to follow
+industry standards where they exist, and even contribute to
+further standardization in the industry.
+
+The provability of an attestation is achieved by organizing the data
+into a Merkle tree,*> where each node representing an element
+of Pll (e.g., name) contains a hash of its content and a hash of the
+hashes of its child nodes (e.g., first name and last name). This
+results in a “root hash” (also known as the Merkle Root) that can
+be used as a fingerprint for the data being attested to. This root
+hash is recorded in the blockchain and signed by the Validator
+making the attestation as to that specific Pll. Arbitrary numbers
+known as “nonces” are used to randomize hashes on structured
+data that have a relatively small universe of possible values to
+minimize the risk of any hash being reversed. Should the User
+not wish to reveal all of the underlying Pll that was attested
+to, portions of the Merkle tree can selectively be revealed, and
+hashes provided for any elements the User prefers not to reveal.
+
+This structure has two advantages: (1) it enhances User control
+by allowing the User to selectively reveal pieces of personal
+information in different circumstances; and (2) promotes security
+by using properties of the blockchain to prove that the data have
+not been tampered with after an attestation has been made.
+
+The only way for a participant to reproduce the hash is to create
+it from the original data. This allows the User to share the data
+with another participant in the Ecosystem and to prove that it is
+the same data that was previously attested to by the Validator.
+Should the Validator revoke its attestation for any reason, this
+can be reflected on the associated blockchain transaction, but
+the details of the attestation can never otherwise be changed.
+The blockchain on which these transactions are recorded is
+currently the bitcoin blockchain, because of its proven integrity
+and wide adoption, but the same design could equally be used
+on any other blockchain platform.
+
+Copyright © 2017 Civic Technologies, Inc. All Rights Reserved.
+
+The method used for recording these attestations is
+to create derived addresses where small amounts of
+cryptocurrency can be spent. The root hash is converted
+to a valid blockchain address using the additive property
+of Elliptic Curve Cryptography (ECC):
+
+Kprivth = kattest
+
+designed in a way that makes it unfeasible to determine
+the User and Validator associated with the address. This
+is essential to protecting the privacy of participants.
+
+Allowing entities to sell their attestations but not the
+underlying data, would turn the IDV market on its head.
+Entities who have invested heavily in IDV and KYC processes
+and built large, verified customer bases would be able to
+transform these once costly activities (i.e., customer IDV
+and KYC) into revenue generators, all without selling or
+transferring any customer PIl.
+
+Through this design, Civic aims to
+address the needs of:
+
+Service Providers, by lowering their
+costs of verifying the identity of an
+individual or entity from scratch.
+
+Validators, by enabling them to
+recoup the costs of the identity
+verifications they perform and the
+attestations they provide.
+
+Users, by granting them rights to
+view or amend, and control who
+has access to, their data directly.
+The CVC that Users receive for
+participation will be reusable within
+the Civic ecosystem to obtain other
+identity-related services from Civic
+or ecosystem participants.
+
+Governments, by allowing
+departments or agencies to rely
+upon each other’s attestations of
+identity with the express consent
+of a User.
+
+ORORORG
+
+36 https://en.wikipedia.org/wiki/Merkle_tree
+
+Ecosystem token (CVC
+
+Civic intends to introduce a Civic token,
+or CVC, which will be used as a form of
+settlement between participants to an
+identity-related transaction within the
+Ecosystem. The CVC paid in a transaction
+is distributed to the Validator and the
+User as a reward for sharing information.
+The proportion in which they share the
+CVC is defined by the smart contract
+and can be adjusted by consensus of
+the Ecosystem participants.
+
+CVC will also provide a means to
+incentivize all participants, including
+Users, to contribute to the Ecosystem.
+Moreover, Civic anticipates that the
+Ecosystem will develop such that Civic
+and third-party providers of identity-
+related products and services will offer
+those products and services to Ecosystem
+participants in exchange for CVC.
+
+Civic Users who own CVC may be able
+to use their CVC to purchase existing
+services directly from Civic. Civic may
+also build additional identity-focused
+services that can be exchanged for
+tokens, including:
+
+@ Services to run personal background
+checks;
+
+® Blockchain notary services which
+would allow identity and document
+authenticity to be provable;
+
+© Dark web monitoring and searches;
+e Access to individual credit reports; and
+@ Peer-to-peer identity services.
+
+A fixed supply of CVC will be created
+during a token sale, with no mechanism
+for supply to be increased. A ledger will
+
+be maintained for CVC*®* and will follow
+the ERC20 standard. The ledger will
+
+Using a dedicated token, the CVC,
+to facilitate transactions in the Civic
+Ecosystem provides a number of
+advantages over the use of existing
+tokens, including that:
+
+e It can be used across any number of
+jurisdictions, retaining a single uniform
+method of settlement;
+
+@ Usingablockchain-based token makes
+it possible to perform settlements
+automatically and irrefutably within
+a smart contract;
+
+@ Having a unique, specialized token for
+accessing identity services provides
+stability and shields the Ecosystem
+from extraneous considerations that
+can make other cryptocurrencies
+volatile;
+
+e It makes it possible to manage
+incentives in a way that drives
+Ecosystem effects for the benefit of
+all participants in the Ecosystem (as
+further described below).
+
+Rewarded with tokens
+
+Provides
+validation of
+identity data
+SERVICE e SERVICE
+PROVIDER PROVIDER
+(REQUESTOR) (VALIDATOR)
+Signs up for
+service,
+providing Provides identity
+identity information for
+valdation
+©
+USER oo USER
+
+Introduces new
+user to the
+platform
+
+provide a secure mechanism for owners
+to transfer CVC to other participants.
+
+36 Ideally on Rootstock, subject to the availability of all
+necessary features on the Rootstock platform per footnote
+
+Copyright © 2017 Civic Technologies, Inc. All Rights Reserved.
+
+A market for efficient
+attestation of User data
+
+Building on the distributed data model, the attestation model, and
+the CVC token, Civic will provide a platform for attestations to be
+shared between IDV service providers in order to radically reduce
+costs, compensate participants in the Ecosystem, and keep Users in
+full control of their data. The following diagram and process map gives
+an example of an initial attestation by a Validator, in this case Service
+Provider A, and the purchase of this attestation by a second service
+provider, Service Provider B, who is seeking to rely upon Service Pro-
+vider A’s attestation. For purposes of this reference implementation,
+we assume that the User is using the Civic App.37
+
+USER
+
+eo
+
+USER’S
+DEVICE PPI
+
+@ The User applies
+for a product or service
+from Service Provider
+A and sends them the
+required Pll from the
+Civic App.
+
+@Service Provider A
+verifies the User’s PII
+using its existing veri-
+fication methods.
+
+SERVICE
+PROVIDER A
+
+A
+
+ATTESTATION
+RECORD
+
+© By reference to the
+Pil stored on the User’s
+device, Service Provider iy
+
+Acalculates the hashes CVC TOKEN LEDGER
+
+VALIDATION CONTRACT
+PRICING CONTRACT
+
+@ Assuming the User has and is willing to share the
+requested data, Service Provider B and the User agree
+ona mutually acceptable Validator that has previously
+attested to the data and the rules and requirements
+around that data. In this case, we will assume that the
+mutually acceptable Validator is Service Provider A,
+who offers a price (in CVC) for its attestation, and that
+Service Provider B accepts that price. 38
+
+@ The User then sends Service Provider B an outline ofthe
+types of data that are
+in the attestation by
+Service Provider A, as
+well as the necessary
+information to enable
+Service Provider B to
+locate and view the
+blockchain transac-
+tion details relating
+to Service Provider
+A’s attestation on the
+blockchain. Service
+Provider B would then
+be able to recreate
+the hashes for that PII
+and compare them to
+the transaction on the
+blockchain, thus con-
+
+SERVICE
+PROVIDER B
+
+BLOCKCHAIN
+
+©
+ROOTSTOCK
+
+of that Pll and records
+an attestation to that
+PIl on the blockchain.
+The attestation may also include supporting metadata, such as its
+verification level, details related to Service Provider A’s process of
+verification, or any applicable industry standards (e.g., NIST, FIPS, or
+PIV standards). The blockchain transaction details of this attestation
+are then provided to the User.
+
+@ At a later date, the User applies for a product or service from
+Service Provider B.
+
+@ Service Provider B requests access to all or certain portions of Pll
+from the User, including the rules and requirements around what
+data Service Provider B is willing to accept. The Civic App will then
+determine whether these requirements are met.
+
+Copyright © 2017 Civic Technologies, Inc. All Rights Reserved.
+
+firming the availability
+of the requested data.
+If Service Provider B
+is satisfied with the resulting hashes, Service Provider B
+can then purchase the attestation, and pay the amount
+of CVC corresponding to the price of that attestation,
+into escrow (via the smart contract).
+
+© Once Service Provider B has paid CVC into escrow,
+the User, through his/her Civic App,39 can send Service
+Provider B the Pll with the requested content in plain text.
+
+@ To complete the transaction, the User triggers the
+release of CVC from escrow, which is shared between
+the User and Service Provider A (the original Validator)
+at a ratio defined by the smart contract.
+
+Data backup vs.
+decentralized data source
+
+G civic in
+
+Rose Clara Harper
+
+BIRTHDATE
+
+November 14,1974
+
+EMAIL
+
+ roseclaraharper@gmail.com
+
+SOCIAL SECURITY Ni
+
+Vo 4678.
+
+AUTHORIZE
+
+Oe
+
+40 Once supplied to another party, the use and storage of User Pll by
+that party is governed by the specific contractual agreement (e.g.,
+applicable terms and conditions or terms of service) by which the
+User provides his/her Pll, and not by the Civic Ecosystem.
+
+41 If this is the case, IPFS can become the data storage layer for
+identity data, and not just the backup for the users device. See supra
+note 39.
+
+To maintain the highest level of privacy,
+Pll must be controlled by the User at
+all times and be stored locally on their
+device. This physical separation creates
+a particularly difficult path to data theft
+as individual devices need to be targeted
+on a person by person basis in order to
+steal Pll, and prevents the types of mass
+data breaches to which we have become
+accustomed. It also allows early adopters
+of the Civic Ecosystem to store a much
+more limited amount of sensitive data
+and still have a high level of certainty
+about the authenticity of the actors
+they are dealing with. Moreover, when a
+User’s Pll is shared with other parties, it
+is always shared directly by the User via
+a peer-to-peer protocol for this sharing,
+promoting compliance with privacy and
+data protection regulations in even the
+strictest jurisdictions.”
+
+However, as adoption grows, the value of
+specific identity attributes on the black
+market should decline as entities move
+
+Copyright © 2017 Civic Technologies, Inc. All Rights Reserved.
+
+away from mere data points being used
+to transact and move towards verification
+of ownership before a transaction takes
+place. For example, credit card details have
+black market value because transactions
+can take place simply with knowledge of
+the data. Once a credit card number has
+to be presented with blockchain-based
+proof that the user indeed owns that
+number, the value of simply having those
+details progressively deteriorates with
+adoption of the Ecosystem.
+
+At this juncture it is less important where
+the data is stored and rather that the
+ownership proofs are protected. It
+currently makes sense for distributed
+data models to be easily adopted ina more
+sensitive environment. The benefit here is
+that large organizations can leverage the
+efficiencies of permissioned distributed
+data storage for things like Pll, which has
+the added benefit of always having the
+latest data that the User has permissioned
+the organization to access.
+
+Conclusion
+
+Civic is proposing the creation
+of a new Ecosystem that will
+improve efficiencies and reduce
+the costs of the existing IDV industry.
+Organizations that have invested
+heavily in IDV services will have
+the opportunity to monetize their
+processes both inside and outside
+their core business areas. These
+reduced costs and ease of access to
+verifiable Users will likely encourage
+organizations to improve their
+processes to help combat fraud
+and deliver better services.
+
+For end Users, the longer term
+impact of this disruption should
+be greater privacy and control of
+their Pll and other sensitive data.
+Access to services will be faster and
+more seamless and Users will be
+able trust more readily the services
+they are using. Simply through
+participation in the Ecosystem
+Users will earn tokens which will
+allow them access to a vast array of.
+useful services that will ultimately
+help them protect and control their
+identity.
+
+At scale it will no longer be enough
+to simply have PII to commit
+identity fraud, but proof of data
+hip will be required as well.
+izations will be able to trust
+'s without the need to retrieve
+store unnecessary data. This
+aradigm will ultimately
+ice the risk of data breaches
+dramatically increase the cost
+
+of committing fraud.
+
+For more information,
+visit www.civic.com,
+or email
+
+tokenggle@ giye-com.
+
+Copyright © 2017 Civic Technologies, Inc. All Rights Reserved.
+

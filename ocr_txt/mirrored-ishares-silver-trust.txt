@@ -1,0 +1,272 @@
+MIRROR:
+REFLECTING ASSET VALUE ON-CHAIN
+
+ABSTRACT. Traditional asset classes have yet to enter the transparent, censorship
+resistant and globally accessible universe of public blockchains. Geographical bar-
+riers, high transaction costs and liquidity constraints make it hard for the average
+person to invest a small amount in assets like stocks and real estate. Asset tok-
+enization has the potential to break down many of those barriers via blockchain
+reflections of traditional assets that are globally accessible, infinitely divisible and
+cheap to transact in. We present Mirror, a protocol that allows anyone to issue
+and trade synthetic assets that track the price of arbitrary real world assets with-
+out physical backing. Mirror enables two markets with well-balanced incentives: a
+market for minters to safely issue overcollateralized synthetic assets, and a market
+for traders to gain exposure to them. Mirror has the potential to democratize fi-
+nance by making assets of all shapes and forms accessible to anyone, anywhere in
+the world.
+
+1. INTRODUCTION
+
+Blockchain technology has been adopted in a wide variety of industries thanks to its
+core properties of accessibility, transparency and immutability. Public blockchains,
+meaning those accessible by virtually anyone with an internet connection, have en-
+abled unprecedented access to capital and to non-sovereign assets such as Bitcoin.
+Despite those developments, the financial industry remains closed and inaccessible,
+only experimenting with private blockchains which restrict access to specific parties.
+Indeed, access to financial assets such as stocks, bonds and derivatives remains a
+challenge for most of the world outside of America and Europe. We believe tha
+a necessary requirement for an open financial system is open, unfettered access to
+financial assets.
+In this paper we discuss how asset tokenization can be an avenue for democratization
+of financial assets and propose an implementation via synthetic tokens — tokens tha
+track the prices of real-world assets without physical backing. We present Mirror, a
+protocol that allows anyone to issue synthetic assets that track arbitrary real-world
+assets using public blockchain technology. In the latter half of the paper we discuss
+the core mechanisms that enable Mirror and argue that the protocol will play a crucia
+role in expanding the audience of traditional finance.
+
+2. ASSET TOKENIZATION
+
+2.1. Motivation. Let us first consider a simple problem where an individual wants
+to invest in a piece of real estate but only has a portion of the total required capital
+necessary to make the purchase. It may be in the investor’s best interest to invest
+a portion of the total amount every month (known as dollar cost averaging) and
+slowly build up the investment capital. However, this would be an unusual concept
+in the real estate industry as it does not make sense to buy, say 10m? of a piece of
+property. In a similar vein, the reverse scenario where an individual would like to
+
+Date: 2020-10-23.
+2 MIRROR: REFLECTING ASSET VALUE ON-CHAIN
+
+procure $50,000 worth of liquidity but only has a piece of real estate worth $100,000
+must necessarily sell the whole piece of real estate. It would be absurd to only sell
+half the house. However, we can view this as capital inefficiency as the individual
+would be left with an excess of $50,000 if they were to sell the entire house.
+
+2.2. Tokenization on a Public Ledger. An elegant solution to the above problem
+would be to introduce asset tokenization. To put it simply, we would convert
+the ownership rights, an asset, into a digital token. We can arbitrarily say that our
+$100,000 property converts to 100,000 "tokens", each corresponding to an equal share
+of ownership. If an individual seeks to control 50% of property ownership, it would
+be necessary and sufficient to purchase 50,000 of those tokens.
+
+A requirement for this solution to work is agreement among all parties on a point of
+reference for assessing the current state of ownership division. The introduction of
+blockchain to this framework provides a public ledger where ownership is verifiable
+by all parties and cannot be forged nor revoked. Users can transfer rights through
+explicit contractual agreements that are publicly verifiable and are free of counter-
+party risk. Blockchains are by design a natural fit for asset tokenization.
+
+2.3. "Tokenizable" Assets. While almost anything is "tokenizable" in theory, we
+expect the main tokenization demand drivers to be the following categories of assets:
+
+e Physical Assets - This would include types of goods such as real estate,
+commodities, precious metals, famous paintings and a long tail of illiquid as-
+sets.
+
+e Abstract Assets - This would include the majority of investment asset
+classes such as stocks, bonds, investment funds, derivatives etc.
+
+We review the advantages of tokenizing those types of assets in the following section.
+
+2.4. Advantages of Asset Tokenization.
+
+1) Reduced Geographical Barriers - As all the relevant information and
+records of previous transactions are stored on a permissionless blockchain, in-
+dividuals can transact from anywhere in the world.
+
+2) Reduced Reliance on Middlemen - The traditional need of a middleman
+trusted by involved parties to validate and facilitate transactions is eliminated
+thanks to the blockchain’s immutability and transparency.
+
+3) Enhanced Accessibility through Fractional Ownership - Tokenization
+allows assets to be divided into as many units (tokens) as desired, thereby
+enabling wider investment participation for high-value assets such as real es-
+tate and expensive stocks. While fractional ownership for stocks is becoming
+increasingly popular in brokerages, it comes with operational overhead that
+does not exist with tokenized stocks.
+
+Improved Asset Liquidity - Assets that are hard to transfer/trade tend to
+suffer in terms of liquidity. The use of blockchain to track and transfer own-
+ership substantially reduces friction and therefore permits higher liquidity.
+
+—~
+ww
+Nu
+MIRROR: REFLECTING ASSET VALUE ON-CHAIN 3
+
+(5) Increased Transaction Efficiency - Blockchain transactions can dramati-
+cally improve efficiency of traditional settlements by reducing time and cost.
+Complex transactions can be automated via smart contracts, thereby reduc-
+ing legal and operational costs and minimizing the risk of disputes.
+
+(6) Expanded Investor Base - Flexible fractional ownership improves access to
+investment opportunities by allowing investors to partake in transactions that
+were previously inaccessible to them due to capital or liquidity constraints.
+
+The above is undoubtedly only a subset of the vast advantages of asset tokenization.
+
+2.5. Implementations of Asset Tokenization. We present the two primary im-
+plementations of asset tokenization and discuss the advantages of each:
+
+(1) Asset-backed tokens are tokens which are backed one-to-one by the the
+physical or abstract good that they represent. For instance, an asset-backed
+gold token representing 1 ounce of gold would need to be backed by 1 ounce
+of physical gold stored in a vault.
+
+(2) Synthetic tokens are tokens that provide "synthetic" exposure to the physi-
+cal or abstract good that they represent without requiring one-to-one backing.
+For instance, a synthetic gold token representing 1 ounce of gold would be ex-
+changeable for the price of 1 ounce of physical gold. Synthetic tokens can be
+issued either by a centralized party, e.g. a bank whose credit "backs" the to-
+ken, or a decentralized network whose incentives guarantee that the synthetic
+token is always exchangeable for the price of the asset it represents.
+
+The primary advantage of asset-backed tokens is simplicity: the design is easy for
+anyone to understand, and risk is limited to the custodian — if they are trustworthy
+then the token should be safe to hold. Synthetic tokens can be more complicated to
+implement. We see a number of important advantages of synthetic vs asset-backed
+tokens. First, the accessibility afforded by tokenization is typically wider for syn-
+thetic tokens: while anybody with an internet connection can access synthetic tokens
+on a public blockchain, asset-backed tokens may face restrictions imposed by the
+custodians backing them. Second, synthetic tokens tend to be more affordable to
+hold as they typically charge no holding fee. Custodians for asset-backed tokens
+will typically charge custody fees which can be high, particularly for physical assets
+such as gold or oil. Third, synthetic tokens provide complete censorship resistance
+which asset-backed tokens often cannot due to restrictions faced by custodians.
+
+We see a market developing for both asset-backed tokens and synthetic tokens. Asset-
+backed tokens will certainly increase the transparency and liquidity of assets held by
+custodians, and we believe will become increasingly common. In the following sec-
+tion we introduce a protocol for synthetic asset tokenization, as we believe it has
+greater potential to democratize access to financial assets for a global audience.
+
+3. THE MIRROR PROTOCOL
+
+Mirror is a protocol that allows anyone to issue and trade synthetic assets that
+track the price of real world assets — everything from traditional equities to real estate.
+4 MIRROR: REFLECTING ASSET VALUE ON-CHAIN
+
+Mirror unleashes the full power of asset tokenization to offer globally accessible,
+transparent and affordable access to financial assets.
+
+3.1. Basic Operations. A synthetic asset issued on Mirror is said to be an mAs-
+set. For instance, a synthetic version of real-world asset X would be called mX. The
+following are the main operations enabled by the Mirror Protocol:
+
+e Mint: Anyone can mint an mAsset by locking up collateral, either in the
+form of a stablecoin or a different mAsset. The required collateral is at least
+a minimum multiple of the asset’s value (150% for stablecoin collateral, 200%
+for mAsset collateral). For instance, if stock X is reported to be trading at
+$100, minting 1 mX would require at least $150 in stablecoin, or $200 in a
+different mAsset.
+
+e Burn: To burn an mAsset, the issuer must burn the amount initially issued
+to receive the locked stablecoin collateral.
+
+e Trade: mAssets are tradable on automated market makers (AMMs) on pub-
+lic blockchains like Terra and Ethereum, making it easy for issuers as well as
+investors to buy and sell them.
+
+3.2. Mirror Participants. We expect Mirror to enable two types of markets in-
+volving different participants:
+
+e Minters: Minters are those who mint mAssets and effectively take the oppo-
+site position of the asset’s natural direction. For instance, an issuer of mXAU
+(gold) is effectively taking a short position on XAU. The minter’s counter-
+party is the system itself.
+
+e Traders: Traders are those who buy and sell mAssets on the decentralized
+exchanges supported by Mirror. Virtually anyone with an internet connection
+can gain exposure to mAssets via a Mirror-supported decentralized exchange.
+
+The Mirror protocol creates incentives for minters to mint assets and provide liquidity
+for traders. We discuss those incentives in the following section.
+
+3.3. Liquidity, Governance and the Mirror Token. The Mirror protocol utilizes
+AMMs (automated market makers) to facilitate mAsset trading against stablecoins.
+For instance, trading against an mXAU/UST pool on Uniswap would be the easiest
+way for a trader to get access to XAU.
+
+Minting and liquidity provision are essential services without which Mirror would not
+be able to function. It would therefore be natural for traders to compensate liquidity
+providers. To incentivize minting and liquidity provision, the Mirror protocol rewards
+liquidity providers with:
+
+e Trading Fees: All mAsset trades that go through the AMM pay a small
+commission to that mAsset’s liquidity providers.
+MIRROR: REFLECTING ASSET VALUE ON-CHAIN 5
+
+e The native Mirror Token: Mirror defines a native token with a determin-
+istic inflation schedule that rewards mAsset liquidity providers.
+
+In addition to providing liquidity incentives, the Mirror Token has a core governance
+role for the Mirror protocol. Mirror Token holders stake their tokens to vote on key
+issues including:
+
+e Whitelisting Assets: Enabling/disabling assets that can be minted.
+
+e Key Parameter Changes: Changing key protocol parameters such as the
+minimum collateral ratio and trading fees.
+
+The Mirror Token is therefore foundational for the Mirror protocol, acting as both
+an incentive for liquidity providers and the primary governance vehicle.
+
+3.4. Oracles, Liquidations and Peg Incentives. A critical function of the Mirror
+protocol is the ingestion of asset price data external to the blockchain. This is neces-
+sary for determining the amount of collateral required for minting an mAsset, and for
+assessing whether or not sufficient collateral is locked for existing mAssets. The pro-
+tocol achieves this via an on-chain oracle similar in design to Terra’s: Mirror Token
+holders submit votes on each asset, which the protocol aggregates to compute a me-
+dian weighted by each holder’s Mirror Token stake. The Mirror oracle submits prices
+at a high frequency to accommodate real-time pricing of exchange-traded assets.
+
+The Mirror oracle facilitates solvency of mAssets by triggering collateral liquida-
+tions whenever the collateral ratio of an mAsset (collateral value/asset value) drops
+below the governance-mandated minimum. For instance, if $150 worth of stablecoin
+have been locked by a minter to issue an mAsset worth $90, and the minimum collat-
+eral ratio is 150%, an increase in the asset’s value to $101 would trigger a liquidation.
+When the collateral ratio drops below the minimum, the Mirror protocol needs a
+way to retrieve and burn the respective mAssets. It does so by seizing a portion of
+the collateral and initiating an auction at a discount for anyone willing to sell the
+mAsset in exchange. This process is performed recursively until the collateral ratio
+is above the minimum threshold. The liquidation procedure implemented by Mirror
+for mAssets is similar to the procedure Maker implements for CDPs.
+
+In addition, the Mirror oracle facilitates a key property of mAssets: that their on-
+chain price is pegged to the price of the real-world assets they represent, as supplied
+py the oracle. This is achieved by incentives naturally created by the Mirror protocol.
+In particular, if the price of an mAsset trades at a discount to the oracle price, minters
+are incentivized to purchase and burn it, thereby profiting by paying back their debt
+at a discount. Conversely, if the price of an mAsset trades at a premium to the oracle
+price, market participants are incentivized to mint and sell it at the premium price,
+thereby profiting from the difference. In both cases, a drift of the mAsset’s price
+away from the price of the real-world asset creates arbitrage that market participants
+will exploit until the peg is restored.
+
+4. CONCLUSION
+
+Asset tokenization on public permissionless blockchains has the potential to break
+down the financial and geographic barriers that hold back traditional asset classes
+from global accessibility. Mirror is a protocol that allows anyone to issue and trade
+
+6 MIRROR: REFLECTING ASSET VALUE ON-CHAIN
+
+synthetic assets that track the price of arbitrary real world assets. Mirror’s well-
+calibrated system of incentives creates a market for minters to safely issue synthetic
+assets and for traders to gain exposure to them from anywhere in the world. Mirror
+unleashes the full power of asset tokenization to democratize access to financial assets
+of all shapes and forms.
+
+REFERENCES
+[1] Maker DAO. (2017). The Dai Stablecoin System [White Paper].

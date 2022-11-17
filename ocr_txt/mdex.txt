@@ -1,0 +1,127 @@
+MDEX Economic Whitepaper
+
+1. MDEX Introduction
+
+Mdex is an automatic market-making decentralized exchange based on the concept of
+fund pools. MDEX proposes and implements a mix-chain DEX model based on the Heco
+Chain and Ethereum. Mdex combines the advantages of the low transaction fees of the
+Heco chain and the prosperity of the Ethereum ecosystem. With MDEX, users can also
+
+await dual mining mechanism of liquidity and transactions.
+
+Mdex is committed to building a DeFi platform integrating DEX, IMO/ICO, and DAO on
+Heco and ETH, providing users with a safer and more reliable asset selection and
+configuration, and a higher expected return on investment decentralized token
+
+exchange service.
+
+As MDEX’s core trading medium token-MDxX, this article will describe the economic
+model of MDX token in detail.
+
+2. Token Economic
+
+2.1 Basic Information
+
+Name: MDX (MDEX Token)
+
+Total amount: About 1 billion
+
+Block time: Every 3 seconds (based on HECO)
+Block Rewards: 8OMDX per block
+
+Halve time: halve every six months
+
+2.2 Economic model
+
+The total supply of MDX is about 1 billion, of which 10% is used as a team reward for
+
+operation, and development, etc., and it will be unlocked in 24 months after being
+launched by smart contracts. 7% is used as early investors’ share to provide more
+sufficient funds and resources; 3% is used for market promotion and brand building;
+Both are unlocked in twelve months after being launched. The remaining 80% is used
+
+for liquidity mining and transaction mining on Heco.
+
+10% 7%
+
+3%
+
+@ 80% Heco liquidity and transaction mining
+
+10% Team reward
+(Unlock two years after going online 1 month)
+
+©) 7% Early investor
+(Unlock in twelve months after going online)
+
+@ 3% Market operation
+(Unlock in twelve months after going online)
+
+The mining reward for each block on Heco is 80MDx, of which liquidity mining
+accounts for 50%, transaction mining accounts for 50%, and it is halved every six
+months.
+
+2.3 Fee
+
+After the liquidity mining and transaction mining are started, the platform will charge
+0.3% of the transaction fee, and 66% of the total fee income will be used to repurchase
+and burn MDX and buy HT to airdrop to users who mortgage MDX. Among them, 40%
+of the above allocation ratio is used to repurchase and destroy MDX, and the remaining
+60% is used to purchase HT for airdrops to MDX pledgers, and the chain is transparent.
+
+The repurchase and burn MDX and buy HT to airdrop to MDX pledgers will be officially
+initiated 15 days after the token distribution and will be conducted daily.
+
+3. MDX application scenarios
+
+As the core medium of exchange token of MDEX, MDX not only represents the rights of
+the holders, but also has its practical application value. MDX can be used in the
+following scenarios.
+3.1 Governance tokens
+
+MDX is a community-led decentralized project that can be used for community
+governance of MDEX to make decisions on major issues in the community. Such as
+voting on transaction fee ratios, review of other important rules, and the decision to
+achieve deflation in the face of periodic repurchase and destruction of tokens. The list
+
+is as follows:
+3.1.1 Voting
+
+The comprehensive evaluation is made according to the transaction volume and total
+
+value locked of the project, and the MDX users vote for the decision.
+3.1.2 Repurchase and destruction
+
+MDX will charge 0.3% of the transaction fee, and 66% of the total fee income will be
+used to repurchase and burn MDX and buy HT to airdrop to users who mortgage MDX.
+Among them, 40% of the above allocation ratio is used to repurchase and destroy MDX,
+and the remaining 60% is used to purchase HT for airdrops to MDX pledgers, and the
+
+chain is transparent.
+3.2 Standard fundraising tokens
+
+MDX is also a standard fundraising token used by HT-IMO, a de-centralization
+fundraising protocol based on MDEX platform. It’s similar to use ETH to do ICOs on
+
+Ethereum platform and will have greater value as IMO is widely used.
+4. Summary
+
+MDEX is a highly innovative DEFI project that combines the advantages of DEX on the
+market and the features of centralized exchange platform token. Based on the Huocoin
+ecological chain which is developing rapidly and gradually flourishing in ecology,
+
+MDEX has a great space for imagination and growth.
+
+MDEX aims to lay a foundation for accelerating the ecological construction of DEFI of
+
+Huobi ecological chain, and also looks forward to working with the community to build
+a more prosperous DEFI ecosystem for Huobi ecological chain. Starting from DEX,
+MDEX is looking forward to giving play to the unlimited potential of DEF] in the fields
+
+of lending, insurance, asset management and so on.
+
+The design and implementation of the MDEX project are also continuously improved,
+including how to attract more external assets, and how to innovate more business
+model of DEFI. We are looking forward to the active participation of all community
+
+members to optimize the MDEX project.

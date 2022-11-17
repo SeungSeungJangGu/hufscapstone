@@ -1,0 +1,997 @@
+eVvVerus
+
+TECHNOLOGIES
+
+WHITEPAPER
+TABLE OF CONTENTS
+
+1 AE 5 oc) | a ee ee Se. <5 eee nnne Le meee: SL A Sanwa aan 01
+OD, VRERC ACETAL ances reese eee rere rmeepersrteermereceentien nso on Seene teehereres Merreeersrne noes 02
+GOS. TSEC cc hcchrecandnarernicnscnitiaanraninanmals budecicraan Seated asain tibiacactcanigintitadltccssranasy 03
+Ms Ener Serene tere earners earsertennrereerener neem or ererneernelbee neem eben enna ere etncnernegeeneenecrterernsees ater 04
+OS. ProblemStatenient) gasps scdencnsd casas anak mer acca mana laranumturse sncrcamradaracen 05 - 07
+es 08 - 09
+07: Tectiiclogy;Roadinap *.. asset npse tee cence ee een oon 10
+OB. Ewertig WOrldiEcOnySte iy ON assicsanssciacsaecwcnemisenmansccecephaccictlgmiicrsisstasr dpc tame aseccirtacon eT 11
+BETSEVR TORER:  ccneermnctttom mn mnen ieeteareettom teem menseermmmentenseeman inemmemsten eet inenmmenmmumenteurines 11
+Bi2sTrullionse(GRUE) Toker iitncistswcscscssssssseccsresscttbvaccsisstseac das css shes ascarscasssecsvasessbass 12
+8.3. Everus Multi-Crypto Wallet ( oonccccccoussnsnsntntntntntntntntntstnnntntstntstntntinistststntntnistnnststntuntnst 12
+8.3.1. Supported Cryptocurre cy emcmecmemnrnenmnmnninnnntnieinnsteientenennnteinaieiennntteinettit 13
+8.4. PSIGEN A.l. Trading Bot oo smmmnnnnmmnnmninnninnennnnennininnitninieninnnnnnnutninannnnenes 14
+Bi5; Everus:Merchant:Solations: sciscticssdaesswnscadtecerbecnsdssctiseccti sa curnssiuarcirelecal cat 15
+SFL. EVSKUsPay? rerecmeceueesmseureourererrerecemeeronsiewesreqenseeredirshereesetsenedionrermseqeteonlnmeeeseemareoessernereeneeensgeet 16
+
+8.5.2. EverMo
+
+O9. Everus Services oiicccssssnsssssunasetiseaistetainisteiniaisutistnieuiniaueionsueisusssuaiauieiaiinisusianisinssse 19
+De EVOTUSHUAMCE, pe cneeeeerrestsstvonsmernerieemrpereteremerres ten snymameidcomemnptveneonmeeriemerreeeereetiseqmaemensreet 20
+DD’ EVETUSREIMIE | sricsecoictimcnstlencesestonsvtsecsioorstobynststeitsoeuscei sis sesso eon Unset ons aesaiiosivieecostorroiottosenenibssene 21
+
+EVERUS WHITEPAPER 2.6 Copyright © 2019 Everus Technologies OU (14718563). All right reserved.
+everus
+
+iT
+It’s my mission to build the Everus
+
+digital ecosystem to pioneer and
+push for widespread adoption of
+
+blockchain worldwide for real-life
+55
+
+solutions.
+
+SRINIVAS ODDATI
+
+Founder of Everus Technologies
+
+ae \
+
+/ERUS WHITEPAPE copyright verus Technologies OU ( 63). right reserved.
+WHITEPAPER 2.6 Copyright © 2019 E Technologies OU (14718563). All righ d.
+a
+©) everus
+
+2. Introduction
+
+Incorporated in 2017, Everus is a blockchain technology company that is pioneering the widespread
+adoption of blockchain worldwide for real-life solutions. Everus enables opportunities in the blockchain
+industry, and is always looking at ways to accelerate the mainstream adoption of cryptocurrencies
+
+while focusing on the development of the Everus World Ecosystem and its range of user services.
+
+The name Everus was inspired by characteristics of the blockchain - immutable and synergistic through
+its decentralized power. What we have created is a borderless digital infrastructure, designed to create
+
+a thriving ecosystem of merchants, services, and customers which rewards its users.
+
+Having grown tremendously over the years, Everus has increased both its customer base as well as in
+its knowledge and skills in technological and mobile-centric innovations. To date, Everus has offices
+in Estonia, Malaysia, Hong Kong, India, Switzerland and the United States with over 100,00 Everus
+wallet users in over 90 countries thus far. To ensure its solutions and services meet the strict
+regulations found in many parts of the world needs, Everus Technologies has consistently been
+working with the governing bodies to ensure full compliance and in August 2019 was granted the
+
+following licences:
+
+Everus Technologies Licenses
+
+Digital Wallet FRK000920 hitps://mtr.mkm.ee/taotluse_tulemus/515390
+Cryptocurrency Exchange FVRO01028 https://mtr.mkm.ee/taotluse_tulemus/515403
+
+Since April 12, 2018, Everus has been recognized as an official reporting institution to the Central
+
+Bank of Malaysia in compliance with the Anti-Money Laundering and Counter Financing of Terrorism
+
+(AML/CFT) — Digital Currencies (Sector 6) policy.
+
+Everus will continue to comply and work with the governing bodies and other related-regulators in
+order to fulfill duties as a business entity and as an educator within the industry. Everus will live up to
+its responsibility of ensuring all activities are transparent.
+
+02
+
+EVERUS WHITEPAPER 2.6 Copyright © 2019 Everus Technologies OU (14718563). All right reserved.
+@) everus
+
+3. History
+
+In 2015, the idea of a digital financial and commercial ecosystem was born. Experiments were done
+to test possible market adoption strategies to populate the ecosystem with users. Users were assigned
+
+e-wallets and allocated tokens based on their respective contributions.
+
+However, the usability of these tokens was limited to transfers between users and required more
+
+features to be a viable alternative to fiat currency.
+
+In 2016, a chat function was introduced to add value to the wallet and boarding of merchants began.
+Integration with several Payment Service Providers (PSPs) opened doors to bill payments, top-ups,
+
+and consumer networks.
+
+With a 5% margin provided by the merchants and PSPs, discounts were given to the users instead of
+being retained as profits. Naturally the user base grew, leading to increasing downloads, transactions,
+
+mobile top-ups and purchases.
+
+Even without advertising, the popularity of this app grew steadily across borders, traveling by word
+
+of mouth into unexpected regions as more and more people took advantage of the discounts.
+
+With a substantial active user base and the rise of blockchain technology and its characteristics, a
+decision was made to phase out the prototype/pilot program and begin building a similar, but more
+
+secure and decentralized financial and commercial ecosystem with the help of blockchain experts.
+
+“The difference of this new ecosystem was that it would be built on a blockchain architecture,
+
+and its tokens would be in the form of cryptocurrency.”
+
+03|
+
+EVERUS WHITEPAPER 2.6 Copyright © 2019 Everus Technologies OU (14718563). All right reserved.
+(®) everus
+
+4. Founder
+
+SRINIVAS ODDATI
+
+Founder of Everus Technologies
+
+Srinivas Oddati was born in 1976 in the small village of Vemulawada, Telangana, India. To help support
+his family, Sri, the eldest son of a humble mill worker, left college to begin working at his first IT
+development job with MS-DOS in the early 90s. With a powerful combination of talent and interest
+in the field of software programming, Sri rose up the ranks through the fast-developing era of
+computing. Quickly working his way up from FOXPRO programmer, he soon found himself building
+systems for Midday Newspaper in Mumbai, before furthering his career by programming Billing and
+
+Settlement Plans (BSP) for airline companies.
+
+In 2002, Oddati relocated to Malaysia to begin work as a Visual Basic programmer with MySoft
+Accounting Corporation Sdn Bhd. This kick started his journey of technopreneurship as Oddati
+moved on to start his first software company OM Technologies in 2003, successfully developing
+
+Debt Management Systems and Learning Management Solutions.
+
+04
+
+EVERUS WHITEPAPER 2.6 Copyright © 2019 Everus Technologies OU (14718563). All right reserved.
+&) everus
+
+5. Problem Statement
+
+1. The inconvenience of transactions via banking institutions
+Cross border financial transactions often involve high transaction fees as well as the inconvenience
+of delays as a result of bank processing times, time zones, validation, and transfer processes.
+
+Solutions:
+@ Send and receive funds to users anywhere in the world via Everus Wallet and benefit from
+
+lower transaction costs and faster transfer times compared to those offered by banking
+
+institutions.
+
+2. Lack of financial services available in the market for unbanked population
+With the latest figures of unbanked population globally at 1.7 billion’, it is clear that in order for
+many economies to fully reach their growth potential more must be done to serve the unbanked
+population.
+
+Solutions:
+@ Everus Wallet provides users with a secure facility to manage, send and receive digital currencies
+
+without the requirement of lengthy application forms and credit score checks.
+@ The expansion of Everus World ecosystem is set to open up a wide range of financial services to
+Everus Wallet users globally, providing those considered to be unbanked with the ability to carry
+
+out a wide range of day to day payments using digital currencies.
+
+3. The security of cryptocurrency wallets
+
+Along with the growth in cryptocurrency adoption by users across the world the market has also
+experienced a rise in the number of hacks against cryptocurrency exchanges. As one of the main
+factors affecting the growth, security is often mentioned as the number one concern by those who
+
+are yet to participate in the trading of cryptocurrency.
+
+The fear is growing strong in the market. And there are many cryptocurrency wallets that are not
+100% safe especially for secure storage of large amounts of digital assets, exposing private key of a
+
+user's wallet to hacks and threats.
+
+05
+
+EVERUS WHITEPAPER 2.6 Copyright © 2019 Everus Technologies OU (14718563). All right reserved.
+&) everus
+
+Solutions:
+@ Everus Multi-Crypto Wallet with multi-layered security features such as in-built facial recognition
+
+and fingerprint scanning, Two-Factor Authentication and Google Authentication, offering users
+
+an extra level of security.
+
+4. Overcrowded cryptocurrency wallet marketplace
+
+It is becoming increasingly difficult to choose a cryptocurrency wallet that is catered for every coin
+and token in the market. They are mostly limited to a few numbers of coins and tokens. Thus, users
+have to manage multiple cryptocurrency wallets for different digital assets as there isn’t a single
+
+wallet to meet and support all cryptocurrencies for assets storage.
+
+Solutions:
+@ Storage of up to 100 supported cryptocurrencies inside Everus Multi-Crypto Wallet
+
+@ To upgrade Everus Multi-Crypto Wallet to be able to store more coins and tokens each month,
+
+with the ultimate goal of being able to hold over 500 different cryptocurrencies.
+
+5. Difficulty in managing cryptocurrency portfolio
+
+There are over 2,000 cryptocurrencies in the market with price movements happening every second
+across global exchanges. This makes it difficult for users to track the real-time price and trading chart
+of their digital assets one-by-one. In recent years, cryptocurrencies seem to have overcome the limita-
+
+tions of fiat currencies as well.
+
+Solutions:
+@ Smart Wallet with live cryptocurrency price chart and alerts indication, highlighting and releasing
+
+a warning to users on the price rise and fall
+
+@ Smart Wallet with accounting tools and clear separation of spending and investing functions to facilitate
+regulatory and compliance
+
+@ Supplementary Wallets designed for sub-users (parents/organizations) with assigned authorization
+
+and tracking of transactions
+
+06]
+
+EVERUS WHITEPAPER 2.6 Copyright © 2019 Everus Technologies OU (14718563). All right reserved.
+@) everus
+
+6. Limited usability for cryptocurrencies
+
+There are many cryptocurrency providers in existence, and most are using it for buying and selling as
+tradable items. Its usability is undervalued for utilization in regular manner in day-to-day life. In
+specific parts of the world, cryptocurrencies are legal and regulated, for moving towards to become
+an asset of real value in the real world.
+
+Solutions:
+
+@ EverMo platform allows offline merchants with the ability to accept cryptocurrency payments,
+
+providing added usability to cryptocurrency users
+
+Reference:
+1."Insights from the World Bank's 2017 Global Findex database" Lisa Cornish 2018
+https://www.devex.com/news/insights-from-the-world-bank-s-2017-global-findex-database-92589
+
+o7|
+
+EVERUS WHITEPAPER 2.6 Copyright © 2019 Everus Technologies OU (14718563). All right reserved.
+&) everus
+
+6. Rationale for the Introduction of Everus
+
+The current banking situation has not been optimal for inclusive commerce, and in many cases
+prevented access to being able to do business, or to send or receive funds easily’*?*. With the new
+technologies introducing decentralized finance services in the form of the blockchain and the
+widespread adoption of Bitcoin® , Ethereum and the many altcoins that have followed‘, it is clear
+
+that this is an exciting time for a change.
+
+The founder and core team of Everus have a strong background in social messaging apps’ and in
+managing active communities. Having seen this opportunity, they began to research the possibility
+
+of developing a borderless currency for the unbanked.
+
+Work on a non-blockchain prototype of Everus began in 2015, with a concept commercial ecosystem
+using tokenized payments for transfers. Since then, the spectacular rise of cryptocurrency and
+blockchain adoption worldwide, and the subsequent rapid appreciation in prices brought widespread
+
+attention to the forerunners such as Bitcoin and Ethereum.
+
+The exponential adoption of cryptocurrencies is currently occurring on a global scale; as adoption
+further increases, people will naturally begin creating a new economy with these tools and start
+
+spending cryptocurrency, as opposed to investing in it.
+
+Throughout this journey - Everus will be strong spoke in the wheel, driving towards new horizons,
+
+continually innovating and providing innovative fintech services to our customers.
+
+On a greater stage, Everus will be working to help integrate its technology into helping solve
+
+problems in disaster relief, military applications, financial education, wealth disparity, and governance.
+
+Everus is borderless and knows no bounds, any financial transaction can be implemented with its
+smart contracts support, and secure API - meaning marginalized economies in the emerging markets
+can take full advantage and expand their operations in this rapidly evolving digital world.
+
+08|
+
+EVERUS WHITEPAPER 2.6 Copyright © 2019 Everus Technologies OU (14718563). All right reserved.
+everus
+
+References:
+1."A Sinister VVar on Our Right To Hold Cash" F. William Engdahl 2017
+
+http://www.globalresearch.ca/a-sinister-war-on-ourright-to-hold-cash/5605138
+
+2."The Business of Humanity" C. Leaf, 2016
+http://fortune.com/2016/12/21/fortune-time-global-forum
+
+3."2016 Indian banknote demonetization"
+
+https://en.wikipedia.org/wiki/2016_Indian_banknote_demonetisation
+4.Demonetisation: Chaos grows, queues get Longer at banks, ATMs on week end" PTI 2016
+http://indianexpress.com/article/india/india-news-india/demonetisation-chaos-grows-queues-get-longer-at-bank-atms-on-week-end
+
+-4371373/
+
+5."China's Blockchain Invasion" B. Fink, 2017
+
+https://bitcoinmagazine.com/articles/chinas-blockchain-invasion
+
+6."Crypto currency offerings spur speculation frenzy" |. Kaminska, P. Murphy 2017
+https://www.ft.com/content/61cdc5c8-370e-11e7-bce4-9023f8c0fd2e
+
+7. http://www.uandme.org
+
+09 |
+
+EVERUS WHITEPAPER 2.6 Copyright © 2019 Everus Technologies OU (14718563). All right reserved.
+@) everus
+
+7. Technology Roadmap
+
+Research & Development: 2016
+
+The initial foundations were laid down for
+Everus and the project began its market
+research & development phases.
+
+Everus Mobile App: Q2 2018
+
+Available for both Android & IOS users,
+the Everus App was launched to provide
+users with a faster and more secure way to
+
+access their Everus wallet.
+
+PSIGEN A.I. Trading Bot: Q4 2018
+Accessed via the Everus wallet, PSIGEN
+provides Everus users the ability to join
+100% “risk free” trading packages
+allowing them to utilise their crypto assets
+to generate a passive income.
+
+EverusPay: Q2 2019
+
+Multi-crypto payment gateway providing
+users with the ability to pay or transact with
+online merchants using a variety of
+cryptocurrencies via a single wallet,
+opening up a world of convenience
+
+Everus Remit: Q3 2020
+
+Leveraging on blockchain technology to
+communicate with currency exchangers
+worldwide, Global Remittance enables the
+
+delivery of fiat currency to the doorstep of
+the beneficiary
+
+EVERUS WHITEPAPER 2.6
+
+Prototype: 2016
+
+Successfully launched prototype of Everus
+wallet available to the public, achieving
+10,000 registrations within the first few
+
+months.
+
+EVR token & Everus Wallet: Q3 2017
+Official launch of the EVR token to the
+public as a EVR/BTC pairing, listed on 3
+cryptocurrency exchanges. Successfully
+achieved over 50,000 registrations during
+campaign.
+
+Trullion-e (TRU) Token: Q4 2018
+Cryptocurrency token backed by 100%
+physical gold assets and matched 1:1
+against the market value of gold. Providing
+a stable digital currency for use as a store
+of value and trading medium.
+
+Everus Exchange: Q4 2019
+Cryptocurrency Exchange Platform which
+aims to provide a range of crypto trading
+solutions for all major coins and tokens,
+including Bitcoin, Ethereum, Ripple,
+Litecoin, EVR and many more
+
+Everus Finance: Q3 2020
+
+Lending platform aims to offer microloans
+that are both affordable and accessible to
+the unbanked, as well as generating
+steady returns for lenders and investors.
+
+Copyright © 2019 Everus Technologies OU (14718563). All right reserved.
+
+8. Everus World Ecosystem
+
+8.1. Everus (EVR) Token
+
+Built on the Ethereum network, EVR is an ERC-20 token available across 3 independent exchanges.
+Additional to the Everus Wallet, EVR is compatible with other hardware, software and mobile wallets
+which can store Ethereum-based tokens, making Everus accessible to everyone. To date, there are
+
+over 457 million EVR in circulation, with a total supply of 1 billion.
+
+The Everus ecosystem is designed to cultivate audience familiarity with cryptocurrency as a form of
+payment. All products and services within the Everus ecosystem will accept EVR as the prime
+
+cryptocurrency, highlighting its usability in the process.
+EVR Token are listed in the following Exchanges:
+P2P[)b2b
+© IDEx
+WY CREX24
+
+CREX24 is a new cryptocurrency exchange. The official CREX24 website was launched in 2017. In
+
+the wake of the growing popularity of digital currencies, we have been developing a convenient and
+
+functional trading platform.
+
+1
+
+EVERUS WHITEPAPER 2.6 Copyright © 2019 Everus Technologies OU (14718563). All right reserved.
+©) everus
+
+8.2. Trullion-e (TRU-E) Token
+
+Trullion-e (Tru-e)
+
+For thousands of years, gold has been a crucial
+store of wealth for people across the world,
+providing a safe haven asset with a price
+performance that is on the most part
+independent from stock and bonds.
+
+Developed in partnership with some of the
+leading banks and gold vaults in Europe,
+Trullion-e (Tru-e) is the latest digital
+cryptocurrency pegged 1:1 to the value of gold,
+combining both the historical stability of gold,
+with the modern efficiency of digital currency.
+
+As a digital currency fully backed by physical
+gold with 999.9 fineness, the amount of
+Trullion-e tokens in circulation will always match
+the amount of allocated gold in the vaults.
+Once allocated, all gold is subject to scheduled
+audits by leading global auditors with Daily
+Asset & Custodian Statement available on
+website. As a token 100% backed by gold
+assets, the market value will be synchronized
+1:1 with market pricing updated twice daily
+following gold market rates.
+
+All allocated gold stored in the vaults is 100%
+insured against losses by global insurance com-
+pany, with certificates available for viewing via
+our website to provide full transparency and
+accountability to all Trullion-e holders.
+
+Storage and management of Trullion-e (Tru-e)
+token can be easily accessed using Everus
+Wallet App, benefiting from the latest in securi-
+ty features plus smart contracts combined with
+intuitive interface via both app and desktop
+web browser.
+
+EVERUS WHITEPAPER 2.6
+
+Trullion-e (Tru-e) is a currency with all-time
+intrinsic value for wealth transfers, payment of
+goods and investment purposes. It has financial
+traits of gold providing high stability and
+long-term store of value, making it the ideal
+choice of currency for:
+
+e International business transactions
+¢ Online payments
+¢ Store of wealth
+
+To purchase Trullion-e (Tru-e) token, it starts
+with transferring fiat currency to Everus secured
+bank account. Everus will then purchase the
+same value of gold stored in the trusted trading
+company, which served as a custodian account
+to our vaulted gold. Purchased gold certificate
+and insured policy will be issued. Through this
+verification, Everus will release Trullion-e (Tru-e)
+token to the purchaser. The issued Trullion-e
+token amount will always be synchronized with
+the amount of allocated gold stored. All trans-
+action fees will be charged from as low as 1%,
+and it covers all administration, insurance and
+storage of physical vaulted gold.
+
+Those who wish to exchange Trullion-e (Tru-e)
+tokens into other financial assets can do so any-
+time through our settlement process. With a
+variety of settlement options from fiat currency,
+cryptocurrency as well as the option to
+exchange Trullion-e into the allocated vaulted
+gold. For this option, users can choose to have
+the physical gold delivered to anywhere in the
+world (subject to additional costs).
+
+ERC-20
+
+token pow!
+Ethereum
+blockchain
+
+cked by 1 Trullion-e
+(Tru-e) = 1 gram
+of 999.9 Gold
+
+Physical Gold
+
+12
+
+Copyright © 2019 Everus Technologies OU (14718563). All right reserved.
+&) everus
+
+8.3. Everus Multi-Crypto Wallet
+
+Launched in October 2017 alongside the EVR token, The Everus wallet was launched with the
+purpose of providing secure storage of EVR token with the added function of sending & receiving
+
+EVR to and from Everus wallets.
+
+A product launch event in April 2018 saw the
+inauguration of the Everus Wallet app. Features
+included:
+
+Enhanced security
+
+Facial recognition and fingerprint scanning to ensure
+that only the wallet owner will be able to access their &)
+wallet and funds
+
+. “ . ” everus
+@ Google Authenticator to identify user identity for
+, Multi crypto wallet 100,000
+stronger security ie walists
+QR code scanning , since launched in
+
+October 2017
+
+Send and receive funds with ease funds via QR code
+Transaction history ]
+Keep track of all funds going in and out of your wallet
+
+Favorite wallet addresses a
+
+Save commonly used wallet addresses to save time
+
+during transactions
+
+zs Versatility of the Wallet
+
+€ Wallet Securities
+
+Users will be able to withdraw all their cryptocurrencies at all times,
+Chango Wellet Acoces Code
+
+nag racine . ensuring that it is the most convenient platform to securely store a
+
+Fingerprint Unioek ° diverse portfolio of cryptocurrencies.
+
+Fingerprint Transaction Autrorisation @
+
+Future updates will include increasing the number of tokens/coins
+which can be stored in the wallet with the aim of providing users
+with a universal solution for storing and managing their cryptocurrency
+portfolio. This is in line with our ultimate goal of being able to hold
+
+over 500 different cryptocurrencies moving forward.
+
+EVERUS WHITEPAPER 2.6 Copyright © 2019 Everus Technologies OU (14718563). All right reserved.
+@) everus
+
+8.3.1. Supported Cryptocurrency
+
+@O000:- 00:
+
+Trullion-e Bitcoin Ethereum Litecoin Aeternity AION Aurora Bancor
+BHPCash Binance Coin Bread Buggyra Coin Zero Centrality ChainLink Token —Cindicator
+Credo Crypto.com Crypto.com Chain CyberMiles Dai Stablecoin v1.0 Decentraland Dent L\, Digitex Futures
+& a>
+Dragonchain Edioo Endor Protocol Enigma Enjin Coin FunFair Gemini dollar Golem HedgeTrade HoloToken
+e
+IP Gal 2 G
+e all n> 4
+Huobi P ool Token HuobiToken ICON Iconomi iExec RLC Insight Chain 1OSToken loTeX KuCoin Shares Kyber Network
+s
+4 6S © fo 8) N (1 A mv LA ‘ lw! |
+LATOKEN Linkey Token Loom Network Loopring Mainframe Maker Maximine Coin Metadium Mithril Mixin
+4s a
+Ys = Ovww
+MobileGo Nebulas Nexo Nuls ODEM Token OmiseGO OneRoot Network OSAToken Paxos Standard
+
+@-Oc@c@ore
+
+PayPie Polymath Network Populous PowerLedger Pundi X QuarkChain Qubitica Revain Santiment Network Token
+
+LSosees t ©
+
+SingularityNET STASIS EURS Token StatusNetwork Telcoin Theta Token ThoreCoin TokenCard TomoChain
+WS
+Ve whe EY Be ‘6
+ve
+ee ont
+TrueUSD USD Coin VeChain Veritaseum Waltonchain WAX Token Wi Coin Zilliqa
+
+13]
+
+EVERUS WHITEPAPER 2.6 Copyright © 2019 Everus Technologies OU (14718563). All right reserved.
+&) everus
+
+8.4. PSIGEN A.I. Trading Bot
+
+Launched in October 2018 after 4 years of market research and technology development, PSIGEN is
+the latest in Artificial Intelligence Trading Bot which aims to revolutionise the process of trading among
+cryptocurrency investors globally. Accessed through the Everus wallet, the launch of PSIGEN provides
+the perfect platform for those who are new to cryptocurrency trading to generate risk free revenue
+
+without any market or trading knowledge.
+
+As a fully automated platform, using a selection of preset algorithms and trade parameters, our A.l.
+Trading Bot analyzes the cryptocurrency market for opportunities and automatically processes
+
+profitable trades when they become available.
+
+Packed with a variety of user-friendly features such as 24-hour reporting, simple activation as well as
+the ability to join trading packages using a variety of supported cryptocurrencies, PSIGEN is set to
+revolutionize the way cryptocurrency is traded whilst providing a risk free platform for users to generate
+
+a passive income from their cryptocurrency assets.
+
+Exclusive for Everus Wallet app holders:
+
+e@ There's no monthly, yearly or one time subscription fee required.
+
+Risk Free Trading:
+
+e PSIGEN automatically buys low & sells high with a minimum of 5% ratio to ensure earnings, with
+the profit percentage varying based on exchanges rates
+
+e PSIGEN trades simultaneously on multiple exchanges by using the top 100 cryptocurrencies
+
+e@ The user's trading capital deposited in USD$ is protected from losses during trading
+
+e Users may withdraw their capital after the minimum maturity period (30 days)
+
+14)
+
+EVERUS WHITEPAPER 2.6 Copyright © 2019 Everus Technologies OU (14718563). All right reserved.
+©) everus
+
+8.5. Everus Merchant Solutions
+
+8.5.1 EverusPay
+
+EverusPay is a cryptocurrency payment gateway offering online merchants the secure way to accept
+multiple payment solutions in the form of cryptocurrencies from consumers across the world. In a bid
+to increase usability using cryptocurrency as a medium of payment online, EverusPay is a key
+
+component in the Everus World ecosystem as part of the merchant onboarding plans.
+
+As a payment gateway built on blockchain technology, EverusPay solves one of the major challenges
+for merchants today by ensuring that all transaction data is secure and all payments received are
+
+authorized and free from cases of identity theft and fraud.
+
+Everus aims to provide a channel to grow merchants’ client base, which in turn will lead to an increase
+of sales revenue. This is done by targeting a wide audience of cryptocurrency users, which can include
+long-term investors or evangelizers. Merchants are able to choose to accept payment from 100
+cryptocurrencies including EVR, Tru-e, BTC, ETH and LTC, opening up the world of convenience for
+
+users. Not just that, users can also benefit from below factors.
+
+TOKIO
+
+Secure Fraud Exclusive Cross Border Pay directly Easy & Fast 24/7
+Transactions Prevention/ 5% = 20% Payments from Everus Transactions Transaction
+No Identity Rebates for Wallet Report
+Theft Tru-e / EVR
+
+With zero sign up & monthly fees, merchants only ever need to pay a transaction fee on sales which
+are processed using the EverusPay payment gateway. In addition, the added benefit is that merchants
+can exchange multiple cryptocurrencies into any major fiat currency such as USD, EUR and GBP, and
+
+transfer to any bank account in the world.
+
+15]
+
+EVERUS WHITEPAPER 2.6 Copyright © 2019 Everus Technologies OU (14718563). All right reserved.
+&) everus
+
+Merchant
+Account
+
+Request
+Settlement
+
+Merchant’
+everus GY ges,
+
+= ™
+
+5.
+
+EXCHANGE TO ANY TRANSFER TO ANY
+FIAT CURRENCY BANK ACCOUNT IN
+THE WORLD
+
+FIAT CURRENCY
+CRYPTO
+
+EverusPay provides merchants with faster access to their funds, reducing the settlement period to
+24 hours for transactions accepted in EVR, Tru-e, BTC, ETH, and LTC, compared to the average
+
+2-7 days many merchants face when receiving funds processed through credit card transactions.
+
+API integration 24 hou rs
+enables your store to payment
+settlement
+accept payment with low
+Customer Pay using Secure with Secure with transaction fees
+ptocurren blockchain blockchain
+oy ry technology technology
+
+—@)—@- —6)—
+
+Catering to different types of businesses and requirements, EverusPay offers merchants the ability to
+accept four types of payments from customers which include Single Payment, Recurring Payment,
+Affiliate Payment and Batch Payment solution. Besides, setting up and integrating EverusPay is easy
+
+with fast & simple API Integration.
+
+a 6 @) (es) (@
+
+Easy Accept Low Secure No Joining or No Varicty of Fast
+Integration Global Transaction Transactions Maintenance Chargebacks Currency Settlement
+Payment Fees Fees & Fraud Options Process
+Prevention (24 hours”)
+
+EVERUS WHITEPAPER 2.6 Copyright © 2019 Everus Technologies OU (14718563). All right reserved.
+©) everus
+
+8.5.2. EverMO
+
+EverMO is a smart platform, developed to facilitate the transacting of cryptocurrency for retail
+merchant stores. Benefiting both businesses and consumers in today’s retail environment. Specifically,
+we aim to bring in merchants such as retail outlets, restaurants and convenience stores to the EverMO
+
+platform to facilitate easy payment transactions using cryptocurrency for customers.
+
+As cryptocurrency transactions are powered by blockchain technology, it is designed to give multi-
+level encryption to ensure both merchants and customers’ funds are safe. Coupled with the Everus
+Wallet which provides multi-layered security features with extra level of protection, merchants can
+receive payments anytime from anywhere around the world safely and securely. The Everus Wallet
+
+also provides the merchant and user protection against cryptocurrency fluctuations.
+
+As part of a blockchain, each transaction is recorded on a ledger and cannot be altered, allowing both
+merchants and customers to track their funds and put a stop to unauthorized transactions or double
+spending. Once a payment has been made via EverMO, it cannot be reversed. This also prevents any
+
+risk of fraud or unwanted chargebacks.
+
+In this manner, the Everus World Ecosystem provides the perfect platform for merchants who are
+looking to expand their customer base to the crypto market audience. The EverMO platform gives
+merchants not only the exposure to a new market, but the opportunity to streamline their operations
+and business models for the cashless society, while customers benefit by being part of an ecosystem
+that widens the versatility of EVR and other cryptocurrencies due to its ease, making the token more
+
+than just a trading tool.
+
+With zero joining fees, merchants can accept payments for their products and services with the latest
+hardware technology, Point-of-Sale (PoS) terminals, providing the easiest and quickest method to
+accept many different cryptocurrencies. The added benefits also provide businesses with the lowest
+
+transaction fees in the market and faster access to cleared funds for cash flow.
+
+17]
+
+EVERUS WHITEPAPER 2.6 Copyright © 2019 Everus Technologies OU (14718563). All right reserved.
+@) everus
+
+In a nutshell, the integration of EVR and other cryptocurrency payments into merchants existing
+payment gateways is now available using the latest in Payment Gateway API solution, giving users the
+
+ability to pay or transact using multiple cryptocurrencies via a single wallet.
+
+EverMO is the onboarding project which will bring the first merchants onto the platform and continue
+to help integrate businesses with the Everus Ecosystem for years to come. Each merchant will help to
+
+develop and grow the ecosystem as the roadmap is completed.
+
+15]
+
+EVERUS WHITEPAPER 2.6 Copyright © 2019 Everus Technologies OU (14718563). All right reserved.
+everus
+
+9. Everus Services
+
+9.1. EverusFinance
+
+EverusFinance is the latest blockchain powered lending platform providing those holding
+cryptocurrency assets with the ability to receive instant loans in a variety of local currencies globally.
+Besides, EverusFinance also offers borrowing service, providing those owning asset-backed tokens
+
+such as Trullion-e (Tru-e) with the ability to earn a fixed monthly interest on their assets.
+
+The decentralized nature of blockchain lends itself perfectly to the field of microfinance. As it is
+inherently secure and trustworthy, the credit scorecard backed by blockchain seeks to replace the
+hurdle of needing third party mediators or authorities to guarantee the process. As people are able
+to trust one another, this opens up avenues for finance to reach a wider scope of people in need. This
+
+includes people who do not have access to the conventional banking system.
+
+Crypto-backed Loans
+
+EverusFinance provides an alternative to traditional loans request for those who own cryptocurrency
+but require a cash loan. With EverusFinance, users can get up to 80% Loan To Value from their existing
+cryptocurrency as loan collateral. With banks unable to accept cryptocurrency as a form of collateral,
+it offers crypto-backed loans that are both affordable and accessible with flexible repayment options
+
+and no hidden fees or credit checks to users anywhere in the world especially to the unbanked.
+
+19]
+
+EVERUS WHITEPAPER 2.6 Copyright © 2019 Everus Technologies OU (14718563). All right reserved.
+©) everus
+
+leWielg te FINANCE
+
+Instant Crypto-backed Loans Traditional Lending
+Cryptoassets x
+Accepted
+Keep Assets
+Ownership x
+Approval Time Instant Very Slow
+Availability Werldwide Lecal
+
+Application Fee,
+
+Hidden Fees Administration Fee
+
+Comitment Fee,
+Legal Fees and etc
+
+Credit Checks Yes
+
+With EverusFinance, users can choose to borrow between 3 months up to 18 months with the added
+option of being able to pay off outstanding loan amount early without incurring any additional fees.
+As loans are provided via blockchain, there is no length procedure needed and hidden fees. Smart
+
+contracts are coded once it comes to mutual agreement from both parties.
+
+In addition, borrowers can opt to pay for interests only at any time during the loan tenure, allowing
+the option of paying back the remaining at a later date during the loan period. It allows flexibility and
+
+affordability to borrowers by freeing up cash flow to maximize the opportunity costs.
+
+“EverusFinance lets you use major cryptocurrencies such as your Tru-e, EVR, BTC, ETH and LTC
+
+as collateral against your loan.”
+
+As well as providing credit facilities to the widely growing crypto users globally, EverusFinance also
+allows users holding asset-backed cryptocurrencies such as Trulion-e (Tru-e) with the ability to earn
+interest up to 7% monthly over a fixed period on their deposited assets, making EverusFinance the
+
+ideal solution both for those looking to borrow and those looking to earn.
+
+EverusFinance platform offers both borrowers and lenders access to a global network, realizing the
+huge potential to financial inclusion worldwide. It does not require big capital, where lenders and
+borrowers can spread their interests across while minimizing risk diversification of potential
+
+investments.
+
+20
+
+EVERUS WHITEPAPER 2.6 Copyright © 2019 Everus Technologies OU (14718563). All right reserved.
+©) everus
+
+9.2. EverusRemit
+
+Global remittance is where someone working overseas transfers money to a person back in their
+home country. Aside from international aid, global remittance makes up the largest amount of
+foreign currency inflow to developing nations, and is key for jumpstarting their economies.
+According to the World Bank estimates, remittance to low- and middle-income nations hit a record
+
+US$466 billion in 20171.
+
+The borderless and decentralized nature of cryptocurrency means it is not under the control of any
+single entity or authority. As a global currency that cannot be modified or restricted in any way,
+users are able to freely trade among one another, regardless of location, thanks to blockchain
+technology. Everus Remit aims to leverage on blockchain to communicate with currency exchangers
+
+worldwide, enabling the delivery of fiat currency to the doorstep of the beneficiary.
+
+Nodes on the blockchain will verify and validate all transactions, ensuring the security and accuracy
+of funds sent and received. Distributed ledger technology also allows transactions to be confirmed
+
+in a short period of time for a very small cost.
+
+Geo-tagging
+Geo-tagging will allow users to quickly locate their nearest agent and vice-versa, making the process
+more efficient and smooth. Agents will be able to deliver cash directly to the doorstep of the intended
+
+recipient, making EverusRemit a complete end-to-end service.
+
+This aims to replace current methods such as wire transfers, where the recipient is required to
+physically be present and identify themselves before claiming the remitted funds. Agents will also
+receive a commission for each successful delivery, with the ease of transaction ensuring that both
+
+parties will be incentivized to use this service.
+
+Reference:
+1. "Record high remittances to low- and middle-income countries in 2017" World Bank, 2018
+http://www.worldbank.org/en/news/press-release/2018/04/23/record-high-remittances-to-low-and-middle-income-
+
+countries-in-2017
+
+21
+
+EVERUS WHITEPAPER 2.6 Copyright © 2019 Everus Technologies OU (14718563). All right reserved.
+everus
+
+TEGHNOLO GixkES
+
+Follow @everusworld
+
+Facebook
+https://www.facebook.com/everusworld
+
+Twitter
+https://twitter.com/everusworld
+
+YouTube
+
+https://www.youtube.com/c/everusWorld
+
+Instagram
+https://www.instagram.com/everusworld
+
+Telegram Community
+https://t.me/everusworld
+
+WhatsApp
+https://wa.me/60133973025
+
+LinkedIn
+
+https://www.linkedin.com/company/everusworld
+
+Everus Technologies OU (14718563)
+Pirita Tee 20P/4, Harju maakond, Kesklinna linnaosa, Tallinn 10127, Estonia.
+
+Activity License Number:
+FRKO00920 & FVRO01028
+
+www.everus.org Email: support@everus.org
+

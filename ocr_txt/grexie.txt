@@ -1,0 +1,472 @@
+grexie
+
+the free crypto token
+
+WHITEPAPER
+
+SEPTEMBER 2021
+
+https://grexie.com « @grexie « hello@grexie.com
+//1
+
+KEY HIGHLIGHTS
+
+Grexie is a new ERC20 crypto token offered for free on the Polygon
+blockchain, users just need to pay the negligible Polygon gas price
+to receive decreasing allocations of up to 1 million GREX.
+
+The total supply for the token is 1 quadrillion GREX (1x101.)
+
+60% of the supply is allocated to a long-running Initial Coin
+Offering, available through our website at https://grexie.com
+
+40% of the supply is allocated to the team and its philanthropic
+causes, as well as team-led liquidity pools, exchange fees, and
+airdrops.
+
+The amount of GREX allocated per issue in the Community
+Distribution halves roughly every 350 million issues. If interest
+steadily grows, and while there are no guarantees, this should
+double the value of the token roughly every 350 million issues. This
+is because the gas price paid for an allocation remains the same,
+while the amount allocated halves.
+
+There is enough currency for around 12 billion issues of tokens,
+with 1 GREX allocated per issue after around 8 billion issues of the
+token.
+
+Available on QuickSwap to purchase in bulk at market-led prices.
+
+https://grexie.com + @grexie « hello@grexie.com is g rex | =
+
+Grexie Whitepaper v1 - 21 September 2021
+//2
+
+INTRODUCTION
+
+There are a multitude of crypto tokens out there, some of them
+with several properties and use cases, fulfilling needs of the
+communities that invest in them and providing value in
+different ways.
+
+Crypto tokens generally go through an Initial Coin Offering - to
+seek a community to invest in that token for a promise of
+greater value in the future.
+
+Many ICOs have hyper inflated token valuations and dubious
+benefits to the community that they propose to serve.
+
+What if we were to have a simple exchange token that is purely
+market-led and offered initially for free to anyone willing to
+pay the negligible gas fee?
+
+Grexie (GREX) offers this. A free token for all, ina long running
+free Community Distribution, which is deflationary and allows
+everyone to get a tranche of the crypto token.
+
+Free it is, and initially valueless it is too, but why would anyone
+want to sell for less than the gas price they paid for it? That is
+the power of the deflationary long-running Community
+Distribution - a mechanism that gently influences the market
+value over time.
+
+https://grexie.com + @grexie « hello@grexie.com is g rex | =
+
+Grexie Whitepaper v1 - 21 September 2021
+/13
+
+WHY OFFER A FREE TOKEN
+
+We've founded Grexie on two simple but important principals:
+the value of cryptocurrency; and the importance of speed of
+adoption within an ever-expanding market.
+
+Firstly, we believe that crypto tokens are the future of the world
+economy and should be accessible to everyone, but right now
+they haven't reached their full potential.
+
+If crypto is to truly reach it’s potential, we need to find a way to
+distribute a secure coin to a huge population, and to do so
+before the waters become so muddled with scams and rug-
+pulls that the market loses confidence in the general product.
+
+This is why we've created Grexie. We are offering a free coin
+with no intrinsic value open to anyone and everyone. We
+believe that over time, if enough people flock to Grexie, there is
+no reason why it shouldn't be a useful currency for online
+transactions. However, we are determined that this should be
+the result of market forces and not some invented ICO stage
+valuation, hence why we are making the commitment to
+provide the limited supply of 600 trillion GREX open to the
+market for free, for over 12 billion allocations.
+
+https://grexie.com + @grexie « hello@grexie.com is g rex | =
+
+Grexie Whitepaper v1 - 21 September 2021
+//4
+
+OUR BACKGROUND
+
+Grexie is the brain-child of Tim Behrsin. Tim has over 20 years
+experience in technology, serving many startups and big-name
+organizations. He has a strong background in full-stack
+JavaScript and software engineering in general. His interest in
+Ethereum was garnered in 2015 when it was launched: an
+innovative platform to create smart verifiable contracts with a
+secure blockchain environment.
+
+His interest in Ethereum grew from there, and he has been
+playing with Solidity smart-contracts for the last 6 years on
+and off, until the idea struck him in 2021 to create his own
+crypto token on the Ethereum proof-of-work blockchain.
+
+Grexie started on Ethereum in June 2021 after creating an
+ERC20 token and a smart contract for a deflationary
+Community Distribution. It soon became clear that gas prices
+were too high for widespread adoption, and he moved the
+project to Polygon’s proof-of-stake blockchain network in
+August 2021.
+
+Since then, the project has started to gain traction, with over
+200 organic allocations and over 1.5 million courtesy
+allocations distributed to people's wallets.
+
+https://grexie.com + @grexie « hello@grexie.com is g rex | =
+
+Grexie Whitepaper v1 - 21 September 2021
+/15
+
+WHY POLYGON
+
+We believe the Ethereum blockchain will emerge as the front-
+runner in crypto due to its versatility in creating and running
+smart contracts.
+
+Ethereum, as a classical proof-of-work blockchain, has some
+pitfalls that mean operating a free crypto token on it, we
+believe, will not lead to wide adoption across the world’s
+population. As an example of this, gas prices in August 2021 for
+ERC20 smart contract transfers were very high, and the price
+for one allocation of GREX would have been exorbitant.
+
+As a result, we have launched on the layer-2 protocol Polygon,
+which operates a_ proof-of-stake algorithm to verify
+transactions. This results in much lower gas fees.
+
+Polygon was designed to interoperate with Ethereum and
+offers bridging contracts on the Ethereum blockchain to
+convert WETH to ETH, WMATIC to MATIC, and back again.
+
+This means that whatever value Grexie attains on the Polygon
+network, can be traded by proxy to tokens and currencies on
+the Ethereum network, and vice versa.
+
+We believe Polygon is the right choice for Grexie.
+
+https://grexie.com + @grexie « hello@grexie.com is g rex | =
+
+Grexie Whitepaper v1 - 21 September 2021
+//6
+
+TOKENOMICS
+
+There is no special use case for GREX other than to use it as an
+exchange token. One day it might be possible to withdraw and
+deposit fiat-currencies at ATMs connected to your Polygon
+wallet, connecting GREX to the wider monetary ecosystem,
+however this is not our aim.
+
+Our aim is simple: to offer an exchange token for free.
+
+The total supply of GREX is 1 quadrillion tokens (1x10.) 40%
+of tokens, 400 trillion GREX, is allocated to the team, liquidity
+pools on decentralized exchanges, fees for exchanges and
+airdrops. Fiat for liquidity pools is funded by Grexie, and we
+aim to offer around 1 trillion GREX on QuickSwap by Jan 2022.
+60% of the tokens, 600 trillion GREX, is allocated to Community
+Distribution, with any remaining quantity once the pool is
+exhausted being allocated to Grexie.
+
+The Community Distribution pool will have some residual
+tokens remaining in it once it is exhausted, as not all
+transactions will have an affiliate associated with them.
+
+To understand the mechanism by which we offer tokens for
+free, and the tokenomics behind it, it is helpful to have a bit of a
+refresher of high school mathematics.
+
+https://grexie.com + @grexie « hello@grexie.com is g rex | =
+
+Grexie Whitepaper v1 - 21 September 2021
+// 7 TOKENOMICS
+A geometric series is a series of the form:
+at+artar*t+ar?t..
+
+For r < 1, a property of a geometric series is that it converges
+to a finite sum. For example, for a@=1 and r = 1/, the series
+converges fo 2.
+
+We are giving away tokens with each issue being an element in
+a geometric series. This leads to a total allocation being a fixed
+quantity, a finite quantity, and a quantity planned for in
+advance... and is a limited supply that cannot grow. The fact
+that it is fixed and finite is important, as we cannot increase the
+supply to suit our whim. The quantity is fixed, forever, and
+everyone knows it when they are making investment decisions
+about the token.
+
+Each allocation is of the form:
+
+_— n-1
+«()
+Y
+
+where a is 1 million GREX, y is the total Community Distribution
+
+pool available of 600 trillion GREX, and n is the issue number,
+starting from 1 as the 15 issue.
+
+https://grexie.com + @grexie « hello@grexie.com is g rex | =
+
+Grexie Whitepaper v1 - 21 September 2021
+//8 TOKENOMICS
+
+Each allocation might also supply 10% extra GREX per issue to
+social media affiliates through affiliate links, and so the total
+pool available is 600 + 1.1 = 545. 45 trillion GREX.
+
+Since the Ethereum blockchain is based on _ fixed-point
+arithmetic, this doesn’t lead to an infinite series, and tends toa
+limit of 600 trillion GREX after around 12 billion allocations.
+
+In the smart contract, for which you can view the Solidity code
+on polygonscan.com, we calculate the dividend and the divisor
+to the lower half of the above formula iteratively, so we don't
+reach an integer overflow in the smart contract and error out.
+
+Due to each allocation being part of a geometric series, the
+value of GREX received in each allocation decreases in an
+exponential fashion.
+
+The allocations halve roughly every 350 million issues. Leading
+to 1 GREX being allocated per issue after about 8 billion issues.
+
+Since the gas price for each issue will remain roughly the same,
+the value per GREX, solely based on the gas price, roughly
+doubles every 350 million issues. This assumes, of course, that
+people don't sell GREX for less than they paid the gas price,
+and it doesn't account for inflation/deflation in value on open
+markets. It should not be used as a basis for investment.
+
+https://grexie.com + @grexie « hello@grexie.com is g rex | =
+
+Grexie Whitepaper v1 - 21 September 2021
+//9 TOKENOMICS
+
+With Polygon gas prices for the Community Distribution smart
+contract currently being between $0.0001 to $0.003 this leads
+to a potential value per issue at the start of the Community
+Distribution increasing to the region of between $800 to
+$23,000, depending on gas prices, after 8 billion issues.
+
+This is purely a trajectory, and not guaranteed, and no
+investment advice should be understood or gained from these
+statements. It is simply mathematics, and there are several
+factors which could otherwise inflate or deflate this market
+value of GREX, including but not limited to the price of Polygon
+and people's perception of GREX on the open markets.
+
+https://grexie.com + @grexie « hello@grexie.com is g rex | =
+
+Grexie Whitepaper v1 - 21 September 2021
+//10
+
+HOW WE INTEND TO USE PROFITS
+
+The founders are philanthropic Christians at heart. We have
+seen the struggle homeless people face, firstly in getting
+housed in safe, secure and comfortable housing, and then to
+build lives on benefits or low incomes.
+
+We have in the past gone on sandwich runs and donated large
+sums of money to homeless people on the streets in order to
+secure nightly accommodation in shelters, or to buy furniture
+and appliances for their first house on benefits after being
+homeless. We have also donated money for emergency rental
+accommodation to avoid being homeless in the first place.
+
+We need capital in order to support this work going forward,
+and part of the money we raise from the cryptocurrency will be
+used for the purpose of providing social housing and
+rehabilitation projects across the world for homeless and low-
+income renters.
+
+Ultimately, we love God very much, and don’t want to see His
+people suffer on the streets anymore. We want to give what
+God gives us to His servants on the streets and those struggling
+on benefits. To give them the chance fo live the lives they want
+to live. Go check out Hebrews 13:3 if you want to know more.
+
+https://grexie.com + @grexie « hello@grexie.com is g rex | =
+
+Grexie Whitepaper v1 - 21 September 2021
+//11
+
+THE INITIAL COIN OFFERING
+
+People interested in receiving GREX can do so by going to
+https://grexie.com and connecting their wallet using
+MetaMask or any other Web3 wallet provider.
+
+They can receive up to 1 million GREX per allocation,
+decreasing for each allocation, and deposit this into their
+Polygon wallet.
+
+Each allocation costs the user a small gas fee of between
+$0.0001 and $0.003 which is non-refundable and goes straight
+to the verifier nodes on the Polygon network. The GREX is
+therefore offered for free, no Polygon is exchanged with the
+smart contract, it is solely a gas fee the user must pay.
+
+There is always a danger of scams and threats to the Grexie
+project, and it is more than likely that scam tokens will pop up
+over time. So, be sure to use the following addresses for
+interacting with the Grexie Token and the Grexie Community
+Distribution smart contracts:
+
+Grexie Token: 0xf9a75e8881af1be80ae80050616185 f0b924a03e
+Grexie CD: @x19F5a4b3B79E220664 f27a6F f3cb927Ae7189506
+
+https://grexie.com + @grexie « hello@grexie.com is g rex | =
+
+Grexie Whitepaper v1 - 21 September 2021
+//12 THE INITIAL COIN OFFERING
+
+The following chart illustrates the potential USD value of 1
+million GREX tokens (y-axis), based solely on the average gas
+price and the amount allocated for each issue, with the issue
+number on the x-axis. It is solely illustrative and based on
+simple mathematics, do not use this as a basis for investment.
+
+10000000
+1000000
+100000
+10000
+1000
+
+100
+
+0.001
+0 2.5 5 7.5 10 12.5
+
+Billions
+
+https://grexie.com + @grexie « hello@grexie.com g rex | =
+Grexie Whitepaper v1 - 21 September 2021
+//13 THE INITIAL COIN OFFERING
+
+The following diagram shows how the Grexie infrastructure is
+set up. Note that all transactions on the Community
+Distribution Smart Contract require off-chain signing using a
+reCAPTCHA v3 check to mitigate automation attacks.
+
+©
+
+Polygon (MATIC) Grexie (GREX) QuickSwap
+ERC20 Token on Polygon Network and other exchanges
+A
+MetaMask
+and other Web3 wallet providers
+
+e Community
+Distribution
+Widget
+
+MoonPay grexie.com
+A
+|
+|
+|
+|
+|
+|
+i
+
+eS §Sb2 Sb43 4113 Transaction
+ga cer aso Security and Signing
+
+https://grexie.com + @grexie « hello@grexie.com is g rex | =
+
+Grexie Whitepaper v1 - 21 September 2021
+//14
+
+LIQUIDITY ON QUICKSWAP
+
+The previous page shows a potential valuation based on gas
+prices. This is highly unlikely at the higher end. Instead, the real
+valuation of the crypto token comes from the market, and it is
+important to speak of our WMATIC/GREX position on
+QuickSwap.
+
+We have created a liquidity pool of around 200 billion GREX on
+QuickSwap. We aim to increase this to about 1 trillion GREX by
+the end of January 2022.
+
+You can get to the swap page for the WMATIC/GREX pair
+using this link: https://bit.ly/grexie-quickswap
+
+We encourage users to stake WMATIC and GREX and extend
+this liquidity pool to help encourage growth of the crypto
+token. Users who create a liquidity pool get a proportional
+0.25% fee for transactions on QuickSwap relative to your
+position in the pool. You can add your own liquidity pool using
+this link: https://bit.ly/grexie-quickswap-pool
+
+We will extend our coverage to other exchanges as we can over
+the coming months, connect with us on Telegram and Twitter to
+be informed of updates to this.
+
+https://grexie.com + @grexie « hello@grexie.com is g rex | =
+
+Grexie Whitepaper v1 - 21 September 2021
+//15
+
+CONCLUSION
+
+We're excited to see the progress Grexie is making already and
+are very hopeful for its future.
+
+We hope you enjoyed reading through our whitepaper.
+
+Now go get yourselves a few hundred allocations of GREX on
+https://grexie.com
+
+Make sure you join the Telegram Grexie Official Community
+group chat on our website and follow us on Twitter.
+
+Also be sure to connect your wallet on our website and share
+the news far and wide by posting a Tweet from the Community
+Distribution widget to your followers - you will receive 10%
+additional GREX when your followers receive allocations.
+
+Happy GREXing!
+
+https://grexie.com + @grexie « hello@grexie.com is g rex | =
+
+Grexie Whitepaper v1 - 21 September 2021
+grexie
+
+the free crypto token
+
+WHITEPAPER
+
+SEPTEMBER 2021
+
+https://grexie.com
+
+@grexie
+hello@grexie.com
+
+© 2020 - 2021 Grexie Limited
+Registered in England and Wales No. 12746523
+Grexie Limited, 167-169 Great Portland Street, Fifth Floor, London, W1W 5PF, United Kingdom

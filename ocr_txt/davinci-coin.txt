@@ -1,0 +1,1271 @@
+DAVINCI PROJECT
+TECHNICAL WHITE PAPER
+
+The world’s first blockchain ecosystem for
+building and deploying decentralized application
+
+COPYRIGHT 2018 DAVINCI FOUNDATION LIMITED. ALL RIGHT RESERVED
+Category
+
+1. Abstract: -- eee ee ee ee ee ee ee ee eee ee eee ee ee eee 3
+2. Background and Introduction of Davinci Foundation-------------- 4
+2.1Background: +--+ errr tet tee tee eee eee 4
+2.2 Decentralization by Blockchain: +++ +++ e teeter eee eee eee ees 6
+23DavinciFoundation::- +: eet ttt tt tt te ee ee ee eee 7
+3. Davinci Project» ++... +. eee eee eee eee eee eee eee eee eee . 7
+3.1 Trust Structure based onAl--- eect t ett ttt tt tt tt ttt ete ee ee ee ee 7
+3.2 Davinci Project and Digital Asset Ce 8
+3.3Online Business «+e et tt ee et ee te eee ee eee 10
+3.4 Offline Business «++ eee eee te ee tte ee ee eee ee te ee wee eee eee nee 10
+3.5 Development of Blockchain Infrastructure -- +--+ +++ steer rrr etter eee 1
+A. Davinci MainNet with DAI -- +... eee eee ee eee 12
+41 Overview:----° >>: > > - BMRB + - > > MEE ee ee ee ee 12
+4.2 Davinci Al Solution, DAl «+++ sete tte ett eee te ee ee eee eee 12
+4.3 Apply Al to DPOS MainNet, DAPOS --- +--+ see errr tt eee eee 13
+4.4DAllmplementation --- +--+ ++ etree eet te ee eee 14
+5. Davinci Token (DAC) «+ + +++ sete eee eee cece eee eee eee eee 24
+5.1 Token Sale ---"- >: - = Sep? = eee eee 24
+5.2TokenAllocation:- «+e ttt tt tt et ee ee ee ee eee tee 24
+5.3UseofProceedS -- +e te tt tee eee eee eee ee eee eee 24
+6. Davinci Team eee eee ee eee eee 25
+6.1 Development Team +--+ tert ee tee ee 25
+6.2 Advisory Board - + +e ttt tt tt tte eee 26
+7. Davinci Roadmap Se ee ee ee eee ee eee 27
+7.1 Davinci Roadmap: - +++ errr ee eee 27
+7.2 Alliance of DavinciRoadmap +--+ +e ect tees 27
+8. Davinci Organization Structure ---- ee ee eee 28
+8.1 Overview of Davinci Foundation: + +--+ +r rr rrr ttt tet tees 28
+8.2 Purpose of Davinci Foundation: - +--+ +++ ttt ttt eee eee 28
+9. Disclaimer: ---- ee ee ee eee eee eee eee eee 28
+1. Abstract
+
+As the internet has deeply rooted in our daily life and services that only exist in the digital
+world have emerged, the concept of purchase and ownership has markedly shifted from
+the previous era. In addition to physical goods and services, the concept of digital content
+was created. People pay to obtain game items and to stream movies and music, but what
+they get is not a physical object. Digital content only exists and is available in the digital world.
+
+Content is not the only category influenced by digitalization. Digitalization of banking such
+as payment and remittance makes rare for people to touch or carry cash unless the special
+occasions. Furthermore, internet-only bank that handles all its business transaction online
+displays rapid growth every day. Current phenomenon has leading us to the world where
+paper money exists only as a number in a digital device. Products, services, and currencies
+that are not tangible but can be owned in the digital world are considered as digital assets.
+As digitalization of the society accelerates, importance of these digital assets becomes more
+significant.
+
+Traditional commodity trade is accomplished simply by exchanging the in-kind trade. In case
+of digital commodity trade, on the other hand, goes through more complicated process. When
+one digitally transfers or sells a product, numerous numbers that represent ownership are
+modified during the transaction. Since individually owned digital products are numbers
+recorded in the hard disk of the server, commodity trade takes place by changing in numbers
+instead of exchanging actual goods. Given the characteristic of such digital assets transactions,
+it is impossible to confirm the transaction or ownership without the guarantees of intermediary.
+Thus, existence of the third party is essential in the digital transaction, because it ensures
+value of asset and guarantees the process. In other words, all current digital transactions are
+made under the third party warranties. The third party proving such services relays the transaction
+of both parties and generates revenue through advertisement or commission. These third
+parties are called as a platform.
+
+Introduction of digital platforms has enabled various services that was not available before.
+It removed the barriers of space and time, and let people to readily accessible what they desire.
+Along with the development of internet, these platforms have sprung up in diverse areas. They
+have become increasingly gigantic and grown large enough to completely monopolize a
+certain industry. These giant platforms exert a transcendental influence along with the
+centralized power gained from their operation. Paradoxically, the platform, which overcame
+barriers between states and stimulated free trade, has become a new centralized powerhouse
+that controls participants with its strong influence. The problem of centralization is not
+limited to the digital platform alone. Cases of 2016 trade ban by China against Korea and
+the trade war between US and China in the mid-2018 demonstrate how vulnerable the real
+economy is to the changes in the external environment.
+Davinci Foundation established a decentralized platform based on the blockchain technology
+and started Davinci Project to promote and to revitalize fair and free economic ecosystem.
+Davinci Coin is the major currency and deed in this ecosystem. Through blockchain technology,
+it enables secure transaction of digital assets, and stable preservation of ownership and value
+without the interference of third parties.
+
+2. Background and Introduction of Davinci Foundation
+2.1 Background
+
+Emergence of Centralized Platform
+
+We laugh at videos created in the UK via YouTube, and watch American drama in real time on
+Netflix. Also, we play games created by Polish developers through Play Store and listen to pop
+songs newly released in US on iTunes. Thanks to the global content platform, which has been
+rapidly expanded and popularized in 2010s, people can enjoy any content around the world in
+real time. The emergence of a global content platform not only enhanced consumer’s accessibility,
+but also transformed the supply behavior of providers. In the past, content providers had to
+establish a branch or collaborate with local companies for global services, but global platforms
+enabled the world-wide distribution with a few clicks. The era of doing global business without
+going abroad has come.
+
+Because of these advantages, the global content platform displayed rapid growth and, at the
+same time, global content market expanded enormously. However, this record-breaking growth
+of the platforms has eased their monopoly. The large platform has begun to pressure content
+providers with power gained from their monopoly of content distribution and advertising
+channels. Platforms have collected up to 30-50 percent of content providers’ sales revenues,
+and have limited freedom of content development by arbitrarily supporting or censoring specific
+contents. The uniform censorship, which does not consider background or cultural situation
+of each country, also has reduced the diversity of contents. Consequently, providers are asked
+to create platform-friendly contents for smooth distribution of their works. As participants grow,
+providers have to spend larger amounts of money on platform-owned advertisement in addition
+to the platform-imposed fees.
+
+The problem with large platforms is not limited to suppliers. For instance, operators of large
+portal sites curate the news posted on the site main. This authority allows them to have
+powerful influences on the public opinion as well as the media that supply articles. Moreover,
+the platform has a direct impact on individual property rights due to its deep engagement
+with the ownership and transaction process of personal digital assets. Abruptly suspending
+a game that is in service because of platform policy violation or prohibiting the sales or resale
+of specific items are representative examples. By enforcing various guidelines towards its
+participants, the platform is able to directly alter the value of digital assets by utilizing collected
+information of participants.
+Change in Financial System
+
+Recently, the transition to a cashless society is rapidly proceeding based on the popularization
+of simple payment systems such as Alipay and Kakao Pay. Dissemination of the simple payment
+system is especially more prominent in countries where the usage of cash is higher than credit
+cards such as in China and Japan than in Korea. The simple payment contributes to make
+cashless society and is spreading rapidly among consumers for its convenience. Specifically,
+Zero-dollar tour, buying goods or using services via simple payment system without exchanging
+money, has significantly grown. Internet-only banks like Kakao Bank and K Bank that established
+in 2017 have become convenient medium of payment for digital contents and money transfers
+on mobile devices. Consequently, the usage of internet-only bank in the economy is still increasing
+with its convenience as advantage.
+
+The issue is that an introduction of such a simple payment system or digital bank does not
+cause fundamental changes in the financial market. The financial system hegemony is gradually
+shifting from a conventional bank or credit card company to a simple payment system operator
+or an internet-only bank. However, business owners and consumers experience little to no
+differences. High commission burden on the owners still remains. In case of individuals, all
+transaction and financial records are stored in a central server of the service provider in the
+form of big data, which makes it rather vulnerable to the possible personal information leakage.
+Additionally, as banks and service providers conduct analysis of personal information, the
+side effects of privacy violations also have been rising.
+
+On-Offline Convergence through 020 Service
+
+In the past, except for online shopping and reservation, application of internet service in the
+real life has been limited. However, the recent growth of 020 services like Uber or Mobike has
+diminished the barriers between online and offline, and led a new trend of shared economy.
+The online services become more and more influential in real life. As the network transaction
+speeds up and the computing power for Al and big data operation grows, this phenomenon
+to combine online and offline world have accelerated. Simultaneously, the need for an integrated
+platform has been amplified.
+
+Prohibition of Korean Culture in China, and Tariff War
+
+According to trade statistic in 2017, the proportion of the trade with China accounted over 20
+percent (24.8 percent for export, 20.5 percent for import) of total Korea trade, which ranked as
+the first in both exports and imports. China imported 9.9 percent of its total trade from South
+Korea, which ranked as the first surpassing Japan. Korea is also placed as a 4th in China’s export
+by covering 4.3 percent of total. The large scale of the China-Korea exchange, covering significant
+amount of their trade, has noticeably decreased due to the influence of restrictions on Korean
+Culture in China. This led to 15 trillion-won loss only in 2017. Unexpected diplomatic issue has
+adversely affected the economic and the cultural exchanges between countries.
+Another instance is the trade war between the United States and China in 2018. The trade war
+has damaged American and Chinese companies. Moreover, the damage is spreading even to
+ordinary consumers because of the price escalation, which is caused by the increase in the
+cost of raw materials. Korea is also not free from the influence of this trade war, so decrease
+of intermediary goods export about 30.4 trillion-won is expected due to the contraction of
+Chinese economy. Other than the mentioned cases, there are several examples of diplomatic
+and political issues impacting inter-country exchanges such as Brexit and oil price fluctuation
+due to the sanction against Iran.
+
+Politics and diplomacy are not always affecting the economy in a negative way. Chinese
+government’s one-on-one policy has stimulated global expansion of Chinese companies.
+The recent North and South Korean governments’ reconciliation mood has raised expectations
+for new business opportunities including the resumption of Kaesong Industrial Complex, the
+connection of continent railways, and the development of underground resources. In the past,
+political situations between countries had limited influence to the economy since the trade
+and exchanges took restrictively. However, the political and diplomatic issues between
+countries are considered as a significant variable in the era of doing business beyond national
+boundaries.
+
+2.2 Decentralization by Blockchain
+
+The Bitcoin economy ensures the security of the system by encrypting and recording all
+transactions through distributed database consists of a large number of nodes in the entire
+P2P network. The decentralized nature of P2P and the high security obtained by encryption
+algorithms make it impossible to artificially manipulate the transaction history. Thereby the
+Bitcoin economy is able to secure its transaction without third party guarantee. These
+characteristics of Bitcoin have actualized a philosophical value of decentralization.
+
+In 2015, the blockchain technology took a step further with the development of Ethereum, by
+Vitalik Buterin, which combined smart contract with the decentralized blockchain system of Bitcoin.
+Ethereum is a blockchain platform that has enabled smart contracts on blockchain. The smart
+contract is created with Solidity language and then goes through the compiling process. Byte
+codes generated after the compiling process are implemented in the Ethereum Virtual Machine
+(EVM). The emergence of Ethereum has spared technological competition of the blockchain
+industry, and many engineers and experts have taken a next stop to lead the hegemony of the
+4th Industrial Revolution.
+
+However, the fact that blockchain is considered as core technology of the 4th Industrial
+Revolution is not merely due to its superior functionality compared to existing technology.
+In case of Bitcoin, the number of transaction per second is only 5-7, which is far below the
+level of commercialization. Ethereum also, is not efficient enough compared to the current
+centralized transaction system because of its excessive commissions. Nevertheless, the
+blockchain technology is still spotlighted since it delivers the value of decentralization to the
+public.
+The society faces new challenges including <Market Monopoly of Centralized Platform>,
+<Change in Financial System>, <On-Offline Convergence>, which are caused by the rapid
+development of digital world since the Internet Revolution of the 2000s. Moreover, complex
+international relationships make the business environment even more unpredictable. Since
+the current centralized structure is unable to tackle these problems, the decentralization is
+considered as the only answer.
+
+2.3 Davinci Foundation
+
+Davinci Foundation is established with Korean and Chinese economic, cultural, and ICT experts
+to provide a civic-level solution to the economic crisis that occurred due to the trade restriction
+placed between Korea and China in 2016. The foundation has proposed a decentralized
+economic ecosystem constructed with blockchain technology. it has been implemented in
+response to the rapid social transformation towards digital age and the necessity to build a
+new type of economic system free from the barriers between states. Davinci Project, which
+is universal platform based on blockchain, has been launched with the strong brand power
+of Korean Wave and the possible synergy generated through Chinese market and advancing
+technology as the driving force of constructing ecosystem.
+
+3. Davinci Project
+3.1 Trust Structure based on Al
+
+As previously described, blockchain technology is designed to solve the shortcomings of the
+existing centralized system. However, it has been utilized only in confined ways due to the
+technical limitations of numerous cryptocurrencies to date. The proof of work(POW) is a
+competition based verification method that wastes significant amount of unnecessary
+computational power and has slow transaction speed. The emergence of Bitmain, a gargantuan
+site specializes in mining, particularly has threatened the value of decentralization because
+it is impossible to exclude the possibility of monopoly through acquiring over 51 percent of
+total hash power.
+
+In order to improve the low efficiency of the POW system, POS system has been introduced. Yet,
+the merit of decentralization has been reduced because only a selected number of people has
+granted the mining authority to increase its transaction speed. The fundamental principle of
+decentralization is obtained by mutual check by a large number of people. Therefore, the
+emergence of giant mining sites or the way of vesting a few people with authority is an ultimate
+threat to the fundamental principle. In 2018, the hash power war between Jihan Wu and Craig
+Steven Wright broke out due to the hard-fork problems of the Bitcoin cache. As seen in the hash
+power war, many of the damage caused by massive power is unavoidable regardless of the
+intentions of involved minorities. After all, as long as the main body of the system is run by human,
+the monopoly of the system through the expansion and loss of the participants are inevitable.
+Consequently, the value of decentralization is difficult to be materialized.
+To create trustworthy environment where all nodes in the entire system freely and securely
+exchange the data, Davinci Project authorizes Al to manage whole system, which is specifically
+designed based on the agreed norms. This is called DAI. DAI constantly analysis and learns
+the transaction. In this manner, DAI continuously seeks the most optimized solution for
+maintaining fair development of ecosystem rather than focusing on interest of particular parties.
+In other words, it represents the shift the subject of trust from “human” to “technology.”
+
+3.2 Davinci Project and Digital Asset
+
+Davinci Coin
+
+rece @ Online Business
+From funding and development to service of
+‘Influencer i digital contents.
+- Game Davinci Project - Realestate
+* Music avinci Projec . .
+G= Mev) Digital Asset @ Offline Business
+
+Convenient payment with Davinci Pay
+
+@ Infrastructure Business
+- Casino & Hotel - Tour Establishment of blockchain infrastructure
+“Welogteaiaes ° ies urea through Davinci Platform
+
+For the purpose of creating a decentralized global economic ecosystem, Davinci Project is
+building a business platform that covers diverse sectors including entertainment, games,
+education, tourism, medical service and on-and offline. Furthermore, it has contributed to
+the dissemination of blockchain infrastructure through collaboration with states, local
+governments, and public corporations. In the global ecosystem built by Davinci Foundation,
+Davinci Coin is the fundamental base and the key asset. Within the ecosystem, the coin allows
+one to directly participate as a member or to enjoy all benefits gained from business activities.
+
+Davinci Alliance
+
+Investment DApp
+Incubating Development
+
+AP! Connection
+
+Alliance of Davinci
+Conventional blockchain based platforms have limited capabilities to establish and activate
+ecosystem, since companies willing to participate the platform were only able to join through
+the development or mining of DApp. In addition to the above reason, the existing platform
+holders are the proven experts of blockchain, but they have limited understanding on the
+other industries. Thus, it has been difficult for them to proceed each business directly with
+low-level of knowledge. The platform holders, also, have filed to provide incentives for attracting
+DApp developers or customers to the ecosystem. Therefore, talented developers have preferred
+to jump directly into the platform competition through ICO, rather than to be a part of the
+conventional platforms. As a result, only platforms with similar feature and performance have
+remained in the market without a clear vision or efficiency.
+
+All companies, institutions, and investors participating in Davinci Project’s ecosystem are
+called as Davinci Alliance, and their vigorous activities stimulate this ecosystem. The top
+priorities of the project are to enlighten diverse ways to participate the ecosystem, to satisfy
+the needs of participants, and to offer solutions to many challenges that arise in business
+activities. In other words, Davinci Project aims at creating a structure that allows companies
+to willingly involve in ecosystem for a better business environment.
+
+Davinci Foundation provides diverse supports to Davinci Alliance such as MainNet and numerous
+technologies through API. Moreover, the foundation offers incubating services in each step
+of Value-chain process such as funding, ICO, contents production, and service for the greater
+business growth opportunities through a better business environment.
+
+Davinci Token Economy
+
+Platform (D-ledger) DApp Developer
+i ICo/ . .
+Project DApp Alliance of Davinci
+Oh 2 Development
+Coin Holder User
+
+Payment and Wallet Franchise
+
+By owning Davinci Coin, coin holders are able to support various activities of Davinci Foundation.
+In addition, Davinci Coin holders are able to utilize diverse services available in the ecosystem.
+The coin is issued in limited quantities of 8.8 billion, and value of the coin escalates as value
+of the business in the ecosystem increases. In other words, financial benefit of obtaining coin
+proliferates as the ecosystem thrives. Therefore, a first comer who participates at the initial
+stage and contributes more to the concretization of the ecosystem receives larger compensation.
+Within the ecosystem, Davinci Coin serves as a key currency and becomes a digital asset as a
+proof of the ownership that ensures service usage.
+
+3.3 Online Business
+
+Heat of the Korean Wave, which started from K-Drama <Dae Jang Gum>, has spread up to U.S.
+market, the capital of various cultural contents, with Korean boy band BTS. Based on the
+prominent potential and worldwide influence of the Korean Wave, Davinci Platform supports
+production of diverse online contents including game, video, education, and music. The platform
+also supports distribution and services of these contents for the global market penetration. In
+particular, Aster Engine (Al engine) combined with the platform allows consumers to have easy
+access to contents that suit their taste. This also provides highly efficient target marketing services
+to content providers with low cost.
+
+Davinci Content Distribution Platform
+
+Davinci Content Platform is a global contents distribution platform that combines blockchain
+and Al technology to contents distribution and services. Blockchain technology minimizes
+intervention of the platform holder. Thus, content providers and consumers are able to be
+directly connected through the platform, which lowers the supply cost and enables direct
+communication. In this way, providers’ freedom of creation is assured, and consumers are
+able to enjoy diverse high-quality contents. Davinci Content Platform also filters inappropriate
+contents through Al and optimizes the connection between consumers and suppliers. This
+enables companies to perform accurate target marketing and to reduce the costs.
+
+3.4 Offline Business
+
+By extending its business scope to 020 and offline service, Davinci Project plans to break
+boundaries between online and offline assets. This expansion also expects to appreciate value
+of Davinci Coin, a digital asset. As of 2018, Davinci Project has signed MOUs with more than 30
+partners, which accounts more than 100 franchises. The project cooperates with the partners
+to construct wholesome Davinci Payment System.
+
+- 10 -
+Davinci 020 Service and Payment
+
+Davinci’s decentralized offline platform adopts all benefits of the simple payment system and
+solves privacy issues occurred under the centralized system. Along with the payment system,
+the platform especially offers O20 service similar to T-Bot that recommends the best tourist
+destination through Al.
+
+3.5 Development of Blockchain Infrastructure
+
+Davinci Project has been collaborated with states and local governments, and constructed
+blockchain infrastructure. The project has expanded the base of the blockchain, increased
+the influence of Davinci Coin, and promoted the standardization of blockchain technology.
+By utilizing blockchain technology, Davinci has participated in various currency and
+e-Government projects including African digital currency projects and welfare point of local
+governments.
+
+Blockchain e-Government Business
+
+e-Government under the conventional central server system requires enormous maintenance
+and management fees. On the other hand, e-Government using the blockchain system is
+easy to construct and reduces maintenance fee. Therefore, the quality of administrative
+services expects to improve by spreading blockchain based e-Government in countries where
+they have relatively insufficient system. In addition, Davinci Project’s base expands during
+this process.
+
+In Africa, more than 50 percent of the population is not registered, so these people are left out
+from the administrative supports such as education and welfare. Instead, the penetration rate
+of mobile phones is approaching 70 percent. The development of DApp, which allows people
+to access administrative services built with blockchain technology via mobile phone, is going
+to enable administrative tasks such as registration of birth, marriage, automobile, and real-
+estate. It incorporates citizens who have been left behind at the blind area of administration,
+raises the policy efficiency, and establishes the base foundation for further development.
+
+Blockchain Banking System Business
+
+In African countries where the banking system is less accessible, only 20 percent of the population
+obtains their own bank accounts and most of people store their cash at home. This exposes people
+to robbery and to other risks. Furthermore, limited access to bank restricts economic activities
+such as transfer money. Constructing centralized bank system is costly, and maintaining the
+system is even harder because of its vulnerability to hacking and other external factors. On the
+other hand, the banking system built with blockchain technology is easily established with more
+security and less cost. In cooperation with several countries and banks, Davinci Foundation
+plans to increase financial accessibility of people by introducing a new banking system with
+blockchain and to promote economic development of the countries. As a consequence, influence
+of Davinci Project is going to expand.
+Real Estate(Reits), and Securitization of Resources
+
+Through the registration of real-estate or natural resources in blockchain system, offline assets
+are transformed into online assets. These online assets are freely distributed and traded in
+the online environment in conjunction with Davinci Coin. Transaction transparency of the
+asset is especially valuable to economic development of countries such as Africa, where can
+be easily exposed to the risk of forgery and alteration of official documents. Moreover, the
+system allows one to simply track and control the distribution process of recourses. Therefore,
+resources such as diamond, gold, and crops are able to be managed effectively.
+
+4. Davinci MainNet with DAI
+
+4.1 Overview
+
+As it can be seen, cryptocurrency has a structure capable of secure transactions without
+intermediaries through distributed ledger. Yet speed and stability of the system require further
+improvement for the full commercialization. In order to resolve these problems, Davinci
+Foundation aims to overcome speed limitation of existing MainNet(TPS) by utilizing DAPOS
+method, which is an advanced version of DPOS method. To this end, DAI, ‘Chain Generation
+Al Solution, has been developed to overcome the limitation of existing TPS by merging Al
+technology and MainNet. Then the business model solution is created based on the characteristics
+of the generated chain.
+
+Davinci Foundation has tried to solve Ethereum’s inherent speed (TPS: transaction per second)
+issue by utilizing MainNet with DAPOS method, which is an advanced version of POS method.
+Along with the high-level engineers, the foundation has developed MainNet, operated with
+DAPOS method, and Davinci Coin(DAC) to cope with above problem. Specifically, the
+development of DAI, ‘Chain Generation Al Solution, has dealt with the chronic TPS reduction
+problem since it overcomes conventional TPS limitation by grafting Al on MainNet. Furthermore,
+the business solution extracted from the unique features of generated chains are introduced
+as well.
+
+DAC is cryptocurrency used in several automatically generated Sidechains within Davinci
+MainNet. When MainNet belongs to the root layer and the specific nodes are appointed,
+transaction occurs via Sidechains created between these sectors. Here, DAC functions as a
+coin that is able to be transferred between nodes of each chain.
+
+4.2 Davinci Al Solution, DAI
+
+This white paper describes the principle of Davinci’s ‘Chain Generation Al Solution,’
+DAI, and how DAI is applied to construct business models. DAI learns information of all
+nodes in MainNet and automatically generates new Sidechain based on the educated
+characteristics of these nodes. During this performance, it improves the efficiency of the
+chain operation.
+
+- 12 -
+Ethereum currently uses POW method and is ready for transition to POS method of Casper
+algorithm in early 2019. Ethereum operates at the speed of less than 20TPS, but it even slows
+down because of the traffic that occurs in the chain as a result of the increase in total number
+of users. To overcome similar problem, Davinci Foundation has dispersed the network traffic
+by building independent Sidechain. Consequently, the TPS has displayed enormous increase,
+about 50 times faster than the average 20TPS, and maintained relatively stable operation with
+network equipped with Al.
+
+The principles of DAI are as follows:
+
+A. Transaction data between the nodes, which are generated every minute as the MainNet
+is operated, is subdivided and stored based on each node.
+
+B. Stored data are analyzed and classified - categorized as data to be stored in the MainNet
+which is the base layer, and as data to be stored in the Sidechain to be generated later.
+
+C. Large number of nodes are quickly analyzed to extract characteristics of each nodes and
+subdivide the result into large, medium, and small groups to define the type of each node.
+
+D. New Sidechains are automatically generated based on the type of formed node.
+
+4.3 Apply Al to DPOS MainNet, DAPOS
+
+DPOS is a method of selecting block generator by voting of each node. DAI involves in the
+voting process and extracts the characteristic of each node, and the block generator with
+unique attributes is selected based on the extracted result. With automatically selected nodes,
+DAI generates Sidechain. To put it shortly, DAPOS is the method that highly escalates impartiality
+and efficiency by applying Al on existing DPOS system base.
+
+Additionally, when DAI generates Sidechain, as ensuring security of financial factors like tokens
+is vital, it processes data separately, hence security required data can be managed by the MainNet,
+which is the base layer. Other data or elements that are directly connected to services are
+proceeded to be included in newly created Sidechains.
+
+The operational efficiency of DAPOS MainNet after DAI is applied is a time reduction effect. Also,
+by creating Sidechain with particular tendencies allows generation of Sidechain according to the
+intention of the MainNet system operators, or DApp operators who uses DAPOS MainNet.
+Therefore, it has a great impact in terms of efficiency of Sidechain generation. (The efficiency at
+this time is the efficiency of the operation, not the speed)
+
+- 13 -
+Node Analysis
+
+DAI’s node analysis is based on following criteria. The volume of MainNet the node belongs
+and its increasing speed in the number of nodes, the data of average time it takes to select
+a block generator or a witness through DAPOS method, the data of average time it takes for
+a block validation node to perform check and to broadcast the result to the entire network,
+selection of a specific node according to the degree of power and the range of fluctuation
+within the chain of each node, the unfair trade transaction inspection, and the log activity
+data of double payment attempts within the chain are collected to be analyzed.
+
+Generation of New Sidechain
+
+DAI analyses countless nodes as described above and models them in real-time. Through
+real-time monitoring, when the transaction-per-second (TPS) of the MainNet drops below
+15TPS, DAI automatically begins to create a new Sidechain with nodes previously modeled
+by types. Additionally, as it operates newly created Sidechains and the existing MainNet, the
+number of transaction occurrence, contract conclusion speed (= TPS), the contract transmission
+speed between the MainNet and Sidechains, and its stability are monitored in real-time.
+
+Creating Business Model
+
+Grouping nodes by type through DAI, a profit model suitable for the characteristics of the node
+group can be predicted and established when Sidechain is formed and operated. Prediction
+of business models is provided as visualized data through the platform that Davinci developed
+and will be available after the platform deployment. Additionally, apart from the generation
+of Sidechain, it is possible for DAI to create Sidechain with customization of the DApp operator,
+thereby producing a business model that incorporates operator condition. In conclusion,
+development of DAI, automatic Sidechain generation solution based on MainNet, makes
+blockchain and service operation more efficient and productive than before.
+
+4.4 DAI Implementation
+
+A. Store every transaction on MainNet
+
+Obtaining data of a node is achieved by log file reporting system that implemented during
+the development of DApp. A batch program should be developed to create a log file in csv
+format to be automatically stored in MongoDB.
+
+B. Data analysis of stored transaction log
+
+LN EEN TE RS SR ON ST SLE
+
+Fig 1. Item value of data collection fields for analyzing nodes
+
+- 14 -
+@ Size of MainNet: netSize
+
+@ Time it takes for number of nodes to reach a certain point: time_NodeCnt_to_ainCnt(100)
+@ Time it takes for a block generator to be selected: time_BlockGeneratorSelected
+
+@ Time it takes for a validation node to check: time_Check_BlockValidation
+
+© Time it takes to broadcast the result to the entire network: time_broadcastingEntireNet
+© The degree of power each node has in its chain: degree_PowerlnnerNet
+
+@ Detecting data of unfair trades or double payment attempts: Cnt_Irreg_type1/2
+
+C. Categorize nodes and case modeling by transaction volume or number of coin holding
+
+| No | TranseVol_| tokenCnt_| nodeRank | nodeType
+
+Fig 2. Transaction volume, amount of token holding, ranking, node type code for each node
+
+@ Divide and analyze the log file and count each node’s transaction volume with DAI.
+
+@ The node transaction log is separately analyzed to extract the number of tokens by decrypting
+the encrypted value of the common key value among the encrypted data recorded in the
+transaction.
+
+@ Define the rank and the type of the node based on transaction volume and number of tokens.
+
+D. Node selection
+
+Yoo iphyees) ©
+
+Fig 3. Node Distribution Graphic Data - Node to node relationships Visualization
+
+- 15 -
+It finds individual node connection based on the contract address of the nodes scattered
+around the entire MainNet. Then discovers filtered nodes on 3rd stage and lists up the nodes
+based on the characteristics of each node.
+
+Fig 4. Selected Nodes list up.
+
+Transection volume value and token retention are different per nodes. DAI determines the rank of each
+node by these two factors and displays it in alphabet forms. Additional evaluation factors other than the
+above two factors specify the disposition of each node.
+
+E. Automatic generation of Sidechains with selected nodes
+
+Logistic
+
+Regression >
+
+Fig 5. Logistic Regression for finding characteristics of each node.
+Applying Logistic Regression on nodes selected from MainNet reduces the group into nodes with unique
+characteristics
+
+- 16 -
+Logistic Regression is repeatedly performed using selected nodes. Through this exercises,
+P1, P2...Pn-1 value nodes are selected and classified as a nodes capable of generating a new
+Sidechain. During the process, it is important to create a large number of hidden layers and
+utilize them for the filtering in order to analyze numerous nodes with a wide variety of
+characteristics. Creating too many hidden layers is not encouraged since the speed of machine-
+learning logic execution can be degraded and overfitting can occur depending on the conditions,
+which lowers the accuracy.
+
+Fig 6. It is important to make optimum number of hidden Fig 7. Repeated application of Logistic Regression. Converging
+layers to prevent overfitting the node groups with unique characteristics.
+
+F. DAl is applied to the regression and automatically binds the specified inter-node
+contracts to complete the Sidechain.
+
+G. Monitoring volume of transaction, transaction per second(TPS), contract
+
+— DATA
+
+Fig 8. Node data is validated by the node validator. The data is broadcasted to DApp of the existing MainNet or
+contributed as a reference value to generate other node data (Sidechain generation).
+
+- 17 -
+am
+
+=
+& Fig9. DAI Process Diagram
+Ss NS a
+SS. Davinci
+_ *\ MainNet
+Xv
+' I i
+aa
+Davinci ~~~ _ \
+
+SideChan -§ ™~
+
+Fig 10. Prediction Business Model by DAI learning and analyzing.
+
+Node groups are classified with various criteria for generating Sidechain, and each node
+group’s characteristic can be subdivided into a major and minor features based on information
+of individual node learnt with CNN methods. Major characteristic is extracted and goes
+through same operation 4 to 5 times until it converges into one unique characteristic. The
+converged characteristic of node becomes a predictable business model.
+
+- 18 -
+|.Expected Effects of DAI
+
+DAI collects and stores all transaction data generated by DApp operation in the MainNet as
+a log format
+
+Aah ‘<—ajcanniaie
+Sr see ooo,
+E SRStSe TS ———
+5: Sheeest aieeemel ne SS
+‘ne feo-aeren:as:a8-a0et Syccetafelty santos tee black See Santana
+Reeeenm teaser Soon sate
+sae ¢ =
+Retains, a
+: Scape
+RStassscscesee = Soe
+Egesten ones manera
+‘Soe feo-beree:gyseoseant sveliy eeokes ew Oe mee,
+S20 Sit cece ==
+SGSSRIS See Se
+Rad 2 ee eee etre)
+Revises curse er SSS ae
+Se (88-2808. 28.42 804 wy saeled new Steet eietiss idiaestiteteetone
+Sisesss Rema Se
+mee (08-2000: 79.42. 8I4F Rinne potentia\ Bleck ee ee
+Shae, See
+Retscs sos, So Se
+5: Skeesae ceeoeeceee SS se
+Eseeess cameos, «Sao stanes
+cSt =o
+‘ve fes-bereniassaa-saet Coonut mining wert AOE Send wer
+Eeeseem Cis amt SS eee
+Seteetetenetee. ceecsoar
+Sbeecesyarsecat. Se eeoe
+ee 828 RS rAa.S5Ft (te evtseset ect a eee eo
+Ei Sees Someone = aa
+Remeeae ies. soma
+pa Sa pe
+hr) 90-2608 25 44.818)“. maned potertia\ Disct oe ee ee
+i BESsss: pore. —,
+Hskaece cess, | cocwrvonmss
+Sietgiecs:. somes
+
+a
+cr)
+a
+
+1. Data extracted from transaction log and stored in MongoDB
+
+Key is the stored transaction data: It is a JSON method taking value format. DAI extracts a
+value of each transaction data (from, to, gas, gasPrice, input data, nonce, transaction-index,
+etc.) and matches the user information of the corresponding node stored in DApp. In other
+words, first, it extracts data that can be matched with the information collected through DApp
+from many key values. Then it performs the operation of decoding and matching separately.
+Below left is the transaction data image. Image on the right is about the data analysis. Data
+used for the analysis are collected and matched via DApp among encrypted data. Transaction
+ID, transaction occurrence time (=sign.up date), contract address (from, to), value transferred
+through contract, type of token, name, and amount of token possessions are the data items
+that can be specified.
+
+Teen te fom ® vt
+oweoncenras Meee nets) Mesos > vesesssmeewne, soe
+oeteadidceant ewe vetdneee 11259 > terteneneaaTed »
+npazinectneste Danecee —otstaDesatie 2 mes patent
+Gens 1890160 Maman oeiscz0¥Hene > cwmraoreemntte vm
+eteresinseens Bewee cuties Pd va
+
+wae Bee > neonesrrseist v8
+eno vttctobeent © resem ny
+Becwe Ole? em natsesrancenisoe wares
+eaattornarite Beemew — vraneormsares a ouatsn0tasssi36 a
+mc Poaatasaind Beene ourTatenrbearin mm oantssnuaasi3e e
+eater 4703 Seema esto eeaonns Pe oan
+“Sonermentotent remem — vorztaroerens >  owreannoczvtoc:
+oe ese Bema vuhatetirwearis Wess roteastse ty
+ata Seece — oemossaeonns > orramesizese sone
+eronovccacsies > Contam om
+Pe essere
+wolue: @ > monsemrmecn mee
+
+Fig 12. Analysis of transaction data of a nodel1, the left-side is transaction data, the right-side is achieved from DApp, image of
+matched-data analysis. The extracted data components are transaction ID, transaction occurrence time (=sign up date),
+contract address (from, to), contract value, type of token, name, and amount of token.
+
+DAI digitalizes the characteristics of analyzed nodes and computes the rank of each node. DAI
+also comprehensively accounts MainNet size, transaction creation time, validity verification
+time, its recognition level in the MainNet, amount of retained tokens and transaction volume
+to entitle each node’s rank and type.
+
+- 19 -
+iation | time brosdcastingErtiretvet |]
+
+Ee
+
+Fig 14. . Calculate node rating and node characterization criteria | Fig 15. Grouping of node (group_a, b, c....)
+
+After grouping the nodes by each rank, DAI automatically generates the Sidechain composed
+of each group. During the Sidechain creation, DAl automatically proceeds the process with
+contract address (from, to address) at initial chain creation stage to acquire the contract that
+are necessary for the completion.
+
+This feature of DAI reduces the weight of network when a new Sidechain is created with extracted
+node group and increases overall network transaction speed. While the transaction is in process,
+‘Transaction Endorsement Time’ occurs at the same time. In the process, as the smaller the
+number of nodes to reach the 'Endorsement' phase, it takes less time. This principle applies
+to the case of DAI.
+
+Fig 16. Transaction level comparison diagram of Sidechain and existing MainNet. Assuming that all transaction requires
+same transaction endorsement time, it can be logically deduced that there are procedure differences as shown
+in the image.
+
+- 20 -
+The following is a comparison of transaction speed of MainNet and transaction speed of
+Sidechains generated with DAI
+
+(8 1PS 62 1PS
+
+Transaction Per second
+Transaction Per second
+
+MainNet Volume Sidechain Volume
+
+Fig 17. TPS comparison graph of MainNet and Sidechain
+
+Such a new chain, which is resulted from one characteristic automatically generated by DAI,
+allows for the creation and development of new predictable business models as node
+characteristics are taken into consideration, which can be converted into visualization data
+as shown below
+
+SP eteee ee a
+
+tesee” *O:0.9.6.%
+
+Fig 18. Convergence of node groups. It is a business predictable model graph of a Sidechain that converges into 6 types
+(Node groups with A, B, C, D, E, and F characteristics). The y-axis represents success prediction scale and measure
+of the possibility of business model success when repeated logistic regression is applied to each Sidechain.
+
+DAI is able to realize the business model according to the intention of the operator by recognizing
+and classifying the characteristics of the node through machine learning and creating a new
+Sidechain.
+
+- 21 -
+The graph below shows what results can be obtained by increasing the number of selected
+nodes with the purpose of time. MIDI (Marketing Intention to Drive Income) node number
+value converges overtime into a single value, which is a group of nodes with one characteristic.
+
+While considering for ways to improve the speed of POW/POS, learning and creating a new
+MainNet through Al were adapted. Davinci Foundation has set its aim of achieving the
+improvement through DAPOS method and carried out this development. Several experiments
+have demonstrated that new business models can be developed by generating specialized
+Sidechains, rather than simply aiming at improving speed of automatic generation of Sidechain
+through artificial intelligence.
+
+time ta . “ tume (5)
+Fig 19. Tendency experiment on node group
+
+625 TPS
+
+Transaction Per second
+
+Transaction Per second
+
+400
+
+Needed Cnt of Block Genrtr
+Needed Cnt of Block Genrtr
+
+i
+MainNet Volume
+Sidechain generation time
+
+Sidechain generation time
+
+Fig 20. Result graph:
+
+1) Total average TPS only operated by MainNet and TPS graph after the generation of Sidechain.
+
+2) A graph comparing before (left) and after (right) DAI introduction. Time comparison graph for selecting the same
+400 block generators.
+
+- 22 -
+By making this even more advanced, Davinci Foundation is going to produce an automatic
+Sidechain generation machine that has degree of completion, which will contribute to the
+
+stability and to development of the blockchain ecosystem.
+
+¥ Fig 21. Davinci MainNet with DAI Service Diagram
+
+References
+
+®
+
+2)
+
+©22e
+
+https://medium.com/loom-network/understanding-blockchain-fundamentals-part-3-delegated-
+proof-of-stake-b385a6b92ef
+https://medium.com/loom-network/understanding-blockchain-fundamentals-part-3-delegated-
+proof-of-stake-b385a6b92ef
+
+[STAESTHETIC] Statistics, Mathematics, Optimization and Aesthetics - Digit Recognizer using
+Logistic Regression
+
+A study of the behavior of several methods for balancing machine learning training data by Gustavo
+E.A.P.A. Batista Instituto de Ciéncias Matematicas e de Computagao, Sao Carlos- SP, Brazil, Ronaldo C.
+Prati Instituto de Ciéncias Matematicas e de Computacao, Sao Carlos - SP, Brazil, Maria Carolina Monard
+Instituto de Ciéncias Matematicas e de Computag¢ao, Sado Carlos - SP, Brazil
+
+Beyond PageRank: machine learning for static ranking by Matthew Richardson Microsoft Research,
+Redmond, WA, Amit Prakash MSN, Redmond, WA, Eric Brill Microsoft Research, Redmond, WA
+Data Mining Practical Machine Learning Tools and Techniques by I. H. Witten, E. Frank and M. A. Hall
+Readings in Machine Learning by Jude W. Shavlik, Thomas Glen Dietterich
+
+Logistic regression and artificial neural network classification models: a methodology review by
+Stephan Dreiseit Lucila Ohno-Machado
+
+- 23 -
+5. Davinci Token
+
+5.1 Token Sale
+
+- Total Token : 8,800,000,000 DAC
+
+Term Summary Sale Token : 2, 640,000,000 DAC
+
+5.2 Token Allocation
+
+Davinci Token Allocation
+
+@ Early contributor & Fundraiser _@ Special distributor
+@ Team & Adivsor @ Fundrasier
+
++ 30% will be sold in accordance with the sales plan
+(circulation amount)
+
++ 25% of it will be allocated to corporate or institutional
+investors
+
++ 10% will be allocated to development team and advisors
+(Lock up)
+
++ 35% will be managed by foundation(Lock up)
+
+5.3 Use of Proceeds
+
+Davinci Use of Proceed
+
+Community Group 8%
+Foundation Operation 20%
+IT Company 20%
+
+Business Development 14%
+Marketing Expense 11%
+
+Operation Expense 12%
+
+Strategic Partners 15%
+
+It will be allocated to the foundation operations, business development, marketing,
+community group, and strategic partners.
+
+- 24 -
+6. Davinci Team
+
+6.1 Development Team
+
+{@ Minjae Kim
++ PhD at POSTECH University
+
++ Former software engineer of
+Samsung Electronic
+
+$e; Zachary Moon
+
++ PhD at Seogang University
++ Software Engineer of Novacos
+
+%@; Singi Jeong
++ PhD at Sungkyunkwan University
+
+Department
+
+<@; Taeho Kim
++ PM&PL of multiple network security
++ Developer of Linux based engine
+
+3@; Jinho Son
++ Web Desginer
+
+iOS in Philippines
+
+GB Jerry Gao
+
++ PhD at Jinan University
+
+Software Engineering
+
+i Kelvin
+
+* Experts in blockchain projects
+
+a ee?
+
++ Engineer of SKK Software Developing
+
++ Main designer of The Platinum Grab Taxi
+
++ Blockchain Developer of THU Domestic
+
++ Senior blockchain development engineer
+
+© Oo 0 @ @
+
+3@3 Sangwoong Cho
++ PhD at Seogang University
+
++ Developer of smart green platform
+and IBKbanking system in LG CNS
+
+s@; Jaemin Shin
++ PhD at Sungkyunkwan University
+
++ Engineer of SKK Software Developing
+Department
+
+<@; Sangyeol Nam
+
+« Project manager
++ Research Fellow of Weihai City, China
+
+3@3 Sangyun Han
++ Graduate of department of
+Engineering of Yonsei University
++ Analyst of Big Data
+
+BB Wang Han
+
++ Doctor's degree of Computer Science
+in MIT
+
++ Manager of the project “Big Data”
+
+BR Wo Jiang
+
++ Master’s degree of Computer Science
+in THU
++ Main research director
+6.2 Advisory Board
+
+We iivyi
++ Chairman of Davinci Foundation
+
++ Co-founder of Davinci Foundation
++ Chairman of Yuandan Corporation
+
+<®; Keumryong Lee
++ Founder of “Auction,” internet shopping mall
++ Chairman of Challenge and Sharing
++ CEO of Koglo
+
+$e; Sihyun Kim
++ CMO/Graduate of Kyunghee University
++ CEO of 153 Production
+
++ Supplier of TV drama such as
+Descendants of the SUN
+
+s@; Hokyung Kim
++ CLO/Legal Expert
+
++ Former head prosecutor of special
+department
+
++ Partner of Allheun Law Firm
+
+se3 JunHa
+
++ Head of communication department
+at Hyundai Group
+
++» Executive director of Hyundai Group
+
+<@; Junghyun Kim
++» Special advisor
++ Chairman of Solidus Investment
+
+ea Zhang Ruo Xi
+
++ Founder of Sanyou Capital
++ Co-founder of Hedge Bank
+
+El Wu Xiang Qing
++» Founder of Lingguan Capital
+
+©98@#eo 200 @©®
+
+@
+QO
+o
+s.
+?
+
+13}
+o
+
+>There are more famous advisers in China that cannot be disclosed.
+
+$®; Seungjae Han
+* Co-founder of Davinci Foundation
+* Vice Chairman of Davinci Foundation
+« Bachelor’s degree of Yonsei University
+* Former CEO of Digitaloptics
+
+<@; Haeman Jung
++ Chief advisor of Davinci Foundation
++ Deputy Speaker of Liberty Korea Party
++ Vice Chairman of Yeouido Research Institute
+
++ Vice Chairman of Northeast Asia
+Economic Cooperation Committee
+
+$@; Jinsuk Ko
+
++ ClO/Doctor’s degree of Computer Science
+in Seoul National University
+
++ Former CTO of | Love School
+
++ CEO of Tenspace
+
++ Best Technician of Al based technology
+in Korea
+
+$@; Chulman Ham
+
++ Medical Doctor of Konkuk University
++ Doctor of Engineering from Yonsei
+University
+
++ Former expert adviser of Ministry of
+Knowledge Economy
+
++ Former technical expert of the Export-
+Import Bank Korea from Ministry of
+Economy and Finance
+
+4@; Sukhyun Kim
+
++ Chairman of Goldenkey Investment
+and Management
+
++ Financial adviser
+
+ia Feng Guan Lin
+
++ Partner Representative of Btc.top
++ Founder of KCU Fund
+
+MB Yue Xiang
+
++ Founder of Imagination Fund
+
++ Investor of large exchanges such
+as OKex and Bit-z
+
++ Super-node Investor of Huobi and ZB
+
+BM will Shaw
+
++ Representative of Chat Game
++ Experts of blockchain game industry
+7. Davinci Roadmap
+
+7.1 Davinci Roadmap
+
+To develop future-oriented blockchain technology, Davinci Project tries to create a
+better world by conducting and supporting various projects and programs.
+
+Development of Davinci Payment system
+& inter-country blockchain
+Chinese~Korean Businessmen’s Release of Davinci MainNet financial system, revitalization
+Association for Cultural Exchange Scout senior advisors beta version, Support developments of domestic tourism using
+Chinese~Korean Businessmen’s, and key advisors of various DApps, Start Davinci Coin, activation of
+Association signed MOU Promotion of private the Middle East and Africa Davinci Coin usage in casinos,
+(Memorandum of Understanding) equity fund national financial system project. hotels, and franchises
+
+Establishment of Singapore Prior consultation for infrastructure Open the Davinci mobile Construction of real estate
+Funds Association projects inthe Middle East and Africa, wallet to the public, platform using Davind Coin,
+Generation of ERC20 Token: development of Al tourism platform Presentation of launching a global tourism platform,
+Davinci Project T-B0F, game development using Al Davinci Platform 1.0, settlement of Davinci as digital asset
+
+blockchain, Preparation of influencer Release of MainNet, Initiation the
+
+and development DApp related to Middle East and Africa infrastructure
+copyright. development project
+
+7.2 Alliance of Davinci Roadmap
+
+Davinci Foundation’s goal is to secure more than a thousand alliances by 2022 through
+the completion of the construction of MainNet by 2019, and the process of on-offline
+connection service and social infrastructure construction by 2020.
+
+2017 2017 ~ 2018 2019 ~ 2022 2023 ~ 2025
+Preparation 1st Stage: 2nd Stage : 3rd stage:
+Establishment of system structure Construction of ecosystem base Expansion of ecosystem
+
+@ 2018.6 @ 2019, 12 @ { ) 2020. 12 ®@ 2022. 12 @
+
+Startof  Listedon exchanges Constructin of mainnet Establishment of — Expansion of base by blockchain Securing more than thousand alliance
+Davinci Project Secure alliance on and offline link service _ infrastructure construction
+
+- 27-
+8. Davinci Organization Structure
+
+8.1 Overview of Davinci Foundation
+
+Davinci Foundation (referred as "Foundation") is established in Singapore and focuses on the
+construction and dissemination of the overall Davinci's economic ecosystem. The foundation
+complies with laws and regulations of Singapore.
+
+The foundation operates under the authority of community members. Cooperating with
+associated partners, which include service provider, market operator, business, and client
+user, to promote the DApp ecosystem. Davinci Foundation is a nonprofit organization that
+oversees general operation of the entire system. The community is the highest authority and
+is managed by a voting system.
+
+8.2 Purpose of Davinci Foundation
+
+The basic principles of Davinci Foundation are open sharing and sustainable development.
+
+1) Exercise the authority, granted by the community, with transparency, openness, and
+impartiality.
+
+2) As a non-profit organization, cooperate with participants of the system to stimulate
+market activities through commercial offerings and economic ecosystem construction.
+
+3) Aim for balanced development of Davinci's commercialized ecosystem with rigorous
+management of the foundation and monitoring of the community.
+
+9. Disclaimer
+
+This document is for purpose of conveying information only and does not constitute any
+investment encouragement or proposal regarding DAC. It does not serve as any kind of
+contract or commitment.
+
+To participate Davinci Project, all investors must clearly understand the risks. Therefore,
+every investor who is involved in the investment is considered to contain full understanding
+of possible risks and ready to take full responsibilities of all consequence. Thus, Davinci
+Foundation clearly states that the foundation is not responsible for damages or loss resulted
+from the reliability of the information provided in the white paper and inaccurate information
+generated by it.
+
+- 28 -
+The disclaimer of the project contains the followings
+
+(Other risks that were not mentioned may exist as well):
+
+(1) This white paper can be adjusted according to the team's policy or decision.
+
+(2) The foundation cannot guarantee the increase and fluctuation of the token value.
+The value may drop depending on the situation.
+
+(3) Definition of token is neither ownership nor control. The project cannot guarantee
+authorization to alter the project to any individual or organization with an associated
+business and utilization plan.
+
+(4) Token contains various types of risks such as lost or stolen.
+
+(5) Davinci Team will continue to conduct reasonable tests to ensure the reliability and
+accuracy of the information in the white paper. However, this white paper is written
+based on the status at the time of writing and does not warrant the accuracy and
+appropriateness of any content in the white paper, including the conclusions,
+performance of the project, roadmap, reliability, and achievement.
+
+(6) Risk of related judicial restrictions. Since cryptocurrency is already subject to supervision
+by countries around the world, the project itself and the coin can be affected if the
+
+supervisory institution intervenes or imposes pressure.
+
+If you are not familiar with the vision of this project and the risks associated with
+cryptocurrency, we do not recommend to participate in token pre-sales. Cryptocurrency
+is riskier and should be considerate about its investment. Participant cloud funding of
+digital assets will not be refunded if they participate in token pre-sales. This project has
+the potential for development and also development failure depending on legality, market
+
+technicality, or uncontrollable causes.
+
+The object to which Davinci Project Team is exempted from the responsibility is not limited
+
+to those illustrated above.
+
+- 29 -
+Davinci Official Community
+
+https://davinci.vision
+
+Homepage
+
+https://blog.naver.com/zkzn011
+
+https://twitter.com/DavinciFoundat1
+
+© iQ
+
+Twitter
+
+https://www.facebook.com/1688348254582102
+
+&
+
+Facebook
+
+https://t.me/davincifoundation
+
+sa
+
+Telegram
+
+XX For nonprofit and educational purpose, the content of the white paper can be
+used if sources and copyright notices are clearly stated.
+
+- 30 -
+DAVINCI PROJECT
+
+To develop future-oriented blockchain technology,
+Davinci Project tries to create a better world
+by conducting and supporting various projects and programs.
+
+https://davinci.vision
+
+9 TEMASEK BOULEVARD #04-02 SUNTEC TOWER TWO, SINGAPORE

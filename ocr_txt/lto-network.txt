@@ -1,0 +1,341 @@
+LTO Network
+
+Visionary paper
+Version 2 - September 2018
+
+Authors:
+
+Rick Schmitz
+
+Arnold Daniels
+
+Martijn Migchelsen
+
+Sven Stam
+
+Martijn Broersma
+
+and the team of LTO Network
+ur
+
+LTO Network
+
+Preface
+
+LTO Network has been servicing enterprise clients for the last four years. A year ago
+we started focusing on decentralized workflows. This changed the way new clients
+approach us, in the most peculiar way.
+
+“We want to do something with the blockchain. Can you please come up with a way, how we
+can apply it to our organization?”
+
+There is no lack of great blockchain projects. But all of them seem to suffer from the
+same problem; little to no adoption. Can it be that the blockchain is a solution without
+a problem?
+
+“The biggest waste of all is building a product that customers refused to use.”
+- Eric Ries, The Lean Startup
+
+Before building yet another great, but unused, blockchain project, we felt we had to
+dive into this phenomenon. We've interviewed dozens of business leaders, corporate
+working groups and blockchain projects and found a remarkable misalignment in their
+perception of the blockchain technology.
+
+Through this paper, we would like to share our findings from these interviews and
+propose our solution to get the blockchain from the current state towards being a
+fundamental part of our digital infrastructure.
+
+ur
+
+LTO Network
+
+Content
+
+1. Introduction
+2. Shaking up the echo-chamber
+3. Catching flies with vinegar
+4. A bumpy ride
+5. The road to mass adoption
+|. Added security for existing applications
+Il. Public key authentication
+lll. Verifiable certificates
+IV. Decentralized workflows
+V. Self-sovereign identities
+VII. Tokenization
+Vill. Trustless financial products
+6. Conclusion
+
+OWMDANNNNDDAYN YN HL
+
+LTO Network
+
+Introduction
+
+After being the mysterious domain of insiders for almost a decade, multinationals and
+governments are gradually entering the blockchain arena. The spike of interest has
+created an atmosphere where the willingness to use blockchain technology is very high.
+
+Despite an abundance of task forces and working groups, organizations are struggling
+to figure out where the actual strategic business value for them lies.
+
+Although cryptocurrencies are growing in hundreds of billions USD in market cap,
+blockchain barely shows any significant, actively used real-world applications. In
+contrary to other emerging technologies, like artificial intelligence or the Internet of
+Things, it is unlikely that you as a consumer use a product powered by blockchain.
+
+Naysayers argue that blockchain lacks the strategic value needed to deliver real-world
+use cases. Supposedly it is mainly a tool for swindlers and hustlers, relying on the
+greater fool theory. If organizations continue to fail in finding strategic applications for
+the blockchain, this skepticism can evaporate the current optimistic atmosphere, as
+blockchain technology itself may become the scapegoat for failed pilots and projects.
+
+ur
+
+LTO Network
+
+2. Shaking up the echo-chamber
+
+It is simple to dismiss the critics as uninformed technophobes that lack vision. Back in
+1995, similar arguments were made about the Internet, like the infamous Newsweek
+essay “Why the Internet Will Fail’. While there are many similarities to the Internet,
+there’s also a striking difference. In 1995 the internet enthusiasts greatly outnumbered
+the critics. Can we say the same today about blockchain?
+
+If we’re honest, we must admit that most people that are interested in blockchain,
+merely care about speculation. The general public is reluctant to use blockchains like
+bitcoin for its intended purpose and apathetic about the technology in general.
+
+This is a far cry from the sound that resonates within the blockchain community. For
+us insiders, it may seem that we are fairly close to building a completely decentralized
+internet of value and soon can break free from trusted third parties.
+
+From an outside view, our community closely resembles a classic echo chamber.
+Visions and beliefs are amplified through an endless amount of conferences and
+meetups that are both presented and visited by the same group of people.
+
+Even though various organizations initiate blockchain teams within their structure,
+there is usually a yawning gap between these techies and top managers. Teams often
+find themselves inside the blockchain echo chamber, floating away from their peers to
+form lonely islands with little to no infiltration within the organization.
+
+Looking at its current status, it’s very easy to dismiss blockchain as a fad. To counter
+the skepticism, we must all get out of our echo chamber and start delivering real and
+indisputable value. Not in a three-year plan, but today.
+
+3. Catching flies with vinegar
+
+When you make your peace with authority, you become the authority.”
+- Jim Morrison
+
+Bitcoin was created from an anarcho-capitalist philosophy. Fed up with governmental
+bodies and financial institutes ruling self-serving from their ivory towers, the makers
+sought to replace the extant system with a new, better one based on principles of self-
+ownership, self-reliance and self-regulation.
+
+At the inception of bitcoin in 2008, we were very near an economic crisis, with a very
+negative sentiment towards the financial industry. These days, however the mood
+has shifted. Both general public and governing institutions are more than content with
+the current economic situation and primarily concerned with protecting the current
+prosperity.
+ur
+
+LTO Network
+
+The political agenda we've inherited from bitcoin is proving to be detrimental to adop-
+tion. Organizations that can drive the technology forward and are willing to embrace
+blockchain, are constantly being told they'll be obsolete soon. Can we, as a community,
+start supporting these organizations instead? Remember, you catch more flies with
+honey than with vinegar.
+
+4. A bumpy ride
+
+The road to adoption of a new technology is always a bumpy ride.
+
+In 1956 the Dartmouth Conference gave birth to the field of Artificial Intelligence (Al)
+and started the first Al revolution. This revolution didn’t last as the field failed to meet
+the expectations. After another rise and fall in 1980, it wasn’t untill the mid-1990’s, when
+the Internet caused a technology boom, that Al managed to reach some world adop-
+tion.
+
+We seem to be setting ourselves up for a similar ride for the blockchain. Are we truly
+willing to wait for another 30 to 40 years to reach a level of maturity?
+
+Two decades ago, the field of Al stopped promising and started delivering. In 2018, it
+silently works in the background, powering many of the tools we all use on a daily
+basis. We must adopt a similar strategy for the blockchain if we want to prevent the
+pending collapse of our field.
+
+5. The road to mass adoption
+
+Where do we start with blockchain? Its short-term value predominantly lays in
+reducing costs and increasing efficiency for incumbent organizations. Change both
+within an organization and within society often provokes resistance.
+
+To counter this, we should initially focus on low impact solutions and progressively
+introduce more significant implementations.
+
+|. Added security for existing applications through anchoring
+
+When explaining the blockchain to organizational decision makers, the word
+“immutable” particularly strikes their imagination and interest. All decisions within
+organizations, from blue-collar workers, to the upper management are done based on
+data. Unauthorized data manipulation can result in serious damages.
+
+Of course, this immutability comes from distributing the data to a large number of
+
+independent parties. Data on a private blockchain run by a single organization is not
+nearly as immutable.
+ur
+
+LTO Network
+
+Second best is to anchor the data; writing a hash to a public blockchain. Data can still
+be manipulated, but this manipulation can easily be detected. This newly added layer
+of security doesn’t yet depend on system privilege levels.
+
+Anchoring is a non-intrusive method that can be applied to existing applications
+with little effort. An increasing amount of software companies and integrators start
+recognizing and implementing this method of data validation. Due to its
+low-transformational characteristics, we expect anchoring to become a common prac-
+tice soon.
+
+ll. Public key authentication
+
+Passwords, the most common form of authentication, don’t meet the requirements
+organizations have today. A shift towards strong authentication using public keys has
+already begun. This shift started with mobile apps and with the adoption of the Web
+Authentication W3C standard, the web should shortly follow.
+
+The blockchain can leverage this by providing decentralized authorization via a
+dynamic chain of trust, describing the trust relationship between identities. It enables
+validation of company policies and authorization both by the organization internally as
+well as externally. The chain of trust simplifies business processes and mitigates some
+of the most costly cyber scams.
+
+lll. Verifiable certificates
+
+Paper certificates have proven to be unreliable. For as little as €50, you can purchase
+a novelty degree online. And the other hand organizational licenses and certificates
+are shrouded in bureaucracy, making them unnecessarily hard to administer and
+validate.
+
+Similar to the chain of trust, the blockchain makes it trivial to issue publicly verifiable
+certificates, which can be easily revoked if needed.
+
+For institutions that already make their certificates public, this is a non-intrusive and
+low-risk use case. It allows for increasing a progressive image by deploying the block-
+chain. These verifiable certificates could potentially root in society real quick, as the
+technology to realize these certificates is already available for real-world application.
+
+IV. Decentralized workflows
+The digital revolution has had a tremendous effect on the optimization of internal
+business processes. When it comes to inter-organizational processes, we have to
+acknowledge that the changes are less drastic. At best paper forms and faxes are
+
+replaced by digital forms and e-mail, but underlying processes have hardly changed.
+
+Corporations are reluctant to rely on external systems operated by a counterparty.
+ur
+
+LTO Network
+
+With no single party in control of systems and data, decentralized workflows might be
+the answer.
+
+Most corporations are still struggling with the concept of decentralized systems.
+Fortunately, influential parties in the shipping industry and, somewhat surprisingly, the
+EU government, are pushing forward the use of this technology.
+
+Given that the pilot programs running today show costs savings and higher effici-
+ency, we’re bound to see large-scale blockchain powered decentralized solutions in
+production in 2019.
+
+V. Self-sovereign identities
+
+While there is a fair amount of enthusiasm for self-sovereign identities (SSI), large-
+scale adoption seems far off. Rather than SSI systems, new high-profile federated
+authentication systems are being released on a regular basis.
+
+However, while consortiums are trying to push their federated systems, integrators are
+not content and adoption is relatively low. Current identity services only seem to work
+on a national level. Some countries may have multiple services, where other countries
+have none.
+
+In contrast, SSI systems are not limited by national borders, allowing anyone to
+participate. The rise in popularity of public key authentication may give SSI the edge it
+needs.
+
+VI. Tokenization
+
+Tokenization has captured the imagination of the blockchain community, from
+tokenizing real estate and loyalty points to carbon emission rights.
+
+One of the most anticipated applications of blockchain by businesses is the use of
+non-fungible tokens in a supply chain to battle counterfeit goods. While organizations
+are keen to solve this 2 trillion dollar issue, it will likely take years to see large-scale
+real-world implementations.
+
+Supply chain solutions face some major challenges; All parties in the supply chain need
+to participate, from the manufacturer to the end customers. Multiple, often legacy,
+software systems need to update. Another issue is bulk packaging. Items need to be
+uniquely identifiable or already in their final packaging.
+
+Unfortunately, most tokenization initiatives only focus on fulfilling an ideology but fail
+to provide actual business value over existing non-blockchain solutions. We expect
+tokenization to be the subject of pilots for the coming years, followed by a major shake
+out before we get to see these solutions have any impact on industries.
+ur
+
+LTO Network
+
+VII. Trustless financial products
+
+While bitcoin came to life as a reaction to failing banks in a dysfunctioning financial
+system, fiat currencies survived the Great Recession mostly unscathed. As a result,
+FinTech solutions that don’t support the local currency are not usable by governments
+and businesses in a meaningful way.
+
+For example, most employees won’t accept getting their salary in cryptocurrency.
+The currencies are much too volatile. A deposit in Ethereum has an enormous risk of
+decreasing in value while locked.
+
+This is not the only hurdle. Immutable and public nature of smart contracts are
+arguably the biggest assets, but they’re also the source of many new challenges con-
+cerning scalability, privacy, security and legal context.
+
+Given the huge potential impact on the financial system, activity of FinTech
+related blockchain projects will probably not diminish any time soon. This will
+continue to be experimental though. At best, we might see a blockchain based interbank
+infrastructure in the near future.
+
+Other use cases for the blockchain are simply far less challenging both in technical
+and social context. General availability of trustless financial products should not be
+considered the start, but the conclusion of this path to mass adoption.
+
+6. Conclusion
+
+Trusting upon blockchain to handle day-to-day business processes is a necessary first
+step towards mass adoption and the creation of strategic business value. Organizations
+must be allowed to experience the benefits of the blockchain as supportive technology.
+
+Recently failed proof of half-baked concepts aimed to transform industries has mostly
+led to disillusion for organizations and their decision makers. If we want to make block-
+chain a success - regardless of who we are - we should manage expectations and
+create a long-term realistic plan. Additionally, we must stop scaring decision makers
+with stories of blockchain immediately disrupting their organization and jeopardizing
+thousands of jobs.
+
+By pursuing baby steps in a long road to mass adoption, we can change the way
+organizations view the current state of blockchain, making them understand and
+embrace the numerous advantages the technology has to offer.
+
+The blockchain is a sound concept and there is no doubt it will have its role eventually.
+
+However, we - the blockchain community - decide today, if we'll look back at this period
+as the peak of just another hype cycle, or as our 1995,
+1°
+
+ogq0d09
+
+Medium Twitter Group channel Announcement
+channel

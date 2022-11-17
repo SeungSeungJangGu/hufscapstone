@@ -1,0 +1,513 @@
+ERON WHITEPAPER
+
+Posted: 03 August 2021
+
+Last Updated: 03 August 2021
+
+ERONPAPER
+
+Until now, centralization has been a prerequisite for all official structures.
+Political, educational and financial systems are, and have always been,
+crafted in a way that does not equally and ethically distribute power to those
+
+functioning within them.
+
+While the term DeFi literally includes the word decentralized, this is in
+
+reference to economic status as opposed to its internal hierarchy.
+
+This whitepaper will outline the fundamentals and utility of the ERON
+TOKEN and its added applications. Through this paper we will show the
+entire network that we will be building around ERON TOKEN and how it will
+
+become a transparent utility and charity community-centric token.
+
+We will also identify our future goals and apps that will interconnect in order
+
+to create the ERON ecosystem and blockchain.
+
+PROJECT GOALS
+
+The project has 2 main goals:
+1. Creating a blockchain called ERON blockchain.
+
+2. Using the ERON blockchain to make a difference in real life through
+
+charities.
+
+Terms and Organizational Components
+A clear definition for the terms used to describe various actors, and actions,
+
+inside the ERON network:
+
+Users or Network Participants
+
+Any party, individual, entity, enterprise, blockchain or network that uses,
+develops, creates or interacts with any aspect of the ERON Network. Users
+are identified by a unique account address (derived from their master
+
+public-private key pair stored in a wallet).
+
+Token Holders
+
+Users that are holders of native ERON tokens, to be used on the ERON
+Network to submit signed transactions for value transfers, smart contract
+
+execution or to provide liquidity.
+
+Developers
+
+Users that develop smart contracts and/or applications that rely on smart
+contracts to provide services. Developers need an account to deploy smart
+
+contracts on the Network.
+
+Consensus group
+
+In order for a block to be proposed and committed, a specific number of
+nodes (numNodesConsensus) are randomly selected from all eligible nodes
+(eligible NodesPerShard) assigned to a shard to form the consensus group
+during each round (blockTime). The consensus group has the responsibility
+of committing blocks in that shard, during each round. At the beginning of
+
+each round, a new consensus group is selected.
+
+Nodes
+Devices (computers or servers) running the software (the ERON client) and
+relaying messages received from their peers. They can be either Validators
+(actively participating in securing the network) or Observers (passive
+members of the network that can act as a read & relay interface) and can
+be either Full (have the entire history of the blockchain) or Light nodes (only
+
+keep 2 epochs of blockchain history).
+
+A node is on the eligible nodes list if several requirements are met:
+
+- arating above a specific threshold
+
+- won a node slot in the selection auction (when auction will be enabled)
+
+Validators
+
+Validators are nodes — computers on the ERON network that process
+transactions and secure the network by participating in the consensus
+mechanism, while earning rewards from the protocol and transaction fees.
+In order to become part of the ERON network, a validator needs to commit
+a collateral in the form of ERON tokens, which are staked to align the
+incentives of the validators with the correct functioning of the network.
+Validators stand to lose some, or all their stake if they deviate from the
+protocol instructions, or otherwise collude to disrupt the network. In order
+for a node to be able to become a validator it needs to be on the list of
+
+eligible nodes.
+
+Block proposer
+
+The block proposer role is designated to the first selected (through an
+unbiasedly, random process) validator node in the consensus group. The
+block proposer is the validator who proposes the next block, which the rest
+
+of the consensus group must verify and approve.
+1. CREATING OUR ERON BLOCKCHAIN
+
+OUR OWN NODES
+
+Technology wise, the ERON PROJECT embodies the team’s wish to make
+digital assets a component of real life by having real use in disadvantaged
+areas and for people that cannot otherwise succeed in having the most
+
+basic living standards.
+
+The ERON PROJECT runs on its own nodes developed on the Ethereum &
+Web3 blockchain, using the GO implementation of Ethereum, the GETH
+
+platform.
+
+This relies on a boot node that allows the connection of other nodes within
+the blockchain. In time, more virtual machines can be connected to the boot
+node in order to facilitate the validation mechanism for blockchain
+transactions, but also to offer API to verify transaction hashes, transfers,
+
+deployments of Smart Contracts, aso.
+
+For the moment there is a published boot node on a AWS server and 18
+nodes that will be connected to the boot node. All servers will run Linux and
+will be protected by a datacentre firewall, as well as an operating system
+
+firewall.
+
+Currently the network is private and, in the future, the virtual machine can
+
+be downloaded in order to start decentralising it.
+
+As more and more nodes join the network through our MINING application,
+
+will develop our ERON blockchain.
+
+The chosen consensus model involves multiple communication rounds;
+thus, the result is highly influenced by the network quality (speed, latency,
+
+availability).
+The process of designing distributed architectures on blockchain faces
+several challenges, perhaps one of the most challenging being the struggle
+to maintain operability under contextual pressure conditions. The main
+
+components that determine the performance pressure are:
+
+* complexity - the first element that limits the system performance, is the
+
+consensus protocol.
+
+* system size - expanding the number of nodes in existing validated
+architectures forces a serious performance degradation and induces a
+
+higher computational price that must be paid.
+
+* transaction volume
+
+DESIGN
+
+The design behind the future ERON blockchain will have the following
+principles:
+
+1. Simplicity - the ERON protocol should be as simple as possible, even at
+
+the cost of some data storage or time inefficiency.
+
+2. Universality — a fundamental part of ERON’s design philosophy is that
+
+ERON will not have “features”.
+
+3. Modularity — the parts of the ERON protocol should be design to be as
+
+modular and as separable as possible, while also being interconnectable.
+
+4. Agility — the details of the ERON protocol will be created to be give the
+highest agility possible.
+
+5. Non-discrimination and non-censorship — the ERON protocol will not
+
+attempt to actively restricts or prevent specific categories of usage.
+The ERON network will have 2 types of accounts:
+
+1. externally owned accounts, controlled by private keys
+2. contract accounts, controlled by their contract code.
+
+An externally owned account has no code, and one can send messages
+from an externally owned account by creating and signing a transaction; in
+a contract account, every time the contract account receives a message its
+code activates, allowing it to read and write to internal storage and send
+
+other messages or create contracts in turn.
+
+APPLICATIONS:
+
+There will be 3 types of applications on top of the ERON network in the
+beginning:
+
+Semi financial application:
+
+ERON MARKET - future marketplace www.eronmarket.eu
+
+Full financial applications:
+
+ERON PAY - future payment processor www.eronpay.com
+
+ERON WALLET - future cryptocurrency wallet www.eronwallet.com
+Non-financial applications:
+
+ERON MINER -— the mining application miner.eroncoin.com
+
+BLUE MONITOR - the utility monitoring app that helps the charity goal of
+the ERON PROJECT
+
+ERON TOKEN
+
+"ERON" is a utility token and the main internal crypto-fuel of ERON network
+that is also used to pay transaction fees.
+
+The launch of the ERON is on the following schedule:
+
+PRIVATE SALE — 04.08.2021 — 04.09.2021
+ETH PRE-SALE — 05.09.2021 - 20.09.2021
+
+BNB PRE-SALE — 21.09.2021 - 16.10.2021 EXTENDED until 31.10.2021
+AIRDROPS — 21.09.2021 — 25.10.2021
+
+EXCHANGE LISTING — until December 31st, 2021
+
+Despite the fact that it is a utility token, it will also be the engine behind the
+
+charity component of this project.
+
+The ERON smart contract is an upgradable Ethereum contract that has a
+
+pause function, but lacks blacklist or additional mint options.
+
+There is however a minimum and maximum limit for both buying / selling,
+
+that acts like a anti-whale mechanism.
+ETH PRE SALE LIMITS: 1000 USDT to 15.000 USDT
+BSC PRE SALE LIMITS: 0.001 BNB to 20 BNB
+
+LIMITS AFTER SWAP LISTING: 100 ERON TOKENS to 1.500.000 ERON
+TOKENS
+
+Tokenomics:
+
+The economic aspects being implemented must take into consideration that,
+regardless of the monetary value of a particular token, there are factors that
+
+influence the wellbeing of the system, namely:
+
+e the inflation should be small enough to not "tax" the token holders, but
+large enough to cover their “hodling” costs in the initial stages of private
+
+sale and pre sale
+
+e the monetary supply being held should be large enough so that there are
+enough distinct entities that collusion is unlikely, but small enough so that
+
+money velocity is not affected (MV=PQ)
+
+Total supply: 1.000.000.000.000
+Charity wallet: 200.000.000.000
+
+Team wallet: 150.000.000.000
+
+Operational Wallet: 48.000.000.000
+Marketing wallet:75.000.000.000
+
+Exchange liquidity withheld: 250.000.000.000
+Swap & Pre-Sale Liquidity: 277.000.000.000
+Taxes / transaction (buy and/or sell):
+
+1% redistribution tax (reflection)
+
+1% tax to charity
+
+1% burn tax
+ERON FOR GAS FEES:
+
+The ERON will serves the dual purpose of providing a primary liquidity layer
+
+to allow for efficient exchange between various types of digital assets and,
+more importantly, of providing a mechanism for paying transaction fees.
+
+For convenience and to avoid future argument, the denominations will be
+
+pre-labelled:
+1: eban
+
+10°: ban
+
+The issuance model will be as follows:
+
+ERON will be released in a private sale at the price of 4.000.000 ERONs
+per ETH, a mechanism intended to fund the ERON organization and pay for
+development that has been used with success by other platforms such as
+
+Mastercoin and NXT.
+Earlier buyers will benefit from larger discounts. The ETH received from the
+sale will be used 49% to pay salaries and to fund the project and 51% will
+
+be added to the liquidity pool of the ERON TOKEN.
+
+ERON MARKET
+
+ERONMARKET is the marketplace of the ERON project, through which
+people can buy products with cryptocurrency. The main currency of the
+
+platform will be ERON, but we will also have a stable coin.
+
+Any company that wants to sign up and sell their products can do so, just
+
+like any user can sign in using their wallet and buy.
+
+The important thing is the app is 100% decentralised, thus there will be no
+
+data saved on any server.
+
+The users can easily log in the marketplace using their ERON WALLET or
+other ERC-20 wallets and buy any good at any price as long as they have
+
+enough tokens in their wallet and they specify the shipping address.
+
+30% of the fees of the marketplace will go towards the capitalization of the
+ERON TOKEN.
+
+ERONPAY
+
+ERONPAY is the upcoming payment processing application of the project
+
+that will make it easy to buy, sell and trade any cryptocurrency.
+
+This app acts as a binder between ERON WALLET, ERON MARKET and
+ERON TOKEN.
+
+Any person can download ERON WALLET, hit the buy button and use their
+credit/debit card to buy ERONs or other cryptocurrency and have it added
+
+to their wallet.
+Any person can access ERON MARKET, hit the buy button and use their
+credit/debit card to buy an item. ERONPAY will automatically convert any
+
+FIAT into ERONs and pay for the item in the shopping cart.
+The taxes for any transaction are as follows:
+
+$0-$50 - $1.75
+
+$50-$100 —- 1.1%
+
+$100-$500 - 1%
+
+$500-$1000 -0.9%
+
+$1000-$2000 - 0.8
+
+$2000-$5000 - 0.7%
+
+$5000-$10000 — 0.6%
+
+Above $10000 - 0.5%
+
+ERONWALLET
+
+ERONWALLET is the upcoming wallet that will be created in order to have
+an easier access and use to all the project’s applications.
+
+ERONWALLET will have a fixed gas fee that will be determined after the
+start of the decentralisation of the project, through download of virtual
+
+machines by users.
+
+It will accept any currency for transactions into ERONs and will also have a
+bridge in order to facilitate the exchange from different blockchains as BSC,
+
+ROPSTER, ERC, TRON, aso.
+
+In the ERON network, the state is made up of objects called "accounts",
+with each account having a 20-byte address and state transitions being
+
+direct transfers of value and information between accounts.
+An ERON account account contains four fields:
+
+1. the nonce, a counter used to make sure each transaction can only be
+
+processed once
+2. the account's current ERON balance
+3. the account's contract code, if present
+
+4. the account's storage (empty by default)
+
+ERON MINER
+
+ERON MINER is the mining application for ERON TOKEN where all users
+can earn 0.5 ERON/hour and 20% of the current mining rate of every person
+
+invited into their downline.
+
+As the mining process will create tokens, there will be a 50% cut of the
+
+mining rate at the following milestones:
+
+75.000.000.000 — 50% cut from 1 ERON to 0.5 ERON
+125.000.000.000 — 50% cut from 0.5 ERON to 0.25 ERON
+150.000.000.000 — 50% cut from 0.25 ERON to 0.125 ERON
+The total mining supply needed will be 175.000.000.000 ERONs.
+
+Every 50% cut of the mining rate will also mean a 50% cut of the referral
+
+commission of 20%:
+
+75.000.000.000 — 50% cut from 0.2 ERON / referral to 0.1 ERON / referral
+125.000.000.000 — 50% cut from 0.1 ERON / referral to 0.05 EROWN/ referral
+150.000.000.000 — 50% cut from 0.05 ERON to 0.025 ERON / referral
+
+Once the total needed supply will be complete the application will stop
+
+mining.
+All users will be able to see the mining balance in their account on the
+
+application at any given moment.
+
+The users will receive the mined balance once the total needed supply will
+be accomplished. At the end of the process, once they receive their tokens,
+they will have the option of putting all mined tokens into a staking pool,
+
+where they will receive 10% interest/ month.
+
+The main goal of this mining application is to supply liquidity for the
+
+upcoming ERON MARKET and ERON PAY.
+
+The users will be able to use their mined ERONs in the ERON MARKET in
+order to buy products. The value of the mined ERON at any given moment
+will be the same as the value of the ERON TOKEN that will be listed on the
+
+exchange.
+
+Technical overview of the mining process:
+
+The current intent at ERON is to use a mining algorithm where miners are
+required to fetch random data from the state, compute some randomly
+selected transactions from the last N blocks in the blockchain, and return
+
+the hash of the result. This has two important benefits.
+
+First, ERON contracts can include any kind of computation, so an ERON
+ASIC would essentially be an ASIC for general computation - ie. a better
+
+CPU.
+
+Second, mining requires access to the entire blockchain, forcing miners to
+store the entire blockchain and at least be capable of verifying every
+transaction. This removes the need for centralized mining pools; although
+mining pools can still serve the legitimate role of evening out the
+randomness of reward distribution, this function can be served equally well
+
+by peer-to-peer pools with no central control.
+
+BLUEMONITOR
+Through the current BLUEMONITOR app that is already functional in
+monitoring the gas/electric/water consumption, the users will be
+recompensated with ERON tokens if they can acquire a stable consumption
+
+rate in accordance to the same month of the previous year.
+
+The users that will manage to decrease their consumption by 5% every year,
+will be annually recompensated with tokens for their active involvement in
+
+decreasing pollution.
+
+2. CHARITY
+
+The charity component of our project is to identify disadvantaged areas that
+do not benefit from gas, electricity and water networks and to build those
+
+networks or extensions to the current networks.
+
+The build will be done through companies that are authorized and licensed
+
+in these fields, in disadvantaged areas of Romania and abroad.
+
+These new networks or extensions will be leased to local providers as per
+the legal framework of every country country. 50% of every lease will be
+
+reinvested into building future networks or extensions.
+
+If the gas/electric/water provider will implement the digital asset ERON
+TOKEN, then the provider will receive back 50% of the lease fee in ERONs.
+These ERONSs can be used only as discounts for the future bills of the actual
+
+beneficiaries of the gas/electric/water networks.
+
+CONCLUSION:
+
+As any project in the beginning, we are aware that we might not have all
+our info in this whitepaper and that there will be hard times and obstacles
+
+as well as successes. This is the reason why we will update our website
+and whitepaper weekly in order to show our progress and to make everyone
+
+understand what ERON is, where it is heading and how to use it.

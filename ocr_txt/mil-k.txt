@@ -1,0 +1,887 @@
+Confidential
+
+The White Paper of
+Mileage Point Integration Platform
+in Lifestyle Sectors
+
+(Mil.k Coin)
+
+= HH
+
+Ip
+
+Sf
+
+version 0.9.7
+
+This document contains confidential information that has not yet been published.
+
+Copying and/or distributing this document without the permission of the author can lead
+to civil and criminal measures.
+
+1/24
+
+1. Summary
+
+Our goal is to create a system that integrates customers of different service companies in the travel, leisure, fash-
+ion, culture, and other lifestyle industries through the blockchain.
+
+In the face of intense competition, most companies in the lifestyle sector offer rewards such as mileage points in
+order to encourage customers to reuse their services and raise customer loyalty.
+
+However, since reward points can lead to the granting company's burden, they are normally about 1% of the origi-
+nal payment. Therefore, using a certain service for a few times doesn’t actually benefit user with the rewards.
+
+For this reason, securing regular customers with mileage points is not a satisfactory marketing strategy for service
+companies.
+
+Our platform will function as a square by integrating mileage points from different services and providing means
+to trade them interchangeably. It will gather small amounts of spread mileage points of various services into a
+meaningful amount and support the users’ ability to trade these points according to their needs. In this way, our
+platform will make users to benefit from mileage points more substantially.
+
+We will make integration and transaction of mileage points happen seamlessly by using reliable and fascinating
+methods powered by the blockchain.
+
+In addition, we will create an ecosystem that will allow the participating service companies on the platform to both
+attract new customers and lock-in loyal customers through co-marketing and integration of services. Our platform
+will be more influential as number of participating companies from various industries grow and being part of it will
+become a large factor that differentiates participants from their competitors that are doing only independent
+marketing.
+
+This project is supported through the joint efforts of Yanolja (the unrivaled leisure platform in Korea), Lambda 256
+(which operates Luniverse and is a subsidiary of Dunamu, the owner of the crypto exchange, Upbit), and Key-Inside
+(which has proven its technical expertise in enterprise-blockchain development). We are also in discussions with
+market leaders of various industries, and the number of participating companies will continue to grow. Through
+this project, we will demonstrate how blockchain technology and the real economy can be combined and used in
+the real world.
+
+2/24
+2. Introduction
+
+2.1 Growth of the Lifestyle Industry (Travel/Leisure/Fashion/Culture)
+Travel, leisure, fashion, culture, and other such activities include all activities that people take to relieve physical
+or mental stress from daily life. And as a result of social changes such as economic growth, increase of household
+
+incomes, decrease of work hours, and improvements in productivity, the lifestyle market has been rapidly expand-
+ing.
+
+As shown below, leisure spending in Korea has increased 60% over the last 10 years.
+
+60>
+
+KOREA REP.
+
+Leisure Tourism Spending
+in Korea, USS (Billions)
+
+40 |
+
+East Asia & Pacific median
+20-- a
+
+qertttes peeettt
+
+1996 1998 2000 2002 2004 2006 2008 2010 2012 2014 2016 2018 2020 2022
+
+<Data Source: World Travel & Tourism Council>
+
+In addition, through the development of internet-based technology, diverse service companies providing online
+reservations or purchases have appeared, and lifestyle-related purchases that had been primarily made offline
+have shifted to online as well.
+
+With the advancement of the online industry, competition among various platforms has accelerated. The costs for
+service companies to attract new customers have increased, and these companies are paying various forms of
+reward points to maintain their existing customers.
+
+The total amount of mileage points paid to customers as rewards has been increasing each year (in 2017, total sum
+
+of (such) points among Korean credit card companies was KRW 2.9 trillion. Source: Korea Financial Supervisory
+Service).
+
+3/24
+2.2 The Weaknesses of Spread Mileage Points
+
+However, the current mileage points offered by service companies do not sufficiently provide benefits to
+customers or serve as incentives for re-purchase due to their limitations for usage. And vice versa, service com-
+panies also hardly benefit from mileage points, thus current mileage system is not being an effective marketing
+method.
+
+In other words, as price competition in the lifestyle industry has intensified through the rise of various online
+platforms, the amount of mileage points that service companies offer to customers has become limited. Thus,
+Customers earn only a small amount of mileage points from each purchase.
+
+For customers, other forms of incentives such as discounts provide greater motive for purchase than the value
+of the mileage points. Thus, many customers are using multiple platforms even within the same service category
+and holding mileage points earned through diverse lifestyle activities spread to various platforms.
+
+Many of them are not even aware how much mileage points they have on which platforms, and if they are not
+diligent consumers, they may end up neglecting their mileage points. Problem is that unlike cash, mileage points
+have expiration dates, and many customers fail to use them before their points are still valid.
+
+This means that in many cases, the mileage points offered by service companies do not serve as a sufficient
+incentive for customers to make re-purchases.
+
+2.3 Limitations of Existing Mileage Point-Integration Programs
+
+Because of the issues with mileage points mentioned above, various attempts have taken place so far to
+integrate mileage points in order to increase their value and utility.
+
+The most representing case has been the attempts to integrate mileage points among group subsidiaries/affil-
+iates and mileage alliances between airline companies. However, both attempts for mileage integration have
+had two requirements, the physical exchange of personal information and the post-settlement.
+
+For these issues, mileage integration and exchange have been allowed only between certified businesses
+within same industry or same subsidiaries/affiliates. Therefore, there is no successful platform enabling
+
+efficient mileage integration regardless of the industry and group subsidiaries/affiliates status.
+
+Service companies in the lifestyle industry need a new platform to raise the usability and utility of mileage
+points.
+
+4/24
+2.4 Our Platform’s Vision
+
+We aim to build a platform that integrates mileage points of various, different service companies in the lifestyle
+industries, including travel, leisure, fashion, and culture.
+
+Through the blockchain, we will implement a mileage point integration platform that secures the credibility of
+data, does not require direct exchange of personal information between companies, and has no needs for the
+post-settlement.
+
+This will provide substantial benefits to users, increase customer loyalty by raising the value of the mileage points,
+and expand the customer pool for service companies on the platform. In this manner, each service company will
+have a clear competitive edge over its competitors.
+
+Our platform is an ‘alliance platform’ that promotes collaboration of multiple service companies and benefits not
+a specific company but rather all participating companies.
+
+2.5 Our Platform’'s Direction
+
+= Maximization of Mileage Point Value
+Our primary goal is to maximize the mileage points’ value.
+
+So far, mileage points have been used only within a certain company. The amount of it has been mostly small,
+and it has had expiration dates. So, utilizing mileage points has required significant efforts and commitments
+to customers. To solve these problems, we plan to increase the number of participating services so that
+customers can have more options to gather and spend their mileage points from/on. And further, we will
+enable cashing out the points as well.
+
+Through our platform, customers will enjoy such benefits, and service companies, the issuer of the points, will
+have enhanced marketing effects.
+
+= Partnership among Various Lifestyle Service Companies
+
+There are various services and products in the lifestyle industry, and competition among service companies is
+quite fierce.
+
+For our partners, that is the participating service companies on our platform, we will maximize their marketing
+effectiveness by sharing massive pool of customers within the platform. There will be only collaborations, not
+a competition on the platform because we only allow for one company to join and represent its belonging
+sector. With this structure, participating companies will make synergies by sharing their customers and carry-
+ing out marketing events together on the platform.
+
+5/24
+= Partnership with Global Companies
+
+The platform will make partnerships with global companies in the lifestyle industries (travel/leisure/fash-
+ion/culture/and such), and this will be a chance for our existing partners to enter into global market without
+efforts.
+
+= Mileage Point Integration without Burdens related to Cost and Technology
+
+Service companies will be able to join our platform by simply using the APIs provided. This goes for some
+companies without mileage point systems. By using our platform, they can start it with no burden.
+
+As mentioned above, there will be no needs for sharing customer information or the post-settlement
+between participating companies, so they will not have operational, financial, and customer related issues
+being on the platform.
+
+Furthermore, our platform will allocate Mil.k Coin to each service company according to their contributions to
+the platform. The allocation can be their marketing resources to give benefits to customers.
+
+2.6 Reasons for Mileage Platform to be built on blockchain
+
+= Establishment of Trading Market through Tokenization
+
+Reliability and credibility are one of the most important aspects of blockchain. By tokenizing mileage points,
+transactions of them will be more secure and reliable. As a token, mileage points will be much easier to be
+transferred and transacted between different services and users without needs for post settlements among
+the aligned service companies.
+
+By trading mileage points in the token (Mil.k Coin), users will benefit from discounts when purchasing the
+points. Further, by transferring Mil.k Coin to the external crypto exchange, a user can benefit from cashing it.
+
+Establishing a platform that integrates mileage points without needs for the post settlement can also be done
+
+without blockchain. However, it will require much more resources to ensure the reliability and security of trans-
+actions.
+
+= Expandability to global partnerships and global crypto exchanges
+The platform aims to integrate lifestyle service companies globally, and blockchain technology has become a
+
+standard infrastructure for global IT companies. Establishing the platform on blockchain is beneficial for itself
+and its service companies to expand globally.
+
+6/24
+= Data Credibility
+
+As for a service company considering joining the platform, sharing its mileage point information, which is an
+important financial aspect, can be quite a burden. And credibility of shared information can be another issue
+between the aligned service companies.
+
+By using blockchain and utilizing its reliability and credibility, those issues can be solved. Further, there will be
+an individual chain for each service company's mileage point so that any internal information would not leak to
+other companies, and a company can check their chain with a blockchain for audit.
+
+= Much Less Cost for Establishment
+
+As for a service company, establishing its own mileage program would take at least 3 to 6 months to invest,
+plan, and operate resources. As for a company that already has its own program and wants to swap it with
+other services, it can also take at least 3 to 6 months to discuss system infrastructure, developing language,
+and further security issues.
+
+To do so, the companies would have to spend much more expenses than participating in Mil.k Alliance's block-
+chain where an API is provided for linking to the platform.
+
+7/24
+3. Establishment of Mileage Points Integration
+System Through Blockchain
+
+3.1 Two-Type Token System
+
+To build a system to integrate the mileage points among service companies, we plan to create two types of tokens
+and a trading system for these tokens.
+
+One type of token is Brand Token, which is the tokenized version of mileage points originally issued by service
+companies. The other type is Mil.k Coin, which is the means to trade Brand Tokens on our platform.
+
+For example, if there are company A and B, the structure will involve A tokens and B tokens (Brand Tokens), and
+the transactions of them will only be through Mil. Coin, the means to trade on the platform.
+
+Milk Coin is a cryptocurrency that functions as the currency of our platform and is the medium that integrates
+individual Brand Tokens of service companies.
+
+= Brand Token (BT)
+
+As Brand Tokens are the service companies’ mileage points (rewards) directly converted into tokens, the way
+of handling them is same as handing mileage points. (Brand token is issued and managed off-chain and its
+transaction is recorded on-chain.)
+
+In other words, both the issuance and circulation amount are controlled by the service company, and when
+customers of the company use their Brand Tokens, the company shall guarantee the same redemption value
+for the tokens spent.
+
+When earning and using Brand Tokens, customers will not feel the difference from using conventional mileage
+points and will not even recognize that they are using the blockchain technology.
+
+And yet, for users with Brand Tokens to use other functions; to convert the tokens into other companies’
+Brand Tokens or into cash, they must acquire Mil.k Coins by selling their tokens first.
+
+= Mil.k Coin
+
+Mil.k Coin is a cryptocurrency that functions as the currency of our platform and is the medium that integrates
+Brand Tokens of the aligned service companies. On the platform, Brand Token is like a product, and Mil.k Coin
+is the currency to purchase it.
+
+There are several ways to acquire Mil.k Coin. First, it can be earned when a user sells his/her Brand Token (On
+
+the platform app) that he/she has earned by using its relevant service. Second, it can be purchased at the
+external crypto exchange. Lastly, it can be individually transferred between users.
+
+8/24
+Since Mil.k Coin is a cryptocurrency being traded at the external crypto exchange, the price fluctuates depend-
+ing on its supply and demand at the exchange.
+
+Service A
+
+Mileage point
+
+Brand Token <+—
+
+Mil.k Alliance Platform
+
+Brand Token (A) f¢=**** oe
+i i Crypt
+Brand Token (B) —[¢**"*" © yenee Mk) =z cee
+
+Service B
+
+Mileage point
+
+Service C
+
+Mileage point1
+
+Brand Token
+
+e
+
+= A Platform with Multiple Blockchains Connected
+Our platform is not intended to have all the tokens on a single blockchain.
+A certain service company would not want other participating companies to know how many Brand Tokens it
+has issued, nor will it want its own mileage token system to be impeded (or experience performance degrada-
+tions) from traffic issues regarding Mil.k Coin or other Brand Tokens.
+To prevent those unwanted situations, we will organize completely separate blockchains for Mil.k Coin and
+each Brand Tokens. This will resolve further issues such as information security, system stability, and perfor-
+
+mance issues.
+
+For these reasons, we have designed a multi-blockchain system in which chains are separately constructed
+for each Brand Token, and each of them will be linked to the center chain of Mil.k Coin.
+
+As shown below, the chain of Mil.k Coin will function as a square where each service company's users can
+gather and trade multiple Brand Tokens with Mil.k Coin.
+
+9/24
+Alliance via Blockchain
+
+Brand
+Token E
+
+a
+
+MiL.k Coin
+
+\ Brand
+
+\ Token D
+‘ Brand
+
+\ Token A !
+
+Brand
+Token B
+
+3.2 Token Exchange System
+
+The most innovative aspect of our system is its construction where Brand Tokens of fixed redemption value can be
+naturally exchanged to the fluctuating price of Mil.k Coin in accordance with market fundamentals.
+
+As mentioned above, our platform is the market for transacting Brand Tokens using Mil.k Coin as the method of
+payment. However, rather than individual, direct transactions between users, the platform itself will be a counter-
+party for the transactions based on prices set by its algorithm. And users will recognize this transaction as mere
+
+exchange between Brand Tokens and Mil.k Coins.
+
+In this process, the platform will always set Brand Token's price based on its supply and demand. And the price of
+ce of Brand Token because the value of Mil.k Coin on the
+platform is reflecting its current price at the external crypto exchange.
+
+Mil.k Coin itself will not have a direct effect on the pri
+
+Detailed explanation of this is given below.
+
+= Exchanges through the Platform
+
+It is possible to imagine Brand Token transactions dir:
+between Brand Tokens and Mil.k Coins)
+
+In that case, however, it would be quite hard to match wanted quantity and wanted price for each transaction,
+other words, there will be unnecessary time and efforts
+
+and the rate of ‘deal accomplished’ would be low. In
+
+ectly and individually done between users. (Transactions
+
+10/24
+required for users to make the deal.
+
+Considering the size of a normal Brand Token transaction, which is small, and so the benefit from it is also small,
+such requirement is not desirable.
+
+To establish desirable environment, we have come up with a better model in which the platform functions as a
+counterparty that Brand Tokens are traded to; not traded directly between users.
+
+That is, with its algorithm-set price for Brand Tokens, the platform will deal with all the demands for
+selling/buying Brand Tokens as a counterparty and as a square where all the users gather.
+
+We plan for the platform to charge a fixed transaction fee (initially set at 1.5%), which will be used as a source
+
+of funds to maintain the stability of the platform.
+
+MiL.k
+Platform =
+
+User with BT Transfer BT to MLK User with MLK
+
+™) MLK
+
+BT MLK
+pocket (ielea¢ie
+
+xd MLK
+
+User with BT Transfer MLK to BT User with MLK
+| |
+
+\ 7
+
+For the stable operation of the system above, the platform will hold sufficient amounts of Mil.k Coins and
+each company's Brand Tokens. When there is an equilibrium between a certain Brand Token's supply and
+demand, the amount of the Brand Token held on the platform can also be maintained without much differenc-
+es in quantity.
+
+= The Pricing of Brand Token
+
+The pricing of Brand Token will not be related to the price of Mil.k Coin at the external crypto exchange and
+will only reflect the supply and demand of the Brand Token itself on the platform.
+
+11/24
+As mentioned, our platform is fundamentally a Brand Token trading market, and Mil.k Coin just functions as the
+method of payment. For users who are trading our platform's product, Brand Tokens, it is quite important to see
+market predictability and stability. To assure that, the price of Brand Token will only be based on its supply and
+demand, not on Mil.k Coin’s price fluctuation.
+
+Accordingly, for Brand Token transactions, the price of Brand Token will be correlated to cash value, and the
+amount of Mil.k Coin to be acquired or paid will be decided reflecting the price of Mil.k Coin on the external crypto
+exchange.
+
+In addition, although Brand Token will have similar usability to cash, since it can be used only at the relevant
+service company, it is economically reasonable that its price will be lower than its redemption value. (cash value)
+
+The fact that the prices of Brand Tokens are always lower than their redemption value means that
+it is always more beneficial for users to purchase Brand Tokens with Mil.k Coin on the platform than directly
+purchasing the relevant service with cash since there are always discounts for Brand Tokens on the platform.
+
+Again, the price for Brand Token will be set considering market principles. (supply-demand) The price will go up
+when demand is high and go down when supply is high, so ultimately the equilibrium point will be reached in
+times.
+
+Yet, this pricing process will be done through an algorithm, not arbitrarily. (specific theory is confidential and will
+not be disclosed)
+
+And since there are separate Brand Token transaction markets for each service company, the transaction price in
+each market is decided individually.
+
+For example, if there are 10 service companies on the alliance, 10 Brand Token transaction markets would exist,
+and the transaction prices of theses 10 Brand Tokens will be individually decided based on their individual supply
+and demand.
+
+= The demand for Mil.k Coin
+
+When the volume of total Brand Tokens being traded on the platform increases, the demand for Mil.k Coin will
+proportionally increase. There are 5 scenarios how the volume and demand would constantly increase.
+
+1) Increase of Brand Token trades in the initial stage of the platform
+
+As the number of the trades increase caused by initial marketing events of service companies, the demand
+for Mil.k Coin will increase.
+
+2) Expansion of the platform with more aligned service companies in the growing stage
+
+Increase of the number of aligned service companies means that there are more Brand Tokens for customers
+to trade. Furthermore, with cross-offerings between the companies on the platform, the volume of Brand
+Tokens being traded will increase.
+
+12/24
+3) Increase of Brand Token trades caused by each company's growth
+
+Most of the service companies that are participating in our platform are on their growing stage, and it is likely
+that they will keep growing by making synergies on the platform collaborating and doing co-marketing. With
+all these factors, the volume of Brand Token trades on the platform will proportionally increase.
+
+4) Increase of customers’ Mil.k Coin reserve caused by the platform's expansion into broad lifestyle
+industries
+
+When the platform expands with more and more service companies on it, Mil.k Coin will be used by large
+customer group for its benefit of discounts. Customers will constantly reserve Mil.k Coin for future purchase,
+and this leads to increased time and amount of a person's coin reserve. Consequently, the price of Mil.k Coin
+will be stable, and its demand will increase as well.
+
+5) Establishment of virtuous cycle in Mil.k ecosystem
+
+By participating in Mil.k Alliance, service companies will get Mil.k allocation (as specified in 7. Mil.k Coin Alloca-
+tion) for their contribution to the platform. Major part of the allocation will be for each company's marketing
+promotions using Mil.k Coin. It will lead to increased loyalty of their customers on the platform, and accordingly
+the allocation amount will increase. This virtuous cycle is what the alliance is aiming for.
+
+# Policy Adjustments
+As mentioned, the price of Brand Token is set based on the market principle of supply and demand.
+
+However, to maintain stable transactions for each Brand Token and develop Mil.k Coin ecosystem by stimulat-
+ing healthy collaboration and growth within the alliance, we will set maximum and minimum limits for each
+Brand Token's transaction price.
+
+The maximum price (X% of the redemption value) exists according to the policy of guaranteeing a minimum
+discount rate {(100-X)%}, and the minimum price exists to preserve the brand value of the aligned service
+company.
+
+Detailed explanations on the maximal and minimal are as follows.
+
+- The maximum price of a Brand Token is 95% of its usage value. When the maximal is reached,
+purchasing the points will be restricted, and only selling requests will be accepted. When there are more
+selling amounts in the market, the price will go down again, and purchasing requests will be accepted
+accordingly.
+
+- The minimum price of a Brand Token is set by discussing with its service company because the price can
+be considered as the company's brand value (i.e. The minimal can be different between service companies).
+
+- When the minimum price of a Brand Token is reached, selling the points will be restricted, and only
+purchasing requests will be accepted. When there are more purchasing amounts in the market, the price
+
+will go up again, and selling requests will be accepted accordingly.
+
+Such pricing principle of Brand Token's maximum and minimum limit may vary depending on future circum-
+stances.
+
+13/24
+4, Benefits for Service Companies for Participating
+in the Alliance
+
+4.1 Implementation of Integrated Marketing
+
+One of the most important assets for online service companies is their subscribers. To gain and maintain their
+customer (subscriber) pool, service companies are making lots of marketing efforts, and mileage point program is
+one of them. However, since most companies are doing same promotions and events, the effect of the program is
+not worth its cost most of the time.
+
+Mil.k Alliance will be a solution for those service companies because it provides a platform where all the aligned
+service companies, in other words, their existing customers will gather together.
+
+Detailed benefits for the aligned service companies are as follows.
+
+= Customer Retention Growth
+
+By integrating mileage points of lifestyle service companies, customers would have better usability with their
+mileage points combined in Mil.k Coin. This means that customers would be more likely to stay in the alliance
+with better usability of their points. An aligned company can benefit from this without any expense.
+
+= Customer Acquisition Effects
+
+The platform can also benefit service companies with customer acquisition. This can be narrowed down as
+follows.
+- Newly comers to the platform with purchased Mil.k Coin (at the external crypto exchange).
+- Existing customers of a certain aligned service getting to use another one on the platform with
+Mil.k Coin.
+
+eg.
+
+Company A has 20s and 30s as its main customer. Company B, on the other hand, has 40s and 50s and eager
+to expand its customer pool. By being aligned on the platform, company B would have much better chance to
+entice company A's customers than making individual efforts. And the most important aspect of it is that it
+does not cost company B any expense.
+
+= Synergy by Collaborating on Marketing Promotions
+
+Our platform consists of service companies in the lifestyle (travel/leisure/fashion/culture/and such) sectors.
+And since one set of activity relates to multiple sectors, (e.g. one period of vacation takes sleeping in a hotel,
+doing outdoor activity, shopping at a mall, etc.) interrelationship and similarity of customer behavior is higher
+than any other industry.
+
+14/24
+This means that there are huge possibilities for the aligned service companies to collaborate on the platform
+as to making service packages, promoting co-events, and so forth. So, the platform will not only function as
+a square to integrate mileage points, but also as a market where the companies can collaborate and make
+synergies.
+
+4.2 Global Partnership
+
+The platform aims to cover top-tier service companies in lifestyle sectors internationally. By participating the
+alliance, a service company would have chance to entice global customers and collaborate with global companies
+on the platform.
+
+4.3 Financial benefits with distributed Mil.k Coin
+
+As specified in 7. Mil.k Coin Allocation, participating service companies will get Mil.k Coins. With increasing value of
+Mil.k Coin followed by the alliance’s growth, the companies will directly benefit from their distributed Coins.
+
+15/24
+5, The Composition of the Platform
+
+5.1 The Entities Comprising the Platform
+
+The entities comprising our platform can be divided into the platform operator, aligned service companies, and
+customers,
+
+= Platform Operator (Token Inter-Change Agency, TICA)
+
+TICA will be the proprietor of our platform and the agency that will directly operate the Brand Token transac-
+tion market. By holding large number of Mil.k Coins, it will be the exclusive liquidity provider for Brand Token
+transactions and will also collect the transaction fees. In addition, it will play the role of organizing and main-
+taining the alliance through service agreements with the service companies.
+
+Detailed explanations on how the TICA maintains liquidity are as follows.
+
+Basic structure of Brand Token trades
+
+- Each trade is done between the user and the platform (TICA), not between users.
+- When trading, the price of a Brand Token is set by the platform with its algorithm.
+- The price keeps varying with repetition of following situations.
+
+« Initial price announced
+
+« buy-sell orders from users
+
+« Establishment of trades (user - platform)
+
+« Re-pricing of the point and announcement of it
+
+The source of liquidity provision
+- TICA reserves 28% of the total tokens (Mil.k Coin) only for providing liquidity on the platform.
+
+When the price of a Brand Token is stable, since it means that the point's supply and demand are in balance,
+the amount of the platform's Mil.k Coin reserve would not change and maintain its stable phase (The price of
+a Brand Token doesn't have to do with Mil.k Coin's price variations at the crypto exchange).
+
+= Aligned Service Companies
+
+Aligned service companies are the companies in the lifestyle industries that join our platform for the purpose
+of generating synergies with other aligned companies.
+
+As the goal of the alliance is to generate synergy among the aligned companies, the platform allows for only
+one company to join and represent its belonging industry so that there is no competition within the platform,
+only collaborations. The joining of a certain company needs to be agreed by other aligned service companies
+and must be under the service agreement with TICA.
+
+In addition, service companies that have joined the alliance will be the issuers of each relevant
+Brand Token and are liable for the payment obligations regarding the issued Brand Tokens.
+
+16/24
+= Customers
+* Existing Customers of the Aligned Service Companies
+
+Customers of the service companies within the alliance. They can receive relevant Brand Tokens by converting
+their mileage points of the service companies and can sell them to acquire Mil.k Coins in turn.
+
+* New Mil.k Coin Purchasers
+
+Customers who have never used the platform's aligned services. But with possessions of Mil.k Coins through
+purchases on the external crypto exchange, they could become potential customers for the service companies
+on the platform.
+
+To use Mil.k Coin at a particular service company, they need to register for the platform, use its wallet app to
+
+buy the company’s Brand Token, and lastly register for the service company. In this process, they can earn
+certain range of discounts comparing to using cash.
+
+17/24
+5.2 The Overall Configuration of the Platform
+
+The parties mentioned above are connected in the following structure.
+
+<<» MLK Holders
+(ee) TN
+SS nye
+Customers . Brand ; foun
+i Token C » = = New Customers
+Service Chain A - va
+aa - we
+<<» > feo. )
+he] eae
+7
+Customers Brand Buy MLK
+a Token’ <- BI... MLK Coin ———
+B Chain B Market a ——
+fe ) _ Exchange
+Ww - os
+Customers Brand
+Service Token an
+c Chain C X oy
+
+5.3 Technical Explanation of the Platform
+
+Mil.k Blockchain utilizes Luniverse’s BaaS platform and has the structure of the main chain and the side chains.
+Constant transactions, usage, and transfers on the platform will be done on the Hyperledger-based side chains for
+better performance. And connecting to the external crypto exchange will be done through Luniverse’s main chain
+
+maximizing its confidentiality and stability.
+
+Hyperledger Fabric, on which our platform is built, is a permissioned blockchain framework originally contributed
+by IBM and currently hosted by Linux Foundation.
+
+The service chain for each Brand Token will be linked to the service company's legacy system, and the joining
+company to the alliance will be provided the APIs for connecting to the blockchain.
+
+The digital wallet that will be provided to users will be our platform's main DApp.
+
+18/24
+6. Our Platform’s Features
+
+6.1 The Brand Token Transaction System and its method of payment,
+Mil.k Coin
+
+The biggest feature of our platform is that it tokenizes the mileage points that users have acquired and are holding,
+and through this process, the platform expands the usability of the mileage points and further, provides users
+direct benefits such as discounts on the points.
+
+Mil.k Coin will be the only method of payment for transacting Brand Tokens on our platform and will serve as the
+means to integrate mileage points and convert them to cash.
+
+Since the price of Mil.k Coin at the external crypto exchange will have no influence whatsoever on the Brand Token
+transactions, users seeking to buy Brand Tokens with discounts, combine their mileage points, or cash them out (all
+
+through Mil.k Coin) will manage to do so without worrying about the price fluctuation on Mil.k Coin.
+
+Consequently, the Brand Token transaction system can be operated stable.
+
+6.2 Ensuring Stability, Reliability, and Security for Service Companies
+As the blockchains for each service company's Brand Token and the blockchain for Mil.k Coin are completely sepa-
+rate, each service company's customer information will not be leaked to other companies or outside the platform,
+nor will the total amount of a certain Brand Token issued by a service company be changed by users or other
+
+service companies.
+
+Service companies are not affected by the Brand Token transactions or Mil.k Coin's price fluctuation because they
+are not directly involved in the Mil.k Coin - Brand Token transaction.
+
+Through this structure, service companies can be assured of the platform's security, reliability, and stability.
+
+6.3 Providing Clear Benefits to Customers
+For customers, benefitting from their mileage points before expiration is quite important.
+
+Our platform benefits customers by enabling them to convert their mileage points from a certain service to others,
+integrate their spread points to one currency, Mil.k Coin, and even cash them.
+
+On the other hand, as for customers who have recently purchased Mil.k Coin at the external crypto exchange and
+come into the platform to buy Brand Tokens, they will benefit from discounts.
+
+For both types of customers, we provide economic values, and this is the greatest strength of our platform.
+
+19/24
+6.4 Mil.k Coin’s Intrinsic Value
+As mentioned, Brand Token is like a product on the platform and Mil.k Coin is the only method of payment.
+
+For customers, using Mil.k Coin to buy Brand Token is better than using cash because they can benefit from discounts
+on the platform, and this means possessing Mil. Coin leads to possessing potential right for discounts.
+
+When transactions for Brand Tokens get active on the platform, the demand for its method of payment, Mil. Coin
+will increase accordingly. And considering strong factor of discount it offers, the increase of the demand is more likely
+So.
+
+The activeness of transactions on the platform is subject to the number of its users and the volume of Brand Tokens
+traded. This means that when there is a new service company joining the platform or a certain aligned company's
+Brand Token trading volume increases thanks to the company's growth, the demand for Mil.k Coin will increase
+proportionally.
+
+20/24
+7. Mil.k Coin Allocation
+
+A total of 1,300,000,000 Mil.k Coins will be issued, and the plan for the distribution and allocation of the supply is
+as follows,
+
+(1) Liquidity Supply (Around 28%)
+
+Amount to provide liquidity for transactions on the platform, which is held by TICA. This can temporarily go up or
+down, but the volume will remain constantly and will not be distributed externally.
+
+(2) User Distribution (Around 11%)
+
+Amount to reward users for their participation on the platform. A user's participation can be his/her account
+connection (from each service to the platform), purchasing/selling brand tokens, and other activities that contrib-
+ute the platform's ecosystem and increase the demand for Mil.k Coin. The amount will be distributed mainly to the
+partners’ existing customers for more than 2 years from the service launching.
+
+(3) Partner Allocation (Around 37%)
+
+Amount to be distributed to the aligned service companies, developing companies, and advisors. Distribution
+amount for each partner will be different depending on the point of joining the alliance, and the distribution sched-
+ule will be determined based on their contribution to the platform.
+
+This amount is divided into A. Distribution with lock up schedule and B. Distribution for Contribution.
+
+A. Distribution with lock up schedule: About 52% of the partner allocation.
+« Lock up period is over 3 years (from the later date of: the company’s alliance-joining date or the date of
+initial listing)
+« The amount has been decided to be distributed to 20 service companies (amount for each company is to
+
+be decided individually)
+
+« In the beginning stage of the platform, a few companies are expected to be on it, and relatively small
+amounts will be distributed. As more companies join the platform over time, distribution amount will
+accordingly increase.
+
+B. Distribution for Contribution: About 48% of the partner allocation. It is the amount rewarded to partners for
+inducing their existing customers to switch from its mileage point system to our ecosystem
+
+= The whole period of distribution is planned to be 5 to 10 years
+« Amount distributed to a service company: X% of the amount that its customers transact on the platform
+
+« The rate gets reduced year after year to extend the period of distribution
+
+(4) Amount to Fund Long-Term Operation (Around 14%)
+
+This amount will be held by TICA to fund long-term operation of the platform such as technical upgrades, and
+
+21/24
+only necessary amount will be used when such circumstances arise.
+
+(5) Amount to Fund Initial Construction (Around 10%)
+
+Amount to be funded in the beginning stage of the business and allocated to fund initial development and other
+such activities. Lock up period has been set to prevent the value of Mil.k Coin to be damaged with radical
+increase of supply. The period is about 2 years.
+
+Use of Proceeds:
+- Development and operation
+- Launching and marketing
+
+- Consulting on the law and accounting
+
+22/24
+8. Roadmap
+
+Phase 1: Maximize utility Phase 2: Maximize value
+
+: L we
+
+Mil.k Coin listing Mil.k service launching
+(4Q, 2019) (4Q, 2019)
+
+To establish healthy ecosystem for Mil.k Coin and the alliance, we will prioritize maximizing Mil.k Coin's utility by
+getting a number of service companies, customers, and general investors involved. That is phase 1 for the alliance.
+
+With the plan successfully accomplished, phase 2 will begin where maximizing the value of Mil.k Coin will be prior-
+itized.
+
+Detailed explanations on the phases are as follows.
+
+Phase 1.
+
+The platform will increase Mil.k Cain's usability by getting service companies to join the alliance and so, bring in
+their existing customers as well. This will increase the demands for Mil.k Coin and entice general investors with its
+concrete utility model.
+
+Phase 2.
+
+After having proven the platform's successful functionality in phase 1, the platform will start applying a staking
+model where newly joining service companies will have to stake and take certain amounts of Mil.k Coin. In turn,
+they will benefit from the platform's marketing effect such as enticing new customers by promotions and events
+on the platform. As for customers, there will be service packages and additional discounts provided on the
+platform. These factors will lead to rewarding general investors for their stakes and further, increased demand for
+their investing on Mil.k Coin. This is the objective of the alliance.
+
+23/24
+9. Disclaimers
+
+This white paper explains the business plan and vision and does not promise or guarantee that the contents of
+this white paper are accurate or that the business details will be implemented or conducted at a certain point in
+the future. Therefore, in the process of business promotion, based on reasonable management judgment, the
+contents regarding the business described in the white paper may be changed, supplemented, or deleted without
+notice to third parties, and it should be sufficiently recognized that the actual business promotion may differ
+based on business conditions and progress status.
+
+In addition, restrictions may arise in the future regarding the issuance and use of cryptocurrencies based on the
+legislative direction of each country's government in relation to this project, so some of the disclosures in this
+white paper may need to be changed.
+
+The coins and tokens described in this white paper do not guarantee or signify that any equity interest, shares,
+debts, securities, beneficiary interests, bonds, management participation rights, or any other such rights based on
+these rights with respect to the platform's business will be granted or claimable. Therefore, no benefit distribu-
+tions or voting rights of any kind whatsoever are granted to the coin/token owners, including rights to claim or
+participate in the determination of dividends, distributions, or dispositions of profits that arise or will arise from
+the platform's business. Furthermore, this white paper does not guarantee or signify that the platform will provide
+a certain quality or amount of goods, services, etc.
+
+The sole purpose of this white paper is to provide potential contributors to the construction of the platform, etc.
+information regarding the platform, and thus the white paper is not binding in any form and does not impose any
+legal obligations on any entity.
+
+This white paper is also intended to broadly explain the future direction of development, and therefore does not
+include any form of agreement. Thus, any materials, codes, functions, etc. do
+
+not stipulate our obligations, and such disclosures may change based on a variety of variables.
+
+The unauthorized copying or distribution of this white paper is prohibited.
+
+24/24

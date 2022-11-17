@@ -1,0 +1,299 @@
+Bitcoin Standard Hashrate Token
+
+Alex Zhao
+alex@1-b.tc
+November 11, 2020
+
+Abstract. A significant impediment to participation in Bitcoin mining
+is the limited number of exit options. Bitcoin Standard Hashrate Token
+(“BTCST”) solves this problem by bringing exchange-grade liquidity to
+Bitcoin mining. Each BTCST is collateralized by 0.1 terahash per second
+(“TH/s”) of Bitcoin mining power. By staking BTCSTs, holders of the
+tokens will receive daily Bitcoin distributions that correspond to the
+mining power staked. And because the market price of BTCST is
+determinable as the discounted cashflow of the underlying mining
+power, BTCST in secondary trading will perform as a leveraged Bitcoin
+token free from liquidation risk. BTCST will create an efficient market
+for Bitcoin’s mining power in ways similar to how Grayscale Bitcoin
+Trust creates institutional liquidity for Bitcoin.
+
+1 = ‘Introduction
+
+Bitcoin mining is a profitable venture with limited liquidity. Most miners must
+choose between holding onto equipment for years or relying on brokers for
+infrequent sales. This lack of liquidity means Bitcoin miners have few ways to hedge
+against or profit from the price fluctuation of mining machines. The same also
+discourages newcomers from seriously participating in Bitcoin mining. Finally,
+while traders often have the interest to gain Bitcoin mining exposure for it can be
+viewed as Bitcoin long options, high transaction costs dissuade them.
+
+A market needs to be made.
+
+Cloud mining is an imperfect solution. While cloud mining lowers the barrier of
+entry to mining, lack of standardization and strong product coupling make markets
+hard to form around mining contracts.
+
+We propose to solve this problem through Bitcoin Standard Hashrate Token
+(“BTCST”), a token collateralized by standardized Bitcoin mining power. By
+standardizing and tokenizing mining power into BTCST and listing the token for
+exchange trading, we can bring exchange-grade liquidity to the mining power
+market while meeting traders’ need for mining exposure.
+
+2 Exchange trading of Bitcoin mining power
+
+Each BTCST is a token collateralized by a standardized unit of actual Bitcoin mining
+power. Holding the token is legally and functionally equivalent to owning the
+underlying mining power; staking the token on-chain will entitle the staking holder
+to receive mining rewards in Bitcoin; and listing of BTCST on major exchanges will
+bring meaningful liquidity to tokenized Bitcoin mining power.
+
+BTCST creates an efficient market among Bitcoin miners and those interested in
+becoming one. By trading BTCST, market participants can freely enter and exit
+Bitcoin mining exposure in any size, at any time, and with low costs. Even miners
+without mining power tokenized by BTCST can make use of the token to capture the
+profits in or hedge against the risks of mining machine price fluctuation.
+
+BTCST also connects miners with traders in general. Because the market price of
+BTCST will perform as a leveraged Bitcoin token, BTCST will meet a variety of
+trading needs of proprietary and algorithmic traders in ways that are previously
+unattainable.
+
+3 Issuance — freely participable Bitcoin mining power standardization
+and tokenization
+
+BTCST will, and can only be issued, when actual Bitcoin mining power has been
+contributed to or acquired by the project. Under the contribution program, a miner
+decides to contribute eligible mining power to the project in exchange for newly
+issued BTCSTs. Because BTCST issuance is freely participable, any miner may
+contribute mining power to apply for standardization and tokenization as long as
+the miner can demonstrate that (i) the contributed mining power is owned free and
+clear, (ii) equipment generating the mining power is hosted in sites that have passed
+the program team’s risk assessment, and (iii) no fewer than 5 PH/s of mining power
+are contributed.
+
+Under the acquisition program, the project acquires eligible Bitcoin mining power
+in the open market with raised capital or retained earnings. BTCSTs issued under
+the acquisition program will be owned by the project itself. Under either the
+contribution or the acquisition program, the number of units of TH/s that the
+contributed or acquired Bitcoin mining power can be standardized into will be at
+least equal to the number of newly issued BTCSTs.
+
+Off-Target Off-Target
+
+Mining Mining eee
+Power Power
+
+<< Blending
+
+Efficiency |
+Staging Pool _Off-Target |
+
+Efficiency
+On-Target
+
+Tokenization
+
+The standardization target of BTCST is 60 W/TH upon launch. Specifically, when
+eligible units of mining power are either contributed or acquired, they will be placed
+in a staging pool awaiting standardization. If the effective efficiency of all staged
+mining power is not 60 W/TH, the project will seek additional mining power with
+suitable efficiency to be either contributed or acquired so that the effective
+efficiency of the resultant blend of all staged mining power will reach target.
+
+Tokenization Pool
+
+For example, if the staging pool has a total of 10 PH/s mining power with an off-
+target effective efficiency of 75 W/TH, the project may choose to procure another
+10 PH/s mining power with an effective efficiency of 45 W/TH to bring the overall
+effective efficiency of the staging pool to target.
+
+When blending succeeds for a staging pool, the project will, with the consent of
+owners of staged mining power, move all staged units of mining power to the
+project’s tokenization pool and issue one BTCST for each 0.1 standardized unit of
+TH/s added to the tokenization pool. When blending fails, there will be no
+ownership transfer of the staged mining power and no token issuance.
+
+By operation of token design, the total circulation of BTCST must at least generate
+the amount of mining power that all circulating tokens collectively represent. For
+example, if the blockchain shows 10,000 BTCSTs in circulation, the project must
+generate at least 1000 TH/s in Bitcoin mining power. As discussed below, a mining
+pool will partner with the project as an independent auditor and periodically
+publish reports to demonstrate mining reward sufficiency and to prove that BTCST
+is fully or over collateralized by mining power.
+
+4  Stake-to-Mine
+
+BTCST claims mining rewards from the Bitcoin network centrally and distributes
+rewards to holders de-centrally. The project will partner with a reputable mining
+pool to claim mining rewards from the Bitcoin network. Namely, the project will
+direct all mining power collateralizing the token to the partnering mining pool in
+exchange for daily mining rewards as calculated and allocated by the pool.
+Centralization of this step is necessary to ensure feasibility and accountability: the
+mining pool will act as both a service provider and as an auditor that monitors
+mining power sufficiency. As it is customary, the project expects up to 10% of annual
+mining power downtime.
+
+Once daily mining rewards arrive, a portion will be sold on the open market to cover
+the project’s daily energy and operational costs. The formula for determining the
+project’s daily costs, with the industry-standard power usage efficiency loss set at
+3%, is
+
+Total Daily Costs (USD) = 0.06 kW / TH times
+Mining Power (TH) times
+24 (h) times
+Energy Cost (USD/kWh) _ times
+1.03
+
+Energy cost is currently at USD 0.058 / kWh. The execution price and amount of the
+daily sale will be audited and published by the project, as verifiable by the mining
+pool. Remaining mining rewards attributable to mining power representatively
+staked in the project’s DeFi yield farming dApp will be sent by the project and the
+mining pool jointly to the dApp and pooled there.
+Project’s Mining
+
+Power
+
+Mining Pool
+
+Centralized
+
+Decentralized
+
+Audit &
+Distribute
+
+>
+
+Mining
+
+Rewards Daily Costs
+
+v
+Project dApp
+
+Staking
+Holder
+
+Distribute staking
+rewards
+
+Holders stake BTCSTs in the dApp to yield farm Bitcoin. Namely, every BTCST staked
+continuously for a day (Singapore time) will increase the amount of Bitcoin that a
+staking holder is entitled to withdraw from the dApp by an amount equal to Bitcoin
+minable by 0.1 terahash of mining power on that specific day.
+
+Namely, a holder of BTCSTs stakes 10 BTCST in the project dApp for a full day on
+day 1 (Singapore time). On day 2, the staking holder will be entitled to withdraw
+Bitcoin, as wrapped by the applicable blockchain, in an amount minable by one
+terahash of mining power on day 1. As with direct mining, the precise amount of
+Bitcoin minable by one terahash of mining power will vary daily as a result of
+changing network hashrate, difficulty, and Bitcoin price relative to energy costs.
+
+The amount of Bitcoin the staking holder is entitled to withdraw will increase and
+accumulate in the dApp for each continuous day (Singapore time) of staking.
+Calculation and allocation of Bitcoin rewards are performed transparently by the
+dApp. The staking holder may withdraw mined Bitcoin at any time. The dApp
+supports both partial and complete withdrawals of Bitcoin rewards.
+
+The example below explains mining rewards distribution in further details:
+
+Day 1 Day 2 Day 3 Day 4 Day 5
+0.5 BTC 0.6 BTC 0.8 BTC 0.9 BTC 0.6 BTC
+
+User A Staked BTCST +100
+
+User B Staked BTCST +200 -100, +100
+
+User A Daily Share 0% 33% 50% 33% 33%
+User B Daily Share 0% 67% 50% 67% 67%
+User A Mined BTC 0.00 0.00 0.20 0.60 0.90
+User B Mined BTC 0.00 0.00 0.40 0.80 1.10
+5 Liquidity premium protection
+
+We expect the price of BTCST to command a liquidity premium as compared to
+mining power without tokenization. To protect this premium against undue sell
+pressure, material issuances of BTCSTs must be approved by the project’s
+governance board.
+
+The project may freely issue on any given day BTCSTs representing up to 5 PH/s of
+mining power. For a daily issuance of BTCSTs representing more than 5 PH/s, the
+issuance must be unanimously approved by the project’s governance board, which
+includes a seat occupied by the partnering mining pool.
+
+In addition, and similar to how Grayscale Bitcoin Trust operates, newly issued
+BTCSTs are subject to a 25-week lock period. BTCSTs issued to the project itself are
+subject to the same lock period. The release schedule for locked tokens is linear and
+weekly. For example, if 1000 locked BTCSTs are issued and locked on January 1,
+forty BTCSTs will be released from lock on January 8 and every week thereafter until
+the 175th day after January 1.
+Locked BTCSTs can be staked in the dApp and generate mining rewards for their
+owners. During staking, linear release continues to run as usual and the unique
+release schedule of each locked BTCST follows the token as it is staked into or un-
+staked from the dApp. The last-in-first-out method determines which BTCSTs are
+returned to a staking holder upon un-staking for the purpose of determining
+remaining release schedules.
+
+6 Asaleveraged Bitcoin token; Market-Making
+
+Each BTCST is collateralized by real mining power. Therefore, its fair market value
+can be determined by the discounted cashflow model. The price of BTCST in
+secondary trading should track that of Bitcoin and the token should be able to
+function as a leveraged Bitcoin token in an efficient market. Further, because BTCST
+does not depend upon financial derivatives, it is by design free from liquidation risk.
+
+The project team will serve as BTCST’s main market-maker. Unlike tokens the
+intrinsic values of which are hard to ascertain, BTCST has not only an intuitive
+valuation model as but also an over-the-counter market for the underlying assets.
+The project team therefore has clear methodologies and incentives to bring the
+market price of BTCST towards equilibrium.
+
+7 Risk Disclosure and Risk Management
+
+While Bitcoin mining has traditionally been profitable when viewed as a whole, the
+profitability of individual miners, including this project, is far less certain. Risks
+inherent in Bitcoin mining are equally applicable to this project because mining
+power is the base collateral. Tokenization introduces additional risks.
+
+Specifically, mining rewards on BTCST may temporarily or permanently stop if,
+among other risks, (i) properties generating our mining power experience damages
+or losses (including those resulting from floods, landslides, earthquakes, heavy
+rainfalls, and tornados), (ii) we are unable to enforce our contractual rights
+(particularly those in place to control our energy costs), (iii) Bitcoin network-wide
+hashrate increases to a level where our standard unit of mining power becomes
+profitless, and (iv) mistakes in the project’s dApp cause errors or enable attacks,
+leading to the loss or inaccessibility of mining rewards.
+
+To manage these risks, the program team will, among other things, (i) select
+historically stable sites (across China, Canada and Kazakhstan) and diversify
+equipment models, (ii) engage local counsels to perform legal and operational due
+diligence to ensure high likelihood of enforceability before entering into contracts,
+which must clearly specify ownership transfer schemes, mining power delivery
+obligations and remedies during defaults, and (iii) engage at least two security firms
+to audit the project’s dApp code.
+
+8 Team, Partners and Governance
+
+The program team consists of mining veterans with four years of experience
+constructing and managing mining sites in Yunnan, Sichuan, Xinjiang and Inner
+Mongolia provinces of China. Assets under the team’s management include those of
+some of the largest cloud mining providers in the world. More information about the
+program team may be found at https://1-b.tc.
+
+Founding partners of BTCST include institutional miners with more than 2000 PH/s
+of mining power under management. These founding partners and the partnering
+mining pool will form a governance board that collectively decides on material
+issues of the project, which include new issuances, cost level adjustments, surplus
+profit distribution and future features. The governance board will have three seats
+upon launch, two of which to be occupied by the project team and one by the
+partnering mining pool.
+
+9 Roadmap
+
+Nov. 2020 Preparatory work for project launch
+
+Dec. 2020 Proof-of-Concept Issuance: Up to 100p
+
+Feb. 2021 Batch 1 Issuance: Up to 1000p
+
+Mar. 2021 Self-owned mining sites acquisition and construction
+Jun. 2021 Batch 2 Issuance: Up to 1000p

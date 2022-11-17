@@ -1,0 +1,2117 @@
+a
+THE
+
+SANDBOH:
+4
+
+Play. Create. Own. Govern. Earn.
+
+Welcome to the Metaverse
+
+The Sandbox team is building a unique virtual world where players can build, own, and monetize
+their gaming experiences using SAND, the main utility token of the platform.
+
+SAND holders will be also able to participate in governance of the platform via a Decentralized
+Autonomous Organization (DAO), where they can exercise voting rights on key decisions of The
+Sandbox ecosystem. As a player, you can create digital assets (Non-Fungible Tokens, aka NFTs),
+upload them to the marketplace, and drag-and-drop them to create game experiences with The
+Sandbox Game Maker. The Sandbox has secured over 50 partnerships including Atari, Crypto Kitties,
+and Shaun the Sheep to build a fun, creative “play-to-earn” Gaming platform, owned and made by
+players. The Sandbox aims to bring blockchain into mainstream gaming, attracting both crypto and
+non-crypto game enthusiasts by offering the advantages of true-ownership, digital scarcity,
+monetization capabilities, and interoperability
+
+THE
+WHITEPAPER SANDBOR:-
+Rd
+
+DISCLAIMER
+
+The information in this White Paper is subject to change or update and should not be construed as
+a commitment, promise or guarantee by The Sandbox or any other individual or organisation
+mentioned in this white paper relating to the future availability of services related to the use of
+the tokens or to their future performance or value.
+
+The document does not constitute an offer or solicitation to sell shares or securities. It does not
+constitute or form part of and should not be construed as any offer for sale or subscription of or any
+invitation to buy or subscribe for any securities not should it or any part of it form the basis of or be
+relied upon in any connection with any contract or commitment whatsoever. The Sandbox expressly
+disclaims any and all responsibility for any direct or consequential loss or damage of any kind
+whatsoever arising directly or indirectly from reliance on any information contained in the white
+paper, any error, omission or inaccuracy in any such information or any action resulting therefrom.
+
+This is not a recommendation to buy or financial advice, It is strictly informational. Do not trade or
+invest in any tokens, companies or entities based solely upon this information. Any investment
+involves substantial risks, including, but not limited to, pricing volatility, inadequate liquidity, and the
+potential complete loss of principal. Investors should conduct independent due diligence, with
+assistance from professional financial, legal and tax experts, on topics discussed in this document
+and develop a stand-alone judgment of the relevant markets prior to making any investment
+decision.
+
+We have prepared all information herein from sources we believe to be accurate and reliable.
+However, such information is presented “as is,” without warranty of any kind — whether expressed
+or implied. All market prices, data and other information are not warranted as to completeness or
+accuracy, are based upon selected public market data, reflect prevailing conditions, and our view as
+of this date, all of which are accordingly subject to change without notice. The graphs, charts and
+other visual aids are provided for informational purposes only. None of these graphs, charts or visual
+aids can and of themselves be used to make investment decisions. No representation is made that
+these will assist any person in making investment decisions and no graph, chart or other visual aid
+can capture all factors and variables required in making such decisions.
+
+The information contained in this document may include, or incorporate by reference,
+forward-looking statements, which would include any statements that are not statements of
+historical fact. No representations or warranties are made as to the accuracy of such forward-looking
+statements. Any projections, forecasts and estimates contained in this document are necessarily
+speculative in nature and are based upon certain assumptions. These forward-looking statements
+may turn out to be wrong and can be affected by inaccurate assumptions or by known or unknown
+risks, uncertainties and other factors, most of which are beyond control. It can be expected that
+some or all of such forward-looking assumptions will not materialize or will vary significantly from
+actual results.
+
+www.sandbox.game
+THE
+WHITEPAPER SANDBOR:-
+¢
+
+Abbreviations
+
+AML/CFT Anti-Money Laundering and Combating the Funding of Terrorism
+
+API Application Programming Interface
+
+DLT Distributed Ledger Technology
+
+IP Intellectual Property
+
+IPO Initial Public Offering
+
+MAU Monthly Active Users
+
+ML/FT Money Laundering and Funding of Terrorism
+
+NFT Non-Fungible Token
+
+P2P Peer-to-peer
+
+TSB The Sandbox
+
+UGC User Generated Content
+
+www.sandbox.game
+
+WHITEPAPER
+
+Table of Contents
+
+DISCLAIMER
+Abbreviations
+Table of Contents
+Executive Summary
+A User-Generated Content Ecosystem
+Blockchain Gaming with NFTs
+What is SAND and what is it used for?
+What do we plan next?
+Associated challenges and risks
+Historical Background
+The Sandbox Platform
+Mission
+Game Overview
+LAND and the LANDS Map
+Avatar
+SAND
+SAND Stakeholders
+SAND Revenue Streams
+Benefits
+Market Overview
+Gaming Creator Market
+Creator Market
+Player Market
+Market Solution
+Roadmap
+Previous Milestones
+Future Milestones
+Major Features in the Press
+
+Platform
+
+www.sandbox.game
+
+THE
+SANDBOH:
+Rd
+
+on
+WHITEPAPER SANDBOR:
+gf
+
+Gameplay Experience 26
+Map - LANDS 27
+ASSETS Marketplace 28
+VoxEdit 29
+Economy 30
+Tokenomics 30
+Project Financing and Initial Revenue 33
+Initial Exchange Offering 34
+Other Dynamics 34
+Technology 35
+Future Technology Integrations 35
+Multiple Class Fungible Token (MCFT) 36
+Interoperability 36
+
+Meta Transactions 37
+Technology Solution Breakdown 37
+Program Agents 39
+Game Engine 39
+Wallets 40
+Security 40
+The Team 41
+Core Team 41
+Advisors 42
+Services Providers 42
+CONCLUSION 43
+
+www.sandbox.game
+The Whitepaper
+
+1. Executive Summary
+
+SANDBOX:
+
+~~
+
+The Sandbox is a virtual world where players can build, own, and monetize their gaming experiences
+in the Ethereum blockchain using SAND, the platform’s utility token.
+
+Our vision is to offer a deeply immersive metaverse in which players will create virtual worlds and
+games collaboratively and without central authority. We are aiming to disrupt the existing game
+makers like Minecraft and Roblox by providing creators true ownership of their creations as
+non-fungible tokens (NFTs) and rewarding their participation with our utility token — SAND.
+
+In the current game market, the centralized ownership and control of user-generated content limits
+creator rights and ownership. Central control over the trading of virtual goods created by players
+restricts them from generating fair value for their creations. Compounding this, it can be difficult to
+prove creative ownership of works, especially as content is copied, altered, and built upon.
+
+With The Sandbox, we aim to overcome these limitations while accelerating blockchain adoption to
+grow the blockchain gaming market. We will do this by building a voxel gaming platform where
+creators are able to craft, play, share, collect, and trade without central control, enjoying secure
+copyright ownership with the ability to earn cryptocurrency (SAND). This copyright ownership will be
+established and guaranteed through the use of NFTs, where every in-game item will have a unique
+and immutable blockchain identifier.
+WHITEPAPER SANDBOR:
+gf
+
+1.1. A User-Generated Content Ecosystem
+
+The Sandbox gaming ecosystem consists of three integrated products that together provide a
+comprehensive experience for user-generated content (UGC) content production.
+
+VOXEL EDITOR MARKETPLACE GAME MAKER
+www.voxedit.io www.sandbox.game/shop www.sandbox.game/play
+A. VOXEDIT: This simple to use yet powerful free 3D voxel modelling package allows users to
+
+create and animate 3D objects such as people, animals, foliage, and tools, and export them
+into The Sandbox marketplace to become game ASSETS.
+
+B. MARKETPLACE: The Sandbox’s web-based marketplace allows users to upload, publish, and
+sell their creations (ASSETS) made in VoxEdit, as Tokens (Both ERC-721 and ERC-1155
+tokens).
+
+C. GAME MAKER: Anyone who owns ASSETS, either by making them in VoxEdit or purchasing
+
+them, can utilize them with the third and most important ecosystem product, the Game
+Maker and the Game itself. This product, when launched in Game Maker mode, enables
+users to place and use their ASSETS within a piece of LAND (an ERC-721 token) that they can
+own in the virtual world. Users can decorate their LAND with ASSETS, and more importantly,
+implement interesting and nuanced gameplay mechanics by assigning predefined behaviors
+to the ASSETS through visual scripting nodes, turning a LAND from a decoration experience
+into a potential full game experience.
+
+www.sandbox.game Page 7
+WHITEPAPER SANDBOH:
+Rd
+1.2. Blockchain Gaming with NFTs
+
+The Sandbox virtual world uses blockchain technology and NFTs to empower the players and
+creators. NFTs are an emerging segment in the global game market: virtual tokens for digital scarcity,
+security and authenticity. Each NFT is distinct or unique, it is indivisible and it is not interchangeable
+for another.
+
+Fungible Non-fungible
+
+E.g., John Lennon Limited
+
+Eg One UsiPollar Edition Postage Stamps
+
+Interchangeable Not interchangeable
+Uniform (all are the same) Distinct or unique
+Divisible Indivisible
+
+Comparison of Fungible versus Non-fungible Tokens
+
+Through the use of NFTs, The Sandbox users will be able to benefit from:
+
+A. TRUE DIGITAL OWNERSHIP: Gamers are the true and perpetual owners of their digital items,
+even if the game was shut down or abandoned. With blockchain, every game item can be
+tokenized, allowing gamers to decide how they want to trade, sell, or gift their items.
+
+D. SECURITY AND IMMUTABILITY: Digital game items can be easily tokenized and traded in
+primary and secondary markets that are managed and facilitated by blockchain technology.
+Items based on scarcity and demand usually invite fraud and theft, but these risks are
+minimised on blockchain because it is a distributed ledger.
+
+E. TRADING: Blockchain-based gaming platforms can provide users with ultimate control over
+their digital assets. They can buy and sell items freely without concern that they will be
+ripped off or that a platform will close and cancel all the value of their in-game items.
+
+F. CROSS-APPLICATION INTEROPERABILITY: Blockchain provides capacity for games to utilize
+shared assets. ASSETS, avatars, LANDS and any other game elements can be used in other
+games that allow it. These game items are no longer confined by a narrow digital ecosystem.
+
+The Sandbox metaverse uses several tokens to create a circular economy between all the profiles of
+users who will interact with its platform namely the players, creators, curators and LAND owners.
+These are the LANDS, ASSETS and SAND, a token based on the ERC20 protocol which will act as the
+official currency in the ecosystem when purchasing goods and services within the game marketplace
+(amongst other rights).
+
+www.sandbox.game
+THE
+WHITEPAPER SANDBOR:-
+Rd
+
+1.3. What is SAND and what is it used for?
+
+SAND is an essential part of The Sandbox platform and The Sandbox are working on establishing key
+mechanics that makes it intrinsically tied to The Sandbox platform and its value. SAND is an ERC-20
+utility token built on the Ethereum blockchain that serves as the basis for transactions within The
+Sandbox, and has the following uses:
+
+e Access The Sandbox platform: Players spend SAND in order to play games, buy equipment,
+or customize their Avatar character—and can potentially collect SAND through gameplay.
+Creators spend SAND to acquire ASSETS, LANDS, and through Staking. LAND Sales drive
+demand for SAND to purchase LANDS. Artists spend SAND to upload ASSETS to the
+Marketplace and buy Gems for defining Rarity and Scarcity.
+
+e@ Governance: SAND is a governance token that allows holders to participate in Governance
+decisions of the platform, using a DAO structure. They can exercise voting rights on key
+elements such as Foundation grant attributions to content and game creators and feature
+prioritisation on the platform Roadmap. SAND owners can vote themselves or delegate
+voting rights to other players of their choice.
+
+e Staking: SAND allows for staking, which allows for passive revenues on LANDS: you get more
+SAND by staking it. This is also the only way to get valuable Gems and Catalysts, needed for
+ASSET creation.
+
+e Fee Capture model = 5% of all transaction volume carried out in SAND tokens (Transaction
+Fees) shall be allocated with 50% to the Staking Pool as rewards for token holders that Stake
+SAND tokens and 50% to the "Foundation."
+
+e@ Foundation: The role of the Foundation is to support the ecosystem of The Sandbox,
+offering grants to incentivize high quality content & game production on the platform. To
+date, the Foundation has funded over 15 game projects and granted 100 artists to produce
+NFTs ahead of the public Launch in December 2020. The overall valuation of the metaverse
+grows through the valuation of all games funded by the Foundation, creating a virtuous
+circle to enable funding bigger games.
+
+1.4. What do we plan next?
+
+We have a strong product roadmap ahead and a top team to execute a strong vision to build a
+unique virtual world gaming platform where players can build, own, and monetize their gaming
+experiences and spread the power of blockchain as the lead technology in the gaming industry. All
+these together with what we have achieved so far resulted in TSB being awarded a recognition as
+the most expected blockchain game in 2020.
+
+www.sandbox.game
+THE
+WHITEPAPER SANDBOR:-
+Rd
+
+https://www. blockchaingamer.biz/news/12585/blockchain-game-sentiment-positive-the-sandbox-m
+ost-anticipated/
+
+In the short term, we are launching the fourth LAND presale and Game Maker. This will be
+complemented with the SAND public launch. As such, we expect to have SAND available for
+individuals and corporations in order to increase liquidity and availability of it with the main purpose
+to collaborate with the community growth and ecosystem flow.
+
+In relation to the proposed SAND offering, the community of creators and players will need to get
+access to SAND. We plan to make it accessible to the community through multiple ways with
+controllable supply mechanisms, such as purchasing SAND from multiple exchanges.
+
+As the community increases in terms of the number of creators, players and ASSETS exchanged in
+the marketplace, there might be an increased need for SAND within the ecosystem. Therefore, while
+the total supply of SAND is fixed, the initial amount of SAND offered will provide a scarcity effect
+reducing the SAND available per capita and therefore fostering demand.
+
+1.5. Associated challenges and risks
+
+It is the responsibility of any purchaser of SAND to inform themselves of, and to observe and comply
+with, all applicable laws and regulations of any relevant jurisdiction. Prospective purchasers for any
+SAND shall be expected to consider the risk factors identified in this section. If any of the indicated
+risks were to materialize, then they could have a negative impact on the Issuer’s finances and
+operational performance which can hinder the ability of the Issuer to fulfil its obligations under this
+whitepaper.
+
+The challenges and risks are identified by the board of administration of the Issuer as at the date of
+registration of this whitepaper. This does not exclude the possibility of there being other risk threats
+and the purchaser must be aware that the impact on the Issuer may be heightened due to a
+combination of several risks materializing simultaneously.
+
+One of the main challenges in the project is the rate of adoption of the community of artists and
+creators to start exchanging assets, which will be a key point behind the demand generation of
+SAND. As such, we are focused in developing a strong, multi-platform product that can spread
+massively by offering a tool to create voxel art that is focused on solving problems and community
+needs. We are therefore developing strong communities in different areas of the world with a strong
+focus in Asia, where we believe the rate of adoption and learning curve will be steeper. The project
+success rate will be dependent upon the priority and preference of consumers and its ability to
+swiftly anticipate, identify and capitalise upon these priorities and preferences.
+
+The Issuer operates in an emerging and disruptive industry that is under rapid and dynamic
+development. This includes, but is not limited to, the developments relating to the business itself,
+the underlying technology, and the regulatory and legal implications thereof. Specifically, in relation
+to public knowledge and understanding of emerging technologies, such distributed ledger
+technologies, smart contracts and other innovative technology arrangements, are still limited as at
+the date of registration of this whitepaper. The risks arising out of such may not be fully
+comprehended as of yet and new additional risks may arise in the future.
+
+As the Issuer’s undertaking is reliant on the continuous and proper functioning of its technology
+infrastructure, the Issuer is subject to a variety of risks relating to the proper maintenance thereof.
+
+www.sandbox.game
+WHITEPAPER SANDBOR:
+gf
+
+These risks include, but are not limited to, cyber-attacks, data theft or other unauthorised use of
+data, and other malicious interferences. Certain parts of the infrastructure may be outsourced to
+third parties. In such cases, the Issuer is reliant upon technology arrangements developed by such
+third parties for the running of its undertaking, and it is exposed to the risk of failures in such
+technology arrangements.
+
+The Issuer is subject to various laws, including regulations and rules issued thereunder, and is at risk
+in relation to changes in the laws and the timing and effects of changes in the respective legislation.
+This includes changes in the interpretation thereof which cannot be predicted by the Issuer.
+
+The growth of the Issuer and its undertaking is partially attributable to the efforts and abilities of the
+members of its management team and other key personnel, particularly its board of administration.
+If one or more of the members of this team were unable or unwilling to continue in their present
+position, the Issuer might not be able to replace them within a short time, which could in turn have a
+material adverse effect on the Issuer’s business.
+
+2. Historical Background
+
+The Sandbox is the latest version of The Sandbox franchise, which has helped create the sandbox
+world creation games genre on iOS and Android smartphones since its launch in 2012:
+e 40,000,000 players have downloaded The Sandbox franchise;
+
+e The latest iteration, The Sandbox Evolution, has over 1,200,000 MAUs, with up
+to 2,600,000 at peak;
+
+e 70,000,000 worlds have been created; and
+
+e@ Over 100,000 worlds are created every day.
+
+:
+THE
+SANDBOH:
+«
+2012-2018 2019-2020
+
+We're leveraging our most successful IP, a large
+
+i Most Anticipated #13 Top Blockchain Games
+community of creators and : i
+7 years of expertise in User-Generated Content Blockchain Game’ ‘Companies
+of 2019 of 2020
+
+HAT 00 YOU WANT TO CREATE TODAY?
+
+Source: BCG.BIZ (August 13th, 2019) ‘Source: BCG.BIZ (January 22nd, 2020)
+INSTALLS ON WORLDS CREATED https://www.blockchaingamer.biz/new httpsi//www.blockchaingamer.biz/feat
+IOS & ANDROID BY OUR COMMUNITY $/12585/blockchain-game-sentiment-p ures/13597/top-50-blockchain-game-c
+SINCE 2012 ositive-the-sandbox-most-anticipated/ ompanies-2020/
+
+The new blockchain-based version of The Sandbox has already received several awards:
+
+- Voted the most anticipated blockchain game of 2019/2020 by BlockchainGamer.biz -
+
+www.sandbox.game Page 11
+WHITEPAPER SANDBOR:
+gf
+
+https://www.blockchaingamer.biz/news/12585/blockchain-game-sentiment-positive-the-san
+
+dbox-most-anticipated/
+- Ranked #13 in the Top 50 Blockchain Games Companies of 2020 Report by
+
+DappRadar.com -
+https://www.blockchaingamer.biz/features/13597/top-50-blockchain-game-companies-2020
+
+L
+
+The Sandbox combines the large, active and enthusiastic franchise audience with a richer
+gaming environment based on a new 3D voxel” engine, and the revolutionary ability of
+blockchain integration with NFTs. to offer players creative and financial control of the
+content they make.
+
+3. The Sandbox Platform
+
+3.1. Mission
+
+The Sandbox team’s mission is to build a system where creators will be able to craft, play,
+share, and trade without central control, enjoying secure copyright ownership with the
+ability to earn SAND.
+
+The Sandbox team believes these innovations are important, for while the current market for
+voxel-based creation games already has 500,000,000 Creators and 160,000,000 MAUs, it
+suffers from four key problems that could hinder future growth if not addressed:
+
+e The centralization of user-generated content in dominant titles such as Minecraft
+and Roblox limits creator rights and ownership;
+
+e Central control over the trading of virtual goods created by players restricts players
+from generating fair value for their creations, limiting what they can or cannot sell
+and/or taking a significant portion of the sales revenue;
+
+e@ Given the nature of voxel art, it can be difficult to prove creative ownership of works,
+especially as content is copied, altered and built upon; and
+
+e Existing game marketplaces are based on fiat currencies, which do not support true
+microtransactions and are vulnerable to credit card fraud that can unbalance in-game
+economies.
+
+1 Voxels, or volume pixels, are analogous to 3D pixels, with each voxel representing a value on a defined grid in three-dimensional
+
+space
+
+2 Non-fungible items are unique and cannot be replaced by another equal part or quantity, as explained in this article:
+https://medium.com/crypto-currently/the-anatomy-of-erc721-e9db77abfc24.
+
+www.sandbox.game
+THE
+WHITEPAPER SANDBOR:-
+Rd
+
+3.2. Game Overview
+
+At its core, The Sandbox is an ecosystem for Players and Creators, consisting of three main
+components: a Voxel Editor (named “VoxEdit”), a Marketplace, and the Game itself.
+
+The Sandbox offers a unique way to create, assemble, and share 3D voxel models. We empower
+Creators with intuitive, powerful content creation tools. You can make your own 3D voxel objects,
+animate them, and publish/sell them in our worldwide marketplace. VoxEdit is our 3D tool that
+allows anyone to create or import their own voxel objects, work on them, and effortlessly export
+them to the marketplace where users can turn them into limited ERC-1155 tokens called ASSETS.
+ASSETS are virtual tokens for digital scarcity, security and authenticity. They are unique/limited as
+well as distinct and indivisible.
+
+Blockchain allows creators to have true ownership and thanks to this technology we, in our capacity
+as developers, can finally reward players for their time and the hard work they put into content
+creation, allowing them to monetize and freely trade their ASSETS.
+
+Our ASSET smart contract allows content to become the new platform, creating a new paradigm.
+This is because they offer multiple uses and are not confined to a single game. This "second-layer
+programmability" gives any developer the power to bring a lasting and ever-growing value to the
+ASSETS, which can be shared cross-games, cross-platforms and cross-chains.
+
+The Marketplace is the trading environment for ASSETS, where they can be given away for free or
+sold to other PLAYERS.
+
+The Game is the overall game system where playable experiences can be enjoyed and shared. In the
+Game, not only can creators profit from their creations, players can play-to-earn by collecting
+resources, rewards, and tokens.
+
+3.3. LAND and the LANDS Map
+
+LANDS are blockchain-backed virtual tokens (using the ERC-721 standard for NFTs) representing
+physical parcels of The Sandbox Metaverse. They allow players to own a portion of the Metaverse
+and thus be able to host content (ASSETS and GAMES).
+
+The Sandbox Metaverse is based on a map of 166,464 LANDS (408*408). LANDS are physical spaces
+in the Metaverse owned by players to create and monetize Games. LANDS are used to publish your
+game and can be rented to game creators. Every LAND comes with a set of prebuilt terrains, but it
+can be terraformed and modified by the USER who owns it (or other PLAYERS they invite to work on
+it).
+
+In the future, players will be able to combine LANDS together to form ESTATES In the future,
+ESTATES will have the potential to be owned by multiple players to form DISTRICTS.
+
+www.sandbox.game
+THE
+WHITEPAPER SANDBO:
+CA
+3.4. Avatar
+
+An AVATAR is an in-game voxel representation of a player, which may be modified piece by piece by
+the owner. An avatar has certain specifications and format and comes with a default set of
+animations such as walking, running, jumping and fighting. Specifically, this avatar will be modifiable
+piece by piece (helmet, arms, torso, legs, etc.) by equipping it with different compatible ASSET
+tokens.
+
+3.5. SAND
+
+SAND is an essential part of The Sandbox platform and we are working on establishing key
+mechanics that makes it intrinsically tied to The Sandbox platform and its value. SAND is an ERC-20
+utility token built on the Ethereum blockchain that serves as the basis for transactions within The
+
+Sandbox, and has the following uses:
+
+e Access The Sandbox platform: Players spend SAND in order to play games, buy
+equipment, or customize their Avatar character. Creators spend SAND to acquire ASSETS,
+LANDS, and through Staking. LAND Sales drive demand for SAND to purchase LANDS.
+Artists spend SAND to upload ASSETS to the Marketplace and buy Gems for defining Rarity
+and Scarcity.
+
+e@ Governance: SAND is a governance token that allows holders to participate in Governance
+decisions of the platform, using a DAO structure. They can exercise voting rights on key
+elements such as Foundation grant attributions to content and game creators and feature
+prioritisation on the platform Roadmap. SAND owners can vote themselves or delegate
+voting rights to other players of their choice.
+
+e Staking: SAND allows for staking, which allows for passive revenues on LANDS: you get
+more SAND by staking it. This is also the only way to get valuable Gems and Catalysts,
+needed for ASSET creation
+
+e Fee Capture model = 5% of all transaction volume carried out in SAND tokens (Transaction
+Fees) shall be allocated with 50% to the Staking Pool as rewards for token holders that
+Stake SAND tokens and 50% to the "Foundation."
+
+e@ Foundation: The role of the Foundation is to support the ecosystem of The Sandbox,
+offering grants to incentivize high quality content & game production on the platform. To
+date, the Foundation has funded over 15 game projects and granted 100 artists to
+produce NFTs ahead of the public Launch in December 2020. The overall valuation of the
+metaverse grows through the valuation of all games funded by the Foundation, creating a
+virtuous circle to enable funding bigger games.
+
+www.sandbox.game
+WHITEPAPER SANDBOR:
+gf
+
+Purchase Trade Play Create Governance
+
+Figure: The Use Case for SAND
+
+3.6. SAND Stakeholders
+
+We have developed a 4 Stakeholders approach to ensure that that the success of TSB accrues value
+towards the token. Therefore, we will set through smart contracts, that revenues generated through
+The Sandbox will be distributed across 4 stakeholders to provide support to the ecosystems of
+creators and players as well as to provide the resources needed to grow the market and develop
+high quality gaming experiences.
+
+These 4 stakeholders are:
+
+1. Foundation Pool: Is designed to ensure that revenue generated through the game accrues
+value to the token. The token allocation of this Foundation pool will be progressively
+decentralised as we implement a DAO/Community driven solution towards a decentralized
+model for the benefit of the token ecosystem.
+
+2. Staking Pool: Is designed to provide a yield and value to token holders. Its governance will
+migrate from a centralized decision on year 1 towards a DAO mechanism in the coming
+years. Token holders that are also active players will generate an extra yield rewarding their
+activity.
+
+3. | Company Treasury: This represents the SAND that is owned by the company that comes
+from the proceeds of sales of company owned assets with a 12 months lock-up. The SAND
+generated through this Treasury will be sold back to the market to pay operational
+expenses.
+
+4. Company Reserve: This is the initial company reserve of 600mm SAND (20% of total Token
+
+Supply). This reserve will be fed with the proceeds of sales of company owned assets with a
+6 month lock-up.
+
+www.sandbox.game Page 15
+WHITEPAPER
+
+3.7.
+
+THE
+SANDBOH:
+Rd
+
+SAND Revenue Streams
+
+as detailed below:
+
+TSB has 5 Revenue Streams where players/creators will exchange SAND. That SAND will be allocated
+
+(1) LAND Sales
+
+50% locked for 12 months then being sold in auction sales and
+proceeds go to the Company’s Treasury;
+
+(2) Company NFTs Sales
+
+25% transferred to the Company Reserve with a lock-up period of
+6 months;
+
+(3) Player Subscriptions &
+Services
+
+25% transferred to the “Foundation” to support the growth of the
+token ecosystem
+
+(4) Transaction Fees = 5% any
+SAND trx
+
+(5) Advertising Revenue
+
+Transaction Fees to be restructured as 5% of all transaction volume
+carried out in SAND tokens, including but not limited to SAND
+transactions related to sales and rental transactions of LAND (from
+TSB to players and from players to players in marketplace), NFT
+transactions (from TSB to players and players to players in
+marketplace), peer-to-peer in-game payments (e.g., entrance fees
+for game experiences), player subscription fees and advertising
+fees
+
+50% allocated to the Staking Pool as rewards for token holders
+that Stake SAND tokens;
+
+50% of all Transaction Fees shall be allocated to the "Foundation"
+
+25% allocated to the Staking Pool as rewards for token holders
+
+75% allocated to the "Foundation"
+
+LAND
+Premium NFTs
+Subscription & Service
+Revenue
+
+25%
+
+$$.
+
+Marketplace Trx Fees
+Revenue
+
+——E
+
+(*) lock-up period of 6 months;
+(**) lock-up period of 12 months
+(***) For both Token Holders and Players
+
+www.sandbox.game
+
+25%(")
+
+Company
+Reserve
+
+Company Market
+
+Treasury
+
+Foundation Pool
+
+(Creators Funds)
+
+“ag ‘a a)
+. S Token Holders
+v . (Players, Creators,
+
+Investors)
+
+P
+Stacking Pool(***) | *
+L ES
+
+Figure: The Flows of SAND
+
+WHITEPAPER
+
+3.8. Benefits
+
+THE
+SANDBOH:
+Rd
+
+The creation of a decentralized blockchain based gaming platform provides multiple benefits when
+compared to current, non-blockchain systems, as illustrated in the chart below:
+
+TRUE DIGITAL OWNERSHIP k-;
+
+Gamers are the true and perpetual owners of
+their digital items, even if the game was shut
+down or abandoned. With biockchain, every
+game item can be tokenized, allowing gamers to
+decide how they want to trade, sell, or gift their
+items.
+
+SECURE and IMMUTABLE k-:
+
+Digital game items can be easily tokenized and
+traded in primary and secondary markets that
+are managed and facilitated by blockchain
+
+technology. Items based on scarcity and |}
+demand usually invite fraud and theft, but these
+risks are minimised on blockchain because it is
+
+a distributed ledger.
+
+A
+
+‘ | TRADING
+
+' Blockchain-based gaming platforms can provide
+users with ultimate control over their digital
+assets. They can buy and sell items freely
+without concern that they will be ripped off or
+that a platform will close and cancel all the
+value of their in-game items.
+
+CROSS-APPLICATION INTEROPERABILITY
+
+Blockchain provides capacity for games to
+utilize shared assets. Items, characters, and
+other game elements can be used in other
+
+‘oe 1 games that allow it. These game items are no
+
+longer confined by a narrow digital ecosystem.
+
+With Blockchain
+(The Sandbox)
+
+Without Blockchain
+(Roblox & Minecraft)
+
+True Ownership
+
+e Assets stored in player wallets through
+
+tokenization of UGC;
+e User retention of copyright in
+perpetuity;
+e@ Ownership not tied to a game; and
+e@ Creative authorship is immutable.
+
+Limited Ownership
+
+e Assets stored in game systems;
+
+e@ Copyright limited and items can be
+modified by third parties;
+Ownership is tied to the game; and
+Creative authorship is hard to prove.
+
+Secure
+
+e Less fraud possibility thanks to
+
+blockchain’s record keeping technology.
+
+Insecure
+
+e Server-based transactions; and
+e High possibility of fraud (13%
+average).
+
+Fair Revenue Share
+
+e@ Creators will receive 100% of the selling
+
+price they set for their creations; and
+e Multiple creators can automatically
+share payments and revenue.
+
+Limited Revenue Share
+
+e Creators receive partial payment for
+items they sell; and
+
+e@ Ownership limited to one player
+entity.
+
+Decentralized Trading
+
+e  Blockchain allows assets to be shared
+between users for collaboration; and
+e Peer-to-peer trading
+
+Centralized Trading
+
+e Centralized system limits
+collaboration; and
+
+e Alltrades are controlled by 3rd
+parties.
+
+www.sandbox.game
+
+WHITEPAPER SANDBOR:
+gf
+
+4. Market Overview
+
+The current gaming market presents favorable conditions that offer The Sandbox a unique
+opportunity to exploit on both PC/Mac and mobile platforms, as the opportunity to shift power and
+earning potential into the hands of players in the growing UGC gaming market will add significant
+value to their gameplay experience.
+
+The global gaming market is expected to reach: USD 171.96 billion’ by 2025;
+
+The mobile segment, which is one of The Sandbox’s target platforms, is projected to
+gain momentum and exhibit a compounded annual growth rate (CAGR) of 7.3% over
+the coming years, owing to increasing smartphone penetration across the globe ;
+
+e The online segment is estimated to witness substantial growth over the next eight
+years, expanding at a CAGR of 8.6% from 2020 to 2025. This can be attributed to
+increasing broadband penetration and growing online betting, gambling, and social
+network gaming and
+
+e The Asia Pacific market is expected to gain traction, attaining a market size of USD
+86.84 billion by 2025. Emerging countries such as China, India and South Korea are
+offering lucrative growth opportunities for market augmentation, which can be
+partly attributed to growing smartphone and Internet penetration in these countries.
+
+4.1. Gaming Creator Market
+
+The Sandbox team’s mission is to build a system where creators will be able to craft, play,
+share, and trade without central control, enjoying secure copyright ownership with the
+ability to earn SAND.
+
+The genre of creator games with voxel graphics is dominated by two key industry players,
+Minecraft and Roblox. Minecraft, the leader in the category, saw player numbers grow over
+30% year on year for the last five years, while Roblox placed sixth in the list of top grossing
+iPhone mobile gaming apps in the United States as of January 2018, ranked by daily revenue.
+Roblox is estimated to take in over USD 750,000 per day in revenue. Some creators have
+reportedly earned over USD 30,000,000° in 2017 from the 70%’ revenue share they receive
+from sales inside their own creations.
+
+3 https://www.grandviewresearch.com/press-release/global-gaming-market
+
+“ https://newzoo.com/insights/articles/the-global-games-market-will-reach-108-9-billion-in-2017-with-mobile-taking-42,
+
+*https:/prnewswire.com/news-releases/gaming-market-size-worth-17196-billion-by-2025--cagr-65-grand-view-research-inc-671617663.html
+
+6
+
+https://www.forbes.com/sites/alexknapp/2018/03/21/young-developers-earned-over-30m-on-roblox-in-2017-the-gaming-site-kids-visit-more-than-youtube,
+#e490ac860942
+
+7 . .
+https://www.roblox.com/premium/membership?cashout=obc
+
+www.sandbox.game
+WHITEPAPER SANDBOR:
+gf
+
+Both games are now available on a variety of platforms including PC, mobile and console. A
+few numbers show the scope of the market in tangible terms:
+
+Minecraft
+e@ Over 100,000,000 MAU in 2019, up 74,000,000 from 2017";
+e@ Over 144,000,000 copies sold worldwide;
+e In 2014, Microsoft purchased the Minecraft franchise for USD 2.5 billion; and
+e@ The purchase price equates to roughly USD 17 per copy sold when averaged across
+all units.
+Roblox
+e@ Had 100,000,000 MAU in 2020’;
+e Raised USD 150,000,000 series G on a USD 5 billion valuation in February 2020;
+e@ 11,000,000 game titles were published in the Roblox world in 2017".
+e
+
+Over 1,500 titles have each generated over 1,000,000 user visits from other players;
+and
+
+e@ Meep City, which was published in Roblox in February 2016, was the first Roblox
+game to surpass 1 billion player visits.
+
+The Sandbox Evolution
+
+e Had 1,200,000 MAUs in 2018; and
+e@ Over 70,000,000 creations made inside the game by its users.
+
+CryptoKitties
+e@ Over USD 12,000,000 raised from asset sales
+e@ More than 1,000,000 kitties created’;
+e Has approximately 500 Daily Active Users; and
+e Various special themed kitties from partnerships, including the NBA"
+
+Platforms
+
+e Sketchfab, one of the largest 3D creators marketplace has approximately 400-1,000
+models uploaded per day;
+e 100,000 3D models have been uploaded in over 700 days’: and
+
+e TurboSquid, the world’s source for professional 3D models has over 500,000 models
+and 3,500,000 users.
+
+5 https://www.engadget.com/2019/09/15/minecraft-112-million-monthly-players
+
+® https://techcrunch.com/2019/08/04/roblox-hits-100-million-monthly-active-users,
+
+*° https://www.businesswire.com/news/home/20180221005527/en/Roblox-Celebrates-Top-2017-Titles-Sth-Annual
+
+™ https://venturebeat.com/2018/03/20/cryptokitties-blockchain-sensation-raises-12-million,
+
+12 https://medium.com/@Cryptokitties/thanks-a-million-f422af041d0f
+
+43 https://www.coindesk.com/nba-superstar-steph-curry-now-first-celebrity-cryptokitty,
+
+™ https://sketchfab.com/100k
+
+www.sandbox.game
+THE
+WHITEPAPER SANDBOR:-
+Rd
+
+4.2. Creator Market
+
+A primary challenge facing voxel art creators in the current gaming environment is they have
+limited or no legal rights to the intellectual property they create. This can result in artists or
+creators spending days or even months creating their in-game worlds while receiving little or
+no financial benefit.
+
+Another hurdle facing players is establishing creative ownership of their works, especially if
+another player or entity copies the original work, modifies it or builds on it. Without a system
+for identifying and tracking the ownership of an item from first creation, it’s almost
+impossible to tell if work is original or copied.
+
+Lastly, the common reliance on fiat currencies and credit card transactions means the
+element of credit card fraud is never far away. Currently, the ratio of illegitimate transactions
+in games can be as high as one out of every 7.5 items sold as the result of credit card fraud,
+potentially disrupting the entire in-game economy.
+
+By registering every ASSET created as an NFT, The Sandbox allows creators true ownership of
+everything they create. Creators retain copyright and ownership of everything they create
+and can sell and trade items while receiving all the benefits for their work. As transactions
+are made via blockchain in Ethereum, credit card fraud is eliminated. Aside from addressing
+all of these issues, The Sandbox aims to bring even more value to the crafted items of
+CREATORS. For the first time ever, CREATORS will be able to see how their uploaded ASSETS
+come to life when they see them used in a LAND as part of great experiences.
+
+4.3. Player Market
+
+Issues such as ownership or compensation are of less concern to players who primarily come
+to games to play and buy items rather than create and sell them. However, another issue
+directly affects these players is that they spend real-world money to buy items in-game, but
+they have no way to recover this money.
+
+For instance, if they stop playing a game, all the items they bought in it immediately become
+worthless. If the game is shut down for any reason, such as a decline in popularity that
+makes it less profitable, all the player’s in-game purchases vanish into nothing. This is
+especially true in free-to-play (F2P) games. Purchases are a one-way street. Players spend
+money to buy things in the game, but have no way to recover their value if they no longer
+use an item, and have no way to sell it to another player legally so they receive no
+compensation if the game is taken off the market.
+
+www.sandbox.game
+THE
+WHITEPAPER SANDBOR:-
+Rd
+
+4.4. Market Solution
+
+The game’s player-centric innovations and improvements over current titles in the market
+make it probable that The Sandbox can expand its audience beyond the 40,000,000 players
+who have downloaded previous versions of The Sandbox and the game’s current 1,200,000
+MAUs.
+
+The first stage of this process is the creation of a semi-decentralized gaming community with
+some elements under the central control of The Sandbox and other elements decentralized
+to the creators and players themselves.
+
+5. Roadmap
+
+The Sandbox has been operating since 2012, and it follows that this issue of SAND is one of
+the next steps in its journey towards creating this decentralized game
+
+5.1. Previous Milestones
+
+May 2012
+
+e@ The Sandbox franchise launches on iOS.
+
+February 2013
+
+e@ The Sandbox is released for Android (1st title).
+
+March 2014
+
+e The Sandbox surpasses 10,000,000 downloads.
+
+March 2015
+
+e@ The Sandbox Evolution is announced at GDC conference (2nd title).
+
+June 2016
+
+e@ The Sandbox Evolution released on iOS, Android & Steam.
+
+July 2017
+
+e@ The Sandbox Evolution receives two big partnerships:
+
+www.sandbox.game
+THE
+WHITEPAPER SANDBOR:-
+Rd
+
+e Bandai Namco brings PAC-MAN to the game;
+e Dreamworks brings Shrek to the game; and
+e@ The Sandbox Evolution announced free download in Steam.
+
+April 2018
+
+e The Sandbox surpasses 40,000,000 downloads and 70,000,000 player creations; and
+e@ The Sandbox Surpasses 750,000 followers on Facebook
+
+2019
+
+Funding: We have closed a seed round with a total of USD 3,410,000 raised;
+
+Team: We have assembled the right senior team to execute our vision: 42 resources
+located in our 3 offices with 28 FTE in Argentina, 11 in France, 2 in Korea and 1 in
+Japan;
+
+e First revenue: The first two rounds of LANDS presale (2.5% then 5% of the total map
+supply) sold out in almost 1 hour — exciting success despite the bearish crypto
+market in December 19 then February 2020. Total Revenue generated of 1,400 ETH
+(approximately USD 300,000);
+
+@ Community: Growing with over 10,000 members on our Discord. Our NFT maker
+VoxEdit has been downloaded overall 65,000 times and the 100 artists forming part
+of our Creator’s Fund have made 3,000 ASSETS already. Over 3,500 accounts on our
+Marketplace;
+
+e Smart Contracts: All our smart contracts is available publicly on Github and has been
+audited by Certik, a leader in security trusted by Binance, Upbit, Bithumb, etc, We
+scored 93/100, among the highest in the industry;
+
+e Korea Presence: Growing over 1,000 highly engaged creators and members.
+Officialized our partnership with SBS Seoul Game Academy (reaching out to 2,000
+students on 8 campuses in Korea);
+
+e Japan Presence: Started collaboration with Geekhash (a Japanese crypto-marketing
+agency, who is also representing Dapp.com), ran several meetups (DevconS
+Blockchain Game meetup and Tokyo Blockchain Games Meetup) and began
+localizing our Deck, Website and Medium articles. Opened Twitter with 600
+followers and reaching 50,000 impressions per month.
+
+Q1 2020
+
+e@ VoxEdit — Launch of VoxEdit Beta Release
+
+e LAND Pre Sales — Launch Rounds 2 and Round 3, selling 5% and 10% of the Map in
+hours
+
+Q2 2020
+
+www.sandbox.game
+THE
+WHITEPAPER SANDBOR:-
+Rd
+
+e@ Game Maker Closed Alpha — Private release of the Game Maker Alpha to few early
+testers
+
+e@ LAND MoonSale - 6 rounds of LAND sales over 5 weeks
+
+Q3 2020
+
+e@ Game Maker Public Beta — Public Release of the Game Maker Beta
+e@ LAND Presales — Round 4 Opening
+e@ Marketplace — SAND purchases, P2P sales, ASSET minting with Gems & Catalysts
+
+e SAND Public Listing — Binance IEO and listing on public exchanges
+
+5.2. Future Milestones
+
+Q4 2020
+
+e@ Game Public Beta — Public Beta Launch of the Games Platform, with dozens of
+games available to play (supported by the Foundation)
+
+e Events — Launch of the First Season event with play-to-earn mechanisms
+e Multiplayer — Socialize, Chat and Interact with friends in The Sandbox hubs
+e LAND Public sale — Regular LAND sales and Support for Game Maker
+
+e@ VoxEdit — Official Release 1.0
+
+2021-2023
+
+We are aiming to become one of the leading established key players in the space of virtual worlds
+with blockchain-based digital LANDS, reaching over 1,000,000 MAUs over the next five years. To
+achieve this, we will be working on:
+
+e VoxEdit: We will be working directly with communities of artists to add the extra
+features they are asking for and facilitate the creation of more advanced models,
+while keeping in mind to remain accessible to all;
+
+e@ Marketplace: We will be working on engaging features that will be driving long term
+engagement and interactions with The Sandbox platform, allowing creators to work
+and collaborate together in teams establishing more advanced collaborative
+workflows, as well as features enabling any creator to run its own presale for games,
+organize its own contest with prize pools, define rules of each DAOs with its
+sub-community and more;
+
+www.sandbox.game
+THE
+WHITEPAPER SANDBOR:-
+Rd
+
+e@ Game Maker/Player: We will be releasing the Game Player on multiple platforms,
+starting with mobile (\OS and Android) in 2021 and expanding to console thereafter.
+We will improve the meta-gameplay to create come back design and providing
+incentives for players to explore and participate in the economic loop (Create, Trade,
+Play), fostering the Play-to-Earn (Monetize your skill and time by collecting
+resources, rewards, and tokens) as pillars of the economy. Players will have
+individual goals and objectives for the meta-gameplay but we will also include
+collective objectives to create communities and competition. The Sandbox LANDS
+can work as common hubs for players, provide different experiences, advertise &
+shops, chat rooms, and other featured experiences;
+
+e Blockchain and Tokens: We will be opening even more our blockchain technology to
+other Developers (marketplace, smart contracts, etc.) so they can build additional
+services, dApps on top of our API and smart contracts.
+
+A more detailed roadmap can be found below:
+2021
+
+Partnerships — New IPs and Premium NFTs to be announced
+Foundation — Launch of the Foundation DAO with SAND staking for voting on Creators Fund
+management
+e@ Game Maker - Official Release 1.0 and major updates with more gaming packages,
+Behaviors and Visual Scripting
+Game — Official Release 1.0 and major updates
+LAND Public sale — Regular LAND sales will continue
+Events — Additional Seasons with big rewards to earn
+Multi-platforms — Availability of Game on smartphones and tablets devices
+Multiplayer — First user-generated games with multiplayer modes
+SAND -— Staking mechanisms for Yield generation and curation
+
+e Partnerships — New IPs and Premium NFTs to be announced
+
+e@ Games Platform — Over 1,000 Games available
+
+e Multi-platforms — Availability of Game on consoles
+
+e LAND Public sale — Regular LAND sales will continue
+
+e@ Game Maker — Co-Building Mode - creating games with Friends, Custom Scripting with
+programming 3rd layer and major updates with more gaming packages and Behaviors
+
+e Events — Additional Seasons with big rewards to earn
+
+2023
+e@ Games Platform — Over 5,000 Games available
+e Partnerships — New IPs and Premium NFTs to be announced
+e@ Game Maker — Major updates with more gaming packages and behaviors added
+e Events — Additional Seasons with big rewards to earn
+
+www.sandbox.game
+WHITEPAPER SANDBOX:
+CA
+
+5.3.
+
+6.
+
+6.1.
+
+DAO - The Sandbox DAO will allow to participate in major decisions on the Game Platform
+
+Major Features in the Press
+
+Our CEO, Arthur Madrid, published a Medium article titled Blockchain Metaverse:
+Where Players Can Build, Own, and Control a Platonic Republic of Gaming, which has
+been clapped over 500 times.
+
+https://medium.com/sandbox-qame/blockchain-metaverse-where-players-can-build-own-an
+
+d-control-a-platonic-republic-of-qaming-65e23f059e37
+
+Our COO, Sebastien Borget, was quoted repeatedly on CoinTelegraph among 50
+Crypto Experts on his perspectives for 2020 and looked back on 2019 articles.
+
+https://cointelegraph.com/explained/experts-share-what-are-the-biggest-crypto-and-blockc
+hain-topics-to-follow-in-2020
+
+The Sandbox ranked 13th among the Top 50 Blockchain Games Companies of 2020
+report by DappRadar, while Animoca Brands is ranking 5th. This confirms our
+leadership position in the space.
+
+The Sandbox raises $2 million more to build out blockchain-based game world from
+
+B Cryptos, True Global Ventures, Square Enix and more.
+
+https://venturebeat.com/2020/03/19/the-sandbox-raises-2-million-more-to-build-ou
+t-blockchain-based-qame-world,
+
+The Sandbox Virtual World sold out third Virtual Lands Presale generating 3,330
+ETH/440,000 USD.
+
+https://www.gamasutra.com/view/pressreleases/360442/The_ Sandbox Virtual World sold
+out third Virtual Lands Presale after 6 Hours generating 3330 ETH440000 USD in At
+ari_Theme Park _Neighborhood.php
+
+Platform
+
+Gameplay Experience
+
+The gaming experience on the new The Sandbox platform will be launched through several
+intermediary phases, with increasingly more complex features in each. When the alpha version is
+launched, players will be able to make transactions and store their digital voxel ASSETS while also
+playing and interacting with other voxel asset creators and players in different user generated
+
+www.sandbox.game Page 25
+WHITEPAPER SANDBOX:
+CA
+
+worlds. The gaming experience will make The Sandbox a strong blockchain-based alternative to
+existing platforms such as Minecraft and Roblox.
+
+Even for players who do not create discrete items to sell on the UGC store, the combination of
+creativity and security can pay off for players who create LANDS with compelling attractions. This is
+because a LAND might have different revenue streams implemented on it, like microtransactions.
+Additionally, players can play-to-earn by collecting rewards through gameplay.
+
+We expect a wide variety of audiences to enjoy gaming experiences in The Sandbox marketplace. We
+have identified some of the types of games creators will be able to craft for them:
+
+e Social Experiences: The ASSET marketplace will allow creators to fully decorate their
+spaces with beautiful sceneries and structures such as a fairy wonderland, a
+medieval town, or even a futuristic space station.
+
+These types of experiences can attract communities of in-game friends that hang out
+for activities that combine social and gameplay elements.
+
+e Build & Craft: Our voxel map is ideal for creators to make Building & Crafting
+experiences. Creators will be able to facilitate players with interesting experiences
+like building competitions, creating their own play spaces.
+
+All these tools and mechanics will be able to interact with the terrain to modify it,
+build over it or even completely destroy it.
+
+e Exploration & Adventure: Solve the mystery of the cursed swamp, slay the
+
+mercenary king of the endless desert, help the rebellion of the exiled prince of the
+elder LANDS or even discover all the hidden secrets of the ancient temple!
+
+www.sandbox.game Page 26
+THE
+WHITEPAPER SANDBOR:-
+Rd
+
+Creators will be able to bring narrative, exploration and adventure gameplay to their
+LAND. Each new LAND will be different, offering new potential to discover new
+LANDS, meet new people and discover never before seen secrets!
+
+6.2. Map - LANDS
+
+The persistent map determines a player’s specific LAND coordinate. In most blockchain games where
+player domains are sold like real estate, the specific location of a domain is of paramount importance
+as it will determine who and what you are next to. Similarly, in The Sandbox there is a finite amount
+of LANDS, and their location is determined initially in the map, and cannot be moved from one
+coordinate of the world map to the other.
+
+There are several advantages to this structure:
+
+e Players have the agency to combine LANDS to create a bigger gaming space with and
+near their friends; and
+
+e Friends can cooperate in the creation of these larger experiences by building
+experiences together within the combined LAND and thus sharing the rewards
+(whether financial or purely social or artistic).
+
+There is also an economic incentive for players to work together via a combined LAND. For instance,
+if several players band together they can create a ‘theme park’ experience, with each member
+focusing on a key attraction, or members can focus on distinct neighborhoods that together create a
+‘city’ experience. In each case, the team effort allows players to cooperatively create a stronger
+incentive for players to visit and enjoy their creations—and more visits results in more revenue to be
+shared.
+
+It’s true that a single player with one LAND can keep all the revenue from that LAND, but a larger,
+more diverse collection of LANDS combined can boost financial rewards to be shared by charging, for
+example, for a SUPER PASS that allows a player to visit all the gaming experiences in a combined
+LAND, with the revenue from the SUPER PASS shared between all the owners of said LAND.
+
+There will be limits on joining LANDS together to keep certain conglomerations from having too
+much control and power against solo players.
+
+Recent information has been released on The Sandbox Transportation System.
+
+6.3. ASSETS Marketplace
+
+The marketplace will use smart contracts to control item auctions and transactions. This open
+marketplace for creators and developers will allow for the free trade of in-game assets between the
+platform users. Additional benefits of this marketplace are that economic principles of supply and
+demand become automatically integrated into the system, allowing the community to determine the
+
+www.sandbox.game
+WHITEPAPER SANDBOX:
+CA
+
+fair price of user-generated ASSETS. The true strength of this marketplace, however, is that creators
+of such ASSETS can finally generate true tangible real-world value from the voxel content they create.
+
+SHOP
+
+a1 500)
+
+The ASSET tokens in our marketplace will require several pieces of information in order to properly
+be displayed as a sellable good. These pieces of info are:
+
+Name & Genre: In order to better identify the ASSET being sold, and to help
+potential buyers in finding it in the marketplace, the ASSET will require a name anda
+genre;
+
+Description: The description will help creators add specifications like size, model,
+potential uses or even attach a short piece of fictional lore to the ASSET;
+
+Thumbnail: The marketplace will show what the ASSET itself looks like via several
+thumbnails of the ASSET. We will include a feature in our voxel editor that will
+automatically generate these thumbnails for the creators;
+
+Price: The creator will have total control over the price the ASSET will have on the
+marketplace. This price will be set in SAND.
+
+Value: Creators will define Rarity, Scarcity and Attributes thanks to the Gems &
+Catalysts system.
+
+Once all these requirements are met, the ASSET will be successfully displayed on the marketplace
+and be available for purchase.
+
+www.sandbox.game Page 28
+THE
+WHITEPAPER SANDBOR:-
+Rd
+
+6.4. VoxEdit
+
+Under the philosophy of “CREATE, ANIMATE, PLAY” VoxEdit is the voxel modeling software that
+allows the artist to rig models and animate them using a user-friendly keyframe interpolation
+timeline.
+
+e@ Modeling: Having other software that also lets you model your own voxel art — what
+makes the modeling in VoxEdit different is that it is aimed at artists. That commodity
+is thanks to a user-friendly interface, powerful tools to let the artists model anything
+they want, but also stay connected with them all the time to hear their feedback,
+what would be nice to have, and especially what would make their life using VoxEdit
+much easier.
+
+e Animation: Here is where VoxEdit stands out. VoxEdit uses a skeletal system with
+hierarchies, like the ones used in professional 3D software like Maya, 3D Max,
+Cinema 4D, etc, allowing the Artist to rig anything they want and be ready for
+animation. It is the only voxel modeling software that allows to model AND animate
+your ASSETS.
+
+Once the skeleton is made, the artist can create any type of animation moving the
+different parts of their model with an easy-to-use timeline. The timeline works like a
+video editing software timeline, using layers to represent what part of the model you
+are moving and creating key-frames to set the position, rotation and scale. The
+magic happens thanks to the interpolation of these key-frames that the timeline
+does in the background.
+
+e Exporting:
+VoxEdit allows the artist to export their creation in .VXM and .VXR, formats that our
+Marketplace and games use to create a super smooth communication between the
+three parts. Besides that, it also lets export in the standard formats such as .OBJ and
+also .DAE and .GLTF for the models with animations on it.
+
+7. Economy
+
+We are excited by the opportunity to build new kinds of business models with this player-powered
+economy, both in terms of revenue model and token model.
+
+SAND will provide immediate liquidity to players and investors. The valuation of the SAND token is
+calculated on what players will be able to build/play/trade/win inside our metaverse. We are aiming
+at replicating real-world economy systems, with players able to buy, rent, hire, vote, stake, etc.
+
+The main flows of income will be the following:
+
+www.sandbox.game
+THE
+WHITEPAPER SANDBOR:-
+Rd
+
+e Company ASSETs token: Sales of ASSETS created and developed by the company
+(LANDS, ASSETS, Attributes, others);
+
+e Transaction Fees: TSB to charges 5% of all transaction volume carried out in SAND
+tokens (Transaction Fees) to be allocated 50% to the Staking Pool as rewards for
+token holders that Stake SAND tokens and 50% to the "Foundation."
+
+e Player Subscription Fees: Revenues that we will generate via various subscription
+models to gain access to exclusive in-game features, Premium ASSETS etc.
+
+7.1. Tokenomics
+
+SAND is the utility token used throughout The Sandbox ecosystem as the basis of transactions and
+interactions. It is an ERC-20 utility token built on the Ethereum blockchain. It will be used across the
+ecosystem by gamers, developers, and publishers, allowing Creators and Players to exchange ASSETS
+and Games and build a user-based platform of rewards while developing an ecosystem where
+Creators and Players will share various truly unique gaming experiences.
+
+User generated digital ASSETS are represented as ERC-1155 tokens. To ensure the everlasting scarcity
+and verifiable scarcity of non-fungible items, we use the ERC-1155 token standard. This standard
+allows a smart contract to track token-ownership at the individual token level: each item has a
+unique identifier and, optionally, unique properties stored as metadata.
+
+SAND can be used and acquired by Artists, Creators, Players and LAND Owners through
+multiple ways as described below:
+
+ARTISTS CREATORS PLAYERS LAND INVESTORS
+OWNERS
+
+What each profile will USE SAND tokens for?
+
+Acquire ASSETS
+
+Mint ASSETS Buy LANDS
+Yy 1 Publish G: Acquire SAND on
+Gelr Buy Gems & ublish Games Combine LANDS in Exchanges
+Catalysts Estates
+Buy LANDS
+Play Games
+Rent LANDS
+Years 2-5 Buy Portals Stake SAND
+
+Buy ASSETS, Avatar
+
+Create Prize Pools
+a Skins & Equipments
+
+www.sandbox.game
+THE
+SANDBOH:
+Rd
+
+WHITEPAPER
+ARTISTS CREATORS PLAYERS LAND INVESTORS
+OWNERS
+What each profile will GET SAND tokens with?
+Event Rewards Rent LANDS
+Sell ASSETS Event Rewards Sell Gems &
+Sell LANDS
+Year1 Catalysts Stake SAND
+Stake SAND Stake SAND oe
+Stake SAND in his
+Stake SAND in his
+LAND
+LAND
+Monetize Games
+Years 2-5 Work For Hire
+Work For Hire
+e Players:
+
+Playing: Players will be able to earn SAND tokens while playing the different games
+uploaded to The Sandbox ecosystem. They might win SAND by slaying a legendary
+monster, opening a chest, or even completing a quest; nearly endless possibilities
+can be created in games;
+
+Skill-Based Challenge: Players will be able to pay an entry fee to enter a challenge
+such as a race, a card game, a battle royale, or any other type of competitive contest.
+The winner takes all of the prize pool. The experience creator might take a % of the
+total pool for creating and hosting the experience; and
+
+Tips System: A player who also happens to be a streamer, might be tipped with small
+amounts of SAND based on his performance either for entertaining his audience or
+by being good at whichever game he or she is playing.
+
+e Creators:
+
+ASSET Sales Revenue: Creators will be able to sell their assets in the marketplace,
+receiving 100% of the SAND price of the ASSET;
+
+In-Game Purchases: Experience creators will be able to set up many different
+monetization systems that will let them charge players SAND for exclusive content.
+These monetization techniques range from item purchases to stat boosters,
+subscriptions, or even entry fees to the game itself;
+
+Creators Fund: At the first stages of the ecosystem, we will have a rewards program
+
+to incentivize creators to fill the marketplace with amazing voxel creations and in
+return be rewarded with a generous sum of SAND tokens;
+
+www.sandbox.game
+WHITEPAPER SANDBOX:
+CA
+
+Art Challenges: We intend to keep a community-centered focus towards the
+marketplace, and with that in mind we decided that we will hold art challenges in
+which creators will be able to upload one of their ASSETS for the possibility to win a
+prize pool of SAND tokens if their ASSET received the most votes from the
+community; and
+
+Crowdfunded Requests: We shall enable a section of the marketplace that allows
+
+individuals and groups of users to request a certain type of ASSET in exchange for a
+payment of SAND, contributed by all the requesters.
+
+The flow of SAND within the ecosystem could be represented as follows:
+
+Game/LAND creator places ASSET in the same
+LAND which is published in the marketplace
+
+Game/LAND creator receives royalty fee by
+SAND when players play on it
+
+Game/
+LAND
+Creator
+
+Also, player can receive SAND
+when they accomplish a mission
+or win battles, races, contests,
+etc. in the game
+
+ASSET/AVATAR ,
+creator creates items uc f 4
+through VoxEditor ae 1
+i Player pays entrance fee by
+ASSET/ SAND to play games on the
+AVATAR ® LANDs.
+Creator
+I!
+'
+1
+'
+1
+
+Creator publishes ASSET ~*~.
+in the Marketplace and Collector pays SAND for ASSET/LANDs
+receives sales by SAND and will anticipate for value appreciation
+
+What The Sandbox does and How
+
+www.sandbox.game Page 32
+WHITEPAPER SANDBOX:
+CA
+
+7.2. Project Financing and Initial Revenue
+
+During the period May 2019 to November 2019, the Company completed a successful private
+placement round with 14 Investors for an aggregate amount of USD 3,410,000. The Seed Sale round
+was done through equity and token sale agreements, resulting in the total sale of 515,277,777 SAND
+which is equivalent to 17.18% of the total SAND supply.
+
+Advisors
+10.0% Seed Sale
+
+Founders & Team Strategic Sale
+
+Launchpad Sale
+
+Foundation
+Company Reserve
+
+The Sandbox has raised a total of 4.01MM USD via equity and token sales from May 2019 to July
+2020.
+
+Total SAND Supply 100.0% 3,000,000,000
+Seed Sale 17.18% 515,277,777
+Strategic Sale 4.00% 120,000,000
+Launchpad Sale 12.00% 360,000,000
+Foundation 12.00% 360,000,000
+Company Reserve 25.82% 774,722,223
+Founders & Team 19.00% 570,000,000
+Advisors 10.00% 300,000,000
+
+SAND allocated to the Investors in Seed Sale and the Strategic Sale are 100% locked for 3 years
+vesting with a 12 month cliff; while SAND allocated to the Founders, Team and Advisors are 100%
+locked for 5 years vesting and 12-month cliff.
+
+TSB has also generated its first LAND presales successfully during December 2019 and July 2020. All
+LAND assigned for sale have been sold for over 6,000 ETH.
+
+www.sandbox.game Page 33
+THE
+WHITEPAPER SANDBOR:-
+Rd
+
+7.3. Initial Exchange Offering
+
+TSB is aiming to raise around USD 3,000,000 during the public sale, through the allocation of 12% of
+the total supply of SAND. There shall not be a soft cap and therefore there will be no refunds made
+of funds contributed towards the project and allocated as detailed below:
+
+Grow the development team and infrastructure for the game platform 45%
+Marketing — Creators acquisition and IP licences for NFT developments 45%
+Security, Legal and Compliance Expenses 7%
+General and Administrative Expenses 3%
+
+Investors for SAND include, but are not limited to:
+
+Traditional Venture Capital;
+Cryptocurrency Investors;
+Gaming Companies;
+Gamers;
+
+Game Developers
+
+7.4. Other Dynamics
+
+As the community increases in terms of the number of creators, players and ASSETS in the
+marketplace, there will be an increase in the need for a utility token to reward the growing number
+of stakeholders participating in the platform.
+
+e@ Growth Model and KPIs
+
+The key success factors for building the ecosystem consist of ensuring an organic
+community growth of Creators and Players invested in the value proposition offered
+by The Sandbox while ensuring customer satisfaction. In order to ensure a
+progressive growth of the community and its model, we have identified key variables
+that will be measured and incentivized through marketing, promotional, and
+communication tactics to ensure the growth of the ecosystem:
+
+Creators growth rate;
+
+Players growth rate;
+
+New Assets created and uploaded per Creator;
+
+New Assets created and uploaded by TSB;
+
+Assets sold per month created by Creators;
+
+Assets sold per month created by TSB;
+
+Inflation rate of Assets in the marketplace;
+
+Average price per Asset developed by Creators (in SAND);
+Average price per Asset developed by TSB (in SAND);
+Asset price growth;
+
+Initial supply of SAND;
+
+Initial supply of SAND in the hands of Creators and Players;
+Price of SAND (in USD or ETH);
+
+oooo0o00000000
+
+www.sandbox.game
+THE
+WHITEPAPER SANDBOR:-
+Rd
+
+o % Commission at the marketplace.
+
+Therefore, while the total supply of SAND is fixed, the initial amount of SAND offered to
+the ecosystem through creators and players will be limited to add a scarcity effect due
+to the following key factors:
+
+o Agrowing number of Creators and Players which eventually
+will reduce the SAND available per capita; and
+o Staking effect, increasing the time holding SAND.
+
+8. Technology
+
+Blockchain technology is used to record ownership of tokens and allow owners to transfer/sell/use
+them without restriction. IPFS is used to store the actual digital asset and ensure the asset cannot be
+changed without owner permission.
+
+Three different blockchain protocols will be integrated into The Sandbox gaming stack:
+
+e@ ERC-20 for SAND; and
+e ERC-1155 and ERC-721 for the Digital Assets storage and trading.
+
+8.1. Future Technology Integrations
+
+Why are we using Ethereum? We found many benefits to do so as detailed below:
+
+e Ease of use: Ethereum has been built with flexibility in mind, which perfectly fits our
+use case with Asset tokens. Ethereum also has the largest number of developers,
+which allows for well-established standards, best practices and support;
+
+e Robustness: It is, as of today, among the most robust blockchain protocols: its wide
+adoption makes the network validated by many and thus more secure; and
+
+e Interoperability: Ethereum is a protocol, a base layer on top of which all applications
+can build and interact with each other.
+
+The main issue faced by Ethereum today is often said to be its scaling issue. Blockchains are based on
+three pillars: Security, Decentralization and Scalability (throughput). Historically, Ethereum always
+put security and decentralization first, at the cost of scalability and some _ technological
+improvements need to be made at the base layer to support traffic at scale. On most public
+blockchains like Ethereum, this is one of the main current concerns, and lots of efforts are in progress
+to solve those scaling issues, without sacrificing the blockchain trilemma.
+
+Ethereum is a blockchain that has been proven by thousands of dApps and developers for its
+robustness and offering a large ecosystem, resources and support from developers. With the current
+
+www.sandbox.game
+THE
+WHITEPAPER SANDBOR:-
+Rd
+
+system we are building, escrow less auctions, meta transaction, subscriptions (&cie) we can offer a
+great experience on Ethereum for non-crypto users
+
+The Sandbox team is looking at layer-2 solutions (that use the main ethereum chain as an anchor for
+security) — at the moment they are not yet ready for implementation or have not reached a
+production stage so that we could reliably integrate them. We will closely follow technical progresses
+on this topic and decide to integrate the solution that combines the best advantages for our product,
+use-case and users.
+
+8.2. Multiple Class Fungible Token (MCFT)
+
+At The Sandbox, we spend a lot of time looking at how to preserve security and integrity for ASSETS
+on the blockchain while still allowing the speed and flexibility that players and creators demand. As
+with many aspects of game design, you can’t get everything you want easily, so it’s a matter of
+balancing elements to implement the best solution
+
+The ERC-1155 standard that we co-created with other game companies in the blockchain space, was
+designed to support the management of millions of tokens. On top of that our ASSET contract is also
+ERC-721 compliant and allows multiple unique items to be created by a single smart contract with
+the benefit of keeping the ERC-721 interface to allow interoperability with other Marketplaces and
+games
+
+In The Sandbox, users will have full control over their ASSETS, by being able to create them, but also
+having the possibility to buy, sell, and trade those same ASSETS in The Sandbox Marketplace using
+our SAND token currency.
+
+8.2.1. Interoperability
+
+As we use Ethereum as the substrate of our ERC-1155/ERC721 implementation, any platform
+/ wallet that supports ERC-1155/ERC-721 will be able to inspect and use our ASSET. This
+means independent developers could rely on the plethora of ASSETS our players will be
+
+creating.
+
+The Sandbox gaming environment will be divided into 5 types of tokens:
+
+SAND (our game currency used across the system)
+
+LANDS (Worlds in which players play that are created by the community)
+ASSETS (Voxel models created by players and traded in the marketplace)
+GEMS burnt to give attributes to ASSETS. They are ERC20 tokens
+
+CATALYSTS burnt to mint ASSETS. Depending on their power, they allow users to associate
+a certain number of GEMS to an ASSET. They are ERC20 tokens
+
+www.sandbox.game
+WHITEPAPER SANDBOR:
+gf
+
+@ NativeMetaTransaction
+
+Figure: The Sandbox Tokens
+
+Token contracts are responsible for:
+
+Keeping track of creator (the address that minted the token)
+ownership
+
+transfers
+
+Emitting events when the state changes
+
+8.2.2. Meta Transactions
+
+The Sandbox is aiming to bring non-crypto users to the blockchain world. In order to achieve that we
+believe that the system should be transparent to the user as much as possible.
+Meta Transactions allow users that own SAND to interact with our platform without the need to own
+
+or know what ETH is or for that matter any of the tokens that will be used.
+
+8.3. Technology Solution Breakdown
+
+The Sandbox platform architecture is composed of several components. In terms of
+blockchain integration, we have a traditionally backend running on the cloud (currently using
+AWS) to support our web frontend. An S3 bucket is used to store the asset of the artist
+before they get minted. While we currently guarantee the privacy of the artist work (to
+protect their work from being copied prior to minting), we envision later a system that
+
+would prevent even us to peek at the artist work pre-minting.
+
+Once an UGC asset is minted, our backend releases the ASSET on IPFS so that it becomes
+public. Our smart contract records the hash of an ASSET so that the owner of the ASSET will
+always be able to prove ownership of not only the number recorded on the blockchain
+(which many projects in the blockchain gaming space stop there) but also the voxel model
+
+itself as well as the various render.
+
+www.sandbox.game Page 37
+WHITEPAPER SANDBOR:
+gf
+
+Here is an overview of the overall architecture with all components represented.
+
+Wallet (Metamask,
+Bitski, etc)
+
+Clients
+
+7 Browser
+AWS Servers*
+
+‘ '
+q VoxEdit :
+' '
+‘ '
+, Game 4
+
+ERC20 - SAND - CATALYSTS - GEMS
+ERC1155 / ERC721 - ASSET
+ERC721 - LAND
+
+Smart Contracts
+
+Backend
+
+'
+Publish Asset once minted
+1
+
+Public IPFS
+
+Network
+
+* Aws Servers reference in graph: Sandbox Solution
+
+e Creators can create their ASSETS with VoxEdit, and upload those ASSETS through the
+browser
+
+e@ Metamask is a web3 provider which acts as an intermediary between the User and the
+
+blockchain
+
+A browser in which the user will interact with the smart contracts and our server
+
+The smart contracts running on the blockchain
+
+Our server currently hosted on AWS
+
+The backend is being developed with Node.js, which manages the creation of an asset on
+$3, generating a Hash ID for that ASSET, which is sent back to the frontend so it can begin
+the transaction with the smart contract.
+
+e Finally, once the transaction is confirmed we released the asset on the ipds network.
+ensuring that future owner will always be able to prove that what graphical representation
+they hold is indeed the original one.
+
+IPFS”’ (The InterPlanetary File System) is a peer-to-peer distributed file system that seeks
+to connect all computing devices with the same system of files.
+
+www.sandbox.game
+THE
+WHITEPAPER SANDBOR:-
+Rd
+
+8.4. Program Agents
+
+The Sandbox platform architecture includes a server on our AWS infrastructure that is monitoring
+the blockchain and registering change of state.
+
+Changes are then propagated by our API into our backend, and our centralized database is updating
+its records, so that the frontend can pull the recent changes and display them accordingly to the
+players and users of The Sandbox platforms.
+
+These changes of states include transfer of ownerships from the tokens (LANDS, ASSETS, or SAND).
+
+Additionally, the following are the various situations that will trigger external data inputs to our
+smart contracts. The data received in inputs is always sanitized and several security layers are
+implemented to make sure these are protected. Our smart contracts have been duly audited.
+
+e LAND Sale Setup: we submit the LAND configuration to each new sale contract at the
+time of deployment.
+
+e LAND Sale: the buyer submits their LAND of choice inclusive of the payment,
+following which the contract mints the LAND in exchange. We provide a 2D map to
+allow the buyer to easily choose their LAND;
+
+e LAND Sale Stable Price Oracle: We do not have any oracle system that sends
+information to our smart contract. Instead we utilise MakerDAO medianizer which
+receives updates from the Oracle and makes a median estimation of the price of the
+dollar: https://developer.makerdao.com/feeds/
+
+e Asset Sale setup:
+
+othe creator submits a 3D voxel model to our backend, we hash the result and
+submit that on the smart contract, that in turn mints a token to represent it;
+
+othe creator submits a signature specifying the selling price and our backend
+shall store it;
+
+e Asset Sale: the buyer submits a payment for a particular token to the smart contract
+along with the seller signature. It receives the token in exchange.
+
+8.5. Game Engine
+
+We have developed a custom Voxel Engine on top of Unity engine.
+
+Our engine leverages the power of the new Unity Data Oriented Tech Stack (a.k.a. DOTS) by
+making extensive use of the Entity Component System (ECS) and the Jobs system.
+
+By using Unity's new Universal Render Pipeline (URP) we are able to support Mobile
+
+platforms in the future, without sacrificing the render quality of our game for Desktop
+platforms.
+
+www.sandbox.game
+THE
+WHITEPAPER SANDBOR:-
+Rd
+
+Our engine also implements support for our custom Voxel Models, Rigging and Animation
+formats (VXM, VXR, VXA) from our in-house Voxel Editor (VoxEdit).
+
+8.6. Wallets
+
+We minimize the security risk on our backend by reducing the responsibility of hot wallets that are
+only used for referral and whitelisting.
+
+The other wallets are cold storage wallets that hold responsibility for updating the platform with new
+contracts and new parameters. These could later be part of a governance mechanism.
+
+For these cold wallets, we use a 2 out of 3. multi-signature wallet
+(https://github.com/gnosis/MultiSigWallet) and all of the owners of those multi-signatures are three
+hardware wallets.
+
+This wallet has the possibility to upgrade our SAND token, as well as the ability to extend
+functionality via super operators.
+
+In relation to the methods of payment, if the user wishes to pay with:
+
+e@ an ERC-20 based token (ETH or DAI), it will then be processed by a smart contract on-chain
+and the user shall receive the SAND directly into his wallet; and/or
+
+e BTC, credit card or fiat payment, it will then be processed by a third party service merchant
+solution, whereby upon confirmation by the latter, the SAND shall be released.
+
+8.7. Security
+
+The Sandbox marketplace is relying on the security of Ethereum for the functioning of its smart
+contracts. The only wallet that can affect the logic of our smart contract is our multi-signature wallet
+which uses the gnosis MultiSig wallet backed with three hardware wallets.
+
+On our backend side, we manage a database that cache the smart contract events to keep track of
+ownership. Our backend also stores temporary assets. On that side, its responsibility is thus minimal.
+
+As for fiat payment hot wallet, we are designing a daily auto-refill to ensure that only a minimum
+amount of token is present, minimizing the consequence of a breach.
+
+www.sandbox.game
+THE
+WHITEPAPER SANDBOR:-
+Rd
+
+9. The Team
+
+We have assembled the right senior team to execute our vision: 42 resources located in our 3 offices
+with 28 full time employees in Argentina, 11 in France, 2 in Korean and 1 in Japan.
+
+9.1. Core Team
+
+Arthur Madrid - CEO and Director of The Sandbox
+
+Arthur Madrid is the Co-founder and CEO of Pixowl (acquired by Animoca Brands in
+2018) as well as The Sandbox (40M players). Board Member of Animoca Brands and a
+longtime social-gaming entrepreneur. He sold two software companies (Wixi Inc. and
+1-Click Media) and is an advisor for startups in gaming, social media and software.
+Arthur began his career building a P2P delivery platform for Media companies, one of
+the first Distributed Computing Software (DCIA) platforms. Now, he is focusing on
+Blockchain Gaming as CEO & Co-Founder of The Sandbox.
+
+Sebastien Borget — COO and Director of The Sandbox
+
+Sébastien Borget is the Co-founder and COO of Pixowl (acquired by Animoca Brands in
+2018) as well as The Sandbox (40M players). Passionate for blockchain technology,
+gaming and education, he is a very active speaker and evangelist on the opportunity
+Non-Fungible Tokens brings to gaming. He is now building the metaverse with The
+Sandbox, one of the 2019’s most anticipated and top ranked blockchain games (#13 in
+the Top 50), that is empowering players through NFTs, enabling them to own, buy, sell
+and trade their 3D creations on their Marketplace and use them in their Game Maker.
+Sebastien also became President of the Blockchain Game Alliance in 2020.
+
+Marcelo Santurio - CFO of The Sandbox
+
+Marcelo Santurio is the Co-founder of the 1st online payment company in Latam and has +20
+years experience in Finance, Tech, and Gaming. MBA from the London Business School with
+focus on Finance and Execute Program at MIT in Entrepreneurship.
+
+Pablo Iglesias - Inventor of The Sandbox Game
+
+Pablo Iglesias has over ten years of experience in researching and developing emergent
+procedural systems while leading teams of professionals through several successful
+games.
+
+Lucas Shrewsbury - CTO of The Sandbox, ex-CTO of Gameloft
+
+Lucas Shrewbusyr has spent more than a decade leading mobile gaming studios. While
+at Gameloft Argentina, he managed the studio and a team of 200 people.
+
+www.sandbox.game
+WHITEPAPER
+
+9.2. Advisors
+
+THE
+SANDBOH:
+Rd
+
+Hashed
+
+Based in South Korea and San Francisco, Hashed has realized
+meaningful gains in the crypto-industry. Led by serial entrepreneurs
+and engineers, Hashed has expedited global Blockchain adoption
+through strategic investment and community building.
+
+Mikhael Naayem
+
+Mik Naayem is Chief Business Officer at Axiom Zen and CryptokKitties,
+the world’s most successful game built on blockchain technology and
+Axiom Zen’s first public blockchain project. Mik focuses on directing
+business strategy, growing partnerships, and evolving the company
+platform.
+
+Yat Siu
+
+Co-founder and CEO at Animoca Brands. He is a serial entrepreneur
+and angel investor. He is the CEO and founder of Outblaze (sold B2B
+business to IBM in 2009) and he has received recognition for his role as
+an entrepreneur focused on Internet and technology companies.
+
+Alexis Bonte
+
+Group COO of Stillfront Group, Co-founder and board member of
+eRepublik Labs. He is a co-founder and angel investor with a strong
+general management background and ovber 20 years 360 degrees
+experience in all types of start ups from early stage to post-IPO.
+
+Ed Fries
+
+Ed Fries created his first video games for the Atari 800 in the early
+1980s. He joined Microsoft in 1986, and spent the next ten years as
+one of the early developers of Excel and Word. He left the Office team
+to pursue his passion for interactive entertainment and created
+Microsoft Game Studios. Over the next eight years he grew the team
+from 50 people to over 1200, published more than 100 games
+including more than a dozen million+ sellers, co-founded the Xbox
+project, and made Microsoft one of the leaders in the video game
+business.
+
+9.3. Services Providers
+
+Legal, Accounts & Tax
+
+Centrium Advisory
+
+System Auditor(s)
+
+Fact Group
+Certik
+Solidified
+
+www.sandbox.game
+
+WHITEPAPER SANDBOR:
+gf
+
+CONCLUSION
+
+The Sandbox decentralized platform allows players and creators to own a piece of our gaming
+metaverse (LAND), participate in the governance and economy (SAND), while creating and enjoying a
+simple way to benefit from their playing time.
+
+In the coming year, our experienced and dedicated team will build an unique way to play in a virtual
+world where you can play, create, collect, earn, govern, and own anything in the game.
+
+Join us now.
+
+www.sandbox.game

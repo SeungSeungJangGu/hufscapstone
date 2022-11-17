@@ -1,0 +1,1434 @@
+CD
+NET
+WHITEPAPER 2.0
+
+CONA MN
+
+. ABSTRACT
+. DISCLAIMER
+
+RESTRICTIONS ON DISTRIBUTION AND DISSEMINATION
+RISKS AND UNCERTAINTIES
+
+. BACKGROUND
+. INTRODUCTION TO STAKENET (XSN)
+
+WHAT DOES XSN DO?
+BLOCK REWARDS
+LEDGER WALLET SUPPORT
+
+. OUR VISION
+
+. OUR MISSION
+
+. CORE OBJECTIVES
+. Roadmap for 2018
+
+Q1-GENESIS
+
+Q2 - EXCALIBUR
+Q3 - ZEUS
+
+Q4 - MERLIN
+
+9. TECHNICAL ARCHITECTURE OF XSN COIN
+
+XSN Coin
+
+10. KEY TECHNOLOGIES AND FEATURES
+
+11
+
+POS REVOLUTIONIZED—INTRODUCING TRUSTLESS PROOF OF STAKE(TPOS)
+Background of Proof of Stake
+Introducing Trustless Proof of Stake (TPoS)
+Features
+1. StakeNet is fundamentally private:
+2. StakeNet provides attribution and is always on:
+3. StakeNet is trustless:
+Mechanics
+TPoS Contract
+Required information to create a TPoS contract20
+
+. TPOS—RESTORING TRUST IN CRYPTO BY OFFERING PRIVACY
+
+What will be the effect?
+Sample “one click” TPoS UI:
+usability of tpos
+
+TPoS commission
+
+Use Case
+
+Seller Ratings
+
+12. STAKENET MASTERNODES
+
+Overview
+
+1
+3
+4
+5
+5
+6
+7
+7
+8
+8
+8
+9
+
+Xo}
+13.
+
+14.
+15.
+16.
+17.
+
+18.
+
+19.
+
+20.
+
+21.
+
+Rewards Program
+PoS Rewards Breakdown:
+How xsn masternode works?
+Revolving Stake Bonus (RSB)—Deflation Based Revenue Model
+Hedge funds
+StakeNet Ventures
+Staking as a Service
+Incentivized Prizes
+XSN ATOMIC SWAPS
+XSN LIGHTNING NETWORK
+XSN TREASURY
+XSN Cross chain proof of stake (CCPOS)
+Background
+Overview
+Inter Chain Cluster
+Why has this not been done?
+Maintaining Agility
+Functionalities
+Multicurrency Wallet
+Features
+Normalization Shockwave
+Block Equalizer
+Future Use Cases |Proposed|
+PEER TO PEER RENTAL MARKET PLACE:
+Peer to Peer Service Hirin
+COMMUNITY-DRIVEN SERVICES
+XSN MERCH
+XSN COMMUNITY BUILDING STRATEGIES
+WORD OF MOUTH MARKETING
+CRYPTO EXPOS
+STRATEGIC ALLIANCES
+INTENSE DEEP CODING AND EDUCATING PEOPLE OF THE RISKS CONCERNED
+ATTRACTING AND CONVINCING MERCHANTS
+GLOSSARY
+
+18
+19
+20
+21
+21
+22
+22
+23
+23
+23
+24
+24
+24
+25
+25
+26
+26
+27
+27
+28
+29
+29
+30
+30
+30
+30
+30
+31
+31
+31
+32
+1. ABSTRACT- 4th Generation DLT
+
+As we move through a 3rd generation wave of blockchains it is important to understand which tech-
+nologies, communities and Decentralized Ledger Technologies (DLT’s) will separate themselves from
+the rest, pushing through the noise of constant ventures entering the crypto-sphere. Instead of a“one
+chain rule” however; we believe the future will instead be the formation of a global backend - a 4th
+generation blockchain mesh consisting of every chain, technology and service created thus far. A
+united network of different tech from different chains fully communicating as one entity executing
+synchronously. A future where one powers software to run their vehicle, buys groceries, or signs con-
+tracts instantly using different chains will be amongst us, constantly evolving to fit users needs on the
+fly. This conversion will be completely unbeknownst to end users as swaps will be done case by case
+on the backend, not seen, realized, or even chosen by the user.
+
+How clo we get there?
+
+A requirement and first step towards a chain participating in this cross chain “meta network” will be
+the ability to autonomously swap fluidly back and forth between assets in a trustless instant manner.
+We will first transform our chain into a multi-currency wallet which will enable it to hold, send and
+receive balances and will provide us with our solid foundation. This foundation will allow smooth
+transitions into cross chain capabilities and thereafter, this functionality will be enabled onto our
+chain, known as a Decentralized Exchange (DEX).
+
+Decentralized Exchange
+
+The power and implications of a decentralized exchange are often overlooked. The ability to morph
+assets instantly from one chain to another in a trustless manner gives massive power to the individu-
+als of a given system as well as the system itself. Think of how difficult it is to convert assets in our
+current financial model, let alone done peer-to-peer - nearly impossible. To this point exchanges have
+been swapping assets tailored specifically for accredited institutions to oversee by central authorities
+—they have been financial vehicles and not much more. Due to utility traits of tokens, and the fact
+that ownership is never conceded the entire definition of an “exchange” changes. When a user exe-
+cutes an exchange for example it will empower him instantly with all features and functions that
+come with the resulting swap. When sleeping, working, cooking, driving etc there will be certain
+chains that enhance different human experiences. A given individuals net worth will constantly be
+evolving form to accommodate it's owner in the most efficient way possible. XSN sees the future of
+wealth in a new light - as alive, intimately involved enhancing our lives in real-time in a way that has
+never before been realized. We understand there will be different utility needed in different situations
+and rather than compete with new tech we will engineer ourselves to integrate new chains easily into
+
+our system.
+
+In 1991 James Cameron directed and released a film about an artificial intelligence that became self
+aware and fought against humanity. The infamous antagonist “T-1000” would download data and
+morph into objects it came across and observed—the movie was a hit partly because it was quite
+conceivable to be reality amongst critics and technologists alike. There is no reason networks
+shouldn't be able to have this same ability - to fluidly download and replicate any and all peer
+networks which it connects. We are seeing the beginnings of this meta-connection now with emerg-
+ing off chain technologies (lightning, raiden etc). Combined with the use of second layers we will also
+be able to run nodes while providing full functionality, liquidity, and communications between all.
+Cross chain nodes are coming and XSN will be first in line to lead this newly disruptive technology.
+
+2. DISCLAIMER
+
+PLEASE READ THIS DISCLAIMER SECTION CAREFULLY. IF YOU ARE IN ANY DOUBT OF THE ACTION YOU
+SHOULD TAKE, YOU SHOULD CONSULT YOUR LEGAL, FINANCIAL, TAX, OR OTHER PROFESSIONAL
+ADVISOR(S).
+
+This document is a whitepaper setting out the current and future developments of the StakeNet Net-
+work and StakeNet Ecosystem. This paper is for information purposes only and is not a statement of
+future intent. Unless expressly specified otherwise, the products and innovations set out in this paper
+are currently under development and are not currently in deployment. StakeNet makes no warranties
+or representations as to the successful development or implementation of such technologies and
+innovations, or achievement of any other activities noted in this paper, and disclaims any warranties
+implied by law or otherwise, to the extent permitted by law. No person is entitled to rely on the con-
+tents of this paper or any inferences drawn from it, including in relation to any interactions with Stak-
+eNet or the technologies mentioned in this paper. StakeNet disclaims all liability for any loss or
+damage of whatsoever kind (whether foreseeable or not) which may arise from any person acting on
+any information and opinions relating to StakeNet, the StakeNet Platform, or the StakeNet Ecosystem
+contained in this paper or any information which is made available in connection with any further
+inquiries, notwithstanding any negligence, default or lack of care.
+
+StakeNet, its directors, employees, contractors, and representatives do not have any responsibility or
+liability to any person or recipient (whether by reason of negligence, negligent misstatement, or oth-
+erwise) arising from any statement, opinion or information, expressed or implied, arising out of, con-
+tained in or derived from or omission from this paper. Neither StakeNet nor its advisors have inde-
+pendently verified any of the information, including the forecasts, prospects and projections con-
+tained in this paper.
+
+Each recipient is to rely solely on its own knowledge, investigation, judgment, and assessment of the
+matters which are the subject of this report, and any information which is made available in connec-
+tion with any further inquiries, and to satisfy itself as to the accuracy and completeness of such mat-
+ters.
+
+Whilst every effort is made to ensure that statements of facts made in this paper are accurate, all esti-
+mates, projections, forecasts, prospects, expressions of opinion, and other subjective judgments con-
+tained in this paper are based on assumptions considered to be reasonable as of the date of the docu-
+ment in which they are contained and must not be construed as a representation that the matters
+referred to therein will occur. Any plans, projections, or forecasts mentioned in this paper may not be
+achieved due to multiple risk factors including without limitation defects in technology develop-
+ments, legal or regulatory exposure, market volatility, sector volatility, corporate actions, or the una-
+vailability of complete and accurate information.
+
+This white paper does not constitute a prospectus or offer document of any sort and is not intended
+to constitute an offer of securities or a solicitation for investment in securities in any jurisdiction. This
+white paper does not constitute or form part of any opinion on any advice to sell, or any solicitation
+of any offer by the distributor/vendor of the STAKENET (the “Distributor”) to purchase any XSN Coin,
+neither shall it or any part of it nor the fact of its presentation form the basis of, or be relied upon in
+connection with, any contract or investment decision. The Distributor will be an affiliate of STAKENET
+(“STAKENET") and will deploy all proceeds of the sale of the XSN Coin to fund STAKENET cryptocurren-
+cy project, businesses, and operations. No person is bound to enter into any contract or binding legal
+commitment in relation to the sale and purchase of the STAKENET, and no cryptocurrency or other
+forms of Payment is to be accepted on the basis of this white paper. Any agreement as between the
+Distributor and you as a purchaser, and in relation to any sale and purchase, of STAKENET (as referred
+to in this white paper) is to be governed by only a separate document setting out the terms and con-
+ditions (the “T & Cs”) of such agreement. In the event of any inconsistencies between the T & Cs and
+this white paper, the former shall prevail. You are not eligible and you are not to purchase any STAKEN-
+ET in the STAKENET Technologies Initial Token Sale (as referred to in this white paper) if you are a
+citizen, resident (tax or otherwise) or green card holder of the United States of America or a citizen or
+resident of the Peoples Republic of China.
+
+No regulatory authority has examined or approved of any of the information set out in this white
+paper. No such action has been or will be taken under the laws, regulatory requirements, or rules of
+any jurisdiction. The publication, distribution, or dissemination of this white paper does not imply
+that the applicable laws, regulatory requirements, or rules have been complied with. There are risks
+and uncertainties associated with STAKENET Network and/or the Distributor and their respective
+businesses and operations, the STAKENET and the STAKENET Network Wallet (each as referred to in
+this white paper).
+
+This white paper, any part thereof and any copy thereof must not be taken or transmitted to any coun-
+try where distribution or dissemination of this white paper is prohibited or restricted. No part of this
+white paper is to be reproduced, distributed, or disseminated without including this section and the
+following sections entitled “Disclaimer of Liability”, “No Representations and Warranties’, “Representa-
+tions and Warranties By You’, “Cautionary Note On Forward-Looking Statements’, “Market and Indus-
+try Information and No Consent of Other Persons’, “Terms Used”, “No Advice’, “No Further Information
+or Update’, “Restrictions On Distribution and Dissemination’, “No Offer of Securities Or Registration”
+and “Risks and Uncertainties”.
+
+To the maximum extent permitted by the applicable laws, regulations, and rules, STAKENET Network
+and/or the Distributor shall not be liable for any indirect, special, incidental, consequential, or other
+losses of any kind, in tort, contract or otherwise (including but not limited to loss of revenue, income
+or profits, and loss of use or data), arising out of or in connection with any acceptance of or reliance
+on this white paper or any part thereof by you.
+
+StakeNet may provide hyperlinks to websites of entities mentioned in this paper, however the inclu-
+sion of a link does not imply that StakeNet endorses, recommends or approves any material on the
+linked page or accessible from it. Such linked websites are accessed entirely at your own risk. StakeNet
+does not accept responsibility whatsoever for any such material, nor for consequences of its use.
+This paper is not directed to, or intended for distribution to or use by, any person or entity who is a
+citizen or resident of or located in any state, country or other jurisdiction where such distribution,
+publication, availability, or use would be contrary to law or regulation. STAKENET and/or the Distribu-
+tor does not make or purport to make, and hereby disclaims, any representation, warranty or under-
+taking in any form whatsoever to any entity or person, including any representation, warranty or
+undertaking in relation to the truth, accuracy, and completeness of any of the information set out in
+this white paper.
+
+No information in this white paper should be considered to be business, legal, financial, or tax advice
+regarding STAKENET Trading Technologies, the Distributor, STAKENET network, and sale of XSN Coin
+on exchanges. You should consult your own legal, financial, tax, or other professional advisers regard-
+ing STAKENET Network and/or the Distributor and their respective businesses and operations, the
+XSN Coin. You should be aware that you may be required to bear the financial risk of any purchase of
+XSN Coin for an indefinite period of time.
+
+RESTRICTIONS ON DISTRIBUTION AND DISSEMINATION
+
+This paper is only available on www.xsncoin.io and may not be redistributed, reproduced, or passed
+on to any other person or published, in part or in whole, for any purpose, without the prior, written
+consent of StakeNet Network. The distribution or dissemination of this white paper or any part there-
+of may be prohibited or restricted by the laws, regulatory requirements and rules of any jurisdiction.
+In the case where any restriction applies, you are to inform yourself about, and to observe, any restric-
+
+restrictions which are applicable to your possession of this white paper, or such part thereof (as the
+case may be) at your own expense and without liability to STAKENET Network and/or the Distributor.
+Persons to whom a copy of this white paper has been distributed or disseminated, provided access to
+or who otherwise have the white paper in their possession shall not circulate it to any other persons,
+reproduce or otherwise distribute this white paper or any information contained herein for any pur-
+pose whatsoever nor permit or cause the same to occur.
+
+RISKS AND UNCERTAINTIES
+
+Prospective purchasers of STAKENET (as referred to in this white paper) should carefully consider and
+evaluate all risks and uncertainties associated with StakeNet Network, XSN Coin, the Distributor, mer-
+chants, and their respective businesses and operations. If any of such risks and uncertainties develop
+into actual events, the business, financial condition, results of operations and prospects of STAKENET
+Network and/or the Distributor could be materially and adversely affected. In such cases, you may
+lose all or part of the value of the STAKENET.
+
+3. BACKGROUND
+
+In the last few years, the cryptocurrency community has steadily grown. However, the fact remains
+that this community is still in the early stages of expansion, and is a continuously expanding market
+which offers great opportunities for traders all around the world. Presently, there are over 1,600 cryp-
+tocurrencies, above 10,450 markets and a total market cap of nearly $400 billion as per statistics avail-
+able at coinmarketcap.com. In 2017, the prices of popular virtual currencies such as Bitcoin and
+Ethereum soared to record highs amid increased investor interest.
+
+There are now hundreds of cryptocurrencies to choose from - with more appearing each passing day.
+Choice paralyzes - this adds cost, complexity and the need for advice. Given that cryptocurrency can
+be high risk, has extreme volatility, and can be difficult to buy and store safely, an effective and diverse
+portfolio of coins (cryptocurrencies) can be a complex problem.
+
+Furthermore, these cryptocurrencies seem to be failing when it comes to general acceptance and
+usability, where these projects have failed to identify and address the main issues present in making
+mass adoption of digital assets possible. The main reasons are lack of security, acceptability, high
+exchange and trading fees, liquidity issues and volatility of the market. Numerous steps are often
+involved in seeing the real use of one’s digital assets. Despite the growing appeal of cryptocurrencies,
+the usability of these digital assets remains limited - a hurdle that has kept it from achieving more
+rapid, widespread adoption.
+
+Aside from general usability, digital currencies have become a source of the high margin of profits
+
+considering its ample trading opportunities. However, at the same time, it may also be noted that
+trading or investing in cryptocurrencies is complex and time-consuming. A trader not only needs to
+understand the complexities of trading, but also being able to cope with the rapidly growing cryp-
+tocurrency market. Considering the fact that the crypto market is forever open on a 24/7 basis and
+can be highly volatile, in order for a trader to be successful, they need to be constantly monitoring
+their trades, and monitoring trends to give them the information to make the right decision - this is
+a tricky task that involves deep analysis of market trends and gaining the right information. Thus,
+having all these complexities, it is natural to ask for a way, where one can get rid of these hindrances
+and invest in the right cryptocurrency to gain maximum profits.
+
+StakeNet (XSN) is a state of the art ecosystem that aims to resolve all these issues by providing users
+with a cryptocurrency and a platform that provides features such as easy and secure staking, a fast,
+private, and innovative blockchain using masternodes, lightning network, security algorithms, Cross
+Chain Proof of Stake (CCPoS), etc. and provide usability/acceptability by creating a network of mer-
+chants that accept XSN as a mode of payment.
+
+4. INTRODUCTION TO STAKENET (XSN)
+
+Money
+Dividends
+
+Ledger
+
+POSW
+
+Coin Wallet
+POS
+Wallet
+
+StakeNet, with the ticker XSN, is a Trustless Proof of Stake cryptocurrency created using the X11 algo-
+rithm that allows users to stake various cryptocurrencies in one single wallet. StakeNet addresses the
+issue of staking for nontechnical people by providing a simple user interface at stakenet.io, and
+accepting term deposits, membership and selling other merchandise to support Revolving Stake
+Bonus (RSB) to XSN holders. StakeNet focuses on technology improvements on the blockchain level,
+aims to improve the coin by introducing Trustless Proof of Stake (TPoS), which enables cold wallet
+staking, lightning network, atomic swaps, multi-currency wallet and Cross Chain Proof of Stake
+(CCPoS) functionalities. These tech improvements really push the boundaries so that XSN will keep up
+with other coins technological improvement, which will allow XSN to always stay relevant and be a
+store of value.
+
+WHAT DOES XSN DO?
+
+XSN is the world's first Trustless Proof of Stake (TPoS) coin that allows its users to safely, and conven-
+iently, stake their XSN coins in cold wallet storage, for example using Ledger hardware wallets.
+Owners of the XSN Coin will be able to stake their coins effortlessly by setting up a contract with a
+merchant - allowing the merchant to stake the owner's coins without the need for total control over
+the coins. Along with TPoS technology, StakeNet will implement state of the art features such as
+Lightning Network, XSN atomic swaps, Masternodes, Enhanced Privacy, and the innovative Cross
+Chain architecture that allows for inter chain capabilities.
+
+BLOCK REWARDS
+
+The block rewards for XSN are split between masternodes, staking nodes, and treasury. Masternodes
+will receive 45% of the block rewards for providing high bandwidth, 24/7 connections, which pro-
+vides basic requirements for further XSN features. Staking rewards, whether that be from TPoS or
+regular PoS, will also receive 45% of the block rewards, for leaving their nodes online and securing the
+network. Lastly, 10% of the block rewards will go to the treasury as an extra fund for future develop-
+ments of XSN and various other factors. The breakdown is shown below in the Pie Chart.
+
+Treasury
+
+Masternodes
+
+Staking
+
+LEDGER WALLET SUPPORT
+
+StakeNet is one of the coins and tokens (to date) that are supported by the Ledger Blue and Nano S
+hardware wallets. Ledger is the world’s leading cryptocurrency hardware provider, with the aim of
+providing users with a simple, portable and highly secure solution for holding coins without the
+added risk of storing them on easily compromisable devices such as smartphones and personal com-
+puters. An existing integration means that users can purchase a Ledger wallet as a low cost solution
+and store their private keys on it, and existing Ledger users already have a ready-made integration
+(provided they upgrade to the latest version).
+
+We believe this will accelerate the rate of adoption and increase consumer trust in the StakeNet
+network, as security concerns are frequently cited as being barriers to use of cryptographic assets. The
+integration also fits in perfectly with our Trustless Proof Of Stake solution as users no longer need to
+disclose their private keys in order to stake and be eligible for Revolving Stake Bonuses (RSBs), which
+we find to be in harmony with our long-term goals.
+
+5. OUR VISION
+
+Our goal for StakeNet is to create the world's first truly trustless, profit-driven economy with the use
+of TPoS, the highest level of network security using decentralized cold staking, and Masternodes, the
+highest level of providing network services in a truly decentralized world. We accomplished our main
+goal within a month after launch date and we are now pushing boundaries to expand our ecosystem
+of the XSN services and products. Our next big milestone for 2018 is to launch our StakeNet Decen-
+tralized Exchange (DEX) and Cross Chain Proof of Stake(CCPoS) capabilities to broaden the ecosystem
+and to make crypto assets more accessible and secure for the average user around the world.
+
+6. OUR MISSION
+
+StakeNet's mission is to make the XSN framework an ecosystem that allows easy and secure staking
+via TPoS - the highest level of security using decentralized cold staking. We strive to invent new appli-
+cations for TPoS and set up/partner with many different businesses to implement services such as
+Multiwallets/Staking as a Service, Masternodes as a Service, Pooled Masternodes, and Atomic Swap
+Services. The profits from these businesses will then be used to buy & burn XSN through monthly
+RSBs.
+
+7. CORE OBJECTIVES
+
+Privacy o —_ The idea of StakeNet is to achieve four main things.
+(@a) Profitability
+
+These include:
+
+= Security using Trustless-Proof-of-Stake
+&} fe (TPoS)and our Decentralized Exchange (DEX)
+
+&-
+
+= Immediacy over Lightning Network and
+@ masternodes
+
+u Innovations creating XSN sidechains and new
+technologies
+
+Immediacy
+
+Profitability from XSN services and applica-
+tions
+
+8. ROADMAP FOR 2018
+
+Coin swap from POSW to XSN
+TPoS and MasterNodes implementation
+
+GENESIS XSN information website
+Q1
+
+Segwit Update
+
+Launch Staking Platform Stakenet.io
+Cold staking from Ledger Nano S EXCALIBUR
+
+Lightning Update
+
+XSN Multi Currency Wallet
+
+MN Watchtowers
+
+MN Lightning channels
+
+Launch of Decentralized Exchange
+Auto Updates
+
+* Autonomous swaps executed by MN
+quarums
+
+Enhanced Privacy
+
+On Chain Scaling (Sharding)
+
+Cold Exchanging from hardware devices
+DAPPS built on XSN blockchain
+
+Enable Cross Chain Proof of Stake
+Q1-GENESIS
+
+e Coin swap from POSW to XSN
+e TPoS and masternodes implementation
+e XSN information website
+
+Q2 - EXCALIBUR
+
+e Segwit Update
+
+e Launch Staking Platform Stakenet.io
+e Cold staking from Ledger Nano S
+
+e Lightning Update
+
+Q3 - ZEUS
+
+XSN Multi Currency Wallet
+
+MN Watchtowers
+
+MN Lightning channels
+
+Launch of Decentralized Exchange
+Auto Updates
+
+Q4- MERLIN
+
+Autonomous swaps executed by MN quarums
+Enhanced Privacy
+
+On Chain Scaling (Sharding)
+
+Cold Exchanging from hardware devices
+DAPPS built on XSN blockchain
+
+Enable Cross Chain Proof of Stake
+
+9. TECHNICAL ARCHITECTURE OF XSN COIN
+
+XSN coin is a state of the art cryptocurrency that allows a peer-to-peer
+( method of payment and is deployed on its dedicated StakeNet block-
+chain based technology. It will be used for daily transactional activities
+happening within the XSN coin financial ecosystem, for staking and
+
+masternode purposes, merchant services, and can also be used as a peer to peer exchange and store
+of value between users securely, and efficiently at reduced costs.
+
+By using XSN coin and its dedicated blockchain technology that is backed by innovative technologies
+such as TPoS, Lightning and Stealth Mode, XSN Coin aims to enhance its services to consumers,
+sellers, and merchants. This allows a level of transparency that was previously unrealized while creat-
+ing incentives for users to adopt and use the platform.
+
+10. KEY TECHNOLOGIES AND FEATURES
+
+PoS REVOLUTIONIZED— INTRODUCING TRUSTLESS PROOF OF STAKE(TPoS)
+BACKGROUND OF PROOF OF STAKE
+
+At its very core, the modern banking system is based on a simple paradigm - ‘Trust’ We give our
+money to banks and they provide us with services in return (deposits, loans, and investments). While
+we could perform these services ourselves, it has proven much more convenient to use this central-
+ized, trust-based system.
+
+To mitigate the potential for abuse presented by such a global centralized system, decentralized
+blockchain based assets, such as Bitcoin, have been introduced. To secure a decentralized network
+and ensure users cannot double-spend their funds, Bitcoin utilizes a Proof-Of-Work (PoW) algorithm,
+which requires miners to prove through distributed consensus - a large pool of people who are geo-
+graphically segregated agreeing on transactions or blocks that are valid/invalid to be added/rejected
+to the blockchain - have spent a certain amount of computational resources in order to make an
+attack on the network uneconomical.
+
+The computing power required to carry out the cryptographic calculations only ever increases as the
+difficulty increases, thus consuming greater amounts of electricity. In the long run, this would be
+counterproductive to the health of a cryptocurrency, as miners would have to sell substantial por-
+tions of their coins for fiat currency to foot the electricity bill, devaluing the price of the cryptocurren-
+cy. Thus, it can be deduced that PoW networks are not financially ideal as only miners can receive
+block rewards and transaction fees in return for precious resources, whereas regular users do not see
+any ROI from holding their coins.
+
+This is where Proof of Stake (PoS) networks come in. Proof of Stake is a typical computer algorithm
+through which a cryptocurrency achieves their distributed consensus. It is also a better alternative to
+the PoW algorithm because it achieves the same distributed consensus at a lower cost and in a more
+energy efficient way.
+
+The transaction confirmation mechanism shifts from a burden of proof of the expenditure of resourc-
+
+resources over to total stake held, where transactions are confirmed by simple nodes who hold large
+balances, and the greater the balance the user holds, the more likely they are to receive fees and block
+rewards. While this significantly reduces the number of resources required to confirm transactions
+and effectively allows the average user to see positive ROI on balances held, this system still requires
+a user to maintain connectivity at all times, have a high-bandwidth connection, and for their wallets
+to be unlocked 24/7. During any time frame in which all or any of the aforementioned conditions are
+not met, the user is skipped by the network and does not receive their fair share of stake rewards.
+
+INTRODUCING TRUSTLESS PROOF OF STAKE (TPOS)
+
+StakeNet has devised a solution to the problems being faced by users of decentralized networks
+today: Trustless Proof of Stake (TPoS). TPoS essentially allows users to own a stake in StakeNet, a Proof
+of Stake currency, and have any other node (merchant nodes) do the staking for them using their
+high-bandwidth, continuous connectivity (to ensure maximal rewards distribution) while not having
+to share any spendable balance or private keys with the node owner. Your funds are yours and yours
+alone, and will safely and securely grow over time even while you sleep. This feature was created with
+the intention of allowing users to securely stake XSN coins in cold storage from hardware devices.
+Increasing security for both the network and the user. We believe TPoS will be the next stage of evolu-
+tion in terms of guaranteeing ROI on balances, and our adoption strategy will ensure it becomes the
+standard across financial services worldwide. TPoS allows any fund owner to delegate the duty of
+growing their funds to any interest generating service provider (typically served via Masternodes on
+the network) without having to lose control over their funds. Think of it as putting your money inside
+of a virtual bank that cannot fail, get robbed, go bankrupt, become insolvent or shut down, with you
+being able to withdraw or move 100% of your funds at any time, day or night, no questions asked and
+no withdrawal limits imposed.
+
+TPoS takes on the robust infrastructure introduced by Bitcoin, the Blockchain, and adds an extra layer
+on top, called the delegation layer. With Bitcoin (and any other digital currency in existence) a user
+would have to send their money to the said service provider in order to grow their funds, instead,
+XSN's TPOS allows users to delegate their funds. With StakeNet you do not send over your money, you
+send over the right to grow your money, temporarily, until you find someone who offers a better
+service. This is the very essence of the free market.
+
+FEATURES
+1. StakeNet is fundamentally private: The StakeNet Network utilizes a technology called Stealth
+Mode, meaning that a user can choose to send funds to a recipient without any traces. Sender and
+
+recipient details are hidden and obfuscated, making it impossible to track your movements.
+
+2. StakeNet provides attribution and is always on: Using a dedicated blockchain, StakeNet records
+
+each user's balance and stores it forever, until they choose to move it around. The StakeNet Network
+is cryptographically secure, meaning that no one can access anyone's funds unless they have their
+private key (unique password) and is fully decentralized, meaning it is not owned by any party who
+can choose to arbitrarily change the rules.
+
+3. StakeNet is trustless: Unlike any other financial system or digital currency, StakeNet is the only
+solution that allows users to delegate the right to grow their funds without needing to actually hand
+over custody over them. This is groundbreaking technology and cannot be found anywhere else.
+
+MECHANICS
+
+To accomplish the above-mentioned features, XSN has created a multi-layered cryptographic archi-
+tecture that expands the private-public key paradigm, called Triplet-Based Encryption. This three-lay-
+ered model will feature a public key, which serves as a public address and stores unspent balances, a
+private key, which can authorize the spending of a balance stored on the public address it was used
+to create, and a "shared" key. The shared key is created whenever a user chooses to allow a merchant
+node operator to stake their funds and its sole purpose is to authorize the staking of a user's balance.
+It cannot spend or move the balance around; for those the private key is required. Now that a user has
+a new key that can be used for remote staking only and the private key no longer needs to be
+disclosed, the concept of trust is once again eliminated, allowing the economics of the StakeNet
+network to prosper. We purposely made the barrier to entry easy to become a TPoS merchant, this will
+ensure competition and enough decentralization amongst TPoS merchant nodes to prevent 1 mer-
+chant from monopolizing the market. Our dev team also can develop 1-click setups for merchant Ul's
+if need be to even further ensure decentralization to allow average non techies to enter the market.
+
+fA) Public key
+
+j
+
+STAKENET
+
+© Private key
+
+(Cc) Shared key
+
+TPOS CONTRACT
+
+A XSN Trustless Proof of Stake (TPoS) contract is a special agreement made on our blockchain which
+allows an owner of a given address (we call “owner”) the ability to give staking permission to a sepa-
+rate address (we call "merchant"). The merchant does not have permission to move funds in the TPoS
+address, only the right to stake the balance of that address. The owner can move his funds out of the
+TPoS address at all times, giving him complete control of his funds during and throughout the execu-
+tion of this contract.
+
+Required information to create a TPoS contract
+
+The contract is a special transaction with OP_RETURN that holds data specifying the terms. The con-
+tract is created by a user sending 1 XSN to himself, which will also broadcast the terms of the contract
+to the network. This 1 XSN needs to be made the lowest priority when the user spends XSN from his
+
+Ledger wallet (if the 1 XSN is spent it will break the contract).
+
+To cancel the TPoS contract the user simply needs to move all of his funds into a new address, or
+cancel the contract via their Ul.
+
+Required information in the contract is as follows:
+
+1. TPOSADDRESS— Address owned by the creator of
+contract (this balance will stake via TPoS)
+
+TPOSADDRESS
+
+MERCHANT 2. MERCHANTADDRESS— owner of this address will
+ADIGE have the ability to stake the balance in‘TPoS address’
+
+TPoS Contract 3. COMMISSION (value between 1-99%)—tells the
+protocol how to split staking rewards minted from TPoS
+address (allowing owner to automatically pay commis-
+sion to the merchant)
+
+4. SIGNATURE —ssignature by the creator of the con-
+tract showing proof that he is the owner of the TPoS
+address
+
+11. TPOS—RESTORING TRUST IN CRYPTO BY
+OFFERING PRIVACY
+
+Trustless Proof of Stake allows people to offer Staking as a Business, where a merchant can stake other
+people's coins and generate a commission based income from the rewards created, opening up new
+opportunities for businesses to arise from our invention. A government's ability to tax and service
+debt is the fuel that drives it. With cryptocurrencies coming, it is important to consider what effects
+this will have on this matter. Full-time salaries are already being paid in cryptocurrencies, along with
+the ability to anonymize these assets, disclosure will soon be at the complete discretion of the individ-
+ual. This will, without a doubt, increase the difficulty to both track incomes and collect taxes, leaving
+governments, small and large, facing difficult situations in both funding operations and collecting
+revenue.
+
+WHAT WILL BE THE EFFECT?
+
+Politicians have already begun discussions about criminalizing those who ‘hide’ cryptocurrencies,
+which will certainly evolve into broader criminalization of all holders at some point and time. Imagine
+what the discussion would be like when the very salaries that pay the government politicians are in
+jeopardy? It is highly likely that it would not be a discussion but a swift implementation of the law to
+retain some semblance of control they once had. What does this mean for us? For most of us, we have
+never had to worry about criminalization regarding personal IPs, web traffic, or general behavior with
+our online cryptocurrency profile.
+
+However, this activity may be used as evidence for conviction, and proof of guilt under possible prose-
+cution in a not so distant future. “Hot” actions (i.e. any activity online related to cryptocurrency) will be
+classified as a criminal offense entering this next era, and it will be of high value for users to remain
+‘cold’ (interacting with the online ecosystem as little as possible), ensuring all privacy and security is
+maintained. Our new feature - TPoS - was engineered with this in mind and will provide several
+unique benefits that will ensure safety, privacy and security of our users not found anywhere else.
+A cold storage exchange is made possible by our commission payouts, allowing an owner of a TPoS
+address to instruct the protocol how to split rewards and also where to send them.
+
+SAMPLE “ONE CLICK” TPOS UI:
+In the image below there is an example of a“One click TPoS” UI taken from the XSN desktop wallet.
+
+Sample proof of concept for TPoS UI - User fills 3 values and clicks “stake”.
+Once the user fills the required fields and clicks “stake” the backend executes 4 steps:
+
+9)
+
+=
+
+Generates new address (the TPoS address)
+
+N
+
+Generates contract using: result from step 1, merchant address and commission (values inputted
+y the user)
+
+lon
+
+w
+
+Broadcasts contract to the network
+
+&
+
+Send XSN to the TPoS address created in step 1 (amount inputted by the user in Ul)
+
+USABILITY OF TPOS
+
+TPoS commission
+
+TPoS contract
+
+provides services receives services
+
+Match Merchant with Coin owner
+Contract Receceives Assets
+
+a]
+mM
+
+Merchant
+
+Contract Distributes Assets .
+Coin owner
+
+On the surface, the commission is simple, a merchant provides a service and charges a commission for
+said services. However, in our case, this entire negotiation is handled directly on our blockchain. The
+protocol itself is “smart” and knows how to split these newly minted TPoS coins. All done without
+any human involvement through a series of cryptographically signed messages broadcasted when
+the contract is first created. We engineered this feature to avoid predicting market rate or demand but
+allow the two parties to settle among themselves a split from 1-99%. This will also allow alternative
+
+forms of services to arise - such as willingly giving the merchant 100% rewards in exchange for certain
+goods.
+
+USE CASE
+
+Say a merchant wants to gain a competitive edge and offer added services on top of their regular stak-
+ing - they could instruct the owner to input 100% commission at the time of their TPoS creation, then
+agree to send the reward in a currency of the owner's choice...to an address of their choice. The
+owner could not only be staking his assets while offline but also be exchanging securely and safely,
+without lifting a finger. The exchanged rewards could hypothetically be translated to any form: a BTC
+address, ETC, or even fiat (directly into a bank account) and could be used as a means of “cashing in”
+to an owner's local currency. Once these services are established it will drive large amounts of traffic
+and attention to our currency, as we will be the first and only one with this unique functionality.
+Couple this with increasing regulations and the effect will be even more dramatic.
+
+SELLER RATINGS
+
+Since the staking rewards would be in control of the merchant, this example of a hidden exchange
+would have to maintain a small degree of trust. We believe this will be easily mitigated by giving the
+merchant a ‘rating’ based on the quality of service. Any dishonesty or underperformance would
+cost the merchant more in the long run than they would gain, similar to the effect of a standard seller
+rating we are all familiar with before making an online purchase. This model works because the mer-
+chant will never have the ability to make off with a significant amount of funds, and worst scenario is
+he steals a few small rewards but completely ruins his reputation in doing so, and If the owner is not
+comfortable with the service he can simply cancel the TPoS and redeem his funds at his discretion.
+
+TPoS
+commission
+
+USABILITY OF TPOS
+
+SELLER
+RATINGS
+
+12. STAKENET MASTERNODES
+
+Normally, launching a masternode is a highly technical process and generally goes way beyond the
+scope of non-technical user’s abilities. StakeNet's Masternodes platform solves this issue by providing
+a simple to implement masternode hosting service that allows users to launch a masternode with
+incredible ease and no advanced technical ability required.
+
+OVERVIEW
+
+Masternodes or Bonded Validator Systems can simply be termed as the servers of a cryptocurrency. A
+StakeNet masternode can be any computer that runs on a Virtual Private Server (VPS) and has the
+StakeNet wallet with 15000 XSN as a collateral number of coins required to run the masternode.
+Unlike normal nodes, that help the miner in generating new coins, StakeNet masternodes are utilized
+for verifying transactions, voting system mechanism, etc. So in a way, the masternode serves the Stak-
+eNet blockchain as well as other blockchains that will be integrated via cross-chain support. For users
+who do not understand the complex mechanisms of cryptocurrency trading and still want to have a
+passive cryptocurrency income, owning a masternode means that they are involved and making
+gains even when not trading.
+
+StakeNet masternodes are dedicated hardware nodes that reside on servers around the world to
+ensure network decentralization and needed redundancy. Masternodes serve a critical role in adding
+a self-governing, service-providing layer to the network, as well as, supporting the StakeNet vision
+and mission statement by performing network-related functions. Trustless Proof of Stake essentially
+allows users to own a stake in XSN, and have merchants do the staking for them using their
+high-bandwidth continuous connectivity (to ensure maximal rewards distribution) while not having
+to share any spendable balance or private keys with the merchant. Your funds are yours and yours
+alone, and will safely and securely grow over time even while you sleep.
+
+REWARDS PROGRAM
+To secure the long-term health of the StakeNet Network, masternode operators will have financial
+incentives to keep their nodes running for extended periods of time, primarily by getting paid for
+
+services rendered. These will include the following:
+
+1. A percentage of all block rewards, minus a fee paid directly to the treasury and subject to the
+Block Equalizer rate of each period
+
+2. Transaction fees, including usage of StakeNet's Flash TX services
+
+GD
+
+3. Revolving Stake Bonuses (RSB: expanded below in detail)
+
+4. Trustless staking fees paid by entering into contracted partnerships with users who wish to
+earn extra stake rewards by utilizing our unique Trustless Proof of Stake feature (TPoS; expanded
+above in detail)
+
+POS REWARDS BREAKDOWN:
+
+[blocks 0-20000] 0 XSN (45% Masternode 45% Staking
+10% Treasury)
+
+[blocks 63201-106400] 45 XSN (45% Masternode 45% Staking
+10% Treasury)
+
+[blocks 106401-149600] 40 XSN (45% Masternode 45% Staking
+10% Treasury)
+
+[blocks 192801-236000] 30 XSN (45% Masternode 45% Staking
+10% Treasury)
+
+[blocks 236001-279200] 25 XSN (45% Masternode 45%
+Staking 10% Treasury)
+
+HOW XSN MASTERNODE WORKS?
+
+Each masternodes will store an exact replica of the StakeNet blockchain, thus allowing average users
+to use thin SPV web, phone, and PC/Mac wallets. Statistically speaking, the average user will tend to
+want to use thin wallets for greater usability. We believe that in order to achieve the mass adoption we
+have planned; a reduced barrier to entry will need to be introduced to our users. Masternodes help
+eliminate the requirement for running a copy of the blockchain on a user's machine as wallets will
+connect to masternodes directly and securely.
+
+Masternodes will require a set amount of StakeNet coins as collateral, fully redeemable should the
+owner ever wish to take their node offline. This is to reduce the financial viability of performing mali-
+cious attacks on the network by setting up malicious nodes, as well as, guarantee that only stakehold-
+ers in the StakeNet Network are allowed to vote on proposals, thus ensuring their quality.
+
+The StakeNet project regards user anonymity and financial privacy as a core value. For a global pay-
+ment network to be ready for mass adoption, payments between users must be confidential and
+unlinkable, and public addresses used to store funds cannot reveal a user's balance. To illustrate this
+point, failing to do so will result in vendors' inability to set prices and negotiate effectively as both
+suppliers and customers will be able to see their transaction history, what they charge and what they
+pay. This is clearly an undesirable outcome that we seek to prevent.
+
+FLASH TX
+
+In the interest of facilitating rapid transactions across the network, preventing any future scaling diffi-
+culties, as well as providing a payment service that's ready for point-of-sale commercial use, StakeNet
+will feature Flash TX—the ability to send near-instantaneous transactions between users. When using
+Flash TX, the sender essentially requests the Masternode network to oversee the transaction being
+made, which allows for several interim confirmations until the first blockchain confirmation occurs.
+The receiver will immediately see the transaction as spendable in their wallet. This prevents dou-
+ble-spend while increases the number of transactions per second the StakeNet network can handle.
+
+13. REVOLVING STAKE BONUS (RSB)—DEFLATION
+BASED REVENUE MODEL
+
+As citizens of the globe, we are most likely familiar with a process called ‘inflation’— a common effect
+of governments and their ability to print and increase the money supply. Although, its meaning may
+get distorted through its use in politics, it is fairly simple to understand —every holder of the currency
+at the time of this money creation (by choice or not) is transferring value from their personal holdings
+
+at the time of this money creation (by choice or not) is transferring value from their personal holdings
+to the destination these newly created monies ends up. It is a collective transfer of wealth and
+extremely efficient form of taxation.
+
+The opposite of inflation (deflation) can be just as powerful, simply working in reverse. It provides an
+efficient method of transferring wealth from one singular point to all holders of the currency of that
+particular time, a form of “reverse taxation”. Deflation is the method using which StakeNet rewards its
+coin holders, executing this via the RSB mechanism. RSB “Revolving Stake Bonus” will build and sup-
+port a network of businesses (i.e xsncoin.io) whose proceeds are sent to their respective and assigned
+burner addresses. The scope of these operations will be limited to properly incentivize businesses to
+perform the ‘proof of burn’
+
+Unlike modern nation states, where governments are the sole executors of the national monetary
+policies, XSN’s monetary policy is based on hard-coded rules and consensus via our master-
+nodes—any decisions of how inflation is used is left to the ones with large stakes. No group of people,
+whether elected or otherwise can unleash a tragedy of the commons. The possibilities that arise from
+this proof of burn model are limitless, with the very highest ones being prioritized and pursued ona
+strategic partnership and adoption level in the early stages. This is made possible due to XSN’s unique
+economic model via our RSB coupled with treasury and API integration, creating a powerful multi-lay-
+er of financial protection and growth for its holders. Over the next few years we will see boundaries
+pushed on the disruption these self-governing communities have not just on their respective organi-
+zations but greater society as a whole.
+
+There, then, can be a suite of applications built on top of these addresses— analyzing in real time—
+the health and statistics of the ecosystem. Holders will track exactly how much value these bonuses
+provide directly from within our wallet and which organizations are providing them. There are many
+models and layers you can build on this framework, let's start with a popular one—financial services.
+
+RSB FUNCTIONALITIES
+HEDGE FUNDS
+
+It is important to understand the effects that blockchain will have on the world of traditional financial
+services - especially in hedge funds. We are living in one of the most disruptive eras of growth in
+human history, with massive amounts of wealth being generated in relatively short periods of time. A
+hedge fund model is perfectly positioned to capitalize on hyper-growth industries, as they have
+appropriate risk assessment and diversification models to benefit from these gains taking place.
+
+Our treasury (~.001% of the total XSN market cap a month) controlled by our masternode holders
+could, in theory, behave as an individual client of a chosen hedge fund. Through our budget/ proposal
+
+system, fund managers would accept a principal from our masternode holders, and provide a trans-
+parent portfolio with auditable gains and losses. Once their proposal is approved, we (the communi-
+ty) assign them a burner address, which they use to send their agreed upon proceeds. There would be
+little of an incentive for a fund manager to ‘run away’ with our budget since we work with reputable
+names as RSB provides transparency and trust. For the fund manager, this will result in larger budget
+approvals for that given individual or firm as time goes on.
+
+There will also be reinventions of these funds along with all other financial service models. One is that
+we could soon start to see ‘anonymous’ hedge funds, where the individual identities are concealed
+but their brands are reputable, verifiable, and public. Just like an immutable blockchain being
+released in the wild, we could see portfolios released getting popular whose origins are not traceable
+but results famous.
+
+STAKENET VENTURES
+
+A common problem arising amongst treasuries is the oversight. It is difficult to find a model (outside
+of delegating core team members themselves) that allows ongoing diligence after a budget is paid.
+This causes inefficiencies, delays, and losses for investors. This current structure is also limited to
+shorter terms (months vs. years) and is problematic for projects requiring long-term development
+and growth.
+
+AVC firm is a bit more dynamic vs a hedge fund as it deals with long-term business development,
+equity distribution, and higher risk/ reward ratios. Focusing on development that services the StakeN-
+et community, however, will strengthen our long-term position and growth coupled with more tradi-
+tional treasury operations. Using equity distribution mechanisms on the blockchain, coupled with
+smart contracts, ownership can be distributed accordingly to end users via the RSB burn, passing the
+value to the average users.
+
+STAKING AS A SERVICE
+
+Staking services, pools, masternode hosting etc. will easily integrate with our RSB model and will be
+the first to arise. Our proof of concept will be our very own xsncoin.io, whereby integration of our API
+into the QT wallet, we will not only be able to provide information on the RSB address, but also statis-
+tics relating to servers, nodes, and other relevant operations to users and investors directly, in real
+time. Imagine having an interface where you can see data on each bonus address, showing you not
+only the health and statistics of the given business but also the rewards it is providing to the holders
+of the currency as well.
+
+INCENTIVIZED PRIZES
+
+Why is the free market so efficient? It is because individuals are racing to get a prize - profits. They will
+put time, energy, and pain to get them. We can use this economic principle and put it on steroids
+offering ‘X’ amount from our treasury to whoever solves a given problem, adds a feature, or builds a
+service that helps our community. If the prize is big enough, there will be multiple teams competing
+against each other, building entire businesses just to obtain the prize alone. We could track the pro-
+gress of everyone from within our RSB interface, giving real-time data and statistics as they race
+against each other to the finish.
+
+14. XSN ATOMIC SWAPS
+
+Atomic Swapping might be the closest thing to magic we have experienced thus far. It allows any user
+on one blockchain to ‘swap’ their assets with a peer they have never met on a completely different
+chain, and have that swap be 100% trustless, instant, and with little to no fee involved. It is also the
+closest solution in protecting privacy while acquiring and trading assets. In order to use this service, it
+requires assets to be “hot” and by nature, all information associated with these transactions are
+required public in order for it to work properly. Although Atomic Swaps may not be considered
+perfect when it comes to spotting identities, it is a step in the right direction as a peer to peer system
+and is much more secure than a centralized point of exchange.
+
+It is not difficult to spot identities in a P2P market, and with that being considered we figure a user
+may not want to spend or transact any more than absolutely necessary on these platforms. As XSN
+will have a compatible off chain network of its own, its features can be utilized to provide extra value
+to this network. This is where our chain comes into play - by instantly ‘Atomic Swapping’ into a XSN
+TPoS address, your newly swapped funds will automatically be safe offline and gain interest, without
+the need to perform extra steps in sending, receiving, or activation of any kind. Rewards gained from
+these addresses can also be exchanged into a different currency of your choice, if you use a privacy
+currency (such as Monero) you will have in one step maintained a level of privacy, that up to this point
+has required multiple steps, through multiple parties to accomplish.
+
+15. XSN LIGHTNING NETWORK
+
+One of the main objectives of introducing cryptocurrency was to make payment processing faster
+and cheaper. However, as mining operations started to become expensive, transaction fees for Bitcoin
+also started raising. A version of the technology that is meant to make cryptocurrency payments
+faster and cheaper, called Lightning Network, is the second layer to enable off-chain transactions on
+Bitcoin and is expected to be a game changer in the evolution of the crypto currency.
+
+Once it is deployed across all nodes, the Network will
+speed up transaction processing and decrease their
+associated costs on Bitcoin’s blockchain. The Light-
+ning Network allows Bitcoin users to open payment
+channels between each other. The parties can then
+conduct transactions without having to post them to
+the Bitcoin blockchain, avoiding delays and costs that
+result from recording those transactions each time.
+Once the channel is closed, only the resulting balanc-
+es are recorded on the blockchain, not the full trans-
+action history of the channel, and only then are
+Bitcoin fees paid. There is no required time or transac-
+tion limit required to close a payment channel, so
+they can potentially remain open for months of years
+
+16. XSN TREASURY
+
+As a fully Proof of Stake currency that lacks mining rewards, StakeNet maximizes block rewards and
+fees for its staking users and masternode operators. The network can therefore, more comfortably
+afford to allocate a certain share of all distributed fees and rewards to a central fund, known as the
+treasury. The treasury is a cryptographically sealed public address that holds all funds allocated to it
+by the network, whose funds can only be spent on proposals submitted to the network officially via a
+dedicated portal. Each proposal can be voted upon democratically by masternode operators propor-
+tionally to the stake they hold in the masternode network (i.e 2 masternodes will entitle the operator
+to 2 votes). Once a proposal is approved, funds are allocated to it.
+
+The treasury, and its democratic voting nature ensures that the network not only has a chance to
+
+receive project proposals that help develop and propel it further, but that project contractors com-
+pete against each other to deliver the highest quality projects on time and under budget.
+
+17. XSN CROSS CHAIN PROOF OF STAKE (CCPOS)
+
+BACKGROUND
+
+The value of blockchain is its concept of immutability. This strength however brings real world com-
+plexities difficult to manage in use cases, as blockchain was not conceived to adapt easily and faces
+challenges working with rigid models limiting its agility. For a new breakthrough to be adopted, often
+
+a coin must often change its “rules” and undergo what is called a “Hard Fork”.
+
+In a large network this can be very damaging as it requires consensus amongst all nodes to run new
+software, possibly fragmenting its community and sometimes changing its history. There is also noth-
+ing to stop forks from occurring again and again at any point in the future, diluting a coin’s value and
+market capitalization. There may be solutions however, using recently developed technologies and
+advancements, in this article we will discuss a few. If we can achieve these goals, it would give teams
+a better, smoother model to conduct operations.
+
+Through this mechanism of CCPOS, StakeNet is creating programing protocols that themselves will
+interact with the ‘rules’ on completely separate chains other than their own. This ability would allow
+communities to utilize new technology, inventions, and advancements ensuring they are able to
+adapt and adopt easily as well as remain competitive.
+
+OVERVIEW
+
+An atomic swap is essentially proof—a user is proving he has transferred funds from one account to
+another and thus its contract terms are satisfied. A verification mechanism on the other end is observ-
+ing making sure the first user does act honestly and is true to his promise. If all is good the contract is
+allowed to execute, if not they are able to refute—cancelling the contract. Using this method, a user
+could also move funds to himself—proving he owns a stake in the 1st chains currency. This proof
+could be broadcasted on chain #2 (and verified using atomic swap functionalities) that our user does
+indeed possess a stake in the 1st chain. The second chain’s protocol might then allow for an appropri-
+ate response in light of this ‘proof of stake’ This could be in the form of unlocking privileges, rewards,
+or access to special features. Ownership on the first chain could even be used as “fuel” for its sister
+chains, creating a hierarchy while avoiding fragmentation.
+
+This would increase the origins (1st chain’s) value greatly as any new advancements can be adopted
+into the ecosystem, using the stability, infrastructure and community from the original chain. What
+
+would result is an intra-network of blockchains we call “Inter Chain Clusters”.
+
+INTER CHAIN CLUSTER
+
+These Clusters have interdependent traits to one another, giving additional value to users within a
+given network. They still would however be able to communicate, sync, and partake in all other
+features allowed through those running on a lightning network. If the lightning network is analogous
+to an “internet” allowing communication to different blockchains, this would be similar to a‘LAN’—a
+group of local chains having special rules relative to one another, but also able to communicate to the
+outside world.
+
+Because lightning nodes are custom built to each chain, one could reprogram and construct rules
+from scratch with specialized interdependence in mind. So long as the new chains have code to be
+both lightning compatible as well as cluster compatible it will allow room for flexibility in all other
+aspects of building and programming for experimentation and invention. This will allow new technol-
+ogies to be quickly integrated as a framework will exist satisfying all pre requirements needed allow-
+ing developers room to operate quickly and freely.
+
+We should stress that this goes radically beyond the concept of |COs being run on the Ethereum chain
+for example, as new projects wouldn't be restricted to being token-based solutions on the same
+chain. Instead, they’d have their own chains, and subsequent chains for secondary purposes, with
+virtually unlimited flexibility. As they'd be ‘tethered’ to our main chain—holders, masternode opera-
+tors, and core team members will all benefit.
+
+WHY HAS THIS NOT BEEN DONE?
+
+One of the main limitations of atomic swaps is the user must have two blockchains— his own as well
+as that which he intends to interact with in order to verify the terms of his contract are met. He needs
+both so he can physically refute if terms are not met or allow it to execute if he sees nothing wrong.
+This method causes limitations however as a human is needed for this entire process to function. In
+order for cross chain proof of stake to be possible it requires complete autonomy on the part of the
+protocol.
+
+In our case utilizing masternode functionalities to both monitor, and verify will solve this issue. Allow-
+ing masternodes to contain databases of 3rd party chains, (specifically our sister chains) while watch-
+ing for and verifying specific actions allows us to autonomously cross chain communicate via the pro-
+tocol. In addition to CCPOS this would also enable an ability for users to “light-swap” (atomic swap
+without having to DL an entire 2nd blockchain) directly on our protocol, without the need of a 3rd
+party centralized service.
+
+Delegating CCPOS responsibilities to masternodes would also provide an added income stream as
+new fees and rewards would exist associated with these cross chain verifications. If a sister chain
+increases in popularity and demand, ROI on main chain masternodes would rise as proving your stake
+on chain #1 would be the only way to unlock given actions on chain #2— & utilizing our masternodes
+would be the only way to accomplish this proof.
+
+MAINTAINING AGILITY
+In a world of open source, it can be difficult to protect new innovations from being forked, spun, and
+
+implemented in new and sometimes better models. As we diverge from traditional ownership (pat-
+ents, copyrights etc.) we must learn to preserve value in this new environment. No better could this
+
+be done through engineering protocols themselves to respond to original decentralized master
+chains. The result would be not centralized control but a hierarchical control (HC) with masternode
+owners from an origin chain determining the direction, development, and purpose of the given inter
+chain cluster.
+
+Platforms will soon rise eclipsing bitcoin, and ability for chains to adapt and evolve will be critical, as
+those that cannot will fade, be replaced and forgotten. We will see chains begin to combine into
+greater cohesive bodies where at its core lies a decentralized system growing proportionately with
+breakthroughs and advancements in the greater field of cryptocurrency. Rather than combat disrup-
+tion we will position ourselves to adopt disruption — our community will secure future value and
+exposure to new trends simply by holding our asset, and our masternode owners will also benefit as
+their added service in verifying these cross chain proof of stakes would increase fees, rewards, and
+overall ROI giving us definitive value moving forward.
+
+18. FUNCTIONALITIES
+
+The technology we are implementing can be applied and disrupt a broad range of industries. TPoS
+essentially allows differing degrees of access to a given asset. In our case the owner of XSN will be able
+to allow 3rd parties to perform actions with their coins (staking) however they will be limited to this
+designated action and nothing else. This could apply to everything from the sharing economy to gen-
+eral security. If someone wants to rent an apartment, the owner can allow the customer access into
+their front door but deny access to their bedroom door, allow access to drive a car but limit access to
+open the hood and tinker with the engine etc.
+
+STAKENET.IO - Online Staking, Hosting and Monitoring Platform
+
+The StakeNet team is building a platform in which users would be able to keep their holdings safe,
+stake their major PoS (proof of stake) coins, and trade coins via a decentralized exchange (DEX) all in
+one single place. For existing solutions, in order to get staking rewards for your PoS coins, you need to
+run the wallet(s) and keep it online 24/7 continuously which most users find it unpleasant. XSN solves
+this problem by providing a secure environment to store your coins and stake them at the same time,
+so you do not have to keep your computer running.
+
+STORING YOUR COINS IN AN ONLINE WALLET AND BENEFIT FROM GROUP STAKING.
+
+TRADING YOUR COINS AT XSN DECENTRALIZED EXCHANGE WHILE YOU HAVE
+FULL CONTROL OVER YOUR FUNDS. @
+
+TRUSTLESS MASTERNODES: YOU HAVE CONTROL OVER YOUR COLLATERAL 7
+
+WHILE WE HOST YOUR MASTERNODES AND TAKE CARE OF (03)
+EVERYTHING WITHIN THE NODE.
+
+TPOS MARKETPLACE: FIND THE BEST MERCHANTS TO STAKE
+_ MOBILE APP & WEB CLIENT.
+YOUR COINS TRUSTLESSLY. 1
+
+© BOUNTIES FOR USERS THAT REPORT BUGS/SUGGESTIONS.
+
+MADE BY THE COMMUNITY AND VOTE.
+WITHDRAW AND DEPOSIT COINS FROM ANYWHERE IN THE WORLD.
+
+EXTRA SECURITY: MANUAL REVIEW AND BALANCES MATCHED IN COLD
+
+WALLET FOR PROTECTION.
+Features
+
++ Storing your coins in an online wallet and benefit from group staking. You will receive staking
+rewards, no matter how much coins you are staking.
+
++ Trading your coins at XSN decentralized exchange while you have full control over your funds.
+
++» Trustless masternodes: You have control over your collateral while we host your masternodes and
+take care of everything within the node.
+
++ TPoS marketplace: Find the best merchants to stake your coins trustlessly. Stakenet.io will monitor
+merchant contracts and let you rate them based on your experience.
+
+Monitoring software: Monitor all of your masternodes (even the ones you are not running with us)
+and your Trustless Proof of Stake contracts. In order to make sure your masternodes and TPoS con-
+tracts are working properly, you will be notified via email if something goes wrong.
+
+* Governance voting: If you are a masternode owner, find the proposals made by the community and
+vote.
+
+- Extra security: Manual review and balances matched in the cold wallet for protection.
+- Withdraw and deposit coins from anywhere in the world.
+
+- Bounties for users that report bugs/suggestions.
+
+« Mobile app & web client.
+
+NORMALIZATION SHOCKWAVE
+
+The StakeNet R&D team is currently reviewing a possible introduction of a "Normalization Shock-
+wave". This shockwave will be a multiplier placed on all running proposals across the network to main-
+tain their real value. For example, let's assume that a graphic redesign project for a new website for
+StakeNet is being lead and has received funding for a total of 1,000 StakeNet coins. A week later, the
+price of StakeNet increases by 25% (very common in the cryptocurrency world). The community will
+vote on a shockwave multiplier of 0.8 in order to restore the project's real value to 1,000 StakeNet at
+the moment of approval. This will also work the other way around; a multiplier above 1 will ensure
+that if the price of StakeNet drops below its initial value the project isn't frozen and is brought to com-
+pletion.
+
+Mathematically speaking, since all multipliers preceding the most recent one are already factored
+into the most recent one, there is no need to keep track of each individual iteration and engage in
+complex calculations that could wrongfully inflate or deflate any project's funds. We believe in sim-
+plicity of design.
+
+BLOCK EQUALIZER
+
+As Masternodes serve a vital role in the ongoing operation and development of the network, having
+too few across the network negatively contributes to its health and resilience. On the other hand,
+having too many can hinder future growth. As Masternodes require collateral, having an excessive
+amount significantly restricts coin liquidity, which prevents commercial application and adoption
+outlook. It also reduces the number of coin-staking users on the network.
+
+It is therefore valuable to create a mechanism that strikes an ideal balance between the two. Block
+Equalizer determines the current balance between the fees and rewards earned by Masternode oper-
+ators and the stake rewards earned by users as a whole. If the balance is tilted in favor of one of the
+sides, it reduces its rewards and increases the rewards earned by the other side. For example, if there
+are too many Masternodes and too many rewards are earned by them, as a result, Block Equalizer will
+reduce the Masternode share of the block rewards and increase the share users earn by the same
+ratio, and vice versa. This will be dynamically and automatically recalculated every N blocks by the
+
+blockchain.
+
+FUTURE USE CASES
+
+PEER TO PEER RENTAL MARKET PLACE:
+
+A rental marketplace integrated with the Internet of things(loT) technology allows a peer to peer con-
+nectivity between landlords and tenants by enabling them to rent out or acquire houses or rooms at
+best possible rates without deduction of any service fee or hidden charges. Furthermore, it works as a
+medium of dispute resolutions by ensuring both parties agree and act to a certain set of defined rules.
+PEER TO PEER SERVICE HIRING:
+
+A job market built on XSN Network platform that allows customers to find quality services from across
+
+the globe. It uses Al and Smart contract technology to address dispute resolution and ensure the
+client is delivered what they have paid for.
+
+19. XSN MERCH —- A COMMUNITY -DRIVEN SERVICE
+
+XSN MERCH
+
+XSNMERCH is an online store that offers various wearable accessories with various versions of the
+StakeNet logo printed on it, at extremely competitive prices. The mission with XSNMERCH is to offer
+our community a chance to wear what they love while spreading the word about StakeNet (XSN).
+Turnover from the merchandise store will help funding developments, exchange listings, and general
+partnerships. XSNMERCH is the go-to place for the absolute best StakeNet merchandise at unheard
+of, on-demand prices.
+
+Link: https://xsnmerch.io
+20. XSN COMMUNITY BUILDING STRATEGIES
+
+Some of the mediums we use for community building include but are not limited to:
+WORD OF MOUTH MARKETING
+
+It means when you are apprised by someone you trust directly. Having already been in the market for
+
+years, we know that when users are staking or
+holding XSN Coin, they are committed to the
+cause. As it says that, there is no marketing better
+than the word of mouth, we are at a huge advan-
+tage because of our already developed network
+and this will help us grow in the longer run.
+
+WORD OF MOUTH MARKETING
+
+CRYPTO EXPOS
+
+XSN COMMUNITY
+
+BUILDING STRATEGES CRYPTO EXPOS
+
+STRATEGIC ALLIANCES
+
+To spread our message loud and clear to our
+potential users, we create awareness campaigns
+all across the world and always participate in
+crypto-expos. We sponsor many mega events
+and our professional marketing team actively
+participates in these expos ensuring maximum
+conversion of XSN Coin.
+
+INTENSE DEEP CODING AND
+EDUCATING PEOPLE OF THE ——= ( )
+RISKS CONCERNED
+
+ATTRACTING AND CONVINCING
+MERCHANTS
+
+STRATEGIC ALLIANCES
+
+We also keep on collaborating with key merchandisers around the world from time to time, as it is
+beneficial for both the parties and helps in enhancing acceptability of the coin.
+
+INTENSE DEEP CODING AND EDUCATING PEOPLE OF THE RISKS CONCERNED
+
+Our highly experienced and professional team of developers have ensured that XSNCoin and XSN
+Platform is here to stay for longer run. We not only take care of the development end in terms of bug
+fixing but ensure that the promises made at our launching are kept.
+
+ATTRACTING AND CONVINCING MERCHANTS
+
+One of the most important aspects for a cryptocurrency is: marketing it so well that stakers and hold-
+ers have a place to spend it. We know our target group and have the best strategies in place, to
+convince even those who are not aware of the crypto. We already have made concrete steps in this
+regard and our community driven services (Discussed earlier in detail) are inspired by this vision. We
+aim to get the XSNCoin accepted as a payment solution in online shops to get their attention. We aim
+to be bringing merchants the customers and increasing their sales while reducing their payment fees.
+The rest is a matter of persistence and we make it as easy as possible to get them started.
+
+21. GLOSSARY
+
+PoW: An algorithm, which requires miners to prove through distributed consensus
+
+PoS: Proof of stake is a typical computer algorithm through which a cryptocurrency achieves their
+distributed consensus at a lower cost and in a more energy efficient way.
+
+Trustless: User's don’t have to send their coins to us. Private keys would be reserved with the respec-
+tive users.
+
+Cryptocurrency: a digital currency in which encryption techniques are used to regulate the genera-
+tion of units of currency and verify the transfer of funds, operating independently of a central bank.
+
+Blockchain: A blockchain is a continuously growing list of records, called blocks, which are linked and
+secured using cryptography.
+
+Wallet: A cryptocurrency wallet is a software program that stores private and public keys and inter-
+acts with various blockchain to enable users to send and receive digital currency and monitor their
+balance.
+
+Serverless: XSN Cheaptstake maintain the infrastructure, software and uptime.
+
+TPoS: Trustless proof of stake— TPoS essentially allows users to own a stake and have any other node
+(merchant nodes) do the staking for them using their high-bandwidth continuous connectivity while
+
+not having to share any spendable balance or private keys with the node owner.
+
+Treasury: The treasury is a cryptographically sealed public address that holds all funds allocated to it
+by the network.
+
+MasterNodes: Masternode is simply a cryptocurrency full node or computer wallet that keeps the full
+copy of the blockchain in real-time, just like you have Bitcoin full nodes and is always up & running.
+
+API: A set of programming libraries and functions that allow outsiders to interact with a given system
+infrastructure.
+
+Exchange: a community established exchange rate, assigning value to a given activity or service
+
+Ledger Wallet: Ledger is a Crypto wallet on a smartcard device, small format and low weight with USB
+port to manage your account, protect your bitcoins and make safe payments.
+
+Atomic Swap: It allows any user on one blockchain to ‘swap’ his asset with a peer he has never met on
+
+ona completely different chain
+
+Hedge Funds: A limited partnership of investors that uses high risk methods, such as investing with
+borrowed money, in hopes of realizing large capital gains.
+

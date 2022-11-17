@@ -1,0 +1,658 @@
+Whitepaper
+
+1|Page
+
+PRCY© — Whitepaper V 1.0
+Table of Content
+
+INtFOGUCTION oo. .cceccccescesceseesscesecseceeeesecseceecesessecsaeeaeceeseeesaecaeceessesseesaecseceeecsecaecesesesaeseaseaeeaeseaeeaeeaeees 2
+1, PUPOSE 0... eeecsceeecseeeeeesaeeeeesaeeeeeeeeeeesaeeeeenaeeeeesaaeeeesaeeeeesaeeeeesaaeeeeaeeeseeaeesseeaaeeesaaeeseeeeeeeesaeeeeaaee 4
+1.1 WHO WE AF... .eeeccecescssecseceseeseeseeeseeseceecesecsececesecseseaecaeceeeesecseceesesecsessaeeaeceeseseeaeeseeeeeeaeeaass 4
+
+1.2 Challenges
+1.3 Privacy Coins Are Unstoppable.........cccccscesscesesseseecesecsscesceseeseceeeeseceeseaecsececeseeseeseeeseseseaes 5
+
+1.4 The Use Cases For PRCY
+
+2. Market And INGUStrY ....c cc ccesccesecseseccesecseceeceseesecseeesecseseeecsecaeceecesesseceaesseseseaecaeceesesesaeeseeeaesaesease 8
+2.1 SHOrt TOL... eeeeesesseescsceseeseeecseeseeeeseeseescseeseeaceecsecaeeaesaesesaeeaeseeaeeassesaesaeeassesaesaseasseeaeeesaeeae® 8
+2.2 LONG Trim ooo... eeeeecceecesceesesseecesseeeeesaeeeseseeeessaeeeessaaeecesaeeceesaaeeeesaeeesesaeeseesaaeeecsaaeeseneeeeneaaeeees 8
+2.3 Wrap PRCY/NeWw DevelopMents........ccccsccscssssssssscssessescescsscsesecsesseesesecsessseecsecsseessessesaseeaes 9
+3. PRCY Coin Specification ........cccccesccscesscssceseeseceeeeseceecescesecsecesesseseeesecseseseesecaeceseeseseeeesecseseesenees 10
+3.1 Detailed COIN SPECIFICATION ........ ee eeceeseceecesceeesecesceseeeeeesecsececeseeaececesessesesecseseeseseeasenseeaes 10
+
+4. PRCY TEAM
+
+4.2 Team anonymity
+
+4.3 Central versus DECentral ........ceseeeseseseesceseeeeseeeceecsesseeeeseeseeaeecsesseeecsesaeseseeeaeeaeeaseesateasees 12
+
+5. PRCY Blockchain Features... eecesssesceseneeseeseeecseeaeeeesesseeecseesesaeeessecaeacsesaeeeeeecsesaeeeseesaeeategs 13
+5.1 What Are PRCY Coins? 0... .eeeeeesesceseeecseesceceseeseeecsecaeeseecseeaesaesesaessesessesaeeessesateaseasseeaeeees 13
+
+5.2 HOW do PRCY WOT? uo... ee eecsseeecseeseeseeeeseeacecesesseeecsecaesaesecsesaeaesesaeeeesessesaeeessesateaeeasseeeeeess 13
+
+6. IMportant JINKS... eee ceeeceteeeeeceeesecseceeeesecseeeseeseseeeesecaececesecseseaecaecesesecseceecesecaeseaseaeeeseeeeaees 17
+3|Page
+
+PRCY© — Whitepaper V 1.0
+1. Purpose
+
+1.1 Who we are
+
+PRCY Team feels very strongly about the community. PRCY is there for and with the community.
+Our goals are to deliver the project within the expectation of those who support the project.
+Privacy is what we are aiming on individual level, but also on Business level. PRCY has superior
+technology with the most advanced privacy features.
+
+PRCY is a fully anonymous staking coin and a payment system with a trustless governance
+structure. This is all based on the latest state of the art privacy technology (RingCT, Ring
+Signatures, Stealth Addresses, Bulletproof and more). Although the PRCY chain is 100% private,
+it allows a wide variety of passive income, staking, masternodes and Proof of Audit (PoA).
+
+yn A
+reas telnodgs
+
+PRCY does not offer partial anonymity like some other privacy coins, PRCY offers 100% absolute
+privacy without doubt, by means of offering the best of best privacy protocols which are
+successfully tested. PRCY offers PoA as the solution of trust which many other blockchain do
+not contain. PRCY does not rely on nodes or a group of administrators. The PRCY blockchain is a
+hybrid Proof of Stake (PoS) and PoA blocks. The PoS are minted every minute by staking nodes
+to verify the transactions in the blockchain. The PoA block are mined by PRCY miners (investors)
+with one task to audit the system if it is functioning according to the predetermined conditions.
+The PoA block will audit at least 59 PoS blocks for its correctness, each PoA auditor (miner) will
+be rewarded by auditing the blockchain system.
+
+4|Page
+PRCY© — Whitepaper V 1.0
+1.2 Challenges
+
+With the introduction of the General Data Protection Regulation (GDPR), the EU framework
+more and more people being aware with protection of private data. One of the main pain
+points we acknowledge with Bitcoin and Ethereum is everyone who knows your wallet address
+is able to see your holdings.
+
+In recent times, governments and regulators around the world have highlighted the utility value
+of Bitcoin and cryptocurrencies to criminals. For example, Treasury Secretary Steven Mnuchin
+recently said he wants to make sure that cryptocurrencies do not fall into the hands of “bad
+
+guys.”
+
+Their attention is expected to make cryptocurrencies transparent so that consumers and
+businesses are comfortable with using them.
+
+1.3 Privacy Coins Are Unstoppable
+
+PRCY team and developers has started to use their knowledge to provide a Savings and
+Payment blockchain as Private as anyone can think of nowadays. Reached by using
+functionalities, which are able to block outsiders following, and sharing any information
+according to processes taking place on the PRCY blockchain.
+
+PRCY believes attempting to ban private cryptocurrencies would be nearly impossible for regulators due
+to the tokens’ privacy-preserving, decentralized nature. So that is why PRCY will state: privacy coins are
+unstoppable.
+
+Privacy coins work differently to cryptocurrencies like Bitcoin and Ethereum—payments are
+untraceable, helping users to maintain privacy. Where every Bitcoin transaction can easily be
+linked to a user’s address, PRCY uses an obfuscated public ledger to hide the details of each
+transaction.
+
+Highlighting the difficulties regulators are likely to face in halting privacy coins. CEO PRCY
+believes and shares a widely spread view and his idea.
+
+“if decentralized privacy cryptocurrencies become (more) popular in the near
+future, to the point they can be easily and routinely exchanged without investors
+having to convert to other currencies and systems, there is no obvious way for
+regulators to impose post-hoc regulation.”
+
+PRCY believes that authorities would benefit from adapting and preparing for the possibility of
+being unable to prevent the spread of privacy coins in the future. “What many regulators do
+not realize is those who control the code will control the rules. If you cannot share, you cannot
+multiply,” the CEO PRCY said. “So far, they have not accepted this and are in denial.”
+
+5|Page
+PRCY© — Whitepaper V 1.0
+To hear the philosophy of the CEO PRCY and his thoughts on how privacy coins will play a role in
+the future of the cryptocurrency landscape are the following:
+
+“PRCY believes it is possible that a lot of governments will try to outright ban any
+crypto that attempts to provide a level of privacy features above the current
+“status quo”. PRCY believes it will ensure that privacy-preserving currencies
+become the route for protest against the incumbent financial system. PRCY has a
+strong belief because privacy infractions and violations have become the
+mainstay of the financial system. The evolution or birth of crypto is the most
+simple answer to this.
+
+The CEO PRCY also pondered an alternative outcome in which governments are more accepting
+of private cryptocurrencies. He believes that relaxed regulations and a deeper understanding of
+the dangers of transparent coins like Bitcoin could lead to wider adoption of privacy coins,
+“much like how users are starting to realize the nefariousness of Big Tech companies like
+Facebook and Google.”
+
+In the past, much discussion has fallen on the role cryptocurrencies sometimes play in criminal
+activities such as money laundering and drug dealing, thanks in no small part to Bitcoin’s
+prominence on darknet marketplaces such as the Silk Road.
+
+While Bitcoin has in many ways been embraced as an asset class since Silk Road’s widely
+documented shutdown, private cryptocurrencies still represent a largely unknown area of the
+ecosystem. CEO PRCY “Regulators and compliance professions should soon realize that PRCY is
+not the only project that offers useful privacy features. Other ‘privacy coins’ offer intrinsic or
+opt-in privacy enhancements that they need to be prepared for. Even Bitcoin and Ethereum,
+which are widely-supported, are adopting new privacy enhancements. These technologies can
+no longer be ignored.”
+
+1.4 The Use Cases For PRCY
+
+At first glance, the protocols and examples provided above might make it seem that criminal
+activities and actors are the primary use cases and users for privacy-focused coins. But when
+one considers current regulations for commercial transactions, utility of privacy features
+dramatically expands.
+
+A new class of coins, which bridge the gap between the anonymous world of cryptocurrencies
+and the real world of business applications and commercial transactions, has emerged to take
+advantage of this space. For example, XRP have included functionality that enables disclosing of
+transaction data and identity metrics to comply with regulatory agencies.
+
+6|Page
+PRCY© — Whitepaper V 1.0
+At some other privacy coins the PrivateSend feature is optional. This means it can be utilized for
+transactions that users of the cryptocurrency would like to keep hidden from the public
+blockchain. As an example, rent payments and salary information can be hidden from other
+users.
+
+CEO PRCY “Privacy is important for many practical reasons including user safety. “It is also a
+safety issue for users that could be targeted by criminals that become aware of a user’s
+holdings by tracing their transactions.”
+
+PRCY angel investor “Around the world, people will want money that is not accessible to
+others,” A well-known privacy coin is being tested by multiple US banks for this purpose.
+
+Another example Venezuela and Zimbabwe have reportedly witnessed a surge in the use of
+cryptocurrencies as their economies deteriorate. In fact, users in these countries are willing to
+pay a premium to own Bitcoin.
+
+Competitive pressures and market demand will likely push most cryptocurrency projects to
+adopt strong privacy primitives, adding that high-encryption techniques that enable masking of
+user and transaction identity will “likely be pervasive across future money.
+
+7|Page
+PRCY© — Whitepaper V 1.0
+2. Market and Industry
+
+2.1 Short Term
+
+Short-term focus for PRCY will be on the development and functionality of the PRCY
+infrastructure. Starting to work on the accessibility to PRCY coin. In other words, make it
+possible to investors to provide the opportunity to own PRCY coins and to store PRCY coins in
+their own PRCY QT wallet. The functionality of storage of PRCY coins will be extended to a multi
+coin mobile wallet and a PRCY mobile wallet.
+
+PRCY will focus to expand the community and with a growing community the PRCY blockchain
+will be a secure blockchain by Proof of Work (PoW), Proof of Stake (PoS) and Proof of Audit
+(PoA).
+
+The PRCY blockchain is built for and on privacy and trust. Nowadays with open internet, social
+media, but also in cryptocurrency users are being exposed to cyber criminality more often.
+
+PRCY started this project as we believe that steps need to be taken to provide users being
+exposed to any type of criminality regarding their finance, whether this is their savings,
+payments or other transactions.
+
+To provide this trust, we have created a privacy network every user could rely on that it will
+bring back the control of their finance as they expect.
+
+2.2 Long Term
+
+Long-Term focus for PRCY will be on Business-to-Customer (B2C) and after that Business-to-
+Business (B2B).
+
+The PRCY team foresees a big future for industrial acceptance of cryptocurrency in the near
+future. Many people have gone digital, the trend accelerates during the global pandemic.
+People are looking for solutions for their funds and hear, see and learn more about
+cryptocurrencies and become more aware of their privacy rights. Slowly but surely more and
+more people will invest in cryptocurrencies and will make use of privacy coins like PRCY.
+
+This will thrive PRCY to relevant partnerships and utilize the privacy settings of PRCY, and
+including the many passive income opportunities.
+
+8|Page
+PRCY© — Whitepaper V 1.0
+Just imagine large companies with billions of USD in savings and transactions. We can provide
+them a safe and private market. Being prepared for any unwanted observers and unwanted
+exposure to crime.
+
+2.3 Wrap PRCY/New Developments
+
+Although the focus is to strengthen the PRCY blockchain and to expand in community. New
+developments in industry will be followed and are often great occasions to launch new
+products and stay ahead.
+
+Many popular crypto-exchanges are more and more focused to increase the accessibility to
+private blockchains by means of a new product in the form of Wrapped coins, a PRCY-backed
+token on Ethereum.
+
+PRCY examines the possibility to create a PRCY based token on Ethereum and being backed 1:1
+by PRCY and secured by the exchange. Wrapped PRCY will be similar to other synthetic tokens
+like Wrapped Bitcoin [WBTC] or Wrapped Ethereum [WETH].
+
+CEO PRCY “Wrapped PRCY brings greater liquidity to the Ethereum and DeFi
+ecosystem. It gives holders of PRCY more flexibility to utilize their tokens
+without having to sell it for Ethereum or stable coins, in order to access the
+many exciting opportunities in the DeFi space.”
+
+The crypto-based synthetic asset aims to provide users exposure to a variety of different assets
+without needing to hold the underlying asset. PRCY anticipates on market tendency and see
+many exchanges like Bittrex and Abra had delisted large other privacy coins, due to regulatory
+concerns.
+
+With WPRCY, users will be able to provide the necessary transparency. Wrapped PRCY will have
+the same transparency as other ERC-20 tokens in the Ethereum blockchain, thus ensuring
+necessary regulatory clearance concerning the transparency part of privacy coins.
+
+As part of PRCY philosophy of accessibility PRCY will make use of the present Defi solutions who
+will adopt ERC-20 tokens in the Ethereum blockchain and will make PRCY available via multi
+Decentralized Exchanges.
+
+Although Ethereum transparency instead of privacy, the investor have the ability to select the
+technology he prefers and accompanied the transparency of his wish.
+
+9|Page
+PRCY© — Whitepaper V 1.0
+3. PRCY Coin Specification
+
+3.1 Detailed coin specification
+
+Here below you can find all specifications concerning PRCY, summarized in a table.
+
+Coin Ticker PRCY
+Initial Supply 60,000,000 PRCY
+Max Supply 60,000,000(Initial) + 10,000,000 (Emission)
+
+Proof-of-Audit
+
+Proof-of-Stake v3
+
+Proof-of-Work
+
+Masternodes (See-Saw Rewards)
+
+Consensus
+
+0.5 PRCY is reserved for the PoA miner that audits the block
+Emissions 1.0 PRCY is split between a staking node(that minted the block)
+and a Masternode
+
+Block Size Up to 2 MB
+
+Ring CT
+
+Ring Signatures
+Bulletproofs
+
+Stealth Addresses
+Stealth Transactions
+Proof of Audit
+
+Key Technologies
+
+1,05 million PRCY per year until 10 million PRCY
+
+Approximate emissions
+PP emitted
+
+PRCY Masternodes are required
+
+« 5,000 PRCY coins as collateral
+
+« Dedicated IP address
+
+« Run 24 hours (<1 hours connection loss)
+
+Masternodes are rewarded according the See-saw allocation for their contribution to the
+network. The reward is 1 PRCY.
+
+The PRCY masternode can be compared with the PIVX masternode system. Due to the See-Saw
+Balance reward system a fair reward to masternodes holders can be allocated.
+
+The PRCY chain is verified by PoA, Masternodes and PoS, this makes the PRCY chain very
+resistant to malicious attacks and ensures the chain is completely secure.
+
+10|Page
+PRCY© — Whitepaper V 1.0
+4. PRCY TEAM
+
+4.1 Founders
+
+Community members of former Privacy projects initiated the project in December 2020.
+Together with a group of developers, they started the PRCY project to have a decentralized
+environment from day 0. The founders are a group of people with different backgrounds with
+an excellent mix of skills. We have got blockchain technology developers, Entrepreneurs,
+knowing how to start and to run multiple enterprises, Business Developers focused on the
+architecture of financial solutions and angel investors bringing in wisdom of life.
+
+The project is funded by the owners and angel investors. PRCY believes in long term smart
+efficient investing, meaning each USD will be invested in the project for development or
+marketing purposes for the benefit of the community. The expansion of PRCY is key. PRCY will
+sell the minimum of PRCY coins to raise funding for this sole purpose, each quarter the PRCY
+team reports about the expenses and the number of coins sold. Trust is key, our actions are
+transparent and verifiable.
+
+4.2 Team anonymity
+
+The PRCY Project is a community driven initiative with a varied source of contributors. It draws
+inspiration from Monero and other privacy projects that elected to go (partly) anonymous in
+line with the world’s most known token Bitcoin.
+
+This is done to protect the project and the team and its users to assist in ensuring it can be
+more decentralized from its outset. The focus should be on the project, its code and the
+community that drives it, these are transparent and verifiable.
+
+noe? ‘4
+
+focekanie Bik
+RO em RO:
+
+ye $e
+
+11|Page
+PRCY© — Whitepaper V 1.0
+4.3 Central versus Decentral
+
+For the workspace is chosen to start decentral. Meaning there is no top-to-bottom authority
+model like with a central workspace. Also, the community will take part in the workspace by
+being rewarded for engagements. PRCY will work on multiple sustainable plans for community
+engagement, the retention plan was the kick off the engagement initiative.
+
+Centralized Decentralized
+
+12|Page
+PRCY© — Whitepaper V 1.0
+5. PRCY Blockchain Features
+
+5.1 What Are PRCY Coins?
+
+PRCY coins are cryptocurrencies that specialize in keeping you and your transactions hidden.
+
+Although the media portrays crypto as an anonymous, dark web currency, it’s actually quite
+transparent. Most blockchain networks broadcast every transaction and wallet
+balances publicly, so tracing someone’s financial activity isn’t all that difficult.
+
+PRCY focus on keeping transactions anonymous and untraceable. Anonymity disassociates your
+identity from your wallet and specific transactions while untrace ability prevents outside parties
+from piecing together your blockchain activity.
+
+Chain analysis isn’t simple, but several companies specialize in it, and they’re paid to do so.
+Often, it’s a continuous game of cat-and-mouse between privacy coins and the software trying
+to monitor them.
+
+5.2 How do PRCY Work?
+
+PRCY has technology tactics to keep your identity shielded. PRCY uses a mix of different
+strategies. Let’s examine some of the most relevant ones.
+
+Stealth Addresses
+
+Stealth addresses are arguably the simplest way to improve your transaction privacy. At their
+most basic, stealth addresses involve creating a new address each time you receive
+cryptocurrency. Doing so ensures that outside parties can’t link any future payments to your
+wallet address.
+
+Although PRCY uses are more advanced complex tactics. PRCY uses a dual-key stealth address
+protocol (DKSAP). The protocol gives all wallet owners a private view key, private spend key,
+and a recipient address.
+
+13 |Page
+PRCY© — Whitepaper V 1.0
+Stealth Addresses
+
+INPUTS OUTPUTS
+
+Commitment public key
+
+Back to Sender
+
+eySf8neS8nhSnogsefwjw —
+
+You send crypto using the spend key and display incoming transactions with the view key.
+Although your recipient address is public, the funds you receive from each sender go toa
+separate, unique blockchain address. Only the sender and receiver in each transaction know
+the fund’s final destination.
+
+PRCY Ring Signatures
+In a blockchain transaction, you sign a digital signature to verify that you’re the sender. You’re
+the only person doing this signing, so it’s not tough for someone to trace it back to you.
+
+PRCY Ring signatures combine you with other signers in a ring to hide you as the sender. The
+higher the number of additional parties in the ring, the harder it is for someone to connect you
+with the transaction.
+
+jan O-r om ° |
+
+an
+Esteban O-w IK <x a mel Esteban
+
+Justin Onw +i] Justin
+
+SIGN VERIFY
+
+Ring signatures hide you among other senders.
+
+14|Page
+PRCY© — Whitepaper V 1.0
+PRCY RingCT
+
+PRCY make use of Ring Confidential Transactions (RingCTs) build off the foundation of ring
+signatures. In addition to masking your identity, PRCY RingCTs encrypt the output of your
+transaction, concealing the amount.
+
+PRCY Bulletproof
+
+PRCY Bulletproofs are short non-interactive zero-knowledge proofs that require no trusted
+setup. A PRCY bulletproof can be used to convince a verifier that an encrypted
+plaintext/transaction is well formed. For example, prove that an encrypted number is in a given
+range, without revealing anything else about the number. Compared to Zk-SNARKs, PRCY
+Bulletproofs require no trusted setup. However, verifying a bulletproof is more time consuming
+than verifying a SNARK proof.
+
+Bulletproofs are designed to enable efficient confidential transactions in Bitcoin and other
+cryptocurrencies. Confidential transactions hide the amount that is transferred in the
+transaction. Every confidential transaction contains a cryptographic proof that the transaction
+is valid. Bulletproofs shrink the size of the cryptographic proof from over 10kB to less than 1kB.
+Moreover, bulletproofs support proof aggregation, so that proving that m transaction values
+are valid adds only O(log(m)) additional elements to the size of a single proof. If all Bitcoin
+transactions were confidential and used Bulletproofs, then the total size of the UTXO set would
+be only 17 GB, compared to 160 GB with the currently used proofs.
+
+The Importance of Privacy
+
+You may not think that you need to keep your crypto activity private. If you’ve got nothing to
+hide, then why worry about it, right? Well, there are quite a few reasons why you should be in
+favor of a privacy-focused future.
+
+To best explain the importance of privacy coins, let’s tie it to a more familiar example,
+traditional banks. A blockchain without privacy mechanisms is like a bank that posts all of its
+customers’ transactions online. Just search an account number, and you’ve got access to
+someone’s complete financial history as well as the amount of money they possess.
+
+Even though you probably don’t know anyone’s account number, it wouldn’t be a challenge to
+figure one out if you wanted to. You can see the issue with that transparency. Blockchains are
+no different.
+
+Fungibility is Sound Money
+
+Perhaps more important than individual privacy, though, is the necessity of fungibility in a
+monetary system. Fungibility is a property in which you can interchange one currency unit
+
+for any other unit. For instance, every gram of gold is identical, so you can always exchange one
+gram of gold for another.
+
+You can’t say the same for Bitcoin. A Bitcoin may become tainted through money laundering or
+other illegal activity. Because you can track Bitcoin to its source, some vendors may not accept
+the tainted Bitcoin, placing a lower value on it than an untainted one.
+
+15|Page
+PRCY© — Whitepaper V 1.0
+Fungibility brings reliability to a currency, and without a certain level of it, the currency won’t
+survive. Why would you keep a currency if you’re not confident that it’ll be accepted when you
+
+spend it?
+A privacy coin has no transaction history, so it can never become tainted. Privacy coins maintain
+
+your anonymity, but even better, they guarantee the fungibility that a currency needs to stand
+the test of time.
+
+16|Page
+
+PRCY© — Whitepaper V 1.0
+6. Important links
+
+Official Website
+
+Website
+
+https://prcycoin.com
+
+Official Social Media Accounts
+
+Twitter:
+Facebook Page:
+
+Instagram:
+
+PRCY Channels and Chats
+PRCY Coin Official:
+
+PRCY Coin Lounge:
+
+PRCY Coin Update Channel:
+PRCY Coin Support:
+
+PRCY Coin Social Media:
+PRCY Coin NL/BE:
+
+PRCY Coin Polish:
+
+PRCY Coin Russian:
+
+Discord:
+
+PRCY© — Whitepaper V 1.0
+
+https://twitter.com/PRCYcoin
+
+https://www.facebook.com/Prcycoin-101534778505838
+
+https://www.instagram.com/prcycoin
+
+https://t.me/prcycoinofficial
+
+https://t.me/prcylounge
+
+https://t.me/prcyupdate
+
+https://t.me/prcySupport
+https://t.me/PRCYsocialmediachannel
+
+https://t.me/PrcycoinNLBe
+
+https://t.me/PRCYcoinPL
+
+https://t.me/PRCYcoinRU
+
+https://prcycoin.com/discord
+
+17|Page
+Blogs/News
+
+PRCY Blog: https://prcycoin.com/blog
+
+Reddit: https://www.reddit.com/r/PRCYCoin
+
+Telegram Update Channel: https://t.me/prcyupdate
+
+Exchanges
+
+Hotbit:
+https://www.hotbit.io/exchange?symbol=PRCY USDT
+https://www.hotbit.io/exchange?symbol=PRCY_BTC
+
+Coinsbit:
+https://coinsbit.io/trade/PRCY_USDT
+https://coinsbit.io/trade/PRCY_BTC
+
+STEX:
+https://app.stex.com/en/trading/pair/USDT/PRCY
+https://app.stex.com/en/trading/pair/BTC/PRCY
+
+SWFT Blockchain:
+https://www.swft.pro
+
+Txbit:
+https://txbit.io/Trade/PRCY/USDT
+https://txbit.io/Trade/PRCY/BTC
+
+Staking Pool
+
+Coinsbit Staking Pool:
+https://coinsbit.io/staking-pool/plan/503
+
+18|Page
+PRCY© — Whitepaper V 1.0
+PRCY Coin Announcements
+
+PRCY First Announcement:
+https://prcycoin.com/wp-content/uploads/2021/01/PRCY-ANNOUNCEMENT. pdf
+
+PRCY Specifications Announcement:
+https://prcycoin.com/wp-content/uploads/2021/01/PRCY_ Specifications Announcement.pdf
+
+PRCY Retention Plan:
+https://prcycoin.com/wpcontent/uploads/2021/01/PRCY Retention Plan Announcement.pdf
+
+PRCY Coin QT Wallet Release:
+https://prcycoin.com/wp-content/uploads/2021/01/PRCY-Coin-QT-Wallet-Release.pdf
+
+PRCY Milestone Retention Plan:
+https://prcycoin.com/wp-content/uploads/2021/01/PRCY-Milestone-Retention-Plan.pdf
+
+PRCY Financial Report Q1:
+https://prcycoin.com/wp-content/uploads/2021/02/1ST-QT-2021-FINANCIAL-REPORT-PRCY.pdf
+
+Appendix
+Coin allocation explained.
+60 million PRCY coins are minted at genesis.
+
+-12 million of PRCY coins are reserved and allocated to the owners of PRCY, these coins are
+vested. Each year 10% of these coins will be released from the lock up ina multi signature
+wallet solution, only after management predetermined milestones are reached. The vesting
+period is 10 years. The owners are forbidden to sell any coin within the coming 3 years counting
+from the genesis date of December 2020.
+
+-12 million of PRCY coins are allocated for airdrops, the first airdrop occurred close after genesis
+date of PRCY. The retention plan is made to manage the airdrops, the community can easily
+participate in these airdrops. All PRCY coins not yet distributed are locked in a multi signature
+wallet solution.
+
+-12 million of PRCY coins are part of the liquidity solution of PRCY. PRCY makes use of market
+makers or market making solutions of exchanges. In order to make it possible to buy PRCY for a
+good price with enough size. PRCY is needed for swap solutions at DEX, staking pools of
+
+19|Page
+PRCY© — Whitepaper V 1.0
+exchanges or used as collateral requirement of exchanges. All PRCY coins not yet distributed
+are locked in a multi signature wallet solution.
+
+-6 million of PRCY coins are allocated for an unique community reward plan. Community
+members are rewarded according the plan if they contribute to help the PRCY the Eco-system
+to grow. This plan contributes to the strong philosophy of being a community driven project.
+All PRCY coins not yet distributed are locked in a multi signature wallet solution.
+
+-12 million of PRCY coins are allocated for development of the PRCY blockchain. Developers and
+other development contributors are rewarded in PRCY periodically to secure contingency of
+development by many contributors. All PRCY coins not yet distributed are locked in a multi
+signature wallet solution.
+
+-6 million of PRCY coins are allocated for marketing purposes and to reward all persons and
+entities in PRCY coins for their marketing efforts. All PRCY coins not yet distributed are locked in
+a multi signature wallet solution.
+

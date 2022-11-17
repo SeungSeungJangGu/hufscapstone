@@ -1,0 +1,468 @@
+Whitepaper | 2
+
+1.Abstract
+
+ZeeDex will change the world through the use of Blockchain
+Technology. We have a unique concept which we have integrated
+into our Decentralized Exchange, as you are aware the crypto
+world has taken the planet by storm over the last few years and is
+developing into one of the world's major players within finance,
+business and investment.
+
+Contents
+
+Abstract
+
+Introduction
+Decentralized Exchanges
+The Impact on The Cryptocurrency Market
+Project Overview
+Tokenomics
+
+Zeedex Benefits
+
+Trading Competitions
+RoadMap
+
+Marketing Strategy
+
+References
+
+Whitepaper | 3
+
+4
+
+2 ZEEDEX Whitepaper | 4
+
+2. Introduction
+
+The blockchain is an undeniably ingenious invention —- the
+brainchild of a person or group of people known by the
+pseudonym, Satoshi Nakamoto. But since then, it has evolved into
+something greater, and the main question every single person is
+asking is: What is Blockchain?
+
+Is Blockchain Technology the New Internet?
+
+By allowing digital information to be distributed but not copied,
+blockchain technology created the backbone of a new type of
+internet. Originally devised for the digital currency, Bitcoin
+blockchain, (Buy Bitcoin) the tech community has now found
+other potential uses for the technology.
+
+A blockchain is, in the simplest of terms, a time-stamped series of
+immutable records of data that is managed by a cluster of
+computers not owned by any single entity. Each of these blocks of
+data (i.e. block) is secured and bound to each other using
+cryptographic principles (ie. chain).
+
+So, what is so special about it and why are we saying that it has
+industry-disrupting capabilities?
+
+The blockchain network has no central authority — it is the very
+definition of a democratized system. Since it is a shared and
+immutable ledger, the information in it is open for anyone and
+veryone to see. Hence, anything that is built on the blockchain is
+by its very nature transparent and everyone involved is
+accountable for their actions.
+A blockchain carries no transaction cost.(An infrastructure cost
+yes, but no transaction cost.)
+
+2 ZEEDEX Whitepaper | 5
+
+The blockchain is a simple yet ingenious way of passing
+information from A to B ina fully automated and safe manner.
+One party to a transaction initiates the process by creating a block.
+This block is verified by thousands, perhaps millions of computers
+distributed around the net. The verified block is added to a chain,
+which is stored across the net, creating not just a unique record,
+but a unique record with a unique history. Falsifying a single
+record would mean falsifying the entire chain in millions of
+
+instances. That is virtually impossible. Bitcoin uses this model for
+monetary transactions, but it can be deployed in many other
+ways.
+
+The reason why the blockchain has gained so much admi
+that:
+
+@ It is not owned by a single entity, hence it is decentralized.
+@ The data is cryptographically stored inside.
+
+The blockchain is immutable, so no one can tamper with
+the data that is inside the blockchain.
+
+The blockchain is transparent so one can track the data if
+they want to.
+Proof of Stake
+
+Proof of Stake (PoS) concept states that a person can mine or
+validate block transactions according to how many coins he or
+she holds. This means that the more Bitcoin or altcoin owned by a
+miner, the more mining power he or she has.
+
+Understanding Proof of Stake (PoS)
+
+The proof of stake was created as an alternative to the proof of
+work (PoW), to tackle inherent issues in the latter. When a
+transaction is initiated, the transaction data is fitted into a block
+with a maximum capacity of 1 megabyte, and then duplicated
+across multiple computers or nodes on the network. The nodes
+are the administrative body of the blockchain and verify the
+egitimacy of the transactions in each block. To carry out the
+verification step, the nodes or miners would need to solve a
+computational puzzle, known as the proof of work problem. The
+first miner to decrypt each block transaction problem gets
+rewarded with coin. Once a block of transactions has been
+verified, it is added to the blockchain, a public transparent ledger.
+ining requires a great deal of computing power to run different
+
+cryptographic calculations to unlock the computational challeng-
+es. The computing power translates into a high amount of
+electricity and power needed for the proof of work. In 2015, it was
+estimated that one Bitcoin transaction required the amount of
+lectricity needed to power up 1.57 American households per day.
+To foot the electricity bill, miners would usually sell their awarded
+coins for fiat money, which would lead to a downward movement
+
+Whitepaper | 6
+Whitepaper | 7
+
+To foot the electricity bill, miners would usually sell their awarded
+coins for fiat money, which would lead to a downward movement
+in the price of the cryptocurrency.
+
+The proof of stake (PoS) seeks to address this issue by attributing
+mining power to the proportion of coins held by a miner. This way,
+instead of utilizing energy to answer PoW puzzles, a PoS miner is
+limited to mining a percentage of transactions that is reflective of
+his or her ownership stake. For instance, a miner who owns 3% of
+the Bitcoin available can theoretically mine only 3% of the blocks.
+
+Whitepaper }| 8
+
+3.Decentralized Exchanges
+
+Asa relatively new development in the world of cryptocurrency,
+decentralized cryptocurrency exchanges solve many of the more
+pressing issues faced by centralized exchanges, such as trust,
+security, high trading fees, and the need for personal
+documentation. The cryptocurrency landscape is evolving and
+gaining strength, but is lagging as far as regulations are
+concerned. But what are decentralized exchanges, and how are
+they likely to affect the cryptocurrency market?
+
+Decentralized exchanges and how they differ from centralized
+crypto exchanges
+
+@® Centralized cryptocurrency exchanges (CCEs) have, until
+now, been the primary platforms for trading
+cryptocurrencies. CCEs work in a similar way to stock
+markets, where a CCE will be owned and operated by a
+single organisation that has full control over all
+transactions.
+
+e CCEs make use of middlemen or intermediaries, much as
+we use and trust a bank to manage our financial assets.
+These middlemen act like stock brokers and they conduct
+transactions and trades for users.
+
+@ CCEs are where order reviewing, matching between users,
+routing, and execution of order transactions through
+exchange software and servers, take place.
+2 ZE=EDEX Whitepaper | 9
+
+co CCE users do not have access to the private keys of their
+exchange wallet’s account (the software programmes used
+to handle key management) but rather access it through a
+process called custody, which refers to who holds the keys
+to accounts on the exchange.
+
+OF Currently, 99% of trading volume take place on centralized
+exchanges, with 73% being custodial.For example, when
+you buy cryptocurrency, like Bitcoin, it will appear in your
+account. However, you don't own it and cannot manage it
+yet as it’s in ‘custody’. To gain control, you need to re
+transfer of that cryptocurrency to your external wa
+address from your exchange provider or middlema
+means that transactions can only be processed thro
+the verified operators within the exchange, and approved
+by a central authority.
+
+2 ZEEDEX Whitepaper | 10
+
+Decentralized cryptocurrency exchanges (DEXs), much like
+cryptocurrencies, are not owned or operated by a single
+
+company.
+
+ee DExXs don't keep custody of customers’ funds, positions, or
+information, but serve only as a matching and routing layer
+for trade orders. There is no need for an exchange or
+intermediary institution to manage the ledger or control
+
+user funds.
+
+ee Rather, DEXs allow trades to take place directly between
+users in a peer-to-peer manner, with the help of an
+automated process.
+
+© They allow non-custodial exchanges, which means that
+users can keep all the funds in their wallets and
+independently request and allow trades from their wallet.
+
+The DEX in this instance is the matching service.
+
+The main benefit of DEXs is that you're not dependent on the
+protocols of the exchange or third party, because you hold the
+funds in your personal wallet.lt’s also more private, as users don't
+have to surrender their personal details to an organisation and
+can trade anonymously if they prefer. Additionally, DEXs are at no
+risk of server downtime, as hosting is distributed throughout the
+nodes, or people, involved in the exchange. And are less
+vulnerable to being hacked than CCEs.
+
+Whitepaper | 11
+
+4.The Impact On The
+Cryptocurrency Market
+
+Cryptocurrencies have revolutionised traditional finance through
+the new opportunities for value trading — without the need for
+formal banking institutes. As of May 2019, data site Cryptocoin
+Charts indexed 5,442 crypto currencies, with $171.41 billion market
+capitalisation. According to a recent study by Cambridge
+University, the current number of total crypto user accounts is
+now over 139 million, with an estimated minimum of 1,876 people
+employed full-time in cryptocurrency companies — most of whom
+are in the exchanges sector.
+
+Due to blockchain technology, the need for a central institution is
+removed, as the transparent ledger platform allows individuals to
+trade with trust. However, to enter the cryptocurrency ecosystem,
+cryptocurrency first needs to be purchased using fiat currency,
+such as dollars, or euros. This is ironically done through a
+centralized institution, such as Coinbase or Kraken, two of the
+major cryptocurrency exchanges, who require personal
+information and manage your accounts.In other words, the only
+
+way to enter a non-custodian, decentralized ecosystem, is to pass
+through a centralized institution. Despite this, the benefits
+
+provided by DEXs of offering users alternative ways to find one
+another, and trade directly on-chain, are making them
+increasingly popular.
+2 ZEEDEX Whitepaper | 12
+
+5.Project Overview
+
+Zeedex is a decentralized exchange where users can trade
+cryptocurrencies. It will be a Defi Hub in the Industry providing on
+chain staking. We will be supporting mulltiple crypto projects to
+team up with us and launch staking. Basically any ERC-20 token
+can be turned to DeFi using our protocol.
+
+Coin Staking gives currency holders some voting power too in
+
+addition to income from earning interest based on holdings and
+discounts.
+
+Whitepaper | 13
+
+Any erc20 token project can be turned into DeFi using our
+technology.
+
+Defi”, is the use of blockchain technologies (including smart
+contracts, decentralized asset custody, etc.) to replace all
+“intermediaries” with program codes, therefore maximizing the
+efficiency of financial services and minimizing costs.
+
+The best part about Zeedex is that apart from match making,
+everything happens on-chain, so there is no deposit or withdrawal
+of funds.
+
+We also have our token incorporated with utilities like Fees
+deduction, IEOs and Staking.
+
+Whitepaper | 14
+
+6. Tokenomics
+(TEKEAN- Zeedex
+(Mtiexery ex
+“Decimal «= 18
+Contract Address
+
+Ox73DBbf72d427076BDd73CF90S5fDFc442c9C67D4a
+
+ZDEX Holders we have the following discount
+rates based on their holdings
+
+0 <= x < 10000 0%
+10000 <= x < 20000 10%
+20000 <= x < 30000 20%
+30000 <= x < 40000 30%
+
+40000 <= x 40%
+
+2 ZEEDEX Whitepaper | 15
+
+Token Allocation
+
+Total Supply: 10,000,000
+
+© 2,500,000 - Rewards (Incentives, Staking Rewards, etc)
+Bf 1,000,000 - Marketing and Growth
+
+i 2,000,000 - Reserve
+
+Hf 1,000,000 - Trade Competitions
+
+1,500,000 - Team
+
+i 2,000,000 - Sale
+
+Team tokens will be locked on a vesting schedule of 4 Years
+25% release per year
+O Cliff
+2 ZE=EDEX Whitepaper | 16
+
+7.Zeedex Benefits
+
+Fees 03% 01%
+Liquidity Not Required x Vv
+For Trading
+Limit Orders x Vv
+
+8.Trading Competitions
+
+We at Zeedex will be hosting regular trading events and
+
+reward the participants. Our plan is to also provide tools to
+devs of tokens that will be listed on our exchange.
+
+The tools will let the devs launch trading competitions on
+their own.
+
+Before starting a competition the devs will have to add the
+reward in our
+
+Protocol Smart Contracts - Trading Competition Reward Pool.
+So everything remains Decentralized and Open to All.
+
+We plan on making things, EASY FAST and TRANSPARENT.
+Whitepaper | 17
+
+9.RoadMap
+
+~ Exchange Release on Mainnet
+Q4
+
+Staking + Instant Swap Platform +
+
+Expanding Ecosystem + Mobile App
+
+Ql
+
+Trading Competitions starts
+
+Q2
+
+Release our Defi Protocol (Onboard _
+other projects to launch their token
+staking/lending system)
+
+Q3
+
+= Integration with Tron Chain
+
+Q4
+
+Development of Futures Trading
+
+Ql
+- Release Futures Trading + Start Development
+Qs of Margin Trading
+
+Release Margin Trading |
+2 ZEEDEX Whitepaper | 18
+
+10.Marketing Strategy
+
+ZeeDex have adopted unique marketing strategies
+
+Website:
+
+The ZeeDex website is a professional website with customized
+features for all investors to use displaying up-to-date information
+regarding ZeeDex token performance.
+
+Branding:
+ZeeDex will ensure its unique strategy is represented with
+distinguished style in the digital space.
+
+Partnership:
+ZeeDex has secured good partnerships and will continue to
+partner with more companies to broaden its market.
+
+Press Releases:
+
+ZeeDex will promote professional press releases and blog postings
+for the marketing of its tokens. Press releases will be featured on
+leading cryptocurrency sites globally.
+
+Social Media Marketing:
+
+Social media is a major tool for marketing of cryptocurrencies.
+ZeeDex will adopt maximum social media strategies for the
+marketing of its tokens. Platforms such as; telegram, reddit,
+
+facebook, twitter, instagram etc. will be utilized for the promotion
+of ZeeDex token.
+2 ZE=EDEX Whitepaper | 19
+
+Founder
+Kyunghun Cheong
+https:/Awww.linkedin.com/in/kyunghun-cheong-9aa938161/
+
+"It was always my dream to bring improvements and revolutions
+in the blockchain industry. Finally | am here and have got a
+
+chance to make it true.
+
+The lowest fees possible, the most transparent way of running an
+exchange, almost everything on-chain.
+Even if any token does any liquidity removal in uniswap, p'
+will keep trading on our exchange for a while. | want people
+safer in the space.
+
+| will try my best to deliver the Fastest, Safest and Most
+Transparent exchange platform in the whole industry. The dream
+
+is now coming to the point of reality."
+
+© Website - https://zeedex.io
+© Telegram - https://t.me/zeedexio
+
+-« Email - contact@zeedex.io
+2 ZE=EDEX Whitepaper |20
+
+11.References
+
+https:/\www.investopedia.com/terms/p/proof-stake-pos.asp
+https:/www:skalex.io/oroof-of-work-vs-proof-of-stake/
+https://blockgeeks.com/guidesWwhat-is-blockchain-technology/
+https:/news.bitcoin.com/decentralized-exchanges-are-evolv-
+ing-at-last/
+https:/www.getsmarter.com/blog/market-trends/now-decen-
+
+tralised-exchanges-will-affect-the-cryptocurrency-market/
+https:/wwwintechfutures.com/2019/l0/decentralised-vs-cen-
+tralised-exchanges-a-comparative-analysis/
+https://en.wikipedia.orgWwiki/Decentralized_exchange
+https://medium.com/@sytaylor/what-is-a-decentralised-ex-
+change-e2b86e844fe9
+
+https://news.bitcoin.com/def is-rise-is-inevitable-and-fu-
+sion-is-driving-this-evolution-of-conventional-finance/
+
+https://consensys.net/blockchain-use-cases/decentralized-finance/

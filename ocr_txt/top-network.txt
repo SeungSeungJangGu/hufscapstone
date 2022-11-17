@@ -1,0 +1,2323 @@
+TelOS Protocol (TOP):
+A Decentralized Open Communication Network
+
+Whitepaper
+
+Version 0.6
+
+Telos Foundation
+December 2017
+TOP Decentralized Open Communication Network
+
+Table of Contents
+
+uIP (0) cole 10 [0] 00) 9 eee ee 4
+
+1.1 Background
+
+1.2 Mission Statement.......0...:cccceccecceeeee cece ceeeeeeeeeeeaeecaeeeeaeecaesesaeeceeseaaeecaeseeaeeeeesesaeeeaeenaeeeeeeeeaeeeaee 6
+2. TOP OVErVIOW oo. ceeeceeseeneeseeeeseeseeeeseecaeeecsesaesaceesaesaeeeseesaesaesaesaeeaseesaesaeeeseesaesaeeasiats 8
+2.1 Core Values of TOP .......cccccecsecsecseceecesceseecaecaesuecescessesaeseesceecaecaeseeseeeeaeesaesaesceeceeeaeseesneeeseesaees 9
+2.1.1 Distributed Communication Cloud Services ........ eee ee rene ee ee eee eneeeeeteseeneeetenesanenees 9
+2.1.2 High - Performance Public Blockchain Platform for Real BUSINESS ............c:eceeeeeeeeeees 9
+2.1.3 Open ECOSYStOM oo... eect ete eee cece ene ee te ceeee ee seseeeeetevasaeeeesevasaeeeeesevaseeeeesesaseenetevenaeetees 10
+
+2.2 Token ECONOMICS .........cccccecceceeceeceeceee cases ceeseeceaaeeaeeesceesaesaeseseeesaaesaeeaeseeesaesaeseeseeeeeesaseed 10
+2.3. TOP Architecture Overview ..........ccccecceceeceeceeeeeeceecaecaeeeeeeaeeaeseeeeeesiecaeseeeeseeseeeaeetaeeesiees 12
+2.3.1 Network Layer... cece ee eceeeeeceeeeeeeceseeseesesessecesseceeesseeesseseeeesseseseesoeseseesessesesesseseeesseeea 12
+2.3.2 SriCe LAYEN oo... eee cece eee cee ceeeeeeececeeseeseseeseecessecsesesseseseseeeeseeseseeseeseseeseseeseseseeseeeseeed 12
+2.3.3 Interface LAYED oo... eee cece eens cece eeeceeeeseeseseseecesseceeessesesseseesesseseseeseeseseeseesesesssseseeasnees 12
+2.3.4 Marketplace... cccccccecseseeseeeeeecaeeececeeeeseeceseseseesessesessesesseseeceseeseseeseeseseeseseeseseseeseeesaeed 12
+2.3.5 DAD Pie. cece cccescceeeeeecsecessecsesececececsecesseceseseeseseessecessesessessecesseseeesoeseseesoeseseeseseeseseseeseeasnead 12
+
+B. TOP Chain on. eeeeecceeseeseeeeneeseeeeeeeaeeseeeceecaeeeceesesaeeeeesaesaeeeseecaeeesesaesaseesesaeeaseetanes 13
+3.1. TOP Blockchain ArchiteCture .......... ce eceeecceeceeceeeseeeceeceeceeeeeeeeaeeaeseeeeeeseecaeseeseseeseeeaeseeateeneees 15
+3.2 COMSeENSUS MECHANISM ...........cceceteecenceeceeceeeceseeceecneceeeeeeeeaeeaeaceeeeesiecaesaeeeseeseeeaeaeeaneeneees 21
+
+3.3 Cross-shard & Cross-zone Synchronization
+
+B.4 Smart Contract .......cccccccescecsessecseceecescescesaesaeseeceecaeceeseecesaecaecaeseeseeeeaaesaeeeeseeesaeseeseeseeeeaeeaeees 23
+3.5 Layered LEdGePs ...... cece cece cee ceeeeee cee ceseeeeeseaeeeaeeeesceesaecaeseseeeeaaesaseeeeeeesaesaeseeseeeeeeaseed 24
+3.6 Consensus Mechanisms of Service Chains .........:.:ceceeseeeeeeeeeeeseceeeeeceeceeseeeeeeeseeaeeeeeeeteees 25
+8.7 Security... cece ce ceeeseeeeeceeceecaeceseeeeeeeaaesaeseeeseesaaesasseseeesaeseeseeseeasaaesaseeeseeeseesaeseeseeesaeeaaeed 25
+4. TOP Network... ceceseseeeeeeseeseeeeneeseesceeecaeeeeeesesaeeeceesaesaeeeseesaeeesesaesaseeseesaeeaseesanes 30
+4.1 TOP Communication Services .........:cccceccecesceeeseeecesceeceeeeeeeeaeeaeseeseeeseecaesaeseseeeeeeaeeeaeeeseees 31
+41.1 TOP RCS Service ..0... cece cece eceeceeeecneceeeeceeeeseeseseeseeseseeseeeesseseesesseeessesessesseesenseeseseeteeeeseass 31
+4.1.2 TOP Proxy Service... cccccccccescsecseeecsececeeceeeceseseeseeseseessecessessesessecesesessessseesenseeseseeteeeeseess 31
+4.1.3 TOP Streaming Service 0.0.0.0... cece eee ceeeececeseeseeseseeseseesesessessecesesessesseseseeseesesetaeeesiess 32
+41.4 TOP OT Service... eee ce ccecseceeecececeeceeeeseeseseeseeseseeseeeessesessessecessesssseseseeseeseeseseeteeeeseass 33
+5.
+
+7.
+
+10. Roadmap
+
+TOP Decentralized Open Communication Network
+
+4.1.5 TOP VOIP Service ou... cece ccc ecceceeeecneeeeeeceeeeseeseceeseeseseeseeeesseseesessecesesesseeeseesensaeseseeteeeeseess 33
+4.2 TOP Storage Service ou... eee eee eee ceceee cee necaee ee tecaeeseseneeesesogeeeenesagnesanenaeeecaneas 34
+4.3 TOP DNS Service
+4.4 TOP Billing Service oo... ee ee eee ceeee ee necee ee necaeeeeseseeesesogeenesaenesanenaenecateae 34
+
+TOP Marketplace
+5.1 Marketplace Smart Contract ........ccccceececceeceeceeeeeeeceeceeceeeeeeeeaesaesceeeeeseecaeseeeeseeseneaeseeateeseees 35
+5.2 Market Order Matching CONSENSUS. 00.0.0... cee eee eee ceases sete see cate eee cae nesanenaeneaneae 36
+5.3 Consensus of Market ACCESS .........cc:ccscessesseeeseceeescesseeeeceecaecaeceeseseeaeesaeeaeseeecaesaeseenseeaaeaeees 36
+5.4 Market Stability 0... eee cee cesses eee eesaeeeeseeeceecaeceeseesseaeseesaeseesseasaaesaseeeseeesaesaeseseeesaeeaseea 37
+
+ADDS ooo eececee cece cess cee eaeseeeceesaeseeeeaesaeseeeccaesaeseeseaesaeseseeaesaeseeseaaesaeseeseaesaeseeseaeeaesegee 38
+6.1 Dapps And Typical Cases ..........:sccsscesescenceeceeceseeeeeeeceecaeceeeesesaceaeaeeeeeesiecaesaeseseeseneaeeaeaneeseees 38
+
+6.1.1 Messaging Apps........ccccccccecce cece cseeeeeeceseeseceseessecessecsesessesesseseeseseeseseeseeseseeseseesesseseneeasneea 38
+
+6.1.2 VoIP Phone Call... ccc ccc eee cece eeeceseeseeseseesecesseceesesseseseseeeesseseseeseeseseesesseseseeseseeaseneaa 38
+
+6.1.3 VPN Service... ieee eee eneeeeeeceeceseeceseeseesesessecessessesesseceseseeseseeseseeseeseseeseseeseseseeseeesiaeed 39
+
+6.1.4 — Live Streaming 0.0... ccc ese e eee ceeeceeseceeseeseseessecesseceeessecesseseesesseseseesaeseseeseesessesseseseeaseneea 39
+
+6.1.5 Social APP .... see eee ceeeeeeeeeeeseseeeseeceeceeeaeeseseeseeesaeeeseaesaesaeseeeeaeeaeseesseesaeseeseeeeaeseeseeseaeeaeees 39
+6.2 Decentralized or Partially-Centralized Apps ........:ceccecceeseeeseeeeeeseseeseeeceecaeseeeeseeteeeaeseeateeteees 40
+6.3 TOP API & SDK... ececeeceeceeeeeeeseeeeseeeeeeeeacseeeceecseceecaecaeeeseeaeeaeaeeeeeesiecaesaeeeseesaeeaeenaeeesiees 4
+
+6.4 App: Dingtone, CoverMe, SkyVPN, TOP Messenger
+
+TOP ECOSYStOM 00... ce ececceceeeeseeceeeeneeseeeecaeeaeeeeseeaesaeeeceeeaesaeeesseecaeeesesaesaseeteeaeeaseatanes 45
+7.1 Ecosystem Participants.........0.... ccc cscs cseeeesee ce ceeseeceseeeeesasseseseeseeseesesseseeseesesseseaneaeess 45
+7.2 Build The Ecosystem ........ccccccsceecesessseseeceeceeeeeceseesaeseesceesaecaeseesneesaaeaseeseeeseesaeseeseeesaeeaseed 47
+
+Token Distribution occ ee ee cece eee seseeseeeseseeeseeeeaeseeseeesaeseeseeeeaeeeeeeea 50
+
+TCA eee eccecee cee eee cee eeceeeeseeecaeseseeeeaesaeseeeecaeseeseeesaeseeseeecaesaeseseecaeseeseeesaeseeseseeaeeensegs 51
+
+11. Governance
+11.1 COMMUNITIES 000. ccc ce ceceeeeeeceeeceecaeceesueeeseesaesaecueseseeaaesaeeeseeecaesaeceeseeeeaeeeaeeeeseeeeaees 54
+11.2 On-Chain Governance .........ceccecceeseeseseseseecasesseeesceecaeceecueceseeseesaeeaesceecaesaeceeseseesaeeaeeeseeseaees 55
+TOP Decentralized Open Communication Network
+
+1. Introduction
+
+TOP Network is a decentralized open communication network powered by blockchain 4.0 technology. It
+provides decentralized cloud communication services such as messaging, VoIP, video, streaming, VPN,
+CDN, loT data sharing, storage and more. With the API and SDK provided by TOP Network, developers
+can build communication applications - for instance, messaging apps like WhatsApp and WeChat, VoIP
+apps like Skype, VPN services like SkyVPN, and live streaming apps, without developing their own
+communication stacks and deploying their own networks. TOP Network can significantly lower
+development costs and network costs for developers. Furthermore, all the applications running on TOP
+Network are interoperable, while apps such as WeChat, WhatsApp and Telegram, built on top of
+proprietary protocols, are completely isolated from each other. On this decentralized and distributed P2P
+overlay network, nodes mine TOP tokens by providing communication services to the network instead of
+through proof of work (POW) mechanism that consumes large amounts of energy.
+
+TOP is a high-performance public blockchain platform designed to process massive real-world business
+on the blockchain. Communication services usually have a huge volume of high-frequent, real-time
+transactions. For example, a popular messaging app might have approximately 100 billion messages per
+day‘8e4), equivalent to one million messages per second. Every transaction needs to be processed on the
+blockchain in real time. The existing blockchain platforms on the market, such as Ethereum and the so-
+called blockchain 3.0-powered EOS, cannot handle such a massive volume of transactions. TOP Chain
+adopts innovative technologies including double lattices to organize transactions, directed acyclic graph
+structure to organize blocks, two-layered sharding, high-speed concurrent Practical Byzantine Fault
+Tolerance (PBFT) consensus mechanism, and trusted off-chain processor. The core mission of a
+blockchain 4.0 platform is to enable the real-world business of any volume or size on the blockchain. The
+TOP main chain will have the capability to handle several hundred thousand transactions per second
+(TPS). With the seamless combination of main chain, service chains and off-chain processors, TOP can
+process millions of business transactions in a second.
+
+TOP Token, the native and basic cryptocurrency in the TOP ecosystem, is used for the settlement of
+communication services on TOP Network and asset transactions on the TOP public blockchain platform.
+Service nodes on TOP Network mine TOP Tokens by providing communication services, and consensus
+nodes of TOP blockchain platform mine TOP Tokens by verifying transactions. Moreover, the voting
+power of a consensus node in PBFT-DPoS consensus mechanism is directly related to the number of
+TOP Tokens the node holds. In addition to the native TOP Token, any Dapp can issue its own token on
+TOP through the TRC20 protocol. Therefore, tokens can be created through initial coin offering (ICO) and
+can be exchanged freely on TOP.
+
+Bitcoin revolutionarily kicked off the world of cryptocurrency and Ethereum started a new era of Web 3.
+However, a brand-new generation of infrastructure is desperately needed to make Web 3 reality. EOS
+TOP Decentralized Open Communication Network
+
+may become a popular general-purpose blockchain platform for Dapps, and IPFS (InterPlanetary File
+System) is likely to become the decentralized storage infrastructure. TOP Network is aimed to serve as
+the network infrastructure for communications and social applications in the Web 3 era.
+
+1.1 Background
+
+Before the Internet era, people-to-people and device-to-device communication solutions were limited to a
+few choices, such as short messaging, phone call, telegram and walkie-talkie. After the advent of the
+Internet, the open, real-time and high-efficient TCP/IP protocol made it possible for people to build brand-
+new communication applications. Later, broadband Internet was widely adopted, and bandwidth was no
+longer a bottleneck. With the quick progress in encoding and decoding technology for digital audio and
+video and the boom in audio/video peripheral devices, means of communication rapidly transformed from
+text messaging and data sharing to multimedia solutions including VoIP call, video call and video
+conference. Nowadays, rich multimedia communication has become one of the most critical applications
+on the Internet.
+
+In the era of Mobile Internet, the smartphone is a perfect audio/video/photo device which can access the
+Internet anytime and anywhere. New communication applications such as mobile messaging and live
+streaming have become popular. Particularly, messaging apps offer better user experience than
+traditional phone calls and SMS without charging consumers a fee. Furthermore, taking advantage of the
+address book on users’ mobile phones, messaging apps have evolved from communication tools to social
+networks offering communication services. With its massive user base, strong user stickiness and long
+user engagement time, messaging apps have become a platform with huge traffic and evolved into an
+independent ecosystem.
+
+Today, the era of loT is around the corner. A massive number of loT devices need to exchange data and
+communicate with each other. Also, the high-speed, low-latency 5G mobile Internet is expected to not
+only facilitate communications but also catalyze the development of new communication applications
+such as loT, ultra high definition video and virtual reality (VR).
+
+All communication applications are built on a communication network infrastructure. A popular messaging
+app requires a large number of servers to deliver messages, video, photos and voice calls. Apps for live
+streaming, VR, and streaming video tend to consume much more bandwidth compared with other apps,
+therefore demanding more servers and better networks. A robust communication network is absolutely
+necessary to achieve data exchange among massive loT devices. Deploying, operating and maintaining
+a global network requires a profound understanding of the network technology and substantial capital
+investment to cover the high cost. When the traffic on a communication app increases, the underlying
+network capacity needs rapid expansion, driving the cost even higher. A good example is Dingtone, a
+partner with TOP Network. To serve more than 36 million global users, Dingtone has to deploy a large
+number of communication servers on dozens of global backbone networks and hundreds of edge
+networks around the world and establish interconnections with telecom operators in almost every country.
+TOP Decentralized Open Communication Network
+
+Communication networks, the infrastructure for communication apps, should be open, secure and
+interoperable. Privately owned communications networks often have serious security issues as
+communications between users may be blocked, intercepted, filtered or even leaked, putting user privacy
+at risk. Private communication networks usually use private communication protocols, making it
+impossible for communication apps to interconnect with each other. For example, a WeChat user cannot
+send messages to a WhatsApp user, and vice versa.
+
+Using a Communication as a Service (CaaS) is much more affordable compared to deploying in-house
+communication network. CDN is one of the typical CaaS networks. TOP Network offers a decentralized
+CaaS network that is cheaper and safer than existing CaaS networks.
+
+The emerging blockchain technology and token economics make it possible to build a secure, open and
+low-cost decentralized communication network. Supported by distributed network technology, TOP
+Network allows any device (server, computer and CPE) to serve as a node on TOP Network to provide
+communication services and receive token rewards based on bandwidth contribution or other metrics.
+Providing communication service on TOP is equivalent to mining tokens. The consensus mechanism at
+the service level ensures all communication services provided by miners are validated and accurate,
+while the consensus mechanism on the blockchain level guarantees the integrity and accuracy of booking
+and settlement. End-to-end encryption ensures that the communication among users cannot be
+monitored or censored during transmission. Since TOP Network adopts international standard
+communication protocols such as RCS and RTP/RTCP, apps on TOP are interoperable with any apps
+that follow the same standard protocols. TOP Network is not owned by any person or centralized
+organization. It is low-cost, secure and unstoppable.
+
+TOP Network, a distributed communication network built and maintained by the community, provides full-
+stack cloud communication services. TOP Network is designed to be a public communication network
+infrastructure for any app.
+
+1.2 Mission Statement
+
+Our mission is to build a public communication network infrastructure that provides secure, open, and
+affordable communication services for all apps. TOP will allow app developers to build and deploy
+communication apps in a simple, easy and low-cost manner. Envisioning an interconnected world, we will
+enable all communication apps to connect to each other by promoting open communication protocols on
+TOP Network.
+
+In addition, we aim to build TOP Messenger, a blockchain-based, decentralized messaging app with
+features and functions similar to WhatsApp and WeChat. A social communication app supporting
+payment in cryptocurrency, TOP Messenger seamlessly integrates into one app an array of functions:
+social network, community, communication, digital asset management (Wallet), digital currency payment
+and decentralized cryptocurrency exchange. A secure decentralized app on TOP Network, TOP
+TOP Decentralized Open Communication Network
+
+Messenger protects users from censorship and data privacy violation. TOP Messenger offers a better
+user experience in digital currency payment and peer-to-peer exchange compared to the existing apps.
+
+Every communication service on TOP Network has a huge potential market size. Taking the VPN
+business as an example: the global VPN market is projected to reach $106 billion by 2022 (82). We
+expect the value of TOP Token to gain momentum in future thanks to the enormous volume of
+communication services carried on TOP Network. We are working together with the entire TOP
+community to achieve a win-win situation that benefits developers, users, token holders and miners.
+TOP Decentralized Open Communication Network
+
+2. TOP Overview
+
+The Telos Protocol, also known as TOP, is specifically designed for the distributed communication
+network. TOP is a suite of communication service protocols and underlying networking protocols including
+peer-to-peer (P2P) networking protocol, network sharding protocol, network routing protocol, domain
+name service (DNS), distributed data synchronization protocol and data transmission encryption protocol.
+TOP Network, a distributed communication network built on the Telos Protocol, provides distributed cloud
+communication services. TOP public blockchain platform, also known as TOP Chain, is based on the
+Telos Protocol as well. TOP Chain is a general-purpose blockchain platform although it is initially
+designed for bookkeeping and settlement for the communication services on TOP Network. In short, TOP
+Network provides communication services while TOP Chain supports bookkeeping and settlement for the
+services.
+
+TOP Architecture:
+
+we - Ap cory pees |
+——r* A H
+Hl He H Decentralized
+Interface |
+Bridges Market
+
+ff
+
+| |
+
+a Sas a
+
+Service Providers
+and Ledger Nodes
+TOP Decentralized Open Communication Network
+
+TOP is an ecosystem for cloud communication services. Miners, developers, Dapp and end users are the
+primary participants in the ecosystem. TOP Tokens is the native cryptocurrency for the economic
+activities on TOP. The underlying infrastructure layer of TOP has four components:
+
+1) TOP Communication Network: a distributed network for cloud communication services.
+
+2) TOP Storage Network: a distributed network for storage service.
+
+3) TOP Chain: a distributed ledger.
+
+4) TOP Off-chain: a trusted off-chain processor.
+
+2.1 Core Values of TOP
+
+2.1.1 Distributed Communication Cloud Services
+
+First, TOP is a platform that provides real services instead of only financial settlement. TOP Network
+offers low cost, secure and interoperable cloud communication services on the blockchain, including
+messaging, calling, video, CDN, VPN, streaming, loT data sharing, storage and more. Any app can
+access the network via TOP API or SDK.
+
+The TOP decentralized communication network is built and run by the global community. Any person or
+organization can contribute servers, storage and bandwidth to the network. No individual or organization
+controls the network and no middleman profits from the cloud communication services. Community
+members typically contribute idle resources, such as a spare server in a data center, to the network. End
+users can also contribute their devices to the network. The marginal cost of those spare resources is
+close to zero. Fully automated and self-administered, the network requires no manual operation or
+maintenance. As a result, the cost of TOP Network is far lower than that of private networks or in-house
+networks
+
+TOP SDK provides a full set of frameworks for communication apps development. Modules in the SDK
+include audio and video signal processing, codec, special effect, network IO, customizable user interface
+templates and so on. The entire SDK is open-source so developers can modify the SDK freely to meet
+their specific needs, significantly lowering costs and shorten the development process.
+
+By adopting end-to-end encryption technology for data transmitted on the network, TOP secures every
+user’s privacy against data interception and censorship.
+
+In a nutshell, the core values of TOP Network are decentralization, low cost, security, privacy protection
+and interoperability.
+
+2.1.2 High - Performance Public Blockchain Platform for Real Business
+
+Bookkeeping and settlement of the cloud communication services on TOP Network require a distributed
+ledger and smart contract platform. Communication services generate extremely high volumes of
+transactions and a typical transaction carries a small amount of value. In fact, many real-world businesses
+such as gaming and social networking have similar situations. Currently, all the existing public blockchain
+TOP Decentralized Open Communication Network
+
+platforms cannot handle transactions of such high volumes at a reasonable cost. The TOP blockchain
+platform is designed to tackle the challenge with an innovative three-layer chain architecture that consists
+of the main chain, multiple service chains and trusted off-chain processors. Powered by innovative
+blockchain technologies such as two-layer lattices for transaction organization, two-layer sharding for
+consensus network, high-speed Practical Byzantine Fault Tolerance (PBFT) consensus mechanism, TOP
+can process several hundred thousand of transactions per second (TPS) and offer instant confirmation of
+transactions and zero transactions fees. TOP is specially designed to process on the blockchain the real-
+world businesses of any complexity, volume and size.
+
+2.1.3 Open Ecosystem
+
+TOP is not just a platform, but an open ecosystem where miners, Dapps, developers, end users and
+communities work together. Each player can benefit from the ecosystem. For instance, developers can
+use the open-source modules provided by TOP developer community as building blocks for their apps.
+End users receive token rewards for their use of Dapps. Miners earn tokens for contributing resources
+and services to the system.
+
+2.2 Token Economics
+
+TOP Token is the currency that connects all the parties of the TOP ecosystem. The token economics
+shall drive the economic growth in the TOP ecosystem. Since TOP actually has two independent and
+interconnected platforms - TOP Network for cloud communication services and TOP public blockchain
+platform, there exists two separate but interconnected token economies: one for cloud communication
+services the other for the public blockchain platform.
+
+1) Service Fee of Communication Services
+
+The distributed cloud communication services offered by TOP Network are not free. The owner of the
+Dapp (that is, the Dapp developer) needs to pay the miners who provide the actual communication
+services based on the workload and the settled price. For example, assuming the settled price of
+VPN service is 1 TOP Token/1GB data, a VPN app (the developer) needs to pay 0.5 TOP Token to
+the nodes providing the VPN service after a VPN user consumes 0.5GB data. In the real world, each
+service session usually involves multiple nodes (in the case of VPN service, a VPN session requires
+at least 4 nodes to participate), and the service fee should be allocated among all the participating
+nodes according to certain metrics.
+
+If a Dapp is completely decentralized and owned by no one, then it is the end users of the Dapp who
+should pay the miners directly. However, such a situation is rare.
+2) Market Pricing Mechanism for Communication Services
+
+TOP Network is not owned or operated by any organization. Therefore, the prices of services on TOP
+Network are not defined by a central pricing authority. Instead, TOP Marketplace, a decentralized
+market realized through smart contracts, connects Dapps with miners and matches their ask prices
+and bids. The Marketplace allows miners to submit their quotations and Dapps to make inquiries. It
+
+10
+TOP Decentralized Open Communication Network
+
+then automatically matches Dapps and service nodes according to price, service quality and other
+factors, and creates contracts for the matched parties.
+
+Token Mining
+
+The consensus nodes on the main chain can mine TOP Tokens by verifying transactions and
+producing blocks. Half of the remaining minable tokens are available to be mined every four years,
+which means 4.75% of the tokens can be mined each year in the first four years, then 2.375% per
+year in the second four years, and so on.
+
+Token Issuing and Burning
+
+Some communication cloud services on TOP Network should be free. For instance, it is
+counterproductive and meaningless to charge a service fee for messaging service, because the cost
+of charging a fee to a single message on the blockchain ledger far exceeds the cost of delivering the
+message itself. However, nodes providing messaging service still need to be rewarded. In addition,
+some nodes on the TOP main chain such as Edge nodes and Advanced nodes do not participate in
+the mining process and cannot benefit from mining, but they deserve incentives in a certain way.
+
+To incentivize the nodes that do not benefit from mining or service fees, TOP automatically issues 1%
+to 2% of TOP tokens each year to reward those nodes based on their contributions to the ecosystem.
+
+TOP blockchain platform does not charge transaction fees (i.e., gas fee) for general transactions, but
+it does require payments for certain types of transactions or resources including high-value
+transactions, high-frequency transactions, account registration and the deployment of smart
+contracts. The tokens received from these fees are not used to reward nodes, but instead are burned
+to offset the additional tokens issued each year, keeping the total number of tokens in the system flat
+or a little bit lower in the system.
+
+Deposit and Benefits
+
+Holding a certain amount of deposit is a basic requirement for a device (a server, computer or CPE)
+to join TOP Network as a communication service provider (service node) or a consensus node on the
+main chain. TOP adopts delegated proof of stake combined with PBFT-DPoS consensus algorithm. A
+node holding a larger deposit is more likely to be selected as the consensus node in a shard.
+Similarly, a service node has better chances to be selected by the Marketplace to serve Dapps if it
+has larger deposits.
+
+A Dapp also needs to hold deposit to access TOP Network. Although messaging service is free, a
+messaging Dapp should have enough deposit to be eligible to utilize the service. Deploying smart
+contracts, reserving RAM and even sending a payment all requires a deposit.
+
+Deposit means benefit or privilege, which is the core of the token economics. As the ecosystem
+grows, more tokens are deposited, reducing the total number of tokens in circulation. Deposit
+requirement can also reduce spam and DDoS attack efficiently.
+
+User Contribution and Token Rewards
+
+End users in the TOP ecosystem can receive token rewards for their use of Dapps and their
+contribution to the ecosystem. Dapps can design benefit policies to reward users for holding tokens.
+
+11
+TOP Decentralized Open Communication Network
+
+For example, after holding a certain number of tokens for a certain period, users may get extra
+benefits such as special discounts or access to special functions and services on the Dapps.
+
+2.3 TOP Architecture Overview
+2.3.1 Network Layer
+
+The network layer, the physical infrastructure layer of TOP, is a P2P network provided and maintained by
+miners. It has three sub-networks.
+
+1) TOP Chain consists of a main chain and multiple service chains. It provides ledger, payment
+service and cryptocurrency for the TOP ecosystem.
+
+2) TOP off-chain is a processor and ledger that stores and processes business data off the chain in
+a trustworthy manner to reduce the workload and frequency of data processing on the blockchain
+ledgers.
+
+3) TOP Network consists of two parts: TOP Communication Network, a distributed network for
+communication service, and TOP Storage Network, a distributed network for storage service.
+
+2.3.2 Service Layer
+
+TOP Network provides distributed cloud communication services and distributed storage services. TOP
+Chain offers payment service, smart contracts and other on-chain services.
+
+2.3.3 Interface Layer
+
+TOP Network provides communication services for Dapp through its APIs and SDKs. TOP Network also
+provides cross-chain bridges to export its communication services to other blockchain platforms.
+
+2.3.4 Marketplace
+
+TOP Marketplace, a decentralized market built on smart contracts, allows miners to register their services
+and offer quotations and enables Dapps to submit queries and choose service providers that meet their
+specific requirements.
+
+2.3.5 Dapp
+
+Dapp is an application built and deployed on TOP. Since TOP has two platforms - distributed cloud
+communication platform and a public blockchain platform, Dapps on TOP fall under two categories:
+
+1) Apps using distributed cloud communication services provided by TOP
+2) Apps only interacting with smart contracts deployed on TOP Chain
+
+12
+TOP Decentralized Open Communication Network
+
+3. TOP Chain
+
+Most public blockchain platforms on the market today are designed for value transfer or financial
+transactions instead of for supporting real-world businesses that involve far more complex logic and
+workflow. In addition, many businesses require complicated data structures and generate a large amount
+of data and high-volume transactions. Communication service is a typical example of real-world
+businesses that have to process high-volume service transactions instantly. It is super challenging for a
+blockchain to settle such an enormous volume of business in real time, a task that none of the existing
+blockchain platforms can handle. The ultimate processing capability of a blockchain, in terms of
+transactions per second (TPS), is constrained by the network bandwidth between nodes despite the
+application of Vertical Scale-Up or Horizontal Scale-Out strategy. The network throughput between nodes
+in the permissionless public Internet is limited in practice. To mitigate the scalability issue, some
+blockchain platforms such as EOS attempt to use a few permission-based nodes to execute consensus
+algorithms on behalf of the entire network, which compromises the principle of decentralization on the
+blockchain.
+
+As a general-purpose blockchain platform starting from supporting communication and social networking
+services, TOP is specifically designed to handle complex real-world businesses on the blockchain. To
+process complicated, high-volume business data, TOP needs to address the following key issues:
+
+1) Capability to support complex business logic on the blockchain
+
+As real-world businesses have their unique business logic and different business data structures,
+it is impractical for a single blockchain to accommodate all the businesses. Instead, TOP is
+designed to be pluggable so that new businesses can easily move to a blockchain.
+
+2) Capability to process and store large amounts of data
+
+Many businesses generate large amounts of data, and usually not all of these data should be
+processed and stored on the blockchains. On TOP blockchain platform, most business data are
+processed and stored by off-chain processors in a trusted manner. Only the aggregated data are
+uploaded to the blockchains.
+
+3) Capability to process huge volumes of transactions
+
+Although off-chain processors can process large amounts of business data, the volume of
+business transactions submitted to blockchains can still be enormous. For example, the cloud
+communication services on TOP Network are expected to generate tens of thousands of
+transactions every second in its early stage. Thus, a single chain on TOP blockchain platform
+should be able to handle at least tens of thousands of transactions per second.
+
+4) Instant confirmation of transactions
+
+Most real-world business settlements need to be completed in real time to ensure a positive user
+experience. TOP blockchain platform uses unit lattice (i.e., transaction lattice) data structure
+
+13
+TOP Decentralized Open Communication Network
+
+organize transactions and employs PBFT-DPoS consensus mechanism to validate transactions.
+These techniques allow TOP to settle transactions promptly.
+
+5) Zero transaction fees
+
+For the real-world businesses, especially communication services, the settlement price of each
+service transaction can be very low. Should a blockchain be used as a value transfer platform for
+such businesses, the platform shall not charge any transaction fee. Otherwise, it would be
+uneconomical for a business to be deployed and settled on the blockchain.
+
+6) Secure and flexible smart contracts
+
+Implementing complex business logic requires powerful smart contracts. Smart contracts built on
+Turing complete languages are flexible but may be vulnerable to cyber attacks. TOP blockchain
+platform supports both Turing complete and non-Turing complete smart contracts that serve
+different purposes, providing flexible and secure smart contracts to accommodate various use
+cases.
+
+TOP Blockchain Platform Architecture:
+
+Smart Contract
+
+The TOP blockchain platform is a three-layer architecture: one main chain, multiple service chains, and
+off-chain processors. The main chain manages the initialization, registration and discovery of service
+
+14
+TOP Decentralized Open Communication Network
+
+chains and provides account management, chain clock and address space for service chains. The main
+chain does not rely on service chains or participant in the transaction processing on any service chain.
+Instead, the main chain is only responsible for the financial settlement. Since different types of
+businesses have unique business logic and could generate transactions of different volume and data
+structures, a service chain is designed to process a specific type of business and can choose any
+consensus mechanism and data structure. For instance, on TOP Network, VPN service is processed on
+the Proxy Service Chain, while CDN service is processed on the CDN Service Chain. To add a new type
+of business to the ecosystem, TOP creates on demand a new service chain tailored to the customized
+consensus mechanism and the specific business workflow. The off-chain processors handle and store
+business data on the off-chain network to reduce the amount and frequency of data processed and stored
+on the chain.
+
+TOP blockchain platform offers two types of smart contracts: Platform Contract for asset transaction and
+Service Contract for cloud communication services. Platform Contract and Service Contract are executed
+separately in the isolated virtual machine (VM) environments, a method that ensures both flexibility and
+security.
+
+By taking advantage of both directed acyclic graph (DAG) data structure and block data structure, TOP
+Chain uses unit lattice structure to organize transactions and block lattice structure to synchronize
+account states. This dual lattice architecture is one of the key technologies to achieve fast confirmation of
+transactions and efficient cross-shard and cross-zone state synchronization. Compared to other DAG-
+based public blockchain platforms, TOP Chain is far more decentralized and therefore much safer and
+faster.
+
+3.1 TOP Blockchain Architecture
+
+So far, the processing capacity of any existing blockchain platform is too low compared with that of most
+centralized systems. Worse still, the transaction confirmation process on the existing blockchain platforms
+is also very slow. As a result, the blockchain platforms available on the market can hardly be used to
+process real businesses except for limited, experimental financial applications. Nowadays, blockchain
+platforms powered by new-generation technology are emerging, many of which attempt to find unique
+ways to improve transaction processing capacity significantly. One method is to improve the efficiency of
+the consensus mechanism. Besides that, the following two strategies can also improve the transaction
+processing capacity of public blockchains:
+
+1) Vertical Scale-Up
+
+The vertical scale-up strategy requires each node to have powerful computing power, large
+throughput bandwidth and huge memory. As all individual nodes have sufficient processing
+capacity, the entire system can process a large number of transactions. However, in a completely
+permissionless network, nodes vary in their computing power and network bandwidth capacity,
+making it difficult for all nodes to meet the same high requirements. Thus, the vertical scale-up
+strategy mainly exists on the permissioned networks or federated blockchains where only a few
+
+15
+TOP Decentralized Open Communication Network
+
+high-performance nodes participate in the consensus process. A typical example is EOS, a semi-
+decentralized blockchain platform.
+
+Blockchains based on the permissioned networks achieve high scalability but sacrifice
+decentralization, violating the principle of blockchain for distributed computing and inevitably
+hurting their trustability. Moreover, the consensus networks on such blockchains, less secure and
+more vulnerable to cyber attacks compared with those on the utterly decentralized blockchain,
+can be shut down by the government easily in the name of law enforcement.
+
+Horizontal Scale-Out
+
+Sharding is the principal technique used in the horizontal scale-out strategies. The consensus
+network is divided into several groups, and consensus nodes in each group can verify and
+confirm transactions in parallel. If the number of shards is carefully calibrated, sharding can
+improve blockchain performance effectively. However, when the number of shards reaches a
+certain point, the number of cross-shard transactions increases significantly so the processing
+capacity of the entire system stops improving. Some blockchain projects claim in their
+whitepapers that they can support infinite sharding, which is impossible to realize.
+
+The ultimate processing capacity achieved with the horizontal scale-out strategy is limited by the
+network bandwidth throughput of the individual nodes located at the top level of all shards, or root
+nodes. When TPS of the blockchain reaches 10,000, the network bandwidth throughput of a root
+node exceeds 50Mbps. In order for the system to achieve 100,000 TPS, each root node has to
+meet the bandwidth requirement of over 500Mbps, which could be tough to achieve in a purely
+permissionless network, which any node can join and leave at any time.
+
+As a strong advocate of distributed computing, we firmly believe that a real blockchain platform
+must operate on the permissionless networks. We construct TOP Chain on a completely
+permissionless network. By adopting layered network structure and two-layer sharding technique
+on the consensus network, TOP Chain can achieve performance comparable to the permission-
+based networks.
+
+TOP Blockchain Architecture:
+
+16
+TOP Decentralized Open Communication Network
+
+Routing Network
+
+} Transaction-m{———]_....... eS
+
+|
+
+Routing Network
+
+T Block-Lattice DAG J >
+
+21-1 [2 Z... 7 Z1-«
+
+3.1.1 Layered Consensus Network
+
+The consensus network of TOP Chain consists of three layers - Edge Network that provides access
+points for clients, Routing Network that synchronizes transactions and states across zones and shards,
+and Core Network that executes the actual consensus process for transactions.
+
+17
+TOP Decentralized Open Communication Network
+
+Edge Network
+
+Zone <--> Zone |
+
+Routing
+
+Routing Network Transfer 7
+
+Zone#N
+
+Core Network
+
+3.1.1.1 Edge Network
+
+Edge Network, the only entrance for clients (apps or users) to access TOP Chain, consists of a collection
+of Edge Nodes. Edge Nodes relay messages and transactions without performing any transaction
+consensus. Edge Nodes don’t keep a complete ledger or generate any transaction. The primary purpose
+of the Edge Network is to protect Routing Network and Core Network.
+
+3.1.1.2 Routing Network
+
+Routing Network, comprised of Advanced Nodes, routes transactions from the Edge Network to the Core
+Network, where transactions are verified. Although it does not take part in the consensus process or
+generate new transactions, the Routing Network adds an additional layer of transaction security by
+auditing transactions confirmed by the Core. Advanced Nodes on the Routing Network also manage
+shards and synchronize account state across the shards.
+
+18
+TOP Decentralized Open Communication Network
+
+3.1.1.3 Core Network
+
+Core Network, the consensus network of the TOP Chain, is divided into multiple zones and shards. The
+whole TOP system is partitioned into several zones, and then each zone is dynamically divided into
+multiple shards. Each shard validates and executes consensus on separate sets of transactions
+concurrently. In this way, the two-layer sharding network can process large volumes of transactions as a
+whole. Nodes on the Core Network, referred to as Core Nodes, are elected according to their stake on
+TOP. Then, a certain number of Core Nodes are randomly selected by a verifiable random function (VRF)
+algorithm to form the consensus overlay network in each shard. Those nodes on the consensus networks
+are named as consensus nodes. For security reasons, the number of nodes in each shard should reach a
+certain threshold, for instance, at least 21 consensus nodes and at least nine backup nodes. The
+consensus nodes in a shard perform PBFT consensus algorithm on all transactions submitted to the
+corresponding shard.
+
+3.1.2 Core Objects
+3.1.2.1. Account
+
+A user account can be considered as an address on the chain. An account is a set of data object
+containing state information and logic, including account balance (Balance), data properties (Property),
+and Actions for each data property. The account balance can also be treated as a special data property.
+An action could be a system-level function or a smart contract deployed by the account owner. The data
+object and its processing logic in an account can be easily and flexibly extended with new properties and
+customized actions.
+
+3.1.2.2 Property
+
+A property of an account is a user-defined data object, which is a key-value pair. The key is an arbitrary
+string whose value can be any of the data types such as Integer, String, List, Hashmap and so on.
+Account balance, a special property, exists when the account is generated.
+
+3.1.2.3 Action
+
+An action provides flexible logical processing capabilities for a property. An action can be a built-in
+system function such as Hash and Vote, or a user-defined smart contract. Users can trigger an action by
+sending a transaction or a message.
+
+3.1.2.4 Message
+
+A message is an instruction that initiates an action on a property of an account. Data attached to a
+message contain property, action, input parameters and output parameters. For security purposes, a
+message cannot alter the account balance.
+
+19
+TOP Decentralized Open Communication Network
+
+A message is a special kind of transaction. An account sending high-frequency messages is subject to
+flow control and has to pay gas fees, or the account owner may be forced to perform proof of work
+(POW).
+
+3.1.2.5 Transaction
+
+A transaction refers to an instruction that initiates an asset transfer from one account to another. A
+transaction can also contain an action that will be triggered when the transaction is being processed.
+
+3.1.2.6 Unit Lattice
+
+A transaction or a message may change the value of a certain property and consequently the state of the
+account. Each transaction or message applied to an account is called a transaction record or a unit.
+When TOP Chain stores the units of an account, each unit is linked to the previous unit. All the past
+events on the account as well as the latest status of all its properties can be retrieved through the process
+of navigating all the units of an account from the beginning unit (that is, the initial state of all properties
+when the account is created) to the last unit. Essentially, all units of an account are linked to form a tiny
+chain, named as a unit chain. The collection of unit chains of all accounts in a shard is called a unit lattice.
+
+As the data structure of a unit chain shows, the last unit contains all the information that proves the
+validity of the final state values of all properties in an account. As a result, the unit chain can be safely
+pruned to keep only the last unit. TOP Chain can prune all unit chains in a shard in real time without
+affecting the whole system, significantly reducing the footprint of the entire blockchain.
+
+Unit Lattice
+
+J\
+
+Balance Transaction Action Balance Transaction Action
+Balance Transaction Action Balance Transaction Action
+
+t
+
+Balance Transaction Action Balance Transaction Action
+Balance Transaction Action Balance Transaction Action
+
+t
+
+Reweeeeram Balance || Transaction Action
+
+20
+TOP Decentralized Open Communication Network
+
+3.1.2.7 Block Lattice
+
+On TOP Chain, each shard periodically packs the last units of all the updated accounts in the shard to
+form blocks and then submits the blocks to the Routing Network. The set of all these blocks within a zone
+is called a block lattice. The block is the basic data structure for cross-shard synchronization and block
+lattice for cross-zone synchronization.
+
+Block Lattice
+\
+
+\
+7 ~
+
+4
+
+Last Unit Account 1
+
+: | :
+
+(
+
+' '
+
+' : Block #1
+tok
+
+'
+
+' '
+
+y
+
+1 ' Bloc
+ok?
+
+' '
+
+4 = Last Unit Account M
+
+fi tastUnit cons test Unit oes
+
+' ' ! ! oc!
+Block #3 ESTE  tastUnit comer
+
+' ! t !
+
+\ } \ :
+
+Last Unit Account Bn ff
+
+Last Unit Account M
+
+Most recent
+
+3.2 Consensus Mechanism
+
+TOP Chain uses PBFT-DPoS (practical byzantine fault tolerance with delegated proof of stake)
+consensus mechanism specially designed to support real businesses on the blockchain. In the traditional
+DPoS consensus mechanism, consensus nodes are selected based solely on their stake, or the size of
+their assets, leading to the the-rich-get-richer situation. The stake defined on TOP Chain, called
+Comprehensive Stake, combines multiple factors including asset stake, accumulated reputation,
+computing power and so on. TOP uses a VRF algorithm to elect the final consensus nodes among nodes
+with the highest comprehensive stake. The consensus nodes execute PBFT algorithm to validate
+transactions and produce blocks. The consensus mechanism protects the security and integrity of TOP
+Chain.
+
+21
+TOP Decentralized Open Communication Network
+
+3.2.1 Definition of Comprehensive Stake
+The comprehensive stake defined by TOP includes the following four factors:
+1) Computing Power of a Node
+
+To join the consensus network in TOP, a node needs to meet the basic computing power
+requirements. The proof of work (POW) algorithm adopted by TOP is a variant of the Scrypt, which
+demands a node to have high throughput input/output (IO) and large memory. In addition, the PoW
+algorithm is highly anti-ASIC.
+
+2) Network Capability of a Node
+
+The proof-of-bandwidth (PoB) consensus mechanism evaluates and measures the network capacity
+of anode. The PoB algorithm first randomly picks a batch of evaluating nodes from the candidate
+node pool and then instructs them to test the network bandwidth of the target nodes.
+
+3) Asset Stake of a Node
+
+The asset stake refers to the number of TOP Tokens locked up for a certain period the node holds in
+its account. The tokens shall meet the minimum lock-up period requirement.
+
+4) Reputation of aNode
+
+The reputation of a node measures its accumulated contributions to the system since it joins the
+network. More specifically, a node's reputation is the sum of the tokens that it has mined from the
+ecosystem, an epitome of its work history in the network. If a node conducts malicious activities that
+result in deposit forfeiture, its reputation will be negative.
+
+3.2.2 Admission to Consensus Network
+
+To become a consensus node, a node first needs to join the candidate node pool. To be admitted into the
+candidate node pool, the node should meet specific requirements on its computing power, network
+capacity, asset stake and work reputation. After staying in the pool for a certain period, the node may be
+elected as a consensus node.
+
+3.2.3 Sharding
+
+When the consensus network is sharded, a VRF algorithm first generates a random seed for sharding
+based on the historical information about the past shards, and then an improved FTS (follow-the-satoshi)
+algorithm randomly selects nodes from the node pool to form shards. In general, nodes with higher
+Comprehensive Stake are more likely to be selected to form shards.
+
+3.2.4 Consensus
+
+Within each shard, consensus nodes use a PBFT algorithm to execute the consensus process on
+transactions. A transaction is confirmed after it obtains signatures from at least 2/3 of the consensus
+
+22
+TOP Decentralized Open Communication Network
+
+nodes in a shard and gets approval from an advanced node on the Routing Network, which audits the
+transaction submitted by the shard.
+
+3.3 Cross-Shard & Cross-Zone Synchronization
+
+TOP chain uses block lattices to perform transaction synchronization among shards inside a zone. Each
+shard periodically packs into blocks the latest state information about all the changed accounts and
+passes the blocks on to other shards in the same zone, keeping all shards in one zone synchronized in
+terms of the account state.
+
+TOP Chain performs cross-zone synchronization similarly. Each zone generates blocks containing the
+latest state information on all the changed accounts and exchanges the blocks with other zones,
+synchronizing account state across all zones.
+
+3.4 Smart Contract
+
+To ensure the smart contracts deployed on TOP Chain are flexible and secure, TOP offers two types of
+smart contracts - Platform Contracts and Service Contracts, which operates on independent and isolated
+virtual machines (VMs). More specifically, Platform contracts run on the Platform VM, while service
+contracts run on the Service VM designed for the service chains. TOP Chain employs a special virtual
+machine called Core VM to run built-in core functions that provide basic core functions such as Signature,
+Vote, Lock, Deposit, Transfer and more. These core functions are Turing complete and therefore very
+powerful and flexible.
+
+3.4.1 Platform Contract
+
+A platform contract is deployed on the main chain to manage assets. Platform contracts are written in a
+Stack-based, non-Turing complete scripting language to ensure security and enforceability. However,
+platform contracts are allowed to call powerful core functions in Core VM. As a result, even though
+platform contracts are based on non-Turing complete language, they can still implement flexible functions
+with the help of the core functions in Core VM.
+
+3.4.2 Service Contract
+
+A service contract is a smart contract deployed on a service chain to perform specific business logic.
+Service contracts can be written in Turing complete languages and thus can realize complex, flexible
+business logic. For security reasons, service contracts cannot directly change the financial assets in
+accounts. The virtual machine to execute service contracts is implemented in WebAssembly (WASM) and
+it supports various high-level languages including C, C++, JAVA, and JavaScript. Additionally, the virtual
+machine for service contracts provides features for efficient development, debugging and operation.
+
+23
+TOP Decentralized Open Communication Network
+
+3.5 Layered Ledgers
+
+Transactions are processed in three separate layers of distributed ledgers so that a massive number of
+transactions generated from the communication services can be settled on TOP Network. The diagram
+below shows how the transactions of a VPN Session are processed:
+
+1)
+
+2)
+
+Service Service Relay Service
+rr oe
+: Node 1 Node 2
+Micro
+Payments
+>A < x 1% Sy cy
+On 8/8 Validator
+28 a
+8 8 A
+S sv
+] 2 Ro
+v PS
+we
+
+Storage
+
+Zone/Shard |- ~~ + | Storage
+
+Service Logs
+
+A service log contains detailed records of the services a business has used and could involve any set
+of business data that a distributed ledger needs to store. For example, when user A sends 10
+messages to user B, 10 separate records are generated in the service log for user A, each containing
+details of one message. The service log could be gigantic when the volume of a service business is
+huge, especially for service businesses that provide services such as messaging, VPN (billed based
+on 512KB data blocks) and phone calls. The service log must be retained for billing and clearance
+purposes, but writing the entire log into the blockchain is unnecessary and impractical due to the log’s
+size and volume. Instead, service logs are generated by an off-chain processor and written into a
+decentralized storage provided by the TOP Storage subsystem. Validators randomly select and verify
+service logs on a regular basis to ensure the data in the logs are intact and accurate.
+
+The service log can be permanently saved in the TOP Storage. The owners of the service logs,
+typically Dapps, need to pay TOP Tokens to the nodes offering storage services. When the service
+log is no longer needed, a Dapp can request TOP to delete it.
+
+Service Transactions
+
+A service transaction is a billing record submitted to the blockchain for the purpose of business
+settlement. To reduce the number of transactions the blockchain needs to process, an off-chain
+processor can merge multiple service records containing identical billing information into a single
+service transaction. For example, when user A sends 100 messages to user B, these messages are
+aggregated into a single service transaction that requests settlement for all the messages in one
+
+24
+TOP Decentralized Open Communication Network
+
+transaction. Although a service transaction does not include detailed information on each service
+record, it does contain index information that can locate the corresponding service log.
+
+Service transactions of a specific type of service are written into the service chain corresponding to
+the service type. For instance, the service transactions created by VPN will be written into the Proxy
+Service Chain.
+
+3) Service Payments
+
+A service payment is a financial transaction that requests settlement of payment after the completion
+of a service session. Service payments are processed on the main chain.
+
+3.6 Consensus Mechanisms of Service Chains
+
+TOP Chain is designed to support multiple consensus mechanisms as different types of business have
+different logic and workflows. TOP Chain allows each service chain to adopt its unique consensus
+mechanism to meet its business processing needs.
+
+1) RCS Service Chain uses Proof-of-Delivery to reach consensus on message delivery.
+
+2) Proxy Service Chain uses Proof-of-Bandwidth to reach consensus on network bandwidth consumed
+by users.
+
+3) VoIP Service Chain uses Proof-of-Calltime to reach consensus on call duration.
+
+4) Storage Service Chain uses Proof-of-Storage to reach consensus on storage space and time.
+
+5) CDN Service Chain uses Proof-of-Bandwidth to reach consensus on bandwidth consumption.
+
+3.7 Security
+3.7.1. Transaction Flooding & DDoS
+
+In DDoS attacks, attackers may send a large number of transactions from accounts under their control to
+flood the whole system and thwart legitimate transaction processing. Such attacks seem possible as TOP
+Chain does not charge fees for general transactions, making it costless for attackers to submit a large
+number of transactions. TOP Chain has implemented several anti-attack strategies. It can be very
+expensive for an attacker to launch attacks by sending high volumes of transactions.
+
+3.7.1.1 Fees for High-value or High-frequency Transactions
+
+TOP Chain does not charge fees for general transactions but requires payments for high-frequency or
+high-value transactions. A transaction is considered as high-value if its value exceeds the limit
+determined by the on-chain governance mechanism. TOP Chain may reject high-frequency transactions
+without gas fees according to its flow control policy.
+
+25
+TOP Decentralized Open Communication Network
+
+3.7.1.2 Minimum Deposit
+
+An account must hold a minimum number of TOP tokens before it is allowed to create and submit a
+transaction to TOP Chain. This requirement significantly increases the cost for an attacker to generate a
+large number of accounts and subsequently send a large volume of transactions in order to launch an
+attack.
+
+3.7.1.3 Flow Control on Transactions
+1) Minimum Transaction Interval
+
+The minimum interval between two consecutive transactions under the same account, denoted as Wt,
+increases as the transaction frequency (Sx) increases. The waiting time between the first transaction and
+the second is denoted as W1 ms. The interval between the second and the third, denoted as W2, is W1 *
+(N+1)/N + Rand(x), and so on. Edge nodes reject high-frequency transactions submitted from accounts
+without a gas fee.
+
+2) PoW Requirement
+
+Real users can increase transaction frequency by providing the proof of work (PoW) in each transaction
+they submit. The PoW is the Hash Puzzle calculated based on the information on the header of the last
+transaction. If each transaction contains PoW, the account can generate transactions at a fixed interval
+determined by the consensus of on-chain governance.
+
+3.7.1.4 Additional Flow Control
+
+If an attacker somehow bypasses the flow control imposed by the Edge Network, some high-frequency
+transactions may get into the consensus network. The consensus nodes use information in the unit lattice
+to calculate the frequency of transactions initiated by a sender. When the transaction frequency exceeds
+the allowed threshold, the transactions in question will be rejected.
+
+3.7.1.5 Locked Asset
+
+The new asset received from a transaction will be locked for a certain period, during which the asset
+cannot be transferred. The lock-up period, a parameter set by the system, depends on the value of the
+asset. Assets with higher value have longer lock-up time, which prevents circular transfer attacks and
+protects the safety of high-value transactions.
+
+3.7.2 Sybil Attack
+
+In Sybil attacks, attackers attempt to create or control hundreds or thousands of nodes to sabotage the
+security of the consensus network. The following measures can prevent Sybil attacks.
+
+26
+TOP Decentralized Open Communication Network
+
+3.7.2.1 Minimum Deposit Requirement
+
+Each node needs to have an independent account and make a minimum deposit in the account before
+joining the consensus network. Minimum deposit requirements are different for edge nodes, core nodes
+and advanced nodes. The more important the role of a node, the higher the minimum deposit the node
+has to put down. As a result, it is costly for an attacker to create and own many nodes to launch an
+attack.
+
+3.7.2.2 Admission Requirement and Random Sharding
+
+A node needs to pass a capacity test using the Proof-of-Capacity algorithm before joining the network. A
+node should meet specific requirements on network bandwidth and CPU power if it intends to become a
+candidate node for the consensus network. The DPoS algorithm, based on the comprehensive stake,
+requires an attacker to accumulate a large sum of assets and stay in the system for a long period before
+launching an attack. These methods significantly increase the cost of an attack. Moreover, TOP Chain
+uses VRF to randomly select nodes to form a shard from the candidate node pool, reducing the
+probability of malicious collusion among nodes.
+
+3.7.3. Penny-Spend Attack
+
+In penny-spend attacks, attackers send an enormous number of low-value transactions to a large number
+of accounts, preventing the system from processing legitimate transactions and wasting storage space in
+
+consensus nodes. The restrictions on high-frequency transactions and the minimum deposit requirement
+
+mentioned above can prevent most penny-spend attacks.
+
+In addition, transactions are stored in the unit lattices, where old transaction data in accounts can be
+pruned in real time as the system processes new transactions, significantly reducing the storage space
+for accounts and making it unlikely for penny-spend attacks to exhaust the storage space in nodes.
+
+3.7.4 Attack on Single Shard
+
+In attacks targeting at single shard, attackers try to locate a shard in which a specific transaction occurs
+and then attempt to launch DDoS attacks on the shard, modify transactions or create fake transactions.
+TOP Chain prevents such attacks with the following measures:
+
+3.7.4.1 Edge Network
+
+The Edge Network separates users and clients from the Core Network so that they can not directly
+connect to the Core Network to retrieve account and transaction information on consensus nodes.
+
+27
+TOP Decentralized Open Communication Network
+
+3.7.4.2 Random Sharding
+
+The VRF algorithm randomly and dynamically selects consensus nodes to form shards. Shards
+dynamically rotate to serve different sets of account spaces. When validating transactions, each shard
+dynamically selects its PBFT leader. Such three-layer dynamic randomness makes it difficult for attackers
+to identify in advance the specific shard and node processing a specific transaction, minimizing the
+chance of malicious nodes colluding in advance and launching DDoS attacks on a specific node.
+
+3.7.4.3 Double Auditing
+
+In order for a transaction to be confirmed, the transaction is first validated in a shard through the
+consensus (i.e., PBFT) mechanism, and then it will be further audited and signed by an advanced node in
+the Routing Network. An advanced node is selected dynamically at the transaction level, so, the attacker
+cannot anticipate which node will be responsible for auditing the transaction. In this way, malicious nodes
+in a shard, if any, cannot deceive the system into accepting fake transactions.
+
+3.7.4.4 Shard Merge
+
+When a shard suffers a DDoS attack, its surviving nodes are so few that the shard cannot work securely.
+The attacked shard will automatically be merged into another shard to form a larger shard.
+
+3.7.5 Double-Spend Attack
+
+TOP Chain organizes transactions into the unit lattices, where transactions initiated by an account are
+stored on a chain dedicated to the account. Therefore, transactions of an account will form its own micro
+chain. Each valid transaction of an account contains a unique nonce that monotonically increases as well
+as the hash value of the previous transaction that the system has confirmed. In addition, when a
+transaction is verified, the account balance is updated in real time, allowing each consensus node to
+discover and reject double-spend transactions immediately.
+
+3.7.6 Smart Contract & EVM
+
+TOP Chain offers two types of smart contracts, namely Platform Contract and Service Contract, which are
+executed on independent and isolated virtual machines. Platform contracts, written in non-Turing
+complete scripting languages, handle account assets on the main chain. In comparison, service contracts
+are written in Turing complete languages and thus very flexible. However, service contracts are restricted
+to running on the independent service chains, which protects the main chain from asset losses caused by
+the loopholes in service contracts.
+
+3.7.7 Single Node Attack
+
+In single node attacks, malicious nodes tamper with transactions or refuse to process transactions.
+However, even if one-third of the consensus nodes in a shard are malicious, the PBFT consensus
+
+28
+TOP Decentralized Open Communication Network
+
+algorithm can still guarantee that the remaining honest nodes execute the consensus process for
+transactions. Nodes that fail to process transactions in time are replaced by backup nodes. After the
+consensus nodes verify a transaction, the transaction needs to be audited and signed by an advanced
+node before getting the final confirmation, which allows advanced nodes to discover malicious nodes ina
+shard. The system selects advanced nodes randomly at the transaction level, making it impossible for
+consensus nodes to identify in advance the audit-conducting advanced node and preventing malicious
+collusion between advanced nodes and consensus nodes.
+
+3.7.8 Replay Transaction Attack
+
+In a replay transaction attack, an attacker intercepts transaction packets on the transport layer in the
+operating system and saves the transactions for replay later. This attack is a variant of DDoS and double-
+spend attacks.
+
+TOP Chain prevents replay transaction attacks with the following strategies.
+
+1) Each account has a monotonically incremental nonce to identify every transaction. Transactions with
+the same nounce initiated by one account will be rejected.
+
+2) Each submitted transaction needs to contain the hash value of the latest valid transaction in the
+account. All transactions in the same account are organized into a unit lattice in chronological order of
+creation, which allows consensus nodes to determine easily whether an incoming transaction is a
+duplicate.
+
+29
+TOP Decentralized Open Communication Network
+
+4. TOP Network
+
+As a decentralized open communication network, TOP Network provides a comprehensive suite of cloud
+communication services such as messaging, calling, video, VPN, CDN, live streaming, and loT data
+sharing. It also offers decentralized storage service and user-generated content (UGC) management
+solutions and plans to develop new decentralized services such as distributed databases. Applications
+connect to TOP Network via its API and SDK for low-cost, secure and high-quality communication
+services. All applications on TOP Network are interoperable thanks to the adoption of open
+communication protocols. TOP Network, an open, transparent and automated platform without
+middlemen, provides a decentralized marketplace where service providers can reach the global market.
+
+TOP Network, a decentralized network, is free from the control of any government, operator or other
+organization and able to prevent user privacy violation and data breach. The end-to-end encryption
+technology ensures no one can intercept communication content on TOP Network.
+
+TOP Network Architecture:
+
+App VoIP ff Messaging ff Video Call J VPN [Live Streaming} Social \
+a App App App App App App | Choose
+1 Service
+Provider
+
+Interface |
+Market
+
+Service i.
+
+A service
+
+Network a Providers
+
+————— P2P Communication Network P2P Storage Network and Ledger
+Nodes
+
+TOP Network offers the following services:
+
+30
+TOP Decentralized Open Communication Network
+
+4.1 TOP Communication Services
+
+TOP Network offers an array of network communication and telecommunication services, which can
+support any functions that a communication application requires.
+
+4.1.1 TOP RCS Service
+TOP RCS (Rich Communication Service) offers the following services:
+e One-to-one Chat
+e Group Chat
+e Internet Call
+e Video Call
+e Walkie Talkie
+e Content Sharing
+e File Transfer
+e Presence
+
+e Others
+
+Developers can easily utilize TOP RCS to build a powerful messaging app similar to WeChat or
+WhatsApp. Since TOP RCS is based on the international standard protocol, all communication apps
+using TOP RCS are interoperable. On the contrary, WeChat, WhatsApp and Telegram cannot interact
+with each other as they are confined to their own private, incompatible protocols.
+
+TOP RCS implements end-to-end encryption with Double Ratchet algorithm. TOP uses X3DH algorithm
+to safely manage and exchange secret keys and encrypt data with AES 256 algorithm. Messaging apps
+supported by TOP RCS are highly secured and able to protect user privacy. No centralized third party can
+censor content or block users on TOP Network.
+
+TOP RCS Service adopts Proof-of-Delivery consensus algorithm to verify the workload of nodes that
+provide messaging services and uses Proof-of-Calltime consensus mechanism regarding the calling
+service.
+
+4.1.2 TOP Proxy Service
+
+TOP Proxy Service provides a proxy overlay network for users to connect to the Internet, which is also
+known as Virtual Private Network (VPN) service. The proxy overlay network on TOP Network consists of
+a proxy server group and a relay server group. An individual server can act as both a proxy and a relay
+server. Below is the process of users accessing the Internet with TOP Proxy Service:
+
+31
+TOP Decentralized Open Communication Network
+
+© — ro Proxy
+
+A user requests VPN service from TOP.
+
+TOP Proxy Service randomly selects three relay servers and one proxy server.
+
+The user connects to one of the relay servers, which is further connected to the proxy server
+through the other two relay servers.
+
+The proxy server is connected to the Internet.
+
+TOP Proxy Service protects users' online security and anonymity and offers strong anti-blocking
+capability by adopting a series of techniques listed below.
+
+=
+
+)
+)
+)
+)
+
+5)
+
+The selection of three relay servers and one proxy server for each session is random.
+
+Each server knows only the next server it is connected to instead of the entire transmission path.
+Data is encrypted by each server and decrypted only by the next server.
+
+Data is obfuscated by the client SDK and each relay server so that attackers cannot identify
+traffic patterns.
+
+Traffic is split and passed on to the two intermediary relay servers so that neither of them has
+access to the entire traffic.
+
+TOP Proxy Service utilizes Proof-of-Bandwidth (PoB) consensus mechanism to verify the workload of
+each relay server and proxy server.
+
+4.1.3 TOP Streaming Service
+
+TOP Steaming Service offers streaming media service and live streaming service. A P2P content
+distribution network (CDN) is built within TOP Network, via which TOP Network delivers videos to the
+audience. The CDN service developed by TOP costs much less compared with conventional CDN
+services, reducing bandwidth expenses significantly for developers.
+
+TOP Streaming Service supports standard HLS and HTTPS protocols. It is very easy and simple for apps
+to access TOP Streaming Service.
+
+32
+TOP Decentralized Open Communication Network
+
+TOP Streaming Service adopts Poof-of-Bandwidth (PoB) consensus mechanism to verify the workload of
+each streaming server.
+
+4.1.4 TOP loT Service
+
+TOP loT Service provides standard communication protocols for loT devices to interconnect and interact
+with each other. TOP loT also offers SDK for loT devices to convert their private protocols to standard
+protocols. TOP Network provides a secure public infrastructure network for a massive number of loT
+devices to exchange and store data.
+
+TOP, an ecosystem of loT, supports a variety of loT device-related services including registration,
+discovery, remote call, settlement and payment.
+
+4.1.5 TOP VoIP Service
+
+TOP VoIP Service provides PSTN telephony service, which enables users to make calls over the Internet
+to cell phones and landline phones. For VoIP calls, voice signals are carried on the Internet before
+reaching the PSTN network, allowing VoIP call providers to offer lower rates compared to traditional
+phone calls. The rate gap between VoIP calls and traditional calls is especially huge for International
+calls.
+
+YO
+
+\ yaip nodes I -f Carrier PSTN —
+H iid y Network =>_/
+
+a aaa
+
+TOP Network is an open communication network and it is entirely permissionless. Any voice termination
+providers from small voice aggregators to large carriers can join TOP Network to become a voice service
+provider. Without middlemen taking a share of on the service fees, TOP VoIP Service offers much lower
+price and better voice quality.
+
+Apps connect to TOP VoIP Service with TOP SDK, which encapsulates Audio Encoding/Decoding, QoS,
+protocol implementation, etc.
+
+TOP VoIP Service adopts Proof-of-Calltime consensus mechanism to verify the workload of VoIP service
+providers.
+
+33
+TOP Decentralized Open Communication Network
+
+4.2 TOP Storage Service
+
+TOP Storage Service offers decentralized file-based storage service on TOP Network. It can be
+considered as the decentralized version of Amazon AWS S3. A file to be stored on TOP Network is
+segmented and encrypted, and each segment is stored in multiple nodes to ensure data security and
+reliability. Devices such as servers and computers with spare storage and bandwidth can join TOP
+Network as nodes to provide storage service and receive rewards in TOP token.
+
+Based on TOP Storage Service, TOP UGC Service helps app developers manage user-generated
+content (UGC) such as photos and videos. UGC management is an essential function of most social
+apps. TOP RCS Service also employs TOP UGC Service to handle photos and videos shared by users.
+
+TOP Storage Service uses Proof-of-Storage consensus mechanism to ensure that files are stably stored
+in the system.
+
+4.3 TOP DNS Service
+
+TOP DNS Service provides a naming system for objects in TOP ecosystem. Human-readable names are
+assigned to nodes, accounts, smart contracts and Dapps without involving any centralized organization.
+Each end user has a unique name just like Email address or phone number. Objects are identified and
+found by their names instead of account addresses, which allows them to make payments more
+conveniently.
+
+4.4 TOP Billing Service
+
+As mentioned before, business data are processed, booked and settled in three-layered ledgers.
+Payments are settled on the main chain. Multiple service transactions can be aggregated and written ona
+service chain in the form of a single record. Service logs generated by the off-chain processors are stored
+in the Service Log Storage, a decentralized database powered by TOP Storage Service.
+
+TOP Billing Service enables Dapps to generate detailed billing information such as invoices. To construct
+a billing statement, TOP Billing Service first locates the aggregated service transaction record ona
+service chain, and then retrieves from Service Log Storage database the specific service log that
+corresponds to the index in the aggregated record.
+
+Service fees on TOP Network are paid by Dapps to nodes. When a user requests a VPN session, it is the
+VPN app rather than the user who pays the service fee to proxy servers. Currently, TOP Billing Service
+does not support Dapps to charge end users, but Dapps can use smart contracts to charge end users
+based on the billing information generated by TOP Billing Service.
+
+34
+TOP Decentralized Open Communication Network
+
+5. TOP Marketplace
+
+Cloud communication services on TOP Network are provided by various service providers, who tend to
+charge different prices. Apps, clients of these service providers, tend to have different requirements
+regarding the scope and price of services. TOP Marketplace, a decentralized, open marketplace, allows
+service providers to announce service information and apps to submit requirements. TOP automatically
+matches offers and bids to reach a deal between service providers and apps. The system creates
+contracts for paired parties and monitors contract execution.
+
+As a decentralized open market, TOP Marketplace ensures the scope, quality and price of services
+offered by any provider are transparent and consistent for each client.
+
+Market Protocol
+
+Client TOP Market Provider
+
+Announce @Offer
+
+Announce @Bid
+
+Anncounce @Deal Anncounce @Deal
+
+BlockChain
+
+Request Service
+Ee
+
+Start Service
+
+Stop Service
+
+Bill Transaction as @Deal
+
+BlockChain
+
+5.1 Marketplace Smart Contract
+
+TOP Marketplace is implemented in a smart contract that lists services, matches ask prices and bids, lock
+deals and settle payments.
+1) The service provider sends an offer to TOP Marketplace with ask price, the scope of service and
+other information. The offer also includes the amount of deposit the provider is willing to pay. The
+deposit is frozen once TOP Marketplace accepts the offer.
+
+35
+TOP Decentralized Open Communication Network
+
+2) When a Dapp requests a service, the smart contract automatically finds the most suitable
+provider for the service and locks the deal.
+
+3) A Dapp pays a fee for submitting a request to TOP Marketplace. The tokens, which Dapps use to
+pay the fee, will be burned. This method prevents the marketplace from being attacked by DDoS
+and indirectly encourages Dapps to use long-term contracts.
+
+4) When a provider refuses to provide service after a deal is locked, the system confiscates its
+deposit and voids the tokens.
+
+5.2 Market Order Matching Consensus
+
+For each service session, the smart contract that realizes TOP Marketplace creates a list of candidate
+service providers according to the service scope and bid price required by a Dapp. The system then
+generates from the candidate list three separate sub-lists sorted respectively by the amount of deposit,
+the length of service history and credit score. The system randomly picks up the final service provider
+among the top candidates on the three sub-lists.
+
+5.2.1 Proof-of-Deposit
+
+Service providers offering larger deposit rank higher on the candidate sub-list.
+
+5.2.2 Proof-of-Service-Time
+
+Service providers with higher credit scores rank higher on the candidate sub-list.
+
+5.2.3 Proof-of-Credit-Score
+Service providers with longer service history rank higher on the candidate sub-list.
+The final selection algorithm could be described as:
+
+random(topN1(time_list) + topN2(deposit_list) + topN3(credit_list))
+
+In the algorithm, N3 > 2* N2 > 4* N1, which means credit score has the greatest weight, followed by the
+deposit.
+
+In short, the final service providers are selected randomly among candidates that have the highest credit
+score, the largest deposit and the longest service history.
+
+5.3 Consensus of Market Access
+
+To guarantee security and service quality on the network, TOP Marketplace sets up conditions of market
+access for service providers. A service provider entering the marketplace has to ensure its nodes meet
+the following standards.
+
+36
+TOP Decentralized Open Communication Network
+
+5.3.1. Proof-of-CPU
+
+The nodes of a service provider joining TOP Network must meet specific requirements regarding their
+hash power.
+
+5.3.2 Proof-of-Service
+
+Service providers joining TOP Network have to ensure their nodes meet specific service quality criteria.
+For example, a proxy node needs to prove it has sufficient network bandwidth capability. TOP Network
+constantly monitors the service quality of each node.
+
+5.3.3 Proof-of-Deposit
+
+When a service provider sends an offer to the marketplace, a certain amount of tokens in the provider's
+account will be frozen as the deposit.
+
+5.3.4 Proof-of-Certification
+
+Some communication services provided by TOP are telecom services, such as VoIP calls to PSTN
+network. A node providing telecom services must present a Class 2 Certificate. TOP system randomly
+selects a few other nodes to verify the certificate held by the node.
+
+5.4 Market Stability
+5.4.1. Market Credit Score
+
+TOP Marketplace adopts a decentralized credit rating system to encourage service providers to offer
+high-quality services. The credit score of a service provider is calculated based on the number of disputed
+transactions submitted by Dapps. Service providers with higher credit scores have higher chance to be
+selected.
+
+5.4.2 Price Stability
+
+TOP Marketplace adopts a decentralized credit rating system to encourage service providers to offer
+high-quality services. A service provider's credit score is determined by the number of disputed
+transactions submitted by Dapps. Service providers with higher credit scores have more chances to be
+selected in the marketplace.
+
+37
+TOP Decentralized Open Communication Network
+
+6. Apps
+
+TOP Network is specially built for communication and social apps. It provides API and SDK for
+developers to quickly build and deploy their communication apps. With tools offered by TOP, even a small
+team can easily develop a full-featured messaging app similar to WhatsApp. Developers do not have to
+worry about the scalability and stability of the communication network when their apps attract millions of
+users, because TOP Network takes care of those issues for all apps, generating huge cost savings
+compared with in-house solutions. Developers can thus dedicate their resources to their businesses and
+leave technology development and network operations to TOP.
+
+6.1 Dapps and Typical Cases
+
+Developers can quickly build rich communication applications or integrate communication and social
+functions into existing apps utilizing the cloud communication services provided by TOP Network. The
+typical products and use cases listed below are just the tip of the iceberg.
+
+| fovea
+
+STREAM
+
+6.1.1 Messaging Apps
+
+Messaging, the core function of all social and communication apps, is widely used for person-to-person,
+man-to-machine and machine-to-machine communication. TOP RCS Service supports functions including
+one-to-one message, large group message, message receipt, picture message, voice and video
+message, file transfer, Walkie Talkie, voice call and video call.
+
+With TOP RCS Service, developers can quickly build full-featured messaging apps similar to WhatsApp
+or add messaging features to the existing apps.
+
+6.1.2 VoIP Phone Call
+
+In a VoIP call, voice signals are transmitted over the Internet before reaching local telecom operators, a
+method that generates much lower costs compared with the traditional PSTN call. The rate gap between
+VoIP calls and traditional calls is huge, especially when it comes to international calls. Boosted by the
+wide adoption of broadband Internet, VoIP call businesses have been growing rapidly. The global VoIP
+market is expected to reach $140 billion by 2021 ‘fe!4).
+
+38
+TOP Decentralized Open Communication Network
+
+Traditionally, developers need to sign bilateral agreements with telecom operators or voice gateway
+providers to offer VoIP service. Furthermore, for global service coverage, developers usually have to work
+with multiple telecom operators at the same time. Small developers often find it challenging to establish
+business relationships with telecom operators due to the high barriers to entry.
+
+With a decentralized consensus mechanism to verify service providers’ workload and a decentralized
+marketplace to facilitate deals, TOP VoIP Service creates a transparent platform that all telecom
+operators and voice gateway providers around the world can join in to serve customers. TOP offers much
+wider coverage than any single telecom operator. In addition, TOP VoIP Service does not take a share of
+service providers’ profits like a middleman and therefore can offer much lower rates compared with other
+networks.
+
+6.1.3 VPN Service
+
+VPN is the most secure and effective tool to access the Internet without compromising user privacy. The
+fast-growing global VPN market is estimated to reach $106 billion by 2022 (8212),
+
+TOP Proxy is a decentralized network of proxy servers without any individual or organization controlling
+the system. Powered by advanced technologies such as random selection of proxy servers, random
+network routing, traffic obfuscation and data packet encryption, TOP Proxy Service ensures anonymous,
+secure Internet connection and prevents firewalls from blocking the VPN service.
+
+Developers can utilize TOP Proxy Service SDK to build their VPN apps quickly to serve end users.
+
+6.1.4 Live Streaming
+
+TOP Streaming Service is designed for developers to build live streaming apps. It addresses the two
+biggest headaches in the live streaming app development:
+
+e Technical hurdles: developers need to have an advanced technical background to build a live
+streaming app that provides low-latency, high-definition audio and video. TOP Streaming SDK offers
+a full-stack solution that supports audio/video encoding/decoding, transcoding, filtering, and network
+transmission.
+
+e Bandwidth costs: the bandwidth cost for a live streaming app increases significantly as the app’s user
+base grows. TOP Network can bring considerable savings to developers with a decentralized CDN
+service powered by TOP Streaming Service, which is much cheaper than the traditional CDN.
+
+6.1.5 Social Apps
+
+For social networking apps, TOP Network can provide various decentralized services such as data
+storage, UGC management, ID management and communication. TOP allows social apps to issue their
+unique tokens to build their token economies.
+
+39
+TOP Decentralized Open Communication Network
+
+6.2 Decentralized or Partially-Centralized Apps
+
+The decentralized TOP Network provides all the core capabilities required for communication and social
+apps and allows apps to utilize smart contracts to implement additional business logic, enabling
+developers to build completely decentralized apps on the TOP platform. TOP stores app data such as
+user information securely on the blockchain and uses end-to-end encryption technology to protect
+communication content, making it difficult for any individual or organization to block users, censor content
+or steal user data. A completely decentralized app on TOP is free from security breaches plaguing
+
+centralized apps.
+
+Decentralized
+App
+
+Developers can choose to use centralized systems along with TOP Network. For example, an app may
+use a centralized database to manage users and utilize TOP Network for communication and storage
+solutions. Such an app is semi-decentralized. As an open network, TOP Network provides open protocols
+and API for developers to integrate TOP seamless with centralized infrastructure.
+
+Centralized
+Partially-Centralized
+
+App
+
+Cloud
+
+°
+(.
+
+40
+TOP Decentralized Open Communication Network
+
+6.3 TOP API & SDK
+
+The APIs and SDK kits provided by TOP enable developers to implement various communication apps
+quickly.
+
+e TOP API is a simple set of HTTPS Restful APIs and therefore suitable for Web apps.
+
+e TOP SDK provides interfaces for native operating systems - Android, iOS, Mac, Windows and
+Linux. TOP SDK also provides Media Engines for audio and video encoding/decoding, pre-
+processing, post-processing and so on. The source code of TOP SDK is open to the community
+and maintained by the community.
+
+6.4 App: Dingtone, CoverMe, SkyVPN, TOP Messenger
+
+Over the past several years, the TOP founding team has successfully developed multiple communication
+apps including Dingtone, CoverMe and SkyVPN, which have performed excellently in their respective
+markets. These apps are semi-decentralized: they share the same underlying communication network
+layer that has a distributed architecture, while they have separate user databases and billing systems.
+These apps will be moved to the TOP platform upon the roll-out of TOP and become the first Dapps on
+TOP. Part of the source code for these products will be open to the TOP community to help developers
+build high-quality decentralized communication apps.
+
+Dingtone CoverMe SkyVPN
+
+6.4.1 Dingtone
+
+Dingtone is a market-leading VoIP app that provides a variety of rich communication functions including
+VoIP calling, international SMS, cloud phone number, messaging, groups, fax, teleconferencing and
+more. Its 38 million global users, over 30% of whom are in the United States, generate 1 billion minutes of
+calling annually. Dingtone has signed bilateral agreements with major telecom operators worldwide,
+including Tata, BICS, KPN/iBasis and IDT, so that Dingtone phone calls can reach any country or region
+across the globe.
+
+41
+TOP Decentralized Open Communication Network
+
+Oa ¥ Oo 4 69% 2:33
+
+TOP FREE TOPGROSSING TRENDING TOP Pé
+
+HOLLA: random video chat
+
+HOLLA
+
+4.6% FREE
+
+IMVU - #1 3D Avatar Social App
+IMVU, Inc
+
+4.2% FREE
+
+Google+
+
+joogle LL
+
+4.2% FREE
+
+Free phone calls, free texting S.
+
+Dingtone, inc
+
+4.5% © INSTALLED
+
+4.3% FREE
+
+Airtime: Hang out watch video
+
+Airtime Media Inc
+
+qi
+
+FREE
+
+Tagged - Meet, Chat & Dating
+fwe In
+
+9 Tango - Live Stream Video Chat
+2 Tangc
+
+Upon being moved to the TOP platform, Dingtone can bring huge volumes of business quickly to the TOP
+ecosystem. Dingtone will also fully benefit from the scale of TOP Network and further reduce its
+infrastructure cost.
+
+Dingtone plans to implement a built-in TOP light wallet so that Dingtone users can directly own TOP
+Tokens. Dingtone has pioneered the business model that allows users to earn points by watching ads
+and use points to pay for VoIP calls later. Dingtone plans to replace Dingtone point with TOP Token, a
+strategy expected to bring considerable liquidity to the ecosystem. TOP Token can also increase the user
+retention rate on Dingtone, as users can unlock premium features or enjoy special rates on Dingtone by
+holding a certain number of TOP Tokens in the light wallet.
+
+6.4.2 CoverMe
+
+CoverMe is the first secure messaging app that has implemented end-to-end encryption technology,
+which Telegram and WhatsApp later adopted. CoverMe offers other powerful security features such as
+encrypted phone calls, self-destructed messaging, secure vault, decoy password and more. The app has
+attracted over 5 million high-end users, mostly iOS users in the United States, who take data security and
+privacy seriously.
+
+42
+TOP Decentralized Open Communication Network
+
+After being moved to the TOP platform, CoverMe will become a thoroughly decentralized and serverless
+app that supports secure, end-to-end encrypted messaging.
+
+6.4.3 SkyVPN
+
+Since its launch in 2017, SkyVPN has quickly become a rising star in the VPN market thanks to its fast
+connection speed and its excellent anti-blocking ability enabled by advanced technologies such as anti-
+DPI (Deep Packet Inspection), traffic obfuscation and shadow protocol tunnel. SkyVPN has hit 18 million
+users and is expanding its user base rapidly.
+
+“ zo 8:36 AM @7% 3
+< Productivity Productivity
+Top Charts
+
+Paid Apps
+
+22 CamScanner |
+Document Scanner OPEN
+
+5 23 Content Transf D>
+24 Grammarly Keyboard GET
+25 SkyVPN - Best VPN
+Proxy Shield OPEN
+6
+
+26 Microsoft PowerPoint
+
+OPEN
+
+iG)
+
+:
+
+27 ~HP Smart
+
+FA 28 Documents by Readdle =n
+
+a 4g = iL] Q
+SkyVPN clients on Windows and Mac platform can join TOP Network as proxy servers and receive token
+rewards for their bandwidth contribution to the network, which is a crucial step to construct the
+community-owned TOP Network. With millions of proxy servers, SkyVPN will have much stronger anti-
+blocking ability and further protect user anonymity.
+
+43
+6.4.4 TOP Messenger
+
+TOP Decentralized Open Communication Network
+
+Built entirely on TOP Network, TOP Messenger provides all the functions and features of WeChat,
+WhatsApp and Skype with a higher level of security and user privacy protection. TOP Messenger can
+interconnect with any other communication app that adopts the RCS protocol. An open-source, non-profit
+project developed by the community without the control of any organization, TOP Messenger creates a
+safe space clear of censorship where every user speaks freely. In comparison, messaging apps including
+WeChat, WhatsApp and Facebook Messenger, all controlled by Internet giants, confine users to their
+walled gardens, commercialize users as products, and have considerable power to block, censor and
+
+filter any content or user.
+
+TOP Messenger WeChat WhatsApp
+Architecture Decentralized Centralized Centralized
+Openness Open, interoperable Closed, walled Closed, walled
+garden garden
+Security Ene-to-end encrypted | Messages can be User information and
+messaging monitored data are saved ina
+centralized system
+Privacy Data is owned by Data may be shared | Data may be shared
+users and leaked and leaked
+Freedom Complete freedom Censored Facebook can block
+anything on the
+platform
+Cryptocurrency Cryptocurrency wallet, | NA NA
+
+payment and C2C
+exchange
+
+TOP Messenger, not just a messaging app, offers deep integrated features for cryptocurrency such as
+cryptocurrency wallet, payment and decentralized exchange.
+
+44
+TOP Decentralized Open Communication Network
+
+7. TOP Ecosystem
+
+The fundamental goal of TOP Network is to build a public network infrastructure that brings practical
+value to the society. Using TOP as the underlying infrastructure, developers can build rich communication
+and social networking apps easily to serve massive users. TOP Token, the native token on TOP Network,
+brings all participants in TOP together form an ecosystem. All the communication services provided by
+TOP have huge market size and are expected to generate massive volumes of business and transactions
+in the ecosystem, thus bringing TOP to its prosperity.
+
+7.1 Ecosystem Participants
+
+Cross
+Chain
+Services
+
+Service
+Miners Miners
+
+7.1.1 Ledger Miners
+
+Ledger miners on TOP Chain verify transactions, maintain ledgers and execute smart contracts. Ledger
+miners mine TOP Tokens by verifying transactions with the PBFT-DPoS consensus algorithm.
+
+TOP is a permissionless public blockchain platform, where miners can contribute nodes to the consensus
+network freely.
+
+45
+TOP Decentralized Open Communication Network
+
+7.1.2 Service Miners
+
+A service miner is a service provider that contributes nodes to TOP Network to offer various
+communication services. For instance, if a data center operator attempts to provide proxy services by
+connecting its 10 servers to TOP Network, this data center operator becomes a service miner. By
+providing communication services, a service miner earns service fees in the form of TOP Tokens.
+Assuming that the price for VPN traffic is 1 TOP Token per 1GB data, a VPN user who consumes 1GB
+data traffic needs to pay 1 token. If this 1GB traffic flows through three relay servers and one proxy
+server, these four nodes will share the 1 token reward at the end of the VPN session.
+
+A node can be a service miner and ledger miner at the same time. This dual-role miner can mine tokens
+by both verifying transactions and providing communications services.
+
+7.1.3 Developers and Apps
+
+The ultimate value of the TOP ecosystem is essentially determined by the number and quality of apps
+built by developers. High-quality apps with large numbers of users can generate huge volumes of
+transactions. App developers or end users pay for the communication services they consume. As the
+service usage grows, service miners earn more service fees and more service miners join the TOP
+ecosystem.
+
+Dingtone, CoverMe and SkyVPN, apps developed by the TOP founding team prior to this project, will be
+the first apps to run on TOP. With over 50 million existing users, they can immediately bring colossal
+volumes of business to the TOP ecosystem upon their migration to TOP.
+
+7.1.4 End Users
+
+The end users of Dapps is the ultimate source of business growth in the TOP ecosystem. By using
+functions in the Dapps, end users directly or indirectly generate transactions on TOP.
+
+However, in most cases, it is the Dapp developers instead of the end users who pay service miners for
+communication services. For example, a messaging app built on TOP does not charge end users, but the
+app developer needs to pay fees to nodes that provide messaging services. End users typically make
+payments to the developers.
+
+As mentioned above, end users contribute to the ecosystem by using Dapps, so Dapps may incentivize
+end users with token rewards based on their Dapp usage. For instance, when a messaging app user on
+TOP creates a group chat with 500 other users, this user receives one TOP Token for every 100 hours of
+total usage generated in this group chat.
+
+46
+TOP Decentralized Open Communication Network
+
+7.1.5 Cross - Chain Services
+
+One of TOP’s design goals is to offer a public communication network infrastructure. As an utterly open
+network, TOP is open not only to Dapps but also to other blockchain platforms. TOP provides cross-chain
+bridges for other blockchain platforms to access the decentralized cloud communication services on TOP.
+
+7.2 Build The Ecosystem
+
+TOP, a decentralized blockchain-based communication network infrastructure, carries real business
+services rather than aims solely at digital currencies. The prosperity of the TOP ecosystem relies heavily
+on the sufficient business volumes that the Dapps on TOP can generate and sustain.
+
+7.2.1. Port Dingtone, CoverMe and SkyVPN to TOP
+
+Dingtone, CoverMe and SkyVPN, created by the founding team of TOP, are expected to be ported to
+TOP simultaneously during the development of TOP. Upon the launch of TOP, these apps can bring
+massive volumes of business to TOP immediately:
+
+e TOP VoIP Service will carry one billion-minute voice calls generated on Dingtone annually,
+bringing vast volumes of business to service miners. Service fees will be paid in TOP Tokens
+instead of fiat currency. Dingtone is also a social messaging app delivering billions of messages
+monthly. Photos and videos shared by Dingtone users will be saved in TOP Storage, bringing
+considerable business volume for storage service miners.
+
+e CoverMe users are motivated to pay for the premium service with TOP Tokens because
+cryptocurrency payment can enhance anonymity significantly. With 4 million high-end users,
+CoverMe can generate large numbers of token holders. Private vault, a function commonly used
+by CoverMe users, saves private photos, videos and files securely. Once CoverMe is ported to
+the TOP platform, the private vault will be realized with TOP Storage, creating huge demand for
+storage service.
+
+e SkyVPN, having attracted over 10 million users, generates over 300TB VPN traffic daily. Once
+SkyVPN is ported to TOP, VPN traffic will be transmitted through TOP Proxy Service, creating
+huge volumes of business for the proxy service miners.
+
+Along with the migration of Dingtone, CoverMe and SkyVPN to TOP, their current business partners will
+join the TOP platform, bringing many heavyweight partners (i.e., service miners) to the TOP ecosystem
+immediately:
+
+e The servers that Dingtone deploys on 18 Internet backbone networks across the globe will
+become service miners (or nodes) on TOP Network.
+
+e Dingtone's global telecom partners, such as Tata, KPN/iBasis, IDT and BICS, will connect to TOP
+Network as VoIP service providers.
+
+e Data center partners of SkyVPN worldwide will join TOP to provide proxy service.
+
+47
+TOP Decentralized Open Communication Network
+
+7.2.2 Developer Incentive Program
+
+The TOP ecosystem can continue to flourish only if developers port to or build on TOP a large number of
+high-quality apps. In TOP's token distribution program, a certain number of tokens are allocated to reward
+early developers. Telos Foundation plans to reward developers with tokens as initial incentives for joining
+the TOP ecosystem. Meanwhile, the foundation plans to subsidize service fees paid by developers. All
+the incentive tokens are locked in a smart contract and intended for service fee payment only.
+
+7.2.3 User Incentive Program
+
+Users are the ultimate consumers of various services in the TOP ecosystem. TOP cannot generate
+constant business without the end consumers’ continuous app usage. Users in the TOP ecosystem
+belong to Dapps, so only app developers can decide how to reward their users. Here is a typical user
+reward case among an array of incentive mechanisms:
+
+1) An app developer issues a new token on the TOP platform (supposing it’s called App Token).
+
+2) The app rewards users based on their app usage. For example, a user gets one App Token after
+using the app for a certain period.
+
+3) By holding a certain amount of App Tokens, users can unlock certain premium features in the
+app.
+
+Dingtone and SkyVPN, as the very first Dapps onTOP, will implement user incentive plans. For example,
+Dingtone's users will be incentivized in the following ways:
+
+1) Auser will be rewarded with TOP Tokens for inviting friends to join Dingtone, who generates
+continuous usage within Dingtone.
+
+2) Avuser will get reward tokens for creating a large group chat which generates a certain amount of
+usage.
+
+7.2.4 Service Miner Incentive Plan
+
+Unlike miners on Bitcoin and Ethereum, TOP's service miners cannot mine tokens by calculating hash
+functions but need to provide communication services to earn service fees. Dapps rely on service miners
+to realize high-quality functions. TOP Network cannot offer high-quality service without a sufficient
+number of service miners.
+
+Besides communication service fees, service miners can get additional incentives. In TOP Token
+distribution plan, some tokens are reserved as extra incentives for service miners.
+
+Service miners get extra incentives in the following three ways:
+
+48
+1)
+
+2)
+
+3)
+
+TOP Decentralized Open Communication Network
+
+Initial Incentive for Miners to Join the Ecosystem
+
+In the early-stage development of the TOP ecosystem, Telos Foundation will reward service miners
+with a certain amount of tokens when they join TOP. These tokens are locked in a smart contract until
+the miners have earned a certain amount of service fees and provided sufficient services for over 12
+months.
+
+Bonus Service Fees
+
+In the early-stage development of the TOP ecosystem, Telos Foundation will give bonus service fee
+to a service miner when the volume of its accumulated service hits a certain threshold. Miners can
+use bonus tokens only as deposits but cannot withdraw them.
+
+Incentive for Advanced Service Nodes
+
+Advanced service nodes play a much bigger role than normal service nodes on TOP Network.
+Advanced service nodes also provide many services, such as offline message storage service,
+without charging fees. TOP issues additional 0.7%-1% of tokens per year to reward advanced service
+nodes.
+
+49
+TOP Decentralized Open Communication Network
+
+8. Token Distribution
+
+TOP plans to issue 20 billion TOP Tokens using ERC20 standard on Ethereum. After the launch of TOP
+mainnet, the ERC20-based tokens will be mapped to the native tokens on TOP.
+
+Token Distribution:
+e Team — 15% of Tokens
+e Foundation — 15% of Tokens
+e Contributors — 22% of Tokens
+e Mining — 38% of Tokens
+
+e Business Partners, Marketing, Advisors — 10% of Tokens
+
+50
+TOP Decentralized Open Communication Network
+
+9. Team
+
+Over 20 years ago, the core members on TOP's founding team built the WebEx product, a well-known
+Web conference service. They all have strong background in network communications, network security
+and cloud computing. The team also successfully developed three outstanding communication apps:
+Dingtone, CoverMe and SkyVPN.
+
+Core Team
+
+Steve Wei
+
+CEO
+
+Co-founder
+
+Steve is a successful serial entrepreneur. A founding employee at WebEx, Steve held multiple key
+positions at WebEx from 1996 to 2003. In 2004, he founded Cenwave Communications, a video
+conferencing software company successfully sold to Huawei in 2010. In 2012, Steve founded
+Dingtone, which operates apps including Dingtone, CoverMe and SkyVPN that altogether have
+attracted over 50 million users. Steve earned his bachelor’s degree at Tsinghua University.
+
+Noah Wang
+
+CMO & BD
+
+Co-founder
+
+Noah has extensive experiences in investment, accounting and auditing. Noah served as the U.S.
+West Coast Regional Head at Starr Strategic Holding, the founding shareholder of AIG, overseeing
+investment management and cross-border mergers and acquisitions. Before Starr, Noah worked for
+PwC and ICBC. He is a charter member of HYSTA and the Alumni Relations Chair of Young
+Executive Board at Cheung Kong Graduate School of Business. Noah received an MBA degree from
+Yale University. He is a CFA charterholder, a CPA and a Mensa International member.
+
+Kelven Yang
+
+Chief Architect
+
+Co-founder
+
+A full stack developer and the first developer at WebEx, Kelven designed the technical framework of
+WebEx and contributed the most source code of WebEx communication server. He joined
+Cloud.com as a principal engineer in 2009. Kelven co-founded Dingtone in 2012 and served as the
+chief architect.
+
+Peter Wei
+
+51
+TOP Decentralized Open Communication Network
+
+VP of Engineers
+
+Co-founder
+
+Peter Wei was one of the founding employees at WebEx holding multiple important development
+positions from 1996 to 2002. Peter later served as the development director, principal architect and
+other crucial R&D roles at Fortinet and Trend Micro. Peter is a senior cybersecurity expert holding 33
+patents in the field. Since 2015, Peter has served as VP of Engineering at Dingtone.
+
+Taylor Wei
+
+VP of Platform
+
+Co-founder
+
+Taylor joined WebEx in 2001 and served as one of the key developers of WebEx Mobile. Taylor co-
+founded Dingtone in 2012 and served as VP of Platform. Taylor is a senior network communication
+
+architect and cryptography expert. He designed the security architecture of CoverMe, an end-to-end
+encrypted messaging app, long before Telegram and WhatsApp implemented end-to-end message
+
+encryption.
+
+52
+TOP Decentralized Open Communication Network
+
+10. Roadmap
+
+2017
+04, 2017
+Qi, 2018
+Q3, 2018
+Q3, 2018
+Qi, 2019
+Q1, 2019
+Q2, 2019
+Q3, 2019
+
+Conduct research on the decentralized VPN service
+architecture
+
+Start developing TOP Proxy and TOP Chain
+
+Launch alpha version of BitVPN
+
+Launch testnet 1.0
+
+Launch BitVPN
+
+Launch testnet 2.0
+
+Officially launch TOP Network
+
+Release TOP Messenger and TOP loT
+
+53
+TOP Decentralized Open Communication Network
+
+11. Governance
+
+11.1 Communities
+
+11.1.1 Telos Foundation
+
+Telos Foundation is an independent non-profit organization based in Singapore. Currently, Telos
+Foundation, the operating entity of TOP, oversees TOP’s technical development, marketing and
+governance. The long-term mission of Telos Foundation is to become a democratic governance body
+serving all participants in the TOP ecosystem.
+
+Operation transparency is the paramount principle of Telos Foundation. The foundation will regularly
+release budgets, financial reports and operation plans to the community. Major decisions will be disclosed
+to the community in advance to solicit comments.
+
+The decision-making body in Telos Foundation is the executive committee, its members including
+directors of the foundation, CEO and community representatives. Major matters, such as annual budget,
+large expenditure and strategic plan, need the committee’s approval. The CEO directs the daily operation
+of the foundation.
+
+The standard committee under Telos Foundation formulates standards and rules in the TOP ecosystem.
+The standard committee sets up multiple working groups focused respectively on issues including
+security, community incentivization and community feedback. Standard committee members are elected
+by the community.
+
+11.1.2 Community Board
+
+The community board is the legislative body responsible for on-chain governance, whose members are
+elected by the community based on DPoS algorithm. The board votes on the standards, rules and draft
+laws. A draft law endorsed by over 50% of board members becomes law. The community board has only
+legislative power, while Telos Foundation is responsible for the enforcement of standards, rules, and
+laws.
+
+Telos Foundation organizes the election of the community board members. If needed, the foundation can
+request the community to re-elect the community board.
+
+54
+TOP Decentralized Open Communication Network
+
+11.2On-Chain Governance
+
+11.2.1 On-Chain Governance Protocols
+
+The on-chain governance of TOP is performed by a variety of modules such as version control, sharding
+management and incentive mechanisms. Each module is assigned an account whose properties are
+intended to store parameters. When the community board reaches an agreement on new parameters of a
+specific module, each node will obtain the upgraded parameter values automatically by querying the
+corresponding account. Thus, the parameter upgrade of the entire chain can be realized automatically.
+
+11.2.2 The Governance Process
+
+Each working group under the standard committee collects feedbacks from the community and submits
+them to the committee. The standard committee then votes on the submitted proposals. The drafts
+endorsed by over 50% of committee members will be signed by Telos Foundation and submitted to the
+community board for on-chain voting, which is implemented through a smart contract. A draft that
+receives over 50% of the votes by the board will become a formal resolution on TOP Chain.
+
+11.2.3 Software Upgrades for Nodes
+
+If the resolution approved by the community board requires nodes to upgrade their software, the nodes
+will automatically download the latest software package upon notification and complete the upgrade
+automatically after confirming the legitimacy of the downloaded software package.
+
+55
+TOP Decentralized Open Communication Network
+
+12. References
+
+[1] Number of mobile messages sent through WhatsApp as of 2™ quarter 2017
+
+https://www.statista.com/statistics/258743/daily-mobile-message-volume-of-whatsapp-messenger/.
+
+[2] Global Virtual Private Network Market
+
+Virtual Private Network (VPN) Market Expected to Reach USD 106 Billion by 2022 at a CAGR of 13%
+- Market Research Future.
+
+[3] Skype Daily Usage
+
+Skype users make up to 3 billion minutes of calls each day in 2018 - Microsoft.
+
+[4] Global VoIP Services Market
+
+Global VoIP Services Market Poised to Surge from USD 83 Billion in 2015 to USD 140 Billion by 2021
+— MarketResearchStore.com
+
+[5] Global VoIP Services Market
+
+The global A2P SMS market, with a valuation of US$62.01 bn in 2017, will exhibit a healthy 4.2%
+CAGR from 2017 and 2025 and rise to a valuation of US$86.53 bn by 2025 —
+TransparencyMarketResearch.com
+
+[6] ECC-Elliptic-curve cryptography
+
+Elliptic-curve cryptography (ECC) is an approach to public-key cryptography based on the algebraic
+structure of elliptic curves over finite fields. ECC requires smaller keys compared to non-ECC
+cryptography.
+
+[7] X25519- Elliptic curve Diffie-Hellman (ECDH)
+
+A state-of-the-art Diffie-Hellman function by Daniel J. Bernstein.
+
+[8] Ed25519 - EdDSA signature scheme using SHA-512/256 and Curve25519
+
+Ed25519 signatures are elliptic-curve signatures, carefully engineered at several levels of design and
+implementation to achieve very high speeds without compromising security.
+
+56
+TOP Decentralized Open Communication Network
+
+[9] EdDSA - Edwards-curve Digital Signature Algorithm
+
+A digital signature scheme using a variant of signature based on Twisted Edwards curves. It was
+developed by Daniel J. Bernstein, Niels Duif, Tanja Lange, Peter Schwabe, and Bo-Yin Yang.
+
+[10] The Double Ratchet algorithm
+
+The Double Ratchet algorithm is used by two parties to exchange encrypted messages based ona
+shared secret key. It is called double ratchet because it combines a Diffie-Hellman key exchange
+ratchet with a symmetric-key ratchet.
+
+[11] Signal & WhatsApp End-to-End Encryption Protocol
+
+[12] DSR - The Dynamic Source Routing protocol
+
+The Dynamic Source Routing protocol (DSR) is a simple and efficient routing protocol designed
+specifically for use in multi-hop wireless ad hoc networks of mobile nodes.
+
+[13] QoS, Quality -Based-Routing
+Quality of Service Based Routing- Petri Aukia, Nixu Oy
+
+A Framework for Overlay QoS Routing - Dragos Ilie and Adrian Popescu Dept. of Telecommunication
+Systems Blekinge Institute of Technology Karlskrona, Sweden
+
+DHT-based Hypercube Routing - Jos’e I. Alvarez-Hamelin1? , Aline C. Viana2 , and Marcelo D. de
+Amorim3
+
+[14] Kademlia - A peer-to-peer information system based on the XOR metric
+
+[15] H-P2PSIP: Interconnection of P2PSIP domains for global multimedia services based on a
+hierarchical DHT overlay network
+
+[16] Byzantine fault tolerance (BFT)
+
+The dependability of a fault-tolerant computer system, particularly distributed computing systems.
+
+[17] EOS.IO, EOS.IO technical white paper
+
+[18] PolkaDot, Multi-chain framework
+
+57
+TOP Decentralized Open Communication Network
+
+[19] Probabilistic Lightening
+
+[20] The BitcoinLightening Network: Scabable Off-Chain Instant Payments
+
+58

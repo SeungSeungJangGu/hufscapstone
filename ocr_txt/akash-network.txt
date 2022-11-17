@@ -1,0 +1,1219 @@
+AKT: Akash Network Token & Mining Economics
+
+Greg Osuri, Adam Bozanich*
+Akash Network, Akash Network
+(Dated: January 31, 2020)
+
+Akash is a marketplace for cloud compute resources which is designed to reduce waste, thereby
+cutting costs for consumers and increasing revenue for providers. This paper covers the economics of
+the Akash Network and introduces the Akash Token (AKT). We describe an economic incentive
+structure designed to drive adoption and ensure the economic security of the Akash ecosystem. We
+propose an inflationary mechanism to achieve economic goals. We provide calculations for mining
+rewards and inflation rates. We also present mechanisms for allowing a multitude of fee tokens.
+
+ACKNOWLEDGMENTS
+
+We thank Sunny Aggarwal (Research Sci-
+entist, Tendermint), Gautier Marin (Tender-
+mint), Morgan Thomas (Co-Founder, Kassir),
+and Brandon Goldman (Frm. Lead Architect,
+Blockfolio) for providing valuable comments
+
+that significantly improved the manuscript.
+
+I. INTRODUCTION
+
+Cloud infrastructure is a $32.4 billion indus-
+try{1] and is predicted to reach $210 billion by
+20222).
+
+By 2021, 94% of all internet applications
+and compute instances are expected to be pro-
+cessed by Cloud Service Providers (CSP) with
+only 6% processed by traditional data cen-
+ters[3}.
+is poor utilization rates of IT resources provi-
+
+The primary driver for this growth
+
+sioned in traditional data centers as no more
+than 6% of their maximum computing out-
+put is delivered on average over the course of
+the year [4], and up to 30% of servers are co-
+matose[5] — using electricity but delivering no
+useful information services.
+
+With 8.4 million data centers globally, an
+
+estimated 96% of server capacity underuti-
+
+lized, and accelerated global demand for cloud
+
+* greg@akash.network, adam@akash.network
+
+computing, the three leading cloud service
+providers — Amazon Web Services (AWS),
+Google Cloud, and Microsoft Azure — dom-
+inate the cloud computing market with 71%
+market share{1] and this figure is expected
+to increase. These providers are complicated,
+inflexible, restrictive, and come at a high re-
+curring cost with vendor lock-in agreements|[6].
+Increased cloud usage has made cloud cost
+optimization the top priority of cloud service
+users for three consecutive years|7].
+
+Outside of the large incumbent providers, or-
+ganizations do not have many options for cloud
+
+computing. Akash aims to create efficiencies in
+the cloud hosting market by repurposing com-
+pute resources that go to waste in the current
+market.
+
+By leveraging a blockchain, Akash intro-
+duces decentralization and transparency into
+an industry currently controlled by monopolies.
+The result is that cloud computing becomes a
+commodity, fueled by competitive free market,
+available and accessible anywhere in the world,
+at a fraction of current costs.
+
+Akash is the world’s first and only Su-
+percloud for serverless computing, enabling
+anyone with a computer to become a cloud
+provider by offering their unused compute cy-
+cles in a safe and frictionless marketplace.
+
+In this paper, we present an economic sys-
+tem that uses Akash Network’s native currency,
+AKT, to achieve economic sovereignty in our
+decentralized computing ecosystem. We also
+propose an inflation design for mitigating in-
+herent adoption challenges that face an early
+market economy — lack of sufficient demand
+rom the tenants (consumers of computing),
+which negatively impacts demand due to lack
+of supply. We also present a mechanism for a
+stable medium of exchange by solving for to-
+ken volatility, a major challenge for adoption
+of decentralized ecosystems.
+Note: This whitepaper represents a contin-
+uous work in progress. We will endeavor to
+eep this document current with the latest de-
+velopment progress. As a result of the ongoing
+and iterative nature of the Akash development
+
+process, the resulting code and implementa-
+
+ion will likely differ from what this paper
+represents.
+
+We invite the interested reader to
+Akash GitHub repo at
+
+https: //github.com/ovrelk as we continue to
+
+peruse the
+
+open-source various components of the system
+over time.
+
+A. Definitions
+
+Akash Token (AKT): AKT is the native
+token of the Akash Network. The core
+utility of AKT acts as a staking mecha-
+nism to secure the network and normal-
+ize compute prices for the marketplace
+auction. The amount of AKTs staked
+towards a validator defines the frequency
+by which the validator may propose a
+new block and its weight in votes to com-
+mit a block. In return for bonding (stak-
+ing) to a validator, an AKT holder be-
+comes eligible for block rewards (paid in
+AKT) as well as a proportion of transac-
+tion fees and service fees (paid in any of
+the whiteliste
+
+okens).
+
+Validator: Validators secure the Akash net-
+
+work by validating and relaying trans-
+actions, proposing, verifying and final-
+There will be a limited
+set of validators, initially 64, required to
+
+izing blocks.
+
+maintain a high standard of automated
+signing infrastructure. Validators charge
+delegators a commission fee in AKT.
+
+Delegator: Delegators are holders of the
+AKT and use some or all of their to-
+kens to secure the Akash chain. In re-
+turn, delegators earn a proportion of the
+transaction fee as well as block rewards.
+
+Provider: Providers offer computing cycles
+(usually unused) on the Akash network
+and earn a fee for their contributions.
+
+Providers are required to maintain a
+
+stake in AKT as collateral, proportional
+to the hourly income earned; hence, ev-
+ery provider is a delegator and/or a val-
+idator.
+
+Tenant: Tenants lease computing cycles of-
+fered by providers for a market-driven
+price set using a reverse auction process
+(described in section below).
+
+Il. NETWORK OVERVIEW
+
+The Akash Network is a secure, transparent,
+and decentralized cloud computing market-
+place that connects those who need computing
+resources (clients) with those that have com-
+puting capacity to lease (providers). Akash
+acts as a supercloud platform providing a uni-
+fied layer above all providers on the market-
+place so as to present clients with a single
+cloud platform, regardless of which particular
+provider they may be using.
+
+Tenants use Akash because of its cost advan-
+
+tage, usability, and flexibility to move between
+cloud providers, and the performance benefits
+of global deployments. Providers use Akash be-
+cause it allows them to earn profits from either
+dedicated or temporarily-unused capacity.
+
+A unit of computing (CPU, Memory, Disk)
+is leased as a container on Akash. A con-
+tainer [8] is a standard unit of software that
+packages up code and all its dependencies, so
+the application runs quickly and reliably from
+one computing environment to another. A
+container image is a lightweight, standalone,
+executable package of software that includes
+everything needed to run an application: code,
+runtime, system tools, system libraries, and
+settings.
+
+Any one with a physical machine (ie, com-
+puter, server) can slice the machine’s resources
+into containers using a process called virtual-
+ization. Docker is a company that provides
+
+widely adopted container virtualization tech-
+
+nology, and it is common to refer to contain-
+
+ers docker images.” The relation between
+a physical computer and a container is illus-
+trated in fig. 1).
+
+All marketplace transactions are on the
+Akash blockchain. To lease a container, the
+
+tenant (developer) requests a deployment by
+
+specifying the type(s) of unit(s), and the quan-
+tity of each type of unit. To specify a type of
+unit, the tenant specifies attributes to match,
+such as region (e.g. US) or privacy features
+(e.g. Intel SGX). The tenant also specifies the
+maximum price they are willing to pay for each
+type of unit.
+
+An order is created in the order book (upon
+acceptance by a validator).
+
+The provider(s) that match all the require-
+
+ments of the order then place a bid by com-
+peting on price. The provider that bids the
+lowest amount on the order wins (and match
+requirements), upon which a lease is created
+between the tenant and the provider for the
+order. For every successful lease, a portion
+
+of the lease amount (Take Fee) is paid to the
+
+stakers as describe in sec. IV A.
+
+Containerized Applications
+
+App A
+App B
+App C
+App D
+AppE
+
+Container Runtime (Docker)
+
+Host Operating System (Linux)
+
+Physical Server (Bare Metal / Cloud VM)
+
+Figure 1: A simple illustration of
+containerized applications in relation to the
+physical servers
+
+A. Proof of Stake Based Consensus
+
+Akash employs a blockchain secured by a
+Proof-of-Stake consensus model as a Sybil resis-
+tance mechanism for determining participation
+in its consensus protocol and implements the
+Tendermint [9] algorithm for Byzantine fault-
+tolerant consensus. Tendermint was designed
+to address the speed, scalability, and environ-
+mental concerns with Proof of Work with the
+
+below set of properties:
+
+a) Validators take turns producing blocks
+in a weighted round-robin fashion, mean-
+ing the algorithm has the ability to seam-
+lessly change the leader on a per-block
+
+basis.
+
+b) Strict accountability for Byzantine faults
+allows for punishing misbehaving valida-
+tors and providing economic security for
+the network.
+
+Anyone who owns an Akash token can bond
+(or delegate) their coins and become a valida-
+or, making the validator set open and permis-
+sionless. The limited resource of Akash tokens
+acts as a Sybil prevention mechanism.
+Voting power is determined by a validator’s
+bonded stake (not reputation or real-world
+identity). No single actor can create multiple
+nodes in order to increase their voting power
+
+as the voting power is proportional to their
+
+onded stake. Validators are required to post
+a “security deposit” which can be seized and
+urned by the protocol in a process known as
+P
+
+“slashing”.
+
+These security deposits are locked in a
+
+bonded account and only released after an
+“unbonding period” in the event the staker
+wishes to unbond. Slashing allows for punish-
+ing bad actors that are caught causing any
+attributable Byzantine faults that harm the
+well-functioning the system.
+
+The slashing condition and the respective
+attributable Byzantine faults and punishments
+are beyond the scope of this paper. (For more
+information on these, please review Akash Net-
+
+work Technical White paper).
+
+1. Limits on Number of Validators
+
+Akash’s blockchain is based on Tendermint
+consensus which gets slower with more valida-
+tors due to the increased communication com-
+plexity. Fortunately, we can support enough
+validators to make for a robust globally dis-
+tributed blockchain with very fast transaction
+confirmation times, and, as bandwidth, stor-
+age, and parallel compute capacity increases,
+we will be able to support more validators in
+the future.
+
+On Genesis day, the number of validators V;
+is set to V;(0) = Vio = 64 and the number of
+validators at time t year will be:
+
+Va(t) = [logs (2t) - Vio] (1)
+
+So, in 10 years, there will be V,,(10) = 277
+
+validators as illustrated in fig. 2
+
+400
+
+350
+
+Validators
+
+4 8 2 16 20
+Years
+
+Figure 2: Number of validators over the years
+
+Ill. AKT: THE AKASH NETWORK
+TOKEN
+
+The primary functions of AKT are in stak-
+ing (which provides security to the network),
+lease settlement, and in acting as a unit of mea-
+sure for pricing all currencies supported by the
+marketplace. Although AKT can be used for
+settling transactions in the marketplace, the
+leases can be settled using a multitude of to-
+kens as described in later sections of this paper.
+
+However, transaction fees and block rewards
+are denominated in AKT. The income stak-
+ers earn is proportional to the tokens staked
+and length of staking commitment. That said,
+AKT performs three main functions: Resolve,
+Reward, and Reserve.
+
+A. Resolve
+
+Akash relies on a blockchain in which a set of
+validators vote on proposals. Each proposal is
+weighed by the proposer’s voting power, which
+is the total tokens they staked and the tokens
+bonded to them (stakers can delegate voting
+power to validators).
+
+B. Reward
+
+Users of AKT stake tokens to subsidize op-
+erating and capital expenditures. Stakers are
+rewarded proportional to the number of tokens
+staked, the length of lockup time, and the over-
+all tokens staked in the system. Lockup times
+can vary anywhere from one month to one
+year. Flexibility in lockup encourages stakers
+who stake for shorter periods (bear markets),
+in a self-adjusting inflationary system that is
+designed to optimize for lower price pressure
+
+during bear markets.
+
+C. Reserve
+
+Fees on Akash can be settled using a mul-
+titude of currencies along with AKT. How-
+ever, the market order book uses Akash Token
+(AKT) as the reserve currency of the ecosystem.
+AKT provides a novel settlement option to loc!
+in an exchange rate between AKT and the set-
+tlement currency. This way, providers and
+tenants are protected from the price volatility
+
+of AKT expected to result from its low liquid-
+ity. In this section, we also present a mecha-
+nism “Transaction Ordering using Consensus
+Weighted Median” as described in sec. IV D to
+establish exchange rates without the need for
+
+an oracle.
+
+IV. SETTLEMENT AND FEES
+
+This section describes various fees incurred
+by users of Akash Network.
+
+A. Take Fee
+
+For every successful lease, a portion of the
+lease amount (Take Fee) goes to a Take In-
+come Pool. The Take Income Pool is later dis-
+tributed to stakers based on their stake weight
+(amount staked and time remaining to unlock,
+described in detail in the following sections).
+The Take Rate depends on currency used for
+settlement. The proposed take rates at Gene-
+sis when using AKT (TokenTakeRate) is 10%
+and 20% when any other currency(TakeRate)
+is used. The TokenTakeRate and TakeRate
+parameters is subject to community consensus
+managed by the governance.
+
+B. Settlement with Exchange Rate
+Lockin
+
+The lease fees are denominated in AKT, but
+they can be settled using any whitelisted to-
+kens. There is an option to lock in an exchange
+rate between AKT and the settlement currency.
+This protects providers and tenants from the
+price volatility of AKT expected to result from
+its low liquidity.
+
+For example, suppose a lease is set to
+10 AKTs and locks an exchange rate of
+1 AKT = 0.2 BTC. If the price of AKT
+doubles, i.e., 1 AKT = 0.4 BTC, the tenant
+is required to pay 5 AKT’. Conversely, if the
+
+price of BTC doubles while keeping the price
+of AKT same, ie., 1 AKT = 0.1 BTC, then
+the tenant is required to pay 20 AKT.
+
+C. Fees Using a Multitude of Tokens
+
+In order to avoid issues of network abuse
+(e.g. DOS attacks), all transactions and leases
+on Akash are subject to fees. Every transaction
+has a specific associated fee, GasLimit, for
+rocessing the transaction, as long as it does
+not exceed BlockGasLimit.
+
+The GasLimit is the amount of gas which
+is deducted from the sender’s account balance
+o issue a transaction.
+
+Unlike most other blockchain platforms that
+require fees to be paid in the platform’s native
+cryptocurrency, such as Ethereum [10], Bitcoin
+11], and Neo [12], Akash accepts a multitude
+of tokens for fees. Each validator and provider
+
+on Akash can choose to accept any currency
+or a combination of currencies as fees.
+
+The resulting transaction fees, minus a net-
+work tax that goes into a reserve pool, are
+split among validators and delegators based
+on their stake (amount and length).
+
+D. Transaction Ordering using
+Consensus Weighted Median
+
+In order to prioritize transactions when mul-
+tiple tokens are used, validators need a mech-
+anism to determine the relative value of the
+transaction fee. For example, let us assume
+we had an oracle to inform us that the relative
+value of BTC is 200 AKT, and that of ETH is
+
+0.4 AKT. Suppose we
+of equal gas cost, and
+them are 10 BTC and
+The first transaction’s
+(10 x 200) AKT and t
+
+have two transactions
+the transaction fees on
+6000 ETH, respectively.
+fee is equivalent to 2000
+he second transaction’s
+
+fee is equivalent to 2400 (6000 x 0.4) AKT. The
+second transaction will have a higher priority.
+
+In order to get these relative values with-
+out using an oracle, we can employ a Consen-
+sus Weighted Median using Localized Validator
+
+Configuration [13] mechanism.
+
+In this method, each validator maintains a
+local view of the relative values of the tokens
+in a config file which is periodically updated,
+and the relative value is achieved by using
+a weighted mean, meaning they submit their
+
+“votes” for the value of each token on-chain as
+
+a transaction.
+
+Lets say for example, there are five
+{A,B,C,D,E} with powers
+{0.3,0.3,0.1,0.1,0.2} respectively. They
+submit the following votes for their personal
+
+validators
+
+views of each token:
+A:AKT =1,BTC=0.2
+
+> AKT = 2,BTC =0.4
+
+: AKT = 12,BTC = 2
+
+> AKT =4,BTC=1
+
+: AKT = 1.5,BTC = 0.5
+
+These values are stored on-chain in a ordered
+
+saouaw
+
+list along with their validator that placed the
+vote.
+
+AKT : [la, 1.5m, 28, 4p, 12c]
+
+BTC: (0.24, 0.48, 0.55, Ip, 2c]
+
+The proposer takes a weighted mean (by
+stake) of the votes for each whitelisted token
+to determine a consensus relative value of each
+token, where w(x%,) = WeightedMean(a,) :
+
+AKT : w((1, 0.3], [1-5, 0.2], [2, 0.3], [4, 0.1], (12, 0.1])
+BTC : w/((0.2, 0.3], (0.4, 0.2], (0.5, 0.2], [1, 0.1], [2, 0.2])
+
+which give us the relative value for each to-
+ken: AKT = 2.8 and BTC = 0.58 respectively.
+
+V. TOKEN ECONOMICS AND
+INCENTIVES
+
+Providers earn income by selling computing
+cycles to tenants who lease computing services
+for a fee. However, in the early days of the
+network, there is a high chance the providers
+will not be able to earn a meaningful income
+due to a lack of sufficient demand from the
+enants (consumers of computing), which in
+urn hurts demand because of lack of supply.
+
+To solve this problem, we will incentivize
+he providers using inflation by means of
+
+lock rewards until a healthy threshold can be
+achieved.
+In this section, we describe the economics of
+mining and Akash Network’s inflation model.
+An ideal inflation model should have the fol-
+lowing properties:
+
+« Early providers can provide services at
+exponentially lower costs than in the
+market outside the network, to acceler-
+ate adoption.
+
+« The income a provider can earn is pro-
+
+portional to the number of tokens they
+
+stake.
+¢ The block compensation for a staker is
+roportional to their staked amount, the
+ime to unlock and overall locked tokens.
+¢ Stakers are incentivized to stake for
+longer periods.
+
+« Short term stakers (such as some bear
+
+market participants) are also incen-
+
+ivized, but they gain a smaller reward.
+« To maximize compensation, stakers are
+incentivized to re-stake their income.
+
+A. Motivation
+
+Akash Network aims to secure early adop-
+tion by offering exponential cost savings as a
+value proposition for tenants, and the efficiency
+of a serverless infrastructure as an additional
+value proposition for tenants and providers.
+These value propositions are extremely com-
+pelling, especially for data and compute inten-
+sive applications such as machine learning.
+
+B. Stake and Bind: Mining Protocol
+
+A provider commits to provide services for
+at least time T and intends to earn service
+income r every compensation period Teomp =
+1 day. Providers stake Akash tokens s and
+specify an unlock time t;, where minimal lock-
+time t; — t should not be less than Tyyjin =
+
+30 days. Additionally, they delegate (voting
+power) to validator v by bonding their stake
+via BindValidator transaction.
+
+A staker is a delegator and/or a validator
+to whom delegators delegate. Every provider
+is a staker, but not every staker is a provider;
+there can be stakers who are pure delegators
+providing no other services, and there can be
+stakers who are pure validators providing no
+other services.
+
+At any point, a staker can: a) Split their
+stake (or any piece of their stake) into two
+pieces. b) Increase their stake 1 by adding
+more AKT. c) Increase the lock time T, where
+T > Tmnin-
+
+Stakers choose to split their stake because
+the compensation is dependent on lock time L
+
+which will be addressed in later sections.
+
+C. General Inflation Properties
+1. Initial Inflation
+
+If we assume Akash will have the same num-
+ber of tokens locked as NuCypher [14] and
+DASH [15]: A = 60%, then 1 — 40% of the
+supply of AKT will be in circulation. The
+adjusted inflation rate for inflation, J will be:
+
+I
+
+=T @)
+
+*
+
+Considering that ZCash [16] had I* = 350%
+(turn around point during the overall bull mar-
+ket), which makes I = 140% APR, it is rea-
+sonably safe to set the initial inflation to be
+Ip = 100% APR (meaning 1/365 per day).
+
+2. Inflation Decay
+
+Assume that all miners have the maximum
+
+compensation rate. We define the inflation
+decay factor (time to halve the inflation rate)
+to be Ty/2 = 2 years in this case. Inflation
+depending on the time passed from the Genesis
+t, then looks like:
+
+—7~t t
+I(t) =Ip:2 "/2 = Ipexp [-me | » (3)
+Tij2
+
+In this case, the dependence of the token
+supply on the time t is:
+
+ToT 1/2
+In2
+
+t
+M(t) = Mo4 [ I(t) dt = Mo4
+0
+
+(4)
+
+If we let Ip be the relative inflation rate, then
+In = ioMo. For 100% APR, ig = 1 and Ip =
+Mo, which gives us the maximum number of
+
+tokens which will ever be created (as illustrated
+in fig. 3):
+
+Minax = M(ov) Mo (13
+
+where Mp is initial number of tokens.
+
+‘Token Supply
+= —_ Tokens Locked (60%)
+
+Tokens (Billions)
+
+Years
+
+Figure 3: Token supply and tokens locked
+over years with an initial inflation of 100%
+APR that is halving every 2 years
+
+1-2 77
+
+8. Staking Time and Token Creation
+
+We will reward the full compensation (7 = 1)
+to the stakers who are committed to stake at
+least T; = 1 year (365 days). Those who stake
+for Tin = 1 month will get close to half the
+compensation (y © 0.54). In general,
+
+min(T;, m1)
+
+y= (0 + 0.5
+
+Tj initial > Tmins (7)
+
+where the unlocking time T; means the time
+eft to unlock the tokens: T; = t, —t. t, is the
+ime when the tokens will be unlocked, and
+t is the current time. The initial 7; cannot
+e set smaller than Tinin = 1 month, but it
+
+eventually becomes smaller than that as time
+
+passes and t gets closer to t1.
+
+Shorter stake periods (for lower rewards)
+result in a lower daily token emission. Con-
+
+sidering that miners will most likely stake for
+
+short periods during a bear market, we can
+expect token emission to decline during a bear
+
+market, which will help to boost the price.
+Therefore we can expect this mechanism to
+
+support price stability.
+
+The emission half decay time TY /2 =
+Ty2/7*; where y* is the mean staking param-
+eter, is also prolonged when y < 1. Ti/2 pro-
+longs to 4 years instead of 2 if all stakers have
+y=y7=0.5.
+
+The total supply over time (eq. 4) at y* #1
+will then look like:
+
+D. Delegate Pool Distribution
+
+The exponential is a solution of a differential
+equation where inflation is proportional to the
+amount of not yet mined tokens:
+
+dM = I(t) dt. (10)
+
+where M(t) is the current token supply with
+M(0) = Mp and dt can be equal to the mining
+period (1 day). Each validator can trivially
+calculate its dM using few operations using
+the token supply M from the last period. The
+amount of mined tokens for the validator pool
+p in the time t can be calculated according to
+the formula:
+
+Sy In2
+dmv. = Sz—OM(t), 1
+Mot = OT (), (11)
+5M, = So dmv, (12)
+
+where s, is the number of tokens bound
+to the validator’s delegate pool v and S' is
+the total number of tokens locked. Instead of
+calculating all the sum over v, each validator
+can add their portion dm, ;.
+
+The distribution factor for a delegate bound
+to pool v is:
+
+<li (1,8 4
+a) (2+). (13)
+
+wv is the aggregate stake compensation fac-
+tor for the pool and S,, is the sum of all tokens
+bound to the pool.
+
+E. Mining strategies and expected
+compensation
+
+In this section, we look at three possibili-
+ties: a staker liquidating all the compensation
+while extending the lock time (Liquidate min-
+ing compensation), a staker adding all the com-
+pensation to their current stake, and a miner
+waiting for their stake to unlock after time T.
+Each of these possibilities could have differ-
+ent distributions of y. Let’s consider 7 = 1
+and 7 = 0.5 as the two extreme values of ¥.
+
+Let’s take the amount of tokens locked to be
+
+X= 60%, as in DASH.
+
+1. Liquidate Mining Compensation
+
+In this scenario, all stakers in the pool are
+liquidating all their earnings every Tromp pe-
+riod. The total amount of tokens staked in the
+network can be expressed as S = AM. Assume
+all the delegators have equal amounts of stake
+bound to the pool. The amount of stake stays
+constant in this case, and equal to m; = s,
+making m, = s, and y = jy where, 7 is the
+mean staking parameter of the pool. Then,
+the pool mining rate (i.e. the cumulative pool
+reward) is:
+
+dr, Sy In2
+ad \M@OTip
+
+(Mmax — M(t)). (14)
+
+When we substitute M(t) from eq. 8 and
+integrate over time, we find total pool compen-
+sation:
+
+» 7 1 M(t)
+t) = Sy L
+ry(t) Suy ln Mo
+
+(15)
+
+If Ar, (t) = ry(t) — C where C is validator’s
+commission, that brings individual staker’s
+compensation to be:
+s
+
+V4
+r(t) =K-Ar(t) = (2 <) - Ary (t)
+(16)
+If 7 = 1 (staking for 1 year) and A = 60%
+(60% of all AKT are staked). With C = 0.1-
+r(t), staker compensation in AKT starts from
+0.45% per day, or 101.6% during the first year
+of staking.
+
+We should note that if other miners stake
+for less than a year (7* < 1), the inflation rate
+decays slower, and the compensation over a
+given period will be higher.
+
+Long Tern Staking (1+ Years)
+— — Short Term Staking (1 Month)
+
+Daily Compensation Rate (%)
+
+°
+
+Years
+Figure 4: Daily compensation over time
+assuming 60% tokens locked for lock times o
+1 year and 1 month
+
+2. Re-stake mining compensation
+
+Instead of liquidating mining compensation,
+it could be re-staked into the pool in order
+to increase the delegator’s stake. In this case,
+
+the actual stake s is constantly increasing with
+
+time:
+ds s In2
+= =I (Minax — M(t))-
+da’ XM) Tp ma (9). 7)
+
+If we substitute S(¢) from eq. 8 and solve
+this differential equation against s, we get:
+
+10
+
+| ae (as)
+
+s(t) = s(0) vA
+
+Assuming the validator commission is 1%,
+if y = 1 (staking for 1 year+) and \ = 60%
+(60% of all nodes in the network are staking),
+delegate compensation in AKT starts from
+0.45% per day, or s(1) — s(0) = 176.5% during
+the first year of staking.
+
+8. Take mining compensation and spindown
+
+When the node spins down, the staker does
+not extend the time for end of staking ty,
+and the compensation is constantly decreas-
+ing as the time left to unlock becomes smaller
+and smaller, effectively decreasing y gradu-
+ally towards 0.5. This is the default behavior.
+To avoid this, the staker should set t, large
+enough, or increase t; periodically.
+
+4. FAQ
+
+How many tokens will ever be in exis-
+We will start with 100 million tokens,
+and the maximum amount of tokens ever cre-
+ated will be 389 million, as illustrated in fig. 3
+
+tence?
+
+What is the inflation rate? The infla-
+tion rate will depend on how many short-term
+miners and long-term miners are working in
+the system. Depending on this, the initial in-
+flation will be between 50% APR (if all miners
+are very short term) and 100% APR (if all min-
+ers commit for a long term). The inflation will
+decay exponentially every day, halving some
+time between 2 years (if all the miners are long
+term) and 4 years (if all the miners are short
+term). fig. 5
+Long Term Commitment (1+ Years)
+
+— — Short Term Commitment (1 Month)
+
+8
+
+20
+
+Annual Inflation Rate (%)
+
+Years
+
+Figure 5: Annual inflation over the years
+when tokens are locked with long and short
+commitments
+
+VI. RELATED WORK
+
+The majority of proof of stake networks such
+as Ethereum 2.0 [17], Tezos [18], and Cardano
+[19] all use a single token model. However,
+there seem to be networks that are experiment-
+ing with more novel models. In this section, we
+will review some of these systems and explore
+the differences with Akash’s token model.
+
+A. Cosmos Hub
+
+Akash and Cosmos Hub use Tendermint [9]
+Consensus Algorithm and share a core set of
+values with interoperability and user experi-
+ence. Similar to Cosmos’s Atom [13], AKT’s
+rimary utility is to provide economic security
+o the network. Akash’s model variously im-
+roves Cosmos’s model. First, AKT provides a
+mechanism to normalize compute prices for the
+marketplace auction. Secondly, Akash intro-
+duces a mechanism to lock in an exchange rate
+0 a reserve currency of choice to mitigate mar-
+et drive volatility risk of AKT when leasing
+computing for more extended periods. Finally,
+
+Akash’s block reward distribution is propor-
+
+ional to the time and amount of a stake, unlike
+Cosmos’s model where the distribution is ho-
+
+mogeneous for a fixed time. Cosmos imposes a
+
+11
+
+21-day “unbonding” period — considered lock
+up — and there is no incentive to commit for
+more extended periods. Whereas, stakers in
+Akash can choose to commit for one month to
+a year, for which they will receive ~54% and
+100% compensation respectively.
+
+B. NEO
+
+According to NEO’s white paper [12]:
+
+NEO network has two tokens.
+NEO representing the right to man-
+age NEO blockchain and GAS rep-
+resenting the right to use the NEO
+Blockchain.
+
+At the surface, NEO’s primary utility is a
+staking token and GAS is the fee token. How-
+ever, after closer observation, NEO’s model is
+very different from Akash’s model.
+
+Firstly, NEO is used as a mechanism to
+determine how many votes each NEO account
+gets without a requirement to stake tokens.
+Each account can vote for as many validator
+candidates as they wish and each validator
+candidate they vote for receives the number of
+
+votes equivalent to the amount of NEO in the
+voter’s account.
+
+With regards to the fee, NEO’s chain only
+supports a single fee token, unlike Akash’s
+multi-token model. Furthermore, unlike
+Akash, NEO does not provide volatility pro-
+
+tection for the GAS tokens.
+
+Cc. EOS
+
+EOS’s delegated proof of stake consensus [20]
+has similarities with Akash’s model but is ex-
+tensively different. In EOS, each token holder
+can stake their tokens in order to vote for block
+
+producer and in return, they are rewarded in
+resource units such as CPU, RAM, and NET
+that can be spent for transactions on the net-
+work. However, like in NEO, the staking token
+EOS is not staked by the block producers, and
+it is not slashable in the case of misbehavior.
+
+In EOS, staking means, stakers are putting
+tokens in a lockup period and not necessarily
+contributing to the functionality of the net-
+work. Stakers earn rewards in CPU, RAM, and
+NET that are used to purchase computational
+resources on the network. These resources are
+CPU and NET are only
+spendable by the receiver, whereas RAM can
+
+not transferrable.
+
+be traded with other users in a Bancor-style
+marketplace [21].
+
+EOS burns these resources upon spending,
+instead of giving them to block producers. The
+validator compensation model is unclear, con-
+
+sidering transaction fees is not the primary
+
+mechanism. EOS is seemingly a single to-
+ken network, despite having nuances and addi-
+
+tional steps.
+
+VII. CONCLUSION
+
+This paper explains the network and min-
+ing economics of Akash Network and presents
+various incentives and utilities of different to-
+kens in the staking and fees mechanisms. The
+Akash Token (AKT) acts as staking token and
+reserve currency for the network while using a
+
+multitude of tokens for settlement.
+
+[1] “Worldwide Market Share Analysis: IaaS
+and IUS” [Online]. Available: https://www.ga
+rtner.com/en/newsroom/press-releases/2019-
+07.
+oud-services-market- grew-31point3-percent-
+in-2018
+
+[2] “Cloud Infrastructure Market - Global
+Forecast to 2022” [Online]. Available: https:
+
+29-gartner-says-worldwide-iaas-public-cl
+
+12
+
+//www.marketsandmarkets.com/PressRelea
+ses/cloud-infrastructure.asp
+
+[3] “Cisco Global Cloud Index: Forecast
+and Methodology, 2016-2021 White Paper”
+[Online]. Available: https: //www.cisco.co
+m/c/en/us/solutions/collateral/service-
+provider /global-cloud-index-gci/white-paper-
+c11-738085.html
+4] J. Kaplan, N. Kindler, and F. William,
+“Revolutionizing Data Center Efficiency McK-
+[Online]. Available:
+https://www.sallan.org/pdf-docs/McKin
+
+insey and Company.”
+
+sey_ Data_Center_Efficiency.pd
+5] “Uptime Institute Comatose Server Sav-
+ings Calculator.” [Online]. Available: https:
+//uptimeinstitute.com/resources/asset /coma
+tose-server-savings-calculator
+
+6] “Prime Leverage: How Amazon Wields
+he Technology World” [Online].
+Available: https: //www.nytimes.com/20
+
+Power in
+
+19/12/15/technology /amazon-aws-cloud-
+competition.html
+[7] “RightScale 2019 State of the Cloud Re-
+port.” [Online]. Available: https://www.fle
+xera.com/about-us/press-center/rightscale-
+
+2019-state-of-the-cloud-report-from-flexera-
+
+identifies-cloud-adoption-trends.html
+
+8] “What is a Container?” [Online]. Avail-
+able: https://www.docker.com/resources/wha
+t-container
+
+9] E. Buchman, J. Kwon, and Z. Milsosevic,
+“The latest gossip on BFT consensus” [Online].
+Available: https://arxiv.org/abs/1807.04938
+10] G. Wood, “Ethereum: A Secure De-
+centralised Generalised Transaction Ledger.”
+[Online]. Available: https://gavwood.com/pa
+per.pdf
+11] N. Satoshi, “Bitcoin: A Peer-to-Peer
+Electronic Cash System.” [Online]. Available:
+https: //bitcoin.org /bitcoin.pdf
+
+12] “NEO Whitepaper.” [Online]. Available:
+p://docs.neo.org/docs/en-us/basic/white
+
+h
+paper. html
+
+aa
+
+3] S. Aggarwal, “Cosmos Multi-Token
+Proof of Stake Token Model” [Online]. Avai
+able: https://github.com/cosmos/cosmos/b
+lob/master /Cosmos_Token_Model.pdf
+4| M. Egorov, M.
+
+“NuCypher: Mining & Staking Economics”
+Online]. Available: https://www.nucyph
+er.com/static/whitepapers/mining-paper.pd:
+5] E. Duffield and D. Diaz, “Dash: A
+Payments-Focussed Cryptocurrency.” [Online].
+Available: https://github.com/dashpay /dash/
+wiki/Whitepaper
+6] “ZCash Emmission Rate.” [Online].
+Available: https://z.cash/technology /
+17] “Ethereum 2.0 White Paper.” [Online].
+Available: https: //github.com/ethereum/wi
+ki/wiki/White-Paper
+
+18] L. M. Goodman,
+
+Wilkinson, and,
+
+“Tezos: a_self-
+
+13
+
+amending crypto-ledger.” [Online]. Available:
+https://tezos.com/static/white_paper-
+2dc8c02267a8fb86bd67a10819944 1bf.pdf
+
+{19] A. Kiayias, A. Russell, B. David, and
+R. Oliynykov, “Ouroboros: A Provably Secure
+Proof of Stake Blockchain Protocol.” [Online].
+Available: https://iohk.io/research/paper
+s/#ouroboros-a-provably-secure- proof- of-
+stake-blockchain- protocol
+
+[20] D. Larimer, “EOS: Technical Whitepa-
+per.” [Online]. Available: https://github.com
+/EOSIO/Documentation/blob/master/Tec
+hnicalWhitePaper.md
+
+[21] “EOS RAM 101: Non-Technical Guide-
+book for Beginners.” [Online]. Available:
+https: //medium.com/coinmonks/eos-ram-
+101-non-technical- guidebook-for- beginners-
+6£971322042e

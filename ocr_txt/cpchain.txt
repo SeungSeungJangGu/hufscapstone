@@ -1,0 +1,137 @@
+Cyber-Physical Chain (CPChain) Light Paper
+Decentralized Infrastructure for Next Generation
+
+Internet of Things
+
+CPChain
+
+CYBER PHYSICAL CHAIN
+
+Cyber-Physical Chain (CPChain) Team
+
+December 10, 2017
+Abstract
+
+Deeply integrating blockchain and Internet of Things (IoT)
+technologies, Cyber-Physical Chain (CPChain) builds new
+generation distributed IoT system architecture with decentralized and
+trustworthy characteristic. CPChain aims to reduce the cost of system
+connectivity, increase the value of open data sharing and ensure user
+privacy and system security for IoT.
+
+CPChain focuses on the scalability, security and real-time
+problems of the application of blockchain technology to the IoT
+industry. Combining the three technologies of blockchain, IoT and
+distributed encryption storage and computing, CPChain construct a
+new generation of IoT architecture, which provides a full process
+solution for data acquisition, storage, sharing and application in the
+IoT industry.
+
+CPChain is focused on multiparty data transactions and artificial
+intelligence decision applications based on big data analysis. By
+establishing multi-party trust and realizing the interconnection of
+heterogeneous data, it solves the typical problem in traditional IoT
+industry. Furthermore, we can create an innovative business model
+
+for new generation of data sharing on CPChain.
+Existing IoT bottleneck problems
+
+1. Cost. The centralization characteristics of
+the current IoT system causes the problem
+of poor interoperability and high
+
+interconnection cost among devices and IT
+
+systems.
+
+2. Isolability. The traditional IoT architecture . tg
+
+is a proprietary structure for specific ae
+
+application scenarios, which is likely to
+result in isolated data island. Moreover, the
+
+data value cannot be fully utilized.
+
+3. Privacy and Security. Privacy leakage and
+cyber attack are frequent reported recently on Data
+IoT, which shows that users’ privacy data and
+
+system security are not well protected.
+Deeply _ integration of Blockchain
+
+technology and IoT technology
+
+fal “ge fgl
+igi
+
+CPChain will overcome the bottleneck problems in the
+current IoT system by considering four critical technologies,
+which include distributed cloud storage, data _ security
+cryptography, blockchain technology, and large-scale distributed
+
+network consensus protocol.
+
+1. A decentralized system is built by integrating with
+blockchain technology to guarantee that the data on the chain
+
+is permanently valid and  untamper-proof. It provides
+verifiability and traceability for various IoT application.
+
+.A novel technology of combing cryptography and
+distributed hash table (DHT) is proposed to solve the
+scalability problem of the data storage in traditional blockchain.
+. Ahighly efficient distributed consensus protocol is designed
+to encourage users participation and promote the cooperation
+of all parties involved in the system.
+
+. Both  re-encryption and homomorphic — encryption
+technologies are implemented to guarantee the operation of
+the system, protect users’ privacy data, and further enhance the
+
+confidence of users.
+Interconnection of different
+
+industries
+
+pan Shared travel
+4. 4s 7]
+
+Real-time sharing of
+traffic conditions
+
+4 Aa iil
+| {iit Jl L
+
+uN \7
+
+\7
+. ; P lized
+[Ss Logistic tracing y oN Digital assets eu S
+eRe
+
+CPChain provides a basic data platform, by which different
+industrial IoT systems are effectively connected and different
+industry data can be intelligently interacted. Taking the traffic data
+as an example, CPChain provides a comprehensive process solution
+
+for optimization of traffic scheduling, customization of vehicle’s
+personalized insurance, routing optimization of vehicle navigation
+
+and driving assistance, etc.:
+
+1. Transport video data—>CPChain data platform—>Big data analysis—>
+optimization of traffic scheduling
+2. Users’ driving record—> CPChain data platform—>Big data analysis—>
+
+customization of vehicle personalized insurance
+
+In terms of the IoT-data-based artificial intelligent decisions,
+taking electric vehicles as an example, the CPChain data platform can
+obtain sensors data of all kinds of key equipment of electric vehicles
+and battery charging/discharging to _ realize the predictive
+maintenance of electric vehicles. Moreover, combining with travel
+data and charging pile data, CPChain can establish a shared travel and
+charging platform for electric vehicles, which enables our green and
+
+economic travel.

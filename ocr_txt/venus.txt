@@ -1,0 +1,468 @@
+Venus
+
+The Money Market &
+Synthetic Stablecoin Protocol
+
+v1.2
+November 27, 2020
+Swipe Wallet
+
+Abstract: Venus Protocol (“Venus”) is an algorithmic-based
+money market system designed to bring a complete decentralized
+finance-based lending and credit system onto Binance Smart
+Chain. Venus enables users to utilize their cryptocurrencies by
+supplying collateral to the network that may be borrowed by
+pledging over-collateralized cryptocurrencies. This creates a
+secure lending environment where the lender receives a
+compounded interest rate annually (APY) paid per block, while the
+borrower pays interest on the cryptocurrency borrowed. These
+interest rates are set by the protocol in a curve yield, where the
+rates are automated based on the demand of the specific market,
+such as Bitcoin. The difference of Venus from other money market
+protocols is the ability to use the collateral supplied to the market
+not only to borrow other assets but also to mint synthetic
+stablecoins with over-collateralized positions that protect the
+protocol. These synthetic stablecoins are not backed by a basket
+of fiat currencies but by a basket of cryptocurrencies. Venus
+utilizes the Binance Smart chain for fast, low-cost transactions
+while accessing a deep network of wrapped tokens and liquidity.
+Table of Contents
+
+Table of Contents
+
+Introduction
+Problems
+Solution
+Use Cases
+
+Venus
+
+Supplying Assets
+
+Borrowing Assets
+
+Synthetic Stablecoins
+Pricing Mechanisms
+Stablecoin Parameters
+Stablecoin Redemption
+
+Venus Token (XVS)
+vTokens
+
+Protocol Architecture
+Controller Contract
+Collateral Value
+
+Value Oracles
+Governance
+Liquidations
+Interest Rates
+
+Reserve Factors
+
+Conclusion
+
+References
+
+OOD O WOWAANDO RB WwW ND
+
+aoa oa ao an an 2 eo
+NNNAOOO Oo
+
+= =
+wo ND
+Introduction
+
+The Venus Protocol is designed to enable a complete algorithmic money market protocol on
+Binance Smart Chain. The protocol designs are architected and forked based on Compound[1]
+and MarkerDAO[2] and synced into the Venus platform giving the benefits of both systems into
+one.
+
+Problems
+
+The evolution of decentralized finance has created a diverse financial ecosystem built directly
+on blockchains, which are transparent/verifiable through cryptography and pre-defined coding
+known as smart contracts. These platforms are redefining the structure of money markets
+without the need for a central authority or third-party decision-makers. In today’s traditional
+world, users will need to provide creditworthiness, provable income, and other factors for a
+lender to make a decision even when the user provides collaterals such as homes or cars.
+Traditional lenders do not enable digital assets and cryptocurrencies to be pledged and used to
+receive loans or earn interest rates for providing them to the lenders and banks.
+
+Venus is not the first protocol to help bridge these gaps between traditional financial lending into
+decentralized protocols on top of blockchains. There have been protocols that achieved this with
+billions in assets locked into the protocols. However, these protocols are primarily built on
+Ethereum, which has become costly, slow, and has caused pain points in user experience.
+These protocols also lack higher market cap assets such as XRP and Litecoin.
+
+The current protocols are also heavily centralized such as Compound, where stakeholders and
+private equity funds seem to be able to control most of the decision-making and do not have a
+variety of other control mechanisms. Their distribution plan does not equate to decentralization.
+Also, over $1 billion in Ether[3] are locked up in MakerDao Contracts that earn no value but
+come at a cost to those minting assets.
+
+Lastly, in today’s landscape, a user who wants to use their assets to mint stablecoins must
+remove it from a money market protocol and lock it up in a smart contract with no benefit of the
+underlying asset as collateral.
+Solution
+
+Creating a protocol that enables a traditional money market tied into synthetic stablecoin
+generation will lead to accessibility and benefit of locked collateral. Venus will enable anyone to
+utilize a high-speed and low transaction cost blockchain by leveraging Binance Smart Chain[4]
+to supply collateral, earn interest on that collateral, borrow against that collateral, and mint
+stablecoins on-demand within seconds. These solutions all happen directly on the blockchain
+and may be utilized using a GUI. This protocol unlocks billions of dollars in value that are
+currently on-chains that have no lending markets such as Bitcoin, XRP, Litecoin, and more while
+enabling the participant to access liquidity in real-time.
+
+Use Cases
+
+Alice wants to buy her new dream house, but the bankers have declined her application. Alice
+has been a cryptocurrency advocate for years and has a good portfolio, but doesn’t want to
+expose herself to capital gains tax to sell the asset and not earn any potential appreciation.
+Then again, Alice believes in the underlying technology of cryptocurrencies as she believes in
+the mid and long-term growth of the asset class. So what does Alice do? She can’t use her bank
+to borrow money from her asset class. She can’t sell at the moment and expose herself to taxes
+and missing opportunities.
+
+Alice turns to the Venus protocol by using the token canal project to move her XRP from the
+XRP Ledger to the Binance Smart Chain with no fees. She then utilizes her browser and the
+internet to access the Venus Dashboard and supplies her XRP to the protocol. She is now
+benefiting from the potential price appreciation of her XRP while earning a modest APY on her
+supply. She then prepares to take a loan in USDC by calculating how much she needs, then
+utilizing the dashboard to take the loan. Without any bankers or third parties involved, the
+protocol will calculate her collateral value and let take an over-collateralized loan on it. She
+borrows USDC instantly and uses her crypto exchange account to convert it into local fiat
+currency. Now Alice has enough funds to buy her dream house while waiting for the markets.
+She is not obliged to any monthly payments, and her collateral appreciation can be used in her
+favor. She can make payments at any time and pay no additional interest as interest rates are
+compounded per block.
+
+Lastly, Alice has been paying attention to DeFi and all the new yield farming high APY returns
+that she could be earning. These potential earnings may be short-lived but are real for the time
+being. How does Alice take advantage of this? Does she want to jump through hurdles to get
+some of her collateral out to mint a stablecoin in another protocol? No - Alice wants a
+one-stop-shop solution so she can participate in yield farming quickly. Within the dashboard or
+the smart contracts, she can mint stablecoins without any central authority and use those newly
+minted stablecoins onto the latest DeFi yield farming project with ease.
+Venus
+
+The Money Market & Synthetic Stablecoin platform.
+
+Key Features:
+
+e Borrow cryptocurrencies and stablecoins with no credit check and fast origination directly
+on Binance Smart Chain.
+
+e Supply cryptocurrencies and stablecoins and earn a variable APY for providing liquidity
+the protocol that is secured by over-collateralized assets.
+
+e Mint stablecoins from your supplied collateral that can be used at over 60 million
+locations worldwide through the Swipe platform and more.
+
+e Controlled by the Venus Token, a governance token designed to be a fair launch
+distribution for the community.
+
+Dashboard
+
+@ 0.0000 On7f...2fe2 7 Wallet Balance Borrow Balance
+
+$38,827.84 i $3,828.80
+
+Supply Market
+
+@ Ethereum Overview $353.72 USD 3 alle eral
+
+Ethereum
+
+Ow
+
+@ riers: ary
+
+173,233.18264 ETH Borrow Limit
+32.81%
+75%
+80%
+5%
+
+Borrow Limit Used
+
+Supplying Assets
+
+Venus Protocol users may supply various supported cryptocurrencies or digital assets onto the
+platform, which can be used as collateral for loans, supply liquidity and earn an APY, or to mint
+synthetic stablecoins.
+
+Supplying assets such as cryptocurrencies or digital assets to Venus gives the users the ability
+to participate as a lender while maintaining the security of collateral in the protocol. Users will
+earn a variable-based interest rate depending on the yield curve utilization of that specific
+market. All user assets are pooled into smart contracts so that users can withdraw their supply
+at any time, given that the protocol balance is positive.
+
+Users who supply their cryptocurrency or digital asset to Venus will receive a vToken, such as
+vBTC, which is the only token that can be used to redeem the underlying collateral supplied.
+This will enable users to use these tokens to hedge against other assets or move them into cold
+storage wallets that support Binance Smart Chain.
+
+1. Deposit
+* collateral
+
+Alice
+
+2. Mint
+vTokens
+
+Example: Depositing Collateral
+
+1. Burn
+we vTokens
+
+Alice
+
+2. Withdraw
+collateral
+
+Example: Withdrawing Collateral
+
+Borrowing Assets
+
+Users who want to borrow any of the supported cryptocurrencies, stablecoins, or digital assets
+from Venus must pledge collateral that will be locked on the protocol. These assets must be
+over collateralized and will enable up to 75% of that collateral value borrowed. These collateral
+ratios are determined by the protocol and are controlled through the Governance process, which
+is documented in this Whitepaper.
+
+Once these assets are supplied, you can borrow based on the collateral ratio of the asset.
+Typically collateral ratios are set anywhere from 40% to 75%. For example, if Bitcoin has a
+collateral value of 75%, that means you can borrow up to 75% of the value of your BTC. If the
+user has $100,000 in BTC supplied to the Venus protocol, that means they can borrow up to
+75% of the value. However, if a user’s collateral value drops below 75%, or whichever collateral
+ratio percentage that a certain asset has, it could cause a_ Liquidation event, which will be
+discussed later.
+
+Users will have a compound interest rate that will be applied per block on these assets and
+have no monthly payment obligations. To return the collateral, the user must pay off their
+origination balance and compounded interest back to the protocol.
+
+Market interest rates are determined by the specific yield curve that is designated in the
+contract. Depending on the market utilization, it will determine what the interest rate will be for
+that specified market.
+
+Borrows Supplys
+collateral ee
+
+collateral se,
+
+v
+
+Supplys . Over-collateralized . Alice
+
+collateral “ security
+
+Example: Borrowing on supplied collateral
+
+Synthetic Stablecoins
+
+The Venus Protocol, to start, will enable users to mint VAI (VAI), a synthetic stablecoin based
+on the price of $1 USD, by using the vTokens from the underlying collateral that they have
+previously supplied to the protocol. Users can borrow up to 50% of the remaining collateral
+value they have on the protocol from their vTokens to mint VAI.
+
+Stablecoins on the Venus Protocol can be synthetically designed through Governance and
+added as a proposal. VAI will be the protocol's default stablecoin that can be minted by
+collateral already pledged in Venus.
+
+These stablecoins will not have yielded curves that determine their interest rates, which in other
+protocols are known as stability fees. Interest rates will be determined by the Governance
+process within the Venus Protocol.
+
+Pricing Mechanisms
+
+Since no underlying fiat reserves are guaranteeing the value of the synthetic stablecoin on the
+Venus Protocol, it will rely on market forces, the basket of collateral, and safety mechanisms to
+maintain its peg to the fiat currency it is designed to synthesize. As an example, VAI will
+originally maintain a peg of 1:1 per VAI:USD.
+
+The market is encouraged to maintain this peg so that programmatic mechanisms designed to
+protect the peg will not be initiated by the protocol.
+
+If there becomes a point where VAI or another synthetic stablecoin loses its peg value, the
+protocol can use the Governance process to initiate the Price Adjustment Module. This module
+will enable the change of parameters within the stablecoin system on Venus to disattach the
+peg and create a change in supply and demand to bring the stability back to its original peg.
+
+This system will enable two main points. A benefit to hold/buy a synthetic stablecoin, or
+mint/borrow a synthetic stablecoin. This is determined whether the price peg has become
+negative or positive due to external market conditions.
+
+Stablecoin Parameters
+
+Users who have the protocols native tokens can create proposals to change specific parameters
+of the synthetic stablecoins on the platform by utilizing the on-chain Governance system. These
+parameters are set up from a protocol-risk perspective to protect the interest of the users and
+the platform. The parameters that users can control are the following:
+e Max Supply: This determines the maximum number of synthetic stablecoins units can
+be minted at any given point to determine the synthetic stablecoins maximum supply.
+
+e Interest Rate: The interest rate parameter controls how much in interest fees the user
+pays for minting these synthetic stablecoins.These interest rates go directly into the
+Reserve Factor community funds.
+
+e Collateral Ratio: Each synthetic stablecoin will be a liquidation price. These liquidation
+prices are controlled by the Collateral ratio for each synthetic stablecoin.
+
+e Penalty Ratio: If a liquidation occurs, there will be a penalty percentage you must pay
+the protocol. This penalty ratio is set by the protocol.
+
+Stablecoin Redemption
+
+Synthetic stablecoins on the Venus Protocol are created by supplying and locking a single or
+basket of cryptocurrencies. Users can redeem vUSD for other assets by trading with them in the
+Swipe Wallet platform. vUSD is exchangeable to all supporting assets, including USD, which
+can be redeemed directly to your bank account for verified users.
+
+Venus Token (XVS)
+
+The Venus Protocol is governed by the Venus Token (XVS), which is designed to be a “fair
+launch” cryptocurrency. There are no founder, team, or developer allocations, and the XVS can
+only be earned through the Binance LaunchPool project or through providing liquidity to the
+protocol.
+
+There will be an initial 20% of the total supply of 30,000,000 (6,000,000 XVS) allocated to the
+Binance LaunchPool project where users can mine (farm) these tokens alongside 1% of the
+total supply (300,000 XVS) placed aside for the Binance Smart Chain ecosystem grants. Mard
+is king. The remainder of the supply will be exclusively available for the protocol, which will
+result in 23,700,000 XVS mined over a period of approximately four years, which begins after
+the Binance LaunchPool event at a rate 0.64 XVS per block (18,493 per day). The distribution of
+XVS is based on liquidity mining, where 35% of the daily rewards get distributed to borrowers,
+35% to suppliers, and 30% for stablecoin minters.
+
+vTokens
+
+The protocol-created pegged assets when collateral is supplied are called vTokens. vTokens
+represent the unit of the collateral supplied and can be used as a redemption tool. vTokens are
+created and implemented by Governance processes and voted by Venus Token holders.
+Protocol Architecture
+
+The protocol has been designed as a fork codebase of MakerDAO and Compound and modified
+to enable both features into one.
+
+Controller Contract
+
+The Controller smart contract deployed on Binance Smart Chain is the decentralized version of
+a processor. This smart-contract creates all the interactions between other associated smart
+contracts. Venus does not natively support tokens by default. It will rely on specific markets to
+be whitelisted within the Controller contract. The protocol has access to whitelist markets by
+utilizing the admin function: supportMarket with parameters for address and interest rate
+models. For an asset to have a functional marketplace, there must be a valid price feed from the
+Value Oracles alongside a Collateral Factor. Every interaction with the protocol will be verified
+and validated through the Controller smart contract, which validates liquidity and collateral
+before a function is executed.
+
+Collateral Value
+
+When a user supplies, borrows, or mints from the Venus protocol, they are using an underlying
+asset to the first bond to vTokens. These underlying assets held as collateral in the platform
+have dollar values that are tied to the vTokens as well. For this system to work properly,
+collateral values are pulled from market rates. To pull these market rates efficiently, we will be
+utilizing Band Oracles to grab market prices and update the protocol on-chain.
+
+Value Oracles
+
+Collateral Values are propagated from price feed Oracles, such as Chainlink, which pull market
+price data and send these values on-chain, so they are transparent and verifiable. Due to the
+fast speed and architecture of the Binance Smart Chain, these price feeds are easily
+ascertainable with low cost and high efficiency directly on-chain. Currently, there is a hurdle of
+bottleneck issues from oracles, such as Chainlink, which are provided on Ethereum. With rising
+gas costs and congestion, these pricing oracles are not updating prices as efficiently or
+economically.
+Governance
+
+Venus has been designed to enable community control in its core. Since there are no pre-mines
+for the team, developers and founders, this means the protocol will be controlled by those who
+decide to mine Venus Tokens. To create a proposal, a proposer will need 300,000 XVS and the
+proposal must reach at minimum 600,000 XVS quorum to be approved..
+
+Governance features include:
+e Adding new cryptocurrencies or stablecoins to the protocol
+Adjusting variable interest rates for all markets
+Setting fixed interest rates for synthetic stablecoins
+Voting on protocol improvements/proposals
+Delegate protocol reserve distribution schedules
+
+Proposal Created Voting Active (3 Days) Voting Ends Timelock (2+ Days)
+
+i
+
+Pe ia.
+F ", / \
+* Succeeded —————> ( Queued 9 ————>
+. E \ yi
+Pending Active
+
+Defeated : Expired
+
+Canceled
+
+Example: Venus Governance Proposals/5]
+
+Liquidations
+
+A user’s collateral may be liquidated if it falls below the thresholds required for the borrow or
+stablecoin side of a specific coin market. These liquidations are subject to a liquidation fee and
+to satisfy the outstanding debt. The remaining collateral, if any, is then returned to the user. A
+liquidator can stand to benefit from liquidating a collateralized position.
+
+Interest Rates
+
+The protocol has interest rates that are designated per market from both the supply side and the
+borrowing side. Interest rates are also applicable for synthetic stablecoins that are created on
+the Venus protocol such as vUSD.
+
+The interest rates provided for markets that can be borrowed or supplied are dynamic and have
+a yield curve that varies based on utilizations. These interest rates are also set from a floor to
+ceiling based on the Governance process of the protocol.
+
+For synthetic stablecoins, the interest rates to mint these are fixed. There is no variable interest
+rate design in these interest rates. However, through the Governance process, users are able to
+control.
+
+Reserve Factors
+
+Each vToken contract and underlying collateral will have a reserve factor from a basis of 0-90%.
+This means there will be reserves that the protocol captures between the spreads of borrowing
+and supplying. These reserve factors are added to the protocol and can be used for community
+development, improvements, protections, and more. These Reserve Factor funds are controlled
+by the Governance process and can be used in a variety of protocol security distributions or
+rewards mechanisms.
+
+Conclusion
+
+The Venus Protocol has been designed to give platform users a decentralized and secure
+marketplace to take loans, earn interest, and mint synthetic stablecoins. The protocol runs
+entirely on the Binance Smart Chain, which removes current pain-points on the Ethereum
+blockchain in terms of congestion, lack of cross-chain compatible assets, and high transaction
+fees. These standards are coupled to give a scalable solution on a money market that will be
+completely controlled by the community through its governance token XVS. XVS is distributed
+via a fair-launch mechanism with no founder and team allocations, backed by an already
+well-funded organization and the team over at Swipe, a Binance portfolio company/[6].
+References
+
+1.
+
+Compound Protocol, whitepaper written by Robert Leshner and Geoffrey Hayes,
+February 2019, https://compound.finance/documents/Compound. Whitepaper.pdf
+MakerDAO and DAI, whitepaper written by Maker Foundation Team, December 2017
+https://makerdao.com/whitepaper/DaiDec17WP.pdf
+
+DeFi Pulse, Maker, Value Locked: https://defipulse.com/maker
+
+Binance Smart Chain, https://www.binance.org/en#smartChain
+
+COMP Token Governance, Robert Leshner, February 2020,
+https://medium.com/compound-finance/compound-governance-5531f524cf68
+
+Binance acquires Swipe, by Binance, July 2020,
+https:/www.binance.com/en/blog/421499824684900723/Binance-and-Swipe-Partner-to-
+Bridge-Crypto-and-Commerce-Announce-Acquisition-
+

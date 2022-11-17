@@ -1,0 +1,1036 @@
+Mossland
+
+Mossland Ltd.
+
+MOSSLAND
+
+Ver 2.1
+Contents
+
+CONTONMS...... ee eeecessssececcsecececsccecececscsesececseseccscsesesececsesececscsesesececsesesececsesesececsesesececsesecececsesesececsssesececsesesecececeeee 2
+DT IMtrOMUCHION 00. eee eeecesesseeecececsecececscsecececscsesecscscsescecscsecececucsesececsesecececsesecececsesesececsesesecececsesesecsceseeeecees 3
+2 MOSSIANA .......... eee esscecsssecececessecececscsesececscseccecsesececscsesecececsesesececsesesececsesesececsesecececsesecececsesecececsesecececseseseeeeeceeee 5
+
+2.1 Property Trading and Currency ...
+2.2 Location Based Services ..
+2.3 Additional Platforms Compatible with Mossland: Location based P2P(Peer to Peer) Advertising
+platform(Mossland Advertising Platform) ...
+
+3 MOSS Cod... sesesessssececssssececsccccececscsececscscsesececsesececscsesssececsesesececsesesececsesesececsesesececsesesececsesesececseseeeeecees 12
+3.1 SUMIMALY......eessesecsesescsssscecsssssssssscssnssessssecessessssssessssessscassssececsssessesecesesessasecsesesessaseesesessesassesecsesesecasecee
+3.2 Moss Coin Usages
+3.3 Moss Coin Distribution
+3.4 ISSUANCE Of MOSS COIN........ssessessceesesescssesessessscssessssessscassssesessssessesecsesesessasecsesessssasessesecseseseesecsesesessaseaee 15
+
+4 Moss Chain...
+
+4.1 Technical Aspects of the Mossland Blockchain Application... .
+4.2 Decentralization Of MOSSIANG.........sssssesesssesssessssssesesssesssesssssssssessssssssssssssssssesesesesssesssessssssessesseseseseses
+
+5 ICO (Initial Coin Offering). .18
+5.1 Pre-ICO...
+5.2 Main ICO.
+5.3 Moss Coin lock-up period and distribution schedule ..
+5.4 Perks for Moss Coin buyers.
+5.5 Policy and precautions
+
+6 Market Insights
+
+6.1 Location-based Check-in app...
+6.2 Item Trading Market
+
+8.1 Reality Reflection.
+8.2 Members
+
+1 Introduction
+
+Mossland is a gaming platform centered around virtual properties of landmarks from the real world.
+Mossland utilizes the in-game currency Moss Coin (MOC), an ERC-20 based cryptocurrency, to run the
+in-game economy.
+
+Through the platform, virtual properties are bought and sold, auctions are conducted, and
+accessories can be created in the form of ERC-721 tokens. The effort users put into a virtual property
+(upgrading a virtual property, applying accessories, increasing user check-ins etc.) can also be stored in
+the ERC-721 format or in an advanced form of blockchain technology. Users will have a simultaneous
+ownership of virtual properties and accessories in all the services under the Mossland platform.
+
+Instead of making an individual gaming environment with their own virtual properties and
+ownerships, game producers will have access to a market with a sufficient number of users and a
+convenient virtual property trading system by choosing Mossland as their platform to develop their
+own services.
+
+If a new blockchain technology with higher performance and correspondingly lower transaction fees
+is introduced after Mossland is launched, Mossland may be converted to a blockchain-based platform
+and all Mossland’s assets would then become on-blockchain assets.
+
+Figure 1: Real-world property with a player-added accessory
+Mossland: The Auction - Virtual Landmark Auction Service
+
+Mossland: The auction is an auction service where users can trade virtual landmarks, the core assets
+of the Mossland Platform. Users can participate in the auction to win landmarks provided by Mossland
+and eventually resell them to other users for Moss Coin (MOC) through the open auction. Transactions
+in Mossland: The Auction are executed using Moss Coin, Mossland’s blockchain-based cryptocurrency.
+The service was launched in October 2018.
+
+Mossland: The Hunters - Location Based Treasure Hunt Service
+
+Mossland: The Hunters is a location-based service (LBS) in the form of a treasure hunt centered on
+the virtual landmarks and buildings that can be earned by participating in Mossland: The Auction. Users
+will be able to collect various items distributed throughout the map which can be exchanged to goods.
+Mossland and landmark owners can earn advertisement fees by hosting advertisements from hosts in
+Mossland’s world or their own property. The advertisement fee (usually Moss Coin in this case) will be
+divided among Mossland, the owner of the landmark and users who watch the advertisement. As users
+seek for treasures, they will naturally be exposed to the advertisements, resulting in a high overall
+conversion rate.
+
+Mossland: The Auction and Mossland: The Hunters are services under the Mossland Platform which
+means that they use the same virtual property values. In one aspect, these two services can be seen as
+the alpha versions of Mossland: The City as it will be released in advance to pre-validate some main
+features of Mossland: The City to improve game quality and broaden the initial user base.
+
+Mossland: The City - Virtual Landmark Management and Gaming Service
+
+Mossland: The City is a location-based gaming service focused on collecting and managing virtual
+landmarks. Upon winning a landmark in Mossland: The Auction, landmark owners can manage their
+buildings by controlling various features such as decorating their properties with digital accessories.
+Users can also communicate with other landmark owners or users by chatting and checking into
+buildings etc.
+
+As our player base expands and service launches in various countries, the virtual property market
+will continue to expand with new landmarks and functions such as accessories and gradually increase
+the engagement of third-party contributors using Mossland’s ecosystem.
+
+Auctions
+
+Sydney Opera House
+
+2k Gorilla Dragon
+( 10,120,712
+
+0712 left w
+
+Cancel
+
+CONFIRM
+
+Figure 2: Mossland: The Auction. Exchanges are made using Moss Coin
+2 Mossland
+
+2.1 Property Trading and Currency
+
+Mossland: The Auction provides an auction and in-game currency system which enables users to
+trade virtual properties among themselves. With the implementation of such features, developers may
+be able to easily create games where users can deal with virtual assets. This can be implemented on
+games that need an auction system and provide an easier environment for Mossland and third-party
+developers to make games based on landmarks and assets.
+
+Trading
+
+Players can buy, sell, and exchange properties with other players in Mossland: The Auction. All
+transactions are moderated by an open auction system where no direct exchanges between players are
+allowed in order to ensure that all exchanges are fair and take place within Mossland.
+
+Currency
+Mossland's economy may ultimately be governed by three currencies: Gold, Gem and Moss Coin
+(MOC). Each currency has a different value and a slightly different use case.
+
+Gold is the most common in-game currency which would be generated by the gameplay and spent
+by users without any supply control. Players could acquire Gold through check-ins, missions and in-app
+purchases. Therefore, the total supply of the Gold can only be controlled indirectly through game
+contents.
+
+Gem is a premium in-game currency used for buying premium features and Items in the game.
+Gems are only given out through certain events or acquired through in-app purchase. Like Gold, the
+supply of Gem is only loosely controlled since there is no limitation on in-app purchase.
+
+Moss Coin is the in-game currency used in Mossland for players to purchase and exchange virtual
+property. Players can purchase Moss Coin through cryptocurrency exchanges with other
+cryptocurrencies such as Bitcoin and Ethereum or through in-app purchases. However, once the total
+amount of Moss Coins available for in-app purchase runs out, players will no longer be able to purchase
+Moss Coin and will only be able to acquire it externally on P2P markets or through property sales in
+Mossland: The Auction. Each Moss Coin transaction in Mossland: The Auction will also have an
+associated transaction fee, which will be collected by the Mossland team. Transaction fees will be
+partially redistributed in the game or locked in Mossland’s cold wallet to moderate the in-game
+economy.
+
+Currency Type Gold Gem Moss
+Supply Unlimited, In-Game | Unlimited, In-Game Finite, Limited
+In-app Purchases
+Currency Sources | In-game Rewards Exchange Purchases
+In-app Purchases
+In-app Purchases B2C & P2P Ads
+
+Property Sales
+P2P Ad Purchases
+Currency Sinks Game Contents Game Contents Property Purchases
+
+Auction House Fees
+
+Table 1: Currencies of Mossland
+Property
+
+Om O° Ovm' OS
+
+Exchange
+
+Exchange Player1 Player2 Player2
+
+Player
+
+—
+MOC
+As Fee
+
+Game Company
+
+Figure 3: Currency flow of Moss Coin
+
+2.2 Location Based Services
+
+Mossland may provide various location-based services (LBS). LBS became popular as a result of the
+GPS functionality in our personal mobile devices. Widespread adoption of GPS functionality led to the
+creation and popularization of location-based social networks and mobile applications, such as
+Foursquare. Users can “check in” to physical locations, compete with friends and other users on the
+network to own a virtual version of the physical location.
+
+Following the first-generation check-in services, Facebook and Google began to rapidly integrate
+similar functions into their existing social graphs. While first-generation services such as Foursquare,
+Gowalla, and MyTown remained popular, the advancement of mobile hardware promised additional
+augmented reality functions. Ingress’ s launch in 2012, followed by Pokemon Go's launch in 2016, both
+hinted the development of a more engaging and social feature driven AR application in the near future.
+Through the lens of Pokemon Go, integration of our physical world with a virtual counterpart started
+to become a near-future reality and established the foundation for a surge in AR interest and
+development.
+
+Mossland: The City attempts to build on the compelling check-in model first established by services
+such as Foursquare, while also integrating many of the collection and gameplay elements found in
+Ingress and Pokemon Go. By giving players the ability to check-in, claim, and manage virtual properties,
+Mossland: The City is planning to use AR technology. Players are not just incentivized to check-in to
+properties more often, but to explore and discover ways to promote their properties to other players,
+thus creating a dynamic, player-centric attention economy paired with a more traditional virtual real
+estate economy. Put more simply, every aspect of Mossland: The City’s design is anchored by the goal
+of creating a more engaging social virtual world.
+
+Check-in
+
+Check-in is one of the foundational actions in Mossland: The City. Players can explore their location
+and check-in into any nearby buildings. Players are rewarded with gold or items and can use these
+resources to purchase and develop their assets.
+
+While traditional check-in services such as Foursquare are designed to enhance an existing social
+graph, Mossland: The City attempts to add more value to every check-in, further encouraging players
+to check-in into nearby buildings as often as possible.
+Property
+
+Property in Mossland: The City is a finite virtual asset tied to real-world real estate. Unlike Foursquare,
+in which Points of Interest (POI) were originally player-registered, Mossland: The City will utilize existing
+map and location data to ensure that properties aren't duplicated and can be controlled only by a
+single player at any given time. This is necessary in order to create a working property economy in
+Mossland: The City, ensuring incentivization of both ownership and check-ins.
+
+Figure 4: Check-in to nearby Property
+
+Accessories
+
+Accessories are digital graphics that can be added to landmarks. Users can add accessories to
+upgrade and enhance the value of their landmarks to attract players to check-in. Purchasing accessories
+and adding them to properties require in-game currency and time. However, Accessories allow landmark
+owners to display their progress to other players by visually showcasing their success on their properties.
+This type of boasting is an important part for both advertising their properties and providing new
+players with a guide when they first step into Mossland: The City. Moreover, accessories play an integral
+role in that it encourages both new and experienced players to actively participate in the game.
+
+As an example, an unmodified Leaning Tower of Pisa would appear to be the same in the real world
+as in Mossland: The City. However, if a player adds the “Pteranodon” accessory to the property, other
+players would be able to see an AR Pteranodon flying around the tower. As the property owner benefits
+from additional check-ins due to the accessory, the owner can upgrade the Pteranodon to a Dragon,
+further increasing the benefit of other players for checking into the property and increasing the rewards
+the owner receives from each player check-in.
+BWM an
+Figure 5: An AR Accessory
+The physical size of accessories also affects the value of properties and number of check-ins. This is
+
+because digital accessories are based on the player's device’s cameras, which means that bigger
+buildings with larger accessories will be more likely to attract users.
+
+Figure 6: Large properties and accessories can be seen from a distance
+
+Accessories are also associated with unique rewards, encouraging players to seek out properties
+with specific accessories according to their specific needs.
+e
+
+Figure 7: Accessories provide in-game reward in addition to visual effect
+
+In Mossland: The City users may earn rewards not only through check-ins but also by interacting
+with accessories by tapping on them. Hereby, accessories become a definite reward factor for both
+property owners and players checking in to properties. Each accessory may also have unique visual
+effects and animations both in their idle state and after direct player interaction.
+
+Items
+
+Items may be created as an integral part of the property and the accessory acquisition process.
+Players may collect items through check-ins, accessory interactions and property ownership. Items are
+semi-random and have rarity. The cost of accessories will scale with their rarity, making common
+accessories easy to acquire, while the rarest accessories will require very rare items and significant in-
+game currency to purchase.
+
+All the services using Mossland will share the virtual properties. For instance, when a user purchases
+a building using Moss Coin in Mossland: The Auction, the owner is also the owner of the building in
+Mossland: The City which means that the owner can execute owner's rights such as attaching accessories
+to the building. Conversely, buildings acquired in Mossland: The City can be sold at Mossland: The
+Auction.
+2.3 Additional Platforms Compatible with Mossland: Location based P2P(Peer to
+Peer) Advertising platform(Mossland Advertising Platform)
+
+Global advertising markets are controlled by a small number of large players with the capital
+necessary to afford access to players and markets, making it difficult for smaller advertisers to gain a
+foothold in the market and reach their audience. The Mossland advertising platform empowers local
+businesses to advertise directly to players in their vicinity, making it easier for restaurants, shops and
+other retail businesses to find their targets and bring players into their businesses. The basic structure
+of the Mossland advertising platform is outlined in Figure 8:
+
+Ad Campaign on Property
+
+100 MOC Action
+
+Ad fee
+
+Advertiser Customer
+
+Property Owner Game Company
+
+Figure 8: Mossland Advertising Platform, High-Level
+
+Any Mossland: The Hunters and Mossland: The City player would be able to run an advertisement
+campaign by paying an advertising fee to the owner of any property obtained through Mossland: The
+Auction. However, it will obviously be more economical if the building was owned by the client itself. If
+a player submits an advertising campaign to another user's property, the owner will need to approve
+before commencing the campaign. All advertisements can be reported as inappropriate or harmful by
+players and moderators. The Mossland advertising platform is a CPA (cost per action) platform, resulting
+in cost and payment based on when players interact with the advertisement in the specified way (view,
+click, visit, register, purchase, etc.). The largest portion of the advertising fee will be paid directly to the
+players who interacts with the advertisement, while the remainder is split between the property owner
+and Mossland foundation (in the form of fees). Most importantly, it would create an opportunity for
+players to acquire Moss Coin without having to spend money on exchanges or through in-app
+purchases. This will instigate more players to participate and earn incentives in Mossland: The City
+resulting in a greater number of active members in the community.
+
+10
+The Mossland advertising platform would become one of the first micro advertising platforms
+integrated into services based on virtual property markets. By enabling any player to create an
+advertisement on the services, Mossland advertising platform is attempting to democratize access to
+customers and enable hyper-local advertising, all of which are a result of Mossland: The Auction. Players
+will be able to start, stop, and evaluate the success of their advertisements by using simple management
+tools supported in the game.
+
+Figure 9: Examples of Augmented Reality advertisement
+
+11
+3 Moss Coin
+
+3.1 Summary
+Moss Coin is an ERC-20 Token based on Ethereum.
+
+Title Contents
+Token Name Moss Coin
+Symbol MOC
+Platform Ethereum (ERC-20)
+Total Supply 500,000,000 MOC
+
+1 MOC = 0.0001 ETH
+1 ETH = 10,000 MOC
+Main ICO base price | 1 MOC=0.12 USD
+
+Pre-ICO base price
+
+Table 2: Moss Coin
+
+3.2 Moss Coin Usages
+
+As mentioned in 2.2, players will use three different in-game currencies in Mossland: The City. The
+third currency, Moss Coin, is a currency issued by the Mossland foundation. It is used by players for
+the purchase and sale of properties and accessories via Mossland: The Auction and to run P2P
+advertisement campaigns. Moss Coin can be used in any service within Mossland. In order to use the
+services, players have to deposit Moss Coin in Mossland. Then, Moss Coin will be available in the
+player's in-game account. These Moss Coin will be securely managed and stored in cold wallets
+managed by the Mossland foundation. There are four ways to acquire Moss Coin in Mossland:
+
+¢ Extra-game Acquisition and Exchange
+Players will be able to purchase Moss Coin by participating in the Mossland ICO or later at
+cryptocurrency exchanges or P2P Markets.
+
+¢ In-game In-App Purchases
+Players will be able to conveniently purchase Moss Coin in Mossland through in-app purchases.
+However, purchasing Moss Coin in the game will be more expensive due to the 30% fee imposed
+by Google Play and the Apple App Store. In addition, the amount of Moss Coin available will be
+limited to the amount of Moss Coin that was initially reserved for in-app purchases and Moss Coin
+collected by the Mossland foundation via transaction and advertising fees for Mossland's services.
+
+¢ Advertising Engagement
+When the Mossland advertising platform is complete, users will be able to receive Moss Coin
+in the game by interacting with the advertisements created by other players, or by allowing other
+players to advertise on their properties. These fees may be fairly small on a per-player basis, but
+overall it will significantly contribute to the flow of currency in the in-game economy.
+
+¢ Property Sales
+Property owners in Mossland: The Auction will receive Moss Coin by selling their landmarks.
+
+12
+> —
+
+Available on the
+0 App Store
+
+ys MOC pr
+
+Game Site
+
+Player's
+Game Account
+
+Action MOc
+(aR)
+
+« oo)
+
+Player Ad Campaign on Property
+
+Figure 10: Player’s acquisition channel of Moss Coin
+
+Player's Game Site Exchange Player
+
+Game Account
+
+& MOc wN MOc 7 oO)
+
+Figure 10: Withdrawal of Moss Coin
+
+13
+3.3 Moss Coin Distribution
+
+The total supply of Moss Coin will not exceed 500,000,000 MOC. After all Moss Coins have been
+issued, new MOC will not be created. Issued Moss Coin will be distributed as outlined in Table 3 and
+
+Fig 12.
+
+58% of the total coin supply was distributed during the Moss Coin pre-ICO and main ICO. The pre-
+ICO was divided into two rounds: A private round for volume participants and a public round for general
+participants. The main ICO was also divided into two rounds; a round for strategic partners and fund
+
+Item Volume
+
+Private 41,949,405 MOC
+Pre ICO
+
+Public 24,999,451 MOC
+Main ICO Strategic Partners | 101,250,247 MOC
+Public 123,750,302 MOC
+Team 75,000,000 MOC
+Advisor 25,000,000 MOC
+Initial IAP 75,000,000 MOC
+Reserve 33,050,595 MOC
+
+Table 3: Moss Coin Distribution
+
+Advisor
+
+5%
+
+‘oO
+
+Partners
+
+Figure 11: Moss Coin Distribution Chart
+
+partners and a public round for general participants.
+
+14
+
+To ensure the team's and advisors’ commitment to the project, Moss Coin allocated to the Mossland
+team and advisors will not be distributed until 1 year after completion of the main ICO.
+
+In order to ensure that players will be able to purchase Moss Coin directly via in-app purchases in
+Mossland, 75,000,000 Moss Coin are reserved only for this purpose. When this Moss Coin reserve is
+exhausted, only the transaction fees and advertising fees will be available for purchase directly through
+the Mossland’s in-app purchase system.
+
+3.4 Issuance of Moss Coin
+
+The Mossland foundation will collect Moss Coin through the services using Mossland and advertising
+fees. This Moss Coin will be resold to players through in-app purchases.
+
+Additional Moss Coin Issuance
+There will be no additional issuance of Moss Coin in addition to the original 500,000,000 coins.
+
+Seeding and Redistribution
+
+If the Mossland foundation deems it necessary or beneficial, reserved Moss Coin may be distributed
+by allowing in-app purchases of Moss Coin to the players. The price of in-app purchases of Moss Coin
+will be determined by the market price when the redistribution is implemented. The store price may
+vary compared to the available purchase price depending on live market movements. Additional Moss
+Coin will not be made available directly on exchanges, but only through in-app purchases within
+Mossland.
+
+15
+4 Moss Chain
+
+4.1 Technical Aspects of Applying Blockchain
+
+Mossland will be developed as a service on a proprietary central server. When a sufficient number
+of users have joined the community, user data may be transferred to blockchain. When the performance
+is verified and optimized, the data and functions may be transferred to a Decentralized App (DApp) in
+the corresponding blockchain.
+
+Transaction Performance
+
+Mossland is a platform that supports the development of location-based cryptocurrency services
+which prioritizes player's experience. Transaction speeds are essential to a good player experience, and
+current public blockchains do not satisfy the required performance. Specifically, it is difficult to
+immediately check whether a bid during an auction is successful due to the slow response of existing
+blockchains in the event that there are many users bidding on an asset. This can lead to a sub-par user
+experience due to confusion around which bids are successful, why, and how transaction fees are
+calculated and collected.
+
+Fees
+
+Transaction fee designs in contemporary blockchains discourage in-game activity and require a
+different model for Mossland to operate efficiently. Currently, every action creates information which
+must be stored in a new block and added to a given blockchain. In Mossland's case, a new block will
+be created for all game actions and transactions which could eventually discourage users due to
+excessive fees. Therefore, Mossland will need to utilize a blockchain with minimal transaction fees in
+order to ensure that both the action in the game and asset exchange operate in a way that is both
+logical and satisfying to players.
+
+These issues have already been addressed in several public blockchain projects (such as EOS), and
+we anticipate that a public blockchain platform that has undergone tremendous advancement will be
+commercialized in the near future. Until then, Mossland has been developed as an off-chain project in
+order to begin the process of growing the player base and to demonstrate the value of virtual assets
+in the game's property market. Then, once a proven blockchain platform has been introduced, Mossland
+may be transferred to an on-chain project, allowing virtual assets to be leveraged across multiple
+projects.
+
+4.2 Decentralization of Mossland
+
+Figure 13 shows how Mossland, an off-chain project, may be changed to an on-chain project in the
+future.
+
+Property and accessory information stored on the Mossland server would be transferred to the
+blockchain, and resource files stored in the client applications using Mossland would be transferred to
+the resource download server. Therefore, augmented reality DApps utilizing virtual assets on the Moss
+Chain (Mossland’s blockchain) can be developed as lighter clients, which will lead to a more open
+environment where Mossland's virtual assets can be utilized by more services.
+
+16
+| erin | Resource
+
+' MOSSLAND H Download Server
+
+Primary DApp
+' Request | Download
+
+' AR View {_ ~7 GPS, Cam
+
+—
+t -—— '
+' ' —m —_! Properties Accessories
+
+H ' Infos
+H Game DApps_ ss! '
+' HP ' Moss Frame as '
+Other DApps_ Moss Chain
+
+DApps
+
+Figure 12: Decentralization of Mossland
+
+An AR SDK called Moss Frame may be developed and distributed. Moss Frame reads information
+on the properties and accessories stored in the Moss Chain based on the user’s location and camera
+information. This also accesses the necessary resources from the resource download server and makes
+them available to the player's client application, also giving developers the ability to directly display
+them to a player's screen. Moss Frame will facilitate the development of DApps by allowing developers
+to easily render augmented virtual world without in-depth AR technology.
+
+Mossland may transform from an off-chain project which handled all the functions with all the
+resources to one of Moss Chain’s DApps. It would serve as the primary DApp that best exemplifies the
+Moss Chain and Moss Frame to encourage third party developers to develop more DApps based on
+the expected success in the market.
+
+Through these steps, Mossland wants to increase the value of virtual assets by releasing its own
+assets on the blockchain instead of monopolizing them. Mossland will also support the successful
+launch of other Dapps to maintain the value of virtual assets.
+
+17
+5 ICO (Initial Coin Offering)
+5.1 Pre-ICO
+
+The Pre-ICO was divided into a private round for volume participants and a public round for general
+participants, with a minimum purchase of 0.1 ETH and a maximum purchase of 1,000 ETH. The Moss
+Coin exchange rate was set at 1 ETH = 10,000 MOC. A detailed overview can be found in Table 4,
+below. The Pre-ICO bonus structure was applied as outlined in Table 5.
+
+Item Contents
+Schedule Jan.29,2018 - Feb.11,2018
+Regular Price 1 ETH = 10,000 MOC
+Private | 41,949,405 MOC
+Supply Public | 24,999,451 MOC
+Total 66,948,856 MOC
+Min Purchase 0.1 ETH
+Max Purchase 1,000 ETH
+Limitation Country where ICO banned
+
+Table 4: Details of Pre-ICO
+
+Tier | <5 ETH | <10ETH | <25ETH | <75ETH | >75ETH
+Pre Ico | 35% | 40% | 45% | 50% | 55%
+
+Table 5: Details of Pre-ICO
+
+5.2 Main ICO
+
+The main ICO was divided into two rounds. The first was a strategic partner round for strategic fund
+partners and second was a public round for general participants. Participants bought Moss Coin with
+Qtum (QTUM) and Ethereum (ETH). General participants in the public round could participate a
+
+minimum of 2 QTUM to a maximum of 1000 QTUM and minimum of 0.1 ETH to a maximum of 20 ETH.
+A detailed outline of the main ICO can be found in Table 6.
+
+18
+Item Contents
+
+Schedule Mar.21,2018 - Arp.17,2018
+1 MOC =0.12 USD
+Regular Price 1 MOC = 0.12 /Qmain QTUM
+
+1 MOC = 0.12 /Ejnain ETH
+Strategic Partners | 101,250,247 MOC
+
+Supply Public 123,750,302 MOC
+Total | 225,000,549 MOC
+Purchase Limit 2 QTUM ~ 1000 QTUM
+0.1 ETH ~ 20 ETH
+Limitation Country where ICO banned
+
+Table 6: Details of Main-lICO
+
+Week 1 Week 2 Week 3 Week 4
+3.21 -3.27 | 3.28-4.3 | 4.4-4.10 | 4.11-4.17
+
+Bonus 15% 10% 5% 2.5%
+
+Purchase Period
+
+Table 7: Main ICO Bonus Plan
+
+The exchange rate for the main ICO was determined based on the average value of Ethereum during
+the Pre-ICO and the value of Ethereum at the time of the main ICO. This was designed to protect both
+participants in the Pre-ICO and the main ICO. The Ethereum price for the calculation was set according
+to the market price of Bittrex1), and the average price of the Pre-ICO was calculated as a median price
+between minimum and maximum prices during the Pre-ICO. Since the Main ICO was held over four
+weeks, the price of Moss Coin during the Main ICO was updated each day and was determined by the
+respective market price of QTUM and ETH at the time of the renewal. Bonuses for Moss Coin purchases
+during the main ICO are outlined in Table 7.
+
+19
+2E main
+Prmain_ico = E x 10, 000(MOC/ETH)
+
+pre_max t Epre_min
+
+Pmain.ico = Standard rate of Moss Coin during Main ICO (MOC/ETH)
+
+Lvnaiiys = Ethereum price during Main ICO (USD/ETH)
+Epremax = Maximum Ethereum price during Pre ICO (USD/ETH)
+Epremin = Minimum Ethereum price during Pre ICO (USD/ETH)
+
+Updated after the Pre ICO according to Bittrex, the maximum price of Ethereum during the Pre-ICO
+was 1198.6 USD/ETH and the minimum price was 1182.0 USD/ETH. Therefore, the median price of
+Ethereum was determined as 1190.3 USD/ETH. The price for Moss Coin during the main ICO was set
+based on this calculation and round up to the nearest cent.
+
+1MOC =0.12 USD
+1MOC =0.12 /Qimain QTUM
+
+1MOC =0.12 /Emain ETH
+
+Qmain = Quantum price during Main ICO (USD/QTUM)
+Eynain = Ethereum price during Main ICO (USD/ETH)
+
+5.3 Moss Coin lock-up period and distribution schedule
+
+Moss Coin purchased during the Pre-ICO and the main ICO was distributed after completion of a
+now Your Customer verification period. Moss Coin was distributed according to the distribution
+timeline found in Table 9. For reference, D+0 is the date initial Moss Coin is distributed after the main
+CO. Note that the distribution timeline for Moss Coin purchased at a standard price and Moss Coin
+received as a Bonus have separate lock-up periods.
+
+Moss Coin Volume < 250K MOC < 1M MOC > 1M MOC
+Participated MOC Lock-up Period - 30 days - 90 days | 30 days - 180 days
+Bonus MOC Lock-up Period 30 days - 90 days | 30 days - 180 days | 30 days - 360 days
+Team, Advisor MOC Lock-up Period 360 days
+
+Table 8: Moss Coin Lock-up Period
+
+20
+MOC < 250K MOC < 1M MOC > 1M MOC Team &
+Distribution Partch: Bonus Partch: Bonus Partch: Bonus Advisor
+D+0 100% - - - - - -
+D+30 - 34% 34% 17% 17% 9% -
+D+60 - 33% 33% 17% 17% 9% -
+D+90 - 33% 33% 17% 17% 9% -
+D+120 - - - 17% 17% 9% -
+D+150 - - - 16% 16% 8% -
+D+180 - - - 16% 16% 8% -
+D+210 - - - - - 8% -
+D+240 - - - - - 8% -
+D+270 - - - - - 8% -
+D+300 - - - - - 8% -
+D+330 - - - - - 8% -
+D+360 - - - - - 8% 100%
+Total 100% 100% 100% 100% 100% 100% 100%
+
+Table 9: Moss Coin Distribution Schedule
+
+21
+
+5.4 Perks for Moss Coin buyers
+The following perks were provided to the ICO participants.
+
+Bonus
+All ICO participants received a bonus which allowed the purchase of Moss Coin at a discount
+compared to the primary exchange rate. Mossland foundation will not issue any additional Moss Coin.
+
+Pre-Auction for Landmark Properties
+
+Due to the nature of the Mossland economy, early competition on famous properties is inevitable.
+To prevent such, Mossland foundation will be the first owner of several major landmarks around the
+world. These properties are being auctioned off by the Mossland foundation for purchase by players
+via Mossland: The Auction.
+
+Some company-owned landmark properties may be utilized to create Augmented Reality
+Demonstration Streets as a showcase for Mossland: The City. This would allow us to showcase properties
+and accessories in a virtual property market which players are just beginning to beautify. This would
+serve two purposes: To create a more compelling early-game experience, and to showcase how players
+can improve their own properties as they play.
+
+Cancel
+
+CONFIRM
+
+Figure 13: Auction for the landmark properties
+
+5.5 Policy and precautions
+ICO participants were required to acknowledge the following policies and precautions.
+
+Mossland is continuously developing the functions described in this white paper. Purchases of
+Mossland's in-game currency MOC should not be based on any assumptions about whether these
+features will be successfully developed.
+
+22
+Risk and uncertainty
+
+This White Paper only describes a business plan and vision and does not guarantee any positive
+business results. Players and participants must acknowledge that the business plan can be altered at
+any time. Please note that all purchases of Moss Coin during the Pre-ICO and the Main ICO shall be
+governed by the terms and conditions: https://moss.land/terms
+
+ICO participants
+People from countries where ICOs are prohibited cannot participate in the Pre-ICO or the Main ICO.
+
+Languages
+
+The original version of this white paper is in English and translated versions may have inaccuracies
+or errors. The English version of the White Paper shall take precedence over the translated versions.
+Please refer to the English version of the white paper if you require any clarification.
+
+Usage of Moss Coin
+
+Moss Coin is a utility token and will only be used as described in the white paper. Moss Coin does
+not entitle its owner to any voting rights or dividends and is not intended to constitute securities in
+any jurisdiction.
+
+Moss Coin (MOC) as Mossland’s In-Game Currency
+Mossland's MOC is an in-game currency; it has no inherent value and should not be purchased for
+purposes of speculation, investment or profit.
+
+Cancellation and Refunds
+There will be no cancellations of Moss Coin purchases, and no refunds for completed purchases.
+
+23
+6 Market Insights
+
+6.1 Location-based Check-in app
+
+When GPS technology became a core component in most smartphones, many location-based apps
+and networks were created. These include Foursquare, Latitude, Loopt, Gowalla and many others.
+Foursquare was the market leader before giants such as Facebook and Google introduced check-in
+features to their existing social networks. As a result, Foursquare’s usage is in decline.
+
+1 A
+
+@ wea, oct 22
+ US-Travel & Local 28
+1 US-Overall
+
+@ US-Applications
+
+200
+
+300 ® US-Social
+H US-Widgets
+
+= \ ks
+400 ' Ay
+
+TO LAay, \ Ap
+
+WV Mall Wy f
+
+¥ Wy f
+500
+Wa f
+2012 2013 2014
+
+United States Oct 22, 2014 B us-Overail I US-Applications @ us-Social Hi US-Travet & Local 28 ME US-Widg
+
+Figure 14: Foursquare’s Google Play historical ranking data
+
+Once the market leader, Foursquare’s success and progress served as inspiration for the vision of
+Mossland: The City. By focusing on a simple action of rather than extensive gamification, Foursquare
+was able to grow rapidly and hold ground against Facebook Places. However, as Facebook continued
+to position itself as an integrated social networking service, using another app only to check-in became
+inconvenient. Pressure from Facebook Places in the social space, along with Yelp and other check-in
+applications meant that Foursquare’ s simple mechanics were no longer sufficient to drive engagement.
+
+Mossland: The City is a vision that attempts to combine the best of both strategies: A simple, proven
+core interaction loop in check-in, and a more complex layer of gameplay that promotes many forms of
+player-player interaction and market engagement. Players are rewarded for their participating with in-
+game rewards and driven to achieve and to optimize their gameplay experience by owning and
+improving properties. This focus on player-centric engagement differentiates Mossland: The City from
+other social networks or simple check-in services by putting the player at the center of the experience
+and giving them the ability to explore, achieve, and interact with other players in a way that is both
+rewarding and engaging.
+
+6.2 Item Trading Market
+
+In-game item trading markets have a long history in online gaming. In the beginning, the value of
+digital game items was questionable, but players often created ways to trade them online. In spite of
+this, many countries banned sales or trades of digital game items due to similarities with online
+gambling.
+
+One of the most well-known cases of regulation around real-money auction houses and digital item
+sales took place in South Korea, with the release of Diablo Ill. Activision-Blizzard originally planned to
+support a real money auction house in Diablo Ill in South Korea. However, the Korean Game Rating
+and Administration Committee classified the auction house as online gambling and regulating it
+
+24
+accordingly. After a long dispute, the release of Diablo III was finally approved, but only after Activision-
+Blizzard removed the real-money auction house from the game in South Korea.
+
+However, the Korean Supreme Court has ruled digital game items in NCsoft’s Lineage as legitimate
+assets, which can be rewarded in exchange of long hours of digital labor and time. But virtual item
+trading for real money when purchases are governed by any random probability or unlocks is classified
+as online gambling and therefore illegal in South Korea. Therefore, most gaming companies do not
+support game item trading with real money to avoid the legal risk of having their games classified as
+online gambling. In the meantime, 3rd party game item trading platforms such as Itembay support
+item trading between players users and collect a transaction fee. Due to the lack of safety and security,
+there are many cases of fraud.
+
+Although some countries restrict, and the others allow in-game item trading for real money, the
+overall market size is substantial and has great growth potential. It is no secret that Planet Calypso in
+Entropia Universe was sold for $6,000,000 USD. Entropia Universe supports real money game item trading.
+
+Figure 15: Most expensive digital game item: Entropia Universe - Planet Calypso
+
+The primary advantage of using a cryptocurrency-based system to manage transactions in Mossland
+is that it ensures secure transactions among players and between all parties using Moss Coin and
+players. These secured transactions do not only ensure the prevention of loss or theft of in-game items
+but also the verification of a purchase.
+
+In such circumstances, introduction of cryptocurrency using blockchain technology can be a game
+changer in digital game item trading market. Cryptocurrency do not have a country of issuance nor a
+concept of nationality and only cryptocurrency owners are bound to be responsible in the country
+where they withdraw to the fiat money. Service operation company’ s role is only to issue the
+cryptocurrency. Withdrawal of game money to fiat money can be externalized through cryptocurrency
+exchanges and secured by blockchain technology.
+
+Mossland envisions a service that can securely and safely enable digital game item trading and
+exchanging using cryptocurrency and help players avoid using unreliable or dangerous 3rd _ party
+platforms.
+
+25
+7 Mossland Development and Launch Schedule
+
+Mossland: The Auction has been developed using the Mossland platform and was launched in
+October 2018. Meanwhile, Mossland: The Hunters may be released in early 2019. Mossland: The City
+may be soft launched to a limited number of countries to test and enhance the gameplay and to resolve
+any remaining technical issues before the global launch of Mossland: The City in late 2019.
+
+2018. 1Q
+Pre ICO
+2018. 2Q
+1st ICO
+2018. 3Q
+2nd ICO
+2018. 4Q Launch of
+Mossland: The Auction
+Launch of 2019. 10
+Mossland: The Hunters
+2019. 4Q Launch of
+Mossland: the City
+
+Figure 16: Project Roadmap
+
+26
+8 Team
+
+8.1 Reality Reflection
+
+Reality Reflection is a VC-backed Virtual Reality and Augmented Reality startup specialized in digital
+human characters and game development. Founded in 2015, the Reality Reflection team is made up of
+18 professionals with backgrounds in VR and AR technology, game design and marketing.
+
+Company Name Reality Reflection
+Location Korea
+Established 2015
+Homepage _https://www.realityreflection.com
+Business area _ VR, AR, Digital Human character
+Portfolio Miniature Tower Defense (2016)
+Music Inside (2016)
+Speed Ball Arena (2017)
+VMoji (2017)
+Gangsta Underground Poker (2018)
+
+s ¥ \ 4
+A.
+
+Figure 17: Reality Reflection VR Studio for 3D Digital Human Character
+
+27
+VR Games
+Reality Reflection was established with a clear vision of the Virtual Reality world. The studio has
+released VR games on all available VR platforms including HTC Vive, Oculus Rift, Playstation VR and
+Samsung Gear VR, and has accumulated a great deal of technical and design experience in AR/VR game
+development.
+
+Music Inside
+VR Music Rhythm Action Game
+Oculus Touch launch title
+Unreal Engine showcase game
+
+Z Amazon AWS Gamelift showcase
+BS Bene http:/www.musicinsidevr.com
+
+ri $C
+PONON
+
+Speedball Arena
+
+Multiplayer VR Sports game Unreal
+Engine showcase
+https://www.speedballarena.co/
+
+Gangsta Underground Poker
+Multiplayer VR poker
+Release planned in 1Q 2018
+
+Figure 18: Main VR Games by Reality Reflection
+
+28
+Digital Human
+
+Reality Reflection has also focused on digital human technology with a goal of accurately
+representing human characters in virtual worlds. Utilizing Asia’s biggest 3D scanning studio, with 160
+DSLRs and depth cameras, Reality Reflection has been experimenting with enhanced 3D human
+scanning, image compression, and real-time photo realistic rendering technology. Based on internally
+developed technology, Vmoji, a 3D face recognition video chatting app, was released in December 2017.
+Reality Reflection is also engaged in a joint R&D project with SK Telecom, developing artificial
+intelligence-based realistic avatars. This project will be demonstrated at Mobile World Congress 2018
+
+in Barcelona.
+ail a ||
+ie ! ||
+
+Figure 19: Digital 3D human scanning
+
+29
+Figure 20: Face recognition chatting app VMoji
+
+30
+8.2 Members
+
+8.2.1 Team
+
+Wooram Son Chester Roh Minuk Kim
+CEO, Co-Founder CSO, Co-Founder CTO, Co-Founder
+3D Computer Graphics Expert Serial Entrepreneur 3D Computer Graphics Expert
+Former Samsung Electonics Founder of Former Pantech Software
+Software Engineer Inzen (IPO in Korea), Engineer
+TNC (acquired by Google),
+5Rocks (acquired by Tapjoy)
+
+Yongjun Hong Sean Oh
+CFO, Co-Founder, KICPA COO, Co-Founder
+Former 5Rocks CFO Digital Human Character Expert
+Former PwC Korea Accountant Former Samsung Electronics
+Software Engineer
+
+31
+~~
+
+~
+Byukryun Choi Sangmin Lee Youngdae Cho
+Lead Character Artist Lead Environment Artist Client Engineer
+Former NS Studio Former M Game Former NHN Next
+Character Artist Environment Artist Software Engineer
+Former 5Rocks
+PR/Marketer
+
+Junchel Park Hyunwook Nam Seunghyun Kim
+Blockchain Engineer Blockchain Engineer Software Engineer
+Former Kakao Games Former NHN Next Former NHN Next
+Software Engineer Software Engineer Software Engineer
+
+Jerome Hernandez Emily Park
+Creative Engineer PR Manager
+Former CERN Former Lineable
+Creative Manager PR Manager
+Cheil Worldwide A.E.
+
+32
+
+Yunu Kim
+Server Engineer
+
+Former Line Games
+Software Engineer
+
+Hyunbin Nam
+Game Designer
+
+Former Affinity Game
+Designer
+8.2.2. Advisors
+
+Jason Han Louis Jinhwa Kim Jeffrey Lim
+Blockchain Advisor Blockchain Advisor Startup Advisor
+Co-Founder & Partner/CTO, Co-founder, Director, Korea 18+ years of experience in
+FuturePlay Blockchain Association startup ecosystem,
+Founder & CEO, Co-founder, Korbit Former Head of Campus Seoul,
+NexR (Acquired by KT) Director, Tide Institute Google
+Adjunct Professor, KAIST MBA Author of World 1st Bitcoin Book, | Former venture capitalist at
+KAIST PhD in ‘Next Money Bitcoin(2013)’ Softbank Ventures
+P2P and Distributed System Serial Entrepreneur
+
+Pah
+
+Duhee Lee Charles Rim John Chang
+Startup Advisor M&A Advisor Investment Advisor
+Founder LIKELION, General Partner, Access Ventures General Partner, Access Ventures
+Founder Kongdoo, MD, Tapjoy Korea & SE Asia APAC Head-Equities,
+Google Impact Challenge, First Venture Partner, DF] Athena VC Barclays Asia
+Place (People’s Choice) Head of M&A, Google APAC CEO, Deutsche Bank Korea
+Speaker, 66th UN NGO CSO, Yahoo Korea & SE Asia Co-Founder, Access
+
+Communications
+
+33

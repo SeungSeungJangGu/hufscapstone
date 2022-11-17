@@ -1,0 +1,1497 @@
+= GoWithMi
+
+Ledger of Everything
+
+Global decentralized location service infrastructure that benefits all
+
+White Paper V3.0.0
+GoWithMi Team
+
+2019.08
+Abstract
+
+GoWithMi aims to build a distributed map ecosystem through blockchain, AI
+and GIS (Geographic Information System) technology, which enables anyone (any
+node) to initiate and autonomously perform use, update and maintenance of maps
+without depending on any centralization organization in the entire process.
+
+The maturity of 5G, loT, Edge AI and other technologies as well as the breakout
+of blockchain reveal the advent of the new era of Internet of everything, which will
+become the third generation of the Internet after the first generation of PC Internet
+and the second generation of mobile Internet.
+
+The spatial location information of people and things in the real world need map
+to realize digital, so that they can be perceived by the digital universe. In this sense,
+the map is the “Ledger of Everything” that records the spatial location. It provides a
+connection service from the real world to the digital world by recording the “spatial
+location” which the real world mapped to the digital world.
+
+Just like the original intention of the Bitcoin was to break the “payment
+monopoly”, GoWithMi was originally designed to break the “map monopoly”. In the
+first and second generation of the Internet, the map is in the hands of a handful of
+Internet tycoons represented by Google. This triggers a series of obvious drawbacks:
+abuse of personal information, leak of personal privacy [1], arbitrary price hike of
+map service that businesses need[2], or even shut down of map service [3], and so on.
+If this situation stay unchanged, the Internet of everything will still be threatened by
+“map monopoly”.
+
+To change this situation and break the map monopoly, GoWithMi explores the
+“decentralization” practice mainly from technology and community governance:
+
+1. GoWithMi’s main chain — the technical realization of peer-to-peer map
+network Gaia
+
+Gaia is a peer-to-peer map network completely. Map data update, map service
+provision and maintenance can be initiated from any node in the network and
+cooperate as needed throughout the whole network without any centralization
+mechanism. The TPS or supporting governance mechanisms of the existing
+blockchain projects such as BTC, ETH, and EOS, cannot meet the application
+needs in non-financial scenarios. We propose the spatial geographic
+computing architecture (GeoMesh Computing Architecture) to allow the data
+structure and core algorithm in the map industry to combine with the peer-to-
+
+2/ 42
+GoWithMi White Paper V3.0.0 All Rights Reserved
+peer (Peer-to-Peer) network and consensus mechanism of the blockchain in
+their “gene level”, so as to provide a peer-to-peer map network that combines
+the map service with the decentralized self-organization of blockchain.
+
+The detailed method is:
+
+@ Designing a new basic map data structure GeoMesh, which enables basic
+map data to be segmented into a large number of discrete and small-sized
+GeoMesh data;
+
+@ Designing a consensus mechanism like PoW (PoCW, Proof of
+Compilation Work) that allows multiple nodes to create and update map
+data by mesh (Mesh) like block-by-block ledger-keeping;
+
+@ Realizing a peer-to-peer network mechanism that allows GeoMesh to be
+synchronized between nodes on demand;
+
+@ Reconstructing the core algorithm to allow the node to provide a complete
+map service in a specified area based on the currently cached GeoMesh
+rather than synchronizing all map data;
+
+@ Designing a proof mechanism (PoG, Proof of GeoMesh) to enable the
+node to prove its map service capability simply through the effectively
+cached GeoMesh;
+
+@ Designing a ledger-keeping consensus design for blockchains in non-
+financial scenarios (DPoG) that allows all nodes to maintain the same
+voting rights and map service obligations to the ledger-keeping nodes.
+
+Based on the designing philosophy of GCA (GeoMesh Computing
+Architecture), Gaia will coordinate the computing resources of all nodes in
+the whole network effectively . Compared with the PoW consensus, the
+PoCW makes those node computing power which are participated in this
+consensus spend in the "map data compilation", a service benefits the map
+service, and let the computing power game between the nodes can be used to
+ensure the consistency of the core map service resource "GeoMesh". Based
+on the results of the PoCW work, the entire network nodes can synchronize
+the GeoMesh on demand to ensure the consistency of the entire network map
+service (PoG) and the fairness of the accounting node election (DPoG). Based
+on the planning of such computing power, under the premise of ensuring data
+consistency, service consistency and fair governance, the computing resources
+of most nodes of the whole network can be released to the map service itself,
+thereby increasing the TPS of the network by a thousand times or even
+thousands of times compared with that of the existing public chain.
+
+3 / 42
+GoWithMi White Paper V3.0.0 All Rights Reserved
+2. The organization and governance of the map ecosystem and other business
+that goes with the main chain Gaia, including:
+
+@ AnAtTand human-machine collaborative data collection network
+combining Token and Edge AI that could shorten the single data data
+collection time from ten minutes to ten milliseconds.
+
+@ A decentralized governance mechanism for map data rights which takes
+into account both the investment efficiency and investment efficiency of
+map data.
+
+@ A decentralized governance mechanism for core ecological business
+resources that ensure optimal utilization of core resources.
+
+If BTC is a Peer to Peer version of “financial ledger” , then GoWithM1 is the
+Peer to Peer version of “Ledger of Everything”. The blockchain revolution
+represented by BTC, ETH, and EOS reveals the possibility of participants playing
+positive-sum game based on a distributed network to co-construct ecology. GoWithMi
+hopes to extend this kind of “self-governance” in positive-sum game to non-financial
+scenarios, to decentralize the “ledger-keeping rights” of the map - “Ledger of
+Everything”, thus build the next generation of global decentralized location service
+infrastructure that benefits all.
+
+4/ 42
+GoWithMi White Paper V3.0.0 All Rights Reserved
+ADSUraCt oes ceccceccssesssseeesneessnecssneessnecssnscesneessneessneesaneessveesuusessneesevecsuusessueessneesuusessneesnneesuneeaseeesneestes
+Chapter I Mission and Vision....
+
+Mission
+
+VASHON oo. eecececssessssesssnecssneessseessnecssnecesveessneesunecssneeseveesunesnneeeveesaneessneseneessueeseneeeeeesaneeenneteen 7
+Chapter II The Challenges and Solutions for Blockchains in Non-financial Scenarios 8
+
+Data and Computing PoWet..i..c..cccccccsssssssssssesseessessecssessnscsnsessscsscsseseesneesneesneessecnneeees 8
+
+Consensus in the Real World
+
+Governance of Map Data
+Chapter TIT The Main Chain Gata ......ccccccccscsssessessessessessessessesssssuessesseesesseeseesesssaseasesseeseese 1
+Distributed Storage and Distributed Computing...
+
+fo)
+
+Map Technology and Spatial Geographic Grid Computing Architecture ...
+
+Background Knowledge of Map Technology
+Spatial Geographic Grid Computing Architecture (GCA)
+Root Node and Automatic Compilation
+Root Node
+Data Compilation Workload Proof (PoCW) ..
+Automatic Compilation and GeoMesh
+
+Edge node and Distributed Map Service
+Edge Node .
+Proof of Service Capability (POG) ...c..ccccccccccssssessessesessessesssessessesteaessessesseeseese 1
+
+aAnFr PH HRrPDOVOVCVSO
+
+6
+
+Peer-to-Peer Network and GeoMesh 16
+Map dAPI 17
+Ledger and DPoG 18
+The Governance of Ledger-keeping Right and GeoMesh.. 18
+Service Voting Proof (DPoG) 18
+Chapter IV Human-machine Collaboration in the Real World ... 19
+Data Collection and Map 19
+The Governance of Distributed Data Collection .........c.ccccecccesesesseeseesseesneeseesnees 19
+Token-driven Edge AI and Distributed Human-machine Collaboration............... 20
+AI space data mining Machine... cccssessecssesseesstesseeesecsseesneesvessneesneeseeens 21
+
+The Near Space Vehicle
+Chapter V The Governance of Map Data
+From the Estate Monopoly in the Real World to the Data Monopoly in the Internet
+
+Decentralized Land Governance Mechanism: Harberger taxes
+
+Spatial Data Node and Map Data Management
+
+Chapter VI Map Distributed Business and Ecological Value Transfer
+
+GoWithMi White Paper V3.0.0 All Rights Reserved
+Maps are the top-level user traffic ......c..ceeccccccesssssseesstesseesseesnsesessnecsneessseseesseeeneesneesnees
+
+Traffic Management and Distributed Business
+GMAT and Ecological Value Transfer.
+
+The Incentives Of GMAT oo... ciecccccccesesssessseessessnecsnsessecsnecsnecseeseesneesneesneesneesneesieens
+
+The Mortgage of GMAT
+
+The Consumption of GMAT...
+
+The Distribution and Usage of GMAT
+
+The Distribution Plan of Token..
+
+The Token Usage Plan
+
+Chapter VII Team Introduction...
+Core Team
+
+Investment Institutions...
+Partner& Customer
+Chapter VIII Development and Prospects
+Development Plan........... ten
+The Status of Current Products
+Prospects
+Ledger of Everything and Space Oracle
+Worldwide Decentralized Location Service Facilities and “Prisoner's
+Dilemma” 40
+
+Privacy Map and Interest Map..............
+The Future of Distributed Autonomous Driving
+References
+
+6 / 42
+
+GoWithMi White Paper V3.0.0 All Rights Reserved
+Chapter I Mission and Vision
+
+Mission
+
+GoWithMi is committed to becoming the global decentralized location service
+infrastructure by building a global human-machine collaborative map network and
+reshaping the map ecosystem through blockchain, AI and GIS technology.
+Meanwhile, as a decentralized map component for all public chains, GoWithMi is
+dedicated to facilitate blockchain industry to empower transportation, travel,
+accommodation, e-commerce, advertising, gaming, location intelligence, autonomous
+driving and other large-scale application scenarios that rely heavily on maps.
+
+Vision
+
+Internet infrastructure like map services should be designed and managed as
+public product. GoWithMi’s main chain, Gaia, will fill the global capital and
+technology gaps, allowing people in emerging markets to build a map network
+through idle computer or even idle phone rather than purchasing many expensive
+servers; allowing people to update and improve map services by themselves according
+to their own needs rather than relying on large international companies to collect bulk
+data; empowering blockchain and Internet developers around the world with a map
+dAPI that will not leak privacy, will not be forced to raise prices and shut down;
+empowering all businesses that need maps, including transportation, travel,
+accommodation and e-commerce, with a low cost and high quality underlying map
+service that never shut down.
+
+7 / 42
+GoWithMi White Paper V3.0.0 All Rights Reserved
+Chapter II The Challenges and Solutions
+
+for Blockchains in Non-financial Scenarios
+
+Data and Computing Power
+
+The requirements for scalability and data storage for blockchains in non-
+financial projects far exceed the existing blockchain projects. Baidu Map needs to
+provide 120 billion location services per day [4]; that’s about 1,388,889 TPS every
+minute, which is 86,806 times of Ethereum, 347 times of EOS, and 694 times of
+TRON. The Gigabyte-level data storage required for map data is also significantly
+larger than the existing ledger data storage size. Obviously, it is difficult to meet such
+computing and storage needs under the existing blockchain technology framework
+
+and consensus.
+
+In this whitepaper, we introduce the GeoMesh technology architecture which
+enables the peer-to-peer map network to solve both the computing and storage needs
+of the map service, and propose a complete decentralized solution for all key services
+
+of the map service. For details, please refer to Chapter III.
+
+Consensus in the Real World
+
+From the perspective of game theory, the existing blockchain consensus can be
+abstracted into a positive-sum game based on distributed systems. Whether under
+the PoW or the PoS consenus, the game behaviors of participants has been abstracted
+into extremely simple behaviors, such as calculation of SHA256 hash and the
+mortgage of stake.
+
+However, existing Internet services require a lot of collaborative work in the real
+world. The complexity of such collaboration cannot be abstracted into simple
+behaviors. Although we can set up mortgages, competition and other measures to
+motivate and punish participants, participants’ learning costs and cognitive biases in
+work in the real world will still lead to unexpected outcomes in the consensus-driven
+human collaboration.
+
+8 / 42
+GoWithMi White Paper V3.0.0 All Rights Reserved
+Fortunately, the outbreak of the AI technology revolution brings us a new
+possibility. We can standardize and streamline the behavior of all participants with the
+aid of AI algorithm. By cooperating with Edge AI hardware, AI could automatically
+assist to complete the work that would otherwise take participants hours or even days
+to learn. Participants can complete the data collection work that meets the
+requirements simply by taking the equipment to the designated area. Such human-
+machine collaboration makes the consensus-driven collaboration in reality as elegant
+as PoW in BTC.
+
+Governance of Map Data
+
+Most Internet services can be considered as an extension of their data
+applications, and data is the core production material of the Internet. Most of the
+existing blockchain governance can be understood as the governance of “ledger-
+keeping rights”. Most projects do not design and answer the question of how to
+govern the ownership and the maintenance obligation of data.
+
+The core production material of map is map data. Based on its spatial
+characteristics, GoWithMi maps all the rights and maintenance obligations of the map
+data to different pieces of virtual lands that are corresponding to reality. Each piece of
+land becomes a space node (GoZone).
+
+Based on such data governance design, we have transformed the global map data
+governance into spatial node governance based on independent regions. We are
+fortunate to b design a spatial node governance mechanism based on “Harberger
+taxes’’. In the digital space world, “Harberger taxes” does not have real-world
+constraints, so we could govern the rights and obligations of data elegantly through
+the governance of spatial nodes.
+
+9/ 42
+GoWithMi White Paper V3.0.0 All Rights Reserved
+Chapter III The Main Chain Gaia
+
+Distributed Storage and Distributed Computing
+
+SETI@home
+
+SETI@Home[6] is the world’s best-known and largest distributed computing
+project. It began to use distributed computing to analyze electromagnetic waves from
+the universe and find extraterrestrial civilization in the 1990s. The success of
+SETI@Home proves the feasibility of providing services through distributed
+computing. Inspired by SETI@Home, Gaia regarded map service as a public course
+that the international community could participate in the same way as finding
+extraterrestrial civilizations, and provide global decentralized location service
+infrastructure through the integration of idle computing power.
+
+IPFS
+
+IPFS is a master of successful open source distributed systems in recent decades,
+providing an excellent distributed storage protocol solution for subsequent projects.
+Gaia focuses on the development of distributed map services on the network transport
+ayer. It can be considered as a distributed map network that realizes some IPFS
+protocols in some sense, which is exemplary for the distribution transformation of the
+subsequent Internet projects..
+
+Map Technology and Spatial Geographic Grid Computing
+
+Architecture
+
+Background Knowledge of Map Technology
+
+In general, map technology can be divided into two parts:
+
+@ Map Data Compilation
+A series of data collected from the real world, such as road shape, traffic rules, the
+name and location of POI (Point Of Interest), cannot be directly used by
+commercial-level map services. To reorganize the data structure, different indexes
+need to be added based on different map service needs. For example, POI name
+
+10 / 42
+GoWithMi White Paper V3.0.0 All Rights Reserved
+queries needs to add inverted indexes; POI peripheral queries or map displays need
+to add spatial indexes; and path calculation needs to convert road data into multiple
+layers of strongly connected directed graphs. These tasks are generally weekly-
+level because they are full-scale structure conversion of existing data.
+
+@ Map Service
+The map service provides a series of location-based services such as place-name
+query, map display, path calculation, and route guidance on the basis of generating
+map data though compiling the collected data. All map-related business services
+can be regarded as the combination of these basic map services.
+
+Obviously, we need a complete and exclusive transformation of the map technology to
+provide a peer-to-peer map solution.
+
+Spatial Geographic Grid Computing Architecture (GCA)
+
+The spatial geographic computing architecture (GCA, GeoMesh Computing
+Architecture) proposed in this white paper represents a technical system and
+architecture design for distributed map services, of which the design philosophy is
+inherited from Grid Computing [7]. “Mesh” could better illustrate the spatial
+
+properties of the map services in the geographic information industry.
+
+GCA aims to design a new map service based on P2P network. Through the
+redesign of the basic map data structure, the map data can achieve distributed
+production based on PoCW (Proof of Compilation Work) consensus. While the map
+data consistency among the network is guaranteed, each node synchronizes data on
+demand, and achieves the network-wide consistency of the map service through the
+network-wide consistency of the map data, so that most nodes of the entire network
+no longer waste valuable computing resources on competing the ledger-keeping right
+under PoW. Instead, the resources are devoted to the map service itself, thereby
+increasing the TPS of the network by a thousand times or even thousands of times
+
+compared with that of the existing public chain.
+
+The core idea of GeoMesh is to make the map data which organized through
+
+GeoMesh the core service resource in Gaia network. All nodes can prove their own
+11 / 42
+GoWithMi White Paper V3.0.0 All Rights Reserved
+map service capability (Proof of GeoMesh) by themselves by storing and maintaining
+a part of GeoMesh data. And from the perspective of Gaia network, each node’s
+holding of service resources like GeoMesh is the proof of the contribution to the map
+service. Each node uses the effective holding of GeoMesh as a stock to vote for the
+ledger-keeping nodes in the network. This is called DPoG (Delegated Proof of
+GeoMesh).
+
+In general, the Spatial Geographic Computing Architecture (GCA) can be divided into
+the following parts:
+
+@ Anew basic map data structure GeoMesh which enables basic map data to be
+segmented into a large number of discrete and small-sized GeoMesh data;
+
+@ PoCW (Proof of Compilation Work) consensus mechanism that allows multiple
+nodes to create and update map data by mesh (Mesh) like block-by-block ledger-
+keeping;
+
+@ A peer-to-peer network mechanism that allows GeoMesh to be synchronized
+between nodes on demand;
+
+@ The core algorithm goes with GeoMesh that allows the node to provide a
+complete map service in a specified area based on the currently cached GeoMesh
+rather than synchronizing all map data;
+
+@ A proof of the node’s map service capability (Proof of GeoMesh). The node could
+prove its map service capability simply through the effectively cached GeoMesh;
+
+@ A ledger-keeping consensus for blockchains in non-financial scenarios (DPoG)
+that allows all nodes to maintain the same voting rights and map service
+
+obligations to the ledger-keeping nodes.
+
+The map service features access aggregation. Hardly do the taxi driver in Beijing
+need to know the location of the Los Angeles supermarket. Access aggregation makes
+GeoMesh enjoy a very high cache hit rate, thus making it possible to provide city-
+level map services with a single node with limited GeoMesh.
+
+The core of GeoMesh’s data structure is decoupling and parallelizing map data.
+Decoupling means that an independent GeoMesh data can provide the data needed for
+map services in a few square kilometers without any other data; Parallelizing means
+that several adjacent GeoMesh data can provide all the data of the map service in the
+corresponding range in parallel without any additional processing means.
+
+12 / 42
+GoWithMi White Paper V3.0.0 All Rights Reserved
+Figure 1. GeoMesh segements the map data.
+
+The data structure features of GeoMesh allow map nodes to synchronize and
+cache GeoMesh as simple as the way IPFS nodes cache images.
+
+In terms of network structure, I designed a two-level node structure, which is
+Root Node and Edge Node. Any hardware device, including server, PC or mobile
+phone, can be a node to participate in the Gaia map network. They can choose to
+become one kind of node or both kinds of nodes at the same time.
+
+{ e TE Soe
+— )
+ee * \ ,
+‘ = = Y @ Root Node
+\ al -) Edge Node
+4 : « cy
+& \<
+a > —— —$—
+Figure 2. A demonstration of Gaia nodes
+13 / 42
+
+GoWithMi White Paper V3.0.0 All Rights Reserved
+Root Node and Automatic Compilation
+
+Root Node
+
+The “root” in the “root node” comes from the root name server [8]. It uses the
+role of the root name server in the Domain Name Service (DNS) [9] to analogize the
+role of the root node in the Gaia network.
+
+In the actual operation of the DNS system, most of the domain name resolutions
+do not need to access the root name server, and the mapping relationship of the top-
+level domain (TLD) [10] has been cached in the nodes of the DNS system. But we
+can rebuild the entire DNS system based on the root name server at any time.
+
+In the Gaia network, GeoMesh data is generated between the root nodes through
+PoCW. GeoMesh will synchronize to the Gaia nodes as needed. Most of the map
+service requests do not require the root node, either. The root node’s role in Gaia is
+more like a provider of rules than a provider of services.
+
+Data Compilation Workload Proof (PoC W)
+
+Bitcoin’s PoW mechanism provides a very good example of how to maintain the
+data consistency among the whole network. Based on the “one CPU, one vote”
+principle, the decision of the “honest majority” is expressed as the longest chain
+which outruns other competing chains, thus ensuring the ledger data of the whole
+network is consistent.
+
+Proof of Compilation Work (PoCW) inherits the design principle of PoW. It
+makes the data compilation of map production a legder-keeping process and the
+GeoMesh-based data compilation and production a block production process; it also
+makes the decision of the “honest majority” expressed as the longest chain, thus
+ensuring the map data consistency among the whole network.
+
+Automatic Compilation and GeoMesh
+
+The automatic compilation of map data without human intervention is the
+premise of the de-centralized production of map data. So far, there is no map data
+automatic compilation project available for commercial use worldwide. We need to
+make different modifications based on the data compilation of different map service
+modules. Fortunately, we are “standing on the shoulders of giants”.
+
+14 / 42
+GoWithMi White Paper V3.0.0 All Rights Reserved
+Spatial index technology is relatively mature in the map industry. Quadtree [11]
+has almost become the industry standard; Web Mercator projection [12] and GeoHash
+[13] provide very good references in application.
+
+The inverted index technology is also relatively mature, and a large number of
+existing projects such as Solr [14] and ElasticSearch [15] provide good references for
+creating real-time index.
+
+The difficulty of GeoMesh technology lies in the automatic compilation of path
+planning, of which the purpose is to transform the road network composed of all roads
+into a strongly connected directed graph [16], so as to use the Dijkstra algorithm [17]
+or the A* algorithm [18] to obtain the optimal path from location A to lacation B.
+Although “boundary node” technology allows road network data to be segmented
+based on spatial index without additional indexes, the inspection of road networks and
+even the production of strongly connected directed graphs require human intervention
+for a long time, which is almost the most labor-intensive part of the indoor operation
+in traditional map business.
+
+Fortunately, the advancement of the algorithm makes full automation possible.
+Tarjan’s algorithm [19] allows the system to automatically detect “isolated subgraphs”
+on the road network, preventing drop-dead halt in path computation. Contraction
+hierarchies algorithm[20] provides a way to rarefy road network without losing any
+optimal path between higher nodes, making the high-level road network possible,
+which the automatic compilation and production of mainland-level path calculation
+
+requires.
+\ Level Hi
+= = Level |
+*
+_—— Candidate Link
+Level I-i
+Car Position Destination
+
+Figure 3. Multi-layer bidirectional A* pathfinding algorithm that is almost the industry standard.
+
+15 / 42
+GoWithMi White Paper V3.0.0 All Rights Reserved
+Edge node and Distributed Map Service
+
+Edge Node
+
+The edge nodes in the Gaia network have no cap on the number. The role of the
+edge nodes is to provide nearby map services based on their own hardware, network
+conditions and geographic location. The maps could range from a city, a country or to
+the whole world. Edge nodes can be deployed on servers, PCs, and even mobile
+phones. We call it “everything could mine”.
+
+Proof of Service Capability (PoG)
+
+PoG is a mechanism that allows Edge Nodes to prove their map capabilities
+through the effectively cached GeoMesh.
+
+After Gaia guarantees the map service consistency through GeoMesh data
+consistency based on proof of compilation workload (PoCW) , the spatial index of
+GeoMesh in parallel directly describes the range of map services that can be provided.
+In this way, Edge Node can prove its service capability by caching such service
+resources of GeoMesh, which referred to as PoG (Proof of GeoMesh). Gaia matches
+the Edge Node which proves its service capabilities through PoG with the nearby
+corresponding map service needs.
+
+Peer-to-Peer Network and GeoMesh
+
+One of the original design purposes of GeoMesh data structure is to make the
+size of the map data conform to the transmission requirements of the P2P network. In
+the PoC (Proof of Concept) test, one single GeoMesh data can be controlled at around
+800K, and can provide map display and path planning services within the range of
+3.6*2.4 square kilometers..
+
+16 / 42
+GoWithMi White Paper V3.0.0 All Rights Reserved
+Figure 4. The available map area of 800k GeoMesh in the PoC test.
+
+With GeoMesh as the carrier, the global map data is transmitted and stored in the
+P2P network in a distributed way. Each node only needs to synchronize and store the
+required parts. Gaia’s map service will be provided by a large number of edge nodes
+scattered around the world. Since real-time synchronization is not required, the node’s
+own computing power is used to provide map services. In this way, Gaia provides
+low-cost map services with no TPS limit theoretically.
+
+Map dAPI
+
+Based on the P2P map network, Gaia can provide a secure and transparent map
+service that never ends, which we call dAPI.
+
+Any blockchain project, Internet company or individual developer can deploy
+their own edge nodes based on open source code in the future. The deployment
+environment can be a secure environment chosen by the developer. After the edge
+node is connected to the network, the developer only needs to pay Gas to get the map
+service.
+
+17 / 42
+GoWithMi White Paper V3.0.0 All Rights Reserved
+@ Root Node
+©) Edge Node
+
+Figure 5. dAPI based on P2P network
+
+Gaia provides decentralized map dAPI in a completely transparent way, eliminating the possibility
+
+of evil conduct at the center.
+
+Ledger and DPoG
+
+The Governance of Ledger-keeping Right and GeoMesh
+
+We tried to design a consensus to govern the ledger-keeping right on Gaia, so
+that each node’s right to vote for the ledger-keeping node is related to its contribution
+to the entire network map service.
+
+GeoMesh provides a simple solution to directly link the map service capability
+of each node to the nodes’s effectively cached map data. So the contribution of each
+node to the whole map network ecology can be abstractly quantized into the node’s
+effectively cached map data in GeoMesh format.
+
+Service Voting Proof (DPoG)
+
+DPoG can be considered as a variant of DPoS (Delegated Proof of Stake) in
+essence, except that we convert the interest brought by the holding into the interest
+brought by service resources held by the nodes (GeoMesh).
+
+Each node obtains voting rights to the ledger-keeping node based on the valid
+GeoMesh cache, thereby unifying their rights and obligations in Gaia.
+
+18 / 42
+GoWithMi White Paper V3.0.0 All Rights Reserved
+Chapter IV Human-machine Collaboration
+
+in the Real World
+
+Data Collection and Map
+
+Information like the location of the store, the name of the road, etc., need to be
+collected and processed by people to form the original data in the electronic map in a
+standard format. The map industry refers to such work as “map data collection”. In
+traditional map enterprises, the biggest cost comes from data collection. Both Chinese
+American companies finish this work through intensive labor. Even Google can’t
+invest enough manpower and material resources in each country in the emerging
+markets to ensure that map data quality in emerging markets is the same as in
+developed countries. This is why Google Maps can’t deliver map services of the same
+quality throughout the world.
+
+Distributed data collection does not have this problem. Through the management
+of consensus and incentives, we can break through the organization and management
+limitations in traditional industry and let people all over the world participate in data
+collection.
+
+The Governance of Distributed Data Collection
+
+Most governance of distributed cooperation can be considered as the
+establishment of a self-assessment system. All self-assessment systems can be easily
+divided into two parts: self-declaration and verification by others. So distributed data
+collection is also divided into two phases:
+
+@ Collection phase (self-declaration): After collecting the data, the data does not
+immediately enter the compilation process. The collector needs to mortgage his
+or her own token to inspire others to verify.
+
+@ Verification by others: After the collector mortgages the token, it will attract other
+participants to verify the data. If the data is verified to be true, both the collector
+and the verifier will acquire incentives. If it’s verified to be false, the verifier will
+split the collector’s mortgaged token.
+
+19 / 42
+GoWithMi White Paper V3.0.0 All Rights Reserved
+Token-driven Edge AI and Distributed Human-machine
+
+Collaboration
+
+Edge AI can be considered as a distributed revolution in AI computing, freeing
+AI computing power from the constraints of the center and providing it to edge
+devices.
+
+We believe that Edge AI is naturally driven by Token, and this Token-driven
+Edge AI is naturally combined with human-involved data collection activities.
+
+We will use GIS and Edge AI technology to create an ecological spatial data
+mining machine. The carrier can be AI hardware for car, near space vehicle or even
+satellite. We'll make map data collection process standardized, automated and
+efficient to let the consensus algorithm perfectly facilitate human to participate in
+collecting map data in the real world, thus realizing perfect human-machine
+collaboration, interpersonal collaboration and machine collaboration.
+
+Figure 6. AI collaboration of token-driven Air-ground integration
+
+The AI data collection protocol will be open to third parties, making it possible
+for all Edge AI devices to participate in data collection.
+
+20 / 42
+GoWithMi White Paper V3.0.0 All Rights Reserved
+Currently we have made the following AI collection attempts:
+
+AI space data mining machine
+
+Figure 7. Al hardware in development
+
+This is GoWithMi’s exclusive data collection hardware. After the miner fixes the
+equipment on the vehicle, the camera on the equipment will receive continuous
+driving video. The customized AI chip will automatically identify the traffic signs,
+lane lines, intersection turns, POI along the way and other spatial data that maps need.
+The AI hardware shortens the time of collecting one single unit of map data from ten
+minutes (collected completely by human) to ten milliseconds, which greatly
+accelerates the data collection process.
+
+The Near Space Vehicle
+
+The near space vehicle will continue to hover at a fixed altitude of 20,000 meters
+for several months, with a “gaze” range covering large cities.
+
+Figure 8. Aerial view of a near space vehicle
+
+21 / 42
+GoWithMi White Paper V3.0.0 All Rights Reserved
+The near space vehicle could provide decimeter-level picture within the gaze
+range. All the spatial attributes of a city such as green spaces, water systems, roads,
+and buildings can be obtained directly through the picture.
+
+Figure 9. Image sent by the near space vehicle
+
+With near space vehicle, you can get the basic display data of a city in a few days
+or even hours, and can detect all events in the city in real time, from traffic jams to
+social events (demonstrations, riots) and even natural disasters (tsunami, volcanoes).
+
+22 / 42
+GoWithMi White Paper V3.0.0 All Rights Reserved
+Chapter V The Governance of Map Data
+
+From the Estate Monopoly in the Real World to the Data
+
+Monopoly in the Internet
+
+The status quo of the Internet is similar to that of Europe more than two hundred
+years ago when the landlord holds the core production material -land. All the
+dividends acquired in the industrial revolution since 1750 were in the hand of the
+landlord, and the wages of the working class hadn’t changed for one hundred years.
+
+The same story is happening in the Internet ecosystem where large Internet
+companies control data - the core production material in the Internet economy, and
+gain a lot of benefits, yet the Internet users can’t get any return.
+
+After making the distributed management of data technically possible through
+Gaia, we need to provide a mutually beneficial data governance system.
+
+Decentralized Land Governance Mechanism: Harberger
+
+taxes
+
+Harberger taxes is essentially a “self-assessment system” for the land’s value.
+Through the owner’s self-assessment of land prices and forced circulation trading,
+Harberger taxes takes into account both investment efficiency and investment
+efficiency in a decentralized way.
+
+To be specific, any landowner can declare the price of his land in accordance
+with his own ideas and pay taxes according to the price. Meanwhile, anyone can
+purchase the land at the price set by the owner. If the owner declared a low price to
+lower the tax, his land will soon be bought by others; if the owner declared a high
+price to prevent others from buying the land, he or she has to pay a high tax
+continuously. Based on such a game, the owner will declare the price of his land
+reasonably and eventually transfer the land to the person who can truly maximize its
+value.
+
+Harberger taxes manages the rights and obligations of land in an elegant way.
+Neither there will have “public land effect” resulted from unmaintained and over-
+developed shared land, nor “land monopoly” where owners refuse to fulfill their
+obligations and just reap the benefits.
+
+23 / 42
+GoWithMi White Paper V3.0.0 All Rights Reserved
+Spatial Data Node and Map Data Management
+
+We believe that Harbiner taxs can also be used in map data management. The
+detailed approach is to divide the areas on the map into virtual land of map data
+according to the corresponding reality. The map data will be assigned to a certain
+piece of virtual land with certainty according to its spatial characteristics, and each
+virtual land is a spatial data node (GoZone); The global map data is divided into
+independent nodes based on the space node for governance; “Harberger taxes”
+governance ensures optimal ecological governance efficiency between space data
+nodes in a decentralized way, allowing virtual land to transfer to the people who can
+truly exert its value and mobilizing the community to participate in the map
+ecological construction with the highest efficiency.
+
+24 / 42
+GoWithMi White Paper V3.0.0 All Rights Reserved
+Chapter VI Map Distributed Business and
+
+Ecological Value Transfer
+
+Maps are the top-level user traffic
+
+20 years development from PC Internet to the mobile Internet proves that the
+world’s top-level traffic only has four types: e-commerce, social, information and
+map. Only applications in these four areas can serve hundreds of millions or even
+billions of users for years. Especially in the era of the third generation Internet of
+everything represented by loT+5G+Edge AI, the map will become the only top-level
+traffic that will connect more than 50 billion IOT devices.
+
+The trend of Internet development in the past two years is the exploration of
+monetizing these top-level user traffic. Pinduoduo (Nasdaq: PDD) which monetizes
+the traffic in social and Qutoutiao (Nasdaq: QTT) which monetizes the traffic in
+information provide us with good references.
+
+Traffic Management and Distributed Business
+
+User traffic is as precious to the Internet economy as oil is to the industrial
+society. We need to manage this core resource more fairly in a more distributed way.
+Distributed business is such a governance method.
+
+The detailed idea is to abstract traffic conversion services such as discount
+coupon and advertisements into resources without threshold that everyone can bid for,
+and the highest bidder get to use the resources. In this way, the resources will be
+transferred to the merchants with higher conversion efficiency.
+
+25 / 42
+GoWithMi White Paper V3.0.0 All Rights Reserved
+Figure 10. Discount coupons and digital hygiene ads along the dApp
+
+This decentralized method will ensure the effective use of map traffic. The
+GMAT consumed by the auction will be re-allocated to the owner of the GoZone
+space node where the advertisement resource is located, so as to incent its
+maintenance of the map data and local business promotion of the distributed business.
+
+| GMAT#RAR mA AVE tae
+i SUE RAP i
+
+com BRE
+
+iP
+SScRhotes
+REA RABAT
+iepA
+7EReseecie | 6
+FERPA ry
+LIBR
+
+RST RS
+‘eS :
+
++ DERFSRERS TEE
++ Teas I
+
+Figure 11. Token circulation and its role in distributed business
+
+26 / 42
+GoWithMi White Paper V3.0.0 All Rights Reserved
+GMAT and Ecological Value Transfer
+
+GoWithMi’s token is called GMAT. GoWithMi uses GMAT to realize the value
+transfer from data production to map service or even to distributed business.
+
+The Incentives of GMAT
+
+Root Node participates in data production under PoCW consensus to obtain
+GMAT incentives.
+
+@ Edge Node provides map service to get GMAT incentives
+
+@ Providing ledger-keeping services based on the ledger-keeping node selected
+by DPoG to obtain GMAT incentives
+
+@ Map data collectors complete effective data collection to get incentives
+
+@ Map data verifiers obtain incentives by verifying data
+
+@ GoZone space nodes can obtain incentives for distributed business
+
+The Mortgage of GMAT
+
+@ Map data collectors in the real world need to mortgage GMAT as a credit
+endorsement
+
+@ In the real world, merchants need to mortgage GMAT as an endorsement of
+
+their service quality before placing advertisements
+
+The Consumption of GMAT
+
+Calling the dAPI service consumes GMAT
+Holding GoZone as a space node consumes GMAT
+
+Participating in the competition of advertising resources and advertising
+consumes GMAT
+
+27 / 42
+GoWithMi White Paper V3.0.0 All Rights Reserved
+The Distribution and Usage of GMAT
+
+The Distribution Plan of Token
+
+Private sale
+
+12%
+
+1,788,000,000
+
+It is used for long-term system development,
+community construction, business ecology
+and research of cutting-edge science and
+technology, targeting supporters who can
+grow as the project processes. Among them,
+the 6% seed lock-up period is 19 months, the
+initial unlock is 5%, release 5% one-month
+after landing on the exchange, and release
+15% every three months thereafter; 5%
+private sale, the lock-up period is 6 months,
+the initial unlock is 10%, release 15% one
+week after landing on the exchange, release
+25% every two months thereafter; 1% pre-
+sale, no lock-up period.
+
+Gate.io Startup
+
+9%
+
+1,341,000,000
+
+It is used for sustainable community ecological
+construction and maintenance. It’s open to
+lawful citizens of countries other than Chinese
+mainland and the United States who are not
+subject to regulation influence and are willing
+to participate in the co-construction of
+GoWithMi distributed smart maps. There is no
+lock period.
+
+Founding team
+
+10%
+
+1,490,000,000
+
+The founding team made outstanding
+contributions to the birth and construction of
+GoWithMi. This part is used for related teams
+and personnel who contribute to the early
+construction and continuous operation of
+GoWithMi. The lock-up period is 42 months,
+and then 10% will be unlocked after the project
+goes online for half a year and 15% every six
+months thereafter.
+
+28 / 42
+
+GoWithMi White Paper V3.0.0 All Rights Reserved
+
+Early supporters
+
+8%
+
+1,192,000,000
+
+It is used to invest in the early stage of R&D,
+project operation, marketing and etc. It is for
+early supporters and consultants who have
+made outstanding contributions to the
+development of GoWithMi. The lock-up period
+
+is the same as founding team’s.
+
+Market and
+
+commerce
+
+16%
+
+2,384,000,000
+
+In order to promote the long-term prosperity
+and ecological development of GoWithMi,
+continuous promotion and operation are
+needed. This part is used for long-term
+marketing, business cooperation, cutting-edge
+science and technology research and etc. Due
+to the large investment required in the early
+stage of Southeast Asia operation, the usage
+plan is established, 30% can be extracted within
+6 months after the token issued, and 10% can
+be extracted every quarter after landing on the
+exchange. The development plan of each stage
+shall be carried out according to the Council.
+
+Mining
+
+incentives
+
+30%
+
+4,470,000,000
+
+The source of GoWithMi's sustainable
+competitiveness lies in the continuous
+expansion and updating of map data, which is
+used to reward map ecology contributors and
+block producers. Gradually release each year
+after the spatial digital real estate and the main
+network launch online, the release quota
+reduced half every 2 years, complete mining in
+10 years. Specifically, the first year and the
+second year respectively released
+1,154,000,000 GMATs, and the third and fourth
+years respectively released 577,000,000
+GMATs, and so on.
+
+Foundation
+
+reserve
+
+15%
+
+2,533,000,000
+
+It is used for follow-up development,
+establishing cooperative partner and improving
+ecology and etc. The use of funds is executed
+according to the foundation’s resolutions, and
+related information will be published regularly.
+Start releasing 12 months after landing on the
+exchange and executed when two-thirds of the
+
+29 / 42
+
+GoWithMi White Paper V3.0.0 All Rights Reserved
+
+member of the Council vote yes.
+
+The Token Usage Plan
+Research and It is mainly used for rewarding the founding team, recruiting
+development of 30% experts and developing personnel, technical patents and
+technology intellectual property protection.
+. It is used for rewarding cold start, business development and
+Marketing - : as
+ti 25% training, technology exchange and sharing, the publication
+operation
+P of journal, alliance establishment or participation and etc.
+Business 10% It is used for developing important business partners,
+cooperation ° important cooperation channels and etc.
+Safety and 50% It is used for code safety audit, legal compliance, third party
+compliance ° audit and etc.
+It is used for incubation, investment and absorption of new
+Reinvestment 10% blockchain technologies, new teams, new projects that are
+conducive to the ecological construction of _GoWithMi.
+It is used for sustainable development of projects and risk
+Reserves 20%
+response.
+
+30 / 42
+GoWithMi White Paper V3.0.0 All Rights Reserved
+Chapter VII Team Introduction
+
+Core Team
+
+GoWithMi team is a cross-disciplinary professional team composed of continuous successful
+entrepreneurs in the global GIS industry, global map navigation engine technology experts, star
+product managers, blockchain technology experts, and local operation experts. The main
+members come from Navteq(Here), Navinfo (002405.SZ), JD.com(NASDAQ :JD),
+Sohu.com(NASDAQ :SOHU), development community of Ethereum and EOS. There are 29
+people in the team, including 15 people in blockchain and map technology, 10 people in
+
+Indonesia operation, and 4 people in global market and business. The core members are as
+
+follows:
+
+Dong (Oliver) Li Founder & CEO
+
+Oliver is the world's leading expert in the spatial information
+industry. With over 20 years of global operating experiences and
+continuous successful entrepreneurship ranging from big data,
+mobile internet, and the map industry; One of his successful exits
+was as co-founder of Cennavi, the largest UGC map in China,
+being acquired in 2008 by NavInfo (002405.SZ), the largest listed
+
+map company in China. Oliver's next company is LBAdvisor Technology, a big data-focused
+
+company that was acquired in 2016 by Blue Focus (300058.SZ), a global top 10 PR company.
+
+Yi(Simon) Ren Co-founder & CTO
+
+Simon is one of the earliest core developers of map navigation
+engine in China. With over 15 years of map product development
+experiences. He is the top technology expert in the global location-
+based services (LBS) field, with complete front and back end and
+maps full engine self-development capabilities and International
+
+technical team management capabilities. He led the China map
+
+product team of SK Group, served as the head of the core product
+research and development for NavInfo (002405.SZ),
+
+31 / 42
+GoWithMi White Paper V3.0.0 All Rights Reserved
+Dong Yangfan Founding Partner & SVP
+
+Mr. Dong is the expert in commercialize the modern technologies
+for the LBS and O20 industries. He used to lead his company to
+provide the services for tens of thousands business partners cross
+China mainland, Hong Kong and Taiwan, and acquired millions of
+users.Mr. Dong is the expert in commercialize the modern
+technologies for the LBS and O20 industries. He used to lead his
+
+company to provide the services for tens of thousands business
+
+partners cross China mainland, Hong Kong and Taiwan, and acquired millions of users. With
+his experience in LBS/O20 industries and combined with his view of block chain technology,
+Mr. Dong is now leading GoWithMi’s business and market team to establish the distributed
+business environment for those business owners who were still suffering the lacking of 1.T
+
+infrastructures in south east Asia.
+
+Dr. Jeff Flowers Blockchain technology VP
+
+Dr. Jeff is an early participant and communicator of the Silicon
+Valley blockchain community. He serves as an advisor to a number
+of Ethereum based projects such as POA as well as an active
+member of multiple decentralization communities in and around the
+Bay Area. He was also a Director and a Professor of Curriculum at
+
+Blockchain University and continues to teach at DLT Education.
+
+Iwan Suryaputra _‘ Founding Partner & COO in Indonesia
+
+Iwan worked for 20 plus years in mobile Internet and map industry
+in Indonesia. He served as CEO for PT Surya Teknologi Perkasa, a
+mobile monitoring and mapping service provider in Indonesia as
+
+well as CEO for Gowes, a bicycle-sharing company in Indonesia.
+
+32 / 42
+GoWithMi White Paper V3.0.0 All Rights Reserved
+Yuanyuan (Yolanda) Pan Founding Partner & CPO
+
+With over 10 years of product and project management experiences
+in the map industry software products, Yolanda is an outstanding
+product leader and had successfully participated in the creation of
+products with ten million daily users in China. She has a strong
+corporate strategy decomposition, execution, design and landing
+
+ability, served as a star product manager in the mobile phone map
+
+industry. Yolanda was a senior product manager for AMAP, a most
+famous and popular map software in China, and in charge of multiple subprojects including
+traveling, payment, searching, channel, and life services. With her leading of the AMAP’s
+product process system construction, operation and R&D management, users have a
+
+breakthrough from hundreds of thousands to hundreds of millions.
+
+Investors and Advisors
+
+Chuang Tao
+
+The world’s map expert, a successful entrepreneur, and well-known
+investor. Mr. Tao is a tenured professor at the University of Calgary
+in Canada and chief geospatial information advisor to the United
+Nations. He is the founder of Microsoft Bing Map, founder of PPTV
+
+and founder of Z Ventures Group, the world’s largest mapping
+
+Congwu Cheng
+
+Founder and former CEO of AMAP. He led AMAP to become a top
+player in China's map industry. AMAP was listed in NASDAQ in
+2010 and later delisted after being 100% acquired by Alibaba Group.
+
+33 / 42
+GoWithMi White Paper V3.0.0 All Rights Reserved
+Dr. Jerry Fuqua
+
+Blockchain Advisor, he is a continuous successful entrepreneur,
+investor, manager, and technology advisor. He is currently active ina
+number of areas involving crypto currencies, blockchain, and
+gamification. Jerry was on the Executive Committee of the MIT-
+Stanford Venture Lab (VLAB) and actively involved in the Silicon
+
+Valley crypto ecosystem, including efforts in promoting Silicon
+
+Valley’s first Bitcoin meetup community “SV Bitcoin meetup”. Jerry was an early pioneer of
+commercial web services, initially as the co-founder and CTO of Internet Information Systems
+Inc. and World Point Interactive. He was also involved in AI and robotics as a researcher and
+program manager for the US Department of Defense. As the Principal of Fuqua Associates,
+Jerry consulted for number of notable organizations including Sony, IBM, United Airlines, and
+the State of Hawaii.
+
+Suryandy Jahja
+
+The best IT investment expert in Indonesia. Mr. Jahja is the co-
+founder and CEO of Kresna investment, the largest IT investment
+group in Indonesia. Kresna owns several listed companies. In 2017,
+
+the overall performance of Kresna ranked the first in Indonesia.
+
+34 / 42
+GoWithMi White Paper V3.0.0 All Rights Reserved
+Investment Institutions
+
+ONTology y fi 7A
+
+Z VENTURES GROUP
+
+KRESNA
+
+INVESTMENTS
+
+: CONSENSUSLAB
+
+HR eH EB
+
+Partner& Customer
+
+occ G
+
+GoJek: The largest O20 service China Beidou civil Center China Lodging Group: Nasdaq listed
+
+companv in Indonesia. company, China's largest hotel group.
+
+Bing Map: Microsoft map platform. Mapbox: The largest To B map WAYZ: Unicorn level unmanned map
+platform globally. data Enterprises.
+Mars Finance: Famous Blockchain Media.  Shopee: The Largest B2C corporation in Zoomy: The largest mobile advertising
+Southeast Asia. company in Indonesia.
+
+Akulaku: The largest consumer lending
+
+Mazda Indonesia TOYOTA Indonesia
+
+company in Southeast Asia.
+
+HONDA Indonesia
+
+GoWithMi White Paper V3.0.0 All Rights Reserved
+
+Chapter VIII Development and Prospects
+
+Development Plan
+
+2017 ° The market research
+
+Q2-Q4 ¢ The first phase of map data mapping platform based on image data has been completed, which can automatically
+generate high-precision road network, terrain and landform, building outline and so on based on satellite image
+map and UAV aerial photo, solving the cold start problem of map data, laying a foundation for low-cost and rapid
+replication in the future worldwide.
+
+° The research and development of "map automatic compile engine" has been completed, which has realized the
+full automation of map data production for the first time in the world. The update speed of map data has been
+successfully promoted to the day level, and it will reach the minute level in the future, laying a foundation for the
+decentralization map production on the main chain Gaia.
+
+° Launch of MVP
+
+2018 . The mobile terminal map product is officially launched, which can provide a complete display map of Indonesia
+Q1-Q2 and a real-time 3D map of traffic in Jakarta.
+° The official partner of the Asian games in Indonesia, providing real-time traffic services for the Asian games with
+
+distributed maps.
+
+2018 ° Developed mobile AR data collection, POI coverage in Jakarta has reached 97.95 POI / square kilometer, better
+Q3~Q4 than Google maps.
+° Continue to carry out distributed business expansion based on map; obtain orders from Honda, Mazda, Toyota and
+other car manufacturers that continuously generate revenue.
+° DApp integrate decentralize wallet.
+° Cooperate with Indonesian and Southeast Asian unicorn enterprises, go-jek, and Akulaku, on map services.
+
+° The core technology of full data on chain completes POC (Proof of Concept) .
+
+2019 . The initial display map covers Southeast Asia
+Q1-Q2. + Al hardware spatial data mining machine project approval.
+. The first phase of GoZone (Spatial datanode) was launched.
+
+2019 ° Open governance of spatial data node.
+Q3-Q4. + The first version of the AI hardware spatial data mining machine was released.
+° Continue to expand map-based distributed business partnerships and scale up GoWithMi's services for distributed
+businesses.
+° Map display covers South America and Africa.
+° Indonesia offers a full range of map services including map display, POI search, route planning and route guide.
+
+° The map dAPI start services.
+
+2020 ° Main chain online.
+° Second generation of HD map AI hardware spatial data mining machine released.
+
+° GoZone covers Southeast Asia.
+
+° Full map service complete global coverage.
+
+37 / 42
+GoWithMi White Paper V3.0.0 All Rights Reserved
+The Status of Current Products
+
+The project is progressing smoothly according to the roadmap and is currently in
+the stage of “2019 Q3~Q4”. The technical details are as follows:
+
+@ Main Chain:
+
+The core design of Gaia’s main chain has been audited, and no technical risks has
+been detected. The main chain will be launched next year on the main network.
+GeoMesh technology prototype has passed POC test. One single GeoMesh data can be
+controlled at around 800K and able to provide map display and path planning services
+within the range of 3.6*2.4 square kilometers;
+
+High-level road network self-adaptive compilation enters the performance test
+phase. At present, it only takes 68 seconds to generate a strongly connected high-level
+road network in Southeast Asia’s 1,888,583 km road network.
+
+On chain standard map service has completed 80%. Point of Interest (POI) search
+module 1.0 has completed, which can support the POI search of 527,575 place names
+in Indonesia (the data size is 10~30 times that of OpenStreetMap). Path planning and
+guiding module 1.0 has completed and is being tested within a total area of 47,266
+square kilometers in Jakarta, Indonesia and adjacent regions. The path planning and
+guiding module 1.1 have completed 80%; together with the “high-level road network
+automatic compilation function”, it can provide mainland-level cross-country path
+calculation. The first phase of indoor map technology has completed with a data
+coverage of 922,303 square meters.
+
+@ Main dApp:
+
+dAPP has released 16 Android versions and 6 IOS versions iteratively with
+1,200,000 downloads and 22,000 daily active users. Both Android version and IOS
+version have built-in decentralized wallet
+
+@ Spatial data mining machine:
+The initial technical development of AI spatial data mining machine has been
+completed and the details will be announced recently.
+
+@ Application achievements:
+
+38 / 42
+GoWithMi White Paper V3.0.0 All Rights Reserved
+We have gained revenue from car manufacturers and cooperated with many
+well-known fast moving consumer goods manufacturers in Indonesia to pilot a
+larger scale distributed business operation in hundreds of restaurants and thousands
+
+of supermarkets.
+
+Figure 12. A display of the current products
+
+Prospects
+
+Ledger of Everything and Space Oracle
+
+Map service is required when the smart contract is involved in the real world
+scenario, such as decentralized cab-hailing, decentralized take-out and decentralized
+e-commerce. If dAPI need to solve issues of using smart contract to mobilize the
+people and things in the real world like calculating driving route, dispatching the
+delivery man to fetch the take-out, real-time display of the cargo’s location, etc., we
+need space oracles to solve the problem of letting smart contracts perceive whether
+people and things effectively complete services.
+
+The main reason why the space oracle cannot be replaced by the centralized map
+
+“,
+
+is related to the blockchain smart contract’s “‘self-declaration, verification by others”
+design. After a node performs the smart contract, it still needs verification from other
+nodes. This means the space oracle needs to give the verification node verifiable and
+tamper-resistant historical spatial data. Obviously, that’s impossible for centralized
+map which emphasizes timeliness and provides context-free services.
+
+39 / 42
+GoWithMi White Paper V3.0.0 All Rights Reserved
+As aresult, decentralized “financial ledger” like blockchain needs to use
+decentralized “Ledger of Everything” like GoCenterMi to drive everything. As Gaia’s
+technology system and network architecture are the same as the blockchain, the
+production of GeoMesh can be considered as a block generation behavior in essence,
+which supports the complete traceability of its historical chain. All public chains need
+technology like Gaia to ensure the purity of performing smart contracts related to the
+real world in a decentralized way.
+
+Worldwide Decentralized Location Service Facilities and
+
+“Prisoner's Dilemma”
+
+Prisoner’s dilemma exists in the map industry globally—any large Internet
+company doesn’t want its own map, a HUB that connects its own real-world
+information and digital information, on competitors’ servers. As a distributed and
+completely neutral location service infrastructure, Gaia will free large Internet
+companies from the meaningless competition of “reinventing the wheel” other than
+providing a safe, low-cost solution for small and medium-sized developers,,.
+
+Privacy Map and Interest Map
+
+With GoWithMi providing a decentralized universal underlying map solution,
+segmented map application scenario becomes possible, which otherwise could not be
+realized due to the high sunk cost.
+
+@ Privacy Map
+
+Just like the browsing tracks on the Internet, people’s tracks in space sometimes
+involve privacy issue. Gaia’s distributed map makes privacy map possible. Map
+service that based on open source, verifiable and distributed nodes completely
+eliminates the possibility of user information being hijacked by the bottom layer. And
+for the upper layer, MPC (multi-party computing) or zero-knowledge proof
+technology allow users to use the full map service without revealing their spatial
+location.
+
+It is worth emphasizing that the closed source code of centralized map and the
+“black box operation” of the central server deployment make it impossible for
+centralized map to prove its protection of user privacy. For centralized map, claiming
+to realize privacy map is an ostrich policy.
+
+@ Community of Interest Map
+
+40 / 42
+GoWithMi White Paper V3.0.0 All Rights Reserved
+The current map is more concerned with general-purpose functions because of
+data cost, but this does not mean that there is no market demand for maps that provide
+data and services for niche interests.
+
+Based on GoWithMi’s data collection system, anyone can build maps according
+to their own needs. Users can form sub-map communities like “Sea-fishing Map”,
+ae
+
+“Cycling Map”, “Scenic Map” and “Agricultural Map” to build a more in-depth
+community by themselves.
+
+The Future of Distributed Autonomous Driving
+
+Tesla’s crowdsourcing collection of autopilot data [21] reveals the trend of
+autonomous driving. Autonomous driving’s requirements for data richness and real-
+time performance have gradually surpassed the limit of traditional centralized data
+production. While the improvement of 5G communication bandwidth blurs the
+difference between the edge and the center, AI blurs the difference between
+professional and non-professional data collection. Token-driven crowdsourcing data
+collection will be an important data source for autonomous driving in the future.
+GoWithMi’s design of the entire map ecology is in line with this trend.
+
+41 / 42
+GoWithMi White Paper V3.0.0 All Rights Reserved
+the
+
+2
+
+3
+
+=
+
+ex
+
+a
+
+20
+
+21
+
+References
+
+According to Report on the Traffic of the Major Cities in China 2016 released by Amap, Cadillac owners like going to bathing centers
+
+best. URL: https://wenku.baidu.com/view/36f75 1530a4e767 fSacfa 1 c7aa00b52acec79c5 1 .html
+
+<Google Maps API Price Hike Is Threatening the Future of Some Companies> _https://gadgets.ndtv.com/apps/features/google-maps-
+
+apis-new-pricing-impact-1907242
+
+<YouTube, Google Maps and more: The major Android apps Huawei users could lose>, URL:
+
+https://www.trustedreviews.com/news/youtube-google-maps-apps-huawei-users-miss-3757529
+
+Baidu Maps Open Platform http://Ibsyun.baidu.com/
+
+SETI@home https://en.wikipedia.org/wiki/SETI@home
+
+Grid Computing https://en.wikipedia.org/wiki/Grid_computing
+
+Root name server https://en.wikipedia.org/wiki/Root_name_server
+
+Domain Name System https://en.wikipedia.org/wiki/Domain_Name_System
+
+top-level domain https://en.wikipedia.org/wiki/Top-level_domain
+
+Quadtree: _https://en.wikipedia.org/wiki/Quadtree
+
+GeoHash: https://en.wikipedia.org/wiki/Geohash
+
+Web Mercator projection: https://en.wikipedia.org/wiki/Web_Mercator_projection
+
+Solr https://en.wikipedia.org/wiki/Apache_Solr
+
+ElasticSearch https://en.wikipedia.org/wiki/Elasticsearch
+
+Strongly connected graph: https://en.wikipedia.org/wiki/Strongly_connected_component
+
+Dijkstra's algorithm: https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm
+
+A* algorithm: https://en.wikipedia.org/wiki/A*_search_algorithm
+
+Tarjan's algorithm: https://en.wikipedia.org/wiki/Tarjan%27s_strongly_connected_components_algorithm
+
+Contraction hierarchies: https://en.wikipedia.org/wiki/Contraction_hierarchies
+
+Your Tesla Is Watching-and Recording-You All the Time: https://www.lamag.com/citythinkblog/tesla-recording-data-privacy/
+
+og/tesla-recording-data-privacy/
+
+42 / 42
+GoWithMi White Paper V3.0.0 All Rights Reserved

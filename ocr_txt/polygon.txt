@@ -1,0 +1,570 @@
+C5 polygon
+
+Ethereum’s
+Internet of
+Blockchains
+
+00 POLYGON LIGHTPAPER
+
+Table of contents
+
+Challenge
+Solution
+Features
+Technology
+Polygon chains
+Architecture
+Positioning
+About
+
+Our vision
+Team
+
+Find out more
+
+01 POLYGON LIGHTPAPER
+
+Challenge
+
+Ethereum is the blockchain development
+platform of choice, but it has limitations:
+
+Low throughput Poor User Experience (UX) No Sovereignty
+Gas, Delayed PoW finality Shared throughput/clogging risk, tech stack
+notcustomizable, governance dependence
+
+Many projects are exploring Ethereum-compatible blockchains as a way to mitigate these limitations while still leveraging
+Ethereum’s thriving ecosystem. However, there is no specialized framework to build such blockchains nor a protocol to
+connect them. This introduces significant development challenges and causes ecosystem fragmentation.
+
+P
+
+Polkadot
+
+Custom
+Network '
+
+% polygon polygon.technology February 2021
+02 POLYGON LIGHTPAPER
+
+Solution
+
+Polygon - a protocol and a framework for
+building and connecting Ethereum-compatible
+blockchain networks
+
+One-click deployment of Growing set of modules for Modular and optional
+preset blockchain networks developing custom networks “security as a service”
+Interoperability protocol Adaptor modules
+
+for exchanging arbitary for enabling interoperability
+
+messages with Ethereum for existing blockchain networks
+
+and other blockchain networks
+
+yy - v)
+& v)
+polygon
+“Oo. iv)
+Y) v)
+mY) iv)
+polygon °
+. ¢ 5 L
+polygon
+
+Cy polygon polygon.technology February 2021
+03 POLYGON LIGHTPAPER
+
+Features
+
+Polygon combines the best of Ethereum and
+
+sovereign blockchains into an attractive feature set.
+Built by developers, for developers.
+
+g
+
+ETH Compatibility
+
+Industry dominance, establisned
+tech stack, tools, languages,
+standards, enterprise adoption
+
+Sovereignty
+
+Dedicated throughput/resources,
+fully customizable tech stack,
+sovereign governance
+
+</>
+
+Developer Experience
+
+Equivalent to Ethereum, no protocol
+level knowledge required, no token
+deposits, fees or permissions
+
+Cg polygon
+
+Scalability
+
+Dedicated blockchains, scalable
+consensus algorithms, custom
+Wasm execution environments
+
+Interoperability
+
+Native support for arbitrary message
+passing (tokens, contract calls etc),
+bridges to external systems
+
+ey
+
+Modularity
+
+High customizability, extensibility and
+upgradeability, short time-to-market,
+
+community collaboration
+
+polygon.technology
+
+ou ra
+or Le
+
+Security
+
+Modular “security as a service",
+provided either by Ethereum or by
+a pool of professional validators
+
+re
+
+User Experience
+
+Comparable to Web2, “zero-gas”
+transactions, instant (deterministic)
+transaction finality
+
+February 2021
+> =5
+
+: \
+inves :
+eA
+
+A VI
+
+=
+GA
+
+b VV
+
+sly,
+
+a
+
+if
+
+p
+ye
+
+A
+Ly
+=:
+[>
+
+x
+ps
+
+-
+
+<f/
+
+Ds J
+
+ST)
+
+BRE SZ$BY
+07
+p
+a
+ES)
+
+Technology
+
+Foundation for the
+
+internet of value and people
+05 POLYGON LIGHTPAPER
+
+Technology
+
+Polygon provides the core components
+and tools to join the new, borderless
+economy and society.
+
+With Polygon, any project can have it's dedicated, optimized instance of Ethereum which combines the best features of
+stand-alone blockchains (sovereignty, scalability, and flexibility) and Ethereum (security, interoperability and developer
+experience). Additionally, these blockchains are compatible with all the existing Ethereum tools (Metamask, MyCrypto,
+
+Remix, etc), and can exchange messages among themselves and with Ethereum.
+
+&% &%
+
+Polygon Polygon
+
+&% &%
+
+Polygon Polygon
+
+C &
+
+Polygon Polygon
+Framework Protocol
+One-click deployment of preset Arbitrary message passing
+Ethereum-compatible blockchains. between any two participating Polygon
+
+. chains, as well as between any Polygon
+Growing set of modules
+chain and Ethereum
+
+(pluggable consensus, staking, governance,
+
+EVM/Ewasm, execution environments, disput “Security as a service”
+resolvers etc.) for developers who want to (non-mandatory, modular security
+build their custom blockchains. services, provided either by Ethereum
+
+directly or by a dedicated set of validators)
+
+Cy polygon polygon.technology
+
+February 2021
+06 THEPOLYGON PROJECT
+
+Polygon chains
+
+Polygon supports two major types of
+Etnereum-compatible blockchain networks:
+stand-alone networks and networks that
+leverage “security as a service”
+
+Stand-alone chains
+
+Fully sovereign Ethereum-compatible blockchain
+networks. These networks are fully in charge of
+their own security, i.e. have their own pool of
+validators. Stand-alone chains offer the highest
+level of independence and flexibility, with the
+tradeoff of sometimes challenging validator
+pool establishing.
+
+Enterprise networks
+Established projects with strong communities
+
+Secured chains
+
+Blockchain networks that use “security as a service”
+instead of establishing their own validator pool. The
+service can be provided either by Ethereum directly
+(via fraud proofs or validity proofs) or by a pool of
+professional validators (similar to Polkadot’s “shared
+security”). Secured chains offer high level of security,
+with the tradeoff of sacrificing a portion of
+independence and flexibility.
+
+Startups
+Security-focused projects
+
+Cy polygon polygon.technology February 2021
+07 POLYGON LIGHTPAPER
+
+Architecture
+
+Polygon architecture consists of
+four abstract, composable layers:
+
+Smart contracts Execution environments
+Evm Ewasm
+
+Execution layer
+
+TRANSACTION COLLATION CONSENSUS
+
+ORDERING
+
+OATA * Polygon networks layer
+
+VALIDATOR MANAGEMENT VALIDATION PROOF GENERATION * Security layer (Optional)
+FINALITY STAKING DISPUTES MESSAGING « Ethereum layer
+01 02
+.
+Ethereum layer Security layer
+
+Polygon chains can use Ethereum, the most secure
+programmable blockchain in the world, to host and
+execute any mission-critical component of their
+logic. This layer is implemented as a set of Ethereum
+smart contracts, in charge of functions like:
+
+Finality/checkpointing
+
+Staking
+
+Dispute Resolving
+
+Messaging between ETH and Polygon chains
+
+Cg polygon
+
+polygon.technology
+
+Aspecialized, non-mandatory layer providing
+“validators as a service" - a set of validators that
+can periodically check validity of any Polygon chain
+fora fee. This layer is normally implemented as a
+meta blockchain that runs in parallel to Ethereum,
+in charge of functions like:
+
+Validator Management
+registration/deregistration, rewards, shuffling etc
+
+Polygon Chains Validation
+
+Security layer is fully abstract and can have multiple
+instances, implemented by different entities and
+with different characteristics. It can also be
+implemented directly on Ethereum, in which case
+the Ethereum miners perform the validation.
+
+February 2021
+08 POLYGON LIGHTPAPER
+
+Architecture
+
+03
+
+Polygon Networks Layer
+
+Aconstellation of sovereign blockchain networks.
+Each of the networks serves its respective community,
+maintaining functions like:
+
+Transaction Collation
+Local Consensus
+
+Block Production
+
+Aconstellation of sovereign blockchain networks.
+Each of the networks serves its respective community,
+maintaining functions like:
+
+Cg polygon
+
+polygon.technology
+
+04
+
+Execution layer
+
+This layer interprets and executes transactions that
+are agreed upon and included in Polygon networks’
+blockchains. It consists of two sublayers:
+
+Execution environment
+pluggable virtual machine implementation
+
+Execution logic
+
+state transition function of a specific Polygon network,
+normally written as Ethereum smart contracts
+
+February 2021
+09 THE POLYGON PROJECT
+
+Positioning
+
+Brief comparison with the most notable
+alternatives suggests that Polygon offers
+the most attractive set of features.
+
+Sidechains Sharding Quorum Cosmos
+
+Ethereum Compability ea eA e eA
+Scalability ° ef . °
+Security .
+Sovereignty e e e
+Interoperability e ea
+User Experience e e e
+Developer Experience eA
+
+& Conditional / Limited
+
+Get started with Polygon
+
+Or read the whitepaper to learn more
+
+&p polygon polygon.technology
+
+Polkadot
+
+ea
+
+ea
+
+Polygon
+
+sinncpepe
+
+February 2021
+> =5
+
+ml
+i] VAS ’
+ea A
+
+A VI
+
+=
+GA
+
+b VV
+
+sly,
+
+a
+
+if
+
+L
+ye
+
+A
+Lu
+=:
+[>
+
+x
+ps
+
+-
+
+<f/
+
+Das
+
+ST}
+
+DP? SEY
+LV
+fx
+
+About
+
+Who we are and
+
+why were doing this
+11 POLYGON LIGHTPAPER
+
+Our vision
+
+We envision an open,
+borderless world.
+
+Aworld in which people and machines collaborate and exchange value globally and freely, without gatekeepers or
+intermediaries. A world in which communities thrive, unconstrained by artificial borders and archaic regulations.
+
+We will strive to empower everyone to effortlessly join this new, better world.
+
+&% &%
+
+Polygon Polygon
+/
+/
+/
+/
+/
+/
+/
+/
+/
+/
+/
+/
+Polygon 4) Polygon
+& / \ A
+/ \
+/ \
+/ \
+/ \
+/ \
+/ \
+/ \
+/ \
+/ \
+Polygon Polygon
+
+Cy polygon polygon.technology February 2021
+12. POLYGON LIGHTPAPER
+
+Team
+
+Polygon is an open source project built by decentralized
+team of contributors from all over the world.
+
+We don't believe in traditional companies, hierarchy and management.
+Anyone is welcome to contribute code, ideas or anything else that can help make our vision a reality!
+
+Team
+
+Jaynti Kanani Anurag Arjun Sandeep Nailwal
+
+Co-Founder Co-Founder Co-Founder
+
+Mihailo Bjelic
+
+Co-Founder
+
+&p polygon polygon.technology February 2021
+13. POLYGON LIGHTPAPER
+
+Advisors
+
+Anthony Sassano Pete Kim Ryan Sean Adams
+EthHub Coinbase Bankless
+
+Hudson Jameson John Lilic
+Ethereum Foundation Ex ConsenSys
+Become a contributor
+Contribute Open positions
+Or see open positions for core contributors
+
+&p polygon polygon.technology February 2021
+14 POLYGON LIGHTPAPER
+
+Find out more
+
+Official website
+
+polygon.technology
+
+Whitepaper
+
+polygon.technology/whitepaper
+
+Twitter
+
+@maticnetwork
+
+Discord
+
+discord.com/invite/XvpHAxZ
+
+Telegram
+
+t.me/maticnetwork
+
+&p polygon polygon.technology
+
+February 2021

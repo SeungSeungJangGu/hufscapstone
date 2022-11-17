@@ -1,0 +1,476 @@
+a bitspark
+
+Bitspark’s Bankless
+Ecosystem
+
+Whitepaper
+-
+,
+y
+y
+y
+y
+y
+yo
+y
+, - . \
+i = ‘
+, y '
+f i,
+
+f
+q
+
+j |
+
+| - |
+
+{ N ~
+
+{ ~ ]
+
+|
+
+]
+
+www.bitspark.io q - L
+~ P
+e bitspark
+
+Contents
+Introduction
+
++ Money Transfers
+
++ The War on Cash
+
++ In Perspective: Target Markets
++ The Bankless Alternative
+
+Bitspark’s Bankless Ecosystem
+
+« Channels
++ Bitspark Mobile App
++ Web Platform/API
++ Decentralised Exchange (DEX)
+
+* Vehicles
++ Stablecoins
++ International Vaults
++ Zephyr
+
+Bitspark in effect
+
++ Cross Border Money Transfers
++ Same World, Different Benefits
++ Individual
++ Business
++ Crypto Trader
+
+Appendix
++ About Bitspark
+
++ Stablecoins
+
+www.bitspark.io 2 of 14
+e bitspark
+
+Introduction
+
+We live in an age of ultra-high mobility. Advances in transportation and communication
+technology have led to unprecedented numbers of people travelling, working and doing
+business across borders. And yet, in such a fast-paced global environment, traditional financial
+institutions have been remarkably slow to adapt. This becomes particularly apparent when
+considering cross-border money transfers.
+
+Money Transfers
+
+There are more than 180 different fiat currencies in circulation, each varying in value, strength
+and liquidity. Transferring these currencies across borders is expensive, inefficient and often
+impractical. This is due to the global financial infrastructure which is characterised by tight KYC/
+AML regulations, high opacity and a strong dependency on third-party institutions. Transactions
+become particularly problematic when sending money to developing market economies with
+weaker currencies where economic and political infrastructure is strained. Trading in and out of
+exotic currencies is expensive due to low liquidity on the global market, and the consequent
+need to route exchanges through strong currencies such as USD.
+
+Apart from cross-border money transfers constituting an essential function for e-commerce and
+trade, for millions of migrant workers sending money home in the form of remittances is of
+critical importance. It is a multi-billion dollar industry that sustains families and developing
+economies.
+
+The World Bank estimates that officially recorded remittances to low- and middle-income
+countries reached $466 billion in 2017. However, due to high transaction fees charged by banks
+and companies such as Western Union and Moneygram, a staggering 7.1% ($33 billion) failed to
+reach recipients."
+
+The War on Cash
+
+The remittance industry is facing a number of imminent and structural challenges including a
+lack of reliable data on migration and payment flows, increasing KYC/AML compliance costs, and
+high transaction costs which are still well above the 3% target set by the UN with its Sustainable
+Development Goals. However, the single biggest threat facing cross-border money transfers
+today is de-risking.
+
+1 https://www.worldbank.org/en/news/press-release/201 8/04/23/record-high-remittances-to-low-and-middle-income-countries-
+in-2017
+
+www.bitspark.io 3 of 14
+e bitspark
+
+De-risking refers to financial institutions exiting relationships with clients who are regarded as
+posing a high risk i.e. those that predominantly deal in cash. It affects different types of
+organisations including money transfer businesses, NGOs, NPOs and SMEs.
+
+Banks are traditionally resistant to disruption and seem more interested in preserving power
+han the prospect of financial inclusion. Their continuing disengagement is constraining the
+future of the remittance industry and money transfers at large. Considering that businesses
+
+providing cross-border transactions are in direct competition with banks, de-risking is essentially
+a way for banks to secure their dominance.
+
+Facing these challenges, businesses continue to look for alternative means to serve the cash-
+economy. That's because for the world's 1.7 billion unbanked, the cash network is the only option
+o send and receive money. The war on cash is a threat to cross-border money transfers, and
+herefore of major concern for families in developing nations.
+
+t is the perfect problem for a crypto-based solution.
+In Perspective: Target Markets
+
+Founded in 2014, Bitspark has been working to build an alternative system to address these
+challenges and remove dependency on banks. Our journey began when we conducted the
+world's first ever cash-in cash-out money transfer using bitcoin and we have since refined our
+services to support a global network.
+
+Bitspark’s solution first and foremost addresses the exclusion of cash-based economies, with a
+focus on the emerging markets of Asia and Africa. In these regions, more than anywhere else,
+cash is still the primary means of storing and transacting value.
+
+For instance, Indonesia is among the major cash-based economies. In fact, it is the second
+largest cash-based economy in the world. With a population of 250 million, only 36% of
+Indonesians have a bank account. Credit cards, debit cards and internet banking are used by 1%,
+
+8% and 5% of the population, respectively. This means that the majority of transfers, both
+domestic and international, are predominantly cash-based.2
+
+2 https://assets.kpmg.com/content/dam/kpmg/id/pdf/2017/01/id-retail-payments-in-indonesia.pdf
+www.bitspark.io 4of 14
+e bitspark
+
+These figures correspond to other emerging markets in Asia and Africa where Bitspark is
+working to serve people and businesses to live and thrive without banks. Bitspark's network
+serves the Philippines, Indonesia, Nigeria, Ghana, Vietnam and Pakistan since 2015 until now.
+
+The Bankless Alternative
+
+The parallel financial ecosystem which we have built dramatically decreases the cost of money
+transfers, increases efficiency and speed, and effectively cuts banks out of the equation.
+
+We do this by leveraging blockchain technology and crypto-economics. Specifically, we tokenise
+existing cash networks using stablecoins as transport vehicles for fiat currency to travel across
+any border and remittance corridor. Through our ecosystem, any of the world's 180 fiat
+currencies can be exchanged and transferred at the lowest possible rate in the most efficient
+way.
+
+As firm proponents of decentralisation, transparency and accessibility, we designed our
+ecosystem in such a way that it is easy to participate. To take part in a bankless financial future,
+all you need is a mobile device with internet.
+
+That's how we make financial freedom an inclusive option for everyone.
+
+www.bitspark.io 5 of 14
+e bitspark
+
+Bitspark’s Bankless Ecosystem
+The Bitspark ecosystem is built on the Bitshares blockchain and consists of:
+
+Channels
+
+obile app
+
++ Web platform
+
++ Decentralised exchange (DEX)
+
+Vehicles
+
++ Fiat-pegged stablecoins
+
+nclusion Points : International vaults, Mobile and Shop agents.
+ative rewards token Zephyr
+
+Each component has its own distinct function as part of the bankless alternative, but they are all
+
+interconnected and work in sync, providing different inclusion points servicing individuals,
+businesses and traders.
+
+Ecosystem: Channels
+
+Bitspark mobile app
+Focus: Individuals
+
+The mobile app serves as a beginning and end-point in Bitspark’s cash-in, cash-out network
+serviced by various inclusion points such as vaults, mobile and shop agents. First, it enables
+individuals to locate their nearest Bitspark-affiliated inclusion point and exchange cash for
+crypto. Using the app, a sender then transfers the tokenised cash to the receiver. Finally, the
+receiver finds an inclusion point to convert crypto back to cash.
+
+Users get instant access to the world of crypto benefits, without requiring any knowledge of the
+technology that makes it possible. All they need to know, and they will as soon as they make their
+first transaction, is that this way cash can be sent across the world in a matter of seconds at a fee
+that was previously impossible.
+
+Bitspark web
+Focus: Business
+
+www.bitspark.io 6 of 14
+e bitspark
+
+Bitspark’s secure web platform enables businesses to execute global transactions and manage
+funds across currencies. It is also a repository for all customer due diligence information which
+reduces the labour-intensive paperwork conventionally associated with KYC/AML requirements
+when customers deposit or withdraw funds.
+
+With this platform, businesses can continue to offer cash-based services to their existing
+customers who have downloaded the mobile app. With a built-in function to instantly exchange
+cash for any stablecoin at the exchange rate fed by the DEX, all remittance corridors can be
+serviced. Furthermore, the platform is designed using a familiar workflow and offers simple
+implementation with both browser-based interface and API integration.
+
+Decentralised Exchange (DEX)
+Focus: Traders
+
+SparkDEX is Hong Kong's first portal to BitShares, the world’s leading decentralised exchange.
+Purpose built for trading stablecoins, it is the engine that drives liquidity and price discovery
+across currencies. This is what enables app users and businesses on the platform to transfer
+
+funds across borders in a way that is faster, more efficient and cheaper.
+
+Crypto traders play a vital role in growing the ecosystem as it is through their participation that
+the cash-in cash-out network can operate with scale.
+
+Ecosystem: Vehicles
+
+Stablecoins
+
+Cash entering the network is tokenised using stablecoins. This enables customers to conduct
+their fiat transactions with the speed, efficiency and low cost of cryptocurrency transactions.
+
+Bitspark uses trustless, crypto-collateralised stablecoins. Among all forms of cryptocurrencies,
+trustless stablecoins serve a special function and utility. They are much less volatile than bitcoin
+or altcoins and as they can be pegged to any of the world’s 180+ fiat currencies, they are highly
+suitable for money transfers.
+
+Inclusion points: international vaults, mobile and shop agents
+
+Inclusion points such as international vaults, mobile and shop agents, enable cash to enter and
+exit Bitspark’s ecosystem. International vaults specifically service businesses as an alternative to
+
+www.bitspark.io 7 of 14
+e bitspark
+
+bank accounts for cash deposits. We tokenise these cash deposits which adds liquidity to our
+entire ecosystem.
+
+Mobile and shop agents function in a similar fashion, enabling individuals to convert cash to
+crypto and vice versa.
+
+Zephyr
+
+Zephyr (ZEPH) is Bitspark’s native rewards token, designed to incentivise usage and growth of
+the ecosystem. It is awarded to customers for every transaction, top up, referral and cash-
+withdrawal. The value of ZEPH is engineered to increase through our buy-back mechanism. Buy-
+backs take place at random times over the period of 30 days, when we re-invest 25% of all
+commissions earned across Bitspark’s business.
+
+www.bitspark.io 8 of 14
+e bitspark
+Bitspark in Effect
+
+Cross-border money transfers
+
+The advantages of our bankless alternative become apparent in a side-by-side comparison of
+conventional channels and Bitspark’s money transfer process within the same remittance
+corridor. Let's asses this in the context of Sub-Saharan Africa.
+
+Sub-Saharan economies are largely cash-based, with around a third of its population unbanked2
+Apart from global remittances, regional remittances are both common and problematic.
+Generally, there are two options available to transfer money across borders: via banks or
+through cash-based retail channels such as Western Union.
+
+Bank option
+
+Transferring money across borders through banks is an incredibly complex and opaque process.
+The multi-hop model of correspondent banks and currency exchanges causes friction, delay and
+exorbitant charges. The process is shrouded in mystery and customers have no clear visibility
+into how their money is moving across borders, when it will arrive and how much it will cost.
+
+Retail channel
+
+When it comes to retail channels, the main problem with dominant service providers, such as
+Western Union and MoneyGram, lies not so much in its inefficiency, but in the power they wield
+as monopolistic middle-men. These companies charge extortionate fees, usually hidden in
+exchange rates.
+
+The Bitspark Alternative
+
+In stark contrast, our bankless alternative offers a completely new way of transferring money
+across borders utilising cutting-edge technologies, inclusive of the existing cash-based economy.
+The Bitspark ecosystem is both faster than the banking channel and more cost-effective than its
+retail counterparts.
+
+3 https://globalfindex.worldbank.org/
+www.bitspark.io 9 of 14
+e bitspark
+With Nigeria as the main source of remittance inflows for Ghana,‘ the Ghana-Nigeria corridor
+
+serves as a case in point. For our comparison, we use global average fees for bank transfers and
+focus on Western Union due to its hold on retail.
+
+Example: Sending money from Ghana to Nigeria:
+
+Nigeria Nigeria Sender in Nigeria deposits cash
+Sender Sender Exchange cash with MTO to top-up
+stablecain balance.
+v +
+Nigeria y NN Nigeria an ia} Gives physical NGN => gay
+Originating bank Western Union | Fees © Receives peg.NGN {|
++ Fees +
+Nigeria + peg.NGN
+Correspondent bank = +
++
++ @& spark cox
+Stablecoin funds are Liquidity and efficient
+GHG EN Fees GHC EN  Xrees sent via mobile app. rates are formed on
+bitspark's decentralised
+exchange.
++
++
+Ghana
+Correspondent bank Ey ' + peg.GHS
++ Fees +
+Ghana a Ghana ia} Gives peg.GHS => aay
+Beneficiary Bank Western Union Fees Receives physical GHS [|
++
+Ghana 6 d Ghana Receiver in Ghana withdraws cash
+Receiver Receiver Exchange stablecoin balance with MTO
+to receive cash.
+
+4 https://countryeconomy.com/demography/migration/remittance/ghana
+www.bitspark.io 10 of 14
+e bitspark
+Same world, different benefits
+
+The Bitspark ecosystem benefits customers differently, depending on their particular purpose
+and position within the network.
+
+Individuals
+
++ Channel: Mobile app
+
++ Need: Access to affordable money transfers
+
++ Problem: Financial exclusion; high costs of exotic currency pairings
+
++ Solution: Cash-friendly mobile service to transact stablecoins pegged to any fiat currency
+
+Businesses
+
++ Channel: Web platform
+
++ Need: Providing reliable and efficient cash-inclusive service to their customers
+
++ Problem: De-risking undermines operations; currency exchange structures slow down
+processes and yield unnecessary costs
+
++ Solution: Independence from banks; the tools to serve as a cash-in cash-out inclusion point
+with access to a liquid market for all 180+ fiat currencies; the ability to offer reliable service at
+competitive rates
+
+Crypto Traders
+
++ Channel: Decentralised exchange
+
++ Need: Access to a safe trading environment irrespective of currency pairings
+
++ Problem: Exchanges are not open to all fiat currencies; Centralised exchanges lack security,
+transparency and pose a counter-party risk;
+
++ Solution: A reliable decentralised exchange purpose built for trading stablecoins, with a path
+to the cash-in cash-out network.
+
+Zephyr Holders
+
++ Channel: Decentralised exchange
+
++ Need: The ability to trade in and out of Zephyr against other cryptocurrencies or fiat.
+
++ Problem: The majority of DEXs do not accommodate fiat currencies, let alone the cash
+economy.
+
+www.bitspark.io 11 of 14
+e bitspark
+
++ Solution: A decentralised exchange that enables Zephyr holders to benefit from Bitspark’s
+global cash-in cash-out network.
+
+www.bitspark.io 12 of 14
+© ditspark
+Appendix
+About Bitspark
+
+Founded in 2014, Bitspark is a Hong Kong based fintech company that offers a financial system
+hat doesn't depend on banks by helping individuals and businesses exchange and convert cash
+© cryptocurrency. We conducted the world's first cash-in cash-out money transfer using bitcoin
+and have since refined our services to support a global network.
+
+n recent years our network has expanded to cover eight countries in the Asia Pacific and African
+regions including Hong Kong, Malaysia, Philippines, Indonesia, Vietnam, Ghana and Nigeria. We
+have formed a number of important partnerships and gained recognition at home and
+internationally.
+
+Bitspark has participated in a number of reputable programmes:
+
+- 2014: Cyberport Incubation Program backed by the Hong Kong government
+- 2015: Accenture Fintech Innovation Lab APAC
+
+- 2016: SixThirty Fintech Accelerator USA
+
+- 2017: The UNDP for financial inclusion projects in Tajikistan
+
+In the financial space, Bitspark has been recognised by Goldman Sachs, Citibank, KPMG and
+
+Nikkei and has received coverage by noted publications such as Forbes, SCMP, RT News, New
+York Times, The Australian, Coindesk and many more.
+
+www.bitspark.io 13 of 14
+e bitspark
+
+Stablecoins
+
+Best understood as price stable cryptocurrencies, stablecoins are highly suitable for cross-
+border money transfers. They are robust in terms of their ability to accommodate reasonable
+fluctuations and float on an open market. Stablecoins are either fiat collateralised and trusted or
+crypto collateralised and trustless.
+
+Fiat collateralised
+
++ With this form of stablecoin, each token is collateralised by an equal amount of fiat currency,
+usually held by a central custodian. Holders of these tokens are guaranteed to redeem their
+token at any point for the value in fiat.
+
++ The downside of this type of stablecoin is it that poses a counter-party risk: it requires a
+trader's good faith in third-parties with regard to the presence of sufficient collateral that backs
+the stablecoin in question.
+
+Crypto collateralised
+
++ Crypto collateralised coins are backed up by reserves of another cryptocurrency. This makes it
+possible to create decentralised and more trustworthy stablecoins. To counteract the volatility
+of the reserve crypto pool, the stablecoins are often over-collateralised to absorb major price
+fluctuations.
+
+- Trustless stablecoins form the core of Bitspark’s ecosystem. Specifically, we use BitAssets which
+are backed up by 200% of BitShares’ native token, using smart contracts.
+
+www.bitspark.io 14 0f 14

@@ -1,0 +1,1788 @@
+Holochain
+scalable agent-centric distributed computing
+DRAFT(ALPHA 1) — 2/15/2018
+
+Eric Harris-Braun, Nicolas Luck, Arthur Brock!
+1Ceptr, LLC
+
+ABSTRACT : We present a scalable, agent-centric distributed computing platform. We use a
+formalism to characterize distributed systems, show how it applies to some existing distributed
+systems, and demonstrate the benefits of shifting from a data-centric to an agent-centric model.
+We present a detailed formal specification of the Holochain system, along with an analysis of its
+systemic integrity, capacity for evolution, total system computational complexity, implications for
+use-cases, and current implementation status.
+
+I. INTRODUCTION
+
+Distributed computing platforms have achieved a new
+
+level of viability with
+cryptographic tools:
+public-key encryption.
+
+he advent of two foundational
+secure hashing algorithms, and
+These have provided solutions
+
+to key problems in distributed computing: verifiable,
+tamper-proof data for sharing state across nodes in the
+distributed system and confirmation of data provenance
+via digital signature algorithms. The former is achieved
+by hash-chains monotonic data-stores are ren-
+dered intrinsically tamper-proof (and thus confidently
+sharable across nodes) by including hashes of previous
+entries in subsequent entries. The latter is achieved by
+combining cryptographic encryption of hashes of data
+and using the public keys themselves as the addresses
+of agents, thus allowing other agents in the system to
+mathematically verify the data’s source.
+
+Though hash-chains help solve the problem of indepen-
+dently acting agents reliably sharing state, we see two
+very different approaches in their use which have deep
+systemic consequences. These approaches are demon-
+strated by two of today’s canonical distributed systems:
+
+, where
+
+1. il] In git, all nodes can update their hash-chains
+s they see fit. The degree of overlapping shared
+ate of chain entries (known as commit objects)
+cross all nodes is not managed by git but rather ex-
+licitly by action of the agent making pull requests
+nd doing merges. We call this approach agent-
+entric because of its focus on allowing nodes to
+hare independently evolving data realities.
+
+oe
+
+»
+
+ev
+
+Lo
+
+2. Bitcoirf?} In Bitcoin (and blockchain in general),
+the “problem” is understood to be that of figuring
+out how to choose one block of transactions among
+the many variants being experienced by the mining
+nodes (as they collect transactions from clients in
+different orders), and committing that single vari-
+ant to the single globally shared chain. We call this
+
+1 https://git-sem.com/about
+? https: //bitcoin.org/bitcoin.pdf
+
+approach data-centric because of its focus on cre-
+ating a single shared data reality among all nodes.
+
+We claim that this fundamental original stance re-
+sults directly in the most significant limitation of the
+blockchain: scalability. This limitation is widely known
+P]and many solutions have been offered [?] Holochain of-
+fers a way forward by directly addressing the root data-
+centric assumptions of the blockchain approach.
+
+II. PRIOR WORK
+
+This paper builds largely on recent work in crypto-
+graphic distributed systems and distributed hash tables
+and multi-agent systems.
+
+Ethereum: Wood [EIP-150], DHT: Benet
+
+TODO: discussion and more references here
+
+Ill. DISTRIBUTED SYSTEMS
+A. Formalism
+
+We define a simple generalized model of a distributed
+system Q using hash-chains as follows:
+
+1. Let N be the set of elements {n1,n2,...Mn} par-
+ticipating in the system. Call the elements of N
+nodes or agents.
+
+2. Let each node n consist of a set S,, with elements
+{o1,02,...}. Call the elements of S;, the state
+of node n. For the purposes of this paper we as-
+sume Vo; € S, : 0; = {%;,D;} with X; being a
+hash-chain and D a set of non-hash chain data
+elements.
+
+3. Let H be a cryptographically secure hash function.
+
+3 add various sources
+4 more footnotes here
+4. Let there be a state transition function:
+
+T(ai,t) = (tTx(4i, t), to(Di, t)) (3.1)
+where:
+(a) Tx (4%, t) = X41 where
+“ = pen (3.2)
+with
+ris1 = {h,t}
+h={H(t),y} (3.3)
+
+y= {H(e))|i <i}
+
+Call h a header and note how the sequence
+of headers creates a chain (tree, in the general
+case) by linking each header to the previous
+header(s) and the transaction.
+
+(b) Dita = To(ai; t)
+
+5. Let V(t,v) be a function that takes t, along with
+extra validation data v, verifies the validity of t and
+only if valid calls a transition function for t. Call
+V a validation function.
+
+6. Let I(t) be a function that takes a transaction t,
+evaluates it using a function V, and if valid, uses
+7 to transform S. Call J the input or stimulus
+‘unction.
+
+7. Let P(x) be a function that can create transactions
+t and trigger functions V and 7, and P itself is
+triggered by state changes or the passage of time.
+Call P the processing function.
+
+8. Let C be a channel that allows all nodes in N
+© communicate and over which each node has a
+unique address A,,. Call C and the nodes that com-
+municate on it the network.
+
+9. Let E(i) be a function that changes functions
+V,I,P. Call E the evolution function.
+
+Explanation: this formalism allows us to model sepa-
+rately key aspects of agents.
+
+First we separate the agent’s state into a cryptograph-
+ically secured hash-chain part ¥ and another part that
+holds arbitrary data D. Then we split the process of up-
+dating the state into two steps: 1) the validation of new
+transactions t through the validation function V(t, v),
+and 2) the actual change of internal state S (as either V
+or D) through the state transition functions ty and Tp.
+Finally, we distinguish between 1) state transitions trig-
+gered by external events, stimuli, received through I(t),
+and 2) a node’s internal processing P(x) that also results
+in calling V and 7 with an internally created transaction.
+
+We define some key properties of distributed systems:
+
+1. Call a set of nodes in N for which any of the func-
+tions T,V,P and E have the properties of being
+both reliably known and also known to be identical
+for that set of nodes: trusted nodes with respect
+to the functions so known.
+
+a channel C' with the property that messages
+in transit can be trusted to arrive exactly as sent:
+secure.
+
+3. Call a channel C on which the address A,, of a node
+nis A, = H(pk,), where pk, is the public key of
+the node n, and on which all messages include a
+digital signature of the message signed by sender:
+authenticated.
+
+4. Call a data element that is accessible by its hash
+content addressable.
+
+For the purposes of this paper we assume untrusted
+nodes, i.e., independently acting agents solely under their
+own control, and an insecure channel. We do this be-
+cause the very raison d’étre of the cryptographic tools
+mentioned above is to allow individual nodes to trust the
+whole system under this assumption. The cryptography
+immediately makes visible in the state data when any
+other node in the system uses a version of the functions
+different from itself. This property is often referred to as
+a trustless system. However, because it simply means
+that the locus of trust has been shifted to the state data,
+rather than other nodes, we refer to it as systemic reliance
+on intrinsic data integrity. See for a detailed
+discussion on trust in distributed systems.
+
+B. Data-Centric and Agent-Centric Systems
+
+Using this definition, Bitcoin can be understood as that
+system Opitcoinwhere:
+
+! !
+1. Vnsm € N : X, = Xm where = means is enforced.
+
+2. V(e,v) e is a block and v is the output from the
+“proof-of-work” hash-crack algorithm, and V con-
+firms the validity of v, the structure and validity of
+e according to the double-spend rulef?]
+
+3. I(t,n) accepts transactions from clients and adds
+them to D (the mempool) to build a block for later
+use in triggering V().
+
+4. P(i) is the mining process including the “proof-of-
+work” algorithm and composes with V() and ry
+when the hash is cracked.
+
+° pointer here
+5. E(i) is not formally defined but can be mapped
+
+informally to a decision
+
+by humans operating the
+
+nodes to install new versions of the Bitcoin soft-
+
+ware.
+
+The first point establishes
+coin’s (and Blockchain applica’
+
+he central aspect of Bit-
+ions’ in general) strategy
+
+for solving or avoiding problems otherwise encountered
+
+in decentralized systems, and
+
+hat is by trying to main-
+
+tain a network state in which all nodes should have the
+
+same (local) chain.
+
+By contrast, for OQ,y,there is
+Xn, Xm in nodes n and m mat
+is to allow different agents act
+gently on a shared code-
+if the states always had
+
+O Ma
+
+Through the lens of the formalism some other aspec
+
+ase, which would be impossible
+
+no such constraint on any
+ching, as git’s core intent
+autonomously and diver-
+
+ch.
+
+&
+
+of Qgixcan be understood as fo
+
+1. the validation function
+
+lows:
+
+V(e,v) by default only
+
+problem in distributed systems which consist entirely of
+multiple vantage points by definition.
+
+In the distributed world, events don’t happen in the
+same sequence for all observers. For Blockchain specif-
+ically, this is the heart of the matter: choosing which
+block, from all the nodes receiving transactions in differ-
+ent orders, to use for the “consensus,” i.e., what single
+vantage point to enforce on all nodes. Blockchains don’t
+record a universal ordering of events — they manufacture
+a single authoritative ordering of events — by stringing
+together a tiny fragment of local vantage points into one
+global record that has passed validation rules.
+
+The use of the word consensus seems at best dubious
+as a description of a systemic requirement that all nodes
+carry identical values of %,,. Especially when the algo-
+rithm for ensuring that sameness is essentially a digital
+lottery powered by expensive computation of which the
+primary design feature is to randomize which node gets
+to run V,, such that no node has preference to which e
+
+checks the structural validity of e as a commit ob-
+ject not it’s content (though note that git does also
+support signing of commits which is also part of the
+validation)
+
+2. the stimulus function I(t) for Qgit consists of the
+set of git commands available to the user
+
+3. the state transition function 7 is the internal git
+‘unction that adds a commit object and 7p is the
+git function that adds code to the index triggered
+y add
+
+4. E is, similarly to OQpitcoin, not formally defined for
+eit.
+
+We leave a more in depth application of the formalism
+to Ogi, as an excercise for the reader, however we under-
+score that the core difference between Opitcoin and Qgit
+
+lies in the formers constraint of Vn,m € N : X%, sf Xm-
+One direct consequence of this for Opitcoin is that as the
+size of X, grows, necessarily all nodes of Qpitcoin must
+grow in size, whereas this is not necessarily the case for
+eit and in it lies the core of Bitcoin’s scalability issues.
+
+It’s not surprising that a data-centric approach was
+used for Bitcoin. This comes from the fact that its stated
+intent was to create digitally transferable “coins,” i.e.,
+o model in a distributed digital system that property
+f matter known as location. On centralized computer
+systems this doesn’t even appear as a problem because
+centralized systems have been designed to allow us to
+hink from a data-centric perspective. They allow us
+‘0 believe in a kind of data objectivity, as if data exists,
+ike a physical object sitting someplace having a location.
+They allow us to think in terms of an absolute frame - as if
+here is a correct truth about data and/or time sequence,
+nd suggests that should converge on this
+ruth. In fact, this is not a property of information. Data
+exists always from the vantage point of an observer. It is
+his fact that makes digitally transferable “coins” a hard
+
+°
+
+“consensus
+
+»
+
+gets added to X,.
+The term consensus, as
+eration with regard to diff
+
+normally used, implies delib-
+ferences and work on crafting
+
+a perspective that holds for al
+
+parties, rather than sim-
+
+ply selecting one party’s dataset at random. In contrast,
+as a more agent-centric distributed system, git’s merge
+command provides for a processes more recognizable as
+consensus, however it’s not automated.
+
+Perhaps a more accurate term for the hash-crack al-
+gorithm applied in OQpitcoin would be “proof-of-luck” and
+for the process itself simply sameness, not consensus. If
+you start from a data-centric viewpoint, which naturally
+throws out the “experience” of all agents in favor of just
+one, it’s much harder to design them to engage in pro-
+cesses that actually have the real-world properties of con-
+sensus. If the constraint of keeping all nodes’ states the
+same were adopted consciously as a fit for a specific pur-
+pose, this would not be particularly problematic. Un-
+fortunately the legacy of this data-centric viewpoint has
+been held mostly unconsciously and is adopted by more
+generalized distributed computing systems, for which the
+intent doesn’t specifically include the need to model “dig-
+ital matter” with universally absolute location. While
+having the advantages of conceptual simplicity, it also im-
+mediately creates scalability issues, but worse, it makes
+it hard to take advantages inherent in the agent-centric
+approach.
+
+a
+
+IV. GENERALIZED DISTRIBUTED
+COMPUTATION
+
+The previous section described a general formalism for
+distributed systems and compared git to Bitcoin as an ex-
+ample of an agent-centric vs. a data-centric distributed
+system. Neither of these systems, however, provides gen-
+eralized computation in the sense of being a framework
+for writing computer programs or creating applications.
+So, lets add the following constraints to formalism |I
+
+as follows:
+
+1. With respect to a machine M, some values of S',
+can be interpreted as: executable code and the re-
+sults of code execution, and they may be accessible
+to M and the code. Call such values the machine
+state.
+
+2. At and nodes n such that J,,(t) will trigger execution
+of that code. Call such transaction values calls.
+
+A. Ethereum
+
+Ethereunf}] provides the current premier example o
+
+generalized distributed computing using the Blockchain
+model. The Ethereum approach comes from an ontology
+of replicating the data certainty of single physical com-
+puter, on top of the stratum of a bunch of distribute
+nodes using the blockchain strategy of creating a sin-
+gle data reality in a cryptographic chain, but commiting
+computations, instead of just monetary transactions as
+in bitcoin, into the blocks.
+
+This approach does live up to the constraints liste
+above as described by Wood where the bulk
+of that paper can be understood as a specification of a
+validation function V,,() and the described state transi-
+tion function o441 = Y(o,T) as a specification of how
+constraints above are met.
+
+Unfortunately the data-centric legacy inherited by
+Ethereum from the blockchain model, is immediately ob-
+nl in its high compute cost{'| and difficulty in scal-
+in
+
+B. Holochain
+
+We now proceed to describe an agent-centric dis-
+tributed generalized computing system, where nodes can
+still confidently participate in the system as whole even
+though they are not constrained to maintaining the same
+chain state as all other nodes.
+
+In broad strokes: a Holochain application consists of
+a network of agents maintaining a unique source chain
+of their transactions, paired with a shared space imple-
+mented as a validating, monotonic, sharded, distributed
+hash table (DHT) where every node enforces validation
+rules on that data in the DHT as well as providing prove-
+nance of data from the source chains where it originated.
+
+Using our formalism, a Holochain based application
+Oycis defined as:
+
+1. Call X%, the source chain of n.
+
+6 https: //github.com/ethereum/wiki/wiki/White-Paper
+7 link to our benchmarkng
+8 find a scholarly article
+
+2. Let M be a virtual machine used to execute code.
+
+3. Let the initial entry of all Y, in N
+be identical and consist in the _ set
+DNA{e1, €2,..-, fi, fo,-+-,P1,P2,---} where
+€, are definitions of entry types that can be
+added to the chain, f, are functions defined as
+executable on M (which we also refer to as the
+set Fapp = {appi,app2,...}), and p, are system
+properties which among other things declare the
+expected operating parameters of the application
+being specificed. For example the resilience factor
+as defined below is set as one such property.
+
+4. Let tn be the second entry of all ¥,, and be a set
+of the form {p,i} where p is the public key and i
+is identifying information appropriate to the use of
+
+his particular Qne. Note that though this entry is
+
+of the same format for all %,, it’s content is not the
+same. Call this entry the agent identity entry.
+
+5. Vez € DNA let there be an app, € Fay) which can
+be used to validate transactions that involve entries
+of type e,. Call this set Fy or the application
+validation functions.
+
+6. Let there be a function Veys(ex,e,v) which checks
+hat e is of the form specified by the entry definition
+ore, € DNA. Call this function the system entry
+validation function.
+
+7. Let the overall validation function V(e,v) =
+
+V Fv(ex)(v) A Vays(€x, eV).
+
+8. Let Fy be a subset of F,p, distinct from F, such
+hat Vf.(t) € Fy there exists a t to I(t) that will
+rigger f,,(t). Call the functions in F} the exposed
+functions.
+
+9. Call any functions in Fypp not in Fy or Fj internal
+functions and allow them to be called by other
+
+functions.
+
+10. Let the channel C be authenticated.
+
+11. Let DHT define a distributed hash table on an au-
+henticated channel as follows:
+
+(a) Let A be a set {6),52,...} where 6, is a
+set {key, value} where key is always the hash
+H(value) of value. Call A the DHT state.
+
+(b) Let Four be the set of functions
+{dhtput, dhtget } where:
+i. dhtput (Okey,value) AAS Skey,value to A
+ii. dhtge (key) = value of dxey,value in A
+(c) Assume x,y € N and 6; € A, but 0; ¢ Ay.
+Allow that when y calls dhtget (key), 6; will be
+retrieved from x over channel X and added to
+
+Ay.
+12. Let DHTy. augment DHT as follows:
+
+DHT are sufficiently mature that there are a num-
+ber of ways to ensure property For our cur-
+rent alpha version we use a modified version o
+
+as implemented in [LibP2P].
+
+(a) Voxey,vaue € A constrain value to be o
+an entry type as defined in DNA. Furth-
+more, enforce that any function call dht,(y)
+which modifies A also uses F,(y) to validate
+y and records whether it is valid. Note that
+
+his validation phase may include contacting
+
+he source nodes involved in generating y to
+
+gather more information about the context o
+
+he transaction, see
+
+(b) Enforce that all elements of A only be change
+monotonically, that is, elements 6 can only be
+added to A not removed.
+
+(c) Include in Fpyrr the functions defined in[A]
+
+(d) Allow the sets
+elements as define
+
+6 € A to also include more
+in [A]
+
+(e) Let d(x,y) be a symmetric and unidirectional
+distance metric within the hash space defined
+y H, as for example the XOR metric defined
+in [Kademlia]. Note that this metric can be
+applied between entries and nodes alike since
+he addresses of both are values of the same
+hash function H (ie. dgey = H(Svatue) and
+A, = H(pk»)).
+
+(f) Let r be a parameter of DHT}, to be set de-
+
+endent on the characteristics deemed benefi-
+
+cial for maintaining multiple copies of entries
+
+in the DHT for the given application. Call r
+
+he resilience factor.
+
+(g) Allow that each node can maintain a set MZ =
+{mn,...} of metrics m, about other nodes,
+where each m,, contains both a node’s direct
+experience of n with respect to that metric,
+as well as the experience of other nodes of n.
+Enforce that one such metric kept is uptime
+which keeps track of the percentage of time a
+node is experienced to be available. Call the
+process of nodes sharing these metrics gossip
+and refer to[[V_C 3] for details.
+
+Enforce that Vd € A, each node n maintains
+a set Vj = {ni,...,mq} of g closest nodes to 6
+as seen from n, which are expected by n to also
+hold 6. Resiliency is maintained by taking into
+account node uptimes and choosing the value
+of q so that:
+
+S
+
+q
+
+Ss uptime(n;) >r
+
+i=0
+
+(4.1)
+
+whith uptime(n) € [0,1].
+
+13.
+
+14.
+
+16.
+
+17.
+
+18.
+
+The appeal of
+
+Call the union of such sets V5, from a given
+node’s perspective, the overlap list and also
+note that q>r.
+
+(i) Allow every node n to discard every 6, € Ap if
+the number of closer (with regards to d(x, y))
+nodes is greater than q (i.e. if other nodes are
+able to construct their Vs sets without includ-
+ing n, which in turn means there are enough
+other nodes responsible for holding 6 in their
+Am to have the system meet the resilience set
+by r even without n participating in storing 6).
+Note that this results in the network adapt-
+ing to changes in topology and DHT state mi-
+grations by regulating the number of network-
+wide redundant copies of all 6; € A to match
+r according to node uptime.
+
+Call DHT), a validating, monotonic, sharded
+DHT.
+
+Vn € N assume n implements DHThe, that is: A is
+a subset of D (the non hash-chain state data), and
+Four are available to n, though note that these
+functions are NOT directly available to the func-
+tions F,pp defined in DNA.
+
+Let Frys be the set of — functions
+
+{syScommits SYSget,+++ } where:
+
+(a) sYScommit(e) uses the system validation func-
+tion V(e,v) to add e to 4, and if successful
+calls dhtput(H(e), e).
+
+(b) sysget(k) = dhtget(k).
+
+(c) see additional system functions defined in Bj
+
+. Allow the functions in Fypp defined in the DNA to
+
+call the functions in Fyys.
+
+Let m be an arbitrary message. Include in Fyys
+the function syssena(Ato,m) which when called on
+Nfrom Will trigger the function appreceive(Afrom,™)
+in the DNA on the node mo. Call this mechanism
+node-to-node messaging.
+
+Allow that the definition of entries in DNA can
+mark entry types as private. Enforce that if an
+entry 0, is of such a type then o, ¢ A. Note
+however that entries of such type can be sent as
+node-to-node messages.
+
+Let the system processing function P(i) be a set of
+functions in F,pp to be registered in the system as
+callbacks based on various criteria, e.g. notification
+of rejected puts to the DHT, passage of time, etc.
+
+C. Systemic Integrity Through Validation
+
+he data-centric approach to distributed
+
+computing comes from the fact that if you can prove that
+all nodes reliably have the same data then that provides
+strong general basis from which to prove the integrity
+of the system as a whole. In the case of Bitcoin, the
+&x holds the transactions and the unspent transaction
+outputs, which allows nodes to verify future transactions
+against double-spend. In the case of Ethereum, 4 holds
+what ammounts to pointers to machine state. Proving
+the consistency across all nodes of those data sets is fun-
+damental to the integrity of those systems.
+
+However, because we have started with the assump-
+tion (see [I ) of distributed systems of independently
+acting agents, any proof of Vn,m € N : Xn +
+blockchain based system is be
+(hence our use of the +), in that nodes use their agency
+to decide when to stop interacting with other nodes based
+on detecting that the Y state no longer matches. This
+might also be called “proof by enforcement,” and is also
+appropriately known as a fork because essentially it re-
+sults in partitioning of the network.
+
+The heart of the matter has to do with the trust any
+single agent has is in the system. In Section
+1.1 (Driving Factors) we read:
+
+Overall, I wish to provide a system such that
+users can be guaranteed that no matter with
+which other individuals, systems or organizations
+they interact, they can do so with absolute con-
+fidence in the possible outcomes and how those
+outcomes might come about.
+
+The idea of “absolute confidence” here seems impor-
+tant, and we attempt to understand it more formally and
+generally for distributed systems.
+
+m ina
+ter understood as a choice
+
+1. Let UV, be a measure of the confidence an agent has
+in various aspects of the system it participates in,
+where 0 < W < 1, 0 represents no confidence, and
+represents absolute confidence.
+
+2. Let R, = {a1,Q9,......} define a set of aspects
+about the system with which an agent n € N mea-
+sures confidence. Call R, the requirements of n
+with respect to 2.
+
+3. Let én(a) be a thresholding function for node n €
+N with respect to a such that when Vy < e(a)
+hen n will either stop participating in the system,
+or reject the participation of others (resulting in a
+
+only
+how
+
+world contexts and for real-world decisions
+
+main!
+set 0!
+
+we find it more adequate to call it a soft criteria.
+
+order
+it to
+
+have considered confidence in (Rc). Still unclear is
+Oo measure a concrete confidence level V,. In real-
+confidence is
+y dependent on an (human) agent’s vantage point,
+data at hand, and maybe even intuition. Thus
+In
+to comprehend this concept objectively and relate
+he notion conveyed by Woods in the quote above,
+
+we proceed by defining the measure of confidence of an
+
+aspec
+
+q@ as the conditional probability of it being the
+
+case in a given context:
+
+Vy = P(alC) (4.3)
+
+where the context C models all other information avail-
+
+able to the agent, including basic and intuitive assump-
+
+tions.
+
+cally
+throu
+wha
+hi
+
+any
+a vali
+
+The appeal of this aspect is that we can check author-
+ship locally, i.e., without
+ed communication channel to the real author. But,
+
+trus'
+
+Consider the fundamental example of cryptographi-
+
+ability to know with certainty that a given message’s
+real author Author;eai is the same agent indicated solely
+ocally available data in the message’s meta infor-
+ion through the cryptographic signature Author jocat-
+We gain this confidence because we deem it very hard for
+agent not in possession of the private key to crea
+
+signed messages with asymetric keys as applied
+ghout the field of cryptographic systems (basically
+coins the term crypto-currency). The central aspect
+is context we call Qsignature Which provides us with
+
+®
+
+d signature for a given message.
+
+(4.4)
+
+Asignature = Authorreat = Authortocal
+
+he need of a 3rd party or direct:
+
+the confidence in this aspect of a certain cryptographic
+system depends on the context C:
+
+Wsignature = P(Authoryeat = Authoriocat|C)
+
+If we constrain the con
+
+an ad
+
+also exclude the possible (
+devices or algorithms tha:
+
+(4.5)
+
+ext to remove the possibility of
+versary gaining access to an agent’s private key and
+‘uture) existence of computing
+could easily calculate or brute
+
+force the key, we might then assign a (constructed) confi-
+
+dence level of 1, i.e.,
+
+absolute confidence”. Without such
+
+ork).
+
+4. Let Ra and Le
+
+so any value of V A 1
+
+value UV < e(a) is rejected in Ro.
+
+absolute requirement.
+requirements.
+
+Rc be partitions of R where
+
+ay
+
+is rejected in Ra and any
+Call Ra the
+s and Rc the considered
+
+So we have formally separated system characteristics
+
+that we have absolute confide:
+
+nce in (R4) from those we
+
+constraints on C, we mus
+which real world events,
+from 2014) make clear.
+
+t admit that Veignature < 1,
+or instance the Mt.Gox hack
+
+We aim to describe these relationships in such detail
+
+in order to point out t
+requirements can’t reach
+statements about the con
+state of the agent itself.
+
+hat any set Ry of absolute
+beyond trivial statements -
+ent and integrity of the local
+Following Descarte’s way of
+
+° Most or all of the missing bitcoins were stolen straight out of the
+
+Mt. Gox hot wallet over time.
+
+, beginning in late 2011” |Nilsson15|
+questioning the confidence in every thought, we project
+his famous statement cogito ergo sum into the reference
+frame of multi-agent systems by stating: Agents can
+only have honest confidence in the fact that they
+perceive a certain stimulus to be present and
+whether any particular abstract a priori model
+matches that stimulus without contradiction, i.e.,
+that an agent sees a certain piece of data and that it is
+possible to interpret it in a certain way. Every conclusion
+being drawn a posteriori through the application of
+sophisticated models of the context is dependent on
+assumptions about the context that are inherent to the
+model. This is the heart of the agent-centric outlook,
+and what we claim must always be taken into account
+in the design of decentralized multi-agent systems, as
+it shows that any aspect of the system as a whole that
+includes assumptions about other agents and non-local
+events must be in Re, i.e., have an a priori confidence
+of UW < 1. Facing this truth about multi- agent systems,
+we find little value i in trying to force an absolute truth
+
+Vn,smeN: X%, = - Vn and we instead frame the problem
+as:
+
+‘We wish to provide generalized means by which
+decentralized multi-agent systems can be built so
+that:
+
+1. fit-for-purpose solutions can be applied in order
+to optimize for application contextualized confi-
+dences Vy,
+
+2. violation of any threshold e(a) through the ac-
+tions of other agents can be detected and managed
+by any agent, such that
+
+3. the system integrity is maintained at any point in
+
+time or, when not, there is a path to regain it (see
+??).
+
+We perceive the agent-centric solution to these re-
+quirements to be the holographic management of system-
+integrity within every agent /node of the system through
+application specific validation routines. These sets of val-
+idation rules lie at the heart of every decentralized ap-
+plication, and they vary across applications according to
+context. Every agent carefully keeps track of their repre-
+sentation of that portion of reality that is of importance
+to them - within the context of a given application that
+has to manage the trade-off between having high confi-
+dence thresholds ¢(a) and a low need for resources and
+complexity.
+
+For example, consider two different use cases of trans-
+actions:
+
+1. receipt of an email message where we are trying to
+validate it as spam or not and
+
+2. commit of monetary transaction where we are try-
+ing to validate it against double-spend.
+
+These contexts have different consequences that an agent
+may wish to evaluate differently and may be willing to
+
+expend differing levels of resources to validate. We de-
+signed Holochain to allow such validation functions to be
+set contextually per application and expose these con-
+texts explicitly. Thus, one could conceivably build a
+Holochain application that deliberately makes choices in
+its validation functions to implement either all or par-
+tial characteristics of Blockchains. Holochain, therefore,
+can be understood as a framework that opens up a spec-
+trum of decentralized application architectures in which
+Blockchain happens to be one specific instance at one end
+of this spectrum.
+
+In the following sections we will show what categories
+of validation algorithms exist and how these can be
+stacked on top of each other in order to build decen-
+tralized systems that are able to maintain integrity with-
+out introducing an absolute truth every agent would be
+forced to accept or consider.
+
+1. Intrinsic Data Integrity
+
+Every application but the most low-level routines uti-
+lize non-trivial, structured data types. Structured im-
+plies the existence of a model describing how to interpret
+raw bits as an instance of a type and how pieces of the
+structure relate to each other. Often, this includes cer-
+tain assumptions about the set of possible values. Cer-
+tain value combinations might not be meaningful or vio-
+late the intrinsic integrity of this data type.
+
+Consider the example of a cryptographically signed
+message m = {body, signature, author}, where author
+is given in the form of their public key. This data type
+conveys the assumption that the three elements body,
+signature and author correspond to each other as con-
+strained by the cryptographic algorithm that is assumed
+to be determined through the definition of this type. The
+intrinsic data integrity of a given instance can be val-
+idated just by looking at the data itself and checking
+the signature by applying the cryptographic algorithm
+that constitutes the central part of the type’s a priori
+model. The validation yields a result € {true, false}
+which means that the confidence in the intrinsic data in-
+tegrity is absolute, i.e. Vintpinsic = 1.
+
+Generally, we define the intrinsic data integrity
+of a transaction type ¢@ as an aspect Q¢ intrinsic € Ra,
+expressed through the existence of a deterministic and
+local validation function V,,(t) for transactions t € ¢ that
+does not depend on any other inputs but t itself.
+
+Note how the intrinsic data integrity of the message ex-
+ample above does not make any assumptions about any
+message’s real author, as the aspect Asignature from the
+previous section does. With this definition, we focus on
+aspects that don’t make any claims about system prop-
+erties non-local to the agent under consideration, which
+roots the sequence of inferences that constitutes the va-
+lidity and therefore confidence of a system’s high-level
+aspects and integrity in consistent environmental inputs.
+2. Membranes & Provenance
+
+Distributed systems must rely on mechanisms to
+restrict participation by nodes in processes that without
+such restriction would compromise systemic integrity.
+Systems where the restrictions are based on the nodes’
+identity, whether that be as declared by type or author-
+ity, or collected from the history of the nodes’ behaviors,
+are know as permissioned {Swanson15]. Systems
+where these restrictions are not based on properties of
+the nodes themselves are known as permissionless.
+In permissionless multi-agent systems, a principle
+threat to systemic integrity comes from Sybil-Attacks
+(Douceur02], where an adversary tries to overcome the
+system’s validation rules by spawning a large number of
+compromised nodes.
+
+However, for both permissioned and _ permissionless
+systems, mechanisms exists to gate participation. For-
+mally:
+
+Let M(n,¢,z) be a binary function that evaluates
+whether transactions of type ¢@ submitted by n € N
+are to be accepted, and where z is any arbitrary extra
+information needed to make that evaluation. Call M
+the membrane function, and note that it will be a
+component of the validation function V(t,v) from the
+initial formalisn{5]
+
+In the case of Qpitcoin and Qethereum, M ignores the
+value of n and makes its determination solely on whether
+z demonstrates the “proof” in proof-of-X be it work or
+stake which is a sufficient gating to protect against Sybil-
+Attacks.
+
+Giving up
+solute truth Vn,m € N : X%) 4 ‘m reveals that we
+can’t discard transaction provenance. Agent-centric dis-
+tributed systems instead must rely on two central facts
+about data:
+
+he data-centric fallacy of forcing one ab-
+
+1. it originates from a source and
+2. its historical sequence is local to that source.
+
+For this reason, Qne splits the system state data into two
+parts:
+
+1. each node is responsible to maintain its own entire
+X,, or source chain and be ready to confirm that
+state to other nodes when asked and
+
+2. all nodes are responsible to share portions of other
+nodes’ transactions and those transactions’ meta
+data in their DHT shard - meta data includes
+validity status, source, and optionally the source’s
+chain headers which provide historical sequence.
+
+Thus, the DHT provides distributed access to others’
+transactions and their evaluations of the validity of those
+
+transactions. This resembles how knowledge gets con-
+structed within social fields and through interaction with
+others, as described by the sociological theory of social
+constructivism.
+
+The properties of the DHT in conjunction with the
+hash function provide us with a deterministically defined
+set of nodes, i.e., a neighborhood for every transaction.
+One cannot easily construct a transaction such that it
+lands in a given neighborhood. Formally:
+
+Vte A:dn:H— NT
+
+n( H(t) = (m1, n2,-.-Me) (8)
+where the function 7 maps from the range H of the hash
+function H to the r nodes that keep the r redundant
+shards of the given transaction t (see [I2ip.
+
+Having the list of nodes n(H(t)) allows an agent to
+compare third-party viewpoints regarding t, with its own
+and that of the transaction’s source(s). The random-
+ization of the hash function H ensures that those view-
+points represent an unbiased sample. r can be adjusted
+depending on the application’s constraints and the cho-
+sen trade-off between costs and system integrity. These
+properties provide sufficient infrastructure to create sys-
+tem integrity by detecting nodes that don’t play by the
+rules - like changing the history or content of their source
+chain. In appendix [C| we detail tooling appropriate for
+different contexts, including ones where detailed analysis
+of source chain history is required - for example financial
+transaction auditing.
+
+Depending on the application’s domain, neighbor-
+hoods could become vulnerable to Sybil-Attacks because
+a sufficiently large percentage of compromised nodes
+could introduce bias into the sample used by an agent
+to evaluate a given transaction. Holochain allows ap-
+plications to handle Sybil-Attacks through domain spe-
+cific membrane functions. Because we chose to inher-
+ently model agency within the system, permission can
+be granted or declined in a programmatic and decentral-
+ized manner thus allowing applications to appropriately
+land on the spectrum between permissioned and permis-
+sionless.
+
+In appendix [D] we provide some membrane schemes
+that can be chosen either for the outer membrane of that
+application that nodes have to cross in order to talk to
+any other node within the application or for any sec-
+ondary membrane inside the application. That latter
+means that nodes could join permissionless and partic-
+ipate in aspects of the application that are not integrity
+critical without further condition but need to provide cer-
+tain criteria in order to pass the membrane into applica-
+tion crucial validation.
+
+Thus, Holochain applications maintain systemic in-
+tegrity without introducing consensus and_ therefore
+(computationally expensive) absolute truth because 1)
+any single node uses provenance to independently verify
+any single transaction with the sources involved in that
+transaction and 2) because each Holochain application
+runs independently of all others, they are inherently per-
+missioned by application specific rules for joining and
+continuing participation in that application’s network.
+These both provide the benefit that any given Holochain
+application can tune the expense of that validation to a
+contextually appropriate level.
+
+3. Gossip & World Model
+
+So far, we have focused on those parts of the valida-
+tion function V used to verify elments of VY. However,
+maintaining system integrity in distributed systems also
+requires that nodes have mechanisms sharing informa-
+tion about nodes that have broken the validation rules
+so that they can be excluded from participation. There
+
+exist, additionally,
+
+orms of bad-acting that do not live in
+
+the content of a transaction but in
+acting that are detrimental to the
+
+he patterns of trans-
+system, for example,
+
+denial of service attacks.
+Holochain uses gossip for nodes to share information
+about their own experience of the behavior of other
+nodes. Informally we call this information the node’s
+world model. In this section we describe the nature
+of Holochain’s gossip protocols and how they build and
+intain a node’s world model.
+we described one such part of the world model,
+the uptime metric and how it is used for maintaing redun-
+dant copies of entries. Inf[V C2] we defined a membrane
+function that determines if a node shall accept a trans-
+action and allowed that function to take arbitrary data
+z. The main source of that data comes from this world
+model.
+More formally:
+
+1. Recall that each node maintains a set M of metrics
+m about other nodes it knows about. Note that in
+terms of our formalism, this world model is part of
+each node’s non-chain state data D.
+
+2. Let m be a tuple of tuples: ((11,c)serr, (4, C)others)
+
+which record an experience y of a node with re-
+spect to a given metric and a confidence c of
+that exprience, both as directly experienced or as
+”hearsay” recieved from other nodes.
+
+3. Allow a class of entries stored in %, be used also
+as a metric m,, which act as a signed declaration
+of the experience of n regarding some other node.
+Call such entries warrants. These warrants al-
+low us to use the standard tooling of Holochain
+to make provenance based, verifyable claims about
+other nodes in the network, which propagate or-
+thogonally from the usual DHT methods, via gossip
+to nodes that need to ” hear” about these claims so
+as to make decisions about interacting with nodes.
+
+4.Ym € M let the function Gwitn(m) return a set
+of nodes important for a node to gossip with de-
+fined by a probabilistc weighting that information
+
+recieved from those nodes will result in changing
+Mother:
+. Vm € M let the function Gabout(m) return a set of
+
+nodes important for a node to gossip about defined
+by the properties of m.
+
+an
+
+6. Define subsets of Gywitn(m) according to a corre-
+lation with what it means to have low vs. high
+confidence value c:
+
+(a) Pull: consisting of nodes about which a low
+confidence means a need for more frequent
+gossip to raise a node’s confidence. Such nodes
+would include those for which, with respect
+to the given node, hold its published entries,
+hold entries it is also responsible for holding,
+are close the then node (i.e. in its lowest k-
+bucket), and which it relies on for routing (i.e.
+a subset of each k-bucket)
+
+(b) Push: consisting of nodes about which a high
+confidence implies a need for more frequent
+gossip to spread the information about that
+node. Such nodes would include ones for
+which a given node has high confidence is a
+bad actor, i.e. it has directly experienced bad
+acting, or has recevied bad actor gossipe from
+nodes that it has high confidence in being able
+to make that bad actor evaluation.
+
+7. TODO: describe a gossip trigger function based on
+the pull vs. pull distinction that demostrates when
+gossip happens
+
+The computational costs of gossip depend on the set of
+metrics that a particular application needs to keep track
+of to maintain system integrity. For an application with a
+very strong membership membrane perhaps only uptime
+metrics are necessary to gossip about to balance resil-
+lience. But this too may depend on apriori knowledge of
+the nodes involved in the application. Applications with
+very loose membership membranes may have a substan-
+tial number of metrics and complex membrane functions
+using those metrics which may require substantial com-
+pute effort. The Holochain design intentionally leaves
+these parameters only loosly specificed so that applica-
+tions can be built fit for purpose.
+
+4. CALM & Logical Monotonicity
+
+TODO: description of CALM in multi-agent systems,
+and how it works in our case
+
+V. COMPLEXITY IN DISTRIBUTED SYSTEMS
+
+In this section we discuss the complexity of our pro-
+posed architecture for decentralized systems and compare
+it to the increasingly adopted Blockchain pattern.
+Formally describing the complexity of decentralized
+multi-agent systems is a non-trivial task for which more
+complex approaches have been suggested ([Marir2014]).
+This might be the reason why there happens to be
+unclarity and misunderstandings within communities dis-
+cussing complexity and scalability of Bitcoin for example
+(Bitcoin Reddit].
+
+In order to be able to have a ball-park comparison be-
+tween our approach and the current status quo in decen-
+tralized application architecture, we proceed by model-
+ing the worst-case time complexity both for a single node
+OQsystemNode as Well as for the whole system OQgystem and
+both as functions of the number of state transitions (i.e.,
+transactions) n and the number of nodes in the system
+m.
+
+A. Bitcoin
+
+Let OQBitcoin be the Bitcoin network, n be the number
+of transactions and m be the number full validating nodes
+(Le., miners) within 2 pitcoin-
+
+For every new transaction being issued, any given node
+will have to check the transaction’s signature (among
+other checks, see. [BitcomWiki]) and especially check if
+this transaction’s output is not used in any other trans:
+tion to reject double-spendings, resulting in a time com-
+plexity of
+
+ct+n (5.1)
+per transaction. The time complexity in big-O notation
+per node as a function of the number of transactions is
+therefore:
+
+OBitcoinNode € O(n”) (5.2)
+
+The complexity handled by one Bitcoin node does not
+depend on m the number of total nodes of the system.
+But since every node has to validate exactly the same
+set of transactions, the system’s time complexity as a
+function of number of transactions and number of nodes
+results as
+OQBitcoin € O(n?m) (5.3)
+Note that this quadratic time complexity of Bitcoin’s
+transaction validation process is what creates its main
+bottleneck as this reduces the network’s gossip band-
+width since every node has to validate every transaction
+before passing it along. In order to still have an average
+
+10 For the sake of simplicity and focusing on a lower bound of the
+system’s complexity, we are neglecting all nodes that are not
+crucial for the operation of the network, such as light-clients and
+clients not involved in the process of validation
+
+1 not inherently - that is more participants will result in more
+transactions but we model both values as separate parameters
+
+1
+
+10
+
+transaction at least flood through 90% of the network,
+block size and time can’t be pushed beyond 4MB and
+12s respectively, according to [Croman et al 16}.
+
+B. Ethereum
+
+Let Qethereum be the Ethereum main network, n be
+the number of transactions and m the number of full-
+clients within in the network.
+
+The time complexity of processing a single transaction
+on a single node is a function of the code that has its
+execution being triggered by the given transaction plus
+a constant:
+
+e+ fiw, (n, m)
+
+Similarly to Bitcoin and as a result of the Blockchain de-
+sign decision to maintain one single state (Vn,m € N :
+Xn a Xm, “This is to be avoided at all costs as the uncer-
+tainty that would ensue would likely kill all confidence in
+the entire system.” ), every node has to process
+every transaction being sent resulting in a time complex-
+ity per node as
+
+C+ >) fics(n,m) (5.5)
+
+i=0
+that is
+
+QBthereumNode € O(N favg(n,m)) (5.6)
+whereas users are incentivized to hold the average com-
+plexity favg(n,m) of the code being run by Ethereum
+small since execution has to be payed for in gas and which
+is due to restrictions such as the block gas limit. In other
+words, because of the complexity )7}!9 fiz,(n,m) being
+burdened upon all nodes of the system, other systemic
+properties have to keep users from running complex code
+on Ethereum so as to not bump into the network’s limits.
+
+Again, since every node has to process the same set of
+all transactions, the time complexity of the whole system
+then is that of one node multiplied by m:
+
+Qnthereum € O(nM: frx;(n,m))
+
+C. Blockchain
+
+Both examples of Blockchain systems above do need
+a non-trivial computational overhead in order to work
+at all: the proof-of-work, hash-crack process also called
+mining. Since this overhead is not a function of either
+the number of transactions nor directly of the number of
+nodes, it is often omitted in complexity analysis. With
+the total energy consumption of all Bitcoin miners today
+
+being greater than the country of Iceland [Coppock17],
+neglecting the complexity of Blockchain’s consensus al-
+gorithm seems like a silly mistake.
+
+Blockchains set the block time, the average time be-
+tween two blocks, as a fixed parameter that the system
+keeps in homeostasis by adjusting the hash-crack’s diffi-
+culty according to the network’s total hash-rate. For a
+given network with a given set of mining nodes and a
+given total hash-rate, the complexity of the hash-crack
+is constant. But as the system grows and more miners
+come on-line, which increases the networks total hash-
+rate, the difficulty needs to increase in order to keep the
+average block time constant.
+
+With this approach, the benefit of a higher total hash-
+rate typ is an increased difficulty of an adversary to
+influence the system by creating biased blocks (which
+would render this party able to do double-spend attacks).
+That is why Blockchains have to subsidize mining, de-
+pending on a high xyR as to make it economically im-
+possible for an attacker to overpower the trusted miners.
+
+So, there is a direct relationship between the network’s
+total trusted hash-rate and its level of security against
+mining power attacks. This means that the confidence
+WBlockchain any agent can have in the integrity of the
+system is a function of the system’s hash-rate yp, and
+more precisely, the cost/work cost(x#R) needed to pro-
+vide it. Looking only at a certain transaction t and given
+any hacker acts economically rationally only, the confi-
+dence in t being added to all ¥,, has an upper bound
+in
+
+restr) ) (5.8)
+
+W Blockchain(t) < min (1 value(t)
+
+In order to keep this confidence unconstrained by
+the mining process and therefore the architecture of
+Blockchain itself, cost(xzpR) (which includes the setup
+of mining hardware as well as the energy consumption)
+has to grow linearly with the value exchanged within the
+system.
+
+D. Holochain
+
+Let Qyc bea given Holochain system, let n be the sum
+of all publi (ie., put to the DHT) state transitions
+(transactions), let all agents in Qyc trigger in total, and
+let m be the number of agents (= nodes) in the system.
+
+Putting a new entry to the DHT involves finding a
+node that is responsible for holding that specific entry,
+which in our case according to has a time
+
+12 private (see[17) state transitions, i.e., that are confined to a lo-
+cal Xp, are completely within the scope of a node’s agency and
+don’t affect other parts of the system directly and can therefore
+be omitted for the complexity analysis of Qy¢ as a distributed
+system
+
+11
+
+complexity of
+
+c+ [log(m)]. (5.9)
+After receiving the state transition data, this node will
+gossip with its q neighbors which will result in r copies
+of this state transition entry being stored throughout the
+system - on r different nodes. Each of these nodes has to
+validate this entry which is an application specific logic
+of which the complexity we shall call u(n,m).
+
+Combined, this results in a system-wide complexity per
+state transition as given with
+
+c+ [log(m)|+q4+r- v(n,m) (5.10)
+Seas Negeae,
+
+DHTlookup validation
+
+which implies the following whole system complexity in
+O-notation
+OQHolochain € O(n: (log(m) + v(n,m)) (5.11)
+Now, this is the overall system complexity. In or-
+ler to enable comparison, we reason that in the case of
+Holochain without loss of generality (i.e., dependent on
+the specific Holochain application), the load of the whole
+system is shared equally by all nodes. Without further
+assumptions, for any given state transition, the probabil-
+ity of it originating at a certain node is 4, so the term
+for the lookup complexity needs to be divided by m to
+lescribe the average lookup complexity per node. Other
+than in Blockchain systems where every node has to see
+every transaction, for the vast majority of state tran-
+sitions one particular node is not involved at all. The
+stochastic closeness of the node’s public key’s hash with
+the entry’s hash is what triggers the node’s involvement.
+We assume the hash function H to show a uniform dis-
+tribution of hash values which results in the probability
+of a certain node being one of the r nodes that cannot
+iscard this entry to be a times r. The average time
+complexity being handled by an average node then is
+
+OQHolochainNode € O (= + (log(m) + v(n, m))) (5.12)
+
+Note that the factor * represents the average number of
+state transactions per node (i.e., the load per node) and
+that though this is a highly application specific value, it
+is an a priori expected lower bound since nodes have to
+process at least the state transitions they produce them-
+selves.
+
+The only overhead that is added by the architecture
+of this decentralized system is the node look-up with its
+complexity of log(m).
+
+The unknown and also application specific complex-
+ity u(n, m) of the validation routines is what could drive
+up the whole system’s complexity still. And indeed it
+is conceivable to think of Holochain applications with a
+lot of complexity within their validation routines. It is
+basically possible to mimic Blockchain’s consensus vali-
+dation requirement by enforcing that a validating node
+communicates with all other nodes before adding an en-
+try to the DHT. It could as well only be half of all nodes.
+And there surely is a host of applications with only little
+complexity - or specific state transitions within an appli-
+cation that involve only little complexity. In a Holochain
+app one can put the complexity where it is needed and
+keep the rest of the system fast and scalable.
+
+In section [VJ] we proceed by providing real-world use
+cases and showing how non-trivial Holochain applications
+can be built that get along with a validation complexity
+of O(1), resulting in a total time complexity per node
+in O(log(m)) and a high enough confidence in integrity
+without introducing proof-of-work at all.
+
+VI. USE CASES
+
+Now we present a few use cases of applications built
+on Holochain, considering the context of the use case and
+how it affects both complexity and evaluation of integrity
+and thus validation design.
+
+A. Social Media
+
+Consider a simple implementation of micro-blogging
+using Holochain where:
+
+1. FL = {fpost (teat, node), froiow (node), freaa(text) }
+and
+
+2. Fy = {fisoriginator }
+
+describe O(1) complexity
+
+B. Identity
+
+DPKI
+
+C. Money
+
+mutual-credit vs. coins where the complexity of
+the transaction is higher, complexity may be O(n?) or
+O(log(n)) see holo currency white paper: [? ]
+
+VII. IMPLEMENTATION
+
+At the time of this writing we have a fully operational
+implementation of system as described in this paper,
+that includes two separate virtual machines for writing
+DNA functions in JavaScript, or Lisp, along with proof-
+of-concept implementations of a number of applications
+including a twitter clone, a slack-like chat system, DPKI,
+and a set mix-in libraries useful for building applications.
+
+12
+
+1. 30k+ lines of go code.
+
+2. DHT: customized version of libp2p/ipfs’s kademlia
+implementation.
+
+3. Network Transport: libp2p including end-to-end
+
+encryption.
+
+4. Javascript Virtual Machine: otto
+https://github.com/robertkrimen/otto
+
+5. Lisp Virtual Machines: zygomys
+https://github. com/glycerine/zygomys|
+
+Additionally we have created a benchmarking suite to
+examine the processing, bandwidth and storage used in
+various scenarios, and compared these with Ethereum
+applications in similar scenarios. These can be seen here:
+
+We have yet to implement scalability tests for large
+scale applications, but it is in our roadmap. TODO
+
+Appendix A: DHThe
+
+1. dhtputtink (base, link, tag) where base and link are
+keys and where tag is an arbitrary string, which
+associates the tuple {link,tag} with the key base.
+
+2. dhtgettinks (base, tag) where base is a key keys and
+where tag is an arbitrary string, which returns the
+set of links on base identified by tag.
+
+3. dhtmoa(key, newkey) where key and newkey are
+keys, which adds newkey as a modifier of oxey € A
+and calls dhtputtink (key, newkey, “replacedby” ).
+
+4. dhtae(key) where key is a key, and marks oxey € A
+as deleted.
+
+an
+
+. modification to dhtgey re mod & del.
+
+Appendix B: Fi;
+
+1. all the other sys functions...
+
+Appendix C: Patterns of Trust Management
+
+Tools in Holochain available to app developers for use
+in Considered Requirements, some of which are also used
+at the system level and globally parameterized for an
+application:
+
+1. Countersigning TODO
+2. Notaries TODO — “The network is the notary.”
+3. Publish Headers e.g. for chain-rollback detection
+
+4, Source-chain examination. TODO
+5. Blocked-lists. e.g. DDOS, spam, ete
+
+6. ... more here...
+
+Appendix D: Membranes
+
+e Invitation
+One of the most natural approaches for membrane
+crossing in a space in which agents provide identity
+is to rely on invitation by agents that are already
+in the membrane. This could be invitation:
+
+— by anyone
+
+— by an admin (that could either be set in the
+application’s DNA or a variable shared within
+the DHT - both could be mutable or constant)
+
+— by multiple users (applying social triangula-
+tion)
+
+e Proof-of-Identity / Reputation
+
+Given the presence of other applications/chains,
+hese can be used to attach the identity and its
+reputation in that chain to the agent that wants
+0 join. Since this seems to be a crucial pillar of
+he ecosystem of Holochain applications, we plan to
+deliver a system-level application called DPKI (dis-
+ributed public key infrastructure) that will func-
+ion as the main identity and reputation platform.
+A prototype of this app was already developed prior
+o the writing of this paper.
+
+e Proof-of-Presence
+Use of notarized
+
+national docu-
+
+DUPONT] Quinn DuPont. Experiments in Algorithmic
+Governance: A history and ethnography of The DAO, a
+failed Decentralized Autonomous Organization
+
+http://www.iqdupont .com/assets/documents/
+
+DUPONT-2017-Preprint-Algorithmic-Governanc:
+
+Generalised Transaction Ledger.
+http: //yellowpaper.io/
+
+Kademlia] Petar Maymounkov and David Mazieres Kadem-
+lia: A Peer-to-peer Information System Base on the
+XOR Metric
+maymounkov-kademlia-1ncs.pdf
+
+Zhang13] Zhang, H., Wen, Y., Xie, H., Yu, N. Distributed
+Hash Table Theory, Platforms and Applications
+
+Croman et al 16] Kyle Croman, Christian Decker, Ittay
+Eyal, Adem Efe Gencer, Ari Juels, Ahmed Kosba, An-
+drew Miller, Prateek Saxena, Elaine Shi, Emin Gn Sirer,
+Dawn Song, Roger Wattenhofer, On Scaling Blockchains,
+
+13
+
+ments/passports/identity cards within the agent
+entry (second entry in ¥).
+
+e Proof-of-Service
+Cryptographic proof of delivery of a service / host-
+ing of an application. We intend to leverage this
+technique with our distributed cloud hosting ap-
+plication Holo, which we will build on top of
+Holochain. See our Holo Hosting white paper for
+much more detail [? ].
+
+e Proof-of-Work
+If the application’s requirement is not anonymity,
+other than the cryptographic hash-cracking work
+applied in most of the Blockchains, this could also
+be useful work that new members are asked to con-
+tribute to the community or a puzzle to proof do-
+main knowledge. Examples are:
+
+— Test for knowledge about local maps to proof
+citizenship
+— DNA sequencing
+— Protein folding
+— SETI
+— Publication of scientific article
+e Proof-of-Stake / Payment
+Depost or payment to have agent certified.
+
+e Immune System
+
+Blacklisting of nodes that don’t play by the appli-
+cation rules.
+
+ACKNOWLEDGMENTS
+
+We thank Steve Sawin for his review of this paper,
+EATEX 2-support and so much more......
+
+Financial Cryptography and Data Security, Springer Ver-
+ag 2016
+[Bitcoin Reddit] /u/mike_hearn, /u/awemany, /u/nullc et al.
+
+to_be/csa7exw/?context=3&st=j8jfak3qush=6e44529:
+Reddit discussion 2015
+{Marir2014] Marir, Toufik
+
+and Mokhati, Farid and
+
+Bouchelaghem-Seridi, Hassina and Tamrabet, Zouheyr” ,
+Complexity Measurement of Multi-Agent Systems”, Mul-
+tiagent System Technologies: 12th German Conference,
+MATES 2014, Stuttgart, Germany, September 23-25,
+2014. Proceedings, Springer International Publishing
+2014
+
+https://doi.org/10.1007/978-3-319-11584-9_13
+{Coppock17] Mark Coppock THE WORLDS CRYPTOCUR-
+
+RENCY MINING USES MORE ELECTRICITY THAN
+ICELAND
+
+https://www.digitaltrends.com/computing/
+
+14
+
+bitcoin-ethereum-mining-use-significant-electrical-powe®Fiptps2002.pdf| International workshop on Peer-To-
+BitcoinWiki] Bitcoin Protocol Peer Systems. Retrieved 23 April 2016.
+{HoloCurrency] Arthur Brock and Eric Harris-Braun 2017
+Bitcoin Wiki Holo: Cryptocurrency Infrastructure for Global Scale and
+IPFS] Juan Benet IPFS - Content Addressed, Versioned, Stable Value
+
+P2P File System (DRAFT 8) {https://holo.host/holo-currency-wp/|
+
+https ://ipfs.io/ipfs/QmR7GSQM93Cx5eAg6a6yRzNde1FQv7ul@NsoakWatr M4BEKA, Kim (19 April 2015). The missing MtGox
+bitcoins”. Retrieved 10 December 2015.
+
+LibP2P] Juan Benet, David Dias libp2p Specification
+Oxford] Oxford Online dictionary Tim Swanson Consensus-as-a-service: a brief
+
+https://en.oxforddictionaries.com/definition/ report on the emergence of permissioned, distributed
+
+ledger systems April 6, 2015
+Douceur02] Douceur, John R. (2002). ”The Sybil Attack” https://pdfs.semanticscholar.org/f3a2/
+https://www.microsoft.com/en-us/research/ daa64f c82f cda47e86acb0d555ff£c24b8c7 . pdf
+
+publication/the-sybil-attack/?from=http/3A/
+
+2F/,2Fresearch.microsoft .com42Fpubs/,2F74220%

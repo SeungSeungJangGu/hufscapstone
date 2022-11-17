@@ -1,0 +1,1373 @@
+a SN Ae
+F | ag White Paper
+April 2018
+
+Advancing Performance with
+
+Layered Multi-Blockchain
+Architecture for Enhanced
+Smart Contracting
+
+MOAC
+
+WWW.MOAC.IO
+
+MOAC Blockchain Tech, Inc.
+Palo Alto, California 94303
+The MOAC Platform:
+Advancing Performance with Layered Multi-Blockchain
+Architecture For Enhanced Smart Contracting
+
+April 17, 2018 Xinle Yang’, Xiaohu David Chen+, Ryan Wang?
+
+ABSTRACT
+
+The company MOAC Blockchain Tech, Inc. (MOAC) has released a next generation blockchain platform. With
+a pioneering Multi-Blockchain architecture, MOAC not only addresses the performance and cost issues with
+existing blockchain systems, including Bitcoin and Ethereum, but also introduces new features that minimize
+the barrier to entry for developers, users, businesses, and the entirety of the blockchain ecosystem. The new
+platform achieves this by using a layered Multi-Blockchain architecture, blockchain sharding, MicroChain™
+Smart Contracts, and Cross-Chain capabilities.
+
+The underlying architecture of the MOAC Platform is a Multi-Blockchain consisting of a global primary
+blockchain, MotherChain™, and additional MicroChains™. Using blockchain sharding technology, a
+MicroChain™ functions as a child blockchain within the platform that operates above the global
+MotherChain™, and is responsible for Smart Contracts management. MicroChains™ also enable high volume
+transactions using a variety of consensus systems. Consensus systems are an agreement system that provides
+accountability and verification of transactions.
+
+The platform’s advanced layered Multi-blockchain architecture increases overall transaction processing
+speeds up to 100x faster (TPS) than existing blockchain platforms. Meanwhile, MicroChains™ enhance token
+concurrency rates up to 10,000 times, for a truly scalable solution.
+
+MicroChains™ significantly reduce the cost of smart contract operations and allow developers to rapidly test
+different application and service ideas. MOAC’s MicroChains™ are able to interconnect with all other non-
+MOAC blockchains using Cross-Chain capabilities. This allows both users and their decentralized
+applications (DApps) to migrate easily to the MOAC Platform, with no prior blockchain knowledge. It also
+provides a decentralized file storage solution which is currently missing from other major blockchains.
+
+MOAC incentivizes mining as well as rewards for the entire ecosystem. The MotherChain™ uses a proven
+Proof of Work (PoW) model, similar to Ethereum, so that miners and mining pools have opportunities to
+participate in mining the MotherChain™. The MOAC Platform provides additional MicroChain™ mining and
+validation and provides mechanisms for mining from mobile devices, including smart phones.
+
+By reducing the barrier to entry for both mobile users and server farms, the MOAC Platform offers a truly
+scalable ecosystem for developers and their Smart Contracts, enabling developers to create innovative
+DApps with lower operating costs, enhanced capabilities, and improved performance without a reduction in
+security.
+
+Blockchain Tech, Inc. All Rights Res content is confidential and property of MOAC Blockchain Tech, Inc. 1
+
+LA MOAC
+TABLE OF CONTENTS
+
+ABSTRACT 1
+TABLE OF CONTENTS 2
+INTRODUCTION 3
+
+¢ Problem Statement
+¢ AMulti-Blockchain Solution: The MOAC Platform
+
+THE MOAC PLATFORM 5
+¢* MotherChain™: The Proof of Work Blockchain
+* Smart Contracts As MicroChains™
+¢ MicroChains™ for Variable Consensus Systems
+¢« MicroChains™ As A Service
+¢ Asynchronous Smart Contracts
+¢ Blockchain Sharding
+* Cross-Chain Ready
+¢ Event Handling
+
+« Mining
+¢« Wallet and Payment System
+° API
+¢ Security
+ECOSYSTEM 16
+
+* Community
+
+¢ DApp Developer Benefits
+
+* Exchanges
+
+* Tokens
+
+* MOAC Coin Market Capitalization
+* Governance
+
+AVAILABILITY 23
+¢ Product Evolution and Roadmap
+
+TEAM AND HISTORY 24
+* Corporate Profile
+* Team
+
+APPENDICES 26
+
+¢ Appendix A: Disclaimer
+Appendix B: List of Terms
+
+LA MOAC ©MOAC Blockchain Tech, Inc. All Rights Reserved. All content is confidential and property of MOAC Blockchain Tech, Inc.
+INTRODUCTION
+
+Blockchain technology, cryptocurrencies, and Smart Contracts have the
+potential to change how developers build decentralized applications (DApps)
+and are already changing how the world conducts business.
+
+Since the introduction of Bitcoin in 2008, blockchain technology as a
+cryptocurrency has established itself as a decentralized ledger of record for
+
+digital financial transactions as as
+nsensus model to
+mo
+in.org/b
+
+decentralized co
+without a centra
+See https://bitco
+
+ized
+
+netary au
+itcoin.pdf
+
+In 2015, platforms |
+
+ike
+
+Ethereum
+
+DApps popu
+the transfer
+
+certain party or deve
+
+ar. A Smart Contract
+of digital currencies o
+
+oper defined
+
+Read more at https://gi
+
+oread more.
+
+r value based assets
+program
+
+thub.com/e
+
+thereum
+
+matic conditi
+
+tore of value. Bitcoin functions using a single
+provide transaction verification and security
+thority.
+
+made the concept of Smart Contracts and
+is acomputer program that directly controls
+
+between parties under
+ons.
+
+/wiki/wiki/White-Paper .
+
+A“DApp’” is a decentra
+function, and instead
+
+relies on
+
+BitTorrent, Napster, an
+data transfer from mu
+blockchain for proces
+
+tiple source
+
+sing and storing d
+
+computing functionali
+which is purely t
+
+Since
+cryptoc
+
+tne crea
+
+rise, sati
+
+LA MOAC
+
+©MOAC BlockchainT
+
+lized application th
+
+at does not re
+
+peer-to-peer (P2P
+
+d Kazaa to interconnect. P2P networks prese
+Contracts and DApps both use the
+ta, as well as providing
+ty. This is unlike Bitcoin, a first generation
+
+ransactional.
+
+s. Smart
+a
+
+tion of Bitcoin, blockchain technology (i.e., plat
+urrencies) has evolved in the hope of expanding function, pe
+security, and scalability. By solving these system challenges, user ad
+sfying innumerable business use cases.
+
+y on acentral server to
+networks similar to
+rve optimal
+
+additional
+blockchain,
+
+forms and
+rformance,
+option will
+
+ty of MOAC Blockcha
+This paper will outline groundbreaking solutions that combine existing
+blockchain best practices with new scalable Multi-Blockchain technologies that
+significantly advance Smart Contracting. This is not a theoretical paper and all of
+the intellectual property in this paper is in development, in testing, and will soon
+be in production.
+
+@) PROBLEM STATEMENT
+
+Existing technologies and blockchain platforms suffer from steep learning
+curves, unnecessary complexity, and high usage fees - all of which impact
+adoption and scalability. Existing platforms have low performance
+transactions-per-second (TPS), fixed consensus models, and are not able
+to quickly adapt to the ever growing needs of developers. Currently,
+mining in the blockchain community is highly centralized and doesn't
+properly incentivize new users and interested consumers due to
+complexity and the cost of required hardware.
+
+These blockchain platforms are also alienated from each other and unable
+to communicate effectively with other cryptocurrencies, Smart Contracts,
+and blockchain systems. This has created a highly segregated blockchain
+marketplace, separating platforms, technology, user-base, and industry.
+
+It is currently extremely challenging
+even for experienced technical
+developers to build new blockchains.
+To make matters even more
+complicated, most blockchains are
+difficult to upgrade, and_ split
+participation inefficiently between
+users.
+
+LA MOA ©MOAC Blockchain Tech, Inc. All Rights Reserved. All content is confidential and property of MOAC Blockchain Tech, Inc. 4
+DA A MULTI-BLOCKCHAIN SOLUTION:
+THE MOAC PLATFORM
+
+The Silicon Valley based company, MOAC Blockchain Tech, Inc. (MOAC),
+has addressed the primary inefficiencies of existing blockchain platforms
+by developing a Multi-Blockchain platform. The MOAC Platform uses an
+advanced layered architecture that lowers DApp developer costs,
+provides for scalability, and reduces development complexity while
+increasing transaction speeds and volume using sharding. MOAC
+leverages Multi-Blockchain within its platform, including MotherChain™
+a Proof of Work based blockchain) and MicroChains™ for Smart
+Contracts supporting multiple consensus models. The MOAC Platform
+also has Cross-Chain capabilities to interconnect MicroChains™ within
+the system and to interconnect with 3rd party non-MOAC blockchain and
+cryptocurrencies.
+
+THE MOAC PLATFORM
+
+By separating balance transfer and Smart Contracts, the platform’s advanced
+layered Multi-blockchain architecture increases overall transaction
+processing speeds up to 100x faster (TPS) than Ethereum. The MOAC
+architecture is overviewed below, consisting of MotherChain™, an event
+handling system, Smart Contracts as MicroChains™, blockchain sharding,
+Cross-Chain capabilities, security, and an API.
+
+axa MOTHERCHAIN™:
+"** THE PROOF OF WORK BLOCKCHAIN
+
+MotherChain™ - not to be confused with MOAC - describes an
+
+intersystem Proof of Work blockchain that handles data storage and
+compute processing for Smart Contracts and DApps.
+
+LA MOA ©MOAC Blockchain Tech, Inc. All Rights Reserved. All content is confidential and property of MOAC Blockchain Tech, Inc. 5
+A Proof of Work (PoW) algorithm is an economic measure to deter and
+ultimately prohibit third-party interference, including denial of service
+attacks and other service and network abuse such as spam. By requiring
+some work from the service requester, usually equating to committed
+processing time by a computer for completing specific processing
+
+erroneous system threats are eliminated.
+
+tasks,
+
+Onthe MOAC Platform, MotherChain™ is the public blockchain layer that
+processes balance transfers, blockchain operation, consensus, and data
+
+access. The platform also supports other consensus
+MicroChains™.
+
+SMART CONTRACTS AS MICROCHAINS™
+
+beyond existing solutions.
+
+isolate blockchain functions from business logic for each in
+contract. By providing each Smart Contract with its
+
+protocols and results ina wider range of potential business
+Developers have the freedom to select the consensus pro
+fits their use case and determine the number of nodes
+
+models
+
+own U
+
+tocol tha
+
+inside the local MicroChain™ and can write data to the Mo
+needed for finality.
+
+LA MOAC ©MOAC BlockchainT c. All Rights Reserved. All content is confidential and property of MOAC Blockcha
+
+therChai
+
+using
+
+OAC is one of the first blockchain solutions to implement a unique
+icroChain™ per Smart Contract, providing for efficiency and scalability
+
+The MOAC Platform uses MicroChains™ to separate processing tasks and
+dividual smart
+
+nique
+
+icroChain™, it enables Smart Contracts to use a variety of consensus
+ogic use cases.
+
+t best
+
+allocated to a
+specific Smart Contract. All the states of the Smart Contract are saved
+
+n™ as
+MicroChain™
+Smart Contract
+
+Upper layer MicroChain™ Smart Contract: A
+MOAC protocol based contract for defining
+
+consensus systems within a MicroChain™,
+which also enables nodes to register into
+
+API
+
+hich alsoe
+mene Provides quick start with access points for
+critical functions without prior knowledge
+ISOLATED
+BALANCE TRANSFER REQUEST
+5
+Event Handling
+Y Transaction verification through consensus
+systems, accountability, and event handling
+INTELLIGENT LOGIC
+SMART CONTRACT REQUEST
+Global
+IAM
+mena \ MotherChain
+
+Peer-2-Peer
+
+Communication layer between single or
+groups of client nodes that are responsible for
+transactions or DApp communication
+
+A lower layer defines the behavior of the control flows
+of multiple MicroChains™ including flushing, rewarding
+miners, and how to punish bad actors. It provides a
+flexible environment enabling DApps to use different
+kinds of user-defined VMs.
+
+MICROCHAINS™ FOR VARIABLE
+CONSENSUS SYSTEMS
+
+With the ability to have MicroChains™ in a layer above the
+MotherChain™, each MicroChain™ can have its own unique consensus
+system and algorithm.
+
+For example, you could create a MicroChain™ which uses a Proof of Stake
+consensus model specifically for scalable rapid high volume transactions.
+A Proof of Stake (PoS) is a type of algorithm by which a cryptocurrency
+blockchain network aims to achieve distributed consensus.
+
+Instead of processing large amounts of data like a strictly Proof of Work
+blockchain, a Proof of Stake blockchain relies on validator nodes within a
+network to verify transactions. In Proof of Stake blockchains, the creator
+
+LA MOA ©MOAC Blockchain Tech, Inc. All Rights Reserved. All content is confidential and property of MOAC Blockchain Tech, Inc. 7
+of the next sequential block is chosen by randomized algorithms based on
+a combination of factors such as wealth or age (l.e., the stake).
+
+The advantage of a Proof of Stake system is that it is fully scalable for
+enterprise-level volume, is energy efficient, and supports variable
+transactions. It also increases verification capacity proportional to the
+number of nodes on the network, and enables microtransactions within
+DApp MicroChains™ without having to constantly access the
+MotherChain™.
+
+In addition to Proof of Stake and Proof of Work blockchains, the MOAC
+Platform can also support additional plug-and-play consensus systems
+such as Proof of Activity, Proof of Burn, Proof of Elapsed Time, etc.
+
+SCS NODES A Blockchain Platform Designed for Scalability
+y LAYERED
+7: ARCHITECTURE
+
+IPFS RANDOM BET, MicroChains™
+
+e
+= WITH ADVANCED
+ar) & ar MULTI-BLOCKCHAIN
+
+INTERNAL CROSS-CHAINS
+
+SHARDING
+‘FLUSH
+
+LA MOAC ©MOAC Blockchain Tech, Inc. All Rights Reserved. All content is confidential and property of MOAC Blockchain Tech, Inc. 8
+e@a MICROCHAINS™ AS A SERVICE
+B
+
+Since MicroChains™ are isolated, they can run a variety of virtual
+machines for Smart Contracting on a per instance basis. This enables
+
+MicroChains™ to initiate a wide range of business logi
+
+c and DApp use
+
+cases. In addition, it enables the use of different file systems such as IPFS,
+sensor networks for data storage, and MicroChains™ can even be
+
+implemented by artificial intelligence.
+
+@ SELECT CONSENSUS MECHANISM
+
+SELECT CONSENSUS M
+
+nn Creating POS
+aa . . we
+MicroChains™
+
+CODE DEPLOYED
+
+=
+
+SELECTION
+
+Since DApps are deployed in a developer-selected virtu
+
+PARAMETERS.
+& SETTINGS
+k
+
+rere eeeenitt
+PreTeTTee TTTTTTTT
+OOS MRTEETTTT HET ETTTTT
+
+al machine, they
+
+do not require additional programming. MOAC canrun existing Ethereum
+Smart Contracts with lower fees, and developers can leverage the
+
+platform’s API to expand existing Smart Contract functi
+
+having to learn how to program the blockchain.
+
+By isolating each Smart Contract with its own unique vir
+
+ionality without
+
+tual machine and
+
+MicroChain™, the MOAC Platform boosts Smart Contracting efficiency,
+allowing for more cost effective processing fees. This significantly lowers
+
+LA MOAC ©MOAC Blockchain Tech, Inc. All Rights Reserved. All content is confidential and property of MOAC Blockche
+the cost of deployment for developers, and enables them to build high
+transaction volume based DApps.
+
+(EI ASYNCHRONOUS SMART CONTRACTS
+
+Using Multi-Blockchain architecture, the platform leverages
+Asynchronous Smart Contracts with MicroChains™ to accelerate DApp
+development and deployment. This advanced architecture design also
+extends the functionality of Solidity and Ethereum Smart Contracts.
+
+The MOAC Platform supports two types of Smart Contracts:
+
+1. An Upper Layer Smart Contract is a protocol based contract for
+defining consensus systems within a MicroChain™. MicroChain™
+Smart Contracts also enable nodes to register into mining pools.
+
+2. A Lower Layer MotherChain™ Global Smart Contract defines the
+behavior of the control flows of multiple MicroChains™ including
+flushing, rewarding miners, and how to punish bad actors. It provides a
+flexible environment enabling DApps to use different kinds of virtual
+machines including Ethereum, Java (JVM), and other developer-
+selected virtual machines.
+
+BLOCKCHAIN SHARDING
+
+The MOAC Platform also provides blockchain sharding, a feature to
+horizontally partition data across multiple blockchains and nodes. Existing
+blockchain solutions are inefficient and process the same task multiple
+times which degrades system performance. Sharding helps by using a
+node based approach, providing more processing power proportional to
+the number of nodes in the network.
+
+LA MOAC © MOAC Blockchain Tech, Inc. All Rights Reserved. All content is confidential and property of MOAC Blockchain Tech, Inc 10
+When smart contracts are deployed developers will define the number of
+service nodes, a consensus protocol, block size, block generation time, and
+flush frequency. This will then form a shard and provide a byzantine fault
+tolerant solution for that smart contract, which then forms a
+MicroChain™.
+
+Learn more at https://en.wikipedia.org/wiki/Byzantine fault tolerance .
+
+A Feature for Efficiency
+
+<2 BLOCKCHAIN
+eo 66 SHARDING Smaller, Faster, More Easily Managed Shards
+
+OO®
+
+This is very similar to database sharding, however blockchain sharding is a
+type of blockchain partitioning that separates very large blockchain nodes
+into smaller, faster, and more easily managed shards.
+
+By using this solution, the platform is able to scale more effectively,
+significantly increasing transactions-per-second (TPS) by extending the
+network with more nodes. Sharding subdivides the whole network into
+multiple shards, and as long as there are sufficient nodes in each shard, the
+system is still highly secure. This allows for secure processing of parallel
+
+LA MOAC ©MOACBlockchain Tech, Inc. All Rights Reserved. All content is confidential and property of MOAC Blockchain Tech, Inc. 11
+transactions, further increasing the number of transactions-per-second
+(TPS) over existing blockchain solutions.
+
+7 CROSS-CHAIN READY
+
+Cross-Chain functionality enables MOAC to interact with a variety of
+blockchain systems within the platform as well as externally to 3rd party
+blockchains and cryptocurrencies.
+
+A Feature for Interconnectivity
+
+8 CROSS-CHAIN
+READY
+
+660
+
+MicroChains™
+
+The MOAC Platform is able to swap blocks and data between multiple
+blockchains and use atomic swap based Cross-Chains. Cross-Chains are a
+trust based system for atomically swapping cryptocurrencies in a single
+transaction between various blockchains and cryptocurrencies.
+
+The MOAC Platform offers two types of Cross-Chains:
+
+LA MOA ©MOAC Blockchain Tech, Inc. All Rights Reserved. All content is confidential and property of MOAC Blockchain Tech, Inc. 12
+1. Cross-Chains between MicroChains™ and blockchains within
+the MOAC Platform
+
+2. Atomic swap cross-chain transactions with other non-MOAC
+blockchain systems like Bitcoin and Ethereum
+
+GQ EVENTHANDLING
+
+Above the distributed network layer of the MotherChain™ is an Event
+Handling system for network event requests and replies. It also processes
+control flow requests and can invoke Smart Contract related operations.
+The event handling system relays transaction calls between multiple
+layers within the platform multi-directionally, and is primarily used for all
+balance transfers, global Smart Contract control, flushing, and other
+consensus related messaging.
+
+=F MINING
+
+Mining is the process by which transactions are verified. It is the means
+through which new MOAC coins are released and rewarded to miners for
+the results of their computing processing power and storage.
+
+The MOAC Platform has two types of mining:
+
+1. MicroChain™ Mining
+
+The upper layer of the MOAC Platform where a node verifies
+transactions for smart contracts and other consensus systems.
+Each node is rewarded for processing Smart Contracts and
+verifying transactions. Mining for MicroChains™ will be
+rewarded with MOAC tokens and tokens associated with that
+specific MicroChain™.
+
+LA MOAC © MOAC Blockchain Tech, Inc. All Rights Reserved. All content is confidential and property of MOAC Blockchain Tech, Inc 13
+2. Mot
+The
+foun
+Mot
+ETH
+Mot
+
+herChain™ Mining
+
+ower layer is the Proof of Work MotherChain™, which is the
+dational layer for data processing and storage. Mining onthe
+herChain™ functions similarly to Ethereum, and existing
+miners can easily switch to MOAC. Mining for the
+herChain™ is how miners can earn the MOAC
+
+cryp
+
+WALLET
+
+COCUrrency.
+
+{NORE MINERS
+
+AND PAYMENT SYSTEM
+
+The MOAC Platform features a fully functional wallet protocol. This
+enables MOAC to work with a variety of 3rd party wallet solutions. Any
+wallet compatible with the MOAC protocol will work smoothly with the
+
+platform.
+
+In addition, MOAC is developing an open source web and desktop wallet
+which will work on the web, Windows, Mac, iOS, and Android.
+
+The official wallet will be released when the mainnet is launched.
+
+LA MOAC
+
+©MOAC Blockchain Tech, Inc. All Rights Reserved. All content is confidential and property of MOAC Blockchain Tech, Inc. 14
+t API
+
+The platform API provides a quick start for DApp developers by providing
+easy access points for DApps to access blockchain specific functions
+without having to know the specifics of blockchain implementation. This
+enables developers to build complex applications by simply calling those
+functions from the MOAC Platform.
+
+‘@= SECURITY
+fos)
+
+MOAC prioritizes security first. When developing the platform, the
+MOAC team reviewed the security settings and measures of all major
+blockchain systems in order to utilize the best practices in the market.
+During their audit of existing blockchain security, they found several
+vulnerabilities in existing blockchain solutions and were able to predict
+several exploits which have been patched in The MOAC Platform.
+
+When code is committed to the platform there is a thorough security
+review process in place to comply with all OWASP Top 10 security
+vulnerability measures. The MOAC team - in partnership with other high
+profile security organizations - has also prepared counter measures and
+solutions to address common and future attacks. MOAC routinely
+employs contracted blackhat and whitehat security firms to analyze the
+platform for vulnerabilities.
+
+OAC will also be issuing a bounty program for exploits and bugs making
+it more profitable for hackers to inform on security issues instead of
+attempting to ransom users. Meanwhile, the platform’s intelligently
+designed architecture isolates each MicroChain™, limiting the potential
+attack capabilities on each Smart Contract.
+
+LA MOAC © MOAC Blockchain Tech, Inc. All Rights Reserved. Alll content is confidential and property of MOAC Blockchain Tech, In 15
+ECOSYSTEM
+
+O? COMMUNITY
+
+At the core of the MOAC Platform are the users that power it, the
+developers who create DApps, the end-users who use those DApps, and
+the miners and node operators who keep the network running gracefully.
+
+MOAC will be providing an extensive wiki, tutorials, a glossary of terms,
+white papers, a knowledge base, help desk, and other user resources, and
+is committed to staying actively engaged with user communities on
+Telegram, Facebook, Twitter, and other social media platforms.
+
+ECOSYSTEM FOR
+INTERCONNECTIVITY
+
+Supporting Developers, Technologies, and Their Growth
+
+ae Oey
+
+CROSS-CHAIN NATIVE DAPPS {ARDWARE MINING BOX
+READY + MOBILE FRIENDLY WALLET -
+
+The MOAC Platform can be deployed onto all major operating systems
+such as Windows, Mac OS and Linux/UNIX. The official MOAC program
+provided is written in Golang, however, with the provided MOAC
+
+LA MOA ©MOAC Blockchain Tech, Inc. All Rights Reserved. All content is confidential and property of MOAC Blockchain Tech, Inc. 16
+protocol, developers can use other programming languages for Smart
+Contracts.
+
+The community includes DApp Labs to encourage developer testing and
+experimentation, enabling developers to test DApps in isolation before
+releasing them to the public network. A testnet is available on
+ttp://moac.io and the MOAC_ explorer can be found = on
+http://moac.io/testnet#/.
+
+=)
+
+Beyond Cross-Chain capabilities that enable interconnectivity with other
+blockchains and cryptocurrencies, the platform also runs on a
+foundational P2P distributed network. By using a P2P network, the
+atform is able to provide a distributed network for DApps to interact
+with each other.
+
+[e}
+
+The P2P network is the underlying layer of communication between any
+singular or grouped nodes running the same protocol. A node in this use
+case refers to a client that is sharing blocks and transactions across the
+network. Nodes communicate by sending messages using RLPx, an
+encrypted and authenticated transport protocol.
+
+= DAPP DEVELOPER BENEFITS
+
+¢ LA
+
+ETH ETH2.0 MOAC EOS NEO ICX/ICON
+FEATURES 072015 Fall2019 June 2018 06.2018 09.2017 «072016 += 02.2018
+
+DECENTRALIZATION
+
+CROSSCHAIN
+INTEROPERABILITIES|
+
+IPFS CAPABILITIES]
+
+MAIN CHAIN
+CONSENSUS ALGORITHM
+SUBCHAIN| A POS DPOS, POW, OTHERS. NA NA
+
+EXTREMELY
+COST CONCERNS HIGHCOST
+
+ZA MOAC MOAT he AoensconeiontpenavtnoncoodcnTenine 17
+@ Quality of Service
+
+DApps will run more efficiently on the MOAC Platform when
+compared with other platforms. Since Ethereum is limited by its
+scalability and transactions-per-second, it inherently cannot handle
+arge transactions and computation volume. That is why a simple
+game like CryptoKitties caused a traffic jam in the entire Ethereum
+network. A similar jam caused as a result of 10 apps or 100 apps
+running together on Ethereum could be even more catastrophic.
+
+Learn more at http://www.bbc.com/news/technology-42237162
+
+¢
+
+ETH 2 ADA INze)
+SMART CONTRACTING 07.2015 8 09.2017 07.2016
+FLEXIBLE SYSTEM CONTRA\
+
+SMART CONTRAC
+
+ASYNCHRONOUS SMAR"
+CONTRA
+
+EVM COMPATIBILI
+
+SMART CONTRA‘ amas:
+LANGUAGERS
+
+¢
+
+rl ETH 2.0 MOAC IS ADA ICX/ICON
+PERFORMANCE Fall 2019 June 2018 0 09.2017 16
+
+TPS (MAIN NODES) 5 15 1000+
+TRANSACTIONS-PER-SECOND
+
+N A 100,000+
+(SHARDING/MICROCHAIN and scalable
+
+SCALABLE SHARDING}
+SHARDING
+
+FLEXIBLE SHARDING}
+
+ZA MOAC MOAT he AotensconeonpenatnoncsodconTenine 18
+e@ Cost
+
+Itis very costly to run a Smart Contract or DApp on Ethereum. Each
+transaction initiated or triggered by the Smart Contract requires a
+certain amount of gas. The average amount of gas per transaction is
+very high, which means the cost per transaction is very high. If some
+Smart Contracts trigger many transactions, that means the
+developers or users of the Smart Contract must pay a lot of
+currency, crypto or otherwise, to maintain the DApp.
+
+The MOAC Platform boasts lower-layer transaction costs at 1/10th
+the cost of Ethereum, and the upper layer contract calls are free.
+
+OTHER
+SMART CONTRACT BLOCKCHAINS LA
+
+SMART CONTRACT
+
+TOTALGAS 8,000,000 8,000,000 DEPLOY Pay Gas Fee Pay Gas Fee to
+
+V-Node
+TRANSACTION FEE 21,000 1,000 ;
+, MAINTENANCE NO FEE Pay Block Generation
+
+Fee To SCS-Node
+GLOBAL CONTRACT CALL 100,000-200,000 jielelexeleleerielexeleye)
+
+Buy ETH First, Pay Gas
+Fe
+
+DIRECT CONTRACT CALL 100,000-200,000 NO FEE USER NO FEE
+
+Flexible At Apps
+
+BOND NOT AVAIL. CONFIGURABLE CONSENSUS Selection
+
+@ Flexibility and Simplicity
+
+ost DApps only have their transaction logic in Ethereum, while the
+rest of the logic and components are “off-the-chain’” solutions,
+relying on traditional server and databases, making them
+centralized systems. By contrast, DApps deployed on the MOAC
+Platform maintain decentralization. MOAC also provides upper-
+ayer MicroChains™ for CPU computation, GPU computation, file
+storage, databases, and many other services, while maintaining a
+decentralized structure.
+
+LA MOAC © MOAC Blockchain Tech, Inc. All Rights Reserved. All content is confidential and property of MOAC Blockchain Tech, Inc 19
+@ Cross-Chain
+
+The MOAC Platform is the only blockchain platform available with
+
+Cross-Chain capabilities.
+
+and are not limited to any
+
+between them.
+
+ow developers can switch be
+
+interact with MOAC DApps wi
+exchanges. Without MOAC, a
+transaction between Bitcoin and Ethereum. Unfortunately, each
+
+existing blockchain system is like an island, without any bridges
+
+tween tokens within specific DApps
+
+specific platform or technology. Any
+
+Bitcoin, Ethereum, or other cryptocurrency user will be able to
+thout going back and forth between
+
+user cannot easily process a
+
+magine a world where every website and mobile app is unable to
+
+communicate via the internet and lol we know today. MOAC
+Cross-Chain technology makes connectivity possible, a potential
+yet to be realized in the market with promising high-impact use
+
+cases inthe future.
+
+oe) EXCHANGES
+
+The exchange is a decentralized excha
+
+cryptocurrencies with no centra
+
+governance. It is instead governed by ad
+
+Within the platform, a MicroChai
+
+foundation of the DEX. In addition
+developed to gather trade inform
+
+ized
+
+,a
+
+nge (DEX) for swapping various
+server or 3rd party authority
+ecentralized system.
+
+n™ can be deployed to provide the
+
+icroChain™ based DEX could be
+
+ation,
+
+match buyers and sellers, and
+
+provide the decentralized atomic swap for users. MicroChain™ can
+
+implement Cross-Chain consensu
+access to both.
+
+s protocols and can provide miners
+
+LA MOAC ©MOAC BlockchainT c. All Rights Reserved. All content is confidential and property of MOAC Blockcha
+The Cross-Chain consensus protocol utilizes unique features of the
+
+WI
+
+platform to create hash-and-time-locked transactions. A MicroChain™
+ill provide the atomic swap function for exchange between the MOAC
+
+Platform and external blockchain tokens. Similar MicroChains™ can be
+deployed to enable the exchange between MOAC coins, BTC, ETH or LTC.
+
+Auser holds all coins in his wallet via DEX until a successful swap happens.
+
+Unlike a centralized exc
+
+coins being stole
+
+n. All D
+
+hange, the user benefits with a reduced risk of the
+EX exchange information is public and available to
+
+all, thus mitigating fake orders, and providing for a healthier marketplace.
+
+(cco
+
+TOKENS
+
+(to
+
+MOAC’s Smart Contract system is fully compatible with Ethereum’s EVM
+
+system, supporting ERC20 and
+
+ERC721 token standards.
+
+82S MOAC COIN MARKET CAPITALIZATION
+
+There are currently 56
+
+additional 94 mi
+
+coins. The for-profit ent
+foundation holds 63 milli
+
+Blockchain deve
+and can be found
+
+Learn more at ht
+
+at Coin
+
+opment. 1
+
+tps://coin
+
+million MOAC coins in circulation, with an
+lion in reserve for a total supply of 150 million MOAC
+ity holds 31 million coins, and the MOAC
+on. 31 million is funding the ongoing Multi-
+The value of each MOAC coin fluctuates daily,
+arketcap.com.
+
+marketcap.com/currencies/moac/
+
+6 million addition
+increasing the su
+
+LA MOAC
+
+©MOAC BlockchainT
+
+al coins per year will be generated during mining, further
+pply in circulation. After 4 years, the production will halve
+to 3 million, then will halve again the following 4 years. The total supply will
+be 210 million coins by 2058.
+
+£3 GOVERNANCE
+
+OAC Blockchain Tech, Inc. (MOAC) will eventually be managed by the
+OAC Foundation, a cooperative not-for-profit organization, founded in
+Singapore. The MOAC Foundation is the entity responsible for efficient
+use of funds resulting from any token sales from the MOAC Reserve.
+Responsibility for all platform development (including development of
+applications and associated services), ongoing maintenance, and support
+including public educational content for the community) is provided by
+the MOAC Foundation.
+
+The MOAC Foundation’s vision is to interconnect and grow blockchain
+markets through harmony, accessibility, and ease of use.
+
+OAC Blockchain Tech, Inc. is a registered for-profit U.S. entity with
+executive offices in Palo Alto, California and extended development teams
+in Beijing, China.
+
+MOAC Platform
+
+Implementation and Deployment Pulls Neistatonn
+
+Pangu Release - April 1, 2018 Smart P2P Network
+
+LA MOAC 22
+AVAILABILITY
+
+PRODUCT EVOLUTION AND ROADMAP
+
+Project Initiation
+
+Pangu Release
+
+20+ DApps LIVE
+
+PERFORMANCE TESTING
++ MARKET POSITIONING
+
+Nuwa Release
+
+100+ DApps LIVE
+
+Supporting Multi-Billion Dollar
+Businessses as Standard for Industrial
+Blockchain Performance & Capacity
+
+Fuxi Release
+500+ DApps LIVE
+
+LA MOAC
+
+JANUARY 2017
+
+Successful ICO Raise of
+
+$6,998,723.00 USD
+JULY 2017
+
+Testnet Release
+NOVEMBER 2017
+
++ Testnet Release
+
++ V-node Online
+
+* SCS Online
+
+* Asynchronous Smart Contract Online
+
+FEBRUARY 2018
+
+Token & Wallet
+
+with Ethereum & Jingtum Compatibility
+
+MARCH 2018
+
++ MicroChain™ Online
+
++ POS MicroChain™ Module Online
++ a@—Class Dapps Online
+
++ Mining on V-Node and SCS Open
+
+JUNE 2018
+
+Storage System (IPFS Capability) Online
+Authentication System Online
+
+SCS Reshuffling Online
+
+Reward System Update
+
+Security Update
+
+Dapps Explorer Online
+
+Library Store Online
+
+Interchain Operations Allowed
+
+All Major Consensus Modules Online
+
+DECEMBER 2018
+
++ Next Generation P2P Sharding System Release
++ Payment System At Full Capacity
+
++ High Performance Storage Online
+
++ EVM Hardware Chip Is Running
+
+JUNE 2019
+
++ Functional Enhancement And Monitoring Technology
++ Full loT Integration
+
+LA MOAC ©MOAC Blockchain Tech, Inc. All Rights Reserved. All content is confidential and property of MOAC Blockchain Tech, Inc.
+
+23
+TEAM AND HISTORY
+
+MOAC Blockchain Tech, Inc. (MOAC) is comprised of cross-industry and
+multicultural blockchain leaders from finance, digital, software, and emerging
+tech markets, such as VR/AR.
+
+The team’s chairman, Sha Zhou, has been a critical part of transformative
+economic change in Beijing, China, authoring books on blockchain and big data,
+and is highly revered by China’s elite. His partner, blockchain influencer and
+designer of MotherChain™, CEO David Chen, is a 20+ year silicon valley veteran
+and also the ex-CTO and founder of Jingtum (physical asset tokenization
+technology platform). Xinle Yang, MOAC’s CTO, leads the ongoing development
+of the company’s highly disruptive blockchain platform. He was the scientist and
+engineer responsible for Nike’s e-commerce platforms which accounted for
+$11BB of the company’s yearly revenue.
+
+Together, the team has gained market wide acclaim, brought MOAC product
+ines into reality with international tech patents, and successfully raised 50MM
+ETH in ICO.
+
+re) CORPORATE PROFILE
+
+Year Founded: 2017 Industry: Blockchain, Smart Contract,
+Software, Emerging Markets,
+Employees: 25 FinTech, Technology
+
+Location: Various executive offices in
+Palo Alto, California with extended
+developer teams in Beijing, China
+SSQTEAM
+
+Sha Zhou
+President
+
+Sha Zhou is a writer, geek, venture capitalist,
+and foreign affairs visionary. Sha advised
+China’s Central Government on the Beijing
+Olympics, Taiwan trade, Global RMB, and
+China’s $100 billion dollar One Belt project.
+Sha Zhou has authored books on blockchain
+and big data (“The Game of Supernations’,
+“Blockchain World”, and “Blockchain and Big
+Data”), and is highly revered by China’s elite
+for technology.
+
+Xinle Yang
+CTO & Co-Founder
+
+Xinle has spent the last 5 years in blockchain
+development and firmly believes that
+blockchain is still in its infancy, having the
+potential - when mature - to change global
+economics. In his early career, Xinle was
+responsible for Nike’s multibillion dollar
+online ordering system, and has had
+extensive scientist and engineering roles at
+Walmart, Intel, and IMTT.
+
+LA MOAC
+
+David Xiaohu Chen
+CEO & Co-Founder
+
+David Xiaohu Chen is a blockchain theoris
+and  cross-domain software — engineer-
+architect with extensive experience. David
+has a deep passion emerging technology,
+having built his career in Silicon Valley for
+decades as an executive technologist. As such,
+he was the CTO and one of the origina
+founders of Jingtum, a leading blockchain
+platform and solution provider for physica
+asset tokenization.
+
+Ryan Wang
+Chief Business
+Development Officer
+
+Ryan speaks worldwide on technology and
+investment topics. He currently oversees
+companies in the U.S. and greater China,
+ooking for unique and connected insights
+hat could help launch technologies between
+both markets. Ryan is the Co-Founder and a
+General Partner of Outpost Capital, a leading
+cross-border early stage venture fund in San
+Francisco and Beijing, focusing on VR/AR,
+blockchain, and other technologies.
+
+©MOAC Blockchain Tech, Inc. All Rights Reserved. All content is confidential and property of MOAC Blockchain Tech, Inc. 25
+APPENDIX A: DISCLAIMER
+
+All of the technology in this paper is currently in early development, and is
+subject to future changes, improvements, and innovations. While MOAC
+Blockchain Tech, Inc. does take security seriously, platforms may still have bugs,
+which is why there is a bug bounty program.
+
+There is no warranty or assurance that the process for creating and processing
+cryptocurrency on the platform will be uninterrupted or error free, and there is
+an inherent risk that the software could contain defects, weaknesses,
+vulnerabilities, viruses, or bugs. Additionally, all cryptocurrency has risks
+associated with acquisition, storage, transfer, and use of tokens or coins, and the
+MOAC Platform is subject to the same risks.
+
+For more information on risks associated with using the MOAC Platform please
+read our terms of service on our website.
+
+LA MOAC © MOAC Blockchain Tech, Inc. All Rights Reserved. All content is confidential and property of MOAC Blockchain Tech, Inc 26
+APPENDIX B: LIST OF TERMS
+
+Bitcoin
+Bitcoin
+
+Blockchain
+The underlying distributed database technology that powers decentralized
+edger systems and cryptocurrencies.
+
+is a distributed ledger based cryptocurrency that uses a Proof of Work
+
+consensus system requiring miners to process the creation of new coins.
+
+Consensus System
+
+Asystem, protocol, or algorithm used to reach a general agreement. In this
+context, referring to a blockchain based cryptocurrency agreeing to the
+verification of a transaction or Smart Contract.
+
+Cross-Chain
+The capability to move data from one blockchain to another using an atomic
+swap exchange.
+
+Cryptocurrency
+
+Adigita
+technol
+
+Decent
+
+transac
+
+Decent
+
+peer ne
+
+An appli
+
+| currency based on a distributed ledger powered by blockchain
+ogy.
+
+ralization
+
+Asystem that does not rely ona centralized authority for approving
+
+tions.
+
+ralized Application (DApp)
+cation where its backend code is running on a decentralized peer-to-
+
+on acentralized server.
+
+LA MOAC ©MOAC BlockchainT c. All Rights Reserved. All content is confidential and property of MOAC Blockchain Tech, Inc
+
+twork with multiple nodes or hosts, vs. a traditional cloud app that runs
+Distributed Computing or Network
+A model where components of a software system are shared among multiple
+computers to improve efficiency and performance.
+
+hereum
+
+thereum is a distributed computing platform for Smart Contracting that uses
+Proof of Work consensus system requiring miners for processing data.
+
+»o Mm Mm
+
+icroChain™
+
+The upper transactional processing blockchain layer for the MOAC Platform
+that operates on a per Smart Contract basis.
+
+OAC
+OAC Blockchain Tech, Inc. and its team, that developed the MOAC Platform.
+
+otherChain™
+
+[he bottom data processing and storage blockchain layer within the MOAC
+Platform.
+
+he MOAC Platform
+
+A blockchain system created by the company MOAC Blockchain Tech, Inc.
+MOAC). It utilizes Multi-Blockchain architecture as its underlying technology
+to achieve high performance Smart Contract execution, increased
+transactions-per-second (TPS), and improved scalability.
+
+ulti-Blockchain
+The architecture used in The MOAC Platform with MotherChain™ as its
+bottom primary blockchain and upper sharded children MicroChains™.
+
+ode
+
+A redistribution point in anetwork, commonly used for connecting peers
+and/or verifying transactions.
+
+LA MOAC © MOAC Blockchain Tech, Inc. All Rights Reserved. Alll content is confidential and property of MOAC Blockchain Tech, Inc 28
+Peer-to-Peer Network (P2P)
+
+Anetwork where each computer can act as aserver for others, and allow
+shared access to files, data processing, and storage without the need for a
+centralized server.
+
+Proof of Stake
+
+A type of algorithm by which a cryptocurrency blockchain network aims to
+achieve distributed consensus. The creator of blocks is chosen via various
+combinations of selection such as wealth or age.
+
+Proof of Work
+
+Asystem, protocol, or algorithm that is an economic measure to deter denial of
+services attacks and other service abuses such as spam by requiring
+computational work from the service requester, commonly processing time by
+acomputer.
+
+Sharding
+A feature to horizontally partition data and events across multiple blockchains
+and nodes.
+
+Smart Contact
+
+Acomputer protocol intended to digitally facilitate, verify, or enforce the
+negotiation or performance of a contract. Smart contracts allow the
+transparent performance of credible transactions without third parties.
+
+Smart Contract As A MicroChain™
+
+A Smart Contact as a MicroChain™ is a Smart Contract with its own unique
+blockchain, or “MicroChain™”, providing for Smart Contract isolation between
+other Smart Contracts and amore efficient overall systems.
+
+LA MOAC © MOAC Blockchain Tech, Inc. All Rights Reserved. All content is confidential and property of MOAC Blockchain Tech, Inc 29
+MOAC
+
+WWW.MOAC.IO
+

@@ -1,0 +1,1050 @@
+©
+
+energy web
+
+EW-DOS: The Energy Web
+
+Decentralized Operating System
+
+An Open-Source Technology Stack to Accelerate the Energy Transition
+
+2019 Energy Web Foundation December 2019
+
+Table of Contents
+
+Key Takeaways
+Preface
+
+The Challenge
+The Opportunity
+A Closer Look
+The Roadmap
+
+Appendix: EW-DOS in Context
+
+© EW-DOS: The Energy Web Decentralized Operating System
+
+15
+
+18
+This paper explains EWF’s refined vision for leveraging blockchain technology to accelerate the energy tran-
+sition, based on the past three years of research and collaboration with our network of more than 100 en-
+ergy market participants. It is intended for general energy and technology audiences. For a more detailed
+technical description of EWF’s current technology and roadmap, please see this paper’s companion piece:
+
+EW-DOS: The Energy Web Decentralized Operating System
+Preface
+
+Energy Blockchain and EWF
+
+Since our founding in early 2017, Energy Web Foundation (EWF) has delivered on its initial vision. The
+
+energy sector's first public blockchain—the
+
+(EW Chain)—is live. EWF has also released a
+
+series of open-source software development toolkits (SDKs) enabling market participants to more-easily
+launch new digital solutions that support the global transition toward low-carbon energy systems.
+
+This was accomplished with EWF’s 100+ member
+organizations, the
+, representing 280 million customers.
+
+The energy blockchain space is maturing quickly.
+From Thailand, to Austria, to California, to Latin
+America, major energy market participants have
+already launched or are in the process of launching
+first-of-their-kind, enterprise-grade energy blockchain
+products on the EW Chain.
+
+Meanwhile, the EW Chain itself is one of the only
+public blockchains among any industry worldwide
+
+EW-DOS: The Energy Web Decentralized Operating System
+
+whose validator nodes are run by known corporations,
+many of them some of the largest and most-respected
+energy companies globally. To date, we count more
+than
+
+across 15 countries spanning 17 time zones.
+
+We are proud of the technology groundwork we have
+laid, the ecosystem of market participants we have
+fostered, and the initial solutions being deployed that
+leverage the EW Chain and our SDKs. But our mission
+to accelerate the global transition to a low-carbon
+future using decentralized and digital technologies
+is far from complete.
+Over the past three years we’ve worked with our
+member organizations to research and test more
+than 100 use cases for blockchain in the energy
+sector, developed dozens of proof-of-concepts, and
+supported the launch of commercial applications.
+Along the way, we have learned the following:
+
+Blockchain technology is uniquely capable for
+establishing multi-party consensus, anchoring
+trust, and providing proofs. It should be used
+accordingly, and not primarily as a datastore or
+messaging platform.
+
+Open-source software and decentralized system
+architectures are critical to unlocking value
+
+in the energy sector with digital technology.
+Open-source and open architectures minimize
+transaction costs, avoid vendor lock-in, and
+support standardization and interoperability.
+
+Simply “adding blockchain” when attempting to
+solve a problem does little. Taking advantage of
+blockchain’s full potential requires reimagining
+business and market processes—including
+
+the roles and responsibilities of different
+actors—while embracing new decentralized
+architectures.
+
+EW-DOS: The Energy Web Decentralized Operating System
+
+Blockchain is not a replacement for legacy
+information technology (IT) systems in the energy
+sector. Blockchain should integrate with and
+augment legacy IT.
+
+The Energy Web Chain is capable of supporting
+enterprise-grade applications with respect
+
+to scale, cost, and data privacy—as long as
+solutions are designed with the right architecture,
+leveraging the blockchain for its strengths.
+
+With these lessons in mind, we have narrowed our
+focus to support what we believe to be the two most-
+valuable use cases of blockchain technology in the
+energy sector: enhancing energy sector traceability
+and unlocking grid flexibility from customer-owned
+resources.
+
+Our plan is to now work with some of the world’s
+largest energy companies to develop and deploy a
+new technology stack focused explicitly on these use
+cases. We call this enhanced tech stack the Energy
+Web Decentralized Operating System (EW-DOS).
+
+Our vision is for EW-DOS to become a de facto industry
+standard: a secure, open-source, shared operating
+system for the 21* century grid. It is a stack of software
+and standards, including the Energy Web Chain, that
+will enable market participants to digitally orchestrate
+low-carbon electric systems.
+The Challenge
+
+Customers are on track to invest more in
+the grid than utilities by 2030. But today’s
+power grids and electricity markets are not
+designed for a customer-centric future.
+
+Utility-scale wind and solar are now the in most regions of the globe.
+Renewable generation will comprise an estimated of overall capacity in the coming decades,
+largely replacing thermal generation assets. This alone represents the most dramatic shift in the
+electricity sector since the advent of alternating current.
+
+But perhaps more significantly, for the first time renewables and distributed energy resources (DERs,
+
+in over a century individuals, companies, and including distributed solar PV, energy storage,
+communities can switch to local, independently- electric mobility, combined heat and power, energy
+produced power at prices competitive with management systems, and “smart” appliances such as
+grid supply by investing in a mix of large-scale thermostats) .+
+
+EWF ar F Ble g Energ
+
+EW-DOS: The Energy Web Decentralized Operating System 6
+Customers are making the switch quickly: in the next
+ten years, electricity end-users will spend a cumulative
+$830B on DERs and $7T on electric mobility. By 2030,
+roughly a third of global installed capacity will reside
+“behind the meter” (see Figure 1). Along with this
+massive investment shift is a coming tsunami of device
+interconnections: an estimated 3.5 billion internet-
+connected DERs are expected to integrate with
+existing electric grids by 2030.
+
+Taken together, these assets have the potential to form
+the basis of decarbonized, flexible, resilient energy
+systems the world-over. But there’s a fundamental
+problem: everything about today’s electricity
+markets—from rules governing asset qualification,
+
+to the way prices are set, to the systems used to
+monitor and manage the grid—assumes that supply is
+controllable, demand is fixed, and grid investment is a
+centralized function driven by grid operators.
+
+100%
+
+80%
+
+60%
+
+40%
+
+20%
+
+0%
+2018 2019 2020 2021
+
+2022 2023 2024 2025
+
+© EW-DOS: The Energy Web Decentralized Operating System
+
+These assumptions are no longer valid. Supply
+
+from renewables is variable, demand is becoming
+flexible, and customer investment in energy is
+projected to eclipse grid operator investment over the
+next decade—investment taking place in a naturally
+decentralized way: some customers want backup
+power, others want to lower their energy bill or carbon
+footprint, and others simply want to control smart
+appliances remotely.
+
+In this environment, asset and customer information
+is fragmented across multiple siloed systems and
+
+is often invisible to grid operators.” Consequently,
+many assets remain largely isolated from core system
+planning and operation functions, and DERs in
+particular are chronically underutilized and frequently
+fail to capture their full potential value.
+
+We aim to overcome these issues with EW-DOS.
+
+Global Installed Capacity by Resource Type
+
+HB Thermal Generation
+I Utility-Scale Renewables
+
+Distributed Renewables, Storage,
+and Demand Flexibility
+
+Utility-scale renewables—plus
+distributed renewables, energy
+storage, and demand flexibility—
+surge to 66% of installed capacity,
+overtaking central thermal power
+plants as the cornerstones of
+electricty generation.
+
+2026 2027 2028 2029 2030
+The Opportunity
+
+Use decentralized technologies to enhance
+energy-sector traceability and unlock grid
+flexibility from customer-owned resources.
+
+Bigger databases, more-efficient algorithms, or faster computers alone will not overcome the challenges
+facing grid operators. The problem is today’s grid architecture.
+
+Centralized architectures like the ones used to operate
+the grid today ultimately place the burden ona single
+party to maintain infrastructure, administer user roles
+and permissions, update data based on events over
+time, and establish a secure way of coordinating data
+across multiple discrete technical and organizational
+boundaries on a permissioned basis. In such
+architectures, data is duplicated across systems, which
+increases the risk of inconsistencies. This in turn leads
+to low trust and high cost.
+
+Instead, we believe market participants ranging from
+
+regulators to grid operators to customers need to
+fundamentally re-evaluate their respective roles and
+
+EW-DOS: The Energy Web Decentralized Operating System
+
+responsibilities. We believe in democratizing the way
+renewables and DERs are integrated into grids, such
+that:
+
+Regulators set high-level rules of engagement;
+
+Grid operators provide platforms for transactions
+as well as visibility into outcomes;
+
+Individual customers, retailers, DER installers,
+and other actors perform many administrative
+functions that currently reside within grid
+operators.
+Our vision is to develop and deploy EW-DOS, a
+
+stack of open-source decentralized technologies
+and standards to meet global requirements for
+establishing identity, enforcing rules, and facilitating
+transactions between billions of assets, customers,
+utilities, service providers, and grid operators.
+
+With EW-DOS, we can support
+widespread value creation via the two
+most-promising use cases we have
+uncovered to date:
+
+1. Enhancing traceability in the energy
+sector, giving market participants the ability
+purchase a variety of digitalized, attribute-
+
+based green commodities ranging from
+International Renewable Energy Certificates
+(I-RECs) to certified green electric vehicle
+charges or low-carbon fuels (e.g., biogas).
+
+Unlocking deep demand-side flexibility,
+enabling grid operators to tap into the vast
+technical potential of customer-owned
+distributed energy resources in a trustwo
+low-cost, scalable way.
+
+EW-DOS works by completely inverting today’s
+system of top-down, unilateral management of
+energy-sector data acquisition and management.
+
+Instead of any given person or device maintaining
+separate digital accounts for every product and
+
+service they use (i.e., duplicated identities among
+market participants) there’s one universal and
+persistent identity controlled by the identity owner
+and accessible to all other market participants. When
+conditions change (e.g., a customer switching from
+one electricity retailer to another), there is no need to
+start the registration process from scratch. The identity
+owner simply updates its verifiable credentials, directs
+new relevant actors to its modified identity, and uses
+their identity to sign messages, perform transactions,
+and interact with market platforms.
+
+Travel passports are the best analogy for describing
+how EW-DOS works. At a very high level, passports
+
+© EW-DOS: The Energy Web Decentralized Operating System
+
+summarize who you are, where you’ve been, and
+where you’re allowed to go or not go now and in the
+future based on a variety of factors. Passports are a
+global standard for verifying identity and credentials;
+individuals are granted specific permissions based on
+attributes like nationality and the rules of different
+jurisdictions; the passport itself contains both intrinsic
+data about you as well as dynamic data like visas and
+travel history, which evolve and update over time.
+
+EW-DOS is a tool for similarly establishing digital
+“passports” for every customer, asset, service
+provider, and authority in a given electricity
+system. But instead of a central entity being in charge
+of verifying credentials and issuing the passport itself,
+any individual can create a passport and establish
+verified credentials over time through interactions
+with peers or various authorities.
+
+Here’s how digital identities fit into the EW-DOS
+architecture, step by step (see Figures 2 and 3):
+
+© Digitalize: Any customer, market participant,
+or device that wants to participate in a given
+electricity market first establishes a self-sovereign
+digital identity to coordinate with other systems
+and participants. Every digital identity is anchored
+on the EW Chain and fully owned and controlled
+by its creator forever.
+
+© Authenticate: Once identities are created, local
+
+grid operators and market participants need
+
+a system to authenticate them and know, for
+example, whether a given solar PV system in
+Asia or an electric vehicle in California is what
+
+it says it is and has the attributes it claims to
+have (e.g., power capacity, ownership). To do so,
+identity owners make claims to peers or relevant
+authorities such as grid operators and installers.
+
+Every claim is authenticated (or not) through
+bilateral transactions, in which the “claimer”
+
+(i.e., identity owner) provides a “verifier” (e.g., a
+DER installer) with agreed-upon documentation
+or data to prove a given credential. For a simple
+example, picture a DER owner claiming to a DER
+installer that they own a5 kW capacity battery
+
+or solar PV system. As claims are verified, the
+underlying digital identity becomes richer and
+more trusted. Identity owners can also use claims
+to delegate other entities to perform transactions
+or claims on their behalf. Claim messaging and
+data storage can be done “off-chain” or “on-chain”
+depending on the application. The Energy Web
+Chain is primarily used for providing proofs about
+each identity, enabling market actors to achieve
+consensus about a given identity or claim without
+needing to share or expose underlying data.
+
+Authorize: Once authenticated, identities must
+then be authorized to participate in electricity
+markets or services for which they are qualified. To
+do so, grid operators, regulators, and/or retailers
+create registries that query the pool of on-chain
+digital identities and integrate all identities that
+meet defined eligibility criteria for any given
+market, product, or service. These registries
+enforce market rules or business logic based
+
+on the verified claims of digital identities, thus
+providing the foundational identity and relational
+data that other business processes and systems
+rely on—from market bidding, to dispatch, to
+settlement.
+
+Operate: With identities allowed into their
+respective registries, the corresponding customers
+and resources can participate in markets. For a
+
+traceability example, authorized wind plants may
+be added to an International Renewable Energy
+Certificate registry and begin producing digitally-
+unique I-RECs that authorized corporate buyers
+can purchase directly. For a flexibility example,
+authorized behind-the-meter batteries are added
+to a local transmission system operator registry
+and begin participating in the wholesale market
+for frequency regulation. Actual market operations
+are accomplished using a mix of decentralized
+architectures and existing information and
+operational technology systems, depending on
+the requirements of the specific application. Over
+time, operational and contractual data can be fed
+back to digital identities as verifiable claims to
+further augment the performance or “reputation”
+rating of each identity.
+
+In this architecture, blockchain-based digital
+identities become the common reference point for all
+participants and systems within a given market. Just
+as real-world passports form the basis for establishing
+identity and permissions (e.g., the ability to travel or
+work) in any region, they are the basis for registering
+and monitoring the actions of assets and customers in
+electricity markets.
+
+Decentralized identifiers—enriched by multi-party attestation of
+verifiable claims—form the backbone of EW-DOS digital identities.
+
+Asset type: Lithium-ion Battery
+
+1 TSO Registry
+
+2 DSO Registry
+
+Third Party A Jones Residence
+oe Energy Storage System
+012345 ane a wee Reputation Score
+“Model pe
+
+40.014984, -105.270546
+
+Model # Capacit
+Verified? w ees a
+
+Third Party B Hi Energy Ramp Rate
+' verified? & verified? &
+7,300] 5.5 =----'! ‘
+why | ’
+Third Party c '
+1-1.5 cael
+/kW/min
+
+© EW-DOS: The Energy Web Decentralized Operating System 10
+‘EW-DOS Passports’ based on decentralized identitifiers (DIDs) reside in an
+Identity Directory that interfaces with various application registries.
+
+dApp1 dApp2 dApp3 dApp4
+
+Ve
+
+Orso Application Registry © DSO Application Registry © EV Application Registry
+Al = PTr= = ;
+
+Identity Directory
+
+© --/ict----- NK -écz---- -\\> Wem ------\------------ Sole cee
+Authenticate
+
+Digitalize
+
+© EW-DOS: The Energy Web Decentralized Operating System 1
+A Closer Look
+
+The Energy Web Decentralized Operating
+
+System (EW-DOS)
+
+dApp 1
+
+ae
+
+EW  eworgin | Fawr | Fawr |
+
+[__rteatonessty fete acitecue | Registry [__rteatonessty fete acitecue | Architecture
+
+EW-DOS
+
+Messaging
+
+O Complete or in development as of Q4 2019
+
+'
+sod
+
+EW-DOS: The Energy Web Decentralized Operating System
+
+dApp 2
+
+Identity Directory
+
+Chain Abstraction Layer (API)
+
+Energy Web Chain
+
+Roadmap 2020
+
+Oracles
+
+Legacy / 10T Link
+Bridges
+
+Auxiliary
+Services
+
+12
+In this section we describe at a high-level each
+component of EW-DOS.
+
+EW Core
+
+EW Chain: A public, Proof-of-Authority blockchain
+operated by over 25 companies from 14 countries
+spanning 17 time zones. The EW Chain hosts
+decentralized identifiers, executes smart
+contracts, and provides proofs for verifying the
+state of data and events. It features a native token
+(EWT) and a suite of templates for creating all
+types of traceable digital assets.
+
+Chain Abstraction: Application programming
+interfaces (APIs) that provide a standard
+communication interface between on-chain
+components (e.g., decentralized identifiers and
+smart contracts) and off-chain systems and data.
+Analogous to middleware in a conventional
+operating system.
+
+Messaging: It’s best practice to send messages
+(i.e. perform transactions) on blockchain only
+when the underlying data requires multi-party
+consensus. Most messaging between identities,
+contracts, and applications should be done
+off-chain using established standards (e.g.,
+AMQP, MQTT, STOMP, COAP). EWF’s messaging
+solution leverages these standards to establish
+a decentralized messaging option facilitating
+high-volume/low-latency messaging that can
+also be integrated with on-chain transactions and
+signatures.
+
+Identity Directory: The Identity Directory
+organizes decentralized identifiers (DIDs), which
+are self-sovereign digital identities that can
+
+be created and stored independently from a
+central authority. Think of a DID as a universal
+and interoperable online account that the
+
+user controls and can be used to log in to any
+platform or service. The identity holder (the
+“subject”) can add as much information as they
+like to their identity (i.e., claims) and they can get
+this information verified by authorities (e.g., a
+government, energy company, bank). Collectively,
+this process authenticates an identity. These
+verified claims can then be used to selectively
+disclose information to third parties, akin to a
+person proving that they have a valid driver’s
+
+© EW-DOS: The Energy Web Decentralized Operating System
+
+license by showing the expiry date and the picture
+but without disclosing their home address, name,
+or age. The core Identity Directory is a smart
+contract that contains the universal list of DIDs
+and associated claims on the EW Chain. This
+architecture gives end users greater agency over
+how their digital identity (and associated data)
+
+is used and stored while also offering seamless
+interoperability with all decentralized applications
+running on the EW Chain.
+
+@ Storage: Given the volume of data in the energy
+sector, as well as the complicated regulations
+governing its use, it will be impractical to store
+data on blockchain at any reasonable scale.
+
+EWF is experimenting with various emerging
+decentralized storage solutions, but we expect
+that in most cases existing storage solutions (e.g.,
+either private cloud or on-premise database) will
+be used for commercial applications and the chain
+abstraction layer will serve as a connective layer to
+on-chain components.
+
+EW Auxiliary Services
+
+@ Legacy and loT Link: EW-DOS does not replace
+existing IT systems but rather augments them
+by providing a mechanism for more-easily
+establishing identity and attributes for customers
+and energy-sector assets. EWF is developing
+multiple reference architectures for securely
+connecting legacy IT systems (e.g., CRM, ERP,
+billing engines) as well as loT devices to on-chain
+components. Toolkits range from server-side
+integrations into big SCADA systems to small,
+lightweight implementations that can run ona
+small loT device. Link toolkits make use of the
+messaging layer to communicate with other
+applications.
+
+@ Oracles: In many use cases, on-chain smart
+contracts and events require data inputs from
+off-chain events or systems. For use cases where
+it’s beneficial to leverage multiple input sources
+(e.g., monitoring of local voltage for multi-party
+reconciliation, reporting of distributed solar for
+renewable portfolio standards accounting), EWF is
+building on top of emerging open-source protocols
+for establishing a network of independent nodes
+to provide event data to on-chain contracts.
+e@ Bridges: As blockchain technology continues to
+
+mature, we expect multiple blockchain platforms
+and protocols to emerge for specific use cases
+and/or geographies. To enable identities and
+contracts running on the EW Chain to interact with
+peers on other blockchain networks, purpose-built
+smart contracts called bridges are used. Initial
+bridges are designed to transfer tokens between
+different blockchains, but over time functionality
+will expand to enable any arbitrary data or
+transaction to occur between networks.
+
+EW Toolkits
+
+@ Application Registry Reference Architecture:
+
+EWF’s application registry reference architecture
+provides market participants a standardized way
+to create bespoke registries with administrative
+features specific to a particular geography,
+market, or application. Application registries act
+as an “authorization” layer, setting the rules and
+roles for DIDs that wish to participate in the given
+market. For example, a national grid operator
+may create an application registry that dictates
+eligibility for participation in a wholesale market
+(e.g., DID must have verified claim as being a
+qualified DER and that claim must be signed by
+another DID that has a verified claim from the
+national regulator).
+
+Every decentralized application (dApp) running
+on the EW Chain will have at least one application
+registry, but a given application registry can be
+applied to multiple applications (in the example
+above, a distribution utility could coordinate
+
+with the national grid operator and use the same
+registry for a local congestion management
+program). EWF’s reference architecture includes a
+series of open-source smart contracts and dApps
+for managing changes and updates to the registry
+and creating an audit trail of all interactions
+between DIDs within the registry.
+
+© EW-DOS: The Energy Web Decentralized Operating System
+
+e@ EW Origin: A series of customizable open-
+source software modules designed to support
+provenance and traceability use cases, including
+digital renewable energy marketplaces. Origin
+includes three core components: certificate
+issuance, tracking, and reporting systems, as well
+as extensions for electric mobility and battery
+storage tracking.
+
+e@ EWFlexhub: A series of customizable open-
+source software modules designed to support
+grid balancing and demand flexibility use
+cases in a variety of regulatory environments.
+Examples include enabling vertically integrated
+utilities to launch device-agnostic “bring-your-
+own-device” demand response platforms to
+helping DERs participate in a variety of wholesale
+electricity markets. This toolkit was borne out of
+requirements to enable DER participation in a two-
+second balancing / frequency response market.
+
+@ Other Toolkits: We are continuing to develop
+additional toolkits for renewable energy, DERs,
+and electric vehicle market participation as we
+gather additional requirements from our global
+network of members. In-development toolkits
+include functionality that enable digital identities
+to settle payment; automatically conduct
+evaluation, measurement, and verification (EM&V);
+post value in escrow; and engage in complex
+transactions (e.g., financial contracts).
+
+14
+The Roadmap
+
+EWF’s Plan to Drive Impact at Scale
+
+EWF's theory-of-change is simple. To achieve our mission we work directly with some of the world’s largest
+energy companies—including utilities, grid operators, and others—to develop and deploy solutions based
+
+on EW-DOS.
+
+We believe we can transform the energy sector,
+enabling new low-carbon market designs of all
+shapes and sizes (in both developed and emerging
+economies) by implementing EW-DOS in collaboration
+with major market participants. EWF has already
+begun to develop and deploy discrete pieces of EW-
+DOS with several market participants, including:
+
+In Europe, EWF is helping a transmission system
+operator integrate grid-edge customers to participate
+in national balancing markets. A “prosumer”
+engagement platform enables the country’s
+prosumers and hardware vendors to establish DIDs for
+themselves and DER devices. The DIDs then are used
+to establish claims about DER attributes, location,
+
+and capabilities to inform which market(s) the DER
+
+EW-DOS: The Energy Web Decentralized Operating System
+
+can participate in. For ongoing market participation,
+bids—whether submitted individually or as part of an
+aggregated pool—are linked to DIDs to prevent double
+counting in multiple markets or pools. Following
+activation events, DIDs serve as an anchor to reconcile
+operational and financial data, and ultimately execute
+financial settlement.
+
+In Thailand, EWF is co-developing a renewables
+marketplace platform with PTT to simplify corporate
+renewable energy procurement across Southeast
+Asia. This digital marketplace platform uses DIDs and
+a shared registry to streamline the onboarding of
+existing and new renewable generation assets, helping
+buyers find options that meet their needs, indicate
+their demand for new renewable energy projects,
+improve transparency into energy use across their
+supply chain, and prove their purchases for reporting
+purposes. The marketplace also synchronizes with a
+solution developed for the issuing bodies of energy
+attribute certificates (EACs) to certify transactions
+using the DID standard and uses tokens to trace EACs
+through their entire lifecycle from generation to
+retirement. PTT’s platform will also make it easier to
+link electric vehicle (EV) charging with I-REC purchases
+to position EVs as a new, large renewable energy buyer
+category.
+
+These are only two examples, but they highlight three
+important points:
+
+EW-DOS makes it possible to build private
+and/or proprietary solutions on top of open-
+source software and a public, decentralized
+network. If a utility wants a completely walled-off
+network where they are the only party capable
+
+of confirming and rejecting DID claims (meaning
+they can restrict who does / does not participate
+in the local market), EW-DOS supports that. If that
+same utility wants all operational matters to be
+
+conducted in-house using legacy IT systems, no
+problem. EW-DOS does not prescribe a particular
+approach to privacy and is flexible enough to work
+in any context.
+
+EW-DOS is market and regulation agnostic.
+
+It creates value in vertically-integrated utility
+territories as much as fully deregulated
+competitive markets. It works just as well in
+established markets in Western Europe as it does
+in emerging economies.
+
+EW-DOS is not a “use case” or an “application”;
+it is public infrastructure that supports
+companies that want to build solutions.
+
+Like other infrastructure platforms such
+
+as telecommunications, the Internet, and
+blockchains like the EW Chain, the applicability
+of EW-DOS is limited only by the imagination.
+
+It enables myriad use cases and applications,
+especially those that leverage the swell of
+customer DER investment to envision a low-
+carbon, decentralized electricity grid.
+
+EW-DOS: The Energy Web Decentralized Operating System
+All contributors from EWF unless otherwise noted. Contributors listed
+alphabetically.
+
+Nitin Gavhane, Mani Hagh Sefat, Sam Hartnett, Walter Kok, Doug
+Miller, Jesse Morris, Mario Pavlovic, Micha Roon, Meerim Ruslanova
+
+EW-DOS: The Energy Web Decentralized Operating System. An
+Open-Source Technology Stack to Accelerate the Energy Transition.
+Energy Web Foundation, December 2019.
+
+<< http://www.energyweb.org/reports/EWDOS-Vision-Purpose >>
+
+EW-DOS: How It Works
+
+Energy Web Foundation (EWF) is a global, member-driven nonprof-
+it accelerating a low-carbon, customer-centric electricity system by
+unleashing the potential of blockchain and decentralized technol-
+ogies. EWF focuses on technology integration and development,
+co-creating standards and architectures, speeding adoption, and
+building community.
+
+In mid-2019, EWF and its member organizations launched the
+Energy Web Chain, the world’s first enterprise-grade, open-source
+blockchain platform tailored to the sector’s regulatory, operation-
+al, and market needs. EWF also fostered the world’s largest energy
+blockchain ecosystem, comprising utilities, grid operators, renew-
+able energy developers, corporate energy buyers, and others.
+
+The Energy Web has become the industry’s leading energy block-
+chain partner and most-respected voice of authority on energy
+blockchain.
+
+For more, visit https://energyweb.org.
+
+Github Wiki
+
+info@energyweb.org
+energyweb.org.
+
+EW-DOS: The Energy Web Decentralized Operating System
+
+17
+Appendix
+
+EW-DOS in Context
+
+New energy market designs are coming fast. Along with them, so are shifts in roles and responsibilities
+
+across grid operators,’ retailers, and customers.
+
+There are growing trends toward dynamic retail tariffs,
+local electricity markets, exposing retail customers to
+wholesale markets, and even “peer-to-peer” or other
+types of transactive energy markets that clear from the
+bottom up. With this context, there is a clear and urgent
+need to transition customers—and their assets—from
+being a passive “end point” in a complex supply chain
+to becoming active participants in a dynamic energy
+system.
+
+Novel market designs and regulations are a necessary
+step towards achieving the energy transition. For
+example, in some jurisdictions, retail customers are
+prohibited from providing services to wholesale
+markets. But passing policy is only the first step, and
+implementation is much more easily said than done.
+
+y and demand on the gri ninolog'
+
+EW-DOS: The Energy Web Decentralized Operating System
+
+1 “grid operators” as a catch-all for entities responsible for ac
+aries depending on g
+ystem operators, distribution system operators, market operators, indey
+
+Even in instances where DER market participation
+
+is allowed (e.g., aggregation in competitive western
+Europe, California’s DRAM program), established
+processes that grid operators use to integrate large-
+scale resources simply don’t scale to customer-owned
+DERs. Other factors add further complexity, such as
+the arcane rules and systems that govern customer,
+DER, and grid data. Maintaining an accurate state of
+both the physical and financial relationships between
+customers, DERs, and other market participants (e.g.,
+aggregators, service providers, and installers) is costly.
+
+As a result, there is a high barrier to entry for
+integrating DERs to the grid and operating them to
+achieve a net benefit for all system participants.
+
+18
+Community Choice Aggregation
+in Australia | TSO-DSO Coordination in Europe
+
+In terms of scale, impact, and intricacy, this challenge
+of integrating DERs into electricity markets is
+analogous to another industry currently undergoing
+widespread transformation: financial services.
+Globally, an estimated are currently
+“unbanked” and lack access to traditional financial
+products ranging from checking accounts to lines
+
+of credit. Myriad reasons account for why so many
+people remain unbanked, yet three prominent barriers
+come to the forefront: 1) cost of those services, 2)
+lack of access to financial institutions, and 3) lack
+
+of proper documentation and identity verification.
+
+In short, existing systems for performing “know-
+your-customer” (KYC) checks and basic account
+management are either too complex or costly for
+billions of people living in rural and/or developing
+economies.
+
+Similarly, in both developed and emerging
+electricity markets, most DERs are a) too small
+individually for large grid operators to care about,
+b) not worth the expense to justify traditional
+processes for enrolling, and/or c) simply invisible to
+local grid operators. Yet there will soon be far too
+many of them (DERs) to ignore or exclude—in both
+number and capacity.
+
+It’s wildly impractical for a grid operator to physically
+commission every single smart thermostat in their
+territory, or to run dedicated fiber optic lines to
+every distributed solar PV or energy storage system.
+The administrative burden of managing financial
+
+DERs such as solar PV with smart in ters, batt torage systems, and f
+
+to multiple stakeholders, including th tomer, local dist
+
+alue to all stakeholders when they are utilized for multi
+
+EW-DOS: The Energy Web Decentralized Operating System
+
+DER participation in wholesale markets
+
+In Africa
+
+assurances for kilowatt-scale assets vastly outweighs
+the value of each asset’s transactions.
+
+For these reasons, to date the primary way—often the
+only way—for DERs to participate in markets is via
+aggregators who pool DERs into groups big enough to
+matter for traditional electricity markets. Aggregation
+is an undeniably useful tool, providing benefits both
+to end customers as well as grid operators. But it does
+not solve the fundamental problems of onboarding
+and integrating DERs at scale and at low cost.
+Aggregation only outsources costly administrative
+duties to aggregators themselves. These operating
+expenses are why even aggregators typically exclude
+certain types or sizes of DERs due to the impact on
+company profit margins.
+
+Thus, the global energy industry faces two
+fundamental barriers to widespread DER integration.
+First, there’s the issue of system-wide resource
+optimization for tomorrow’s electricity grids in a
+renewables- and DER-rich energy future. Second,
+there’s the fundamental issue of onboarding, vetting,
+and sharing key information about DER attributes,
+capabilities, relationships, and behaviors that allows
+system-wide optimization in the first place.
+
+With respect to system-wide resource optimization,
+tools like Advanced Distribution Management Systems
+(ADMs), Distributed Energy Resource Management
+Systems (DERMS), and microgrid controllers are
+already proven and continue to make progress.
+
+ble loads are technically capable of providing multiple grid servi
+olesale/transmission system operator. DER maximize economic
+
+19
+Onboarding and integration remains the thornier
+problem:
+
+e@ Verifying Identity and Credentials: Just as banks
+need to perform “know-your-customer” checks to
+verify the identity of potential customers, assess
+their suitability for various products, and manage
+risk, grid operators need to qualify and register
+every asset that provides services to the electricity
+grid. They in essence need to “know-your-device”
+(KYD).
+
+e Enforcing Market Rules / Allowing Market
+Access: DERs, like any asset, must only be allowed
+to participate in markets or provide services for
+which they are legally, technically, and financially
+capable. Such qualifications may change over
+time due to varying physical performance and/or
+evolving contractual relationships. In the banking
+world there’s an established (albeit imperfect) way
+of tracking “reputation” and enabling any relevant
+provider to allow or reject participation ina
+particular financial service: the credit score. In the
+electricity world, there’s no analogous reputation
+rating for small assets.
+
+e Exchanging Information (and Value): At
+any given time a grid operator and/or other
+parties (e.g., aggregators, retailers, customers
+themselves) may rely on a single DER to
+provide a variety of services. To make optimal
+operational (i.e., real-time) and investment
+(i.e., planning) decisions, those entities need
+to have a common and accurate view of the
+attributes, capabilities, and state of each DER,
+its physical surroundings, and its contractual
+relationships. Therefore the identity, relational,
+and operational data associated with each DER
+needs to be authenticated and shared efficiently
+with all market participants that need access
+(e.g., regulators, TSOs, DSOs, aggregators, OEMs,
+customers).
+
+These are the challenges EW-DOS is purpose-built to
+solve.
+
+© EW-DOS: The Energy Web Decentralized Operating System

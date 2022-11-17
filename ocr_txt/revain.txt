@@ -1,0 +1,783 @@
+REV CANIN
+
+Full
+
+WHITEPAPER
+
+New generation feedback platform
+based on the blockchain technology
+
+COPYRIGHT © 2017 REVAIN TECHNOLOGIES, INC. ALL RIGHTS RESERVED
+Contents
+
+Abstract
+
+Introduction
+
+Economical aspects
+
+Market analysis
+
+Two tokens (R and RVN)
+
+Token conversion
+
+Company usage
+
+Revain fee
+
+End-user usage
+
+Technical side
+
+Review filtration
+
+Review Automatic Filtering (RAF)
+Tone Analyzer & Natural Language
+Understanding
+
+Manual filtration
+
+Review snapshots stor age (RSS)
+Possible issues
+
+Crowdfunding
+
+The crowdfunding process
+Goals
+
+Future work
+
+Conclusion
+
+Appendix
+
+A (Token "R" source code)
+
+B (Token "RVN" source code)
+
+C (Token "RSS" source code)
+
+Abstract
+
+This document describes the Revain platform, which
+allows users to discuss various projects that have successfully
+carried out an ICO. Our goal is to create an easy-to-use service
+that would enable companies to receive constructive feedback
+about their projects. Meanwhile, users will be able to share
+their experience and learn from the experience of others.
+
+Revain is the first review platform that implements the
+
+blockchain technology in order to ensure feedback legitima-
+cy and as a backbone for the economic model which ensures
+that all feedback is genuine and legitimate.
+Fragments of reviews are saved in the blockchain, which
+guarantees that those comments can't be edited at a later
+date. The internal token of the system, called RVN, helps mo-
+tivate participants to take their reviews and all related actions
+seriously.
+
+In the beginning we plan to work with companies that
+have already completed their crowdfunding or ICO phase, as
+well as cryptocurrency exchanges. Later on, we plan to expand
+by accessing the Gaming, E-commerce, FMCG and Booking
+markets.
+
+Introduction
+
+A review site is a website on which reviews can be posted about people, businesses,
+products, or services.
+
+Wikipedia "Review site"
+
+The first review sites emerged as early as in the 1990s, the pioneer being Epin-
+ions.com‘, founded in 1999. The project had a broad focus, participants could write re-
+views for music, toys, computers etc. Over time, platforms focusing on a narrow range of
+goods or services began to emerge, the most prominent examples being Yelp.com? (res-
+taurants), TripAdvisor® (hotels), Rotten Tomatoes* (movies) and Angie's List? (small and
+medium businesses).
+
+Company Alexa Trading
+Name Segment value rank on stock
+Yelp Restraunts 2 200 000 000 $ 201 NYSE
+Rotten .
+tomatoes Films 658 000 000 $ 441 No
+TripAdvisor — Hotels 6 200 000 000 $ 238 No
+Angie's list Local business 677 000 000 $ 4984 NASDAQ
+
+The goal of such platforms is to make it possible for the people to share their opin-
+ions on goods and services. In many cases these websites help businesses gather feed-
+back from their customers.
+
+However, even though this field has been present for over 20 years, a number of
+fundamental problems remain unsolved.
+
+1 http://www.epinions.com/
+
+2 https://www.yelp.com/
+
+3 https://www.rottentomatoes.com/
+4 https://www.tripadvisor.com/
+
+5 https://www.angieslist.com
+
+Introduction
+
+These problems can be divided into two groups.
+
+a" How can participants be sure that the reviews are not
+being edited or deleted?
+
+When users post a review, they trust that the platform will not change, edit or delete
+it. The problem we are facing here is a problem of trusting a third party.
+
+% How can a company be sure that reviews are being written
+by genuine clients and not competitors?
+
+Doubtlessly, reviews on the internet are important and can impact the image of a
+company. Besides the obvious function of feedback, reviews affect the popularity of the
+business among new and potential clients. This eventually attracts competitors who will try
+to tarnish the reputation of this rival. Meanwhile, companies have no way of knowing for
+sure who writes the reviews.
+
+Second problem - Economical
+
+% User motivation
+
+Writing a quality review is not a simple task. It requires time and effort, it involves de-
+tailed descriptions of the pros and cons of a product and a conclusion. In the light of this,
+the following question arises: “What does the author of the review receive as a reward for
+their efforts?” Of course, there are people who do not need to be motivated to write a
+review, and yet the majority of users would prefer to be compensated for their time.
+
+% Review credibility
+
+If there is no incentive to write reviews, could it be that some parts of reviews are cre-
+ated by means of artificial intelligence? Nowadays it is not impossible to use artificial intel-
+ligence to generate several hundred of short texts that would look like they were written
+by a human, or simply just buy reviews.
+
+Our platform implements several innovative technologies, most of which are based
+on the blockchain technology. Smart contracts let us publicly save thousands of reviews,
+thus making it impossible to delete or modify them. Our economic model involves the R
+and RVN tokens and helps motivate users to leave only genuine feedback. In addition, we
+use mathematical formulas for calculating bonuses that make submitting fake reviews
+economically unprofitable.
+
+Economical aspects
+
+This section explains the functioning of the Revain platform from an economic stand-
+point. A market analysis is provided along with reasons for using the two tokens and the
+mechanics for conversion between R and RVN. In the end we present schematics for us-
+er-to-platform and company-to-platform interaction. .
+
+Market analysis
+
+During the first stage of development our clients will be mainly companies that have
+completed a successful ICO and their investors. According to Coinmarketcap, during the
+summer of 2017 there were already more than 970 different tokens and currencies.
+Around 15% of those were created using funds raised in the process of an ICO.
+
+According to our analysis, there are roughly 8,000 investors per ICO, which means
+that even now our client base consists of around 150 projects and 30,000 users (given that
+at least 50% of the clients are participating in only one ICO at a time).
+
+ICO value ($, by Current mar- 24h Number
+Name Segment the end of ICO) ket cap (BTC) volume of backers _
+SONM — Decentralized 4 000 000 $ - 74BTC 11790
+Brave Browser 73 000 000 $ = = 130
+Status Messaging 64 000 000 $ 40 100 1600 BTC 20462
+Aragon Prediction ——_5 000 000 $ 27900  200BTC = 5597
+MobileGo Far ?, 0.000.000 $ 27400 130 BTC -
+Golem ue 8 200 000 $ 99600  2500BTC 41289
+Gnosis Prediction 1.500 000 $ 92100 645BTC 2694
+Cie eat 33 000 000 § * : :
+
+identity
+
+Economical aspects
+
+The amounts raised can range from $1, 5 million to $100 million per ICO on average.
+We should also take into account the non-transparent legal status of many companies
+and the almost complete lack of control from most governments.
+
+In this situation, our product is capable of providing proper means of communica-
+tion between post-ICO companies and investors.
+
+Two tokens (R and RVN)
+
+Our project is different from most other blockchain projects since two tokens are re-
+quired for the system to function properly. By using both tokens it is possible to create a
+so called stable coin which can be used as an internal mechanism vital to the functioning
+of the platform.
+
+Token R will be used to gather funds during ICO, as well as a currency for exchange
+trading later on. Judging from the experience of other blockchain projects, this token will
+be highly volatile due to the speculative nature of the market nowadays. (The data pre-
+sented below is relevant as of July 2017).
+
+Avg. volume Max change Change for
+Name Segment per June ‘17 (24h) permonth (BTC) all time
+Stellar payarinits 1400 BTC 2053% T 22% 7
+Each eestrients 7 300 BTC 90% | 8% |
+Ripple pt 31 000 BTC 110% ~ 50% 7
+AntShares Sore iStform 5-400 BTC 1368% 7 806% Tl
+
+BitShares Exchange 13 700 BTC 671% JT 157% P
+
+Economical aspects
+
+The RVN token will be used exclusively inside the Revain system. This approach
+allows for a stable exchange rate. All interactions between the platform, users and compa-
+nies is based on this approach, specifically:
+
+« Rewarding users for quality reviews;
+* Debiting companies (in tokens) for written reviews;
+
++ Penalizing companies for deliberate unconstructive moder-
+ation of reviews;
+
+* Penalizing users for noncompliance with the Rules of the
+
+rvn token °°"
+Tokens conversion
+
+R tokens are created in a limited supply during the crowdfunding phase, while RVN
+ensures the functioning of the whole system. We understand, that as more and more
+people use our platform, the demand for the R token will become higher than the supply
+(since the number of R tokens is limited), and it's price on exchanges will start to grow.
+Since the reason for the creation of two tokens is ensuring the stability of the RVN ex-
+change rate, the main requirement for the conversion is the possibility of leveling volatility.
+The currency rate of RVN should not be affected by the market and the rate of the R token
+in particular.
+
+To accomplish this, we have decided to make 1 RVN equal to 0.0001 BTC. Exchange
+of tokens at any time will be executed based on the following formula:
+
+_ Rvalue (in BTC)
+1R token 0, 0001 RVN tokens
+
+Accordingly, the rate of token R is calculated with a backward version of the above
+formula. Token exchange will happen within the platform, no fee shall be charged.
+
+Economical aspects
+
+Company usage
+
+We focus on providing companies with quality feedback from customers. And since
+the user needs to be motivated to give quality feedback, the company’s account is debit-
+ed for each review received. This fee is called Review Fee (RF) and consists of two parts:
+
+Review fee (RF) = User reward (UR) + Platform fee (PF)
+Platform fee - a fee paid to the platform. It is our main way of monetization.
+User reward - a (possible) reward for the user for writing a quality review.
+
+The amounts of PF and UR are calculated every time when a review is submitted. Calcu-
+lation mechanics and formulas are listed below (UR formula is above in the section “User
+usage").
+
+Revain fee
+While developing the RF formula we had to address two issues:
+
+1. Develop a model that would make the purchase or artificial generation of big
+amounts of reviews economically unprofitable.
+
+2. Develop a system that would allow small companies to afford to reward users
+for reviews.
+
+We were able to find solutions thanks to the nonlinear dependency of RF on the total
+number of reviews written in the past two weeks. The overall trend is the following - the
+more reviews there are, the bigger the value of RF. Two weeks after the submission of the
+last review a rollback will occur, setting RF at its minimal value:
+
+The maximum value of RF is limited to 10 RVN, otherwise the total value of RF would
+be bigger than the value of the whole emission after only 200 new reviews have been sub-
+mitted.
+
+. Ms)" 1 RVN,x < 90
+RF (x=review number per last 2 weeks =
+
+10 RVN, x 2 90
+
+Economical aspects
+
+The total amount of RF depending on the number of reviews in the past two weeks
+can be calculated with this formula:
+
+k
+Total amount of tokens per k reviews = > RF(n) RVN
+n=1
+Here are a few examples. (The RVN/BTC exchange rate is calculated as 1/0,0001). It
+is supposed that all reviews have been added in the past two weeks:
+
+Amount of Total (RVN) Total (BTC)
+reviews
+10 12 0, 0012
+50 100 0, 01
+100 444 0, 0444
+500 4444 0, 4444
+
+Our platform is also different from other similar projects since we allow companies
+to set up their own metrics for assessing review quality. For example, a restaurant might
+require their reviewers to attach a photo of a waiter standing next to a table. If no photo
+has been submitted, the review will be rejected during automatic filtration.
+
+User usage
+
+Users are motivated to write quality reviews by the possibility of token rewards taken
+from the company’s account. This amount is taken from the Revain fee and is calculated
+with the following formula:
+
+User reward = (0,9 * Revain fee)
+
+Currently a user is allowed to submit up to 5 reviews per day. In the future we plan
+to implement user ratings, which will allow some users to submit more reviews per day
+based on their posting history.
+
+In the end, all users get equal rewards for writing reviews. Rewards are being sent out
+once every two weeks — the amount of reward tokens is being divided by the total number
+of users being rewarded.
+
+The remaining 10% are called Platform fees and go to the platform. Users receive a
+reward only if a company approves their review.
+
+Economical aspects
+
+If a user believes the company should not have rejected their review, they can file a
+dispute. In this case, the dispute will be handle by a decentralized system of “oracles”. Or-
+acles are users with high reputations within the platform. In case the user was able to pres-
+ent proof, they receive a reward, and the company receives a warning is penalized for 10
+x RF. A company may receive a total of three warnings, the fourth will lead to the company
+being blocked from using the platform.
+
+A user can also receive a warning. This can happen in two cases. The first case is if
+three of the user's reviews in a two-week period get rejected by the automatic filtration
+system. The second is if five of the user's reviews have been rejected by companies in a
+two-week period. The fourth warning leads to the user being blocked from using the plat-
+form without being able to withdraw their funds.
+
+Review amd ae
+through app f —
+L-» Positive
+review
+RAF >
+Review
+Automatic Filtering
+SS & Constructive
+review
+aaa 10x
+user right 7 .
+e user wrong ¥
+Verification of
+
+Company Actions
+
+Technical side
+
+This section explains the functioning of the Revain platform from a technical stand-
+point. The mechanism for double filtration of reviews is described in detail along with the
+tool for automatic filtration that uses the IBM Watson Al and the manual review filtration
+
+mechanism, as well as possible course of events.
+
+In the last paragraph, we explain our method of storing reviews in the blockchain,
+which guarantees the impossibility of editing or deleting them and the overall transparen-
+cy of the system.
+
+Ethereum
+
+RSS
+R token
+RVN token
+
+Review
+filtration
+
+MF
+RAF
+
+Revain app
+
+w
+3S
+Be]
+ro]
+<
+3
+
+arta Tokens
+
+asia converter
+
+IBM Watson Company
+Al
+
+Technical side
+
+Review filtration
+
+A review filtration mechanism was vital for our platform. The biggest difference be-
+tween our filtration method from the methods implemented by other review sites is that
+the verification process does not require the involvement of a third party. It consists of two
+stages - machine moderation performed by the Al, and manual moderation done by the
+company. This method guarantees that Revain employees do not get involved in the
+moderation process.
+
+Review Automatic Filtering (RAF)
+After submission, each review first has to go through automatic moderation. This
+system is based on machine learning and neural networks. Similar systems are already im-
+
+plemented by several big companies, such as Instagram®, Yandex.Market’ and VK®.
+
+We cannot disclose the process in detail for security reasons. We only reveal it par-
+tially in order to prevent malicious users from bypassing our filters.
+
+Fr
+Review IBM Watson
+
+through app
+Al
+
+RAF
+Custom filters ~ PASS
+
+Tone analyzer
+v — >
+User history analysis REJECT
+
+6 https://www.theverge.com/2017/6/29/15892802/instagram-ai-offensive-comment-filter-launches
+7 hitps://yandex.ru/support/market/opinions/reviews-automatically.html
+8 https://vk.com/page-19542789_51000215
+
+Technical side
+
+Tone Analyzer & Natural Language Understanding
+
+A key component of our system is the interaction with the IBM Watson platform.
+Thanks to the Tone Analyzer service, we are able to automatically determine the emotion-
+al component of reviews. For example, let's take an absolutely unconstructive comment:
+
+WORST BLOCKCHAIN PROJECT EVER! Be careful and never invest in pro-
+Jects like this one! I've lost 70% of my investments because this company did
+not even tried to develop fine product!!!
+
+Such a bullsh*t!!!11 Guys, your product is totally useless and | don't believe
+that you've spent 5 million dollars on it! More likely you've bought cars and
+yachts instead of spending this money on R&D. You're liars!! BTW All inter-
+faces are totally craptastic, | don't know how can anyone use it?!
+
+In this post Tone Analyzer will detect at least three factors indicating that this might
+not be a quality review. We are talking about factors such as high Anger, Disgust and Sad-
+ness levels. These parameters don't reach a similar level in constructive reviews, and this
+particular review would be marked as unconstructive before even reaching Manual mod-
+eration.
+
+Emotion Language Style Social Tendencies
+< 5 = not likely present < .5 =not likely present < .5=not likely present
+> .5 = likely present > .5 = likely present > 5 = likely present
+> .75 = very likely present > .75 = very likely present > .75 = very likely present
+Disoust 270
+. = be
+7 u
+sadness MM) O58
+
+Technical side
+
+In addition to the Tone Analyzer tool, we employ a variety of filters developed by us.
+They track the user’s geolocation, past activity (posting frequency, automatic & manual fil-
+tration results for previous reviews), review characteristic and others. We also use the Nat-
+ural Language Understanding? service. It is capable of deriving the essence of a review,
+detecting semantic blocks, key words and word collocations, and check for their compli-
+ance with the general essence of the text.
+
+Manual filtration
+
+Once the reviews have passed RAF successfully, it is reviewed by the company it is
+targeted at. The company's moderators can either approve or reject the review. Regard-
+less of their decision, the review will still be visible to all users.
+
+Review
+through app
+
+REJECT
+
+4S
+3
+
+Review
+filtration
+
+MF
+RAF
+
+9 https://www.ibm.com/watson/developercloud/natural-language-understanding.html
+
+Technical side
+
+In case a company does not agree with a review and rejects it, it must write a com-
+ment of their own in response to that review. This comment will be shown together with
+the review, thus solving the issue with unconstructive reviews.
+
+Review snapshots storage (RSS)
+
+After a review has passed manual filtration, a part of its structure is saved in the
+Ethereum blockchain. Thanks to this, users and the companies can be sure that the review
+has not been edited. This type of data is stored by a smart contract called RSS - Review
+Snapshots Storage. Its source code is given in the Appendix, Part C.
+
+independent check
+
+Review
+through app
+
+Ethereum
+
+a
+
+Review
+filtration
+
+MF
+RAF
+
+RSS
+
+Local
+DataBase
+
+Technical side
+
+As we have already mentioned, only a part of the review is stored in the Ethereum
+blockchain. The reason for this is that storing large amounts of data in the Ethereum
+blockchain is not economically feasible. We have tested more than ten different block-
+chain systems, including Bitcoin*®, Emercoin™, Storj and SiaCoin*. We have reached the
+conclusion that a decentralized platform for storing information, capable of holding the
+large amounts of data we intend to have, has not been developed to date.
+
+Therefore, we have decided to sacrifice the integrity of the review’s structure in favor
+of true decentralization. For this, we have created the “Review Snapshot" based on the
+below formula:
+
+Review checksum = sha256(Review full text) [0:20]
+Review snapshot = Rating + Company decision + Unix timestamp + Review check-
+sum
+
+Reviews then will be stored in the RSS, and the unique identifiers of the user and the
+company will be used as keywords for searching. Any user can check a contract to see if
+a review has been tampered with.
+
+mapping(unit => mapping(unit => bytes32))Reviews
+Reviews[company_id][user_id] = review snapshot
+
+Possible issues
+
+Qo Companies purchasing reviews
+
+This type of behavior is not economically feasible in our system, since the review
+fee will grow continuously.
+
+9 Users attempting to earn rewards by posting made up reviews
+Companies have the right to reject reviews that it deems untrue, so such users
+
+will only lose tokens. Since the reviews are made up, the user would not be able to provide
+any proof of the opposite.
+
+10 https://bitcoin.org/en/
+11 https://emercoin.com
+12 https://storj.io
+13 http://sia.tech/
+
+Technical side
+
+9 No guarantee that reviews are not being edited
+
+Reviews on our platform are saved in the Ethereum blockchain. Anyone can
+compare any review with what have been saved in the smart contract.
+
+9 Companies rejecting all critical reviews
+
+Since all reviews and the company’s rejection or approval of them are visible to
+everyone on the system, companies with very high rejection rates will raise suspicion.
+
+9 Lack of motivation for users
+
+Users leaving quality reviews will be rewarded with RVN tokens that can then be
+converted to R tokens, which can be traded on exchanges.
+
+Crowdfunding
+
+The Revain crowdfunding and the corresponding process of token generation are
+handled by smart contracts which are based on Ethereum. Users, who wish to support the
+project's development can do this by sending cryptocurrencies or tokens from other pro-
+jects to our wallets.
+
+The funds must be sent after the beginning of the crowdfunding process. We plan
+to start around 21st August, and the whole process will last for approximately two weeks.
+We will accept the following cryptocurrencies:
+
+bitcoin ethereum NAVCOIN
+- @ € LV) )
+Bitcoin Cash " CASH vertcoin DOGECOIN
+
+The crowdfunding process
+
+During the crowdfunding R tokens will be available for purchase for a fixed price. The
+total amount of R tokens issued will be 1,000,000,000 tokens, 70% of which will be availa-
+ble during crowdfunding. We plan to acquire 8,000 BTC. The cost of 1 token is calculated
+according to the formula:
+
+. 8 000 BTC
+Token price = ——————————— = 0, 000011 BTC per R token
+700 000 000 R token
+
+Of the remaining 30%, 20% will be divided between the members of the Revain
+team and used to support the functioning of the platform. The remaining 10% will be
+given to advisors and the members of our big bounty program.
+
+R tokens are based on the Ethereum platform and the standard token interface
+ERC20. The source code of the token can be found in Appendix A.
+
+Despite the fact that we suggest using the token with our software, ERC20 lets any
+investor work with the token using any Ethereum client (for example - Mist or MyEther-
+Wallet). This way our investors can minimize the risk of losing funds in the event that our
+software malfunctions.
+
+Crowdfunding
+
+Goals
+
+As mentioned above, the goal of the crowdfunding is securing funds for R&D and cov-
+ering platform-related costs. The following list shows how we plan to divide the funds.
+
+ap)
+
+| MARKETING
+| rao
+| TEAM
+
+INFRASTRUCTURE
+
+"INDIRECT
+
+Future work
+
+As per July 2017, Revain is undergoing alpha testing. The main mechanics for inter-
+action between users and the platform are already in place, as well as the mechanism for
+platform-blockchain interaction on the level of RVN tokens. We are planning to announce
+public alpha in the beginning of September 2017.
+
+In addition to the main user interface, we have developed an HTML widget that
+companies can install on their websites. Thanks to this widget visitors to the company’s site
+will be able to see reviews from our platform.
+
+Later, after we have made sure the platform is operating smoothly, we plan to
+expand to new markets. Firstly, we are interested in gaming, e-commerce, booking, and
+FMCG. Our data suggests these four directions will be the most profitable for us.
+
+Revain
+
+General
+
+Conclusion
+
+This paper describes the realization of a review aggrega-
+tion system for projects that have passed their ICO. We believe
+that our platform can meet two basic needs of our clients - the
+possibility to affect the development of a product, and sharing
+their experience with others.
+
+Thanks to its module architecture and versatility, the
+system can be rebuilt to accommodate reviews from other
+fields. In light of all of the above, we believe that Revain has the
+chance to become a groundbreaking project on the review
+website market.
+
+rvn token
+
+Appendix
+
+A (Token "R" source code)
+
+pragma solidity *0.4.8;
+
+import "./Token.sol"; // ERC20 interface
+
+contract RevainToken is Token {
+string public constant symbol = "R";
+string public constant name = "Revain";
+uint256 public totalSupply = 1000 * 1000 * 1000;
+uint8 public constant decimals = 5;
+address public owner;
+mapping(address => uint256) balances; // Balances for each account
+// Owner of account approves the transfer of an amount to another account
+mapping(address => mapping (address => uint256)) allowed;
+
+function RevainToken() {
+owner = msg.sender ;
+balances [owner] = totalSupply;
+
+}
+
+// What is the balance of a particular account?
+function balanceOf (address _owner) constant returns (uint256 balance) {
+return balances [_owner ];
+
+// Transfer the balance from owner's account to another account
+function transfer(address _to, uint256 _amount) returns (bool success) {
+if (balances [msg.sender] >= _amount
+&& _amount > 9
+&& balances[_to] + _amount > balances[_to])
+
+balances [msg.sender] -= _amount;
+balances[_to] += _amount;
+Transfer (msg.sender, _to, _amount);
+return true;
+
+} else {
+return false;
+
+Appendix
+
+A (Token "R" source code)
+
+// Send _value amount of tokens from address _from to address _to
+// The transferFrom method is used for a withdraw workflow, allowing contracts to
+send
+// tokens on your behalf, for example to “deposit” to a contract address and/or to
+charge
+// fees in sub-currencies; the command should fail unless the _from account has
+// deliberately authorized the sender of the message via some mechanism; we propose
+// these standardized APIs for approval:
+function transferFrom(address _from, address _to, uint256 _amount) returns (bool
+success) {
+if (balances[_from] >= _amount
+&& allowed[_from][msg.sender] >= _amount
+&& _amount > 0
+
+&& balances[_to] + _amount > balances[_to])
+
+balances[_from] -= _amount;
+allowed[_from][msg.sender] -= _amount ;
+balances [_to] += _amount ;
+return true;
+
+} else {
+return false;
+
+// Allow _spender to withdraw from your account, multiple times, up to the _value
+amount.
+// If this function is called again it overwrites the current allowance with _value.
+function approve(address _spender, uint256 _amount) returns (bool success) {
+allowed [msg.sender ][_spender] = _amount;
+return true;
+}
+}
+
+B (Token "RVN" source code)
+
+In development, coming soon
+
+C (Token "RSS" source code)
+In development, coming soon
+

@@ -1,0 +1,366 @@
+4
+
+NKN Economic Model and Road Map y
+-2-00 ©OBD @oce--
+
+www.nkn.org
+
+NKN Team | April 2018
+
+Introduction
+
+According to Gartner’s report [1], global IT spending is going to reach $3.7 trillion in 2018, among which
+communications/network services continue to drive most of the spending. The $1.4 trillion-dollar communication service
+business shows a huge potential when NKN incorporates it with blockchain technology.
+
+WB Enterprise Software
+§)) Data Center Systems IT Services Mi IT Services
+
+fj Devices Communications Services Communications Services
+
+Figure 1 Pie chart of worldwide IT spending share forecast in 2018, data source from
+Gartner forecast [1], indicating communications service takes the lion share of
+IT market.
+
+NKN (New Kind of Network) is the new generation of highly scalable, self-evolving and self-incentivised, decentralised
+network. By applying blockchain technology to the third pillar of the Internet infrastructure, NKN revolutionises the
+blockchain ecosystem by innovating on the network layer, after Bitcoin [2]/Ethereum [3] applied blockchain technology
+to computing power as well as IPFS [4]/Filecoin [5] applied blockchain technology to storage.
+
+01
+NKN is a decentralised data transmission and connectivity network with its native digital cryptographically-secured utility
+token, NKN. NKN introduces self-incentivised sharing mechanism to ensure the continued validity of resource sharing.
+Clients spend NKN transmit data, and relay nodes get NKN through relaying data for clients as well as by contributing to
+the expansion and sharing of the network connectivity and transmission capacity.
+
+In addition, miners receive NKN rewards for system contributions. NKN encourages individuals or organisations at each
+transmission node to contribute or share idle network resources through awarding NKN. This promotes the construction
+of a new mode of data resource transmission and ensure the continuity of network transmission resource sharing.
+
+Resources are required for the provision of network connectivity, transmission capacity, thus nkn would provide the
+economic incentive for the provision of these consumed resources. nkn is an integral and indispensable part of NKN,
+because in the absence of nkn, there would be no economic incentive for participants to provide these resources, thus
+rendering the ecosystem on NKN unsustainable.
+
+nkn is designed to achieve fairness between sharing the network transmission resources and receiving the rewards. Our
+methodology is verifiable, transparent, and backed by mathematics. nkn is the foundation of the NKN ecosystem. nkn
+distribution is limited and the amount of mining output declines linearly over time. It becomes increasingly difficult to
+acquire nkn over time. Specifically, the production mechanism of nkn is divided into two parts: the first part is created
+at genesis; the second part is obtained by miners through mining.
+
+Strategic revamp of network layer
+
+After years of evolution, blockchain application in computing and storage has been thoroughly explored and recognised
+by more and more people. Yet, there is a lack of breakthrough in fundamental research in blockchain.
+
+NKN introduces strategic innovation into the network layer of the blockchain system. It sets network connectivity and
+transmission capacity as the core resources to be tokenised and thus shared, while Proof of Relay becomes a new type of
+"Proof of Work". Furthermore, NKN introduces Cellular Automata [6,7] into the network layer to create self-evolving
+network topology.
+
+NKN solves the existing challenges in blockchain networks, such as scalability of the network, lack of peer equality and
+extensibility. By using Cellular Automata to improve the efficiency of blockchain, NKN will achieve peer equality of all
+nodes in the network.
+
+Being complementary to decentralised computing power (Bitcoin [2]/Ethereum [3]) and decentralised storage
+(IPFS/Filecoin [4,5]), NKN primarily focuses on network connectivity and data transmission. NKN makes peer-to-peer
+networks more reliable and secure, enabling healthier and safer networking layers.
+
+Tokenisation of network connectivity and data
+transmission capability
+
+In addition to innovating the blockchain network layer, NKN proposes to tokenise network connectivity and data
+transmission capability. The new economic model will encourage participants to share their connectivity, bandwidth to
+fully leverage their idle network resources to achieve productive resource sharing. Hence, improving the utilisation of
+network resources and enhancing network transmission capacity. nkn is a major component of the ecosystem on NKN,
+and is designed to be used solely on the network. nkn has the following characteristics:
+
+02
+1) Proof of utility
+Token utility can be verified at the time of creation. Self-incentivised native nkn is a non-refundable functional utility token
+
+which will be used as the unit of exchange between participants in the NKN ecosystem, which compensates network
+resource sharing such as connectivity and data transmission capability.
+
+© Fungibility
+nkn can be exchanged freely within the NKN network and can be traded and exchanged between participants in the NKN
+ecosystem.
+
+6 Privacy
+
+nkn is innately anonymous, with authenticity and tamper-proof guaranteed by cryptography. Additionally, nkn is backed
+and safeguarded by mathematics.
+
+The sharing mechanism based on network connectivity and data transmission capability is the backbone of the NKN
+project that will span through the entire project’s design.
+
+It can be said that the sharing mechanism based on the connectivity and data transmission capability of the network layer
+is not just a general outline of the entire project, but also a guiding instruction for specific details within the project’s
+design. Enabling it leads to future development of blockchain technology.
+
+Economic Model
+
+nkn does not in any way represent any shareholding, participation, right, title, or interest in NKN Foundation Ltd. (the
+Foundation), its affiliates, or any other company, enterprise or undertaking, nor will nkn entitle token holders to any
+promise of fees, revenue, profits or investment returns, and are not intended to constitute securities in Singapore or any
+relevant jurisdiction. nkn may only be utilised on NKN, and ownership of nkn carries no rights, express or implied, other
+than the right to use nkn as a means to enable usage of and interaction with NKN. In particular, you understand and
+accept that nkn:
+
+(a) does not represent or confer on the token holder any right of any form with respect to the Foundation (or any of its
+affiliates) or its revenues or assets, including without limitation any right to receive future revenue, shares, ownership
+right or stake, share or security, any voting, distribution, redemption, liquidation, proprietary (including all forms of
+intellectual property), or other financial or legal rights or equivalent rights, or intellectual property rights or any other
+form of participation in or relating to NKN, the Foundation, the Distributor and/or their service providers;
+
+(b) is non-refundable and cannot be exchanged for cash (or its equivalent value in any other virtual currency) or any
+payment obligation by the Foundation or any affiliate;
+
+(c) is not intended to be a representation of money (including electronic money), security, commodity, bond, debt
+instrument or any other kind of financial instrument or investment;
+
+(d) is not a loan to the Foundation or any of its affiliates, is not intended to represent a debt owed by the Foundation or
+any of its affiliates, and there is no expectation of profit; and
+
+(e) does not provide the token holder with any ownership or other interest in the Foundation or any of its affiliates. The
+
+total quantity of nkn released will be one billion. In the beginning of the system operation, 70% nkn will be generated.
+
+The remaining 30% will be generated by transmission network mining after the mainnet is launched, which will take place
+over a period of 25 years in declining quantities. The annual supply quantity of nkn produced (Q), in unit of millions, is
+distributed based on the time variable "T", which can be mined in accordance with the formula below:
+
+Qnkn = 18.5-0.5T, 1STS25
+
+Total amount of nkn is limited and mining output declines linearly with time. This incentivises early participation in the
+NKN network. The cost of nkn is determined by the bid between the client and the miner (similar to Ethereum system
+fee); therefore, changes in the market price for nkn will not affect the equivalent price of transaction or relay fees.
+
+03
+Amount of nkn, (Million)
+=)
+
+Times, (year)
+
+Figure 2 nkn annual mining amount supply curves versus time.
+
+The smallest unit in NKN is Qi, where 1 Qi= 104 nkn. Aseries of units are defined between Qi and nkn for convenience,
+as shown in Table 1. Qi will be used for micropayment to meet the ever-expanding data transmission demands.
+
+Table 1. Unit prefix of nkn finite division for circulation and micropayment.
+
+10 °
+
+PQi (Peta-Qi)
+
+10” TQi (Tera-Qi)
+
+GQi (Giga-Qi)
+
+MAQi (Mega-Qi)
+
+KQi (Kilo-Qi)
+
+Implementation of such unit metrics enables highly accurate micropayments on NKN’s platform. It should be noted that
+the actual usage of the above nkn unit prefixes is dependent upon the degree of NKN’s network development. Optimal
+unit prefix can be selected for usage based on the demand of network development in connectivity, capability, and
+data transmission. The allocation of nkn is shown in Figure 3.
+
+04
+NKN Foundation
+
+Developers
+
+Miners
+
+Purchasers
+
+Figure 3 Allocation of nkn percentage.
+
+35% (350 million) of the total amount is made available to purchasers; 18% (180 million) of the total amount is reserved
+for developers and advisors and transferred to them over a 3-year period; 17% (170 million) of the total amount is reserved
+for the Foundation for building the NKN community and network; the remaining 30% (300 million) will be generated
+through "mining" over an estimated 25-year period. Each newly generated block will generate fresh nkn as an incentive
+for miners per the stated rule specified above.
+
+nkn is based on blockchain technology to ensure that the data of consumption and sharing contributions cannot be
+falsified. Through a decentralised ledger, it ensures that all records are valid and transparent.
+
+nkn is also the driving force in NKN’s ecosystem and an influential factor in cultivating a healthy and stable ecosystem.
+Exchanges and rewards of nkn drive users to share their network resources or even upgrade their hardware, thus
+enhancing the whole network capacity. NKN users can use nkn to exchange network resources, embracing the era of
+enhanced network connectivity and data transmission capability.
+
+Pricing of transmission capacity of nodes in the NKN network will be directly negotiated between service providers and
+clients.
+
+nkn Distribution Metrics
+
+We want to take time to explain the numbers around nkn distribution. We hope that this will clear up any confusions
+surrounding the upcoming nkn token sale. The distributor of nkn (the Distributor) shall be an affiliate of the Foundation.
+
+Token Supply and Sale
+
+( ) The overall amount of NKN will be fixed at 1 billion.
+
+Osx of NKN token will be offered to purchasers.
+
+05
+The contributions in the token sale will be held by the Distributor (or its affiliate) after the token sale, and contributors
+will have no economic or legal right over or beneficial interest in these contributions or the assets of that entity after the
+token sale. To the extent a secondary market or exchange for trading NKN does develop, it would be run and operated
+wholly independently of NKN Foundation, the Distributor. Neither the Foundation nor the Distributor will create such
+secondary markets nor will either entity act as an exchange for NKN.
+
+Developers & Advisors
+
+42% 18% of NKN will be reserved for developers and advisors, and will be transferred to them over a 3-year period. Upon
+the expiry of 1 year, the team will receive 1/3 of this allocation, with a further 1/3 of this allocation to be distributed
+
+upon the expiry of each year thereafter, until the 3-year period is up.
+
+Foundation Reserve
+
+“= The 17% reserved for the Foundation will be used for referral programs, incentives, and marketing initiatives aimed
+to promote the user base. The Foundation will also cover for expenditures in areas of legal and consulting services,
+strategic initiatives, operational overheads, dApp ecosystem support, and expansion of the NKN network
+infrastructure. The Board of Directors of the Foundation is tasked with managing the use of resources for the
+development of NKN for the best benefit of all users, participants and stakeholders, including operation management,
+market promotion, development of underlying technology and construction of service system, planning and
+technology development.
+
+Miner
+
+S 30% of NKN will be awarded to miners once the MainNet is live online.
+
+@ Released NKN’s blockchain community forum with incentives for technical communication
+
+# Release whitepaper
+¢@ Publish economic model and roadmap
+
+® Publish introduction of team members and advisers
+@ Develop NKN blockchain
+
+2018 Q2~Q4
+
+# Develop NKN blockchain
+@ Develop NKN ecosystem in parallel
+
+2019 Q1i~Q2
+
+@ Launch NKN TestNet
+@ Release NKN ecosystem applications
+
+06
+@ Launch NKN MainNet
+@ Launch NKN ecosystem
+
+Disclaimers and Risks
+
+This document is intended for distribution to a selective community of audiences, and may not be copied, reproduced,
+distributed or disseminated in any way without the prior written consent of the Foundation.
+
+You acknowledge and agree that there are numerous risks associated with purchasing NKN, holding NKN, and using NKN
+
+for participation in NKN:
+
+1. Uncertain Regulations and Enforcement Actions
+The regulatory status of NKN and distributed ledger technology is unclear or unsettled in many jurisdictions. The
+regulation of virtual currencies has become a primary target of regulation in all major countries in the world. It is
+impossible to predict how, when or whether regulatory agencies may apply existing regulations or create new
+regulations with respect to such technology and its applications, including NKN token and/or NKN. Regulatory actions
+could negatively impact NKN token and/or NKN in various ways. The Foundation (or its affiliates) may cease
+operations in a jurisdiction in the event that regulatory actions, or changes to law or regulation, make it illegal to
+operate in such jurisdiction, or commercially undesirable to obtain the necessary regulatory approval(s) to
+operate in such jurisdiction.
+After consulting with a wide range of legal advisors and continuous analysis of the development and legal structure
+of virtual currencies, the Foundation will apply a cautious approach towards the sale of NKN. Therefore, for the
+crowdsale, the Foundation may constantly adjust the sale strategy in order to avoid relevant legal risks as much as
+possible. For the crowdsale, the Foundation is working with Tzedek Law LLC, a boutique corporate law firm in
+Singapore with a good reputation in the blockchain space.
+
+2. Inadequate disclosure of information
+As at the date hereof, NKN is still under development and its design concepts, consensus mechanisms, algorithms,
+codes, and other technical details and parameters may be constantly and frequently updated and changed. Although
+this white paper contains the most current information relating to NKN, it is not absolutely complete and may still be
+adjusted and updated by the NKN team from time to time. The NKN team has no ability and obligation to keep holders
+
+of NKN informed of every detail (including development progress and expected milestones) regarding the project to
+develop NKN, hence insufficient information disclosure is inevitable and reasonable.
+
+3. Competitors
+Various types of decentralised applications are emerging at a rapid rate, and the industry is increasingly competitive.
+It is possible that alternative networks could be established that utilise the same or similar code and protocol
+underlying NKN and/or NKN and attempt to re-create similar facilities. NKN may be required to compete with these
+alternative networks, which could negatively impact NKN and/or NKN.
+
+4. Loss of Talent
+The development of NKN depends on the continued co-operation of the existing technical team and expert
+consultants, who are highly knowledgeable and experienced in their respective sectors. The loss of any member may
+adversely affect NKN or its future development. Further, stability and cohesion within the team is critical to the overall
+development of NKN. There is the possibility that conflict within the team and/or departure of core personnel may
+occur, resulting in negative influence on the project in the future.
+
+5. Failure to develop
+There is the risk that the development of NKN will not be executed or implemented as planned, for a variety of
+reasons, including without limitation the event of a decline in the prices of any digital asset, virtual currency or NKN,
+unforeseen technical difficulties, and shortage of development funds for activities.
+
+6. Security weaknesses
+Hackers or other malicious groups or organisations may attempt to interfere with NKN and/or NKN in a variety of
+ways, including, but not limited to, malware attacks, denial of service attacks, consensus-based attacks, Sybil attacks,
+smurfing and spoofing. Furthermore, there is a risk that a third party or a member of the Foundation or its affiliates
+may intentionally or unintentionally introduce weaknesses into the core infrastructure of NKN token and/or NKN,
+which could negatively affect NKN token and/or NKN.
+Further, the future of cryptography and security innovations are highly unpredictable and advances in cryptography,
+or technical advances (including without limitation development of quantum computing), could present unknown
+risks to NKN token and/or NKN by rendering ineffective the cryptographic consensus mechanism that underpins
+
+that blockchain protocol.
+07
+Other risks
+
+In addition to the aforementioned risks, there are other risks (as more particularly set out in the Terms and Conditions)
+associated with your purchase, holding and use of NKN, including those that the Foundation cannot anticipate. Such
+
+risks may further materialise as unanticipated variations or combinations of the aforementioned risks. You should
+
+conduct full due diligence on the Foundation, its affiliates and the NKN team, as well as understand the overall
+
+framework and vision for NKN prior to purchasing NKN token.
+
+Further information upon request at: contact@nkn.org
+NKN official channels:
+
+LJ Official Website: https://www.nkn.org
+
+[En] Telegram Community: https://t.me/nknorg
+
+[#] Facebook: https://www.facebook.com/newkindofnetwork/
+
+[y] Twitter: https://twitter.com/NKN_ORG
+
+References
+
+[1]
+[2]
+[3]
+[4]
+[5]
+[6]
+
+Gartner Inc., “Gartner Says Global IT Spending to Reach $3.7 Trillion in 2018,” Gartner Press, Oct 2017.
+Satoshi Nakamoto, “Bitcoin: A Peer-to-Peer Electronic Cash System,” 2009.
+
+Vitalik Buterin, “Ethereum White Paper: a Next Generation Smart Contract & Decentralised Application,” 2013.
+Juan Benet, “IPFS - Content Addressed, Versioned, P2P File System,” Jul 2014.
+
+Protocol Labs, “Filecoin: A Decentralised Storage Network,” Aug, 2017.
+
+Wolfram, Stephen, "Statistical Mechanics of Cellular Automata," Reviews of Modern Physics. 55(3):
+
+601 644., 1983.
+[7] Wolfram, Stephen, “A New Kind of Science”, Wolfram Media, 2002.
+[8] Cook, Matthew, "Universality in Elementary Cellular Automata," Complex Systems. 15 (1)., 2004.
+
+08

@@ -1,0 +1,1305 @@
+1
+
+Ergo: A Resilient Platform For Contractual
+Money
+
+Ergo Developers
+
+May 14, 2019
+v1.0
+
+Abstract
+
+We present Ergo, a new flexible blockchain protocol. Ergo is designed
+for developing decentralized applications with the main focus of providing
+an efficient, secure and easy way to implement financial contracts.
+
+To achieve this goal, Ergo includes various technical and economic
+improvements to existing blockchain solutions. Every coin in Ergo is pro-
+tected by a program in ErgoScript, which is a powerful and protocol-
+friendly scripting language based on ¥-protocols. Using ErgoScript, we
+can encode the conditions under which coins may be used: who can spend
+them, when, under what external conditions, to whom, and so on.
+
+Extended support for light nodes makes Ergo friendly for end users
+because it allows running contracts on untrusted commodity hardware.
+To be usable in the long-term, Ergo follows a survivability approach — it
+uses widely-researched solutions that don’t result in security issues in the
+future, while also preventing performance degradation over time with a
+new economic model. Finally, Ergo has a self-amendable protocol that
+allows it to absorb new ideas and improve itself in the future.
+
+Introduction
+
+Beginning more than ten years ago with Bitcoin [I], blockchain technology has
+
+so
+an
+
+ar proved to be a secure way of maintaining a public transaction ledger
+disintermediating trusted third parties such as traditional financial institu-
+
+tions to some degree. Even after achieving a market capitalization over $300bn
+in 2017 [2], no severe attacks were performed on the Bitcoin network despite
+the high potential yield. This resilience of cryptocurrencies and the financial
+
+eny
+
+powerment and self-sovereignty they promise to bring is achieved by a com-
+
+bination of modern cryptographic algorithms and decentralized architecture.
+
+However, this resilience comes at a cost and has not yet been proven for
+
+existing systems in the long-run at economy-wide scale. To use a blockchain
+
+wit
+an
+
+hout any trust, its participants should check each other by downloading
+processing all the transactions in the network, utilizing network resources.
+
+Besides network utilization, transaction processing also utilizes computational
+resources, especially if the transactional language is sufficiently flexible. Finally,
+blockchain participants have to keep a significant amount of data in their local
+storages and the storage requirements are growing fast. Of this, certain data
+must be maintained in memory. Thus, transaction processing utilizes various
+resources of hundreds of thousands of computers all over the world and consump-
+tion of these resources is paid for by regular users in the form of transaction
+fees [3]. Despite the generous block reward subsidy in some existing systems,
+their fees can still be very high at times [4]. Due to this, even after being
+around for more than ten years, blockchain technology is still primarily being
+used in financial applications, where the advantage of high security outweighs
+the disadvantage of high transaction costs.
+
+Besides the vanilla currency example, the other use of blockchains is to build
+
+decentralized applications. Such applications utilize the ability of the underly-
+ing platform to write smart contracts [5] implementing their logic by means of
+a blockchain-specific programming language. One way to classify blockchains
+in terms of their ability to write smart contracts is based on if they are UTXO-
+based (e.g., Bitcoin) or account-based (e.g., Ethereum) [6]. Account-based cryp-
+tocurrencies, such as Ethereum, introduce special contract accounts controlled
+by code, that may be invoked by incoming transactions. Although this ap-
+proach allows performing arbitrary computation, the implementation of com-
+plex spending conditions can lead to bugs such as the one in an Ethereum’s
+“simple” multi-signature contract that caused a loss of $150 million in 2017 [7].
+In UTXO-based cryptocurrencies, every coin has a script associated with it, an
+to spend that coin, one must satisfy the conditions given in the script. Imple-
+menting such protecting conditions is much easier with the UTXO model but
+doing arbitrary Turing-complete computation is quite complex [8]. However,
+most financial contracts do not require Turing-completeness [9]. Ergo is base
+
+on the UTXO model and provides a convenient way to implement financia
+applications covering an overwhelming majority of public blockchain use-cases.
+While the contractual component is important for building decentralize
+applications, it is also essential that the blockchain survives in the long-term.
+
+Application-oriented blockchain platforms have existed only for a few years an
+the whole area is quite young. Since such platforms have already encountere
+problems with performance degradation over time (11), their long-term sur-
+vivability is questionable. Even older UTXO-based money-oriented blockchains
+have not been proven to be fully resilient in the long-run under changing condi-
+
+tions because we only have about 10 years of blockchain history up to this point.
+Solutions for long-term survivability include concepts such as light nodes with
+minimal storage requirements [12], storage-rent fee component to prevent bloat-
+ing of full-nodes and self-amendable protocols that can adapt to the chang-
+ing environment and improve themselves without trusted parties [13]. What is
+
+needed is a combination of various scientific ideas together to fix these prob-
+lems, while also providing a way for further improvements without any breaking
+changes and this is exactly what Ergo seeks to accomplish.
+2 Ergo Vision
+
+The Ergo protocol is very flexible and may be changed in the future by the
+community. In this section, we define the main principles that should be followed
+in Ergo which might be referred to as “Ergo’s Social Contract”. In case of
+intentional violation of any of these principles, the resulting protocol should not
+
+be cal
+
+ed Ergo.
+
+e Decentralization First. Ergo should be as decentralized as possible: any
+
+heir impact level.
+
+particular, this means that cent
+and regular people should be ab
+
+hat will be built on top of it.
+
+financial contracts.
+
+Long-term Focus. All aspects 0:
+a long
+
+improvements or some other unp:
+as a platform, applications bui
+
+survive in the long term. This resilien
+‘ore of
+
+also enable Ergo to be a good s
+
+Permissionless and Open. Ergo
+egories of usage. I
+
+in the protocol withow
+
+Platform for Contractual Money. Ergo is
+It is suitab.
+its main focus is to provide an efficient, secure and easy way to implement
+
+it on.
+
+should allow anyone
+any preliminary
+
+nancial system, no bailouts, blacklis:
+
+should be possible on
+
+he core level o:
+
+application developers are free
+
+responsibility for the e
+
+hics and legalit
+
+Ergo d
+erm perspective. At any point
+survive for centuries without expected
+redictable c!
+
+protoco.
+
+parties (social leaders, software developers, hardware manufacturers, min-
+ers, funds and so on) whose absence or malicious behavior may affect the
+security of the network should be avoided. If any of these parties do appear
+during Ergo’s lifetime, the community should consider ways to decrease
+
+Created for Regular People. Ergo is a platform for ordinary people, and
+heir interests should not be infringed upon in favor of big parties. In
+ralization of mining should be prevented
+e to participate in the protocol by running
+a full node and mining blocks (albeit with a small probability).
+
+he base layer to applications
+le for several applications but
+
+evelopment should be focused on
+of time, Ergo should be able to
+hard forks, software or hardware
+hanges. Since Ergo is designed
+f Ergo should also be able to
+bility may
+
+op 0
+cy and long term surviva
+value.
+
+does not restrict or limit any cat-
+‘0 join the network and participate
+actions. Unlike the traditional fi-
+or other forms of discrimination
+Ergo protocol. On the other hand
+
+Ss
+
+o implement any logic they want, taking
+
+y of their application.
+
+3  Autolykos Consensus Protocol
+
+The core component of any b
+
+ockchain system is its consensus protocol and Ergo
+
+utilizes a self-developed unique Proof of Work (PoW) consensus protocol called
+Despite extensive research on possible
+
+Autolykos, which is described below.
+alternatives, the original PoW protocol with the longest chain rule is still in
+demand due to its simplicity, high-security guarantees, and friendliness to light
+clients. However, a decade of extensive testing has revealed several problems
+with the original one-CPU-one-vote idea.
+
+The first known problem of a PoW system is the development of specialized
+hardware (ASICs), which allows a small group of ASIC-equipped miners to
+solve PoW puzzles orders of magnitude faster and more efficiently than everyone
+else. This problem can be solved with the help of memory-hard PoW schemes
+that reduce the disparity between ASICs and commodity hardware. The most
+promising approach here is to use asymmetric memory-hard PoW schemes that
+require significantly less memory to verify a solution than to find it :
+
+The second known threat to a PoW network decentralization is that even big
+miners tend to unite in mining pools, leading to a situation when just a few pool
+operators (5 in Bitcoin, 2 in Ethereum at the time of writing) control more than
+51% of computational power. Although the problem has already been discussed
+in the community, no practical solutions have been implemented before Ergo.
+
+Ergo’s PoW protocol, Autolykos [16], is the first consensus protocol that is
+both memory-hard and pool-resistant. Autolykos is based on the one list k-sum
+
+problem: a miner has to find k = 32 elements from a pre-defined list R of size
+N = 2?6 (which has a size of 2 Gb), such that >,.,7j — sk = d is in the
+interval {—b,...,0,...,6 mod q}. Elements of list R are obtained as a result
+of one-way computation from index i, two miner public keys pk, w and hash of
+block header m as r; = H(i||M||pk||m||w), where H is a hash function which
+returns the values in Z/qgZ and M is a static big message that is used to make
+hash calculation slower. Also, a set of element indexes J is to be obtained by
+one-way pseudo-random function genIndexes, that prevents possible solutions
+search optimizations.
+
+Thus, we assume that the only option for a miner is to use the simple brute-
+force method given in Algorithm [I] to create a valid block.
+
+Algorithm 1 Block mining
+
+1: Input: upcoming block header hash m, key pair pk = g**
+2: Generate randomly a new key pair w = g”
+3: Calculate riejo,n) = A(i||M||pk||m||w)
+
+4: while true do
+
+5 nonce < rand
+
+6 J := genIndexes(m||nonce)
+
+7: d= Vics tit — sk mod q
+
+8 if d <b then
+
+9: return (m, pk, w, nonce, d)
+
+10: end if
+
+11: end while
+
+Note that although the mining process utilizes private keys, the solution
+itself only contains public keys. Solution verification is done by Algorithm [2
+Algorithm 2 Solution verification
+: Input: m, pk, w, nonce, d
+require d <b
+
+require pk, w € G and pk,w #e
+: J := genIndexes(m||nonce)
+
+& f= Vey A(G||M||pk||m||w)
+6: require w! = g%- pk
+
+Bwne
+
+This approach prevents mining pool formation because the secret key sk is
+needed for mining: once any pool miner finds a correct solution, he can use
+this secret to steal the block reward. On the other hand, it is secure to reveal a
+single solution, as it only contains public keys and reveals a single linear relation
+between the 2 secrets sk, w.
+
+Memory-hardness follows from the fact that Algorithm [1] requires keeping
+the whole list R for the main loop execution. Every list element takes 32 bytes,
+so the whole list of N elements takes N - 32 = 2Gb of memory for N = 279,
+A miner can try to reduce memory requirements by calculating these elements
+“on the fly” without keeping them in memory, however, he’ll need to calculate
+the same hash H multiple times (about 104 times for modern GPUs), thereby
+reducing efficiency and profit.
+
+Calculating the list R is also quite a heavy computational task: our initial
+implementation consumes 25 seconds on Nvidia GTX 1070 to fill all the
+2? elements of the list. This part, however, may be optimized if a miner also
+stores a list of unfinalized hashes ujejo,v) = H(i||M||pk) in memory, consuming
+5 more Gigabytes of it. In such a case, work to calculate unfinalized hashes
+should be done only once during mining initialization while finalizing them and
+filling the list R for the new header only consumes a few milliseconds (about 50
+ms on Nvidia GTX 1070).
+The target parameter 6 is built-in into the puzzle itself and is adjusted to
+the current network hash rate via a difficulty adjustment algorithm [18] to keep
+time interval between block close to 2 minutes. This algorithm tries to predict
+the hash rate of an upcoming 1024 blocks long epoch based on data from the
+previous 8 epochs via the well-known linear least squares method. This makes
+the predictions better than that of the usual difficulty adjustment algorithm
+and also makes “coin-hopping” attacks less profitable.
+
+4 Ergo State
+
+To check a new transaction, a cryptocurrency client does not use the ledger with
+all the transactions that happened before this one. Instead, it uses a ledger state
+snapshot from its history. In the Bitcoin Core reference implementation, this
+snapshot is the active one-time coins (i.e., UTXOs), and a transaction destroys
+some coins and also creates new ones. In Ethereum, this snapshot is of long-
+lived accounts and a transaction modifies monetary balance and internal storage
+
+of some accounts. Also, in Ethereum (unlike Bitcoin), the representation of the
+snapshot is fixed within the protocol because an authenticating digest of the
+snapshot is written into the block header.
+Ergo follows Bitcoin’s UTXO design and represents the snapshots using one-
+time coins. The difference from Bitcoin is that in addition to monetary value
+and protecting script, an Ergo one-time coin, called a boz, also contains user-
+defined data. Similar to Ethereum, an Ergo block also stores an authenticating
+digest, called the stateRoot, of the global state after applying the block.
+An Ergo box is made of registers (and nothing but registers). Such a box
+can have 10 registers labeled Ro, Ri,...,R9, of which the first four are filled
+with mandatory values and the rest may contain arbitrary data or be empty.
+
+e Ro (monetary value). Amount of Erg locked in this box.
+e R, (guard script). Serialized script protecting this box.
+
+e Ry (tokens). A box can carry multiple tokens. This register contains an
+array of (token_identi fier ++ amount) pairs locked in this box.
+
+e Rs (transaction info). Contains (1) declared creation height (should be
+no more than actual height of a block which contains the transaction), (2)
+a unique identifier of the transaction that created this box, and (3) the
+index of this box in that transaction’s output boxes.
+
+e Ry — Ro (additional data). Contains arbitrary user-defined data.
+
+One-time immutable objects (as in Bitcoin’s UTXO model) have some ad-
+vantages over Ethereum’s long-lived mutable accounts. Firstly, it gives easier
+and safer protection from replay or reordering attacks. Secondly, it is easier to
+process transactions in parallel because they don’t modify state of the objects
+they access. Also, a transaction is whether modifying system state exactly as
+intended, or not changing the state at all (with no possible side-effects resulting
+from the out-of-gas exception, reentrancy issues, and so on). Finally, it seems
+easier to build fully stateless clients using one-time coins [19] (although research
+in this area is still in the initial stage).
+
+One major criticism of one-time coins is that this model does not seem
+suitable for non-trivial decentralized applications. However, Ergo has overcome
+the problems and shown this assertion to be false by demonstrating many non-
+trivial prototype applications built on top of it (see Section [7).
+
+The Ergo protocol fixes the ledger snapshot representation in the form of
+boxes not destroyed by previous transactions. In detail, a miner should maintain
+a Merkle-tree like authenticated data structure built on top of the UTXO set and
+must include a short digest (just 33 bytes) of this structure in each block header.
+This digest must be calculated after applying the block. This authenticated data
+structure is built on top of an AVL+ tree [12], which like a regular hash tree,
+allows generating proofs of existence or non-existence of particular elements in
+the tree. Thus, users maintaining the full tree are capable of generating proofs
+that their boxes are unspent and a small 33 bytes digest is sufficient for verifying
+
+these proofs. However, unlike regular hash trees, an AVL-+ tree also allows
+generation of proofs of tree modifications that allow verifiers to compute the new
+tree digest. Ergo miners are required to generate proofs of block modifications
+and a hash of this proof is included into the block header along with the digest
+of the resulting state. Hence, light nodes that only maintain a small digest of
+the current state are able to verify a full block — they can check that all spent
+boxes were removed from the state, all created boxes were added to it and no
+more changes were made.
+
+AVL+ trees allow building efficient authenticated dictionaries that reduce
+the proof size and speed up verification by 1.4-2.5 times in comparison to prior
+solutions, making them better suited for the cryptocurrency applications. For
+instance, our proofs are about 3 times smaller than proofs of a Merkle Patricia
+trie used in Ethereum for the same purpose (see Figure
+
+25001 —Ethereum trie
+—*— Our AVL+ tree)
+
+y
+8
+8
+Ss
+
+1000
+
+ee a
+
+log, tree size
+
+Proof size per modification (bytes)
+a
+8
+
+Figure 1: Proof size comparison with Merkle patricia trie
+
+Finally, proofs for multiple transactions in a single block are compressed
+together, reducing their total length by approximately an additional factor of 2:
+|\—*— without compression:
+\—*— gzip compression
+|—4— our compression
+
+eB eB
+
+% %
+
+a a
+
+2 2
+
+= 600 = 600
+
+2 3g
+
+5 500 5 500
+
+n| n|
+
+3 400 3 400
+
+E E
+
+5 300 5 300
+
+a a
+
+2 2
+
+S200 S200
+
+ed ed
+
+pa pa
+
+8 100 8 100
+
+a a
+0+ __—__ Oo
+10 12 14 16 18 20 0 2 4 6 8 10 12 14 16 18
+
+log, tree size log, batch size
+
+Figure 2: Left: proof size per modification for 2000 transactions as a func-
+tion of starting tree size n. Right: proof size per modification for a tree with
+n = 1000000 keys as a function of batch size B. In both cases, half of the mod-
+ifications were inserts of new (key, value) pairs and the other half were change
+of values for existing keys.
+
+Thus, Ergo state provides an efficient and secure way to prove existence
+or non-existence of certain elements in it, as well as proofs of tree modifica-
+tions. These tree operations are supported by the Ergo smart contract lan-
+guage, thereby providing the ability to implement sophisticated contracts like
+those discussed in Section [7]
+
+5 Resiliency and Survivability
+
+Being a platform for contractual money, Ergo should also support long-term
+contracts for a period of at least an average person’s lifetime. However, even
+young existing smart contract platforms are experiencing issues with perfor-
+mance degradation and adaptability to external conditions. This leads to a
+situation where the cryptocurrency depends on a small group of developers to
+provide a fixing hard-fork, or the cryptocurrency won’t survive. For example,
+the Ethereum network has started with the Proof-of-Work consensus algorithm
+and promises to switch to Proof-of-Stake in future. However, delays in Proof-
+of-Stake development lead to several fixing hard forks[20] and the community is
+still forced to rely on core developers promised to implement the next one hard
+fork.
+The first common survivability issue is that in pursuit of popularity, devel-
+opers tend to implement ad-hoc solutions without proper preliminary research
+and testing. Such solutions inevitably lead to bugs, which then lead to hasty
+bug fixes, then to fixes of those bug fixes, and so on, making the network un-
+reliable and even less secure. A notable example is IOTA cryptocurrency, that
+has implemented various scalability solutions, including own hash function and
+DAG structure, that allowed it to achieve high popularity and market capital-
+ization. However, when analysis of these solutions was performed [21] [22], it
+
+revealed multiple serious problems including practical attacks that enabled theft
+of tokens. The subsequent hard fork have fixed the problem by switching to
+a known SHA3 hash function, confirming the uselessness of such kind of inno-
+vations. Ergo’s approach here is to use stable well-tested solutions, even if they
+ead to slower short-term innovations. Most of the solutions used in Ergo are
+ormalized in papers presented at peer-reviewed conferences [12] [18]
+and have been widely discussed in the community.
+A second problem that decentralization (and thus survivability) faces is the
+ack of secure trustless light clients. Ergo tries to fix this problem of blockchain
+technology without creating new problems. Since Ergo is a PoW blockchain, it
+easily allows extraction of a small header from the block content. This header
+alone allows for validation of the work done on it and a headers-chain is enough
+or best chain selection and synchronization with the network. A headers-chain,
+although much smaller than the full blockchain, still grows linearly with time.
+Recent research on light clients provides a way for light clients to synchronize
+with the network by downloading an even smaller amount of data, thereby un-
+ocking the ability to join the network using untrusted low-end hardware such as
+mobile phones [26] [27]. Ergo uses an authenticated state [4] and for transactions
+included in a block, a client may download a proof of their correctness. Thus,
+regardless of the blockchain size a regular user with a mobile phone can join the
+network and start using Ergo with the same security guarantees as a full node.
+Readers may notice a third potential problem in that although support for
+light clients solves the problem for Ergo users, it does not solve the problem
+for Ergo miners, who still need to keep the whole state for efficient transaction
+validation. In existing blockchain systems, users can put arbitrary data into this
+state. This data, which lasts forever, creates a lot of dust and its
+endlessly over time [28]. A large state size leads to serious security issues because
+when the state does not fit in random-access memory, an adversary can generate
+transactions whose validation become very slow due to required random access
+to the miner’s storage. This can lead to DoS attacks such as the one on Ethereum
+in 2016 Moreover, the community’s fear of such attacks along with the
+problem of “state bloat” without any sort of compensation to miners or users
+holding the state may have prevented scaling solutions that otherwise could
+have been implemented (such as larger block sizes, for example). To prevent
+this, Ergo has a storage rent component: if an output remains in the state for 4
+years without being moved, a miner may charge a small fee for every byte kept
+in the state.
+
+This idea, which is similar to regular cloud storage services, was only pro-
+posed quite recently for cryptocurrencies and has several important con-
+sequences. Firstly, it ensures that Ergo mining will always be stable, unlike
+Bitcoin and other PoW currencies, where mining may become unstable after
+emission is done [31]. Secondly, growth of the state’s size becomes controllable
+and predictable, thereby helping Ergo miners to manage their hardware re-
+quirements. Thirdly, by collecting storage fees from outdated boxes, miners can
+return coins to circulation, and thus, prevent the steady decrease of circulating
+supply due to lost keys [32]. All these effects should support Ergo’s long-term
+
+ize increases
+
+survivability, both technically and economically.
+
+A fourth vital challenge to survivability is that of changes in the external
+environment and demands placed on the protocol. A protocol should adapt
+to the ever changing hardware infrastructure, new ideas to improve security or
+scalability that emerge over time, the evolution of use-cases, and so on. If all the
+rules are fixed without any ability to change them in a decentralized manner,
+even a simple constant change can lead to heated debates and community splits.
+For instance, discussion of the block-size limit in Bitcoin led to its splitting into
+several independent coins. In contrast, Ergo protocol is self-amendable and is
+able to adapt to the changing environment. In Ergo, parameters like block size
+can be changed on-the-fly via voting of miners. At the beginning of each 1024-
+block voting epoch, a miner proposes changes of up to 2 parameters (such as an
+increase of block size and a decrease of storage fee factor). During the rest epoch,
+miners vote to approve or reject the changes. If a majority of votes within the
+epoch support the change, the new values are written into the extension section
+of the first block of the next epoch, and the network starts using the updated
+values for block mining and validation.
+To absorb more fundamental changes, Ergo follows the approach of soft-
+forkability that allows changing protocol significantly while keeping old nodes
+operational. At the beginning of an epoch, a miner can also propose to vote
+for a more fundamental change (e.g., adding a new instruction to ErgoScript)
+describing affected validation rules. Voting for such breaking changes continues
+for 32,768 blocks and requires at least 90% of “Yes” votes to be accepted. Once
+being accepted, a 32,768-blocks long activation period starts to give outdated
+nodes time to update their software version. If a node software is still not up-
+dated after the activation period, then it skips the specified checks but continues
+to validate all the known rules. List of previous soft-fork changes is recorded into
+the extension to allow light nodes of any software version to join the network
+
+and catch up to the current validation rules. A combination of soft-forkability
+with the voting protocol allows changing of almost all the parameters of the
+network except the PoW rules that are responsible for the voting itself.
+
+6 Ergo’s Native Token
+
+Ergo platform has its native token, which is called Erg and is divisible to up to
+10° smallest units, nanoErgs (a nanoErg is one billionth of an Erg). Ergs are
+important for Ergo platform stability and security by several reasons discussed
+below.
+
+During the initial phase of Ergo’s life, miners will receive the reward in
+Ergs according to a predefined and hard-coded token emission schedule (se
+for more details). These coins will incentivize miners to participate in the
+network, securing it from hashrate-based attacks like the known 51% attack .
+
+Erg emission will be finished within just eight years, and after that miners
+will only receive Erg from fees. Although, adjustable over time through miner
+on-chain voting, Ergo block size and maximum block computational cost at any
+
+10
+given point in time will
+
+e limited, and thus miners are enforced to choose only
+
+a subset of transactions from mempool during times of high load. Fees will help
+
+miners to sort the transactions, p
+to include transactions from hone
+
+Besides network an
+by increasing state size. In existi
+being a UTXO in UTXO-based b:
+lives possibly forever without any
+must keep this state in high-cost
+
+reventing spam attacks while allowing miners
+st users in blocks.
+
+computation resources, a transaction utilizes storage
+
+ng cryptocurrencies, an element of the state,
+lockchains, called a box in Ergo, once created
+compensation to miners and some users who
+random-access memory. This leads to a mis-
+
+alignment of incentives and continuously increasing state size. In contrast, Ergo
+
+has a storage rent component tha’
+included in the state. This stora,
+limiting state size or insuring pro,
+ing lost coins into circulation and
+reward to miners.
+
+Thus, being a platform for c
+
+periodically charges users Erg for every byte
+ge rent is making the system more stable by
+per compensation for larger state size, return-
+providing an additional stable and predictable
+
+ontractual money, Ergo is suitable to build
+
+applications and monetary systems on top of it. However, participating in such
+
+systems would require using the
+pay storage rent and transaction
+incentives to secure the network
+part, will be highly incentivized
+applications for Ergo to be of hig!
+
+6.1 Emission
+
+All Erg tokens that will ever circulate in the system are
+
+state, which consists of 3 boxes:
+
+Ergo native token, Erg, as well in order to
+ees which will provide miners strong ongoing
+with adequate hash power. Users, for their
+to purchase, use and save Ergs if they find
+h value.
+
+presented in the initial
+
+e No Premine Proof. This box contains exactly one Erg and is protected by
+
+a script that prevents it fro:
+lived box that will stay in
+
+destroys it. Its main purpose is to prove that Ergo mining was not starte
+
+privately by anyone before
+
+additional registers of this box contain the latest headlines from the media
+
+(The Guardian, Vedomosti,
+
+from Bitcoin and Ethereum. Thus, Ergo mining could not have starte
+
+before certain events in the
+
+First, it ensures that only a predefined portion of the box value is unlocked.
+
+During blocks 1-525,599 (2
+
+Then during blocks 525,600-590,399 (3 months) 4.5 Erg will be release
+
+Treasury. This box contains 4,330,791.5 Erg tha
+Ergo development. Its protecting script consis
+
+m being spent by anyo:
+the system until the s
+
+me. Thus, it is a long-
+orage-rent component
+ate. To achieve this
+
+the declared launch d ;
+
+Xinhua), as well as the latest block identifiers
+
+real world and the cryptocurrency space.
+
+will be used to fun
+s of two parts.
+
+years) 7.5 Erg will be released every block.
+
+every block. Finally, during blocks 590,400-655,199 (3 months) 1.5 Erg
+
+will be released every block.
+
+. This rule ensures the presence of funds for
+
+11
+Ergo development for 2.5 years and, at any moment of time, rewards do
+not exceed 10% of the total number of coins in circulation.
+
+Second, it has custom protection from unexpected spending. Initially,
+it requires the spending transaction to be signed by at least 2 of 3 secret
+keys that are under control of the initial team members. When they spend
+the box, they are free to change this part of the script as they wish, for
+example by adding new members to protect foundation funds.
+
+During the first year, these funds will be used to cover the pre-issued
+
+EFYT token. After that, they will be distributed in a decentralized man-
+ner via a community voting system that is under development.
+
+e Miners Reward. This box contains 93,409,132 Erg that will be collected by
+block miners as a reward for their work. Its protecting script [35] requires
+the spending transaction to have exactly two outputs with the following
+properties:
+
+— The first output should be protected by the same script and the
+number of Erg in it should equal to the remaining miners’ reward.
+During blocks 1 - 525,599 (2 years), a miner will be able to collect
+67.5 Erg from this box. During blocks 525,600 - 590,399 (3 month), a
+miner will be able to collect 66 Erg, and after that, the block reward
+will be reduced by 3 Erg every 64,800 blocks (3 months) until it
+reaches zero at block 2,080,799.
+
+— The second output should contain the remaining coins and should be
+protected by the following condition: it can be spent by a miner that
+solved the block’s PoW puzzle and not earlier than 720 blocks after
+the current block.
+
+All these rules results in the following curve denoting the number of coins
+in circulation with time:
+
+12
+100M + r : r T
+
+90M |.
+
+80M |
+
+70M |-
+
+60M |
+
+50M |
+
+Ergo
+
+40M
+
+30M
+
+20M
+
+10M
+
+OM
+
+Total Monetary Base
+
+To Miners —— 4
+To Treasury ——
+
+0 1 2 3 4 5
+
+Year since genesis block
+
+7 Contractual Money
+
+Figure 3: Ergo emission curve
+
+In our opinion, the overwhelming majority of use-cases for public blockchains
+
+(even those that claim to provide a general-purpose
+
+decentralized world com-
+
+puter) are for financial applications, which do not require Turing-completeness.
+
+For instance, if an oracle writes down non-financial dat
+as temperature), this data is usually used further in
+
+a into the blockchain (such
+a financial contract. An-
+
+other trivial observation we make is that many applications use digital tokens
+
+with mechanics different from the native token.
+For an application developer, the Ergo Platform o:
+are first-class citizens) and a domain-specific language
+
+ffers custom tokens (which
+for writing box protecting
+
+conditions in order to implement flexible and secure financial applications. Ergo
+
+applications are defined in terms of protecting scrip
+
+s built into boxes, which
+
+may also contain data involved in the execution. We use the term contractual
+money to define Ergs (and secondary tokens) whose usage is bounded by a
+contract. This applies to all tokens on the platform in existence because any
+
+box with its contents (Ergs, tokens, data) is bounde
+However, we can distinguish between two types
+first, called free Ergs, are the ones that could change
+
+13
+
+by a contract.
+of contractual Ergs. The
+their contracts easily and
+have no restrictions on the outputs or the other inputs of a spending transac-
+tion. The second type is bounded Ergs, whose contracts require the spending
+transaction to have input and output boxes with specific properties.
+
+For example, if a box A is protected by just a public key (so providing a sig-
+nature against a spending transaction is enough in order to destroy the box), the
+public key owner can spend A and transfer the Ergs to any arbitrary output box.
+Thus, the Ergs within A are free. In contrast, imagine a box B protected by a
+combination of a public key and a condition that demands the spending trans-
+action to create an output box with the same amount of Ergs as in B and whose
+guarding script has the hash rBMUEMuPQUx3GzgFZSsHmLMBouLabNZ4HcERm4N (in
+Base58 encoding). In this case, the Ergs in B are bounded Ergs.
+
+Similarly, we can define free and bounded tokens. An Ergo contract can have
+several hybrids such as bounded Ergs and free tokens or both bounded under
+one public key and free under another.
+
+7.1 Preliminaries For Ergo Contracts
+
+While in Bitcoin, a transaction output is protected by a program in a stack-
+based language named Script, in Ergo a box is protected by a logic formula which
+combines predicates over a context with cryptographic statements provable via
+zero-knowledge protocols using AND, OR, and k-out-of-n connectives. The
+formula is represented as a typed direct acyclic graph, whose serialized form is
+written in a box. To destroy a box, a spending transaction needs to provide
+arguments (which include zero-knowledge proofs) satisfying the formula.
+However, in most cases, a developer is unlikely to develop contracts in terms
+of graphs. Instead, he would like to use a high-level language such as ErgoScript,
+which we provide with the reference client.
+
+Writing scripts in ErgoScript is easy. As an example, for a one-out-of-two
+signature, the protecting script would be pk||pko, which means “prove knowl-
+edge of a secret key corresponding to the public key pk; or knowledge of a secret
+key corresponding to public key pk2”. We have two separate documents for help
+in developing contracts with ErgoScript: the “ErgoScript Tutorial”
+“Advanced ErgoScript Tutorial” [37]. Thus, we do not get into the details of de-
+veloping contracts with ErgoScript. Rather, we provide a couple of motivating
+examples in the following sections.
+
+Two more features of Ergo shaping contracting possibilities are:
+
+e Data Inputs: To be used in a transaction, a box need not be destroyed
+but can instead be read-only. In the latter case, we refer to the box as
+being part of the data input of the transaction. Thus, a transaction gets
+two box sets as its arguments, the inputs and data inputs, and produces
+one box set named outputs. Data inputs are useful for oracle applications
+and interacting contracts.
+
+e Custom Tokens: A transaction can carry many tokens as long as the esti-
+mated complexity for processing them does not exceed a limit, a parameter
+
+14
+that is set by miner voting. A transaction can also issue a single token
+with a unique identifier which is equal to identifier of a first (spendable)
+input box of the transaction. The identifier is unique assuming the colli-
+sion resistance of an underlying hash function. The amount of the tokens
+issued could be any number within the range [1,9223372036854775807].
+The weak preservation rule is followed for tokens, which requires that the
+total amount of any token in a transaction’s outputs should be no more
+than total amount of that token in the transaction’s inputs (ie., some
+amount of token could be burnt). In contrast, the strong reservation rule
+is followed for Ergs, which requires that the total amount of Ergs in the
+inputs and outputs must be same.
+
+7.2 Contract Examples
+
+In this section, we provide some examples which demonstrate the superiority of
+Ergo contre compared to Bitcoin’s. The examples include betting on oracle-
+provided data, non-interactive mixing, atomic swaps, complementary currency,
+and an initial coin offering implemented on top of the Ergo blockchain.
+
+7.2.1 An Oracle Example
+
+Equipped with custom tokens and data inputs, we can develop a simple oracle
+example which also shows some design patterns that we discovered while playing
+with Ergo contracts. Assume that Alice and Bob want to bet on tomorrow’s
+weather by putting money into a box that becomes spendable by Alice if tomor-
+row’s temperature is more than 15 degrees, and spendable by Bob otherwise.
+To deliver the temperature into the blockchain, a trusted oracle is needed.
+
+In contrast to Ethereum with its long-lived accounts, where a trusted oracle’s
+identifier is usually known in advance, delivering data with one-time boxes is
+more tricky. For starters, a box protected by the oracle’s key cannot be trusted,
+as anyone can create such a box. It is possible to include signed data into a box
+and check the oracle’s signature in the contract (we have such an example), but
+this is quite involved. Instead, a solution with custom tokens is very simple.
+
+Firstly, a token identifying the oracle should be issued. In the simplest case.
+the amount of this token could be one. We call such a token a singleton token.
+The oracle creates a box containing this token along with its data (i.e., the
+temperature) in register Ry and the UNIX epoch time in register R5. In order
+to update the temperature, the oracle destroys its box and creating a new one
+
+with the updated temperature.
+
+Assume that Alice and Bob know the oracle’s token identifier in advance.
+With this knowledge, they can jointly create a box with a contract that requires
+first (read-only) data input to contain the oracle’s token. The contract extracts
+
+the temperature and time from the data input and decides who gets the payout.
+The code is as simple as following:
+Algorithm 3 Oracle Contract Example
+
+val dataInput = CONTEXT.dataInputs(0)
+
+val inReg = dataInput.R4{[Long].get
+
+val inTime = dataInput.R5[Long].get
+
+val inToken = dataInput.tokens(0).-1 == tokenId
+
+val okContractLogic = (inTime > 1556089223) &&
+((inReg > 15L && pkA) || (inReg < 15L && pkB))
+
+inToken && okContractLogic
+
+apo
+
+This contract shows how a singleton token could be used for authentification.
+As a possible alternative, the oracle can put the time and temperature into
+a box along with a signature on this data. However, this requires signature
+verification, which is more complex and expensive compared to the singleton
+token approach. Also, the contract shows how read-only data inputs could be
+useful for contracts which need to access data stored in some other box in the
+state. Without data inputs, an oracle must issue one spendable box for each
+pair of Alice and Bob. With data inputs, the oracle issues only a single box.
+
+7.2.2 A Mixing Example
+
+Privacy is important for a digital currency but implementing it can be costly
+or require a trusted setup. Thus, it is desirable to find a cheaper way for coin
+mixing. As a first step towards that, we offer a non-interactive mixing protocol
+between two users Alice and Bob that works as follows:
+
+1. Alice creates a box which demands the spending transaction to satisfy
+certain conditions. After that, Alice only listens to the blockchain, no any
+interaction with Bob is needed.
+
+2. Bob creates a transaction spending Alice’s box along with one of his own
+and generating two outputs with an identical script but different data.
+Each of Alice and Bob may spend only one of the two outputs but to an
+external observer the two outputs look indistinguishable and he cannot
+decide which output belongs to whom.
+
+For simplicity, we do not consider fee in the example. The idea of mixing is
+similar to non-interactive Diffie-Hellman key exchange. First, Alice generates
+a secret value x (a huge number) and publishes the corresponding public value
+gX = g*. She requires Bob to generate a secret number y, and to include
+into each output two values cj, c2, where one value is equal to g¥ and the
+other is equal to g*¥. Bob uses a random coin to choose meanings for {ci,c2}.
+Without access to the secrets, an external observer cannot guess with probability
+better than 4 whether c, is equal to g¥ or to g*¥. This is assuming that the
+cryptographic primitive we use has a certain property, that the Decision Diffie-
+Hellman (DDH) problem is hard. To destroy an output box, a proof should
+be given that either y is known such that cp = g¥, or x is known such that
+cg = cf. The contract of Alice’s box checks that c; and cz are well-formed.
+
+16
+The code snippets for the Alice’s coin and the mixing transaction’s output are
+provided in Algorithms [4] and [5]respectively. Since ErgoScript currently doesn’t
+have support for proving knowledge of some x such that cp = ci” for arbitrary
+c,, we will prove a slightly longer statement that is supported, namely, proving
+knowledge of x such that gX = g® and cg = c,”. This is called proveDHTuple.
+
+Algorithm 4 Alice’s Input Script
+val cl = OUTPUTS(0).R4[GroupElement].get
+val c2 = OUTPUTS(0).R5[GroupElement].get
+
+OUTPUTS.size == 2 &&
+
+5: OUTPUTS(0).value == SELF.value &&
+
+6: OUTPUTS(1).value == SELF value &&
+
+7: blake2b256(OUTPUTS(0).propositionBytes) == fullMixScriptHash &&
+
+8: blake2b256(OUTPUTS(1).propositionBytes) == fullMixScriptHash &&
+
+9: OUTPUTS (1).R4[GroupElement].get d
+OUTPUTS(1).R5[GroupElement].get =
+
+11: proveDHTuple(g, gX, cl, 2) ||
+
+12: proveDHTuple(g, gX, c2, cl)
+
+Algorithm 5 Mixing Transaction Output Script
+1: val cl = SELF.R4[GroupElement].ge
+2: val c2 = SELF.R5[GroupElement].ge
+3: proveDlog(c2) || // either c2 is g¥
+4: proveDHTuple(g, cl, gX, c2) // or c2 is uY = g*
+
+We refer the reader to [37] for a proof of indistinguishability of the outputs
+and details on why Alice and Bob can spend only their respective coins.
+
+7.2.3. More Examples
+
+In this section, we briefly shed light on a few more examples along with links to
+the documents providing the details and code.
+
+Atomic Swap  Cross-chain atomic swap between Ergo and any blockchain
+that supports payment to either SHA-256 or Blake2b-256 hash preimages and
+time-locks can be done in a similar way to that proposed for Bitcoin [38]. An
+Ergo alternative implementation is provided in As Ergo also has custom
+tokens, atomic exchange on the single Ergo blockchain (Erg-to-token or token-
+to-token) is also possible. An implementation for this can also be found in [36].
+
+Crowdfunding We consider the simplest crowdfunding scenario. In this ex-
+ample, a crowdfunding project with a known public key is considered successful
+
+17
+if it can collect unspent outputs with a total value not less than a certain amount
+before a certain height. A project backer creates an output box protected by the
+following statement: the box can be spent if the spending transaction has the
+first output box protected by the project’s key and amount no less than the tar-
+get amount. Then the project can collect (in a single transaction) the biggest
+backer output boxes with a total value not less than the target amount (it
+is possible to collect up to 22,000 outputs, which is enough even for a big
+crowdfunding campaign). For the remaining outputs, it is possible to construct
+follow-up transactions. The code can be found in [36].
+
+The Local Exchange Trading System Here we briefly demonstrate a Local
+Exchange Trading System (LETS) in Ergo. In such a system, a member of a
+community may issue community currency via personal debt. For example, if
+Alice with zero balance is buying something for 5 community tokens from Bob,
+whose balance is zero as well, her balance after the trade would be —5 tokens,
+and Bob’s balance would be 5 tokens. Then Bob can buy something using his
+5 tokens, for example, from Carol. Usually, in such systems, there is a limit on
+negative balances (to avoid free-riding).
+
+Since a digital community is vulnerable to Sybil attacks some mech-
+anism is needed to prevent such attacks where Sybil nodes create debts. The
+simplest solution is to use a committee of trusted managers that approve new
+members of the community. A trust-less but more complex solution is to use
+security deposits made in Ergs. For simplicity, we consider the approach with
+the committee here.
+
+This example contains two interacting contracts. A management contract
+
+maintains a list of community members, and a new member can be added if
+some a management condition is satisfied (for example, a threshold signature
+is provided). A new member is associated with a box containing a token that
+identifies the member. This box, which contains the member contract, is pro-
+tected by a special exchange script that requires the spending transaction to
+do a fair exchange. We skip the corresponding code, which can be found in a
+separate article [40].
+
+What this contract shows, in contrast to the previous example, is that instead
+of storing the members list, only a short digest of an authenticated AVL+ tree
+can be included in the box. This allows a reduction in storage requirements
+
+for the state. A transaction doing lookup or modification of the member list
+should provide a proof for AVL+ tree lookup or modification operations. Thus,
+saving space in the state storage leads to bigger transactions, but this scalability
+problem is easier to solve.
+
+Initial Coin Offering We discuss an Initial Coin Offering (ICO) example
+that shows how multi-stage contracts can be created in Ergo. Like most ICOs,
+our example has three stages. In the first stage, the project raises money in
+Ergs. In the second stage, the project issues a new token, whose amount equals
+the number of nanoErgs raised in the first stage. In the third stage, the investors
+
+18
+can withdraw issued tokens.
+
+Note that the first and third stages have many transactions on the blockchain,
+while a single transaction is enough for the second stage. Similar to the previ-
+ous example, the ICO contract uses an AVL+ tree to store the list of (investor,
+amount) pairs. The complete code is available at [41].
+
+More Examples We have even more examples of Ergo applications in [36] [37].
+These examples include time-controlled emission, cold wallets contracts, rock-
+paper-scissors game, and many others.
+
+References
+
+1] S. Nakamoto, “Bitcoin: A peer-to-peer electronic cash system,” 2008.
+
+2] Bitcoins price surpasses $18,000 level, market cap now higher
+[Online]. Available: https: //cointelegraph.com/news/
+
+visas.
+bitcoins-price-s
+
+3] A. Chepurnoy, V. Kharin, and D. Meshkoy, “A systematic approach to
+cryptocurrency fees,” [ACR Cryptology ePrint Archive, vol. 2018, p. 78,
+2018.
+
+5] N. Szabo, “Smart contracts,” Unpublished manuscript, 1994.
+
+6] J. Zahnentferner, “Chimeric ledgers: Translating and unifying utxo-based
+and account-based cryptocurrencies.” [ACR Cryptology ePrint Archive,
+vol. 2018, p. 262, 2018.
+
+7| I accidentally killed __ it: Parity wallet bug locks $150
+million in ether. [Online]. Available: https://www.ccn.com/
+i-accidentally- killed-it-parity- wallet-bug-locks- 150-million-in-ether
+
+8] A. Chepurnoy, V. Kharin, and D. Meshkov, “Self-reproducing coins as uni-
+versal turing machine,” in Data Privacy Management, Cryptocurrencies
+and Blockchain Technology. Springer, 2018, pp. 57-64.
+
+9] M. Jansen, F. Hdhili, R. Gouiaa, and Z. Qasem, “Do smart
+contract languages need to be turing complete?” 2019. [On-
+line]. Available: _https://www.researchgate.net /publication/332072371_
+Do-Smart-Contract Languages_Need_to_be_Turing-Complete/download
+
+[10] Very slow syncing on hard drive. [Online]. Available: |https://github.com/
+
+ethereum/go-ethereum/issues/14895|
+
+19
+a
+
+20
+
+21
+
+22
+
+23
+
+Why is my node synchronization stuck/extremely slow at block 2,306,843?
+{Online}. Available: https: //ethereum.stackexchange.com/questions/9883/
+
+why-is-my-node-synchronization-stuck-extremely-slow-at-block-2-306-843
+
+L. Reyzin, D. Meshkov, A. Chepurnoy, and S. Ivanov, “Improving au-
+thenticated dynamic dictionaries, with applications to cryptocurrencies,”
+in International Conference on Financial Cryptography and Data Security.
+Springer, 2017, pp. 376-392.
+
+L. Goodman, “Tezos — a self-amending crypto-ledger white paper,” URL:
+https://www. tezos. com/static/papers/white_paper. pdf, 2014.
+
+A. Biryukov and D. Khovratovich, “Equihash: Asymmetric proof-of-work
+based on the generalized birthday problem,” Ledger, vol. 2, pp. 1-30, 2017.
+
+Ethash. [Online]. Available: _https://github.com/ethereum/wiki/wiki/
+Ethash/6e97c9cea49605264c6f4d1dc9e1939b1f89a5a3
+
+A. Chepurnoy, V. Kharin, and D. Meshkov, “Autolykos: The ergo platform
+pow puzzle,” 2019. [Online]. Available: |https://docs.ergoplatform.com
+
+ErgoPow.pd:
+Autolykos gpu miner. [Online]. Available: https: //github.com/
+
+ergoplatform/Autolykos-GPU- miner
+
+D. Meshkov, A. Chepurnoy, and M. Jansen, “Short paper: Revisiting diffi-
+culty control for blockchain systems,” in Data Privacy Management, Cryp-
+tocurrencies and Blockchain Technology. Springer, 2017, pp. 429-436.
+
+A. Chepurnoy, C. Papamanthou, and Y. Zhang, “Edrax: A cryptocurrency
+with stateless transaction validation,” Cryptology ePrint Archive, Report
+2018/968, Tech. Rep., 2018.
+
+Ethereums  blockchain is once again feeling the difficulty
+bomb effect. [Online]. Available: https: //www.coindesk.com/
+ethereum-blockchain- feeling-the-difficulty- bomb-effect
+
+E. Heilman, N. Narula, G. Tanzer, J. Lovejoy, M. Colavita, M. Virza, and
+T. Dryja, “Cryptanalysis of curl-p and other attacks on the iota cryptocur-
+rency.”
+
+G. De Roode, I. Ullah, and P. J. Havinga, “How to break iota heart by
+replaying?” in 2018 IEEE Globecom Workshops (GC Wkshps). TEEE,
+2018, pp. 1-7.
+
+Iota vulnerability report: Cryptanalysis of the curl hash function enabling
+practical signature forgery attacks on the iota cryptocurrency. [On-
+line]. Available: |https://github.com/mit-dci/tangled-curl/blob/master/
+vu
+
+20
+24
+
+26
+
+27
+
+28
+
+29
+
+30
+
+3l
+
+32
+
+33
+
+34
+
+A. Chepurnoy and M. Rathee, “Checking laws of the blockchain with
+property-based testing,” in Blockchain Oriented Software Engineering (IW-
+BOSE), 2018 International Workshop on. IEEE, 2018, pp. 40-47.
+
+T. Duong, A. Chepurnoy, and H.-S. Zhou, “Multi-mode cryptocurrency
+systems,” in Proceedings of the 2nd ACM Workshop on Blockchains, Cryp-
+tocurrencies, and Contracts. ACM, 2018, pp. 35-46.
+
+A. Kiayias, A. Miller, and D. Zindros, “Non-interactive proofs of proof-
+of-work,” Cryptology ePrint Archive, Report 2017/963, 2017. Accessed:
+2017-10-03, Tech. Rep., 2017.
+
+L. Luu, B. Buenz, and M. Zamani, “Flyclient super light client
+for cryptocurrencies,” [ACR Cryptology ePrint Archive, 2019. [Online].
+
+Available: https: //eprint.iacr.org/2019/226
+
+C. Pérez-Sola, S. Delgado-Segura, G. Navarro-Arribas, and J. Herrera-
+Joancomarti, “Another coin bites the dust: an analysis of dust in utxo-
+based cryptocurrencies,” Royal Society open science, vol. 6, no. 1, p. 180817,
+2019.
+
+Ethereum network attackers ip address is trace-
+able. [Online]. Available: htt www.bokconsulting.com.au/blog/
+
+A. Chepurnoy and D. Meshkov, “On space-scarce economy in blockchain
+systems.” IACR Cryptology ePrint Archive, vol. 2017, p. 644, 2017.
+
+M. Carlsten, H. Kalodner, S. M. Weinberg, and A. Narayanan, “On the
+instability of bitcoin without the block reward,” in Proceedings of the 2016
+ACM SIGSAC Conference on Computer and Communications Security.
+ACM, 2016, pp. 154-167.
+
+E. Krause, “A fifth of all bitcoin is missing. these crypto hunters can help,”
+2018.
+
+51% attack. [Online]. Available:  |https://en.bitcoinwiki.org/wiki/51%
+
+Script of the ergo treasury box. [Online]. Available:
+
+b7b5a69035fc384b47c18ccf42b87dd95bbefl2/src/main/scala/org/
+ergoplatform/ErgoScriptPredef.scala#L1 18|
+
+Script of the ergo emission box. [Online]. Available:
+
+;oplatform/ErgoScriptPredef.scale
+
+36
+
+37
+
+38
+
+39
+
+40
+
+41
+
+Ergoscript, a cryptocurrency scripting language supporting noninteractive
+
+zero-knowledge proofs. [Online]. Available: |https://docs.ergoplatform.
+com/ErgoScript.pdf
+
+Advanced ergoscript tutorial. [Online]. Available: https: //docs.
+
+ergoplatform.com/sigmastate_protocols.pdf
+
+T. Nolan, “Alt chains and atomic transfers,” 2013. [Online].
+Available: |https://bitcointalk.org/index.php?topic=193281.msg2224949#
+msg2224949
+Sybil attack. [Online]. Available: [https://en.wikipedia.org/wiki/Sybil_
+A local exchange trading system on top of _ ergo.
+{Online}. Available: https: //github.com/ergoplatform /ergo/wiki/
+-Local-Exchange- Trading-
+
+An ico example on top of ergo. [Online]. Available: |https://github.com/
+iki/ An-ICO-Example-On- Top- Of Ergo
+
+22

@@ -1,0 +1,1652 @@
+5; Make a digierent would | 0
+INT chain Project White Paper
+
+2018.04
+Fos
+INT
+4 Make A different world
+
+INT: An economy driven solution to improve the device
+interconnection of Internet of Things
+
+INT: An economy driven solution to improve the device
+
+interconnection of Internet of Things
+
+Abstract: INT will build a framework for machines
+and devices, and create a token, which will be used to
+facilitate the resource exchange between nodes and
+heterogeneous links (different nodes may create
+independent internal links). For example, a node may
+make a request and pay corresponding tokens to request
+other nodes (or links) to provide power, network, data,
+service and other possible resources. In addition,
+through zero knowledge proof (specific improvement
+as necessary), optional masking may be conducted to
+
+protect user privacy and improve security.
+
+1 Preface
+
+The Internet of things has developed rapidly in the
+last a few years, however, concerns have been raised
+for the standards of communication and data exchanges
+among manufacturers, the interests of manufacturers,
+user privacy, as well as fragmented model constraint on
+he overall loT development.
+
+It is expected that more than 25 billion nodes will
+be connected on the internet in year 2020, however, if
+he interconnection within the whole network is not
+smooth, the fragmented Internet of Things would not
+
+fully realize value of the nodes.
+
+Without defining a common set of protocol
+
+standards, seeking support from _ individual
+manufacturers is but inefficient and costly. Through
+decentralized and economy driven methods, it is a new
+
+way to make standards for device interconnection.
+
+1.1 Project objectives
+
+INT is the acronym for InternetNode Token. INT
+attempts to build a scheme that allows data and
+resources to flow freely within the network and to
+ensure user privacy in untrusted and decentralized
+machine federations.
+
+This paper is not a complete and detailed
+specification, just a preview of the development intent
+of the whole design, which attempts to propose
+
+solutions, and through experiments and projects,
+
+community support as well as _ confirmatory
+development, to make the INT a viable solution.
+Through experimental evidence, prototypes and data,
+as well as responses to community suggestions and
+comments, the content of this paper will be revised
+
+gradually in the future.
+
+1.2 Background introduction
+
+Blockchain technology has proved its value in
+finance and other fields, but we believe its best usage is
+in the field of IoT. Highly distributed IoT field is
+especially suitable for blockchain applications.
+
+At present, there are several issues with current
+development of IoT:
+
+(1) Lack of standard
+
+The IoT vendors are very diversified, each holding
+their own data silos, so the information flow within the
+systems is everything but smooth, while cross-vendor
+access and liquidation is hard to implement.
+
+(2) Inefficiency
+
+Under the current IoT ecosystem, all the devices
+
+are connected through central cloud — server
+authentication. The connection between the devices is
+handled through the central servers, thus the efficiency
+
+cannot really meet the real-time needs of the IoT.
+(3) Cost
+
+The infrastructure and maintenance cost of
+centralized systems, large servers, cloud service and
+network devices is very high. While the number of oT
+devices increases to range of tens of billions, the
+additional communication cost also rises exponentially,
+which will make the IoT solution very expensive.
+
+(4) Security risks
+
+Centralized network has very high security
+requirements for central servers, and the security
+vulnerabilities of IoT nodes will affect the whole
+network.
+Make A different world
+
+(5) Privacy protection
+
+Existing centralized networks can collect the
+user's information at will, and after the user realizes the
+value of their data, he or she may not be willing to just
+accept the situation. Because the IoT systems have
+more private information, including health information,
+vehicle driving information etc., the centralized
+network cannot be trusted to store that.
+
+2 Project overview
+
+The INT project stems from the Apache Mynewt
+community practice.
+
+The team initially tried to define hardware through
+software to reduce the complexity of hardware
+development.
+
+However, even if we define the abstraction layer
+of the system, how to form a unified ecosystem
+between individual nodes is still a challenge. Later,
+through the team brainstorming, the team considers an
+economic way to drive the integration of different
+
+systems.
+
+INT is a kind of blockchain application platform
+and interactive standard which is object-oriented IoT
+and based on economic driving mode. The parallel
+chain structure is used to form a distributed network
+between devices, and a consensus algorithm is adopted
+to guarantee the legal trustworthiness of the transaction
+between devices. At the same time, different kinds of
+devices can be connected to different parallel chains to
+avoid the explosive growth of the total ledger.
+
+The existence of INT can greatly reduce the
+development difficulty of the application of the
+blockchain of IoT. It can relay different IoT, form edge
+computing networks, effectively circulate resources,
+and accelerate the progress of loT popularization. INT
+is designed as a scalable heterogeneous chain,
+providing a relay chain platform on which a large
+number of verifiable, globally consistent and consensus
+data structures can be built. In other words, on the basis
+of ensuring overall security and cross-chain trust, INT
+is committed to making the IoT blockchain into a
+TCP/IP, which
+
+networking infrastructure _ like
+
+imperceptibly affects people's lives.
+
+In order to achieve these objectives, we must do the
+following:
+
+INT: An economy driven solution to improve the device
+interconnection of Internet of Things
+
+2.1 Software defined resources
+
+There is a fundamental difference between
+hardware development and software development.
+Because of cost and design constraints, the hardware
+resources are generally scarce, so when we want to
+add additional costs and provide additional resources in
+the hardware, it is relatively hard (for example, to
+provide additional computing power and extra external
+power supply).
+
+So the problem we want to solve is not to provide
+additional resources, but if the hardware itself is a WIFI,
+or a temperature collector, when it needs to provide its
+own value to other services or hardware, the
+corresponding charging strategy can be proposed. And
+the resources we are involved in, according to different
+devices, are abstracted from the real world, mapping
+existing entities (whether hardware or data) to provide
+consistent invocation in the form of services.
+
+There is no way to add additional functionality
+to existing devices, but in a relatively hardware
+ecosystem, perhaps we can allow the various devices to
+open their own functions, so as to gain more revenue
+through the economic-driven. Because the nature of the
+standard monopoly is profit, and the tokens themselves
+can provide profit, and because of the volatility of the
+price of tokens, it may generate additional economic
+benefits. Relative income is not less than absolute profit.
+
+So we're going to try a new model that drives the
+hardware to open itself up by sharing benefits, to get
+profits decentrally, rather than through a centralized
+monopoly.
+
+2.2 Monetization of resources
+
+In our definition, we need a steady measurement,
+and we do not use INT in the settlement of the IoT, but
+use GAS mechanism, which is similar to ETH. Because
+devices resource settlement needs a relatively stable
+measurement, the resources will be settled in the
+following ways:
+
+Price tag type: pay according to the marked price.
+
+Metering type: Pay according to the timeline, or
+other dimensions of subsection.
+
+Competitive bidding type: Bid on all devices that
+need to invoke the resources.
+S
+
+PAINT
+
+Make A different world
+
+CPP (Cost Per Purchase): Pay based on the end use
+of the resource.
+
+Because of the existence of smart contracts, many
+traditional architectures which cannot be completed in
+a way that can be taken here, and then implement
+coordination and interaction, the specific way can be
+agreed on the chain in the form of a smart contract.
+
+2.3 Resource transaction configuration
+
+Related nodes shall purchase resources in a semi-
+automatic manner through a custom policy.
+
+2.4 Privacy protection principle
+
+There is also a particularly important problem in
+the current IoT: User privacy. The user privacy
+protection of IoT is extremely fragile. It is easy to
+predict user behavior because of the large amount of
+data collected by the sensor. Moreover, for the current
+architecture model, even if use the OpenID to
+implement user desensitization, as long as analyze
+multiple dimensions, it is easy to reverse deduce the
+identity of the user. To solve this problem, we try to
+adopt our innovative Behavior Private Key (BPK)
+algorithm model based on zero-knowledge proof
+
+Chain A
+
+IN
+
+Chain C INT
+
+_ €o0
+so8
+
+INT: An economy driven solution to improve the device
+interconnection of Internet of Things
+
+algorithm, by passing the user intent (intent) to other
+hardware, without the need to pass the user symbol,
+which not only can effectively protect the user's privacy,
+but also can resolve concerns about the loss of users.
+
+Our innovative BKP algorithm model uses
+unsupervised learning or strategy model and clustering
+behavior, through zero-knowledge proof algorithm to
+implement user desensitization.
+
+This allows for the sharing of resources based on
+intent between devices, and does not require users to
+share data, which can effectively address user privacy
+problem.
+
+2.5 Security
+
+Is the device likely to kill like a mechanical bee in
+a magic mirror (Black Mirror)? This may not
+necessarily be the case, but it must not be a rarity to
+drive a automatic car to hit a person into death. The
+security of the future IoT is the most important, and the
+INT will try to filter the intent through the innovative
+BPK algorithm, trying to ensure the user's security.
+
+3 System architecture
+
+Resource Exchange
+
+Chain B
+
+Figure 1 INT system architecture
+Make A different world
+
+4 Service
+
+Each machine node can shelve corresponding
+SKU based on their own wishes, which is to be suitable
+for different bidding, sales, distribution strategy,
+authority strategy, forming self-discovery of metadata.
+This layer is a definition of software services and an
+abstraction of hardware services.
+
+5 Trading market
+
+A. Machine automatic matching
+
+Through smart contracts and semi dynamic
+configuration, for basic services, such as network,
+power, calculation, self-discovery, implement plug-
+and-play access.
+
+B. Developer API trading market
+
+For data and services, a trading system is formed
+in the cloud.
+
+6 INT token
+
+INT token will take a two-tier structure. The first
+tier is the traditional token structure that participates in
+exchange transactions and can be understood as an INT
+share. The second tier uses the first tier token structure,
+launches a timed auction and float aiming at fiat money,
+mainly to solve the problem of token volatility, reduce
+volatility which is easy billing.
+
+7 Machine node
+
+A node may be a traditional PC server node, or a
+STM32 node that is configured tailoring according to
+machine performance. IoT is a typical edge fog
+computing scenario (Fog Computing). In fact, the
+existing blockchain network is not suitable for loT. In
+such a scalable network with high computational power,
+how to share computational power, in fact, the core is
+also economic-driven, so we need to define an INT
+such a solution.
+
+INT: An economy driven solution to improve the device
+interconnection of Internet of Things
+
+8 Consensus
+
+As we known, in consensus algorithm, traditional
+DPoS consensus algorithms have started evolving
+towards the direction of centralization while deviating
+from blockchain’s original intention of decentraliza-
+tion. Therefore, we pragmatically create a new consen-
+sus algorithm called Double Chain Consensus Algo-
+rithm on the base of deep understanding into the core
+of DPoS consensus algorithm and on the basis of INT
+chain’s real application scenarios as well as current
+development status of loT devices. The basic architec-
+
+ture is shown in the following diagram:
+
+Wherein, the “thearchy chain” made up of the
+servers provided by device manufacturer, community
+leader and ecological enterprise is the core of the entire
+architecture. The “thearchy chain” consists of “thear-
+chy nodes” which have come into being through mass
+election by the method of community poll. Eventually
+2n+1 thearchy nodes are produced, and their address
+information is written into the thearchy chain’s genesis
+block.
+
+The primary function of “thearchy chain” is to
+
+perform block-generation operation using the
+dBFT/DPoS consensus algorithm and coordinate with
+the work of nodes on the ordinary chains at lower
+layers. Specific use of whichever consensus algorithm
+is mainly dependent on the quantity of nodes on the
+thearchy chain. We are using the dBFT algorithm in
+
+the early phase of the project.
+
+Following TXs will be retained in the thearchy
+chain’s blocks: 1. Node grouping TX; 2. Node work
+reporting TX, and; 3. Identity authenticating TX.
+Among them, the identity authenticating TX is a key to
+continuous operation of “thearchy chain”. The identifi-
+cation information with signatures of n+] thearchies
+will appear on the chain. Through this mechanism, the
+system can approve new “thearchy nodes” to join in
+the “thearchy chain” by vote or kick out manufacturers
+that are no longer involved and thearchy nodes that do
+
+not work as normal by vote.
+Make A different world
+
+/ — 1OT Device’,
+
+| @.
+\ JOT Device Misfacturer
+
+| Server
+
+e
+
+MOT Device’,
+
+INT Subchain 1
+
+OT Device
+
+.. IOT Device
+
+INT: An economy driven solution to improve the device
+interconnection of Internet of Things
+
+IOT Device
+
+Figure 2: Architecture of Consensus Mechanism Algorithm
+
+Wherein, the “thearchy chain” made up of the servers
+provided by device manufacturer, community leader and
+ecological enterprise is the core of the entire architecture.
+The “‘thearchy chain” consists of “thearchy nodes” which
+have come into being through mass election by the
+method of community poll. Eventually 2n+1 thearchy
+nodes are produced, and their address information is
+
+written into the thearchy chain’s genesis block.
+
+The primary function of “thearchy chain” is to
+perform block-generation operation using the dBFT/D-
+PoS consensus algorithm and coordinate with the work
+of nodes on the ordinary chains at lower layers. Specific
+use of whichever consensus algorithm is mainly depen-
+dent on the quantity of nodes on the thearchy chain. We
+are using the dBFT algorithm in the early phase of the
+project.
+
+Following TXs will be retained in the thearchy chain's
+blocks: 1. Node grouping TX 2. Node work reporting
+TX, and; 3. Identity authenticating TX. Among them, the
+identity authenticating TX is a key to continuous opera-
+tion of “thearchy chain”. The identification information
+
+with signatures of n+l thearchies will appear on the
+chain. Through this mechanism, the system can approve
+new “thearchy nodes” to join in the “thearchy chain” by
+vote or kick out manufacturers that are no longer involved
+
+and thearchy nodes that do not work as normal by vote.
+
+In addition to the “thearchy chain”, the entire archi-
+tecture will consist of ordinary chains which are made
+up of IoT device nodes of various models produced by
+numerous different manufacturers, and to which all
+
+nodes on the “thearchy chain” will also belong.
+
+The nodes on ordinary chains will continually read
+the information on the “thearchy chain” during opera-
+tion in order to work with high efficiency. The infor-
+mation mainly includes:
+
+1. Determine which node the next block will be
+generated according to the “thearchy chain” block
+generation information (Blocks on ordinary chains are
+also generated from thearchy nodes);
+
+2. On the basis of reading the “thearchy chain”
+information, determine the group to which the current
+nodes belong and then determine the block data that
+will need to be saved as well as complete the data
+fragmentation;
+
+3. Read the legal manufacturers information of
+“thearchy chain” and decide the data information
+reported on other devices is legitimate or not;
+
+4. Report the operation information of ordinary
+nodes.
+Make A different world
+
+By this design, there remain only the IoT data
+collecting TX and the scalable smart contract operating
+TX among the main TXs of ordinary chains, while the
+consensus algorithm logic and device/data legitimacy
+judgment logic are both transferred up to the thearchy
+chain, thereby boosting the stability and celerity of block
+generation by ordinary chains while implementing data
+
+Thearchy Chain Block
+
+INT: An economy driven solution to improve the device
+interconnection of Internet of Things
+
+fragmentation of ordinary chains and reducing the
+performance storage capacity requirements for loT
+devices becoming blockchain nodes.
+
+8.1 Consensus Mechanism Process
+
+The operational process of INTchain consensus
+mechanism is shown as below:
+
+#106
+>
+
+sce fee
+ci] [es] Tezh.
+
+G2 generates block #106 on the
+G2 ordinary chain correspondingly
+
+Thearchy “ after seizing block #106 on the
+Node G2 #103} _,| #104 #105 4 #106! thearchy chain under the dBFT
+“FET G3 G2 G2 | consensus algorithm.
+Ordinary Chain Blocks it nchronized Blocks
+#303 #104 #105 #106 Only saving the head of
+. | er ened Oe a” #103 block on the basis of
+OT Device 1 Gl G3 G2_| information about the group
+to shich it belongs
+LL Synchronized Blocks
+Only saving the head of #104
+i #103 ehh #105 #106 block on the basis of
+lOTDevice2 Gi i>} ea {penn » G2 information about the group to
+
+which it belongs
+
+Figure 3: Operational Process of Consensus Mechanism
+
+The operational procedure of the whole process is
+shown as below:
+
+1. Thearchy nodes generate blocks through dBFT
+consensus algorithm;
+
+2. The normal nodes running on the server where
+thearchy nodes are located generate blocks after the
+thearchy chain generates blocks;
+
+3. The ordinary nodes running on IoT devices read
+the grouping information on the thearchy chain to deter-
+mine the group to which they belong; loT devices that
+access the network for the first time are also required to
+register nodes on the thearchy chain;
+
+4. On the basis of their own grouping information,
+ordinary nodes on IoT devices select a thearchy node to
+maintain connection for updating blocks and delivering
+TX; Such design can boost TX's confirmation speed and
+reduce the bandwidth consumption brought about with
+
+TX broadcasting of IoT in narrow-band edge network.
+
+5. On the basis of their own grouping information,
+IOT devices can delete ordinary chain blocks that are
+
+alien to their own group;
+
+6. loT devices deliver the running log to the thear -
+chy chain through node work report TX in order to
+obtain salary income;
+
+7. loT devices send ordinary TX to each other to
+call functions or send collected data;
+
+8. What is displayed, by default, on the INT brows-
+er is the block information about the ordinary chain;
+
+9. The INT wallet can submit the ordinary chain
+TX to any of the loT device nodes or to any ordinary
+chain node running on thearchy nodes. Standard TX
+reproduced similarly by such means also supports
+
+anonymous submission by using broadcast;
+
+10. On a regular basis, the thearchy chain creates
+device grouping TX according to the node information
+
+of registered oT devices.
+Make A different world
+
+8.2 Calculation Separated from Bookkeep-
+ing "Mining Mechanism"
+
+After using the double-chain formulaic algorithm,
+no loT device would have the chance to generate
+blocks, so there is no way to earn rewards by generating
+blocks. Although, from the perspective of INT's
+economic model design, loT devices can earn incomes
+by providing functions and reporting key data, we
+design a set of incentive mechanism to reward IoT
+devices (nodes) at normal work in order that the entire
+blockchain network can operate more healthily. From
+the perspective of implementation, the current scheme
+being adopted for INT is the wage-paying mechanism
+“contingent on device’s working conditions”, but we
+give an umbrella name to such mechanism as calcula-
+tion separated from bookkeeping mechanism in order
+to make a distinction between it and traditional incen-
+
+tives which are based on rewards for block generation.
+
+The content of operational core of this mechanism is
+shown as below:
+
+1. On a regular basis, loT devices pack their own
+working status into "node work report TX” to submit to
+the thearchy chain. The working status includes "Device
+Startup", "Device Shutdown", "Device has completed
+xxx work" and other information, and extension is
+supported.
+
+2. Within a time period, working status of all devices
+in the entire INT network encompassed on the thearchy
+chain is recorded;
+
+Application Layer-RPC +
+
+INT: An economy driven solution to improve the device
+interconnection of Internet of Things
+
+3. INT would disclose a salary calculation
+algorithm, into which the input is the records of work-
+ing status of all devices within the current period
+whereas from which the output is the payroll of each
+device. Plus, INT would publicize the payroll within
+the publicity period, whereafter the INT foundation
+would issue INT token on the basis of this payroll. In
+addition to the calculation of payroll, this salary calcu-
+lation algorithm can also be iteratively optimized
+
+during each period, thereby identifying any data fraud;
+
+This set of mechanism also addresses the issue that
+economic parameters of traditional blockchains are not
+easily modified once set. Moreover, the openness and
+fairness of core mechanism of blockchain are
+
+safeguarded through the open algorithm and its input.
+
+8.3 Extending Business Logic Using
+Smart Contract
+
+INTChain delivers a basic capacity, namely differ-
+ent device manufacturers are allowed to extend the
+smart contract operating on their own subchain. But
+considering the hardware capacity of loT devices,
+traditional virtual machine-based methods are not
+employed to extend smart contract. We call such
+capacity of extending smart contract TX of blockchain
+as INT Contract.
+
+The principle of INT Contract bears relation to the
+implementation architecture of INT chain. The imple-
+mentation architecture of INT chain is shown as
+below:
+
+TX Execution Engine«
+
+INT Sub Chain
+
+Consensus Engine +
+
+State-Storage- Block -Storage-
+Engine Engine
+
+Chain SDK
+
+No-center-P2P-Layer~
+
+[__NosenerraPtayers
+
+Figure 4: The implementation structure of INT Chain
+INT
+4 Make A different world
+
+Each INT subchain is developed based on the same
+chain SDK. But different subchains are allowed to
+extend their own INT Contract at the TX execution
+engine layer. Traditional development language
+(JavaScript), instead of specialized smart contract VM,
+is used to extend INT Contract and can run directly on
+the OS of IoT, featuring high executive performance,
+low resource consumption and applicability for the real
+execution environment of IoT devices. Moreover, the
+learning cost and engineering cost of INT Contract are
+lowered with effectiveness with the use of regular
+
+development languages.
+
+8.4 Countermeasures against Puzzles on
+Source Tracing along the Public Chain
+
+Logically, it is impossible for matters in the physi-
+cal world to be chained, so a numeric ID is required to
+be fabricated for each “matter”, in such form as
+number or QR code. But the correspondence between
+such ID and the “matter” hinges on human factors,
+which allows for considerable subjectivity and scope
+for counterfeit. The reliability of tracing the source
+
+along blockchain remains deficient.
+
+Take Ethereum as an example. The smart contract
+deployed on Ethereum is originally unable to access
+networks beyond blockchain, even impossible to call
+the Restful API directly in similar ways applications
+are developed. Hence, data sources in the physical
+world remain significantly inaccessible to blockchain.
+This requires an automated tool that can provide
+reliable data sources for smart contract of blockchain.
+Oraclize Company promotes the Oracle tool which
+ensures data are not counterfeited to a certain degree
+through verification of TSL Notary.
+
+The above description reveals that the core strategy
+to cope with the puzzle in source-tracing application is
+to minimize human participation and economic
+
+motives for counterfeit throughout the process from
+collection to processing to transmission-onto-chain of
+
+key source data of “matter”.
+
+The shell of INT chain will develop supporting tools
+similar to Oracle for the smart contract module consti-
+tuted by Software Fetch and Hardware Fetch to
+
+INT: An economy driven solution to improve the device
+interconnection of Internet of Things
+
+provide reliable executive source data for INT smart
+contract at software and hardware levels respectively.
+
+8.5 Cross-Chain Interoperability Protocol
+
+The cross-chain interoperability protocol of the INT
+relay-chain will fall into two parts: "cross-chain asset
+exchange protocol" and "cross-chain distributed trans-
+action protocol".
+
+(1) Cross-Chain Asset Exchange Protocol
+
+Extended over the double-chain atomic asset
+exchange protocol of INT chain1.0, this allows multi-
+ple participants to exchange assets on different block-
+chains and guarantees complete success or failure of
+all steps throughout the
+this function, the INT Contract feature needs to be
+exploited to create a contractual account for each
+
+rading process. To implement
+
+participant. For any other blockchain incompatible
+with INT Contract, it
+INT’s cross-chain protocols as long as a simple smart
+
+can remain compatible with
+
+contract feature can be delivered.
+
+(2) Cross-Chain Distributed Transaction Protocol
+
+Cross-chain distributed transaction means multiple
+steps of an entire transaction whose consistency is
+secured are implemented on separate blockchains. This
+is an extension to cross-chain asset exchange, whereby
+the behavior of asset exchange is extended into an
+arbitrary behavior. In layman's terms, INT’s relay
+chain makes cross-chain smart contract possible. A
+single smart contract can execute different parts across
+multiple different blockchains, which are either
+completely executed or return to the status prior to
+
+execution.
+
+8.6 Packaging Methods of Blocks
+
+Different chains may take either form of chains
+generating blocks at high frequency and low time
+consumption or highly densified blocks. So, different
+packaging methods for enclosed blocks are adopted for
+each parallel chain, and consensus is integrated via the
+relay chain. The consensus integration part will be
+
+billed by main nodes.
+Make A different world
+
+8.7 Network Design
+
+IoT is such an extremely special network that there is
+enormously great discrepancy between the requirements
+for accuracy of delaying different protocols. So we will
+adopt the MQTT method in respect of network architec-
+ture and accomplish specific implementation and proto-
+col amelioration for MQTT to fulfill the demands for
+blockchain.
+
+9 Application Scenarios of INT and
+INT DAPP
+
+With the growth of IoT devices at geometrical
+progression as well as the improvement in the level of
+intelligence of machines, there will be an increasing
+number of automatically running IloT DAPPs to be
+installed on smart devices and real-time, credible
+automatic data exchange and automatic transaction will
+be implemented between machines and between human
+and machine via the distributed loT DAPPs.
+
+INT will implement data transmission featuring
+direct interconnection between nodes within IoT. loT
+solutions would not require importing large-sized data
+centers for data synchronization, management and
+control. All operations including the sending of data
+collection instructions and software update can be trans-
+mitted via the network of blockchain. Some typical
+
+application scenarios of INT are:
+(1) Intelligent manufacturing:
+
+Product transport, for instance, in which the products
+can be traced, secured and delivered on schedule even
+though cargoes are transferred through multiple material
+flows; for instance, the data about production, inventory
+management, sales volume of products and inventory
+are all recorded in order to be shared between the
+business and production departments, intensify punctual
+production and boost efficiency of operation. Equip-
+ment and systems in manufacturing are becoming
+increasingly intelligent, thereby stepping progressively
+
+into a completely virtualized world;
+(2) Intelligent automobile:
+
+The automatically running DAPPs in IoT enable
+
+vehicles to change into smart application terminals, and
+
+INT: An economy driven solution to improve the device
+interconnection of Internet of Things
+
+car owners can exploit blockchain to trace loT devices
+(e.g. annual inspection of vehicle, automatic car insur-
+ance tracing, etc.) Automatic traveling data exchange
+between vehicles. For instance, the source map indicat-
+ing traffic congestion transmits data for car owners to
+keep track of the real-time traffic condition and imple-
+ment automatic drive in a safer manner, automated
+
+navigation of automobiles, roadside service, etc.;
+(3) Intelligent finance:
+
+In combination with the impossibility of falsification
+and authentic right of data implemented for distributed
+data of blockchain, the authenticity of data about finan-
+cial agencies is secured, issues such as letter of credit,
+corporate obligations and bonds, trading platforms,
+giving quotation, contract fraud and order fraud can be
+avoided, and traceability in financially safe network is
+enhanced;
+
+(4) Intelligent equipment:
+
+Sensors are utilized to trace the conditions of bridges,
+roads and power grids, even to help monitor natural
+disasters in remote areas, prevent against massive
+mountain conflagrations, disease and pest damages and
+other grave catastrophes, implement smart urban
+management, prognosticate urban greening and pollu-
+tion conditions, and perform maintenance to share
+high-efficiency urbanized management.
+
+Different IoTs are relayed to circulate resources with
+efficiency while significantly lowering the access
+threshold on IoT, shortening the cycle of development
+and reducing risks in application development. It will
+be extensively applied in respect of intelligent power
+grid, intelligent logistics, smart home, smart advertising
+board, smart city, military appliances, etc. In intelligent
+medical treatment, partnership has been achieved with
+INT’L Medicine, a well-known leading domestic listed
+enterprise in medical circulation. Having successfully
+addressed such issues as resource waste in drug packag-
+ing, environmental pollution and difficulty in ensuring
+drug safety during transportation, the INT technology
+and RSPS carried system can not only provide real-time
+location information but also ensure safety protection
+for whole-process traceable drug circulation, channel
+end-to-end business data and boost the efficiency of
+drug circulation.
+Make A different world
+
+10 Roadmap
+
+INT aims to address the issue of value transfer in
+fragmented and dispersed IoT markets. It will be a brand
+new architectural platform at the bottom layer of loT
+blockchain featuring decentralization, openness, open
+source and high efficiency. In the ecosystem, different
+participants can receive the profit at right cost and share
+it with each other. There exists the bonus of fast devel-
+
+opment in both domains of blockchain and IoT.
+
+As a transparent and open system, INT is expected to
+promote the development of IoT, without appealing to
+unification of standards, to drive the interconnection of
+different standards by economic means and to form an
+
+effective decentralized market.
+
+In the first step of the solution, we will release the
+INTchain1.0 by the first quarter of 2018 and, on this
+base, accomplish code reconstitution and stratification
+to implement the double chain architecture and create a
+new version INTchain 2.0 to be released by the second
+quarter for commercial operation among multi- tudinous
+
+cooperative clients.
+
+In the second part, we will build the INT ecosystem,
+integrate upstream and downstream enterprises and
+scientific research enterprises in IoT, create open
+hardware platforms, and apply INT in loT big data, loT
+supply chain, finance, intelligent manufacturing and
+more industrial domains.
+
+11 INT team
+
+The INT team core members include the first batch
+of loT development experts globally, developers with
+vast experience in communication and large systems,
+architects for operating systems, and engineers in the
+financial field. The R&D team has a deep understand -
+ing and research and development experience in the
+
+fields of loT. signal transmission,
+
+security system design, blockchain, bottom layer of
+
+bitcoin, Ethereum, automated value exchanging,
+
+machine learning, the big data technology and so on
+11.1 Core Team Members
+Xiang Ruofei
+Chief Architect of INTchain. Dr. Xiang holds the
+
+10
+
+INT: An economy driven solution to improve the device
+interconnection of Internet of Things
+
+degree of post-doctoral research at Chinese Academy of
+Sciences (CAS). He is a young expert in the Next
+Generation (5G) Wireless Communication and IoT
+technology, and he now majors in the applications of
+“Blockchain - IoT” technological convergence. He
+took charge of one of “863” Projects. He has published
+multiple papers and applied for several technology
+patents.
+
+Chen Guanghui
+
+Chief Development Engineer of INT DAPP. Mr.
+Chen graduated from Fudan University, majored in
+Computer Software. He worked in EastCOM and
+Huawei successively. He has rich experience in
+communication underlying technologies, system archi-
+tecture, R&D project management, software develop-
+ment, mobile Internet and other fields. From 1993 to
+2005, he worked as R&D engineer in the CDMA Switch
+Development Department, Head of the Testing Depart-
+ment and Vice General Manager in EastCOM. He
+joined Huawei in 2005 and served as Head of the Enter-
+prise Communications MKT Department and Head of
+the Railway Signal Architecture Design Department. In
+2012, he started his own business in the direction for the
+
+mobile phone taxi service market.
+Wang Hongwei
+
+Master from Sichuan University, 10 years of experi-
+ence in technology research in IoT; early platform
+architect for Huochebang; a leader for the first industri-
+al routing AR531 device in Huawei; inventor of the
+High-speed Railway Signal 3003 Combined Default -
+Security System and Smart Packaging.
+
+Michael Zhang
+
+MBA from National University of Singapore. Bach-
+elor from Fudan University. Mr. Zhang has over 20
+years of experience in IT management and operation in
+Asia. He is a leading expert in cross-border trade and
+
+supply chain management.
+
+Yin Xiangyu
+
+Head of INT China. A diehard fan for the IoT. One
+of the earliest IoT research and development practi-
+tioners in China, entrepreneur of successive Internet
+
+startups and Apache Mynewt code contributor. Mr. Yin
+has participated in the research and development,
+INT
+4 Make A different world
+
+application and promotion of wearable remote
+single-soldier life test instrument based on GPRS, depth
+of anesthesia tester, early diabetic neuropathy tester and
+
+the first WeChat-based IoT device in China - Welomo.
+Feier Chen
+
+INT Chief Business Officer, She graduated from
+the Beijing Film Academy and has extensive practi-
+cal experience in the cross-border integration of real
+estate, finance, Internet and government network.
+
+Zhang Bo
+Mr. Zhang holds a Mater’s Degree from Huazhong
+
+University of Science and Technology. He has 12 years
+of experience in stystem architecture; a leader for
+DDOS protective devices in H3C; head of the
+High-speed Railway Signal double 2-vote-2 Security
+Mechanism in Huawei; architect for the first industrial
+routing software in Huawei and metro system ATP&
+ATO system.
+
+Zhang Hangjun
+
+Graduated from Hangzhou Dianzi University, 11
+years of experience in hardware development; in charge
+of R&D of 10+ EMC testing devices; head of the first
+industrial routing hardware in Huawei, in charge of
+R&D of vehicle-mounted, CBI and rail-side signal
+system hardware of high-speed railway, metro system
+
+and tramcars.
+
+Xu Chun
+
+Master from China Jiliang University. Worked
+successively in Huawei and CETC, an expert in
+software system engineering and highly reliable and
+secure system design. When he worked in Huawei, Mr.
+Xu was in charge of design and development of
+high-speed railway signal systems and the RBC system;
+when he worked in the IoT Research Institute of the
+CETC, he was in charge of the project of Smart Zhili in
+Huzhou and other projects and he was the technology
+chief in charge of top-layer planning, network deisgn,
+applications, deployment and development of hardware
+
+terminals, etc.
+Chen Yuqi
+School of Mathematics of Sun Yat-sen University,
+
+former development engineer of the distributed system
+of SouFun.com and contributor Google Brillo code.
+
+INT: An economy driven solution to improve the device
+interconnection of Internet of Things
+
+11.2 Advisors to the Team
+
+Kong Huawei Head of Shanghai Sub-institute of the
+Institute of Computing Technology, Chinese Academy
+of Sciences and Chief Scientist of Venture Capital
+Investment of Zhangjiang Hi-Tech.
+
+Tan Lei Blockchain and big data mining expert,
+promoter of North America Blockchain Association
+(NABA), 13 years of service in Microsoft Headquar-
+ters, Master from Duke University, author of books like
+Blockchain 2.0.
+
+Ramble Chairman of North America Blockchain
+Association (NABA), Chief Architect for Guiyang
+Blockchain Financial Regulation Sandbox, Chairman
+of Guiyang Blockchain Finance Incubator, Founder of
+GooCoin and SWFT.
+
+Roy Li Celebrated network security and IoT expert.
+
+Zhao Yafu Director of Risk Management of Guang-
+dong Zhuo Tai Ci Capital Ltd.
+
+Liu Jinhua CPA, CTA, Co-partner of Shandong
+Shixin Certified Public Accounts Firm, accounting and
+tax consultant for several listed companies, former
+of-ficial of Shandong Provincial State Taxation Bureau.
+
+Mo Lei Partner of Guangdong ETR Law Firm.
+
+11.3 INT Angel Investment Team
+
+Wang Dou Founding partner of Silicon Valley Geek
+Capital and Link Capital
+
+Liang Junzhang Co-founder of Kinzon Capital.
+Li Jiaxuan Co-founder of Future Fund.
+
+Huang Zhiyi Co-founder of Sino-US Venture Capi-
+tal.
+
+Luo Wen Chairman of iwali Technology.
+
+Zhou You Director of Hangzhou Shunwang Tech-
+nology Co Ltd, Chairman of Fuyun Technology.
+
+Lin Shirong Founder of Enhou Investment.
+Zheng Zhiping Founder of aizhan.com.
+
+Lin Xirong Co-founder of ITB CAPITAL.
+
+11.4 Team achievement
+
++ China's first generation remote single soldier life
+status detection wearable clothing based on GPRS
+Make A different world
+
++ China's first depth of anesthesia tester concept
+
+products
+
+PHS products, communication platform and
+
+communication protocol system
+
++ The first CDMA switch in China
+
+HUAWEI's first industrial routing hardware,
+ARS531
+
++ High speed rail signal 3003 combination fault and
+
+safety system
++ H3C 100 G class DDOS protective device
++ HUAWEI high speed rail signal Double 2-vote-2
+
+2security system
++ Chinese subway ATP& ATO system
+
++ Interbank settlement blockchain application
+
+system
+
++ In 2016, the test of a vehicle connecting blockchain
+application “Automatic Traffic Interchange System”
+based on ETH was successful.
+
+12 INT Foundation
+
+INT Foundation is a non-profit organization which is
+established for supporting IoT application projects
+based on INT platform.
+
+12.1 The Governance of INT Fund Com-
+mittee
+
+INT Fund Alliance Committee adopts the alliance
+rotating chairmanship, in which a chairperson-in-office
+will be elected by voting every other year and hold
+his/her office for only one tenure. The Committee has
+several management centers, including Blockchain
+Technology Development Center, Blockchain Commer-
+cialization Center, Financial Management Center, Risk
+Control and Management Center and General Affairs
+Management Center, which give guidance for work in
+their respective business departments.
+
+12.2 Capital Source and Management
+
+The capital used for maintaining the operation of the
+INT project mainly originates from batch-based venture
+investment into underlying assets INT token as well as
+
+membership dues, donations, etc. paid by members of
+
+12
+
+INT: An economy driven solution to improve the device
+interconnection of Internet of Things
+
+the alliance blockchain. Some INT will be converted
+into other forms of equity assets for project operation if
+
+necessary.
+12.3 Financial management explanation
+
+Financial management of the INT Foundation
+follows the principle of comprehensive management,
+frugality and practical results orientation. INT Founda-
+tion assets management is included in the all-round
+budget management and financial operating budgets are
+made based on actual operational conditions. Annual
+financial operating budget shall be submitted to the
+Autonomous Committee for review; monthly financial
+budget shall be re-viewed by the Execution Committee.
+The Financial Management Center is responsible for
+preparation and execution of reports and make disclo-
+sure on a quarterly basis. INT Foundation will engage
+third-party auditing to supervise financial operation of
+the project, audit capital and prepare auditor’s reports
+which will be announced in annual information disclo-
+sure. Financial statement disclosure channel: https://in-
+tchain.io/
+
+12.4 Progress Disclosure
+
+The promotion team of the INT project commits
+makes a commitment to manage crow-funding encrypt-
+ed digital assets in the principle of dedication, integrity
+and prudence and diligence. In order to protect inves-
+tors’ interests, strengthen management and efficient use
+of INT and promote healthy development of the INT
+project, the information disclosure system is adopted
+for the INT project. INT hopes to standardize digital
+asset management, improve self-discipline in the block-
+chain industry and enhance transparency of manage-
+ment of encrypted digital assets on blockchain by
+setting itself as an example to safeguard long-term
+development of the blockchain industry.
+
+INT will disclose a quarterly report within two
+months as of completion of each quarter and prepare
+and disclose an annual report within three months as of
+the date of each fiscal year (i.e. December 31 every
+year).Contents of these reports include but not limited
+to technology development milestones and progress of
+the INT project, application development milestones
+and progress, digital asset management, duty perfor-
+mance of the team, financial conditions, etc.
+INT
+4 Make A different world
+
+INT will disclose important temporary information
+of the INT project in a real-time manner on an irregular
+basis, including but not limited to major cooperations,
+any change to core team members, lawsuits involved
+INT, etc. INT will disclose information and financial
+
+statements on its official website https://intchain.io/.
+12.5 Advisory committee
+
+INT will invite domestic and foreign experts
+engaged in the field of blockchain industry for many
+years, notables with rich experience in work perfor-
+mance, legal entertainment culture and other profession-
+als, and people familiar with government policy to form
+a third-party expert advisory committee, and to provide
+assistant and other
+
+consultants, decision-making,
+
+outside brain staff, including:
+
+1) Demonstrate and guide the team's work plan and
+major projects, assist the project development planning
+
+and design;
+
+2) Undertake projects of government research and
+industry commission to carry out industry research;
+
+3) Organize the research on the hotspot issues of loT
+and blockchain, and provide consulting services for the
+
+team;
+
+4) Strengthen the exchange of information, regularly
+hold industry forums, guest discussions, academic
+
+exchanges, etc.
+
+INT Expert Advisory Committee includes the
+following experts: Kong Huawei, Director of Shanghai
+Institute of Computing, China Academy of Sciences
+(CAS); Xiang Ruofei, CAS post-doctoral expert in
+blockchain; Zheng Zhiping, Founder of aizhan.com and
+expert in network marketing; Zhao Yapu, risk control
+supervisor of Guangdong Zhuotai Investment Manage-
+ment Co., Ltd.
+
+12.6 INT Legal Counsel
+
+The INT Foundation will employ well-known
+international law firms as an INT project legal
+advisor to provide comprehensive legal services
+for the design of the digital asset transaction
+structure, operational compliance, legal wind
+control system design, and overseas legal advice
+for the INT project.
+
+13
+
+INT: An economy driven solution to improve the device
+interconnection of Internet of Things
+
+13 Disclaimer
+
+This document is meant only for conveying infor-
+mation and does not constitute an opinion on the trading
+of INT token. Any such proposal shall be carried out
+under a trustworthy provision and with the permission
+of the applicable securities law and other relevant laws,
+and the above information or analysis shall not consti-
+tute investment decisions or specific recommendations.
+
+This document does not constitute any investment
+suggestion, investment proposal or abetted investment
+in relation to any form of securities. This document
+shall neither constitute nor be construed as any behavior
+of providing any buying and selling or any behavior of
+inviting to buy and sell any form of securities, and it
+shall not be a contract or commitment in any form.
+
+INT has made it clear that users with relevant inten-
+tions have had explicit knowledge about the risks of
+INT platforms and that, investors, once involved in any
+investment, are deemed as having known about and
+accepted the risks of this project and being ready to
+undertake every corresponding result or consequence
+for their investment.
+
+INT token is a digitally encrypted currency used on
+INT platforms. When this paragraph is being compiled,
+INT token remains unable to purchase relevant goods or
+services. We cannot guarantee that the INT currency is
+bound to appreciate, instead it may also depreciate
+
+under certain conditions.
+
+INT token is neither an ownership nor a control
+power. Any control over INT token does not represent
+the control power over INT or its application. INT token
+does not empower anybody to involve in such control or
+
+make any decision on INT and its application.
+
+14 Risk Statemen
+
+14.1 Risk of Loss of INT token due to Loss
+of Certificate
+
+Each buyer will have a corresponding INT account
+after allocation of the INT token. The only way to
+access this INT account is a related login credential
+chosen by each buyer. The loss of such credential will
+result in loss of INT token. The best way to store a login
+
+credential securely is to securely store it in one or more
+Make A different world
+
+places rather than any public place or a place where a
+
+stranger will show up.
+
+14.2 Risks Associated with Core Protocols
+of Ethereum
+
+Before the launch of the main blockchain of INT,
+INT token is developed based on Ethereum ERC20
+Protocol. Therefore, any fault incurred by the core
+protocol of Ethereum, unpredictable functional failure
+or incurred attack will possibly cause INT token to stop
+working or lose functions in an unexpected way. For
+further information about Ethereum protocols, please
+visit http://www.ethereum.org
+
+14.3 Risks Associated with Buyer's Creden-
+tial
+
+Any third-party that acquires a buyer’s login creden-
+tial or private key is likely to control his/her INTcoin
+directly. To minimize this risk, buyers are expected to
+protect their electronic devices to prevent admittance of
+any unverified access request and any access to contents
+in such devices.
+
+14.4 Risks Associated with Judicial Regula-
+tion
+
+The blockchain technology has become a main
+target of regulation in major countries and regions. If a
+competent authority for regulation exerts influence, INT
+applications or INT token will be impacted. For exam-
+ple, statutes restricts the use and sale of electronic
+
+tokens.
+
+14.5 Risk of Lack of Attention to INT
+Applications
+
+It is possible that INT applications are not used by a
+large number of individuals or organizations. This
+means that the public is not interested enough to develop
+and grow these related distributed applications. This
+phenomenon of lack of interest may have negative influ-
+ence on INTcoin and INT applications.
+
+14.6 Risk of INT Related Applications or
+Products Failing to Meet the Expectations of
+INT Itself or Buyers
+
+INT applications are still in development and they
+may be changed significantly before the release of
+
+14
+
+INT: An economy driven solution to improve the device
+interconnection of Internet of Things
+
+official versions. It is possible to fail any expecta-
+tion or imagination of the INT itself or buyers for the
+functions or forms (including participants’ behaviors)
+of INT applications or INTcoin. This can happen
+because of any analysis with error or any change to
+
+underlying design.
+14.7 Risk of Hacking or Theft
+
+It is possible that any hacker or organization or
+country or region tries to interrupt INT applications or
+INTcoin functions in any way, including service attacks,
+Sybil attacks, guerrilla attacks, vicious software attacks
+or consistency attacks, etc.
+
+14.8 Loophole Risk or Risk of Vigorous
+Development of Cryptography
+
+INTcoin might be lost due to development of
+cryptography by leaps and bounds or development of
+other related sciences and technologies, like develop-
+ment of quantum computers, or decoding risks brought
+
+to encrypted tokens and INT platform.
+14.9 Risk of Lack of Maintenance or Use
+
+Buying INTcoin shall be considered as support for
+and investmen'
+the IoT rather
+
+in the application and development of
+than speculation. INTcoin may have
+considerable market value in a certain period of time
+and enable early investors to make promising earnings.
+
+However, if the INT platform is not well maintained or
+
+used sufficiently, such appreciation is not of much
+
+practical significance.
+14.10 Risk of Loss due to Lack of Insurance
+
+Unlike bank accounts or accounts with other finan-
+cial institutions, storage in an INT account or Ethereum
+network is normally uninsured. Any loss under any
+circumstances is not underwritten by any open organi-
+zation or individual.
+
+14.11 Other Unpredictable Risks
+
+Cryptographic token is an emerging technology.
+Besides the risks elaborated herein, there are also some
+risks which are unpredictable by the blockchain indus-
+try itself and the INT team. For further information,
+please visit INT’s official website: https://Intchain.io
+Make A different world
+
+Definitions
+
+[1] Bitcoin: Bitcoin is a virtual currency and it is not
+issued by relying on a certain currency organization; but
+rather, it is generated through a huge amount of comput-
+ing according to a certain law. Bitcoin uses the distribut-
+ed database constituted by many nodes in the entire P2P
+network to confirm and record all trading behaviors and
+guarantees security of all parts of the currency circula-
+
+tion process by leveraging cryptographic design.
+
+[2] loT: Internet of Things, i.e. network links
+between things.
+
+[3] Apache Mynewt: an open-source community
+project promoted by the Apache Software Foundation
+(ASF).
+
+[4] Mynewt: a real-time operation system focusing
+on IoT applications, including low power consumption
+bluetooth (BLE50) wireless transfer protocol stack
+NimB LE; latest stable version 100-b1.
+
+[5] DAPP: Decentralized Application.
+[6] DAC: Decentralized Autonomous Corporation.
+[7] Distributed Ledger.
+
+[8] Fog Computing: in this model, data, (data)
+processing and applications concentrate in devices at the
+edge of the network rather than almost all of them
+storing in the cloud. It is an extended concept of Cloud
+
+Computing.
+
+[9] Hash: a classic technology in cryptography. An
+input with a random length is turned into an output
+composed of letters and numbers with fixed length
+through hash algorithm.
+
+10] Hash/s (H/S for short): a computing perfor-
+mance parameter, i.e. the number of hashes processed
+per second. 10OMH/S means it is able to process 100
+million hashes every second.
+
+11] Merkle Tree: it is a double-fork tree, composed
+of a set of leaf nodes, a set of middle nodes and a root
+
+node.
+
+12] PBFT: Practical Byzantine Fault Tolerance,
+
+which is also known as the Practical Byzantine Fault
+
+15
+
+INT: An economy driven solution to improve the device
+interconnection of Internet of Things
+
+Tolerance algorithm consensus mechanism. It is a
+consistency algorithm for message delivery, wherein
+consistency is achieved through three stages to deter-
+mine the final generation of blocks. In the case that
+there are 3f+1 nodes, such algorithmic mechanism
+decides f fault nodes can be tolerated to exist without
+making any difference to the consistency result. Such
+mechanism can be independent from the existence of
+tokens. Consensus nodes can be constituted by the
+participatory and supervisory parties. The shared delay
+for 2 to 5 seconds can basically fulfill commercial
+
+requirements.
+
+[13] ZKP: zero knowledge proof, a concept put
+forward by S.Goldwasser, S. Micali and C. Rackoff in
+the 1980s, It means that a prover enables a verifier to
+believe that a certain conclusion is correct without
+providing any useful information to the verifier.
+
+[14] PoA: Proof of Activity.
+[15] POW: Proof of Work.
+
+[16] POS: Proof of Stake. It is a consensus mecha-
+nism upgraded from the PoW. It controls the duration of
+mining based on how many tokens a node owns and
+how long it holds a token; it can effectively shorten
+mining time, but it does not avoid the issue of waste of
+
+computing resources of miners.
+
+[17] DPOS: Delegated Proof of Stake. For its princi-
+ple, a token selects a certain number of nodes through
+voting and completes verification and bookkeeping for
+them. This consensus mechanism can significantly
+reduce the number of nodes which participate in book-
+keeping and verification so as to achieve rapid consen-
+sus verification. However, it also relies on the existence
+of the token and this limits some applications which do
+not need the existence of the token.
+
+[18] ERC20: the ERC20 Token is a common
+
+exchange standard for ETH wallet, allowing developers
+of wallets, exchange and other smart contracts to know
+
+the way a new mark operates based on this standard in
+
+advance. In this way, they can design their own applica-
+tions to take care of these tokens without waiting for
+any update to a new token system.
+>
+‘ INT . INT: An economy driven solution to improve the device
+v Make A different world interconnection of Internet of Things
+
+[19] ERC223: the ERC20 Token is unable to send
+tokens to a contract which is incompatible with them.
+This is the reason for why there is a risk of loss of some
+capital. The ERC223 Token will introduce a new
+function to the existing ERC20 standard to prevent any
+
+unexpected transfer.
+
+[20] Raspberry Pi: Rpi for short. It is a mini comput-
+er of credit card size designed for learning computer
+programming education and its system is based on
+
+Linux.
+
+[21] Arduion: a convenient, flexible and easy-to-use
+open-source prototype platform. It includes hardware
+(various models of Arduino boards) and software (Ardu-
+ino IDE). It is developed by an European development
+team in the winter of 2005.
+
+References
+
+A. Tapscott, D. Tapscott, How blockchain is chang-
+
+ing finance, Harvard Business Review, 2017.
+
+T. Stein, Supply chain with blockchain—showcase
+RFID, Faizod, 2017.
+
+S. Nakamoto, Bitcoin: A peer-to-peer electronic cash
+system, Bitcoin.org, 2009.
+
+R. Hackett, The financial tech revolution will be
+tokenized, Fortune, 2017.
+
+D. Bayer, S. Haber, W. S. Stornetta, Improving the
+efficiency and reliability of digital timestamping,
+Sequences II: Methods in Communication Security and
+
+Computer Science, 1993.
+
+A. Legay, M. Bozga, Formal modeling and analysis
+of timed systems, Springer International Publishing AG,
+2014.
+
+A. Back, Hash cash—a denial of service count-
+
+er-measure, Hashcash.org, 2002.
+
+B. Dickson, Blockchain has the potential to revolu-
+tionize the supply chain, Aol Tech,

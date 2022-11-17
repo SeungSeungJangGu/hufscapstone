@@ -1,0 +1,1270 @@
+EUSSHIELD SYSTEM
+
+ZSC
+
+ZEUS SHIELD COIN
+
+Zeusshield Smart Insurance Market
+
+V0.7
+
+Zeusshield Blockchain Technology Development Co., Ltd
+
+July 22, 2017
+2s. ZEUSSHIELD SYSTEM
+
+Table of Contents
+
+L. ADStraCte. ee eee eee cseceeseseeceeseseecsesesececseseecscsecessesssecscseseeecaesesesscseseeasaceeeesaeeaeeeas 4
+2. Insurance markets... cece eeseesescseseeeesesceecscsesseeeseseececsessessscseeseassesetessesseeseeaeets 4
+3. Industrial Weaknesses... cesses eseseeseseseeeeesesceececsesseecesseseeecsessesscsenseesseseneeaeaee 6
+3.1 Multiple layers of agents ........ccccesescesesseseecceecseeseeecseescecesecseeececaeeseeeeeeeatenenees 6
+3.2 Malicious fraud... cece eee ceeseeseseseseceesescseeecseseeecseseeeeecseseeesscseseeasseeeeeaeseeees 6
+3.3 Serious lack of diversity in insurance products... cee eeseeeteeeeeeeeeeneees 7
+3.4 Moral hazards... eee sesesseeeseceseecseseessscseeeesesesesscseseeesscseeeeesseeseesseseeesaeaee 7
+3.5 Regional restrictions..........cccceceeesseseeseseeseesceeeseeseeecseeaeeceseeseeseeeeaeeaeeeeeeeaeeaeeeeaees 8
+A. SOON. eee cece cecsesceeecsescseeecseseeecacseseeecaeseeescseecaeseseeesseseeesaeseesscaeeeearaeseeesaeaes 8
+4.1 Digital identity + smart CONtIACtS........ ee eseeceseeseeceeeeseeseeeeeeseeceseeseeeeeeeseeaeenents 8
+4.2 Artificial intelligence MOUIe.......... eee eceesesseteeseeeeseeseeeseeseeseeeseeaeeeeseeaeeeeeeaees 9
+4.3 P2P insurance market... eee eeseeeesesceeeseseeeeecseseececsesseesscseseeassseeeeaes 11
+4.4 SUMMALY.. ee eee cs eeeeeeseeeeecaeseeececseseeecaeseesscseesasseseeesseseeesasseeesecseeseae 12
+5. Why Ethereuim? 0... ececcecescessesceecseeseeeeseeseeaeseeseescecaecseeeeeecaeeaeeaeaeeseeeceesaeeaeeeeaeeateas 14
+5.1 Ethereuin.... cece esc eccseseesescseseeseseeecscseseeecseseeececsessessscsesesseseeesssseeesesseeeeeeas 14
+5.2 Smart COMtACtS eee eeeeeeeseseeseeesesescecseseeesscseeecscseeessssesseesssseesetsesseaeas 15
+6. Zeusshield System... cesses ese sseseseeeeeseseeeessseeescseseeeescseeeesssceeecaeeeeessaeseeeeaes 18
+6.1 System framework... eee eee ee eseeeeeeseeteesesesetecseseeecsescsececsesseesacseeeeasseeeees 18
+6.2 Zeus Shield Com... cesses eescseeecseseeeeesseeeeeseseeeecaeseeesscaeeesesseeeesaeseeees 18
+6.3 Database management subsystem ..........cceececceceeeseeseeeeseeseeceeeseeeceeeaeeseereeeasens 19
+6.4 Module management subsystem...........:cccsesceseseeseesceeeeeseeeeseeeceeceeeaeeeeeeeaeeaees 22
+6.5 Zeusshield client... ee eee eeeeeeecseseeecseseeeeecseeeeescseescaeseeeesseseeeesseneeeeaes 25
+6.6 Zeusshield system's Operating LOGIC... eeeseeeeeeseeseeeceeseeseeeseeseeeeseeseeeeaeeas 26
+7. The Zeusshield Board of Directors... ccc ccesceseseeseseseeeeseseseeseaeseeeesseeeesaeaeeeees 28
+ToL Makeup... cc cscsecesesseesscseeececseseescseseeessescsececseseeesssscseeesseseesecseseesssseeesaeaee 28
+7.2 Main tasks... ceeccsecesesceeeseesseeescscescecseeessscseeecsescsesscseseeessessesecsesseesseseeeeaeaeee 28
+7.3 Nature of the board of directors... eee eeseeseeeseeseseseeeeesesseesscseeeetseeseees 29
+8. Zeusshield Community FUN... eee ceseeeeecseeeeseseseeecseseseeesseseeesseseseeseseeeeesens 30
+2s. ZEUSSHIELD SYSTEM
+
+8.1 Community fund Structure... eee eeseceeseseeeeeeseeeeeeseseeeeecsesseesseseeeeaeaee 30
+8.2 OUP MISSION... eee cece ceeeeecseeeeeecseseeecscseeecseseeesecseseeesseseesscseeetasseeesesseseeees 30
+8.3 Fund utilization principles... ceceseeseseescesceeeseeseeeeseeseeeeeeseeeceeaeeeeeeeeeaeeeee 30
+8.4 Fund mode of operation... ccceceeesseseesessesceeeseeseeeceeseeseeeeseeeeeecaeeaeesenseaeeaees 31
+8.5 Community fund operating model... eect ee eeeseeeeeseseeeteeseeeeeeseseeeees 31
+8.6 Future development of community fUNd........ ei eceeeeeseesceeeseeseeeeteeseeeeneeaeees 32
+8.7 Most favoured partners of the Zeusshield Community Fund... 32
+8.8 Zeusshield Community Fund and Zeusshield Board of Directors.................. 33
+9, ROAM aP..... ee eeeeceeceseesceceseeseeseeeseesescesecseescsecaeesescseeseeaeeeesecseeeaesaeeseeeaeeaeereaeeaeeeserens 34
+10. Team makeup........ccccecescessesesseseesceecseeseecseeseeceneeseeecsecsecseeeeaecaeeaeeeseeseeeeneeaeeseeeateas 35
+10.1 Technical Teatn..... ce cceeecececeseesescseseeeescseeecseseseeesseseeesssseseeesaeseeeseeseeeeaes 35
+10.2 AdvisoryTeam.......ceccececcesessessesesseseescecseeseecseesecenecaeeececaeeseeeeeeaeeeeeeaeeeeerens 36
+10.3 Founding team... ceseceescesseecseseeececseeeesscseeecacseseeecaeseeesssseeeeeeaeaee 37
+LL. Disclaimer... ce ceeseeeeseeeeeecsesceecscseesescscsesecscsesesecsesseecsesseesscseeeasscseeesaesaeseeas 38
+12. ADMOXS... eee ee cececeeeseseeecseseeeeecaeseseescsesecacscseeesacsseesssceeeecaesesesscseeseasscseeesaeseeees 40
+12.1 Deep learning... eececceesceseesesseseeseseeseeseeecseeaeescseeseaeeeeaeeaeeeeaeeaeeeeereaeeaees 40
+12.2 Zeusshield system's deep learning..........c.ceceeeseeseeceseeeeeceeeeeseeeeneeseeeeneeaeeres 43
+2s. ZEUSSHIELD SYSTEM
+
+1. Abstract
+
+Insurance is an important tool for transferring risks. By nature, it is a
+form of mutual assistance between different groups. People transfer the
+risks that they cannot or do not want to bear to the insurer collectively
+and thus pay a small but regular amount in exchange for enormous
+economic guarantees. In this way, risks are transferred in the form of
+
+insurance.
+
+Blockchain is a distributed ledger technology. It is accessible to the public,
+inalterable and unforgeable, and therefore has the potential to help
+humankind turn the concept of an “Internet of value” into a reality.
+Blockchain is a fundamental technology for our species’ next phase of
+development and will affect all walks of life with its simple but perfect
+technical design. Considering their compatibility in many aspects,
+blockchain technology and insurance could be highly complementary to
+oneanother. Blockchain insurance, a new insurance model, is developing
+rapidly and will become an important part of the industry’s
+
+makeup,revolutionizing the traditional industry.
+
+2. Insurance markets
+As living standards rise, demand for insurance is ever increasing. This
+
+model of mutual assistance that distributes risks through financial means
+8: ZEUSSHIELD SYSTEM
+
+has become widely accepted and is now considered an essential part of
+daily life. Life insurance, vehicle insurance, cargo insurance, and various
+other insurance products have penetrated society and become strong
+guarantees of a happy life. Meanwhile, the insurance industries of major
+countries of the world have achieved revenues exceeding one thousand
+trillion dollars. Even in the economic downturn, the insurance industry
+registered an uptrend and became a major driving force for the global
+economy. Table 1 is Munich Re's forecast for the mean annual composite
+growth rate of insurance premiums in the world’s various emerging
+
+economies.
+
+Growth in Global P&C Insurance Expenditure 2017-2027 (%CAGR)
+
+Emerging Asian CCON0N cS. CD 7 |
+Middle-East and North Africa Gh 5.8
+Sub-Saharan Af ico 4.5
+Eastern ELope ———— a 3.8
+Latin Ancricd 2 3.6
+Asia-Pacific 41.8
+North America GD =] 4
+
+Western Europe Ga 1.4
+
+Table 1 Global Growth in CAGR of Premiums by Region
+2s. ZEUSSHIELD SYSTEM
+
+3. Industrial weaknesses
+
+Although the insurance industry is still an emerging industry in a global
+sense, more and more weaknesses have been identified within it as
+society develops rapidly and application technologies are continually
+upgraded and replaced. An analysis of the insurance industry shows that
+
+the main problems faced by the industry today include:
+
+3.1 Multiple layers of agents
+
+The traditional insurance industry relies too much on agents, and thus
+creating a problem of increasing intermediary costs and undermining
+customer interests. By integrating with the blockchain technology, such
+problem can not only reduce intermediary steps, but also minimize the
+
+premiums as well as enhancing the user experience.
+
+3.2 Malicious fraud
+
+"Utmost good faith" is a fundamental principle of insurance, which the
+insurance entities are required to abide by. In practice, however, utmost
+good faith cannot be objectively evaluated; rather it is established on a
+trust system. Insurance companies, for example, may conceal their
+contract terms out of self-interest, while applicants may cover up their
+
+actual situations in order to gain lower premiums.
+2s. ZEUSSHIELD SYSTEM
+
+Moreover, the law of large numbers determines that insurance operations
+must realize data sharing across a broader scope. As insurance companies
+pursue enormous interests, however, "information asymmetry" between
+firms easily occurs. Intentional concealment or uncooperative attitudes
+increasemoral hazards in society, particularly the probability of insurance
+
+fraud.
+
+3.3 Serious lack of diversity in insurance products
+
+Many insurance products available in the market have very poor
+specificity and applicability, and the insurance clauses are not compiled
+stringently enough, thus not satisfying the needs of applicants. Further,
+the lack of insurance diversity has also increased market competition,
+prevented effective distribution of social resources and even resulted in
+
+the massive waste of resources.
+
+3.4 Moral hazards
+
+Moral hazards have always been a big headache to insurers. For instance,
+a car owner may drive less carefully after taking out vehicle insurance,
+therefore the insurer has to pay out more in indemnities and the car owner
+suffers losses too—this is a scenario where no entity benefits from
+
+insurance service.
+2s. ZEUSSHIELD SYSTEM
+
+3.5 Regional restrictions
+In view of the differences between the insurance industry supervisory
+systems of different countries, the freedom to procure insurance products
+
+across national borders is significantly restricted.
+
+4. Solution
+
+In recent years points of correspondence between new technologies and
+the insurance industry have emerged. We hope, therefore, to restructure
+the insurance industry on the basis of blockchain and AI technology, and
+establish a new insurance ecosystem. We can summarize this
+
+restructuring in the following steps:
+
+4.1 Digital identity + smart contracts
+
+We will provide a technical solution using blockchain to all insurance
+companies and upload the insurance business data to the blockchain. We
+can use the authenticity and inalterability of information on the
+blockchain to address the problem of "self-identification". The digital
+identity established on the blockchain can't be altered, removed, edited or
+forged. Such digital identities include, but are not limited to, those of
+natural persons, and may be expanded to cover vehicles, airplanes and
+other physical objects; thus providing all physical entities that require
+
+them with credible digital identities.
+2s. ZEUSSHIELD SYSTEM
+
+Meanwhile, the Zeusshield system also allows for smart coded insurance
+contracts and more convenient insurance plans. Combining smart
+contracts with data management in fields like vehicles, traffic accidents,
+electronic medical records and personal information to provide
+revolutionary indemnification services.
+
+An example is combining smart contracts and flight data management to
+provide a new kind offlight delay insurance—there is infinite room for
+growth in this area. Such a blockchain solution can substantially save
+operating costs for insurance companies, eliminate unnecessary
+
+intermediary steps and enhance the insurance experience.
+
+4.2 Artificial intelligence module
+
+Insurance industry data used to be complicated and the ability to integrate
+it was not available. As a result, the potential value of such massive data
+was wasted. With the continual deepening of research in the AI area,
+people are gradually coming to realize the potential value of such
+
+enormous data resources.
+
+In the Zeusshield system, we will design the AI module and analyse the
+information in blockchain databas to help insurers increase their
+performance-price ratios and provide the insured with smart insurance
+
+packages and a stable, secure and trustworthy claims procedure. Coupled
+2s. ZEUSSHIELD SYSTEM
+
+with AI technology, the Zeusshield system will have the following
+
+advantages:
+
+4.2.1 Individualized policy and pricing
+
+In traditional actuarial research, the target of research is general statistics,
+with individual cases seldom studied. All policyholders are deemed to
+have the same level of risk, which is not strictly reasonable. Due to
+technical reasons, peer-to-peer (p2p) insurance models cannot be realized.
+With an additional AI module, the Zeusshield system offers an accurate
+risk control plan and a pricing model and customizes insurance policies
+for different customers. For instance, the car owner with a history of
+drunk driving will have a higher risk factor while the car owner without
+previous traffic violations will have a lower risk factor for traffic accident
+
+insurance.
+
+4.2.2 Targeted marketing
+More accurate marketing is possible through the analysis of information
+in databases. For instance, refund insurance can be recommended to users
+
+with sensitive skin.
+
+4.2.3 Development of new insurance products
+
+With the popularization of the Internet, people are facing more diversified
+2s. ZEUSSHIELD SYSTEM
+
+risks and their demands for insurance tend to be characterized by low
+insurance values, high frequency and fragmentation. AI technology can
+assist in the design of various insurance products, provide users with rich
+
+insurance packages and enhance user experience.
+
+4.2.4 Smart claim handling and verification
+
+AI modules offer great assistance at the stage of claim handling and
+verification. Taking the insurance platform of Ant Financial Services as
+an example—image identification technology is one of the key
+applications of claim verification. At the claims stage of consumer
+insurance, over 90% of the identification and judgment work is
+
+completed by backend technology.
+
+4.3 P2P insurance market
+
+As the plan moves forward, we will establish a P2P insurance platform
+that combines both blockchain and AI technologies. In the future, this
+platform will serve the insurer and the insured simultaneously. It will take
+the system’s original ZSC as a medium to establish a diversified and
+
+highly individualized insurance ecosystem.
+
+The ZSC system can be defined as a decentralized insurance agency
+
+platform. We can provide insurers with new insurance concepts and
+2s. ZEUSSHIELD SYSTEM
+
+insurance solutions on the chain. We can optimize the modes of execution
+of traditional insurers, reduce their operating costs, prevent losses from
+
+fraud and increase user bases.
+
+Meanwhile, we will also serve policyholders, satisfying their needs for
+risk transfer and providing individualized insurance package solutions.
+Policyholders will be able to choose any insurance product on the
+platform through the system terminal. Moreover, the Al-based platform
+
+will also be able to offer new insurance concepts to insurance suppliers.
+
+As a platform, we witness the contract process between the insurer and
+the insured and levy necessary handling charges and commissions. As the
+method of payment, ZSC will be partially used to construct the
+bottommost insurance and reinsurance capital pools, and provide the
+services to traditional insurers making more in-service fees, thus
+generating a beneficial cycle. Either AppStore or Taobao can be referred
+to regarding the main operating model for the platform. (See 6.4.2 for a
+
+detailed description of the capital pool module.)
+
+4.4 Summary
+According to relevant research statistics, FinTech had an application
+
+index of 33% in 2017, which shows that financial technology has moved
+2s. ZEUSSHIELD SYSTEM
+
+from the early adopters phase in 2015 towards the early majority phase
+(Rogers Adoption/InnovationCurve classification). FinTech companies
+are continually raising their status on the market and can already
+influence industrial standards and consumer expectations. With the
+continuous updating of technologies, FinTech will thoroughly
+revolutionize the traditional financial industry and become an
+
+indispensable part of our daily lives.
+
+As FinTech’s two core technologies, blockchain and AI have attracted an
+enormous amount of interest across the world. In the 27th European
+Conference on Networks and Communications (EuCNC) in Finland on
+June 12, 2017, Mr. Pekka Soini, head of the National Technical
+Innovation Bureau of Finland, emphasized the importance of blockchain
+technology and AI and included them in the four core technologies of the
+
+next 10 to 20 years.
+
+As an important branch of the financial industry and due to its unique
+features, the insurance industry is naturally compatible with blockchain
+and AI technology. In the future, the Al-based blockchain insurance
+models will address the weaknesses of the insurance industry and bring
+peoplea new insurance experience. Such an insurance model is fully
+
+based on an information society and will provide distributed,
+2s. ZEUSSHIELD SYSTEM
+
+contextualized and digitalized new insurance services.
+
+5. Why Ethereum?
+5.1 Ethereum
+Ethereum was initiated by whiz kid Vitalik Buterin in 2013 and 2014 with
+the aim of developing a "next-generation encrypted currency and
+decentralized application platform", which started development in 2014.
+The whole Ethereum system is realized by open source code and its core
+is the public blockchain platform based on Ether, the special encrypted
+currency. On this platform, Ethereum provides a decentralized Ethereum
+virtual machine to make it convenient for third-party developers to realize
+Ethereum-based smart contracts. An Ethereum virtual machine allows
+third-party developers to easily and conveniently reuse the blockchain
+core system as defined by the Ethereum and focus their R&D work on the
+application of blockchain. For that reason, more and more individuals,
+teams and companies are favouring Ethereum-based R&D and the use of
+distributed applications. This is leading to diversification of the Ethereum
+ecosystem and the creation of diversified applications.
+
+e When comparing it to other blockchain technologies, the Ethereum
+
+platform has the following main features:
+
+e Smart contracts: the contract programs developed by third-party
+2s. ZEUSSHIELD SYSTEM
+
+developers can be stored at a node on the Ethereum blockchain and
+tun at that node. For the purpose of operation, the program operator
+needs to pay commissions to the miners or stakeholders of the node
+where the program is located.
+
+e Uncle blocks: it incorporates the short blockchains that have not
+been included on the mother chain due to relatively slow mining
+speeds. Directed acyclic graph (DAG) related technology is
+adopted.
+
+e Proof-of-stake: it is an improvement on the current POW
+(proof-of-work)based mining algorithm and can save considerable
+computer resources needed for mining and avoid the network
+centralization arising from integrated circuits for special
+
+applications.
+
+5.2 Smart contracts
+
+If blockchain is the core technology that Ethereum uses for data
+processing, the smart contract system is the core technology that
+Ethereum uses for the processing of various applications. The
+crucialthing supporting the smart contract system is the Ethereum virtual
+machine. It provides a set of Turing-complete programming languages
+that are similar to the assembly language that can execute the code of any
+
+complicated algorithm for the bridging of data processing and application
+2s. ZEUSSHIELD SYSTEM
+
+processing. As it is very painful for a developer to directly use this set of
+Turing-complete languages for programming, Ethereum provides one
+senior language, Solidity, which is similar to C/C++. Today, Microsoft's
+main software product—Microsoft Visual Studio—has started to offer the
+
+Solidity programming language to program developers.
+
+Based on the Ethereum virtual machine and Solidity programming
+language, a third-party developer can develop an Ethereum smart contract.
+Put simply, each contract is a distributed application based on the
+Ethereum blockchain system. When a developer launches a contract on
+the Etherum platform, this contract is like an application agent living in
+the Ethereum platform. It has its Ether address for Ether transactions, data
+exchanges between the founder and other users, and execution of
+application with complex logic, for example establishing one
+
+Ethereum-based token system and one decentralized autonomous group.
+
+To allow an equivalent value system to be more effectively and
+conveniently reflected in an application based on Ethereum platform, the
+Ethereum and its smart contract system are designed according to the
+following principles:
+
+e Simplicity: as the data processing part of the blockchain is already
+
+packaged at the bottom layer of the Ethereum platform, an ordinary
+2s. ZEUSSHIELD SYSTEM
+
+programmer can perfectly develop a simple smart contract and
+create a distributed application with complex logic. This will
+finally help to lower the technical threshold for blockchain-based
+development and promote the process of opening up Ehtereum to
+all users.
+
+e Generality: based on the Ethereum virtual machine, a developer
+and even an ordinary Ethereum user can establish any smart
+contract or transaction type that can be accurately defined.
+
+e Modularity: the system makeup of Ethereum is designed to be as
+modular and divisible as possible. The benefits of this design can
+be continuously improved based on the internal functionality of
+Etherum, and its performance can also be improved. Meanwhile,
+the whole system is stable, scalable and secure and allows for the
+continuous proper operation of smart contracts based on the
+Ethereum virtual machine without making any changes.
+
+e Non-discriminatory: the Ethereum platform does not voluntarily
+restrict or block smart contracts of any given type; it does not
+attempt to object to the unwanted application of a specific type.
+The cost of running the application is the payment for the
+corresponding trading expenses according to the program's
+
+calculation steps.
+2s. ZEUSSHIELD SYSTEM
+
+6. Zeusshield System
+
+6.1 System framework
+
+According to the above-mentioned weaknesses and development
+bottlenecks of the insurance industry, and relying on the advantages of
+blockchain technology, we have designed a smart insurance management
+system based on the Ethereum platform called Zeusshield System. As
+shown in Figure 1, the Zeusshield system mainly comprises four parts:
+Zeus Shield Coin (ZSC) based on the Ethereum ERC 20 protocol, the
+(distributed) database management subsystem, the module management
+
+subsystem, and the webpage and smartphone-based Zeusshield client.
+
+Insured Unit Database
+—lull
+Artificial Intelligence Module
+fe
+f Insurer Unit Database,“ 5 Insurance company, group or individual
+i» | | | f >)
+if ‘ Risk fund Pool”
+ans ne %, x
+GSsicicumpliiie als Insurance contract database _ Insured Unit: Company, Group, Community
+ms
+4 & < G University, Individual
+5 Interface Module’
+in » cd 7
+‘ Customize Insurance Database
+
+Figure 1 Zeusshield System (Blockchain and AI based p2p insurance
+management system)
+
+6.2 Zeus Shield Coin
+Zeus Shield Coin (ZSC) is the token, which is developed on the basis of
+the Ethereum ERC20 protocol. ZSC is used to establish an insurance
+
+capital pool and a reinsurance capital pool in order to improve cash flows
+
+18
+-EUSSHIELD SYSTEM
+
+frominsurance contracts. This service can be provided to insurersas
+required. As this project progresses, the insurance ecosystemwill
+gradually improve. As the original token of the system, ZSC will offer
+
+more and more functions.
+
+6.3 Database management subsystem
+
+In order to increase the efficiency of data processing based on the
+Zeusshield System, all text-based information will be stored primarily on
+the Ethereum platform. Image and video files will be encrypted and
+
+safely stored on a service independent from the Ethereum platform.
+
+Insurance contracts database
+
+!C insurance product Y: insurance receiving unit A - insurance supply unit AD
+
+Cnsurance product X: insurance receiving unit A - insurance supply unit A) }
+
+Insurance receiving units database ! t Insurance supplying units database
+
+iC Insurance receiving unit 1; individual ») ' insurance supply unit 1; insurance company S
+
+i—>!
+‘(Insurance receiving unit 2: family ) i | Insurance supply unit 2: individual A, individual B ):
+
+a Insurance receiving unit 3: company D) f t
+
+Figure 2 Zeusshield Database
+
+As Figure 2 shows, the database on the Ethereum platform has four main
+parts—the insurance receiving units database, the insurance supplying
+
+units database, the insurance contracts database and the self-defined
+
+19
+2s. ZEUSSHIELD SYSTEM
+
+insurance products database. As the bottom layer of the Ethereum
+platform is based on distributed blockchains, the confidentiality, security
+and inalterability of relevant data in the four parts can be very effectively
+
+guaranteed.
+
+6.3.1 Insurance receiving units and insurance supplying units databases
+
+Insurance receiving units and insurance supplying units are two key user
+types of the Zeusshield system. As the name indicates, the insurance
+receiving unit is the physical entity that receives insurance services. A
+specific insurance receiving unit may be an individual, family, company
+or community. After the Zeusshield system is launched online, we will be
+able to establish more types of insurance receiving units according to
+actual business demands. Correspondingly, the insurance supplying units
+refers to the physical entities that supply insurance services. On the basis
+of the equivalent value system of the blockchain and in contrast to
+traditional insurance systems, the Zeusshield system provides an open
+platform that allows different types of insurance supply units to provide
+their insurance services. For instance, an insurance supply unit may be an
+insurance company, a team comprising multiple individuals or
+
+combinations of individuals and insurance companies.
+
+20
+2s. ZEUSSHIELD SYSTEM
+
+6.3.2 Insurance contracts database
+
+The insurance contracts database stores the corresponding insurance
+contracts or agreements signed between different insurance receiving
+units and insurance supplying units. Each insurance contract defines the
+corresponding insurance premium transaction mode and indemnification
+mode. Thanks to the security and inalterability of the Ethereum
+blockchain, the Zeusshield system can prevent insurance receiving units
+being affected by timing, geological or human factors when the claim
+conditions are satisfied and enable them to receive insurance payouts
+
+quickly and conveniently.
+
+6.3.3 Self-defined insurance product database
+
+The insurance services needed by insurance receiving units and insurance
+supplying units are stored in the self-defined insurance products database.
+The type and model of insurance can be proposed by the insurance
+receiving unit according to actual demand or provided by the insurance
+supplying unit according to its market analysis. Once these services are
+defined, the Zeusshield system will provide them to its users. The user
+may then sign the corresponding insurance service contract via the
+Zeusshield system. The executed insurance service contract will be
+
+included in the insurance contracts database.
+
+21
+2s. ZEUSSHIELD SYSTEM
+
+6.4 Module management subsystem
+
+The Zeusshield system provides different modules for smart database
+management and smart support for insurance services, wherein the three
+main modules are an AI module, a capital pool module and a client
+
+interface module.
+
+6.4.1 AI module
+The AI module delivers two main features—big data analysis and
+
+increased analysis efficiency through parallel computing.
+
+6.4.1.1 Big data analysis
+
+Big data analysis, as a feature of the AI module, offers multiple smart
+features to Zeusshield system users—for example, customization of
+special insurance services, insurance package recommendations, smart
+selection of insurance products, insurance product risk analysis and image
+
+identification during indemnification.
+
+Big data analysis is adopted primarily because the Zeusshield system
+provides one set of open features for self-defining insurance products so
+that insurance products can be developed in a more extensive, flexible,
+scalable and market-oriented manner. However, an ordinary insurance
+
+service developer (insurance receiving or insurance supplying unit) faces
+
+22
+“#5. ZEUSSHIELD SYSTEM
+
+a very important problem—how to establish a complete and accurate
+business model, including insurance premiums, insurance indemnification
+conditions and amounts to be indemnified. Meanwhile, the insurance
+receiving unit faces a further important issue—how to find an insurance
+product that suits its actual needs from a multitude of insurance products,
+while guaranteeing its highest performance-price ratio.
+
+6.4.1.2 Parallel computing
+
+Big data analysis is primarily conducted via deep learning in the
+Zeusshield system =~ oo on distributed network
+architecture have the capacity for natural parallel data processing,anda
+hot topic of research in the field of deep learning today is machine
+
+learning and parallel computing.
+
+The main purpose of machine learning is training a neural network (e.g.
+convolutional computing) via captured data to establish a data module
+and thus help the system to effectively forecast the corresponding
+feedback after the capture of new data—for instance, in the service
+customization, recommendation and_ service selection and
+recommendation mentioned above (see the annex for detailed
+
+descriptions of deep learning).
+
+To increase the validity of the forecast, however, it is necessary to use
+
+23
+2s. ZEUSSHIELD SYSTEM
+
+large amounts of data and repeated data learning and training. If a
+single-threaded mode is adopted as the training mode, considerable
+resources (e.g. CPU, GPU, memory and time) will betaken up, thus
+introducing a mode that requires parallel computing. As the blockchain
+and smart contract system of Ethereum are based on a distributed
+architecture with multiple nodes, it helps to distribute the learning data
+and learning procedures to different Ethereum nodes for parallel data
+
+learning.
+
+6.4.2 Capital pool module
+
+The Zeusshield system will record and analyse each insurance business
+and the ZSC capital circulation. Relevant analytical results will help the
+insurance supplying unit to make a detailed and accurate calculation of
+incomefrom thepremiumsof its insurance products. According to the
+actuarial results, the Zeusshield system will support two different
+insurance and reinsurance capital pools—unit-level capital pools and
+
+system-level capital pools.
+
+A unit-level capital pool needs to be supplied and maintained by each
+insurance supplying unit. The insurance supplying unit may gather
+income from premiums into a capital pool and adjust its insurance
+
+services on a real-time basis according to the income-from-premiums
+
+24
+2s. ZEUSSHIELD SYSTEM
+
+calculation. In this way, the capital pool can continuously ensure income
+from premiums is higher than the costs of indemnity payments. In this
+way, the insurance supplying unit can maintain a stable capital pool with
+capital surplus and stable growth. The capital surplus will be partially
+used to cover indemnity expenses, with the remaining part used for other
+insurance operations to generate more income.
+
+The Zeusshield system will establish a system-level insurance and
+reinsurance capital pool which primarily works to support insurance
+supplying units in the reasonable handling of rare cases when the capital
+pool is not enough to cover costs of indemnity payments; thus protecting
+
+the legal rights and interests of insurance receiving units.
+
+6.4.3 Interface module
+
+The interface module contains the client interface and the Ethereum
+external data interface, wherein the client interface enables the system
+user to conveniently, rapidly and securely use the Zeusshield system via
+its client. The Ethereum external data interface primarily works to allow
+
+the system to communicate with the external data server.
+
+6.5 Zeusshield client
+The Zeusshield client is an application for exchange and communication
+
+between the system and its users. We will develop a webpage and
+
+25
+ZEUSSHIELD SYSTEM
+
+smartphone-based client for our users. Meanwhile, we will also provide
+an open application programming interface (API) for the convenience of
+
+third-party developers.
+
+6.6 Zeusshield system's operating logic
+Put simply, Zeusshield system is an insurance-based P2P market platform.
+See Figure 3 for the Zeusshield system’s operating logic regarding
+
+specific insurance supplying units and insurance receiving units.
+
+oy Operating logic
+
+~(2 » +(Rl-
+fe a. 2) A
+Applicant for Application . Insurance supply unit Supply-level capital pool
+insurance supply unit —_ review: capital, credit a
+Wa un 4 e)
+Insurance receiving unit Signing of insurance contract Payment selection: ETH or ZSC System service fee
+i J i
+—
+\Z$c
+Consumption of ZSC
+’ v
+fig] a:
+Indemnification System-level capital pool
+a
+
+Zeus Shield system is an insurance-based P2P
+market platform.
+
+Figure 3 Zeusshield System’s Operating Logic
+
+For insurance supplying units, it is first necessary to apply to Zeusshield
+Blockchain Technology Development Co., Ltd for a space in the system.
+Applications will be examined and approved on the basis of multiple
+
+factors—such as, the supplying unit’s capital support and reputation.
+
+26
+2s. ZEUSSHIELD SYSTEM
+
+Once approved, the insurance supplying unit needs to transfer a certain
+amount of capital into the blockchain-based digital currency system to
+establish the supply-level capital pool. The inbound capital may be in
+Ether or ZSC. Thereafter, the insurance supplying unit may produce and
+display different insurance products through the Zeusshield system, and
+potential insurance receiving units can choose from them.
+
+When an insurance product is selected, the insurance receiving unit needs
+to sign an insurance contract with the corresponding insurance supplying
+unit and pay relevant expenses in a digital currency, either ETH or ZSC.
+The payment comprises three parts: the first part is paid to the insurance
+supply unit; the second part is the service charge paid to Zeusshield
+Blockchain Technology Development Co., Ltd at a certain ratio; the third
+part is the transaction fee which shall be paid in ZSC only. The used ZSC
+
+will be recycled by the system to establish a system-level capital pool.
+
+Moreover, if the insurance supplying unit needs to use the system-level
+
+capital pool, it has to pay certain service charges to Zeusshield
+
+Blockchain Technology Development Co., Ltd.
+
+27
+2s. ZEUSSHIELD SYSTEM
+
+7. The Zeusshield Board of Directors
+
+7.1 Makeup
+
+The Zeusshield Board of Directors comprises a core team oriented
+towards the same goal and it is a valid management team established on
+the basis of a blockchain smart contract. The board members share a
+common understanding of the prospects for future applications of
+blockchain insurance and hold the same concepts regarding the
+
+Company's operation and development.
+
+7.2 Main tasks
+
+The board of directors are the founders, executives and guardians of ZSC
+smart contracts. From the beginning of the design and through the
+building of the blockchain-based smart contracts, they could foresee
+future operating modes and the possible benefits for all participants. The
+board of directors proposes strategic guidance on ZSC, allowing the ZSC
+
+design to be adequately forward-looking and practical.
+
+The board of directors is the company's management body liable for the
+present and future interests of ZSC token owners and ensures the healthy
+running of the ZSC system. “We will provide outstanding user
+experience to customers. We also aim to provide a transparent and fair
+
+management model for our users, partners and team members.”
+
+28
+2s. ZEUSSHIELD SYSTEM
+
+7.3 Nature of the board of directors
+
+The board of directors is an innovative management mechanism working
+in an open, transparent and supervised manner. In operational design, the
+board applies the essential features of blockchain technology in its
+practical operations and thus revolutionizes the traditional operating and
+management concepts of a board of directors. Our board's
+resolution-making process directly interfaces with smart contracts, with
+the conventional legal contract is converted into blockchain language.
+One-click voting links make it easier to execute and implement board
+resolutions, which thus become fair and transparent smart executive
+orders. The board has a decision-making and supervisory role in the
+strategic guidance, risk management supervision, management succession
+planning and accomplishment of other basic tasks; it also provides system
+
+maintenance, ensuring the proper operation of the ZSC system.
+
+Zeusshield performs its supervisory work through risk forecasts and
+mechanism improvements. It aims to identify and expose problems,
+eliminate loopholes and optimize mechanisms. In the future, the company
+will authorize frontline staff via smart contracts using blockchain
+technology and perform field supervision and multi-platform
+management on behalf of all TSC owners. The board releases powerful
+
+and unique messages, listens to proposals and take actions for the
+
+29
+2s. ZEUSSHIELD SYSTEM
+
+continuous optimization of management; it takes advantage of social
+media, emphasizing its efficient application and its use for carrying out
+candid exchanges; it has put in place procedures to effectively control
+
+information disclosure to ensure the reliability of public reporting.
+
+8. Zeusshield Community Fund
+
+8.1 Community fund structure
+
+Executive president, advisors, executive committee and supervising
+committee
+
+8.2 Our mission
+
+We are highly committed to blockchain insurance R&D and promotion.
+To fully realize the potential of global R&D and application of
+blockchain insurance, we will adopt highly open methods of thinking and
+operation and establish Zeusshield Community Fund executive bodies of
+in all five continents. The initial regions of operation are China and Japan
+in Asia, Australia in Oceania, Holland, Sweden and Germany in Europe,
+
+the USA and Canada in North America, and South Africa in Africa.
+
+8.3 Fund utilization principles
+Zeusshield Fund is open to all universities, enterprises, natural persons,
+
+government organizations and non-government organizations. Any
+
+30
+2s. ZEUSSHIELD SYSTEM
+
+organization and individual that wishes to make contributions to the
+blockchain insurance sector can apply to use our fund through the fixed
+procedures on the official Zeusshield website. We will regularly publicize
+our annual quota, names of organizations applying for the fund, names of
+organizations using the fund, our user quota, progress and other relevant
+information in an open, transparent and timely manner on the Zeusshield
+
+Community Fund home page.
+
+8.4 Fund mode of operation
+
+The Zeusshield Community Fund is initially composed of 24% ZSC. It is
+allocated upon application and approval to universities, enterprises and
+organizations committed to blockchain insurance R&D and application.
+The achievements and patents that these organizations make using the
+fund will be vested to the fund and the organizations at an agreed ratio.
+To ensure the continuous and sustainable development and growth of the
+Zeusshield Community, the fund will also look for more business
+
+opportunities and development.
+
+8.5 Community fund operating model
+The original shareholders of the Zeusshield Community Fund will elect
+people to fill each position once every two years. Anyone who wishes to
+
+contribute to the blockchain insurance sector can apply to become a
+
+31
+2s. ZEUSSHIELD SYSTEM
+
+member of the Zeusshield Community Fund. We will provide the contact
+
+information and working model of your nearest fund.
+
+8.6 Future development of community fund
+
+At a certain point in the future, when the community fund has reached a
+certain development stage and conditions are ripe, the Zeusshield
+Community Fund will consider establishing a ZSC-based operational
+token allowing members of the fund to make greater returns. This will be
+
+conducive to the development and expansion of the Fund.
+
+8.7 Most favoured partners of the Zeusshield Community Fund
+
+In order to better implement new insurance concepts, the Zeusshield
+Community Fund will favour and prioritize partnership with innovative
+enterprises with hi-tech products. New ways of thinking, new
+technologies, and new insurance concepts and products are our priorities
+and development goals. We wish to deliver brand-new insurance products
+to enterprises in the new energy, hi-tech and astronautics sectors that go
+beyond what conventional insurance companies are able to offer in terms
+of capability and daring. New concepts and new insurance logic will be
+
+the priorities of the Zeusshield Community Fund.
+
+32
+2s. ZEUSSHIELD SYSTEM
+
+8.8 Zeusshield Community Fund and Zeusshield Board of Directors
+
+The Zeusshield Community Fund is part of the Zeusshield Board of
+Directors but operates independently. It updates the board of directors and
+the community quarterly on the progress and aims of different projectsin
+an open and transparent manner, providing information about fund usage
+and accounts details. The Zeusshield Community Fund as we have
+defined it will be the original driving force behindthe Zeusshield
+Community. It reports to the board of directors and runs independently
+from the board of directors. As you can see, the members of our
+Community Fund are all senior professionals from the blockchain,
+insurance, hi-tech and actuarial sectors. We feel highly honoured to have
+them as our colleagues, promoting the progress of blockchain application
+
+together.
+
+The Zeusshield Funds in different continents will continue to attract
+outstanding members. Committed to the principle of good faith disclosure,
+we will provide honest and accurate reporting of the latest information
+regarding the Zeusshield Community and project updates on our official
+website. Blockchain projects are still at the fledging stage and we may
+face enormous risks in our explorations. We hope each member of the
+
+Zeusshield Community will be fully aware of their responsibilities.
+
+33
+38: ZEUSSHIELD SYSTEM
+
+9. Roadmap
+
+The main milestones for the Zeusshield project are set out as follows:
+
+2017 =Q4-2018
+
+Ql
+
+Complete the ZSC blockchain insurance database
+contract and technically launch insurance data on the
+
+blockchain
+
+2018 Q2 - 2018
+
+Q3
+
+Complete the prototype of the ZSC_ blockchain
+insurance system, connect it to the insurance data and
+establish a decentralized blockchain insurance data
+
+platform
+
+2018 Q4 - 2019
+
+Ql
+
+Complete the initial development of the ZSC
+blockchain deep learning module; start AI-based deep
+learning of insurance data; and control risks relating to
+output of recommended insurance products and
+
+insurance claims.
+
+2019 Q2 - 2019
+
+Q3
+
+Complete the ZSC blockchain P2P insurance service
+module; allow anyone to establish insurance products
+
+and provide insurance services to people worldwide
+
+34
+
+“ZEUSSHIELD SYSTEM
+
+10. Team makeup
+
+10.1 Technical Team
+
+>
+
+a »
+
+Yao Yong Jiang Wei
+Chief scientist, PhD in Post-doctoral researcher in Computer
+Telecommunication Systems Science; radio communication and AI
+(Sweden); in charge of the system expert; senior researcher at the German
+architecture, application modeling and Research Center for Artificial Intelligence;
+data analysis in various EU projects senior lecturer at Technische Universitat
+
+Kaiserslautern
+
+Li Pengyu ‘Wang Yunqiao
+Senior IT engineer; inventor of seven Senior systems software engineer,
+mobile Internet patents computer systems safety expert &
+
+founder of Guangdong Xunshi
+
+35
+EUSSHIELD SYSTEM
+
+10.2 AdvisoryTeam
+
+Tim Michael Buhr Russel Muzenda
+
+Major in IT systems management, GM of Innovex Insurance (Botswana), with
+blockchain consultantfor European over 20 years' experience in life insurance
+market
+
+Li Hongyin
+
+In charge of publicity for the China region;
+translated white papers and commercial
+analysisforMatchpooland Starbase,among others
+
+36
+EUSSHIELD SYSTEM
+
+10.3 Founding team
+
+Longshan Fangshu Xie Shaoshuai
+
+Senior blockchain investor; Emerging expert in blockchain
+committed to promoting the founding marketing, dedicated to promoting
+ofa global blockchain industry blockchain applications in China
+association
+
+Huang Wei Chen Meiyi
+
+Banking and insurance expert, cofounder Educationalist, early player and investor in
+of Innovex Insurance (Botswana), founder blockchain sector
+
+of SINOSE International
+
+37
+St
+
+11.
+
+“8: ZEUSSHIELD SYSTEM
+
+Disclaimer
+
+This document is for message transmission only and shall not
+constitute relevant opinions on the purchase and sale of ZSC. This
+document shall not constitute any proposal, intent or preaching on
+investment
+
+Relevant interested users confirm their knowledge of ZSC risks.
+Involvement of the user shall indicate the user's understanding and
+acceptance of the project risks and the willingness to bear all
+corresponding consequences or results thereof.
+
+ZSC team does not bear any direct or indirect property losses arising
+from participation in ZSC project.
+
+ZSC will be used by a third-party insurance supply company and ZSC
+team only provides technical support but does not bear any direct or
+indirect loss caused by any third party.
+
+Any risks arising from any violation of any anti-money-laundering,
+anti-terrorist financing or other supervisory requirements within any
+jurisdiction shall not be related to our team and the ZSC team shallnot
+bear any liability associated with them.
+
+ZSC team does not bear any property loss arising from any
+participant's leakage and loss of the key of any damaged encrypted
+token purse.
+
+ZSC is classified or deemed by any government, quasi-government,
+
+38
+2s. ZEUSSHIELD SYSTEM
+
+authority or public institution as a currency, security, commercial bill,
+transferrable bill, investment or any other article that may be banned,
+
+controlled or restricted by law.
+
+39
+2s. ZEUSSHIELD SYSTEM
+
+12. Annexes
+
+12.1 Deep learning
+
+The main areas of research for deep learning are machine learning and
+parallel computing. The main purpose of machine learning is to establish
+a data module that helps the system to effectively forecast corresponding
+feedbacks after capture of new data by training neural networks using
+already captured data—for example, in applications such as the
+customized service recommendations and _ service _ selection
+recommendations mentioned above. However, to increase the validity of
+forecasts it is necessary to use large amounts of data and repeated data
+learning and training. If a single-thread mode is adopted as the training
+mode, considerable resources (e.g. CPU, GPU, memory and time) are
+taken up, thus introducing a mode that requires parallel computing. As the
+Ethereum blockchain and smart contract system are based on a distributed
+architecture with multiple nodes, it helps to distribute the learning data
+and learning procedures to different Ethereum nodes for parallel data
+
+learning.
+
+Big data analysis based on deep learning primarily includes modelling
+and prediction (also known as “interface’”). Modelling refers to learning
+from existing data to find out about its specific data mode and thus
+
+establish a model for forecasting new data. In practice, the most
+
+40
+38: ZEUSSHIELD SYSTEM
+
+appropriate model is adopted on the basis of various models acquired in
+order to analyse the newly acquired data and forecast its unique data
+
+mode, as shown in Figure 5.
+
+ak
+
+4
+
+Forecast
++ Al module/deep learning | —_ > Rabbit
+
+Figure 5 Forecasting Image Content via Deep Learning
+
+Buyapoy, A
+
+Further, Figure 6 shows that the basic principle of modelling is to
+repeatedly train the system through various different algorithms of the
+neural network in order to accurately calculate the impact, or weight, of
+each neuron on the next neuron from the input layer to the output layer in
+the neural network. The primary neural network algorithms include deep
+neural networks (DNN), deep belief networks (DBN), convolutional
+neuron networks (CNN) and convolutional deep belief networks (CDBN).
+Different neural network algorithms give rise to different problems,
+
+primarily involving accuracy and time of computing.
+ ZEUSSHIELD SYSTEM
+
+Layer 1 . Layer k
+Figure 6 Nerve Net and Impacts of Weight of Neuron
+
+Now, we will take DNN as an example to introduce how deep learning
+goes on. DNN networks are based on the principle of a discriminative
+model. A back propagation algorithm is adopted for learning and training
+and the most important part is updating the weight of each neuron in the
+
+following formula:
+
+ac
+dw;(k)
+
+AW(k t+1)=Aw(k +7
+
+According to Figure 6 and the formula above, we know that wy (k, #)
+represents the impact of neuron 7 in layer k of the neural network on
+neuron j in layer k+1 of the neural network, wherein 1 is the learning rate
+and C is the cost function. The selection of cost function is related to the
+type of learning (e.g. supervised learning, non-supervised learning and
+
+enhanced learning) and the activation function. On the basis of this
+
+42
+ZEUSSHIELD SYSTEM
+
+function, AI modules can perform repeated learning according to the
+
+input data and finally calculate an accurate weight.
+
+0.0
+
+& 1.0 & :
+0.0 & SZ 0.5 oO 0.0
+: 0.0 :
+1.0— \ s
+_— o L ; 0. -
+08 a
+
+. , ©
+
+Input
+
+Layer 1 Layer 2
+Figure 7 Examples of Using Neural Network to Predict Letter Combination
+
+Figure 7 provides an example to illustrate the final result after the neural
+network has been subject to weight update learning. In this example, we
+can see that the possible letter combinations include XXY and YXY if
+
+two letters X and Y are input.
+
+12.2 Zeusshield system's deep learning
+
+In the Zeusshield system, we adopt Ethereum local and external deep
+learning to realize accurate modelling.
+
+Local deep learning refers to the Zeusshield system's data analysis of the
+
+textual information stored on the Ethereum platform in order to acquire a
+
+43
+2°). ZEUSSHIELD SYSTEM
+
+key model for forecasting future data. With reference to the example
+quoted in Figure 8, the forecast information given by this model may
+include the insured’s acceptable level of premium, pre-warning of risks or
+
+preferences for certain types of insurance.
+
+Data
+
+| Flight delay statistics Hotel service quality statistics
+| Dining and food statistics Tourism and scenic spot evaluation |
+
+Figure 8 Risk Pre-warning and Insurance Proposal
+
+External deep learning refers to our utilization of other commercialized
+cloud computing platforms—for example, Ali Cloud, Amazon, for data
+analysis of the image and video information stored outside the Etherum
+and establishment of a reliable model. Its benefit lies in the possibility to
+initially verify users’ image-based authentication and thus provide a
+
+reference for subsequent indemnification work.
+
+Moreover, the Zeusshield system will also provide a privacy protection
+mechanism to protect the personal information of users during the AI
+
+module's deep learning.
+
+44

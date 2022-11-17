@@ -1,0 +1,826 @@
+Fei Protocol:
+
+A Decentralized, Fair, Liquid, and Scalable Stablecoin Platform
+By Joey Santoro
+
+Abstract
+
+We introduce Fei Protocol and the FEI stablecoin. The goal of the Fei Protocol is to maintain a
+liquid market in which ETH/FEI trades closely to the ETH/USD price. FEI achieves this via a
+new stability mechanism known as direct incentives. Direct incentive stablecoins use dynamic
+mint rewards and burn penalties on DEX trade volume to maintain the peg. FEI uses Uniswap
+as its incentivized DEX at launch. Governance can add and update DEX integrations and other
+incentives as needed.
+
+New supply of FEI enters circulation via a buy-only bonding curve denominated in ETH. We
+refer to the ETH accrued from purchases on the bonding curve as Protocol Controlled Value
+(PCV). We define PCV as any value which is completely owned and controlled by the protocol,
+without an IOU. It is a subset of Total Value Locked with a stronger use case. The Fei Protocol
+deploys its PCV exclusively as Uniswap ETH/FEI liquidity at the genesis of the protocol. This is
+a "liquidity-collateralized" model which removes the need for an overcollateralized debt position.
+As the supply grows, the bonding curve price approaches a fixed peg to the oracle price. The
+fixed peg bonding curve creates a guaranteed arbitrage opportunity when the Uniswap price
+trades above the peg. The protocol will use its liquidity PCV to backstop the Uniswap price
+when it trades below the peg for a certain period.
+
+The TRIBE governance token is used to upgrade the protocol over time. Fei Protocol releases
+TRIBE to bonded FEI/TRIBE Uniswap LP tokens. The Fei Protocol design has key advantages
+that are not present in other widely used stablecoin designs. FEI is decentralized and scalable.
+New supply is fairly distributed to new demand. PCV provides flexibility to governance to add
+future integrations and incentives. FEI holders benefit from the mechanisms designed to create
+a high fidelity peg and liquid exchange.
+
+Direct Incentive Stablecoin
+
+Fei’s direct incentive approach presents a promising improvement over existing stablecoin
+models, which fall into three broad categories: fiat-collateralized, crypto-collateralized, and
+non-collateralized.
+
+Fiat-collateralized stablecoins, such as USDC and USDT, are issued by centralized entities.
+These custodians escrow USD and issue the stablecoin on chain. Stablecoins in this category
+
+a)
+have two key advantages. One is capital efficiency, since they can scale rapidly with demand at
+a 1:1 exchange rate. The other is collateralization, as they can always be redeemed for
+underlying assets. However, there are always risks that the centralized authority issuing
+fiat-collateralized stablecoins is not fully collateralizing them. The reserves are a black box in
+between solvency audits, if any at all. Fiat-collateralized stablecoins are also subject to
+regulatory risk. This can take the form of blacklisting accounts, mandatory KYC, or even erasing
+funds. This poses an existential risk to platforms which integrate with them. The advantages of
+fiat-collateralized coins have led them to dominate the current market. Decentralization solves
+the issues with fiat-collateralized stablecoins due to their permissionless nature. The popular
+decentralized stability mechanisms have their own unique drawbacks. We will explore these
+below.
+
+Crypto-collateralized stablecoins, such as DAI and sUSD, are issued on chain via some kind of
+overcollateralization mechanism. The overcollateralization allows for trustless issuance. The
+drawback is the capital inefficiency that results from the need to have a sufficient buffer to
+protect against price volatility in the collateral. All supply requires an excess of collateral which
+must be monitored for solvency. This limits the growth of decentralized stablecoins. The primary
+example, DAI, even has a debt ceiling which cannot be exceeded.
+
+Non-collateralized stablecoins are a compelling alternative. They enable unconstrained growth
+in supply and are decentralized in issuance. The current primary mechanisms for achieving this
+are seigniorage and rebasing. Seigniorage models like ESD have supply adjustment dynamics
+to maintain the peg. When demand is high, the protocol issues new supply to a group of
+stakeholders known as the seigniorage holders. When demand is low, there are deflationary
+mechanisms for contracting supply. These seigniorage models have two drawbacks. First, there
+is no collateral or liquidity backing the peg. This can create liquidity crises and amplify volatility
+when these coins fall below their peg. Additionally, the economic mechanics heavily favor the
+seigniorage stakeholders. The broader community often disregards seigniorage stablecoins due
+to the unfairly centralized rewards. Fractional reserve models like FRAX attempt to address the
+no collateral issue, but they still retain the flawed economics of a seigniorage model. Rebasing
+tokens like AMPL adjust user balances to shift the demand weighted price to the peg. They
+have usability issues when integrating with other platforms, since user balances are not static.
+Non-collateralized stablecoins have also proven to be extremely volatile.
+
+This paper proposes a new stability mechanism called direct incentives. A direct incentive
+stablecoin is one in which both the trading activity and usage of the stablecoin are incentivized,
+where rewards and penalties drive the price towards the peg. In general this would include at
+least one incentivized exchange acting as a hub. All other exchanges and secondary markets
+can arbitrage with the incentivized exchanges. This helps maintain the peg throughout the
+ecosystem. The direct incentive model by itself suffers from similar issues to other
+non-collateralized stablecoins. There is no guarantee of liquidity and no collateral backing the
+system. To solve this, Fei Protocol combines the direct incentive model with Protocol Controlled
+
+a)
+Value deployed as liquidity. These mechanisms together create a stablecoin that is
+decentralized, scalable, fair, and liquid.
+
+Direct Incentives
+
+$0.98
+eo 8" ~ °@ rN
+7 “>
+—_ 44 e@ 4 oe) 4 e 4
++2% ; -AY%,
+Buyers earn Incentivised Sellers pay
+Mint Exchange Burn
+
+Protocol Controlled Value
+
+In most DeFi applications, users deposit funds with an IOU attached. For example, users could
+be issued tokens representing the pro rata percentage of the supplied assets. These assets are
+a part of the Total Value Locked (TVL). The protocol would define a utility around how these
+funds are deployed. The contract may offer incentives to keepers to close unhealthy positions.
+There may even be some fee which accrues to stakeholders or a reserve. This value does not
+belong to the protocol in any meaningful sense, but rather to the users and owners of the
+protocol.
+
+This lack of ownership creates the “mercenary capital” problem, evident in all user owned
+TVL-based mechanisms. For example, Uniswap LP tokens and Aave aTokens are redeemable
+for the underlying assets. During periods of high APYs or incentives, the TVL would increase.
+As soon as those rewards dry up, the capital will move on to the next best opportunity, perhaps
+SushiSwap or Compound.
+
+The key innovation behind the Fei Protocol's mechanism is the idea of Protocol! Controlled
+Value (PCV), a subset of TVL in which the protocol outright owns the assets with no |OU. PCV
+opens up a new design space for DeFi protocols beyond what user-owned TVL models can do.
+The protocol can influence market conditions in fundamental ways that are not necessarily
+profit-motivated. Since there are no users to redeem to, these benefits are guaranteed on the
+contract level. The clearest use case of PCV is to have the protocol be a liquidity provider (LP)
+on an Automated Market Maker (AMM) like Uniswap. At sufficient volume, the protocol would
+essentially control the exchange rate of the trading pair. It can use its PCV to rebalance the
+price by executing trades against the market and locking or burning excess tokens. For
+
+a)
+example, let's say there is a Uniswap market denominated in FEI/USDC. The current liquidity
+depth is 1100 FEI and 1000 USDC. In this example, Fei Protocol owns 90% of the liquidity. Fei
+Protocol can atomically execute the following trade:
+
+1. Withdraw all liquidity (990 FEI and 900 USDC)
+
+2. Swap ~5 USDC for ~5 FEI (remaining liquidity is ~105/105 FEI/USDC)
+
+3. Resupply 895 FEI and 895 USDC at the 1:1 exchange rate
+
+The net effect of the above trade is the protocol spent ~5 of its USDC PCV to restore the peg.
+
+This design aligns perfectly with the FEI stablecoin use case. This is a marked improvement
+over models in which all the TVL is user-controlled and frozen as collateral. PCV could also be
+used to deposit and borrow on lending markets like Compound and Aave.
+
+Funding PCV is a necessary design consideration. The protocol needs to be able to offer a
+token or service which earns the PCV. A natural mechanism for funding PCV would be protocol
+fees for functionality. A stronger funding mechanism might be a bonding curve. The bonding
+curve could mint a token controlled by the protocol for an influx of ETH or other ERC20 tokens.
+To accrue PCV, the bonding curve must include a spread earned by the protocol. Bonding
+curves have an elegant mathematical fairness to them. New demand for the token can buy
+directly from the bonding curve to expand the supply. This is in stark contrast to seigniorage
+models which centralizes rewards. Arbitrageurs profit off of any market dislocation between the
+bonding curve and spot exchanges. Users receive the newly minted supply in one of two ways:
+
+1. Directly from the bonding curve
+
+2. Indirectly from arbitrageurs
+Critically, arbitrage is not necessary as users can go straight to the curve. This results in a fair
+distribution of supply expansions. The protocol benefits in the form of PCV funding.
+
+Fei Protocol uses PCV in the following way. It is funded by a one-way ETH bonding curve which
+does not allow selling. The PCV is deployed as Uniswap liquidity denominated in FEI and ETH.
+This can be considered indirect collateralization or "liquidity collateralization".
+
+Liquidity collateralization inverts the traditional understanding of collateral for stablecoins. In an
+overcollateralized model, a user would supply a fixed amount of collateral like ETH. This
+collateral could be volatile. As long as the position stays solvent, the debt holder could close the
+position and redeem their collateral. This collateral now has a new market value. On the other
+hand, in the FEI model, the only way to redeem for the underlying asset is to sell FEI ona
+secondary market. For this reason, FEI cannot be used to lever or maintain exposure to
+collateral assets. Instead, FEI is collateralized by irrevocable protocol-owned liquidity.
+
+This approach has fractional reserve properties. One can consider the collateralization ratio as
+
+the amount of PCV divided by the user-circulating FEI. If all outstanding FEI were to be sold or
+redeemed for PCV pro-rata, this ratio determines the amount received. In this model, there is no
+
+a)
+requirement for having equivalent levels of PCV liquidity and circulating FEI. The reasoning is
+the same as in traditional fractional reserve banking: it is inefficient to hold an excess of
+collateral for every single position if only a subset will ever want to liquidate.
+
+; PCV
+Bonding Curve Deposits
+
+Purchase
+
+Any Bonding “@
+Trader Curve
+
+Behind the scenes, Fei Protocol allows for generalized PCV funding and deployment. The
+funding can come via additional bonding curves denominated in other tokens. Each bonding
+curve can deploy its PCV to a portfolio which is configurable by governance. A sufficient amount
+will be allocated to liquidity. The remainder can go to funding interest rate pools on lending
+markets. It can even be invested in platforms like Yearn to grow the PCV. Another approach
+could be a Graph Protocol integration in which PCV is deployed to curate a Fei Protocol
+manifest.
+
+PCV represents a natural progression over Total Value Locked (TVL) in valuing a DeFi protocol.
+TVL is simply a metric of usage, whereas PCV represents irrevocable value controlled by the
+protocol.
+Fei Protocol Design
+
+As seen below, the system has several core components: Fei Core, the FEI stablecoin, bonding
+curve(s), PCV Deposits, PCV Controllers, FEI Incentives, and the TRIBE governance token and
+DAO.
+
+GOVERNANCE
+
+Fei TRIBE
+Governor Token
+
+INFRASTRUCTURE
+INCENTIVES PCV
+
+Bonding PCV
+Curve(s) Deposit(s)
+
+PCV
+Incentive MS
+Contract(s) Controller(s)
+
+FEI Uniswap
+Pools
+
+Fei Core
+
+Fei Core is the access control hub for the Fei Protocol. It defines several roles and what each
+can do. It also maintains a mapping of which contracts have which roles. The roles are as
+follows:
+
+Minter - can mint FEI to any address
+
+Burner - can burn FEI from any address
+
+Controller - can move PCV in and out from their initial deposit
+
+Governor - can grant/revoke any role, and upgrade the protocol components. This is
+discussed further in the TRIBE and DAO section.
+
+The role-based approach in Fei Core allows for complete modularization of the protocol. New
+features can be voted in by deploying a contract and granting it a role. This flexibility allows Fei
+Protocol to adapt to ecosystem changes and grow with DeFi.
+
+a)
+
+6
+FEI Token
+
+FEI is the pegged stablecoin produced by Fei Protocol, following the ERC-20 standard. Its
+supply is uncapped. Minter and Burner contracts control its issuance, via bonding curves and
+trading incentives. The FEI token exhibits certain non-standard ERC-20 functionality, but only
+on a subset of transactions. There are dynamic incentives overlaid on transfers involving
+incentivized addresses. An incentivized address is a contract that Fei Protocol wants to
+incentivize certain FEI behavior. Incentivized addresses have an associated incentive contract.
+Incentive contracts control the direction and magnitude of incentives for each transfer. The
+incentive contract is appointed as a Minter and/or Burner. If a user sends FEI to an incentivized
+address, their remaining balance will be affected by a mint or burn incentive. The primary
+incentivized address in Fei Protocol is the FEI/ETH uniswap pool. Traders experience minting
+and burning controlled by the associated incentive contract. We explore these mechanics
+further below.
+
+The sender's balance can change by a different amount than the transfer amount. A mint
+incentive results in a balance increment on the sender, whereas a burn incentive decrements
+the remainder of the sender's balance after the transfer. An insufficient balance will revert the
+transaction. This is similar to the functionality of rebasing tokens in that it directly operates on
+user balances. The important usability benefit of this model is the locality of incentives. They are
+only applied to the users who engage in the incentivized transfer. Users can plan for
+non-standard behavior. The incentivized addresses and incentive contracts are publicly known.
+Users are free to avoid incentivized addresses and other activity is completely standard. The
+DAO will be able to add and revoke incentive contracts tied to incentivized addresses.
+
+Within the protocol, there are three distinct types of FEI from an accounting perspective, with
+some overlap. These are all fungible and treated identically from a token perspective. The
+protocol calculates the supply of each to be used in calculations. The types are the following:
+e FEI, : Protocol-controlled FEI, deployed in LP pools or other allocations per PCV
+e FEI,: Bonding curve distributed FEI given to users. These will be accounted on a per
+
+bonding curve level
+e FEI,: User-controlled FEI, the totalSupply() of FEI less FE/,
+
+In general, there is overlap between FE/, and FEI, . When users sell to protocol LP via an
+AMM, FEI, can become FEI, . Vice versa — when users buy FEI, it goes from FEI, to FEI, .
+
+Bonding Curves
+
+Bonding curves are Minters appointed by the Fei Protocol. They issue FE/, and generate PCV
+used to maintain the peg. The initial curve will be one-sided and denominated in ETH. Its pricing
+function approaches an oracle peg price. This bootstrapping mechanism offers early FEI at a
+
+a)
+discount to users for supplying PCV. The point at which the pricing function reaches the peg is
+known as Scale. Scale is the target F EJ, supply at which a Fei bonding curve pricing function
+switches to 1. The Scale number can be different for different bonding curves. This allows
+incentivized PCV funding for various underlying tokens. The initial Fei bonding curve will use
+ETH as the underlying asset. The peg will be the Time-Weighted Average Price (TWAP) of the
+ETH/USDC Uniswap pool over a 10 minute window.
+
+New Fei bonding curves should only use decentralized tokens to maintain
+decentralization of the protocol.
+
+The bonding curve issues FEI at a discount with a sublinear growth rate based on the supply.
+Sublinear curves reward initial investors while still bootstrapping sufficient underlying value to
+the protocol. A linear or superlinear model would be explosive and lack retained PCV.
+
+Let O,(B) be the oracle price of A paid in B e.g. O,7,,(F El) = 500 FEI/ETH. The oracle price
+represents the "target" at which that trading price would imply 1 FEI = $1. Let S be the Scale
+target of a given bonding curve, in terms of FE/,,. The instantaneous ETH price for a unit of FEI
+
+at current total supply X pre-Scale uses the following formula:
+
+(1) PO) =F « Ope(ETH)
+
+One can integrate the curve to determine the quantity Q of ETH required to get from a given
+level of supply r to another level s:
+
+(2) [Puy a=0
+
+Using the above formula one can calculate the amount of ETH required to achieve Scale for S =
+250 million FEI and O,,,,(ETH) = 1/500 ETH/FEI:
+
+Fea dx = 333,333 ETH
+0
+
+Regarding equation (2), we can define y as the end supply. One can rearrange the integral to
+solve for the amount y - C of FEI received for a given ETH investment Q at a current user supply
+C:
+
+| P(X) d= 0
+
+Cc
+
+2? 2032
+ar aw *O=9
+
+a)
+is 2/3
+@) yc =(e +c) -c
+
+Once a bonding curve achieves Scale, it will fix the exchange rate at $1 + b. bis a buffer to
+keep the mean price around $1. When any secondary market price exceeds $1 + b there is a
+
+riskless profit opportunity. Arbitrageurs can purchase against the bonding curve and sell on the
+secondary market.
+
+Arbitrage
+
++1%
+
+Bonding Any
+Curve Exchange
+
+At b=0 the majority of the price variance is below $1. By adding in the buffer b, initially set to
+
+1%, there is room for some variance above $1 as well. Including this price fix behavior, the
+pricing function extends to
+
+P(X) = min(a[%, 1 + b)*O
+Bonding Curve
+
+Buffer
+
+$1 Peg
+
+FEl
+Price
+
+Protocol
+Controlled Value
+
+Scale
+
+FEl,
+
+This pure arbitrage opportunity means the protocol requires no additional incentive to maintain
+the peg when prices exceed $1 + b. Governance can gradually vote to converge b to 0 as the
+liquidity increases and volatility decreases.
+
+It is important to note that the curve is one-way and FEI cannot be sold on the curve. As
+previously mentioned, incoming tokens on the curve are retained as PCV. Deploying the PCV
+on Uniswap allows for "liquidity collateralization" as opposed to a traditional collateralized
+model.
+
+Each bonding curve has an adjustable allocation rule which defines a set of PCV Deposits. PCV
+Deposits are contracts that receive incoming PCV and deploy them in predefined ways. The
+DAO can adjust ratios and add new contracts (appointed as Minters and/or Burners) as needed.
+
+PCV Deposits
+
+PCV Deposits are the recipients of PCV, funded by bonding curves. Because FEI cannot sell on
+these curves, it is crucial to create a liquid market that allows for the sale of FEI. The sale price
+should track the peg. The Fei Protocol will allocate all initial PCV to a Uniswap liquidity pool
+denominated in FEI and ETH. The concept extends to other token types assuming access to an
+oracle price to peg to. In this case, the PCV Deposit uses the ETH/USDC TWAP as the oracle.
+We will now explore the Uniswap PCV Deposit in depth.
+
+a)
+The Uniswap PCV Deposit receives incoming ETH from the bonding curve and deposits it into
+an ETH/FEI Uniswap pool. The FEI for this deposit comes from minting, and therefore this PCV
+Deposit must be appointed as a Minter by Fei Core. The amount of FEI minted is equivalent to
+the amount of ETH times the spot price of FEI/ETH in the pool. This mint is distinct from the mint
+associated with the bonding curve and sent to the user. The former is F'E/, and the latter is
+both FEI, and FEI, . The bonding curve mint is associated with the bonding curve price and
+the PCV Deposit mint is associated with the Uniswap spot price. These numbers should be
+similar but do not have to be identical. It seems then that there is double the expected inflation
+associated with a bonding curve purchase, with half going to the user and half to the
+protocol-controlled LP. A critical caveat is this F EJ, does not circulate and will only be used as a
+burning mechanism for the protocol to reweight. It would not impact the price negatively as it
+would never be sold.
+
+While this is the only PCV Deposit at launch, other implementations are possible to be added
+via governance. These include liquidity in other AMMs like Curve or SushiSwap. They could
+also generate yield via a Compound, Aave, or Yearn deposit. They could even serve as
+collateral to open derivative positions such as FEI yTokens on Yield. The flexible design will
+allow for new creative deployments of PCV and integrating with future DeFi protocols as they
+arise.
+
+FEI Incentives
+
+We discuss the mechanics of the FEI incentive contracts in the FEI token section. This section
+focuses on the way that incentive contracts help maintain the peg. There will be a single initial
+incentivized Uniswap pool, ETH/FEI. If the price is below the peg, the incentive contract will offer
+a FEI mint to traders. The next trader to buy FEI on the pool will receive the mint as an incentive
+for helping return towards the peg. This incentive will take into account the time-weighted
+magnitude of the distance from the peg.
+
+For example, a 5% immediate deviation from the peg will have a small initial incentive. The
+incentive will grow over time and at a faster rate than if there was only a 1% deviation from the
+peg. This creates a reverse Dutch auction mechanism. The mint offered increases over time
+until a trader accepts the offer by purchasing on Uniswap. This happens atomically and directly
+on the Uniswap transfer. The traders who are willing to come in for a lower incentive will be the
+first to restore the peg and get the mint. The following formula is used to achieve this
+mechanism. Let w(t) be a time-weighted function where ft is the number of blocks since the last
+time the peg was restored. The output is initialized at 0 and grows linearly at rate r per block (set
+by governance). Let m be the magnitude of the price deviation from the peg before the swap
+
+executes. m is defined as defined as oo . The incentive function is:
+I(x, 0) = w(t) * m *x
+
+The time variable f will reset to 0 each time a Uniswap trade restores the peg. If a trade partially
+fills the peg, t will be partially updated by multiplying it by m,,,4/iiq,;- A 50% move towards the
+peg by trade volume required would result in a 50% reduction of ¢, which will resume its growth
+at rate r.
+
+To give a concrete example, let's have rbe .01 per block, the total liquidity in the pool be 200
+ETH and 10000 FEI, and an oracle price of 500 USD/ETH. The instantaneous exchange rate
+here is 525 FEI/ETH, representing a 5% deviation from the peg. After 10 blocks the time weight
+will equal 0.1. At this point the purchase of FEI towards the peg will reward the trader with 0.5%
+of the trade value in FEI.
+
+It is important for this mechanism to not be gamed. It is also important to disincentivize trading
+away from the peg. Fei Protocol achieves this via a dynamic burn mechanism on top of the
+Uniswap pool when trading below the peg. Similar to the mint, this burn will take into account
+the distance from the peg. The burn is not dependent on time. The m used is m,,,,asS opposed
+star in the case of the mint incentive. The FEI balance of the sender will be burned by the
+fee amount, having a net deflationary impact on the supply. This counters the price movement
+away from the peg. A quadratic growth rate is used to increase the penalty as the trade size
+increases via the following burn formula:
+
+B(x) =m’ *x * 100
+
+to m
+
+Volatility below the peg should result in net deflation. Any mint associated with buying should
+not exceed the burn paid to get to that price. For this reason, the incentive is capped at the
+output of the fee function. The incentive function is extended to:
+
+I(x, t) = min(w(t) * m * x, B(X))
+
+The peg maintenance mechanics are even simpler above the peg. If the Uniswap price exceeds
+the bonding curve price, a pure arbitrage opportunity arises. Traders can purchase via the
+bonding curve and sell on Uniswap. This is true of any other secondary market as well. The
+buffer plays a critical role here. If the price is always at or below the peg, then every trade would
+end below the peg and incur the burn penalty mentioned above. By adding in the buffer, users
+can trade in this window above $1 without incurring the burn for trading below the peg. This
+one-sided fixed arbitrage loop is a notable advantage to the Fei Protocol mechanism.
+FEI peg dynamics
+
+Arbitrage
+
+$1 Pe
+: Reweight
+
+Burn Mint Burn
+
+An address can be exempted from any incentive or penalty if approved by the DAO. The PCV
+deposit contract, for example, would be exempted from incentives and penalties. This will also
+be useful when attempting to integrate with other contracts throughout DeFi.
+
+The flexibility of issuing incentives extends beyond simply maintaining the price on exchanges.
+Incentives can drive behavior such as depositing or borrowing FEI on lending protocols. They
+can also be used to supply liquidity to AMM pools used as oracles.
+
+PCV Controller
+
+A PCV Controller is a contract approved to withdraw and reweight PCV among PCV Deposits.
+PCV Controllers are essential to allow the full benefits of PCV to be explored over time. At
+launch, there will be one primary PCV Controller contract. Governance can add more as
+needed.
+
+The initial PCV Controller will focus on reweighting the Uniswap ETH/FEI pool. A reweight would
+mean that the protocol leverages its PCV to bring the spot price of ETH/FEI back up to the peg.
+This is important in adverse conditions when traders are not willing to support the peg. The FEI
+incentive may not be enough even at the maximum time weight, calculated as /(x,t) = B(x).
+When this condition is met, the protocol will open up the ability to backstop the price using this
+PCV Controller. Any external user, or keeper, can trigger a function which will cause the
+Controller to reweight the prices. The keeper will collect a mint reward denominated in FEI as an
+incentive. Reweights use the following algorithm:
+
+1. Withdraw all LP from PCV Deposit
+
+2. If remaining LP exists in Uniswap pool, buy FEI with ETH PCV to restore peg
+
+3. Re-supply the remaining ETH/FEI at the oracle price ratio
+
+4. Burn the excess FEI
+Reweights
+
+Uniswap
+Pool
+
+rei
+-)
+
+Vv
+» v
+1. Withdraw 2. Trade to peg 3. Re-supply
+ETH/FEI 6 ad 6) e a) ETH/FEI
+A. Vv ‘
+
+4
+
+e 4. Burn excess FEI
+
+elf Qa>>@
+
+PCV
+Controller
+
+Generally, additional Controllers would be able to reweight PCV into other DeFi protocols or Fei
+contracts. These could include:
+e Moving PCV into an oracle LP pool to increase oracle attack difficulty
+
+e Adding to Yearn to generate yield on PCV
+e Using governance token denominated PCV such as COMP to vote on proposals
+e Supplying collateral for FEI derivatives such as options and futures
+TRIBE and the Governance Process
+
+TRIBE governance is critical to the decentralization of the Fei Protocol. The governance
+mechanism will fork the Compound DAO, where holders can delegate votes. TRIBE is the
+governance token controlling the DAO, analogous to COMP. Actions follow the proposed >
+queued — executed flow, if they do not fail or cancel. Governance has control over the following
+actions:
+
+e Appoint Minter and Burner contracts (including new bonding curves)
+
+Adjust Scale target and allocation rule on bonding curves
+
+e Adjust incentive time-weight growth rate
+Percent reward for reweight peg restoration
+Reweighting any of the peg Uniswap pools
+
+The Fei Protocol DAO will be able to function like a central bank of DeFi. It can use PCV to
+adjust rates and market incentives on other platforms. This creates a dynamic ecosystem
+around FEI.
+
+TRIBE supply will be fixed at 1 billion divided into several categories.
+
+The first category is a FEI staking pool. FEI holders can stake FEI/TRIBE Uniswap LP tokens to
+earn a percentage of the TRIBE distribution. The rewards will release into the pool over a
+linearly decreasing schedule. The release will wind down to zero after 2 years. The goal of the
+staking pool is threefold:
+
+1. Access to TRIBE for early FEI holders
+
+2. Away to deploy FEI rather than statically holding it
+
+3. More liquidity for TRIBE
+
+Another part of the TRIBE supply is allocated to a special group of early adopters known as the
+Genesis Group. The Genesis Group will be open for a period of 2-3 days in which investors can
+pool their ETH. At the end of the period, the entire Genesis Group ETH supply will be used to
+purchase FEI on the bonding curve. This purchase will be the very first bonding curve
+transaction and have the most attractive FEI price. The Genesis Group participants receive their
+FEI pro-rata based on the total ETH investment. This is irrespective of when they entered the
+group. The FEI price will use the oracle price at the end of the Genesis period. The Genesis
+Group will also receive the aforementioned portion of the TRIBE supply pro-rata.
+
+A portion of TRIBE will be listed on Uniswap in an Initial DeFi Offering. This pair will be
+
+denominated in FEI and TRIBE. The exchange rate will be determined as a multiple of the ETH
+raised in the Genesis Group. The protocol will set this relative to the fully diluted TRIBE market
+cap. This will give immediate opportunity for price discovery and liquidity to both FEI and TRIBE
+to all of DeFi. The FEI for this pool will be issued via mint and the Uniswap LP will be owned by
+the development team. These Uniswap LP tokens will vest over a four-year window to preserve
+
+a)
+the liquidity for the market. An additional amount of TRIBE will be retained for the development
+team and investors.
+
+The remaining TRIBE will be held by the protocol as a DAO treasury. The community can
+distribute this as it sees fit as the protocol develops. This will come in the form of future
+governance proposals which can gift or delegate TRIBE tokens to users or contracts.
+
+FEI Economic Security
+
+The goal of the Fei Protocol is to maintain a liquid market in which ETH/FEI trades at
+approximately the ETH/USD price. This should be true even in adverse conditions. PCV allows
+the protocol to accomplish this goal. When trading activity does not support the peg for
+extended periods, Fei Protocol spends some of the PCV to reweight the price. We define the
+liquidity ratio as PCV /F EI, . This is similar to a collateralization ratio. The difference is the PCV
+is deployed as liquidity rather than directly as collateral.
+
+The liquidity ratio is a measure of how many reweights and corresponding selloff events the
+protocol can support. If it is less than 1, the protocol is effectively undercollateralized. However,
+under normal circumstances the protocol would still maintain the ability to repay all outstanding
+FEI with the collateral. This is a function of the dynamic burn incentives in low demand.
+Overcollateralization for every single position simultaneously is inefficient. Fei Protocol pools the
+would-be collateral into a single liquidity pool for any user to redeem. This pool can be either
+over- or undercollateralized. If it is undercollateralized, it relies on the assumption that not every
+user would want to sell at once. The protocol deters selling, which incentivizes holding to
+maintain a robust peg and protect against death spirals. The protocol is designed to improve the
+liquidity ratio under normal circumstances. This offsets risks associated with the
+under-collateralization inherent in the mechanism.
+
+In this section we analyze how the liquidity ratio is impacted by trading activity and reweights.
+We then provide security analysis on the bounds within which the liquidity ratio improves over
+time.
+
+Liquidity Ratio Updates
+
+A sequence of interactions with Fei Protocol would change the PCV or FEI, often in
+combination. For example, a purchase of FEI on Uniswap or the bonding curve would put ETH
+into the PCV liquidity pool, and increase the FEI, . Conversely, a sale of FEI would decrease
+both values. Let the change in PCV associated with a user action be APCV and likewise
+
+AF EI, be the change in user-circulating FEI.
+We can define the following update rule to the liquidity ratio for user actions:
+
+m1 _ PCV, +APCV
+FEI, , + AFEI,
+
+Ideally L,,, = L,, i.e. the liquidity ratio improves over time. This property is true when the
+following inequality is true for positive APCV :
+
+APCY.
+>
+AFEI, — L,
+
+For negative APCY , we flip the sign. Let us call the ratio 475 the capital factor.
+
+To summarize, when PCV and FEI, are increasing, we want the capital factor to be greater
+than the liquidity ratio. When they are decreasing, we want the capital factor to be less than the
+liquidity ratio.
+
+Effect of Activity on Liquidity Ratio
+
+In this section we explore isolated activities and their effect on the liquidity ratio. Uniswap fees
+are ignored in the analysis. They are generally beneficial for the liquidity ratio by either
+increasing PCV or reducing the F£/, of a trade.
+
+Bonding Curve
+
+The bonding curve has the price of FEI increasing relative to ETH with each purchase. This
+means the capital factor is increasing. The reasoning is that the new FEI costs more than the
+previous FEI relative to the same amount of PCV. All else equal, the liquidity ratio must be lower
+than the capital factor. This is because all prior FEI had a lower liquidity ratio to enter circulation.
+Each new purchase improves the liquidity ratio and capital factor. Once Scale is reached, the
+capital factor would fix and the liquidity ratio would converge to it. This can work positively if the
+liquidity ratio is low and negatively if the liquidity ratio is high.
+
+Trading Activity
+
+When analyzing trading activity, we assume we start at the peg with a certain liquidity ratio. First
+we look at what happens when FEI trades above the peg. The platform does not incentivize
+trading activity above the peg. Pure arbitrage should always bring the price down to $7+b. Due
+to path independence on Uniswap, a return to the peg should return to the same liquidity ratio
+as when last at the peg.
+
+More interesting is the case where FEI trades below the peg. Trading below the peg has a mint
+incentive /(x,t) and a burn incentive B(x). The incentive function is capped at the corresponding
+burn function output. Therefore trading activity below and returning to the peg results in negative
+AF EI, , i.e. deflation. The amount of deflation is equal to B(x) - I(x,t).
+
+a)
+Reweights
+
+A reweight by itself only burns F EJ, assuming no other Uniswap LPs. However, reweights must
+be coupled with a sell. Selling can have a positive or negative effect on the liquidity ratio
+depending on the current liquidity ratio, the size of the sell, and the associated burn.
+
+Selling reduces F EJ, because the FEI leaves circulation to enter the protocol-owned Uniswap
+pool. The FE/,,is further reduced via the burn penalty. Likewise it decreases the PCV because
+ETH is leaving the pool. We need to have the capital factor be less than the liquidity ratio. For a
+sell amount of x FEI we need to have:
+APCV <-L,*(x+B(x))
+We know APCV/—x = 1 because we are selling equivalent amounts of FEI and PCV.
+Rearranging the formula and pulling out the x we get:
+APCV <~-x *L,*(1 +m? * 100)
+1 <L(1+m’ * 100)
+For L > 1 this is always true. For lower liquidity ratios we would need a larger burn to hit the
+appropriate capital ratio. However, the burn formula starts at relatively low numbers. A series of
+sales coupled with reweights could worsen the liquidity ratio. This would happen when the
+corresponding burns are too low. The protocol would be relying on excess burning in the peg
+support case to offset the needed burns for reweights. We formalize this concept below.
+
+External LPs
+
+External LPs are any non protocol actor who supplies liquidity in the incentivized pool. The PCV
+LP should greatly exceed user LP. This is because all circulating FEI was purchased by ETH
+which became PCV. User LP does negatively impact the liquidity ratio in the event of a
+reweight. Reweights would also cost the protocol some PCV if external LPs are in the pool. This
+is because it needs to execute a trade against the remaining LP to bring the price back up. The
+relative impact of this grows with the amount of external LP.
+
+PCV Volatility
+
+Volatility in PCV directly affects the liquidity ratio. When the ETH PCV drops in value, traders
+would sell ETH to the FEI/ETH pool. This increases PCV in the sense that more ETH enters the
+protocol's control. However all of the other ETH already held as PCV dropped in value.
+Conversely, appreciation in ETH will have a positive ultimate impact on the liquidity ratio. New
+bonding curves added to the protocol would diversify the PCV. Diversification would improve the
+robustness of the protocol because it would be less susceptible to volatility. This follows the
+same reasoning as traditional diversification of asset portfolios.
+Fei Economic Analysis
+
+We have analyzed the effect of individual outcomes on the liquidity ratio. Now we can combine
+them to formalize the economic security bound of Fei Protocol. We have established the
+following relationships:
+
+Bonding curve purchases drive liquidity ratio towards 1
+
+Trading activity below peg improves liquidity ratio
+
+Reweight can hurt liquidity ratio when below 1
+
+External LP amplifies the effect of reweights
+
+Volatility affects the liquidity ratio
+
+The two sources of direct negativity for the liquidity ratio are volatility and reweights. A
+sustainable liquidity ratio requires that deflation due to trading activity offsets these sources of
+negativity.
+
+We have already shown the necessary condition for a reweight to be net deflationary.
+APCV <-L,*(x+B(x))
+
+We can replace B(x) with a random variable B representing the amount of burn before the
+
+reweight. This new random variable includes all prior burning since the last reweight.
+
+If we have the following as true, the protocol should always hold or improve its liquidity ratio.
+E[B]> 5 —x
+E[B]is increased by two factors. The first is concrete burn penalties. Higher burns directly
+translate to a larger E[B]. The second is trader willingness to reweight the peg. More trader
+support of the peg means less reweights are necessary over time. Additionally, all volatility not
+resulting in a reweight positively impacts the liquidity ratio. At a sufficient willingness to support
+the peg, the protocol would never need to reweight. In the event of sustained sell pressure and
+low willingness to support the peg, governance is expected to intervene. It can adjust the burn
+formulas to a level which would improve the liquidity ratio.
+
+Governance is incentivized to steward the liquidity ratio and protect the peg. By guarding the
+key protocol metrics, governance would improve fidelity in the system and grow the protocol.
+The flexible architecture allows multiple avenues through which governance can add dynamic
+and autonomous incentives.
+Conclusion
+
+The Fei Protocol promotes the sustainable creation of a direct incentive stablecoin known as
+FEI. FEI issuance is controlled by Minters including one-sided bonding curves used to bootstrap
+the system. The price approaches the pegged oracle at Scale, after which new FEI can enter
+circulation seamlessly in direct proportion to demand. The bootstrapped funds are retained as
+Protocol Controlled Value (PCV) which is used to support the peg. This idea creates a "liquidity
+as collateral" concept. Value is strategically deployed to create liquidity and incentivize the peg
+for token holders. Additional direct minting rewards and burning penalties are overlaid on the
+Uniswap market. This further range bounds the peg. As the platform extends beyond Scale, the
+collateralization ratio generally increases due to trading activity.
+Fei Protocol presents several key advantages over existing decentralized stablecoin models.
+These include:
+
+e high liquidity via PCV
+decentralized collateral
+capital efficiency
+strong peg
+fair distribution
+
+Fei Protocol is a central bank-like infrastructure that could serve as a backbone to current and
+future DeFi applications.
+
+Acknowledgements
+Huge thank you to Ric Burton for graphic designs and Rita Chang for editing!
+
+We would also like to thank Ashwin Ramachandran, Ben Longstaff, Campbell Harvey, Collins
+Belton, Cyrus Younessi, Dan Elitzer, Danish Ajmeri, Freddie Farmer, Guy Wuollet, Lev Livnev,
+Mariano Conti, Max Bronstein, Reuben Bramanathan, Richard Burton, Robert Leschner, Ryan
+Selkis, Santiago Roel, Shahriar Hafizi, Sid Ramesh, Stani Kulechov, Tarun Chitra, Vishesh
+Choudry, and everyone else who we discussed with for feedback on the whitepaper and
+mechanism.
+
+Appendix A — Definitions
+The following define variables used by the formulas detailed above.
+1. O,(B): the oracle price of A paid in B e.g. O¢7_(F El) = 500 FEWVETH
+2. P,(B): the instantaneous price of A paid in B (contextually either on uniswap or bonding
+curve)
+S: the Scale target of a given bonding curve, in terms of FEI,
+4. b: the buffer on the bonding curve peg price
+
+o
+
+a)
+P(X) 00)
+
+5. m : the magnitude difference of a uniswap price and oracle price defined as 6)
+
+References
+
+1. https://medium.com/hackernoon/stablecoins-designing-a-price-stable-cryptocurrency-6bf
+24e2689e5
+
+httos://makerdao.com/en/whitepaper/
+https://github.com/emptysetsquad/dollar/blob/master/d%C3%B8llar.pdf
+httos://docs.frax.finance/overview
+httos://compound.finance/documents/Compound.Whitepaper.pdf
+https://yos.io/2018/11/10/bonding-curves/
+
+httos://uniswap.org/whitepaper.pdf
+
+NQaRWN
+

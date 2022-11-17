@@ -1,0 +1,801 @@
+UTNETTTIN |
+
+“BEEE By deuceen-
+
+<<
+
+[hte
+
+Paper
+
+A Future Technology in Crypto Currencies’ Transactions,
+Portable Wallets and Decentralized Applications
+
+Table of Contents
+
+1. Introduction
+* Introduction to BitCoin and Crypto Currencies
+* History
+* The Anonymous E-Cash Protocols
+* Money through solving Puzzles
+* Reusable Proof of Work
+* Satoshi Nakamoto and BitCoin
+* Hashing Algorithm
+* Proof of Work vs. Proof of Stake
+* Transactions
+* Verifying Nodes
+* Block Explorer
+2. Wixlar
+* Wixlar Coins API
+* Enhanced Hashing Algorithm
+* Enhanced NFC Payments
+* Wixlar Double Spending Proof
+* Wixlar Mobility
+
+White Paper - ©2017 Wixlar-com
+
+3. Wixlar Services
+* Wallets
+* Master Card
+* Global Exchanges
+* Smart Contract
+* Innovative Letter of Credit
+* Decentralized Cloud Storage
+* E-Shop
+* Academy
+* Partners
+* Lottery
+* Free-Lancing
+* Rewards
+* Marketers and Authors Rewards
+* Stake Holders Rewards
+4. Wixlar ICO
+* The Opportunity with Wixlar ICO
+* Allocation of Coins
+* ICO Stages and Bonuses
+* Wixlar ICO Schedule
+* Purchasing Methods
+5. Wixlar Road Map
+
+1of 19
+
+wixlar
+
+1. Introduction
+
+INTRODUCTION Blockchain, the underlying technology of Cryptocurrency and its future
+WIXLAR applications in global economy, in business and generally in all areas of our
+were ae society is well recognized today.
+
+WIXLAR ROAD MAP. In this paper, we analyze the advanced technology of Blockchain and its
+
+uses for both online and offline services of the Wixlar Cryptocurrency.
+Wixlar Services are considered the next revolution in enhancing the
+applications of Cryptocurrency and Blockchain technology.
+
+—s Introduction to BitCoin and Crypto Currenices Concepts
+
+diel Bitcoin, the first Cryptocurrency was developed in 2009 by Satoshi
+Nakamoto, to be used as an internet currency with variable value that is
+based on the supply and demand in the market. Bitcoin succeeded in
+providing its network of users worldwide with certain advantages such as
+anonymity, faster transactions, very low fees and added security through
+utilizing Cryptography.
+
+The most important part of Bitcoin is its network is decentralized and all
+network transactions are verified and processed using Blockchain
+technology.
+
+All transactions are converted into blocks of data that have been verified
+among its users or nodes in the network. This innovation allowed many
+developers to cite alternative applications of Blockchain technology using
+digital tokens as assets in order to represent other assets or coins with
+enhanced financial processing or transaction protocols.
+
+Wixlar Group is intending to enhance the performance of transactions by
+using an enhanced hashing algorithm for encryption decryption to provide
+more secure transactions, faster and with lower fees. This allows its users
+to be able to solely rely on Wixlar Coins to do their business online and
+offline in confidence in a safe secured way.
+
+Wixlarcom 2 of 19
+—=
+A
+
+INTRODUCTION
+
+WIXLAR
+
+WIXLAR SERVICES
+
+WIXLAR ICO
+
+WIXLAR ROAD MAP
+—
+2nd
+==
+L282
+—
+1223
+
+History
+
+TThe decentralized digital currency concept has been under study for
+decades to find a way to transact without the need for a central authority
+or third-party involvement for trust and security.
+
+BitCoin as the first Cryptocurrency succeeds in providing anonymous
+transactions without exposing the identity of the sender or receiver and
+led to an innovative fast practical and inexpensive way to provide security
+to its users and expand globally. It gives the opportunity to billions of
+people around the world that are outside the current Fiat monetary system
+because of personal circumstances to be included in the global economy,
+participate and contribute to our society.
+
+There were numerous attempts at solving the puzzle
+
+Anonymous Electronic Cash Protocols
+
+The anonymous 1980s and 1990s electronic cash protocols were mostly
+dependent on a cryptographic primitive called Chaumian Blinding that
+provided new currencies with privacy control, however their underlying
+protocols failed to gain attraction because they were dependent ona
+Centralized Authority potentially compromising security.
+
+Money through Solving Puzzles
+
+In 1998, Wei Dai b-money succeeds to become the first proposal to
+introduce an innovative idea on creating money by solving computational
+puzzles and decentralized. The proposal however failed to progress
+because it did not show how a decentralized environment can be
+implemented.
+
+Reusable Proof of Work
+
+In 2005, Hal Finney introduced a new concept of "reusable proofs of work"
+which is a system that uses combined ideas from b-money and Adam
+Back's computational Hashcash puzzles in order to create a new concept
+for Cryptocurrency. The attempt failed because it relied on trusted
+computing mechanism as a backend.
+https://wixlar.com/2017/08/16/crypto-transactions-technology
+
+Wixlarcom 3 of 19
+wixlar
+
+1.2.4
+
+INTRODUCTION
+WIXLAR
+
+WIXLAR SERVICES
+WIXLAR ICO
+WIXLAR ROAD MAP
+
+Satoshi Nakmoto and BitCoin
+
+In 2009, BitCoin was the first decentralized currency that was implemented
+in practice by Satoshi Nakamoto and it combined primitives to manage the
+ownership of BitCoins using public key Cryptography with a hashing
+algorithm to keep track or a Blockchain of who owns coins, known as
+"proof of work."
+
+Hashing Algorithm
+
+Hash Functions MD2, MD4 and MD5 are meant for digital signature
+applications where a large message has to be “compressed” in a secure
+manner into a shorter message. They are used for hashing Digital
+Signatures into a shorter value called a message-digest and the Secure
+Hash Algorithm (SHA) is similar to the MD4 as a standard algorithm that
+makes a larger 60-bit message digest.
+
+| Hashing Algorithm | Algorithm
+#b!cld
+&” (#df
+Jummmap [$7 7 | ol
+Plain Text Hash Function Hashed Text
+w w w
+
+White Paper- ©2017 Wixlar.com 4 of 19
+INTRODUCTION
+WIXLAR
+
+WIXLAR SERVICES
+WIXLAR ICO
+WIXLAR ROAD MAP
+
+Proof of Work and Proof of Stake
+
+Proof of work solved two main problems which are provided simple
+algorithm that allows network nodes to vote or verify some updates of
+the Bitcoin ledger and allowed a free entry to this process to solve the
+problem of who gets to influence the consensus with preventing attacks.
+
+Proof of work solved two main problems; it provided a simple algorithm
+that allows network nodes to vote or verify some updates of the Bitcoin
+ledger and it allowed a free entry to this process to solve the problem of
+who gets to influence the consensus while preventing attacks. Proof of
+work succeeds in that by substituting a formal barrier to participation,
+such as each single node power in the verifying process being dependent
+on the computing power that the node brings.
+
+After that, a problem of huge power and electricity fees began to appear
+
+in order to continue working with the proof of work which led to a new
+alternative approach called proof of stake that is calculating the weight of
+
+a node according to its currency staking or holding only which means more
+power and electricity savings
+
+https://wixlar.com/2017/08/17/pow-pos
+
+The discussion showing the benefits of the two approaches proof of work
+and proof of stake and both approaches can be used for any Cryptocurrency-
+
+Proof of Work Proof of Stake
+
+Requires expensive Requires coins holders
+computer calculations chosen in a deterministic
+that is called mining. way that is called staking.
+
+wixlar
+
+<i
+5
+
+INTRODUCTION
+
+WIXLAR
+
+WIXLAR SERVICES
+
+WIXLAR ICO
+
+WIXLAR ROAD MAP
+— a
+eat
+Se
+15.2
+
+Transactions
+
+Each Transaction is taking place using a wallet (web wallet, Windows
+wallet, APPLE Wallet, Mobile Wallet) as a block in the Blockchain to be
+verified or voted among the nodes in the network, that is the Miners work
+in the Proof of Work and Stakers work in the Proof of stake.
+
+Verifying Nodes
+
+Transactions can be processed in less time by people who are interested
+in mining and staking and allow themselves to become verifying nodes in
+the network to gain some profit which makes the network alive as long as
+there are active nodes in the network.
+
+Block Explorer
+
+Anyone can check the blockchain and the number of blocks processed
+through the Block-Explorer but for security reasons, no one can know the
+exact owner or receiver of any transactions which provides privacy and
+anonymity for network users.
+
+e Paper- ©2017 Wixlarcom 6 of 19
+wixlar
+
+INTRODUCTION
+WIXLAR
+
+WIXLAR SERVICES
+WIXLAR ICO
+WIXLAR ROAD MAP
+
+2. Wixlar
+
+After twelve years of experience in business trades with global companies
+and seven years of Cryptocurrency research, Wixlar Group Co. LTD decided
+to launch Wixlar Coins a Hybrid POW/POS decentralized Cryptocurrency
+with an enhanced secured hashing algorithm to become one of the easiest
+ways to make safe transactions with small or big businesses or using Wixlar
+Coins to buy or sell any products or services online and offline.
+https://wixlar.com
+
+Wixlar Coins API
+
+Wixlar Coins API allows developers to add Wixlar Coins as a local or global
+payment method using credit cards. More than 100 businesses are starting
+their co-operation with Wixlar Group to accept Wixlar Coins in their normal
+business.
+
+Business and traders accepting to buy or sell their products or
+services using Wixlar Coins means more reliability, success, higher value
+and better future.
+
+Enhanced Hashing Algorithm
+
+Wixlar Engineers came out with the right idea of enhancing the Hashing
+Algorithm by using the TrapDoor Hashing Algorithm combined with El
+Gamal Key Signature in order to provide an enhanced characteristic of the
+transactions module for Wilxar Coins thus providing an advanced security
+layer for the Public and Private Keys used in the system.
+
+This enhancement is considered like a whole new breakthrough into the
+Blockchain technology and would open the door for more researches in
+the near future.
+
+Paper- ¢ 17 Wixlarcom 7 of 19
+wixlar
+
+— Enhanced NFC Payments
+
+23
+Our Technical team are working daily and Wixlar Engineers discovered an
+INTRODUCTION . . _ . . . .
+WIXLAR impressive way to maximize the daily transactions online and offline by
+WIXLAR SERVICES enhancing the Near Field Communications NFC Payment systems as
+WIXLAR ICO shown in Figure3.
+WIXLAR ROAD MAP
+
+a 1 — oe
+
+Gateway Gateway
+
+“2K licKey 2 Keys"
+
+Wixlar E-Cash Wixlar E-Cash
+Application Application
+
+2 Keys
+
+eys
+| 2 Keys |
+Trapdoor Trapdoor
+Hash Hash
+“One Key i One Key
+}
+
+Wixlar Wixlar
+User1 User2
+
+Figure3: Wixlar NFC Enhanced Mobile Application System
+
+This enhancement occurs through a special Wixlar NFC Mobile Payment
+Application, which upgrades the NFC Algorithm by utilizing the Trapdoor
+Hash Functions to provide unique Public and Private keys for each user
+plus a new feature that generates different keys for each transaction in the
+channel to minimize any channel attack and secure the anonymity for
+Wixlar Users.
+wixlar
+
+m= Wixlar Double Spending Proof
+
+2.4
+Prarenen Double-spending is a potential flaw in a Cryptocurrency scheme in which
+WIXLAR the same coin can be spent more than once.
+WIXLAR SERVICES
+WIXLAR ICO This is possible as a leak of security because each coin consists of a digital
+WIXLAR ROAD MAP file that can be duplicated.
+
+Double Spending Proof
+i —(DSS5=))| -a
+
+Buyer (p:w02919
+
+Seller2 waits for confirmation
+
+Figure4: Wixlar Double Spending Proof
+
+Wixlar uses enhanced special techniques combined together to prevent
+the double-spending through the digital signatures which preserves
+anonymity in a transaction with encrypted blind signatures that cannot
+be revoked.
+
+==  Wixlar Mobility
+
+From day 1, some of the Wixlar Users were eligible to test the Wixlar
+Wallet on Mobiles, Tablets, PCs and Laptops through their participation in
+the Wixlar Beta Testing mode that occurred in many countries in Europe
+and sponsored a number of major public events.
+https://wixlar.com/category/events
+
+Wixlarcom 9 of 19
+wixlar
+
+INTRODUCTION
+WIXLAR
+
+WIXLAR SERVICES
+WIXLAR ICO
+WIXLAR ROAD MAP.
+
+e Paper
+e Papet
+
+Wixlar Group is not limited to coding and programming software or
+mobile apps, but also manufacturing our own portable products such as
+Wixlar Mobile Phones, Wixlar Tablets, Wixlar Laptops and much more.
+
+Figure 5: Wixlar Technology Products
+
+Wixlar Mobility is the key to success for Wixlar Coins to be used by our
+delighted global users.
+
+3. Wixlar Services
+
+Wixlar Group offers to the public, individuals and companies some of the
+latest advanced technological services through a Global Decentralized
+Network based on the Blockchain technology such as Wallet, Master Card,
+Exchanges, Smart Contract, Letter of Credit, Cloud Storage, E-Shop,
+Academy, Rewards, Partnerships, Lottery and Free-Lancing.
+
+https://wixlar.com/services
+
+©2017 Wixlarcom 10 of 19
+wixlar
+
+—
+341
+INTRODUCTION
+WIXLAR
+WIXLAR SERVICES
+WIXLAR ICO
+WIXLAR ROAD MAP
+as
+3:2
+ss
+33
+—_=]
+3.4
+
+Wixlar Wallets
+
+Wixlar Coins are securely stored in your personal wallet on your computer,
+tablet, phone or laptop (Windows, Linux, Mac, Android, Paper Wallet).
+
+You can Download your wallet and immediately start sending and receiving
+payments with a click of a button . https://wixlar.com/wallets
+
+Wixlar Prepaid Card
+
+This Prepaid Wixlar Card is a usable physical & virtual card that you can
+
+securely carry and withdraw money on the go.
+https://wixlar.com/mastercard
+
+Global Exchanges
+
+Wixlar Coins can be converted into any other currency like S,£, £, ¥ etc,
+and into any other Cryptocurrency like BTC, ETH, BCC, LTC etc, through
+various legal public exchanges. https://wixlar.com/exchanges
+
+Wixlar Smart Contract
+
+Through the Wixlar Wallet, our users are able to create their own tokens,
+assets or shares through Wixlar Smart Contracts in order to take their
+business to the next level utilising Wixlar Blockchain technology .
+https://wixlar.com/smart-contract
+
+White Paper- ©2017 Wixlarcom 11 of 19
+wixlar
+
+INTRODUCTION
+WIXLAR
+
+WIXLAR SERVICES.
+WIXLAR ICO
+WIXLAR ROAD MAP
+
+»|
+N
+
+Innovative Letter of Credit
+
+With Wixlar Letter of Credit, the seller accepts to receive Wixlar Coins after
+shipping the goods to the buyer. The buyer agrees to send the exact
+amount of Wixlar Coins to our Wixlar Commercial Department which
+holds the balance and sends notification to the seller to ship the goods.
+Once the goods are received or shipped according to the mutual
+agreement between the buyer and the seller, the Wixlar Commercial
+Department will release the Wixlar Coins to the seller.
+https://wixlar.com/letter-of-credit
+
+Decentralized Cloud Storage
+
+The advantage of Wixlar Cloud Storage is that it splits, encrypts and
+distributes your files across a decentralized network through the
+Blockchain technology. The decentralization eliminates any failure or theft
+of your files unlike traditional cloud storage providers. You hold your
+personal private key in order to get full access and control your files.
+Decentralized Cloud secures your sensitive data through a fuzzy logic
+hashing algorithm that makes it much more secure.
+https://wixlar.com/cloud-storage
+
+Wixlar E-shop
+
+Wixlar Group is excited to announce the manufacturing of its own
+products such as Wixlar Phone, Wixlar Tablet, Wixlar Smart Watch, Wixlar
+Laptop and much more.
+
+Customers are able to purchase the latest technology products through
+the Wixlar E-Shop at the best prices and highest quality.
+
+Any product purchased from the Wixlar E-shop includes the integration of
+the digital currency Wallet into the product
+
+https://wixlar.com/e-sho:
+
+Wixlarcom 12 of 19
+INTRODUCTION
+WIXLAR
+
+WIXLAR SERVICES
+WIXLAR ICO
+WIXLAR ROAD MAP
+
+» |
+©
+
+Wixlar Academy
+
+Wixlar Academy takes our users and partners to the next step for success
+by providing education and certification in smart technology.
+
+Wixlar Academy opens the door for everyone to the open-source
+knowledge on the most up to date niche topics. Information is provided by
+authors from around the globe sharing the information on the Wixlar
+Academy platform.
+
+Incentives are provided for the global authors according to the level of
+interaction the authors have with the users.
+
+Wixlar Academy is your open-source for education with reference, besides
+the exciting announcements for Wixlar Events and Partners .
+https://wixlar.com/academy
+
+Wixlar Partners
+
+Wixlar Group is excited to co-operate with partners internationally
+allowing Merchants globally to accept Wixlar Coins as a payment method
+on their websites. https://wixlar.com/partners
+
+Wixlar Lottery
+
+Anew concept provided by the Wixlar Group. You can use your Wixlar
+Coins to buy a lottery ticket for your dream car, villa or yacht and the
+winners are chosen through a fuzzy logic faith system that guarantees the
+highest secured quality of processing and fastest lottery entry through
+Wixlar Coins. https://wixlar.com/lottery
+
+17 Wixlarcom 13 of 19
+wixlar
+
+=
+3.11
+INTRODUCTION
+WIXLAR
+WIXLAR SERVICES
+WIXLAR ICO
+WIXLAR ROAD MAP
+—=
+3:12
+—
+3.121
+—_—s
+3122
+
+Wixlar Free-Lancing
+
+Wixlar Free Lancing Platform is a global online marketplace used by
+freelancers to offer their services to customers worldwide. Everyone can
+be a freelancer on Wixlar Free Lancing Platform and getting paid in
+Wixlar Coins .
+
+https://wixlar.com/free-lancing
+
+Wixlar Rewards
+
+Wixlar Rewards provide a way to receive free Wixlar Coins through
+executing a number of easy tasks and assignments .
+https://wixlar.com/rewards
+
+Marketers and Authors Rewards
+
+Marketers and Authors that achieve certain targets will be rewarded with
+Wixlar Coins. Stake Holders with certain amount of Wixlar Coins are
+eligible for one of the top rewards such as Wixlar Smart Phone, Wixlar
+Smart Tablet, Wixlar Smart Watch.
+
+Stake Holders Rewards
+
+For some investors that like to have their investment in a trusted place and
+get an annual interest, Wixlar Group allows users to stake any amount of
+coins available in their wallet for a duration in order to get 10% extra
+Wixlar coins annually.
+
+This way Wixlar Coins become a great way to save and benefit from the
+variable price of the coins based on supply and demand, plus an annual
+interest (staking rate).
+
+aper- ©2017 Wixlar-com 14 of 19
+wixlar
+
+4. Wixlar ICO
+
+The Wixlar Initial Coin Offering (ICO) issuance will fund trading, marketing
+INTRODUCTION . . .
+WIKLAR and re-branding a new way to carry out local and global business using the
+WIXLAR SERVICES development of credit payments with a cheaper and a faster solution
+WIXLAR ICO than traditional wiring fees, paper work and transaction duration and
+WIXLAR ROAD MAP
+
+providing anonymity and privacy control to allow its users to utilize their
+Wixlar Coins freely anywhere anytime without limitations.
+https://wixlarcoin.com
+
+m= he Opportunity with Wixlar Coins ICO
+
+With the Cryptocurrency Market Capitalization of over $170 Billion USD,
+the ICO will support funding the Wixlar Group in order to start the Road
+Map of Wixlar Coins and expand faster in the Cryptocurrency market.
+
+A minimum of 60% of all funds raised in the ICO will be used for building
+technology projects, funding small businesses and attracting more
+merchants, partners and investors.
+
+This way when Wixlar Coin goes live, it will rapidly rise in price.
+
+— Allocation of Wixlar Coins
+
+The number of Wixlar Coins is limited to 5,330,000,000 Coins, out of which
+1,500,000 Coins will be available immediately in the ICO.
+
+The remaining coins will be distributed among Rewards, Lottery Project,
+E-Shop Project, Future Partnerships and some kept in public safe in stake
+holdings, saved in digital authenticated safe wallets, and some on Global
+Exchanges to be exchanged in the long term according to the
+
+following figure;
+
+White Paper- ©2017 Wixlar.com 15 of 19
+INTRODUCTION
+WIXLAR
+
+WIXLAR SERVICES
+WIXLAR ICO
+WIXLAR ROAD MAP
+
+Total Wixlar: 5,330,000,000 Coins
+
+30% for sale in the ICO
+25% for future public sale
+
+10% for Wixlar Rewards,
+
+10% for the Wixlar Lottery Project
+5% for the Widar E-shop Project
+5% for future partnerships
+
+15% retained by the dev, marketing and community teams
+
+Purchase Methods Accepted: Visa/Master Card, Bank Wire Transfer, BTC,
+ETH and LIC
+
+Figure 7: Distribution Chart of the Wixlar Coins
+
+ICO Stages and Bonuses
+
+Wixlar ICO occurs in 5 stages, in each stage, you are eligible to buy early
+Wixlar Coins with better bonus specials than the next stage. Bonuses are
+available from Day 1 in the ICO;
+
+Wixlar ICO Schedule
+
+By the end of the ICO the Wixlar Website (Wallets, Academy, E-shop) will
+become available and the beginning of the manufacturing process of
+Wixlar Smart ProductsThe end of the ICO, is the starting of the Wixlar
+Website and for Wallets,
+
+https://Wixlar.com/ico or https://WixlarCoin.com
+wixlar
+
+INTRODUCTION
+WIXLAR
+
+WIXLAR SERVICES
+WIXLAR ICO.
+WIXLAR ROAD MAP
+
+Purchasing Methods
+
+Wixlar Coins can be purchased using Bank Wire Transfer, Visa/Master Card,
+
+BitCoin BTC, Ethereum ETH and LiteCoin LTC through the ICO Website.
+https://WixlarCoin.com
+
+All funds will be received and held in multi-signature wallets to accomplish
+each step in the Road Map.
+
+MasterCard
+
+—~ BANK VISA
+RE
+
+wixter 4
+VW
+
+bitcoin ethereum
+—* WIXLAR
+ROAD MAP
+
+Q3 2017
+- Partners Global Meeting and Assigning Legal Contracts
+
+- Launching the Wixlar Group Company
+
+Q4 2017
+
+- Starting the programming process of
+Wixlarcom and Managing Wixlar services
+- Emphasizing on Hashing Algorithms Research
+
+— a 1. ie > =
+: 2S) Sere
+b A / JAS
+
+‘
+J
+
+Q1 2018
+- Beta Testing of Wixlar Wallet Mobile Application
+
+- Sponsoring and Participating in World wide Events
+- Launching https://Wixlar.com with Multi-Languages.
+
+Q2 2018
+
+- Launching Wixlar ICO
+- Wixlar Rewards and Wixlar Academy
+
+Q3 2018
+
+- Launching the Wixlar Coins and Wixlar Wallets
+- Starting the Wixlar Innovative Letter of Credit Service
+
+Q4 2018
+- Launching Wixlar API & Accepting More Global Partners
+
+- Wixlar Blockchain Smart Contract.
+
+- API becomes available for e-commerce.
+
+Q1 2019
+- Wixlar Prepaid Card
+- Wixlar Decentralized Cloud Storage Service
+
+Q2 2019
+
+- Wixlar E-shop with Exclusive Wixlar Technology Products
+- International money transfers to any card available
+- Smart Invoicing feature for developers
+
+Neches FAS).
+
+Q3 2019
+
+- Launching the Wixlar Free-Lancing Platform
+- Updating the Partners API
+- Distributing the Stake Revenue for Annual Stakers
+
+‘the f : f t . bsfeda,
+
+Q4 2019
+
+- Mega-Launching of the Wixlar Smart Lottery service
+- Expanding Collaborations with more Partners
+- Manufacturing More Technology Products
+
+roe
+
+“We have elected to put our money
+and faith in a mathematical framework
+that is free of politics and human error.”
+
+Tyler Winklevoss, Co-creator of Facebook
+

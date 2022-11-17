@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Flask #2
+    </title>
+</head>
+<body>
+    <!--form method="POST" action="/calculate">
+        <h1> 데이터 입력받기</h1>
+        <h5> pdf upload</h5>
+        <input type="text" name="num">
+        <button tpye="submit">upload</button>
+    </form-->
+    <form action="/uploader"
+      method="POST"
+      enctype="multipart/form-data">
+    <input type="file" name="file" />
+    <input type="submit" />
+    <button type="submit">제출하기</button>
+</body>
+</html>

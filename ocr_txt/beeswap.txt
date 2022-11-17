@@ -1,0 +1,378 @@
+ky BeeSwap
+
+NFT-DAO
+Automated Market Making
+
+Decentralized Exchange
+
+aA
+(|!
+
+ae
+
+aa
+
+Introduction
+
+In financial industry, the core participant of blockchain
+financial is a DAO. In the natural world, We all believe that
+the bees is the best decentralized autonomous organization
+
+In the bees’ DAO system, each small bee contributes to the
+community through labor. It not only meets the needs of self
+and the interests of the community, but also creates more
+surplus value that is higher than the needs of its species:
+honey.
+
+The achievements of bees, which fully reflect the power of
+unorganized collaboration to create an orderly society and
+generate value. This kind of strength and order is precisely
+the goal of decentralization financial and integration that the
+blockchain p
+
+Bees make honey, not for their own food.BeeSwap hopes to
+convey the organizational value of honeybees: users, like
+bees, can get due rewards by contributing to the community.
+And through incredible high-efficiency collaboration, we can
+make sweet honey fo
+&
+1. Market Analysis
+
+One of the core functions of finance is to solve the incentive
+problem. With the appearance and development of DeFi,
+which provides new ideas and more possibilities for this
+function. In 2020, the DeFi market is ushering in explosive
+growth. The locked-in value of DeFi has been soaring as an
+indicator to guide market liquidity .On September 18, the
+locked-in value of DeFi reached a new high of 10.812 billion
+US dollars.The outbreak of DeFi fully shows that the open
+and transparent decentralized financial , which based on the
+blockchain has huge development potential and will play a
+significant role in the future.
+
+In the hot DeFi market, however, behind the sharp increase in
+the price of various DeFi project governance tokens, its
+market share in the entire blockchain is only 1%, which is
+even like a drop in the ocean compared to the entire financial
+market. A large number of blockchain users have not yet
+participated in the DeFi market. There are several important
+reasons for this:
+© Congestion and high gas fees of ETH caused a worse
+user experience
+
+At present, most liquid mining projects are based on ETH. As the largest
+smart contract platform up to now, it has the ability to build smart
+contracts compared to Bitcoin. The total market value of DeFi tokens has
+reached 15 billion US dollars, exceeding the market value of all public
+blockchains except Ethereum. However, due to the current performance
+of ETH, the throughput is too low, the speed is slow, the congestion is
+serious, and the service fee is expensive, making transactions cost much.
+After the DeFi boom subsides, many participants will not be able to afford
+the high loss of handing fees.
+
+« DeFi is mainly developed in ETH, so other public
+
+blockchain users cannot have a hand in it
+DeFi prime data shows that 80% of DeFi projects are currently on
+Ethereum, while EOS and BTC have only 8% of DeFi projects
+respectively. Most of the DeFi projects are developed based on ETH, so
+that other mainstream public blockchain and mainstream currency
+holders cannot be participators in DeFi
+
+Unlimited mining models keep more users daunting
+According to a new survey conducted by cryptocurrency market data
+provider Crypto Compare, DeFi projects in 2020 are considered
+speculative by 90% of the audience, and only 10% of them consider it to
+be an acceptable daily financial governance option. The reason is that
+many DeFi projects currently adopt an unlimited mining model in order to
+increase the enthusiasm of early users. The unlimited currency production
+model will make users hold the currency for longer, the scarcity of their
+tokens will decrease, and the value of tokens will become lower and
+lower. In the end, it will be difficult to truly build consensus and maintain
+long-term development.
+
+« The current DeFi project provides high liquidity, but not
+have the continuous high value
+Currently, DeFi has gained the attention of the blockchain industry
+because of its high liquidity. Due to the simple and rude mechanism of
+projects in the current DeFi market, a lot of projects do not meet the
+conditions still have flooded in, causing bad money drives out good.
+Community consensus is difficult to consolidate, and the entire market
+cannot maintain a sustainable high value.
+
+If these problems mentioned above cannot be obviously
+improved, the DeFi market will soon encounter a
+development bottleneck. And DeFi is considered to be the
+engine that promotes the development of the blockchain
+market. Only when DeFi completely releases its potential can
+the entire industry achieve better growth in the long run. To
+this end, we launched BeeSwap and proposed our solutions
+for the above pain points.
+&
+2. BeeSwap
+
+2.1 Brief introduction
+
+BeeSwap is an AMM decentralized trading platform for the
+entire blockchain industry, based on the NFT-DAO underlying
+governance structure developed by ERC20.BeeSwap is
+committed to breaking the barriers of public blockchain,
+opening more cross-public blockchain liquidity transactions,
+and providing liquidity services to more users. At the same
+time, BeeSwap uses the CFMM system to realize automated
+transactions and reward liquidity providers. Anyone can
+experience the DEX platform service with few service
+charge, low slippage and high efficiency. In community
+governance, we also introduce NFT attributes to help
+BeeSwap capture higher ecological value and build a high-
+cohesion community consensus.
+
+2.2 Product highlights
+
+2.2.1 Blockchain—connected aggregator
+
+As Polkadot, Comos, Solana and other public blockchain
+ecological projects started liquidity mining, the trend of
+blockchain-connected liquidity mining is gradually
+revealed.BeeSwap will support ETH, BNB smart chain,
+GXChain, TRON chain, and will also support Polkadot and
+more public blockchain in the future.
+In the initial stage, the integration of wBTC and RenVM
+tokenization and blockchain-connected technology will be
+introduced in the blockchain-connected aggregation mining,
+and then we will develop our own tokenized blockchain-
+connected technology and finally realize the decentralized
+asset blockchain-connected.
+
+2.2.2 Liq
+
+ity mining with wider coverage
+ Blockchain-connected asset staking supporting
+
+In blockchain-connected aggregate mining, it will support multi-chain
+mainstream currency staking such as ETH, USDT, HT, GXC,
+GOF,BNB,YFIUNI, etc. and produce platform currency BEE.
+
+® Incentivize different DEX liquidity providers LP
+
+‘At the same time, it provides rewards for DEX liquidity provider LP
+represented by UniSwap, and supports its platform currency and popular
+projects to launch BeeSwap.
+
+2.2.3 Reduction of loss of liqui
+
+© CFMM system
+
+At present, the AMM system represented by UniSwap still has some small
+defects, making it difficult to be widely adopted. An AMM system can
+choose an unlimited number of specific curves for pricing, and the
+current platform uses a single curve. We can abstract all these different
+pricing functions and call the entire category constant function market
+makers (CFMM). BeeSwap will support multiple AMM curves in light of
+the characteristics of different tokens, such as the stable curve used in
+stable coins.
+
+jity mining
+Use Layer2 protocol to reduce handling fees
+The ETH Layer2 protocol will be connected to enable users to trade at
+BeeSwap faster and with lower fees.
+
+2.2.4 NFT-DAO: NFT capture high value and DeFi
+improve liquidity
+
+BeeSwap adopts a dual-currency operation governance
+structure, which is composed of the DAO governance token
+BEE and the BeeSwap ecological token HON. The two
+complement each other. BEE can produce HON, or consume
+HON to have more HON.We have introduced the attributes of
+NFT for the governance token BEE, users can synthesize
+NFT-BEE through BEE, and users can also get NFT-QUEEN
+by lot drawings. NFT-QUEEN has the right to make
+proposals, and all proposals will be reflected on the
+blockchain in order to truly realize fairness and transparency
+in community governance.The auction value of NFT-QUEEN
+and NFT-BEE will also further enhance the community
+consensus, enable BEE to capture higher value, and ensure
+the lasting stability of the project.
+#8 NFT-DAO Frame $e
+
+a
+
+ BeeWorld: The cradle of NFT-QUEEN and NFT-BEE
+
+In BeeWorld, each bee with different attributes corresponds to an NFT on
+the chain, with a unique id and status. More importantly, it has its own
+independent value. There are only 99 NFT-QUEENs in the entire
+BeeWorld, which means 99 nodes. Owning the queen bee (NFT-QUEEN)
+has the right to propose, and BEE holders have the right to vote, thereby
+helping the community complete governance.
+
+The proposal needs to staking the NFT-QUEEN and a certain percentage
+of BEE coins, but this income of the NFT-
+QUEEN. The auction cannot be carried out during the staking voting
+period. When the voting ends, the NFT-QUEEN and the BEE coins used
+for voting returns in the original way, but the BEE used in the passed
+proposal will be burned permanently.
+
+does not affect the normal
+Users who own NFT-QUEEN will be the lucky ones who benefit the most
+from the entire BEE ecosystem. After the staking of HON is launched,
+users who own the NFT-BEE can mine by staked BEE coins and NFT-
+QUEEN, and the NFT-QUEEN will
+than 150% on the basis of ordinary users.
+
+jorease the mining weight by more
+
+Users can also synthesize NFT-BEE with new attributes by consuming
+BEE coins, and the BEE coins used for synthesis will be burned
+permanently. The level of NFT-BEE is randomly determined according to
+the amount of BEE consumed by the user, because the quality of the
+synthesized bees is different, and the staking weight and benefits are
+also different,
+
+« BeeStore: The NFT auction mall
+
+BeeStore is a bee coin auction site where users can auction their own
+NFT-BEE and NFT-QUEEN. Other users can freely participate in the
+auction. Successful auctions need a certain of transaction fee, of which
+1% will be used for HON holders’ dividends, 1% for HON’s secondary
+market repurchase and destruction, and 1% for BeeStore maintenance. In
+addition, BeeStore will be open to NFT ecological projects on BeeSwap,
+and the NFT of such projects can be auctioned on BeeStore.
+
+Community governance: voting for high quality projects
+
+In BeeSwap, everyone can create trading pairs on it. However, in order to
+avoid the chaotic of DeFi mining. BeeSwap will use community voting to
+help users screen high-quality projects to reduce the risk of participating
+users. Every BEE coin holder has the right to vote. Besides, other
+important decisions of the community can be made by voting
+3.Token Model
+
+3.1 The output and distribution of BEE
+
+The total amount of BEE is constant at 21 million pieces, and
+10% is used for community incentives and ecological
+construction (It will be used for cooperative exchange
+platform coin mining, ecological partner token mining, and
+Bee ecological token mining, investment resource exchange,
+etc.), 90% is produced by mining.
+
+3.2 BEE staking
+
+3.2.1 Arrangement of reduction
+Each round of mining cycle is one week, 300,000 pieces are
+mined in the first week, the output is reduced by 2 times in
+
+subsequent per week.
+
+Week — Weekly Reduction (times) Weekly Output
+Ist 300,000
+2nd 2 150,000
+
+3rd 2 75,000
+3.2.2 Staking pool
+
+Output Output way of BEE
+
+There are 8 head
+produce BEE by staking. Initial mining pool:
+ETH, HT, GXC, USDT, YFII, UNI, GOF, BNB
+
+Ist 300,000
+
+According to the actual situation of the
+eight staking pools in the first round, it is
+decided to keep and cancel. The stayed
+2nd 150,000 pools will share the output equally and
+directly enter the second round
+
+Used to incentivize BEE transactions
+liquidity providers in DEX such as UniSwap
+
+According to the actual situation of staking
+pools, it is decided to reserve and cancel.
+3rd 75,000 The stayed pools will share the output
+equally and directly enter the second round
+
+After BeoSwap goes online, the liquidity in UniSwap will flow to BeeSwap
+&
+3.3 The output and distribution of NFT
+99 pieces of NFT-QUEEN will be born through staking,
+liquidity mining and synthesis. The specific rules will be
+announced on the official website, and the lot drawing will be
+triggered when the conditions are met. Users who meet the
+corresponding requirements can participate in that.
+
+Users can also synthesize NFT-BEE with new attributes
+through BEE, and have an opportunity to obtain NFT-
+QUEEN. The BEE used for synthesis will be permanently
+burned, and the NFT-BEE level is randomly determined
+according to the amount of BEE consumed by the user.
+Because the quality of the synthesized bees is various, the
+stake weight and earnings are also different.
+
+3.4 The output and distribution of HON
+
+The total amount of HON is constant at 1 billion pieces, 10%
+is used for community incentive ecological construction, and
+90% is produced by community mining. HON staking will
+start during the BEE mining process. Users can stake BEE to
+get HON. The output will be 1.5 million in the first week, then
+it will be reduced by 3 times in the second week, and by 2
+
+times in subsequent per week.
+Week — Weekly Reduction (times) Weekly Output
+Ist 1,500,000
+2nd 3 500,000
+3rd 2 250,000
+
+3.4.1 Allocation of HON staking pool
+
+Week Output Output way of BEE
+
+Ist 1,500,000 BEE staking pool
+
+BEE transactions in liquidity staking pool
+
+2nd 500,000 BEE staking pool
+
+BEE transactions in liquidity staking pool
+
+HON transactions
+
+uidity staking pool
+
+3rd 250,000 BEE staking pool
+
+BEE transactions in liquidity staking pool
+
+liquidity staking pool
+3.5 Profit Distribution of HON Worker Pool
+
+The main application of .
+WorkerPool mining transaction 7
+fees:
+
+© 1% as a reserve for risk; co
+
+© 1% is used for harvest rewards;
+
+‘* 3% is used for community activities,
+
+technical iterations, security audits, etc
+
+4, Roadmap
+
+lm 2020 Q2 Market research and MVP model discussion
+lm 2020 @3 Product development and testing
+lm 2020 Sep Audit of liquidity mining contract
+
+lM 2020 Sep-Oct BeeSwap liquidity mining goes online
+lM 2020 Sep-Oct Support multiple liquidity platform LP mining
+
+™@ 2020 Q4 BeeWorld launched
+@ 2020 Q4 BeeSwap DEX launched
+mm 2021Q1 BeeSwap LAY2 protocol launched
+
+™@ 2021 Q2 Beehive API launched

@@ -1,0 +1,702 @@
+Cryptonex
+
+NITE
+
+2017
+Cryptonex
+
+CONTENTS
+
+Introduction 2
+Blockchain. Review 2
+
+Market analysis 3
+Cryptonex - global blockchain acquiring 7
+
+Bounty program 9
+ICO 10
+Roadmap 10
+Legal support 11
+Expenditure of funds 11
+Team 12
+FAQ 15
+Links 16
+
+Introduction
+
+Cryptonex platform (hereinafter "Cryptonex") is developed as international acquiring
+and it is based on the blockchain technology. Instead of traditional methods, such as venture
+investments and share issue, financial model of cryptofinancing ICO — Initial Coin Offering -
+is used for capital rising.
+
+We are convinced that the blockchain technology can speed up development of
+economic coparticipation, which is currently solving the sphere's problems by attracting a
+significant number of previously unclaimed people. The safe system based on blockchain
+technology is protected against unauthorized access. Users can convert fiat money to any
+cryptocurrencies and tokens, as well as spend cryptocurrency with the help of bank cards
+and mobile applications with contactless payments.
+
+Cryptonex is developed as an open source code platform. To account property rights,
+cryptocurrency of the same name Cryptonex, ticker CNX is used. Cryptocurrency Cryptonex
+will be in free trade on centralized exchanges in October-November 2017, as soon as the
+backoffice and the web wallet are launched.
+
+Blockchain. Review
+
+Blockchain is a fundamentally new kind of database technology realization. It is
+optimized to solve a certain set of shortcomings of other similar technologies. Traditionally,
+databases have been created as centralized repositories for data processing and transactions
+conducting. Limited technical capabilities and security issues are the reason of distributed
+databases rare functioning. Blockchain is a technology for distributed databases realization,
+allowing to carry out transparent and safe transactions between participants of the system.
+By itself, blockchain is a database, founded on collating of distributed copies of the same
+database and divided into blocks of transactions between two or more parties. Each block
+contains transaction details, but the participants remain anonymous.
+
+The blocks are checked and verified by the entire network with the help of encryption
+mechanism, which compares unique signatures of the parties and the general information
+about a transaction. The transaction is considered confirmed if the result is the same for all
+the nodes. Addition to the chain of previous transactions occurs only after the confirmation.
+Otherwise,"consensus" will correct the result on the node with the false data. A register of
+blockchain is duplicated simultaneously in many places and each copy is updated separately
+in accordance with the data on new transactions.
+
+Security
+
+Encryption is used in blockchain to confirm transactions by verifying the signatures of
+the parties, participating in a transaction. This guarantees the absence of «false» operations,
+which are not agreed by the parties involved. Complex mathematical calculations
+("hashing") are performed with each attempt to enter information into the blockchain. They
+deal with the details of a current transaction, the data about the participants and the results
+of previous operations.
+Dependence of a blockchain current state on the previous transactions ensures
+impossibility of their replacement by hackers. In case of hash sum mismatch and discrepancy
+with the results of all the rest nodes, the changed data is discarded.
+
+Transparency
+
+Blockchain is a distributed database, maintained and synchronized by interaction of
+multiple nodes (for example, by several partners, participating in frequent operations with
+each other). Transaction is added to the blockchain only if transaction data have been
+confirmed by all the parties. This means, that all the participants can access to one and the
+same information. It significantly increases the level of openness and transparency in
+comparison with the traditional systems. Their work often relies on various "hidden"
+databases, located behind firewalls, which are not available outside of a particular
+organization.
+
+Efficiency
+Support and maintenance of numerous copies of blockchain database is not less
+
+expensive than service of one centralized database. Practice confirms, that the parties,
+performing transactions, duplicate databases with one and the same information of an
+operation. Often this information differs and leads to costly, time-consuming negotiations
+between the organizations. Blockchain cancels the necessity of manually checks, which
+allows saving time and funds. In some cases, blockchain is useful for development of
+common, "cooperative" resources, which exclude information duplication for the
+
+Market analysis
+
+Currently, the cryptocurrency market is constantly expanding, increasing capitalization
+and offering new channels of investments for its participants. In this analysis, we highlight
+the key moments of the cryptocurrency industry development to form understanding of
+ongoing processes, causes and effective relationships.
+
+Since 2013, the price of Bitcoin has increased 90-100 times up to $1100 per unit. The
+industry experts consider the Cyprus banking crisis to be one of the main reasons for the
+cryptocurrency value growth, however, after a rapid rise, there was a predictable fall in the
+rate. The start of cryptopayments receiving in the local market caused an increase of Chinese
+players’ interest. The rising attractiveness of the cryptocurrency as an object of alternative
+investments stopped the fall in the rate and led to Bitcoin strengthening.
+
+The Bitcoin price was more expensive in China than in other countries. As a result,
+there appeared plenty of speculative schemes and "black" methods of trading. The
+government did not like such kind of activity, and by the end of the year the Central Bank of
+China had forbidden cryptocurrency operations and recommended the investors not to
+invest their funds. Bitcoin instantly reacted by a two-fold collapse in value. It is noteworthy,
+that by the end of 2013, 1,000 the market participants had owned half of all the assets. This
+also facilitated destabilizing of the situation at the cryptocurrency market.
+
+Such fluctuations attracted mass media attention. As a result, there was an impetus to
+thedevelopment, mining popularization and new cryptocurrencies creation.
+use the currency in economics; however, the overall level of trust was extremely low.
+
+3
+One of the main reasons was security issue. It is worth remembering the example of
+Japanese exchange Mt.Gox, that lost $473 million because of the hacker attack.
+
+In 2015, despite the sharp ups and downs of the previous year, Bitcoin strengthened
+to $450, and in 2016 its value reached $900 per unit. It was facilitated by the increase of
+payments in Bitcoins around the world, devaluation of the Yuan, and growing demand of the
+Chinese investors, who found the way to bypass the currency control of the government. Not
+the last influence was rendered by the fact that despite difficulties in interaction efficiency
+Chinese exchanges did not collect commission for transactions. This formed a convenient
+environment for high-frequency trading and rising of exchange trade turnover on the
+cryptocurrency market. However, the Central Bank of China warned the investors again, and
+later announced the audit of a number of exchanges for providing financial stability of
+processes. The exchanges temporary restricted funds withdrawal, introduced commission
+for conversion and suspended the margin trade, resulting in the Bitcoin rate fall from $1,100
+to $800.
+
+The Bitcoin capitalization increase and growing interest of the world community led to
+new cryptocurrencies creation. The top five places were occupied by such altcoins as
+Litecoin, Ripple (XRP), Ethereum and Dash. The number of fraudulent SCAM-projects
+increased. Growth of Ethereum became acceptable among the main altkoins. Its price was
+growing significantly during 2016 due to development of decentralized applications,
+organizing and carrying out the first ICO (Initial Coin Offering). Despite the hacker attack and
+the subsequent division into Ethereum (ETH) and Ethereum classic (ETC), by the end of the
+year the ETH growth had almost been 300%. It is interesting, that ETC showed its viability: its
+price has doubled according to the results of the year.
+
+Dash
+
+I,
+| all M, we it
+rt U he dey
+Pe TF
+iy
+
+jireyiet
+
+In 2017, one of the key growth factors was the world community expectations related to
+the decision of the American regulators and concerned the launch of ETF based on Bitcoin.
+The measure was aimed at stimulating some extra investments, but during the long-time
+discussions, SEC refused to employ the instrument. However, it was not a hindrance for
+getting more funds from the Asian players. Japanese exchanges came out of the "shadow",
+became completely legal and got the necessary legal resources to make Bitcoin a legitimate
+kind of payment.
+After that the cryptocurrency became free from sales tax. Undoubtedly, that situation
+caused a real "boom" in the market, and the Japanese Yen as a dominant investment
+currency replaced Yuan. At the same time, the demand for cryptocurrency among the
+Korean players also increased. It happened due to the mass media, that formed a positive
+image and cryptocurrency prospects, and due to Korean exchanges, which were provided
+with financial and reputational support from the country’s main conglomerates.
+
+Nevertheless, the market efficiency, which was expressed in a colossal price gap of
+Bitcoinsin Asia and in other countries, continued to attract speculators. On separate days,
+the cost of Bitcoin in Korean market received a 50% premium, which triggered investments
+increase in arbitrage trading. Nowadays, there is an opinion that the Asian players invest
+great sums not only because of convenient legal investment climate, but also due to their
+desire to be competitive, to be trendmakers of events in the world market, to quickly enrich
+by supporting new promising cryptocurrencies. Investments in new currencies, that were
+put into circulation by local exchanges, exceeded in amount the investments in similar
+European projects. The investments from Korean and Japanese money allowed Ripple to
+show a tenfold increase within a month. A similar result was shown by Litecoin in two
+months. Bitcoin became a stable reserved option; the risks of
+investing in it were significantly decreased in comparison to the previous periods.
+
+BTC
+
+ji hg ea
+
+yi!
+
+Pia tar APNE fu
+Pe | i ] nif
+
+The impetus for blockchain technology development was ICO (Initial Coins Offering).
+This tool allows new blockchain industry projects to attract capital at the start of the project
+by selling tokens (crowdsale). In most cases ICO is based on Ethereum smart contracts; in
+order to participate, it is necessary to buy ETH (or BTC). It was another important Ethereum
+platform growth factor, in a short period of time it entered the market and became popular
+among the leading cryptocurrencies. Now some new promising projects, based on their own
+platforms, appear. They are attractive investments channels due to the industry
+development and they are offering wider and more convenient functionality for their users.
+Icobazaar.com says, that more than $ 900 million has been attracted with the help of ICO
+since the beginning of 2017. In accordance with coinmarketcap.com, the capitalization of
+the TOP—40 projects, which appeared as a result of the tokens sale in 2016-2017, reached $
+4 billion.
+The Ethereum growth is also affected by a speculative factor: if the launch of a large
+ICO is planned, then, respectively, the demand for ETH is expected and great number of
+people, who want to play on the increase.
+
+ETC
+
+Wh. A yn
+a We a =m it
+pr! ! My if al
+
+Interest in the cryptocurrency market is constantly increasing. Arbitrage strategies can
+be applied because of inefficiency, caused by a price gap between regions. External factors
+are also important, for example, mass media participation. In most countries there is no
+exchange control, so trade of insider and manipulative information, use of the techniques,
+forbidden on traditional financial exchanges, are not ruled out. The example is the Litecoin
+growth before the SegWit activation, which allowed to increase throughout blockchain and
+announced the placement of currency on Korean exchanges. Operations on the exchanges
+are also realized by new companies, so it is rather difficult to trade, dealing with high
+volatility and surges in volume. Quite often, trades are suspended and the assets of the
+exchange are frozen. The withdrawal period, even with the normal platform functioning can
+take much time, and hacker attacks threaten the very existence of investors' funds.
+
+Particular attention should be paid to the so-called flash-crash, i.e. the situations when
+the cryptocurrency price falls sharply because of insufficient liquidity in case of a large
+application for withdrawal or conversion of funds. It is worth noting that due to the
+increasing automation and use of complex algorithms, traditional financial exchanges are
+not protected as well.
+
+A striking example is fall in the Ethereum rate from $317 to $224 and then to $1 (with
+a subsequent refund) due to market order of $12.5 million with immediate execution. To
+prevent such situations, it is discussed the introduction of circuit breakers (suspension of
+trading with a significant price deviation for a short time) and maximum possible market
+order with immediate execution. Market speculation is confirmed by the capitalization
+indicator in relation to the trade volume per day. While Bitcoin shows acceptable for this
+area 1-5%, some currencies (for example, Ethereum) sometimes reach 25%.
+
+In conclusion, it is worthy highlighting, that at present, there is no centralized platform
+for converting all the currencies.
+Even Bittrex, one of the largest exchange platforms, which offers more than 900 items
+for exchange, has limited functionality and does not convert cryptocurrency into different
+countries’ currencies. This complicates funds withdrawal for users and demands additional
+time and financial costs. Nevertheless, technologies and blockchain are actively developing
+with the help of employing more and more intellectual resources of high-quality, including
+ICO, that allows to attract investments and develop speed and security of transactions.
+
+Cryptonex (CNX) - Global Blockchain Acquiring
+
+Cryptonex is a global, decentralized cryptocurrency, developed on its own blockchain
+platform. The main goal is to provide the opportunity to exchange any currencies of the
+world for any cryptocurrencies and tokens, buy goods and services using a mobile phone and
+payment cards. Instantly, with minimum commission.
+
+Let's analyze this scheme in details:
+
+Banks of the countries
+<= where cryptocurrency
+is legalized
+
+Exchanges <=>
+
+Cryptocoins <<
+
+Any users <=> << Debit cards
+
+Mining pools <—_
+a Mobile applications
+
+<> with
+
+Blockchain services <=> contactless payments
+
+1. Conversion
+
+Storage of CNX, BTC and Ether will be available after the web wallet launch in
+September. There are plans to add the most popular cryptocurrencies. Employing only one
+web wallet, a user gets an access to all the popular cryptocurrencies.
+
+Due to instant conversion in the backoffice, the user will avoid a long-time
+expectation, as it happens on many exchanges, and he/she will have the guarantee of
+carrying out a transaction. If the balance of at least one kind of cryptocurrency is positive,
+the user is able to employ a card or a mobile application. The application will show the price
+both in fiat money and cryptocurrency, so the user can choose the wallet to pay from.
+Hardware wallet (flash drive) will be released for ensuring the security of large sums of
+cryptocurrencies.
+2. Exchanges
+Cryptonex is scheduled to be listed on the exchanges in October-November 2017.
+
+Currently, we have reached an agreement on connecting to cryptocurrency exchangers with
+pairs like eth / btc cnx / btc, cnx / eth, as well as with such pairs as btc / usd, cnx / usd, etc.
+In the future, it is planned the addition to exchanges acquiring, which can use all its
+functions: deposit, withdrawal of funds, payment for purchases, etc.
+
+3. Cryptocurrencies
+
+We will add to acquiring "long-standing", dynamically developing and the most
+popular cryptocurrencies
+
+4. Mining pools
+
+After connecting the third-party mining pools, the user will be able to get a reward into
+the webwallet and employ all the features: making purchases in a store, etc.
+
+5. API
+Blockchain and other Internet services can be used according to their purposes by
+connecting to a high-speed acquiring API.
+
+6. Banks
+
+We plan to found or buy a ready-made bank in Singapore or in another country under
+friendly jurisdiction. The documents cost with all the licenses is $ 400 000 — 900 000. The
+registration takes 1-4 months (depending on the task — purchase or foundation). This
+includes connection to Visa / Mastercard payment systems and issuance of cards at will of
+clients. A mobile application with contactless payments and virtual cards will be the most
+
+preferable. There are plans to add thirdparty banks to acquiring.
+
+7. Cards, virtual and real
+
+Due to immediate exchange in the backoffice, a user instantly gets funds on a virtual
+or real card and can carry out payments and transactions between accounts.
+
+8. Mobile application
+
+It will include the functions of web wallet and contactless payments. It will be available
+for iOS and Android.
+
+9. Protection
+
+Cryptonex uses an encryption Scrypt algorithm. It protects all the transactions and
+wallets from external hacking. Due to our technical solution, the important files in the web
+wallet cannot be found by Trojans and other malicious programs. The access can be
+encrypted, the password is strongly recommended to be kept in a safe place. Moreover, the
+mining procedure provides safety, as block closure is verified by all the nodes, and if
+information desynchronization takes place, a suspicious transaction is rejected.
+
+Some particular Cryptonex features are implemented in other cryptocurrencies, such as
+Dash debit cards and Cryptopay.
+
+8
+However, there is no full functionality, aggregating all the financial flows in a
+blockchain. Cryptonex team has integrated all the current technologies in the platform and
+the backoffice. This allows to carry out main operations in one place. We guarantee speed
+and security of transactions.
+
+Thus, Cryptonex:
+1. Accumulates traffic from LocalBitcoins, cryptocurrency exchanges and fiat exchangers.
+2. Facilitates deposit/withdrawal and exchange procedures.
+3. Combines financial flows in blockchain, providing new opportunities for blockchain
+community growth.
+Mining
+Cryptonex provides two types of mining: Proof-of-Work and Proof-of-Stake. Sum of
+105 000 000 CNX is reserved for mining.
+
+The profit of P-o-S mining is 12% per annum. For this, you need to get coins and keep
+your wallet online all the time. Instructions for P-o-W mining will be published after ICO
+completion.
+
+Bounty Program
+
+Cryptonex team attracts active network users to participating in PR campaign and the
+project development, offering the reward in the form of CNX coins. Read about the terms
+below.
+
+1. Referral program
+
+The team gives a unique opportunity to the active users, which help Cryptonex
+develop. Send a referral link to your friend and get 20% each time your friend buys CNX. The
+reward is automatically transferred only if a purchase has been done via the backoffice. Be
+careful while sending a referral link! The Bounty Program is valid until CNX 90,000,000 is
+released for free circulation. After that the CNX purchase via the backoffice will be
+unavailable.
+
+2. Payment for posts
+
+Cryptonex rewards its users for posts in forums and social nets. Posts should be
+meaningful and useful. For 1 post, that mentioned Cryptonex, a user is rewarded with 1 CNX.
+For the post with active link to Cryptonex website the user gets 2 CNX. The user may post
+information about Cryptonex in the signature. To get the reward the user should send the url
+via the form of the backoffice. The program controls the existence and availability of the post
+within 3 days. Then the moderator checks the post quality and remunerates the user.
+
+3. Design
+
+Follow the project updates on the official pages in social nets not to miss the
+announcement of contests for the best website design, mobile application and interfaces.
+
+9
+4. Bug Bounty
+Cryptonex team invites you to participate in Bug Bounty program, which aim is to
+
+discover possible vulnerabilities of our platform and services. We pay a reward for every
+revealed shortcoming. Depending on the importance of the problem found, the sum of the
+reward is varying from 100 to 10 000 CNX. Try to search bugs in the backoffice, web wallet
+and mobile applications for iOS and Android. Current and former employees of the company,
+their friends and relatives are not allowed to participate in the program.
+
+5. Translations
+
+Cryptonex encourages users to translate texts and develop the project in their national
+environment. We are interested in entering new markets of the countries, where popularity
+of blockchain development is high.
+
+6. Ideas and cases
+
+Do you have great ideas or cases for Cryptonex development?
+Share with us and get a reward.
+
+ICO
+
+ICO (Initial Coin Offering) is an issuance of coupons, tokens or coins in the form of a
+cryptocurrency to pay for services of the platform in the future. We suggest that you
+evaluate the technology, Cryptonex prospects and purchase an appropriate number of coins
+(CNX) as an investment in the platform development. The received funds will be used for
+further enhancement of the project, implementation of the road map and improvement of
+new technological solutions, which develop Cryptonex cryptocurrency and the blockchain
+community in whole.
+
+Cryptonex price: 1 CNX = 0.0005 BTC | 1 CNX = 0.007 ETH. DASH price is 120 times
+more expensive, Ethereum — 150 times.
+We expect, that along with the growth of technology and gradual implementation of
+the road map, the Cryptonex price will increase.
+ICO procedure takes September (1-30).
+The amount of coins (CNX) available for purchase within ICO period is 85,000,000 CNX.
+If the coins remain unused after ICO completion, they move to "cool wallet". During a
+
+planned cooperation expansion and the launch of acquiring, the coins are sold to banks in
+accordance with demand.
+
+Roadmap
+
+Cryptonex team is gradually moving towards its obligations fulfilment concerning the
+blockchain technologies development. Here is the list of the key stages:
+
+10
+Autumn 2017
+
+The launch of backoffice and web wallet. Providing of high-speed API. Launch of wallet for
+Mac OS. Start of ICO campaign. Listing of coin Cryptonex (CNX) on international exchanges.
+
+Winter 2017 — 2018
+
+Development, test and launch of mobile applications for iOS and Android platforms.
+
+Spring 2018
+Development and sale of hardware wallets. Getting licenses.
+
+Summer 2018
+
+The final stage of acquiring development. Addition cryptocurrencies and tokens to
+acquiring. Foundation (purchase) of own bank in a country under friendly jurisdiction.
+
+Autumn 2018
+Beta-testing. Addition to acquiring via banks.
+
+Winter 2018 — 2019
+Launch of acquiring. Full functioning of all the technical tools
+
+Legal Support
+
+We understand, that the implementation of such a global project is impossible without a
+competent legal support. Full compliance with the legislation of countries is actively being
+formed at the moment, it is our responsibility. The Cryptonex team carefully analyzes the
+introduction of new legal norms into the legislation of the countries, in which the acquiring
+will operate, as well as tracks the prerequisites for their occurrence. Transparency of actions
+and legal purity are the company’s priorities. During the project development, it is planned
+to expand legal support for the CNX legitimate distribution in various countries with an
+attractive investment climate. There are plans to recruit a new, high-qualified personnel of
+an international level. As soon as ICO procedure completes, we will obtain all the necessary
+licenses and documents.
+
+Expenditure of funds
+
+The main expenditure channels are enlargement of the team's technical and intellectual
+resources and expansion of PR-campaign scale for increasing popularity and trust in
+Cryptonex.
+
+The received funds will be distributed in accordance with the following
+proportion:
+
+5% — Team
+10% — Legal support of the project
+
+11
+10% — Promotion of the project
+15% — Bounty program
+
+30% — Provision of liquidity
+
+5% — Reservation, buyback
+
+5” thy 5” BO
+
+Reservation,
+buyback
+
+Legal support
+
+: of the project
+Expenditure i
+
+of funds
+
+30% (©)
+
+Provision 25 % ie
+of liquidity ari __2at Eh
+Software
+a development
+15% 10% qi
+Bounty Promotion
+program of the project
+
+Team
+
+One of the team’s main strengths is the software development experience. Our
+specialists possess an advanced qualification level. Since 2011, we have been developing
+software for financial markets, managing companies, brokers and have been creating
+highly-loaded server applications, maintaining sites and access systems with high
+
+attendance (from 1,000,000 users and more).
+
+The team has achieved the opportunity to shorten the time for projects implement
+due to the usage of modern methods of approach to development management, which
+enable to release software before the realization period. It allows carrying out a qualitative
+
+test in advance and getting the first feedback.
+
+12
+D
+
+Pavel Kalinin Lina Kai Andrey Ershov
+Founder & Managing Director PR Director Executive Director
+
+Max Tennant Igor Litvinenko Dmitry Palaguta
+Technical Director Team Leader C++ Programer
+
+Egor Sukov Amir Sayfutdinov Denis Zhurakovsky
+Network Admin Front-end Developer DBA Specialist
+
+Within 6 years the team has developed many interesting and demanded projects.
+Here is the list of the most significant of them:
+
+Service application for Forex broker customers
+
+The traders' backoffice, which allows to manage finance, accounts and other
+opportunities ofthe trading platform, employing common for all the users system. The
+system is developed taking into account the requirements for high load and the possibilities
+of horizontal scaling. At the peak of maximum load, the application can provide unimpeded
+access to a server for 10,000 clients.
+
+Management system of investment trading
+
+This is one of the best platforms from the point of view of functionality. It is worth to
+highlight the distributed scheme of partner deductions, the ability to count profit of the
+user's choice, the loss control system, the flexible system of rollover schedule and much
+more. The system has the horizontal scaling possibility and theoretically is not limited in
+growth.
+
+Monitoring system for trading and investment accounts
+The platform for collecting trade statistics, investment and movements of finance
+
+between the client accounts is as good as MyFxBook and its equivalents. The modular
+scheme allows easy and timely integrating new analysis methods. It gives a competitive
+advantage, when a client chooses an analysis platform, based on a set of functional tools.
+
+13
+Being the first criterion of customer loyalty,the system is specifically focused on
+functionality.
+
+System of statistics
+This includes modules for working with ticker data of the market, functional tools
+
+statistics and strategies, a behaviour planning system and more. Development allows
+analyzing customers’ behavior of a trading platform, adjusting and forecasting the required
+amount of funds in clearing accounts, allocating risks and choosing the strategy necessary
+for the company to work with clients and service providers.
+
+Aggregate system for HFT — trading
+
+HFT — trading is hardly imagined without access to several banks or aggregators. The
+advantage of this approach is obvious. Several service modules for integration and
+maintenance of protocols of aggregate Currenex systems and Integral have been developed
+by the team.
+
+Bonus and competitive system
+
+The system has been developed to reward the customers for a particular activity, such
+as deposit for management or the best results of turnover for a certain period. The system
+allows introducing new of encouraging and evaluating methods.
+
+Management modules for trading platforms
+In the arsenal of the team there are several modules for integration with modern
+
+trading platforms. For rapid implementation our specialists beforehand learn the platforms,
+which are gaining popularity. The team also develops plug-ins for trading platforms, which
+change the behavior in accordance with the customer requirements. One of these solutions
+examples is the possibility to choose the scheme of customer service: full/partial entering
+the market, entering to a certain provider of liquidity or service inside the trading platform
+without providing foreign trade
+
+System of market behavior modeling
+
+The team has several projects, related to market movement modeling to provide
+internalliquidity or conduct tests that determine various strategies of the company
+development
+
+System of instant investment and loss control
+
+The team has developed a completely new approach to investing in trading accounts.
+An investor can immediately enter or exit the market, redistribute the funds instantaneously
+or according the plans. Due to lack of binding to rollovers and share schemes, the customers
+have an opportunity of accurate control of losses, irrespective of the manager's declared
+expenses; they can clearly determine the risks.
+
+14
+FAQ
+
+1. Is Cryptonex a SCAM project?
+Many investors are worried about the issue due to rising popularity of the
+
+cryptocurrency market. There is a great number of projects aiming at collecting money and
+finishing the activity. In order to make investors confident in the investments reliability, we
+disclose the main participants of the project, develop the platform and launch the web
+wallet with the help of our own funds, discuss issues with our audience via social nets. Being
+on the start of the project, we are implementing a roadmap and making efforts to be listed
+on the exchanges. Cryptonex project is an ambitious and innovative platform, aimed at
+developing blockchain technology. In the future, our decisions-making will help Cryptonex
+be recognizable among the most popular global cryptocurrencies. It will bring profit to all
+the parties involved in the project.
+
+2. Will there be enough technical resources to implement the project?
+For carrying out the ambitious tasks which have been set and are being gradually
+
+realized by the Cryptonex team, advanced-qualified personnel is firstly required. Currently,
+at the initial stage of the project, the specialists experienced in software development for
+financial markets are working. ECN—-broker with access to the interbank market, an
+aggregator of providers of liquidity for HFT-trading, systems of portfolio investments,
+PAMM-accounts have been developed by our team. However, there are many difficult tasks
+ahead, so the funds will partly be spent on attracting the European and Asian specialists to
+strengthen the developers’ team and get new ideas and solutions to the project realization.
+
+3. Can legal problems occur?
+
+Nowadays, the cryptocurrency market is practically unregulated by the different
+countries governments. Legislatures are finding a solution and developing a legal framework
+concerning cryptocurrencies and exchanges. To ensure legal clarity of Cryptonex project
+implementation, we have reached an agreement with the Asian partners on purchase of a
+bank in Singapore or in another country under friendly jurisdiction for conducting
+transactions via the bank. The operations do not violate the existing international and local
+legislation of the countries, which residents are the cardholders.
+
+4. Can the currency fail to grow in price?
+
+Every day plenty of new currencies and tokens in ICO do not show growth and later
+become “lost” among the variety of similar projects. There are several main reasons of such
+start-ups failure: they do not develop blockchain community, they do not attempt to offer
+useful tools for the cryptocurrency holders and, in essence, they are the clones of already
+existing projects. The key difference of Cryptonex is a technological contribution to the
+blockchain development and desire to make cryptocurrency usage safer and more
+convenient. For this purpose, we developedthe software, which combines the current tools
+in one platform. Cryptonex is trying to raise interest in the cryptocurrency. Due to instant
+conversion of cryptocurrency into any currencies of different countries, people have the
+opportunity to purchase goods in any shops of the world.
+
+TS
+5. When will the listing be? Are you sure that the currency will be listed on the
+exchanges?
+
+Listing on the cryptocurrency exchanges is planned for October-November 2017.
+To make Cryptonex (CNX) enter the exchanges, it is necessary to satisfy the requirements of
+the specific platforms. Before ICO start, the currency meets all the demands for listing launch
+and entering the main exchanges. Cryptonex team is in a direct dialogue with the world's
+leading exchanges and has already made the preliminary arrangement of the currency
+gradual entering after ICO completion.
+
+Links:
+
+Official site: https://cryptonex.org/
+
+Source code: https://github.com/Cryptonex
+
+Blockchain explorer: https://explorer.cryptonex.org
+
+Forum Bitcointalk: https://bitcointalk.org/index.php?topic=2087904
+Facebook: https://www.facebook.com/Cryptonex.org/
+
+Telegram: https://t.me/cryptonexCNX
+
+YouTube video: https://www.youtube.com/watch?v=C78J_ KEEm5E
+
+Thanks for your attention!
+Cryptonex Team
+e-mail: hello@cryptonex.org
+
+16

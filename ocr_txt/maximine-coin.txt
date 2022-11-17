@@ -1,0 +1,1651 @@
+MaxiMine Whitepaper
+English Edition
+
+VERSION 1.1.1 Release 1
+
+Token MaxiMine Foundation
+
+Issuer
+
+Token MaxiMine Coin
+
+Name
+
+Token MXM
+
+Ticker
+
+Smart 0x8e766f57f7d16ca50b4a0b90b88f6468a09b0439
+Contract
+
+Address
+
+MaxiMine Whitepaper Draft v.1.1.1
+
+Contents
+1. Background ....
+1.1 Mining INGUStry ........ecececescesessescescseeeceeesesecaeeesecsesecsesecsesseecsecaeseceececsecueecsesacaceeeaceesaseesaesaeeeeeeenees 4
+1.2 Proof-Of-WOTFk oo... eeesesssceseseseseeeesesescsesesssecscecaeseseuaeacacseseesnscaeeeevseseseaceeesaeacasaaeesanacaceeenesatataeeeetes 4
+1.3 EQUIPMENKE ee ee eee eeceeeeeseeseeeetaeceeceeenecseteneaeeseseneeseeseesaecsecsacsaessessaesaessessaeeeeeseeeeseaesseeeaseneteeseatens 4
+2. PrODIOM 0... eeeceseesesseseseneteesesescseseeesescscaesesecseacacaeseacanscacacuesecasacaeadeesasacacaeenesaeacaeaeeeseneraeaeaenesananaeeeeees 5
+2.1 Independent Mining ...........ccececcesessescsseseesescecesceacecescescscceseceecaesseaeaeaecseeecseeaceeeaenaceecaeessaesaseseaeeess 5
+2.1.1 Getting EQUIPMENK...... eee eee eeececeeeceeeeeeeeseeeeeseceeceaeeseesaeceecsecsaesnecsecsaesaeseeseaseaetseseeteeeeaseetes 5
+2.1.2 Expertise and Skill .........ccecseescsceseessseseeseesesecaeceseeaesceseeaesesseseceeeeeseeaesaesceaesesaeeeeeeeeeeesaeeateeatens 5
+2.1.3 Climate and Electricity ........c.cccccsesssseseseeseeecseesesecsesceseseeseseeseeaecaeeeacsaeaecaeseeaeecenseeesaeeaeeneateas 5
+2.1.4 Sunk Cost for EQuipment .........cccececcecesceseseeseescseeeceecseeeesecseeeeseeeceecaeseceesseeceesaeeesseeeseesaeeeseeaees 6
+2.2 ClOUd Mining ........ececeseesesceseseesceeceeescseesessesecaesecseesesscaesecuesscsecaecaesececseceecesuesaeescsecaeeaseseeseeeeneeeeeeaees 6
+2.2.1 Risk Of FrAUC ees eeceseseeseseseseseeeesesnscseeeseseesescaesesecatsceeeeeeeecseaeenesaeacieaeeeeesenseaeaenesseataceeeees 6
+2.2.2 Perpetual RECUIriNg COSt .......cecececseseseesescescseeseecsessesecaecaeeecaeeaceecaesecsesacsesaeseseecaeeecesaeeeseeeaees 6
+2.2.3 Lack of Transparency and COntrOl..........cceccccesessescessseeecsecseeecaeeeceecaeseceesseeceeeeceecaeeeceeseeeeseeeees 6
+
+3. MaxiMine
+
+3.1 Introduction and LOCatiOn.......eeseeseseseseeseseseseeesesseseseseseseeseeesceeseeenetacseseesseseseaeaeeesanessanesenenseataes 7
+3.2 Climate and POWEP oo... seceesscesesesesesseseecsesessetscseecseseuesaeaesesesaeatsceesesesenecscacseseeseacaeaeeesananeeseeenenaeaeees 8
+3.3 Strategic Partnerships ..........csceccesesceseesescesescesceecsceecssescsccsesecaecaceecscacaesassacsesaesecaesaeaesaeeasaeeesseeaeeess 8
+3.4 Farm and Equipment.........:.cccscescssessescssesceeesccescesceacscesceeceesecaessceecaceaeaessseacaesaesecaesacaeeasaeaeeeseeeateese 8
+
+3.5 Patents and Proprietary Technology
+
+4. Mining Industry Analysis ...........ccceccsceccesessescseeseseesceecaecaeeecseseesecseseesesaesecaeeaeeesaesecaeseesesaeeesaeeateneaeeatees 11
+4.1 Mining Equipment Investment AnalySis ...........:cscescessseceesesceecscesceesceecseeseseeseeecaeeaeeaeaeeeseceeeeeeees 11
+4.1.1 Purpose of AnalySis .........cccccecssssecssecesecsesseseeseseesesaesecsesaeseseesessesaesecaseceacsaeseseeeeseeeeesaeeateeateneats 11
+4.1.2 Influencing Factors for Mining Profit Projections ............:ccccscescssessesceeeseesceeseeeeaceeeseeaeeeeeeeeeeees 11
+4.1.3 Computation Methodology for Investment Analysis..........:.:ceccscscesceseeseeseeeeeeeeseeeaeeaeseeaeentees 12
+4.2 MaxiMine Investment Study.........ceccecsccesescescesesceseeeeseeseseesceeescesesecseecseseeesseesceeeaeeaseesaeeecaeeeeaees 14
+
+4.2.1 Mining Rig Performance Within the Same Timeframe ..........c:cccceceseeseesesceeeeeeeeeeeeeeeaeeeeeeeae 14
+4.2.2 Investment Analysis of the Same Mining Rig at Different Time Points ...........:.::ccceeeeeeeeeeee 15
+
+4.3 MaxiMine Investment and Risk Monitoring System...
+
+4.3.1 Real-time MOnitoring .........cccecescescesescesessescseesesecacesceecaeeecseceeseceessesecaeseseeeeceeceseeseeeaeesseeeaeeeees 17
+
+5. MXM TOken......esessssesesssesseseeeessesescseeececseseusuesecscsesausueecseesseseeesacuesesaeacscacaesasanscseaeaeeeaeaceeeeesanaeeaeesenes 18
+5.1 Mine kKOMOny ........cccecescesescesceecseeecseescsecseseeseeaeseceesaesecsesacsesaesesaesaesecaesaesesaesaeseceesesaeeaeeeeaeeeeaeeatats 18
+
+5.2 System DeSIgn ........ccceccessesceeeeesesseceeesceeaecaecsaesaeceecsaessecseeceeeaaeseseaesaeeseeeaeeaessaesaeseeseeseaeeaeeeeseaeeaeeees 18
+
+5.2.1 Staking Contracts ....
+5.2.2 “Oracle” COMtract .....seeeseeessesesesesetseseseecseseeesescseaeeeseeescecseeesenseseaceeeesaeeceeseeeesesataeaeeneeaneeetes 19
+MaxiMine Whitepaper Draft v.1.1.1
+
+5.2.3 Mining Reward Distribution...........:cccsceccscescecesceseeseseecceeeseeecaceecsecseecssecesecaeeeceesaceacaeeasesaeeeeates 20
+6. MaxiMine ECOSYStem ........ccceeceescesceeeeeseeseceeceaecseceecsaeeaecuaeeecsaeeseseaeeaeesaecnecaeseesaessessesaesaeseeeeeseaeeees 22
+6.1 MaxiMine Decentralized Operating System (MDOS)....
+
+6.2 MaxiMine Protocol........c.ceececesessseesesessseseeseesscseecseeesesescsesecseseecaeeeeeenecaeaceseeeseseeeaeeeseveeseneeenesaeaes 22
+6.3 MaxiMine ECOSYStOM ........cceeccescesceeseeseeseceeceesseceeesaeeaecseeeeeeaceseeceesaesaeeaecaecsaeeaeseeseseaesaesneeeeseaeeees 24
+6.3.1 Cross-border transaction SYSt@M .........ceccscecceceseeseseeseeseseeseseesesecaeesesecaecaesesacsesaceaeeeeateeeaeeatats 24
+6.3.2 On-chain Data SHaring.........ccceccssescsssseseeseeeceecseeeseesesesseesseseesecaeseeseaeseeseeeesesaeeaeaeeaseeaeeetats 24
+6.3.3 Shared CCOMOMY .......ccecsceeceseescseeseseeseseesessesecaesaesesacsaesesaesesaeseesecaeseeaeeaseesaeeaseesaeeeeaeeaeeeeasentats 24
+6.3.4 P2P LOAM oo. eeececescecsseescseeseseesceeceeacsecsesacsecaesesesaesasscsacsesaeesaesaesecaeeaesecasseesesacsesaeaeaeeateneaeeatens 24
+6.3.5 Initial Coin Offering (ICO) .........ccceccecesesceseeecseesesecseeeeseesesesseeesecaeeeeeeeaeseeaeseesesaeeesaeeaeeeateatees 24
+6.3.6 Intellectual platfOrim .........cccececessescsesseeeeseeeesceaesecsescesecsesecaecsesecaesaeaecsesaeaeeeesesaeeatsesateeeaeeatees 25
+
+6.3.7 Blockchain Games...
+
+7. TOKEN Sale oo... ececcscesesesessscseeseessescscneeeeecaescessecessescsensseecseasscueeesscsesesaesacacaeacenseseasaceeseatacaeeesaneceeaeeeees 26
+7.1 FUNC raisin g........eeccesescescecescecescesecessecescescsecsecacsesaesaesessesesasesceasaceasaecaeeesaeesesesaeeaeaeeaceasaeeaeeesaeeneeees 26
+7.2 Fixed Deposit Plan.........sescescssescesesseseeeeseescscescsceseeaeseeseeseseesceecaeeacsecaesecsessesecaeeaceeeaceeseeeaeeeeaeeaeeees 27
+7.3 Use Of FUMS.... ee ceesesescseseecesesesessseseescsssesesseseecscsesesesecssacseseseeavacaeeesesanecaeeeeesanscasaseteesanasateeeneeaeae 28
+
+8. Roadmap.
+
+9. Team and AdViSOry......c.cccessecescesescesessesesecsesecsecsesecaeseesecaeseceeacsesseseceesaesecaesaseecaesaesesacsesaeeaeeesaseeeaeeatees 30
+9.1 Team Members... eseseesesssceseseseseeeecseecsesescueeecessesenseesasscseseesescecseeesenseesaeaesaeseacaeseeesenenateeneneeeeaea 30
+10. MaxiMine Foundation... eee seseeseeeeeeseseeceeeeeerseetaesenesseeseeseaeeeees Error! Bookmark not defined.
+10.1 Corporate GOVErMAaNCe..........cecceccseeseeseseeeesceeceeeseeeceeeeceeteeeeseeteeeeeas Error! Bookmark not defined.
+10.2 Corporate Structure .......cccccceccesescesceeesceeeseeeeeeeceecseeeceeseeesaeeateeas Error! Bookmark not defined.
+10.3 Advisory COMMIttee .........ccceccecescecceeesceeceeeeeecaeeeeaeeeceetseeeeaetateeae Error! Bookmark not defined.
+11. Legal & Disclaimer .........ccccceseeeeseeesesceseeceseeceseeseeeeseeeeeseeeeeaeeeeeeeasentets Error! Bookmark not defined.
+11.1 Legal RiSKS ......cccccccscsseecescesceeesceeeseeeeseeseeeseeceeeeeceaseeecesaeeeseeeeeeeeas Error! Bookmark not defined.
+11.2 Disclaimer... ceeeccsesesseeeseeeesseseseecseeeeeeseeceeeeseneesseeeceeeeensceeaesenes Error! Bookmark not defined.
+
+Page | 3
+MaxiMine Whitepaper Draft v.1.1.1
+
+1. Background
+
+In early 2009, the genesis block of the Bitcoin network was mined by Satoshi Nakamoto, launching
+Bitcoin into existence with the release of the first open source client and the issuance of the first
+Bitcoins. Since then, Bitcoin has seen tremendous growth and following, from being a niche currency
+used only in very small circles, to worldwide adoption and publicity in mainstream media. One of the
+key driving factors for its success lies within its innovative usage of cryptography in its underlying
+technology through a process known as “mining”.
+
+1.1 Mining Industry
+
+Mining refers to the process of adding new transactional records to Bitcoin’s distributed public ledger.
+The ledger itself is known as the blockchain because transactional records are packaged into blocks
+before being linked together as a database.
+
+The blockchain is used to confirm that transactions carried out within the network are verified. It also
+serves to testify towards the authenticity and legitimacy of individual transactions to prevent a
+potential case of “double-spending”.
+
+1.2 Proof-of-Work
+
+Proof-of-work refers to the concept used to define the requirement for the generation of a new set of
+transactions to be added to the distributed transaction database. Every set of transactions is packaged
+into a block containing a block header. The block header contains a short string of meaningless data —
+called a nonce — attached to them. Mining computers are required to search for the right meaningless
+string such that the block as a whole satisfies a certain arbitrary condition. For Bitcoin, it is required
+that the SHA-256 hash of the block will have a certain number of leading zeros.
+
+The popularity of Bitcoin has also raised the visibility of the proof-of-work consensus algorithm, with
+many other early cryptocurrencies adopting it in their technological stack and making a myriad of
+improvements and modifications to it.
+
+1.3 Equipment
+
+In the early days, the primary form of mining placed emphasis on CPUs and GPUs. However, as
+cryptocurrency mining became more and more profitable, Application Specific Integrated Circuits
+(ASICs) were designed for the sole purpose of mining and were more efficient than traditional
+hardware by an order of magnitude. These specialized devices were not only more powerful than GPU
+miners, they also consumed less electricity and thereby incurred less cost for the miner, ultimately
+increasing their profit margins.
+
+Page | 4
+MaxiMine Whitepaper Draft v.1.1.1
+
+2. Problem
+
+Despite the profitability of mining, high barriers-to-entry exist in this industry, preventing most people
+from taking part in it. Initially, the only way to get into cryptocurrency mining was to be an
+independent miner and purchase and configure equipment to mine. This system proved to be
+effective for most individuals who had both the technical expertise and capital to manage their own
+mining equipment. As the industry progressed, coordinated efforts proved to be significantly more
+effective than independent mining and key players were quickly able to dominate the mining industry.
+Efforts to lower the difficulty and increase adoption and participation, combined with the widespread
+adoption of cryptocurrencies resulted in an infrastructure known as “cloud mining”. Cloud mining
+allowed firms to set up mining farms and rent out hashing power at a cost to individuals, increasing
+participation of lower skilled miners.
+
+Today, both independent and cloud mining are provided as options for retail investors and miners
+alike, each with their own set of advantages and disadvantages.
+
+2.1 Independent Mining
+
+Independent mining can produce very high returns if the owner is experienced and the equipment is
+well maintained. However, the skills needed to set up and configure the mining rigs may prove difficult
+to individuals who lack a complimentary background. In addition to that, external factors out of their
+control such as electrical fees and climate could negatively impact the returns from mining.
+
+2.1.1 Getting Equipment
+
+The purchasing process of cryptocurrency mining equipment is usually the first challenge faced by
+aspiring miners. Procuring ASICs directly from Bitmain or other manufacturers is an unpredictable
+process as the stock is usually sold out within a very short period of time and delivery times may turn
+out to be longer than advertised. The low supply of ASICs and a strong monopoly in the manufacturing
+of such equipment also causes prices to soar in the secondary market, with listings as high as two to
+three times of the retail prices. Attempts to purchase graphics cards to construct mining rigs for
+cryptocurrencies without ASIC mining capabilities prove to be equally challenging due to similar
+problems in supply and demand.
+
+2.1.2 Expertise and Skill
+
+Even if an independent miner is able to receive the equipment needed for mining, a high level of
+expertise and skill is required to configure the equipment and ensure maximum efficiency and output
+of the equipment. Optimization is especially challenging due to the additional factors for consideration,
+such as the increased heat output from the overclocking process. Any mistake made could potentially
+damage the equipment and reduce the output and efficiency of the capital spent.
+
+2.1.3 Climate and Electricity
+
+External factors outside the control of the miner are able to heavily impact the returns from mining,
+with the two most important factors being climate and electrical cost. In this regard, climate refers
+mainly to the temperature and humidity of the mining farm. An ideal climate would be a cold and dry
+one as a cold climate offsets the high heat dissipated by the mining rig and a humid climate would
+damage the equipment if they are exposed. Electrical costs generally account for over 30% of the
+running cost for operating a mining farm and if the rates per kilowatt hour is high, the profit margins
+from mining would be reduced drastically.
+
+Page |5
+MaxiMine Whitepaper Draft v.1.1.1
+
+2.1.4 Sunk Cost for Equipment
+
+Purchasing and owning equipment results in a high sunk cost involved in the initial capital commitment
+as some of the equipment such as ASICs are heavily specialized and are difficult to liquidate after using
+them. Some manufacturers and resellers have also defined rules against equipment that has been
+used for mining as their lifespan would be reduced drastically in the process.
+
+2.2 Cloud Mining
+
+Remote hosting and cloud-based mining helps reduces the cost and barrier to entry for investors and
+provides access to the same mining capabilities for mining rewards. However, a different set of
+problems and issues can arise from cloud mining due to the lack of ownership over the equipment.
+
+2.2.1 Risk of Fraud
+
+For cloud mining, hashing power is generally purchased through mining contracts in place of buying
+the actual equipment. This brings about additional risk as investors often do not get to see the mining
+rigs or farm, making it a very common way to run Ponzi schemes. Since the funds are committed up
+front, in the event of liquidation of the cloud mining farm or service, investors would get nothing in
+return as they are paying for the service and agreeing to no ownership over any of the underlying
+assets and equipment.
+
+2.2.2 Perpetual Recurring Cost
+
+The requirement to purchase contracts for mining duration would eventually add up to a high amount
+of recurring cost due to the lack of ownership over the equipment and assets. This means that if the
+investor plans to mine for a prolonged period of time, the profit margin would be lower unless the
+cloud mining company reduces their fee structure. For miners who own the equipment, the profit
+margin would increase once the rig has earned more than its cost.
+
+2.2.3 Lack of Transparency and Control
+
+Cloud mining services are fully owned by the service provider and the processes and calculations are
+generally not made public and non-transparent. Mining service providers can also charge hidden fees
+such as through the absorption or under declaration of the transaction fees collected from each block.
+Service providers are also free to modify their pricing as they deem fit, resulting in a business model
+that may not be very beneficial to investors purchasing and renewing short term contracts.
+
+Page | 6
+MaxiMine Whitepaper Draft v.1.1.1
+
+3. MaxiMine
+
+In view of the challenges in the industry, MaxiMine proposes a decentralized cloud mining pool based
+on blockchain technology to provide an open, fair, accessible and transparent mining pool for
+investors. Investors will also be able to benefit from the overall services based on the rich experiences
+and resources of the founders and team members. Although it is a cloud mining service, the main
+differentiating factor for MaxiMine is the staking process, instead of a traditional fixed cost and
+payment, investors are required to deposit capital for the duration of the mining contract, resulting in
+minimal capital loss incurred in mining.
+
+3.1 Introduction and Location
+
+MaxiMine leverages on a few key resources that provide a strong competitive edge in the industry
+while bringing high value to its investors. The wealth of experience amassed by the founding team
+members expands on the deep knowledge and understanding they have in both cryptocurrency
+mining and business management. The deep ties and strong partnerships that they have forged are
+also used to enable strategic value through networks and connections. Over the years, the team has
+devised innovative means to optimize and improve the mining process and increase the returns and
+output of any mining farm.
+
+MaxiMine has its technology headquarters in the United States. Its first batch of mining farms will be
+located in several countries, with the largest one in Xinjiang, Northern China.
+
+Mining Farm
+
+The most efficient and effective mining rigs are manufactured in China, along with all the parts
+required in servicing. Over 60% of the global hashing power is generated in this country and it has
+proven itself as an industry leader attracting the best talent and resources into its mining community.
+
+Situating a flagship mining farm in Northern China would therefore bring about a number of benefits
+and geographical advantages such as a reduction on foreign exchange risk as the primary currency
+utilized in both the farm and in dealing with vendors. Time and resources consumed in transport and
+logistics are also reduced due to the closer proximity to key suppliers and partners.
+
+Page | 7
+MaxiMine Whitepaper Draft v.1.1.1
+
+3.2 Climate and Power
+
+Situating the mining farm in Xinjiang brings about benefits that can reduce operational overhead. The
+vast expanse of land combined with a low population allows for land and labour costs to be among
+the lowest in the world.
+
+In addition, the area has significant power wastage resulting in extremely low electrical fees of about
+28 cents CNY (4 cents USD) per kWh. With a local steppe climate and an average annual temperature
+of 13.2 degrees Celsius, cost savings are also accrued in the reduced machine and farm cooling costs.
+
+3.3 Strategic Partnerships
+
+MaxiMine has formed multiple strategic partnerships with experienced firms and industry
+professionals. Two such examples of the many key strategic partners are Bitmain and its associated
+pool, Antpool. Bitmain is the leader of mining chips, and MaxiMine is the champion of mining farm
+management and operation with many proprietary technologies and patents. By combining the best
+of both worlds, MaxiMine has established a hyper efficient and highly profitably mining farm business
+model.
+
+By leveraging on deep ties to Bitmain and other strategic partners, MaxiMine will be able to gain
+priority access to newly released products such as the Ethash ASIC, the Antminer E3 that were
+acquired months before the mass market. Delivery of equipment and orders will also be expedited to
+reduce capital lockup and allow for quicker establishment and setup for the farm.
+
+3.4 Farm and Equipment
+
+The first mining farm for MaxiMine is planned to house 40,000 Antminer S9i 14T mining rigs designed
+for ASIC mining the SHA-256 algorithm used in Bitcoin and Bitcoin Cash. Based on statistical analysis,
+with a conservative estimate of a 50 cent CNY (7 cents USD) electrical cost, each mining rig has a
+breakeven point of about 161 days. In this scenario, electrical costs accounted for slightly over 30% of
+the total cost. Applying dynamic prediction to this model would generate an annualized ROI in CNY of
+77% excluding machine depreciation and 45% including machine depreciation, with an annualized ROI
+in BTC at 100% excluding depreciation and 98% including depreciation.
+
+Page | 8
+MaxiMine Whitepaper Draft v.1.1.1
+
+3.5 Patents and Proprietary Technology
+MaxiMine owns more than 20 patents related to mining rigs and mining operations, which provide a
+significant competitive edge in the market.
+
+For example, MaxiMine owns a full series of rig container-related patens: 201711275292.x;
+201711274897.7; 201711274978.7; 201721678581.X; 201721678731.7; 201830165533.4; 201830165883.0;
+201820590678.3; 201820589919.2; 201820589918.8; 201830173682.5, etc.
+
+To use a patent as an example, BTC-BOX is an Invention Patent (201711275292.X) that allows the
+construction of a modularized mining rig container.
+
+BTC-BOX brings about major benefits in terms of better internal climate, temperature and humidity
+control and real-time monitoring capabilities. Heat dissipation and cooling have also been optimized
+through rigorous testing and innovation along with the durability of the containment unit throughout
+the four different seasons. With proper cooling cycles and intelligent humidity control systems, mining
+rigs can function at peak capacity all year round and increase the annualized return on investment per
+rig.
+
+The BTC-BOX is currently in its third generation (Invention Patent 20171127498.7) and has received
+multiple improvements and upgrades since its initial conception. It is deployed live and used ona
+daily basis in private mining farms owned by one of the founders.
+
+Page | 9
+MaxiMine Whitepaper Draft v.1.1.1
+
+In the rare event that the farm has to be relocated due to regulatory requirements or natural disasters,
+the modular design will be able to accelerate and expedite the relocation process, allowing the
+relocation to be completed in a very short time. Post relocation, it will also enable rapid redeployment
+of the mining rigs at the new farm, reducing downtime and increasing efficiency.
+
+Page | 10
+MaxiMine Whitepaper Draft v.1.1.1
+
+4. Mining Industry Analysis
+
+4.1 Mining Equipment Investment Analysis
+
+Our primary report and analysis are done based on corporate finance and investment analysis
+methodology. We have made use of web crawler technology to collect data from a broad source, and
+subsequently we present the data in a visualized style.
+
+4.1.1 Purpose of Analysis
+
+We will use Bitcoin mining as the example in our analysis. Based on the same point, we will analyse
+the profitability of different mining rigs. We will also analyse and compare the profitability of the same
+mining rig at different time points.
+
+4.1.2 Influencing Factors for Mining Profit Projections
+
+Human nature is complicated. As such, an ecosystem that is established on human nature will be a
+subjected to influence from multiple factors and mechanisms. The figure below indicates the main
+factors that affect the profitability of mining from the prospect of investment analysis. In reality, the
+factors that affects bitcoin mining are more complicated.
+
+We have taken into consideration multiple factors, including but not exclusive to mining difficulty,
+bitcoin price, theoretical mining revenue, electricity cost, additional taxes and fees, cost of mining rigs
+and hash power. A multitude of secondary factors such as changes in exchange rate would also impact
+the projections to some degree. It should be mentioned that these factors fall into different categories
+and cannot be represented clearly under the same scale in a single figure. We have therefore made
+adjustment by upscaling or downscaling certain figures. The adjustment will not affect their historical
+trend.
+
+Various Influencing Factors of Mining Profits
+
+— mining_atticumy_vaiues
+— bitcoin_prices
+theoretical_profits per T
+—— dectric_prices
+tees taxes
+—— hashrate_singie_batcowm_maning equipment
+
+Page | 11
+MaxiMine Whitepaper Draft v.1.1.1
+
+4.1.3 Computation Methodology for Investment Analysis
+
+Project investment analysis generally makes use of NPV and ROI. In NPV analysis, only projects with
+positive NPVs are accepted. Under ROI analysis, the ROI of a project should be higher than the
+opportunity cost of the investment. In the following sections, we will use ROI to analyse the MaxiMine
+project. When there is sufficient company data, NPV can also be used. The last section of this chapter
+will briefly explain the formula used in the calculations.
+
+Mining Difficulty and Corresponding Hash Power
+
+Formula for mining difficulty dictated by encryption algorithm
+
+DOT
+p= (1.1)
+DOT represents the number of HASH when the difficulty us at 1. It is a very big constant. It is usually
+labelled as Ox1dOOffff and is a compression marker. CH is the current target HASH. It has been
+compressed and then stored in the block. Only CH needs to be adjusted when the difficulty changes.
+The smaller CH is, the greater the difficulty, and vice versa.
+
+Through derivation of the above equation, we can obtain a new equation (1.2). We can there fore calculate the
+HASH required (number of HASH) for block generation when the current difficulty is equal to D.
+
+— Dx(23?)
+~ 600
+
+CH
+
+(1.2)
+
+Theoretical Return on Investment for Bitcoin Mining
+
+The difficulty of mining (the number of HASH required for generation of a block) determines the demand
+for computational power, which is directly correlated to the performance of the mining rigs. Therefore,
+the theoretical return of any bitcoin mining device can be calculated by the following formula (1.3, 1.4,
+1.5, 1.6, and 1.7)
+
+CH
+HT = (1.3)
+PHT = (1.4)
+EPHT = P27 (1.5)
+XT
+DEPHT = = (1.6)
+1
+ppT = + (1.7)
+DEPHT+XT
+
+Where M is equal to 10”, the unit multiplier of hashing power (1 KH/s*M=1 TH/s), HT is the hashing
+power, V is the current number of bitcoins, and PHT is indicative of the computing power (unit is TH/s)
+for acquiring a bitcoin. XT equals to the hashing power of a mining rig (unit is TH/s). EPHT refers to the
+number of mining rigs needed to calculate the power of XT for one bitcoin. N equals to the number of
+blocks created in one day. DEPHT represents the number of mining rigs needed to acquire a bitcoin in
+one day, and PPT is the share of a bitcoin that a mining rig whose computing power is XT and one of
+the power unit T can acquire ina day.
+
+Page | 12
+MaxiMine Whitepaper Draft v.1.1.1
+Based on the above information, we can derive the theoretical gain in Bitcoin obtained per day and
+express it as the following
+
+M+V*N
+CH
+
+PPT =
+
+(1.8)
+
+Actual Mining Profit Calculation
+= Gross Profit calculation
+
+Using the above formula, we can calculate the theoretical gain per unit of has power per day based
+on the performance of the mining rig. Using the following formula (1.9), we can calculate the actual
+daily profit of the mining rig
+
+GP = Price piteoin * XT * PPT (1.9)
+Among them, Pricégitcoin refers to the actual price of bitcoin on that day; GP is the gross profit of the
+mining machine for one day.
+
+= Net Profit Calculation
+
+The net profit equals to the gross profit minus the fixed cost (such as depreciation) and the variable
+cost (such as electricity charges). The following formula can be used to calculate the daily net profit
+per mining rig
+
+W+24+Price_electric
+1000
+
+NP = GP — -@Q (1.10)
+
+Where W refers to the power consumption of the mining machine (unit w) and Q refers to the fixed
+cost.
+
+= Payback Period Calculation
+
+Based on the daily net profit calculated in the previous step, we can then calculate the return period
+(in days) of the mining rig with the formula
+
+__ Price_equipment
+NP
+
+PP (1.11)
+
+= Investment Analysis for MaxiMine Mining Farm
+
+With the formulae defined above, an in-depth analysis of the different mining rigs in the market can
+be conducted.
+
+Other Project Investment Analysis Indicators
+
+= NPV
+
+Page | 13
+MaxiMine Whitepaper Draft v.1.1.1
+
+The equation (1.12) reflects the dynamic profitability of the project within the time frame of construction
+and production. It is the gross summation of NPV of the annual cash flow (according to certain discount rate)
+
+during the construction and production period.
+
+—yn _NCFe
+NPV = ho
+
+(1.12)
+
+In this formula, Net Cash Flow (NCF), Discount Rate (r) and project cycle (n) are factors affecting NPV.
+= IRR
+Formula (1.13) represents the discount rate when the NPV of the project equals to zero or the discount rate
+when the NPV of cash inflow equals to the NPV of cash outflow.
+
+NPV = Yi.) NCF,(1 + IRR)~t = 0 (1.13)
+In this equation, IRR is used to evaluate the profitability of the project. It is calculated based on the cash
+flow of the project. IRR is not related to capital but associated with project decision making. The cost of
+capital is the lowest IRR demanded by the investor when investing in the project. When making a decision,
+the project is deemed feasible when IRR equals to or is greater than the cost of capital. Otherwise, the
+project is not feasible.
+= Profitability Index
+Pl (profitability index) is also called current value index. Formula (1.14) represents the ratio between the
+
+NPV of the future cash inflow (CIF) and the NPV of the future cash outflow (COF).
+
+PI = Lo CIF((1+r)*
+Do COR (1 +11)
+
+(1.14)
+When PI>1, the project is feasible. Otherwise, it is not feasible.
+
+= Pay Back Period
+
+PP (payback period) is the time taken for net cash flow to get back the investment. When the annual net
+
+cash flows are different, we use the following formula (1.15).
+
+ILNCFy-1l
+
+CNCFy (1.15)
+
+PP = Naccumulative-net-cash-flo — 1+
+
+Naccumulative-net-cash-flow represents the number of years taken before the accumulated net cash flow turns to
+positive. LNCF-1 represents the absolute value of the accumulated cash flow the year before. CNCFN
+represents the cash flow in the current year. In the calculation of PP, the time span is in days and the
+
+assumption is that the daily net cash flow is equal
+
+4.2 MaxiMine Investment Study
+
+4.2.1 Mining Rig Performance Within the Same Timeframe
+
+This section selects various types of mining pools or miners and compares and analyse relevant data
+of 20 different mainstream bitcoin mining equipment, focusing on the same time period (July 2018),
+to compare and analyse three indicators related to the earnings of mining rigs. The evaluation
+indicators include the daily net profit of a single mining rig, the daily net income per time period of a
+single mining rig, and the daily return period of a single mining rig (under fixed net income).
+
+The histogram below shows the comparison results of specific daily net income and daily net income
+per time period calculation for 20 different types of mining rigs.
+
+Page | 14
+MaxiMine Whitepaper Draft v.1.1.1
+
+“ult alla
+
+“lull |
+
+Based on the above information, the payback period can be calculated for the different mining rigs. It
+should be noted that when the net income is negative, this report will set the payback period to the
+negative mining price. This setting is only for the simple labelling of models of mining rigs with poor
+investment returns.
+
+The larger the first two indicators, the greater the expectation of future investment returns. The larger
+the third indicator, the higher the future investment risk. This analysis is based on one time point
+(when there is sufficient data, we can choose more historical points to compare and not just the
+current point). To ensure the reliability and consistency of the analysis result, we will pick only the top
+5 mining rigs for comparison in the next analysis.
+
+4.2.2 Investment Analysis of the Same Mining Rig at Different Time Points
+
+Using the above selected mining rigs, we extend the time points under analysis and calculate three
+indicators using dynamic data. It should be noted that there is a lack of long-term data on mining rigs
+such as the most optimized mining rig every month in six years and their hashing power, price and
+power consumption. As such, it is not possible to do a more wholistic calculation. The following
+analysis is based on the assumption that the parameters related to the mining rigs are not changed in
+the recent two months.
+
+= Daily Income of Mining Rigs at Different Time Periods
+
+Page | 15
+MaxiMine Whitepaper Draft v.1.1.1
+
+The daily income of the top five mining rigs over a two-month period can then be compared. The red
+line (AvalonMiner 841) and the blue line (Antminer S9 (13TH/s)) mining rigs, whose income trends are
+basically the same is due to their similarity in performance and parameters.
+
+Comparison of Daily Profit of Different Mining Equipment
+— AvalonMiner 041
+— Antminer 59
+OragonMint T2
+— Antminer $91 (147H/s) with PSU
+~ Ebit E9 Miner 6ST Bitcoin Miner
+
+ear, See
+
+2018-06-30 2018-07 2018-07-06 2018
+
+2018-06-18 2018-06-21 2018-06-24 2018-06-2 2
+Bitcoin Price date
+
+= Daily Income of Per Time Period of Mining Rigs
+
+The daily income based on hashing power over the two-month span of the five mining rigs can be
+plotted on the following chart. Among them, the yellow line (Ebit E9 Miner 6.5T Bitcoin Miner)
+represents the highest returns per mining rig, primarily due to its lower price.
+
+Comparison of Daily Profit Per T of Different Mining Equipment
+
+DragonMint T2
+— Antminer $91 (24TH/s) with PSU
+
+—— Edit ED Miner 6 ST Bitcoin Miner
+oe
+
+06-18 2018-06-21 2018-06-24 2018-06-27 2018-06-30 2018-07-03 2018-07-06 2018-07-09
+Bitcoin Price date
+
+= The Payback Period of Mining Equipment at Different Time Point
+
+The five-month time span of the five mining rigs can be plotted on the following chart. Among them,
+the gray line (Antminer S9i (14TH/s) with PSU) achieved the best performance, which is due to its low
+
+cost out-performing is high daily return.
+
+Page | 16
+MaxiMine Whitepaper Draft v.1.1.1
+
+Comparison of Snapshot Payback Period of Different Mining Equipment
+900 -— AvalonMiner 841
+, —— Antminer $9
+— Dragonstint 12
+— Antminer $91 (147H/s) with PSU
+—— EbRES Miner 6 ST Brtcoin Miner
+
+>
+
+8
+
+o
+&
+
+2018-06-1 1018-06-21 2018-06-24 2018-06-27 2018-06 2018-07 2018-07-06 2018-07-09
+
+Bitcoin Price date
+
+Since the price of electricity, the difficulty of mining and the price of mining machines have become
+fixed variables in a short span of time, changes at different points are mainly caused by the price of
+Bitcoin. In addition, these calculations do not consider depreciation expenses and the cost of taxes for
+simplicity.
+
+4.3 MaxiMine Investment and Risk Monitoring System
+
+4.3.1 Real-time Monitoring
+
+eDaily income per unit of hash power
+Compare the performance of different mining rigs, and send risk warning when the
+performance drops to different risk levels.
+
+e Investment Return Period
+Evaluate the duration of the investment return period of different mining rigs.
+
+e Profitability Index
+Real-time monitoring of the farm based on NPV.
+
+e IRR
+Real-time monitoring of the balance point of mining rig investment returns.
+
+Page | 17
+MaxiMine Whitepaper Draft v.1.1.1
+
+5. MXM Token
+
+5.1 Minekonony
+
+MaxiMine is the first to propose Minekonomy whereby Solidity-based MaxiMine (MXM) is used as the
+value equivalent and media in the mining economy. Compared with traditional cloud mining,
+MaxiMine does not sell or rent hashing power, but create liquidity in hash power and equipment
+through the use of tokens.
+
+By depositing MXM into a fixed duration smart contract, an amount of hashing power will be provided
+to the user for the specific coin throughout the deposit period. The calculations for the allocated
+hashing power will be based on multiple factors including:
+
+e Price of each mining rig
+
+e Hashing power of each rig
+
+e Weighted average price of MXM over the last three days
+e Deposit period
+
+e Network difficulty
+
+e Capacity and efficiency of the entire farm
+
+It can also be expressed as a simple function as below
+
+The mining reward per day = f (Pricey, Amountyxm, Price;igs, Durationockup, Networkaigs)
+
+5.2 System Design
+
+We will implement the computation and distribution of the profit on the Ethereum network to ensure
+fairness and transparency of the whole process. In the future, MaxiMine will also launch our own
+protocol.
+
+5.2.1 Staking Contracts
+
+The different staking options will be split into multiple contracts on the blockchain and will function
+independent to each other. Bonus tier structures and applicable fees will also be hardcoded into the
+contract to emphasis on transparency and fairness. Each contract will receive inputs directly from the
+investor’s wallet, with communication protocols set up and executed through the mobile application.
+They will also read supplementary off-chain information directly from the oracle contract to assist in
+their calculations. The staking contracts will be able to process network information and calculate the
+mining rewards per investor autonomously. They will individually track each and every investor wallet
+and send out the mining rewards and deposit at the end of the stake duration. As the mining rewards
+may not be Ether, MXM will mint new ERC20 tokens for each mineable cryptocurrency with a “M”
+header such as “MBTC”. These tokens will not have any value or utility and will instead function as a
+temporary placeholder for the actual cryptocurrency. Therefore, the tokens released by the smart
+contract will be ERC20 equivalents of the actual mining reward to track the value of each wallet and
+investor. Each contract will hold the total supply of the placeholders to ensure there is enough for
+distribution. They will be periodically topped-up by MaxiMine at the end of each staking period post
+distribution.
+
+Page | 18
+MaxiMine Whitepaper Draft v.1.1.1
+
+5.2.2 “Oracle” Contract
+
+Due to the nature of the MaxiMine project and the multi-chain mining capabilities, a number of inputs
+and parameters can only be accessed off-chain (such as the Bitcoin network difficulty). To facilitate
+this requirement, MaxiMine will create an Ethereum Oracle and set up multiple trusted data feeds to
+send information over to it. The Oracle smart contract will then store the information collected off-
+chain onto the Ethereum network itself, allowing other smart contracts to read the data from it
+directly.
+
+Oracle Contract
+
+# 6 Month Contract £
+
+Stake MXM
+A A
+
+Ether Wallet
+
+A
+
+: Bitcoin Wallet
+i Receive MXM (After fees)
+
+Receive MBTC
+
+$9 Month Contract
+Pome ican Bitcoin Wallet
+Stake MXM = Receive MXM (After fees)
+H H
+B : : Receive MBTC B In-app Conversion Reanesic” «6B
+H : of MBTC
+%
+&
+: : “
+: : ‘
+12 Month Contract! ecru » 7
+4 Bitcoin Wallet
+
+Stake MXM {Receive MXM (After fees)
+SN
+c H 3 Receive MBTC c c
+
+In the initial considerations for the Oracle setup, each depositing contract would function as an Oracle
+with off-chain data being fed directly to each of them. However, the long-term transactional cost and
+data efficiency would be lower as compared with setting up one primary oracle for the other contracts
+to collect data from.
+
+The data feeds will be done through multiple wallet addresses to ensure reliability and redundancy of
+information. This process will be done automatically through API calls with a publicly available
+codebase to encourage transparency and reduce manual intervention. Most of the data will be
+collected directly from the Bitcoin blockchain to execute the computations and calculations for
+network difficulty and mining rewards, while cross referencing the realized mining rewards directly
+from the miner address utilized.
+
+Page | 19
+MaxiMine Whitepaper Draft v.1.1.1
+
+5.2.3 Mining Reward Distribution
+
+m MXM Staker mReinvestment Operational Expenses
+
+The mining rewards earned for each mining rig per hash owned by MXM investors will be distributed
+into the following ratios:
+
+e 80% of mining rewards will be given to the investors who deposited MXM
+e 16% of mining rewards will be reinvested into the mining farm
+e 4% of mining rewards will be used to cover operational expenses
+
+The bulk of the mining rewards will be distributed to the investors as investment returns. A small
+portion of the remainder will be used to cover the operational expenses incurred in daily maintenance
+and servicing of the mining rigs as well as the staff required on site to provide 24h monitoring and
+diagnostics. The balance will be reinvested into the mining farm and used to purchase more mining
+rigs for expansion. The additional reinvestment will also be used to increase the returns of MXM in
+the long run as there will be more hashing power allocated per token.
+
+The primary interface for MXM holders to stake their tokens for hashing power would be a mobile
+application available on both iOS and Android.
+
+Page | 20
+MaxiMine Whitepaper Draft v.1.1.1
+
+0.0000000 0/0
+
+0.0000000 0.0000000
+©) o.001s
+i .
+\ & Loo
+in
+"13:02 0:24 “08:24 —4
+
+A mobile application was chosen as it would allow for a simple control interface accessible by most
+of our investors in any place. In addition to that, the risk of users being phished is lower as the
+application is installed on the phone and less prone to web attack vectors.
+
+o
+i]
+
+Q BTC BCH LTC ETH ty
+
+2018-07-0¢
+
+0.00000000_ 0. 00000000
+
+BCH HER IKRSBCH
+
+mth ie Ayia)
+MXM/BTC 0.000002800 12:12:29 PM
+MXM/ETH 0.00004000 12:12:29 PM
+ETH/BTC 0.071826 12:12:29 PM
+LTC/BTC 0.01219 12:12:29 PM
+==]
+
+Page | 21
+MaxiMine Whitepaper Draft v.1.1.1
+Within the app, users will be able carry out MXM related functions:
+
+e View account balance and active contracts
+
+e Manage account and profile
+
+e Compare various contract rates and returns
+
+e Stake MXM to additional contracts
+
+e Synchronize and verify wallet addresses across all mineable cryptocurrencies
+e View daily returns and forecasts
+
+e Withdraw mining rewards
+
+In the long run, the application would also be able to function as a part of a larger MXM ecosystem
+and transition into a multi-purpose app, capable of handling payments, investment and many other
+features.
+
+6. MaxiMine Ecosystem
+
+6.1 MaxiMine Decentralized Operating System (MDOS)
+
+After the initial launch phase of MaxiMine and the establishment of the mining farm, excess resources
+will be used to develop a protocol to fuel the MXM ecosystem. The envisioned protocol will be able
+to solve the primary challenges faced by most public blockchains in the industry and will serve as the
+underlying backbone for the decentralized applications and tokens launched within this ecosystem.
+
+6.2 MaxiMine Protocol
+
+The MaxiMine protocol is designed to be a decentralized operating system powered by the entire
+network and secured by the combined hashing power of all cryptocurrency mining farms. It consists
+of a three-tier architecture comprising of a transactional layer, functional layer and application layer.
+
+Transactional Layer
+
+The transactional layer is designed as a directed acyclic graph (DAG) with transactions propagating
+between various wallet addresses without using blocks to store transactional data. Instead, each
+wallet will function as a pseudo-blockchain and record transaction inputs and outputs. Database
+sharding and segregated witness technologies will reduce the network load per wallet address and
+enable each node to store minimal data while ensuring the overall integrity of the entire network.
+Network sharding and off-chain technologies will be applied to accelerate transactional throughput
+and network functionalities. Conservative estimates for the transactional layer have surfaced a million
+transactions per second as the effective network load, scaling linearly together with an increase in
+nodes and transactions.
+
+Functional Layer
+
+Smart contracts would be deployed on the functional layer of the protocol and run on a POW
+consensus algorithm within a blockchain optimized for smart contract calculations. This would
+essentially function as a sidechain to the transactional layer while allowing for seamless data transfer
+and interactions with the transactional layer. One such example would be the minting of tokens using
+the MXM-001 standard on MDOS. The contract would be deployed from a wallet in the transactional
+
+Page | 22
+MaxiMine Whitepaper Draft v.1.1.1
+
+layer and then hosted within the functional layer blockchain for future references. Function calls
+would also be executed onto the smart contract directly from the wallets.
+
+Application Layer
+
+The application layer will be an interface to collect, read and access data across multiple smart
+contracts for decentralized applications to interact with the other two layers.
+
+In addition to that, side-chain verification techniques using cryptographic signatures will allow
+transactions to be executed offline, using either the camera for QR code recognition or the speaker
+and microphone of smartphones for high frequency audio QR data exchange.
+
+Transactional Layer
+(Block Lattice)
+
+Page | 23
+MaxiMine Whitepaper Draft v.1.1.1
+
+6.3 MaxiMine Ecosystem
+
+As a value equivalent backed by real and tangible asset, MXM can be used to establish an entire
+ecosystem. The project team and advisory board include leading industrial player, high-tech
+professional and product expert. The prerequisites for building a super ecosystem are all in place, and
+preparation work has already been done.
+
+6.3.1 Cross-border transaction system
+
+MXM being the medium of exchange will be able to carry out direct wallet transaction from a business
+and consumer point of perspective. In addition, the ecosystem support USD, Euros, RMB and digital
+currency. Users can choose to pay or exchange using digital fiat currency, cryptocurrency or any digital
+asset within the MaxiMine ecosystem.
+
+We will construct a new cross-border transactional structure, using distributed network system to
+replace centralised organisations. This will reduce intermediary cost as well as eliminate lengthy and
+complex transaction process.
+
+6.3.2 On-chain Data sharing
+
+We will have dApps build on the MaxiMine ecosystem to provide credit services for individual users
+and SMEs. Subsequently, this can establish a big data sharing economy for every user on the platform.
+Currently the credit industry core issue lies with data. Such problems include data isolation, lack of
+shared data economy and data ownership protection, as well as high data acquisition cost. MaxiMine
+on-chain credit utilise blockchain technology to establish a decentralised, open and immutable credit
+data platform for businesses and merchants.
+
+The source of MaxiMine credit data originates from early data owners who go through an approved
+panel of credit service agencies as a mean of data review before broadcasting on-chain. The
+authentication of the data is guaranteed and endorsed by the data reviewers. On-chain credit can be
+classified into a few categories: credit data enquirers, credit data contributors, credit data owners.
+The originate of data sources include transaction data, contract data, asset data, creditor data which
+will be encrypted and stored on the blockchain.
+
+6.3.3 Shared economy
+
+MaxiMine will be pushing out shared smart contract on the blockchain. People can use their houses,
+cars or shared objects to sign a smart leasing contract on the blockchain, eliminating the need of
+paying commission to intermediaries. Related outcomes coming from the smart contract such as fees,
+losses, disputes will be stored on the blockchain. This will be integrated with the blockchain credit
+system to establish an efficient, fair and transparent shared economic platform.
+
+6.3.4 P2P loan
+
+The loan smart contract and the related data outcome will be stored in a distributed ledger, increasing
+the cost of a default or to cause potential attack. In the MaxiMine lending platform, users can use
+cryptocurrency, digital fiat currency to initiate loan globally and not restricted to specific country or
+region. Due to the characteristic of distributed ledger, it reinforces the safety, transparency and
+immutability of the lending platform, increasing the efficiency of P2P loan.
+
+6.3.5 Initial Coin Offering (ICO)
+
+Community member can engage MaxiMine platform for crowdfunding. MaxiMine Foundation will
+provide quality projects with funds and technical support. In comparison with traditional investment
+and financing, MaxiMine crowdfunding platform will help projects with their initial phase
+development as well as creating much ideal community.
+
+Page | 24
+MaxiMine Whitepaper Draft v.1.1.1
+
+6.3.6 Intellectual platform
+
+The blockchain technical aspect and intellectual platform will provide the original content with
+confirmation and traceability. Users who publish original content on the MaxiMine intellectual
+platform will be stored on the blockchain. Movie, gaming and other intellectual companies can access
+the platform to search for original quality content and purchase the content copyright. Decentralised
+intellectual platform and intellectual marketplace have greatly reduced the intermediary cost and
+eliminate the monopolisation of quality content. This provide original content creators, consumers,
+movie firms, gaming companies and other vendors in the intellectual marketplace a transparent
+network environment.
+
+6.3.7 Blockchain Games
+
+The main attribute for open source games is that gamers’ assets are protected. It is immutable and
+cannot be encroached. This give gaming equipment the circulating value, eliminating the potential
+possibility of cheating from game developers. In the MaxiMine ecosystem, developers can develop
+community type and autonomous type of blockchain games. This in combination with the existing
+MaxiMine community will be a breakthrough in the traditional gaming market for developers and
+users, providing transparency, interaction and exchange of value within the blockchain gaming
+community.
+
+Page | 25
+MaxiMine Whitepaper Draft v.1.1.1
+
+7. Token Sale
+
+7.1 Fundraising
+
+A total of 16 billion of MaxiMine (MXM) will be issued. Part of the tokens will be sold to
+accredited investors to raise funds needed for early development of the project. The soft cap
+for the sale is 5,000 ETH and the hard cap is 30,000 ETH.
+
+MXM will go through 3 stages of fund raising.
+
+e Cornerstone Investors
+During the MaxiMine development state, many industry leaders and organizations
+made great contributions. To maintain long-term relationships with these cornerstone
+investors and in appreciation of their efforts and investments, they will be receiving 3b
+MXM at a discount.
+
+e Private Placement Sales
+To thank MaxiMine's early investors for their support as well as attract resources to
+fund MaxiMine’s development, it will issue 3.2 MXM to accredited investors and
+institutional investors, with a conversion rate of 1ETH:80,000 MXM.
+
+e Crowd Sales
+MaxiMine will issue 1.85 MXM at an exchange rate of 1ETH:60,000 MXM. MXM
+will have a hard cap of 30,000ETH. The soft cap is 5,000ETH which has already been
+achieved in the private sale.
+
+MXM Sales Period: 25 April 2018 to 26 June 2018
+Accepted Currency : ETH
+Minimum Investment: 0.1 ETH
+
+Token distribution
+
+50% of MXM will be for token sales, 20% will be set aside for community support and incentive
+schemes, 20% will be kept by the foundation as reserves, 10% will be set aside for the founding team.
+In addition, the tokens held by the founding team will be locked up and gradually vested in accordance
+with the project roadmap.
+
+= For Sale
+= Community
+Team
+
+= Foundation
+
+Page | 26
+MaxiMine Whitepaper Draft v.1.1.1
+
+MXM holders Allocation Number of Tokens
+Token Sales 50% 8.0b MXM
+Community Support 20% 3.2b MKM
+Founding Team 10% 1.66 MXM
+Foundation 20% 3.2b MKM
+
+7.2 Fixed Deposit Plan
+All MXM tokens sold during ICO will be subjected to the following fixed deposit schedule and
+incentives based on duration.
+
+immediate Delayed Computing Currency Mining
+Release Release Power Reward "Reward
+Reservation
+
+50% of MaxiMine will be based on a scheduled released:
+
+e 20% will be released at the end of the sale
+e 15% will be released 1 month after the end of the sale
+e 15% will be released 2 months after the end of the sale
+
+50% of MaxiMine will be placed in a fixed deposit based on the token holder’s preferred period to gain
+interest rewards. The deposits start at a minimum of 6 months with a 4% annual interest rate (minus
+operation fee and electricity fee) and a maximum of 24 months with a 10% interest rate, with an
+additional 1% interest rate provided per quarter of deposit. This deposit privilege is only applicable
+for the MXM acquired from the three sales stages. MXM acquired through other channels can only be
+used to exchange hashing power. Such MXM will not be returned and will not carry any interest.
+
+MXM issued through cornerstone, presale and public sales will be priced at 0.0064 USD when
+depositing for hash power. The price of mining rig and hash power will be determined by MaxiMine
+with reference to the official mining rig price and hash power price published by Antpool. Minimum
+unit of hash power to be exchanged is 14T.
+
+In addition, as an indirect reward to MXM token holders, 20% of the coins mined by the farm will be
+used to buy back MXM coins in the market.
+
+Page | 27
+MaxiMine Whitepaper Draft v.1.1.1
+
+7.3 Use of Funds
+
+P
+
+= Procurement and Installation
+= Operations
+= Research and Development
+
+= Marketing
+
+The amount raised in the ICO will be split into the following distribution:
+
+e 70% of the funds will be used for procurement and installation
+
+e 10% of the funds will be used for variable and operational costs
+
+e 10% of the funds will be used for research and development and equipment renewal
+e 10% of the funds will be used for marketing and other miscellaneous costs
+
+Page | 28
+MaxiMine Whitepaper Draft v.1.1.1
+
+8. Roadmap
+
+Project Launch - 20 July 2017
+
+In July 2017, the MaxiMine team researched the feasibility and profitability of cryptocurrency mining
+via an ambitious token offering. The team studied existing mining pools, such as antpool and cloud
+mining facilities. The study concludes: Developing a mining pool with distributed revenue system to
+manage large-scale cloud mining is an ideal programme.
+
+MXM Pre-sale & Public Offering — Apr-Jun 2018
+
+MaxiMine team will conduct pre-sale for high net worth investors to buy tokens in bulk. Most of the
+money obtained from the pre-sale will enable the team to pay a deposit for the required mining
+equipment. The public offering will allow investors around the world to be part of the MaxiMine
+community.
+
+Equipment Purchase — May 2018
+
+MaxiMine team will contact hardware vendors to bulk purchase mining equipment, this phase of the
+funds will be used to pay equipment down payment and surveying feasible locations for the
+construction of mining facilities.
+
+Construction of Mining Facilities - Sep 2018
+
+MaxiMine has secured an area for its mining pool in Northern China. The team will oversee the
+building of the mining facilities. Recruitment will also be conducted for experienced individuals in
+related sectors such as datacentres and strict background checks will be conducted for all individuals.
+
+First Mining Reward Payout — Dec 2018
+
+MaxiMine will pay investors who have pledged MXM at the start with the earnings from the mining
+operations. These payments will be distributed on a monthly basis from this point onwards and sent
+to the individual wallets of each investor. Investor confidence will also increase once tangible returns
+have been deposited into their holdings.
+
+Expansion of Mining Facilities — Early 2019
+
+MaxiMine will use operating profits to expand the mining pool. This will provide accretive value to the
+mining pool and MXM tokens while increasing the return-on-investment for all existing and early stage
+investors. The increased ROI would also positively impact the perception of the token.
+
+Page | 29
+MaxiMine Whitepaper Draft v.1.1.1
+
+9. Team and Advisory
+
+9.1 Team Members
+
+Team MaxiMine currently has more than 320 staff, including management, mining farm operators,
+platform developers, technicians, investment analyst, publicity officers, community managers, etc.
+
+We only list out here several representative staff from different departments.
+
+Saim shujaat (CEO)
+
+International Youth Economics Business Association - (Pakistan Branch)
+Chief Human Resources Director
+
+Vice President of the National Planning Summit of the Pakistan Plan Summit
+Duke University Business School
+
+Continuous entrepreneurs, famous investors, make outstanding contributions
+to the development of blockchain investment in Central and South Asia
+Many articles have been published in well-known economic journals.
+
+Hua Cai (CTO)
+
+Hua Cai has 7 years of experience in the financial industry and is one of the
+earliest investors and believers in Bitcoin. He is also one of the early partners
+of AntPool (antpool.com) and made significant contributions to the
+development of Bitcoin. Hua Cai employs a huge number of Aliyun servers
+and deploys many mining pool nodes that automatically allocate network
+loads to the nearest user for mining, ensuring stability and minimizing delays
+in mining. The bitcoin mining pools Hua Cai established has been expanding
+and providing miners with user-friendly interface, comprehensive features,
+transparent operation and high profitability. Today, Hua Cai has established
+large-scale mining pools in Inner Mongolia, Sichuan and other areas, which
+continue to expand in scale. His mining team owns many patents and
+proprietary technologies.
+
+https://www.linkedin.com/in/hua-cai-759669177/
+
+Mia Wang (CMO)
+
+Senior blockchain market practitioners have served in the blockchain
+enterprises and organizations such as Zhongguancun Block Chain Investment
+Alliance (ZBIA) and Hummingbird Finance. In 2017, they began to organize
+chain salons, “regional wisdom, link the future” nationwide. In other
+activities, he led more than 20 projects including Bitt, Yilaiyun, Ochia, ONO,
+AAAchain and BiClub to complete successful roadshows in dozens of cities
+across the country.
+
+Page | 30
+MaxiMine Whitepaper Draft v.1.1.1
+
+Ethan Li (COO)
+
+He graduated from Xijing University with a major in business administration.
+He worked in the management of HYATT Hotel Management Group in the
+United States. He later joined Hong Kong Fengzhan Holdings (Hong Kong
+stock code: 1826) as the regional leader; in 2017, he became the COO of
+Shanghai Pujin. Engaged in private finance and wealth management and
+other connected financial services. During the period, Shanxi Chengwangdao
+E-Commerce Co., Ltd. has in-depth research and long-term practical
+experience in bank acceptance, third-party payment, FX and OTC
+transactions.
+
+Sky Fernandez (General Operation)
+
+After graduating from Boston Business School with a bachelor's degree in
+Business Administration, Sky worked in several retail companies on cross-
+border E-commerce as risk manager, strategic resource manager and human
+resource manager. Sky has successfully grown many offline retail shops to
+large cross-border online retail corporates. He has extensive online and
+offline resources. Till date, Sky has successfully established more than ten
+companies. Its business spans across the entire globe. He has also established
+crypto OTC platform and set up complete channel for cryptocurrency trading.
+Sky is responsible for MaxiMine business operation and assisting in the
+supervision and monitoring of the mining farm.
+
+https://www.linkedin.com/in/sky-fern%C3%A Indez-899a93176/
+
+Tim Douglass (Corporate Strategy)
+
+Tim graduated from Cambridge University and obtained a bachelor’s
+degree in Mathematics. He then joined a one-year volunteer program in
+Ho Chi Minh City in Vietnam to improve local sanitation and
+reforestation. Subsequently he obtained a master’s degree in Stanford
+University and was an active member of the PE club. He then joined JP
+Morgan in charge of investment and portfolio management from the
+investment division. He has helped many important clients restructure
+their investment. Afterwards, he joined McKinsey as a senior consultant
+to offer corporate optimization solutions to PE firms and assist with
+execution of the plans. He has also helped several large financial
+institutions with their turnaround plan. Tim is a well-recognized expert in
+corporate strategy formulation and execution.
+
+https://www.linkedin.com/in/tim-douglass-079a90176/
+
+Vincent De Looz (Investment and Portfolio)
+
+Vincent is a senor investment professional from France. He graduated
+from Université de Paris with a bachelor’s degree and a master’s degree
+
+Page | 31
+MaxiMine Whitepaper Draft v.1.1.1
+
+in computer engineering. He also organized several international
+investment forums during his study. After graduation, he assumed the role
+of Vice President at HSBC in charge of global investment management as
+well as stock analysis and prediction to search for new investment
+opportunities. He was later promoted to President of the region and led a
+5-year growth plan for Europe. Vincent has dedicated himself in
+cryptocurrency investment and analysis in the recent years, and he applied
+the methodology of traditional investment into cryptocurrency trading. He
+has invested in several tens of cryptocurrencies and generated more than
+10X of profit.
+
+https://www.linkedin.com/in/vincent-de-looz-686a92176/
+
+Evelyn Brown (Marketing Officer)
+
+Evelyn graduated from the University of Nottingham in UK. She has a
+bachelor’s degree in business. After graduation, she worked on various
+projects at Amazon and Facebook, and she gained a wealth of practical
+experience before progressing on to the blockchain industry. She plays an
+important role in several blockchain projects for their incorporation,
+foundation and marketing strategy. She has worked in several renowned
+blockchain companies that helped to sharpen her knowledge in the
+industry and broaden her network. She has established her reputation for
+formulating highly efficient marketing strategies.
+
+https://www.linkedin.com/in/evelyn-brown-07a844177/
+
+Kerwin Naidoo (Community Manager)
+
+Kerwin has a wealth of experience in the management of cryptocurrency
+communities, having worked on 12 different ICO communities. For
+TheKey, he served as a moderator right from the start and throughout the
+duration of the ICO, reporting directly to Catherine Li, the top 10
+influential Chinese woman 2017. Kerwin also has an entrepreneurial
+background and founded two companies, leveraging on his financial,
+accounting and software development background to take up multiple key
+roles for increased productivity and capital efficiency.
+
+https://www.linkedin.com/in/kerwin-naidoo-b043 1641/
+
+Page | 32
+MaxiMine Whitepaper Draft v.1.1.1
+
+Olawumi (Community Manager)
+
+Olawumi has strong passion for blockchain. She is an experienced
+community manager and content creator. Prior to MaxiMine, she has
+already supported the community work for a number of projects including
+Fairgame, Equitybase, Vsports, XMED chain, ERC20, Btcred, Bpeso,
+Superset, Kakushin Ecosystem, Smartshare, Shizzlenizzle, Thekey, Alive
+Casino, Bolttcoin, YottaChain, DeepcloudAI and Autoba. As a very
+experienced community manager, she is determined to dedicate her
+passion to bringing the best service to every committee member of
+MaxiMine.
+
+https://www.linkedin.com/in/olatunbosun-olawumi-764a3a144/
+
+Cheng Zhenyu
+
+Mr Cheng Zhenyu is presently the Chairman of the Board of Shosen Tian
+Ci (International), Chairman and President of Shosen Tian Ci (Beijing),
+Founder of Shosen Hua Cheng Incubator, Chairman of Shosen Wan Jing
+Xin Energy, Vice President of China Photovoltaic Agricultural Working
+Committee, Strategic Development Leader of the Photovoltaic Smart City
+5.0 and Master Planner of China’s “Super Partner” business platform. Mr
+Cheng has a highly regarded reputation as he continues to make it his duty
+to give back to the community and society through efforts in
+environmental conservatism and philanthropic activities; in 2017 he set up
+Shosen Tian Ci Charitable Fund. Over the span of his illustrious career, he
+was awarded 2015 China Honest & Outstanding Entrepreneur, 2015
+Leader of Green Initiatives Development in China, 2016 National Patriotic
+
+Technopreneur of China, has appeared in ( PES E|/E2) (China
+
+Patriotic Leaders Book), 2017 Red Love China Entrepreneur and was
+2017’s Outstanding Branding Person of the Year.
+
+https://www.linkedin.com/in/zhenyu-cheng-658842177/
+http://www.shosen.cn/
+
+Page | 33
+MaxiMine Whitepaper Draft v.1.1.1
+
+10. MaxiMine Foundation
+
+MaxiMine is set up as MaxiMine Foundation (MMF). The Foundation will be a Non-Profit
+Organisation, with the purpose of speeding up the use of blockchain technology and the
+development of MaxiMine systems. The Foundation will also allow for the registration of
+members. It accepts donations and will operate for the public interest of blockchain technology
+and the MaxiMine systems. MMF is a registered company limited by guarantee in BVI
+
+10.1 Corporate Governance
+
+MMF’s principles are to support and coordinate blockchain community resources, supervise
+and protect the operation of MaxiMine pool mining, while at the same time, helping people to
+better understand the changes brought about by blockchain technology and the development of
+MaxiMine project. This would be done by promoting the use of blockchain technology and
+related technologies by MaxiMine enthusiasts, developers, regulators, technicians,
+practitioners and users worldwide, through joint efforts in education and publicity activities.
+
+10.2 Corporate Structure
+
+MMF will engage in the following activities:
+
+e Instruct and supervise MaxiMine’s development and the maintenance of systems
+
+e Use the best practice governance principles to promote the security and stability of
+MaxiMine blockchain ecosystem.
+Fund activities which promote the development of MaxiMine ecosystem and its related
+projects
+
+10.3 Advisory Committee
+
+The Advisory Committee will:
+
+¢ Consist of at least 5 people, including at least one MMF member and two independent
+consultants
+
+e Convene a meeting at least four times a year
+
+e Advise MMF members on the governance of MMF
+
+e Ensure the continuity by setting the initial terms of committee members to be | year
+and 2 years. Thereafter, all consultants will have a 2-year term.
+
+Members of MMF will be responsible for the appointment or dismissal of the MMF's
+management team. MaxiMine plans to appoint a finance director and a legal director to form
+the initial management team for MMF operations. The management team will be responsible
+for:
+
+Page | 34
+MaxiMine Whitepaper Draft v.1.1.1
+
+Legal and financial management
+
+The oversight of authorisation management process, coverage of application
+management, financial tracking and reporting, and operational delivery and reporting
+Regular submissions of reports to the Advisory Committee
+
+Page | 35
+MaxiMine Whitepaper Draft v.1.1.1
+
+11. Legal & Disclaimer
+
+11.1 Legal Risks
+
+According to the “Development of China's Blockchain Technology and Applications
+Whitepaper” published on 18 October 2016 by the Ministry of Industry and Information
+Technology of the People’s Republic of China, blockchains are used as an integrated
+application for distributed data storage, point-to-point transmission, blockchain confirmation
+mechanism, encryption mechanism and other technologies. In recent years, it has become a hot
+topic of research and discussion by international organisations like the United Nations (UN),
+the International Monetary Fund (IMF), and many countries. The industry has also increased
+investments. Currently, the application of blockchain has been extended to many Internet of
+Things (IoT), Supply Chain Management, Digital Asset Trading. It will also bring new
+opportunities for the development of next-generation information technologies such as Cloud
+Computing, Big Data, and Mobile Internet. It has the ability to trigger a new round of
+technological innovation and industrial change.
+
+The blockchain is currently starting its transition to individual application development. Some
+typical applications have been presented, and the financial and commodity industries also show
+broad application prospects. The scope of the applications can be roughly divided into three
+parts of transaction — before, during, and after transaction. Pre-transaction includes the
+understanding of customers, anti-money laundering, information disclosure, etc; transaction
+itself includes stocks, bonds, debt collection tools, and issuance and transfer of derivatives;
+post-transaction includes registration, custody, liquidation, settlement, data sharing, splitting
+of shares, voting of shareholders, dividend payment, collateral management, and crowdfunding
+management. At present, there are differences in the attitude and regulation of blockchain
+technology among countries.
+
+On 5 December 2013, the People’s Bank of China, Ministry of Industry and Information
+Technology, China Banking Regulatory Commission, China Securities Regulatory
+Commission, and the China Insurance Regulatory Commission jointly issued “Notice on
+Prevention of Bitcoin Risks” (Yinfa [2013] No. 289). The main content of the “Notice” is on
+clear Bitcoin attributes. It is believed that Bitcoin does not have any monetary attributes such
+as legality and mandatory compensatory currency attributes, and
+
+that it is not a real currency. In terms of the nature, Bitcoin is a specific virtual commodity that
+does not have the same legal status as currency and should not be used as a currency for
+circulation in the market. Financial institutions and payment agencies are also prohibited from
+developing Bitcoin related businesses. Financial institutions and payment agencies are not
+allowed to price their products or services with Bitcoin currency. They are also not to buy or
+sell Bitcoin, or be a central counterparty that buys or sells Bitcoin. They also are not to
+underwrite insurance services related to Bitcoin, or to include Bitcoin in insurance coverage,
+or to serve customers with Bitcoin e.g. providing Bitcoin registration, transaction, clearing,
+settlement and other services to customers. They are not to accept or use Bitcoin as a payment
+settlement tool. Other restrictions include, Bitcoin-RMB-foreign currency exchange services,
+Bitcoin storage, custody, mortgage and other businesses, the distribution of Bitcoin-related
+financial products, Bitcoin as a trust, funds and other investment targets. With that, there is a
+request to enhance the management of Bitcoin internet sites. Internet sites that provide services
+such as Bitcoin registration and trading services must be filed with the telecommunications
+
+Page | 36
+MaxiMine Whitepaper Draft v.1.1.1
+
+regulatory agencies in accordance with the relevant provisions of the “Telecommunications
+Regulations of the People’s Republic of China” and the “Administrative Measures for Internet
+Information Services”. There is also the requirement to strengthen the prevention of bitcoin
+money laundering risks. Firstly, all branches of the People’s Bank of China are required to pay
+close attention to the trends of Bitcoin and other similar virtual goods which have the features
+of anonymity and cross-border circulation convenience. They have to consider the risk of
+money laundering, and study to formulate preventive measures. Each branch should
+incorporate into the anti-money laundering regulation the institutions that are legally
+established in the jurisdiction, provide services such as bitcoin registration and transactions,
+and urge them to strengthen anti-money laundering monitoring. Second, Internet sites that
+require the provision of services such as bitcoin registration and transaction services should
+effectively fulfil their anti-money laundering obligations by identifying user identities through
+requiring users to use their real names, ID numbers and other information when registering.
+Thirdly, all financial institutions, payment institutions, and internet stations that provide
+services such as Bitcoin registration and transaction services should immediately report to the
+China Anti-Money Laundering Monitoring and Analysis Center and cooperate with the
+People’s Bank of China if any suspicious transactions related to Bitcoin and other virtual goods
+are found. For the discovery of the use of bitcoin for fraud, gambling, money-laundering and
+other criminal activity clues, it should promptly report the case to the public safety agencies.
+In March 2014, the People's Bank of China once again issued the “Notice on Further
+Strengthening Bitcoin Risk Prevention Work”, requesting all banks and third-party payment
+agencies to close all trading accounts of all bitcoin platforms in China by 15 April. This means
+that it is illegal for financial institutions to open accounts for the trading accounts of the Bitcoin
+website platforms. However, the “Notice” mentioned above does not prohibit Bitcoin
+transactions. As a result, Bitcoin transactions are still active in the market as a commodity
+trading activity on the Internet, and are also sought after by some capitals. It is required to
+educate and strengthen the investment risk awareness of the public’s currency knowledge. The
+"Notice" requires the correct understanding of currency, proper viewing of virtual goods and
+virtual currency, rational investment, reasonable control of investment risks, and maintenance
+of own property safety be incorporated into the contents of financial knowledge dissemination
+activities, in order to guide the public to establish a correct currency and investment mindsets.
+
+The US federal government's main focus on blockchain technology is focused on virtual
+currency regulation of blockchain technology. Some government agencies have specifically
+issued guidance documents on blockchain technology and ICO. In 2013, the US Department
+of the Treasury's law enforcement agency, FinCEN, included the “exchangeable virtual
+currency” was included in the “money service business” in the Banking Secrecy Act (BSA).
+Hence, according to this, in the United States, the virtual currency transaction needs to be
+registered with the Ministry of Finance and is also involved in the anti-money laundering
+project. However, the Act and the "Application of Financial
+
+Crimes Law Enforcement Network Regulations in Personal Management, Exchange, and Use
+of Virtual Currencies", issued by the law enforcement agency, all consider virtual currency "a
+valuable though unlawful currency" which does not have all the attributes of the actual currency
+and legal currency status. The Commodity Exchange Act (CEA) of the US Commodity Futures
+Trading Commission (CFTC) can be applied to virtual currencies since the definition of
+"goods" is very broad; the definition can include "bonds, stocks, and currencies, etc”. In March
+2014, the U.S. Federal Bureau of Taxation issued a circular stating that bitcoin and other virtual
+currencies are assets, similar to other valuable goods, not currencies, and that bitcoin mining,
+trading, and use should be applied Tax rules, tax returns. In 3 June 2015, New York State, after
+
+Page | 37
+MaxiMine Whitepaper Draft v.1.1.1
+
+approximately one year, from the initial motion of Bitcoin Licensing, to the resumption of the
+motion, and finally to the legal provisions, the New York State Department of Financial
+Services released the final The "Bitcoin Licensing Regulation" with the aim to regulate "Virtual
+currency business". According to the "Bitcoin Licensing Regulations," "virtual currency" is
+defined to include decentralized currency based on blockchain technology, where "virtual
+currency business activities" include: (1) the transmission of virtual currency, (2) the use of
+virtual money for others, (3) the purchase or sale of virtual currency as a customer business,
+(4) the provision of transaction services as a customer business, and (5) control, management
+or issuance of virtual currency. The main contents of the “Bitcoin Licensing Regulations”
+include: first, safeguarding the assets of consumers; second, after completing any transaction,
+the trading platform should provide detailed information to customers; third, establish a
+consumer complaints policy; fourth, have a disclosure of risks for customers; fifth is the
+establishment of an anti-money laundering mechanism; sixth is the establishment of a cyber
+security plan; seventh is the establishment of a chief information security officer; eighth is the
+maintenance of books and records; nineth is a report and financial disclosure; tenth is a funding
+requirement; eleventh is a Compliance Executive Officer; twelfth is that each licensee should
+establish business continuity and disaster recovery plans, and so on. It is widely believed that
+the New York State’s legal rules for the introduction of virtual currency are at least a
+meaningful exploration and attempt. There will be two short-term results: first, it will increase
+the spending of participants in the market because of their mandatory procedures — password
+security, consumer protection, financial reporting and anti-money laundering. Indeed, many
+companies have opted out of New York because the full cost of complying with the rules and
+enforcement will be between $50,000 and $100,000. Second, the certainty of the license makes
+the company's legal risk in this area lower, so it is very likely that there will be a smoother path
+for the integration of blockchain business with the already established banking system. In the
+United States judicial trials, there have been cases concerning blockchain technology, mainly
+involving money laundering in criminal cases, where the technology used by the defendant for
+money laundering is blockchain technology. For example, in November 2014, a number of
+websites in New York State of the United States involved the use of blockchain technology
+and virtual currency for money laundering transactions. These websites were eventually
+sentenced to confiscation of property; in April 2015, in the case of US v. Ross Ulbricht, the
+defendant was involved in a number of charges such as narcotics trading, computer hacking,
+and money laundering where the technology used by the defendant was blockchain technology.
+
+The EU implemented legal restrictions on blockchain on 5 July 2016 where the European
+Commission passed a bill to amend the Fourth Anti-Money Laundering Act (4AMLD). The
+Act explicitly includes the transactions of virtual currencies in the anti-money laundering
+framework. In August 2013, Germany recognized the legal status of Bitcoin and incorporated
+it into the national regulatory system, thus becoming the first country in the world to recognize
+the legal status of Bitcoin. The German government stated that Bitcoin can be used as a private
+currency and currency unit. Bitcoin is tax-exempt for personal use within one year, but it is
+taxed for commercial purposes. The German Financial Supervisory Authority believes that
+Bitcoin is a value token used to exchange real economic goods or services that are circulated
+in barter clubs, private bazaars or other payment systems. At present,
+
+Germany's policy on Bitcoin is relatively clear. Bitcoin.de, the German Bitcoin trading
+platform, has also cooperated with Fidor Bank.
+
+In August 2014, the Australian Taxation Office (ATO) issued bitcoin taxation guidelines and
+formally incorporated Bitcoin and related business practices into the existing tax system. The
+
+Page | 38
+MaxiMine Whitepaper Draft v.1.1.1
+
+Australian Taxation Bureau (ATO) does not regard Bitcoin as a currency nor does it clarify the
+positioning of its financial assets. It treats it as ordinary assets. The main content is as follows:
+personal use of Bitcoin transactions should not involve any goods tax and income tax; when an
+enterprise uses Bitcoin to purchase goods or services, the value of the goods purchased must
+be converted into Australian dollars and recorded as revenue of the company; capital gains,
+that is, as an asset, involve capital gains tax when the company cleans up bitcoin; Bitcoin can
+be used to pay wages, and such payments are similar to fringe benefits for businesses where
+employers may pay a fringe benefit tax for this purpose; mining (production) Bitcoin, and the
+revenue derived from mining (production) Bitcoin for commercial purposes, will be regarded
+as taxable income.
+
+With regard to Thailand’s legal regulation on blockchain, senior officials of Thailand’s foreign
+exchange administration and policy department have stated that the following bitcoin activities
+are considered illegal in Thailand due to the lack of applicable legal and capital controls and
+that Bitcoin crosses a variety of financial businesses, such as, Bitcoin trading, buying and
+selling any goods or services using Bitcoin, or have Bitcoins exchanges with anyone outside
+of Thailand.
+
+In Singapore, the Monetary Authority of Singapore (MAS) announced on | August 2017 that
+the token must be regulated by the Securities Act of Singapore (No. 289 of the National
+Assembly Act). The Token Issuance Instruction issued by the MAS on 14 November 2017
+states that ifa token has a capital market financial product as defined in the Singapore Securities
+Act, they should be incorporated into the supervision of the Monetary Authority of Singapore.
+They include securities, futures contracts, leveraged foreign exchange contracts or
+arrangements. For example, a digital currency has the following properties: (1) shares,
+including the rights conferred or represented on behalf of the owner of the company or business,
+represent the owner's legal obligations; (2) bonds, constituting a token issuer or token holder
+may lend (3) The Collective Investment Scheme (CIS), which represents the rights and
+obligations of the investment group or the right to choose an investment plan, shall be subject
+to the jurisdiction of the MAS.
+
+11.2 Disclaimer
+
+This document is intended for use by the MaxiMine team, only for planning statements for the
+miner's platform business and MaxiMine token functionality. The MaxiMine team may adjust
+the planning of the actual business according to the requirements of industry development and
+related laws, administrative regulations, local regulations and department regulations. This
+document does not constitute a legal opinion regarding the purchase or sale of MaxiMine
+tokens or their associated companies, corporate equity, claims or owners' equity. Any similar
+proposal or price will be applied under the applicable securities law and other relevant laws
+and regulations. The information or analysis in this document does not constitute investment
+opinion or advice. It does not constitute non-constitution and should not be interpreted as any
+civil offer, civil promise, civil action or civil contract.
+
+MaxiMine tokens are virtual tokens issued by MaxiMine platform. MaxiMine token holders
+can redeem points on the MaxiMine platform. The MaxiMine team may increase or adjust the
+MaxiMine token's service contents according to business development needs. The price of
+
+Page | 39
+MaxiMine Whitepaper Draft v.1.1.1
+
+MaxiMine tokens will be determined through market transactions. Users who purchase and
+hold MaxiMine tokens may profit from the price increase of MaxiMine tokens. However, they
+may also suffer losses due to falling prices. The MaxiMine team makes no promises or
+guarantees regarding the future price of MaxiMine tokens.
+
+The MaxiMine team made it clear that MaxiMine users should be aware of the risks of the
+projects invested by MaxiMine platform. Individual investors or institutional investors
+participate in the MaxiMine token investment to understand and accept the risk of the project,
+and are willing to bear all consequences and risks accordingly. MaxiMine clearly states that it
+will not bear any direct or indirect losses caused by MaxiMine's investment projects, including
+loss of economic benefits due to users' own operations; loss of economic benefits due to user's
+own mistakes, negligence, or inaccurate information; loss of economic benefits caused by the
+user's transaction of blockchain products; loss of economic benefits due to any failure of the
+Ethereum blockchain; loss of economic benefits due to force majeure, unforeseen risks; loss of
+economic benefits due to regulatory blockchain technology laws and regulations.
+
+MaxiMine tokens are not an investment wealth management product. Under certain
+circumstances, the value of MaxiMine tokens may decrease. The MaxiMine team does not
+guarantee the increase in value of MaxiMine tokens. MaxiMine tokens should not be
+considered as having the nature of ownership, control, or decision-making power of the
+MaxiMine Platform or its affiliates and companies. MaxiMine tokens are of commercial nature
+and do not have the nature of securities. Non-traditional financial products should not be
+registered as securities in any country or region.
+
+Page | 40

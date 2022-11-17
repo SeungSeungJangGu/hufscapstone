@@ -1,0 +1,1971 @@
+arXiv: 1909.05832v1 [cs.DC] 12 Sep 2019
+
+Flow: Separating Consensus and Compute
+
+— Execution Verification —
+
+Dr. Alexander Hentschel
+alex. hentschel@dapperlabs.com
+
+Maor Zamski Dieter Shirley Layne Lafrance
+maor@dapperlabs.com dete@dapperlabs.com layne@dapperlabs.com
+
+Abstract
+
+Throughput limitations of existing blockchain architectures are well documented and are one
+of the most significant hurdles for their wide-spread adoption. In our previous proof-of-concept
+work, we have shown that separating computation from consensus can provide a significant
+throughput increase without compromising security [1]. In our architecture, Consensus Nodes
+only define the transaction order but do not execute transactions. Instead, computing the block
+result is delegated to compute-optimized Execution Nodes, and dedicated Verification Nodes check
+the computation result. During normal operation, Consensus Nodes do not inspect the computa-
+tion but oversee that participating nodes execute their tasks with due diligence and adjudicate
+potential result challenges. While the architecture can significantly increase throughput, Verifi-
+cation Nodes still have to duplicate the computation fully.
+
+In this paper, we refine the architecture such that result verification is distributed and paral-
+lelized across many Verification Nodes. The full architecture significantly increases throughput
+and delegates the computation work to the specialized Execution Nodes and the onus of check-
+ing it to a variety of less powerful Verification Nodes. We provide a full protocol specification
+of the verification process, including challenges to faulty computation results and the resulting
+adjudication process. Furthermore, we formally prove liveness and safety of the system.
+
+Contents
+
+1 Flow Architecture
+11 Roles... 2.
+1.1.1 Collector Role... . ee
+1.1.2 Consensus Role... . 0...
+1.1.3 Execution Role... . 0.0.2 ee
+1.1.4 Verification Role... .. 0.02 ee
+1.1.5 Observer Role... .. 0...
+1.2 Locality of Information... 2...
+1.3 Computational State vs. Network Infrastructure State 2... 2... ..20000020.
+1.3.1 Staking and Slashing... 2.2... ee
+
+2 General Techniques
+2.1 Specialized Proof of Confidential Knowledge... .......0..0..20...000.
+
+3 Transaction Processing Flow
+3.1 Collector Role: Batching Transactions into Collections ..............0.0.
+3.2 Consensus Role: Linearizing Computation into Blocks ..........0....0020.
+3.3 Execution Role: Computing Transactions in Block ...........0....00.0.
+3.3.1 Chunking for Parallelized Verification ........0....2.0.....000.
+3.3.2 The Execution Receipt... 2... 0.000002 2 ee
+3.4 Verification Role: Checking Execution Result ........00..0..020....000.
+3.4.1 Self-selecting chunks for verification ©... .....00..00.....000.
+3.4.2 Verifying chunks 2... 2... en
+3.5 Consensus Role: Sealing Computation Result ........0....2.200.00.000.
+3.6 Proof of Computational Correctness . 2... 2... ee
+3.7 Computational Load on Verification Nodes... 2... 0.000.022.2000 2000.
+
+4 Mitigation of Attack Vectors
+4.1 Adjudicating with Faulty Computation Results .........0.........004.
+4.2 Resolving a Missing Collection ©... ......0000. 2000000000000 000.
+4.3 Placing errors in chunks checked by colluding Verifier Nodes... 2... .....002.
+
+Acknowledgments
+
+References
+1 Flow Architecture
+
+In most traditional blockchains, each full node must perform every task associated with running
+he system. This process is akin to single-cycle microprocessors, where one instruction is execute
+per step. In contrast, modern CPU design leverages pipelining to achieve higher throughput an
+scaling.
+
+Rather than asking every node to choose the transactions they will include in a block, compute
+he block’s output, come to a consensus on the output of those transactions with their peers, an
+finally sign the block, appending it onto the chain, Flow adopts a pipelined architecture. In Flow,
+different tasks are assigned to specialized node roles: Collection, Consensus, Execution, Verification,
+and Observation. This design allows high levels of participation in Consensus and Verification by
+individuals on home internet connections while leveraging large-scale datacenters to do most of
+he heavy lifting of Execution. Actors participating in Consensus and Verification hold the other
+nodes accountable with crypto-economic incentives allowing Flow to gain massive throughput im-
+provements without undermining the decentralization or safety of the network. In a system with
+Consensus and Execution nodes only, Flow achieved a throughput increase by a factor of 56 compare
+o architectures where consensus nodes also perform block computation [1].
+
+In any design where actors other than the consensus nodes perform tasks, correct task execution is
+not covered by the safety guarantees of consensus. Therefore, the protocol must include dedicate
+components to ensure secure system operation, even in the presence of a moderate number of
+malicious participants. In our first white paper [1], we formally analyzed the security implications
+of delegating tasks to other actors than Consensus Nodes. The central result of our research was
+that transaction execution can be transferred to one group of nodes (Execution Nodes), and result
+verification to an independent group (Verification Nodes). The protocol must include the following
+components to ensure safety:
+e The Verifiers must be able to appeal (formally: submit a challenge) to Consensus Nodes if they
+detect a protocol violation.
+e Consensus Nodes must have the means to determine whether the challenger or the challenged
+is correct (formally: adjudicate the challenge).
+When such mechanisms are included, the pipelined architecture is as secure as a blockchain where all
+tasks are executed by all consensus nodes [1]. In the present paper, we refine the architecture such
+that result verification is distributed and parallelized across many Verification Nodes. Furthermore,
+we specify the details of the different challenges and adjudication protocols for execution verification.
+
+Core Architecture Principles
+
+Above, we noted that nodes must be able to appeal to Consensus Nodes if they detect a protocol
+violation. For an appeal system to provide security guarantees that protect from Byzantine attacks,
+the system must have the following attributes.
+e Detectable: A single, honest actor in the network can detect deterministic faults, and prove
+the error to all other honest nodes by asking them to recreate part of the process that was
+
+executed incorrectly.
+
+e Attributable: All deterministic processes in Flow are assigned to nodes using a verifiable random
+function (VRF) [2]. Any detected error can be attributed to the nodes responsible for that
+process.
+e Punishable: Every node participating in the Flow network must put up a stake, which is
+slashed in case the node is found to exhibit Byzantine behavior. Reliably punishing errors
+via slashing is possible because all errors in deterministic processes are detectable! and at-
+tributable.
+
+e Recoverable: The Flow protocol contains specific elements for result verification and resolution
+of potential challenges. These elements serves to deter malicious actors from attempting to
+induce errors that benefit them more than the slashing penalty, as the probability of their
+erroneous result being committed is negligible.
+
+Assumptions
+
+e We solely focus on Proof of Stake blockchains, where all participants are known and each node
+is authenticatable through its signature.
+
+e Nodes commit to (and stake for) participating in the network for a specific time interval, which
+we refer to as an Epoch. Epochs are system-wide. While nodes can participate over multiple
+Epochs, the end of an Epoch is a dedicated point in time for nodes to leave or join the system.
+Epochs are considered to last for about a week. Technical details for determining the length
+of an Epoch and a mechanism for Epoch changeover are left for future publications. In this
+paper, we consider the system running only within one epoch.
+
+Furthermore, we assume
+
+e The existence of a reliable source of randomness that can be used for seeing pseudo-random
+number generators. We require the random seed to be unpredictable by any individual node
+until the seed itself is generated and published. Possible solutions include DFINITY’s Random
+Beacon [3] or proof-of-delay based systems [4].
+
+e An aggregatable, non-interactive signature scheme, such as BLS signatures [5].
+
+e Adequate compensation and slashing mechanics to incentivize nodes to comply with the pro-
+tocol.
+
+e Partially synchronous network conditions with message traversal time bounded by A;. Fur-
+thermore, we assume that local computation time is negligible compared to message traversal
+time.
+
+e In numerous places throughout this paper, we refer to fractions of nodes. This is a short-form
+of referring to a set of nodes which hold the respective fraction of stake. Formally, let N") be
+the set of all nodes with role r and sq the stake of node a € N\"). A fraction of at least
+nodes (with role 7) refers to any subset
+
+N CN) such that > Sa Dk > Sar (1)
+aeN aeN()
+
+for 0 < « < 1. For example, stating that “more than 3 of Consensus Nodes have approved
+of a block” implies that the approving nodes hold more than k = 3 of the Consensus Nodes’
+accumulated stake.
+
+1In Flow, nodes check protocol-compliant behavior of other nodes by re-executing their work. In most cases, verifica-
+
+tion is computationally cheap, with the noticeable exception of computing all transactions in a block. We describe
+in section 3.4 how verifying the block computation is distributed and parallelized such that each Verifier only has
+to perform a small fraction of the overall block computation.
+1.1 Roles
+
+Roles are a service a node can provide to the network. These are: Collector Role, Consensus Role,
+Execution Role, Verification Role, and Observer Role. We refer to a network node that performs the
+respective role as Collector Node, Consensus Node, etc. From an infrastructure perspective, the same
+hardware can host multiple roles in the network. However, the network treats individual roles as
+if they are independent nodes. Specifically, for each role a node stakes, unstakes, and is slashed
+independently. We furthermore assume that a node has it’s own independent staking key for each
+of its roles, even if all roles are hosted on the same hardware. Figure | illustrates the messages
+which nodes of the individual roles exchange during normal operation.
+
+1.1.1 Collector Role
+
+The central task of Collector Role is to receive transaction submissions from external clients and
+introduce them to the network. Staked nodes are compensated through transaction fees and all
+roles require a minimum stake to formally participate in that role. When receiving a transaction,
+a Collector Node checks that the transaction is well-formed. By signing the transaction, the node
+guarantees to store it until the transaction’s result has been sealed. (For details on block sealing,
+see section 3.5.)
+
+Clusters: For the purpose of load-balancing, redundancy, and Byzantine resilience, Collection Nodes
+are partitioned into clusters. We require that Collection Nodes are staked equally. At the begin-
+ning of an Epoch, each Collection Node is assigned to exactly one cluster. Cluster assignment is
+randomized using the random beacon output.
+
+Collections: The central task of Collector Nodes is to collect well-formed transactions from external
+clients and to batch them into collections. When a Collector Node sees a well-formed transaction,
+it hashes the text of that transaction and signs the transaction to indicate two things: first, that it
+is well-formed, and second, that it will commit to storing the transaction text until the Execution
+Nodes have finished processing it. By signing it, the Collector Node guarantees the transaction’s
+storage and will subsequently be slashed (along with the rest of the cluster) if it doesn’t produce
+the transaction.
+
+Guraranteed Collections
+
+Consensus
+>
+RG &
+i)
+
+x o
+
+> g
+
+Collectors FA it
+@ &
+Verifiers Executors
+
+Transaction
+
+User Agent
+
+Aor?
+Scution rece
+
+Figure 1: Overview of the node roles and messages they exchange. For simplicity, only the messages during
+normal operation are shown. Messages that are exchanged during the adjudication of slashing requests are omitted.
+Collector nodes share all well-formed transactions they receive among their cluster and collab-
+orate to form a joint collection of transactions. A cluster forms collections one at a time. Before a
+new collection is started, the current one is closed and send off to the Consensus Nodes for inclusion
+in a block. Further details on collections are provided in section 3.1.
+
+Collector Nodes in one cluster must agree on the transactions included in the current collection
+and at what point to close the collection. The determination of when to close a collection is based on
+a number of factors including token economics, which is out of scope for this paper. This distributed
+agreement requires the nodes to run a consensus algorithm. Fortunately, the number of nodes in a
+cluster and the transaction volume to processed by one cluster is moderate”. Therefore, established
+BFT consensus algorithms, such as Tendermint [6, 7, 8], SBFT [9], or Hot-Stuff [10], are fully
+sufficient.
+
+Security implication: As there are relatively few collectors in each cluster, a cluster may be com-
+promised by malicious actors. The cluster could withhold the collection content that is referenced in
+a block but whose execution is still pending. The mitigation strategy (Missing Collection Challenge)
+for this attack is described in section 4.2.
+
+1.1.2 Consensus Role
+
+The Consensus Node’s central tasks are the following:
+
+Block Formation: Consensus Nodes form blocks from the collections. Essentially, Consensus Nodes
+maintain and extend the core Flow blockchain. In Flow, a block defines the transactions as well as
+the other inputs (incl. the random seed) required to execute the computation, but not the resulting
+computational state after block execution.
+
+An agreement to accept a proposed block needs to be reached by many nodes which requires a
+Byzantine-Fault-Tolerant (BFT) consensus algorithm [11, 12]. While the specific design of the Flow’s
+consensus system is still subject to active research, we restrict the design space to algorithms with
+the following guarantees.
+
+e The algorithm is proven BFT, i.e., it maintains consistency among honest participants, as
+
+long as less than one-third of Consensus Nodes are Byzantine.
+
+e Safety is guaranteed even in cases of network asynchrony. Per definition of safety [13, 14],
+Consensus Nodes might declare a block finalized at different points in time, depending on
+the amount of information they gathered from other Consensus Nodes. Nevertheless, a safe
+consensus algorithm guarantees that all honest nodes eventually will declare the same block
+
+as finalized.
+
+e Liveness is guaranteed in partially synchronous network conditions [15]. As the Fischer-
+Lynch-Paterson (FLP) theorem states, a fault-tolerant, distributed consensus system cannot
+guarantee safety and liveness at the same time under asynchronous network conditions [16].
+For Flow, we prioritize safety over liveness in case of a network split. Consistency of the
+world-state is more important than forward-progress of the network in extremely rare and
+adverse circumstances of a large-scale network split.
+
+? For the mature system, we anticipate on the order of 20 to 50 nodes per cluster.
+2/3 RA
+
+ER
+Execution of By ee | Verification of B,
+nN
+
+blocks
+
+Cc) processes
+ER 2/3 RA
+Execution of B, | Verification of B, | e messages
+By Bz [— B k | Ba
+finalized By finalized B,, finalized B,
+seal By seal Ba
+| | | | > Time
+(Blocks)
+B, B, B, B,
+
+Figure 2: Illustration of the placement of Block Seals
+
+within the Flow blockchain. After block B, is finalized
+
+by the Consensus Nodes, the Execution Nodes process their transactions and issue Execution Receipts (See section
+3.3), which are subsequently checked by the Verifier Nodes (see section 3.4). Provided that the checked parts of
+the computation result are found valid, a Verifier sends a Result Approval back to the Consensus Nodes. As soon as
+
+conditions for sealing block B, are satisfied (see section 3.5),
+
+the seal for the computation result of block By is included
+
+in the next block B; that is generated by the Consensus Nodes.
+
+e A desired core feature of Flow’s consensus a
+
+lgorithm is deterministic finality. Once a block
+
+is finalized by any Consensus Node, this commitment will never? be changed. Deterministic
+
+finality provides the significant advantage that dapp developers do no
+
+effects of chain reorganizations.
+
+energy consumption. We focus on Proof of St
+reduced to necessary elements: primarily cry,
+
+Block Sealing: After a bloc!
+the Consensus Nodes publish a Block Seal for the
+mitment to the resulting com:
+computation has been verified by a super-majority
+
+Consensus Nodes publish
+block’s transactions follows i
+included in the block itself.
+in Figure 2.
+
+k has been computed
+putational state after
+
+the block seals as par
+s finalization, the sea’
+
+Tracking Staked Nodes: Consensus Nodes maint
+current stakes and their publi
+by the Consensus Nodes an
+
+c keys. It is importan
+are not part of the
+
+3 Deterministic finality is guaranteed via BFT consensus, un
+of Byzantine actors.
+
+Sustainability: we do not consider proof-of-work consensus systems d
+
+have to deal with the
+
+ue to their exorbitant
+ake systems only, where computational costs are
+otography and book-keeping.
+and the resulting computational state verified,
+respective block. A Block Seal contains a com-
+block execution. Furthermore, it proves that the
+of Verifier Nodes.
+of the new blocks they finalize. As executing a
+for the block’s computa
+
+ional result cannot be
+
+nstead, the seal is included in a later block. An illustration is shown
+
+ain a table of staked nodes including the nodes’
+to note that staking balances are tracked solely
+computational state. Whenever a node’s stake
+
+ess the system is under active attack of at least one-third
+changes, Consensus Nodes publish this update as part of their next finalized block.
+
+During normal operations, staking and unstaking can only take place at the switchover from
+one Epoch to the next. However, involuntary changes of stake through slashing can occur within
+an epoch and are accounted for by all honest nodes as soon as they process the block containing
+the respective stake update.
+
+Slashing: Consensus Nodes adjudicate slashing challenges and adjust the staking balances accord-
+ingly.
+
+Security implication: The consensus committee is the central authority in the system. The
+consensus committee itself must adjudicated challenges against committee members. Safety and
+liveness are of this process are guaranteed through the BFT consensus algorithm. Flow uses a
+consensus algorithm with deterministic finality. Therefore, dapp developers do not have to deal
+with the additional complexity of chain reorganization. Our results hold for any BFT consensus
+algorithm with deterministic finality. HotStuff [10, 17] is the leading contender. However, we
+continue to assess other algorithms such as Casper CBC [18, 19, 20] or Fantémette [21].
+
+1.1.3 Execution Role
+
+Execution Nodes compute the outputs of all finalized blocks they are provided. They then ask the
+Collector Nodes for the collections containing transaction that are to be executed. With this data
+hey execute the block and publish the resulting computational state as an Execution Receipt. For
+verification, the computation is broken up into chunks. The Execution Nodes publish additional
+information (see section 3.3) in the Execution Receipt about each chunk to enable Verification Nodes
+
+n
+
+o check chunks independently and in parallel.
+
+The Computation Nodes are primarily responsible for Flow’s improvements in scale and efficiency
+because only a very small number of these powerful compute resources are required to compute and
+store the canonical state.
+
+Security implication: Malicious Execution Nodes could publish faulty Execution Receipts. The
+protocol for detecting incorrect execution results is covered in section 3.4 and the adjudication
+process for the challenges in section 4.1.
+
+1.1.4 Verification Role
+
+Verification Nodes check the computation from the Execution Nodes. While each node only checks
+a small number of chunks, all Verification Nodes together will check all chunks with overwhelming
+probability. For each chunk, a Verification Node publishes a Result Approval, provided it agrees with
+the result. The Execution Receipt and the Result Approval are required for the block to be sealed.
+
+Security implication: Like most blockchains, Flow has to address the Verifier’s Dilemma [22]. In
+a system where workers are producing results and Verifiers are confirming result correctness, there
+is an incentive for Verifiers to approve results without expending the work of checking. This conflict
+of incentives is at the heart of the Verifier’s Dilemma. It persists even the worker and Verifiers
+are not colluding, so additional Verifiers do not help. For Flow, we developed Specialized Proofs
+of Confidential Knowledge (section 2.1) to overcome the Verifier’s Dilemma (section 3.4.2 for more
+details).
+1.1.5 Observer Role
+
+Observer Nodes relay data to protocol-external entities that are not participating directly in the
+protocol themselves.
+
+1.2 Locality of Information
+
+e Correctness of information is cryptographically verifiable using on-chain information
+
+e Flow blockchain is, from a data perspective, not self-contained. For example, cryptographic
+hashes of the computational state are included in blocks, but the state itself is not. This
+implies that anyone can verify the integrity of any subset of the computational state using
+the hashes in the Flow blockchain (and merkle proofs which must be provided alongside the
+actual data). However, it is impossible to extract the state itself from the core blockchain.
+
+e Computational state is local to Execution Nodes
+
+e Reference to the information holder is guaranteed by the holder’s signature
+
+1.3. Computational State vs. Network Infrastructure State
+
+An important conceptual difference in Flow is handling information that pertains to the computa-
+tional state vs. that of the network infrastructure itself. While the computational state is held by
+the Execution Nodes, the network’s infrastructure state is maintained by the Consensus Nodes.
+To illustrate the difference, consider the situation where the nodes in the network do not change
+(nodes never leave, join, or change stake). However, the transactions executed by the system will
+modify register values, deploy smart contracts, etc. In this setting, only the computational state
+1anges. Its integrity is protected by the verification process (see section 3.4 for details).
+
+In contrast, let us now consider a situation where no transactions are submitted to the system.
+Blocks are still produced but contain no transactions. In this case, the system’s computational
+state remains constant. However, when nodes leave or join, the state of the network infrastructure
+changes. The integrity of the network state is protected by the consensus protocol. To modify it,
+more than 2/3 of Consensus Nodes must approve it.
+
+°
+
+1.3.1 Staking and Slashing
+
+The network state itself contains primarily a list of all staked nodes which contains the node’s
+staking amount and its public staking key. Updates to the network state are relevant for all nodes
+in the network. Hence, Consensus Nodes publish updates directly as part of the blocks they produce.
+Furthermore, slashing challenges are directly submitted to Consensus Nodes for adjudication. (For
+example, section 4.1 provides a detailed protocol for challenging execution results.) As Consensus
+Nodes maintain the network state, including staking balances, they can directly slash the stake of
+misbehaving nodes, without relying on Execution Nodes to update balances.
+2 General Techniques
+
+In this section, we describe methods and techniques used across different node roles.
+
+2.1 Specialized Proof of Confidential Knowledge (SPoCk)
+
+A SPoCK allows any number of provers to demonstrate that they have the same confidential knowl-
+edge (secret ¢). The cryptographic proof does not leak information about the secret. Each prover’s
+SPoCK is specialized to them, and can not be copied or forged without possession of the secret.
+
+The SPoCK protocol is used in Flow to circumvent the Verifier’s Dilemma [22] (section 3.4.2).
+The protocol prevents Execution or Verification Nodes from copying Execution Results or Result
+Approvals from each other. Thereby, actors cannot be compensated for work they didn’t complete in
+time. In Flow, the secret ¢ is derived from the execution trace of the low-level execution environment
+(e.g., the virtual machine). Executing the entire computation is the cheapest way to create the
+execution trace, even when the final output of computation is known.
+
+Formally, the SPoCK protocol provides two central guarantees:
+1. An arbitrary number of parties can prove that they have knowledge of a shared secret ¢
+without revealing the secret itself.
+2. The proofs can be full revealed, in an arbitrary order, without allowing any additional party
+o pretend knowledge of ¢.
+
+The SPoCK protocol works as follows.
+
+e Consider a normal blockchain that has a transition function t() where S’ = t(B,S), with B
+being a block of transactions that modify the world state, S as the state before processing
+he block, and S" as the state after. We create a new function ¢() that works the same way,
+but has an additional secret output ¢, such that (9’,¢) = #(B,S) for the same S, S$’, and
+B as t(). The additional output, ¢, is a value deterministically derived from performing the
+computation, like a hash of the CPU registers at each execution step, which can’t be derived
+any more cheaply than by re-executing the entire computation. We can assume the set of
+possible values for ¢ is very large.
+
+e An Execution Node, Alice, publishes a signed attestation to S’ (a merkle root of some sort),
+
+and responds to queries about values in S’ with merkle proofs. Additionally it publishes a
+SPoCK derived from ¢.
+e A Verifier Node, Bob verifies that ’ is an accurate application of t(B,S), and also publishes
+its own SPoCK of ¢.
+e An observer can confirm that both SPoCKs are derived from the same ¢, and assume that Bob
+actually verified the output with high probability’ and didn’t just “rubber stamp” the result.
+This doesn’t provide any protection in the case where Alice and Bob are actively colluding,
+but it does prevent a lazy node from “confirming” a result without actually knowing that it is
+correct.
+A SPOCK is created as follows:
+— Use ¢ (or a cryptographic hash of ¢) as the seed for a deterministic key generation process,
+generating a public/private key pair (pk, sk).
+
+“We assume that honest nodes will not accept unproved values for ¢, because they would be slashed if the ¢-value
+was incorrect. Therefore, the observer can assume that statistically more than 2 of the SPoCKs have been obtained
+by truthful re-computation of the respective chunks.
+
+10
+— Use the private key sk to sign your public identity (such as a node ID), and publish the
+signature along with the deterministically generated public key pk:
+
+SPoCK Z = (pk, sign,,(ID)) (2)
+
+All observers can verify the signatures to see that both Alice and Bob must have access to
+the private key sk, but the signatures themselves don’t allow recovery of those private keys.
+Alice and Bob must both have knowledge of the same underlying secret ¢ used to generate
+the private key.
+In order t seal a block, several SPoCKs have to be validated for each chunk. Benchmarks of our
+early BLS implementation indicate that all proofs for sealing a block can be verified on a single
+CPU core in the order of a second. Parallelization across multiple CPU cores is straight forward.
+Verification time can be further reduced by utilizing vectorized CPU instructions such as AVX-512
+or a cryptographic coprocessor.
+
+11
+3 Transaction Processing Flow
+
+In this section, we present a formal definition of the transaction processing flow. Figure 3 provides
+a high-level overview of the individual stages which we discuss in detail in sections 3.1 — 3.5. For
+conciseness and clarity, we focus on the core steps and omit protocol optimizations for conservation
+of bandwidth, run-time, etc. In section 3.6, we formulate Theorem 2 which proves that correctness
+of a sealed computation result is probabilistically guaranteed even in the presence of Byzantine
+actors.
+
+To formally define the messages that nodes exchange, we use Protobuf-inspired® pseudo-code
+
+[23].
+Consensus Nodes | Execution Nodes | Verification Nodes |
+
+\
+| new Collections (hash references only) > '
+<Ghesrcinecompatation msiects >
+
+'
+
+le Request Collections for Block A
+
+| Collections for BlockA !
+
+' Self-select Chunks for verification
+
+< Request Transactions in Chunks
+
+| Transactions ' ' 1
+cal
+
+g Request Registers for verifying Chunks '
+i
+
+Register Values
+
+' '
+! >
+' ' Verify Transactions in Chunk
+
+Result Approval for Block A
+
+<
+
+H Checking Result Approvals for Block Ah
+
+' '
+' '
+BFT consensus to seal ' '
+: execution result of BlockA ' '
+H ee \ '
+
+Collector Nodes Consensus Nodes | Execution Nodes | Verification Nodes |
+
+Figure 3: Transaction Processing Flow. The hexagon-shaped boxes indicate the start of the individual stages,
+which are discussed in sections 3.1 - 3.5. Arrows show message exchange between nodes with specific roles. Green
+boxes represent broadcast operations where the content is relayed to all staked nodes in the network (independent of
+their respective roles). White boxes are operations the nodes execute locally.
+
+° Specifically, we use Protobuf with the exception of omitting the field numbers for the sake of conciseness.
+
+12
+3.1 Collector Role: Batching Transactions into Collections
+
+As described in section 1.1.1, there are several clusters of collectors, where each cluster maintains
+one collection at a time. A cluster may decide to close its collection as long as it is non-empty. As
+part of closing the collection, it is signed by the cluster’s collector nodes to indicate their agreement
+with the validity of its content and their commitment to storing it, until the block is sealed.
+
+Definition 1 A Guaranteed Collection is a list of
+
+transactions that is signed by more than 2/3rds of col ‘1: message GuaranteedCollection {
+lectors in its cluster. By signing a collection, a Collector 2: — bytes collectionHash;
+Node attests: 3: uint32 clusterIndex;
+e that all transaction in the collection are well. 4 Signature aggregatedCollectorSigs;
+formed; 5: }
+e the collection contains no duplicated transac-
+tions: Message 1: Collector Nodes send a
+
+GuaranteedCollection message to Consensus
+to storing the collection including the full texts of Nodes to inform them about a guaranteed Collection.
+
+all contained transactions. For a collection to be guaranteed, more than 2 of
+the collectors in the cluster (clusterIndex) must
+
+. . . . have signed it. Instead of storing the signatures in-
+A guaranteed collection is considered immutable. dividually, aggregatedCollectorSigs is an aggregated
+
+Once a collection is guaranteed by the collectors in its signature.
+cluster, its reference is submitted to the Consensus
+Nodes for inclusion in a block (see Message 1).
+
+3.2 Consensus Role: Linearizing Computation into Blocks
+
+Consensus nodes receive the GuaranteedCollections from Collector clusters and include them in
+blocks through a BFT consensus algorithm outlined in section 1.1.2.
+
+The structure of a finalized block is given in Message 2. The universal fields for forming the
+core blockchain are Block. height, Block. previousBlockHash. Furthermore, the block contains a
+Block. entropy as a source of entropy, which is generated by the Consensus Nodes’ Random Beacon.
+It will be used by nodes that process the block to seed multiple random number generators according
+to a predefined publicly-known protocol. In Flow, a reliable and verifiable source of randomness is
+essential for the system’s Byzantine resilience.
+
+1: message Block {
+
+2: uint64 height;
+
+3: bytes previousBlockHash;
+
+4: bytes entropy;
+
+5: repeated GuaranteedCollection guaranteedCollections;
+6: repeated BlockSeal blockSeals;
+
+7: SlashingChallenges slashingChallenges;
+
+8: NetworkStateUpdates networkStateUpdates;
+
+9: Signature aggregatedConsensussigs;
+
+10:
+
+Message 2: Consensus Nodes broadcast Blocks to the entire network. Their Block is valid if and only if more than 2
+of Consensus Nodes have signed. Instead of storing the signatures individually, we use store an aggregated signature
+
+in signedCollectionHashes.
+
+13
+The filed Block. guaranteedCollections specifies the new transactions that are to be exe-
+cuted next. During normal operations, Consensus Nodes only require the information provided
+by the GuaranteedCollection message. In particular, they work only with the collection hash
+(GuaranteedCollection.collectionHash) but do not need to inspect the collection’s transactions
+unless an execution result is being challenged.
+
+n
+
+[he blockSeals pertain to previous blocks in the chain whose execution results have just been
+sealed. A Block Seal contains a commitment to the resulting computational state after block
+execution and proves the computation has been verified by a super-majority of Verifier nodes.
+Section 3.5 describes in detail how Consensus Nodes seal blocks.
+
+The fields Block.slashingChallenges and Block.networkStateUpdates are listed for com-
+pleteness only. For brevity, we do not formally specify the embedded messages SlashingChallenges
+and NetworkStateUpdates. Block.slashingChallenges will list any slashing challenges that have
+been submitted to the Consensus Nodes (but not necessarily adjudicated yet by the Consensus
+Nodes). Slashing challenges can be submitted by any staked node. Some challenges, such as the
+Faulty Computation Challenge discussed in section 4.1), require the challenged node to respond and
+supply supplemental information. The filed networkStateUpdates will contain any updates network
+infrastructure state (see section 1.3 for details). Most significantly, staking changes due to slashing,
+staking and unstaking requests are recorded in this field. By including slashingChallenges and
+networkStateUpdates in a Block, their occurrences are persisted in the chain. As all staked nodes
+must follow recently finalized blocks to fulfill their respective roles, journaling this information in
+the block also serves as a way to publicly broadcast it.
+
+3.3. Execution Role: Computing Transactions in Block
+
+When the Execution Nodes receive a finalized Block, as shown in Message 2, they cache it for
+execution. An Execution Node can compute a block once it has the following information.
+
+e The execution result from the previous block must be available, as it serves as the starting
+state for the next block. In most cases, an Execution Node has also computed the prior block
+and the resulting output state is known. Alternatively, an Execution Node might request the
+resulting state from the previous block from a different Execution Node.
+
+e The Execution Node must fetch all collections’ text referenced in the block from the Collector
+Nodes.
+
+3.3.1 Chunking for Parallelized Verification
+
+After completing a block’s computation, an Execution Node broadcasts an Execution Receipt to the
+Consensus and Verification Nodes. We will discuss the details of the Execution Receipt in more
+detail in section 3.3.2. At its core, the Execution Receipt is the Execution Node’s commitment to its
+final result. Furthermore, it includes interim results that make it possible to check the parts of the
+computation in parallel without re-computing the entire block. The execution result’s correctness
+must be verified in a dedicated step to ensure an agreed-upon computational state. At the execution
+phase, the block computation is done by compute-optimised nodes. We therefore assume that a
+block re-computation by any other node, as part of the independent verification process, will always
+be slower. To address the bottleneck concern, we take an approach akin to split parallel verification
+[24]. We define the Execution Receipt to be composed of separate chunks, each constructed to be
+independently verifiable. A verification process (section 3.4) is defined on a subset of these chunks.
+
+14
+By breaking the block computation into separate chunks, we can distribute and parallelize the
+execution verification across many nodes. Let us consider a block containing = chunks. Furthermore,
+et 7 be the fraction of chunks in a block that each Verification Node checks. The parameter-value
+for 7 is protocol-generated (see section 3.6 for details).
+
+Number of chunks each Verification Node checks = [7 =], (3)
+
+for [-] the ceiling function. A mature system with V Verification Nodes would re-compute in total
+V[n =] chunks if all Verification Nodes were to fully participate. Hence, on average, each chunk
+Yin =) times. For example, a mature system with V = 1000 Verification Nodes could
+break up a large block into = = 1000 chunks. With 7 = 4.2%, each Verification Node would check
+[7 =] = 42 chunks and each chunk would be verified by 42 = Vin =) different Verification Nodes
+on average). The redundancy factor of 42 makes the system resilient against Byzantine actors (see
+section 3.7).
+It is important that there is not single chunk that has a significant increased computation
+consumption compared to others in the block. If chunks had vastly different execution time, Verifiers
+assigned to check the long-running chunks would likely not be finished before the block is seale
+(see section 3.5). Hence, Execution Nodes could attack the network by targeting the long-running
+chunk to introduce a computational inconsistency that is left unverified. This weakness is mitigate
+by enforcing chunks with similar computation consumption. Specifically, we introduce the following
+system-wide parameters.
+
+is executed
+
+[,, : upper limit for the computation consumption of one transaction (4
+
+: upper limit for the computation consumption of all transactions in one chunk (5
+
+chunk *
+
+with DP, <P.
+
+chunk
+
+Here, we assume the existence of a measure of computation consumption similar to gas in Ethereum.
+Since there is a hard limit of computation consumption both on a transaction as well as a chunk,
+with the chunk’s being significantly higher than the transaction’s, the simple greedy Algorithm 1 wil
+achieve the goal of similar computational consumption. Formally, let T= -I,,, for n > 1.
+Then, all chunks, except for the last one, will have a computation consumption c with the following
+properties.
+e (n—1)D,, < c. If this was not the case, ie., c < (n — 1)D,,, Algorithm 1 would add more
+transactions to the current chunk (line 6), as the computation consumption for transactions
+is upper-bounded by I,
+e c< nl), which is guaranteed by Algorithm 1, line 6.
+Hence, all chunks, except for the last one, will have a computation consumption c
+
+(U— AL,
+
+n/~ chunk
+
+<e SP: (7)
+
+Choosing n large enough guarantees that all but the last chunk have similar computation consump-
+tion.
+
+The last chunk could contain as little as a single transaction. Hence, its computation consump-
+tion Cy actchun, COUld take any value 0 < C,vccnunk SL As opposed to (1 — '¥/n)D 4, < ¢ for any
+
+chunk *
+
+other chunk in the block. The last chunk being significantly smaller than (1 — 1/n)I.
+
+chunk
+
+pose a problem for the following reason. For example, consider a node participating in a network
+
+does not
+
+15
+Algorithm 1 Chunking
+Input:
+
+T: List; element T[i] is computation consumption of transaction with index 7 in current block
+Output:
+
+C: List; element (k,c) = C[i] represents chunk with index i in current block; & is index of first
+
+transaction in chunk; c is chunk’s computation consumption
+
+1: Chunking(7)
+2 C+el[] > initialize C as empty list
+3 c+ 0 > computation consumption of current chunk
+4 ko-O > start index of current chunk
+5: fori =0,1,...,length(7) — 1:
+6
+7
+8
+
+ifc+T7(i] >.
+
+chunk *
+
+> adding transaction with index i would overflow chunk
+
+e+ (k,c) > complete current chunk without transaction i
+C.append(e)
+9: koi > start next chunk at transaction i
+10: c+ Ti]
+11: else: > current chunk computation consumption of current chunk
+12: cH c+T ii
+13: e+ (k,c) > complete last chunk
+
+14: C.append(e)
+15: return C
+
+Algorithm 1: separates transactions in a block into chunks. The algorithm presumes that computation consumption
+T(i] <1), for all i.
+
+that can process blocks with up to = = 1000 chunks. For 7 = 4.2%, a node would be required to
+have the capacity to process up to 42 chunks per block (as outlined above). Hence, for each block
+with =’ < 42, an honest Verifier would simply check the entire block. For blocks with more chunks,
+the workload is failry uniform across all Verifiers, even though each Verifier samples a subset of
+chunks for verification. This is because the large majority of all chunks have fairly comparable
+computation consumption as derived in equation (7).
+
+3.3.2. The Execution Receipt
+
+As Message 3 shows, the Execution Receipt is a signed ExecutionResult, which provides au-
+thentication of the sender and guarantees integrity of the message. The ExecutionResult en-
+capsulates the Execution Node’s commitments to both its interim and final results. Specifically,
+it contains a reference, ExecutionResult.blockHash, to the block whose result it contains and
+ExecutionResult.finalState as a commitment® to the resulting state.
+
+Consider the situation where an Execution Node truthfully computed a block but used the
+computational state from a faulty Execution Receipt as input. While the node’s output will likely
+propagate the error, it is important to attribute the error to the malicious node that originally intro-
+
+duced it and slash the malicious node. To ensure attributability of errors, ExecutionResults specify
+
+®We don’t specify details of the StateCommitment here. It could either be the full state (which is likely much too
+large for a mature system). Alternatively, StateCommitment could be the output of a hashing algorithm, such as
+Merkle Patricia Trie used by Etherum [25].
+
+16
+the computation result they built on top of as ExecutionResult. previousExecutionResultHash.
+As we will show later in section 3.6, a faulty computation result will be rejected with overwhelming
+
+probability.
+
+Lastly, the ExecutionResult.chunks contains
+1e Execution Node’s result of running the Chunking
+algorithm (Chunk. startingTransactionIndex and
+Chunk.computationConsumption). Also, a Chunk
+states the starting state (Chunk.startState) for the
+computation and the computation consumption for
+the first transaction in the chunk (Chunk.79)
+
+t.
+8
+c
+
+Solving the Verifier’s Dilemma
+
+The field ExecutionReceipt. Zs is a list of SPoCKs
+which is generated based on interim states from com-
+puting the chunks. Formally, for the i chunk
+VerificationProof. Zs{i] holds the SPoCK demon-
+strating knowledge of the secret derived from exe-
+cuting the chunk. As explained in section 3.4.2, the
+SPoCK is required to resolve the Verifier's Dilemma
+in Flow. Furthermore, it prevents Execution Nodes
+from copying ExecutionResult from each other, pre-
+ending their computation is faster than it is.
+
+Given that there are several Execution Nodes, it
+is likely that multiple Execution Receipts are issued
+for the same block. We define consistency of Execu-
+ion Receipts as follows.
+
+Execution Receipts are consistent if and only if
+1. their ExecutionResults are identical and
+
+1: message Chunk {
+
+2: StateCommitment startState;
+3 float 7;
+
+4: uint32 startingTransactionIndex;
+5: float computationConsumption;
+6
+
+:
+
+1: message ExecutionResult {
+
+2: bytes blockHash;
+
+3: bytes previousExecutionResultHash;
+4: repeated Chunk chunks;
+
+5 StateCommitment finalState;
+
+6
+
+5 ~~
+
+1: message ExecutionReceipt {
+
+2: ExecutionResult executionResult;
+3: repeated SPoCK Zs;
+
+4: bytes executorSig;
+
+5
+
+Message __ 3: Execution Nodes broadcast an
+ExecutionReceipt to the entire network after comput-
+ing a block.
+
+Definition 2 Consistency Property of Execution Receipts
+
+2. their SPoCKs attest to the same confidential knowledge.
+
+3.4 Verification Role: Checking Execution Result
+
+The verification process is designed to probabilistically guarantee safety of the computation result
+(see page 23, Theorem 2). A crucial aspect for the computational safety is that Verification Nodes
+verifiably self-select the chunks they check independently from each other. This process is described
+in the section below. In section 3.4.2, we describe how the selected chunks are verified.
+
+3.4.1 Self-selecting chunks for verification
+
+The protocol by which Verification Nodes self-select their chunks is given in Algorithm 2. While
+inspired by Algorand’s random sortition [26], it has significantly reduced complexity.
+
+17
+Algorithm 2 ChunkSelfSelection
+Input:
+y: fraction of chunks to be checked by a Verification Node
+er: Execution Receipt
+sk: Verifier Node’s secret key
+Output:
+L: List of chunk indices that are assigned to the Verifier
+p: proof of protocol-compliant selection
+
+1: ChunkSelfSelection(7, er, sk)
+
+2: chunks ¢ er.executionResult.chunks > list of chunks from Execution Receipt
+3: =< length(chunks) > number of chunks in the block
+4: p< sign,.(er.executionResult) > sign Execution Receipt’s ExecutionResult
+5: seed ¢ hash(p) > use signature’s hash as random number generator seed
+6 ne [n- =] > number of chunks for verification
+7: LI FisherYatesShuffle(chunks, seed, n) > generate random permutation of chunks
+8: return L,p
+
+Algorithm 2: randomly selects chunks for subsequent verification. In line 6, [-] is the ceiling operator. The function
+FisherYatesShuffle(list, seed, n) draws a simple random sample without replacement from the input list. The seed is
+used for initializing the pseudo-random-number generator.
+
+ChunkSelfSelection has the following crucial properties.
+
+(1) Verifiability. The seed for the random selection of the chunks is generated in lines 4 — 5. Given
+the ExecutionReceipt, the Verifier’s public key, and the proof p, any other party can confirm
+that p was generated according to protocol. Moreover, given p, anyone can re-compute the
+Verifier’s expected chunk assignment. Thereby, the chunk-selection protocol is verifiable and
+deviating from the protocol is detectable, attributable, and punishable.
+
+(2) Independence. Each Verifier samples its chunks locally and independently from all the other
+Verifiers.
+
+(3) Unpredictability. Without knowledge of the Verifier’s secret key sk, it is computationally
+infeasible to predict the sample. Formally, the computation of seed can be considered a
+verifiable random function [2].
+
+(4) Uniformity. A Verifier uses Fisher-Yates shuffling [27, 28] to self-select the chunks it checks.
+The Fisher-Yates algorithm’s pseudo-random number generator is seeded with the output of a
+cryptographic hash function. The uniformity of the seed and the uniformity of the shuffling
+algorithm together guarantee the uniformity of the generated chunk selection.
+
+Corollary 1
+
+Algorithm 2 samples a subset of [7-=] chunks, for = the number of chunks in the block and 7 the
+fraction of chunks to be checked by each Verification Node. The selection probability uniform and
+independently and identically distributed (i.i.d.) for all Verifiers. The sample is unpredictable without
+the Verification Node’s secret key.
+
+Independence and unpredictability are crucial for the system’s security. A selection protocol without
+these properties might be abused by a malicious Execution Node (see section 4.3 for a detailed
+discussion).
+
+18
+Algorithm 3 ChunkVerification
+Input: A: starting state for computing the chunk
+Txs: List of transactions in chunk
+
+7: computation consumption of leading transaction in this chunk
+
+A’: resulting state after computing the chunk as stated in the Execution Receipt
+
+7: computation consumption of leading transaction in neat chunk;
+
+or oo if this is the last chunk in the block
+c: chunk’s computation consumption as stated in the Execution Receipt
+Output: true: if and only if chunk passes verification
+1: ChunkVerification(A, Txs, A’, ntx, c)
+
+2: 7-0 > accumulated computation consumption
+3: for t in Txs: > for each transaction in chunk
+4: AWTS execute(A, t) > execute transaction
+5 if ¢ is first transaction in chunk:
+
+6 assert that 7 == 7 > computation consumption for first transaction in chunk is correct
+7: YOY+T > add transaction’s computation consumption to
+8 assert that y ==c > computation consumption for entire chunk is correct
+
+9: assert that c<T
+
+chunk
+
+10: assert that c+ 7) > Tan
+
+11: assert that A == A’ > verify Execution Node’s resulting state
+12: return true
+
+> computation consumption does not exceed limit
+
+> chunk is full: no more translations can be appended to chunk
+
+Algorithm 3: verifies a chunk. The function execute(A, t) applies the transaction t to the computational state A and
+returns a pair of values: the resulting state (first return value) and transaction’s computation consumption (second
+return value). The assert statement raises an exception if the condition is false.
+
+Our approach to independent verification of chunks has similarities with traditional acceptance
+sampling theory [24, 29, 30], yet differs as our model assumptions are different. In contrast to
+traditional acceptance sampling, where physical items are tested, identical copies of our digital
+chunks can be checked in parallel by multiple Verifiers. Part of the novelty of our approach is that
+we elevate an acceptance sampling model with parallel sampling.
+
+3.4.2 Verifying chunks
+
+The verification protocol is designed to be self-contained, meaning any Execution Receipt can be veri-
+fied in isolation. All required data is specified through the hashes in the execution receipt. Checking
+the correctness of a chunk requires re-computing the transactions in the chunk. The details of the
+verification protocol are given in Algorithm 3. The inputs 79 and 74 for the ChunkVerification
+algorithm are taken directly from the Execution Receipt. A, Txs, and A’, have to be fetched from
+the Execution Nodes and checked to match the Execution Receipt (specifically: A, A’) or the original
+block (specifically: Txs) via hashing’. Therefore, errors uncovered by the verification process can
+be attributed to the data provider and slashed.
+
+The verification process is also given enforcement power, as we enable it to request slashing
+
+"We use the term ‘hashing’ here to refer to the one-time application of a conventional hash function as well as iterative
+hashing schemes such as Merkle trees or Merkle Patricia trie.
+
+19
+message CorrectnessAttestation {
+bytes executionResultHash; > Hash of approved ExecutionResult
+: bytes attestationSig; > Signature over executionResultHash
+
+1:
+2
+3
+4
+1: message VerificationProof {
+2
+3
+4
+5
+
+repeated uint32 L; > list of chunk indices assigned to verifer
+bytes p; > proof to verify correctness of chunk assignment
+: repeated SPoCK Zs; > for each assigned chunk: proof of re-computation
+‘3
+1: message ResultApproval {
+2 CorrectnessAttestation attestation;
+3: VerificationProof verificationProof;
+4: bytes verifierSig; > signature over all the above fields
+5: }
+
+Message 4: Verification Nodes broadcast a ResultApproval to all Consensus Nodes if all their assigned chunks pass
+verification.
+
+against an Execution Node. A successful verification process results in a ResultApproval (Mes-
+sage 4) being broadcast by the Verifier to all Consensus Nodes. It is important to note that
+a ResultApproval (specifically ResultApproval.attestation) attests to the correctness of an
+ExecutionResult. Specifically, in CorrectnessAttestation, the Verifier signs the ExecutionResult,
+not the Execution Receipt. Per definition 2, multiple consistent Execution Receipts have identical
+ExecutionResults. Hence, their correctness is simultaneously attested to by a single ResultApproval
+message. This saves communication bandwidth, as each Verifier Node issues only one ResultApproval
+for the common case that several Execution Nodes publish the same results by issuing consistent
+Execution Receipts.
+
+The second important component is the ResultApproval.verificationProof, which proves
+that the Verification Node completed the assigned verification tasks. We designed this protocol
+component to address the Verifier's Dilemma [22]. It prevents the Verifier from just approving
+ExecutionReceipts, betting on honesty of the Execution Nodes, and thereby being compensated for
+work the Vertifier didn’t do. The field VerificationProof . L specifies the chunk indices the Verifier
+has selected by running ChunkSelfSelection (Algorithm 2). As detailed in section 3.4.1 (property
+(1) Verifiability), protocol-compliant chunk selection is proven by VerificationProof.p, which
+holds the value for p returned by ChunkSelfSelection. The list VerificationProof. Zs contains
+for each assigned chunk a proof of verification. Formally, for each i € VerificationProof.L,
+VerificationProof . Zs[i] holds a SPoCK.
+
+Each Verifier samples the chunks it checks independently (property (2)). Furthermore, statisti-
+cally each chunk is checked by a larger number of nodes (e.g., on the order of 40 as suggested in
+section 3.7) Therefore, with overwhelming probability, all chunks are checked. (We formalize this
+argument in Theorem 2).
+
+20
+3.5 Consensus Role: Sealing Computation Result
+
+Sealing a block’s computation result happens after the block itself is already finalized. Once the
+computation results have been broadcast as Execution Receipts, Consensus Nodes wait for the
+ExecutionResults to accumulate matching Results Approvals. Only after a super-majority of Ver-
+ifier Nodes approved the result and no FaultyComputationChallenge has been submitted (see
+section 4.1 for details), the ExecutionResult is considered for sealing by the Consensus Nodes.
+The content of a BlockSeal is given in Message 5. Algorithm 4 specifies the full set of conditions
+a BlockSeal must satisfy. Algorithm 4 enforces a specific structure in our blockchain which is
+illustrated in Figure 4.
+
+Once a Consensus Node finds that all conditions are valid, it incorporates the BlockSeal as an
+element of Block.blockSeals into the next Block it proposes. All honest Consensus Nodes will
+check the validity of the BlockSeal as part of verifying the Block, before voting for it. Thereby
+the validity of a BlockSeal is guaranteed by the BFT consensus algorithm. Furthermore, condition
+(8) guarantees that any FaultyComputationChallenge has been received before the block is sealed.
+This gives rise to the following corollary:
+
+Corollary 2
+
+Given a system with partially synchronous network conditions with message traversal time bounded by
+A,. A Block is only sealed if more than 3 of Verification Nodes approved the ExecutionResult and no
+FaultyComputationChallenge was submitted and adjudicated with the result that the ExecutionResult
+is faulty.
+
+1. Link to previous
+
+ExecutionResult
+Latest sealed Next block eee
+
+block B to seal B ae wey
+- S
+
+2. Blocks referenced by
+ExecutionResults are chained
+
+a vA .
+Seal £ of N ¢ Candidate
+highest sealed block SS Pa seal
+se ue?
+3. B’s computational output state must
+
+match starting state for B
+Figure 4: Validity conditions for a new BlockSeal according to Algorithm 4.
+
+21
+1: message BlockSeal {
+
+2: bytes blockHash;
+
+3: bytes executionResultHash;
+
+4: bytes executorSigs; > Signatures from Execution Nodes over ExecutionResult
+5 bytes attestationSigs; > Signatures from Verification Nodes approving the ExecutionResult
+6: bytes proofOfWaiting; > output of VDF to prove waiting for a FaultyComputationChallenge
+7: }
+
+Message 5: In order to seal a block (with hash blockHash), Consensus Nodes add a BlockSeal to the next block (field
+
+Block.blockSeals) they finalize. The field executorSigs is the aggregated signature of at least one Execution Node
+that published an Execution Receipt with a compatible ExecutionResult. Their BlockSeal is valid only if more than Hl
+
+of Verifier Nodes have signed. Instead of storing the signatures individually, we use store an aggregated signature in
+attestationSigs.
+
+Algorithm 4 Validity of Block Seal
+
+Let 6 be the (accepted) BlockSeal for the highest sealed block, i-e., 6 is contained in a finalized
+block. A candidate BlockSeal 8 must satisfy the following conditions to be valid.
+
+(1) B. executionResult . previousExecutionResultHash must be equal to
+
+8.executionResultHash
+(2) Le
+
+e B be the block whose result is sealed by 8B, ie., B is referenced by B. blockHash;
+e B be the block whose result is sealed by B, ie., B is referenced by B. blockHash.
+B.previousBlockHash must reference B.
+
+e E be the ExecutionResult that referenced (sealed) by 3.executionResultHash;
+e E be the ExecutionResult that is referenced by B. executionResultHash.
+The starting state for computing B must match the B computational output state, i.e.,
+
+E..chunks(0] .startState == F.finalState
+
+(4) B. attestationSigs must contain more than 3 of Verifier Nodes’ signatures
+
+(5) For each Verifier who contributed to B.attestationSigs, the VerificationProof has been
+validated.
+
+(6) No FaultyComputationChallenge against the ExecutionResult is pending (i.e., not yet adju-
+dicated).
+
+(7) No FaultyComputationChallenge against the ExecutionResult was adjudicated with the re-
+sult that the ExecutionResult is faulty.
+
+(8) 6.proof0fWaiting proves a sufficiently long wait time A;
+
+Per axiom, we consider the genesis block as sealed.
+
+Algorithm 4: protocol for determining validity of a BlockSeal. Figure 4 illustrates conditions (1) - (4).
+
+22
+3.6 Proof of Computational Correctness
+
+Below, we prove in Theorem | that Flow’s computation infrastructure has guaranteed liveness, even
+in the presence of a moderate number of Byzantine actors. Furthermore, Theorem 2 proves that
+block computation is safe, i.e., the resulting states in sealed blocks are correct with overwhelming
+probability. While safety is unconditional on the network conditions, liveness requires a partially
+synchronous network.
+
+Theorem 1 Computational Liveness
+Given a system with
+
+e more than 2 3 of the Consensus Nodes’ stake is controlled by honest actors;
+
+e and at least one, honest Execution Node;
+
+e and more than 2 3 of the Verification Nodes’ stake is controlled by honest actors;
+
+e and partially synchronous network conditions with message traversal time bounded by A,;.
+The computation and sealing of finalized blocks always progresses.
+
+Proof of Theorem 1
+
+e Assuming liveness of the consensus algorithm, finalization of new blocks always progresses.
+
+e For a system with one honest Execution Node, there is at least one Execution Receipt with a
+correct ExecutionResult.
+
+e Every honest Validator will approve a correct ExecutionResult. Hence, there will be Result
+Approvals by at least 2 of the Verification Nodes.
+
+e Malicious Verifiers might temporarily delay block sealing by raising a FaultyComputation-
+Challenge, which triggers condition (6) in Algorithm 4. However, the resolution process
+(see section 4.1 for details) guarantees that the FaultyComputationChallenge is eventually
+adjudicated and malicious Verifiers are slashed (Corollary 3). Therefore, malicious Verifiers
+cannot indefinitely suppress block sealing via condition (6) or even reach condition (7).
+
+e Consequently, all honest Consensus nodes will eventually agree on the validity of the Block
+Seal.
+
+e Assuming a consensus algorithm with guaranteed chain quality®, an honest Consensus Node
+will eventually propose a block and include the Block Seal as prescribed by the protocol.
+
+e Given that there are more than 2 3 of honest Consensus Nodes, the block containing the sea
+will eventually be finalized (by liveness of consensus).
+
+Theorem 2 Computational Safety
+Given a system with
+© partially synchronous network conditions with message traversal time bounded by A;;
+e more than 2 5 of the Consensus Nodes’ stake is controlled by honest actors;
+e all Verification Nodes are equally staked and more than 2 3 of them are honest.
+Let NV denote the number of honest Verification Nodes and 7) the fraction of chunks each Verifier checks.
+The probability P.::or for a computational error in a sealed block is bounded by
+
+Perror s =: (1 — n)~ (8)
+
+for large N. Here, = denotes the number of chunks in the Execution Receipt.
+
+number of blocks contributed by honest nodes [31
+number of blocks contributed by malicious nodes
+
+5 Formally, chain quality of a blockchain is the ratio
+
+23
+Theorem 2 states that the probability of a computational error decreases exponentially with the
+number of Verifiers.
+
+Proof of Theorem 2
+Consider an Execution Receipt.
+e For brevity, we denote the Execution Receipt’s chunks as L , i.e.,
+
+L = ExecutionReceipt .executionResult. chunks.
+
+Without loss of generality, we treat L as a set (instead of an ordered list), as this proof does
+not depend on the order of L’s elements.
+e Let © be the total number of chunks in the Execution Receipt, i.e = = |L|, where | - | denotes
+the cardinality operator.
+e Let € € L denote a chunk.
+As formalized in Corollary 1, each honest Verifier randomly selects a subset S C L with |$| = [n- 3]
+by execution ChunkSelfSelection (Algorithm 2). As each Verifier selects the chunks by Fisher-
+Yates shuffle, it follows that chunk € not being selected as the first element is es and that € is not
+selected as the second element is eS, etc. Hence, the probability that chunk € is not checked by
+one specific verifer is
+
+=-1 =-2 E-n =E-n n
+De = . heat = =1 ; f := |S| = [n-&]. 9
+MSS E-1 E-f@-l EE = forn=|S|=[n-S]- (9)
+Let Pe be the probability that € is checked by none of the honest Verifiers.
+5 _ oN N
+Pz =p =(1- 8) (10)
+<(1—7)* (11)
+
+as n = [n-=] > 1-5. Consequently, the probability of the specific chunk € not being checked
+decreases exponentially with the number of Verifiers N. Figure 5 visualizes the exact probability
+Pz as a function of 77 as given in equation (10).
+
+The probability that all chunks are checked by at least one honest Verifier is (1 — Pe)=. Conse-
+quently, the probability an error in any chunk in the block remaining undetected is
+
+Porror = 1 — (1 — Pe)®. (12)
+
+We assume that the system parameter 7 is chosen such that Pe = 0 to ensure computational safety.
+Hence, we can approximate eq. (12) by its first order Taylor series in Pe.
+
+(1-P)F x 1-5 P (13)
+Inserting equations (13) and (11) into (12) yields
+
+Porror S E+ (1—n)*, ( 4)
+
+which proves equation (8) from the theorem. We have now shown that the probability of a faulty
+chunk in an Execution Receipt not being checked by an honest Verifier is bounded by (14). Fur-
+thermore, every honest Verifier will challenge any faulty chunk it is assigned to check by raising a
+FaultyComputationChallenge (see section 4.1 for details). Corollary 2 guarantees that a block is
+only sealed if no correct FaultyComputationChallenge was raised. Hence, the only way a block can
+be sealed with a faulty ExecutionResult is if the faulty chunks are not checked by honest Verifers.
+Consequently, eq. (14) also bounds the probability of a faulty ExecutionResult being sealed.
+
+24
+oe © Sampling with replacement
+10-2 * @ Sampling without replacement
+10-4
+“e.,
+1o-6
+oa
+10-®
+10-19
+0-12
+1 2 3 4
+
+n[%]
+
+Figure 5: Probability P- that a specific chunk is checked by none of the honest Verifiers. 7 is the fraction of chunks
+each Verifier selects for checking. The graph illustrates probabilities for V = 667 honest Verification Nodes verifying
+an Execution Receipt with = = 1000 chunks. The blue curve shows the dependency when Verifiers sample their chunks
+based on Fisher-Yates as specified in Algorithm 2, i.e., sample chunks from the Execution Receipt without replacement.
+For comparison, we show sampling with replacement.
+
+3.7 Computational Load on Verification Nodes
+
+Using equation (8), we can compute the required fraction 7 of chunks that each Verifier has to
+check to achieve a specific Paror. For the mature system under full load, we expect there to be 1000
+Verification Nodes and each block to contain up to = = 1000 chunks. Furthermore, we make the
+conservative assumption that only 3 of the Verification Nodes are honest, i-e., N = 667.
+
+Let the probability for a malicious Execution Node to succeed with an attempt to introduce a
+compromised state into the blockchain be Perror < 10-®. To achieve this, every Verification Node
+would need to check 32 chunks, i.e., execute 7 = 3.2% of the work of an Execution Node. To lower
+the probability even further to Peryoy < 107%, Verifiers only need to execute n = 4.2% of the work
+of an Execution Node.
+
+This shows that distributing and parallelizing the verification of computation results is efficient.
+Furthermore, note that checking the chunks can be trivially executed in parallel.
+
+25
+4 Mitigation of Attack Vectors
+
+In the following, we will discuss the most severe attacks on Flow. In this context, we would like
+to re-iterate that the staking balances are maintained by the Consensus Nodes as part of the
+network state (compare section 1.3). Hence, Consensus Nodes can adjudicate and slash misbehav-
+ing nodes directly. The resulting updates to the network state are published in the blocks (field
+slashingChallenges in message 2) without needing to involve Execution Nodes.
+
+4.1 Adjudicating with Faulty Computation Results
+
+In section 3.6, Theorem 2, we have shown that a faulty computation state will be challenged by a
+Verification Node with near certainty. Formally, a Verification Node submits a Faulty Computation
+Challenge (FCC), to the Consensus Nodes for adjudication. We start by introducing the necessary
+notation and then proceed with specifying the details of an FCC and the protocol for processing
+them.
+
+Nomenclature (illustrated in Figure 6): For an
+Execution Receipt with = chunks, the field
+ExecutionReceipt .executionResult. chunks bytes executionReceiptHash;
+
+1:
+2
+holds the StateCommitments [Ag,Ay,...,As]. uint32 chunkIndex;
+For i € {0,1,...,2—1}, A; denotes the start- 4 ProofOfAssignment proofOfAssignment;
+5
+6
+7:
+
+message FaultyComputationChallenge {
+
+StateCommitment stateCommitments;
+Signature verifierSig;
+
+ing state for the computation of the chunk with
+index i. Ag is the final state at the end of the :
+Message 6: Verification Nodes send this message to Con-
+
+. . : . sensus Nodes to challenge a specific Execution Receipt
+accordingly. Let the chunk at index i contain (executionReceiptHash). The FaultyComputationChallenge
+
+x; transactions. For k € {0 a oo 1}, is specific to a computational output state for one
+Acs. d tes the i t state f , : uti the of the chunks, where chunkIndex is a zero-based_ in-
+ik Genotes the input state for computing the dex into ExecutionReceipt.executionResult .chunks (Compare
+
+transaction with index k within the chunk. Ac- Message 3).
+cordingly, A;,,,-1 is the state at the end of the
+chunk.
+
+Note that A;y;-1 simultaneously serves as the starting state for the next chunk at index i +
+1. Hence, Aj, as well as Ajy1 and Aj+1,9 refer to the same StateCommitment. The different
+nomenclatures are introduced for ease of notation only.
+
+block (after all transactions are computed).
+To denote the (interim) states between in-
+dividual transactions, we extend the notation
+
+Definition 3
+
+A well-formed Faulty Computation Challenge (FCC), specified in Message 6, challenges one specific
+chunk at index chunkIndex of an Execution Receipt (referenced by executionReceiptHash). It provides
+the list
+
+stateCommitments = [AchunkIndex,0; A chunkIndex,1; tee » Nchunktndex,Xenuneindex!* (15)
+
+26
+Published in Execution Receipt
+States between chunks
+
+Ao Ao
+J chunk O: transaction O :
+Ao
+J chunk 0: transaction 1
+No,2
+. Ao,xo-1
+A J chunk 0: transaction Xo - 1
+1 - Noxo = Aro
+J chunk 1: transaction O
+Aya
+A; el Aio
+J chunk 72: transaction O
+. . Mia . : + +
+J chunk z: transaction 1 Published in FCC against chunk i:
+Mia interim states between transactions
+Ay ell for chunk with index i
+Xi
+¥Y chunk7?: transaction x; — 1
+Aiud Mix,
+
+Figure 6: Illustration of nomenclature State commitments (e.g., hashes) are represented as vertical lines and de-
+noted by A. The bold lines visualize the starting states Ao, Aj,. _1 for the chunks, as well as the final state As.
+Furthermore, A; ;, is the input state for computing the transaction with index & within the chunk.
+
+Definition 4 Protocol for Adjudicating a Faulty Computation Result
+Let there be a Verifier Node V that is checking the chunk at index i and disagrees with the resulting
+state Ajy1 = Aj,y,. In the following, we denote the Verifier’s StateCommitments as ‘A and the Execution
+Node's with A.
+1. Verifier V broadcasts a FaultyComputationChallenge to the Consensus Nodes with
+e FaultyComputationChallenge.chunkIndex ¢ i
+
+e FaultyComputationChallenge.stateCommitments (Aut, oe Aiy,]
+2. Consensus Nodes publish the FCC in their next finalized block (field slashingChallenges in
+message 2)
+
+3. The challenged Execution Node has a limited time to broadcast a FaultyComputationResponse
+(Message 7) to the Consensus Nodes. Time is measured using a verifiable delay function [32].
+
+: message FaultyComputationResponse {
+2: bytes FaultyComputationChallengeHash;
+3:  StateCommitment stateCommitments;
+
+4: Signature executerSig;
+5:
+
+Message 7: A challanged Execution Node broadcast a FaultyComputationResponse to the Consensus Nodes.
+
+1
+x
+
+27
+(a) Should the Execution Node not respond, it is slashed. Consensus Nodes will include a corre-
+sponding notification in the next block (field networkStateUpdates in Message 2) that also
+includes the output of the VDF as proof of waiting. In this case, adjudication ends with the
+Execution Node being slashed.
+
+(b) To prevent being slashed, the Execution Node must disclose all interim states in the chunk
+by submitting a FaultyComputationResponse with
+
+e FaultyComputationResponse.stateCommitments ¢ [Aj1,... Aix]
+to the Consensus Nodes. In case the Execution Node sends a FaultyComputationResponse,
+the protocol continues with step 4 below.
+4. Consensus Nodes now compare the stateCommitments from both parties element-wise and find
+the first mismatch. Let the first mismatch occur at index Z, i.e.
+
+Nie F Aue
+
+for all 1 € (0,1,...,€-1: Ai = Ay.
+
+Essentially, both parties agree that, starting from state A; = Ajo, the computation should lead to
+
+Aje-1 as the input state for the next transaction. However, they disagree on the resulting state
+after computing this next transaction.
+
+. Consensus Nodes request state A; ~_1 from either party. Furthermore, by resolving the texts of
+collections in the block, Consensus Nodes obtain the transaction with index @ in the chunk, whose
+output is disputed.
+
+. Consensus Nodes use A; 1 as input state for computing transaction with index ¢ in the chunk.
+Consensus Nodes now compare their locally computed output state with A; ¢ and Aue.
+
+. Any party who published a computation result that does not match the values computed by the
+Consensus Nodes is slashed. Consensus Nodes will include a corresponding notification in the next
+block (field networkStateUpdates in message 2).
+
+Informally, Definition 4 describes a protocol by which a Verifier Node can ai
+of Consensus Nodes to re-compute a specific transac
+with. To avoid being slashed, the challenged |
+required for the Consensus Nodes to re-compute
+is no leeway for the Execution Node to provide wrong information as hones
+
+verify the correctness based on previously pub.
+
+e Consensus Nodes request transaction texts o
+
+blocks, which allow verification of the co
+
+e Consensus Nodes request the last interim
+A hash of this state was published by both
+This allows the Consensus Nodes verify state
+
+Furthermore, the described protocol is execu
+
+Exec
+
+ishe
+
+ed
+
+lection texts.
+state Aj ¢_; in the chunk tha
+
+»peal to the committee
+ion whose output the Verifier does not agree
+ution node must provide all information that is
+he transaction in question. Nevertheless, there
+Consensus Nodes will
+
+1
+
+d
+f collections. The collection hashes are stated in
+
+1ash commitments:
+
+both parties agree on.
+he Verifier and the challenged Execution Node.
+variables (e.g., via Merkle proofs).
+
+by all honest Consensus Nodes. The resulting
+
+slashing is included in a block and hence secured by BFT consensus. Assuming a super-majority
+
+of honest Consensus Nodes, it is guaranteed t
+Corollary 3 formalizes this insight.
+
+hat
+
+28
+
+he misbehaving node is slashed. The following
+Corollary 3
+Given a system with
+e@ more than 3 of the Consensus Nodes’ stake is controlled by honest actors;
+e and partially synchronous network conditions with message traversal time bounded by A;.
+The following holds.
+e If an honest Verifier node is assigned to verify a chunk that has a faulty computation result, the
+Execution Node who issues the corresponding Execution Receipt will be slashed.
+e If a dishonest Verifier Node challenges a correct computation result, the Verifier will be slashed.
+
+4.2 Resolving a Missing Collection
+
+As message 2 and | show, a block references its collections by hash but does not contain the individ-
+ual transactions texts. The transactions texts are stored by the Collector Node cluster which build
+the collection and is only required when Execution Nodes want to compute the blocks’ transactions.
+Hence, a cluster of Collector nodes could withhold the transaction texts for a guaranteed collection.
+While block production is not impacted by this attack, block execution halts without access to the
+needed transaction texts.
+
+When an Execution Node is unable to resolve a guaranteed collection, it issues a Missing Collec-
+tion Challenge (MCC). An MCC is a request to slash the cluster of Collector Nodes (Message 1, line
+4) who have guaranteed the missing collection. MCCs are directly submitted to Consensus Nodes.
+
+Definition 5 Protocol for Resolving a Missing Collection
+
+1. An Execution Node determines that the transaction texts for a GuaranteedCollection from the
+current block are not available as expected. The protocol does not dictate how this determination
+is reached, but the obvious implementation is assumed (ask the Guarantors, wait for a response,
+ask other Execution Nodes, wait for a response).
+
+2. The Execution Node broadcasts an MCC to all Collector and Consensus Nodes. The Consensus
+Nodes record the challenge in the next block, but do not otherwise adjudicate the challenge at this
+stage.
+
+3. Any honest Collector Node, which is not a member of the challenged cluster, sends a request to
+« randomly selected Guarantors to provide the missing Collection. If the request is answered, the
+requesting Collector Node forwards the result to the Execution Nodes.
+
+4. If the Guarantor does not respond within a reasonable time period A;, the requesting Collector
+Node will sign a Missing Collection Attestation (MCA), including the hash of the collection in
+question. Time is measured using a verifiable delay function [32] and the MCA contains the VDF's
+output as proof of waiting. The MCA is broadcast to all Consensus and Execution Nodes.
+
+5. An honest challenged Guarantor will respond with the complete Collection text to any such requests.
+
+6. If the Execution Nodes receive the collection, they process the block as normal. Otherwise, they
+wait for more than 3 of the Collector Nodes to provide MCAs.
+
+7. Appropriate MCAs must be included in all Execution Receipts that skip one or more Collections
+from the block.
+
+8. Every MCC will result in a small slashing penalty for each Execution Node and each challenged
+Guarantor. Even if the MCC is resolved by finding the Collection, each of these actors must pay
+the fine, including the Execution Nodes that did not initiate the MCC. This is designed to prevent
+the following edge cases:
+
+29
+9.
+
+e Lazy Guarantors that only respond when challenged: without a fine for challenged Guarantors,
+even in the case where the collection is resolved, there is no incentive for Guarantors to respond
+without being challenged.
+
+e Spurious MCCs coming from Byzantine Execution Nodes: without a fine for Execution Nodes,
+there is a zero-cost to generating system load through unjustified MCCs.
+
+e Don't punish the messenger: all Execution Nodes must be fined equally so that there is no
+disincentive to be the first Execution Node to report a problem.
+
+If an Execution Receipt containing an MCC is sealed, ALL guarantors for the missing Collection
+are subject to a large slashing penalty (equal to the minimum staking requirement for running a
+Collector Node).
+
+Discussion
+
+The slashing penalty for a resolved MCC should be small enough that it doesn’t automatically
+eject the Collector Nodes from the network (by dropping them below the minimum staking
+threshold), but must be significant enough to account for the fact that resolving an MCC is
+very expensive.
+Resolving an MCC is very expensive. Each Collector Node will request the Collection from one
+Guarantor, so each Guarantor will have to respond to many requests or risk being slashed.
+Each Execution Node will be flooded with copies of the Collection if it is available. We
+are operating under the theory that if MCCs have a very high probability of being resolved
+correctly (Lemma 3), spurious MCCs should be very rare specifically because of the described
+penalties.
+
+If most Execution Nodes are Byzantine and raise spurious MCCs, but at least one Execution
+Node is honest and generates complete Execution Receipts, a correct Execution Receipt will
+be sealed (assuming an honest super-majority of Collector Nodes and Consensus Nodes).
+Furthermore, the Execution Nodes who raised the spurious MCC will be slashed.
+If most Guarantors of a particular Collection are Byzantine, and refuse to provide Collection
+data, but at least one Guarantor is honest, the Collection will be provided to an honest
+Execution Node and executed properly.
+A cabal of 100% of Execution Nodes acting maliciously can halt the network by not executing
+new blocks. Nevertheless, no faulty state can be introduced into the network by such a denial
+of service attack.
+
+In order for an attacker to obtain the ability to introduce an error into the computation state
+(with non-negligible probability), the attacker would need to control a Byzantine fraction of
+100% of Execution Nodes and more than 3 of Verifier Nodes.
+
+Theorem 3 Liveness of Collection Text Resolution
+Given a system with
+
+more than 2/3 of the Consensus Nodes’ stake is controlled by honest actors;
+more than 2/3 of the Collector Nodes’ stake is controlled by honest actors;
+and partially synchronous network conditions with message traversal time bounded by A,.
+
+The system can be configured such that any guaranteed collection is available with probability close to
+
+1.
+
+Proof of Theorem 3
+For this proof, we assume that Byzantine nodes collaborate to the maximum extent possible to
+
+30
+prevent a collection from being resolved. Unless there are protocol-level guarantees, we consider
+
+the most favorable conditions for the Byzantine nodes. Let us assume that the Byzantine nodes
+
+successfully prevented a collection from being resolved, i.e., more than 2/3 of the collectors issued
+
+an MCA. Let
+
+e N the total number of collector nodes, N the number of honest collectors, and N the number
+
+of Byzantine collectors;
+
+© Nluster the size of the collector cluster that produced the missing collection, Reuster the number
+
+of honest collectors in the cluster, and Mejuster the number of Byzantine collectors in the cluster;
+
+e ng the number of guarantors of the missing collection, ng the number of honest guarantors,
+
+and mg the number of Byzantine guarantors.
+
+We consider a system configuration with N = N-+WN = 1000 collector nodes where N = 2 N/3) +1.
+
+In Flow, the clusters are created by randomly partitioning the collectors into clusters of size Neluster
+
+via Fisher-Yates shuffling. Hence, the probability of drawing a cluster with Neuster Byzantine actors
+is given by the hypergeometric distribution
+
+8 Naya
+NN (Tictuster) ouster ( ad ‘) cluster? (18)
+
+Neluster
+
+"cluster:
+
+For a collection, at least ng = 2| Nquster /3)+1= Ng +g guarantors are required. The number of
+Byzantine guarantors n, could take any value in 0,1,...,7custer- There could be more Byzantine
+nodes in the cluster than required to guarantee the collection, i.e., ng < Meluster- In this case,
+we assume that only the minimally required number of ng Byzantine nodes would guarantee the
+collection to minimize slashing.
+
+Tg € {0, 1,...,min (ng, Rtuster) } . (19)
+
+As each honest guarantor increases the probability of a collection being successfully retrieved, we
+assume that the Byzantine nodes only involve the absolute minimum number of honest nodes to
+get the collection guaranteed:
+
+ig = Ng — Tig = 2| Neuster/3| + 1 — ig (20)
+
+When an honest collector that is not a guarantor receives a MCC, it selects & guarantors and
+requests the collection from them. We assume that only honest guarantors would answer such a
+request. The probability for a correct node to receive no answer when inquiring about the missing
+collection, i.e., to issue in MCA, is
+
+Ng—N
+("55")
+n,
+("*)
+Furthermore, every Byzantine node that is not a guarantor of the collection would issue an MCA
+to increase the chances that the Missing Collection Challenge is accepted. Hence, there are (NV — ng)
+MCAs from Byzantine nodes. For a collection to be considered missing, the protocol require 2N
+collectors to send MCAs. Consequently, the minimally required number of MCAs from honest nodes
+
+1s
+
+Pa. mgatig (0) = (21)
+
+r=N-(N-A”,). (22)
+
+31
+ee
+° @ K=L0.1 -Neuster |
+10-24 @ ° @ K=(0.3 -Meuster |
+ee ° @ K=10.5 -Neuster |
+= 10-4 ee ee
+2 se
+& ee .
+3 10-64 ee °
+fe ee e
+UO
+g es °
+= 10-8; ee °
+e e e
+10-29 4 ° 3
+ee
+ee
+ro-2? L, : : : : : : —*
+20 30 40 50 60 70 80 90
+Neluster
+
+Figure 7: Worst-case probability that a collection cannot be resolved. The graph shows numerical values for
+P(MCC accepted), equation (25), for N = 1000, N = 667 and N = 333.
+
+As honest nodes independently contact guarantors, each honest node conducts a Bernoulli trial and
+issues a MCAs with probability Pra. mgatig (0). Consequently, the probability that 7 honest nodes issue
+MCAs follows a Binomial distribution
+
+B09 = (0) Pacse OD Pargag Ol (23)
+
+r
+
+Given the number feuster Of byzantine actors in the cluster, the worst-case probability that the
+MCC is accepted by the system is
+
+N
+P(MCC accepted | Aicuster) = max > B(r). (24)
+{Oatv-min(g:Fetusten)! ng
+
+The overall probability of an MCC being accepted is, therefore,
+
+P(MCC accepted) = > P(MCC accepted | Nauster) -P
+
+Teluster ©
+{0..-.% cluster
+
+IN (Retuster) (25)
+
+Neluster’N
+
+Figure 7 illustrates the worst-case probability of a chunk missing, i.e., that a MCC shows the
+probabilities according to equation (25).
+
+4.3 Placing errors in chunks checked by colluding Verifier Nodes
+
+If an Execution Node and several Verifier Nodes are colluding, they have the ability to secretly
+determine which chunks would be checked by the colluding Verifiers before even publishing an
+Execution Receipt. However, the self-assignment scheme defined in section 3.4 is independent for
+
+32
+each Verifier and in addition non-predictable for anyone without the Verifier’s private key. Therefore,
+honest Verifiers will still check each chunk with uniform probability, independently of the colluding
+Verifiers. Consequently, if a malicious Execution Node wants to introduce a computation error,
+there is no advantage in placing the error in chunks that are checked by colluding Verifiers. This
+insight is formalized as Corollary 4.
+
+Corollary 4
+
+Given a system with partially synchronous network conditions with message traversal time bounded by
+A,. Let there be a malicious Execution Node that tries to introduce a computation error into one of
+the chunks of a block. The success probability cannot be increased by the chunk selection of Byzantine
+Verifiers.
+
+33
+Acknowledgments
+
+We thank Dan Boneh for many insightful discussions, and Alex Bulkin, Karim Helmy, Chris Dixon,
+Jesse Walden, Ali Yahya, Ash Egan, Joey Krug, Arianna Simpson, as well as Lydia Hentschel for
+
+comments on earlier drafts.
+
+References
+
+1] Alexander Hentschel, Dieter Shirley, Layne Lafrance, and Ross Nicoll. Flow: Separating consensus and compute,
+2019.
+
+2] Silvio Micali, Salil Vadhan, and Michael Rabin. Verifiable random functions. In Proceedings of the 40th Annual
+Symposium on Foundations of Computer Science, FOCS ’99, pages 120-, Washington, DC, USA, 1999. IEEE
+Computer Society.
+
+3] Timo Hanke, Mahnush Movahedi, and Dominic Williams. DFINITY technology overview series, consensus
+system. CoRR, abs/1805.04548, 2018.
+
+4] Benedikt Biinz, Steven Goldfeder, and Joseph Bonneau. Proofs-of-delay and randomness beacons in ethereum.
+2017.
+
+5] Dan Boneh, Manu Drijvers, and Gregory Neven. Compact multi-signatures for smaller blockchains. In ASJ-
+ACRYPT, 2018.
+
+6] Jae Kyun Kwon. Tendermint : Consensus without mining. 2014. https://github.com/cosmos/cosmos/tree/
+master/tendermint.
+
+7| Ethan Buchman. Tendermint: Byzantine Fault Tolerance in the Age of Blockchains, Jun 2016.
+
+8] Jae Kwon and Ethan Buchman. Cosmos - A Network of Distributed Ledgers. 2016. https: //cosmos.network/
+cosmos-whitepaper.pdf.
+
+9] Guy Golan-Gueta, Ittai Abraham, Shelly Grossman, Dahlia Malkhi, Benny Pinkas, Michael K. Reiter, Dragos-
+Adrian Seredinschi, Orr Tamir, and Alin Tomescu. SBFT: a scalable decentralized trust infrastructure for
+blockchains. CoRR, abs/1804.01626, 2018.
+
+10] Ittai Abraham, Guy Gueta, and Dahlia Malkhi. Hot-stuff the linear, optimal-resilience, one-message BFT devil.
+CoRR, abs/1803.05069, 2018.
+
+11] J. H. Wensley, L. Lamport, J. Goldberg, M. W. Green, K. N. Levitt, P. M. Milliar-Smith, R. E. Shostak, and
+C. B. Weinstock. Tutorial: Hard real-time systems. chapter SIFT: Design and Analysis of a Fault-tolerant
+Computer for Aircraft Control, pages 560-575. IEEE Computer Society Press, Los Alamitos, CA, USA, 1989.
+
+12] M. Pease, R. Shostak, and L. Lamport. Reaching agreement in the presence of faults. J. ACM, 27(2):228-234,
+April 1980.
+
+13] L. Lamport. The Weak Byzantine Generals Problem. J. ACM, 30(3):668-676, July 1983.
+
+14] Heidi Howard. Distributed consensus revised. PhD thesis, 2018. https://www.cl.cam.ac.uk/techreports/
+UCAM-CL-TR-935.pdf.
+
+15] Cynthia Dwork, Nancy Lynch, and Larry Stockmeyer. Consensus in the presence of partial synchrony. J. ACM,
+35(2):288-323, April 1988.
+
+16] Michael J. Fischer, Nancy A. Lynch, and Michael S. Paterson. Impossibility of distributed consensus with one
+faulty process. J. ACM, 32(2):374-382, April 1985.
+
+17] Maofan Yin, Dahlia Malkhi, Michael K. Reiter, Guy Golan Gueta, and Ittai Abraham. HotStuff: BFT Consensus
+with Linearity and Responsiveness. In Proceedings of the 2019 ACM Symposium on Principles of Distributed
+Computing, PODC 19, pages 347-356, New York, NY, USA, 2019. ACM.
+
+18] Vlad Zamfir. A Template for Correct-By-Construction Consensus Protocols. 2017. https://github.com/
+ethereum/research/tree/master/papers/cbc- consensus.
+
+19] Vlad Zamfir. Casper the Friendly Ghost: A ‘Correct By Construction’ Blockchain Consensus Protocol. 2017.
+https://github.com/ethereum/research/blob/master/papers/CasperTFG.
+
+20| Vlad Zamfir, Nate Rush, Aditya Asgaonkar, and Georgios Piliouras. Introducing the “Minimal CBC Casper”
+
+Family of Consensus Protocols. 2018. https: //github.com/cbc-casper/cbc-casper-paper.
+
+34
+21
+
+27
+
+28
+
+29|
+
+30
+31
+
+32
+
+Sarah Azouvi, Patrick McCorry, and Sarah Meiklejohn. Betting on blockchain consensus with fantomette. CoRR,
+abs/1805.06786, 2018.
+
+Loi Luu, Jason Teutsch, Raghav Kulkarni, and Prateek Saxena. Demystifying incentives in the consensus
+computer. In Proceedings of the 22Nd ACM SIGSAC Conference on Computer and Communications Security,
+CCS ’15, pages 706-719, New York, NY, USA, 2015. ACM.
+
+Google. Protocol buffers. https: //developers.google.com/protocol-buffers/docs/proto.
+
+Hakan L. S. Younes and Reid G. Simmons. Probabilistic verification of discrete event systems using acceptance
+sampling. In Ed Brinksma and Kim Guldstrand Larsen, editors, Computer Aided Verification, pages 223-235,
+Berlin, Heidelberg, 2002. Springer Berlin Heidelberg.
+
+Ethereum Foundation. Patricia tree. https: //github.com/ethereum/wiki/wiki/Patricia-Tree.
+
+Yossi Gilad, Rotem Hemo, Silvio Micali, Georgios Vlachos, and Nickolai Zeldovich. Algorand: Scaling Byzantine
+Agreements for Cryptocurrencies. In Proceedings of the 26th Symposium on Operating Systems Principles, SOSP.
+°17, pages 51-68, New York, NY, USA, 2017. ACM.
+
+Ronald A. Fisher and Frank. Yates. Statistical tables for biological, agricultural and medical research / by the
+late Sir Ronald A. Fisher and Frank Yates. Longman [Harlow], 6th ed. revised and enlarged. edition, 1974.
+Donald E. Knuth. The Art of Computer Programming, Volume 2: Seminumerical Algorithms. Addison-Wesley,
+Boston, third edition, 1997.
+
+G. Barrie Wetherill. Acceptance sampling: basic ideas, pages 12-43. Springer US, Boston, MA, 1977.
+
+E.G. Schilling and Dean Neubauer. Acceptance Sampling in Quality Control. CRC Press, 2017.
+
+Juan Garay, Aggelos Kiayias, and Nikos Leonardos. The bitcoin backbone protocol: Analysis and applications.
+In Elisabeth Oswald and Marc Fischlin, editors, Advances in Cryptology - EUROCRYPT 2015, pages 281-310,
+Berlin, Heidelberg, 2015. Springer Berlin Heidelberg.
+
+Dan Boneh, Joseph Bonneau, Benedikt Biinz, and Ben Fisch. Verifiable delay functions. In Advances in
+Cryptology — CRYPTO 2018 - 38th Annual International Cryptology Conference, 2018, Proceedings, Lecture
+Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in
+Bioinformatics), pages 757-788. Springer-Verlag, 1 2018.
+
+35

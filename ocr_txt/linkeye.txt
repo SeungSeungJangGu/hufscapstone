@@ -1,0 +1,1108 @@
+(2) Linkey>
+
+LinkEye
+
+Blockchain-Based Credit Alliance
+
+White Paper
+
+2018.06
+Linkey>
+
+Abstract
+
+Linkeye is a Hyperledger Fabric based consortium-blockchain solution to facilitate
+global credit alliance.
+
+Utilizating blockchain technology and a credit economy model enables Linkeye to
+create a shared list of untrusted profiles within the credit alliance through connecting
+isolated islands of credit data and creating a comprehensive, reliable credit database.
+This serves to boost and supplement the credit system of today’s society, eventually
+achieving the end goal of creating fairness in credit access for all.
+
+The Linkeye project has massive potential to promote the development of a global
+credit-based society at a social and technological level.
+
+LinkEye—Blockchain-Based Credit Alliance 1
+Linkey>
+
+Table of Contents
+
+Introduction 5
+Market Capacity 5
+Problem 6
+Solution 8
+
+Why LinkEye 9
+Vision and Mission 9
+Current State of Credit Assessment 9
+Advantages 9
+
+How LinkEye Works 11
+Blacklist Mechanism 11
+Membership Mechanism 11
+Credit Mechanism 11
+Arbitration Mechanism 11
+Information Sharing Mechanism 12
+Smart Pricing Mechanism 12
+Data Security Firewall Mechanism 12
+Open API Mechanism 12
+
+Technical Features 13
+Data Security 14
+Scalability and Performance 14
+Easy to Access 15
+
+LinkEye Token (LET) 16
+Introduction 16
+Token Usage 16
+Market Availability 16
+
+Halo World Mobile App 17
+Introduction 17
+Features 17
+Roadmap 18
+
+Business Model 19
+Revenue Model 19
+Sustainability 19
+
+LinkEye Roadmap 21
+
+LinkEye—Blockchain-Based Credit Alliance 2
+Linkey>
+
+Phase One: Completion of the alliance platform to share credit blacklist
+(Completed in February 2018)
+
+Phase Two : Expansion of service scope — launch of “Credit
+Whitelist”(2018-2019)
+
+Phase Three : Establishment of enterprise credit system (2019)
+Phase Four: Credit to everything
+
+Team
+Linkeye Foundation
+Executive Team
+LinkEye Advisors
+
+IcO
+ICO Allocation and Distribution
+ICO Sales Scheme
+LET Recovery Scheme
+Purchasers’ Obligation
+
+LinkEye—Blockchain-Based Credit Alliance
+
+21
+
+21
+21
+21
+
+22
+22
+23
+25
+
+28
+28
+28
+29
+29
+
+Linkey>
+
+1 Introduction
+
+1.1 Market Capacity
+
+1.1.1 China
+
+In 2016, the market for individual credit loans in China has reached 23 trillion RMB,
+and recorded a 21.1% increase from 2015. Total business is expected to retain an
+annual growth of over 20% each year and to reach 41 trillion CNY in 2019, which
+would be quintuple the market size in 2010. The size of the consumer financing and
+credit loan market in China is rapidly increasing and promises a continued potential
+for growth.
+
+China Yuan Outstanding and Growth (2010-2019) China Yuan Outstanding Consumer Credit and Growth (2010-2019)
+280 60
+24.2% 23.3% 6
+14.1% 142% 149% 15.4% 15.6% EST a: llonitsnnth altima 24% i
+ee ee ee ce 1% 21.5%
+210 15.0% 13.6% 15.2% te 45 17.7% 18.5% a4
+143.6 338
+1244
+140 107.8 30
+815
+m7 154
+628
+70 479 546 onl i | t 15 a9 04 130 l il |
+7s ail
+° . aaa
+2010 2011 2012 2013 2014 2015 2016e2017e2018e2019e 2010 2011 2012 2013 2014 2015 2016e2017e2018e2019e
+‘Outstanding Crecit (in Trilfions RMB) —@ Growth (%) jm _(Outstanaing Crecitt (in Trillions RMB) —@ Growth (%)
+
+(Source: Internet)
+
+Additionally, the Chinese credit evaluation market is experiencing a steady growth
+respectively. However, due to regulatory uncertainty and the difficulties of data
+acquisition, the market penetration for individual credit remains at about 9%,
+signifying an untapped potential for growth.
+
+2688.9
+
+2426.0
+2186.3
+1969.9
+1776.7
+1623.6
+1270.3 1320.8 14905
+TT . , L
+
+2010 2011 2012 2013 2014 2015e 2016e 2017e 2018e 2019e 2020e
+
+EE Potential Market Scales (in Hundred Millions RMB) ‘MEN. Actual Market Scales (in Hundred Millions RMB)
+
+—@®— Market Penetration (%) —®— Actuol Market Penetration (%)
+
+(Source: Internet)
+
+LinkEye—Blockchain-Based Credit Alliance 4
+Linkey>
+
+1.1.2 Southeast Asia
+
+There is a population of 600 million in Southeast Asia, in which only 27% of the local
+residents have their own bank accounts. Market data shows a surprisingly low number
+of credit card ownership: 6% in Indonesia, 5% in the Philippines and 3% in Vietnam.
+In comparison, 80% of US citizens can access and utilize credit services.
+Additionally, only a very limited amount of the population is covered by official
+credit scoring agencies although the awareness of credit loans is relatively strong in
+these areas. A well-developed credit scoring system would enable local institutions to
+develop consumer-financing businesses, leading to economic growth. Taking Vietna
+for example, 40% of cell phone sales are done through installments despite the low
+market penetration of mobile phones. The demand for credit loans is clearly very
+strong. A developed credit system would assist the development of the consumer
+finance industry and boost the domestic economy. The Linkeye project can provide
+this system in these regions by building a credit scoring alliance.
+
+The current size of the credit loan market in Southeast Asia is relatively small in
+relation to its population size. However, with the rapid growth of the market at a 10%
+growth rate year on year, the credit industry is poised for take-off.
+
+Credit Market Growth in Southeast Asia, 2016
+
+18% 17%
+16%
+9
+%
+14% 14%
+12%
+9.90% 9,
+Y 9.50%
+iii = = 8.50%
+8%
+6% oe 5%
+a
+4%
+2%
+0%
+Singapore Malaysia Thailand Indonesia Burma Vietnam Philippines
+
+(Source: Internet)
+
+1.1.3 Europe
+
+Although Europe has been contributing to the global credit loan market as a key
+market player, it has stagnated in recent years due to the financial crisis in 2008 and
+debt crisis in 2009. In 2015, the annual credit balance of the 28 European Union
+countries recorded 1.12 trillion EUR, showing a 2.9% increase from 2014, the first
+increase since 2008. The UK (329 billion Euro), Germany (225 billion Euro) and
+France (153 billion Euro) are the top 3 contributors to the European credit loan
+market. In conclusion, the market capacity is huge for Europe and further recovery
+will lead to rapid growth.
+
+LinkEye—Blockchain-Based Credit Alliance 5
+Linkey>
+
+1.2 Problem
+
+1.2.1 China
+e Limited credit coverage and access by the Central Bank
+
+The People's Bank of China did not establish its nationwide unified database of
+financial credit information until 2006. It is a relatively short period of time for the
+system to improve. And due to the peculiarities and uniqueness of the Central Bank’s
+system, the credit scoring provided is not well established, showing a lack of
+consistency and unification. At present, there are only 300 million individual credit
+profiles recorded in the Central Bank’s database. However, the limited accessibility to
+the database makes it difficult for non-government institutions to inquire and upload
+credit reports.
+
+e Extensively distributed credit information
+
+Credit data in China is isolated and distributed among various banks, small loan
+companies and lending platforms. The credit data collected is often fragmented,
+preventing synergy and creating a barrier to common credit application.
+
+e Weak sense of punishment in existing credit system
+
+The current system of disciplinary punishment in the credit industry is incomplete
+which makes the cost of breaching relatively low. Therefore, there is a series of
+dishonest behavior such as commercial fraud, breach of contract, tax fraud and
+evasion. As China's credit industry started late with a low social awareness of credit,
+there is a definite need for a comprehensive credit environment.
+
+e The market’s needs for credit system
+
+As of now, there are more than 1,500 problematic lending platforms reported by the
+government and media. Liquidity crises are largely caused by bad debts, which
+eventually leads to the collapse of most platforms. Meanwhile, the market requires
+new credit information platforms that provide reliable, effective, open and transparent
+data in order to support the development of the credit industry.
+
+1.2.2 Southeast Asia
+
+e The general financial system in Southeast Asia is underdeveloped but rapidly
+booming, offering great opportunities to the credit business. Take Indonesia for
+example, where less than 30% of the 300-million population has a bank account
+of which only 6% uses credit cards. In comparison, the penetration of bank
+accounts in China has reached 80% and the figure for Hong Kong and India is
+96% and 50% respectively.
+
+e An obstacle exits in the form of fragmented credit data due to an inadequate
+government credit system and underdeveloped commercial credit bureau.
+
+LinkEye—Blockchain-Based Credit Alliance 6
+Linkey>
+
+1.2.3 Europe
+
+The financial industry in Europe is dominated by a public credit system initiated by
+the European Central Bank. The centralized credit system and database is non-profit
+and funded by the government, so that most credit institutions are operated by the
+Central Bank or managed by major national financial institutions. This creates several
+deficiencies as listed below:
+
+e The fiscal burden of investment in credit systems is huge. It takes extensive
+investment from the government to establish these credit databases with high
+maintenance and operation costs.
+
+e There is less room for market-oriented operation creating a limitation on the
+range of services to be offered. Public credit is not conducive to various types of
+credit information integration and penetration, and is especially inadequate for
+credit information services and service experience.
+
+e The traditional credit system provides limited support to the local economy. The
+consumption market in Europe is relatively weak and would benefit from a more
+flexible and advanced credit system.
+
+1.3 Solution
+
+Based on the struggles of the credit markets in China, Southeast Asia, and Europe,
+Linkeye has a clear entry point into the industry. By utilizing blockchain technology
+and a credit economy model, Linkeye can create a shared list of untrusted profiles
+within the credit alliance by connecting isolated islands of credit data, and eventually
+solving the problems of high costs, data discrepancy, lack of accessibility, and talent
+shortages. With this, Linkeye serves to boost economic growth and achieve fairness
+by forming a comprehensive, trustworthy credit system of the entire population.
+
+LinkEye—Blockchain-Based Credit Alliance 7
+Linkey>
+
+2 Why LinkEye
+
+2.1 Vision and Mission
+
+LinkEye (LET) is an independently developed Hyperledger Fabric-based consortium
+blockchain solution with an Achain-based token system that has been built and
+optimized specifically for the credit industry. This purpose-built system facilitates a
+global credit alliance, as well as the development of an open and global credit-based
+society on both a technological and financial level.
+
+Utilizating blockchain technology and a credit economy model enables Linkeye to
+create a shared list of untrusted profiles within the credit alliance by connecting
+isolated islands of credit data. The ultimate goal is to achieve fairness through credit
+by forming a wide-range trustworthy credit system of the entire society.
+
+LinkEye is committed to building the first blockchain-based Credit Alliance, focusing
+on building a platform with a database of fraudulent people by recruiting members for
+the alliance. The project requires honesty in society — fraudulent people won’t be able
+to gain access to financial services while trustworthy people enjoy good social
+resources.
+
+2.2 Current State of Credit Assessment
+
+Information Technology advancement is making data processing more efficient and
+effective in providing support for an enterprise’s operations and decision-making,
+which will lead to an immense demand for big-data analytics in every industry. With
+rapid growth in the credit business, huge amounts of data are being produced.
+However, traditional credit agencies are only able to focus on their niches, given the
+dramatic increase in quantity and depth of the data, such as CreditVision for financial
+institutions and DriverRisk for insurance companies. A single customer could
+correspond to different pieces of credit data from various credit data institutions,
+which makes it impossible to form a comprehensive credit profile. Decisions made
+from fragmented data may lead to inaccurate and risky decisions with unwarranted
+consequences. Linkeye’s mission is to generate comprehensive credit assessments by
+connecting all the isolated islands of credit information. In addition to that, the
+platform will ensure that credit reports are accessible and transferable among alliance
+members.
+
+2.3. Advantages
+
+2.3.1 Blockchain-based
+
+A traditional data center stores data on a central server that is fully controlled by a
+data center in which the data is susceptible to modification. In such cases, there are
+
+LinkEye—Blockchain-Based Credit Alliance 8
+Linkey>
+
+risks that the data could be tampered with, deleted, or sold to other parties by data
+centers for profit. With the current models of data unions, a number of small data
+centers will usually be attached to a large data center for data exchange. All data
+transactions made would go through a large data center, opening up the possibility of
+collusion or theft of the data due the control of one institution.
+
+Blockchain is a decentralized distributed data storage technology. It is a secure and
+reliable system that facilitates data transactions between institutions and individuals
+without a central authority. Powered by cryptography, decentralized consensus, and
+peer-to-peer network communication, blockchain prevents data from being tampered
+with or deleted. Utilizing such technology allows Linkeye to ensure that data is
+trustworthy and permanent once being published on a blockchain, resulting in a
+trusted data system.
+
+2.3.2 Industry Insights
+
+LinkEye is operated by a team of financial professionals with years of experience in
+both traditional banking and Fintech. The team has developed its own insight on the
+credit business and IT, allowing them to strategically plan and deliver the project.
+
+2.3.3 Success and Achievements
+
+Linkeye’s founding team has a deep understanding of and a comprehensive skill set in
+risk management, business development and product development. Working together
+for over three years, the team has accomplished many milestones which include
+developing a credit platform with over 1,000 credit financing service providers,
+operating a payment platform with monthly transaction amounts of 5 billion RMB and
+a technology-driven micro financing service platform serving millions of users.
+
+2.3.4 Resources
+
+The key to developing a credit union is partnering with many qualified members.
+After working in the credit industry for years, the Linkeye team has been able to
+swiftly kick-start this project by generating millions of initial credit data points
+through the establishment of strategic partnerships with credit loan agencies in China
+and Malaysia. The accumulation of this initial data is expected to exceed tens of
+millions in the near term.
+
+LinkEye—Blockchain-Based Credit Alliance 9
+Linkey>
+
+3 How LinkEye Works
+
+The LinkEye team innovatively built a credit alliance based on blockchain technology
+with a proposed Eight Core Mechanisms, which was generally recognized by the
+industry to ensure the efficient functionality of the alliance. It is a breakthrough in
+blockchain in terms of being the first substantive application in the field of credit
+scoring.
+
+3.1 Blacklist Mechanism
+
+The Blacklist Mechanism enables the publication of fraudulent activities within the
+credit alliance with a strong consideration of privacy — the data will be desensitized
+and posted in a masked format. A sample of Linkeye data format is shown below:
+
+Linkeye ID + Masked ID (such as 220403198011 ******) + credit score + publisher
+(anonymous) + signature.
+
+A blacklist of untrusted individuals published by members of the alliance contains
+two parts - public data and detailed info. The public data will be shown and the
+detailed info (LinkEye template + alliance member customized data) will be stored in
+the blockchain including user ID, full name, time of loan, loan amount, lending
+platform, overdue time and category. LinkEye requires alliance members to sign an
+agreement with the borrower prior to the issue of credit loan to disclose the
+publication on LinkEye in the event of frauds.
+
+3.2 Membership Mechanism
+
+To ensure the integrity and effectiveness of the data, LinkEye will establish a strict
+standard for reviewing and qualifying the alliance members. The first batch of
+members will be reputable brands in the industry. Alliance members must use real
+names for registration and will have the option to publish dishonest information via
+real name or anonymous.
+
+3.3 Credit Mechanism
+
+To regulate alliance members and prevent data fraud, the credit profile of each
+alliance member will be disclosed in real time. Each member receives an initial credit
+score of 100. Once dishonest behavior is detected, 5 points will be deducted from the
+score and will be broadcasted to the alliance. Members will be eliminated from the
+Linkeye Alliance when their credit score reaches 0.
+
+LinkEye—Blockchain-Based Credit Alliance 10
+Linkey>
+
+3.4 Arbitration Mechanism
+
+When a member holds objections or questions to a piece of data published by another
+member, it has the right to file arbitration with the LinkEye Foundation. The
+arbitration will be organized by the foundation. Each of the members hold 1 vote
+while the Linkeye Foundation holds 33.3% of the vote. The arbitration will be
+resolved when over 50% members approve, with one day allocated for decisions.
+
+3.5 Information Sharing Mechanism
+
+The user ID is the only match for members when querying data. The data can only be
+accessed and exchanged when the user ID is a perfectly match. Alliance members are
+allowed to view a detailed version of individual credit reports from other member by
+using LET tokens. The detailed version shares the same signature with the published
+version to ensure the accuracy of the data.
+
+3.6 Smart Pricing Mechanism
+
+LinkEye executes a smart real-time pricing mechanism that enables all members to
+publish credit data at a slightly lower price than market value to avoid blocking data
+exchanges due to LET price fluctuations.
+
+3.7 Data Security Firewall Mechanism
+
+LinkEye sets up data security firewalls to prevent data from being compromised.
+Alarm triggers are set up based on application conditions to block abnormal queries.
+Members will be eliminated in severe cases once triggering the security alarm.
+
+3.8 Open API Mechanism
+
+The Linkeye Foundation provides an external query interface open to external parties.
+Any user can access the public blacklist by entering the full ID and gain detailed
+reports by using LET.
+
+This mechanism increases the punishment to dishonest behavior and makes it
+impossible to hide a fraudulent history. This enables LinkEye to serve a
+groundbreaking role in building a credit-worthy society for all. This also serves to
+greatly increase the exposure of the platform and liquidity of LET.
+
+LinkEye—Blockchain-Based Credit Alliance 11
+Linkey>
+
+4 Technical Features
+
+LinkEye (LET) is an independently developed Hyperledger Fabric-based consortium
+blockchain solution with an Achain-based token system that has been built and
+optimized specifically for the credit industry.
+
+LinkEye’s system will be made up of consortium blockchains in different countries
+that each store credit data according to their rules and regulations. Application
+Programming Interfaces (APIs) of credit data will be connected and accessed between
+these different consortium blockchains; and eventually form a global network of
+credit data union.
+
+These consortiums are built on top of Fabric, the most popular blockchain platform
+within Hyperledger. It was first submitted to the Hyperledger community by IBM in
+2015 and has been continuously improved upon by many community contributors. In
+China, Fabric has been successfully applied to the field of financial, supply chain, and
+asset ownership etc. and has become the preferred framework for many blockchain
+solutions.
+
+The Hyperledger Fabric is built based on the below architecture:
+
+Application
+
+Infrastructure
+
+LinkEye—Blockchain-Based Credit Alliance 12
+@)
+
+In order to provide a trustworthy and scalable token, LET tokens are issued separately
+on Achain, a smart contract blockchain with higher throughput and lower fees than
+competing platforms such as Ethereum. Meanwhile, development is underway on
+LinkEye’s own public blockchain to which LET tokens will be migrated once
+finished. LinkEye’s public chain is based on Ethereum but will utilize Delegated
+Proof of Stake for consensus rather than Proof of Work in order to provide the high
+throughput necessary to serve fast growing economies.
+
+4.1 Data Security
+
+Linkeye utilizes the combination of symmetric and asymmetric encryption to
+safeguard the data. In addition, the digital signature mechanism ensures the integrity
+and authenticity of the information.
+
+4.2 Scalability and Performance
+
+LinkEye independently realized that Practical Byzantine Fault Tolerance (PBFT),
+recommended by IBM, which remarkably improves the writing performance.
+
+CONFIGURE,
+OPERATES
+
+DEPLOYED TO &
+EXECUTES ON
+PEER NODES
+
+—_> BLOCKCHAIN
+
+OPERATOR
+
+Exact network structure depends
+INVOKE on consensus mechanism. e.g.
+S PBFT has leader, validating and
+SMART CONTRACT — _ non-validating peers
+
+; Consensus messages flow
+Ne / / between appropriate peers to
+APPLICATIONS = —— ensure the Blockchain SC
+transactions are kept in order;
+world state is kept consistent
+
+CONSENSUS NETWORK through local transaction replay
+
+(Source: theledger.be)
+
+Using symmetric encryption, Linkeye can encrypt data 500 - 1000 times faster than
+the asymmetric-only encryption employed by Ethereum. At the same time, the
+optimization of CIFS increases the data synchronization and transmission between
+nodes. We have achieved a performance of 10,000 transactions per second in our test
+
+LinkEye—Blockchain-Based Credit Alliance 13
+environments.
+
+4.3 Easy to Access
+
+As the data is written into the blockchain via API by the members of the alliance, the
+Linkeye platform automatically provides all data searching and profit allocation. Such
+a mechanism minimizes the cost of additional development to all members using
+Linkeye’s SDK.
+
+LinkEye—Blockchain-Based Credit Alliance 14
+Linkey>
+
+5 LinkEye Token (LET)
+
+5.1 Introduction
+
+The LinkEye Token, or LET is a contract token issued on Achain to ensure efficiency
+on the Linkeye platform. By using LET, the platform achieves high-speed, low-cost,
+and real-time database accounting. By combining LET and smart contracts,
+peer-to-peer data sharing is truly realized so that the complexity and risks caused by a
+centralized clearing house are avoided.
+
+5.2 Token Usage
+
+LET will be used as a user's credentials for querying data on the LinkEye platform.
+The user queries the data for a certain amount of LETs, and alliance members are able
+to earn LET by listing the data. LET can be obtained by sharing data from LinkEye
+platform or acquired from a secondary marketplace.
+
+Credit Report Is Provided
+
+Credit Data Is Published
+The user ID being queried is matched
+Each Alliance member provides credit with credit data that is listed by an
+data that is stored on the consortium- alliance member, The data is provided
+blockchain. Each credit report is as a credit report with a verifiable digital
+matched with a unique user ID that is signature. The alliance member that has
+
+only accessible using LET tokens. provided the data then earns the LET
+that was paid.
+
+——_____o___o——_____o—____o———£
+
+Alliance Member Joins Pr Credit Data] LET Tokens Are Paid Pr Vetted Reports
+
+An alliance member joins the LinkEye To access an individual credit report, a
+Credit Alliance by providing identification user pays LET tokens and provides the
+and passing the strict standards needed unique user ID, The amount of LET sent
+
+to qualify. Members start with a credit is determined by a smart real-time
+score of 100 and are penalized 5 points pricing mechanism to ensure liquidity.
+
+for fraud attempts to discourage
+dishonest behavior.
+
+5.3. Market Availability
+
+LET tokens are currently available on Huobi, a cryptocurrency trading platform with
+a volume of over $1 billion. LET is currently in the process of being listed on YoBit
+and Kucoin as well, increasing LET’s overall liquidity.
+
+LinkEye—Blockchain-Based Credit Alliance 15
+Linkey>
+
+6 Halo World Mobile App
+
+6.1 Introduction
+
+There are only a few personal data dimensions in the traditional credit industry. Since
+data quality is limited, it is difficult to outline a complete portrait of user credit. At the
+same time, individuals don’t want their credit data to be used in different scenarios
+due to safety concerns. This situation means valuable data cannot fully realize its
+value.
+
+Halo World is developed under this basis. This blockchain-based DApp
+(Decentralized Application) aims to build a decentralized credit and transaction
+management platform for financial services and credit applicants. It allows each
+participant to establish their own personal credit data sovereignty and credit assets,
+via a smart contract platform. Through Halo World, a user’s social background can
+create more meaningful value together with other high-quality credit individuals.
+
+6.2 Features
+
+Blockchain-based Technology:
+
+Based on blockchain technology, Halo World has created a decentralized, secure, and
+trusted data center. Users can store their own data licenses in the blockchain knowing
+it will remain secure via cryptography.
+
+Personal Credit Data Authentic Right:
+
+With blockchain technology, users can literally own their own data. Third-party
+platforms cannot use data without a users’ authorization. This solves the issue of
+unauthorized use of user data by third parties. This collection of secure personal data
+takes the form of a “Credit Passport".
+
+Improving Credit Scenarios:
+
+LinkEye will cooperate with major financial institutions to launch various financial
+services and preferential transaction tokens. A user's data can be matched to the
+perfect offline usable scenario. In the end, users with good credit data can enjoy better
+offline services.
+
+Risk Management Platform:
+
+For the institutions that have joined, it is possible to manage risk through the
+user-authorized historical credit assessment, anti-fraud, and credit risk prediction
+ecosystems. This serves to eliminate the occurrence of default events from the source.
+
+LinkEye—Blockchain-Based Credit Alliance 16
+Linkey>
+
+6.3 Roadmap
+
+The First Stage: April 2018
+
+The construction of the Dapp’s prototype is quickly nearing completion. The first
+phase of product and operation is mainly focused on attracting and retaining a large
+number of users through interactive events such as daily promotions, including but
+not limited to, mining LinkEye Tokens (LET) once the Main Chain is online and
+participating in web-based gaming on platforms like Gold Miner. In the process of
+gaming, users can voluntarily fill out information and provide the underlying data to
+support for the formation of personal "Credit Passports".
+
+The Second Stage: June 2018
+
+As a user’s credit passport data is gradually perfected, they gain access to more
+exclusive services. LinkEye will cooperate with major financial platforms/institutions
+and add various financial services and preferential transaction tokens, which will
+enable users with better credit history to obtain better financial services. This will
+enable individual social credit passports to play an important role in the financial
+industry.
+
+The Third Stage: Future
+
+Fully complete the “Personal Credit Passport” with access to multiple areas of social
+life such as consumption, medical care, education, travel, etc. This will allow users’
+credit passports to pass through more scenes, allowing passport holders to enjoy
+higher quality social services and resources.
+
+LinkEye—Blockchain-Based Credit Alliance 17
+Linkey>
+
+7 Business Model
+
+7.1 Revenue Model
+
+7.1.1 Blacklist
+
+The supply of credit blacklists usually stems from government credit agencies and
+private credit companies in Linkeye’s target market. However, it is usually very
+painful when a lending institution acquires blacklists from the mentioned parties:
+dealing with multiple parties, complicated procedure, repeated costs on every credit
+search.
+
+As a member of the LinkEye Credit Alliance, a lending institution is able to access the
+credit blacklist on the conso  rtium-blockchain published by other members. It only
+has to pay a certain amount of Linkeye Tokens (LET) to acquire the detailed credit
+report. The amount of LET to be paid will be decided by the market value. Linkeye
+will withdraw 0.5 LET from each transaction as a commission to support the
+operation with token draws frozen for 2 years before release.
+
+Table: 3 Year Revenue Forecast
+
+Time 2018 2019 2020
+
+No. of Members 300 600 1,200
+
+No. of Blacklist 100,000,000 150,000,000 200,000,000
+
+Monthly Data Queries 900,000 1,800,000 36,000,000
+
+Monthly LET Commission 450,000 900,000 1,800,000
+
+Annual LET Commission 5,400,000 10,800,000 21,600,000
+Based on:
+
+A. 3,000 data search/query for each member per month
+
+B. Each member contributes 300,000 pieces of credit data in 2018
+
+7.2 Sustainability
+
+7.2.1 Sustainable Industry Growth
+
+From its historical performance, we can forecast that credit financing will hold its role
+as an evergreen industry that boosts the global economy. The sustainability of the
+industry has ensured the sustainability of its projects to a certain extent.
+
+7.2.2 Sustainable Open Operation
+
+LinkEye—Blockchain-Based Credit Alliance 18
+Linkey>
+
+The committee of Linkeye Foundation shall be elected by the alliance members with
+the continuous improvement of the technology and operation. In such way, Linkeye
+can operate in an independent and sustainable way akin to Bitcoin.
+
+7.2.3 Sustainable Token Economy
+Every token withdrawn from query or transaction will be released after 2 years to
+
+ensure a reasonable and effective circulation. Such a mechanism would guarantee the
+sustainability of the LET economy and Linkeye operation.
+
+LinkEye—Blockchain-Based Credit Alliance 19
+Linkey>
+
+8 LinkEye Roadmap
+
+8.1 Phase One: Completion of the alliance platform to share credit
+
+blacklist (Completed in February 2018)
+
+LinkEye is committed to building the first blockchain-based Credit Alliance, focusing
+on completing the platform and its database of fraudulent people by recruiting
+members for the alliance. At this stage, the project reinforce honesty to society —
+fraudulent people won’t be able to gain access to financial services.
+
+A soft launch of the platform was executed in February of 2018 to support data access
+from China, Southeast Asia and Europe. Local teams were formed to further develop
+the target markets. The blacklist now exists, with every organization possessing their
+own blacklist. They can now exchange data on the LinkEye platform using LET to
+pay for individual credit reports.
+
+8.2 Phase Two : Expansion of service scope — launch of “Credit
+
+Whitelist” (2018-2019)
+
+The scope of service of Linkeye will be expanded to personal credit evaluation by
+building individual profile. Building a more effective credit scoring system enable the
+trusted individual to enjoy better financial services and resources. At this stage,
+Linkeye aims to provide strong support for the rapid development of the credit
+industry. Estimated time of completion is mid-2019.
+
+8.3 Phase Three : Establishment of enterprise credit system (2019)
+
+An expansion of service scope from an individual profile to an enterprise profile
+would occur. Through involving enterprise as an important participant in the credit
+financing industry, Linkeye is able to complete the establishment of an efficient credit
+system of the society.
+
+8.4 Phase Four: Credit to everything
+
+LinkEye will extend its services from finance industry to other segments of society.
+All credit related behaviors of individuals and enterprises will be recorded and stored
+in blockchain. At this stage, Linkeye will realize its ultimate goal - to achieve fairness
+by forming a comprehensive trustworthy credit system of the entire society.
+
+LinkEye—Blockchain-Based Credit Alliance 20
+Linkey>
+
+9 Team
+
+9.1 Linkeye Foundation
+
+LinkEye Foundation (hereinafter referred to as "Foundation") is set up and operates in
+Singapore. It is committed to promoting LinkEye's development and its transparency
+of governance so as to promote the safe, efficient and orderly development of the
+Alliance. The Foundation will help to manage the general issues and privileges of the
+alliance by establishing a good governance structure. The design of the structure
+mainly considers the sustainability of operation, the effectiveness of management and
+the safety of its funds. The LinkEye Foundation commits to publish monthly progress
+reports, conduct and publish annual audit reports.
+
+LinkEye Foundation
+
+Management Committee
+
+Execution Manager
+
+Technology Center Marketing Center Administration Center
+
+Management Committee:
+
+The Management Committee is responsible for the management and decision-making
+of the Foundation’s agenda, including appointment and demission of executives. The
+committee formulates the norms and manages the privileges of the foundation.
+
+Technology Center:
+
+The Linkeye Technology Center is responsible for underlying fundamental
+technology development, testing, on-line operation, review, etc. The center
+communicates with community members and regularly holds technical seminars in
+the community.
+
+LinkEye—Blockchain-Based Credit Alliance 21
+Linkey>
+
+Marketing Center:
+
+The Linkeye Marketing Center is responsible for research, market strategy, sales and
+promotion of the alliance and its product.
+
+Administration Center:
+
+The Linkeye Administration Center manages financial, legal, personnel and
+administrative affairs. Financial affairs include project fund use and audit; legal
+affairs include review and formulation of various documents to prevent possible legal
+risks; personnel and administrative affairs include employment, remuneration and
+daily administrative work.
+
+9.2 Executive Team
+
+President Advisor: Zhang Fan
+Mr. Zhang Fan is the Co-founder and former Managing Partner
+of Sequoia Capital China. He has led and participated in
+
+successful pioneering enterprises listed in the USA, such as
+
+Baidu, Kong-net, and Focus Media. Mr. Zhang Fan was named
+one of the Top Venture Capitalists by Forbes from 2006 to
+2009. He has been focusing on investments on blockchain and
+cryptocurrencies since 2010. Boost VC, an investment by Mr.
+Zhang Fan, is now the largest investor and accelerator in VR
+
+and blockchain industry.
+
+Founder: Xu Lei
+Xu Lei is the founder and CEO of Kuaihui Finance, a Chinese
+leading technology-driven micro-financing service provider. Lei
+
+served in many senior management positions including
+
+procurement manager of Asia Pacific and head of sales of
+Greater China in P&G when he won the President Award of
+P&G Greater China.
+
+Lei holds a Masters and a Bachelor degree in Software
+Engineering from Wuhan University. He started developing
+
+blockchain software during college and was ranked Top 10 ina
+
+LinkEye—Blockchain-Based Credit Alliance 22
+
+Linkey>
+
+Chinese national software innovation contest.
+
+Co-founder & CTO: Ding Wei
+
+Wei is the co-founder and former CTO of Kuaihui Finance, a
+leading micro-financing technology service in China. He has
+over 10 years experience in IT, finance and Big Data. Wei led
+
+the establishment of payment systems and the financial service
+
+platform for Union Mobile Financial Technology (UMF),
+China’s largest Fintech company.
+
+Wei holds a bachelor degree in Computer Science and
+Technology from Chongqing University. He started studying
+Bitcoin and blockchain techonology in 2012 and became a
+major contributor for an internal blockchain project in 2016
+
+before co-founding Linkeye.
+
+Credit Scientist and Expert: Li Dongke
+Dongke served as a former senior analyst and data scientist in
+HQ of Cltbank, Galaxy Securities and SG CIB (Societe
+
+Generale Corporate Investment Banking). He has 5 years of
+
+experience in quantitative equity research, quantitative
+investment strategies and risk management.
+
+Dongke holds a Master degree of Quantitative and
+Computational Finance from the Georgia Institute of
+
+Technology.
+
+COO: Wang Huawen
+Huawen is an expert in operation and strategic development. He
+was the former regional head of sales and marketing at China
+
+Mobile. Wei co-founded Shanghai office of Fenxiang Xiaoke
+
+LinkEye—Blockchain-Based Credit Alliance 23
+Linkey>
+
+and established a successful sales and client team. He managed
+to expand the regional office from a team of 8 to 400 and the
+company is now a billion-dollar-worth unicorn in IT service
+industry.
+
+Wei holds a bachelor degree of automation from Wuhan
+
+University.
+
+CMO: He Xiao
+Xiao has rich background in branding and marketing. She
+served as the market leader at National Geographic and Siemens
+
+Corporate Technology (SCT) before joining Linkeye. Xiao
+
+holds a master degree of design science from the Central
+
+Academy of Fine Arts (CAFA).
+
+LinkEye—Blockchain-Based Credit Alliance 24
+Linkey>
+
+9.3 LinkEye Advisors
+
+Wang Bingsheng
+Professor of Chinese Academy of Social Sciences, Advisor
+
+of Chinese Block Chain Association
+
+Han Feng
+
+Mentor of iCenter (Tsinghua University),
+General Secretary of DACA
+
+Zhang Haihui
+
+General Secretary of
+
+Chinese Block Chain Joint Development Organization
+
+Xiao Ying
+Former CEO of QianDaiPay,
+
+a third-party payment company of Mei Tuan
+
+Cui Meng
+
+Founder of Achain
+
+LinkEye—Blockchain-Based Credit Alliance 25
+Linkey>
+
+Martyn Walker
+
+CEO & Co Founder of AGILITY SCIENCES LIMITED ,
+Co Founder & Adviser of ZERADO LIMITED.
+
+Dr Maria Grazia Vigliotti
+
+Founder & Director, Sandblocks Consulting Ltd.
+
+LinkEye—Blockchain-Based Credit Alliance 26
+Linkey>
+
+10 ICO
+
+10.1 ICO Allocation and Distribution
+
+Only 1,000,000,000 LET tokens will ever be created. The LET tokens are intended to
+be allocated as follows:
+
+Allocation Parties Detail
+
+Sold by the Foundation to Crowdsale and
+pre-crowdsale purchasers pursuant to the offering or
+through approved affiliates.
+
+The use of raised funded will be announce regularly
+
+40% ICO
+
+Linkeye Reserved by the Foundation to incentivize future
+
+0,
+20% Foundation __| developments
+Token incentives for Linkeye team
+10% Linkeye 50% will be locked for 12 months after the end of the
+Team Crowdsale; 50% will be locked for 24 months after the
+end of the Crowdsale
+Token for Angel Investors and early investors
+Early 20% will be locked for 6 months after the end of the
+30% Investors Crowdsale; 30% will be locked for 12 months after the
+
+end of the Crowdsale; 50% will be locked for 24
+months after the end of the Crowdsale
+
+10.2 ICO Sales Scheme
+
+e Crowdsale Schedule:
+
+Start date : 10th November 2017 at 12:00:00(GMT + 8)
+End date : 31st January 2018 at 20:00:00 (GMT + 8)
+
+e Condition
+
+ICO End: The total amount of funds raised is 400,000,000 LET at the end of or during
+the Crowdsale.
+
+ICO Failure: The total amount of funds raised is less than 200,000,000 LET at the end
+the Crowdsale.
+
+We accept Bitcoin (BTC), Ethereum (ETH) and Achain (ACT) during the ICO and
+the basic exchange shall be as follows:
+
+LinkEye—Blockchain-Based Credit Alliance 27
+Linkey>
+
+1 BTC = 170,000 LET
+
+1 ETH = 7,000 LET
+
+1 ACT =3 LET
+
+Note: Please follow the Linkeye ICO website for updates.
+
+10.3 LET Recovery Scheme
+
+In every transaction made within the alliance, a certain amount of LETs will be
+withdrawn for future use by Linkeye. Every token withdrawn from query or
+transaction will be frozen and released after 2 years to ensure a reasonable and
+effective circulation. Such mechanism would guarantee the sustainability of the LET
+economy and Linkeye operation.
+
+As credit financing is growing rapidly in the target market, Linkeye expects a constant
+increase in the amount of members and individual users. The LET withdrawn from
+the increasing volume of transaction will be decreased in order to gain liquidity of
+LET.
+
+Percentage of Withdrawal shall be as follow:
+
+Amount of Frozen LET % (Per transaction)
+0 - 50,000,000 0.1%
+50,000,000 - 100,000,000 0.05%
+100,000,000 — 1,000,000,000 0.01%
+
+10.4 Purchasers’ Obligation
+
+Due to legality issues, this Offering is being made to, and subscriptions will only be
+accepted from, persons resident or citizen not in following regions or countries,
+including but not limited to Mainland China, Hong Kong, Macau and United States
+and other regions or countries that forbid ICOs.
+
+LinkEye—Blockchain-Based Credit Alliance 28
+Linkey>
+
+Contact
+Website: www.LinkEye.com
+
+Email: linkeye@linkeye.com
+
+LinkEye—Blockchain-Based Credit Alliance 29

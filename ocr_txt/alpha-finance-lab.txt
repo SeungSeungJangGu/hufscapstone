@@ -1,0 +1,1530 @@
+Alpha Lending
+
+Decentralized pool-based lending protocol
+driving cross-chain DeFi and cross-chain liquidity
+
+Whitepaper Version 1.0
+September 2020
+
+Abstract
+Alpha Lending is built by the Alpha Finance Lab team. Alpha Finance Lab is a cross-chain DeFi lab,
+focusing on building an ecosystem of yield-maximizing Alpha products that will interoperate and bring
+optimal alpha to users across Binance Smart Chain, Ethereum and more.
+
+Alpha Finance Lab takes on two strategies in building Alpha products:
+1. In-depth research to build products that solve prominent problems in DeFi
+2. Quick iterative approach to building DeFi products to serve the current unaddressed demand
+
+This whitepaper explains terminologies, theories, and protocol architecture behind Alpha Lending built on
+Binance Smart Chain.
+Disclaimer
+
+IMPORTANT: YOU MUST READ THE FOLLOWING DISCLAIMER AND THE SECTION
+ENTITLED “IMPORTANT INFORMATION” IN FULL BEFORE CONTINUING
+
+The distribution (the “Token Distribution”) of the “Alpha Tokens” or “ALPHA” (the “Tokens”), to be
+used by users (“Users”) on the Alpha Finance platform (“Platform’’) and other participants of the
+Platform to be developed by Alpha Finance Lab Limited, a company incorporated in British Virgin
+Islands and/or its affiliate(s) (collectively, the “Project Group”) as detailed in this whitepaper
+(“Whitepaper”) is only intended for, made to or directed at, persons who are not Excluded Persons (as
+defined herein), and may be acted upon only by such persons. Moreover, this Whitepaper is not, is not
+intended to be and should not be construed to be, a prospectus or offer document of any sort and is not
+intended to and should not be construed to constitute an offer of shares or securities of any form, units in
+a business trust, units in a collective investment scheme or any other form of investment or regulated
+product, or a solicitation for any form of investment or regulated product in any jurisdiction. No
+regulatory authority has examined or approved of any of the information set out in this Whitepaper. This
+Whitepaper has not been registered with any regulatory authority in any jurisdiction.
+
+The focus of this Whitepaper is on the Project and the Alpha Token Distribution. You may have received,
+been in possession of or perused this Whitepaper, which contains additional important (related)
+information about the Alpha Finance project (or, the “Project”), including the Platform, the Tokens and
+their respective functions. This Whitepaper and such other documents as may be published by the Project
+team in relation to the Project, each as may be amended, modified, or supplemented from time to time
+(hereinafter collectively referred to as the “Project Documents”) are intended to be read in conjunction
+with one another for the purpose of any proposed purchase or use of Tokens.
+
+For the avoidance of doubt, all Project Documents are subject to all disclaimers, restrictions, notices, and
+legal provisions contained in this Whitepaper.
+
+By accessing and/or accepting possession of any information in this Whitepaper or such part thereof (as
+the case may be), you represent and warrant to the token vendor of the Token Distribution (the “Token
+Vendor”) that:
+
+1. you are not an Excluded Person;
+2. you have read the entirety of this Whitepaper and understand the risks entailed in your purchase of Tokens;
+3. you agree to be bound by the limitations and restrictions described herein; and
+
+you acknowledge that this Whitepaper has been prepared for delivery to you so as to assist you in making
+a decision as to whether to purchase Tokens.
+Contents
+1. Alpha Lending Overview
+2. Terminology
+
+3. Key Concepts
+3.1 Deposit
+3.2 Borrow
+3.3 Withdraw
+3.4 Repay
+3.5 Interest Rate Dynamics
+
+4. Risk and liquidation
+
+5. Protocol Architecture
+5.1 Lending Pool
+5.2 Lending Pool Configurator
+5.3 alToken
+5.4 Price Oracle
+
+6. Alpha Finance Lab Governance Token
+1. Alpha Lending Overview
+
+Alpha Lending is a decentralized pool-based lending protocol built on Binance Smart Chain. Users can
+earn interest on their digital assets (assets) by supplying supported assets into the protocol. We call these
+users lenders. Assets deposited by lenders will be transferred into a smart contract that aggregates total
+liquidity of each asset into a pooled fund, which is available for borrowers to borrow. Loans are not
+matched individually between lenders and borrowers, but are taken from the pooled fund. Interest lenders
+earn come from interest that borrowers pay, distributed proportionately to the liquidity they provide.
+
+Once lenders supply assets into the protocol, these assets act as collateral, enabling lenders to also borrow
+any asset up to a certain limit. This means that any borrower has to first supply assets into the protocol as
+collateral before taking out any loan.
+
+Assets Assets )
+
+——— #LPHX, ——_—>
+
+SS LENDING a
+Interests 1 Interests
+Lenders 1 Borrowers
+
+i
+1
+\
+\
+\
+i
+i
+I
+I
+
+[i ta tance te eae eine i eel et 1
+
+I \ \
+
+i \ i
+
+Price oracle Liquidator Other Alpha products Other DeFi products
+2. Terminology
+
+Total Liquidity: Total amount of liquidity in a each asset pool, calculated as Total Available Liquidity +
+Total Borrows
+
+Total Available Liquidity: Total liquidity available of an asset for borrowers to borrow or lenders to
+withdraw
+
+Total Borrows: Sum of total borrowed amount and accumulated borrow interest of an asset
+
+alToken: A token that represents the user’s lending position which equates to the share of deposited
+amount contributed to Total Liquidity of that asset
+
+Total alToken: Total number of shares of Total Liquidity of that asset
+
+Asset Maximum Loan-to-value (LTV): Maximum percentage of deposited asset that can be borrowed
+out
+
+Borrow Limit: Total value that a user can borrow, determined based on the total collateral deposited and
+the Asset Maximum LTV of each deposited asset
+
+Account Health: Account Health is healthy if total value of borrowed assets is below the Borrow Limit
+Borrow Shares: Share of the user’s borrowed amount to Total Borrows of that asset
+Total Borrow Shares: Total number of shares of Total Borrows for an asset.
+
+Withdraw Shares: Number of shares calculated based on the inputted withdrawal amount. Number of
+alTokens is to be reduced by this Withdraw Shares when a user withdraws the deposited asset
+
+Repay Shares: Number of shares calculated based on the inputted repay amount. Number of Borrow
+Shares is to be reduced by this Repay Shares when a user repays the borrowed asset
+
+Utilization Rate: Total Borrows / Total Liquidity which reflects the demand to borrow an asset.
+
+Borrow Interest Rate: The interest rate the borrowers pay for borrowing an asset when Utilization Rate
+is below the Optimal Utilization Rate. Calculated as Base Borrow Rate + (Utilization Rate * Slope)
+
+Borrow Interest Rate: The interest rate the borrowers pay for borrowing an asset when Utilization Rate
+is above the Optimal Utilization Rate. Calculated as Borrow Interest Rate = Slope; + [(Utilization Rate -
+Optimal Utilization Rate)/(100% - Optimal Utilization Rate) * Slope]
+
+Optimal Utilization Rate: Specific Utilization Rate that marks the beginning of a sharp rise in Borrow
+Interest Rate
+Deposit Interest Rate: The interest rate the lenders receive from depositing their assets. Calculated as
+Borrow Interest Rate * Utilization Rate
+
+Pool Reserve: A portion of Borrow Interest Rate allocated as an insurance for the pool
+Close Factor: The portion of the borrowed asset that can be repaid by a liquidator in one transaction
+
+Liquidate Shares: Number of shares calculated based on the inputted liquidate amount. Borrow Shares is
+to be reduced by Liquidate Shares when a liquidator repays the borrowed asset
+
+Collateral Amount: The value of a user’s collateral asset equivalent to the liquidate value at a discounted
+price
+
+Liquidation Bonus: The difference between Collateral Amount that the liquidator receives and the
+liquidate amount the liquidator pays
+3. Key Concepts
+
+3.1 Deposit
+
+Deposit
+
+@&’
+
+Deposit action
+
+’
+
+Update interest rate
+from last update timestamp
+
+’
+
+Increase total liquidity
+
+’
+
+Mint alTokens
+
+’
+
+Transfer underlying asset to the pool
+
+Done
+
+Here is an example of the diagram above. Alice first deposits one of the supported assets, such as BNB,
+into the protocol. Once deposited, the deposited BNB is added into a pooled fund, which is referred to as
+the Total Liquidity. This Total Liquidity is calculated as follows:
+
+Total Liquidity = Total Available Liquidity + Total Borrows
+
+Total Available Liquidity is the liquidity available of that asset for borrowers to borrow or lenders to
+withdraw. The Total Borrows of an asset is the sum of the total borrowed amount and the accumulated
+borrow interest from all borrowers. Total Borrows is calculated as follows:
+
+Total Borrows = Borrow Amount + Cumulative Borrow Interest
+
+This means that Total Liquidity will continue to grow as Cumulative Borrow Interest grows over-time.
+More details on interest rate can be found in section 3.5. Interest Rate Dynamics.
+
+Alice will receive alTokens, such as alBNB, that represent her share of BNB deposited to Total Liquidity
+of BNB. alToken is a tokenized representation of the user’s lending position, and is an interest-bearing
+BEP20 token, which means an alToken can claim more of the underlying asset over-time as Total
+Liquidity grows from interest collected from the borrowers. Number of alTokens each user receives is
+calculated as follows:
+
+Number of alTokens = Deposit Amount * Total alToken / Total Liquidity
+Total alToken is set based on the first user who deposits this asset. For example, if Bob is the first user
+
+who deposits 1,000 BNB, then Total alBNB starts with 1,000 alBNB. If Alice then adds 100 BNB when
+the Total Liquidity is 1,000 BNB, then Alice gets 100 alBNB (100 * 1,000/ 1,000).
+
+3.2 Borrow
+
+Borrow
+
+Borrow action
+
+|
+
+Update interest rate
+from last update timestamp
+
+Total available F
+liquidity > No }-» Revert
+is enough
+
+._ isenoug
+
+(Yes
+,
+
+Add new borrow amount to total borrows
+
+,
+
+Calculate borrow shares based on
+borrow amount and total borrows
+
+,
+
+Transfer underlying asset to user
+
+Done
+
+Before borrowing
+Before a user can borrow, they have to first deposit some of their assets that can be used as collateral on the
+protocol. Upon depositing such assets, the user receives alTokens, representing the user’s shares in the
+assets’ pools. . Note that some assets are not accepted as collateral in order to protect the protocol’s
+security. Even though these alTokens are used as collateral, the user will still earn deposit interest on them
+since other users are borrowing the underlying asset from the asset pool and paying borrow interest to the
+pool, or Total Liquidity.
+
+For example, Alice can deposit BUSD, one of the available collateral assets, into the protocol and
+receives a balance of alBUSD that represents her share in the total BUSD pool . Alice can then use this
+alBUSD as collateral, enabling her to borrow other assets such as ETH. In this case, Alice is earning
+deposit interest on BUSD and paying borrow interest on ETH. More details on interest rates can be found
+in section 3.5. Interest Rate Dynamics.
+
+Each asset that can be used as collateral has an assigned Asset Maximum Loan-to-value (LTV). For
+instance, if Alice deposits $100 worth of BUSD, which has an Asset Maximum LTV of 75%, then Alice
+can borrow any asset with the Borrow Limit of $75. Borrow Limit is calculated based on the total value of
+deposited assets that can be used as collateral and Asset Maximum LTV of each deposited asset.
+Specifically , the Borrow Limit for an asset can be calculated as follows:
+
+Borrow Limit = (Deposit Value in USD of Asset:* Asset Maximum LTV; + Deposit Value in USD for Asset2* Asset
+Maximum LTV, + ...)
+
+A user can only borrow if the Account Health remains healthy after taking into account the new borrow
+amount. Account Health can be calculated as follows:
+
+Account Health = Healthy (borrow value < Borrow Limit)
+Account Health = Unhealthy (borrow value > Borrow Limit)
+
+Borrowing process
+When a user borrows and receives the borrowed amount, the protocol calculates how many Borrow
+
+Shares the borrowed amount equals to. Borrow Shares represent the share of the user’s borrowed amount
+to the Total Borrows of that asset. Borrow Shares is calculated as follows:
+
+Borrow Shares = (Borrow Amount * Total Borrow Shares) / Total Borrows
+
+The number of Total Borrow Shares is set based on the first user who borrows this asset. For example, if
+Bob is the first user who borrows 1,000 BNB, then the number of Total Borrow Shares starts with 1,000.
+If Alice then borrows 100 BNB when the Total Borrows is 1,000 BNB, then Alice gets 100 Borrow
+Shares (100 * 1,000 / 1,000).
+3.3 Withdraw
+
+Withdraw
+
+Withdraw action
+
+,
+
+Update interest rate
+from last update timestamp
+
+J SS
+/ Total available >
+< liquidity —(No }-> Revert
+
+is enough ia se
+
+XN
+Account health in
+is healthy > —{No }-> Revert
+
+inwithdrawn
+
+Convert withdraw amount to
+withdraw shares
+
+‘
+
+Burn number of alTokens
+by number of withdraw shares
+
+‘
+
+Decrease total liquidity by withdraw amount
+
+Transfer underlying asset to user
+
+Done
+
+Before withdrawing
+A user can withdraw the amount only if there is enough Total Available Liquidity to do so and if the
+
+Account Health remains healthy after the transaction.
+Withdrawing process
+
+10
+To withdraw a part or all of the deposited amount, the protocol calculates Withdraw Shares from the
+withdraw amount inputted, burns alTokens equal to the number of Withdraw Shares, and transfers the
+withdraw amount to the user. Withdraw Shares is calculated as follows:
+
+Withdraw Shares = Withdraw Amount * Total alToken / Total Liquidity
+
+Because Total Liquidity increases over-time from accruing borrow interest, the same withdrawal amount
+will equal smaller Withdraw Shares over-time, and thus burns fewer alTokens to claim the same withdraw
+amount. If the user withdraws all of the deposited amount, the user will receive a withdraw amount that is
+more than the originally deposited amount from accruing deposit interest. More details on interest rates
+can be found in section 3.5. Interest Rate Dynamics.
+
+3.4 Repay
+
+Repay
+
+Repay action
+
+Update interest rate
+from last update timestamp
+
+’
+
+User has enough
+underlying No )—» Revert
+asset to pay
+
+(Yes
+
+Convert repay amount to repay shares
+
+|
+’
+
+Reduce borrow shares by repay shares
+
+,
+
+Transfer repay amount to the pool
+
+Done
+
+To repay a part or all of the borrowed amount, the protocol calculates Repay Shares from the repay
+amount inputted, transfers the repay amount to the pool, and reduces Borrow Shares by Repay Shares.
+Repay Shares is calculated as follows:
+
+1
+Repay Shares = Repay Amount * Total Borrow Shares / Total Borrows
+
+Because Total Borrows increases over-time from accruing borrow interest, the same repay amount will
+equal smaller Repay Shares over-time, reducing Borrow Shares by a smaller Repay Shares. If the user
+repays all of the borrowed amount, the user will pay more than the original amount because of accrued
+borrow interest. More details on interest rate can be found in section 3.5. Interest Rate Dynamics.
+
+3.5 Interest Rate Dynamics
+Interest rates for borrowers and lenders are determined by Utilization Rate. Utilization Rate is calculated
+
+as follows:
+Utilization Rate = Total Borrows / Total Liquidity
+
+Because the Utilization Rate reflects the demand to borrow an asset, a higher Utilization Rate corresponds
+to a higher cost of borrowing or borrow interest rate. Each asset has its own base borrow rate and Optimal
+Utilization Rate, or the specific Utilization Rate that marks the beginning of a sharp rise in Borrow
+Interest Rate to protect the liquidity in the pool. Therefore, Borrow Interest Rate; and Borrow Interest
+Rate2 when Utilization Rate is below and above Optimal Utilization Rate can be calculated as:
+
+Borrow Interest Rate; when Utilization Rate < Optimal Utilization Rate:
+Borrow Interest Rate = Base Borrow Rate + (Utilization Rate * Slope1)
+
+Borrow Interest Rate2 when Utilization Rate > Optimal Utilization Rate:
+Borrow Interest Rate = Slope: + [(Utilization Rate - Optimal Utilization Rate)/(100% - Optimal Utilization Rate) * Slope2]
+
+5-10% of the Borrow Interest Rate will be allocated for Pool Reserve as an insurance for the pool. Since
+the accumulated borrow interest are added to Total Liquidity and the alTokens that lenders receive can
+claim the share of Total Liquidity, the higher borrow interest rate corresponds to the higher Deposit
+
+Interest Rate, which can be calculated as:
+
+Deposit Interest Rate = Borrow Interest Rate * Utilization Rate
+
+12
+4. Risk And Liquidation
+
+Liquidate
+
+Liquidate action
+
+|
+
+Update interest rate
+from last update timestamp
+
+|
+
+User (Borrower)'s
+account
+is unhealthy
+
+—> Revert
+
+User has
+the specific
+borrowed asset
+and collateral asset
+the liquidator
+specifies
+
+—{ No }-> Revert
+
+Liquidate
+amount is within
+the close factor
+of the user's
+borrowed
+amount
+
+Revert
+
+Convert liquidate amount to liquidate shares
+
+’
+
+Decrease user's borrow shares by liquidate shares
+
+’
+
+Transfer liquidate amount to pool
+
+’
+
+Decrease total borrows
+
+’
+
+Calculate collateral amount liquidator gets
+
+,
+
+Convert collateral amount to alTokens
+
+’
+
+Burn user's alTokens
+
+’
+
+Mint alTokens for liquidator
+
+Done
+
+13
+Causes of liquidation
+A borrower bears the risk of having an unhealthy Account Health when the user’s total value of borrowed
+
+assets exceeds the Borrow Limit. Volatility in collateral assets and borrowed assets can cause Account
+Health to be unhealthy.
+
+For instance, Alice deposits $100 worth of BUSD, which for instance has an Asset Maximum LTV of
+75%, enabling Alice to borrow any asset up to the Borrow Limit of $75, and borrows $75 of ETH (e.g.
+0.18 ETH) when ETH price is $400. If ETH price increases afterwards, Alice’s total value of borrowed
+assets increases since 0.18 ETH now equals to more than $75, resulting in her total value of borrowed
+assets being higher than her Borrow Limit. On the other hand, Account Health can become unhealthy
+when the price of the collateral asset, or in this case BUSD, decreases such that Borrow Limit becomes
+less than the total value of borrowed assets.
+
+Due to the volatile nature of asset prices, users are recommended to borrow at a value less than the
+Borrow Limit to avoid liquidation.
+
+Liquidation process
+When Account Health becomes unhealthy, any external actor called a liquidator can repay up to the Close
+
+Factor of the user’s borrowed amount. This Close Factor is the portion of the borrowed asset that can be
+repaid by a liquidator in one transaction. The liquidation process may continue until the user’s Account
+Health becomes healthy, or when the total value of borrowed assets is below Borrow Limit. The Close
+Factor ensures that the user’s account will not be fully liquidated if not necessary.
+
+When a liquidator repays the user’s borrowed amount, liquidator inputs Liquidate Shares and the
+protocol reduces the user’s Borrow Shares by Liquidate Shares.
+
+To reward the liquidator for liquidating an unhealthy account, the liquidator can purchase Collateral
+Amount, or the value of the user’s collateral asset equivalent to the liquidate value at a discounted price.
+The difference between Collateral Amount that the liquidator receives and the liquidate amount the
+
+liquidator pays is captured by Liquidation Bonus. Collateral Amount is calculated as follows:
+
+Collateral Amount = (Liquidate Amount * Price of Liquidated Asset / Price of Collateral Asset) * (Liquidation
+Bonus)
+
+Liquidate Amount is calculated as follows:
+
+Liquidate Amount = (Liquidate Share * Total Borrows) / Total Borrow Shares
+
+14
+5. Protocol Architecture
+
+Burns alTokens when
+withdraw underlying assets
+
+Receives alTokens when
+provide liquidity to the pool
+User
+
+Deposit Borrow Repay _—- Withdraw _Liquidate
+
+’ ’ ’ ’ ’
+. <
+Price oracle Lending pool Pools & users state data
+
+| Admin
+\
+
+—
+
+vi
+
+: _ eo Q@ aitorens | Pools configuration
+BEP20 Pool
+
+5.1 Lending Pool
+Lending Pool is the core contract of the protocol . This contract manages all states and handles user
+interactions with the lending pool. Interactions include deposit, borrow, repay, withdraw and liquidate.
+
+5.2 Lending Pool Configurator
+
+Lending Pool Configurator provides configuration functions for Lending Pool and implements the
+configuration of BEP20 token pools. Configurations include pool configuration, and interest rates
+calculation.
+
+5.3 alToken
+alToken contract manages the minting and burning of alTokens. alToken represents a user’s lending
+position or the share of deposited amount to Total Liquidity of that asset.
+
+5.4 Price Oracle
+The protocol uses Band Protocol’s BandChain oracle. Price Oracle contract is responsible for querying
+the latest price of an asset from BandChain.
+6. ALPHA Governance Token
+
+ALPHA will act as the core utility token across a portfolio of Alpha products, including staking, reward
+sharing through providing liquidity to or securing the protocol, as well as governance procedures. For
+Alpha Lending particularly, there will be a liquidity mining program rewarding users with ALPHA for
+bootstrapping liquidity on the protocol by depositing and borrowing assets.
+
+As Alpha Finance Lab continues to innovate in the DeFi space and build more Alpha products, ALPHA
+token holders will be able to propose and decide upon key protocol parameters to all Alpha products and
+how the products interoperate. ALPHA tokens will continue to be the primary tool to align incentives of
+community builders and supporters, creating a strong community of DeFi enthusiasts who will
+collectively help propel Alpha ecosystem forward.
+PLEASE READ THIS DISCLAIMER SECTION CAREFULLY. IF YOU ARE IN ANY DOUBT
+AS TO THE ACTION YOU SHOULD TAKE, YOU SHOULD CONSULT YOUR LEGAL,
+FINANCIAL, TAX OR OTHER PROFESSIONAL ADVISOR(S).
+
+The Project Documents in their current form are circulated by the Token Vendor for general information
+and to invite feedback only on the Project, the Platform, the Tokens and their functions, and the Token
+Distribution as presently conceived, and is subject to review and revision by the directors of the Token
+Vendor and/or advisors of the Token Vendor. Please do not replicate or distribute any part of the Project
+Documents without this Section in accompaniment. The information in the Project Documents, including
+information set forth below, may not be exhaustive and no part of the Project Documents is intended to
+create legal relations with a recipient of the Project Documents or to be legally binding or enforceable by
+such recipient against the Token Vendor. An updated version of the Project Documents may be published
+at a later date and to be announced by the Token Vendor in due course.
+
+PLEASE READ THIS SECTION AND THE FOLLOWING SECTIONS ENTITLED
+“DISCLAIMER OF LIABILITY”, “NO REPRESENTATIONS AND WARRANTIES”,
+“REPRESENTATIONS AND WARRANTIES BY YOU”, “CAUTIONARY NOTE ON
+FORWARD-LOOKING STATEMENTS”, “THIRD PARTY INFORMATION AND NO
+CONSENT OF OTHER PERSONS”, “TERMS USED”, “NO ADVICE”, “NO FURTHER
+INFORMATION OR UPDATE”, “RESTRICTIONS ON DISTRIBUTION AND
+DISSEMINATION”, “NO OFFER OF INVESTMENT OR REGISTRATION” AND “RISKS AND
+UNCERTAINTIES” CAREFULLY.
+
+While we make every effort to ensure that any material in the Project Documents is accurate and up to
+date, such material in no way constitutes the provision of professional advice. The Token Vendor does not
+guarantee, and accepts no legal liability whatsoever arising from or in connection with, the accuracy,
+reliability, currency, or completeness of any material contained in the Project Documents. Potential
+purchasers of Tokens (“Purchasers”, and each a “Purchaser”) should seek appropriate independent
+professional advice prior to relying on, or entering into any commitment or transaction based on material
+published in the Project Documents, which material is published purely for reference purposes alone.
+
+The Tokens are proprietary cryptographic tokens issued by the Token Vendor to function as the native
+utility token used in the Platform as the means of allow holders of Tokens (“Tokenholders”) who are
+Users to participate in decision-making relating to features on the Platform and to be used as deposits or
+“stake” in relation to transactions on the Platform.
+
+The Project Documents do not constitute or form part of any opinion or any advice to purchase, sell or
+otherwise transact in Tokens and the fact of presentation of the Project Documents shall not form the
+basis of, or be relied upon in connection with, any contract or decision to purchase Tokens.
+
+No Token should be construed, interpreted, classified or treated as enabling, or according any opportunity
+to Purchasers to participate in or receive profits, income, or other payments or returns arising from or in
+connection with the Token Vendor, the Project Group, the Platform, the Tokens, or the proceeds of the
+Token Distribution, or to receive sums paid out of such profits, income, or other payments or returns.
+Any agreement as between the Token Vendor and you as a Purchaser, and in relation to any distribution
+and purchase, of Tokens is to be governed only by a separate document setting out the terms and
+conditions (the “Token Distribution Terms”) of such agreement. In the event of any inconsistencies
+between the Token Distribution Terms and the Project Documents, the former shall prevail.
+
+There are risks and uncertainties associated with the Token Vendor, the Project Group, the Project, the
+Tokens, the Platform, and the Token Distribution. Please refer to the Section entitled “Risks and
+Uncertainties” set out at the end of this Project Document.
+
+The Project Documents, any part thereof and any copy thereof must not be taken or transmitted to any
+jurisdiction where distribution or dissemination of the Project Documents is prohibited or restricted.
+
+No part of the Project Documents is to be reproduced, distributed or disseminated without including this
+Section and the following Sections entitled “Disclaimer of Liability”, “No Representations and
+Warranties”, “Representations and Warranties By You”, “Cautionary Note On Forward-Looking
+Statements”, “Third Party Information and No Consent of Other Persons”, “Terms Used”, “No Advice”,
+“No Further Information or Update”, “Restrictions on Distribution and Dissemination’, “No Offer of
+Investment or Registration”, and “Risks and Uncertainties”.
+
+Disclaimer of Liability
+
+To the maximum extent permitted by the applicable laws, regulations and rules, the Project Group and no
+member of the Project Group (including but not limited to the Token Vendor) shall not be liable for any
+direct, indirect, special, incidental, consequential or other losses of any kind, in tort, contract or otherwise
+(including but not limited to loss of revenue, income or profits, and loss of use or data), arising out of or
+in connection with any acceptance of or reliance on the Project Documents or any part thereof by you.
+
+No Representations and Warranties
+
+The Token Vendor and/or the Project Group does not / do not make or purport to make, and hereby
+disclaims, any representation, warranty or undertaking in any form whatsoever to any entity or person,
+including any representation, warranty or undertaking in relation to the truth, accuracy and completeness
+of any of the information set out in the Project Documents.
+
+Representations and Warranties by you
+
+By accessing and/or accepting possession of any information in the Project Documents or such part
+thereof (as the case may be), you represent and warrant to the Token Vendor and the Project Group as
+follows:
+
+(a) you agree and acknowledge that the Tokens do not constitute shares or securities of any form, units in a
+business trust, units in a collective investment activity scheme or any other form of regulated product or
+investment product in any jurisdiction;
+
+(b) you are not:
+
+18
+(c)
+
+(d)
+
+(e)
+
+(6)
+
+(g)
+
+(h)
+
+(i) a US. Person (as defined in Regulation S under the U.S. Securities Act of 1993, as amended);
+
+(ii) if you are an individual, a person who is a citizen of, domiciled in, resident of, or physically present
+/ located in a jurisdiction stipulated in Annex 1 hereto (“Token Distribution Excluded
+Jurisdiction”);
+
+(iti) if you are a body corporate, a body corporate:
+
+(aa) which is incorporated or organized in, or operates out of, a Token Distribution Excluded
+Jurisdiction; or
+
+(bb) which is under the control of one or more individuals who is/are citizen(s) of, domiciled
+in, residents of, or physically present / located in, a Token Distribution Excluded
+Jurisdiction; and/or
+
+(iv) an individual or body corporate which is otherwise prohibited or ineligible in any way, whether in
+full or in part, from participating in any part of the transactions contemplated in the Token
+Distribution Terms,
+
+(collectively, “Excluded Persons”);
+
+you are fully aware of and understand that you are not eligible and you are not to purchase any Tokens if you
+are an Excluded Person;
+
+you agree and acknowledge that the Project Documents do not constitute prospectuses or offer documents of
+any sort and are not intended to constitute an offer of shares or securities of any form, units in a business
+trust, units in a collective investment scheme or any other form of regulated investment or investment product
+in any jurisdiction, or a solicitation for any form of regulated product or investment product, and you are not
+bound to enter into any contract or binding legal commitment and no digital asset other than those provided
+for in the Project Documents or other form of payment is to be accepted on the basis of the Project
+Documents;
+
+you agree and acknowledge that no Token should be construed, interpreted, classified or treated as enabling,
+or according any opportunity to, Token holders to participate in or receive profits, income, or other payments
+or returns arising from or in connection with Token Vendor, the Project Group, the Tokens or the proceeds
+of the Token Distribution, or to receive sums paid out of such profits, income, or other payments or returns;
+
+you agree and acknowledge that no regulatory authority has examined or approved any of the information
+set out in the Project Documents, no action has been or will be taken by the Token Vendor to obtain such
+approval under the laws, regulatory requirements or rules of any jurisdiction and the publication, distribution
+or dissemination of the Project Documents to you does not imply that the applicable laws, regulatory
+requirements, or rules have been complied with;
+
+you agree and acknowledge that the Project Documents, the undertaking and/or the completion of the Token
+Distribution, or future trading of Tokens on any cryptocurrency exchange, shall not be construed, interpreted
+or deemed by you as an indication of the merits of the Token Vendor, the Project, the Tokens, the Token
+Distribution, and the Platform;
+
+the distribution or dissemination of the Project Documents, any part thereof or any copy thereof, or
+acceptance of the same by you, is not prohibited or restricted by the applicable laws, regulations or rules in
+your jurisdiction, and where any restrictions in relation to possession are applicable, you have observed and
+complied with all such restrictions at your own expense and without liability to the Token Vendor;
+
+19
+@
+
+@
+
+(k)
+
+@
+
+(m)
+(n)
+
+you agree and acknowledge that in the case where you wish to purchase any Tokens, the Tokens are not to
+be construed, interpreted, classified or treated as:
+
+(i) any kind of currency other than cryptocurrency;
+
+(ii) debentures, stocks or shares issued by the Token Vendor, the Project Group, or any other person or
+entity;
+
+(iti) rights, options or derivatives in respect of such debentures, stocks or shares;
+
+(iv) rights under a contract for differences or under any other contract the purpose or pretended purpose
+
+of which is to secure a profit or avoid a loss;
+(v) securities;
+(vi) units or derivatives of units in a business trust;
+(vii) units in a collective investment scheme; or
+(viii) | any form of regulated investment or investment product;
+
+you are legally permitted to participate in the Token Distribution and all actions contemplated or associated
+with such purchase, including the holding and use of Tokens;
+
+the amounts that you use to purchase Tokens were not and are not directly or indirectly derived from any
+activities that contravene the laws and regulations of any jurisdiction, including anti-money laundering laws
+
+and regulations;
+
+if you are a natural person, you are of sufficient age and capacity under the applicable laws of the jurisdiction
+in which you reside and the jurisdiction of which you are a citizen to participate in the Token Distribution;
+
+you are not obtaining or using Tokens for any illegal purpose;
+
+none of:
+
+0) you;
+
+(ii) any person controlling or controlled by you;
+
+(iti) if you are a privately-held entity, any person having a beneficial interest in you; or
+
+(v) any person for whom you are acting as agent or nominee in connection with this Token Distribution,
+
+is a senior foreign political figure, or any immediate family member or close associate of a senior foreign
+political figure.
+
+A “senior foreign political figure” is defined as a senior official in the executive, legislative, administrative,
+military or judicial branch of a government (whether elected or not), a senior official of a major political
+party, or a senior executive of a foreign government-owned corporation, and includes any corporation,
+business or other entity that has been formed by, or for the benefit of, a senior foreign political figure.
+
+An “immediate family” of a senior foreign political figure typically includes such figure’s parents, siblings,
+spouse, children and in-laws.
+
+20
+(0)
+
+(p)
+
+(q)
+
+(x)
+
+(s)
+
+()
+
+(u)
+
+A “close associate” of a senior foreign political figure is a person who is widely and publicly known to
+maintain an unusually close relationship with such senior foreign political figure, and includes a person who
+is in a position to conduct substantial domestic and international financial transactions on behalf of such
+senior foreign political figure;
+
+if you are affiliated with a non-U.S. banking institution (“Foreign Bank”), or if you receive deposits from,
+make payments on behalf of, or handle other financial transactions related to a Foreign Bank, you represent
+and warrant to the Token Vendor that:
+
+(i) the Foreign Bank has a fixed address, and not solely an electronic address, in a country in which the
+Foreign Bank is authorized to conduct banking activities;
+
+(ii) the Foreign Bank maintains operating records related to its banking activities;
+
+(iti) the Foreign Bank is subject to inspection by the banking authority that licensed the Foreign Bank to
+conduct its banking activities; and
+
+(iv) the Foreign Bank does not provide banking services to any other Foreign Bank that does not have a
+physical presence in any country and that is not a regulated affiliate;
+
+you have such knowledge and understanding of the operation, functionality, usage, storage, transmission
+mechanisms and other material characteristics of cryptocurrencies, blockchain-based software systems,
+cryptocurrency wallets or other related token storage mechanisms, blockchain technology and smart contract
+technology so as to be able to evaluate the risks and merits of the Project, the Tokens, and the Platform, and
+correspondingly any purchase of the Tokens;
+
+you are fully aware and understand that in the case where you wish to purchase any Tokens, there are risks
+associated with the Token Vendor, the Project Group, the Project, the Tokens, the Platform and the Token
+Distribution;
+
+you bear the sole responsibility to determine what tax implications purchasing Tokens may have for you and
+you agree not to hold the Token Vendor or any other person involved in the Token Distribution liable for any
+tax liability associated with or arising therefrom;
+
+you agree and acknowledge that neither the Token Vendor nor the Project Group is liable for any direct,
+indirect, special, incidental, consequential or other losses of any kind, in tort, contract or otherwise (including
+but not limited to loss of revenue, income or profits, and loss of use or data), arising out of or in connection
+with any acceptance of or reliance on the Project Documents or any part thereof by you;
+
+you waive the right to participate in a class action lawsuit or a class wide arbitration against the Token Vendor
+and/or any person involved in the Token Distribution and/or with the creation and distribution of Tokens or
+the Platform; and
+
+all of the above representations and warranties are true, complete, accurate and non-misleading from the time
+of your access to and/or acceptance of possession the Project Documents or such part thereof (as the case
+may be).
+
+Cautionary Note on Forward-Looking Statements
+
+All statements contained in the Project Documents, statements made in press releases or in any place
+accessible by the public and oral statements that may be made by the Token Vendor, the Project Group, or
+their respective directors, executive officers or employees acting on behalf of the Token Vendor or the
+Project Group (as the case may be), that are not statements of historical fact, constitute “forward-looking
+
+21
+statements”. Some of these statements can be identified by forward-looking terms such as “aim”,
+
+«6 90 «6 comers 6
+
+“target”, “anticipate”, “believe”, “could”, “estimate”, “expect”, “if”, “intend”, “may”, “plan”,
+“possible”, “probable”, “project”, “should”, “would”, “will” or other similar terms. However, these
+terms are not the exclusive means of identifying forward-looking statements. All statements regarding the
+Token Vendor, the Project Group, and/or the future outlook of the industry which the Token Vendor and
+the Project Group are in are forward- looking statements. These forward-looking statements, including
+but not limited to statements as to the Token Vendor, the Project Group and other matters discussed in the
+Project Documents regarding the Token Vendor and the Project Group are matters that are not historic
+
+facts, but only predictions.
+
+These forward-looking statements involve known and unknown risks, uncertainties and other factors that
+may have an impact or adversely affect the Token Vendor and/or the Project Group, the Project, the
+Platform, or the use of the Tokens. These factors include, amongst others:
+
+(a) changes in political, social, economic and stock or cryptocurrency market conditions, and the regulatory
+environment in the countries in which the Project Group conducts its business and operations;
+
+(b) the risk that the Project Group may be unable to execute or implement the Project;
+
+(c) changes in interest rates and exchange rates of fiat currencies and cryptocurrencies;
+
+(d) changes in the anticipated growth strategies and expected internal growth of the Project Group and the
+Project;
+
+(e) changes in fees payable to the Project Group in connection with its businesses and operations or on the
+Project;
+
+(f) changes in the availability and salaries of employees who are required by the Project Group to operate its
+
+business and operations;
+(g) changes in preferences of Users;
+
+(h) changes in competitive conditions under which the Project Group operates, and the ability of the Project
+Group to compete under such conditions;
+
+(i) changes in the future capital needs of the Project Group and the availability of financing and capital to fund
+such needs;
+
+() war or acts of international or domestic terrorism;
+
+(k) occurrences of catastrophic events, natural disasters and acts of God that affect the businesses and/or
+
+operations of the Project Group;
+() other factors beyond the control of the Token Vendor and/or the Project Group; and
+
+(m) any risks and uncertainties associated with the Token Vendor, the Project Group, the Project, the Tokens, the
+Platform and the Token Distribution.
+
+22
+All forward-looking statements made by or attributable to the Token Vendor, the Project Group, or
+persons acting on behalf of the Token Vendor and/or the Project Group, or relating to the Platform are
+expressly qualified in their entirety by such factors. Given the risks and uncertainties that may cause the
+eventual outcome to be materially different from that expected, expressed or implied by the forward-
+looking statements in the Project Documents, undue reliance must not be placed on these statements.
+These forward-looking statements are applicable only as of the date of the Project Documents.
+
+The Token Vendor, the Project Group, and/or any other person do not represent, warrant, and/or
+undertake the contents in those forward-looking statements, and the eventual outcome may differ
+materially from those anticipated in these forward-looking statements.
+
+Nothing contained in the Project Documents is or may be relied upon as a promise, representation or
+undertaking relating to the Token Vendor and/or the Project Group, or the Platform.
+
+Further, the Token Vendor and the Project Group each disclaims any responsibility to update any of those
+forward-looking statements or publicly announce any revisions to those forward-looking statements to
+reflect future developments, events or circumstances, even if new information becomes available or other
+events occur in the future.
+
+Third Party Information and No Consent of Other Persons
+
+The Project Documents include information obtained from various third party sources (“Third Party
+Information”). The consent of the publishers of the Third Party Information has not been sought for the
+inclusion of the Third Party Information in the Project Documents and such publishers are therefore not
+liable for the Third Party Information. While the Token Vendor and the Project Group have taken
+reasonable action to ensure that the Third Party Information have been included in their proper form and
+context, the Token Vendor, the Project Group, and/or their respective directors, executive officers, and
+employees acting on its behalf, have not independently verified the accuracy, reliability, completeness of
+the contents, or ascertained any applicable underlying assumption, of the relevant Third Party
+Information. Consequently, the Token Vendor, the Project Group, and/or their respective directors,
+executive officers, and employees acting on their behalf do not make any representation or warranty as to
+the accuracy, reliability or completeness of such information and shall not be obliged to provide any
+updates on the same.
+
+Terms used
+
+To facilitate a better understanding of the Tokens being offered for purchase by the Token Vendor, and
+the businesses and operations of the Project Group, certain technical terms and abbreviations, as well as,
+in certain instances, their descriptions, have been used in the Project Documents. These descriptions and
+assigned meanings should not be treated as being definitive of their meanings and may not correspond to
+standard industry meanings or usage.
+
+23
+Words importing the singular shall, where applicable, include the plural and vice versa and words
+importing the masculine gender shall, where applicable, include the feminine and neuter genders and vice
+versa. References to persons shall include corporations.
+
+No Advice
+
+No information in the Project Documents should be considered to be business, legal, financial or tax
+advice regarding the Token Vendor, the Project Group, the Project, the Tokens, the Platform, or the
+Token Distribution. You should consult your own legal, financial, tax or other professional advisor
+regarding the Token Vendor, the Project Group, the Project, the Tokens, the Platform, and the Token
+Distribution. You should be aware that you may be required to bear all risks of any purchase of Tokens
+for an indefinite period of time.
+
+None of the advisors engaged by the Token Vendor and/or the Project Group has made or purports to
+make any statement in the Project Documents or any statement upon which a statement in the Project
+Documents is based and each of them makes no representation regarding any statement in the Project
+Documents and to the maximum extent permitted by law, expressly disclaims and takes no responsibility
+for any liability to any person which is based on, or arises out of, any statement, information or opinions
+in, or omission from, the Project Documents.
+
+No Further Information or Update
+
+No person has been or is authorized to give any information or representation not contained in the Project
+Documents in connection with the Token Vendor, the Project Group, the Project, the Tokens, the
+Platform, or the Token Distribution and, if given, such information or representation must not be relied
+upon as having been authorized by or on behalf of the Token Vendor and/or the Project Group. The
+Token Distribution shall not, under any circumstances, constitute a continuing representation or create
+any suggestion or implication that there has been no change, or development reasonably likely to involve
+a material change in the affairs, conditions and prospects of the Token Vendor and/or the Project Group
+or in any statement of fact or information contained in the Project Documents since the date hereof.
+
+Restrictions on Distribution and Dissemination
+
+The distribution or dissemination of the Project Documents or any part thereof may be prohibited or
+restricted by the laws, regulatory requirements and rules of any jurisdiction. In the case where any
+restriction applies, you are to inform yourself about, and to observe, any restrictions which are applicable
+to your possession of the Project Documents or such part thereof (as the case may be) at your own
+expense and without liability to the Token Vendor and/or the Project Group.
+
+Persons to whom copies of the Project Documents have been distributed, disseminated, or provided
+access to or who otherwise have the Project Documents in their possession, shall not circulate it to any
+other persons, reproduce or otherwise distribute the Project Documents or any information contained
+
+herein for any purpose whatsoever nor permit or cause the same to occur.
+
+No Offer of Investment or Registration
+
+24
+The Tokens are not intended to be and should not be construed to constitute shares or securities of any
+form, units in a business trust, units in a collective investment scheme or any other form of regulated
+investment or investment product in any jurisdiction. The Project Documents do not constitute
+prospectuses or offer documents of any sort and are not intended to and should not be construed to
+constitute an offer of shares or securities of any form, units in a business trust, units in a collective
+investment scheme or any other form of investment, or a solicitation for any form of investment in any
+jurisdiction. No person is bound to enter into any contract or binding legal commitment in relation to the
+distribution and purchase of the Tokens and no cryptocurrency (other than those provided for in the
+Project Documents) or other form of payment is to be accepted on the basis of the Project Documents.
+
+THE TOKEN DISTRIBUTION (AS REFERRED TO IN THE PROJECT DOCUMENTS) IS
+INTENDED FOR, MADE TO OR DIRECTED AT ONLY PERSONS WHO ARE NOT
+EXCLUDED PERSONS. ACCORDINGLY, YOU ARE NOT ELIGIBLE AND YOU ARE NOT
+TO PURCHASE ANY TOKENS IN THE TOKEN DISTRIBUTION IF YOU ARE AN
+EXCLUDED PERSON.
+
+No regulatory authority has examined or approved of any of the information set out in the Project
+Documents. No such action has been or will be taken under the laws, regulatory requirements or rules of
+any jurisdiction. The publication, distribution or dissemination of the Project Documents does not imply
+that the applicable laws, regulatory requirements or rules have been complied with.
+
+Risks and Uncertainties
+
+Prospective Purchasers should carefully consider and evaluate all risks and uncertainties associated with
+the Token Vendor, the Project Group, the Tokens, the Project, the Platform, and the Token Distribution,
+and all information set out in the Project Documents and the Token Distribution Terms prior to any
+purchase of the Tokens. If any of such risks and uncertainties develop into actual events, the business,
+financial condition, results of operations and prospects of the Project, the Platform, the Token Vendor
+and/or the Project Group could be materially and adversely affected. In such cases, the value or the
+trading price of the Tokens may be indirectly impacted.
+
+Please refer to the risks and warnings set out in Annex B below and such other risk factors as highlighted
+in the Token Distribution Terms before deciding to purchase Tokens. It should be noted the
+aforementioned list of risks and warnings is not exhaustive. Accordingly, prospective Purchasers should
+not place undue reliance on these statements.
+
+25
+Annex |
+
+TOKEN DISTRIBUTION EXCLUDED JURISDICTIONS*
+
+Albania#
+
+The Bahamas#
+
+Barbados#
+
+Botswana#
+
+Cambodia#
+
+Democratic People’s Republic of Korea#”
+
+Ghana#
+
+Iceland#
+
+Tran#*
+
+Jamaica#
+
+Mauritius#
+
+Mongolia#
+
+Myanmar#
+
+Nicaragua#
+
+Pakistan#
+
+Panama#
+
+People’s Republic of China
+
+Syria#’
+
+Uganda#
+
+United States of America
+
+Yemen#*
+
+Zimbabwe#
+
+Any jurisdiction in which the Token Distribution is (a) prohibited, restricted or unauthorized in
+any form or manner whether in full or in part under the laws, regulatory requirements or rules in
+such jurisdiction, or (b) subject of regulation so as to attract licensing or prospectus filing
+obligations on an issuer of digital assets under the laws, regulatory requirements or rules in such
+
+jurisdiction unless otherwise determined by the Token Vendor in its sole and absolute discretion
+to be a jurisdiction included in the Token Distribution.
+
+26
+Jurisdictions with strategic anti-money laundering / counter-financing of terrorism deficiencies
+most recently identified by the Financial Action Task Force for increased monitoring at
+<http://www.fatf-gafi.org/countries/#high-risk> (last accessed on 27 September 2020)
+
+Jurisdictions in which designated individuals and entities are identified by the MAS for the
+purposes of regulations promulgated under the Monetary Authority of Singapore Act (Chapter
+186) of Singapore, the United Nations Act (Chapter 339) of Singapore or the Terrorism
+(Suppression of Financing) Act (Chapter 325) of Singapore
+
+The Token Distribution Excluded Jurisdictions stipulated hereto are indicative for the purpose of
+
+this Whitepaper, and is subject always to and superseded by the full and final list of Token
+Distribution Excluded Jurisdictions as stipulated in the Token Distribution Terms. Please refer
+the Token Distribution Terms to determine your eligibility to participate in the Token
+Distribution.
+
+to
+
+27
+Annex B
+
+re)
+
+RISK FACTORS
+
+RISKS RELATING TO PARTICIPATION IN THE TOKEN DISTRIBUTION EVENT (AS
+DEFINED BELOW)
+
+Purchase of products, including but not limited to cryptocurrencies / cryptographic tokens,
+from start-ups such as the Token Vendor and the Project Group involve a high degree of risk
+
+Financial and operating risks confronting start-ups are significant and the Token Vendor and the
+Project Group are not immune to these. Start-ups often experience unexpected problems in the
+areas of product development, marketing, financing, and general management, among others,
+which frequently cannot be solved.
+
+The Token Vendor and/or the Project Group may be forced to cease operations
+
+It is possible that, due to any number of reasons, including, but not limited to, an unfavourable
+fluctuation in the value of cryptographic and fiat currencies, the inability of the Token Vendor
+and/or the Project Group to establish the Project or the Tokens’ utility, the failure of commercial
+relationships, or intellectual property ownership challenges, the Token Vendor and/or the Project
+Group may no longer be viable to operate and the Token Vendor and/or the Project Group may
+dissolve or take actions that result in a dissolution of the Token Vendor and/or the Project Group.
+
+The tax treatment in relation to Tokens are uncertain and there may be adverse tax
+consequences for a Purchaser upon certain future events
+
+The tax characterisation of Tokens are uncertain, and a Purchaser should seek independent tax
+advice in connection with a purchase of Tokens. A purchase of Tokens may result in adverse tax
+consequences to the Purchaser, including withholding taxes, income taxes, and tax reporting
+requirements. The Purchaser should consult with and must rely upon the advice of its own
+professional tax advisors with respect to tax treatment of a purchase of Tokens.
+
+There is no prior market for the Tokens and the Token Distribution Event may not result in an
+active or liquid market for the Tokens
+
+Prior to a Token Distribution event (“Token Distribution Event”), there has been no public
+market for the Tokens and the Tokens are not traded, whether on any cryptocurrency exchange or
+otherwise. In the event that the Tokens are traded on a cryptocurrency exchange, there is no
+assurance that an active or liquid trading market for the Tokens will develop or if developed, be
+sustained after the Tokens have been made available for trading on such cryptocurrency
+exchange. There is also no assurance that the market price of the Tokens will not decline below
+the purchase consideration at which the Purchaser acquired the Tokens. Such purchase
+
+28
+consideration may not be indicative of the market price of the Tokens after they have been made
+available for trading on a cryptocurrency exchange.
+
+A Token is not a currency issued by any central bank or national, supra-national or quasi-national
+organisation, nor is it backed by any hard assets or other credit. The Token Vendor and/or the
+Project Group is/are not responsible for nor does it / do they pursue the circulation and trading of
+Tokens on the market. Trading of Tokens merely depends on the consensus on its value between
+the relevant market participants, and no one is obliged to purchase any Token from any holder of
+the Token, including the purchasers, nor does anyone guarantee the liquidity or market price of
+Tokens to any extent at any time. Accordingly, the Token Vendor and/or the Project Group
+cannot ensure that there will be any demand or market for Tokens, or that the purchase
+consideration at the relevant time is indicative of the market price of Tokens after they have been
+made available for trading on a cryptocurrency exchange.
+
+Future sales of the Tokens could materially and adversely affect the market price of Tokens
+
+Any future sale of the Tokens (which were not available for sale in the Token Distribution
+Event) would increase the supply of Tokens in the market and this may result in a downward
+price pressure on the Tokens. The sale or distribution of a significant number of Tokens outside
+of the Token Distribution Event, or the perception that such further sales or issuance may occur,
+could adversely affect the trading price of the Tokens.
+
+Negative publicity may materially and adversely affect the price of the Tokens
+
+Negative publicity involving the Token Vendor, the Project Group, the Project, the Tokens and/or
+any of the key personnel of the Token Vendor and/or the Project Group may materially and
+adversely affect the market perception or market price of the Tokens, whether or not such
+negative publicity is justified.
+
+There is no assurance of any success of the Project
+
+The value of, and demand for, the Tokens hinges heavily on the performance of the Project.
+There is no assurance that the Project will gain traction after its launch and achieve any
+commercial success.
+
+The Project has not been fully developed, finalised, and integrated and is subject to further
+changes, updates, and adjustments prior to its launch. Such changes may result in unexpected and
+unforeseen effects on its projected appeal to users, and hence impact its success.
+
+While the Token Vendor has made every effort to provide a realistic estimate, there is also no
+assurance that the proceeds raised in the Token Distribution Event will be sufficient for the
+development and integration of the Project. For the foregoing or any other reason, the
+development and integration of the Project may not be completed and there is no assurance that it
+
+29
+will be launched at all. As such, distributed Tokens may hold little worth or value, and this would
+impact its trading price.
+
+If and when the Project is fully developed, there is no assurance that its systems, protocols, or
+products will be widely adopted or utilised by its target users.
+
+The trading price of the Tokens may fluctuate following the Token Distribution Event
+
+The prices of digital tokens in general tend to be relatively volatile, and can fluctuate significantly
+over short periods of time. The demand for, and correspondingly the market price of, the Tokens
+may fluctuate significantly and rapidly in response to, among others, the following factors, some
+of which are beyond the control of the Token Vendor and/or the Project Group:
+
+(a) new technical innovations;
+
+(b) analysts’ speculations, recommendations, perceptions or estimates of the Token’s market price or
+the financial and business performance of the Token Vendor and/or the Project Group;
+
+(c) changes in market valuations and token prices of entities with operations similar to that of the Token
+Vendor and/or the Project Group that may be made available for sale and purchase on the same
+cryptocurrency exchanges as the Tokens;
+
+(d) announcements by the Token Vendor and/or the Project Group of significant events, for example,
+partnerships, sponsorships, or new product developments;
+
+(e) fluctuations in market prices and trading volume of cryptocurrencies on cryptocurrency exchanges;
+(f) additions or departures of key personnel of the Token Vendor and/or the Project Group;
+(g) success or failure of the management of the Token Vendor and/or the Project Group in implementing
+
+business and growth strategies; and
+
+(h) changes in conditions affecting the blockchain or financial technology industry, the general
+economic conditions or market sentiments, or other events or factors.
+
+The funds raised in the Token Distribution Event are exposed to risks of theft
+
+The Token Vendor will make every effort to ensure that the funds received from the Token
+Distribution Event will be securely held at such addresses as directed by the Token Vendor
+(“Receiving Addresses”). Further, upon receipt of the funds, the Token Vendor will make every
+effort to ensure that the funds received will be securely held through the implementation of
+security measures. Notwithstanding such security measures, there is no assurance that there will
+be no theft of the cryptocurrencies as a result of hacks, mining attacks (including but not limited
+to double-spend attacks, majority mining power attacks, and “selfish-mining” attacks),
+sophisticated cyber-attacks, distributed denials of service or errors, vulnerabilities or defects on
+the Receiving Addresses, the applicable blockchain(s), or any other blockchain, or otherwise.
+Such events may include, for example, flaws in programming or source code leading to
+
+30
+(2)
+
+G3)
+
+exploitation or abuse thereof. In such event, even if the Token Distribution Event is completed,
+the Token Vendor may not be able to receive the cryptocurrencies raised and the Token Vendor
+may not be able to utilise such funds for the development of the Project, and the launch of the
+Project might be temporarily or permanently curtailed. As such, the issued Tokens may hold little
+worth or value, and this would impact their trading price. The Tokens are uninsured, unless the
+Purchaser specifically obtains private insurance to insure them. In the event of any loss or loss of
+value of the Tokens, the Purchaser may have no recourse.
+
+RISKS RELATING TO THE RECEIVING ADDRESSES AND WALLETS
+
+The Receiving Addresses may be compromised and the cryptocurrencies may not be able to be
+disbursed
+
+The Receiving Addresses are designed to be secure. However, in the event that the Receiving
+Addresses are, for any reason compromised (including but not limited to scenarios of the loss of
+keys to such Receiving Addresses), the funds held by the Receiving Addresses may not be able
+to be retrieved and disbursed, and may be permanently unrecoverable. In such event, even if the
+Token Distribution Event is successful, the Token Vendor and/or the Project Group will not be
+able to receive the funds raised and the Token Vendor and/or the Project Group will not be able
+to utilise such funds for the development of the Project, and the implementation of the Project
+might be temporarily or permanently curtailed. As such, distributed Tokens may hold little worth
+or value, and this would impact their trading price.
+
+The loss or compromise of information relating to the Purchaser ’s wallet may affect the
+Purchaser ’s access and possession of the Tokens
+
+The Purchaser’s access to the Tokens in a cryptocurrency wallet (“Wallet”) depends on, among
+other things, the safeguards to the information to such Wallet, including but not limited to the
+user account information, address, private key, and password. In the event that any of the
+foregoing is lost or compromised, the Purchaser’s access to the Wallet may be curtailed and
+thereby adversely affecting the Purchaser’s access and possession to the Tokens, including such
+Tokens being unrecoverable and permanently lost.
+
+The Wallet or Wallet service provider may not be technically compatible with the Tokens
+The Wallet or Wallet service provider may not be technically compatible with the Tokens which
+may result in the delivery of Tokens being unsuccessful or affect the Purchaser’s access to such
+
+Tokens.
+
+RISKS RELATING TO THE TOKEN VENDOR AND THE PROJECT GROUP
+
+The Project is initiated by the Token Vendor and the Project Group. Any events or circumstances
+which adversely affect the Token Vendor and/or the Project Group may have a corresponding
+adverse effect on the Project if such events or circumstances affect the Token Vendor’s and/or the
+
+31
+Project Group’s ability to launch the Project. This would correspondingly have an impact on the
+trading price of the Tokens.
+
+There may be weaknesses, vulnerabilities or bugs in the protocols, systems, and smart contracts
+in connection with the Project
+
+As blockchain and smart contract technology is still relatively in its early stage of development
+and its application of experimental nature carries significant operation, technological, financial,
+regulatory and reputational risks, there are inherent risks that such protocols, systems and/or
+smart contracts could contain weaknesses, vulnerabilities or bugs.
+
+Purchasers of Tokens should understand and accept that there are no warranties that Tokens are
+fit for a particular purpose or do not contain any weaknesses, vulnerabilities or bugs which would
+cause loss in their worth or value. In the event that any of the aforementioned risks materialises,
+the business strategies, results of operations and outlook of the Token Vendor and/or the Project
+Group may also be adversely affected.
+
+The Token Vendor and/or the Project Group may experience system failures, unplanned
+interruptions in their network or services, hardware or software defects, security breaches or
+other causes that could adversely affect the infrastructure network of the Token Vendor and/or
+the Project Group, and/or the Project
+
+The Token Vendor and/or the Project Group is/are unable to anticipate when there would be
+occurrences of hacks, cyber-attacks, mining attacks (including but not limited to double-spend
+attacks, majority mining power attacks, and “‘selfish-mining” attacks), distributed denials of
+service or errors, vulnerabilities or defects in the Project, the Tokens, the Receiving Addresses,
+the Wallet or any technology (including but not limited to smart contract technology) on which
+the Project Group, the Project, the Tokens, the Receiving Addresses, and the Wallet rely or on the
+applicable blockchain(s). Such events may include, for example, flaws in programming or source
+code leading to exploitation or abuse thereof. The Token Vendor and/or the Project Group may
+not be able to detect such hacks, mining attacks (including but not limited to double-spend
+attacks, majority mining power attacks, and “‘selfish-mining” attacks), cyber-attacks, distributed
+denials of service errors vulnerabilities or defects in a timely manner, and may not have sufficient
+resources to efficiently cope with multiple service incidents happening simultaneously or in rapid
+succession.
+
+The network or services of the Token Vendor and/or the Project Group, which would include the
+Project, could be disrupted by numerous events, including natural disasters, equipment
+breakdown, network connectivity downtime, power losses, or even intentional disruptions of their
+services, such as disruptions caused by software viruses or attacks by unauthorised users, some of
+which are beyond the control of the Token Vendor and/or the Project Group. Although the Token
+Vendor and the Project Group will be taking steps against malicious attacks on their appliances or
+infrastructure, which are critical for the initiation and maintenance of the Project and its other
+services, there can be no assurance that cyber-attacks, such as distributed denials of service, will
+
+32
+not be attempted in the future, and that any of the enhanced security measures of the Token
+Vendor and/or the Project Group will be effective. The Token Vendor and/or the Project Group
+may be prone to attacks on their infrastructure intended to steal information about its technology,
+financial data or user information or take other actions that would be damaging to the Token
+Vendor, the Project Group, and/or users of the Project. Any significant breach of the security
+measures of the Token Vendor and/or the Project Group or other disruptions resulting in a
+compromise of the usability, stability and security of the network or services of the Token Vendor
+and/or the Project Group (including the Project) may adversely affect the trading price of the
+Tokens.
+
+The Token Vendor and/or the Project Group are dependent in part on the location and data
+centre facilities of third parties
+
+The infrastructure network of the Token Vendor and/or the Project Group is in part established
+through servers which they own and house at the location facilities of third parties, and servers
+that they rent at data centre facilities of third parties. If the Token Vendor and/or the Project
+Group is/are unable to renew its data facility lease on commercially reasonable terms or at all, the
+Token Vendor and/or the Project Group may be required to transfer their servers to a new data
+centre facility, and may incur significant costs and possible service interruption in connection
+with the relocation. These facilities are also vulnerable to damage or interruption from, among
+others, natural disasters, arson, terrorist attacks, power losses, and telecommunication failures .
+Additionally, the third party providers of such facilities may suffer a breach of security as a result
+of third party action, employee error, malfeasance or otherwise, and a third party may obtain
+unauthorised access to the data in such servers. As techniques used to obtain unauthorised access
+to, or to sabotage systems change frequently and generally are not recognised until launched
+against a target, the Token Vendor, the Project Group, and/or the providers of such facilities may
+be unable to anticipate these techniques or to implement adequate preventive measures. Any such
+security breaches or damages which occur that impact upon the infrastructure network of the
+Token Vendor and/or the Project Group, and/or the Project may adversely impact the price of the
+Tokens.
+
+General global market and economic conditions may have an adverse impact on the operating
+performance, results of operations and cash flows of the Token Vendor and/or the Project
+Group
+
+The Token Vendor and/or the Project Group have/has been and could continue to be affected by
+general global economic and market conditions. Challenging economic conditions worldwide
+have from time to time, contributed, and may continue to contribute, to slowdowns in the
+information technology industry at large. Weakness in the economy could have a negative effect
+on the business, operations and financial condition of the Token Vendor and/or the Project Group,
+including decreases in revenue and operating cash flows. Additionally, in a down-cycle economic
+environment, the Token Vendor and/or the Project Group may experience the negative effects of
+increased competitive pricing pressure and a slowdown in commerce and usage of the Project.
+Suppliers on which the Token Vendor and/or the Project Group rely for servers, bandwidth,
+
+33
+location and other services could also be negatively impacted by economic conditions that, in
+turn, could have a negative impact on the operations or expenses of the Token Vendor and/or the
+Project Group. There can be no assurance, therefore, that current economic conditions or
+worsening economic conditions or a prolonged or recurring recession will not have a significant
+adverse impact on the business, financial condition and results of operations of the Token Vendor
+and/or the Project Group, and hence the Project, which may indirectly impact the trading price of
+the Tokens.
+
+The Token Vendor, the Project Group, the Tokens and/or the Project may be affected by newly
+implemented regulations
+
+The Token Vendor, the Project Group, the Project, and/or the Tokens may be affected by newly
+implemented regulations relating to cryptocurrencies or digital tokens markets, including having
+to take measures to comply with such regulations, or having to deal with queries, notices, requests
+or enforcement actions by regulatory authorities, which may come at a substantial cost and may
+also require substantial modifications to the Project. This may impact the appeal of the Project for
+users and result in decreased usage of the Project. Further, should the costs (financial or
+otherwise) of complying with such newly implemented regulations exceed a certain threshold,
+launching the Project may no longer be commercially viable and the Token Vendor and/or the
+Project Group may opt to discontinue the Project and/or the Tokens. Further, it is difficult to
+predict how or whether governments or regulatory authorities may implement any changes to
+laws and regulations affecting distributed ledger technology and its applications, including the
+Project and the Tokens. The Token Vendor and/or the Project Group may also have to cease
+operations in a jurisdiction that makes it illegal to operate in such jurisdiction, or make it
+commercially unviable or undesirable to obtain the necessary regulatory approval(s) to operate in
+such jurisdiction. In scenarios such as the foregoing, the trading price of Tokens will be adversely
+affected or Tokens may cease to be traded.
+
+The regulatory regime governing blockchain technologies, cryptocurrencies, tokens, and token
+offerings such as the Token Distribution Event, the Project, and the Tokens is uncertain, and
+regulations or policies may materially adversely affect the development of the Project and the
+utility of the Tokens
+
+Regulation of tokens (including the Tokens) and token offerings (such as the Token Distribution
+Event), cryptocurrencies, blockchain technologies, and cryptocurrency exchanges is likely to
+rapidly evolve, varies significantly among international, federal, state and local jurisdictions, and
+is subject to significant uncertainty. Various legislative and executive bodies in the relevant
+jurisdictions may in the future adopt laws, regulations, guidance, or other actions, which may
+severely impact the development and growth of the Project, the adoption and utility of the Tokens
+or the issue, offer, and sale of the Tokens by the Token Vendor. Failure by the Token Vendor
+and/or the Project Group or users of the Project to comply with any laws, rules and regulations,
+some of which may not exist yet or are subject to interpretation and may be subject to change,
+could result in a variety of adverse consequences, including civil penalties and fines.
+
+34
+Blockchain networks also face an uncertain regulatory landscape in many foreign jurisdictions
+and may, in the near future, adopt laws, regulations or directives that affect the Project. Such
+laws, regulations or directives may directly and negatively impact the business of the Token
+Vendor and/or the Project Group. The effect of any future regulatory change is impossible to
+predict, but such change could be substantial and materially adverse to the development and
+growth of the Project and the adoption and utility of the Tokens.
+
+New or changing laws and regulations or interpretations of existing laws and regulations may
+materially and adversely impact the value of the currency in which the Tokens may be sold, the
+liquidity of the Tokens, the ability to access marketplaces or exchanges on which to trade the
+Tokens, and the structure, rights and transferability of Tokens.
+
+Token holders will have no control over the Token Vendor and/or the Project Group
+
+The holders of Tokens are not and will not be entitled to vote or receive dividends or distributions
+and are not and will not be treated as the holder of shares in the Token Vendor and/or the Project
+Group for any purpose, nor will anything be construed to confer on the Purchaser any of the
+rights of a member of the Token Vendor and/or the Project Group or any right to vote for the
+election of directors or upon any matter submitted to members at any meeting thereof, or to give
+or withhold consent to any corporate action or to receive notice of meetings, or to receive
+subscription rights or otherwise.
+
+The Purchaser may lack information in respect of the Token Vendor, the Project Group, the
+Tokens, and/or the Project
+
+The Purchaser may not be able to obtain all the information it would want regarding the Token
+Vendor, the Project Group, the Tokens, and/or the Project, on a timely basis or at all. It is possible
+that the Purchaser may not be aware on a timely basis of material adverse changes that have
+occurred. Information in relation to the development of Tokens may also be highly technical by
+nature. As a result of these difficulties, as well as other uncertainties, the Purchaser may not have
+accurate or accessible information about the Token Vendor, the Project Group, the Tokens, and/or
+the Project.
+
+There may be risks relating to acts of God, natural disasters, wars, terrorist attacks, riots, civil
+commotions widespread communicable diseases and other force majeure events beyond the
+control of the Token Vendor and/or the Project Group
+
+The Token Distribution Event and the performance of the activities of the Token Vendor, the
+Project Group, and/or the Project may be interrupted, suspended or delayed due to acts of God,
+natural disasters, wars, terrorist attacks, riots, civil commotions, widespread communicable
+diseases and other force majeure events beyond the control of the Token Vendor and/or the
+Project Group. Such events could also lead to uncertainty in the economic outlook of global
+markets and there is no assurance that such markets will not be affected, or that recovery from the
+global financial crisis would continue. In such events, the business strategies, results of operations
+
+35
+and outlook of the Token Vendor and/or the Project Group may be materially and adversely
+affected. Further, if an outbreak of such infectious or communicable diseases occurs in any of the
+countries in which the Token Vendor, the Project Group, the developers, data providers and/or
+data consumers have operations in the future, market sentiment could be adversely affected and
+this may have a negative impact on the Project and community.
+
+There may be unanticipated risks arising from the Tokens
+
+Cryptographic tokens such as the Tokens are a relatively new and dynamic technology. In
+addition to the risks included herein, there are other risks associated with the Purchaser’s
+purchase, holding and use of the Tokens, including those that the Token Vendor and/or the
+Project Group cannot anticipate. Such risks may further materialise as unanticipated variations or
+combinations of the risks discussed herein.
+
+36

@@ -1,0 +1,462 @@
+(2S UMBRELLA
+
+Securely bring the
+
+\ D7
+Umbrella Network is a community owned, decentralized oracle service
+providing secure, low cost, and massively scalable data solutions to
+decentralized finance (DeFi) applications.
+
+Umbrella provides access to data previously unavailable to blockchain
+developers across multiple segments including mid and long tail crypto
+assets as well as real world financial data.
+
+At the center of the Umbrella Network is the SUMB token. It helps in
+securing the network and is used by the community to stake, vote on
+key decisions, and earn rewards & user fees.
+
+Umbrella solves the scalability problem in oracles by leveraging a layer
+2 solution and utilizing merkle trees for batching transactions. The
+network is community owned and governed with the majority of token
+supply allocated to the community.
+
+The Umbrella Network
+
+INTRODUCTION
+
+A highly scalable and inexpensive community owned | Current Oracles
+Oracle is not only possible, but essential to creating a
+; ; ; ; 9 Or Costly & Slow.
+truly decentralized financial system. Unlike current
+oracles that process a single piece of data per
+transaction, Umbrella Network uses Layer 2 Merkle J)
+
+trees to aggregate the data, allowing thousands of
+
+Very limited crypto data.
+
+. ; abe Have various elements of centralization.
+transactions to be bundled and performed into a
+
+single transaction and for a single fee.
+
+This exponentially reduces the amount of time and Umbrella Network
+
+cost to bring real world data on chain. We also use
+
+= Inexpensive & Fast.
+Delegated Proof of Stake (DPoS) to ensure
+
+participants are economically incentivized to validate Diversity of Data - mid tail, long
+data accurately. The Umbrella community will own tail of market, volatility and
+
+the majority of our UMB token and will elect real-world non crypto data.
+Validator nodes to serve as representative
+
+governing bodies over the Oracle service. by Decentralized from top to bottom.
+
+Our goals at Umbrella Network:
+
+Create an oracle with a decentralized network
+invulnerable to influence, manipulation, or attack.
+
+Offer a low-cost data solution that promotes high volume scalability
+as well as wider adoption and diversification of data offerings.
+
+Create a truly decentralized network that is owned by a
+community who retains governance while keeping incentives
+in place to reward early contributors for their efforts.
+TECHNICAL
+ARCHITECTURE
+
+The technical architecture of Umbrella Network
+ensures that only cryptographically verified and
+economically incentivized truthful data,
+
+is available to users.
+
+The cryptographic proofs are stored on the Layer 1 blockchain such
+that the user can query at any time for pricing data and can verify that
+the pricing on Layer 1 is correct with the help of cryptographic proofs.
+This allows data to be streamed onto Layer 2 while guaranteeing to be
+cryptographically correct.
+
+This is possible because the hash of the data will always correspond to
+
+a unique hash value. If even one character changes within that data, the
+entire hash value changes. When there is a lot of data, storing all of it is
+
+not possible on Layer 1, hence Umbrella aggregates and processes that
+first on Layer 2, ensuring that we are able to provide the required data
+
+ina way which is still efficiently fast, inexpensive, and where the data
+
+remains verifiably correct and unaltered.
+
+Umbrella’s nodes pull data from various APIs and arrive at consensus
+via an on chain smart contract. Our solution uses Merkle Trees to allow
+nodes to validate thousands of transactions for the price of a single
+transaction.
+THE PLATFORM -
+MERKLE TREES
+
+Umbrella is able to achieve scalability via
+an innovation called the Merkle tree.
+
+A Merkle tree, or binary hash tree, is a data structure that allows efficient
+and secure verification of large amounts of data. They help to ensure
+that data blocks received from other peers in any peer-to-peer network
+is received undamaged and unaltered. Using Merkle trees, decentralized
+applications can bring thousands of real-world data points on chain at a
+low cost without sacrificing security or data integrity.
+
+For blockchain transactions, Merkle trees help organize data that makes
+the verification process use less computational resources.
+
+Top Hash Let's focus on the diagram to the left.
+
+Each leaf (L1-L4) on the Merkle Tree represents a
+data point from an oracle. The leaves are rolled from
+the lowest leaf up to the Root Hash. The final Root
+Hash 1-0 Hash is a unique identifier for the entire block of
+
+Hash 11 transactions contained within the merkle tree.
+
+A proof of stake consensus is conducted on the
+Root Hash representing all the data in the tree, and
+the final validated set of transactions are written on
+chain for the cost of one transaction fee.
+
+Hash Hash Hash Hash
+0-0 O-1 1-0 1-1
+hash (L1) hash (L1) hash (L1) hash (L1)
+
+Data blocks
+THE PLATFORM -
+
+Umbrella Network
+has primarily
+two types of data:
+
+Data that is always available on chain. These tend
+to be some of the most frequently used data sets
+including top crypto pairs, top crypto-fiat pairs
+and some of the most popular data feeds from
+our developers such as implied volatility for BTC
+and ETH. Majority of the current large oracles
+work with FCD.
+
+is a rich and full data set for crypto pairs, indexes,
+implied and realized volatility, and much more.
+These data pairs are anchored to Layer 1 using
+Merkle trees and are very fast and scalable.
+
+Umbrella will make 84 of the most commonly
+used crypto data pairs available on our
+Layer 2 system for free.
+
+Furthermore, we will provide more than 50 of
+the most common data pairs on the chain
+updated frequently, once again for free, to all
+developers. These will include Fiat Pairs, Crypto
+Pairs, Implied and Realized Volatility and Indexes
+like the DeFi Pulse Index, among others.
+THE PLATFORM -
+
+VALIDATOR REGISTRY,
+STAKING BANK, & THE CHAIN
+
+Node operators are called “validators”
+
+within the Umbrella Network.
+
+Validator Registry
+
+The contract owner manages the
+validators within the validator
+registry and can add or remove
+validators at their discretion.
+Each validator is prescribed a set
+of properties, including name,
+Ethereum public address, and
+the HTTP(S) location of a node.
+
+Staking Bank
+
+In order to validate data,
+validators first must deposit
+tokens into what's called a
+staking bank. During consensus,
+the weight of each validator’s
+vote is determined by the
+amount of tokens they have
+staked. Because Umbrella uses a
+Delegated Proof of Stake (DPoS)
+consensus algorithm, delegators
+
+can choose the validators who
+will cast votes on their behalf.
+
+The Chain
+
+Once consensus is initiated, a
+validator leader (the leader is
+randomly computed based on
+the number of validators) first
+retrieves results from HTTP(S)
+requests and builds a block. The
+validator then presents the
+blocks to other validators, who
+double-check the block by
+independently executing the
+HTTP(S) requests and verifying
+the leader’s results.
+
+If the block’s results are accurate,
+the validator leader signs the block.
+
+In order to be accepted by the
+chain contract, a majority validator
+stake must sign off on the block.
+Umbrella utilizes a Delegated Proof of Stake (DPoS) that benefits from
+the active participation of the community and token holders.
+
+UMB Utility Token holders will:
+
+Select Validator Participate in Stake tokens in Generate rewards
+Nodes governance consensus rounds for staking tokens
+
+The DPoS system puts the power in the hands of UMB holders to
+select Validator Nodes who participate in the consensus process of
+determining market data.
+
+UMB holders are incentivized to select the best Validator Nodes
+hat are the most likely to consistently vote in the majority in
+consensus rounds. Their tokens will be used by the Validator Nodes
+in the staking process. In addition, they will receive a portion of the
+user fees paid to their elected Validator Node. UMB holders that
+stake their tokens with a Validator Node will receive rewards in the
+orm of vested or unvested forms of UMB tokens.
+
+THE PLATFORM -
+VALIDATOR POOLS
+
+By participating in Validator Pools, UMB holders
+
+can generate yield on their UMB holdings.
+
+They will receive a pro-rata share of fees paid by developers using the
+
+Umbrella Network — net of any direct costs.
+
+Validator
+
+odes will open a vault into which UMB holders can allocate
+
+their tokens. Validator Nodes will use these tokens during consensus
+rounds as part of their tokens at stake. Provided the Validator Node
+
+votes with
+fees. Valida
+
+by
+
+The Umbre
+
+wil
+
+operating costs. The balance of the tokens wi
+basis between Validator Nodes accord
+
+pu
+
+the majority will receive a pro rata por
+
+Va
+pa
+
+he majority, then they will participate in the sharing of user
+tor Nodes that vote incorrectly or falsely will be penalized
+
+losing a portion of the tokens put at stake by them. Tokens staked
+by the community will never be subjected to any penalty.
+
+la Foundation will receive 25% of User Fees. The proceeds
+
+be used for the continued development of the network as well as
+
+at stake by each Validator Node. Validato
+
+idator Nodes will then pass their portion o
+
+| be split on a pro-rata
+
+ing to how many tokens were
+
+Nodes that vote with
+
+ion of 25% of the User Fees.
+
+User Fees onto the
+
+ticipants in the Validator Pools on a pro-rata basis.
+THE PLATFORM -
+
+Alternatively, the rewards are triggered on a specified
+timeline (i.e. 1 year) if the business milestones are not
+yet achieved by the specified timeline. There will be 4
+milestones which are primarily based on the number
+of data requests made for Umbrella Oracle data.
+
+First milestone round, Milestone 1.
+
+Umbrella will generate 111,872 rUMB' everyday after
+launch. rUMB' will be redeemable for 1 UMB when
+certain business milestones are reached or 1 year
+from the start of Milestone 1. Each day, a maximum
+of 223,744 rUMB' can be exchanged for UMB. This
+rUMB' for UMB exchange process will take 6
+months or less.
+
+Second milestone round, Milestone 2.
+
+Will mirror the first. The main difference is that
+rUMB? for Milestone 2 will be issued each day until
+business milestones are reached or 1 year from the
+start of Milestone 2. Once milestones are reached
+or time expires, up to 223,744 rUMB? will be
+redeemable for UMB. Same as for Milestone 1, this
+Milestone 2 rUMB? for the UMB exchange process
+will take 6 months or less.
+
+Milestones 3 and 4 will follow the same formula.
+
+SZ
+
+EN ‘
+4
+
+!
+
+—
+Let’s walk through how a user would benefit from the various systems
+
+described above. In this case, ou
+
+r user is using a DeFi application that
+
+requires real time financial data from off chain.
+
+Here’s how a transaction would proceed in this scenario:
+
+a DeFi application.
+
+The DeFi application
+
+The DeFi application
+
+The DeFi application
+
+Let's apply the user flow to a rea
+
+The user initiates a transaction through
+
+The user deposits funds with the DeFi application smart
+contract for the transaction.
+
+queries Umbrella Network Reverse
+
+Oracle to retrieve price of asset and Merkle proof.
+
+pays a single data fee to Umbrella
+
+Network for the external information.
+
+provides data and proof to the user
+
+and completes transaction.
+
+The user may then use the proof provided by Umbrella
+etwork to confirm accuracy of the data and transaction.
+
+-world example.
+
+Alex is not able to buy shares of GameStop Corp (GME) because her
+centralized broker provider, Robinhood, has halted purchases of that
+
+stock for retail investors. Frustra
+a
+derivative of the stock. She wan
+t
+
+queries oracle partner Umbrella
+associated Merkle Proof. Linear
+
+(in this case the stock price) and
+
+he necessary funds with Linear i
+
+ted, Alex turns to the DeFi ecosystem
+
+nd leading delta-one asset exchange Linear Finance to trade a direct
+
+s to buy 10 shares of GME, so deposits
+n order to purchase. Linear Finance
+etwork for the price of GME and the
+Finance pays a single data fee to
+
+Umbrella for the off-chain information. Linear then provides the data
+
+displays the quote to Alex. She
+
+accepts the price and executes t
+
+he trade. Alex now owns the tokenized
+
+version of GME, thanks to both Linear Finance and Umbrella Network,
+
+and which she now holds permis
+
+sionless.
+FIN
+
+Umbrella
+
+AL NOTES
+
+etwork’s unique architecture allows Umbrella participants
+
+and partners to bring external data on chain at a scale not possible
+
+with othe
+for valida
+
+current oracle solutions. Our Merkelized Layer 2 solution
+ing blocks, together with a decentralized and community
+
+owned network of validators, ensures that Umbrella can provide a
+low cost, scalable solution while ensuring the security and
+
+accessibil
+
+ty only decentralization can promise.
+
+Oracles are the bridge in the DeFi ecosystem that can connect across
+
+applicatio
+
+ns, blockchains, and the outside world. The Oracle’s
+
+importance is often understated. Umbrella Network is on a mission
+to bring massively scalable, decentralized Oracles on chain in a format
+
+which is low cost, secure, and viable for developers to use. Join us in
+our journey to help build and transform the decentralized economy
+
+by bringing the world’s data on chain.
+
+Please join us on Telegram,
+
+follow
+
+us on Twitter and Medium.

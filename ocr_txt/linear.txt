@@ -1,0 +1,400 @@
+12th January 2021
+
+Linear Whitepaper v1.1
+A Cross-Chain Compatible, Decentralized Delta-One Asset Protocol with Unlimited Liquidity
+
+ABSTRACT
+
+Linear Finance (“Linear”) is a non-custodial, cross-chain compatible, delta-one asset protocol. Linear’s
+long term DeFi vision is to increase inclusiveness and democratize access to investment assets (digital and
+traditional). Tremendous value exists in the ability for investors to easily and quickly invest, save fees, and
+secure assets at fair market value. Linear combines substantial technical experience from numerous crypto
+projects with extensive financial experience in exotic and structured assets from traditional global asset
+management firms to bring to market one of the first DeFi projects built upon Ethereum with cross-chain
+compatibility. Linear will allow users to build and manage spot or portfolio exposures with a slew of
+innovative digital and traditional financial products. Linear is backed by our Ethereum-based Linear Token
+(LINA) with synthetic assets built on other EVM compatible chains first and other prominent blockchains
+in the long run, making the staking, investing, and redemption process easier, quicker and with substantially
+lower transaction fees whilst maintaining access to the Ethereum DeFi ecosystem.
+
+Linear is a non-custodial cross-chain compatible DeFi protocol with unlimited liquidity and serves in the
+creation of synthetic assets (Liquids) with zero slippage. The backbone to Linear’s protocol is our
+collateralized debt pool, backed by our Linear token (LINA), and eventually other digital and real world
+assets. Users who have provided collateralized assets to the debt pool are able to “build” Linear USD
+(CUSD) which can then be used to purchase synthetic assets (Liquids) on our exchange. The collateralized
+assets are subsequently pooled to enable instantaneous liquidity and serve as a counterparty. LINA — will
+also be a governance token enabling holders to vote on distribution models, assets to be listed, oracle
+selection, pledge ratio etc. LINA holders within the debt pool will obtain pro-rata fees from the building of
+Liquids.
+
+The LINA token will adopt an inflationary model to enhance staking incentives and will have liquidity
+mining programs to encourage usage of the exchange and stability of the pool. Synthetization of assets will
+focus on cryptocurrencies, commodities and, more importantly, traditional assets such as market indices
+and thematic theme exposures.
+
+The long term vision of Linear is to provide a platform for any user to gain exposure to a wide range of
+assets without slippage and settlement time. Furthermore, Linear Finance will act as a reliable gateway with
+the adoption of cryptocurrency we saw in 2020 and the collaboration of Decentralized Finance (DeFi) and
+Centralized Finance (CeFi). Applications can be developed on top of Linear for CeFi / DeFi composability.
+12th January 2021
+
+LINA token - Collateral and Governance
+LINA as the Base Collateral with other Digital Asset Options
+
+LINA tokens are the base collateral to create Liquids using Buildr, which is a decentralized application for
+collateral pool and Liquids management. The creation of Liquids will require a pledge ratio which is over
+100%, i.e. over-pledged. Over-pledging is necessary to ensure the volatility of the pledged assets do not
+adversely affect the stability of the entire system. In the long run, the pledge ratio can gradually be optimized
+and this will be determined by the community-driven LinearDAO.
+
+Compared to other competitors which are testing to accept cryptocurrency such as Ether (ETH) as collateral,
+Linear protocol will take a hybrid approach instead. As such, Buildr will accept a mixture of LINA tokens
+and other digital assets as collateral. There will be a threshold on the size of non-LINA tokens to be accepted
+in order to stabilize the LINA token economy. The threshold is subject to community adjustment with the
+inception of the LinearDAO.
+
+LINA Staking Rewards
+
+Incentives are provided to LINA stakers in the following ways:
+
+Pro-rata Exchange Fee
+
+Transaction fees are generated whenever a user exchanges one type of Liquid to another using our
+Linear.Exchange platform. The initial transaction fee is set to be 0.25%. Stakers will obtain such rewards
+(in (USD) weekly on a pro-rata basis given that their Pledge Ratio (P ratio) is above the threshold.
+
+The non LINA-type collateral part of the staking (if any) is only partially entitled to such reward.
+Inflationary Reward
+
+Linear adopts an inflationary tokenomics with a decreasing rate until a terminal floor is reached. We share
+the same vision as Ethereum in the sense that the imminent inflation reward is important for the explosive
+growth of the platform while the long term terminal rate should help stabilizing the total LINA supply in
+circulation. Currently the starting inflation is set as 60% (of the tokens designated for staking) and the
+inflation going forward depends on the circulating supply and the expected growth of the exchange volume.
+
+There will be a yearly review in the format of LinearDAO.
+
+Stakers will obtain such reward weekly on a pro-rata basis given that their P ratio is above the threshold.
+The non LINA-type collateral part of the staking (if any) is only partially entitled to such reward.
+
+Yield Farming Campaign
+12th January 2021
+
+Given the current DeFi environment and yield farming trend, we realize the importance of appealing to
+yield farmers upon the launch of the project in order to help bootstrap the debt pool and have users
+experience the usability and ease of our protocol. As such, we view this as a cost of user acquisition and
+upon the launch of Linear, in addition to the proposed token distributions, which will be front loaded in the
+first two years, users who fully utilize the exchange will have token bonuses, allowing them to yield a larger
+portion of the reward pool. Whilst our LINA token and CUSD are ERC-20 tokens, Liquids are EVM
+compatible and hence, they can all be deposited by users in third party pools such as Balancer, Uniswap,
+and Curve to facilitate yield stacking.
+
+In addition, we will also be leveraging the use of token rewards to also incentivize users to help stabilize
+the debt pool in certain instances. When the debt pool becomes unbalanced in exposures e.g. if a large
+number of users create Liquids against gold (Long), we will provide users who counterbalance this trade
+by creating a Liquid short against gold with additional token rewards, ultimately reducing the volatility and
+increasing the safety of the debt pool.
+
+Pledge Ratio
+
+The starting ratio is initially set at an optimal rate of 500% and will be subject for further review by the
+LinearDAO. The initially high P ratio is essential for the long term growth of the platform amid black swan
+or volatile incidents. The P ratio varies with the price variation of LINA token. If the P ratio of a staker
+rises, the user can choose to build more Liquids as long as the P ratio is not below the threshold. On the
+other hand, if the P ratio of a staker drops below the threshold, the user is required to stake more LINA or
+burn part of the Liquids until the ratio is at least on par with the threshold in order for him to claim pro-rata
+platform transaction fees.
+
+The Linear Pool
+
+The existence of the Linear Pool is the key to the overall platform as it acts as “an decentralized
+counterparty” to all Liquids exchanges, thus generating unlimited liquidity for platform users. For LINA
+stakers, they incur a debt whenever using Buildr to create a Liquid. The debt value varies with respect to
+all the Liquids in the system. For example, if all the Liquids on the platform are synthetic gold ({XAU), the
+price fluctuation of gold is insignificant as gold price increases the corresponding debt value of each (XAU
+holder increases the same amount, or vice versa.
+
+Users, i.e. the LINA stakers hence act as liquidity providers while using the platform at the same time.
+
+Depending on the Liquids created, the overall debt level changes according to the overall long / short ratio.
+Below are the 2 major journeys that normal users and market-makers have:
+
+Normal Users
+
+1. Get LINA tokens via our fiat payment gateway partners, CEXs or DEXs
+2. Stake LINA tokens via Linear.Buildr to build (USD
+12th January 2021
+
+3. Get Liquids exposure using (USD and exchange among different Liquids via Linear.Exchange
+4. Claim the transaction split and staking rewards
+5. Convert the Liquids exposure back to (USD
+6. Burn the CUSD to unlock the staked LINA tokens
+Market Maker
+
+1. Get LINA tokens via our fiat payment gateway partners, CEXs or DEXs
+
+2. Stake LINA tokens via Linear.Buildr to build (USD
+
+3. Depending on the net position of a particular Liquid, for example, if the position of (XAU is net
+long 50%, marketmaker can help stabilize the debt pool by doing the other side (i.e. go short on
+XAU in this case)
+
+4. Linear will incentivize the marketmaker to do so by providing extra yield (i.e. LINA tokens) on top
+of the inflation/staking reward and transaction fee split for their effort to stabilize the debt pool
+12th January 2021
+
+Linear.Exchange
+The Issue
+
+Liquids provide a seamless exposure for all users. Imagine a world without Linear.Exchange, when Alice
+wants to switch her exposure from CAC 40 index to Bitcoin, it would take her approximately two days to
+get the proceeds from her brokerage account because of T+2 settlement timeframe and another 1 to 2 days
+for the broker to direct a transaction to Alice’s bank account. Afterwards, it would be another couple of
+days for Alice to wire money from her bank account to a cryptocurrency exchange before she can finally
+switch her exposure into Bitcoin, ultimately exposing her to a potential negative price movement.
+
+The Solution
+
+Linear.Exchange can seamlessly solve the issue with the debt pool concept and unlimited liquidity. Any
+Liquids settlement timeframe can be lowered into seconds with the help of blockchain technology (as
+compared to T+2 in traditional securities). Linear is now working with selected public blockchains with
+EVM compatibility to further lower the settlement timeframe with block times as low as few seconds and
+instant finality. In this case we can combine the best of the both worlds: the most sought-after tooling and
+infrastructure of Ethereum and the high TPS of other public blockchains. In addition, when creating
+Liquids, as it will be on the other blockchains, the transaction fees will be minimal, compared to the high
+gas fees of Ethereum. The front-running problem of some existing platforms can also be very much
+alleviated as the oracle will be able to refresh prices in a much higher frequency at much lower fees.
+
+For All Investment Exposure
+
+One of the goals of the Linear.Exchange is to not only reduce the hassle and risk involved in cross-assets
+investment but to also expand the breadth of investable assets. Upon our launch, Linear.Exchange will
+support not only cryptocurrency but also traditional assets such as commodities, forex, market indices,
+thematic exposures, and ultimately equities. In addition, we will start an internal group that focuses on
+building thematic exposures within the crypto world and traditional equities depending upon the wishes
+and asks from our users and approved by the governance base. What’s more, Linear will be building our
+exchange functionalities that will allow users to effectively manage their exposure and additional asset
+management functionalities such as portfolio management and analytics.
+12th January 2021
+
+System Architecture
+
+In order to effectively solve the high transaction fee and oracle frontrunning problem of existing DeFis on
+Ethereum, Linear is adopting a cross-chain approach by supporting both the Ethereum and EVM-
+compatible blockchains. From a user’s perspective, he would only need to initialize both an Ethereum-
+based wallet and the EVM-compatible wallet. Operation-wise it would be exactly the same as handling the
+wallets separately, while Linear will help pegging the two wallets and record the pegging on smart contracts.
+By separating the smart contract suite of Linear into 2 different blockchains, the following benefits can be
+achieved:
+
+1. As LinearDAO and Linear tokens (ERC-20) are deployed on Ethereum, we are able to maximize
+the support from the DeFi community (which is the largest on Ethereum so far) and cross-DeFi
+partnership with other protocols.
+
+2. For Buildr and Exchange the smart contract logic will be deployed on the EVM-compatible
+blockchains. The entire Liquids building and trading will be nearly free from gas fee, which greatly
+improves the user experience.
+
+3. Since the block time of our partnering EVM-compatible blockchains are much lower than that of
+Ethereum and the transaction fee is almost minimized as compared to the Ethereum side, Linear
+enables users to build Liquids with a more prompt oracle price update, making the window for
+front-running much lower. As such, stakers' tokens can be better protected and there will also be
+less concern on the debt inflation.
+
+4. The entire process will be optimized and automated in the near future to reduce any potential
+friction when cross-chain smart contracts are called.
+
+Building
+
+All assets are supported by the decentralized debt pool of LINA tokens and other major/stable
+cryptocurrencies. Hence holders of LINA (and/or other major/stable cryptos) can use their balances to build
+Liquids using Buildr.
+
+In order to reduce the gas fee required and improve the time required for building Liquids, Linear makes
+use of the best of both Ethereum and partner chain networks. This means that there will be a cross-chain
+operation when LINA tokens are pledged to build Liquids, utilizing smart contracts on both chains so that
+from a user perspective they will not notice the difference. The only extra requirement is for users to have
+a partner chain-based wallet which will be pegged to their Ethereum wallet so that when LINA tokens /
+other cryptos are swapped to the partner chain, the Liquids will be built on the partner chain.
+
+Once the Liquids are built, an user can perform seamless transactions and adjust his exposure freely with
+much lower fees and faster confirmation time due to the high performance of the EVM-compatible
+blockchains. Users can also perform cross-chain actions to convert Liquids back to Ethereum for cross-
+chain composability and use.
+
+For the optimal P ratio as initialized above, it can be adjusted upward or downward via community
+
+governance. The ratio of LINA: other acceptable collaterals can also be included shall the community
+12th January 2021
+
+provide a sensible proposal. On the other hand, stakers will create debt when building Liquids. In order to
+remove the exposure (i.e. to unlock the staked LINA tokens / other acceptable collaterals), Liquids have to
+be burned. If the prices of LINA increases, a user can choose to keep a higher P ratio as a price shock buffer
+
+OR build more (USD and maintain the minimal P ratio.
+
+Exchange
+
+For the best user experience, the Liquids exchange smart contract suites will be on the EVM-compatible
+partner blockchain. To trade on Linear.Exchange, the counterparty is different from that of traditional
+Centralized Exchanges (CEX) or any order book based Decentralized Exchanges (DEX) where a user trades
+against another user. Instead, users are trading directly with Linear’s smart contracts backed by a debt pool
+with the price provided by oracle providers to supply price feed of underlying assets.
+
+Linear will support Liquids pairing with respect to (USD and other large cap coins such as (BTC and CETH
+in the future. Depending on the base pair, it will be first burned into (USD form and a transaction fee of
+0.25% will be deducted from the proceeds before the conversion. The total supply of the newly built Liquids
+will then be updated.
+
+Fee Claim
+The fee claim procedures will be as follows:
+
+Depending on the amount of LINA users stake (any other digital assets staked will only be entitled to partial
+rewards), their rewards (a. Inflationary reward and b. transaction fee split) will be stored in the
+corresponding reward claim smart contracts.
+
+Users will be able to claim their unlocked weekly distribution every Wednesday. For inflationary reward,
+there is a lock-up of 1 year for ensuring the healthiness and long term growth of the platform. The locked
+up amount of inflationary reward will be automatically staked in the debt pool. This amount will also help
+to lower the overall P ratio of that user.
+12th January 2021
+
+Burning
+
+Stakers can reduce their debt and unlock the LINA tokens / others by burning the Liquids they built. The
+initial debt level and the current debt level of a particular user may vary, depending on the long / short ratio
+of the overall pool. Ideally speaking it should be 50:50 and Linear is incentivizing marketmakers to maintain
+this ratio by providing extra yields.
+
+Since the decomposition of Liquids (i.e. burning of debts) will be performed on the partner blockchain, the
+entire process can be done nearly instantaneously and nearly 0 fees.
+
+Debt Pool
+
+As the debt pool serves as the counterparty of users on the platform, there should be proper tracking on the
+segregate level of each user’s debt amount (and the changes over time due to platform use of building and
+decomposing by himself or others).
+
+This means that the current debt amount may be different from the initial debt amount of users. User’s debt
+proportion with respect to the entire debt pool is based on the building / decomposition history and the
+corresponding Liquids size, and overall debt pool level. This is a changing number determined by the entire
+Liquids portfolio of the platform as users are indeed betting against the decentralized debt pool.
+
+Oracle
+
+Oracle is the backbone of feeding our platform prices of different Liquids. Supported by the Dev team of
+our first EVM-compatible partner blockchain, we will be using oracles that can update prices in a nearly-
+instantaneous manner. Linear is also exploring some of the decentralized cross-chain oracle partners in long
+term.
+
+For inverse Liquids, Linear will be utilizing some existing short tokens, which is essentially a derivatives
+portfolio with 1x short exposure and regular re-balancing. Going forward, we can also implement short
+tokens with higher leverage e.g. 3x to balance the debt pool.
+12th January 2021
+
+Solutions for Existing Issues
+The following session concludes different issues that our current DeFi competitors still have:
+Improved Collateralization Mechanism
+
+There is no proper mechanism to deal with the high pledge ratio of synthetic asset landscape right now.
+Linear is solving the problem right at the beginning by accepting major stable cryptocurrency as collateral.
+The community can further decide the LINA:others ratio after the governance protocol is completed. In the
+
+long run Linear will look to tokenize real world assets as collaterals.
+Instant and Dynamic Mechanism with Partner Chains
+
+Secondly, the oracle front-running problem has long been an issue with Ethereum based dApps. To really
+enable financial innovation and permissionless finance, Linear is tackling the problem by cross-chain
+capabilities between Ethereum and other EVM-compatible chains. On the partnering EMV-compatible
+blockchain side, thanks to the low block time and much lower cost, exchanging Liquids on the platform is
+a seamless experience. On the other hand, for oracles on the Ethereum blockchain, a higher frequency of
+update will be used. Linear adopts a dynamic mechanism to shorten the update interval based on front-end
+interaction on the assets. When the gas fee is low or in the future when scalability is achieved, the oracle
+
+update gas fee can be directly embedded into the transaction performed by users.
+
+Liquidation Mechanism and Insurance Fund
+
+Last but not least, it is vital for Linear to implement a liquidation mechanism in order to handle black swan
+events such as the March 12, 2020. Linear will propose a proper liquidation mechanism and open it up for
+community governance to decide in order to safeguard the healthiness and resistance to any market
+situation. In addition, the setup of an insurance fund will also help tackle any liquidation loss so that the
+loss would not need to be socialized everytime. Again, the community can decide on the source of the
+insurance fund, e.g. a percentage from the transaction fee.
+12th January 2021
+
+Long Term Technology Roadmap
+
+Cross-chain compatibility with non-EVM-compatible blockchains
+
+Though Linear is now working with EVM-compatible blockchains to solve the clogging issues of Ethereum
+on day one, the team has already been in touch with some other prominent public blockchains with
+innovative and dynamic design that could potentially gain community traction over time. In the long run,
+Linear seeks to become the cross-chain compatible delta-one protocol that provides seamless trading
+experience across any major blockchains.
+
+Optimization of Transaction Fee and Speed
+
+Currently, we tackle the issue by separating the smart contract logic of Buildr and Exchange on the EVM-
+compatible blockchains which have high TPS and much lower fees. However, the gas fee on the Ethereum
+side could still be a long term problem shall the usage of the blockchain keep going up with ETH 2.0 still
+a long way to go.
+
+In order to solve the issue, Linear plans to implement Layer 2 solution in the later versions. For example,
+by using zk-rollup on Ethereum, the TPS, fees and oracle problems can be better handled. The team is
+currently looking into the best way for utilizing zk-rollup without adding friction on the front-end side.
+
+Liquidation mechanism
+
+As mentioned above, despite the fact that users are required with a dynamic pledge ratio of around 500%,
+there should also be a liquidation mechanism that should be triggered when the P ratio is under a certain
+number, say 150%. There will be a punitive conversion rate for Linear to re-purchase the corresponding
+Liquids using the pledged LINA tokens to ensure the stability of the debt pool. If the value from the
+liquidation of the Liquids is higher than the value of the LINA tokens at liquidation, a system loss will be
+incurred. On the other hand, when the value from the liquidation of the Liquids is lower than that of LINA
+
+tokens, there will be a system profit.
+LinearDAO (explained in the paragraph later) will decide on this implementation and handle the profit and
+
+loss when it comes to liquidation. It could be in the form of an insurance fund or distributed socially across
+
+the platform.
+
+10
+12th January 2021
+
+LinearDAO
+
+After the launch of the protocol, Linear will be under the governance of LinearDAO on important
+parameters and platform design such as:
+
+wR YN >
+
+Pledge ratio
+
+LINA inflation reward and frequency
+
+Split of transaction fees on areas such as burn, fee claims and Linear Reserve
+
+New functionalities and technology roadmap
+
+Proposals can be submitted by the community and voting will be done to determine whether they
+should be adopted or not. In between there will be discussion on each proposal before the voting
+so as to ensure the voting is meaningful to the long term growth of the platform.
+
+11
+12th January 2021
+
+Summary
+
+The team at Linear, with a strong technical background and financial investment experience is committed
+to bringing our protocol to market and expanding financial inclusivity to all users. While investing may be
+difficult, we want it to be easy, cheap, and transparent so that you don’t have to be a rocket scientist to build
+and manage your investments on our exchange. Whilst the above will be our short term goal, in the long
+term we recognize the value of building Linear as an asset layer and will welcome app developers to build
+additional asset management dApps on top of Linear. Lastly, in the spirit of decentralized finance, upon
+launch, we will start the planning and transition of our governance to a DAO, allowing our user community
+to help and continue to drive innovation and be key decision makers within our protocol and ultimately
+becoming a protocol for users, built by users.
+
+12

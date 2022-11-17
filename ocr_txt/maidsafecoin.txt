@@ -1,0 +1,751 @@
+Safecoin: The Decentralised Network Token
+
+Nick Lambert, Qi Ma and David Irvine
+
+January 2015
+
+Abstract
+
+There are many examples of tokens (coins) be-
+ing an effective mechanism for incentivising be-
+haviour. These cases demonstrate the benefits
+of tokens in a wide variety of settings, but there
+is evidence that they are effective within a com-
+uter networking environment. This paper at-
+empts to explain the reasoning behind safecoin,
+he digital token of the SAFE Network, a decen-
+ralised data and communications network. It is
+anticipated that the introduction of safecoin will
+incentivise behaviour that ensures the long term
+health of the network for all its users.
+
+1 Token Economies
+
+tokens to incentivise behaviour is not
+their use in multiple settings prove
+their utility. For example, token economy sys-
+tems have been used to influence and guide be-
+haviour in animals, prison populations, the mil-
+itary and education [12]. Doll et al. (2013) de-
+scribe the nature of a token economy:
+
+The use o
+novel and
+
+“Within a token economy, tokens
+are most often a neutral stimulus in the
+form of points or tangible items that
+are awarded to economy participants
+for target behaviours.”
+
+In essence, tokens provide their holder with per-
+ceived economic or social benefit as a reward for
+acting out defined and desired actions. Bitcoin
+represents an excellent example of stimulating
+action (mining) through token reward. Its abil-
+ity to eliminate double spending by harnessing
+
+the power of a distributed consensus network has
+given rise to a plethora of new digital currencies
+and assets. At the time of writing, there are cur-
+rently 571 currencies listed on the leading cryp-
+tocurrency market capitalisation website [1].
+However, it is the Bitcoin protocol and the
+additional features created by so called Bitcoin
+2.0 technologies that are particularly interesting.
+The protocol enables additional features to be
+incorporated into the block chain (Bitcoin’s im-
+mutable public ledger). These features include
+he ability for anyone to create digital assets or
+okens that are cryptographically secured and in-
+extricably tied to an ID on the network. These
+okens can represent either ownership, or access
+0 services.
+
+The case for using tokens within a computer
+network is further strengthened by technologies
+hat were restricted from reaching their potential
+in the absence of any incentivisation mechanism.
+One such example is TOR, software that pro-
+vides user anonymity by redirecting Internet
+raffic through a series of relays run by volun-
+eers, who contribute their own computing re-
+sources to the TOR network. Current metrics
+rom the network report that around 6500 re-
+ays are in operation while there are in excess
+of 2,000,000 directly connected users [3] [4]. In
+order that the network continues to expand, the
+roject recognises that the current volunteer ap-
+roach is not sufficient and incentives to run re-
+ays are required. One of the suggested solutions
+is TorCoin, a incentivisation mechanism that at-
+empts to compensate users running relays. It is
+roposed that TorCoin will enable relays to mine
+or TorCoins once they have successfully trans-
+
+ferred a batch of data packets across the network
+as a reward for providing bandwidth to the Tor
+network [5].
+
+1.1 The SAFE Network
+
+The SAFE (Secure Access For Everyone) Net-
+work, is a P2P decentralised data and commu-
+nications network designed and built by Maid-
+Safe.net and is currently in implementation
+phase [6]. The network will compliment all
+existing centralised web services and data cen-
+tres with a secure and anonymous network com-
+prised of the spare computing resources of its
+users. It is anticipated that this new network
+will provide a more secure and private experi-
+ence, whilst achieving higher performance as the
+network reaches critical mass.
+
+2 Safecoin
+
+The requirement of users to contribute is an un-
+mistakable part of any P2P network and the
+implementation of incentives is essential to en-
+sure its health. The introduction of safecoin, the
+cryptographic token of the SAFE Network, is an
+approach designed to encourage a number of dif
+ferent users and contributors to the network.
+
+Safecoins can only exist on SAFE and it’s dis-
+tribution is handled entirely by the network on
+a per use basis. It is anticipated that 4.3 billion
+coins will be produced during the life of the net-
+work. Each safecoin has it’s own unique identity
+and they are required to access services on the
+Safe Network. The type of services that will be
+available will depend on those being developed
+by third party developers. It is worth noting
+any type of web service currently possible
+on the existing centralised Internet is possible on
+the SAFE Network. The cost for these services
+
+will be set by the service provider and it is an-
+ticipated that as more and more competing apps
+are developed that market forces will maintain
+
+prices at. economic levels.
+
+3 Obtaining Safecoin
+
+Safecoin can be obtained through; farming, as-
+sisting with the maintenance of the underly-
+ing code, creating applications or by purchasing
+them.
+
+Farming is a process akin to bitcoin mining,
+whereby users provide resource (storage space,
+CPU and bandwidth) to the network. When
+each user creates their credentials, they will set
+up a safecoin wallet via their SAFE Network
+client and this wallet identity will be crypto-
+graphically linked to their account. As figure
+1 demonstrates, the safecoin earning algorithm
+is based on a Sigmoid curve, in that all vaults
+earn, slowly at first and the rate increases as the
+farmer stores up to the network average. The
+earning rate also takes into account the rank of
+the vault, a process whereby the network scores
+the usefulness of each node from 0 (being the
+worst) to 1 (the best). The safecoin farming rate
+is ultimately the result of the network rate, a bal-
+ance of the demand and supply on the network,
+multiplied by the vault rank. The network rate
+will start to level at 20% above average, thus
+discouraging massive vaults which would bring
+centralisation to the network’s farming process.
+Safecoin is allocated to them by the network and
+is paid to the successful node as data is retrieved
+from it (GETS), as opposed to when it is stored
+(PUTS).
+
+FIG 1, Predicted Safecoin Farming Speed
+
+1 20% Above
+| Average
+
+Network
+Reward
+Ratio
+
+Network
+' Average
+
+0
+
+7 >
+
+Resource Provided
+
+The network automatically increases farming
+rewards as space is required and reduces them
+as space becomes abundant. Data is evenly dis-
+tributed on the network and therefore farmers
+looking to maximise their earnings may do so
+by running several average performance nodes
+rather than one high specification node.
+
+3.1 Proof of Resource
+
+Utilising a process called Proof of Resource
+(POR), the network is able to continually val-
+idate who and what is providing resource to it in
+a mathematically verifiable way. The networ
+does this by attempting to store and retrieve
+data chunks onto/from its nodes. The ability
+for a node to carry out these actions will be de-
+termined by a combination of its CPU speed,
+bandwidth availability, unused storage capacity
+and on-line time. The SAFE Network uses a
+zero knowledge proof mechanism, where the net-
+work does not require to know the content of any
+data to be checked, but must know the data is in
+fact held and held in a manner that is accurate.
+Nodes that are either unreliable or are trying to
+game the network, by removing previously pro-
+vided resource, are de ranked by the network if
+the node is unable to serve a chunk of data.
+
+3.2 Core Development and Build-
+ing Applications
+
+It is also possible for core developers to earn safe-
+coin by fixing bugs and developing new features
+for the underlying network. At the time of writ-
+ing, this process has not yet been finalised. It is
+possible that code bounties will be raised by the
+core development team in conjunction with the
+SAFE project community. There are a number
+of existing platforms that facilitate the advertise-
+ment and management of code bounties, such as
+Bountysource and Bountify [71 [8].
+
+People or companies building applications on
+the SAFE Network will also be able to earn safe-
+coins. As they create and release new applica-
+tions, they will code their SAFE wallet address
+into their application. Based on how much the
+application is used, the network will pay safe-
+
+coins to the safecoin wallet address of the app
+creator. This provides a built in revenue stream
+for app developers, one that is directly propor-
+tional to how successful their application is.
+
+3.3. Decentralised Exchanges
+
+It will also be possible to buy safecoin. It is an-
+ticipated that these purchases will be made from
+decentralised peer to peer exchanges that will be
+built by third party developers. These exchanges
+will serve as platforms, enabling a buyer and
+seller to trade directly, potentially using multi
+signature (3 or more private keys are associated
+with an address, a majority must sign to make
+the transaction valid) technology to manage the
+transaction. It would also be possible to have
+centralised exchanges.
+
+Exchanges are essential to the liquidity of safe-
+coin as they ensure that people unwilling or un-
+able (as they are using a mobile device) can still
+gain access to network services. Additionally, ex-
+changes will also enable those earning safecoins
+to convert them into cash or into other cryp-
+tocurrencies.
+
+4 The Price of Safecoin
+
+As with other digital coins, the exchange or pur-
+chase price of safecoin will be set. by the market.
+This is a price established through the combi-
+nation of supply and demand. As this paper
+has already described, the number of safecoins
+in circulation will increase based on network use.
+Almost all early safecoin holders will be farmers
+with this supply of resource creating both liquid-
+ity and distribution of wealth. It is anticipated
+that almost all users will possess at least a few
+safecoins in their wallet. Users may trade their
+safecoin for services on the network, or for cash
+(or another digital currency) using an exchange.
+The ratio of safecoin being saved (left in new
+wallets) versus the ratio being issued to Farmers
+will produce a price point. This point will be the
+market value of safecoin.
+
+It is anticipated that as the number of applica-
+tions on the network grows, the utility of safecoin
+will increase, helping to drive the price of the
+coin overtime. This, coupled with the increase
+supply of safecoin, will also potentially increase
+the stability of the coin. Safecoins will not have
+a finite quantity, as after the initial 4.3 billion
+are produced, a small percentage (dependent on
+usage) will be recycled in order to incentivise the
+storage of new data.
+
+The number of resources or services it is pos-
+sible to buy will not be linked to the exchange
+price. The amount of storage, for example, that
+each safecoin buys over time will increase, oth-
+erwise the network resources could become very
+expensive if allowed to rise in line with the ex-
+change price. This is highlighted in figure 2.
+
+FIG 2. Resources and Currency
+
+per com
+
+Market
+Initial
+Value
+
+Time
+
+5 The Transaction Manager
+
+Unlike Bitcoin, the SAFE Network does not use a
+block chain to manage ownership of coins. Con-
+versely, the SAFE Network’s Transaction Man-
+agers are unchained, meaning that only the past
+and current coin owner is known. It is helpful to
+think of safecoin as digital cash in this respect,
+providing safecoin users with more anonymity
+than they experience with bitcoin.
+
+The Transaction Manager is a persona or
+role carried out by the SAFE Network’s vaults.
+Vaults store data on a Farmer’s computer and
+consist of a series of processes or roles that
+vary from managing the storage of data, man-
+
+aging other vaults and more importantly in this
+case, managing the processing and completion of
+transactions. The entire SAFE Network reaches
+decisions based on consensus of close groups of 32
+nodes and the transaction manager is the trusted
+group closest to any given transaction identity.
+These close groups are chosen by the network
+based on the closeness of their IDs to the ID
+of the safecoin. Closeness in this respect refers
+to the XOR distance as opposed to geographical
+closeness [9].
+
+FIG 3. Safecoin Transfer Mechanism
+
+‘Third Party Transaction Validator
+
+a
+owe
+es
+
+> €S
+a hen ole
+| Transaction |
+
+Wallet of Alice Chess Wallet of Bob
+200 25
+150 75
+
+L \ J
+One of the major problems any virtual cur-
+
+rency or
+to avoid
+
+coin must overcome is the ability
+ouble spending. Within the SAFE
+Network, transfer of data, safecoin included,
+is atomic, using a cryptographic signature to
+demonstrate that the last person who owned the
+safecoin has signed the coin over to the curren
+owner. When the current owner spends the coin,
+they ask the network (their close group of 32) to
+accept a signed message transferring ownership
+to the new owner. This process is highlighte
+in figure 3. The knowledge of coin ownership
+(each has their own unique ID) is kept in several
+close groups and each group must agree upon
+and reach consensus (28 of 32) on the transfer
+of ownership before the transaction is processe
+and the ownership of the coin is transferred.
+
+6 Minting safecoin
+
+The transaction model, described in Section 5,
+enables safecoin ownership to be transferred.
+However, it will be possible, after the SAFE Net-
+work is launched, to mint safecoin in a more
+physical and anonymous way.
+Minting safecoin can be achieved by the net-
+work enabling the registration of a special trans-
+action with the transaction managers, that fa-
+cilitates transfer of the ownship of the coin to
+any user that acknowledges the transaction. The
+minting process effectively removes the require-
+ment for the transaction validation step from
+the Transaction Manager. When Alice wants to
+mint safecoin, she sends a request to Transaction
+Managers with a special request to transfer the
+coin(s) to anyone. The Transaction Managers,
+once they have confirmed by consensus that Al
+ice is the current owner, will then generate the
+ransaction. Once Alice receives the transaction
+name from the network, she can store it on an
+external storage device, such as a usb drive, to-
+gether with a special validation signature which
+has been used as a salt when generating the pre-
+vious sent request] This salt is used to prevent
+Transaction Managers themselves trying to ac-
+nowledge the transaction to steal the coin.
+When Bob receives the minted safecoin and
+decides he would like to spend them, he reads the
+ransaction name and the validation signature
+rom the storage device and then sends an ac-
+nowledgement to the network. Once the Trans-
+action Managers receive the acknowledgement,
+he pre-generated transaction will be updated,
+hus completing the transfer of ownership of that
+coin(s) from Alice to Bob.
+The benefit of using safecoin in this way is a
+reduction in the complexity of the transaction by
+removing the acknowledgement procedure, mak-
+ing minted safecoin similar to a cash note. It also
+means that Alice, in this case, no longer needs
+to worry about keeping her private key safe as
+
+1A salt is random data that is used as an additional
+input to a one-way function that hashes a password or
+passphrase
+
+the transaction has been pre generated. Minted
+safecoin is also more anonymous, eliminating the
+need to store safecoins only in a digital wallet
+that can be compromised should an adversory
+obtain access to a users SAFE Network creden-
+tials. However, there is risk that after the trans-
+fer transaction has been registered, if the owner
+loses the external storage device containing the
+safecoin(s), anyone will be able to claim owner-
+ship. However, this is no greater than the risk
+anyone undertakes when withdrawing cash from
+a bank, convenience comes at the price of secu-
+rity.
+
+7 The Economics of Safecoin
+
+Unlike many cryptocurrencies, whose creation is
+not backed by anything, the distribution of safe-
+coin is backed by data. The generation of safe-
+coin is entirely network led and they are only
+created as the network is used and data retrieved
+from network nodes. This activity is in contrast
+to currencies like bitcoin, whose coin distribu-
+tion is arbitrarily set to 10 minute blocks. This
+means that if the SAFE Network is in great de-
+mand a large volume of safecoins will be created,
+while low demand will lead to minimal coins be-
+ing generated. This demand generation cycle has
+a desirable affect in that it should ensure no over
+supply of safecoins, which may potentially lead
+to a unit price decrease. This is not to say that
+the price of safecoin will not be volatile, the com-
+paratively small coin supply (Bitcoin’s market
+capitalisation is currently $5.2 billion, whereas
+the US Dollar has around $17 trillion (M4 defi-
+nition - notes, coins and bank accounts) in circu-
+lation) of cryptocurrencies makes this inevitable.
+However, it may provide greater stability in the
+long term [11].
+In many respects, the underlying economics of
+safecoin can be directly compared to Cap and
+Trade Economics, a strategy utilised by gov-
+ernments in an attempt to limit the amount
+of greenhouse (GHG) emitted by private enter-
+prises [16]. In the same way that the Cap and
+Trade system limits the overall emissions, en-
+
+0 pay for releasing GHGs, the
+e influenced by the network
+ed to
+
+abling companies
+safecoin cap will
+average resources, with safecoins being tr
+reach the market. price.
+
+Furthermore, current supply of traditional
+FIAT currencies has become elastic, with cen-
+tral banks of many nations engaging in quanti-
+tative easing, effectively printing money to en-
+sure greater supply. Unfortunately this can have
+many negative consequences as printing money
+does not solve the underlying economic problems
+and can potentially lead to increases in inflation
+[2]. These drawbacks have led some economists
+o start calling for a return to the gold standard,
+a situation where supply of money was linked to
+he supply of gold, known to be valuable and
+very difficult to counterfeit: [18].
+
+With coin generation on the SAFE Network
+eing directly linked to network use, the issuance
+of safecoins will be linked to supply and demand
+or data services. Data is valuable and is con-
+sidered by some as becoming a commodity in its
+own right. The World Economic Forum has es-
+ablished data as an asset class [13]. The realisa-
+ion of data having significant monetary value is
+also born out by recent valuations in technology
+companies, many of whom are not sustainable
+[IZ]. Having a network generated digital cur
+rency inextricably linked to a valuable commod-
+ity, has the potential for a stable environment,
+one that as the money supply increases, has the
+potential to be more resistant to price fluctua
+tions.
+
+8 A Revenue Model for a
+New Internet
+
+In addition to incentivising user behaviour, safe-
+coin may also provide an alternative revenue
+source for the Internet, in the shape of micro
+payments. It is possible to implement safecoin
+without transaction costs (although these could
+be added to aid security?) and high divisibility
+
+? An adversory could process a large number of trans-
+action requests to the network in an attempt to overload
+
+(coins are valued at $0.05 at the time of writ-
+ing (Jan 2015) and have the potential to be di-
+vided up to 4.3 billion times) make them well
+suited to very low value transactions. Further-
+more, the SAFE Networks ability to enable an
+unlimited number of transactions with confirma-
+tions at network speed equips it well for micro
+payments.
+Micro payments are one of many ways to re-
+place the current methods of funding today’s
+centralised Internet, typically this is achieved
+through advertising. Large Internet companies,
+such as Google and Facebook, earn the vast ma-
+jority of their revenue (91% and 89% respec-
+tively) by selling adverts at their users [15] [14].
+This model has been criticised as it not only pro-
+motes increasing surveillance of user data, as ad-
+vertisers require to know more and more about
+us, but also removes the rewards away from con-
+ent creators [10].
+would be technically feasible, using safecoin
+on the SAFE Network, to pay for films on a cost
+er frame basis, with the user only paying for
+what they watch. This amount would automati-
+cally be deducted from the viewers safecoin wal-
+et as they watch. A similar model could also be
+utilised for music, or for bloggers, with individ-
+ual articles paid for via a paywall or on a volun-
+ary basis. The decision about how to structure
+ayment for their work would reside with the
+copyright owner. The SAFE Network enables
+an optional watermarking feature that serves to
+inform the user the identity of the content cre-
+ator, however, this should not be confused with
+a DRM mechanism.
+
+el
+
+9 Conclusion
+
+There are several examples of advanced technolo-
+gies that did not reach their full potential as their
+incentives were poorly aligned. Tokens or coins
+have been used in a wide vareity of settings, in-
+cluding decentralised computer networks, to mo-
+
+it, the addition of a very small transaction fee may miti-
+gate this risk.
+Bi
+
+‘Or
+
+fici
+
+Cal
+
+vic
+
+chain.
+of the SAFE Network, encouraging en
+rovide their resource, while enticing both appli-
+
+ued growth of the network. It is hope
+ying together supply and demand for data ser-
+
+ivate, influence and guide desired behaviour.
+
+coin in particular has shown that by properly
+
+aligning incentives, the health of the network is
+sufficiently increased as miners are compensated
+
+providing their hashing power to the block
+t is anticipated that safecoin will provide suf
+ent incentives to ensure the long term health
+
+users to
+
+ion and core developers to assist in the contin-
+
+that by
+
+es, the SAFE Network economy will retain a
+
+nai
+
+reward for space as it is required and re
+
+ural balancing mechanism that increases the
+uces the
+
+reward when it is not.
+
+Acknowledgment
+
+Many thanks to the SAFE Network community,
+
+an
+
+in particular Yanick Vézina, for helping to
+
+proof read this paper.
+
+1
+
+Crypto-currency market capitalizations.
+
+URL https: //coinmarketcap.com/all/
+
+Ecr research web page, November
+2014. URL |http://www.ecrresearch.
+com/world- economy /dangers-and-
+drawbacks-quantitative-easing
+
+Tor metrics relays and bridges in
+the network, November 2014. URL
+
+https ://metrics.torproject.org/
+
+networksize.html
+
+Tor metrics — direct users by coun-
+try, November 2014. URL |https:
+//metrics.torproject.org/userstats-
+
+relay-country.html
+
+Tor incentives roundup, November
+2014. URL |https://blog.torproject.
+org/blog/tor-incentives-research-
+
+roundup- goldstar-par-braids-lira-
+tears-and-torcoin
+
+6
+
+[10
+
+[11]
+
+[12]
+
+[13]
+
+[14]
+
+[15]
+
+Maidsafe wikipedia, November 2014.
+
+URL  http://en.wikipedia. org/wiki/
+
+MaidSafe
+
+Bounty source web page, November 2014.
+
+URL https: //www.bountysource.com/
+
+Bountify web page, November 2014. URL
+https://bountify.co/
+
+Kademlia wikipedia page, January 2015.
+URL http: //en.wikipedia. org/wiki/
+ademlia
+
+The Atlantic. The internet’s
+nal sin, November 2014.
+//waw.theatlantic.com/technology/
+archive/2014/08/advertising-is-the-
+internets-original-sin/376041/
+
+origi-
+
+John Aziz. Does the federal reserve
+really control the money supply?, De-
+cember 2014. URL
+com/article/index/244899/does-the-
+
+federal-reserve-really-control-the-
+
+Anjali Barretto Christopher Doll,  T.
+F. McLaughlin. The token economy:
+A recent review and evaluation, July
+
+2013. URL http://www.insikapub.com/
+
+Vol-02/No-01/12IJBAS (2) (1) .pdf
+
+World Economic Forum. Personal
+data: The emergence of a new as-
+
+set class, November 2014. URL
+
+http: //www3.weforum. org/docs/WEF_
+ITTC_PersonalDataNewAsset_Report_
+2011. pdt)
+
+Facebook Inc.
+
+Facebook reports fourth
+quarter and full year 2013 results, Novem-
+
+ber 2014. URL http://investor.fb.com/
+releasedetail.cfm?ReleaseID=821954
+
+Google Inc. 2013 financial tables, November
+2014. URL |https://investor. google.
+
+com/financial/2013/tables. html
+
+[16] Paul Krugman. The textbook economics
+of cap-and-trade, December 2014. URL
+ttp: //krugman.blogs .nytimes.com/
+
+[17] Joe McCann. Data is the most valuable
+commodity on earth, November 2014.
+
+URL http://subprint.com/blog/data-
+is-the-most-valuable-commodity-on-
+
+[18] BBC News Web Page. Gold v paper money,
+November 2014. URL http: //www.bbc.co.
+
+k/news/business- 18644230
+

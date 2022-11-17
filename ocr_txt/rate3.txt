@@ -1,0 +1,2909 @@
+@B@
+Rate3
+
+A DECENTRALISED DUAL PROTOCOL FOR CROSS-BORDER PAYMENT
+& CREDIT SCORING
+
+Powered by Stellar and Ethereum
+
+WHIT
+
+Ei PAP
+
+ER V2.2
+
+https://rate3.network
+TABLE OF CONTENTS
+
+Introduction
+1 Market
+
+2 Problems
+
+2.1 High processing fees
+
+2.2 Poor exchange rates for cross-border settlements
+2.3 Chargeback risks for merchants
+
+2.4 Delayed cashback problems for consumers
+
+2.5 Challenges with credit for consumers & merchants
+
+3 The Rate3 Solutions
+
+3.1 Cross-Border Settlements: Mid-Market Rate, No Fees
+3.2 Alternative Credit & Trust Scoring
+
+4 Rate3 Dual Protocol — powered by Stellar & Ethereum
+
+4.1 Cross-Border Payment Protocol
+4.1.1 No Transaction Fees
+4.1.2 Mid-Market Rates
+413 Instant Cashback
+4.2 Alternative Credit & Trust Scoring
+4.2.1 |ncentive Mechanism
+4.2.2 Proof of Transactions, Identity & Attestation
+
+5 Token Economics
+
+5.1 Why Tokenize?
+5.2 Redistribution Pool (RDP)
+5.3 Token value & token holder incentives
+
+6 Cross-Chain Architecture
+7 Network Risks
+
+8 Future Plans
+
+9 Roadmap & Adoption
+
+10 Token Sale Details
+
+Tl Team & Advisors
+
+12 Risks & Disclaimers
+INTRODUCTION
+
+A financial infrastructure that can support the Internet economy as it continues to grow is
+necessary. We observed a strong organic growth and unparalleled innovation from the Internet
+back in 1990s. However, established financial institutions hampered innovation and growth in
+exchange for ensuring integrity of financial transactions. There is a demand for new and
+innovative players, a void to be filled by blockchain technology. We need a new fair and just
+financial system.
+
+Today's e-commerce system is imperfect with high processing fees, poor exchange rates,
+chargeback risks and frauds, opaque consumer reward schemes and a poor credit assessment
+for those who need it the most.
+
+We can make it better, through tokenization. The Rate3 Dual Protocol is a decentralized protocol
+for cross-border payment and credit scoring. By introducing a native token (the RTE token), it
+will help to align the incentives of all participants. Through carefully designed token economic
+mechanisms, it is a self-sustaining and growing system.
+
+A protocol without data and adoption is futile. We propose a novel Cross-Border Payment
+Protocol (CPP) that simultaneously fuel transactions between consumers and merchants, while
+collecting the requisite transaction data to bootstrap the Credit Scoring Protocol (CSP). The
+Credit Scoring Protocol, in turn, helps to create more credit loans and drive more transactions as
+a result. Building open protocols also allow for other adjacent decentralized apps (dApps) to be
+built on top of our protocols.
+
+By building this protocol layer for global cross-border e-commerce, we foresee various adjacent
+dApps to be built on top of the Rate3 Dual Protocol: offline cross-border payments, e-commerce
+insurance dApps, all kinds of credit loan products and even supply chain dApps in the future.
+
+1]. MARKET
+
+The global cross-border e-commerce market in 2015 accounted for USD 300
+billion GMV, about 15% of e-commerce overall. This rapid growth, however, has
+just begun and will continue: the cross-border market is expected to grow by
+about 25% annually until 2020 - nearly twice the rate of domestic e-commerce
+and a growth rate that most traditional retail markets would dream of achieving.
+In 2020, it is expected to account for about USD 900 billion GMV, translating into
+a roughly 22% share of the global e-commerce market. This growth momentum
+
+yields unrivaled opportunity for both merchants and manufacturers:
+
+Cross-Border
+Market
+
+US$900
+
+GLOBAL billion
+E-COMMERCE
+MARKET
+
+US$4.5
+Trillion
+
+PROBLEMS
+2 PROBLEMS
+
+Despite the immense potential of global cross-border e-commerce, several key problems still
+exist within:
+
+« High transaction processing fees
+
+= Poor exchange rates
+
+=" Chargeback risks for merchants
+
+=" Delayed cashback for consumers
+
+" Challenges with credit for both merchants and consumers
+
+2.1 HIGH TRANSACTION PROESSING S
+
+A standard domestic transaction includes five players: the consumer, the consumer's issuing
+bank, the processing network, the merchant's acquiring bank and the merchant. However, cross-
+border payments include many other players.
+
+Cross-border payments are thus especially challenging, given more intermediaries and risks
+involved.
+
+Merchants also pay a processing fee for receiving payments from consumers. Transactional fees
+stand somewhere between 2 - 5% per transaction plus a fixed fee of between USD 0.1 and USD
+0.7.
+
+For example: every time someone makes a transaction for USD 10, the merchant on average pays
+USD 0.8 for banks, credit card associations, payment gateways and processors.
+
+On top of transactional fees, some merchants might have to pay for incidental fees that include
+Address Verification Service (AVS), Voice Authorization Fees (VAF), Batch Fees, and Non-Sufficient
+Fund Fees (NFS) for cross-border purchases.
+
+An existing example would be that of PayPal: PayPal charges the merchant a transaction fee of
+4.4% + a currency - dependent fixed fee for any cross-border transaction, instead of the usual 2.9%
+for domestic transactions.
+
+2.2 POOR CROSS-BORDER EXCHANGE RATES
+
+One of the primary hurdles to accomplishing an electronic payment is the need for trust
+between the parties. Two parties directly transacting often lack a means of verifying each
+other's identities or of ensuring that the transaction is carried out as agreed upon. When
+parties lack a direct relationship of trust, this uncertainty can serve as an insurmountable
+roadblock. Consequently, the various mechanisms for executing payments, both domestic and
+international, all revolve around providing a trusted intermediary to mitigate this uncertainty.
+
+Banks most traditionally serve as the trusted intermediary. However, cross-border payments
+have a higher number of intermediaries involved. Given the complexity in exchange rates,
+banks often charge an unfavorable exchange rate for such payments:
+
+=» Dynamic Currency Conversion (1-5% additionally on the mid-market rate)
+= Foreign Currency Conversion Processing fees (3-5% additionally)
+
+2.5 CHARGEBACK RISKS FOR MERCHANTS
+
+A chargeback (also known as a reversal) is a form of customer protection provided by the issuing
+banks, which allows cardholders to file a complaint regarding fraudulent transactions on their
+statement. Once the cardholder files a dispute, the issuing bank makes an investigation into the
+complaint.
+
+In 2016 alone, e-commerce merchants suffered an estimate loss of $6.7 billion in revenue due
+to chargebacks, with $4.8 billion attributed to chargeback fraud.
+
+The cost of chargebacks does not result only in financial losses. Racking up chargebacks has even
+worse consequences on the part of the merchant. During online transactions, merchants are
+solely responsible. Having too many cases of chargebacks will lead to steeper chargeback fees, as
+merchants will become labelled by the credit card institution as a high-risk merchant.
+
+2.4 CASHBACK DELAY FOR CONSUMERS
+
+Cashback shopping is a form of price promotion online where consumers initiate purchases
+at the website of a cashback company and after a significant delay, receive the savings
+promised to them. Cashback shopping is a relatively young but increasingly popular
+alternative. For example, Ebates, the leading cashback company in the United States, has
+processed cashback payments of over $800 million to more than 10 million consumers since
+its founding in 1998. In the United Kingdom, Quidco processed more than $64 million of
+cashback payments to its seven million registered users in 2016 alone, and facilitated sales of
+about $1 billion for 4,300 retailers—a figure that represents 1% of all electronic commerce in
+the country for that year.
+
+The cashback company make cashback payments directly into the bank accounts of
+individual consumers. Importantly, the temporal delay between a purchase and the
+corresponding payment is significant: a minimum of 30 days, but often as much as four
+months.
+
+This cashback delay is a result of the manual way the merchant's acquiring bank reconciles
+with the consumer's issuing bank. Both parties have to verify that the transaction is
+successfully made, before the acquiring bank will release the cashback payments. This is
+another issue that a distributed ledger will not face
+
+Figure 1: DELAY BETWEEN PURCHASE AND CASHBACK PAYMENT
+
+25000
+
+20000
+
+j
+
+i
+
+Number of Transaction Days
+
+5000
+
+Delay (Days)
+2.5 EXISTING CHALLENGES WITH CREDIT
+
+Commercial lenders have made it difficult for small businesses to secure a loan - whether fixed
+or working capital. This is where alternative lending comes into play to support the finances of
+such businesses. The business financing options swooped in to fulfill the requirements of the
+companies. It is believed that every 1 in 5 small business loans will be offered by an alternative
+lender by 2020. The alternative lending market, as of today, stands at $5 billion, which is
+expected to reach $52 billion by that time.
+
+Merchants need access to capital and loans to buy more inventories and expand their
+businesses with new products but however, their business model is difficult for traditional
+lenders to provide them a proper score.
+
+Amazon issued US$IB in loans in 2017 to merchants selling on its marketplace. The data points
+from more than 2 million merchants on its platform help identify those it deem credit worthy.
+Transaction processing companies PayPal Holdings Inc and Square Inc offer similar credit
+options using data from their payments businesses, creating new financing options for small
+merchants that could have trouble securing loans from banks. PayPal in May announced it has
+issued more than US$3 billion in loans to more than 115,000 businesses globally through its
+PayPal Working Capital program launched in 2013. Square said it has provided more than US$1.5
+billion in loans and merchant cash advances since launching in 2014, including US$251 million in
+the first quarter.
+
+Shopify created Shopify Capital, a merchant cash advance product to help entrepreneurs secure
+financing and accelerate their business growth. Shopify tailors cash advances to each
+merchant's needs based on data processed through the Shopify platform. Since its launch in
+April 2016, Shopify Capital has issued nearly $100 million in merchant cash advances and is being
+used by thousands of entrepreneurs to purchase equipment and inventory, launch new
+products, hire more employees, and add new sales channels.
+
+SOLUTIONS
+2. SOLUTIONS
+
+2.1 CROSS-BORDER SETTLEMENTS: MID-MARKET, NO S
+
+HOW CONSUMERS PAY IN THE FUTURE
+
+STEP 1:
+2 Consumers download RateX
+a browser extension or RateS
+— mobile app for free.
+
+These Rate products will be the
+main gateway for consumers, with a
+key focus on accessibility, user
+
+(@) Downloads RateX Extension experience and performance.
+or RateS Mobile App for Free
+
+STEP 2:
+
+Consumers shop normally on
+& = overseas partner merchants.
+
+Currently, we are live on the biggest
+
+merchants such as Amazon, eBay, Taobao,
+
+Rakuten, ASOS, Expedia, Agoda,
+
+Hotels.com and others.
+
+o2 Shops Normally on Partner
+Overseas Merchants
+
+STEP 3:
+
+Upon check-out, consumers pay
+through our partner payment
+processors.
+
+Just like any normal check-out, consumers
+will pay in fiat-assets and choose either
+
+OB Pays through Desktop or Mobile in bank transfers or debit/credit card options.
+
+fiat-asset with our Partner Processors
+
+STEP 4:
+
+Rate3 Payment Protocol will
+convert the consumer’s fiat
+currencies to the merchant’s
+domestic currency
+
+This is achieved through asset-hopping on
+the Stellar networking.
+
+Bb;
+a
+=
+o
+a
+=
+
+The Rate3 Payment Protocol will find the
+
+4 Rate3 Payment Protocol converts best currency pair, using RTE tokens as an
+O the currencies through Stellar for liquidity asset. Two currency hops could
+Merchant Settlement happen: USD will first be converted to RTE,
+
+whilst RTE is then converted to Pounds.
+
+STEP 5:
+
+a = Merchant receives the payment in
+their domestic fiat currency
+successfully.
+
+Payment is received instantly by the
+merchant, instead of the current delay
+os Merchant receives settlement before the payments actually reach their
+in Rate Merchant interface bank accounts.
+
+STEP 6:
+Merchant sends the goods to
+
+consumers successfully.
+
+06 Consumer receives goods Having received payment by the
+successfully consumers successfully, the merchants
+
+will ship the goods to consumers.
+HOW MERCHANTS ACCEPT PAYMENTS WITH RATES
+
+Ol Merchant have to integrate Rate3 payment SDKs
+to accept card and crypto payments via
+decentralized immutable ledger at ~4000 tps
+with mct of 3-5 seconds
+
+Merchant
+
+Transaction #1
+Transaction #2
+
+Total Transactions
+
+oO Rate3 merchant dashboard allows Merchants
+to view and download comprehensive reports,
+configure settlement currencies and deposit
+accounts
+
+03 Captured payments will be deposited
+according to configured settlement currency
+and bank account in batches.
+
+STEP 1:
+
+Merchant integrate the Rate3
+Merchant SDK to accept both
+card and crypto payments,
+through Rate3 API.
+
+This allows them to accept up to 4,000
+transactions per second (tps) with a
+median confirmation time of 2 - 5
+seconds on a decentralized immutable
+ledger. Merchants do the front-end
+integration through a Javascript SDK
+and back-end integration through a
+Server SDK, with a RESTful API.
+
+STEP 2:
+
+Rate3 merchant dashboard
+allows merchants to view and
+download comprehensive
+reports, configure settlement
+currencies and deposit
+accounts.
+
+Merchant will be able to accept multiple
+supported currencies and receive assets
+in their preferred settlement currency.
+This is powered by multi-asset feature in
+Stellar with native distributed
+decentralized exchange. Payment
+history can be retrieved from the
+blockchain. Likewise, refunds can be
+triggered as another cross asset
+payment instantly.
+
+STEP 3:
+
+Captured payments will be
+deposited according to
+merchant’s configured
+settlement currency and sent
+to their fiat bank account in
+batches.
+
+Deposits to merchant's appointed
+bank accounts are reconciled daily.
+2.2 ALTERNATIVE CREDIT & TRUST SCORING
+
+I need credit
+
+STEP 1:
+
+Borrower wants to acquire a credit
+loan.
+
+Borrowers could either be consumers who
+want to obtain a fast product financing loan, or
+merchants who want to solve the cash flow
+gap often faced in the industry. Merchant
+loans could be either cash advances, small
+business loans, working capital loans.
+
+Ol Consumer wants to buy online
+products, but needs credit
+
+STEP 2:
+
+02 Borrower submits a loan request Borrower submits a loan request
+UIE lala s on Rate3 Mainnet.
+
+STEP3:
+
+Borrower submits relevant
+information to Rate3 Mainnet, in
+return for lower loan repayments.
+
+Borrower submits relevant .
+@) information to Rate3 Mainnet, for Rate3 CSP uses a tiered system of the
+
+lower loan rates borrower 's Proof of Tra nsactions, Proof of
+Identity and other attestation documents.
+& Borrower
+
+documents
+
+04 Borrower’s Proof of Transaction,
+Proof of Identity and other
+attestation documents are assessed
+
+05 Credit Scoring Protocol issues
+borrower a score for traditional
+liquidity providers
+
+=
+
+Loan \.
+Agreement ‘,
+
+06 Borrower enters into a smart contract
+loan agreement with lender
+
+STEP 4:
+
+Borrower’s Proof of Transactions,
+Proof of Identity and other
+attestation documents on the
+Rate3 Mainnet are assessed.
+
+This relates to the different tiers of
+information submitted by the borrowers.
+Borrowers are incentivized to submit
+more relevant and better-quality
+information.
+
+STEP 5:
+
+Credit Scoring Protocol issues the
+borrower a score that is easily
+understandable and actionable for
+traditional liquidity providers.
+
+The score provides a bridge for traditional
+liquidity providers to gain access to a wider
+pool of borrowers. These borrowers would
+
+have otherwise not been able to gain proper
+access to credit.
+
+STEP 6:
+
+No Intermediaries between
+borrowers and lenders through the
+use of smart contracts
+
+Both borrowers and lenders eliminate the
+need of any 3rd parties to deal with each
+other. They can simply interact through their
+wallets using the platform as the monitoring
+intermediary.
+
+RATES DUAL PROTOCOL
+4 RATES DUAL-PROTOCOL
+
+Rate3 is a decentralized dual protocol for cross-border payment and credit scoring.
+
+The primary challenge facing any protocol is adoption. This challenge is similar to one that
+many marketplaces face early on: a marketplace is said to have “network effects” if it grows in
+value over time, but there remains the question of how the early users of the network will be
+enlisted: the “adoption problem”. Our solution is to introduce a killer solution, one that provides
+
+an inherent utility to users of the platform, even in the absence of the strong network effects
+early in the life of the platform.
+
+The initial adoption solution is the Rate3 Cross-Border Payment Protocol (CPP), with the
+Credit Scoring Protocol (CSP) as the subsequent growth solution.
+The Engineering Design for Rate3 Dual Protocol
+
+The Rate3 Dual Protocol follows the best engineering practices to ensure they are interoperable,
+cost efficient, seamless and trustless:
+
+e Generic - The Rate3 Dual Protocol is designed to be useful and reusable in order to be
+interpolated for further sharing economy and marketplace dApps such as insurance, supply
+chain, offline payments
+
+e Cost Efficient - Protocols are given the option to utilize cheaper alternatives for expensive on-
+chain transactions, by offloading heavy and complex computations to traditional cloud-based
+solutions. This introduces centralization and is a reasonable stopgap solution while looking for a
+long term scalable blockchain solution.
+
+e Seamless - The Rate3 Dual Protocol is designed with a key focus of being seamless, user-
+friendly, whilst providing an easy layer for other dApp developers to built on top of the protocol
+layer
+
+e Trustless - Transactions sent are immutable, and there is no single trust required from any
+
+single actor in the system. The transactions live on the Stellar Blockchain, and anyone can
+access them
+4.] RATES CROSS-BORDER PAYMENT PROTOCOL
+
+The Rate3 Cross-Border Payment Protocol (CSP) is the core pillar that enables both
+consumers and merchants to enjoy zero transaction fees and mid-market exchange rates. The
+protocol provides a compelling, unique value proposition to buyers and sellers alike, while
+seeding the entire network with valuable transaction data. The seeded transaction data will, in
+turn, help to fuel the Credit Scoring Protocol (CSP).
+
+Using a decentralized ledger helps to ensure integrity over every transaction. More importantly,
+it provides the mechanism for consumers to make cross-border payments to merchants with
+no transaction fees, perfect mid-market exchange rates and more importantly, enjoy instant
+cashback in the form of RTE tokens upon each successful transaction.
+
+Likewise, for merchants, they do not have to pay any fee to any intermediary payment
+processor, the card network and their acquiring bank, greatly reducing their entire cost
+structure.
+
+4.1.1 BENEFITS FOR BUYERS
+
+NO TRANSACTION FEES
+
+The CPP charges 0% transaction fees to both consumers and merchants, due to smart
+contracts automating transactions that bypass commission-based platforms, financial
+institutions, and currency denominations. As the RTE token is used as a medium of exchange
+for all transactions, this ensures that there are no intermediaries in the process to take a cut of
+the transaction, leaving all savings passed back to the consumers and merchants.
+
+MID-MARKET RATE
+
+The amount needed to pay is converted to the selected Stellar-based token from traditional
+currency in real-time. Money arrives in the merchant’s smart contract wallet almost
+instantaneously. The amount of Stellar-based currency received is exchanged to a merchant's
+preferred fiat currency according to the merchant's preference of crypto exchange API.
+Through Stellar’s network of anchors, the RTE received can be easily converted to the
+merchant's preferred fiat or crypto-currency through pathfinding algorithms and network. At
+the same time, when merchants use the Rate merchant interface, they
+
+have the option to choose the frequency at which crypto tokens are converted to fiat, the local
+currency to exchange to, time of sending money to their bank account, and many other
+options.
+
+Since cross-asset payments are so simple with Rate3, users can keep their money in whatever
+asset they prefer to hold. This is how the Rate3 Network creates a very flexible and open system.
+
+INSTANT CASHBACK
+
+As a consumer making cross-border payments with Rate3 Network, they will automatically be
+rewarded with instant cashback in the form of RTE tokens for every successful transaction. This %
+cashback mechanism is determined by the merchant itself. This instant cashback mechanism is
+automatically triggered upon a successful transaction, through a smart contract.
+
+Consumers can access their RTE token balance directly from their RateX or RateS wallet. With
+these RTE tokens, they can spend it on other goods by sending these RTE tokens directly to
+supported merchants. Alternatively, they can simply convert it to other fiat currencies through
+the Mainnet.
+
+Combining perfect mid-market exchange rates and instant cashback could potentially bring the
+savings on a single transaction to 15-20% for consumers. Given the decentralized and trustless
+nature of these transactions, there are no additional intermediaries to assert control and draw a
+fee from the transactions.
+
+More importantly, the CPP does not benefit the consumer alone. The token has to incentivize
+other participants as well and this includes the merchants too.
+
+4.1.2 BENEFITS FOR MERCHANTS
+
+NO PROCESSING FEES
+
+The CPP helps to power a payment infrastructure which is decentralised, interopable, fungible
+and secure. More importantly, the CPP allows for cross-asset transfers to be completed directly
+from consumer to merchant, without any intermediaries like payment processors, merchant
+acquiring banks and card networks. By cutting away these additional intermediaries who draw
+fees upon every transaction, the Payment Protocol helps merchants to achieve no processing
+fees, unlike the traditional 3 - 5% fee.
+
+Instead, there is only a small network gas fee, and this fee will be contributed to the Rate3
+Redistribution Pool. More will be explained in the Rate3 Redistribution Pool.
+
+MID-MARKET EXCHANGE RATES
+
+Payment intermediaries charge extra percentage fee on top of their exchange when merchants
+want to accept foreign currencies and settle payments in their preferred currency. The CPP
+does not charge fees for converting captured payments to settlement currency, as it is powered
+by Stellar’s native distributed decentralized exchange.
+
+NO CHARGEBACK RISKS
+
+In a traditional credit card transaction, merchants pull sensitive data from a customer’s card to
+complete a sale. During that transfer, consumers are at risk of having personal data hacked,
+stolen and used by fraudsters. However, the blockchain structure behind bitcoins is virtually
+immune to hacking risks, merchants never have to worry that payments are fraudulent.
+
+This protection extends even after a blockchain transaction. When a customer files a credit card
+chargeback, the card issuer immediately refunds the purchaser’s money while the chargeback
+is reviewed (rarely ending in a favorable ruling for the merchant). But making a purchase with
+bitcoins virtually eliminates chargeback risks for merchants. There are no dispute procedures
+and no third party with which a consumer can file complaints.
+
+When a purchase is made through a credit card and then is chargeback not only does the
+money from the transaction get taken from the merchant and given back to the customer,
+merchants also get costly chargeback fees. All blockchain transactions are protected by the
+
+bitcoin network which mean merchants can accept payments without worrying about the
+threat of fraud or chargebacks.
+
+4.3 TECHNICAL ARCHITECTURE FOR CPP
+
+Stellar
+
+Cross-Border Payment Protocol
+
+Instant cashback
+
+in RTE to Receive payment
+
+consumer Stellar in desired fiat Retrieve merchant
+account. Account token on Stellar account details
+
+is managed by
+
+self or app
+
+Send RTE or any asset
+token on Stellar via
+protocol guidelines and
+smart contract
+
+Merchant
+dApp
+Endpoint
+
+dApp Auxiliary
+
+A G Merchant
+Endpoint Services
+
+Consumer
+Services
+
+Convert customer Merchant Convert stellar assets
+
+payments to Stellar assets dA ul to real-world assets
+dApp UI (USD/BTC/LTC, etc) HP
+
+Merchant sees transaction history
+and settlement in fiat currency
+
+Consumer fill in payment details of
+App supported methods (credit
+
+RE card, bank transfer, BTC/LTC/ETH
+wallet, RTE wallet, etc)
+
+The CPP will be implemented on Rate3 MainNet as Stellar Smart Contracts (SSC) on the
+Stellar blockchain. As such, consumers and merchants are required to have Stellar accounts.
+They must also be able to sign Stellar transactions directly or indirectly (managed by dApp).
+
+Stellar contracts works different from Ethereum - they have to be chained, signed and
+submitted as a network transaction instead of the smart contract code being deployed on-
+chain. Once the transaction is filled out, all the needed signatures must be collected and
+added to the transaction envelope. Thereafter, the transaction can be submitted and applied
+to the ledger via Stellar Consensus Protocol.
+
+CONSUMERS: SENDING CROSS-BORDER PAYMENTS
+
+Real world assets such as dollars, euros, bitcoin, stocks, gold, or even physical goods like
+bananas can be tokenized on the Stellar network. The Stellar distributed network can then be
+used to track, hold and transfer these Stellar asset tokens (henceforth referred as assets for
+brevity).
+
+As such, the Rate3 MainNet will theoretically be able to support consumer payment in any
+desired assets as long as they are tokenized on the Stellar network.
+
+1. Issuer: Tokenize any assets they wish to support but not found in the network. (Issuer)
+
+For example, if a dApp would like to support payments in “The Best Dollar”, they will have to
+issue TBD assets on the Stellar network . A more interesting example would be if a dApp would
+like support payments using their ERC-20 utility token “DCoin”. It will have to take on the role of
+an anchor in Stellar network and issue DCoin Stellar tokens. (Note: the dApp would have to
+implement atomic-swap between Stellar and Ethereum Dcoin tokens)
+
+2. Anchor: Perform capture of non-Stellar assets and issue credits into the network
+
+dApps may use auxillary services to capture and liquidate assets from consumers. In the case
+where a consumer is paying USD with their credit cards, dApps would have to process the
+credit card using a card processor. Once the payment is captured, USD asset should be issued
+to consumer's Stellar account. dApps do not have to be confined to fiat currencies — crypto-
+assets can be accepted as payments which have to be then converted or issued on the Stellar
+network. dApps may also choose to liquidate the crypto-assets at an exchange for USD and
+credit USD to consumers’ accounts.
+
+Asset conversions in Rate3 MainNet are powered by Stellar’s native decentralized distributed
+exchange, which contains offers and orderbooks. When the need arises to do complicated asset
+conversion, pathfinding involves looking at current orderbooks and finding which series of
+conversions gives you the best rate. These paths of asset conversion can contain up to 6 hops,
+but the whole payment is atomic-it will either succeed or fail. The payment sender will never be
+left holding an unwanted asset.
+
+RTE will be used as a medium-of-exchange for all payments and hence the pathfinding must
+include RTE i.e. USD -> RTE -> SGD or SGD -> RTE -> SGD or USD -> ... -> RTE -> ... -> SGD. There
+can only be a maximum of 6 hops.
+
+In Stellar, asset transactions, including pathfinding, are considered network operations. A
+contract transaction is made up of multiple network operations. A transaction median
+confirmation time in Stellar is 3-5 seconds. This means that on Rate3 MainNet, the entire process
+of issuing new assets to consumer account, pathfinding and asset arriving at destination
+account is confirmed within 3-5 seconds.
+
+INSTANT CASHBACK
+
+Cashback will be credited to consumers’ accounts instantly from Rate3 MainNet Redistribution
+pool account. The cashback will be in the form of RTE tokens. This will be reflected as one of the
+operations in the payment contract transaction aforementioned. More details on how instant
+cashback forms one part of the incentive mechanism can be found in the token economics
+section, detailed behind.
+
+MERCHANTS: RECEIVING CROSS-BORDER PAYMENTS
+
+Merchants will receive instant payment in desired settlement currency. 0.5% gas fee will be
+deducted from settled payment amount and currency and converted to RTE via pathfinding to
+be deposited to the redistribution pool account. Again, these are dictated in the single payment
+contract transaction.
+
+VIEWING PAST TRANSACTIONS
+
+Retrieving past transactions data on Rate3 MainNet will be reading immutable transaction data
+from the distributed ledger. The ledger data will be additionally processed and formatted
+accordingly in Rate3 context.
+
+4.2 RATES CREDIT SCORE PROTOCOL
+
+The Rate3 CPP solves initial adoption problem, but the Credit Score Protocol (CSP) is the
+subsequent growth solution to grow the ecosystem further. The Rate3 Network addresses the
+existing limitations in lending by moving credit scoring and risk assessment to the blockchain.
+Rate3 Network is a standardized, programmable ecosystem to facilitate on-demand, secure, and
+global access to credit services. Rate3 helps increase competition to lower fees and improve both
+the borrower and lender experience at every layer of the credit issuance process.
+
+We present solutions to
+
+(1) Cross-border credit scoring: Allows for credit scoring to move across borders. They are
+previously tied onto their countries, and are forced to rebuild and re-establish their credit score
+from scratch whenever they relocate
+
+(2) Current uncompetitive ecosystem for credit scoring: Credit data is centralized. In most
+
+markets, a single provider scores credit, resulting in an uncompetitive ecosystem for evaluating
+credit risk.
+The CSP is a dynamic indicator of an individual's likelihood to pay debts that adapts to the
+maturity of a user’s credit history (or lack thereof). By splitting a user’s credit scoring
+mechanism into multiple funnels that take into account different data points with varying
+weights, the Rate3 credit score produces a score that is conducive to building credit from the
+ground up while helping creditors differentiate the credit risk of consumers in markets and
+
+communities with sparse data.
+
+The foundation of a decentralized credit system is a securely established and verified identity.
+In order to prevent against common network attacks (such as Sybil attacks), each participant's
+identity must be adequately established with a high cost of attempting to create new, false
+
+identities that appear authentic.
+
+4.2.1 PROOF O
+
+FRANSACTIONS, IDENTITY & ATTESTATIO
+
+Credit scoring and risk assessment is complicated. The Rate3 CSP provides a open-source
+solution to achieve this, through a thorough assessment of a potential borrower's Proof-of-
+Transactions, Proof-of-ldentity and Proof-of-Attestation on the Rate3 Mainnet.
+
+For consumer loans:
+
+Proof-of-Transaction
+
+Past Transaction History on
+Rate3 Network
+
+Past loan and repayment
+history
+
+For merchant loans:
+
+Proof-of-Transaction
+
+Past Transaction History on
+Rate3 Network
+
+Past loan and repayment
+history
+
+Proof-of-Identity
+
+Government Photo ID
+
+Cable, water, waste
+management, local utility
+bills
+
+Proof-of-Identity
+
+Incorporation documents
+
+Business licenses, permits &
+approvals
+
+Proof-of-Attestation
+
+Lease agreements, pay stubs
+
+Mobile payment transactions,
+homeowner or renter
+insurance
+
+Proof-of-Attestation
+Financial History, Revenue
+
+Statements
+
+Personal & Business Tax
+Returns
+
+4.2.1 BENEFITS FOR BORROWERS
+
+ALIGNED INCENTIVES
+
+Borrower are incentivized to submit relevant information, in return for a discount on their loan
+repayments. In traditional centralised credit marketplaces, borrowers often have to subscribe to
+the guidelines dictated by that marketplace. However, it might not be suitable for different
+borrowers. Having a tiered system of information submission helps to align the borrower's
+incentives.
+
+ACCESS TO CREDIT
+
+Many participants — including both consumers and smaller merchants — are often excluded
+from the current credit system. The CSP uses an alternative scoring mechanism to gauge and
+assess potential borrowers, who would otherwise not have access to credit for products or
+sustain their business.
+
+FULL CONTROL & TRANSPARENCY
+
+Borrowers have full control over the kind of information they want to upload, so long as they
+deem it relevant and appropriate.
+
+4.2.2 BENEFITS FOR LENDERS
+
+ACCESS TO A NEW GLOBAL POOL OF BORROWERS
+
+The Rate3 Network is designed to be transnational, borderless, immutable and transparent
+with Stellar and Ethereum as its core. Given the global nature, traditional capital providers and
+financial institutions will have access to new borrowers, all of whom they are unable to access
+previously.
+
+BETTER PERFORMING LOANS
+
+Borrowers have an added incentive to upload more relevant documents, given the discount
+they will get back on repayments. In turn, this helps to add more certainty to borrower
+documents and loan requests, creating better performing loans.
+
+4.2.1] TECHNICAL ARCHITECTURE FOR CSP
+
+Ethereum Stellar
+
+Credit Scoring Protocol
+
+Receive encrypted and
+
+Submit data tied with Send signed Proof-of-Transaction, Gets percentage of
+borrower to protocol RTE fee Proof-of-Identity, and other repayment as RTE
+documents
+
+Upload to distributed
+file system IPFS
+
+Borrower Data Lender Auxili
+dApp Storage dApp ; uxillary Borrower
+. A ervices
+Endpoint (IPFS) Endpoint
+dApp to sign files with
+borrower's private key
+Borrower Merchant Convert customer
+dA UI payments to Stellar assets
+dApp PP (USD/BTC/LTC, etc)
+Endpoint
+Borrower submits Lender
+Proof-Of-Identity and other pay in fiat
+documents or RTE
+
+Lender receives data
+Borrower Lender Lender receives RTE balance or
+cashes out in fiat if dApp allows
+
+CSP will be implemented on Rate3 MainNet as smart contracts deployed on the Ethereum
+blockchain. As such, borrowers and lenders are required to have Ethereum accounts. They
+must also be able to sign Ethereum transactions directly or indirectly (managed by dApp).
+Once transactions are signed and submitted, they will be validated via Ethereum Proof-of-
+Work consensus mechanism.
+
+BORROWER: SUBMISSION OF PROOFS
+
+A borrower will need to upload documents to Rate3 Mainnet in order to establish their Proof-
+of-Identity and Proof-of-Attestation. These files should be digitally signed by borrower private
+key to ensure non-repudiation and integrity of the documents. Should there be concerns of
+privacy, the documents can also be encrypted with agreed lender’s public key so that only the
+lender is able to decrypt and view the documents. The borrower should then host the
+documents on IPFS and pass the file hash link and lender public key to Rate3 MainNet.
+
+DISCOUNT ON LOAN REPAYMENTS
+
+The discount on loan repayments will be issued to borrower in the form of RTE tokens. More
+details on how loan repayment discounts form a critical part of the incentive mechanism can
+be found in the subsequent token economics section.
+
+LENDER: ACCESS TO PROOFS
+
+Lenders will pay fees - in the form of RTE tokens - to Rate3 MainNet and receive the following
+signed and encrypted data:
+
+= Borrower's Proof-of-Transaction
+= Borrower's Proof-of-Identity
+= Borrower's Proof-of-Attestation
+
+TOKENOMICS
+5.1) WHY TOKENIZE?
+
+A well-designed token network carefully manages the distribution of tokens and incentives
+across all groups of network participants (buyers, sellers, borrowers, lenders and other financial
+institutions).
+
+A native RTE Token that interacts with the Rate platform allows the network to have aligned
+goals and incentives, prepares a platform to be agnostic to a singular cryptocurrency or digital
+token, and allows better management of the side chain.
+
+The native RTE token is not simply a medium of exchange in this ecosystem, but a store of
+value that aligns the incentives of all participants.
+
+The RTE token is used not only as a means of exchange or payment on the Rate3 network but
+also as a means to account for, judge, verify and incentivize ecosystem participation. The RTE
+token is the native fuel that facilitates interactions on the Rate3 network.
+
+5.2 RATES REDISTRIBUTION POOL
+
+Payment Protocol Credit Scoring Protocol
+
+Receives
+goods & o Receives a
+services | loan
+
+Receive RTE tokens Receive RTE tokens for
+via instant cashback discount on repayments
+
+Pay gas fees in RTE tokens Pay transaction fees in RTE
+for payment settlement tokens for lending
+
+UTILITY FUNCTION 1: INSTANT CASHBACK FOR CONSUMERS UPON EACH
+SUCCESSFUL TRANSACTION
+
+CPP: As captured in the smart contracts, consumers will receive an instant variable % cashback,
+in the form of RTE tokens when they complete a successful purchase. The % is determined by
+the merchants. It is instant because there is no need for the merchant's acquiring banks and
+the consumer's issuing banks to finish settlements on both ends. Likewise, the % on cashback
+can be adjusted to incentivize consumers more. For instance, if merchants want to reward
+consumers more, they can do so as well.
+
+UTILITY FUNCTION 2: PAYMENT OF NETWORK FEES BY MERCHANTS
+
+CPP: merchants only pay a minimal network fee in the form of RTE tokens, upon a successful
+transaction. This network fee is immediately paid to the Redistribution pool after every
+successful transaction.
+UTILITY FUNCTION 3: DISCOUNT ON REPAYMENT INTEREST RATE FOR
+BORROWERS
+
+CSP: Borrowers receive a discount on loan repayments in the form of RTE tokens if they submit
+more relevant information. This discount is instantly activated in the term repayments as
+written in the Ethereum smart contracts.
+
+UTILITY FUNCTION 4: PAYMENT TO ACCESS
+
+CSP: Lenders pay fees in the form of RTE tokens to access borrower's credit score, Proof-of-
+Transactions, Proof-of-Identity and other attestation documents.
+
+UTILITY FUNCTION 5: INCENTIVES FOR DEVELOPMENT
+
+CPP and CSP: Developers are incentivized with RTE tokens when they develop dApps on the
+ecosystem.
+
+5.3 ALIGNING OF INCENTIVES FOR ALL PARTICIPANTS
+
+With the use of a single token, RTE aligns the incentives for all groups of
+participants:
+FOR CONSUMERS:
+
+= Consumers save up to 20% through our CPP: zero transaction fees, perfect mid-market
+exchange rates and cashback
+
+= Enjoy instant cashback because it is written into smart contracts, as compared to the current
+30 - 60 days wait for cashback settlements to reach bank accounts
+
+= absolute transparency since every transactions are recorded on an immutable ledger
+
+FOR MERCHANTS:
+
+= Pay network fees, in RTE tokens to accept transactions
+= Save up to 10% fees on processing transactions, as compared to current payment processors
+= Benefit from reduced chargeback risks and frauds
+
+FOR BORROWERS:
+
+= Incentivized to submit more information to enjoy a greater discount on repayment interest
+rates
+
+FOR LENDERS:
+
+= Pay fees in RTE tokens, to access borrowers’ credit score and borrowers’ Proof-of-
+Transactions, Proof-of-Identity and additional relevant attestation documents
+
+FOR DEVELOPERS:
+
+= Receive RTE tokens as incentives for creating dApps on the ecosystem
+5.3 RISE IN TOKEN VALUE AND APPRECIATION
+
+As the number of participants (consumers, merchants, borrowers, lenders) increase, the
+transaction volume and loan volume increases as well. Given the delay between lenders paying
+fees in RTE tokens and borrowers receiving a discount in their delayed repayments, this
+increases the amount of RTE tokens in the Redistribution Pool. The number of RTE tokens in
+circulation (not staked in the Redistribution Pool) goes down with user adoption and increased
+volume, thereby decreasing total circulating supply.
+
+1.
+
+Increase in Transaction Volume: a % of transactions will be allocated back to the
+redistribution pool and taken out of total circulating supply
+
+Increase in Loan Volume: there is a delay between lenders paying RTE tokens and
+borrowers receiving a discount in RTE tokens on the discount rate. When there is a higher
+loan volume, the more tokens get taken out of the total circulating supply.
+
+Built-in token burn from Intricately designed token Strong inherent utility
+each successful economics for loan value; decreasing total
+transaction volumes circulating supply
+
+TOKEN APPRECIATION
+
+6 NETWORK RISKS
+
+6.1 SYBIL ATTACKS
+
+In the context of a lending protocol, a Sybil attack involves generating a large number of
+fraudulent identities, taking on multiple unsecured debts at a time, and defaulting on all at
+once with little consequence. Largely, defending against Sybil attacks falls within the purview of
+an underwriter's responsibilities -- if an underwriter's identification and KYC procedures are not
+robust enough to detect Sybil behavior, the empirical performance of debts they've attested to
+will reflect it. However, Sybil attackers could ostensibly solicit debt orders from several
+underwriters at a time, meaning that data sharing amongst underwriters operating in similar
+debt verticals would likely become a pertinent need.
+
+To reiterate - the Lender must do their own due diligence on top of utilizing our credit score
+protocol, to make sure that they know who they are lending to enough.
+
+6.2 DISTRIBUTED DENIAL OF SERVIC
+
+A network service can be disrupted if there is a coordinated flood of network operations from
+multiple sources intended to overwhelm the network. This is known as distributed denial of
+service (DDoS). Disruption of time-sensitive service such as payments will detrimental to
+network participants’ confidence and satisfaction, which is critical for a payment network to
+thrive. Cross-Border Payment Protocol mitigates this risk by having RDP costs to deter any
+DDoS attempt. In the event a DDOS is in process, although some users will be affected.
+
+Credit Score Protocol is powered by Ethereum and the gas fees acts as the deterrence for
+planned DDoS. Given that Stellar and Ethereum are decentralized network, a DDoS attack on
+Rate3 would mean a DDoS attack on respective blockchains.
+
+6.3 Fraudulent Underwriters
+
+Underwriters operating in a fraudulent manner can deceive investors into believing that they
+are originating prime debt from borrowers, when in reality they are in fact acting as borrowers
+themselves. Conceivably, a fraudulent underwriter could build up an extremely positive on-
+chain attestation performance by lending to themselves using many assumed public keys, and
+then execute a large exit scam by deceiving creditors into investing in Debt Orders they've
+attested to in which they are the actual borrower and defaulting entirely on those debts.
+
+Solution: None. This will cause us to be NOT TRUSTLESS. It is for this reason that we emphasize
+that Rate 3 Credit Score Protocol is not a fully trustless protocol -- borrowing and lending under
+this scheme is only safe insofar as underwriters are known, trusted entities, and not
+pseudonymized public keys.
+
+7 FUTURE USE CASES
+
+Rate3 is partnering
+with BrahmaOS
+
+for offline cross-
+border payments
+
+Rate3 Payment
+Protocol uses
+blockchain
+technologies to
+ensure the best
+cross-border rates
+
+PAYMENT
+PROTOCOL
+
+Rate3 is designing
+a stable-coin with
+a price stabling
+mechanism
+
+WHAT CAN RATE3 DO FOR YOU?
+
+Rate3 is partnering
+with insurance
+companies to
+
+provide credit
+scores for new
+insurance use
+
+CREDIT SCORING
+PROTOCOL
+
+You want to go
+overseas and shop
+offline, at the best
+
+rates
+
+Eg. Chinese
+consumer who
+goes to South
+
+Korea for cosmetic
+surgery and wants
+to pay in RMB
+
+You are worried
+that cross-border
+taxes and
+restrictions will
+get higher in the
+future
+
+Eg. U.S consumer
+who worries about
+the increasing
+import taxes of
+goods into U.S, but
+love the quality of
+goods overseas
+
+You want to use
+crypto-currencies
+for goods &
+services, but worry
+that it is too
+volatile
+
+Eg. Merchant
+based in Brazil,
+who wants to
+purchase supplies
+from China
+because it is
+cheaper
+
+You are an
+insurance
+
+company that
+wants to expand
+insurance
+products into e-
+commerce
+
+Eg. Mid-tier
+insurance firm that
+is unsure of how to
+
+assess smaller
+companies’ risks
+clearly
+7.1 OFFLINE CROSS-BORDER PAYMENTS
+
+RATE3 X BRAHMAOS: THE FUTURE OF OFFLINE CROSS-BORDER PAYMENTS
+
+This upcoming partnership allows Rate3 users to pay for offline purchases through the Rate3
+mobile wallet, with absolutely zero transaction fees and exchange rate mark up. This is similar
+to how Rate3 helps to facilitate online payments here. An analogous example is that of WeChat
+Pay and Line Pay being used by Chinese and Thailand tourists, when they shop in other
+countries.
+
+Imagine this scenario: Tommy is a tourist from Indonesia, who is travelling in Vietnam. For his
+purchases in Vietnam, he can either pay with Vietnamese dong, his debit/credit card or through
+Rate3. With his Rate3 mobile wallet at supported merchants, Rate3 will use the Stellar network
+to convert his Indonesian rupiah in his bank account to Vietnamese dong at the merchant's
+POS. Transactions are fast, seamless and there is no additional mark-up on the exchange rate
+between IDR and VND.
+
+Merchants that partner with us will be accepting Rate3 offline payments and benefit from an
+increased volume of offline tourists. Likewise, for tourists, they benefit from an easier mode of
+payment (through their mobile phone) and much cheaper exchange rate fees.
+
+US$ 60.92
+
+Your Watchlist
+
+eo":
+O°:
+Oo:
+
+2 STABLECOIN
+
+One of the problems with using and accepting cryptocurrency for payment of goods and
+services is that prices of cryptocurrency is volatile. Although price volatility does not matter if
+the cryptocurrency is used in medium of transfer (like RTE), there should be a cryptocurrency
+with a stable price to facilitate direct blockchain payments and confidence of stable value to
+hold for future purchases.
+
+A cryptocurrency with a price stabling mechanism to peg its value with another stable asset
+like gold or US dollar is known as a stablecoin. Stablecoins allow merchants to accept
+cryptocurrency as payment without exposure to crypto-market risks. From the consumer point
+of view, they can also decide the point in time to convert their volatile cryptoassets to
+stablecoins and hold them for future purchases denominated in fiat.
+
+Consider the following scenario:
+
+= Alice has some Bitcoin and price of Bitcoin increased over 10% in a week
+
+« Alice decided to trade some Bitcoin for a stablecoins.
+
+« Price of Bitcoin crash 20% the following week
+
+« Alice is still able to make the same value of purchase using stablecoins before the price drop
+for Bitcoin
+
+After reaching certain level of network maturity, Rate3 will issue a stablecoin to scale the
+
+network further. RTE will remain as an utility token.
+
+7.3 CROSS-CHAIN PARTNERSHIPS: ZILLIQA
+
+ZILLIQA is a high-throughput public blockchain platform designed to scale to thousands of
+transactions per second. Zilliqa is linearly scalable as more miners nodes participate, the more
+transactions the network can process at an almost linear rate.
+
+For most blockchains the rate of return from network decrease the larger the network gets. In
+Ethereum, a new miner has to receive transactions before being conformed. This means when
+more miners join the network, each data about a block has to travel a lot more before being
+part of the blockchain. This makes the network slower just as distribution information to many
+people is slower than to a small number of people. This is why many solutions to accelerate
+transaction throughput rely on restricting the number of nodes (e.g. permissioned blockchains)
+
+Zilliqa’s linear scalability is made possible by using optimized practical Byzantine Fault Tolerant
+protocol for consensus and blockchain network sharding. Rate3 will build CSP on Zilliqa to scale
+beyond Ethereum network in terms of transaction speed and gas fee.
+
+8 CROSS-CHAIN ARCHITECTURE
+
+Initially, all RTE tokens distributed through the token sale exists as ERC-20 tokens on the
+network. We will be able to leverage on the smart contracts on the Ethereum ecosystem.
+However, we also want to deploy RTE as a Stellar asset to take advantage of the quick
+transaction speeds and ease of asset exchanges on the Stellar network.
+
+To be able to take advantage of the different benefits of being on different networks, our RTE
+token can be on both the Ethereum and Stellar network through cross-chain atomic swaps
+through a hashed time-lock contract. Users would be able to swap their RTE ERC-20 token on
+their Ethereum wallet for a Stellar asset RTE token on their Stellar wallet. This swap is done
+without needing a third party through smart contract.
+
+This means that the total supply of RTE tokens will be spread across both networks. Only one
+version of the token exist at any given point of time.
+
+By having two versions of RTE tokens on different blockchains, we will be able to utilize the RTE
+token much more effectively depending on the use case. For more complicated smart
+contracts that requires the Turing-complete nature of the of Ethereum, the ERC-20 version will
+be required. For regular transactions and payments, the Stellar version of token is more
+applicable.
+
+Besides being able to increase the potential utility of the RTE token, by being on multiple
+networks would mean increased liquidity for RTE, since there are now more ways to obtain RTE
+tokens. RTE can now be on both Ethereum and Stellar decentralized exchanges, in addition to
+centralized exchanges.
+
+In the future, we will be able to expand our cross-chain architecture to include other
+blockchains that support token creation.
+
+9 ROADMAP & ADOPTION
+
+PHASE 1: RTE PAYMENT PROTOCOL
+
+Phase 1 will allow consumers and merchants to send and receive RTE as payment. Merchant
+has to price its goods and services in RTE and the users have to obtain RTE either through
+token sale, exchanges, or intermediaries. The goal is to set up protocol infrastructure and
+integration interfaces required by dApps in the future. Internal prototypes for future phases will
+also be carried out so that the protocol API design accounts for future integrations. This
+prevents drastic core design changes in the protocol API and also speed up development in
+future phases.
+
+RateX will integrate with CPP to accept RTE as payment for its current services. Developers and
+companies are free to integrate CPP
+
+DEVELOPMENT OUTLINE:
+
+Q2 2018
+= Private TestNet
+= Early TestNet API
+= PoC integration with early prototypes of Rate3 interface platform for CSP and CPP
+=» Payment gateway platform
+= Credit score platform
+= Universal Wallet (fiat and crypto-assets) for consumers as an easier means of payment
+compared to payment forms
+Gather feedback from PoC integrations with strategic partners and community
+= Release TestNet to public
+
+Q3 2018
+
+=» MainNet
+
+= CPP API with RTE payment only
+
+= Support RTE tokens atomic swaps between Stellar and Ethereum
+= Universal Wallet to facilitate token swap
+
+PHASE 2: MULTI-ASSET PAYMENT WITH RTE AS MEDIUM OF EXCHANGE
+
+Once CPP matures in Phase 1, multi-asset payment will be introduced with limited basket of
+currencies. Implementation of multi-asset payments will start with same currency payments
+with RTE as medium of transfer e.g USD -> RTE -> USD, followed by another major currency in
+the network e.g SGD -> RTE -> SGD. Additional currency pairs will be added as network liquidity
+increases.
+
+RateX will launch payment gateway service powered by CPP.
+
+Q3 2018
+= Complete TestNet integration
+= Payment gateway platform
+= Merchant dashboard
+= Merchant Server API and SDK
+= Payment form SDK to collect payment from consumers
+= Merchant Server API
+= Payment form SDK to collect payment from consumers
+= Customers’ Proof-of-Transaction score
+
+Q4 2018
+= Complete MainNet integration
+= Launch of payment gateway platform powered by CPP
+
+PHASE 3: CREDIT SCORING PROTOCOL
+
+Phase 3 will deploy a platform where borrowers can submit Proof-of-Identity and other
+documents and share with lenders. Lenders have to pay RTE to receive borrower's Proof-of-
+Transaction, Proof-of-Identity and other documents
+
+Q4 2018
+=" TestNet
+= CSP API
+= CSP interface platform for borrowers and lenders
+= Borrowers to submit Proof-of-ldentity and other documents to protocol and share
+with lenders
+= Allow lenders to pay RTE to receive borrower's Proof-of-Transaction, Proof-of-Identity
+and other documents
+=» MainNet
+= CSP API
+= Launch of CSP interface platform
+
+PHASE 4 NETWORK STABILITY
+
+Phase 4 is where Rate3 will work on technologies that can help scale adoption rate of the
+network. Rate3 will expand CPP to offline payments via official dApp on Brahma OS. To further
+improve throughput and reduce gas of CSP, Rate3 will move CSP to the more scalable Zilliga
+blockchain.
+
+Q2 2019 and beyond
+
+= Roadmap for
+" Offline payments: Brahma OS
+* Blockchain scalability: Zilliqa
+=» Payments stability: Stablecoin
+
+10 TOKEN SALE DETAILS
+
+= Soft cap: 20,000 ETH
+
+= Hard cap: 25,000 ETH
+
+= Pre-Sale Start Date: 16 April 2018, 2PM SGT (GMT +8)
+
+= Pre-Sale End Date: 31 May 2018, IOPM SGT (GMT +8) - or until pre-sale cap is reached,
+whichever earlier
+
+= Pre-Sale Cap: 5,000 ETH (or 96,000,000 RTE tokens)
+
+= Ratio -1ETH: 16,000 RTE
+
+= Min Allocation: 0.5 ETH
+
+=" Max Allocation: No limit (on a first-come-first-serve basis)
+
+= Pre-Sale Bonus: 20%
+
+= Tokens sent immediately to participant’s sending address after ETH contribution
+
+= 50% bonus available when pre-sale ends. Remaining 50% bonus locked up for 6 months
+after token sale ends
+
+= All tokens (including bonus tokens) are by default non-transferrable, until unlocked by
+Rate3
+
+=" Check out the live progress once you are logged into the portal
+
+= Recommended gas price: 1- 5 Gwei
+
+= Recommended gas limit: 250,000
+
+= Rate3 token is ERC-20, so participants’ wallet must be ERC-20 compatible
+
+= Token sale lock-up period: 10 - 14 days after token sale ends
+
+= There is no more crowd-sale after this pre-sale concludes
+
+= Exclusion: Citizens/Residents of United States of America (USA), People’s Republic of
+China (PRC) and South Korea
+
+Token Allocation
+
+Company
+25.0%
+
+Token Sale
+
+Listing & Exchanges
+10.0%
+
+Team & Advisors
+
+Community
+5.0%
+
+Reserve
+10.0%
+
+= Bonus lock-up period (all bonus tokens): 50% immediate after sale, 50% distributed 6
+months after
+
+= Lock-up period for team & advisors: Vesting period over 2 years, released quarterly
+according to roadmap
+
+= Lock-up period for Company, Exchanges, Reserve and Community: All to be locked up.
+
+Public announcement of at least 1 month before tokens are released.
+
+e R&D
+
+Partnerships
+
+30%
+25% Marketing
+e Listing Fees
+Operations
+e Legal
+10% 10%
+5%
+
+Use of funds
+SUPPORTED MERCHANTS
+
+amazon %8) SEP Bshopec
+
+Taobao.com
+
+@Rakuten CDay LAZADA
+
+GExpedia oe geen
+v
+ZALORA REEBONZ
+SEPHORA
+UNI
+asos QLO
+
+discover fashion online
+
+EXISTING PRODUCTS
+
+Rate >< Rate %
+
+We have saved users ~300,000 USD to date
+
+Tl TEAM
+
+Jake Goh
+Co-Founder, CEO
+
+Albert Ho
+Country Manager
+
+Wei Yin
+Software Engineer
+
+Davis Gay
+Co-Founder, CTO
+
+>
+
+Adarrel Ho
+Lead Designer
+
+we
+
+Wu Di
+Software Engineer
+
+a
+
+i)
+
+» ff
+
+Lim Jing Rong
+Co-Founder, CTO
+
+Eunice Er
+UI/UX Designer
+
+Andre Khong
+Software Engineer
+
+Waihon Chee
+
+Senior Blockchain Lead
+
+Dewi
+
+Software Engineer
+
+Daniel Olivan
+
+Marketing Manager
+
+Tl ADVISORS & INVESTORS
+
+&
+
+Fei Ding’an Yinglan Tan Aaron Tan Koh Waikit
+Warburg Pincus Insignia Ventures CEO, Carro Pavilion Capital
+
+Quek Siu Rui Jefrey Joe Samuel Chan Kevin Li
+CEO, Carousell Alpha JWC FX, ING CEO, PlayDate
+
+Will Ongkowidjaja Khoo Lay Seng Li Jianwei Chandra Tjan
+Alpha JWC Khazanah Nasional Zhencheng Investments Alpha JWC
+
+Reynold Wijaya David Su Chandler Guo
+Modalku Matrix Partners Bitcoin God
+
+TERMS & CONDITIONS
+
+TERMS AND CONDITIONS (THESE “TERMS”) OF RATE3 NETWORK TOKEN SALE
+
+IN THESE TERMS, WORDS AND EXPRESSIONS NOT OTHERWISE DEFINED SHALL, WHERE NOT INCONSISTENT
+WITH THE CONTEXT, HAVE THE MEANINGS RESPECTIVELY ASCRIBED THERETO IN ANNEX 1 TO THESE TERMS.
+
+The following Terms govern the Token Sale between the Token Vendor and you, for your intended purchase of the
+Tokens from the Token Vendor, during the Sale Period. Each of you and the Token Vendor shall hereinafter be referred
+to as a “Party”, and collectively, you and the Token Vendor shall hereinafter be referred to as the “Parties”.
+
+Please read the terms set out herein carefully. The Tokens are not intended to constitute securities of any form,
+units in a business trust, units in a collective investment scheme or any other form of regulated investment or
+investment product in any jurisdiction. This document and these Terms do not constitute a prospectus or offer
+document of any sort and are not intended to constitute an offer of securities of any form, units in a business trust,
+units in a collective investment scheme or any other form of regulated investment or investment product, or a
+solicitation for any form of regulated investment or investment product in any jurisdiction. No regulatory authority
+has examined or approved of these Terms. No such action has been or will be taken by the Token Vendor to obtain
+such approval under the laws, regulatory requirements or rules of any jurisdiction. The provision of these Terms to
+you does not imply that the applicable laws, regulatory requirements or rules have been complied with.
+
+Please note that you are not eligible and you are not to purchase any Tokens in the Token Sale if (a) you are located
+in the People’s Republic of China or if you are a citizen or resident (tax or otherwise) of, or domiciled in, the
+People’s Republic of China; (b) you are located in the Republic of Korea or if you are a citizen or resident (tax or
+otherwise) of, or domiciled in, the Republic of Korea; (c) you are located in the United States of America or if you
+are a citizen, resident (tax or otherwise) or green card holder of, or domiciled in, the United States of America; or (d)
+such Token Sale is prohibited, restricted or unauthorized in any form or manner whether in full or in part under the
+laws, regulatory requirements or rules in any jurisdiction applicable to you, at the time of your intended purchase
+of the Tokens in the Token Sale.
+
+By accepting these Terms and purchasing Tokens, you agree to be legally bound by these Terms (including the Annexes
+hereto) and you expressly acknowledge and represent that you have carefully reviewed these Terms and fully
+understand the risks, costs, and benefits of purchasing Tokens.
+
+IF YOU ARE IN ANY DOUBT AS TO THE ACTION YOU SHOULD TAKE, YOU SHOULD CONSULT YOUR LEGAL,
+FINANCIAL, TAX OR OTHER PROFESSIONAL ADVISOR(S). IF YOU DO NOT AGREE TO THESE TERMS, PLEASE DO NOT
+ACCEPT THESE TERMS OR PURCHASE ANY TOKENS.
+
+The headings in these Terms are included for convenience only and shall not be taken into account in construing these
+Terms. References to “Paragraphs” and “Annex” are to be construed as references to the paragraphs of and the annexes
+to these Terms.
+
+The Parties HEREBY AGREE as follows:
+
+1. INTRODUCTION
+
+1.1 Unless otherwise stated herein, these Terms including the Annexes hereto shall govern your purchase of Tokens from
+the Token Vendor in the Token Sale during the Sale Period.
+
+1.2 The Token Vendor is a private company limited by shares incorporated in the Republic of Singapore with the
+company registration number 201808808G.
+
+1.3 The Token Sale is conducted only during the Sale Period.
+
+1.4 The proceeds from the Token Sale will be deployed ongoing to support development and growth of the Rate3
+Ecosystem, business development, marketing and compliance activities.
+
+1.5 No information contained in or on, and no part of the following:
+
+(a) the finalised, published and adopted version or draft of the Whitepaper, or any other documents uploaded on
+the Website, the Token Vendor's Telegram channel which is accessible on https://t.me/OfficialRate3, the Token
+Vendor's blog which is accessible on https:/medium.com/@officialrate3/ and/or the Token Vendor's Twitter
+account (@OfficialRate3) (collectively, the “Channels”);
+
+(a) the Channels;
+
+(b) any website or other social media channels directly or indirectly linked to the Whitepaper or the Channels; or
+(c) any other information or document,
+
+shall constitute part of these Terms, and no representations, warranties or undertakings are or are intended or
+purported to be given by the Token Vendor in respect of any information contained in or on, or any part of, the
+items as stated in Paragraphs 1.5(a) to (d) above.
+
+2. ELIGIBILITY TO PURCHASE TOKENS
+
+Eligibility to participate
+
+2.1 You shall not participate in the Token Sale if there are applicable legal restrictions in your country of residence or
+domicile. It is your sole responsibility to ensure that your participation in the Token Sale is not prohibited, restricted,
+curtailed, hindered, impaired or otherwise adversely affected in any way by any applicable law, regulation or rule in your
+country of residence or domicile.
+
+2.2 You are not eligible and you are not to purchase any Tokens in the Token Sale if:
+
+(a) you are located in the People’s Republic of China or if you are a citizen or resident (tax or otherwise) of, or
+domiciled in, the People’s Republic of China;
+
+(b) you are located in the Republic of Korea or if you are a citizen or resident (tax or otherwise) of, or domiciled in,
+the Republic of Korea;
+
+(c) you are located in the United States of America or if you are a citizen, resident (tax or otherwise) or green card
+holder of, or domiciled in, the United States of America; or
+
+(d) such Token Sale is prohibited, restricted or unauthorized in any form or manner whether in full or in part under
+the laws, regulatory requirements or rules in any jurisdiction applicable to you, at the time of your intended
+purchase of the Tokens in the Token Sale,
+
+collectively, the “Disqualified Persons’.
+
+Whitelisting
+
+2.3 You have been granted access to view these Terms because you have agreed to and accepted the Whitelisting
+
+Terms. Your participation in the Token Sale and the purchase of Tokens in the Token Sale is subject to the Whitelisting
+
+Terms. Only participants who have been successfully whitelisted by the Token Vendor to its sole and absolute
+satisfaction for the Token Sale shall be eligible to purchase Tokens in the Token Sale.
+
+3. SALE PERIOD AND TARGET AGGREGATE AMOUNT
+
+3.1 The Token Sale comprises the following tranches (the “Tranches” and each, a “Tranche”):
+Name of Tranche Start date and time End date and time
+Pre-sale Tranche (“Pre-Sale 2:00 pm (GMT +8), on 16 April 10:00 pm (GMT +8), on 31 May
+
+Tranche”) 2018 (the “Commencement 2018 (the “Closing Time’), or till
+Time’) Pre-sale Cap is reached.
+
+3.2 The Token Sale is undertaken during the period (the “Sale Period”):
+
+(a) commencing on the Commencement Time; and
+
+(a) ending on the Sale Expiry Time.
+Please note that Paragraph 3.6 will be applicable to any attempted purchase of Tokens after the Sale Expiry Time. The
+Pre-Sale Tranche Closure Time and the Sale Expiry Time will be announced by the Token Vendor as soon as
+practicable thereafter on the Channels or such other channels of communication as may be determined by the Token
+Vendor.
+The Pre-Sale Tranche will be closed by the Token Vendor at the time (the “Pre-Sale Tranche Closure Time”) that the
+
+aggregate payments in ETH for all confirmed purchases of Tokens in the Pre-Sale Tranche are of a value equal to or in
+excess of 5,000 ETH.
+3.3 The Public Sale Tranche will be closed by the Token Vendor at the date and time (“Sale Expiry Time”) that the
+aggregate payments in ETH for all confirmed purchases of Tokens in the sale of Tokens by the Token Vendor
+(comprising all private sales conducted by the Token Vendor, the Pre-Sale Tranche and the Public Sale Tranche) are of a
+value equal to 25,000 ETH (the “Token Sale Target Aggregate Amount’). The Token Vendor will announce the Sale
+Expiry Time as soon as practicable after the Sale Expiry Time on the Channels or such other channels of communication
+as may be determined by the Token Vendor.
+
+3.4 The Token Vendor may, in its sole and absolute discretion, determine that the Sale Expiry Time shall be such time
+other than as set out in Paragraph 3.4, or that the Pre-Sale Tranche Target Aggregate Amount or the Token Sale Target
+Aggregate Amount shall be such amounts other than as set out in Paragraphs 3.3 and 3.4 respectively.
+
+3.5 In the event that you attempt to make a purchase of Tokens after the Sale Expiry Time and you have made any
+transfers of ETH for such attempted purchase of Tokens, you acknowledge and agree that:
+
+(a) provided that your transfer of ETH to the Designated Address as payment for such attempted purchase of
+Tokens is validated and verified on the Ethereum blockchain as successful and complete and notwithstanding any
+provision in these Terms, the Token Vendor may, subject to Paragraph 3.6(b) and at its sole and absolute discretion,
+provide a refund of such transfer in full or in part without interest and net of all administrative and/or third party
+charges and/or other transaction fees (if any) that may be incurred in connection with such refund, in which case
+such administrative and/or third party charges and/or other transaction fees (if any) incurred in connection with
+such refund shall be borne by you;
+
+(b) the Token Vendor shall have no obligations in any form or manner whatsoever to you in respect of such
+attempted purchase; and
+
+(c) you hereby waive all rights, claims and/or courses of action (present or future) under law (including any tortious
+claims) or contract against the Token Vendor and the Indemnified Persons in connection with or arising from such
+attempted purchase, and shall further hold harmless, the Token Vendor and the Indemnified Persons from and
+against any and all losses, damages, taxes, liabilities and expenses that may be incurred by you in connection with
+or arising from such attempted purchase.
+
+4. ACCEPTED CRYPTOCURRENCIES, PURCHASE CONSIDERATION, MINIMUM PURCHASE AMOUNTS, AND
+TRANSFER PROCEDURE
+
+Purchases only through the Designated Web Address
+
+4.1 You may only purchase Tokens in the Token Sale through the Designated Web Address and no other website or
+place. In the event that you purport to purchase Tokens through any website or place other than the Designated Web
+Address, you acknowledge and agree that:
+
+(a) the Token Vendor shall have no obligation to deliver, and you shall have no right to receive, any Tokens;
+
+(b) the Token Vendor shall have no obligation to provide, and you shall have no right to receive, any refund for any
+part of the Purchase Consideration transferred by you through such other website or place; and
+
+(c) the Token Vendor shall have no obligations to you in any manner or form in respect of such purported
+purchase.
+
+Accepted cryptocurrencies for purchase
+
+4.2 The Token Vendor shall accept, as payment for the purchase of Tokens, only ETH. No legal tender, fiat currencies,
+cryptocurrencies, blockchain assets or tokens other than ETH shall be accepted as payment for purchase of Tokens.
+Subject to the provisions of these Terms, your purchase of Tokens under these Terms shall be deemed to be a confirmed
+purchase only upon validation and verification on the Ethereum Blockchain that your transfer of ETH to the Designated
+Address, as payment for your intended purchase of Tokens, is successful and complete.
+
+Purchase Consideration
+4.3 The consideration for the purchase of Tokens (the “Purchase Consideration”) in the Token Sale shall be as follows:
+(a) in the Pre-Sale Tranche, 1 ETH for 19,200 Tokens; and
+(b) in the Public Tranche, 1 ETH for 16,000 Tokens.
+Any fractional number of Tokens which you are entitled to receive for a confirmed purchase of Tokens (to the extent not
+rejected by the Token Vendor in accordance with these Terms), determined based on the amount of ETH for such
+confirmed purchase at the Purchase Consideration as received at the Designated Address in ETH, shall be rounded
+
+down to the nearest 2" decimal place of a Token.
+
+Notwithstanding the foregoing of this Paragraph 4.3, the Token Vendor reserves the right to adjust, in its sole and
+absolute discretion, the Purchase Consideration at any time during the Sale Period.
+Minimum Purchase Amount
+
+4.4 The minimum Purchase Consideration for each purchase of Tokens is 0.5 ETH (excluding all administrative and/or
+third party charges and/or other transaction fees (if any) that may be incurred by you in connection with such transfer of
+ETH) (the “Minimum Purchase Amount’).
+
+4.5 In the event that you attempt to purchase Tokens of an amount less than the Minimum Purchase Amount, you
+acknowledge and agree that:
+
+(a) provided that your transfer of ETH to the Designated Address as payment for such attempted purchase of
+Tokens is validated and verified on the Ethereum blockchain as successful and complete and notwithstanding any
+provision in these Terms, the Token Vendor may, at its sole and absolute discretion, provide a refund of such
+transfer in full or in part without interest and net of all administrative and/or third party charges and/or other
+transaction fees (if any) that may be incurred in connection with such refund, in which case such administrative
+and/or third party charges and/or other transaction fees (if any) incurred in connection with such refund shall be
+borne by you;
+
+(b) save for any refund that the Token Vendor may elect to provide under Paragraph 4.5(a), the Token Vendor shall
+have no obligations in any form or manner whatsoever to you in respect of such attempted purchase; and
+
+(c) save for your right to such refund under Paragraph 4.5(a), you hereby waive all rights, claims and/or courses of
+action (present or future) under law (including any tortious claims) or contract against the Token Vendor and the
+Indemnified Persons in connection with or arising from such attempted purchase, and shall further hold harmless,
+the Token Vendor and the Indemnified Persons from and against any and all losses, damages, taxes, liabilities and
+expenses that may be incurred by you in connection with or arising from such attempted purchase.
+
+4.6 The Purchase Consideration shall be exclusive of all administrative and/or third party charges and/or other
+transaction fees (if any) that may be incurred in connection with your transfer of the Purchase Consideration for your
+intended purchase of Tokens. Any such administrative and/or third party charges and/or other transaction fees (if any)
+incurred in connection with your transfer of the Purchase Consideration for your intended purchase of Tokens shall be
+borne by you.
+
+4.7 It shall be your sole responsibility to ensure that the amount of transaction fees paid by you to miners in connection
+with your transfer of ETH, as payment for your intended purchase of Tokens, is sufficient for your transfer to be validated
+and verified on the Ethereum Blockchain as a successful and complete transfer prior to the Sale Expiry Time.
+
+4.8 Any amount(s) of transaction fees recommended by the Token Vendor through the Channels or any other public or
+private communication channel is only indicative, and may not be representative or reflective of the actual amount(s) of
+transaction fees required for your transfer to be validated and verified on the Ethereum Blockchain as a successful and
+complete transfer prior to the Sale Expiry Time. Accordingly, there is no assurance that any amount(s) of transaction fees
+recommended by the Token Vendor through the Channels or any other public or private communication channel will
+be sufficient for your transfer to be validated and verified on the Ethereum Blockchain as a successful and complete
+transfer prior to the Sale Expiry Time.
+
+Address for directing transfers of Purchase Consideration and holding of accepted Purchase Consideration in escrow
+until delivery of Tokens
+
+4.9 You shall transfer ETH as Purchase Consideration for your intended purchase of Tokens to the Designated Address as
+may be provided to you by the Token Vendor within the Transfer Period.
+
+4.10 Any transfer of ETH as Purchase Consideration for your intended purchase of Tokens under Paragraph 4.9 shall be
+made from the address of the Ethereum Wallet which you have notified to the Token Vendor at the time of your
+Registration and which is not an account or wallet established and maintained with any Centralised Exchange. In the
+case where you transfer ETH to the Designated Address from the address of an account or wallet established and
+maintained with any Centralised Exchange, regardless of whether such transfer is validated and verified on the
+Ethereum Blockchain as successful and complete, you acknowledge and agree that:
+
+(a) the Token Vendor shall not be under any obligation to deliver any Tokens to you;
+
+(b) the Token Vendor shall not have any obligation to provide any refund for any part of such transfers of ETH to
+the Designated Address to you;
+
+(c) the Token Vendor shall not have any obligation in any form or manner whatsoever to you in respect of such
+attempted purchase; and
+
+(d) you hereby waive all rights, claims and/or courses of action (present or future) under law (including any tortious
+claims) or contract against the Token Vendor and the Indemnified Persons in connection with or arising from such
+attempted purchase, and shall further hold harmless, the Token Vendor and the Indemnified Persons from and
+against any and all losses, damages, taxes, liabilities and expenses that may be incurred by you in connection with
+or arising from such attempted purchase.
+
+Attempts to double spend and purchases in violation of laws
+
+4.11 In the event that the Token Vendor discovers, at any time after your acceptance of these Terms and prior to the
+delivery of Tokens in accordance with Paragraph 6, any attempt by you to double spend ETH in the transfer of ETH as
+Purchase Consideration for your attempted purchase, or that your purchase of Tokens is determined to be in violation of
+any applicable laws, regulations or rules and you have made any transfers of ETH for such attempted purchase or such
+attempted purchase is in violation of any applicable laws, regulations or rules, you acknowledge and agree, regardless of
+whether such transfers of ETH as Purchase Consideration are reflected as validated and verified on the Ethereum
+Blockchain, that the attempted purchase of Tokens will be regarded as invalid and/or void ab initio, and:
+
+(a) the Token Vendor shall have no obligation to provide, and you shall have no right to receive, any refund for any
+transfers of ETH made by you whether such transfer was made to the Designated Address and validated and
+verified on the Ethereum Blockchain as successful and complete or otherwise;
+
+(b) the Token Vendor shall not be obliged to deliver any Tokens to you and shall have no obligations in any form or
+manner whatsoever to you in respect of such attempted purchase; and
+
+(c) you hereby waive all rights, claims and/or courses of action (present or future) under law (including any tortious
+claims) or contract against the Token Vendor and the Indemnified Persons in connection with or arising from such
+attempted purchase, and shall further hold harmless, the Token Vendor and the Indemnified Persons from and
+against any and all losses, damages, taxes, liabilities and expenses that may be incurred by you in connection with
+or arising from such attempted purchase.
+
+IT IS YOUR SOLE RESPONSIBILITY TO ENSURE THAT THERE IS NO ATTEMPT TO DOUBLE SPEND AND THAT YOUR
+TRANSFER OF ETH AS PURCHASE CONSIDERATION FOR THE PURCHASE OF TOKENS IS NOT IN VIOLATION OF ANY
+APPLICABLE LAWS, REGULATIONS OR RULES IF YOUR INTENTION IS NOT FOR PARAGRAPH 4.11 TO APPLY TO
+YOUR PURCHASE OF TOKENS.
+
+5. RESPONSIBILITY TO ESTABLISH AND MAINTAIN CRYPTOCURRENCY WALLET AND ADDRESS
+
+5.1 For purposes of your transfer of ETH as Purchase Consideration and receipt of any refund (where applicable) in the
+Token Sale, you shall have the sole responsibility to establish, and maintain, in fully operational, secure and valid status,
+access to an Ethereum Wallet which shall adhere to and support the ERC20 Token Standard and maintain, in your fully
+secure possession, the credentials for accessing such Ethereum Wallet and the private key of such Ethereum Wallet;
+
+5.2 For purposes of your receipt of Tokens, you shall have the sole responsibility to establish and/or maintain, in fully
+operational, secure and valid status, access to an Ethereum Wallet as may be provided by you to the Token Vendor and
+maintain, in your fully secure possession, the credentials for accessing such Ethereum Wallet and the private key of such
+Ethereum Wallet.
+
+5.3 You shall also provide to the Token Vendor through the Designated Web Address at the time when making transfers
+of ETH as Purchase Consideration for your purchase of Tokens or such other time as required by the Token Vendor:
+
+(a) for purposes of your receipt of Tokens, the address of the Ethereum Wallet as referred to in Paragraph 5.2; and
+
+(b) for purposes of your receipt of refunds (if any), the address of the Ethereum Wallet as referred to in Paragraph
+5.1.
+
+5.4 In the event of any loss, hack or theft of cryptocurrencies from any of the cryptocurrency wallets referred to in
+Paragraphs 5.1 and 5.2, you acknowledge and confirm that you shall have no right(s), claim(s) or causes of action in any
+way whatsoever against the Token Vendor.
+
+5.5 Any obligation of the Token Vendor to deliver any Tokens to you or provide you with any refund under these Terms
+shall be subject to your compliance with the provisions of Paragraphs 5.1 to 5.3. In the event that the Token Vendor is
+unable to deliver any Tokens to you or provide you with any refund under these Terms due to your Ethereum Wallet not
+being initialised, valid or operational, the Token Vendor may, at its sole and absolute discretion, hold such Tokens or
+refund in escrow or do such other acts as it may determine and shall not be obliged to deliver any Tokens to you or
+provide you with any refund.
+
+6. DELIVERY OF TOKENS AND RIGHTS OF TOKEN HOLDERS
+
+6.1 Subject to the validation and verification on the Ethereum Blockchain of transfers of ETH as Purchase Consideration
+in respect of confirmed purchases of Tokens from the Token Vendor as successful and complete, the Token Vendor shall
+on a best endeavours basis deliver the Tokens for such confirmed purchases to such address of the Ethereum Wallet as
+may be provided by you to the Token Vendor in accordance with Paragraph 5.3(a) on such date(s) as follows:
+(a) for Tokens purchased in the Pre-Sale Tranche:
+
+(i) Tokens representing 91.67% of the number of Tokens purchased by you within 10 - 14 calendar days of
+the Sale Expiry Date (“Token Delivery Date”); and
+
+(ii) the remainder of the Tokens purchased by you which are not delivered by the Token Delivery Date, on
+or about the date falling 183 days after the Sale Expiry Date; and
+
+(b) for Tokens purchased in the Public Sale Tranche, by the Token Delivery Date.
+
+Tokens shall be deemed to be received by you upon validation and verification of receipt of Tokens in such Ethereum
+Wallet as may be provided by you to the Token Vendor in accordance with Paragraph 5.3(a).
+
+6.2 The delivery of Tokens to you in accordance with Paragraph 6.1 shall only be made on satisfaction of all of the
+following:
+
+a) receipt in full of the Purchase Consideration for your purchase of Tokens at the Designated Address in
+accordance with Paragraph 4;
+
+b) the Ethereum Wallet provided to you by the Token Vendor in accordance with Paragraph 5.3(a) being
+maintained in fully operational, secure and valid status; and
+
+c) validation and verification of transfers of ETH as Purchase Consideration on the Ethereum Blockchain as
+successful and complete.
+
+6.3 In the case where Tokens have been delivered by the Token Vendor in accordance with Paragraph 6.1, but where the
+Ethereum Wallet provided by you to the Token Vendor in accordance with Paragraph 5.3(a) is an account or wallet
+established and maintained with any Centralised Exchange, you acknowledge and agree that:
+
+a) the Token Vendor shall not have any obligation to ensure your receipt of any Tokens so delivered;
+
+b) the Token Vendor shall not have any obligation in any form or manner whatsoever to you in respect of your
+attempted purchase of Tokens; and
+
+c) you hereby waive all rights, claims and/or courses of action (present or future) under law (including any tortious
+claims) or contract against the Token Vendor and the Indemnified Persons in connection with or arising from such
+delivery of Tokens, and shall further hold harmless, the Token Vendor and the Indemnified Persons from and
+against any and all losses, damages, taxes, liabilities and expenses that may be incurred by you in connection with
+or arising from such delivery of Tokens.
+
+6.4 Tokens shall be delivered to and accepted by you on an “as is” basis without warranties of any kind by the Token
+Vendor. The Token Vendor hereby expressly disclaims all express and implied warranties in relation to Tokens and the
+delivery thereof.
+
+6.5 Any availability, transferability or tradability of Tokens on any cryptocurrency exchange shall not be construed,
+interpreted or deemed by you as an indication of the merits of the Token Vendor, the Rate3 Ecosystem, the Whitepaper,
+the Channels, the Token Sale or the Tokens.
+
+6.6 Save for such right as may be granted by the Token Vendor, in its sole and absolute discretion, to holders of Tokens to
+use and access certain functions within the Rate3 Ecosystem as described in the Whitepaper (with the terms and
+conditions, and extent, of any such granted right also being determined by the Token Vendor in its sole and absolute
+discretion), ownership and holding of Tokens shall carry no other rights, express or implied, in relation to you, the Token
+Vendor or any other person.
+
+6.7 To the extent that the Token Vendor determines, in its sole discretion, that it is necessary to obtain certain
+information about you in order to comply with applicable laws or regulations in connection with the purchase of Tokens,
+you shall provide such information promptly upon such request in such form or manner as the Token Vendor may
+require, and you acknowledge and accept that the Token Vendor may refuse to sell or withhold delivery of Tokens to you
+until such requested information has been provided to the satisfaction of the Token Vendor.
+
+7 WITHDRAWALS, CANCELLATIONS, REJECTIONS OF PURCHASES AND ABORTION OF TOKEN SALE
+
+7.1 Upon validation and verification of transfers of ETH as Purchase Consideration for the purchase of Tokens from the
+Token Vendor on the Ethereum Blockchain as successful and complete, save as provided for under these Terms:
+
+(a) such transfer shall be deemed to be final; and
+
+(b) unless otherwise required by the applicable laws, regulations or rules, you shall not be entitled to any
+withdrawals or cancellations of transfers or purchases, or any refunds.
+7.2 The Token Vendor reserves the right, in its sole and absolute discretion, to reject any purchases of Tokens or abort the
+Token Sale at any time after your acceptance of these Terms and prior to the delivery of Tokens in accordance with
+Paragraph 6. The Token Vendor further reserves the right, in its sole and absolute discretion, to treat the Token Sale and
+any purchase of Tokens therein as being invalid, notwithstanding any delivery of Tokens which may have been effected
+in accordance with Paragraph 6, in the case where there is any change in any applicable law, regulation or rule after
+such delivery which prohibits, restricts, curtails, hinders, impairs or otherwise adversely affects the Token Sale to any
+extent.
+
+7.3 The Token Vendor reserves the right, in its sole and absolute discretion, to reject any purchases of Tokens by any
+participant at any time after your acceptance of these Terms and prior to the delivery of Tokens in accordance with
+Paragraph 6 in the event that you are not successfully Whitelisted to the Token Vendor's sole and absolute satisfaction.
+
+7.4 In the event of any such rejection of your purchase of Tokens, abortion of the Token Sale or the completed Token
+Sale being treated as invalid, where you have made any transfer of ETH as Purchase Consideration for such rejected
+purchase of Tokens or such purchase of Tokens which is the subject of the aborted Token Sale or the completed Token
+Sale being treated as invalid (as the case may be), you acknowledge and agree that:
+
+(a) provided that your transfer of ETH to the Designated Address as payment for such intended purchase of Tokens
+is validated and verified on the Ethereum Blockchain as successful and complete and notwithstanding any
+provision in these Terms, the Token Vendor may, notwithstanding any provision in these Terms, elect in its sole and
+absolute discretion to provide a refund of such Purchase Consideration in full or in part without interest and net of
+all administrative and/or third party charges and/or other transaction fees (if any) that may be incurred in
+connection with such refund, in which case such administrative and/or third party charges and/or other
+transaction fees (if any) incurred in connection with such refund shall be borne by you;
+
+(b) save for any refund that the Token Vendor may elect to provide under Paragraph 7.4(a), the Token Vendor shall
+have no obligations in any form or manner whatsoever to you in respect of such intended purchase; and
+
+(c) save for your right to such refund under Paragraph 7.4(a), you hereby waive all rights, claims and/or courses of
+
+action (present or future) under law (including any tortious claims) or contract against the Token Vendor and the
+
+Indemnified Persons in connection with or arising from such intended purchase, and shall further hold harmless,
+
+the Token Vendor and the Indemnified Persons from and against any and all losses, damages, taxes, liabilities and
+expenses that may be incurred by you in connection with or arising from such intended purchase.
+
+8. REFUND OF PURCHASE CONSIDERATION
+
+8.1 You acknowledge, agree, and confirm that there shall be no refund of any transfers of ETH made by you to the Token
+Vendor in any form or manner unless clearly provided for under these Terms. All risks in relation to any refund of
+transfers of ETH made pursuant to these Terms shall be borne absolutely by you and none of the Token Vendor or any of
+the Indemnified Persons shall be liable for any such risks.
+
+8.2 In each case where the Token Vendor elects, in accordance with these Terms, to provide a refund of any transfer of
+ETH as Purchase Consideration made by you for any intended purchase, the Token Vendor shall transfer such amount of
+ETH as may be equivalent to the amount refundable to the address of the Ethereum Wallet as may be provided by you
+to the Token Vendor in accordance with Paragraph 5.3(b).
+
+8.3 Notwithstanding Paragraph 8.2, in the case where the Token Vendor elects, in accordance with these Terms, to
+provide a refund of any transfers of ETH made by you as Purchase Consideration for any intended purchase, but where
+the Ethereum Wallet as may be provided by you to the Token Vendor in accordance with Paragraph 5.3(b) is an account
+or wallet established and maintained with any Centralised Exchange, you acknowledge and agree that:
+
+(a) the Token Vendor shall not have any obligation to ensure your receipt of any such refund;
+
+(b) the Token Vendor shall not have any obligation in any form or manner whatsoever to you in respect of such
+refund; and
+
+(c) you hereby waive all rights, claims and/or courses of action (present or future) under law (including any tortious
+claims) or contract against the Token Vendor and the Indemnified Persons in connection with or arising from such
+refund, and shall further hold harmless, the Token Vendor and the Indemnified Persons from and against any and
+all losses, damages, taxes, liabilities and expenses that may be incurred by you in connection with or arising from
+such refund.
+
+9 REPRESENTATIONS AND WARRANTIES
+
+9.1 By accepting these terms, you represent and warrant to the Token Vendor as follows:
+
+(a) you acknowledge and agree that the Tokens are not intended to constitute securities of any form, units in a
+business trust, units in a collective investment scheme or any other form of regulated investment or investment
+product in any jurisdiction;
+
+b) you are not a citizen or resident of a country the laws of which prohibit or conflict with the Token Sale or your
+participation in the Token Sale;
+
+c) you acknowledge and agree that these Terms do not constitute a prospectus or offer document of any sort and
+is not intended to constitute an offer of securities of any form, units in a business trust, units in a collective
+investment scheme or any other form of regulated investment or investment product in any jurisdiction or a
+solicitation for any form of investment in any jurisdiction;
+
+d) you acknowledge and agree that no Token is to be construed, interpreted, classified or treated as enabling, or
+according any opportunity to, you to participate in or receive profits, income, or other payments or returns arising
+from or in connection with the Rate3 Ecosystem, the Tokens or the proceeds of the Token Sale, or to receive sums
+paid out of such profits, income, or other payments or returns;
+
+e) you acknowledge and agree that no regulatory authority has examined or approved of these Terms, no such
+action has been or will be taken under the laws, regulatory requirements or rules of any jurisdiction, and the
+
+provision of these Terms to you does not imply that the applicable laws, regulatory requirements or rules have
+been complied with;
+
+‘f) the provision of these Terms, any part thereof or any copy thereof, or acceptance of the same by you, is not
+prohibited or restricted by the applicable laws, regulations or rules in your jurisdiction, and where any restrictions
+in relation to possession are applicable, you have observed and complied with all such restrictions at your own
+expense and without liability to the Token Vendor;
+
+g) you have read and understood all of these Terms including the Annexes hereto;
+
+h) any Ethereum Wallet provided by you in accordance with Paragraph 5.3 is fully operational, secure and valid;
+
+i) you are not a Disqualified Person;
+
+(j) you have full power and capacity to accept these Terms and perform all your obligations hereunder and in the
+case where you are accepting these Terms on behalf of a corporation:
+
+i) such corporation is duly incorporated and validly existing under the applicable laws; and
+
+ii) you are duly authorised to accept these Terms and procure the performance of obligations hereunder;
+
+k) if you are a natural person, you are of sufficient age and capacity under the applicable laws of the jurisdiction in
+which you reside and the jurisdiction of which you are a citizen to accept these Terms and perform all your
+obligations hereunder;
+
+(Il) you acknowledge and agree that the Tokens are not to be construed, interpreted, classified or treated as:
+(i) any kind of currency other than cryptocurrency;
+
+(ii) debentures, stocks or shares issued by the Token Vendor;
+
+(iii) rights, options or derivatives in respect of such debentures, stocks or shares;
+
+(iv) rights under a contract for differences or under any other contract the purpose or pretended purpose
+of which is to secure a profit or avoid a loss;
+
+(v) units in a collective investment scheme;
+
+(vi) units in a business trust;
+
+(vii) derivatives of units in a business trust; or
+
+(vii) any other security, class of securities or form of investment (whether regulated or otherwise);
+(m) you have a basic degree of understanding of the operation, functionality, usage, storage, transmission
+mechanisms, and other material characteristics of cryptocurrencies, blockchain assets, and tokens including
+
+Tokens, blockchain-based software systems, cryptocurrency wallets or other related token storage mechanisms,
+blockchain technology and smart contract technology;
+
+(n) you are fully aware of, understand and agree to assume all the risks (including direct, indirect or ancillary risks)
+associated with the conduct of the Token Sale via the Designated Web Address, the Token Vendor, the Token Sale,
+the Tokens, your purchase of Tokens, any Ethereum Wallet referred to in Paragraph 5, your provision of the
+address of any Ethereum Wallet referred to in Paragraph 5, and the Rate3 Ecosystem, including but not limited to
+the risks set out in the Annex 2 hereto;
+
+0) these Terms constitute legal, valid, and binding obligations on you, enforceable in accordance with its terms
+and neither the purchase of, nor receipt, nor holding of Tokens is in breach or contravention of any applicable law,
+regulation or rule in your jurisdiction;
+
+p) you are not a citizen or resident of any jurisdiction in which either the purchase of, receipt, or holding of Tokens
+is prohibited, restricted, curtailed, hindered, impaired or otherwise adversely affected by any applicable law,
+regulation or rule;
+
+q) no consent, approval, order or authorisation of, or registration, qualification, designation, declaration or filing
+with, any regulatory authority in any jurisdiction (the “Approvals”) is required on your part in connection with your
+purchase of Tokens, or where any Approvals are required, such Approvals have been obtained and remain valid
+and in full force and effect;
+
+r) the cryptocurrencies that you will use to purchase Tokens were not and are not directly or indirectly derived
+from any activities that in connection with anti-money laundering and/or terrorism financing laws or regulations or
+any other acts in breach or contravention of any applicable law, regulation or rule;
+
+'s) none of you or (and in the case where you are accepting these Terms on behalf of a corporation) any of your
+related corporations (if any), any of your directors or officers nor, any of your employees, agents or any other person
+acting on behalf of your or any of your related corporations is an individual or entity that is, or is owned or
+controlled by an individual or entity that:
+
+{i) is listed by the MAS as designated individuals or entities defined in the respective regulations
+promulgated under the Monetary Authority of Singapore Act (Chapter 186) of Singapore, the United
+Nations Act (Chapter 339) of Singapore or the Terrorism (Suppression of Financing) Act (Chapter 325) of
+Singapore or such other law, regulation or rule as may be prescribed by the MAS from time to time;
+
+(ii) is currently the subject of any sanction administered by the OFAC or any other United States
+government authority, is not designated as a "Specially Designated National" or "Blocked Person" by OFAC
+or subject to any similar sanctions or measures imposed or administered by the United Nations Security
+Council, the European Union, Her Majesty's Treasury of the United Kingdom or similar sanctions
+administered or imposed by the government of Singapore or any other country (collectively, the
+"Sanctions');
+
+{iii) is located, organised or resident in a country or territory that is the subject of such Sanctions (including,
+without limitation, the Democratic People’s Republic of Korea, the Democratic Republic of Congo, Eritea,
+Iran, Libya, Somalia, South Sudan, Sudan and Yemen); or
+
+(iv) has engaged in and is not now engaged in any dealings or transactions with any government, person,
+entity or project targeted by, or located in any country or territory, that at the time of the dealing or
+transaction is or was the subject of any Sanctions;
+
+(t) none of: (i) you; (ii) any person controlling or controlled by you; (iii) if you are a privately-held entity, any person
+having a beneficial interest in you; or (iv) any person for whom you are acting as agent or nominee in connection
+with your participation in the Token Sale is a senior foreign political figure, or any immediate family member or
+close associate of a senior foreign political figure, as such terms are defined below;
+
+(u) if you are affiliated with a Foreign Bank, or if you receive deposits from, make payments on behalf of, or handle
+other financial transactions related to a Foreign Bank, you represent and warrant to the Token Vendor that: (i) the
+Foreign Bank has a fixed address, and not solely an electronic address, in a country in which the Foreign Bank is
+authorised to conduct banking activities; (ii) the Foreign Bank maintains operating records related to its banking
+activities; (iii) the Foreign Bank is subject to inspection by the banking authority that licensed the Foreign Bank to
+conduct its banking activities; and (iv) the Foreign Bank does not provide banking services to any other Foreign
+Bank that does not have a physical presence in any country and that is not a regulated affiliate;
+
+‘v) you have sufficient cryptocurrencies to fulfil your obligations under these Terms and the Token Sales in respect
+of any purchase of Tokens by you;
+
+(Ww) the Tokens to be delivered to and received by you will not be used for any purpose in connection with money
+aundering, terrorism financing or any other acts in breach or contravention of any applicable law, regulation or
+rule;
+
+(x) you are acquiring Tokens as principal and for your own benefit and you are not acting on the instructions of, or
+as nominee or agent for or on behalf of, any other person;
+
+(y) you bear the sole responsibility to determine what tax implications your participation in the Token Sale and/or
+purchase of Tokens may have for you and agree not to hold the Token Vendor or any other person involved in the
+Token Sale liable for any tax liability associated with or arising therefrom;
+
+z) you agree and acknowledge that the Token Vendor is not liable for any direct, indirect, special, incidental,
+consequential or other losses of any kind, in tort, contract or otherwise (including but not limited to loss of revenue,
+income or profits, and loss of use or data), arising out of or in connection with any acceptance of or reliance on
+these Terms or any part thereof by you;
+
+(aa) you waive the right to participate in a class action lawsuit or a class wide arbitration against the Token Vendor
+and/or any person involved in the Token Sale and/or with the creation and distribution of the Tokens; and
+
+(bb) all of the above representations and warranties are, and will continue to be, true, complete, accurate and non
+misleading from the time of your acceptance of these Terms notwithstanding the receipt by you of all of the
+Tokens.
+
+9.2 The Token Vendor does not make, and hereby disclaims, any representation or warranty in any form whatsoever,
+including any representation or warranty in relation to:
+
+a) the information set out on the Whitepaper, the Channels or any other place;
+b) the Token Vendor;
+
+c) the Token Sale;
+
+d) the Tokens;
+
+e) your purchase of Tokens;
+
+'f) the Designated Address;
+
+g) the Ethereum Wallet(s); and
+
+h) the Rate3 Ecosystem.
+
+10. DISCLAIMERS
+
+10.1 To the maximum extent permitted by all applicable laws, regulations, and rules and except as otherwise provided in
+these Terms, the Token Vendor hereby expressly disclaims its liability and shall in no case be liable to you or any person
+for:
+
+a) any sale or transfer of any Tokens acquired by you hereunder to any person at any time;
+
+b) the cryptocurrencies used to purchase Tokens being obtained through any acts in connection with money
+aundering, terrorism financing or any other acts in breach or contravention of any applicable law, regulation or
+
+rule;
+
+c) use of Tokens for any purpose in connection with money laundering, terrorism financing or any other acts in
+breach or contravention of any applicable law, regulation or rule;
+
+d) rejection of purchases of Tokens or abortion of the Token Sale pursuant to Paragraph 7.2;
+
+e) failure or delay in the delivery by the Token Vendor, and receipt by you, of Tokens in accordance with Paragraph
+6
+
+f) failure, malfunction or breakdown of, or disruption to, the operation of the Token Vendor, the Tokens or any
+technology (including but not limited to smart contract technology) on which the Token Vendor, the Rate3
+Ecosystem, the Tokens, the Designated Address, the Ethereum Wallet(s) or the Token Sale relies on, due to
+occurrences of hacks, mining attacks (including but not limited to double-spend attacks, majority mining power
+attacks and “selfish-mining” attacks), cyber-attacks, distributed denials of service, errors, vulnerabilities, defects,
+flaws in programming or source code or otherwise, regardless of when such failure, malfunction, breakdown, or
+disruption occurs;
+
+(g) failure, malfunction or breakdown of, or disruption to, the operation of any blockchain, any blockchain-based
+software systems or any blockchain technology in connection with the operations of the Token Vendor, the Rate3
+Ecosystem, the Tokens, the Designated Address, the Ethereum Wallet(s) or the Token Sale, due to occurrences of
+hardforking, hacks, mining attacks (including but not limited to double-spend attacks, majority mining power
+attacks and “selfish-mining” attacks), cyber-attacks, distributed denials of service, errors, vulnerabilities, defects,
+flaws in programming or source code or otherwise, regardless of when such failure, malfunction, breakdown, or
+disruption occurs;
+
+(h) any virus, error, bug, flaw, defect or otherwise adversely affecting the operation, functionality, usage, storage,
+transmission mechanisms, transferability or tradeability (after Tokens have been made available for trading on a
+cryptocurrency exchange (if applicable)) and other material characteristics of Tokens;
+
+(i) decreases or volatility in traded prices or trading volume of Tokens (after Tokens have been made available for
+trading on acryptocurrency exchange (if applicable));
+
+(j) failure or unfitness of Tokens for any specific purpose;
+
+(k) the manner of utilisation of the proceeds received by the Token Vendor from the Token Sale;
+
+|) failure to disclose information relating to the progress of the Token Sale;
+
+m) loss of possession of the credentials for accessing, or loss or destruction of the private keys of, any Ethereum
+Wallet referred to in Paragraph 5 in any manner and to any extent;
+
+n) failure or delay in the availability of Tokens for trading on a cryptocurrency exchange (if applicable);
+(0) any rejection of trading of Tokens by a cryptocurrency exchange (if applicable);
+
+p) any prohibition, restriction or regulation by any government or regulatory authority in any jurisdiction of the
+operation, functionality, usage, storage, transmission mechanisms, transferability or tradeability (after Tokens have
+been made available for trading on a cryptocurrency exchange (if applicable)) or other material characteristics of
+the Tokens;
+
+q) any risks associated with the Whitepaper, the Channels, the Token Vendor, the Token Sale, Tokens, your
+purchase of Tokens, any Ethereum Wallet referred to in Paragraph 5, your provision of the Ethereum Wallet(s)
+referred to in Paragraph 5, the Designated Address and the Rate3 Ecosystem, including but not limited to the risks
+set out in Annex 2 hereto; and
+
+r) all other risks, direct, indirect or ancillary, whether in relation to the Whitepaper, the Channels, the Token
+Vendor, the Token Sale, Tokens, your purchase of Tokens, any Ethereum Wallet referred to in Paragraph 5, your
+provision of the Ethereum Wallet(s) referred to in Paragraph 5, the Designated Address and the Rate3 Ecosystem
+which are not specifically or explicitly contained in or stated in these Terms or set out in Annex 2 hereto.
+
+10.2 In the event of any loss, hack or theft of cryptocurrencies from the Receiving Address or any Ethereum Wallet
+referred to in Paragraph 5, you acknowledge and confirm that you shall have no right(s), claim(s) or causes of action in
+any way whatsoever against the Token Vendor.
+
+Tl. LIMITATION OF LIABILITY AND INDEMNIFICATION
+
+T1.1 To the maximum extent permitted by the applicable laws, regulations and rules:
+
+(a) the Token Vendor and Indemnified Persons shall not be liable for any indirect, special, incidental, consequential
+or other losses of any kind, in tort, contract or otherwise (including but not limited to loss of revenue, income or
+profits, and loss of use or data), arising out of or in connection with the purchase of, use, receipt or holding of
+Tokens by you;
+
+(b) the aggregate liability of the Token Vendor, in tort, contract or otherwise, arising out of or in connection with
+the purchase of, use, receipt or holding of Tokens by you shall be limited to the amount of ETH transferred by you
+as Purchase Consideration for your intended purchase hereunder; and
+
+(c) you hereby agree to waive all rights to assert any claims under the applicable laws, regulations and rules and
+you may make claims based only on these Terms.
+
+11.2 To the maximum extent permitted by the applicable laws, regulations and rules, you shall indemnify, defend, and
+hold the Token Vendor and/or Indemnified Persons harmless from and against any and all claims, damages, losses, suits,
+actions, demands, proceedings, expenses, and/or liabilities (including but not limited to reasonable legal fees incurred
+and/or those necessary to successfully establish the right to indemnification) filed/incurred by you or any third party
+against any of the Token Vendor or the Indemnified Persons arising out of a breach of any warranty, representation, or
+obligation hereunder.
+
+12. NO ASSIGNMENT
+Subject to these Terms, only you and no other person shall have the right to any claim against the Token Vendor in
+connection with your purchase hereunder. You shall not assign, trade or transfer, or attempt to assign, trade or transfer,
+
+your right to any such claim. Any such assignment or transfer shall not impose any obligation or liability of the Token
+Vendor to the assignee or transferee.
+
+13. INTELLECTUAL PROPERTY RIGHTS
+
+13.1 These Terms shall not entitle you to any intellectual property rights, including the rights in relation to the use, for any
+purpose, of any information, image, user interface, logos, trademarks, trade names, Internet domain names or copyright
+in connection with the Whitepaper, the Channels, the Token Vendor, the Token Sale, the Tokens, your purchase of
+Tokens, and the Rate3 Ecosystem.
+
+13.2 There are no implied licences under these Terms, and any rights not expressly granted to you hereunder are
+reserved by the Token Vendor.
+
+14. SURVIVING TERMS
+
+Notwithstanding the expiry of the Sale Period, any delivery of Tokens to you or any abortion of the Token Sale pursuant
+to these Terms, Paragraphs 9 to 16 and 18 to 21, and the Annexes hereto shall remain valid and in full force and effect.
+
+15. NO WAIVER
+
+Any failure of the Token Vendor to enforce these Terms or to assert any right(s), claim(s) or causes of action against you
+under these Terms shall not be construed as a waiver of the right of the Token Vendor to assert any right(s), claim(s) or
+causes of action against you.
+
+16. ENTIRE AGREEMENT
+
+16.1 These Terms contain the entire agreement and the understanding between the Parties and supersedes all prior
+agreements, understandings or arrangements (both oral and written) in relation to the Token Sale and your purchase of
+Tokens.
+
+16.2 In the event that the Token Vendor discovers that you, in your participation in the Token Sale, have engaged in
+unfair, excessive or abusive usage or conduct, the Token Vendor reserves the right to take such actions as may be
+necessary, to the fullest extent possible under law, to protect the Token Vendor from losses, damages, harm or
+degradation of any form and manner.
+
+17. TAXES
+
+17.1 The Purchase Consideration that you transfer as payment for your purchase of Tokens shall be exclusive of all taxes
+that are applicable to your purchase of, receipt and holding of Tokens in any jurisdiction (“Payable Tax”).
+
+17.2 You shall be responsible for determining any Payable Tax and declaring, withholding, collecting, reporting and
+remitting the correct amount of Payable Tax to the appropriate tax authorities. You shall be solely liable for all penalties,
+claims, fines, punishments, or other liabilities arising from the non-fulfilment or non-performance to any extent of any of
+your obligations in relation to the Payable Tax.
+
+17.3 The Token Vendor shall not be responsible for determining any Payable Tax and declaring, withholding, collecting,
+reporting and remitting the correct amount of Payable Tax to the appropriate tax authorities.
+
+18. NOTICES
+
+18.1 Any notice or other communication to be given under these Terms shall be in writing, and shall be deemed to have
+been duly served on, given to or made in relation to a Party if it is:
+
+(a) left at the address of that Party or posted by pre-paid airmail/first-class/registered post addressed to that Party
+at such address, in which case such notice shall be deemed to have been delivered and received at the time of
+delivery; or
+
+(b) transmitted by email or facsimile, in which case such notice shall be deemed to be delivered and received at
+the time of transmission in legible form.
+
+PROVIDED that where, in the case of delivery by hand, the delivery occurs after 6.00 p.m. on a business day or ona
+day which is not a business day, receipt shall be deemed to occur at 9.00 a.m. on the next business day.
+
+18.2 For the purposes of these Terms, the contact details of the Token Vendor shall be the contact details (including, if
+applicable, the details of the person for whose attention a notice or communication is to be addressed) as the Token
+Vendor may announce on the Channels or notify to you in writing from time to time in accordance with the
+requirements of this Paragraph 18.
+
+18.3 For the purposes of these Terms, your contact details shall be such contact details as you may notify to the Token
+Vendor in writing from time to time in accordance with the requirements of this Paragraph 18.
+
+19. GOVERNING LAW AND JURISDICTION
+
+19.1 These Terms shall be governed by, and construed in accordance with, the laws of the Republic of Singapore.
+19.2 Any Dispute shall be resolved in accordance with this Paragraph 19.
+
+19.3 A Party shall give prompt written notice of any Dispute to the other Party (a "Dispute Notice"). Such Dispute Notice
+will include sufficient details of the Dispute to enable the other Party to consider its position in relation to the Dispute.
+
+19.4 Each Party agrees to use its best endeavours to settle any Dispute amicably between the Parties within a period of
+30 days from the date of the Dispute Notice given under Paragraph 19.3.
+
+19.5 Only in the event that a Dispute is not settled in accordance with Paragraph 19.4 then either Party may, by notice in
+writing to the other Party, either refer the Dispute to arbitration pursuant to Paragraph 19.6.
+
+19.6 In the event that either Party refers a Dispute, such Dispute shall be referred to and finally resolved by arbitration
+administered by the Singapore International Arbitration Centre in accordance with the Arbitration Rules of the
+Singapore International Arbitration Centre for the time being in force which rules are deemed to be incorporated by
+reference in this Paragraph. The seat of the arbitration shall be in Singapore. The Tribunal shall consist of one (1)
+arbitrator to be nominated by the Token Vendor. The language of the arbitration shall be in English.
+
+19.7 Notwithstanding any Dispute or reference of certain Disputes (or part of certain Disputes) for determination by
+
+arbitration pursuant to Paragraph 19.5, the Parties will continue to comply with their respective obligations under these
+Terms.
+
+20. CONTRACTS (RIGHTS OF THIRD PARTIES) ACT
+
+20.1 Subject to Paragraph 20.2, the Contracts (Rights of Third Parties) Act (Chapter 53B) of Singapore, as may be
+modified, amended or supplemented from time to time, shall apply to these Terms.
+
+20.2 Save for the Token Vendor's affiliates who shall have rights to the extent accorded thereto under these Terms, a
+person who is not a Party shall not have any rights whatsoever under these Terms or to enforce these Terms.
+
+21. SEVERANCE AND PARTIAL INVALIDITY
+
+21.1 If any of these Terms is rendered void, illegal or unenforceable by any legislation to which it is subject, it shall be
+rendered void, illegal or unenforceable to that extent and no further and, for the avoidance of doubt, the rest of these
+Terms shall continue to be valid and in full force and effect and shall in no way be affected, impaired or invalidated, and
+the Parties hereto shall use their commercially reasonable efforts to find and employ an alternative means to achieve
+the same or substantially the same result as that contemplated by such term, provision, covenant or restriction. It is
+hereby stipulated and declared to be the intention of the Parties that they would have executed the remaining terms,
+provisions, covenants and restrictions without including any of such that may be hereafter declared invalid, illegal, void
+or unenforceable.
+
+21.2 The illegality, invalidity or unenforceability of any provision of these Terms under the law of any jurisdiction shall not
+affect its legality, validity or enforceability under the law of any other jurisdiction nor the legality, validity or enforceability
+of any other provision.
+
+DEFINITIONS
+
+1. In these Terms, the following words and expressions shall, where not inconsistent with the context, have the following
+meanings respectively:
+
+“Approvals” has the meaning ascribed to it in Paragraph 9.1(q).
+
+“Centralised Exchange” means any centralised web and API platform which provides services to allow users of the
+platform to convert certain cryptocurrencies, cryptographic tokens and blockchain assets.
+
+“Channels” has the meaning ascribed to it in Paragraph 1.5(a).
+
+“close associate” in relation to a senior foreign political figure means a person who is widely and publicly known to
+maintain an unusually close relationship with such senior foreign political figure, and includes a person who is ina
+position to conduct substantial domestic and international financial transactions on behalf of such senior foreign
+political figure.
+
+“Commencement Time” has the meaning ascribed to it in Paragraph 3.1.
+
+“Company” means Rate Network Pte. Ltd., a private company limited by shares incorporated in the Republic of
+Singapore with the company registration number 201808808G.
+
+“Designated Address” means the blockchain address provided to you by the Token Vendor for purposes of transfer of
+ETH as Purchase Consideration for your purchase of Tokens.
+
+“Designated Web Address” means http://kyc.rate3.network.
+
+“Dispute” means any dispute between the Parties arising out of or in relation to these Terms.
+“Dispute Notice” has the meaning ascribed to it in Paragraph 19.3.
+
+“Disqualified Persons” has the meaning ascribed to it in Paragraph 2.2.
+
+“double spend” means to undertake, or attempt to undertake, two (2) different transactions on the Ethereum
+Blockchain or any other cryptocurrency network and spend the same account balance on each of the transactions.
+
+“ERC20 Token Standard” means the set of criteria, (including criteria in relation to functions and events) developed by
+the Ethereum community, which has to be met in a smart contract on a blockchain in order to enable inter-operability
+across multiple interfaces and distributed applications.
+
+“ETH" means Ether, the cryptographic token native to the Ethereum network.
+
+“Ethereum Wallet” means an address owned by you on the Ethereum Blockchain as provided by you to the Token
+Vendor at the time of your Registration.
+
+“Foreign Bank” means a non-United States of America banking institution.
+
+“immediate family’ in relation to a senior foreign political figure includes such figure’s parents, siblings, spouse, children
+and in-laws.
+
+“Indemnified Persons” means the Token Vendor's subsidiaries, related companies, affiliates, directors, officers,
+employees, agents, successors, and permitted assignees.
+
+“MAS” means the Monetary Authority of Singapore.
+
+“Minimum Purchase Amount” has the meaning ascribed to it in Paragraph 4.4.
+
+“OFAC” means the United States Office of Foreign Assets Control of the United States Department of the Treasury.
+“Payable Tax” has the meaning ascribed to it in Paragraph 17.1.
+
+“Pre-Sale Tranche” has the meaning ascribed to it in Paragraph 3.1.
+
+“Pre-Sale Tranche Closure Time” has the meaning ascribed to it in Paragraph 3.3.
+
+“Pre-Sale Tranche Target Aggregate Amount” has the meaning ascribed to it in Paragraph 3.3.
+
+“Public Sale Tranche” has the meaning ascribed to it in Paragraph 3.1.
+
+“Purchase Consideration” has the meaning ascribed to it in Paragraph 4.3.
+
+“Rate3 Ecosystem” means the network built on the decentralised global e-commerce network to be developed by
+the Token Vendor on blockchain technology.
+
+“Receiving Address” means the Designated Address(es) or address(es) on the relevant blockchain as the Token
+Vendor may transfer the proceeds from the Token Sale to.
+
+“Registration” has the meaning ascribed to it in Paragraph 2.3.
+
+“Sale Expiry Time” has the meaning ascribed to it in Paragraph 3.4.
+
+“Sale Period” has the meaning ascribed to it in Paragraph 3.1.
+
+“Sanctions” has the meaning ascribed to it in Paragraph 9.1(s)(ii).
+
+“senior foreign political figure” means a senior official in the executive, legislative, administrative, military or judicial
+branch of a government (whether elected or not), a senior official of a major political party, or a senior executive of a
+foreign government-owned corporation. It includes any corporation, business or other entity that has been formed by,
+
+or for the benefit of, a senior foreign political figure.
+
+“Terms” means the terms and conditions contained in these “7erms and Conditions of Rate3 Network Token Sale", as
+amended, supplemented, updated or substituted from time to time and includes the Annexes hereto.
+
+“Token Sale” means the sale of Tokens to you in accordance with these Terms.
+
+“Token Sale Target Aggregate Amount” has the meaning ascribed to it in Paragraph 3.4.
+
+“Token Vendor” means the Company or an affiliate thereof as may be stated in the Token Sale Terms and/or notified
+to you via the Channels.
+
+“Tokens” means the Rate Tokens (RTE), a native cryptographic token created and issued by the Token Vendor, and
+“Token” shall be construed accordingly.
+
+“Tranche” and “Tranches” have the meaning ascribed to them in Paragraph 3.1.
+“Transfer Period” means the period from such time that a purchase is made until the Sale Expiry Time.
+
+“Website” means the website of the Token Vendor which is accessible at https://www.rate3.network/.
+
+“Whitelisting Terms” means the “7erms and Conditions for Registration of Interest to Participate in the Rate Network
+Token Sale’, which was made available to you.
+
+“Whitepaper” means the whitepaper entitled “Rate3- Payment Without Borders’ published by the Token Vendor on
+April 2018 and accessible on the Website.
+
+2. In these Terms, a reference to:
+
+the Token Vendor includes a reference to its duly authorised agents and/or delegates;
+
+a person includes a reference to any individual, body corporate, unincorporated association or partnership;
+
+an agreement or other document is a reference to that agreement or document as from time to time supplemented
+or amended;
+
+the masculine gender includes the feminine and neuter genders and vice versa;
+
+the singular includes the plural and vice versa; and
+
+any law or regulation is a reference to that law or regulation as amended from time to time and, where the same has
+been repealed, to any re-enactment or replacement of the same.
+
+12 RISKS & DISCLAIMERS
+
+RISK FACTORS
+
+You should carefully consider and evaluate each of the following risk factors and all other information contained in the
+Terms before deciding to participate in the Token Sale. To the best of the Token Vendor's knowledge and belief, all risk
+factors which are material to you in making an informed judgement to participate in the Token Sale have been set out
+below. If any of the following considerations, uncertainties or material risks develops into actual events, the business,
+financial position and/or results of operations of the Token Vendor and the development, maintenance and level of
+usage of the Rate3 Ecosystem could be materially and adversely affected. In such cases, the trading price of Tokens (in
+the case where they are listed on a cryptocurrency exchange) could decline due to any of these considerations,
+uncertainties or material risks, and you may lose all or part of your Tokens.
+
+RISKS RELATING TO PARTICIPATION IN THE TOKEN SALE
+
+Purchase of products, including but not limited to cryptocurrencies / cryptographic tokens, from start-ups such as
+the Token Vendor involve a high degree of risk
+
+Financial and operating risks confronting start-ups are significant and the Token Vendor is not immune to these. Start-
+ups often experience unexpected problems in the areas of product development, marketing, financing, and general
+management, among others, which frequently cannot be solved.
+
+The Token Vendor may be forced to cease operations
+
+It is possible that, due to any number of reasons, including, but not limited to, an unfavourable fluctuation in the value
+
+of cryptographic and fiat currencies, the inability of the Token Vendor to establish the Rate3 Ecosystem or the Tokens’
+
+utility, the failure of commercial relationships, or intellectual property ownership challenges, the Token Vendor may no
+longer be viable to operate and the Token Vendor may dissolve or take actions that result in a dissolution of the Token
+
+Vendor.
+
+These Terms may not be transferred without the consent of the Company
+
+These Terms provide that you may not transfer or assign these Terms and any such assignment or transfer shall not
+impose any obligation or liability of the Token Vendor to the assignee or transferee.
+
+There is no prior market for the Tokens and the Token Sale may not result in an active or liquid market for the
+Tokens
+
+The Tokens are intended to be native tokens to be used on the Rate3 Ecosystem, and the Token Vendor has not and
+may not actively facilitate any secondary trading or external trading of Tokens. In addition, there is and has been no
+public market for the Tokens and the Tokens are not traded, whether on any cryptocurrency exchange or otherwise. In
+the event that the Tokens are traded on a cryptocurrency exchange, there is no assurance that an active or liquid
+trading market for the Tokens will develop or if developed, be sustained after the Tokens have been made available for
+trading on such cryptocurrency exchange. There is also no assurance that the market price of the Tokens will not
+decline below the value at which it was purchased for (“Purchase Price”). The Purchase Price may not be indicative of
+the market price of the Tokens after they have been made available for trading on a cryptocurrency exchange.
+
+A Token is not a currency issued by any central bank or national, supra-national or quasi-national organisation, nor is it
+backed by any hard assets or other credit. The Token Vendor is not responsible for nor does it pursue the circulation
+and trading of the Tokens on the market. Trading of the Tokens merely depends on the consensus on its value between
+the relevant market participants, and no one is obliged to acquire any Token from any holder of the Token, including
+the purchasers of the Tokens in the Token Sale, nor does anyone guarantee the liquidity or market price of the Tokens
+to any extent at any time. Accordingly, the Token Vendor cannot ensure that there will be any demand or market for
+the Tokens, or that the Purchase Price is indicative of the market price of the Tokens after they have been made
+available for trading on a cryptocurrency exchange. Hence, there is a risk that a purchaser could lose his entire
+contribution amount. In the worst-case scenario, the Tokens could be rendered worthless.
+
+The Token Vendor and the Indemnified Persons are not and shall not be responsible for or liable for the market value of
+the Tokens, the transferability and/or liquidity of the Tokens and/or the availability of any market for the Tokens through
+third parties or otherwise.
+
+Future sales of the Tokens could materially and adversely affect the market price of Tokens
+
+Any future sale of the Tokens (which were not available for sale in the Token Sale) would increase the supply of Tokens in
+the market and this may result in a downward price pressure on the Tokens. The sale or distribution of a significant
+number of Tokens outside of the Token Sale, or the perception that such further sales or issuance may occur, could
+adversely affect the trading price of the Tokens.
+
+Negative publicity may materially and adversely affect the price of the Tokens
+
+Negative publicity involving (a) the Token Vendor; (b) the Rate3 Ecosystem; (c) the Tokens; and/or (d) any of the key
+personnel of the Token Vendor, may materially and adversely affect the market perception or market price of the Tokens,
+whether or not such publicity is justified.
+
+There is no assurance of any success of the Rate3 Ecosystem
+
+The value of, and demand for, the Tokens hinges heavily on the performance of the Rate3 Ecosystem. There is no
+assurance that the Rate3 Ecosystem will gain traction after its launch and achieve any commercial success.
+
+The Rate3 Ecosystem has not been fully developed, finalised and integrated and is subject to further changes, updates
+and adjustments prior to its launch. Such changes may result in unexpected and unforeseen effects on its projected
+appeal to users, and hence impact its success. There are no guarantees that the process for creating the Tokens will be
+uninterrupted or error-free.
+
+While the Token Vendor has made every effort to provide a realistic estimate, there is also no assurance that the
+cryptocurrencies raised in the Token Sale will be sufficient for the development and integration of the Rate3 Ecosystem.
+For the foregoing or any other reason, the development and integration of the Rate3 Ecosystem may not be completed
+and there is no assurance that its systems, protocols or products will be launched at all. As such, distributed Tokens may
+hold little worth or value, and this would impact its trading price.
+
+The Tokens may be non-refundable
+
+Except as provided under these Terms or prescribed by applicable laws and regulations, the Token Vendor is not obliged
+to provide the purchasers with a refund of the Purchase Price. No promises of future performance or price are or will be
+made in respect to the Tokens, including promises of inherent value or continuing payments, and there is no guarantee
+that the Tokens will hold any particular value. Therefore, the recovery of the Purchase Price may be impossible or may be
+subject to applicable laws and regulations.
+
+The trading price of the Tokens may fluctuate following the Token Sale
+
+The prices of cryptographic tokens in general tend to be relatively volatile, and can fluctuate significantly over short
+periods of time. The demand for, and corresponding the market price of, the Tokens may fluctuate significantly and
+rapidly in response to, among others, the following factors, some of which are beyond the control of the Token Vendor:
+
+(a) new technical innovations;
+
+(b) analysts’ speculations, recommendations, perceptions or estimates of the Tokens’ market price or the Token
+Vendor's financial and business performance;
+
+(c) changes in market valuations and token prices of entities with operations similar to that of the Token Vendor
+that may be made available for sale and purchase on the same cryptocurrency exchanges as the Tokens;
+
+(d) announcements by the Token Vendor of significant events, for example partnerships, sponsorships, new
+product developments;
+
+(e) fluctuations in market prices and trading volume of cryptocurrencies on cryptocurrency exchanges;
+
+(f) additions or departures of key personnel and/or advisors of the Token Vendor;
+
+(h) success or failure of the management of the Token Vendor in implementing business and growth strategies;
+and
+
+(i) changes in conditions affecting the blockchain or financial technology industry, the general economic
+conditions or market sentiments, or other events or factors.
+
+The digital assets raised in the Token Sale are exposed to risks of theft
+
+Whilst the Token Vendor will make every effort to ensure that digital assets (such as cryptocurrencies, blockchain assets
+and/or cryptographic tokens) received from the Token Sale are securely held at its Designated Address(es) or Receiving
+Address(es) through the implementation of security measures, there is no assurance that there will be no theft of the
+cryptocurrencies as a result of hacks, mining attacks (including but not limited to double-spend attacks, majority mining
+power attacks and “selfish-mining
+
+RISKS RELATING TO THE TOKEN VENDOR
+
+The Token Vendor may be materially and adversely affected if it fails to effectively manage its operations as its
+business develops and evolves, which would have a direct impact on its ability to maintain the Rate3 Ecosystem
+and consequently the trading price of the Tokens.
+
+The financial technology and cryptocurrency industries and the markets in which the Token Vendor operates in have
+grown rapidly and continue to grow rapidly and evolve in response to new technological advances, changing business
+models and other factors. As a result of this constantly changing environment, the Token Vendor may face operational
+difficulties in adjusting to the changes, and the sustainability of the Token Vendor will depend on its ability to manage
+its operations, adapt to technological advances and market trends and ensure that it hires qualified and competent
+employees, and provide proper training for its personnel.
+
+The ability of the senior management team of the Token Vendor which is responsible for maintaining competitive
+position of the Rate3 Ecosystem is dependent to a large degree on the ability of each member of that team. The loss or
+diminution in the services of members of respective senior management team or an inability to attract, retain and
+maintain additional senior management personnel could have a material adverse effect on the Rate3 Ecosystem.
+Competition for personnel with relevant expertise is intense due to the small number of qualified individuals, and this
+situation seriously affects the ability to retain its existing senior management and attract additional qualified senior
+management personnel, which could have a significant adverse impact on the growth and operations of the Rate3
+Ecosystem.
+
+As its business evolves, the Token Vendor must also expand and adapt its operational infrastructure. The Token
+Vendor's business relies on its blockchain-based software systems, cryptocurrency wallets or other related token
+storage mechanisms, blockchain technology and smart contract technology, and to manage technical support
+infrastructure for the Rate3 Ecosystem effectively, the Token Vendor will need to continue to upgrade and improve its
+data systems and other operational systems, procedures and controls. These upgrades and improvements will require a
+dedication of resources, are likely to be complex and increasingly rely on hosted computer services from third parties
+that the Token Vendor does not control. If the Token Vendor is unable to adapt its systems and organisation in a timely,
+efficient and cost-effective manner to accommodate changing circumstances, its business strategies, results of
+operations and prospectus may be adversely affected. If the third parties whom the Token Vendor relies on are subject
+to a security breach or otherwise suffer disruptions that impact the services the Token Vendor utilises, the integrity and
+availability of its internal information could be compromised, which may consequently cause the loss of confidential or
+proprietary information, and economic loss.
+
+The loss of financial, labour or other resources, and any other adverse effect on the Token Vendor's business strategies,
+results of operations and prospects, would have a direct adverse effect on the Token Vendor's ability to maintain the
+Rate3 Ecosystem. As the Rate3 Ecosystem is the main product to which the Tokens relate, this may adversely impact
+the trading price of the Tokens.
+
+There may be weaknesses, vulnerabilities or bugs in the protocols, systems and smart contract in connection with
+the Token Sale and/or the Rate3 Ecosystem
+
+The Token Vendor will make reasonable efforts to ensure that the protocols, systems and smart contracts in connection
+with the Token Sale and/or the Rate3 Ecosystem are audited, tested and approved by technical experts. However, as
+smart contract technology is still in its early stage of development and its application of experimental nature carries
+significant operation, technological, financial, regulatory and reputational risks, there are inherent risks that such smart
+contracts could contain weaknesses, vulnerabilities or bugs.
+
+Purchasers of the Tokens should understand and accept that there are no warranties that the Tokens are fit for a
+particular purpose or do not contain any weaknesses, vulnerabilities or bugs which would cause loss in their worth or
+value. In the event that any of the aforementioned risks materialises, the Token Vendor's business strategies, results of
+operations and outlook may also be adversely affected.
+
+There may be conflicts of interest or risks related to invalidation of transactions
+
+The Token Vendor may be engaged in transactions with related parties and other affiliates, and may continue to
+do so in the future. Conflicts of interest may arise as a result, potentially resulting in the undertaking of
+transactions on terms that are not on arms’ length.
+
+The Token Vendor may experience system failures, unplanned interruptions in its network or services,
+hardware or software defects, security breaches or other causes that could adversely affect the Token
+Vendor's infrastructure network, and/or the Rate3 Ecosystem
+
+The Token Vendor is unable to anticipate when there would be occurrences of hacks, cyber-attacks, mining attacks
+(including but not limited to double-spend attacks, majority mining power attacks and “selfish-mining” attacks),
+distributed denials of service or errors, vulnerabilities or defects in the Rate3 Ecosystem, the Tokens, the
+Designated Address(es), the Receiving Address(es), the Ethereum Wallet or any technology (including but not
+limited to smart contract technology) on which the Token Vendor, the Rate3 Ecosystem, the Tokens, the
+Designated Address(es), the Receiving Address(es) and/or the Ethereum Wallet rely or on the Ethereum
+Blockchain or any other blockchain. Such events may include, for example, flaws in programming or source code
+leading to exploitation or abuse thereof. The Token Vendor may not be able to detect such hacks, mining attacks
+(including but not limited to double-spend attacks, majority mining power attacks and “selfish-mining” attacks),
+cyber-attacks, distributed denials of service errors vulnerabilities or defects in a timely manner, and may not have
+sufficient resources to efficiently cope with multiple service incidents happening simultaneously or in rapid
+succession.
+
+The Token Vendor's network or services, which would include the Rate3 Ecosystem, could be disrupted by
+numerous events, including natural disasters, equipment breakdown, network connectivity downtime, power
+losses, or even intentional disruptions of its services, such as disruptions caused by software viruses or attacks by
+unauthorised users, some of which are beyond the Token Vendor's control. Although the Token Vendor will be
+taking steps against malicious attacks on its appliances or its infrastructure, which are critical for the maintenance
+of the Rate3 Ecosystem and its other services, there can be no assurance that cyber-attacks, such as distributed
+denials of service, will not be attempted in the future, and that any of the Token Vendor's intended enhanced
+security measures will be effective. The Token Vendor may also be prone to attacks on its infrastructure intended
+to steal information about its technology, financial data or user information or take other actions that would be
+damaging to the Token Vendor and users of the Rate3 Ecosystem. Any significant breach of the Token Vendor's
+intended security measures or other disruptions resulting in a compromise of the usability, stability and security of
+the Token Vendor's network or services (including the Rate3 Ecosystem) may adversely affect the trading price of
+the Tokens.
+
+The Token Vendor is dependent in part on the location and data centre facilities of third parties
+
+The Token Vendor's infrastructure network will be in part established through servers that which it owns and
+houses at the location facilities of third parties, and servers that it rents at data centre facilities of third parties. If
+the Token Vendor is unable to renew its data facility lease on commercially reasonable terms or at all, the Token
+Vendor may be required to transfer its servers to a new data centre facility, and may incur significant costs and
+possible service interruption in connection with the relocation.
+
+These facilities are also vulnerable to damage or interruption from, among others, natural disasters, arson, terrorist
+attacks, power losses, and telecommunication failures. Additionally, the third party providers of such facilities may
+suffer a breach of security as a result of third party action, employee error, malfeasance or otherwise, and a third
+party may obtain unauthorised access to the data in such servers. As techniques used to obtain unauthorised
+access to, or to sabotage systems change frequently and generally are not recognised until launched against a
+target, the Token Vendor and the providers of such facilities may be unable to anticipate these techniques or to
+implement adequate preventive measures. Any such security breaches or damages which occur which impact
+upon the Token Vendor's infrastructure network and/or the Rate3 Ecosystem may adversely impact the trading
+price of the Tokens.
+
+Blockchains may face congestion and transactions may be delayed or lost
+
+Most blockchains used for cryptocurrency' transactions (e.g. Ethereum and Stellar) are prone to periodic congestion
+during which transactions can be delayed or lost. Individuals may also intentionally spam the network in an attempt to
+gain an advantage in purchasing cryptographic tokens. This may result in a situation where block producers may not
+include the purchaser's transaction when the purchaser intends to transact, or the purchaser's transaction may not be
+included at all.
+
+The digital wallet may be incompatible with the Tokens
+
+The digital wallet or digital wallet service provider used for the acquisition and storage of the Tokens has to be
+technically compatible with the Tokens. The failure to assure this may result in that purchaser of the Tokens not being
+able to gain access to his Tokens.
+
+The purchaser may be subject to adverse legal and/or tax implications as a result of the acquisition or transfer of
+the Tokens
+
+The legal character of cryptocurrency and cryptographic assets remain uncertain. There is a risk that the Tokens may
+be considered securities in certain jurisdictions, or may be considered to be securities in certain jurisdictions in the
+future. The Token Vendor does not provide any warranty or guarantee as to how the Tokens will be classified, and each
+purchaser will bear all consequences of the Tokens being considered securities in their respective jurisdictions, and
+bear the responsibility of the legality, use and transfer of the Tokens in the relevant jurisdictions.
+
+Further, the tax treatment of the acquisition or disposal of such cryptocurrency or cryptographic assets might depend
+on whether they are classified as securities, assets, currency or otherwise. As the tax characterisation of the Tokens
+remains indeterminate, purchasers must seek their own tax advice in connection with the purchase of the Tokens,
+which may result in adverse tax consequences or tax reporting requirements for the purchaser.
+
+As the Tokens may be traded on third-party cryptocurrency exchanges in the future, purchasers may buy or sell the
+Tokens on such exchanges. Existing laws on the circulation or transaction of cryptocurrency or cryptographic tokens in
+certain jurisdictions may prohibit the transaction or sale of the Tokens in such jurisdictions or to residents of such
+jurisdictions. Purchasers must be aware of the restrictions on the secondary trading or external sale of the Tokens and
+seek their own legal advice in connection therewith.
+
+RISKS RELATING TO THE DESIGNATED ADDRESS(ES) AND RECEIVING ADDRESS(ES)
+
+The Designated Address(es) and Receiving Address(es) may be compromised and the cryptocurrencies may not
+be able to be disbursed
+
+The Designated Address(es) and Receiving Address(es) are designed to be secure. However, in the event that the
+Designated Address(es) and Receiving Address(es) are, for any reason compromised (including but not limited to
+scenarios of the loss of keys to such Designated Address(es) and Receiving Address(es)), the funds held at the
+Designated Address(es) and Receiving Address(es) may not be able to be retrieved and disbursed, and may be
+permanently unrecoverable. In such event, even if the Token Sale is successful, the Token Vendor will not be able to
+receive the funds raised and the Token Vendor will not be able to utilise such funds for the development of the Rate3
+Ecosystem, and the implementation of the Rate3 Ecosystem might be temporarily or permanently curtailed. As such,
+distributed Tokens may hold little worth or value, and this would impact their trading price.
+
+The loss or compromise of information relating to your Ethereum Wallet may affect your access and possession of
+the Tokens
+
+Your access to the Tokens in your Ethereum Wallet depends on, among other things, the safeguards to the information
+to such Ethereum Wallet, including but not limited to the user account information, address, private key and password.
+In the event that any of the foregoing is lost or compromised, your access to your Ethereum Wallet may be curtailed
+and thereby adversely affecting your access and possession to the Tokens, including such Tokens being unrecoverable
+and permanently lost.
+
+@B@
+Rate3
+
+A DECENTRALISED DUAL PROTOCOL FOR CROSS-BORDER PAYMENT
+& CREDIT SCORING
+
+Powered by Stellar and Ethereum
+
+https://rate3.network

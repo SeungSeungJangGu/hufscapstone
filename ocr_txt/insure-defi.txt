@@ -1,0 +1,699 @@
+inSure Ecosystem
+
+Decentralized Insurance Platform
+inSureDAO
+(https://insuretoken.net)
+
+Abstract
+
+inSure is a community based crypto portfolios/DeFi
+insurance system. The project aims to create an
+ecosystem to distribute the risks, where premiums are
+determined by a Dynamic Pricing Model. Capital
+required to back the risks at any point of time will be
+based on the market pricing of SURE tokens and
+community demand for insurances of the crypto
+portfolios. Decentralized support system will be
+
+established to diligently process all the insurance
+claims and implement the layers of inSureDAO
+voters to make sure any fraudulent claims are flagged
+and only valid claims are fulfilled.
+
+Background
+
+Insurance is a tool that helps to re-distribute risk
+across the community. Due to the extensive amount
+of capital required to underwrite these risks, the multi-
+trillion-dollar industry is dominated by huge
+companies that have the ability to pool capital at scale
+for potential claim obligations. [1]
+
+The profitability of insurers depends on the amount
+of claim payouts relative to the amount of premiums
+collected. Despite heavy regulatory oversight, there
+exists an agency problem as there is an incentive for
+insurers to turn down claims. In addition, the
+conservative nature of insurers and their increasing
+reliance on data-driven risk assessments means that
+the protection gaps of newer risks will continue to
+remain unfilled.
+
+An example of an underserved segment is the
+Decentralized Finance (DeFi) sector and crypto. The
+rapid development of DeFi and innovative liquidity
+mining schemes have brought about a substantial
+increase in the total value of assets utilized on the
+
+blockchain. Liquidity providers are willing to provide
+capital to bootstrap DeFi products in return for yields
+without fully understanding the potential security
+risks. Even with security audits in place, the nascent
+DeFi sector continues to be a target of hacks, smart
+contract exploitations, resulting in the loss of users’
+funds.
+
+inSure is purposefully designed to solve the agency
+problem and allow anyone to become an insurance
+issuer for the DeFi sector and crypto portfolio
+holders. inSure Ecosystem is created to protect
+traders and investors from scams and drastic
+devaluations that threaten crypto portfolios.
+
+What we Do: Offering the Best Insurance for Crypto
+
+Portfolios.
+
+We are tired of seeing people get scammed and having
+no collateral for their DeFi losses. Our solution will
+protect your portfolio from scammers and
+unexpected losses. We provide different plans that are
+
+very clear and simple to understand.
+
+Mission: Protect Crypto Investors from Scammers &
+Devaluations. The first idea behind this project is to
+get rid of the situations where our fellow investors
+lose their money completely.
+
+We are here to provide stability to the crypto world
+and protect people from their mistakes and from
+fraudulent activities of others.
+
+Goal: Help as Many Investors & Traders as Possible.
+We don't want our fellow investors & traders to end-
+up in a situation where they lose most of the crypto
+portfolio because of unexpected causes.
+
+Helping other people is very important to us. We are
+willing to establish a 24/7 support system to help as
+many people as possible.
+Economic Model - How it works
+
+inSure’s Crypto insurance is based on 1) Dynamic
+Pricing Model|2], to find the right market price via
+supply and demand; 2) the Capital Model[3], to secure
+capital required to back the risks at any points of time;
+and 3) inSureDAO voting mechanism, to make sure
+every claim is handled in a permissionless and
+
+transparent manner.
+
+Google Cloud-blockchain Applications &
+inSute Ecosystem
+
+Blockchains focus on mathematical effort to create a
+shared consensus. Ideas quickly sprang up to extend
+this model to allow party-to-party agreements, i.e.
+contracts. This concept of smart contracts was first
+described in a 1997 article by computer scientist Nick
+Szabo [4]. An early example of inscribing agreements
+into blocks was popularized by efforts such as
+Colored Coins [5] on the Bitcoin blockchain.
+
+Smart contracts are embedded into the source of truth
+of the blockchain, and are therefore effectively
+immutable after they’re a few blocks deep. This
+provides a mechanism to allow participants to
+commit crypto-economic resources to an agreement
+with a counterparty, and to trust that contract terms
+will be enforced automatically and without requiring
+third party execution or arbitration, if desired.
+
+But none of this addresses a fundamental issue: where
+
+to get the variables with which the contract is
+evaluated. If the data are not derived ftom recently
+added on-chain data, a trusted source of external data
+is required. Such a source is called an oracle.
+
+inSure Ecosystem is planning to use Chainlink and
+Google Integration to receive the data that is updated
+and available though the trusted off-chain bridge.
+
+We are working on creating a hybrid application that
+takes the best of what smart contract platforms and
+cloud platforms have to offer. We're particularly
+
+interested in bringing Google Cloud Platform's ML
+setvices (e.g. AutoML [6] and Inference APIs[7}).
+
+Capital Pool
+
+The Capital Pool is an important business module of
+the platform to support the business development.
+inSure tokens will be rewarded to capital providers of
+the pool [8].
+
+The tokens received from staking on DEXs could be
+used to
+
+1) stake on the projects and earn premium;
+
+2) hold to enjoy the benefit from the growth of the
+ecosystem and leverage provided;
+
+3) sell in the market to realize profit.
+
+With the support of the capital pool, business will
+generate attractive profit to inSure token holders,
+which will result in the increase of the token price.
+Higher token price will further attract more capital to
+conduct business.
+
+When the surplus pool is unable to cover the
+Minimum Capital Requirement (MCR) [9], the
+withdrawal transaction of the capital pool will be
+frozen until the drop of MCR, which may result from
+the expiration of insurance plans or the coming of
+new funds.
+
+When the surplus pool cannot cover all the claims, the
+capital pool will be used to pay the rest. The Capital
+Model is used to monitor systematic risk, and give the
+capital pool attractive risk adjusted return.
+
+Purchase Insurance
+
+An insurance stipulates the insurance tisk, the
+insurance amount, the date of insurance and the
+corresponding premiums. Users can use ETH,
+USDT, BTC, wETH to get the desired insurance plan
+for their crypto portfolio. The insurance will
+automatically take effect after 7 days of SURE tokens
+being placed to the private wallet of the policyholder.
+
+The policyholders will also share a small portion of
+the capital surplus. We believe this mechanism will
+help the community to attract enough capital supply
+and demand to further expand the ecosystem.
+
+Surplus Pool
+
+The surplus pool will accrue whenever an insurance
+premium is paid. 40% of the premium will be added
+into the surplus pool. Another 10% will be reserved
+till the expiration of the contract. If there is no claim,
+it will add into the surplus pool. The surplus pool will
+grow over time and will be utilized to cover insurance
+claims first. [10] When the surplus pool cannot cover
+all the claims, the capital pool will be used to pay the
+rest. When the surplus pool grows large enough, the
+SURE holders will receive % from the staked SURE
+to better incentivise increase of the inSure Staked
+
+Pool.
+
+inSure holders can stake on different DEXs and earn
+% from each trade in addition to the insurance that
+
+inSure plans provide.
+
+For the first phase, we will focus on the risk against
+scams, devaluations and stolen funds. More less-
+correlated business will be introduced to deliver
+higher returns to token holders at community’s vote.
+
+Risk Model Consideration
+
+Risks are diverse. It is technically impossible for us to
+measure all risks and accurately calculate the required
+tisk capital. Therefore, the risk reserve mentioned
+here refers to the minimum capital requirement that
+will not lead to "bankruptcy". We determine the
+minimum capital requirements based on the capital
+model. The source of the risk reserve consists of two
+parts, one part comes from the withdrawal of a certain
+percentage of the amount from each insurance policy,
+
+and the other part comes from the special
+compensation amount locked in the claim pool.
+
+First of all, we must identify and select the main risks
+to be considered, which are mainly divided into four
+categories: asset risk, pricing risk, interest rate risk and
+other business risks; Secondly, use the probability of
+bankruptcy to calculate the risk coefficient and
+determine the risk capital required for this type of risk;
+Finally, we make adjustments based on the correlation
+between the risks. [11]
+
+Assuming that the total amount of the claim pool is
+A and the asset value of the insured amount is L, it
+should be ensured that for any small ¢, P{L > A} <
+¢.[12] The platform’s surplus level is (A-L), 40% of
+which is withdrawn to the remaining and 60% of the
+risk reserve is used for dividends and management.
+
+We set the random variable X=-(A-L), and the
+venture capital MCR is the minimum capital required
+to resist the adverse fluctuation of i. If ¢ = 0.05, the
+probability that X is not higher than the minimum
+capital level MCR must remain above 95%, that is
+P{X < MCR} 2 95% . The minimum capital level
+MCR is obviously related to the confidence level 1 —
+e.If we know the distribution function of X, F(x), and
+we are going to require MCR, we only need to set F
+(MCR) = ¢, which is the quantile point corresponding
+to e. Its geometric meaning is shown in the figure
+below, where E(X) represents the expected level of
+the fluctuation of unfavorable earnings and MCR
+represents the minimum capital requirement.
+
+If we consider only one type of risk, the principle is
+the same. Unfavorable volatility is X=E (A)-A or
+X=L-E (L). Venture capital MCR can be understood
+as the minimum capital requirement to absorb
+unfavorable fluctuation, namely P{E(A) -— A >
+MCR} Se or P{L—E(L)>MCR}<e . If the probability
+distribution of A or L is known, then MCR is the
+corresponding number of points, expressed as:
+
+MCR=E(A)-)(6) ot MCR=y(1—¢)-E(L).
+
+Suppose we make A or L obey a normal distribution,
+then MCR=®(e)Xo or MCR=®/(1—<)Xo , MCR then
+the risk factor of the asset is 4/4) ot #2), which is the
+ratio of the minimum capital requirement to the
+premium. From this, we can calculate the minimum
+capitals required for future claims based on the
+amount of premium and hence adjust the covariance
+
+In addition, if the expected cost of bankruptcy is
+increased, we are required to control the expected
+cost of bankruptcy to a percentage lower than the
+expected gap, such as 1% or 0.1%. When considering
+the liability tisk, it can be assumed that the asset value
+is fixed. The asset value L of the insured amount is a
+random variable, and it obeys a continuous
+probability distribution whose distribution density is
+p(x). EPD refers to the overall average of the portion
+of liabilities exceeding assets, the so-called gap or
+bankruptcy cost [13], that is:
+
+Di =| (4-AP(X dx a
+
+Suppose we have n types of businesses of the same
+scale, the concentration is f = 7/n the premium
+income of the largest type of business / the premium
+income of all businesses, and the risk capital MCR of
+
+each type of business is the same.
+
+Assumption 1: we overestimate MCR, and
+Assumption 2: we underestimate MCR. Thus just
+offset their adverse effects. The concentration
+adjustment factor is
+
+Vpt+(t-afzr\otri-pxf
+
+Given f is relatively small. If it is assumed that the
+average correlation coefficient between each business
+
+is 0.4, then g = 0.4, Vp = 0.63. Then the adjusted
+
+reserve tisk capital requirement MCR=63%+37%(the
+largest business reserve/all business reserves).
+
+Pricing principle
+
+The pricing of insurance products is to use the data
+of past accidents to obtain the probability of risk. This
+risk and its probability of occurrence are objective and
+measurable. This is also the fundamental basis for
+determining the insurance premium. [14]
+
+The law of large numbers is that when enough events
+of the same nature occur, their risk probability will be
+closer and closer to the actual probability, so that a
+more accurate estimate can be obtained. Since there
+are differences in the way of thinking of each
+individual in real life, it cannot be assumed to be
+independent and identically distributed, so it is more.
+[15]
+
+In mote detail, if we take into account the correlation
+of risks between different businesses, we have to
+quote the Chebyshev Theorem of Large Numbers.
+[16]
+
+Suppose that x1, X1, x2, *"" » Xn are a group of
+independent random individuals, each of which has
+an expected value E(xk) and a variance D(xk). If there
+is a constant MCR which makes D(xk ) S
+c(k=1,2,....n), then for arbitrarily small positive the
+final cover price for the claim settlement and internal
+cost.
+
+The model has the following pattern:
+When capital supply is high, i.e. more power is backed
+
+for a tisk, the premium rate will be low.
+
+When demand is high, i.e. more policies (insurance
+plans) are sold out, the premium rate will increase.
+More token is backed for a risk, i.e. more popular, less
+volatile of premium rate change is, and vise versa for
+a less popular risk, the premium rate will be sensitive
+
+for large demand change to avoid pricing ertor.
+
+Capital Model
+
+Insurance is a highly leveraged industry; therefore,
+the primary concern of the insurance capital model is
+to calculate the capital requited to guarantee
+solvency of the risk pool to some arbitrary and high
+confidence level like 99.9% in the latest EIOPA’s
+
+Solvency II framework. [17]
+
+The Capital Model is used to calculate the minimum
+capital the fund needs to hold, which is used to
+determine 1) the capital locked in the Capital Pool
+and 2) the staking power used in the Staking stage.
+
+Pricing Model
+
+However, due to the current lack of historical data on
+smart contract exploits, scams, devaluations, loss of
+funds and lack of relevant information on assisting
+pricing, it is expected that the cost of the new policy
+at the beginning will be higher. As the insurance
+policies undergo more related tests, the processing
+cost will gradually decrease.
+
+Rather than a single centralized entity setting up a
+premium rate, or individual capital suppliers and
+policy holders having to negotiate over premium
+terms, inSure uses the Dynamic Pricing Model to set
+the price, based on supply and demand, the tokens
+backed and the policies bought. We assume the risk
+backers’ thinking to follow a beta distribution.
+
+be used for paying the premium and the liability will
+also be based off these currencies accordingly.
+Therefore, we will exchange the exposure with all
+other currencies into a stable currency.
+
+Submitting Request
+
+If your portfolio was affected by scam, drastic
+devaluation or stolen funds (exchange closure) inSure
+Ecosystem will be reimbursing losses based on the
+plan chosen by you with SURE tokens.
+
+If the policy holder was unlucky and was affected by
+one of three reasons mentioned above, the email
+request need to be sent to — request@insuretoken.net
+including:
+
+1. [Name of the crypto coin/token]
+2. [Your Affected wallet address]
+3. [Date of the event]
+
+4. [Policyholder's wallet address that holds SURE
+tokens]
+
+5. [Additional information to take into account]
+
+6. [Sign the following message with your
+myEtherWallet (that holds SURE tokens): "I am the
+holder of SURE tokens requesting inSure team to
+process my request:
+{include_all_points_from_1_to_5}"
+
+Please give us 3-4 business days to process your
+request (we will investigate the issue and provide the
+best solution within 24-72 houts).
+
+Claim Assessment
+
+Claim is one of the most important parts of an
+insurance company. To ensure it is handled
+professionally, inSure utilizes a 3-phase voting
+
+mechanics for claim assessment.
+
+A claim can be submitted by any policyholder. 100%
+Premium equivalent inSure tokens need to be staked
+to file the claim. The claim request will to be signed
+with the Ethereum Wallet of the policy holder.
+
+There will be a 7 days waiting period for new
+purchases, which means a policyholder has to wait 7
+days before his coverage comes into effect, any claims
+occurred during these 7 days will not be paid. No
+waiting period for renewal business.
+
+The initial parameters will be set at research based on
+the current data we have and will also be monitored
+and updated based on backers’ behavior and
+community vote.
+
+The capital model result will be calculated off-chain
+
+a
+
+jaily, due to gas consideration, to track the systematic
+tisk.
+
+inSure proposes the second phase of voting to be
+
+done by the top 5 auditing companies that are chosen
+by inSure token holders. Auditing companies will
+stake their inSure holdings to vote and release
+auditing reports if needed. 5% of the reserved policy
+premium will be utilized to incentivise the auditing
+companies. When the decision is made with at least
+3/5 consensus over a claim assessment. If consensus
+is not reached or there are not enough auditing
+companies’ votes then the case will pass to the next
+phase.
+
+During the pending phase, policyholders can stake
+inSure tokens and start a challenge. If there is no
+challenge by any inSure holders, then the claim will be
+approved and paid. If there is a challenge, then the
+claim assessment will escalate to the third phase - a
+public vote.
+
+The first phase of this 3-phase voting can be
+substituted with a lighter round of voters by decision
+from inSureDAO.
+
+Fulfillment of Insurance Claims
+
+inSureDAO will process the request with diligence
+and initiate a transfer of SURE tokens in the amount
+of insured value based on the plan chosen by the
+policyholder.
+
+inSure holders are not forced to sell SURE tokens,
+instead, the customer can sell later to other investors
+who need insurance for their Crypto Portfolio or keep
+part of SURE for staking and enabling another
+insurance renewal plan.
+
+Distribution of inSure tokens
+
+The first issuance is aimed at a small group of
+cryptocurrency enthusiasts, who also serve as beta
+product testers to provide feedback on complex
+insurance products prior to its release. The short to
+mid-term development goal is to build a safe
+ptoduct/plans that serve the DeFi sector’s and crypto
+investors insurance needs. Majority of the short-term
+inSure tokens will be distributed via risk pool increase
+and through participation of the inSureDAO.
+Broader sales, distribution and marketing channels
+will be established once the product has a consistent
+base of users. Given that future iteration of the
+insurance products require users to purchase inSure
+tokens to Stake or to be utilized as currency for
+settlement, a set of sales and payment procedures, as
+well as wallet tools will be developed to achieve large
+scale growth.
+
+Our long-term development goal is not only to make
+products with great use cases, but to build a non-
+discriminatory platform that allows the masses to
+participate freely.
+
+Distribution partners can use the integrated open API
+architecture of the Ethereum blockchain to interact
+with our SURE smart contract. Users who hold
+inSure tokens are potentially our sales partners,
+because every insurance coverage sold generates
+dividends for all holders of inSure. We will make the
+smart contract platform design as open and flexible as
+
+possible so that distribution partners can interact and
+
+communicate under the prescribed conditions.
+
+Competitive Advantage of inSure
+
+A key factor in making a good insurance platform is
+the health of financial information, such as the usage
+of funds and whether there are sufficient premium
+floats to pay potential claims. Since the blockchain is
+a distributed ledger, each node has the same copy of
+the data. When the data changes, every insured person
+can see the synchronized and updated data, making
+the operation of each fund open and transparent.
+Therefore, there will be a dedicated module on the
+homepage of the website to disclose relevant
+information, and provide an accurate real-time
+financial status every quarter such as tisk factors,
+minimum capital requirements, historical data on
+token prices, a summary of claims assessment, and the
+number of locked and traded tokens.
+
+Roadmap Update
+
+We will continue to pay attention to product
+improvements based on market feedback, and launch
+new products with blockchain code as the core to
+meet the needs of more users. We hope that with
+time, community members will drive each other to
+jointly promote and develop open-source tools for
+inSure. We are also planning to invest a surplus pool
+into the hedge funds and long term financial products.
+As a result of investments activities share the profits
+proportional to the size of the SURE stake.
+
+Capital Pool Size Increase
+
+The capital pool size will scale alongside the type of
+product offerings, which will increase the level of
+diversification benefits for users of inSure. This
+ensures the effective use of funds, reduces risk costs,
+reduces the risks caused by insufficient claims, and
+makes the cost of copying the project much higher. A
+meaningful network of risk assessors (reputable smart
+contract code auditors) will be established, and
+sufficient incentives will be provided for the users to
+participate.
+
+Governed by Community
+
+Under normal circumstances, all operations on inSure
+can be completed by smart contracts. But in reality, in
+order to take into account, the interests of users,
+
+better achieve decentralization effects, and ensure the
+process to be more transparent, decisions of certain
+events will require the community to vote. Therefore,
+the platform will set up an inSureDAO organization
+to facilitate such decisions and manage extreme
+situations. It should be noted that inSureDAO does
+not have the custody of the fund pool, nor can it
+release funds to any specific person. Each committee
+member may be replaced by voting at any time. [18]
+
+inSureDAO will work in accordance with the two
+core principles of sustainability (that ensures the
+interests of community members by ensuring the
+sustainability of the overall funding pool) and growth
+(promoting sustainable premium increases and
+inSureDAO membership growth). The members of
+the inSureDAO organization include several people
+with specific expertise in insurance, co-governance,
+and blockchain development. Some powers that
+committee members have are: (1) Reaching consensus
+to implement specific code that cannot be
+
+automatically deployed; (2) Punishing bad actors
+within the inSure ecosystem (such as malicious claims,
+false claims, etc.) by burning SURE tokens. (3) The
+power to implement emergency suspension under
+special citcumstances.
+
+inSureDAO membets can negotiate and propose
+relevant proposals to the benefit of the inSure
+network. The voting proposals must include clear
+voting options and inSureDAO's recommendations.
+Then each community member is given a period of
+time to vote, and the result with a majority decision
+will be implemented. Any inSure holder can become
+a member of inSureDAO.
+References
+
+1] Trenerry, C.F., 2009. The origin and early history of
+
+insurance: including the contract of bottomry. The Lawbook
+
+les]
+
+xchange, Ltd.
+
+2] Emms, P., 2007. Dynamic pricing of general insurance in a
+competitive market. ASTIN Bulletin: The Journal of the IAA,
+37(1), pp.1-34.
+
+3] Cummins, J.D. and Danzon, P.M., 1997. Price, financial
+quality, and capital flows in insurance markets. Journal of
+financial intermediation, 6(1), pp.3-38.
+
+4] Szabo, N., 1997. Formalizing and securing relationships on
+
+public networks. First Monday.
+
+ui
+
+https://en.bitcoin.it/wiki/Colored_Coins
+
+mx
+
+6] https://cloud.google.com/automl/
+
+=
+
+https://cloud.google.com/inference/
+
+8] Myers, S.C. and Read Jr, J.A., 2001. Capital allocation for
+insurance companies. Journal of risk and insurance, pp.545-58
+
+9] Bingging, Z.L. and Wang, J., 2013. Study on minimum
+
+capital requirement for general insurance. Insurance Studies, 3.
+
+10] Cummins, J.D., 2000. Allocation of capital in the insurance
+industry. Risk Management and Insurance Review, 3(1), pp.7-
+27.
+
+11] Goovaerts, M.J., De Vylder, F. and Haezendonck, J., 1984.
+Insurance premiums: theory and applications (Vol. 14).
+Amsterdam: North-Holland.
+
+12) https://ocw.mit.edu/courses/economics/14-03-
+microeconomic-theory-and-public-policy-fall-2016/lecture-
+notes/MIT14_03F16_lec17.pdf
+
+13] Pednault, E.P.D., International Business Machines Corp,
+2006. Method for constructing segmentation-based predictive
+models from data that is particularly well-suited for insurance
+tisk or profitability modeling purposes. U.S. Patent 7,072,841.
+
+[14] Laeven, R. and Goovaerts, M.J., 2008. Premium
+calculation and insurance pricing. Encyclopedia of quantitative
+risk analysis and assessment, 3, pp.1302-1314.
+
+[15] Smith, M.L. and Kane, S.A., 1994. The law of large
+numbers and the strength of insurance. In Insurance, tisk
+management, and public policy (pp. 1-27). Springer,
+Dordrecht.
+
+[16] Pullér, R., 1992. A law of large numbers for fuzzy
+numbers. Fuzzy Sets and Systems, 45(3), pp.299-303.
+
+[17] Doff, R., 2016. The Final Solvency II Framework: Will It
+Be Effective?. The Geneva Papers on Risk and Insurance-
+Issues and Practice, 41(4), pp.587-607.
+
+[18] Santos, F. and Kostakis, V., 2018. The DAO: a million
+dollar lesson in blockchain governance. School of Business and
+Governance, Ragnar Nurkse Department of Innovation and
+
+Governance.

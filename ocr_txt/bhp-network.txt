@@ -1,0 +1,343 @@
+BHP Blockchain of Hash Power
+
+Yellowpaper for Economic Model
+
+Version: V2.1
+2019.3
+
+81H
+BHP (Blockchain of Hash Power) is a distributed payment
+system based on Bitcoin hash power credit. It uses Bitcoin hash
+power as the underlying asset and takes 21 decentralized hyper
+nodes as the community accounting consensus nodes. The system
+is focusing on providing users with fast, convenient and highly
+reliable digital currency payment and asset management services
+based on smart contracts with blockchain technology. At the same
+time, all BHP holders automatically receive dividends from Bitcoin
+hash power assets.
+
+1. Distribution Mechanism
+
+The original COIN of public chain—BHP Coin, is the ecological
+equity token of the BHP public chain, which is similar to the equity
+certificate. The total amount of BHP Coin is 100 million, and the
+minimum unit is 0.00000001. The issuance quota of BHP: 55% is
+mined by PoS and 45% is directly generated in the genesis block.
+
+Among the directly generated 45 million BHPs:
+
+25 million BHPs are used to exchange the circulated BHPC
+ERC20 tokens legally held by early users of the BHP community.
+The exchange rate is 1:1.
+
+10 million BHPs are held by technical team and genesis
+node for medium and long-term incentives. They will be locked
+with a smart contract at the early stage. When the hash power
+of BHP reaches 5000P or the public chain runs for 18 months,
+3 million BHPs will be released. 3 million BHPs will be released
+after 7000P or the public chain runs for 24 months. 4 million
+BHPs will be released after 10000P or 36 months, and the
+distribution proposal will be decided by the founding team.
+
+10 million will be released conditionally with different
+incentive rules to 20 independent hyper nodes operation teams
+as medium-term and long-term incentives. The release
+mechanism is similar to genesis node. The BHP Foundation
+determines the unlock mechanism and distribution proposal,
+and makes it public to the community.
+
+#2 7H
+Yv
+
+PoS mining of BHP public chain is an income distribution
+mechanism based on the number of credible hash power (T)
+and time (days) held by the user. The PoS mining revenue is
+positively correlated with the trustworthiness and holding time
+of the hash power holding. The specific mechanism is as
+follows:
+
+(1) Mining rules:
+
+Source of income: The user's PoS mining revenue can
+only be distributed from the PoS mining revenue pool
+produced by the BHP Hash power chain block.
+
+@) Distribution time: PoS mining revenues is distributed by
+the day.
+
+@®Distribution Limit: If the PoS mining revenue pool is
+insufficient to allocate all user revenues for the day, it is
+allocated based on the proportion of the user's earnings to the
+total amount required for the day.
+
+@Mining Ending: Mining will not be terminated until 55
+million BHPs have been all generated and distributed.
+
+(2) After paying the miner's PoS mining revenue, the remaining
+BHPs will be used to motivate hash power promoters. The
+specific incentive strategy will be determined by the BHP
+Foundation.
+
+(3) Credible hash power: The users may use the legal currency
+or equivalent digital currency leasing hash power at the BHP
+genesis node and the hyper node mine, which is called holding
+credible hash power.
+
+(4) Age of hash power Hrp= the number of credible hash power
+(T) x holding time (days) in units of (7-days). For example, if an
+user rents 10T credible hash power for a total of 100 days,
+then the age of hash power is 1000 (7-days).
+
+(5) Admission rules: When the user has a hash power age of
+more than 1000 (7-days), he is eligible to get the BHP revenue
+
+2. PoS Mining Profit
+
+#3 i
+and bitcoins. In addition to the PoW mining revenue (BTC), the
+new rental power can also obtain PoS mining revenue (BHP).
+The newest rental power of BHP will not be included in
+historical credible hash power.
+
+(6) Hash power age equity coefficient Cro: The greater user’s
+age, Hrp, the greater equity, and the more the PoS mining BHP
+gains. The age-based equity coefficient Cro is a factor used to
+adjust the income. The formula is as follows:
+
+2 Hyp 2 Hyp,
+0.2
+18+ A ~ Fv) yp, S Hyp < Hyp,
+TD\ TD2
+0.3
+Crp = 1S ap ro Hos) Fp; S Hyp < Ap,
+0.5
+a7, -#,,,, 10 Hom) yp ry S Ay < Hyp;
+0 Ap < Apr
+
+In the early stage of hash power construction, the value of
+the parameters in the current formula: H7p.74is equal to 1000
+(T-days), Htp1, Hrp2 and Hrp3 are the 99th percentile, the 94th
+percentile, and the 80nd percentile, respectively. With the
+development of hash power construction, the four parameters
+of Hrp.tH, Hro1, Hro2, and Hro3 will be adjusted by BHP
+Foundation according to the situation of hash power ecological
+construction, BHP total hash power, BTC total hash power,
+BTC price, BHP price, POS mining output and other factors.
+The adjustment plan will be announced on the official website
+of BHP main chain.
+
+The meaning of the p-th percentile is to calculate the
+corresponding cumulative percentile after sorting all the users'
+hash power ages from small to large. Then the value of the
+data corresponding to a certain percentile is called its
+percentile. It can be expressed as: the age of a group of n
+users is sorted by value, and the value at p% is called the p-th
+percentile. For example, the 99th percentile means that 99% of
+users in the series are less than this value, and 1% of users in
+
+#4 Th
+the series are larger than this value. The C7p curve is shown in
+
+Figure 1.
+
+Cr,
+2.0 }-------
+
+1.0
+>
+Arpirn Ayp3 Arp? Hyp Arp
+
+Figure 1: The curve of Crp with age
+
+(7) Hash power age’s attenuation coefficient Carp: The user's
+holding age H7p reduction causes a certain loss to the BHP
+network hash power, and it will inevitably bring BTC income
+loss to every BHP holder in the community. Cazp is a coefficient
+to punish the revenue change when the user's hash power is
+reduced. The age is reduced, the equity is reduced, and the
+revenue of the PoS mining BHPC is reduced. Let the age of
+the day be H7n.c, and historical maximum age (the age of the
+day before reduction) is Hro.n, then the Hash power age’s day
+change isHyrp = Hrp.c — Hrp.y. Hash power age’s attenuation
+coefficient Carp formula:
+
+1 Hyrp 20
+
+Cyr = Amc ,
+H
+
+TD.H
+
+x
+
+ATD <0
+
+When the user holds the age reduction, the age
+attenuation coefficient Carp is the square of the ratio of the
+current day to the historical maximum age.
+
+(8) Monthly revenue rate of PoS mining Rw: related to the
+holding age H7p. The segment value of Ru is determined by
+
+#5 Hh
+BHP Foundation based on the situation of hash power
+ecological construction, the total hash power of bitcoin, mining
+difficulty, bitcoin price, the total hash power of BHP and the
+number of BHP outputs in the PoS mining revenue pool. It will
+be published monthly on the official website of BHP main chain.
+At the current stage, according to the dynamic change of the
+user's age, when the age exceeds 1000 7-days, the range of
+Ru is 2.5%~5%. The specific segmentation of monthly income
+is as follows:
+
+5% Hyp = Hyp
+2.” Hyp < Hyp < Hyp
+“13.5% Hyp; S$ Hyp < Hyp
+2.5% Horm < Ay < Hyp,
+
+In the formula, Hrp.7H, Hto1, Hro2 and H7p3 have the same
+meaning as Crp expression.
+(9) Daily PoS mining revenue Qsup:
+
+@ In the early stage of hash power construction, when the
+daily revenue of all users does not exceed the total daily
+mining output, the daily PoS mining revenue of each user is as
+follows:
+
+N
+Qoup = QO, x Crp x Cyr XR u % w Xo
+
+=Q, x Kyp X me
+
+Qr is the credible hash power held by users in BHP
+genesis node and the hyper node mine. K7p is the hash power
+age’s revenue coefficient, which is related to the age’s equity
+coefficient, the age’s attenuation coefficient and the Monthly
+revenue rate of PoS mining, Krp=Crp*Carp*Ry. Na is the
+difficulty of PoS mining, which is determined by the BHP
+Foundation according to factors such as total hash power of
+BHP, the total amount of BHP output and hash power holding
+cost, and it is published monthly on the official website of BHP
+
+#6 Hh
+main chain.
+
+@) In the middle and later stages of hash power construction,
+when the PoS mining revenue pool is insufficient to allocate
+the revenue of all users on the day, that is, the sum of all user
+income per day exceeds the total daily mining output, the daily
+PoS mining revenue will be distributed proportionally according
+to the following formula:
+
+Ooup (1) = Opupr x KOO
+
+DK (DO,
+
+Kro(i) is the hash power age’s revenue coefficient of the
+i-th user. Qr(i) is the credible hash power held by the i-th user
+in BHP genesis node and the hyper node mine. Qesupr is the
+daily total output of PoS mining. N is the total number of all the
+users who have holden credible hash power and enjoyed the
+equity of the revenue distribution.
+
+(10) PoS mining revenue example: An user holds 10T credible
+hash power at the BHP genesis node and hyper node mine,
+and reaches 1000 (7:days) after 100 days. At this time, the
+user’s hash power can not only gets the PoW mining revenue
+(BTC), but also gains the PoS mining revenue (BHP).
+Assuming the monthly rate of return Ru is 2.5%, According to
+the BHP total hash power and its output, the difficulty of PoS
+mining Na is 500. So the BHP revenue from the PoS mining on
+that day is:
+
+_ 10x1x1x0.025x 500
+
+BHP 30
+
+That is to say, the user can obtain 4.16 BHPs from PoS
+
+mining on the day.
+
+=4.16
+
+3. BHP “Holding is mining” dividend
+
+BHP& Renren mine users enjoy the dividend income of
+“Holding is mining”.
+The BHP public chain will take 2%~20% of the bitcoin
+
+#7 Hh
+output on the day of the BTC total holding hash power into the
+BHP public chain dividend account every day. The dividend
+rate is adjusted and announced monthly by Renren Mine
+operating team according to the business situation, which is
+currently 2%.
+
+Users should deposit their BHP in the DAPP of Renren
+Mine and enjoy the right to share the dividend. Through the
+BHP public chain smart contract, all BTCs in the BTC reward
+pool on that day are automatically allocated according to the
+proportion of BHP coins held by users, and transferred to the
+user account.
+
+Mining Rules:
+
+1) Source of income: A certain proportion of BTC mined
+in Renren Mine is used as the daily BTC reward pool.
+
+2) Distribution time: Earnings from coinage mining on
+the previous day are distributed daily.
+
+3) Distribution rule: According to the proportion of BHP
+
+held by each user in the mine wallet, we distribute
+every day. The BHP of locks does not participate in
+the distribution of “Hold currency is mining’.
+
+4. Macroeconomic Model of BHP
+
+The value of BHP is closely related to BTC output,
+dividend amount and market price of BTC.
+
+BHP adopts the "bilateral income" economic model, which
+is automatically priced by the market and avoids artificial
+manipulation. When the number of miners in Renren Mine
+increases, the rental hash power is more, the higher BTC is
+mined, the more BTC reward pools can be allocated. The
+number of BTCs mined by miners with BHP will increase on
+the day they hold BHP, which will stimulate users to buy BHP in
+
+#8 Th
+the secondary market and drive the price of BHP to increase.
+
+When the price of BTC rises, the mining income of miners with
+BHP coin will increase.
+
+Daily earnings of miners in Renren Mine = daily rental
+hash power BTC earnings + daily rental hash power
+double-digging BHP earnings + daily holding currency dividend
+earnings of BHP. Among them, the dividend income of the day
+= Daily distribution of BTC number / BHP participates in total
+dividend distribution * the amount of BHP held by users. Users
+can obtain BHP by renting hash power PoS mining, or they can
+buy BHP in the secondary market and transfer it to DAPP in
+Renren Mine to obtain the dividend income.
+
+5. BHP Payment Application
+
+Users can realize various ecological services in the chain
+such as asset management, transfer transaction, settlement
+and payment in DAPP (such as Renren Mine) supported by
+BHP public chain. BHP hash power public chain only charges
+a small fee according to the number of bytes packed in the
+transaction to maintain the normal operation of the system.
+
+The charging strategy of handling fee is to charge per 512
+bytes. When transferring is finish, the verification node will
+check the byte size of this transaction and calculate the
+handling fee of this transaction.
+
+Fee = transaction byte size / 512 + transaction byte size%
+512) * 0.0001BHP
+
+#9 Th

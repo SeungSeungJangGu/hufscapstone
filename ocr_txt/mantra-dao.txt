@@ -1,0 +1,1515 @@
+MANTRA DAO
+
+Community Governed
+DeFi Platform
+
+Whitepaper Version 1.0 June, 2020
+Content
+
+Ethos 4
+Abstract
+Introduction
+
+MANTRA DAO
+
+Community-Governed Organizations
+Staking
+
+Lending
+
+Stablecoin
+
+MANTRA POOL
+
+Governance
+
+Grants
+
+UI Preview
+
+Custody
+
+OM Token (OM) 19-21
+
+Initial Membership Offering (IMO)
+Tokenomics
+
+Burn
+
+Vesting
+
+KARMA Protocol 22-25
+MANTRA DAO FOUNDATION 26
+
+Parity - Web3 Foundation - Polkadot 27
+Rio Chain
+
+Features
+
+Competitive Analysis
+
+Roadmap
+Foundation Members
+Contributors
+
+Partners
+
+Disclaimer
+
+28-32
+
+33
+
+34-35
+
+36-38
+
+39
+
+40
+MANTRAs are typically melodic, mathematically structured meters, believed to be
+resonant with numinous qualities.
+
+DAO’s are a paradigm shift in the very idea of economic organizations, offering
+complete transparency, total tokenholder control, unprecedented flexibility, and
+autonomous governance.
+
+MANTRA DAO leverages the knowledge and wisdom of the crowd to create a
+community governed, transparent, and decentralized ecosystem for web 3.0 that gives
+financial control back to the people to grow their wealth together.
+
+MANTRA DAO
+
+4
+Abstract
+
+MANTRA DAO is a fully integrated ecosystem of decentralized financial services built
+on interoperable technologies and controlled by its users collectively. Its governance
+mechanism is predicated upon a digital token called OM that allows its holders to
+participate in decisions affecting the parameters of the system. OM token is
+distributed as a reward for contributions made to the platform and provides access to
+a variety of economic incentives. In addition to OM token, MANTRA DAO supports the
+Karma Protocol, a reputation mechanism that assesses participants’ behavior within
+the system and keeps track of OM holders’ performance metrics.
+Introduction
+
+Distributed ledger technology and cryptocurrencies enable faster, more inclusive and
+transparent financial services than traditional legacy systems. However, current
+blockchain solutions lack interoperability and are laden with governance issues,
+preventing DeFi from reaching mass adoption.
+
+The evolution of Blockchain systems design since the inception of Bitcoin in 2009 has
+been driven by this critical need for adaptability and connectivity. Over the past few
+years, various initiatives have aimed at addressing the limitations of traditional
+blockchains by adopting flexible design and providing interoperability between networks.
+
+Polkadot is a sharded protocol that enables multiple blockchain networks to operate
+together seamlessly, increasing the resulting network’s throughput by parallelizing
+transactions and transfers of data.
+
+It surmounts the limitations of general-purpose blockchains in terms of scalability by
+providing a composability framework for those blockchains to communicate. From this
+perspective, Polkadot can be thought of as a superstructure for digital infrastructures
+(referred to as parachains) to be built atop.
+
+MANTRA DAO is a decentralized application built on Rio Chain, a Substrate-based
+blockchain infrastructure that is interoperable with the Polkadot network.
+The MANTRA DAO platform is composed of the following features:
+
+1. A savings and lending platform whereby depositors can earn interests on their
+pooled digital assets.
+
+2. A governance token called OM which confers its holders’ voting power over certain
+economic parameters such as interest rate, inflation and deflation levels.
+
+3. A reputation protocol called KARMA which A) weighs the voting power of OM
+token holders proportionally to certain measurable metrics. B) increases the
+chances of OM token holders benefiting from various financial incentive schemes.
+
+MANTRA DAO is a project initiated by the MANTRA DAO Foundation, a validator
+candidate on the Polkadot Network. MANTRA DAO Foundation is created to maintain
+the MANTRA DAO platform and serve the OM token holders, who are the beneficiaries
+of the foundation and govern how it operates.
+
+The MANTRA DAO Foundation will ensure the release and development of the
+MANTRA DAO until the MANTRA community is established enough to maintain it in a
+completely decentralized manner. The MANTRA DAO Foundation is also responsible
+for safeguarding certain intangible assets pertaining to the project such as trademarks
+and copyrights.
+MANTRA DAO
+
+Community-Governed Organizations
+
+DAOs — Decentralized Autonomous Organizations — are changing how organizations
+are coordinating their activities to create value. A DAO is decentralized because
+control over its operations does not reside in a single location. It is autonomous
+because the smart contracts that govern its operations determine how the
+organization functions, without the need for human intervention.
+
+DAOs represent a massive upgrade on the traditional firm. DAOs use blockchain
+technology and programmable incentives to solve issues traditionally faced by global
+organizations, such as financial transparency, process automation, governance, and
+aligning geographically-separated, individual stakeholders in pursuit of a common
+goal. By combining state-of-the-art technology with new _ token-economic,
+governance, and financial models, DAOs can provide substantial benefits for their
+members. With DAOs, communities are able to leverage the strengths of all
+members, turning them into active stakeholders to grow the network together.
+
+While DAOs have amazing potential, they’re still very new. Most existing DAOs are
+too complicated for the average person to interact with as they require a
+sophisticated knowledge of cryptocurrencies. What’s needed to bring DAOs more
+into the mainstream? Better user experience, simpler governance & voting
+processes, a reputation system that promotes positive actions, and more incentives
+for active participation. With these systems in place, each DAO member has both
+economic and social incentives to be a nice person, a good collaborator, and a team
+player, as well as to hold each other accountable, regardless of age, experience, or
+perceived influence.
+Staking
+
+MANTRA DAO will support non-custodial staking services beginning with Polkadot
+ecosystem assets including but not limited to:
+
+As more Polkadot Ecosystem assets become available for staking, we will add them
+accordingly. These include RING, PCX, and ACA.
+
+Continuing our non-custodial staking service, we will add other DPoS assets such as:
+
+- XTZ
+- TRX
+- ADA
+- EOS
+- ELA
+- Etc.
+
+We plan to support non-custodial staking in the near-to-mid-term but will also add
+custodial staking-as-a-service for other PoS assets, such as ETH 2.0 and DASH.
+
+The rules for the staking of assets will vary by the chain and by the asset. However, as
+an example, we will not charge staking-as-a-service fees for Polkadot assets in the
+beginning, but we will charge a staking fee for other DPoS assets. These fees will be
+variable depending on the staked asset and can be voted upon through the OM
+governance token.
+
+Example: If a user is staking $1,000 worth of DOT with us and generates a 20% return
+on their assets, we will return the principle + 20% or $1,200 in DOT and give them at
+least an additional 50% of the USD value of the DOT interest generated in the form of
+the OM token. In this case, they would receive $1,300, a 30% return, in USD value on
+their underlying principle. Depending on the KARMA level of the individual they could
+receive an even higher percentage of OM interest, up to 100% of the USD value of
+the DOT interest.
+Lending
+
+MANTRA DAO is developing multiple lending products over three phases.
+
+Open Source
+
+Lending Protocol aes
+Phaset i annanens tet
+
+MANTRA DAO Phase 2 Third Party Lending
+
+Service Providers
+
+Phase3 eee,
+
+Own Proprietary
+Lending Algorithm
+
+OM
+
+In Phase 1, we'll build cross-chain bridges to existing open-source DeFi lending
+protocols, such as Compound, to offer our users access to lending interest for
+Ethereum-based assets.
+
+In Phase 2, we’ll be using third-party lending service providers on the back-end to
+provide access to high-interest savings options and stablecoin loans. This platform-
+agnostic approach allows us to cooperate with industry leaders across multiple
+blockchains and protocols, giving users access to a full suite of services within a single,
+easy-to-use interface. MANTRA DAO Foundation will take a small spread on these
+integrated products.
+
+10
+In Phase 3, we’ll be developing our own proprietary lending algorithm & stablecoin
+system, similar to MakerDAO’s, but with cross-chain collateralized assets rather than just
+Ethereum-based ones. By using tokenized derivatives, such as omDOT, as collateral, we’ll
+allow users the opportunity to generate staking rewards even while taking out stablecoin
+loans. Users can then utilize this system to leverage their underlying assets, in a way that’s
+less risky than traditional margin trading, in order to acquire more of them, generating
+further yields.
+
+1 Stake
+Buy &
+
+2. Re-stake
+) oy USDOM
+oc @ ae PC
+
+Staking Pool ~
+
+p
+USDOM
+
+"a ‘a
+2 Bond Swe iy iD USDOM USDOM 3 Borrow
+—2-
+
+Lending Pool
+
+OM Utility Token @)
+
+omDOT Token Derivative ‘D
+
+OM Stablecoin USDOM
+
+11
+USDOM Stablecoin
+
+USDOM is the native stablecoin of the MANTRA DAO platform, which will be launched
+during Phase 3 of our lending platform development. Similar to MakerDAO’s DAI
+stablecoin, USDOM is multi-collateral, generated through Collateralized Debt Positions
+(CDPs) in an overcollateralized manner, and pegged 1:1 with the US Dollar.
+
+While DAI can only use ERC-20 assets to back it, USDOM could be backed by any
+cryptocurrency that’s supported by the Polkadot network, which will include OM, DOT,
+KSM, BTC, ETH and ERC-20 tokens, EOS, ADA, XTZ, etc. The specific assets that are used in
+practice will depend on the liquidity of the underlying asset and the selections of
+MANTRA DAO’s members via the community governance process.
+
+Derivative Tokens
+
+While many users may choose to stake with MANTRA DAO in a fully non-custodial
+manner, there is a downside to staking tokens this way. Polkadot (DOT) tokens will be
+locked for 28 days on Polkadot after unbonding, and seven days for Kusama (KSM) tokens.
+
+Derivative tokens, such as omDOT, provide liquidity for NPoS, DPoS, and other staking
+cryptocurrencies that would otherwise be bonded, and therefore locked, as part of the
+staking process. These derivative tokens still provide users with the ability to participate in
+on-chain governance, by signaling their votes on proposals via the MANTRA DAO
+platform, and they are redeemable for their underlying assets at any time.
+
+The value of derivative tokens like omDOT grows over time due to the accumulated value
+of staking rewards, similar to how Compound’s cTokens increase in value due to the
+interest generated by the protocol. These derivative tokens are exchangeable receipts for
+the underlying assets, allowing the benefits of liquidity and tradability while still
+supporting the security of the underlying DPoS networks through native on-chain staking.
+
+12
+MANTRA POOL
+
+MANTRA POOL is a crypto savings game that allows users to participate for the
+chance to win a percentage of MANTRA DAO Foundation’s staking rewards. Every
+week, the protocol will select randomly generated winners. Users are able to enter
+the MANTRA POOL by burning OM to generate an entry.
+
+Users can gain entry into the MANTRA POOL in 2 ways:
+
+- Burning OM, where 1 burnt OM = 1 entry
+- Depending on a user’s KARMA level, they will have automatic entries into the
+MANTRA POOL
+
+25% of all the staking rewards generated by MANTRA DAO Foundation’s assets will go
+to funding MANTRA POOL. This basket of rewards is given out in their native assets,
+e.g. DOT, KSM, XTZ, OM, etc. Users will have the option to convert all these assets to
+OM with additional earned interest if they so choose.
+
+We also will allow for sponsored MANTRA POOL giveaways, where companies can
+sponsor a distribution using assets of their choosing. These will run separately from
+the staking reward-generated MANTRA POOL offerings.
+
+>)
+® @
+e ® o
+
+MANTRA DAO
+
+13
+Governance
+
+In order to submit a proposal and vote within the MANTRA DAO ecosystem, a member
+must first hold and stake OM. Each staked OM represents 1 vote within the MANTRA
+DAO system. In order to propose a topic for voting, users will need to deposit USD
+$100 worth of OM as collateral. If the proposal should fail, they will lose the OM, but if
+the proposal passes evaluation from the council, then the vote will proceed. If the
+proposal receives a simple majority (51%) of the votes from the valid voters (staking
+OM), then the depositor will receive their OM back as well as an additional amount of
+KARMA for helping the ecosystem.
+
+The process for voting is as follows:
+
+- 1 week for proposals
+
+- 1 week for evaluation of proposals
+
+- 1 week for the voting of proposals
+
+- 1 week for the implementation of proposals
+
+OM holders who stake OM will be allowed to propose changes to the MANTRA DAO
+ecosystem including, but not limited to, changes in:
+
+- Interest rates
+
+- OM Inflation level
+
+- Ecosystem grants
+
+- Adding additional staking assets
+
+- Adding additional lending products
+- Etc.
+
+The MANTRA DAO Council is currently comprised of 5 Council Members. The Council
+Members will serve 2-year terms and will help guide the proposal, evaluation, voting,
+and implementation process for MANTRA DAO. Every two years, there will be a vote for
+the next MANTRA DAO Council Members, with the maximum number of Council
+Members being set at 9. The Council will always maintain an odd number of councilors
+to never allow for a tie during the evaluation of proposals. The maximum number of
+consecutive council terms by any Council Member is set at 5.
+
+It is also possible within our governance model that the MANTRA DAO Council can
+create sub-councils that specifically focus on certain topics, such as the MANTRA DAO
+Financial Council. The overall MANTRA DAO Council holds veto power over any sub-
+council.
+
+14
+Grants
+
+The MANTRA DAO Foundation’s Member Grant program is designed to directly
+support the growth and expansion of the MANTRA DAO ecosystem through projects
+that either increase OM token’s adoption and use, open up new markets and
+business lines, support economies (both emerging and established), create novel
+uses of the MANTRA DAO stablecoin, or ones that generally embrace MANTRA DAO
+Foundation’s guiding principles and vision. The program can make grant allocations
+between 5K - 100K USD equivalent in either OM tokens or the USDOM stablecoin.
+Any grants given out will be distributed on a milestone basis as the teams reach
+different pre-determined KPls. As with anything in the MANTRA DAO ecosystem,
+should the members deem that this allocation range is either too small or too large, a
+vote may be proposed to change it.
+
+The MANTRA DAO Foundation aims to support a wide variety of products and
+companies as it continues to execute upon its roadmap of services. Initially, the
+grants will look at companies that are using and building upon Parity Substrate and
+interacting with the Web3 ecosystem or solving issues within decentralized staking
+and lending services. As the MANTRA DAO ecosystem and service offerings grow, the
+scope for the grants will widen and shift to best support the organization. These
+companies are ideally self-operating, outside teams that have shown an ability to
+execute upon a formulated strategy and plan. The MANTRA DAO Foundation
+Members will provide some support in working with the grant obtaining teams to
+help them best position themselves within the MANTRA DAO ecosystem. The
+MANTRA DAO technical developer team will also work closely with the teams at
+different stages of their development to make sure that their product and build-out
+can be easily and securely integrated into MANTRA DAO.
+
+15
+Mobile Ul Preview
+
+9:41 al >
+Home A
+Accounts
+
+MANTRA DAO )
+DOT Staking
+
+$982.00034
+
+Bitcoin
+Lending
+
+9:41 as
+
+) als q
+
+ENTER LOAN AMOUNT ©
+
+$25,000
+
+CHOOSE YOUR COLLATERAL
+
+Bitcoin Ether DOT
+(0)
+
+atc 9.23
+
+Leam
+more about LTV rations @
+
+16
+Web UI Preview
+
+Custody
+
+The security of cryptocurrency assets is one of the most important elements in the
+blockchain industry. Many blockchain companies have failed due to poor security
+procedures. Most security breaches could have been prevented by taking simple
+precautions to protect critical resources. MANTRA DAO will integrate a mix of non-
+custodial and custodial wallet solutions depending on the specific service
+offerings. When custody is required for specific services, MANTRA DAO will
+use and leverage Rio Chain’s enterprise-grade security solution that utilizes the
+strongest encryption technology available in order to have absolute trustworthiness.
+
+As security is of the utmost importance for us, MANTRA DAO will focus on offering
+non-custodial services for its initial staking business line through Delegated
+Proof of Stake (DPoS) tokens. By utilizing and working with cryptocurrencies
+that are DPoS, MANTRA DAO is able to greatly reduce security risk as it will
+not be handling any of its members’ digital assets, having them remain at all
+times in the members’ custody. As additional tokens are offered that are
+Proof of Stake (PoS), we will maintain these through industry-leading security
+solutions.
+
+18
+OM Token
+
+MANTRA DAO and the MANTRA Protocol are only able to operate as a
+community-governed, decentralized autonomous organization through its use
+and integration of the OM token. OM tokens are the entry pieces for people
+to become members into MANTRA DAO and are what allows them to decide
+how they want the organization to operate. OM tokens grant members of
+MANTRA DAO governance and voting rights, access to collateralized loans
+and compounded interest, as well as entrance into MANTRA POOL’s savings
+games.
+
+Initial Membership Offering
+
+OM tokens will initially become available to the public through MANTRA DAO’s
+Initial Membership Offering (IMO). We are selling membership rights into a
+next-generation decentralized financial ecosystem that’s structured as a DAO
+to give financial freedom and decision-making abilities to its members.
+People who participate in the MANTRA DAO IMO will be given OM tokens and
+access to the MANTRA DAO platform, where they will be able to access a
+broad range of financial services and rights within the ecosystem.
+
+19
+Tokenomics
+
+Token Use Token Amount % of Total
+
+Staking Rewards 266,666,666.40
+
+111,111,111 12.5%
+
+Referrals
+
+Team & Advisors
+
+Grants
+
+155,555,555 17.5%
+
+111,111,111 12.5%
+
+Reserve
+
+Private Sale
+
+88,888,888.80 10%
+79,999,999.92 9%
+
+Public Sale
+
+Total
+
+75,555,555.5 8.5%
+
+888,888,888 100%
+
+OM TOKEN DISTRIBUTION
+
+Public
+8.5%
+
+Staking Rewards
+30%
+
+USE OF PROCEEDS
+
+Exchange Listing
+
+15%
+Marketing
+
+25%
+
+20
+Asset Purchases
+
+15% of the MANTRA DAO Foundation’s initial funds will be used to purchase assets to
+operate our various staking-as-a-service nodes.
+
+These assets will accrue staking rewards, of which:
+° 50% will be used to re-purchase OM tokens for future staking & referral rewards
+° 25% will be rewarded to users of the MANTRA POOL savings game
+
+° 25% will be re-staked to grow the MANTRA DAO Foundation’s assets under
+management (AUM) on behalf of its beneficiaries, the OM token holders
+
+Burning
+
+Every time a MANTRA DAO member burns an OM token in order to enter the
+MANTRA POOL or uses OM to pay interest on a loan taken out through
+MANTRA LENDING, that OM is sent and collected in the MANTRA DAO burn
+wallet. Every quarter, we will burn, in its entirety, all of the collected OM held in that
+burn wallet. All transactions will be transparent and completed on Rio Chain. We
+could eventually burn up to 50% of the total OM supply, leaving 50% remaining.
+
+Vesting
+
+The MANTRA DAO team and advisors’ OM will be vested on a 24-month (2-year)
+timeline with OM being released at the beginning of every month in the amount of
+4.167% or 1/24" (5,926,399.9940736 OM).
+
+The Private Sale participating members will be vested on a 6-month timeline with
+OM being released at the beginning of every month in the amount of 16.67% or 1/6"
+(13,333,333.3 OM).
+
+Those members who join during the Public Sale will follow no vesting period and will
+receive 100% of their tokens following the successful close of the Initial Membership
+Offering.
+
+21
+KARMA Protocol
+
+KARMA Protocol is a reputation mechanism that aims at rewarding members for their
+contributions to the MANTRA DAO ecosystem. MANTRA DAO’s overarching goal of
+bringing peace-of-mind to peoples’ control of their financial future cannot
+happen without the support and participation of its members. The more
+members participate, the more decentralized and autonomous MANTRA DAO
+becomes. KARMA Protocol is a reputation system that plays a crucial part in the
+MANTRA DAO ecosystem by rewarding and incentivizing its members for
+performing positive actions within the organization.
+
+Members who carry out different actions within MANTRA DAO are rewarded in
+KARMA. The more KARMA a member has, the more benefits that member will receive
+within the ecosystem. There are 10 tiers within the KARMA Protocol that unlock
+different incentivization offerings that ultimately allow our members additional
+opportunities to increase their OM holdings, decrease fees, earn rewards, and more.
+Besides the amount of KARMA each user earns, users must also hit specific
+requirements of staked OM in order to receive all of the rewards in that specific tier.
+
+Users gain KARMA by supporting the ecosystem through:
+* Staking OM tokens
+
+* Taking out & paying back loans
+
+¢ Submitting & voting on proposals
+
+¢ Joining the MANTRA POOL savings game
+
+¢ Referring friends to grow the community
+
+¢ Receiving grants
+
+Users with higher karma gain access to various benefits, such as:
+* Increased OM staking rewards
+
+* Decreased staking fees
+
+¢ Free access to MANTRA POOL
+
+* Lower loan interest rates
+
+* Loyalty Rewards, such as SWAG and community recognition
+
+22
+Earning KARMA
+
+Actions # of KARMA Earned
+2
+(per every 1,000 OM)
+
+2
+(per every OM burnt)
+
+Re-Stake your Newly Generated OM
+
+Burn OM in MANTRA POOL
+
+Invest USS1,000 In Initial Membership
+
+5
+Offering
+
+Invite Friends Who Join OM Initial
+Membership Offering
+
+Invite Friends Who Join MANTRA DAO (post-
+IMO)
+
+Invitee Stakes (>US$100)
+
+Vote
+
+Propose Vote that Passes
+
+Receiving a MANTRA DAO Ecosystem Grant
+
+Taking Out a Loan
+Paying Back a Loan on Time
+
+Stake your OM for 3 consecutive months
+
+Stake your OM for 6 consecutive months
+
+Stake your OM for 12 consecutive months
+
+KARMA Tiers & Rewards
+
+500,000
+
+300,000
+
+200,000
+
+Min # of OM
+Staked
+
+(USD Equivalent)
+
+100,000
+
+60,000
+
+50,000
+
+# of
+MANTRA
+POOL
+Entries
+
+65
+
+53
+
+OM Interest
+Rate
+(increase of)
+
+Loan Interest
+Rates
+(decrease of)
+
+Staking Fee
+
+(decrease of)
+
+50%
+
+35%
+
+100,000
+
+5 80,000
+
+65,000
+
+45,000
+
+30,000
+
+25,000
+
+20,000
+
+15,000
+
+12,500
+
+10,000
+
+15,000
+
+5,000
+
+1,000
+
+MANTRA POOL requires members to burn at least 1 OM in order to take
+part in the savings games. Besides just being able to participate in
+MANTRA POOL by burning OM tokens, members that accumulate enough
+KARMA are given free entries to participate in all offered MANTRA POOLs. Once
+members hit the different KARMA levels, they will be automatically enrolled in
+every game in the amount offered in their designated Tier.
+
+OM token’s interest rate will be dependent on the circulating supply of OM and
+how many OM are being staked at a given time. Depending on members’ KARMA
+Tiers, they will be entitled to a percentage increase on whatever the OM token’s
+interest rate is at that time. These interest rates will be automated and written
+into smart contracts on the blockchain.
+
+Staking fees will vary from each PoS or DPoS cryptocurrency that is supported and
+offered on the MANTRA DAO platform. Depending on the specific fees
+associated with the specific PoS / DPoS cryptocurrency, the KARMA Tier
+levels will allocate a reduced percentage based on those fees at that time. These
+reduced percentages on the fees will be automated and written into smart
+contracts on Rio Chain.
+
+Loan interest rates will be calculated based on the assets that users are borrowing
+against and the pre-determined rates at that time. Depending on the given interest
+rates at any specific time, users who qualify in specific KARMA Tiers will receive a
+discounted rate in real-time. These reduced percentages on the interest rates will
+be automated and written into smart contracts on Rio Chain.
+
+25
+MANTRA DAO Foundation
+
+MANTRA DAO Foundation is established as a registered separate legal entity, without
+owners. Its initial assets are donated to the foundation and are managed by its
+councilors on behalf of its beneficiaries. A foundation’s council (analogous to a
+company’s board of directors) manages and administers foundation assets in
+accordance with its purpose as detailed in the terms of its charter and regulations.
+Persons who become members of this Foundation become its beneficiaries and are
+collectively known as the "Members" or singly as a "Member". Interests of the
+Members of the Foundation are denominated in "Units”, which are represented by
+OM tokens.
+
+Seychelles foundations are provided for under the Seychelles Foundations Act 2009
+as amended by the Foundations (Amendment) Act 2011 (together the “Act”). The Act
+strikes an effective balance between sound regulation and market attractiveness.
+
+Foundations are often formed for wealth management purposes, and are commonly
+used to hold investments such as company shares, bonds and real estate, or
+cryptocurrencies and digital tokens. MANTRA DAO Foundation will own 100% of the
+shares MANTRA DAO IBC, a Seychelles International Business Corporation (IBC),
+which will operate all business activities in service of the Foundation on behalf of its
+Members.
+
+Approximately 15% of all funds raised will go toward purchasing cryptocurrency
+assets and nodes to operate the staking-as-a-service business on behalf of the
+Members.
+
+The staking rewards from the Foundation’s assets will be used as follows:
+° 50% will be used to buyback OM tokens on secondary exchanges
+° 25% will be used as rewards for the MANTRA POOL savings game
+
+° 25% will be re-staked to grow the Foundation’s assets under management
+(AUM) on behalf of its Members
+
+For additional details on how MANTRA DAO Foundation will operate, please see
+Appendix A & B.
+
+26
+Parity-W3F-Polkadot
+
+MANTRA DAO Foundation collaborates with leading Blockchain organizations at both
+technical and business levels.
+
+Web 3 Foundation
+
+Web3 Foundation was created to nurture and steward technologies and applications in
+the fields of decentralized web software protocols, particularly those that utilize
+modern cryptographic methods to safeguard decentralization, to the benefit and for the
+stability of the Web3 ecosystem. Polkadot is the flagship protocol of Web3 Foundation.
+
+Parity Technologies
+
+Web3 Foundation has commissioned Parity Technologies to build Polkadot. Founded by
+Ethereum cofounder Dr. Gavin Wood, Parity is a global team of top distributed systems
+engineers, cryptographers, solutions architects and researchers. Parity has
+fundamentally shaped the blockchain industry, from building the highly-adopted Parity
+Ethereum client and implementations of Bitcoin and Zcash, to developing the next
+generation of blockchain technology with Substrate and Polkadot.
+
+Polkadot
+
+Polkadot is a next-generation blockchain protocol that unites an entire network of
+purpose-built blockchains, allowing them to operate seamlessly together at scale.
+Because Polkadot allows any type of data to be sent between any type of blockchain, it
+unlocks a wide range of real-world use cases.
+
+By bringing together the best features from multiple specialized blockchains, Polkadot
+paves the way for new decentralized marketplaces to emerge, offering fairer ways to
+access services through a variety of apps and providers.
+
+While blockchains have demonstrated great promise in several fields—Internet of
+Things (loT), finance, governance, identity management, web decentralization, and
+asset-tracking to name a few—design limitations in previous systems have largely
+hindered large-scale adoption. Polkadot’s design offers several distinct advantages over
+existing and legacy networks, including heterogeneous sharding, scalability,
+upgradeability, transparent governance and cross-chain composability.
+
+27
+Rio Chain
+
+Existing blockchains are too slow, too rigid, and too foreign to traditional digital
+infrastructure to be used by most institutions and organizations. Blockchains must
+meet businesses’ requirements in order to be successful and implementable.
+
+Rio Chain iterates over previous generations of blockchain networks such as Bitcoin
+and Ethereum. Built with Substrate and focusing on security and usability, Rio Chain
+introduces greater interoperability, scalability, increased network speeds, and cross-
+chain transactions. It is for this reason that we have chosen to use Rio Chain to power
+the MANTRA DAO platform.
+
+Rio Chain is a hybrid blockchain that is powering Rio Wallet and a host of dApps in
+the Rio ecosystem (explained in more detail on RioChain.io and in the Rio Chain
+Whitepaper).
+
+28
+Features
+
+Rio Chain represents a shift in network design and development philosophy over
+previous Blockchains and is better geared for mass adoption.
+
+Features
+Transparency
+
+Block Creation Time
+
+Benefits for developers and end users
+
+By entering a public address in the Rio Chain browser, users
+can see holdings, transactions, and network data related to
+this account
+
+2 seconds
+
+Interoperability
+
+Client Requirements
+
+Upgradable Chain
+
+Projects built on Rio Chain can be compiled using a separate
+client and communicate with other chains
+
+Light nodes, rather than full nodes, do not need to run 24/7 or
+read and write a lot of information on the blockchain.
+
+Separation of runtime components, allowing easy runtime
+upgrades; Rio DeFi can easily upgrade the main chain without
+requiring a hard fork
+
+Flexible Consensus
+
+Efficient Deterministic
+
+Sandbox WebAssembly
+Runtime
+
+Seamless Client
+Upgrade
+
+On Rio Chain, thanks to the Aura consensus algorithm, finality
+is reached with each new block created
+
+Virtual machine interpreters with available toolkits; Using
+WebAssembly, dApps can be built using different smart
+contract languages
+
+Updates that affect consensus are compiled using
+WebAssembly, and developers can store as many versions of
+consensus code as they want to compile with native code. Rio
+Chain handles this complexity to ensure that the native code
+being executed is consistent with the currently deployed
+WebAssembly code
+
+Rio Chain iterates over previous generations of Blockchain networks such as Bitcoin and
+Ethereum. Focusing on scaling up, Rio Chain introduces greater interoperability,
+increased network speeds and enables cross-chain transactions.
+
+Customizable Consensus Algorithm
+
+* Support licensed blockchain and different
+consensus algorithms (e.g. PoS, PoW, etc.)
+* Support for customizable adjustments
+
+High TPS
+
+¢ Up to 3,000 TPS on PoA
+
+¢ Ability to scale horizontally to extend TPS
+
+* Existing blockchains, like bitcoin and
+Ethereum, follow the longest chain rule
+
+but lack finality. Rio Chain supports finality.
+
+Competitive Analysis
+
+Rio Chain
+
+Federated chain
+
+Types
+
+Bitcoin
+
+Public chain
+
+Support for network updates on the chain
+
+* The new contract can be deployed without
+upgrading the node without a hard fork in
+the chain
+
+Smart Contract
+
+* The WASM contract is compatible with Rust
+C/C++, C#, Typescript, Haxe, and Kotlin
+
+¢ Draw a line between finality and non-finality
+
+° Greater security
+
+Ethereum
+
+Public chain Public chain
+
+Tamper-proof
+
+Consensus
+algorithm
+
+Permissioned
+
+Up to oa on
+
+Finality
+
+Smart Contract
+Rust
+
+C/C++ etc.
+
+Bitcoin Script
+
+Platform Tokens RFUEL
+
+ETH EOS
+
+Rio Wallet
+
+There currently exists a big gap in the creation of digital asset wallets and their user-
+friendliness. Sending, receiving, and using cryptocurrencies or any digital assets should
+be as easy as the push of a button and should not be something that requires multiple
+steps. With this in mind, we have created a seamless, easy-to-use wallet to power Rio
+Chain.
+
+Rio Wallet is not only a secure storage medium for cryptocurrencies, but also allows
+participants to access a suite of payment services and uses within the Rio DeFi
+
+ecosystem through various decentralized applications (dApps).
+
+t Balance
+
+$ 10,000.00
+
+Asse Price
+
+wits — aotat091 169 cmonsrai ec een From
+Bvevost——aniss0t 09 eocourras are see bps
+
+Facer ——aorpiost roe eounaras are sa i
+
+L son aortas 1090 eocowzaeTe s2008
+
+° Arvount
+>
+Transaction Fee or RUE
+@ wr ot 0
+Next
+@ v= " ‘ F
+
+MANTRA DAO ) 31
+Rio Fuel
+
+ORioFuel
+
+Rio Chain’s native token — Rio Fuel (RFUEL) — is a unit that measures the amount of
+computational resources used to execute operations on Rio Chain, and is required to
+conduct any transactions or execute any smart contracts within the Rio Chain
+ecosystem, including all of its dApps. Any OM token transactions will require the use
+of RFUEL since they are Rio Chain’s native tokens. Each Rio Wallet comes pre-loaded
+with 10 free RFUEL, which can be used to initiate 100 actions on Rio Chain as the
+transaction fee is only 0.1 RFUEL for most actions. Rio Chain will ensure that
+transaction costs remain vastly cheaper than traditional blockchains.
+
+100 million RFUEL
+tokens are pre-
+
+minted, a majority of
+which are distributed
+to users’ wallets
+
+Creation
+
+RFUEL derives its
+value from actual
+usage value
+
+(utility)
+
+RFUEL is required to
+send transactions
+and interact with
+dApps on Rio Chain
+
+32
+Roadmap
+
+Q4 2019 3 2020 a6 qi2021
+2 2 2
+Y Rio Chain 4 * Completion of Initial + MANTRA DAO Proprietary
+Development KUSOMO Membership Offering (IMO) Lending Protocol released
+Begins + Launch of Staking Platform * Issuance of MANTRA DAO
+Y Conceptualization * Mobile App Goes Live stablecoin
+of Proprietary * Become Polkadot Validator node
+Lending Algorithm * OM Token Exchange Listing
+Q2 2020 Q4 2020
+Y BetaNet Released * Launch of MANTRA POOL
+Y Penetration Testing * Integration of Compound’s
+Completed (Certik) Polkadot. Lending Protocol
+Y Become Kusama * Enhanced Staking/Lending
+Validator Node Product Suite
+
+33
+Council Members
+
+John Patrick Mullin
+
+John is a FinTech entrepreneur, investor, and
+educator. He started his career in investment banking
+working at Guotai Junan Securities in Shanghai,
+China. Then he was a founding team member of
+trade.io a cryptocurrency exchange and advisory
+firm. Most recently he joined Tritaurian Capital, a
+boutique investment bank providing financial
+services and capital raising solutions for startups and
+SMEs as it’s HK Managing Director. As an educator, he
+has spoken at leading universities across the world,
+including Harvard, London Business School, and
+Peking University. Additionally, John is a mentor for
+Entrepreneur First, and LongHash.
+
+Will Corkin
+
+Will is a blockchain & fintech entrepreneur in both
+the crypto and tokenized securities markets. Helping
+to structure and launch over 20 blockchain
+companies while running the consulting and advisory
+arm of trade.io, Will more recently headed business
+development for the only US broker-dealer currently
+licensed to issue and distribute digital securities.
+
+Prior to his involvement in blockchain, Will was a
+portfolio manager at ZX Ventures.
+
+James Anderson
+James Anderson is a blockchain advocate and serial
+
+entrepreneur whose involvement in blockchain goes
+back to early 2013.
+
+Upon contributing to the Ethereum ICO, James
+embarked on a journey into social entrepreneurship.
+Most notably, James co-founded Social Evolution, a
+non-profit organization whose aim is to solve social
+problems through innovation and the propagation of
+DAOs. He is currently the CEO of Rio DeFi.
+
+34
+Rodrigo Quan Miranda
+
+Rodrigo is a former Hong Kong based investment
+banker turned emerging technology entrepreneur. He
+is the founder of Moon Street Ventures, an emerging
+technology consulting and R&D company, as well as
+co-founder and CEO at Immutable Technologies Corp.
+(‘ITC’), a blockchain infrastructure provider. Prior to
+ITC, Rodrigo worked in investment banking at Willis
+Towers Watson Securities (“WTWS’) in NYC and HK.
+Rodrigo received his B.A. in Economics from Amherst
+College in Amherst, Massachusetts, and is a
+passionate computer science student in his spare
+time.
+
+Stephane Laurent Villedieu
+
+Stephane is a full-stack marketer whose career spans
+12 years and a broad array of corporations, agencies
+and start-ups.
+
+An expert of China digital landscape, Stephane has
+helped dozens of blockchain projects set foot in Asia,
+assisting them with fundraising, content creation and
+community building.
+
+35
+Contributors
+
+Calvin Ng
+
+Following a highly successful career in the gaming
+industry which saw him bring major franchises such
+as Dayonta USA and World of Warcraft in Asia, Calvin
+decided to join the Blockchain landscape in 2016.
+
+In addition to his involvement in Rio, Calvin is also
+managing Director at PlutusVC , a $200 Million fund
+focused on internet companies.
+
+Ekaterina Volkova
+
+A seasoned business consultant, Katerina’s former
+ventures include Priority Token Group where she
+served as Vice President. Katerina has helped
+structure a broad range of enterprises.
+
+Her expertise includes fundraising, strategic
+management and event organization.
+
+Argu Lin
+
+Argu has been in the online gaming industry for 17
+years and has had successful projects in client games,
+browser games, and mobile games and_ has
+participated in many live video projects. He has many
+years of development experience in the field of P2P
+video communication.
+
+Argu Lin was an early player in blockchain when he
+started mining Bitcoin in 2009. He is well experienced
+with blockchain technology and has been involved in
+the development of a number of blockchain wallets
+and exchanges.
+
+36
+Harrison Cheung
+
+Harrison formerly served as the person in charge of
+the operations of the CITEX exchange and the AEX
+exchange, mining and incubating multiple projects to
+lead online. He was also the organizer of Startup
+Salad, responsible for the planning and
+implementation of multiple events. Harrison focuses
+on community building, event coordination, and
+strategic positioning.
+
+Stacie Meng
+
+A long-term Bitcoin investor, Stacie has ventured into
+various Blockchain companies across Asia and is
+currently Business Director at Bitoll INC, a Hong Kong
+based cryptocurrency payment wallet solution. She is
+also the co-founder of KQJ, a Blockchain-based
+gamified auction platform.
+
+Phyrex Ni
+
+A serial entrepreneur with more than 15 years of
+experience, Phyrex’s expertise lies in digital
+entertainment and Blockchain technology. A fervent
+proponent of decentralized finance, his latest
+ventures have spurred the growth of asset-backed
+tokens and stablecoins.
+
+37
+Prof. Nicholas Krapels
+
+Nicholas is a China-based American writer, educator,
+and entrepreneur. He works in global financial
+services as a Strategy Advisor for the DeFi project
+FinNexus. He teaches graduate courses in business,
+strategy, & entrepreneurship at SKEMA Business
+School and Tongji University. His research focuses on
+the history of innovation in monetary policy and
+blockchain technology.
+
+Jamie Cheng
+
+Jamie is a full stack developer & Bitcoin investor
+since 2013. He is currently the CTO of Rio DeFi &
+was a former engineer at BTCC China. Jamie is also
+the founder of BirPortal Wallet.
+
+Jamie won the 2nd prize of Wanxiang Blockchain
+Hackathon in 2018. He is also a graduate of Hunan
+University of Science and Technology and holds a
+degree in Computer Science.
+
+Billy Magbanua
+
+Billy Magbanua is a Games, Internet, and
+Decentralized product professional with more than
+10 years of combined experience. After the Bitcoin
+and Crypto boom back in 2017, he’s been involved in
+numerous projects in the crypto and blockchain
+space. To name a few: BlueToken, PlayexlO, Goldzip.
+He’s currently the Co-Founder of Bitpool, a prediction
+market built on Rio Chain. He’s also advising in a few
+projects such as RioDeFi and KQJ.
+
+38
+Disclaimers
+
+Licenses and Approvals
+
+Licenses and approvals are not assured in all jurisdictions. MANTRA DAO intends to
+operate in full compliance with applicable laws and regulations.
+
+Third Party Data
+
+This whitepaper contains data and references obtained from third party sources.
+While the management believes that the data is accurate and reliable, they have not
+been subject to independent audit, verification, or analysis by any professional legal,
+accounting, engineering, or financial advisor. There is no assurance as to the
+accuracy, reliability or completeness of the data.
+
+Translations
+
+This whitepaper and related materials are issued in English. Any translation is for
+reference purposes only and is not certified by any person. No assurance can be
+made as to the accuracy and completeness of any translation. If there is any
+inconsistency between a translation and the English version of this whitepaper, the
+English version prevails.
+
+Views of MANTRA DAO
+
+The views and opinions expressed in this whitepaper are those of MANTRA DAO and
+do not reflect the official policy or position of any government, quasi-government,
+authority or public body (including but not limited to any regulatory body of any
+jurisdiction) in any jurisdiction. This whitepaper has not been reviewed by any
+regulatory authority.
+
+40
+MANTRA DAO
+
+Community Governed DeFi Platform
+Appendix A: REGULATIONS OF MANTRA DAO FOUNDATION
+
+Section 1. Purpose. The purpose of MANTRA DAO Foundation is to hold shares of
+MANTRA DAO IBC, a Seychelles International Business Corporation (IBC), which will
+operate all business activities in service of the Foundation on behalf of its Members. This
+IBC will operate as a Decentralized Autonomous Organization (DAO) through which it can
+accept requests to perform services for its Members or third parties, solicit bids on such
+requests from Members and non-Members, and permit Members to allocate responsibility
+and remuneration of Members and others for completion of related tasks. The Foundation
+may transact such other lawful business as the Members may determine in accordance
+with these regulations.
+
+Section 2. Powers. The Foundation may engage in any and all activities that may lawfully
+be performed by a Seychelles Foundation under the Seychelles Foundations Act, 2009 (the
+"Act"), and other applicable laws.
+
+Section 3. Governance; Type of Decentralized Ledger; Security Protocols; Tax Elections.
+
+(a) Governance. The Foundation intends to govern itself and conduct all of its activities
+through the use of blockchain technology, software-enabled governance procedures and
+protocols, and associated voting protocols, including but not limited to: (a) admission or
+expulsion of Members and approval or denial of Member Unit transfer requests; (b)
+proposed upgrades to or modifications of the Foundation’s DAO, software, and/or
+protocols; (c) proposed changes to these regulations; (d) bids or proposals to perform work
+for third parties; (e) bids or proposals for Members or non-Members to perform work for
+the Foundation and/or third parties and receive payment and Reputation therefor in their
+individual capacities; and (f) any other matter of governance or other activity the
+Foundation finds necessary or convenient to have its Members determine collectively. The
+software-enabled governance procedures and protocols adopted from time to time by the
+Foundation, together with this document, shall jointly constitute the regulations of the
+Foundation. The initial version of such governance procedures and protocols is described
+in Appendix B to this document, but the current version of governance procedures shall, at
+all times, be determined by and stored on the DAO. Subject to the foregoing provisions and
+the provisions of Section 6, the Foundation shall be governed by its Members, collectively.
+
+42
+(b) Type of Decentralized Ledger. The Foundation will utilize a decentralized, publicly-
+available ledger (the "Ledger"). Information about participants’ permissions and ability
+to read and write protocols to the ledger is set out in Appendix B.
+
+(c) Security Protocols. The Foundation believes that the use of blockchain technology
+and a DAO structure provide ample security, but has nonetheless established security
+protocols to address and mitigate risk. Information about those Security Protocols is set
+out in Appendix B.
+
+(d) Tax Status. No taxation. Seychelles foundations are completely exempt from any
+form of taxes in Seychelles, meaning that all income and gains of any kind of the
+Foundation are not taxable in Seychelles. Distributions to beneficiaries, fees paid to
+investment advisors and similar are also tax exempt. Note: U.S. taxpayers and those
+from countries taxing global income are required to report all income to their tax
+authorities.
+
+Section 4. Units; Outside Work and Duties; Compensation; Capital Accounts;
+Foundation Funds.
+
+(a) Units. The Foundation will have Units, called OM tokens; their supply fluctuates in
+accordance with the economic parameters of the smart contracts and decided upon by
+the DAO’s members. The voting power of each staked Unit will initially be 1 (1 staked
+OM token = 1 voting power). Future iterations of the protocol may have voting power
+vary in accordance with the corresponding Unit holder’s KARMA, as determined from
+time to time by the Members through the DAO, or by such other methodology
+determined from time to time by the Members through the DAO. The number of Units
+in the Foundation held by each of the Members as of the date of this document and
+thereafter will be as determined by the smart contract protocols of the DAO. Unit
+records will be updated dynamically as Members are admitted or leave the Foundation
+and if Members transfer their Units to others. The Foundation neither expects nor
+intends to amend its written Charter to reflect such changes, as all such information will
+be stored on the DAO and accessible to Members therein.
+
+43
+(b) Outside Work and Duties. Members, including Councillors, are permitted to work
+for and have outside business interests in companies and organizations besides the
+Foundation, and such work or interests will not violate any duties or obligations of
+Members or Councillors to the Foundation. No Member will have any fiduciary duty to
+the Foundation for any contractor work done for the Foundation, unless the Members
+vote to approve such a fiduciary duty and the Member concerned consents to it.
+
+(c) Compensation. Members, Councillors, and non-Members may _ receive
+compensation as independent contractors on particular tasks undertaken through the
+Foundation as approved from time to time through the DAO structure, including, but
+not limited to, for services of the Councillor to the Foundation and services by any
+Member or non-Member to a third party on behalf of the Foundation or directly to the
+Foundation, at such times and amounts approved by vote of the Members or as
+established in the regulations. Neither Members, Councillors, nor non-Members will
+receive distributions from the Foundation aside from such compensation, unless the
+Members or regulations approve such distributions.
+
+(d) Foundation Funds. Foundation funds may consist of traditional currency or of digital
+assets, including, but not limited to, cryptocurrencies and digital tokens. All Foundation
+funds consisting of traditional currency shall be deposited in such bank accounts or
+invested as designated by the Councillors. Foundation funds consisting of digital assets
+shall be held in such a manner as may be designated by a vote of the Members. In
+whatever form, such funds shall not be commingled with funds of any other entity
+managed, controlled, owned or advised by any of the Members. All withdrawals from
+any traditional currency accounts shall be made only by a Councillor or by other
+persons duly authorized by the Foundation to make such withdrawals. Transfers of
+digital assets may be made by duly authorized persons or through duly authorized
+"smart contracts" or other automatic means approved by the Members.
+
+44
+Section 5. Distributions; Financial Reporting; Books and Records.
+
+(a) Distributions. The Members will make all decisions related to distributions of cash
+or any form of currency (including, but not limited to, cryptocurrencies and digital
+tokens). For the first two years, in order to efficiently create the DAO’s products and
+services, the Foundation’s assets will be professionally managed by its initial
+contributors, who will act in accordance with guidance from the Councillors and
+advisors.
+
+(b) Financial Reporting. Each Member agrees to be bound by the decisions of the
+Members with respect to distributions and other aspects of the Foundation’s
+accounting.
+
+(c) Books and Records. The Foundation books and records shall be kept in accordance
+with the accounting methods determined by the Members to be most advantageous to
+the Foundation for financial and reporting purposes. The books and records shall be
+open to the reasonable inspection and examination of the Members or their duly
+authorized representatives upon request.
+
+Section 6. Management; Councillor; Indemnification.
+
+(a) Management. The business, operations and affairs of the Foundation will be
+managed under the direction of the Members in accordance with the governance
+procedures described in this Charter. The use of Councillor(s) described below is for
+convenience of administration and is not intended to diminish the fundamental role of
+the Members as a whole in directing the operations and affairs of the Foundation.
+
+45
+(b) Councillor. Notwithstanding the provisions of Section 6(a) above, in order to
+maintain a centralized point of contact with the outside world, the Foundation will, at
+all times, have one or more Councillors with the limited authority described in this
+Charter, who will be selected from among the Members by vote of the Members, the
+first of whom shall be the individuals referenced in Appendix B. If the Members name
+multiple Councillors to act at any given time, each such Councillor will have the power
+to act individually on behalf of the Foundation, independent of the other Councillors,
+unless decided otherwise by the Members. Councillors may also be required to post a
+surety related to the faithful performance of managerial duties, if so determined by the
+Members. Councillors may be removed or replaced and one or more Councillors may
+also be named, also by vote of the Members. The Councillor(s) will have primary
+responsibility for interacting with third party service providers and officials (e.g.
+accountants, attorneys, government officials and departments) on behalf of the
+Foundation and such other tasks as the Members or this Charter may assign. The
+Councillor(s) will have the power to execute or file any document required or permitted
+to be executed or filed on behalf of a Foundation under the Act. A Councillor, like any
+Member of the Foundation, may fulfill multiple roles within the Foundation, including
+but not limited to, Member, Councillor, developer, contractor, voter, or other participant
+in the DAO operated by the Foundation. Within their authority, Councillors may act as
+agents of the Foundation. No other Member will be an agent of the Foundation solely
+by reason of being a Member.
+
+(c) Indemnification. Any Member, including a Councillor, may request indemnification
+by the Foundation for his, her, or its acts for or on behalf of the Foundation, including,
+but not limited to, actions related to a particular bid by a Member to perform work for
+or on behalf of the Foundation. Indemnification may be granted or approved through
+the same Member voting process or regulations used to govern the Foundation’s
+activities and operations.
+
+46
+Appendix B: MATERIAL INCORPORATED BY REFERENCE IN APPENDIX A
+
+3(a) The initial version of such governance procedures and protocols will consist of the
+following, which may be changed at any time by vote of the Members through the DAO:
+
+The Rio Chain smart contract framework. This consists of a set of smart contracts
+deployed on Rio Chain that define the basic building blocks and standard
+components that can be used to implement any dApp.
+
+The latest release of Rio Chain’s protocol can be found at
+https://github.com/RioDefi/riochain
+
+Members of the Foundation will use the DAO protocol to vote on all proposed
+governance matters related to the Foundation and on all proposed projects
+submitted to the Foundation through the DAO, which may include proposals for the
+DAO to perform work for outside clients and proposals for DAO Members and/or
+non-Members to perform work for or on behalf of the DAO in exchange for digital
+currency or tokens.
+
+KARMA is a non-transferrable balance associated with a cryptographic address,
+meant to gauge a user’s reputation and positive actions within the community. An
+address with a positive KARMA balance, who is staking at least 1 OM token, will be
+considered a Member. Each Member will maintain at least one KARMA, but voting
+power in the DAO will be calculated according to Members’ staked OM tokens,
+meaning that Members with higher amounts of staked OM will have greater voting
+power. Note that future upgrades, voted on by Members, may also utilize KARMA
+balances to calculate voting power. KARMA will be awarded and adjusted by smart
+contracts, per the specifications set by the DAO, and can also be adjusted by votes
+of the Members through the DAO protocol.
+
+Non-Members may become Members of the DAO and receive KARMA if they stake
+at least 1 OM token. Only Members may submit and vote on proposals.
+
+Proposals by Members may involve requests for KARMA in exchange for work.
+
+When proposals are approved through the DAO protocol, the DAO will approve
+awarding the submitting Member the digital currency, tokens, and KARMA (if any)
+associated with that proposal.
+
+Whenever a non-Member client desires the Foundation or the DAO perform a
+project, a proposal for the same must be submitted to a vote of the Members
+through the DAO protocol. A Member may submit the proposal on behalf of a
+client, providing such details as needed to allow the Members to consider the
+proposal. Neither Members nor Councillors may unilaterally agree that the DAO will
+perform a project for a third party without first obtaining the consent of the
+Members through the DAO protocol.
+
+47
+Non-Members for whom the DAO agrees to perform work will receive the address
+of the DAO that allows the non-Members to pay the Foundation. The DAO will
+award that payment to those Members and/or non-Members whose proposals to
+perform the same work are also approved by the Members through the DAO
+protocol.
+
+3(b) The Foundation’s distributed ledger will consist of Rio Chain. The smart contracts
+that define the Foundation’s protocol will limit write permissions for certain
+functionality, such as the ability to vote on a proposal, to Members’ cryptographic
+addresses.
+
+3(c) The Foundation’s security protocols are subject to the following provisions:
+
+Blockchains and smart contracts are highly experimental and subject to security
+breaches. Members acknowledge that the Foundation may be affected by A) bugs
+in the smart contracts that comprise the Foundation’s protocol or B) issues in the
+underlying ledger, such as integration issues due to chain upgrades, or other
+unforeseen technical issues.
+
+If a bug is discovered that compromises the integrity of the Foundation’s protocol,
+all funds shall be temporarily moved to a Multisignature Wallet ("Multisig") if
+possible. The Multisig shall be jointly controlled by the Councillor(s), and
+authorization of at least two such individuals will be required to release funds
+from the Multisig.
+
+When the patch is complete and the software is stable, the Multisig shall redeploy
+the DAO with all previous data (such as KARMA distribution and proposal history)
+if it is technically feasible to do so. Following a successful redeploy, the Multisig
+shall return all funds to the DAO.
+
+The initial Councillors will be: James Anderson, Stephane Laurent, John Patrick
+Mullen, Will Corkin, and Jamie Cheng.
+
+48

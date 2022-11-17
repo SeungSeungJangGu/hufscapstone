@@ -1,0 +1,673 @@
+(% easyfi
+
+Universal layer-2 lending
+Protocol for DeFi
+
+Version 1.0
+July 2020
+
+Authors
+Anshul Dhir | Ankitt Gaur
+g
+Abstract
+
+The current state of the cryptocurrency market comprises numerous participants viz. Investors, traders,
+lenders, borrowers, and arbitrageurs among others. They exchange hands to the tune of billion dollars
+worth of digital assets in custodial & non-custodial markets.
+
+Niche markets like decentralized finance, popularly known as DeFi, have presented users with limitless
+opportunities and a plethora of choices. The advent of open finance enabled by millions of lines of code
+has the potential to self regulate, design new regulation, build community governed regulatory
+approaches across the otherwise most centrally regulated industry in the modern world. It has the
+potential to empower a billion lives with better access to financial products of choice.
+
+DeFi protocols & products have evolved over the incumbent ethereum blockchain and are ready for
+expansion. While the inherent problems of the ethereum network are a great barrier to adoption &
+scalability, there's a dire need to instill sophistication in the existing digital assets markets to elevate it
+to a level at par with traditional markets. Market participants lack imagination when it comes to trading
+the time value of assets. Incentives in the form of interest rates derive motivation for the deployment of
+unutilized assets. The efficient utilization of time value of assets leads to wealth creation in markets
+whilst value transfer between participants who seek (borrower) and who gives (lender).
+
+Presently, most digital assets are mispriced and carry high volatility over a longer time frame. Hence,
+holding digital assets with depleting principal value is demotivating. Therefore, users seek new
+incentives & frameworks to offset the losses and cope up with higher transaction costs and complexity.
+
+In this paper, we introduce a decentralized system for the frictionless borrowing of digital assets on
+layer 2 networks to tackle the shortcomings of existing systems, making money markets efficient, and
+
+creating higher-yield bearing opportunities.
+Introduction
+
+EasyFi is a universal layer 2 lending protocol built for DeFi focused on scalability, composability, and
+adoption. It has been designed as an open network infrastructure to run on public networks to facilitate
+an end to end lending & borrowing of digital assets and related financial products.
+
+Freedom to create new financial products and customize existing ones paves the way for permissionless
+innovation. ‘Proof of Reputation’ contracts establish creditworthiness and promote greater efficiency
+and transparency for better lending & borrowing opportunities. Non-custodial contracts allow seamless
+on-chain & off-chain transactions of digital assets across markets and participants while retaining
+custody with the original owner.
+
+The network design is ethereum compatible and blockchain agnostic allowing instant settlement of
+assets over different blockchain networks while retaining custody with the asset owner's network. The
+cross-chain framework allows lending & borrowing across a spectrum of global markets including
+private platforms and permissionless public networks. The network is secured by proof of stake
+mechanism, governed through participating voters to achieve consensus among network participants.
+
+We believe this technology can be transformational for the lending ecosystem while retaining higher
+efficiency, lower transaction costs, lower dependency & greater transparency.
+Problems & Motivation
+
+01. High cost & slow speed of transactions
+
+02
+
+03
+
+04
+
+The incumbent ethereum network is a vast ecosystem that offers great resources and eases to
+build. But it comes at a cost which is increasing by the day. High gas fees or transaction costs are
+a huge barrier to mass adoption and scalability. Latency, low throughput, higher block completion
+time makes network accessibility difficult. Provided the magnanimous challenge ethereum faces,
+currently, it is therefore important to build alternatives and curtail dependency.
+
+High collateralization ratio
+
+Currently, most DeFi users need to lock 150-200% of assets to avail loans which are predominantly
+used for trading and accessing leverage across different protocols. While it adds to the cost of a
+loan, it also presents a great barrier to market expansion. Lately, new mechanisms like credit
+delegation, flash loans have tried to solve the problem but they are still evolving. We believed under
+collateralized and uncollateralized lending is critical for mass adoption.
+
+Lack of Smart financial products
+
+Traditional financial markets offer many choices and a wide range of products to choose from.
+Although, these are more easily accessible by institutions than retail users. So users have to
+subscribe and use what is being offered by institutions. Mutual funds, Fixed deposits, term deposits,
+insurance, bonds, securities are pushed to market while DeFi has turned the tables. DeFi has not
+only empowered developers to create and sell such financial products, it has given a voice to users
+to demand products of their own choice and suitability. But currently, we understand that there's a
+dearth of smart and sophisticated financial products in the decentralized finance market.
+Therefore, we believe, new financial products with more real-life use cases need to be created and
+made more accessible through decentralized finance.
+
+Also, it is inevitable to ignore the pace at which the size of the decentralized market is expanding.
+The primary reason for the same is the influx of institutional and HNI's/UHNI's capital to markets.
+Important to ask if we have offerings and products to suit the needs of these institutions? We
+believe DeFi lacks the same and therefore, needs more sophisticated financial products so as to
+sustain such market size.
+
+Absence of credibility benchmarks
+
+Identity mapping to the borrowers and their track record is still disconnected from borrowing
+transactions, collateral-free or low collateralized loans are a distant dream. A_ higher
+collateralization ratio is also linked to a lack of trust in a multi-party agreement. DeFi lacks such a
+mechanism so as to measure and benchmark the creditworthiness of a user in a scientific way.
+Higher collateral is a cushion to volatility and mitigates the risk of liquidation events too. But this
+brings inefficiency and lack of transparency in the market. The absence of credibility benchmarks
+is a great hindrance to the development of newer financial products and the ability of institutions
+to lend in a more decentralized way. Interest efficiencies and higher costs of operations only add
+to the list of problems.
+Proposed solution
+
+01. Porting necessary infrastructure to Layer 2 Blockchain networks
+
+02
+
+Layer 2 scaling techniques move transactions off-chains and bundle them into proofs that are
+submitted back to the main chain. Layer 2 solutions provide better speed and low cost of
+transactions. These optimized networks are ethereum compatible and are customizable to a great
+extent. Therefore, offering the necessary flexibility to operate in a niche while constantly being
+connected to the main ethereum network too.
+
+There are numerous layer 2 solutions that solve the problem of scalability and high transaction
+cost but needs refinement and deployment. EasyFi Network protocol is designed as a layer-2
+agnostic solution to provide an agile exchange of assets across numerous layer 2 networks in a
+plug & play mode and switching in between on-chain off-chain storage as and when necessary.
+
+Existing Layer 2 solutions
+
+L2 scaling solutions are categorized into
+
+A. State channels
+B. Sidechains
+
+It is assumed that every network participant on a state channel acts as a validator which is a fixed
+set while anyone can use the network on a side chain and has a very separate validator set.
+
+Sidechains are further classified into custodial and non-custodial sidechains. On a custodial
+sidechain, assets are moved to a parallel chain with their own consensus mechanism and security
+whereas non-custodial sidechain assets are secured on the main chain through smart contracts.
+
+One of the frameworks to build non-custodial side chains is called Plasma. The major advantage
+with plasma is that it allows the derivation of security through mainchain (Ethereum) which is not
+the case with all non-custodial sidechains. Plasma allows enforcement of block headers onto the
+main chain which is basically snapshots of balances at a certain point of time, bundled as a single
+transaction. These transactions are bundled into a Merkle tree and root hash is generated while
+submission on the main chain.
+
+On a plasma chain, validators stake for the right to validate plasma blocks. Only chosen or
+designated validators can validate, making it primarily a proof of stake chain. Plasma, therefore,
+allows off-chain transactions at a much higher and cheaper rate. The single operator model can
+be used in Plasma with a requisite fraud-proof mechanism which enables the optimistic execution
+of transactions on the sidechain.
+
+Optimistic Rollups are also non-custodial side chains that include enough data in blocks for
+everyone to reconstruct and challenge their state thereby solving the data availability problem of
+Plasma but are prone to the scalability problem of the mainchain (ethereum) itself. ZK-Rollups
+have architecture very similar to ORs, but fraud proofs are replaced by validity proofs. These
+validity proofs are expensive to compute therefore costs higher fees.
+To understand the comparison and deep dive technically into L2 s, please refer to the following table:
+
+STATE OPTIMISTIC
+
+CHANNELS SIDECHAINS PLASMA ROLLUP VALIDIUM ZKROLLUP
+Security
+Liveness assumption YES BONDED YES BONDED No NO
+(e.g. watch-towers)
+The mass exit assumption NO NO YES NO NO NO
+A quorum of validators can freeze NG 8 NG NO veel Na
+funds
+A quorum of validators can NO oS NO Na
+confiscate funds
+Vulnerability to hot-wallet key HIGH HIGH MODERATE MODERATE | HIGH IMMUNE
+exploits
+Vulnerability to crypto-economic
+
+MODERATE HIGH MODERATE MODERATE MODERATE IMMUNE
+attacks
+Cryptographic primitives STANDARD STANDARD STANDARD STANDARD NEW NEW
+Performance / economics
+Max throughput on ETH 1.0 1..00 TPS? 10K+ TPS 1K..9K TPS? 2K TPS? 20K+ TPS 2K TPS
+Max throughput on ETH 2.0 1.,.00 TPS? 10K+ TPS 1K..9K TPS? 20K+ TPS 20K+ TPS 20K+ TPS
+Capital-efficient NO YES YES YES YES YES
+Separate on-chain tx to open a new YES No NO NO no No
+account
+Cost of tx VERY LOW Low VERY LOW Low LOW LOW
+Usability
+Withdrawal time 1 CONFIRM 1CONFIRM 1WEEK‘(?) 1WEEK*(’) 1..10MIN? 1.10 MIN”
+Time to subjective finality INSTANT YES 1 CONFIRM 1CONFIRM  1..10 MIN 1..10 MIN
+
+TRUSTED
+
+Client-side verification of subjective N/A
+on YES NO NO YES YES
+finality TRUSTED
+Instant tx confirmations FULL BONDED BONDED BONDED BONDED BONDED
+Other aspects
+Smart contracts LIMITED FLEXIBLE LIMITED FLEXIBLE FLEXIBLE FLEXIBLE
+EVM-bytecode portable NO YES NO YES NO NO
+Native privacy options LIMITED NO NO NO FULL FULL
+
+Source: Matter Labs
+In conclusion, Plasma, we believe, is the best available L2 solution because of inherent properties as
+
+discussed, while ORs & Zk-Rollups are a great improvement in the direction and we are open to keep
+exploring the same until we can see a real-world production-grade implementation.
+03. Undercolletralization & Borrower's evaluation
+
+Enforcing something financially which isn't financially backed is a great challenge. To mitigate the
+risks involved one of the approaches could be to shift the burden to a better-suited entity. A third
+party that can't guarantee repayment in case of default. It can be termed as a process of social
+fund recovery where the borrower's guarantee is taken by a certain individual who is ready to back
+the event. Since anonymity and privacy have been core or decentralized finance it would be
+counterproductive and tough to find such backing. Therefore, the guarantor approach won't be
+best suited.
+
+Another approach that can be taken from traditional financial markets is replicating credit score
+mechanisms. Legacy finance has been utilizing credit evaluation techniques through consortiums
+which created and maintains a centralized database for assessing borrower's credibility. Historical
+data of users is collected, collated, stored, and analyzed on the basis of preset parameters to suit
+the satisfaction of lending entities. These lending entities feed tons of data to the centralized
+engine which, over time, becomes invaluable for credit risk management. Of course, there are
+shortfalls to this approach as we have witnessed leakages, misuse, and exploitation of user's data
+by key centralized institutions and sovereign entities. But using the right mechanisms, since we
+enjoy the liberty of distributed databases and peer to peer interaction in a decentralized world, we
+believe, we can create such a system so as to assess borrower's creditworthiness while addressing
+
+the shortcomings.
+
+Therefore, we wanted to use a system that doesn't allow for censorship beyond lending and where
+users are in complete choice and full control of their data while preserving the privacy & degree of
+anonymity too. Tough task! Huh. we explored much but got to understand that the identity layer
+problem is not easier to solve. Finally, we ended up creating our own identity layer protocol called
+TrustScore that helps solve the dilemma. Using TrustScore users can whitelist an ERC20 address
+and Trustscore's proprietary algorithms create metrics that help establish borrowers (read user's)
+creditworthiness over a period of time. Trustscore scans user's activity on various lending
+platforms and protocols to assess credit behavior only through that whitelisted ERC20 address.
+Users have a choice to add as many whitelisted addresses as they want. The algorithm intends to
+gather only related financial information of users required to establish a certain behavior and
+non-financial reputation would be uncensorable even in case the user is at default.
+
+Using the system, as explained above, Easyfi intends to solve the problem of over-collateralization
+and identity layer (up to some extent) in the decentralized finance ecosystem. A separate paper
+detailing the mechanism shall be released in the near future too.
+
+04. Smart Products
+
+As mentioned above, for retail users, lending markets need to offer products that can be utilized
+beyond trading. Therefore, we intend to offer such financial products that have a direct impact on
+the user's real life. As our first offering, we planned to launch products under the microlending
+category. Microlending allows borrowers access to time-bound loans of small values at much lesser
+interest rates than traditional banking & lending markets. These loans would be able to be drawn
+directly to their wallets and can be used for various purposes. Microlending products have a huge
+use case for small businessmen too for meeting their day to day working capital requirements.
+Lending markets, predominantly, in decentralized finance have been catering to borrower's
+requirement of funds for trading purposes. Recently, we have witnessed, a huge influx of
+institutional capital into various protocols and platforms. We believe institutions have finally
+retained confidence in the code and are deploying their ideal funds in lieu of better interest
+earnings. This calls for institutional-grade products and offerings required to meet the dynamics of
+smart capital. Easyfi has plans to introduce insurance in DeFi through credit default swaps as the
+first in a series of financial derivative instruments. More detailed information pertaining to design,
+architecture, deployment, etc. shall be made public through subsequent papers.
+
+Needless to mention the role of undercolletralization, credit delegation like mechanisms in
+designing such financial products is of great importance. We'll release detailed information on
+different products and related concepts in subsequent papers.
+
+Unique Selling Proposition
+
+Existing money market protocols have been successful in creating & aggregating much-needed
+liquidity to the existing market. The supply side is overwhelmed with excessive capital which
+remains unutilized due to the weaker borrowing side. This demand gap has lead to a tipping point
+where it is now necessary to focus on demand generation by offering more appealing financial
+products in insurance, microlending among others to borrowers.
+
+Therefore, EasyFi aims at bridging the gap among borrowers and sellers while addressing the
+technological limitations of the existing network.
+Network Architecture & Implementation
+
+Mobile and Web Application layer
+
+EasyFi SDK for Native
+
+implementations EasyFi API Bundle
+
+@ Decentralized CDS Trading Markets
+
+a
+Credit Default
+Credit Delegation Micro Lending Swaps
+Contracts Pools
+aN 7 7
+
+)
+
+EasyFi Core Interest
+Marktes
+
+ie) © &
+
+Chain Link Price Koinfox TrustScore Governance &
+feed Contracts Contracts Voting Contracts
+a S
+
+@ Farming and Yield distribution Contract
+
+ef Matic Blockchain
+
+@ $Easy Token Contract
+
+4 Ethereum Blockchain
+Core concepts
+
+01. Supplying Assets
+
+02
+
+03
+
+Users supply an asset to their respective liquidity pool where aggregated liquidity is matched to
+the borrower's demand thereby creating fungibility of the resource pool. Utilization Ratio U
+describes the ratio of total assets borrowed from respective liquidity pools against assets supplied.
+Unless otherwise utilized to full capacity, users can withdraw their assets at any time. Assets in
+respective pools are represented by ERC-20 Token ‘eToken’. Asset suppliers hold eTokens of a
+proportionate amount which represents the user's proportionate contribution in the pool and
+entitled for interest earned from the money market over a period of time. The accumulated
+eTokens are convertible to underlying assets thereby accruing interest, as a function of borrowing
+demand, by simply holding ‘eToken’.
+
+Utilization ratio U, for each market a unifies supply and demand as:
+
+Uc=Borrows./(Cashat+Borrowsa)
+
+Borrowing Assets
+
+‘eToken’ holders by using the same as collateral can borrow from EasyFi money market protocol
+and other integrated protocols in the ecosystem, seamlessly. Users can specify the asset to be
+borrowed without getting into the hassle of negotiating terms and conditions but with desired
+parameters, so set by market forces. Transparency and uniformity make the money market unique
+in its approach for all network participants.
+
+Collateral Value
+
+Each market has a collateral factor 0 to 1, representing a portion of the underlying asset that can
+be borrowed. Lower collateral factors interpret illiquid market and higher collateral factors
+represent high liquidity in the respective market.
+
+The user's borrowing capacity is calculated by multiplying collateral factors by the sum value of
+accounts with underlying assets.
+
+For example, the Borrowing capacity ( for the corresponding market) Be of user account A with x
+amount of USDT, collateral factor 0.67 of the market a is calculated as follows:
+
+B,” = ,USDT * (0.67),
+
+In simple terms, as
+
+Borrowing capacity = (Value of token balance) * (Collateral Factor)
+04.
+
+05.
+
+06.
+
+Interest Rate Model
+
+Governance can decide the interest rate model and is codified through a demand curve which is
+expressed as a function of utilization ratio, as calculated above, base interest rate, and reserve
+ratio. Therefore, the Borrowing Interest rate of the market a can be calculated as follows:
+
+Borrowing Interest ratea = Base rate +U. * Reserve ratea
+
+The supply interest rate for the market a is derived through borrowing interest rate, reserve factor,
+and the total amount of borrowers or total spread S in the respective market as followed:
+
+Supply Interest rate. = Borrowing Interest rate, * Ua * (1-S)a
+
+Exchange Rate
+
+User's balances are expressed in proportion or amount of eToken balances for each activity
+conducted in the protocol. Users can redeem, mint, borrow, repay limited to their balance of
+eTokens with accrued principal and interest which can be exchanged with underlying market
+assets using exchange rate (Price of eToken for the underlying asset). It is calculated as follows:
+
+underlying balance + total borrow balance, -reservesa
+Exchange rate (¢) =_§=— AAA
+
+eTokenSupplya
+
+Interest Rate Index
+
+As the market forces namely demand and supply changes in a market, the interest rate is
+calculated and applied to all borrowers uniformly which adjusts over time. This change is regularly
+captured and represented as an Interest Rate Index for each time the transaction is done in the
+protocol. It is calculated per block interest rate, denominated by r* t as follows:
+
+Indexan = Indexa,(n-1) * (1+ r*t)
+
+07. Liquidity pools
+
+Under existing standard mechanisms borrowers are matched with lenders. These borrowers pay an
+interest fee for seeking assets and lenders are rewarded for providing liquidity to the market. The
+cost incurred to borrowers is incentivized to lenders therefore acting as economic incentives to
+maintain liquidity in the market. Therefore, they act as operators of the money market which
+provides sufficient depth to the liquidity pools.
+
+10
+08.
+
+09.
+
+Undercollateralized Lending
+
+Optimum collateral requirements are important to motivate borrowers to enter the market. Over
+collateralization is a barrier to entry albeit it's important to mitigate market risks that arise from
+volatility and subsequent liquidation. Traditional financial markets have appropriate credibility
+assessment measures and corresponding facilitating institutions in place to establish the
+creditworthiness of a user. Consequently, they instill sufficient trust in the system to facilitate
+lending & borrowing by mitigating intrinsic risks of default or non-payment.
+
+Defi lacks such standard benchmarking mechanisms due to a lack of access to data pertaining to
+users. This calls for maintaining user data over a period of time to build creditworthiness and
+record any defaults or non-payment by the borrower. But there's another pressing concern of
+privacy and data security of users. Therefore, it is pertinent to follow a novel and balanced
+approach so as to establish creditworthiness, data verification, and maintain appropriate privacy
+
+at the same time.
+
+Micro Lending
+
+Peer to peer financing has witnessed huge growth in digital assets markets and we have seen
+impressive advancements in the sector leveraging p2p applications. One of the major use cases of
+peer to peer financing is microlending. But Defi has still to offer microlending as a service to its
+users. Microlending enables the deployment of funds to real-world use cases and derives better
+value economies. Creditworthiness helps establish trust in multi-party agreements and allows
+uncollateralized lending through a shared pool and credit delegation to a seeker of choice.
+
+EasyFi intends to facilitate lenders offering undercollateralized loans of smaller value to borrowers.
+Inherent risks of credit default and non-payment are shared by existing lenders in a proportionate
+manner. Lenders here provide liquidity to pools meant for portfolios of many dozens of
+microloans. By spreading the risk across a large number of lenders it is ensured that the whole
+portfolio is not wiped out and loss is shared. This facilitates the expansion of lending markets to
+new dimensions that DeFi has yet to witness.
+
+10. Credit Delegation
+
+Alternative methods like peer to peer financing enable users to obtain loans from other users
+directly, cutting through the middleman. The most important factor that defines a relationship is
+“Know your borrower" which means the lender knows to whom he is lending. Thereby taking the
+burden of risk that may arise in the event of default. But in decentralized finance, as discussed
+above under the heading ‘borrowers evaluation’, in absence of an identity layer the only resort left
+to lenders is to mitigate the primary risk of default through some mechanism. Here, the Credit
+delegation plays a vital role which is a programmed or coded version of bi party agreement
+between lender and seeker. Both parties can enter into a trusted agreement in which the lender's
+capital can be borrowed by the seeker. All important clauses and conditions perse Interest rates,
+loan terms, and other covenants are set into an Open Law agreement and stored, providing an
+immutable point of reference. While credit delegation offers a degree of under collateralization,
+combined with creditworthiness ( TrustScore) can be translated to uncollateralized lending in the
+future.
+
+11
+11. Smart financial products
+
+12.
+
+13
+
+14
+
+Smart contracts have the capability to create, design, and offer a wide range of custom financial
+products using different protocols or platforms. These smart contracts are written at a higher level
+of thoughtfulness for better testing, analytical capabilities. They can further be integrated to create
+more innovative and high yield-bearing products like credit swaps, default swaps, and more.
+
+Proof of reputation contracts
+
+A series of interconnected Smart Contracts, enabling Trustscore being computed and stored on
+Blockchain to avoid any biases or fraudulent activity around the calculation of user's performance
+for the specific set of transactions. These smart contracts aim at recording, analyzing, and
+benchmarking historic records of users in accordance with set parameters and conditions. These
+are highly customizable smart contracts offering a wide range of use cases like performance
+measuring, credit rating, user identification to name a few.
+
+Cross chain bridge contracts
+
+As the name suggests this unique set of smart contracts enables cross-chain transactions for
+real-time lending, borrowing, and management of digital assets in a non-custodial manner. This
+means users can lend assets without moving tokens over the blockchain networks. Non-custodial
+collateral contacts create a synthetic supply of digital assets, thereby locking original tokens or
+assets in itself and enabling transactions over various networks. The collateral derives the value
+from market oracles and reconciles with corresponding assets during the transaction cycle through
+network nodes.
+
+Atomic cross-chain swaps enable exchanging one token for another on different blockchain
+networks while cross-chain bridges act as an immediate fix to enable interaction between different
+blockchain networks. The protocol aims at using these cross-chain bridges to enable cross-chain
+atomic swaps of the token in real-time for lending & borrowing of digital assets. This means asset
+suppliers (lenders) & seekers (borrowers) can access different markets, financial products across
+different blockchain networks simultaneously.
+
+Risk management
+
+Risk is inherent to lending and needs to be managed in accordance to different market
+requirements. For instance, risks inherent to microlending or undercollateralized lending seek
+unique risk parameters to ensure the management of defaults or non-payments. Different financial
+products have a different set of standards, parameters, risk models, and mechanisms. The protocol
+offers a complete agile environment to adhere to, test, and deploy respective risk modeling
+strategies and parameters.
+
+The protocol is designed to create risk management parameters which deem essential while
+interacting with more decentralized protocols, DAOs, and platforms. Users can propose, set, and
+approve such parameters and design mechanisms for robust governance and the addition of new
+risk management capabilities to the protocol.
+
+12
+15. Governance
+
+The protocol's on-chain governance model allows for reaching consensus among different network
+participants through a direct voting mechanism. The chain governance mechanism influences
+participants’ behavior on the network with the purpose of weeding out bad actors and
+incentivizing good actors so that the network runs completely unencumbered. The stake weighted
+mechanism offers stakeholders holding higher stakes with greater voting rights to set various
+parameters, propose and define new rules, markets, collateral limits, etc. The protocol also defines
+the scope of off-chain governance which will be detailed over time to time with users.
+
+16. Dual Yield Farming
+
+Governance delegation combined with novel incentivization structure has enabled a great deal of
+decentralization. The network effect with vested interest helps create large value networks. Yield
+farming makes a network robust and unleashes great economic innovation. Yield farming includes
+a digital asset holder putting his digital assets to work by investing it in the network itself. In return,
+they are paid a fixed or variable interest on their invested crypto assets.
+
+For accelerating the adoption of this newly launched lending protocol and attracting new liquidity
+onto a layer two blockchain network, we would like to introduce a new variant of yield farming or
+liquidity mining called "Dual Yield Farming” whereby EasyFi along with different partner projects,
+will allocate a portion of EASYFI tokens (EASY) and partner project's native token (say XYZ)
+towards incentivizing liquidity providers and yield farmers. This in turn, we believe, will bring in
+community interest and supply to the protocol hence enabling desired liquidity as well as
+engagement.
+
+Under dual yield farming, a higher APY ( Annual percentage yield) can be achieved in a sustainable
+manner. Since the inflation of native token is controlled and is complemented through
+corresponding emission of incentives of another partner token, users tend to earn more, in a
+sustainable way, over the period of time. By innovating yield farming structure and combining
+forces with other quality projects, easyfi has adopted an open-minded approach for a more
+collaborative & engaged community with an end goal of incentivizing users for the long term and
+earning their loyalty. More details on dual farming and subsequent collaborations shall be made
+public from time to time.
+
+13
+Design ethos
+
+01. Blockchain agnostic
+
+We believe niche ecosystems like DeFi are just the start to an era where many such ecosystems
+shall be replicated over numerous blockchain networks and L2 networks. Likewise, we may witness
+mushrooming of more financial and non-financial niche ecosystems for retail and enterprise users.
+Therefore, it is needed to adopt a flexible approach and create a system that enables interaction
+& exchange of digital assets between such networks easier.
+
+EasyFi universal layer 2 protocol is designed as blockchain agnostic and L2 agnostic that can
+interact between various networks using appropriate mechanisms.
+
+02. Ethereum compatibility
+
+Ethereum's network through smart contracts capability has facilitated thousands of businesses
+and enabled millions of users to interact and exchange. The strength of the network lies in the
+ecosystem it has created over a period of time. There are thousands of developers who are
+working tirelessly to create amazing products. It is, therefore, not possible to create anything in
+silos.
+
+EasyFi network protocol is designed to be ethereum compatible, blockchain agnostic, a
+multi-network universal protocol to enable exchange and interaction of digital assets.
+
+03. Interoperability
+
+Projects like Polkadot, fusion, cosmos specialized in interoperability and link siloed blockchains.
+These projects enable the transfer of value and data over numerous networks. Interoperability is
+pertinent to scale markets and bring more users. Different blockchain networks cannot operate in
+silos and need to interact with each other.
+
+EasyFi is designed in a way to interact with other protocols which enables interoperability.
+
+04. Staking involved consensus & governance
+
+Governance delegation mechanisms empower network users and participants with more
+engagement and value derivation. The protocol is designed to enable staking at multiple levels
+and facilitate governance through moderated voting mechanisms. We intend to design to keep
+protocol interactive, participative, and one that offers convenience to developers & end-users.
+
+05. Network security
+
+The set of rules and configurations designed to protect the integrity, confidentiality & accessibility
+of the network covers a multitude of technologies, devices, and processes. It is pertinent to adopt
+the best possible measures to keep security utmost. Therefore, the protocol is designed as per the
+highest standards and thus offers a desired amount of security to enable secure transfer of value
+and data over numerous networks.
+
+14
+Governance
+
+01. Stake weighted voting
+
+The primary governance mechanism in EasyFi universal protocol is through on-chain voting by the
+participants keeping in account the weightage attached to their stake within the scope of exercise.
+Each participant enjoys governing rights, in proportion to the number of tokens staked on the
+network. Users need to perform various activities on the network to become eligible for staking
+rewards.
+
+Stakeholders can float a proposal to the governing community and seek participation from
+community members. To avoid flooding of proposals or proposal spam, proposal creators need to
+ensure a minimum level of participation or otherwise, a portion of their stake is forfeited as a
+penalty. This ensures a clean and more participative governance delegation across the
+community.
+
+02. Event determination
+
+For specific events like interest rate determination, collateral requirement, weighted stake
+decisions, the addition of trading markets, defining trading parameters, etc. that requires
+additional thoughtfulness a special proposal be created, and community participation is sought.
+In addition to stakeholder's weighted stake average, the user's activity & network participation be
+taken into account as an eligibility to participate in voting.
+
+This comprehensive approach helps in the determination of events of special importance and
+ensures holistic participation from members of the governing community. All proposals and
+events shall be listed in the main forum from time to time and moderated on basis of stake &
+participative voting, therefore.
+
+eToken contracts
+
+All the interactions between money markets and users are facilitated through eTokens; users can mint,
+redeem, borrow, repay borrow, liquidate eTokens from, and for underlying assets in respective money
+markets. Smart contracts have implemented ERC20 token specification for each money market.
+Exchange rate (r) defines the settlement of eTokens & underlying assets, which increases in proportion
+to interest accrued over time and has a direct relation to the market ( a) total borrowing balance.
+
+underlying balance, + total borrow balance, -reservesa
+
+Exchange rate (r) =
+eTokenSupplya
+
+15
+EASY
+
+Token Utility
+
+EasyFi native token ‘EASY’ will be used for the following key functions:
+
+Governance: SEASY token will enable users to be able to play part in the protocol’s governance as
+EasyFi is going to become a DAO and enable the community to control various governance decisions
+w.r.t. Running the protocol.
+
+Protocol Incentivization: will enable users to earn rewards from time to time and provide them with
+voting rights in the upkeep of the protocol and continuous development.
+
+Staking rewards: SEASY token will enable various projects to launch their lending and borrowing
+markets on the EasyFi network hence will enable them to reward the users to stake SEASY tokens for
+earning rewards in form of tokens of the respective markets and interact with corresponding markets on
+the protocol.
+
+Cross market interaction: EasyFi is the first protocol in the DeFi space to enable dual token farming,
+hence enabling various markets being launched on EASYFI to be able to incentivize EASYFi users to
+interact with those respective markets.
+
+Cross Chain Settlement: SEASY tokens will be used as a cross-chain settlement instrument in the
+
+various bridges created to communicate and share the liquidity with various other sidechain and main
+chains being built over a period of time like Binance Smart Chain, Polkadot, etc.
+
+16

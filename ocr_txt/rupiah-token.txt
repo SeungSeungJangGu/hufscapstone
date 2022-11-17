@@ -1,0 +1,446 @@
+Rp, Rupiah Token
+
+Author: PT Rupiah Token Indonesia (https://rupiahtoken.com)
+
+Version: v2.0 (December 2019)
+
+Disclaimer: This whitepaper might be updated as the company and project progress.
+
+Abstract
+
+IDRT is the first crypto-asset which price is intended to mimic the value of Indonesian
+Rupiah. IDRT is issued by PT Rupiah Token Indonesia, an Indonesian-based startup. As
+an ERC-20 token built on Ethereum, IDRT inherits the speed, security, transparency, and
+other desirable characteristics of the Ethereum Blockchain. This combination of the
+Ethereum Blockchain and price stability relative to Indonesian Rupiah resulted in a digital
+
+asset that provides consumers with a stable store of value.
+
+The main target customers of IDRT are Indonesian cryptocurrency traders who want to
+access global crypto exchanges. PT Rupiah Token might collaborate with third-party
+market makers or independent traders in cryptocurrency exchanges to help ensure IDRT
+price mimics Indonesian Rupiah. Branding and market education will also help in
+establishing market consensus among traders that the value of IDRT tracks Indonesian
+Rupiah. However, the ultimate price of Rupiah Token in each cryptocurrency exchanges
+will depend solely on market forces of supply and demand. Rupiah Token has no
+contractual obligation to perform buyback of IDRT from its holders and does not
+
+represent the indebtedness to the IDRT holders.
+© RupiahToken N
+
+Background and Historical Context
+
+A Brief History of Money
+
+Over the vast history of mankind, money has been a key invention that enables humans
+to effectively cooperate in producing goods and services, which in turn propels the
+economy and civilization forward. Before the existence of money, the people of early
+civilizations would barter goods (such as livestock and agricultural produce) they had in
+surplus for the ones they lacked. This proved to be cumbersome and inefficient, as the
+goods are perishable and there is no standard ‘unit of value’. To solve this issue,
+civilizations around the globe invented various forms of physical money - some were
+rudimentary coins made of cowrie shells (used in Indonesia’s Batu Islands and West
+Africa), while others are more sophisticated metal coins made of bronze, silver, and/or
+gold. As civilization and the global economy system advanced, mankind invented even
+more convenient forms of money: paper money, credit/debit card, contactless payment
+
+card, and even various digital forms of money.
+
+Money in the 4.0 World
+
+Blockchain as the future medium
+
+Today, we live in a world of unprecedented change and innovation. For the last 20 years,
+the rise of distributed computing network called the internet has enabled billions of
+humans to connect and share information instantly and securely, with zero consumer cost.
+The benefit is immense and immeasurable. For example, the internet has enabled people
+
+from developing countries, such as Indonesia, to access high quality educational
+© RupiahToken \
+
+materials such as Software Engineering Videos on Youtube and Free online courses from
+
+Stanford University.
+
+In the last 2 - 3 years, we have seen the rising adoption of QR Code-based payment
+systems in Indonesia. These payment systems are operated by digital wallet providers as
+Go-Pay and OVO. While these services bring tremendous convenience for Indonesians
+to transact locally, there are two weaknesses of this approach. First, all of the balance
+records and financial transactions that ever happened on these platforms are stored in a
+centralized entity, meaning that a sophisticated, malicious attacker could potentially
+infiltrate and manipulate those balances and transactions. Secondly, as closed platforms,
+the money stored at any service provider can only be used by users and merchants within
+the system, which prevents important use cases such as cross application settlement,
+
+cross-border remittances, and international transactions.
+
+We believe that distributed ledger technology, or blockchain, will bring the next step in
+the evolution of money. Just as the internet allowed for borderless and instantaneous
+movement of information, blockchain technology will allow us to exchange value and
+
+transact with one another in the same way: instantly, globally, securely and at low cost.
+
+Digital assets such as Bitcoin is too volatile
+
+We have seen that throughout history, money can take various forms and shapes. Every
+
+asset class that can act as money needs to fulfill three main functions:
+
+1. as ameans of exchange
+2. asa standard unit of account
+
+3. asastable store of value
+© RupiahToken N
+
+The Bitcoin boom and bust in 2017 - 2018 period have shown us that the prices of non-
+collateralized crypto assets are notoriously volatile. Even today, we believe that for the
+foreseeable future, Bitcoin and similar crypto assets are likely to remain more volatile
+than well-managed national currencies or gold. Such volatility might be interesting for
+speculative investors and day traders, but it makes the asset unable to be a stable store
+of value. For money to exist in the blockchain, we need an alternative class of asset that
+
+can maintain a relatively stable value.
+
+Designing Crypto that is suitable for
+
+Indonesians
+
+Basics
+
+RupiahToken (IDRT) is the first crypto-asset which price is intended to mimic the value of
+Indonesian Rupiah. IDRT is issued by PT Rupiah Token Indonesia, an Indonesian-based
+startup. As an ERC-20 token, IDRT combines the speed, security, transparency, and other
+
+desirable characteristics of the Ethereum Blockchain.
+
+PT Rupiah Token might collaborate with third-party market makers or independent
+traders in cryptocurrency exchanges to help ensure IDRT trades at value close to
+Indonesian Rupiah. Branding and market education will also help in establishing market
+consensus among traders that the value of IDRT tracks Indonesian Rupiah. However, the
+ultimate price of Rupiah Token in each cryptocurrency exchanges will depend solely on
+market forces of supply and demand. Rupiah Token has no contractual obligation to
+perform buyback of IDRT from its holders and does not represent indebtedness or
+
+debenture to IDRT holders.
+© RupiahToken N
+
+Benefits and Strengths of IDRT
+
+e IDRT is built on the Ethereum blockchain, which gives it the inherent security and
+transaction immutability of Ethereum.
+
+e IDRT follows ERC-20 token standard, which means it is very easy to integrate and
+inherently compatible with many existing Ethereum-based applications.
+
+e All transactions are executed according to the rules of smart contract, which
+eliminates human error.
+
+e The security of IDRT smart contract has been audited and verified by CertiK, a
+world-class Smart Contract Auditor. IDRT is ready to be listed for all exchanges
+
+around the world
+
+Tradeoffs of IDRT
+
+e Aswith all ERC-20 tokens, transaction confirmation follows the speed of Ethereum
+network (about 1 - 3 minutes). This is much faster than Bitcoin, but still slower than
+ideal user experience.
+
+e As part of the Ethereum blockchain protocol, all transactions in the Ethereum
+network requires the transaction initiator to pay “gas” fees in the form of Ether
+(ETH), the native crypto-asset of the Ethereum blockchain. This “gas” cannot be
+paid in IDRT or any other ERC-20 tokens. However, this trade-off may one day be
+resolved with side chain/sharding technology, such as Plasma and Raiden
+Network.
+
+e The gas fees required by the Ethereum blockchain network varies depending on
+the load / congestion of the network. As a rough estimate, typical transfer costs
+around 0.0005 ETH, which is $0.07 USD or 1000 Indonesian Rupiah at the time of
+
+writing.
+© RupiahToken N
+
+Use-case: Crypto-currency Trading
+
+As with all ERC-20 tokens, IDRT usage requires at least a basic familiarity of using
+Ethereum. Users need to at least know how to use an ERC-20 compatible Ethereum
+wallet, and hold at least a very small amount of ETH to transact IDRT. Because of that
+knowledge barrier, the ideal adopters of IDRT would be existing players in the crypto-
+
+asset industry.
+
+The main purpose of IDRT is to facilitate crypto-asset trading. Indonesian crypto traders
+need to exchange their volatile digital assets to crypto with a better price stability. With
+IDRT, Indonesian traders now have the option to convert their volatile crypto into a more
+stable token (IDRT) with respect to Indonesian Rupiah. Not only that, if IDRT is accepted
+
+or listed in multiple exchanges, Indonesian traders can trade between exchanges
+
+Beyond cryptocurrency trading, there is chance that IDRT will enable a new class of
+exciting applications from the developer community. We open source our code to allow
+developers to create new and exciting projects that can integrate easily with IDRT.
+Developing a common standard in an open way will sour developers to work with code
+that is not controlled by any one party, and in the process raising the standard of security
+and diversity of developers/ applications being built with it. While we may not know what
+kind of application may emerge, we believe IDRT can be used in future Ethereum-based
+
+applications that wants to target Indonesian market as users.
+
+Transparency and trust remains the core offering of the blockchain from day one.
+We believe a future where existing financial players, blockchain native projects, and
+government agencies can coexist to foster an open financial system that support
+
+frictionless and safe transfer of value, both for consumers and businesses.
+© RupiahToken N
+
+Detailed Technology and Operations
+
+Ethereum and ERC-20 Token Standard
+
+Ethereum is a decentralized blockchain that allows software programs, called Smart
+Contracts, to be written and executed on the blockchain. ERC-20 is a standard on the
+Ethereum blockchain that defines a common list of rules that all Ethereum tokens must
+
+adhere to.
+
+We will not attempt to explain the entire Ethereum and ERC-20 Token standard on this
+paper because such discourse will be too long. Instead, we invite readers to read some
+
+of the following resources to learn more:
+
+1. https://github.com/ethereumbook/ethereumbook
+
+2. https://github.com/ethereum/wiki/wiki/White-Paper#notes
+
+3. https://github.com/ethereum/EIPs/blob/master/EIPS/eip-20.md
+
+Security of IDRT Tokens and Smart Contract
+
+Ethereum Blockchain is tamper-proof
+
+Similar to Bitcoin, past transactions in Ethereum are final and can never be altered. As of
+this writing, there are currently around 8,000 Ethereum nodes running worldwide. To
+“hack” and alter data / state in the Ethereum network, a malicious actor need to have
+
+more than 51% of the computing power of those nodes, which is highly improbable.
+© RupiahToken N
+
+Ownership of IDRT Tokens are directly in users’ hands
+
+Unlike traditional e-wallet applications where the issuer holds the balance of each users
+inside the issuer's centralized system, we do not hold custody of users’ IDRT tokens.
+IDRT tokens are owned by users in their own wallets, because users will control their
+
+own private keys (the ‘password’ that signifies ownership of assets on blockchain).
+
+IDRT Smart Contract has passed Certik Audit
+
+Security is always on the top of our minds, and our Smart Contract has been audited by
+
+CertiK (https://certik.org/) to be secure.
+
+7) © RupiahToken
+
+Testing Summary
+
+PASS
+
+CERTIK believes this
+smart contract passes security
+qualifications to be listed on
+digital asset exchanges.
+
+Multi-signature design reduces single point of failure
+
+We only hire the best, trustworthy people, and we believe there are no malicious actor(s)
+
+inside our company. However, we believe we still need to mitigate risk and ensure the
+© RupiahToken \
+
+security of our internal operations by not allowing a single point of failure to exist. This is
+achieved using multi-sig smart contract design. During IDRT smart contract deployment
+to Ethereum blockchain, we established one address as the Owner and three addresses
+as Administrator. These addresses are each controlled by separate hardware wallets. Any
+
+critical operations require at least two signatures, as follows:
+
+1. Two signatures are required for minting up to 100 million IDRT
+2. Two signatures are required to burn IDRT tokens at a pre-defined burn address
+(i.e. we cannot burn tokens located outside of that specific address)
+3. Two of three admins PLUS owner signatures are required for :
+1. Minting above 100 million IDRT in a single transaction.
+2. Transferring the token management of the IDRT ERC20.
+
+3. Replace, add, or remove an admin.
+Signature of transactions happen in an offline, air-gapped computer
+
+To enhance the security of IDRT operations even further, all transactions that interact with
+IDRT smart contract (such as minting, burning, etc) are done in an offline, air-gapped
+computer. We then use a separate device to broadcast/transmit the signed transaction
+to the Ethereum blockchain. As such, the computer used to compose the signed
+
+transactions are safe from external attacks.
+© RupiahToken N
+
+Our Team
+
+We, PT Rupiah Token Indonesia (https://rupiahtoken.com), are a team of Indonesian
+
+professionals who are incredibly passionate about driving positive change in Indonesia.
+We believe that Blockchain has the power to improve financial inclusivity and eradicate
+
+the difficulty of sending funds between parties globally.
+
+We have a solid team who is composed of alumni from notable schools such as Harvard
+Business School, Cornell University, University of Texas at Austin, and world-class
+companies such as Consensys, Citibank, Traveloka, and Tokopedia, led by Jeth Soetoyo
+
+who has many experiences in Blockchain Technology.
+
+Jeth Soetoyo - CEO & Founder
+
+HBS | Ex-Consensys Product Lead
+
+Jeth Soetoyo is a Harvard Business School alumni and the Founder
+& CEO of PT Rupiah Token Indonesia. Jeth had previously worked at
+ConsenSys, a Brooklyn-based Blockchain venture lab and solutions
+company. There, Jeth led product development of a cross-chain
+atomic swap solution called Liquality, which allowed participants to
+trustfully swap digital assets without intermediation. He had also conducted research with
+
+the MIT Digital Currency Initiative on crypto assets valuations.
+(Rp) RupiahToken N
+
+Anthony Thio - CPO & COO
+
+UT Austin | Ex - Traveloka Product Lead
+
+Anthony Thio is the Chief Product & Operations Officer of PT Rupiah
+Token Indonesia. Before joining PT Rupiah Token Indonesia, he
+
+previously served as Product Lead in Traveloka, launching and
+
+managing two successful products ("International Data" and "Bills &
+Top-up") for millions of users. He had also helped Dana Cita, a Y
+Combinator-backed fintech startup. He is deeply fascinated with blockchain, and is
+
+currently exploring Solidity.
+
+Purwoko — VP Engineering
+
+ITB 2010 | Ex-Traveloka Engineering Lead
+
+Purwoko is a seasoned backend engineer with extensive experience
+working in the tech industry. Prior to joining Rupiah Token, Purwoko
+spent 4.5 years as backend engineer in Traveloka, working in many
+
+different products such as Flight, Hotel, Bill Payment, and
+
+International Data. He currently helps Rupiah Token architecturing backend systems and
+
+developing new products.
+(Rp) RupiahToken N
+
+Evan Leonardi - VP Engineering
+
+BINUS | Ex - Obit CTO
+
+Evan leads the Engineering division of PT Rupiah Token Indonesia .
+He has a deep experience of 11+ years in the IT / Software
+Development Industry. During his career, Evan established himself as
+an IT and R&D specialist in mobile application and server
+development. Before joining PT Rupiah Token Indonesia, Evan was
+conducting deep research on Blockchain applications and implementing Blockchain
+
+projects in Finance Industry.
+
+Fengkie Junis - Smart Contract Engineer
+
+UNIVERSITAS GADJAH MADA
+
+Fengkie leads the smart contract development of PT Rupiah Token
+Indonesia. He is very proficient at Solidity, and his Smart Contracts
+passed CertikK's high audit standard, ensuring the security of our
+
+Token. He has previously researched about using blockchain to track
+
+Stamp Duty payment. His undergraduate thesis explores ways to
+create a Blockchain-based Digital Art Registry using Ethereum ERC-1155 Token Standard
+
+and Smart Contracts.
+(Rp) RupiahToken N
+
+Investors & Advisors
+
+Brian Limiardi - Ex - Goldman Sachs, Asani
+
+UIUC | YALE MBA
+
+Brian believes blockchain technology will revolutionize banking.
+
+He worked as FX trading programmer at Goldman Sachs before
+
+moving back to Indonesia to take a management position at a
+
+yr publicly-listed technology company. Most recently he has founded
+SN
+
+Asani. Brian earned his Computer Engineering degree with high
+
+honors from The University of Illinois, and completed an MBA from Yale University in 2018
+© RupiahToken N
+
+Andrew Adjiputro - VP of Northstar Group
+
+CORNELL UNIVERSITY
+
+Andrew spent most of his career in the Finance industry after
+
+me
+graduating from Cornell University in 2010. He started his career in
+Investment Banking at Citibank, before moving into Private Equity
+at Northstar, where he is currently a VP
+
+Lawrence Samantha - CEO of Honest Mining
+
+OHIO STATE UNIVERSITY
+
+Lawrence is an engineer at heart who loves technology & venture
+building. He has been working on cryptocurrency mining since 2011,
+
+and he founded Honest Mining in 2018. Lawrence's computer
+
+science expertise has led him to work on multiple companies such
+as Nationwide Financial (210 Billion managed Assets) & Bittorrent,
+Inc (decentralized peer-to-peer network, later acquired by TRON). He also co-founded
+among others eEvent, guestHub, Loket.com, Member.ID, Indosystem, and BitHarga.
+Lawrence graduated from The Ohio State University and holds a Computer Science &
+
+Engineering degree. He has over 12 years of professional development experience.
+© RupiahToken N
+
+Conclusion
+
+We have presented and built the first crypto asset that mimics the Indonesian Rupiah.
+By leveraging the Ethereum network and advanced Smart Contract designs (such as
+multisignature requirements and offline signing), IDRT can act as a stable store of value
+
+for Indonesians to be used in the exciting new era of blockchain-based economy.
+
+DISCLAIMER
+
+This whitepaper may be revised from time to time without any notice as the project
+progresses. We will publish any future versions and updates on our website,
+
+https://rupiahtoken.com. We only have a single website, and are in no way affiliated with
+
+other potentially similar-sounding sites.
+
+References:
+
+e = https://github.com/ethereum/wiki/wiki/White-Paper#notes
+
+e = https://github.com/ethereum/E|Ps/blob/master/EIPS/eip-20.md
+
+e https://github.com/ethereumbook/ethereumbook
+

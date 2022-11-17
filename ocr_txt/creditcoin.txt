@@ -1,0 +1,1306 @@
+1/31
+
+Creditcoin
+
+A Decentralized Credit Network
+
+Tae-lim Oh | Gluwa. Inc.
+
+11/06/2019
+
+Abstract. Blockchain technology has enabled us to create objective
+history—decentralized ledgers represent facts that are backed by verifiable
+computation, not a bet on the trust in central authorities. Bitcoin’ proved the value of
+its financial utility as a decentralized transaction ledger by leading to the creation of
+a total cryptocurrency market capitalization in excess of $800 billion in early 20187.
+
+A large market cap is insufficient to building a self-sustainable financial ecosystem,
+however. This requires three pillars: savings, payments, and investment. Investment
+works as a “wormhole” of sorts, connecting “parallel universes” that we call market
+
+According to the IMF, global nominal GDP was $78.5 trillion in 2014. However, Aon
+pegged the total size of the global capital investment market at $101.1 trillion in
+June 2013%. If this relationship stays the same for the cryptocurrency, then the $445
+billion market cap at the end of 2017 means a potential cryptocurrency investment
+market of $573 billion.
+
+Creditcoin is a decentralized credit network that turns digital wallets into an
+investment market. The miners of the market earn Creditcoin by mining blocks: The
+miner of a block collects block reward. The network achieves robustness by
+decentralizing credit history, while automatically punishing fundraiser default.
+Investors can select credit history parameters to protect against various risk models.
+
+Creditcoin and its network are designed as a simple blockchain that serves a single
+purpose extremely well: enabling blockchain-based lending transactions. Since we
+know blockchain is not a silver bullet, we leave to others related services, such as
+identification and credit scoring. We also recognize that lending transactions
+facilitate various business activities. Instead of implementing them within Creditcoin,
+the blockchain achieves versatility through the creativity of its users and the ability to
+connect with other blockchain networks.
+
+1 "Bitcoin: A Peer-to-Peer Electronic Cash System - Bitcoin.org."_https://bitcoin.org/bitcoin.pdf. Accessed 5 Feb.
+
+2019
+
+2 "CoinMarketCap."_https://coinmarketcap.com/. Accessed 5 Feb. 2019.
+3 "Global Invested Capital Market - Aon."
+https://www.aon.com/attachments/human-capital-consulting/2014_Global-Invested-Capital-Market_WP.pdf.
+
+Accessed 5 Feb. 2019.
+
+A Decentralized Credit Network
+creditcoin.org | support@creditcoin.org
+This whitepaper:
+(1) Introduces the vision of Creditcoin.
+
+(2) Illustrates the Creditcoin ecosystem.
+
+(3) Provides a detailed explanation of the Creditcoin protocol.
+
+(4) Explains how Creditcoin gets distributed.
+
+(5) Describes the design philosophy and history of Creditcoin.
+
+A Decentralized Credit Network
+creditcoin.org | support@creditcoin.org
+
+2/31
+3/31
+
+|. Introduction
+
+The fundamental services of finance are savings, payments, and investment. Banks
+hold funds from savers and make them readily available for withdrawal when
+needed. At the same time, banks invest unused saver funds, turning dormant capital
+into working capital for society. When done correctly, such activities can optimize
+the flow of funds and increase the productivity of the economy.
+
+However, this is not always the case. As seen in financial disasters such as the
+subprime mortgage crisis, banks often take on far too much risk in an effort to
+achieve high short-term gains. Since savers cannot get clear information on how
+banks are redistributing their funds, and the goals of bankers often do not
+necessarily align with those of savers, decisions contrary to the savers’ best interests
+are often made without their knowledge or permission.
+
+In response to the subprime mortgage crisis, Satoshi Nakamoto invented blockchain
+technology to bring self-determination to economic activities. Before this invention, it
+was nearly impossible to measure the objectivity of shared information without a
+central authority. Today, you can perform financial transactions without having to
+trust any intermediaries.
+
+Although there are advantages and disadvantages to making one’s own investment
+decisions, this can be a possible defense against credit crises. For example, the focus
+of credit unions on benefits for their members influences the level of risk that the
+unions are willing to take on. This might explain why credit unions survived the
+financial crisis in relatively better shape than traditional banks.
+
+The blockchain market seems very successful, with a $70 billion market cap and $1
+billion daily transaction volume for Bitcoin alone in early 2018*. However, it is still
+difficult to use cryptocurrency in the current ecosystem, which is mainly developed
+for fiat currency use. The long confirmation time, high fees and volatility of
+cryptocurrency make it hard for people living in the fiat currency ecosystem to adapt
+cryptocurrency into their lives.
+
+Gluwa and Aella jointly created Creditcoin as an adapter that seamlessly connects
+the best of the two worlds. It takes the blockchain closer to the original vision of
+Satoshi Nakamoto: a sound currency for everyone.
+
+4 "CoinMarketCap." _https://coinmarketcap.com/. Accessed 20 Feb. 2019.
+
+A Decentralized Credit Network
+creditcoin.org | support@creditcoin.org
+
+4/31
+
+Il. Creditcoin Ecosystem
+
+Creditcoin is a blockchain-agnostic investment protocol where investors can lend in
+any cryptocurrency. The Creditcoin network is a general blockchain for investment
+activities. The network connects investors and fundraisers with matching conditions.
+The record of activities lasts forever on the blockchain, and the data could be used
+for future credit evaluation by any interested parties.
+
+An investment in the Creditcoin network starts by matching offers from investors
+and fundraisers. A fundraiser posts seeking an amount, interest rate, and due period.
+If there is an investor with matching conditions, the fundraiser and the investor
+announce the deal to the Creditcoin network. The system verifies the deal’s
+completion by confirming the transfer of the loan.
+
+A collection of investments goes through a process similar to the investment
+process. If the fundraiser is ready to return the investment with interest, the
+fundraiser makes a repayment and announce the repayment to the Creditcoin
+network. In some cases, the investor of a loan may exempt the fundraiser from
+repayment of a loan.
+
+Each announcement to the Creditcoin network has Creditcoin as a transaction fee.
+Fees are locked on the network for roughly for a year and get returned to the user.
+
+Overall, Creditcoins are presently functional in that they have been developed in
+order to allow Creditcoin Users to: (1) lend, borrow, and repay currency on the
+Creditcoin network; (2) have direct access to other Users for borrowing, lending, and
+repaying currency; (3) interact on the network and communicate with other Users for
+borrowing, lending, and repaying currency; (4) verify and validate transactions of
+borrowing, lending, or repaying currency that are recorded on the Infrastructure; (5)
+view and possess a decentralized and public credit history of Users which is
+recorded and expands with each User transaction; and (6) mine, i.e. validate and
+verify transactions and receive Creditcoins for such mining. The Creditcoin Network
+empowers users with all of these functionalities.
+
+Gluwa must make it clear that holders of Creditcoin have no rights to participate in or
+govern that common enterprise or to share in the profits or losses of Gluwa and do
+not represent an equity or other ownership interest in Gluwa or any other legal
+entity. Creditcoin Tokens are not designed or intended to provide holders with any
+income, dividends or returns based on the activities of the Company or any third
+persons. Additionally, Creditcoins do not reflect or show the indebtedness of anyone
+or anything, including but not limited to any person or entity.
+
+A diagram of the Creditcoin network in a lending market is shown in Figure 2.
+
+The details behind the Creditcoin protocol are explained in the next section.
+
+A Decentralized Credit Network
+creditcoin.org | support@creditcoin.org
+5/31
+
+Creditcoin
+
+. Introduction
+
+The Creditcoin blockchain is a network matching investors and fundraisers. A
+fundraiser posts an offer to the network, pegged with some Creditcoin. The
+Creditcoin works as a reward to the miners of the network. Investors can use the
+credit history of a fundraiser on the Creditcoin blockchain to evaluate the risk of
+potential investment, using a credit-scoring model of their choice. The fundraisers
+can choose to share more information about themselves in order to receive more
+favorable terms.
+
+There are several reasons why we need the blockchain of credit investments:
+
+1. Direct link between investors and fundraisers: Removes intermediaries to get
+better interest rates and enables a variety of investment quantities that was
+previously infeasible due to cost.
+
+2. Decentralized and public credit history: Allows multiple credit scoring
+systems and lets investors use the system that fits their market of choice.
+
+3. Creating sustainable cryptocurrency ecosystem: Enables cryptocurrency
+investment to build a sound financial ecosystem on blockchains. The financial
+ecosystem is self-sustainable if and only if you can save, pay, and invest.
+
+4. Security: Allow sharing credit history without providing personal information
+to centralized institutions, which are often the target of hacker attacks.
+
+2. User Flow
+
+Introduction
+
+Purpose
+
+This section covers a step-by-step guide on how a Creditcoin user will use the
+blockchain through a loan-cycle.
+
+Scope
+
+This section explains how a user would pay Creditcoin to execute a loan deal. From
+the perspective of an investor, how to create a loan offer, find a fundraiser for the
+offer, learn the fundraiser’s credit history, and make an investment. For a fundraiser,
+how a search for a loan offer, request for the loan and make a repayment.
+
+A Decentralized Credit Network
+creditcoin.org | support@creditcoin.org
+6/31
+
+Overview
+
+Creating a transaction on a blockchain is essentially making an announcement. To
+get your message recorded on a new block, you pay a transaction fee to the
+blockchain. Unlike Bitcoin, which only has a send transaction, the Creditcoin network
+supports a different type of transaction per each step of a loan cycle. Investors and
+fundraisers pay Creditcoin to the Creditcoin network to process each stage of their
+loan.
+
+When Do You Pay Creditcoin?
+
+The rule of thumb is, any action that adds more information on the Creditcoin
+network will cost you Creditcoin. On the contrary, a work that does not add
+information to the blockchain is free.
+
+Fundraiser’s Flow
+
+On the Creditcoin network, a fundraiser is an account that borrows funds from
+another account.
+
+|. Find a Loan Offer
+
+A Fundraiser will start a loan-cycle by creating a bid order describing the loan
+condition he wants. The bid order is announced to the Creditcoin network and
+attract potential investors.
+
+1. Create a Bid Order
+
+A fundraiser can announce the details of his bid order. It includes amount,
+interest, and maturity. For example, a fundraiser may offer to borrow 100
+Bitcoin for a 10% interest per 30 days.
+
+The fundraiser will pay Creditcoin as a transaction fee to the Creditcoin
+network to create the order.
+
+Note that the offer is in Bitcoin, not in Creditcoin. On the Creditcoin network,
+you are not lending or borrowing in Creditcoin, but a cryptocurrency on
+another blockchain. Currently, the Creditcoin network supports Bitcoin,
+Ethereum, and ERC-20 token loans.
+
+2. Find Investment Offers
+
+If an investor likes the fundraiser’s bid order, he can create an offer. The offer
+information includes a set of one add order and a matching bid order.
+
+The fundraiser can retrieve a list of offers for free.
+
+A Decentralized Credit Network
+creditcoin.org | support@creditcoin.org
+7/31
+
+3. Create a Deal
+
+If a fundraiser likes an offer he received, he can accept the offer by sending a
+corresponding deal to the investor. The deal will have the exact loan
+condition described in the offer.
+
+The fundraiser will pay Creditcoin as a transaction fee to the Creditcoin
+network to send the deal.
+
+Il. Make a Repayment
+
+A fundraiser can repay the full amount to finish the loan-cycle without the
+involvement of the investor.
+
+1. Lock a Deal
+
+Before making a repayment, the fundraiser has to block another account from
+making any change to the deal. Else, we have a potential concurrency
+problem. The fundraiser may be closing the deal at the same time as the
+ownership of the loan is sold to another account. In this case, there may be
+two transfers registered against the same deal order. The Creditcoin network
+prevents the problem by requiring a fundraiser to lock the deal before making
+a repayment.
+
+The fundraiser will pay Creditcoin as a transaction fee to the Creditcoin
+network to lock the deal.
+
+2. Transfer the Repayment to the Investor
+
+A deal includes where the fundraiser would like to receive the investment.
+Note that the repayment transfer happens on another blockchain (e.g.,
+Bitcoin or Ethereum). The fundraiser may pay a transaction fee on that
+blockchain, but not on the Creditcoin network.
+
+Ill. Make a Repayment with an Exemption
+Optionally, a fundraiser may negotiate with the investor for an exemption.
+1. Negotiate for an Exemption
+
+In some cases, a fundraiser may not be able to repay the full amount but a
+part of it. If so, the investor may choose to accept partial repayment since it is
+better than nothing. The investor and the fundraiser can communicate
+outside of the Creditcoin network and negotiate for an exemption.
+
+Since the negotiation happens outside of the blockchain, it does not cost any
+Creditcoin.
+
+A Decentralized Credit Network
+creditcoin.org | support@creditcoin.org
+8/31
+
+2. Send a Partial Repayment
+
+Once the investor agrees to exempt some of the loan amount, the fundraiser
+will have to repay the rest. Just like the investment transaction, the
+repayment transaction also happens on another blockchain (e.g., Bitcoin or
+Ethereum).
+
+The fundraiser may pay a transaction fee on that blockchain, but not on the
+Creditcoin network.
+
+Note that in case of repayment with an exemption, the fundraiser cannot conclude
+the deal on his own. The investor needs to approve an exemption by registering the
+partial repayment transaction ID to the Creditcoin network. Learn more about the
+process in the Investor’s Flow.
+
+Investor’s Flow
+
+On the Creditcoin network, an investor is an account that lends funds to another
+account.
+
+|. Find an Investment Opportunity
+
+An investor will start a loan-cycle by creating an ask order describing a loan offer.
+The ask order is announced to the Creditcoin network and attract potential
+investment deals.
+
+1. Create an Ask Order
+
+An investor can announce the details of his ask order. The detail includes
+amount, interest, and maturity. For example, an investor may offer to lend
+100 Bitcoin for a 10% interest per 30 days.
+
+The investor will pay Creditcoin as a transaction fee to the Creditcoin
+network to create the order.
+
+Note that the offer is in Bitcoin, not in Creditcoin. On the Creditcoin network,
+you are not lending or borrowing in Creditcoin, but a cryptocurrency on
+another blockchain. Currently, the Creditcoin network supports Bitcoin,
+Ethereum, and ERC-20 token loans.
+
+2. Find Matching Bid Orders
+
+Using the ID string of an ask order, the investor can search for matching bid
+orders. Fundraisers create bid orders by describing the desired loan
+conditions. The investor can retrieve a list of matching orders for free.
+
+3. Review a Fundraiser’s Credit History
+
+A Decentralized Credit Network
+creditcoin.org | support@creditcoin.org
+9/31
+
+If an investor is interested in any matching bid order, the investor can retrieve
+a full transaction history of the fundraiser who created the deal. Each bid
+order includes an identification string of the fundraiser, a sighash. The
+investor can use the sighash to retrieve the fundraiser’s credit history from
+the blockchain for free.
+
+4. Create Investment Offers
+
+If the investor likes the credit history of the fundraiser, he can create an offer.
+The offer information includes a set of one add order and a matching bid
+order.
+
+The investor will pay Creditcoin as a transaction fee to the Creditcoin
+network to create the offer.
+
+If the fundraiser likes the offer, he will send a deal to the investor.
+
+Il. Make an Investment
+
+If an investor likes a deal, he can accept it by registering the investment transaction
+on the Creditcoin network.
+
+1. Transfer the Investment to the Fundraiser
+
+A deal includes where the fundraiser would like to receive the investment.
+Note that the investment transfer happens on another blockchain (e.g.,
+Bitcoin or Ethereum). The investor may pay a transaction fee on that
+blockchain, but not on the Creditcoin network.
+
+2. Complete the Deal
+
+Once the investment transaction is confirmed on the blockchain, the investor
+can make the investment official by registering the transaction ID to the
+Creditcoin network.
+
+The investor will pay Creditcoin as a transaction fee to the Creditcoin
+network to complete the deal.
+
+Ill. Collect a Repayment
+
+A fundraiser can repay the full amount to finish the loan-cycle without the
+involvement of the investor. However, an investor may choose to exempt a partial
+amount of the repayment.
+
+1. Negotiate for an Exemption
+
+In some cases, a fundraiser may not be able to repay the full amount but a
+part of it. If so, the investor may choose to accept partial repayment since it is
+
+A Decentralized Credit Network
+creditcoin.org | support@creditcoin.org
+10/31
+
+better than nothing. The investor and the fundraiser can communicate
+outside of the Creditcoin network and negotiate for an exemption.
+
+Since the negotiation happens outside of the blockchain, it does not cost any
+Creditcoin.
+
+2. Accept a Partial Repayment
+
+Once the investor agrees to exempt a loan, the fundraiser will have to repay
+the rest of the loan. Just like the investment transaction, the repayment
+transaction also happens on another blockchain (e.g., Bitcoin or Ethereum).
+
+After the repayment transaction is confirmed on the blockchain, the investor
+can finalize the exemption by registering the repayment transaction ID on the
+Creditcoin network
+
+The investor will pay Creditcoin as a transaction fee to the Creditcoin
+network to register the repayment transaction ID.
+
+IV. Transfer a Bond
+
+An investor may choose to transfer the ownership of a loan, bond, to another
+account. We call the new account a “collector.” Once a bond is transferred to a
+collector, the repayment of the loan will be sent to the collector. This allows investors
+to liquidate their bonds before the maturity of their loans.
+
+1. Searching for a Collector
+
+An investor can find a collector for the bond outside of the Creditcoin
+network. The blockchain does not support any communication tool for this
+purpose.
+
+Since the search and communication happen outside of the Creditcoin
+network, it does not cost any Creditcoin.
+
+2. Searching for a Repayment Order
+
+A collector will send a repayment order to the investor to purchase a bond.
+The investor can search for outstanding repayment orders on the Creditcoin
+network for free.
+
+3. Accepting a Repayment Order
+
+A repayment order will include payment for transferring the bond. If the
+investor likes the repayment order, the investor can transfer the bond by
+accepting the payment.
+
+The investor will pay Creditcoin as a transaction fee to the Creditcoin
+network to accept the repayment order.
+
+A Decentralized Credit Network
+creditcoin.org | support@creditcoin.org
+11/31
+
+Collector’s Flow
+
+On the Creditcoin network, a collector is an account that receives the ownership of a
+loan from another account.
+
+I. Purchase a Bond
+
+A collector can buy a bond from the investor to transfer the ownership of a loan,
+bond, to his account. Once a bond is transferred to a collector, the repayment of the
+loan will be sent to the collector. This allows collectors to acquire bonds closer to
+maturity.
+
+1. Searching for a Bond
+
+A collector can find an investor outside of the Creditcoin network. The
+blockchain does not support any communication tool for this purpose.
+
+Since the search is a read-only process, and the communication happens
+outside of the the Creditcoin network, it does not cost any Creditcoin.
+
+2. Create a Repayment Order
+
+A collector will send a repayment order to the investor to purchase a bond.
+The repayment order includes a payment to the investor for the bond. The
+payment can be in any cryptocurrency supported by the Creditcoin network
+(e.g., Bitcoin Ethereum, or ERC-20).
+
+The collector will pay the Creditcoin transaction fee to the Creditcoin network
+for creating the repayment order.
+
+3. Searching for an Accepted Repayment Order
+
+The collector can search for accepted repayment orders on the Creditcoin
+network for free.
+
+4. Close a Repayment Order
+
+After a repayment order gets accepted by the investor, the collector can
+finalize the purchase of the bond by registering the payment transaction ID.
+In other words, the collector closes a repayment order. The payment happens
+on another blockchain, and the collector may have to pay a transaction fee on
+the blockchain.
+
+Once the repayment order is closed, repayment of the loan goes to the new
+owner - the collector.
+
+The collector will pay Creditcoin as a transaction fee to the Creditcoin
+network to close the repayment order.
+
+A Decentralized Credit Network
+creditcoin.org | support@creditcoin.org
+12/31
+
+Conclusion
+
+Creditcoin network has been built to support various investment scenarios and
+assists in decision making and transitioning of the relevant artifacts through their
+lifecycle.
+
+3. Software Architecture
+Introduction
+
+Purpose
+
+This document provides a comprehensive architectural overview of the system,
+using several different architectural views to depict various important aspects of the
+system.
+
+Scope
+
+This Software Architecture Document provides an architectural overview of the
+Creditcoin system developed by Gluwa, Inc. to provide a decentralized credit
+network.
+
+Overview
+
+The Creditcoin system is a decentralized credit network for investors and borrowers
+and to facilitate efficient and safe transactions between parties. A special
+cryptocurrency named Creditcoin is used as an aid in performing transactions and
+incentivizing parties to support, develop and expand the network and keep it
+operational.
+
+Architectural Goals and Constraints
+
+1. To support decentralization, the network is based on blockchain (distributed
+ledger) technology.
+
+2. To reduce the work required to build a robust and trustworthy foundation for
+the network, an open source blockchain project was selected based on
+feature completeness and ease of configuration and modification
+(Hyperledger Sawtooth).
+
+3. The network supports the booking of investment and borrowing orders in a
+credit market order book for which canceled or outdated orders are of little
+interest.
+
+A Decentralized Credit Network
+creditcoin.org | support@creditcoin.org
+13/31
+
+4. The network supports matchmaking, communication between involved
+parties, and deal booking. The latter is stored permanently on the ledger and
+may be used for dispute resolution and credit history verification.
+
+5. The network supports interoperability with other cryptocurrencies through a
+generic gateway that may be customized for use with a particular
+cryptocurrency.
+
+6. The network uses a special consensus algorithm to incentivize validators and
+prevent network abuse.
+
+7. All performance, bandwidth and storage requirements were taken into
+consideration to develop the architecture.
+
+Use Cases
+
+The figures below summarize the various use cases.
+
+User Use Cases
+
+Register address
+
+Register transfer
+
+um
+
+User Creditcoin
+Collect coins
+
+A Decentralized Credit Network
+creditcoin.org | support@creditcoin.org
+
+14/31
+
+Investor and Fundraiser Use Cases
+
+Add ask order Add bid order
+
+Find matching
+orders
+
+Check credit
+history
+
+Add offer
+
+eon ( = Find offers GR
+Investor Creditcoin Add deal Fundraiser
+Find deals order
+
+Complete deal
+
+Lock deal
+
+order
+
+Close deal
+
+Exempt order
+
+A Decentralized Credit Network
+creditcoin.org | support@creditcoin.org
+Subsystems and Layering
+
+CS Creditcoin
+
+Creditcoin transaction
+family
+
+Client family
+
+Hyperledger
+Sawtooth
+
+15/31
+
+Generic
+
+gateway
+
+Creditcoin
+consensus
+
+The Creditcoin system is built on top of the Sawtooth project, which provides an
+
+implementation of a distributed ledger and interoperation between distributed
+
+components of the network. The system provides:
+
+1. An implementation of the Creditcoin transaction family—a group of
+operations or transaction types allowed on the ledger—which supports all
+
+required operations.
+
+2. An implementation of a consensus algorithm to support the requirements.
+3. An implementation of a generic gateway to interconnect with other
+
+cryptocurrency networks, such as Bitcoin, Ethereum, etc.
+
+A family of client applications was developed for testing and use by end users, which
+
+includes a command-line client, a Ul client and simulation and load testing clients.
+
+A Decentralized Credit Network
+creditcoin.org | support@creditcoin.org
+16/31
+
+Processes
+
+Creditcoin
+UI client transaction Gateway daemon
+family processor
+
+Command-line client Validator Consensus
+
+Each validator node runs a validator, Creditcoin Transaction Family Processor,
+Settings Transaction Family Processor (stock, not shown in the diagram), and
+Creditcoin consensus plugin. A gateway process runs to allow communication with
+other cryptocurrency networks.
+
+Client applications sends requests to a validator to perform operations on data for a
+given transaction family; the validator then dispatches the request to a relevant
+processor. The processor submits the transaction to the ledger. Clients reads the
+current state of data that has been made persistent by recording it on the ledger.
+
+A Decentralized Credit Network
+creditcoin.org | support@creditcoin.org
+17/31
+
+Deployment
+
+In the final distributed system, client applications can connect with validators across
+local or global TCP networks. Any validator accepts transactions from one or more
+clients and clients sends transactions to one or more validators.
+
+Implementation Notes
+
+The initial validator network operates on Ubuntu boxes running in Azure. The
+transaction families were developed and tested on Windows 10, but also runs on
+Ubuntu. The development language for Creditcoin transaction family is C++; clients
+are implemented in C#, while the consensus is implemented in Python.
+
+Configuration Notes
+
+The initial setup runs with a temporary transaction family processor that sets up the
+Creditcoin components on the ledger. The system is configured to run a predefined
+set of transaction family processors.
+
+A Decentralized Credit Network
+creditcoin.org | support@creditcoin.org
+18/31
+
+4. Creditcoin Workflow
+
+This document covers a step-by-step guide on how you can use the_Creditcoin
+network and Creditcoin through a command-line client. Refer to the User Flow
+section to understand the what role each command plays in a loan-cycle.
+
+Gluwa Creditcoin is the official implementation of the Creditcoin protocol by Gluwa,
+a member of the Creditcoin Foundation. The implementation includes a
+command-line client for Creditcoin users to interact with the network.
+
+Note that you need to pay a transaction fee in Creditcoin per each command.
+
+Exchange G-CRE to CTC
+
+To start participating in Creditcoin network users need to register their Ethereum
+addresses and exchange their_G-CRE (Gluwa Creditcoin Vesting Token) to
+Creditcoin (CTC). G-CRE is an ERC20 token used for initial distribution to token sale
+buyers, Gluwa, and the foundation.
+
+Register Ethereum Address
+
+G-CRE is transferred from ERC20 by running the ‘exchange()’ method on the
+Creditcoin smart contract and collecting the coins on the Creditcoin network.
+
+In the following command:
+S creditcoin RegisterAddress ethereum address main
+
+‘ethereum’ is the blockchain, ‘address’ is a user’s ethereum address, and ‘main’ is the
+network id.
+
+Show Address ID of the Registered Address
+
+To find out the address id for the registered address a user can run the following
+command:
+
+S show Address 0 ethereum address main
+
+Where 0 is the sighash that identifies the interactive user and other parameters are
+the same as provided for registration.
+
+A Decentralized Credit Network
+creditcoin.org | support@creditcoin.org
+19/31
+
+Exchange G-CRE to CTC
+
+Using the Registered Ethereum Address
+Now the user can run the following command:
+S ethereum CollectCoins addressld amount
+
+Where ‘addressld’ is the result of the previous show command and ‘amount’ is the
+amount not exceeding the amount of ERC20 tokens on Ethereum.
+
+Using the Exchange() Transaction On G-CRE Smart Contract
+
+Alternatively, the user can manually call ‘exchange()’ on Creditcoin Ethereum smart
+contract, write down the transaction id and call the following command:
+
+S creditcoin CollectCoins addressld amount transactionld
+
+Review the Updated CTC Balance
+
+Now the user can display the Creditcoin balance with the following command:
+S show Balance 0
+
+Where 0 identifies the interactive user.
+
+Alternatively, if the user knows a sighash of another user, the user can run the
+following command:
+
+S show Balance eccd3cc374e641b8fabf1 2eff4d5e3506e...
+
+Create Investment Orders
+Create an Ask Order
+An investor can add an AskOrder with the following command:
+S creditcoin AddAskOrder addressld amount interest maturity fee expiration
+
+Where ‘addressld’ is an id of an address record registered by using ‘creditcoin
+RegisterAddress’ command, ‘amount’ is the amount for investing in the blockchain
+identified by the ‘addressld’, ‘interest’ is the interest rate, ‘maturity’ - is a number of
+blocks to calculate the resulting interest, ‘fee’ is a loan fee and ‘expiration’ is a
+number of blocks the order is valid for.
+
+Create a Bid Order
+A fundraiser can add a BidOrder with the following command:
+
+S creditcoin AddBidOrder addressld amount interest maturity fee expiration
+
+A Decentralized Credit Network
+creditcoin.org | support@creditcoin.org
+20/31
+
+Search for Matching Orders
+
+An investor can search for matching orders with the following command:
+S show MatchingOrders 0
+
+Where 0 is a O-sighash
+
+For each matching pair of orders, the output will be a list of pairs of the respective
+order ids:
+
+askOrderld bidOrderld
+
+Review Credit History of the Fundraiser
+
+An investor can check the fundraiser’s credit history with the following command:
+S show CreditHistory sighash
+
+Where ‘sighash’ is the identifier of the fundraiser.
+
+Create Investment Offers
+Create an Offer
+An investor can create an offer with the following command:
+S creditcoin AddOffer askOrderld bidOrderld expiration
+
+Where ‘askOrderld’ and ‘bidOrderld’ are the output of the previous ‘show
+MatchingOrders’ command and ‘expiration’ is the number of blocks the offer is valid
+for.
+
+Search for Offers
+A fundraiser can check for current offers with the following command:
+S show CurrentOffers 0
+
+Where 0 is a O-sighash. The output is a list of offer ids.
+Create Deals
+
+Create a Deal Order
+
+A fundraiser can add a DealOrder with the following command:
+
+A Decentralized Credit Network
+creditcoin.org | support@creditcoin.org
+21/31
+
+S creditcoin AddDealOrder offerld expiration
+
+Where ‘offerld’ is an id of an offer previously displayed by ‘show CurrentOffers’
+command.
+
+Search for Deals
+
+An investor can check for new deals with the following command:
+S show NewDeals 0
+
+Which displays a list of deallds for the investor.
+
+Register an Investment Transfer
+
+To complete a deal Investor has to register a transfer with the following command:
+S ethereum RegisterTransfer 0 orderld
+
+Where ‘orderld’ is an id of a deal previously displayed by ‘show NewDeals’
+command.
+
+This command will create an Ethereum transaction sending the amount of Ether
+specified in the BidOrder to the address specified in the BidOrder from the address
+specified in the AskOrder.
+
+Note that the actual transfer can happen elsewhere as soon as it satisfies the
+requirements, but it still has to be registered with Creditcoin, there is a special form
+of RegisterTransfer for that - creditcoin RegisterTransfer gain orderld txld (note it's
+not etherium but creditcoin command and takes additional parameter txid).
+
+Complete a Deal
+An investor can complete a deal with the following command:
+S creditcoin CompleteDealOrder dealOrderld transferld
+Where ‘dealOrderld’ is the deal being completed and ‘transferld’ is the loan transfer.
+Lock a Deal
+To close a deal Fundraiser has to lock the deal first with the following command:
+S creditcoin LockDealOrder dealOrderld
+Where ‘dealOrderld’ is the deal being closed.
+Close a Deal
+A fundraiser can close a deal with the following command:
+
+S creditcoin CloseDealOrder dealOrderld transferld
+
+A Decentralized Credit Network
+creditcoin.org | support@creditcoin.org
+22/31
+
+Where ‘dealOrderld’ is the deal being closed and ‘transferld’ is the repayment
+transfer.
+
+Exempt Loans
+An investor can exempt a loan with the following command:
+S creditcoin Exempt dealOrderld transferld
+
+Where ‘dealOrderld’ is the deal being exempted and ‘transferld’ is a partial
+repayment transfer.
+
+Transfer Loans
+
+A third party (collector) may offer to transfer the loan ownership by creating a
+“RepaymentOrder” using the following command:
+
+S  creditcoin AddRepaymentOrder dealld collectorAddressid amount
+expiration
+
+Where ‘dealld’ is the id of the deal order, ‘collectorAddressld’ is the address of the
+new owner, ‘amount’ is the amount offered for transferring the loan.
+
+Repay Loans
+Search for Repayment Orders
+An investor can check for new RepaymentOrders using the following command:
+S show NewRepaymentOrders 0
+The output is a list of ids.
+Accept Repayment Orders
+An investor can accept a RepaymentOrder using the following command:
+S creditcoin CompleteRepaymentOrder repaymentOrderld
+Search for Accepted Repayment Orders
+A collector can check for accepted RepaymentOrders using the following command:
+
+S show CurrentRepaymentOrders 0
+
+A Decentralized Credit Network
+creditcoin.org | support@creditcoin.org
+23/31
+
+Close Repayment Orders
+
+A collector can close the RepaymentOrder by registering a transfer and using the
+following command:
+
+S creditcoin CloseRepaymentOrder repaymentOrderld transferld
+
+Demonstration
+
+https://www.youtube.com/watch?v=qpvVrChDzZE
+
+Please refer to the live demonstration of the Creditcoin command-line client above
+for more information.
+
+A Decentralized Credit Network
+creditcoin.org | support@creditcoin.org
+24/31
+
+IV. Creditcoin Distribution
+
+Distribution of Creditcoins only occurs once Creditcoins achieved the functionalities
+discussed in this whitepaper. Once Creditcoins are distributed to any user, the user
+has complete control over its Creditcoins which means users can use the Creditcoin
+network, exclusive of Gluwa or any other central organization or entity.
+
+Creditcoin Sale Economics
+
+Total Creditcoin token supply will be 2 billion coins. The token sale is capped at 200
+million tokens.
+
+1. Token Allocation
+
+Creditcoin tokens are distributed to the four major participant groups of the
+Creditcoin Network:
+
+e 70% to Creditcoin miners (as mining block rewards) — For providing
+investment funds, maintaining the blockchain, running contracts, and more.
+
+e 15% to Gluwa, Inc. (Genesis allocation; 6-year linear vesting) — For research,
+engineering, deployment, business development, marketing, distribution, and
+more.
+
+e 10% to Investors (Genesis allocation; 6-month to 3-year linear vesting) — For
+funding network development, business development, partnerships, support,
+and more. Any unsold coin goes to Creditcoin Foundation with a vesting
+period of 6 years.
+
+e 5% to Creditcoin Foundation (Genesis allocation; 6-year linear vesting) — For
+long-term network governance, partner support, academic grants, public
+works, community building, and more.
+
+2. The Creditcoin Token Sale
+
+Fundraising. Gluwa, Inc. requires significant funding to develop, launch, and grow
+the Creditcoin Network. We must develop all of the software required, including
+mining software, client software, user interfaces and apps, network infrastructure
+and monitoring tools, software that third-party wallets and exchanges need to
+support Creditcoin, integrations with other investment software, tooling for web
+applications and dapps to use Creditcoin, and much more. We must deploy the
+network, facilitate its large scale growth, market to and bring onboard miners and
+clients, bring key partners into the ecosystem, and undertake many other tasks.
+
+A Decentralized Credit Network
+creditcoin.org | support@creditcoin.org
+25/31
+
+Offering of Creditcoin SAFTs. To raise the necessary funds, Gluwa, Inc. is
+conducting an offering of SAFTs. This offering is happening in one part:
+
+(1) A private sale for Gluwa, Inc. and Creditcoin community
+
+Token Sale. We hope to bring together a large and diverse group of investors from
+around the world consisting of people who want to work closely with us to build the
+most powerful cloud credit network. We primarily seek strategic investors who have
+something high-value and unique to offer to Creditcoin. We also wish to reach as
+broad of an investor base as possible; we want people and organizations from
+countries all over the world, who work in many different kinds of industries. We
+want our investors to represent many different groups so that Creditcoin can quickly
+come to serve those users and spread across these networks.
+
+We want investors who add value, and who will work with and for the network. We
+want investors who will share their skills, their knowledge, and their networks to
+achieve success. We have structured the token sale to reward a large group of
+people that can help us build the network, by selling Creditcoin at what we think is a
+much lower price than it will be worth someday. (Caveat: as with any risky
+investment, of course, we cannot make guarantees or predictions.) We are,
+unfortunately, legally restricted to involve only accredited investors (global investors
+accredited to US standards or similar—see the legal section).
+
+Caps. A soft cap is the amount received at which your crowd sale will be considered
+a success. It is the minimum amount required by your project. A hard cap is defined
+as the maximum amount a crowd sale will receive. This offering has a soft cap of
+USD 10 million and a hard cap of USD 30 million.
+
+Token Sale Details
+
+Instrument: Creditcoin SAFTs
+Increasing Price:
+1. As investments are made, the price increases based on the Price
+Function
+e Sale Price Function:
+1. Pre-sale price = min(X, Y) where:
+m X=max($0.85, amountRaised/ $4MM) USD / CTC
+mw Y=max($1, amountRaised/ S$40MM USD) USD / CTC
+© amountRaised is the actual USD dollar amount that is collected
+m_ The ETH to USD exchange rate at the time of each individual
+sale should be used
+e Sales Cap: 200 million Creditcoin (unknown how much this is equivalent to in
+US dollars, as discounts affect the totals) Soft cap USD 10 million. Hard cap
+USD 30 million.
+e Sales Timeline: Private sale starts on September 1st, 2017.
+
+A Decentralized Credit Network
+creditcoin.org | support@creditcoin.org
+3. Vesting and Discounts
+
+Each group has a different vesting schedule:
+
+For investors, the following vesting periods and discounts are available:
+
+Investors: 6 months minimum
+
+Gluwa, Inc: 6 years, linear vesting
+
+Creditcoin Foundation: 6 years, linear vesting
+Miners: Release half-life of 6 years
+
+6 month vesting: 0% discount
+1 year vesting: 7.5% discount
+2 year vesting: 15% discount
+3 year vesting: 20% discount
+
+A Decentralized Credit Network
+creditcoin.org | support@creditcoin.org
+
+26/31
+Figure 2: Creditcoin Network In Use
+
+CS Creditcoin
+
+Value of Creditcoin network grows as
+more credit history is added to the network.
+
+Agency
+
+Credit
+Score
+
+Gluwacoin
+
+Lending
+
+Transactions
+</
+
+<>
+Redeem
+
+Gluwacoin
+
+Lender
+
+A Decentralized Credit Network
+creditcoin.org | support@creditcoin.org
+
+27/31
+
+Borrower
+28/31
+
+V. Epilogue - Designing Creditcoin
+
+As James Rickards, the author of Currency Wars, said, “Currency is not only used to
+buy goods and services... people should be able to lend and borrow to make it a
+currency.” Although cryptocurrency already has a significant portion of the market
+(more than $70 billion), it is true that the capital market infrastructure it provides is
+limited to payment. Cryptocurrency will eventually require a credit network.
+
+People say, “If all you have is a hammer, everything looks like a nail.” Just like with
+any other technology development project, before we get started with a blockchain
+project, we have to ask ourselves whether it is the best technology for solving the
+problem.
+
+The problem we are trying to solve is the vicious cycle that unbanked people
+experience. We set the unbanked as our target group because they are the stratum
+that has reason to use cryptocurrency—even with some of the inconveniences
+associated with the premature ecosystem.
+
+Many people can’t get signature loans from the traditional banking system. As a
+result, they borrow money using other methods, and banks cannot record these
+transactions. So, credit records do not accumulate in the banks, which means that
+people cannot build credit—there is no reason for banks to believe the individual files
+of lenders. Eventually, the vicious cycle of receiving credit loans again in adverse
+conditions repeats. To summarize, the credit history of the unbanked does not get
+objectively accumulated.
+
+The solution is to build a system that stores credit records objectively. As | said
+earlier, a blockchain is a technology specialized in keeping data objectively. The
+blockchain is the perfect technology to solve this problem.
+
+Once you decide to use the blockchain, you need to make a choice: Are we using a
+smart contract, or are we building our proprietary blockchain?
+
+A smart contract is enough to store information on the blockchain. We can save
+much time if we use a blockchain with a well-established ecosystem as a platform
+such as Bitcoin or Ethereum. Designing and building a proprietary blockchain is very
+time-consuming.
+
+However, existing blockchain platforms are slow and expensive. A blockchain is a
+system that runs the same computation repetitively. Therefore, the best performing
+blockchain is always less efficient compared to a centralized server. Also,
+multi-purpose systems like Ethereum are less efficient than single-purpose systems
+like Bitcoin. Platform blockchains will stay relatively slow and expensive for many
+years to come.
+
+We have experienced the limitations of the existing blockchain platform.
+
+A Decentralized Credit Network
+creditcoin.org | support@creditcoin.org
+29/31
+
+After designing the Creditcoin, we first built the Creditcoin with ERC-20 standard
+smart contract of Ethereum to make a proof-of-concept of Creditcoin. Something
+had happened by the time we finished building the smart contract. At that time,
+Cryptokitty on Ethereum was becoming popular, and transactions began to
+accumulate without being processed, which caused the cost of using Ethereum to
+increase considerably, making it economically impossible for the unbanked to use the
+smart contract. Our partner, Aella, gets over 1,000 loan requests per hour. We
+concluded that we could not operate Creditcoin as an Ethereum smart contact.
+
+We finally decided to develop a proprietary blockchain. After reviewing the
+requirements, we found that Hyperledger Sawtooth was the best for our needs. Our
+blockchain architect, Vlad, will discuss the details in Session 6.
+
+We decided to develop a blockchain with a single purpose. Creditcoin is only
+intended for recording credit transactions. In the end, users who want to transact
+Cryptokitty and others who wish to trade file storage space don’t have any reason to
+compete with each other for limited bandwidth. Blockchains with a single purpose
+will not interfere with each other's traffic since they are in different markets. User
+behaviors will determine the cost and the traffic of each blockchain.
+
+During the design process, we were confronted with endless questions (and
+answers).
+
+At first, we started by defining what a loan is. A loan is essentially a conditional
+transaction. There are usually dozens of conditions you can set for a loan, and that
+means there are thousands of possible types of loans. As Creditcoin is not a smart
+contract platform, it should not support every kind of loan. Then, what is the most
+basic loan? It is borrowing money and paying it back with more money. In short, it is
+a contract saying, "I will repay $110 if you lend me $100." You will pay interest even
+if you pay back earlier than the expiry date. More specifically, it is a
+non-collateralized bullet loan with a prepayment penalty.
+
+Next, we've defined the types of transactions in the order of creating a loan contract.
+First, there is a bid, offer, and deal at the stage where both users agree on the
+conditions of a loan. Then, there are two transactions: an investment transaction for
+a lender to send money to the borrower and a repayment transaction for a borrower
+to repay the money back to a lender. At this time, if the lender and the borrower
+have negotiated the reimbursement amount, the lender may receive only a portion of
+the money and exempt the rest. The lender may also transfer the receivables to
+another person as a creditor.
+
+A difference between Creditcoin and Bitcoin is that Creditcoin needs to support a
+variety of different types of transactions.
+
+There has been much discussion about supporting collateral. In reality, many loans
+have collateral. If security tokens mature, they will play a useful role as collateral for
+Creditcoins. For example, you can borrow money with the real-estate security tokens
+as collateral for loans. However, the standard for the security token does not exist
+yet, and we do not see any substantial traction of security tokens. Therefore, we
+
+A Decentralized Credit Network
+creditcoin.org | support@creditcoin.org
+30/31
+
+have decided not to implement this idea until the security token establishes a mature
+ecosystem.
+
+As a public blockchain, we also had to decide on a consensus algorithm. Currently,
+the industry is struggling with a variety of consensus algorithms. Proof-of-Work
+represented by Bitcoin, Proof-of-Stake that Ethereum plans to adopt, and
+Proof-of-Distribution that we designed were on the list. However, Proof-of-Work is
+the only battle-proven consensus algorithm. We decided not to reinvent the wheel.
+
+Some people criticize Proof-of-Work, saying that it only handles a limited number of
+transactions and it is slow. If Creditcoin runs into a scalability problem, it means that
+Creditcoin is very successful. We hope that we can run into such a problem. If
+another agreement algorithm turns out to be better for our purposes, then we can go
+for it and implement it. We need a blockchain that we can use today.
+
+Bitcoin only supports a single type of transaction: transfer. However, Creditcoin
+needs to support seven types of transactions. Each transaction will have a different
+value depending on the user, and demand for transactions will also vary. What if
+users ask for extra fees for certain types of transactions? If miners get the
+transaction fee as Bitcoin miners do, a transaction with more transaction fee
+attached to it will be a priority for miners. This might cause bottlenecks. For example,
+although users have made 100 loan agreements, no investment transactions get
+processed.
+
+So, we decided to see how the market would respond to a wide range of
+transactions. The initial release of Creditcoin will have a fixed transaction fee. We
+will collect live usage data to make decisions for future development.
+
+Ideally, users should be able to get a loan on any blockchain. How would Creditcoin
+know if investment or repayment transactions are done correctly on other
+blockchains? We use the transaction ID of other blockchains. Creditcoin node
+operators run nodes of different blockchains and enter transaction IDs to look up
+transaction details in other blockchains.
+
+Creditcoin currently supports Bitcoin and Ethereum. Creditcoin can support a
+blockchain as long as a Creditcoin plug-in is developed.
+
+Now Creditcoin is completed. With Creditcoin, you can get non-collateralized bullet
+loans with a prepayment penalty, and you can transfer loans as well. If you develop a
+plug-in, you can connect any blockchain to Creditcoin. Creditcoin matches loan
+orders in the blockchain and verifies the investment and repayment transactions in
+other blockchains. Welcome to the borderless credit market.
+
+A Decentralized Credit Network
+creditcoin.org | support@creditcoin.org
+31/31
+
+VI. Regulatory, Compliance, and Legal
+Considerations Section
+
+Currently, digital tokens are being closely and regularly scrutinized by various
+regulatory bodies around the world, including but not limited to the SEC, European
+Securities and Markets Authority, and each individual state in the United States. Law
+regarding ICO’s is an evolving area of law, and there is no clear guidance from
+regulatory agencies, courts, and laws regarding legally-compliant practices for ICO’s.
+As a result, the future evolution of the law and potential consequences are too
+speculative for the Gluwa to reasonably foresee and act upon. However, Gluwa has
+taken good-faith measures to account for the evolving law and rules on ICO’s and in
+an effort to comply with such law, but there is still substantial risk surrounding legal
+compliance for any ICO in light of the little legal guidance. There is a substantial risk
+that in numerous jurisdictions, including the United States, Creditcoins may be
+deemed to be a security, meaning such token must be registered or comply with an
+applicable exemption from registration. For example, applicable securities laws may
+limit the ability to hold more than certain amounts of Creditcoins; restrict the ability
+to transfer Creditcoins; require disclosure or other conditions on you in connection
+with any sale of Creditcoins; and may restrict the businesses that facilitate
+exchanges or effect transfers of your Creditcoins. Every user, purchaser, and holder
+of a Creditcoin is required to make diligent inquiry into determine if the acquisition,
+possession and transfer of Creditcoins is legal in its jurisdiction and to comply with
+all applicable laws and any of Gluwa’s terms and conditions. Creditcoins and the
+Creditcoin network may be eliminated by future regulation or legal actions. In
+response to such action, Gluwa may take actions that adversely impact you and the
+Creditcoins you hold, including: (a) ceasing operations or restricting access in certain
+jurisdictions, (b) voiding, refunding or not processing token purchases, or (c) ceasing
+operations entirely.
+
+Each token holder is: (a) if in the United States, or a U.S. Person (as defined in
+Regulation S under U.S. Securities Act of 1933 (the “Securities Act”)), an accredited
+investor (as defined in Regulation D under the Securities Act) or (b) if outside of the
+United States, a non-U.S. Person who is not purchasing for the account or benefit of
+a U.S. Person (as defined under Regulation S under the Securities Act). Each token
+holder of Creditcoin is sophisticated in terms of investment, business, and/or
+blockchain technology, or be able to fend for themselves or have access to the
+information that can allow such purchaser to fend for themselves with regard to the
+subject matter of Creditcoins.
+
+A Decentralized Credit Network
+creditcoin.org | support@creditcoin.org

@@ -1,0 +1,1623 @@
+a
+
+A Decentralized and Cooperative Protocol
+for Next Generation Logistics
+
+a _
+Contents
+
+1. Executive summary 11. Legal Disclaimer
+
+2. Introduction
+
+3. dKargo Platform
+
+3.1 dKargo : A Decentralized and Cooperative Protocol
+for Next GenerationLogistics
+
+3.2 dKargo’s Solution
+
+3.3 dKargo’s Value Proposition
+
+4. dKargo Business Flow
+
+4.1 Provide Optimal Route
+
+4.2 Payment
+
+4.3 Settlement
+
+4.4 Recording Data
+
+4.5 Logistics Data Transaction Market
+4.6 Transaction Fee
+
+4.7 Guarantee and Insurance
+
+4.8 Mediation of Disputes
+
+4.9 Value-added Service Provider
+
+5. dKargo’s Economic Model
+
+5.1 DKA Token
+5.2 DKA Token Incentive Pool
+5.3 DKA Token Incentives Distribution
+
+6. dKargo Technology Description
+- Key elements
+
+6.1 dKargo Platform Structure
+
+7. Business Partner
+
+7.1 Flagship Partner
+7.2 Attract Additional Partners
+
+8. Roadmap
+9. Timeline
+
+10. Team & Advisors
+
+10.1 Team
+10.2 Advisor
+1. Executive summary
+
+The logistics industry serves as the veins of the economy. The industry is poised to grow enormously
+to reach USD 15.5 trillion by 2024. At the same time, the industry is facing transformational
+change; the rapid growth of the e-commerce market, the transition from business-to-business
+(B2B) to business-to-consumer (B2C) and consumer-to-consumer (C2C), and the expansion of
+cross-border trade. With such changes in the market, customers now have a higher expectation
+for more cost-effective, flexible and faster logistics services. Moreover, existing services focused
+on storage and delivery transportation must go beyond to meet the growing demand for a wider
+variety of services. Nevertheless, incumbents are stuck in the old ways, competing against each
+other and are failing to improve services to meet their customer demands.
+
+The logistics industry is facing a structural problem — due to different interests of participants
+in the logistics network, no credible protocol exists that enables transparent sharing of data.
+This makes collaboration inefficient or nearly impossible. The participants are fiercely competing
+against each other to achieve economies of scale by investing heavily in all ranges of service
+from first-mile to last-mile delivery. However, this has led to double-investment and crippled the
+industry with inefficiency. Even in international logistics where collaboration should be relatively
+easy to achieve, complicated procedures are hindering collaboration because of inefficient
+data sharing. This inefficient structure for collaboration has left no choice for logistics service
+providers but to concentrate their services in freight transportation and storage. Henceforth, the
+possibility of creating greater added-value is decreasing and the cost is rising, and yet the quality
+of logistics service is falling.
+
+As a blockchain-based logistics protocol, dKargo aims to address challenges that hinder
+collaboration in the logistics industry and build a new type of an efficient logistics network.
+dKargo will enable participants to use credible and generally standardized data on a blockchain-
+based public ledger. dKargo’s plans for the development of the logistics industry are as follows:
+
+1 Maximizing Efficiency of the Logistics Industry : A.I. Route Optimization
+Suggest optimal logistics route in which various participants can collaborate and thereby
+maximize the overall efficiency of the logistics network
+
+2 Evolution of Logistics Ecosystem : Whole-mile Logistics
+
+Build whole-mile logistics and a network that can utilize different modes of transportation other
+than the conventional freight transport modes and ultimately create an entirely new logistics
+ecosystem
+
+3 Boundary-Crossing Innovation in Logistics : Interconnected Logistics
+Provide a wider range of logistics services to deliver new value by offering various logistics-
+
+related services
+
+Furthermore, dKargo has a reward system where participants can gain additional incentives
+for just playing their parts. They can contribute to building a more efficient logistics network by
+providing logistics services and uploading data, and in return, they can earn additional incentives.
+
+dKargo is providing a new form of logistics service enabling various players to participate in
+
+the platform which was previously impossible. For example, not only traditional logistics service
+providers like courier companies but also motorcycle carriers, users of public transportation,
+individuals and SMEs can all participate. Moreover, dKargo enables other competent participants
+who are operating freight transportation and storage businesses to collaborate. Through
+collaboration, logistics-related sectors such as payment, repairs, and inspection, which are all
+important to meet the consumer needs, will add new value to the logistics industry.
+
+To achieve dKargo’s objectives, dKargo will expand partnerships with the incumbents. deleo,
+a startup company specializing in international delivery service, will join dKargo as an early flagship
+partner. deleo is a rapidly growing company, raising Series C funding with the valuation of KRW
+100billion. Currently, Kakao Investment, Lotte Global Logistics, and other major Korean venture
+capital firms are deleo’s shareholders. deleo also formed a strategic partnership with the U.S.
+Postal Service (USPS). deleo has a strong competitive edge in cross-border delivery — deleo’s
+major business network in each country and its infrastructure will be keys to dKargo’s success.
+
+Another flagship partner of dKargo is KakaoPay Express, a logistics service provider from Kakao.
+Kakaopay is an easy payment service provider from Kakao which is Korea’s no.1 mobile platform
+with more than 80% of Koreans using this platform. Kakao, alongside Lotte Global Logistics, a
+major Korean logistics service provider, established a joint venture Easygo, which is responsible
+for providing KakaoPay Express. More than 50 million active users are familiar with Kakaotalk’s
+interface; Lotte Global Logistics has a wide range of logistics system and delivery location points
+such as convenience stores, and deleo is an expert in cross-border delivery. Combining all these
+strengths together, KakaoPay Express is providing flexible logistics services.
+
+As an open platform, dKargo encourages all businesses that have relevance to the logistics
+industry to participate in the platform. By building a logistics ecosystem that fairly distributes
+incentives according to the participant’s contribution, dKargo aims to attract various partners to
+the dKargo platform.
+
+Ultimately, dKargo aspires to provide efficient logistics services where everyone, including users,
+logistics service providers, and consignees, can gain greater benefits.
+2. Introduction
+
+© Increasing consumer demand for flexible logistics services
+
+8 100
+7 92.1 oo
+, 80
+4
+2 68.51 : 70
+ou | 7
+E 60
+10 sag 5781
+50
+5 2
+fo}
+9 5 40
+6 1 3
+1 3c
+9
+4 5
+20
+2 10
+(e) O
+2015 «= «201 = 2017S «2018—S «2019S «2020S -2021-~S «2022S 2023S «2024
+
+(i ~Market size (USD Trilion) —O— Freight volume
+
+The global logistics market is expected to grow from USD 9.9 trillion in 2018 to USD 15.5
+trillion by 2024, registering a compound annual growth rate (CAGR) of 7.5%. Many changes are
+taking place in the industry as the market is witnessing substantial growth in an ever-changing
+business environment. For example, the industry landscape is shifting from B2B based industrial
+structure towards B2C and C2C structure, due to the increasing growth of the e-commerce
+market. Cross-border trade is surging, thanks to the globalization of technology. On-demand
+solutions have expanded to offer various logistics services to customers and now, customer’s
+expectations are higher than ever before. Such changes in the market have translated into a
+demand for flexible logistics services: faster delivery reaching customers anytime, anywhere at
+a reasonable cost regardless of the logistics companies’ business cycles.
+oN
+c2c ce +
+NEY ccescecceesenes “> 6h |)
+Business Advancement of
+expansion logistics service
+“a “a
+Busi : Quality growth :
+usiness
+expansion B2c t
+q ~A LS a”
+ea rad
+4 N
+4 NV weweee seeecceeeeeS> v
+Quantitative Consumer
+expansion in the experience
+logistics market enrichment
+B2B g
+>
+Domestic ————————> Global
+Market
+Expansion
+
+© Incumbents failed to meet the needs of flexible services
+
+Despite the growing demand for more flexible and efficient logistics services, many logistics
+companies are struggling to keep pace with rapidly changing customer demands. Customers are
+now looking for local, real-time, and personalized deliveries. However, the market currently relies
+on the hub-and-spoke model where individual shipments are hauled from regional warehouses to
+a central shipping hub where they are sorted and bundled. Under this model, it is difficult to meet
+customer demands. Inflexible logistics services can trigger other challenges in different business
+environments. For example, logistics service providers in rural areas have less freight traffic and
+are likely to deliver one or two goods to the delivery destination. On the other hand, in urban areas
+where delivery destinations are concentrated, excessive traffic leads to inefficient deliveries.
+
+© Developed countries struggle to meet diverse customer needs
+
+With the expanding e-commerce market in developed countries, there is a greater demand for
+more flexible logistics services that ship all different types of goods. But, if the incumbents want
+to provide more flexible logistics services to customers, then the cost increase is inevitable.
+
+In Korea, the logistics industry has achieved substantial growth thanks to the development of
+e-commerce and the logistics network, but growth in terms of quality has stalled. According
+to the Korea Integrated Logistics Association, the average unit price to deliver a single parcel
+in Korea’s courier, express and parcel (CEP) market decreased only by 7% from 2010 to 2016.
+Under such market conditions, providing flexible logistics services would only lead to price hike
+and efficiency loss.
+The United States is also witnessing an increase in freight traffic with the rise of e-commerce.
+Customer expectations for more flexible logistics services are now high whilst many customers
+remain price-sensitive to delivery fees. Industry titans like Amazon are using cutting edge
+technology and integrating logistics and distribution together to meet such conflicting needs of
+the market. Nevertheless, this has left the incumbents with no choice but to increase the price
+so they can provide flexible logistics services.
+
+© Emerging markets struggle to maintain efficient logistics infrastructure
+
+In emerging markets, logistics services have not scaled into the market due to a lack of efficient
+infrastructure.
+
+For example, India has experienced rapid economic growth. As the economy grew, India’s
+shipment volume has also rapidly increased and logistics related industries such as warehouses,
+freight forwarders, and container businesses have all grown. However, due to inefficient business
+operation and a lack of infrastructure, India’s logistics network has reached its capacity and failed
+to support India’s continuing economic growth. For example, the logistics network is divided up
+by freight transportation companies, so it is difficult to operate the network efficiently. India’s
+limited infrastructure coupled with a lack of ICT creates more challenges to India to raise the
+efficiency of its logistics network through collaboration.
+
+Limited infrastructure is also a problem for Southeast Asia. This is one of the major issues for
+many Southeast Asian countries because relative to the size of their territories, many countries
+lack the infrastructure to connect major cities with remote areas or little villages in islands. Only
+10% of the roads are paved in Cambodia and Laos, making it difficult for vehicle-based logistics
+services to reach many areas in these countries.
+
+Indonesia consists of more than 17,000 islands so it is difficult to build a logistics network
+that connects all the islands. Also, among the 47 ports in 9 South East Asian countries, with
+the exception of Singapore, Thailand, and Malaysia, most of the ports have very low levels of
+performance and capacity for cargo handling, making it even more difficult to build a logistics
+network.
+
+In order to address these challenges in Southeast Asia, an expended logistics network which
+includes alternative transportation modes such as bicycle delivery, and a system to efficiently
+utilize logistics infrastructure have been suggested as solutions. Nevertheless, at the moment
+there is no credible protocol that enables the operation of the expanded logistics network.
+
+© Data without trust makes it impossible to provide flexible logistics services through
+
+collaboration
+
+International delivery service providers and local logistics companies are cooperating in cross-
+border trade. For example, international courier companies like FedEx and DHL are partnering
+with small businesses and national postal companies around the world to provide international
+delivery. However, such collaboration is currently inefficient because no credible protocol exists
+and as result, exchanging data is very difficult. This is because each company runs its own label
+system and only a fraction of data about each cargo is shared. Due to a lack of transparency in
+transactions, complex procedures are required to verify transactions. Such inefficiency in the
+system ultimately leads to cost increase.
+
+For domestic logistics, every participant in the logistics network invests heavily in all routes from
+
+first-mile to last-mile delivery to secure economies of scale. However, this makes collaboration
+even at the smallest level difficult. Participants have, in fact, made double-investment by
+investing inefficiently throughout the industry and in return, failed to achieve economies of scale.
+In theory, collaboration should be possible by combining the freight volume from each route
+so that participants can achieve economies of scale and enjoy mutual benefits. However, the
+reality is quite different. There is a possibility of the data-tampering of the frights’ conditions.
+Furthermore, standards of each data are all different and a sense of mutual trust is weak due to
+silo logistics structure. All these factors make collaboration often challenging.
+
+Furthermore, logistics services are limited to freight transportation and storage due to lack of
+collaboration. This hinders the possibility to create added value to the industry. As customer needs
+diversify, customer expectations are growing for a variety of logistics-related services such as
+payment, packing, inspection, and repairs. Therefore, to some extent, collaboration with various
+service providers is essential to provide a wide range of logistics-related services to customers.
+However, under the current industrial structure, it is difficult to meet customer demand without
+collaboration taking place.
+3. dKargo Platform
+
+3.1 dKargo : A Decentralized and Cooperative Protocol for Next Generation
+Logistics
+
+In order to solve the problems of the current logistics system, it is essential to connect the
+separated participants of the value chain to create a flexible one. In this regard, participants
+in the logistics system must trust each other and collaborate for their mutual benefit. However,
+the heavily competitive logistics system makes collaboration difficult as data resources aren't
+being shared. Even in international logistics where collaboration is relatively important, efficient
+collaboration is not taking place because no credible logistics protocol exists.
+
+dKargo aims to build a decentralized and cooperative protocol for next generation logistics
+to address current challenges in the logistics industry. Efficient collaboration can be achieved
+with credible logistics data provided through dKargo. The platform will eliminate the risk of data
+tampering by using a blockchain-based protocol technology and provide a foundation for its users
+to collaborate without having to trust the other party. Also, smart contracts will solve the problem
+of unfair distribution of profit, which is a major obstacle to collaboration. This can be done without
+complex processes by allowing participants to earn incentives that reflect their contribution. This
+will allow dKargo to provide an environment for an efficient logistics network where participants
+can collaborate and focus on their strengths.
+
+To build this platform, participants must voluntarily share their data. On the platform, each
+participant will receive incentives for providing data about their freights and logistics service.
+Incentives will encourage businesses such as freight transportation carriers, warehouse
+operators, and logistics-related service suppliers as well as individuals like deliverymen,
+warehouse employees, and customers to voluntarily participate in the platform. More incentives
+will be provided as the platform grows and participants will be able to receive fair incentives for
+their contribution to the platform’s growth.
+
+Voluntary participation will lead to further collaboration with a variety of service providers.
+The current scope of logistics service will be widened, and customers will be able to enjoy new
+services that meet their needs other than freight delivery. Such services include basic services in
+freight transportation such as packaging but also other services that create added value such as
+freight inspection and repairs. However, such needs aren’t met most of the time except in specific
+sectors such as 3PL (Third-Party Logistics), and fulfillment. On top of that, currently available
+services aren’t connected in an effective system but are instead relying on phone calls and
+cumbersome paperwork. dKargo aims to seamlessly connect such services within the logistics
+system to revolutionize the customer experience. The existing logistics system focuses on simply
+delivering freight. What dKargo is trying to provide is the advanced model of the existing logistics
+system that creates added value.
+3.2 dKargo's Solution
+
+© Providing credible data through a public ledger based on blockchain
+
+dKargo will provide a credible public ledger by recording information that is needed for
+collaboration such as the freight’s contract information, freight’s condition, the participant’s
+previous records, and their available resources on the blockchain. This will lay the foundation of
+the logistics platform. For example, the platform participants can easily access the recorded data.
+At the same time, the tamper-proof data will provide the transparency needed for collaboration.
+This will allow dKargo to provide a safe environment for collaboration and solve the problem of
+lack of trust which was a major drawback in the logistics industry.
+
+In order to ensure collaboration among participants, it is essential to clearly acknowledge the
+contribution and responsibility of each participant to minimize disputes. Currently, data isn’t being
+shared among logistic companies because each company is creating and managing their own
+data. If a problem occurs under such circumstances, trusting another company’s data is difficult
+since data owners can tamper the data to their advantages. For example, a problem can occur
+if temperature control is mismanaged during the transportation of pharmaceutical products in
+cold chain. However, under the current structure, it is possible to tamper the data of the previous
+storage temperature and avoid any responsibility. Such unreliable data will make it difficult to
+clarify where the responsibility lies when a problem occurs during collaboration. Furthermore, the
+high costs spent to prevent such disputes often defeats the purpose of collaboration.
+
+— Contract data Freight data
+
+ ————
+
+Data on previous . Data on available Oo
+records Blockchain resources Cc >
+
+Blockchain technology is characterized by transparency and prevention of data tampering. These
+traits are suitable for providing credible data to the platform participants. Through blockchain,
+dKargo can provide credible data at low prices to the platform participants and minimize disputes
+that may arise due to untrustworthy data.
+
+The credible data recorded on dKargo’s platform will allow participants to clarify their contribution
+and responsibility for their services. The logistics service’s goal is to provide safe freight delivery.
+When this falls through, identifying who is responsible for compensation becomes a contentious
+topic.
+
+This forces companies to make complex contracts to minimize collaboration risk or just refuse
+
+to collaborate all together. However, on dKargo’s platform, all contract and freight information
+of every stage will be recorded on the blockchain, so it will be clear who bears responsibility.
+Hence, participants will be less likely to face disputes without having to deal with any complex
+and cumbersome paperwork.
+Participants are sharing their available resources and transaction history on the dKargo platform,
+which allows them to find their optimal partners. Under the current structure, even if participants
+want to collaborate, it’s difficult to find ideal partners. Even if they do find them, it’s difficult to
+confirm if they have the necessary resources at the time of collaboration. Limited information
+makes collaboration difficult because it increases the costs of finding a partner or creates an entry
+barrier. dKargo’s participants can access credible data about their partners’ history on the public
+ledger. Also, data on available resources will help participants find their ideal partner at the time
+of collaboration. This will allow each participant to not only increase the efficiency of their own
+logistics service but also make the entire logistics network more efficient by optimizing the use of
+their limited resources.
+
+3.3 dKargo's Value Proposition
+
+dKargo’s goal is to use blockchain technology to create an efficient, flexible logistics network that
+was impossible to create in the current, centralized logistics industry. dKargo plans to maximize
+participation by connecting users and providing more incentives to voluntary participants.
+dKargo will provide the following to create an efficient, flexible logistics network:
+
+Value 3
+
+Interconnected
+Logistics
+
+Traditional logistics industry
+Value 2
+
+Value 1
+Whole-mile
+A.l. Route Logistics
+Optimization
+
+Expanding sectors of logistics industry
+
+Expansion of logistics network
+© Maximizing Efficiency of the Logistics Industry: A.I. Route Optimization
+
+dKargo will provide a new level of logistics services through flexible collaboration among
+participants that was impossible to achieve in the existing system. From the customer’s
+perspective, freights were often delivered and stored in an inefficient way due to a lack of
+
+‘Second
+section
+High effeciency » High effeciency
+
+> High efficiency
+
+10
+
+collaboration. For example, a freight from one city can be sent out to a distribution center outside
+the city, only to be delivered back to the city. Another example would be customers having to
+wait for their parcel to be collected at their homes. These problems can be solved if logistics
+service is performed with diverse participants in a flexible, purpose-driven manner. dKargo will
+design an optimal route through data sharing and collaboration to build a better functioning
+logistics network.
+
+Currently, logistics service is carried out by a single company or through a few participants who
+are closely connected to one another. This can be problematic because that single company is
+solely responsible to carry out all the tasks even in sectors where they don’t have expertise. As
+a result, relatively less competent participants will provide poorer services than more qualified
+participants existing in the market. This leads to a cost increase and poor customer experiences.
+
+The most efficient participant for each sector of the supply chain will provide services which
+will increase the efficiency of the overall logistics network. Customers can find the most optimal
+logistics network route based on the recorded data of each participant on the blockchain. This
+will allow customers to have their goods delivered to them in the most efficient way. And logistics
+service providers can focus on their strengths and make better, more efficient use of their limited
+resources. dKargo provides an opportunity for each participant to enhance their strengths,
+thereby raising the efficiency of the entire logistics network.
+
+[akarge]
+
+High costs, low efficiency Low costs, high efficiency
+
+Freight headed to A
+
+Destination A
+
+Freight headed to B
+
+»>
+
+Destination B
+Company A
+
+Freight headed to A
+
+Destination A
+
+Freight headed to B
+
+»>
+
+Destination B
+Company B
+
+Freight headed to A
+
+Destination A
+
+Destination B
+Company A
+
+Destination A
+
+g
+
+Destination B
+Company B
+
+The logistics industry is one of the main industries where economies of scale play into factor,
+which means that the more freight volume a company has, the lower their operating costs will
+be. Until now, logistics companies competed to gain more freight volume by using economies
+of scale to their advantage. Realistically speaking, there are limitations to the freight volume a
+single company can handle. There are also situations where delivery trucks are starting their
+delivery half-empty or where the delivery period is delayed because trucks have to wait to be
+fully filled. Such inefficient operation ultimately results in a unit price increase and poor customer
+experiences.
+11
+
+In this regard, dKargo offers a solution to maximize economies of scale by encouraging
+collaboration among participants to gather the freight volume for the same route. Each
+participant can find each other’s contractual information on the public ledger available on
+dKargo’s platform and trade their delivery volume, if necessary, to maximize the freight volume
+for each route. Available resources and logistics data that is generated by real-time tracking on
+dKargo’s platform will also be used for machine learning and help participants to fully utilize their
+resources. Individual participants can minimize the time required to obtain the freight volume
+needed for each route and also create economies of scale that wasn’t possible in the current
+system. dKargo can provide a better customer experience by drastically lowering the cost of
+logistics services while reducing unnecessary operational time.
+
+© Evolution of Logistics Ecosystem: Whole-mile Logistics
+
+R d%
+
+INDIVIDUAL INDIVIDUAL
+(ON Foot) (BICYCLES)
+
+as Eos
+
+PARCEL
+
+CARGO TRUCK CONVENIENCE
+STORE
+
+raja RRENT. EXPANDED #8 EXPANDING THE SCOPE
+©O-—@© GISTICS SYSTEM LOGISTICS SYSTEM OF LOGISTICS SERVICES
+
+FOOD
+et hieePuen
+==] Ty)
+ft OO}
+WAREHOUSE MOTORCYCLE
+CARRIER,
+Ge a
+SELF-EMPLOYED
+COIN LOCKER
+a =X,
+— —
+
+TAXI INDIVIDUAL
+(PERSONAL CARS)
+12
+
+Flexible collaboration can create a new level of logistics services. Currently, logistic service
+providers don’t collaborate with each other but they also do not collaborate with other logistics-
+related service providers in the same line of business. For example, Korea’s courier companies and
+short-distance motorcycle carriers have the same goal of delivering goods. However, these two
+service providers don’t collaborate to provide the same service. Each logistics service provider
+has their own strengths and weaknesses which can complement each other if they collaborate
+together. Ultimately, collaboration among various participants can provide an efficient logistics
+service that was impossible to provide in the past.
+
+The new environment of collaboration that dKargo is offering will attract new participants into the
+logistics ecosystem. Not only existing participants such as courier companies, motorcycle carriers,
+cargo truck carriers, and logistics warehouse operators but also new participants who were
+irrelevant to the logistics service such as commuters, food deliverymen, taxi drivers, self-employed
+people, and coin locker service providers will be able to work together on the platform to provide
+better logistics service to customers. For example, instead of a deliveryman collecting parcels
+door-to-door, individuals in that area can collect and move the parcels to a self-employed person’s
+warehouse, which acts as a city warehouse or access center. The deliveryman then can collect the
+gathered parcels, which will help provide a more efficient logistics service. Moreover, individuals can
+place parcels in a coin locker and another individual can deliver them to their destinations via public
+transportation such as subways and buses. Completely new types of services can be provided,
+such as a Courier service companies moving the freight to a local warehouse where individuals can
+deliver the parcels via bicycles to the destinations that are difficult to reach by car. The logistics
+ecosystem is transforming to embrace diversity and is now moving away from the existing method of
+strictly dividing the first mile and last mile delivery. It is becoming a whole-mile logistics which uses
+the entire logistics network in a more efficient way. dKargo provides an environment where a variety
+of participants collaborate together on each step of the supply chain and create new services. So,
+participants can record their data and easily participate in the logistics network and experience new
+services on the platform and hence, earn extra revenues.
+
+© Boundary-Crossing Innovation in Logistics : Interconnected Logistics
+
+During the freight delivery process, there are some market needs that cannot be met by simple
+delivery and storage services. Services directly related to freight delivery such as packaging,
+transportation, storage, categorizing, and customs clearance are needed as are other related
+services such as payment, verification, inspection, and repairs. For example, when cargo is shipped
+for commercial purpose, the shipper must receive payment securely from the buyer. That is why in
+regions where finance is underdeveloped like in Southeast Asia, payment is included in the logistics
+service. An example of such a service would be cash on delivery. Another example would be a third-
+party regularly checking the freight’s condition for freight that needs special packaging or extra
+attendance.
+
+B2B services offering comprehensive proxy fulfillment services such as storing, packaging, and
+transportation already exist to provide a more convenient customer experience. However, these
+services aren't available for individual customers. Even for some businesses, such services are
+performed under a closed private contract and thus have limitations to provide flexible services.
+Smart Contract
+
+fe)
+
+sniper (Al
+
+3RD PARTY B ANA
+
+Packaging, Repairs,
+Manufacturing, Inspection, etc.
+
+dKargo will create new logistics services, which were not possible before, by connecting smart
+contracts with diverse services necessary for users. In order to do so, dKargo will design a contract
+to deliver the freight to the consignee while enabling other necessary offline services without any
+extra effort, and also will use smart contracts for performance guarantee and payment. This
+will allow dKargo to provide a wider range of logistics services that can also increase the value
+of freight transportation. Such new services include packaging, storing, inspection, repairs,
+washing, and conditional payment. dKargo’s goal is to connect relevant services to logistics
+together to provide a more customized experience.
+
+This expanded scope of logistics can address some of the problems exist in many different
+sectors. In order to better understand, some case examples in the P2P second-hand trading
+market are useful. For instance, the entire P2P second-hand trading market’s size has almost
+reached KRW 18 trillion. However, second-hand goods are often traded inefficiently due to the
+market’s structural limitations. The risk for fraud or dispute is constantly present because it is
+difficult for the seller and buyer to trust each other and also trust the quality of the goods. For
+example, there are cases where the seller ships the goods but fails to receive payment, or when
+the buyer sends the money but fails to receive the goods. Even if both sides have no intention of
+cheating, disputes can arise because the two parties may disagree on the value of the\goods.
+Oftentimes, a middleman is paid a high commission or despite the inconvenience, both parties
+meet face to face to strike a deal in order to minimize such risks.
+
+dKargo has come up with a solution to solve the problems riddling the second-hand trading
+market. It is to connect a variety of services. Imagine a scenario when a buyer and seller are
+trading a second-hand good. In this case, the biggest problem is that the both parties are unsure
+whether the counter party will send the promised payment and good to each other or not. If they
+want to close the deal, then they have no other choice but to trust each other. And often, some
+incidents occur where a buyer makes a payment and receives a brick in a parcel, or a seller
+14
+
+sends the good but never receives a payment. dKargo can easily solve this problem — when
+making a logistics contract at dKargo, a verification service of the goods by the participants
+responsible for first-mile and last-mile delivery can be added. So, when receiving the goods, the
+participants of first-mile and last-mile delivery can verify whether the goods are the correctly
+ordered goods and record them on the blockchain, which can be further used as an evidence
+when dispute occurs. Furthermore, by linking these records for payment with smart contracts,
+any issues regarding receiving payments can be resolved too. These processes allow the logistic
+network participants to earn extra income and thereby provide additional value to all users and
+participants of the network. Moreover, if the parties find difficult to reach a mutual agreement
+about the value of a traded good, a third-party expert can make an intervention during the trading
+process to appraise the value of the good and hence, this type of issue between the two parties
+can be resolved. On top of this, a variety of other necessary services in the second-hand trading
+such as repairs, cleaning and storage will be available so that users can enjoy these services
+more easily.
+
+The abovementioned example of the second-hand trading market is a mere fraction of the type of
+services that can be provided. Connecting logistics to various services can be realized in more diverse
+ways. Through the flexible collaboration of participants and smart contracts, almost all types of online
+and offline services can be connected to logistics, which will solve many challenges we face.
+15
+
+4. dKargo Business Flow
+
+_prs cr sresenvenosensernseeeennsrnsesenneesenennet dKargo Ecosystem
+
+Logistics Data Market
+
+Research Institute Financial Institution Company Government Others
+
+Logistics data consumer
+
+a:
+. i .
+. Data: @ DKA
+i .
+iy
+
+Service
+Confirmation
+
+Data
+
+Information service provider : @vxa
+
+Payment optimal route/
+information service: 2:
+v iy
+
+DKA
+
+DKA / Fiat
+
+Logistic service participants
+
+Expanded logistics network
+
+M+ B+ + SD +e re
+
+[courier companies Motocyclecarrier Individual_—Publictranstport Air carrier
+
+Eh
+
+“a ou
+: nap
+it oe
+wa
+
+Related services
+
+Packaging Repairs Inspection Manufacturing Others
+
+em
+v
+
+Staking pool
+
+4.1 Provide Optimal Route
+
+dKargo’s service starts with a shipper making a request for a service they want and then receiving a
+recommendation for an optimal route. The shipper will record information such as the freight’s type,
+size, weight, destination, delivery deadline, transportation costs, safety precautions for handling, and
+need for other logistics-related services onto dKargo’s platform. dKargo will then recommend the
+optimal route. During the early stages of dKargo, the recommendations will be made based on the
+information on dKargo’s blockchain. However, in the long-run, business operators with expertise in
+route optimization will eventually provide solutions. This, in turn, will allow dKargo to provide the most
+efficient logistics route to its users.
+16
+
+d
+Inspector A Company A Company A
+
+S
+
+Inspector B
+
+(eal
+
+Warehouse A Company 8
+
+Company B
+
+‘Company B Receiver
+
+Company ¢
+
+O. wv) (fal
+
+Company ¢ Inspector D Company D Company ¢ Warehouse ¢
+
+Inspector E Company E Company E
+
+The shipper then can select the route that best suits their purpose among the various
+recommendations. The shipper will sign a logistics contract with the service providers of the
+route of their choice. The contract will be recorded on the blockchain and a smart contract for
+payment will be written up. Also, the shipper can draw up a conditional smart contract with
+their service providers. For example, if a service provider successfully makes a delivery within a
+timeframe required by the shipper as a condition, they will be rewarded with incentives. Users
+
+can make such options to create a logistics service that best fits their purpose.
+
+4.2 Payment
+
+After a logistics service contract is signed, the users must make payments. The payments include
+not only the costs accrued during logistics processes but all financial transactions that took place
+between the shipper and the consignee. All payments can be processed in a batch. dKargo offers
+users a variety of payment for their convenience. Users can select existing payment methods such
+as cash and credit cards along with DKA tokens, which is a cryptocurrency issued by dKargo.
+Those who are not familiar with cryptocurrency can still enjoy the values and benefits which dKargo
+provides. Furthermore, collaboration with existing payment service providers such as Kakaopay will
+help to lower the entry barrier and help the platform scale into the market.
+
+Some participants on the dKargo platform may have different preferences for fiat money or DKA
+tokens as their payment methods. Also, the time when a contract is made and when the payment
+is settled may differ. To resolve any confusion that may occur due to the time differences between
+payment and settlement, or methods of payment, a settlement service provider is needed. Any
+settlement service provider with proven capability to convert fiat money and DKA tokens can
+participate in the platform. Further information about ‘settlement service provider’ will be explained
+in section 4.9 Value-Added Service Providers.
+4.3 Settlement
+
+; Smart Contract :
+
+Information on Information on Information on Information on
+
+forwarded freight > forwarded freight forwarded freight > forwarded freight
+: 2 PAY : PAY : PAY :
+
+Participant A ayy Participant B fol Participant C foc Participant D
+
+The settlement made by logistics service users will be paid to participants through a smart
+contract. Each participant can request payment for their contribution and will receive payment
+when the freight is confirmed to be intact. Once it is verified that no problems occurred to the
+freight when the participant was carrying out their service, the payment will be made automatically
+via the smart contract. Each participant decided in advance about the ratio of fiat currency and
+cryptocurrency they would like to be paid in, and the payment will be made according to their
+wish. If the freight is damaged, the payment will be deferred and temporarily held by dKargo.
+Once the consignee uploads data about the freight’s status and confirms it is intact, the deferred
+payment will be made. If the freight is damaged, compensation will be made through either a
+deposit (4.7 Guarantee and Insurance) or an insurance firm (4.9 Value-added Service Providers).
+
+4.4 Recording Data
+
+Contractual information,
+
+Condition of freight,
+Review on participant,
+O Available resources
+CN @
+Participant
+
+In order to operate the platform, diverse platform participants must record data about freights
+and logistics services. dKargo will provide DKA tokens as incentives to encourage participants
+to voluntarily provide data in the platform. This will encourage participants to use dKargo to earn
+18
+
+extra incentives that they couldn’t have received in the current logistics system.
+
+Participants can earn incentives by uploading various types of data on dKargo. Shippers
+can receive incentives for uploading freight and contractual data and writing a review on the
+participant who collected the freight. Logistics service participants can earn incentives by
+uploading data about their available resources and how the freight is transported and stored. For
+consignees, they can input data about the freight’s final conditions and review the participant
+who provided the last-mile delivery.
+
+Participants will be encouraged to input data at the moment they received the freight to raise
+data credibility. The reward system is designed to provide less compensation the longer it takes
+for the participant to input the data. Also, in the long-term, an loT sensor will be used to monitor
+the freight’s condition in real-time, which will solve the problem of data credibility.
+
+incentives will be provided from the incentive pool, which is eatablished with tokens from
+transaction fees and partially from the reserve. The amount of compensation will depend on how
+much each participant contributed to the platform. This will be further explained in dKargo’s
+Economic Model.
+
+4.5 Logistics Data Transaction Market
+
+Right to use data
+
+Data uploader Data user
+
+Data Information on data
+
+The data on dKargo’s platform can create immense value for various industries related to the
+logistics industry. The public sector, including the government, research institutes and the
+private sector such as logistics and IT companies and financial firms are all data consumers.
+dKargo will provide a data transaction market for data uploaders and data consumers that
+reflects the market’s needs to maximize the value of data on dKargo’s platform.
+
+dkargo | — Decentralized and Cooperative Protocol for Next Generation Logistics
+19
+
+Data consumers can use the data transaction market to easily search for data owners with
+specific traits and have the right to use data by paying DKA tokens to the data provider.
+
+When uploading data, data uploaders can select to what extent their data will be disclosed
+on the platform which will allow them to autonomously exercise their data rights. The average
+market price will be set as a default price of data. This will allow data uploaders to use the data
+transaction market without difficulty. However, the uploader reserves the right to adjust the price
+of the data if they wish to. In this regard, dKargo will provide participants further opportunity to
+earn extra revenues by uploading their data.
+
+4.6 Transaction Fee
+
+A portion of the payment and settlement must be paid to the platform as a transaction fee.
+The transaction fee will be used to provide compensation to platform operators and users. The
+total transaction fee will be set at a lower rate than the fees of existing payment settlement
+providers, which will be of more profit to the platform participants. If participants make and
+receive payment in DKA tokens, they can use the platform at a lower rate than using fiat money.
+This will encourage participants to use DKA tokens, as they will reap more benefit from it than
+using fiat money.
+
+4.7 Guarantee and Insurance
+
+The number of contracts a participant can sign
+
+The amount of tokens staked
+
+Participants must stake DKA tokens as a guarantee for their service.For collaboration-based
+logistics service to be possible, all participants must faithfully perform their tasks. If participants
+fail to carry out their tasks, they must take responsibility for any costs that occurred. dKargo
+participants must stake a certain amount of tokens as a deposit, which will be used as
+compensation when a problem occurs.
+
+The tokens that each participant staked is a guarantee of that participant’s service. To receive
+more contracts on dKargo’s platform, participants must stake more tokens that are proportionate
+to the number of contracts they signed. The amount of tokens each participant must stake is
+20
+
+calculated based on their ratio of risk, which is based on their transaction history. Token staking
+provides participants a reason to faithfully carry out their contract. Participants can increase the
+amount of staked tokens per contract, which will help to raise the participant’s credibility. It will
+also put them in a more favorable position to earn more contracts on the platform.
+
+If the participant wishes to sign more contracts than the amount that their staked tokens
+guarantee, an insurance company can step in to provide a guarantee for the new contracts.
+Participants will pay the premium via tokens, and the insurance company will pay a portion of
+their earnings to dKargo as a transaction fee.
+
+4.8 Mediation of Disputes
+
+As dKargo provides logistics services based on collaboration, various type of operational disputes
+can emerge. dKargo can minimize such disputes by recording the entire logistics process on the
+blockchain. However, there will be instances where a third-party must mediate the dispute.
+
+When a conflict occurs, The steering committee mandated to mediate will take actions. The
+
+steering committee members will be selected from diverse groups such as logistics service
+providers, related service providers, and service users to ensure a fair mediation as in governance
+perspective.
+
+4.9 Value-added Service Provider
+
+In addition to logistics service providers and related service providers, dKargo needs value-
+added providers that support the seamless operation of dKargo. Value-added service providers’
+businesses are either directly or indirectly connected to the dKargo platform. They provide
+value-added services that dKargo alone finds challenging to provide to participants. As of now,
+settlement service providers, insurance service providers, and information service providers are
+dKargo’s main value-added service providers. In the future, dKargo will be able to attract more
+additional service providers as the platform grows.
+21
+
+© Settlement service provider
+
+8) «
+
+Send fiat money / cryptocurrency
+Vv
+
+[dKargo] Smart Contract
+
+Vv
+
+lio
+Settlement service provider S 2
+
+Send fiat money /cryptocurrency
+in a ratio each participant wants
+
+Participant A Participant B Participant C
+
+Settlement service providers offer flexibility in dKargo’s platform. They convert DKA tokens with
+
+fiat money and also fill the time gap between when the payment order was placed and when
+the final settlement was made. Participants can select settlement service providers to settle the
+balance when there are different preferences for the payment methods between the parties. In
+this case, dKargo will include the settlement service provider in the smart contract to ensure that
+each party will receive payment in the manner of their choice. For example, if a service user wants
+to pay by credit card and the service provider wants a portion of their payment to be made in DKA
+tokens, the settlement service provider will receive the full payment via credit card. The settlement
+service provider will then pay the service provider in the payment method of their choice. Each
+settlement service provider will decide what their conversion rates and settlement fees will be,
+and participants can select the settlement service providers of their choice. Competition among
+settlement service providers will help provide more efficient service to platform participants and
+users.
+
+Settlement service providers earn revenues through settlement fees and arbitrage trading of
+when a payment order is placed and when the actual payment is made. Logistics service by
+nature can be very time-consuming. Which means, that there can be a big time gap between
+when the payment order is placed and when the actual payment is made, which creates room
+to develop new revenue models based on various financial techniques. This allows settlement
+service providers to test many business models and hence, provide an efficient settlement that fit
+the needs of each participant.
+22
+
+dKargo’s settlement service providers must handle both DKA tokens and fiat money. So, it is
+likely that existing cryptocurrency market players such as cryptocurrency exchanges and financial
+institutions with existing payment structure will be the biggest participants on the platform’s early
+stages.
+
+© Insurance service providers
+
+Provide services
+
+Provide contract
+performance
+guarantee
+
+Platform participant
+
+Pay insurance premium
+
+Insurance service providers vouch for dKargo participants in case they sign more contracts than
+the amount of tokens they staked. Also, insurance service providers ensure contract performance
+guarantee on behalf of participants. Participants can increase the number of contracts they can
+sign at the same time through insurance companies as they will provide contract performance
+guaranteed. The insurance service provider will receive tokens as premium.
+
+Insurance service providers will provide compensation if the participant fails to fulfill a contract or if
+the freight is damaged. To ensure that insurance service providers can provide compensation, they
+too must stake a portion of their tokens. Insurance service providers are no exception to signing
+contracts proportionate to the number of tokens they staked. Insurance service providers can adjust
+the premiums for each participant according to the participant’s transaction history and maximize
+their revenue by doing so.
+
+Insurance service providers play an important role in the platform's growth. As the platform's
+freight traffic increases, second movers will have to increase their initial capital investment to join
+the platform. However, this is a leading cause of discouraging second movers to join the platform
+and will become a major obstacle to the platform's growth. Insurance companies will help second
+movers to join the platform at a lower cost and help the platform's growth. dKargo won't be a
+platform for a select few early movers but will be available for all participants of the logistics industry
+to gain value.
+23
+
+© Data service providers
+
+Data service providers create values by utilizing the data on dKargo. They manufacture raw logistics
+data to create values. dKargo participants receive relevant data they need from their data service
+providers and pay them with DKA tokens.
+
+Data service providers contribute to the platform by recommending the optimal logistics route for
+each order and providing information to participants that can help raise their efficiency. Outside
+the platform, data service providers organize and analyze the big data on dKargo. The data is then
+refined to be a data product and helps the data transaction market to function better.
+24
+
+5 dKargo's Economic Model
+
+5.1 DKA Token
+
+dKargo platform issues DKA tokens for participants’ interaction on the platform. DKA tokens
+are cryptocurrency based on blockchain technology. They can be traded through exchanges and
+converted into fiat money.
+
+DKA tokens can be used for all transactions made on the platform, including providing
+incentives to participants for voluntarily providing data, cost for data use and dispute mediation,
+payment for services, and guarantees for contract fulfillment. The value of DKA tokens will rise
+in proportion to the platform’s growth. This is because there will be more logistics traffic handled
+on dKargo, which will mean an increase in token demand. Also, more tokens will need to be
+staked for service payments and as a guarantee for contract fulfilments.
+
+DKA tokens are issued based on Ethereum’s ERC20 tokens. However, they may be changed to
+a different protocol depending on the platform’s needs. If there is a shift to a different protocol,
+the DKA tokens in circulation will be changed to tokens based on the new protocol.
+
+5.2 DKA Token Incentive Pool
+
+All dKargo platform participants will receive incentives for their participation in DKA tokens.
+The incentives will be paid from dKargo’s incentive pool. The incentive pool will be filled by
+transaction fees and reserves from the initial token issuing.
+
+Reserves ~~
+ee Compensation
+———-
+53 Platform a Token pool Participant
+SA") transaction fee
+
+25
+
+A portion of the transaction fees from the platform will be reserved in the incentive pool to
+stably provide incentives to platform participants. This is to ensure that profits generated in the
+platform will be distributed to participants who provide quality service.
+
+Until the dKargo platform settles down, the incentive pool based on the transaction fees of
+the platform won't be able to provide sufficient compensation to participants. As a solution to
+this problem, incentives will be paid from the tokens issued in the earlier stage. In the long
+term, there will be a sizeable incentive pool from transaction fees as the value of DKA tokens
+appreciates and as the platform grows larger.
+
+5.3 DKA Token Incentives Distribution
+
+Each participant will contribute to the platform by uploading relevant data. Participant’s data
+contribution is essential to the platform’s growth and those who provide more data make bigger
+contribution to the platform’s growth.
+
+The incentives are going to be distributed all differently according to the data’s value provided to
+the platform. The value of the data will be determined by considering the influence each data had
+on the platform and its relative value compared to the accumulated data. Various factors such as
+freight traffic, frequency, cycle, trait, and credibility are taken into consideration when calculating
+the data’s value. dKargo is going to adjust periodically how the data’s value are weighted. This
+will create participants attraction in the earlier stage when the amount of accumulated data on
+dKargo is relatively small.
+6. dKargo Technology Description - Key elements
+
+6.1 dKargo Platform Structure
+
+dKargo’s platform is consist of three layers: the storage layer, the middleware layer, and the
+service layer.
+
+Service layer
+
+3) mi) |B
+
+Transportation Storage Payment Insurance Linkage
+
+14 :4 14
+
+: Middleware Layer :
+
+v: v: v:
+[neem | meres
+DA eS 8 <p
+R & F
+
+Vv:
+
+Data Router
+
+14 :4
+
+Storage Layer
+vi vi
+
+Blockchain Distributed Data Storage
+EX
+
+Boy
+
+Blockchain
+
+Contractual Freight Reputation Available Reference for
+information information information resources distributed
+information data storage
+27
+
+© Storage Layer (Core Layer)
+
+The storage layer is the foundation of dKargo, where all the major data about the freight and
+participants are stored. The storage layer has two main components, the blockchain and external
+data storage. The data will be saved into one of the components based on its trait and importance.
+
+Data that is fundamental to collaboration will be recorded on the blockchain. It is to ensure
+data credibility and prevent data tampering and any data loss that may come from central
+server failure. Data such as contractual information, the location and status of freight at each
+stage, participant’s reputation and available resources will be recorded on the blockchain. The
+blockchain that dKargo uses is one based on Ethereum, which is currently the most widely
+used and proven protocol. However, in the future, dKargo may switch to new-generation main
+protocols such as Kakao Klaytn.
+
+The external data storage stores larger data that is needed for service operation. This will
+enhance service operation efficiency while solving the problem of blockchain’s slow speed. For
+example, data that has value but is not a necessity such as pictures of freight and warehouse
+CCTV clips will be stored on the external data storage. dKargo will use widely used storage
+systems such as database and AW3 S3 (Amazon Web Services Simple Storage Service) to
+help incumbent participants adjust to the platform. If it is required, dKargo will consider using
+distributed storage technology.
+
+Among the data that dKargo needs, some can be made public while others need to be private.
+If personal information such as data on the shipper and consignee are revealed, it would be
+a violation of privacy. And if detailed data on freight is made public it can become a target of
+crime. This calls for dKargo to categorize recorded data into two sectors. Data that can be made
+public will be recorded on the smart contract to increase efficiency. While data that must be kept
+private will be encrypted and can only be viewed by participants of the contract.
+
+© Middleware Layer
+
+The middleware layer is an interface that reads and records the data stored on the storage layer.
+dKargo’s diverse services can be accessed on the storage layer through the middleware layer.
+Participants can use various tools that the middleware layer provides to easily connect their
+services to the dKargo platform.
+
+dKargo platform can only succeed when the participants of the current logistics network can
+easily join the platform. dKargo will provide SDK (Software Development Kit) to many service
+providers currently in operation, to help them connect their services to dKargo’s platform.
+SDK will be designed to be compatible with existing programming techniques. This will help
+developers who aren’t familiar with blockchain technology to easily participate in the platform.
+
+The middleware layer will also provide extra data on specific information for logistics services
+such as the standard specification of freight information, regulations in each country, and
+standards for payment. This is to help participants gain easier access to data they need to provide
+their services. It will help existing service players to enter the platform.
+28
+
+dKargo suggests making standards for ordering, storing, transporting and making payment
+through the dKargo Request for Comments (DKRC) document. dKargo will form a steering
+committee with partners to discuss and make decisions on these matters. This process will
+meet the standards for data and API (Application Program Interface) which will allow any
+partners within the ecosystem to participate in making any types of services, whether it be in
+the middleware, service layer or API. It will encourage partners to participate in creating the
+DKRC standards with the programming language that fits their existing system or commonly
+used by their developers. dKargo will provide at least more than one method of implementing
+the reference for each sector. Partners and individuals can use the reference to create APIs with
+more functions and new services while following the standards.
+
+© Service Layer
+
+There are two types of dApp the service layer provides. One is the dApp that the platform
+provides and the other is the dApp that platform participants provide. dKargo provides dApp that
+is essential for the platform’s function and provides a well-defined API to help anyone create a
+new service through dKargo. It will create an environment for invaluable services to be provided.
+7, Business Partner
+
+7.1 Flagship Partner
+
+© deleo
+
+A Korea-based logistics company deleo will be dKargo’s flagship business partner. Established
+in 2015, deleo is a startup company specializing in cross-border logistics service. Kakao
+Investment, Lotte Global Logistics, and major venture capital firms are deleo’s shareholders.
+deleo recently raised a series C funding with the company valuation of KRW 100 billion. deleo has
+a competitive edge in cross-border logistics service and also has formed a strategic alliance with
+the U.S. Postal Service (USPS). deleo’s network of postal carriers, logistic companies in major
+global locations and logistic service users, combined with its cross-border logistic infrastructure
+will lay important groundwork for dKargo’s platform to form partnerships. deleo will be a key
+driver in the early stage of business but since dKargo aims to build an open platform, deleo will
+eventually become an equal partner of dKargo as that of other dKargo’s partners.
+
+Innovative logistics platform Global postal service & logistics network
+
+Global postal service Global postal service
+
+Postal service Postal service Postal service Sy UNITED STATES pany | swiss post
+A B Cc Bed Postal SERVICE > {P) POST
+
+nd _ taposte SESH
+
+Global Logistics Platform d e | e fe)
+
+@ FedEx aramex jase)
+FHermes DOO “Brien AE
+
+Global logistics company Global logistics company
+
+Logistics company Logistics company Logistics company
+A B Cc
+
+Competitive edge (price/credibility/convenience) over its competitors in cross-border logistics market
+
+Through its strategic partnership with the USPS, the world’s largest postal service, deleo
+has the authority to directly print USPS-approved official shipping labels via USPS e-VC. As
+USPS's official wholesaler and authorized customs agency, deleo has a competitive advantage
+to provide fast and accurate customs clearance and also save the cost of logistics within the
+United States. deleo provides the same delivery process as the Express Mail Service (EMS), the
+USPS delivery service, whichcosts 65% less than the EMS. This allows deleo to have a unique
+advantage in cross-border logistics between the United States and Korea. Furthermore, deleo
+provides outstanding service over its competitors in cross-border logistics routes other than
+the US-Korea route by connecting the system unit of the world’s major logistics companies and
+national postal services.
+
+dkargo | Decentralized and Cooperative Protocol for Next Generation Logistics
+Outbound B2B Logistics Business Inbound/Outbound C2C Logistics Business
+
+Logistics Service for companies from Logistics service for domestic and
+Korea to Overseas international delivery
+LOTTE KakaoPay LOTTE
+OLIVE(°)YOUNG NinauMlrew = Macys
+CJ Ona o Praga erma J.CREW $5ubj
+u ceroe
+STYLE = xgx swarovski blaymingdales. TONY BIANCO
+Logistics service for E-commerce from Logistics service for E-commerce from
+Korea to Overseas Overseas to Korea
+
+Outbound B2C Logistics Business Inbound B2C Logistics Business
+
+deleo is running outbound B2B, outbound B2C, Inbound B2C, and inbound C2C logistics
+businesses. deleo established a joint venture firm Easygo with Kakaopay and Lotte Global
+Logistics and Easygo plan on scaling both domestic and international C2C/B2C logistics
+services. Furthermore, deleo’s affiliated company Box o’ Bliss has emerged as a key player in
+Korea’s rapidly growing overseas direct purchase market.
+
+deleo is also closely partnering with large companies via its own logistics services. For instance,
+Korea’s major logistics service provider such as Lotte Global Logistics, and global retail
+companies network such as eBay, Macy’s, Bloomingdale's, Neiman Marcus, Olive Young, and
+Etude House. Data provided by deleo and Box 0’ Bliss will be utilized at each stage of dKargo’s
+business development and thereby deleo will increase the business value of dKargo as a core
+business partner from the early stage.
+
+dkargo | Decentralized and Cooperative Protocol for Next Generation Logistics
+© KakaoPay Express
+
+sal Sketch 9:41 AM 3 100% mm
+all Sketch > ‘oat AM. 100% mm < us Alay x
+< HSAs x
+Holy olf
+HUE Apet rc) hte MI BaNOIAIoF 7HSBILIC
+
+atl Sketch 41 AM 100% a
+
+oat aM ¥ 100%
+
+x < opus x
+Ap A+ 9B7|2F 201844 128 1021
+Sip H4QNS
+
+6389123890
+
+JAD Ht ~
+EAU GHIOE nd
+
+aera] wore He Aber
+
+alul ale ela om ioe
+= 6399123690 | Bas gus
+
+HO|Y offoF nea
+
+aes euye)
+
+01098765432
+aitie A aleite AI amg eer
+JAH olfot 6389123890 | $25 aE 120,0008!
+
+wE7as (06123) B7/= Stal HMA = 152
+Tee Soret 10ore 300Ke
+Bl ofeny gtuba|g 2EH| 128
+aang
+FARO NEO oR/BsvaFR v
+
+KakakoPay Express is another key partner of dKargo from the early stage.
+
+) Kakapay x Geleo x @ LOTTE
+
+GLOBAL LOGISTICS
+
+Service planning & International shipping & Domestic (Korea) courier
+Marketing Data mediation delivery service &
+Customer service (CS)
+
+Centered on Kakaopay, an easy payment service provider from Korea’s No.1 mobile platform
+Kakao, KakaoPay Express has launched a logistics service together with deleo and Lotte Global
+Logistics. deleo formed strategic partnerships with USPS and Lotte Global Logistics is one of
+Korea’s major logistics service provider.
+32
+
+Kakaotalk provides a familiar user interface to more than 50 million of its active users. This can
+help KakaoPay Express provide flexible logistics service through Lotte Global Logistics’ location
+points such as domestic convenience stores and logistics systems, along with deleo’s expertise
+in cross-border logistics. deleo will oversee and process all logistics data, acting as an important
+facilitator to promote the dKargo platform.
+
+KakaoPay Express aims to provide professional and efficient logistics service to 50 million active
+users on the Kakao platform. KakaoPay Express is one of the services from kakaopay, which
+provides the best user experience optimized for C2C logistics service by enabling more than 80%
+of Koreans on Kakaotalk to naturally use the entire process of logistics from payment to delivery.
+Together with Lotte Global Logistics, which owns Korea’s top-tier freight traffic and has more
+than 8,000 convenience stores as delivery location points all over Korea, KakaoPay Express can
+offer the best logistics experiences. KakaoPay Express aims to become a market leader in C2C
+logistics using its competitive advantages. In the long term, KakaoPay Express will become a
+logistics service provider that offers an array of logistics services.
+
+7.2 Attract Additional Partners
+
+In order to build a flexible logistics network, it is critical to onboard many partners in addition
+to the partners mentioned above. So dKargo, as an open platform, aims to build an ecosystem
+where values created by participants in the platform are evenly distributed to the participants.
+
+However, attraction of platform participants can be relative small in the early stage of dKargo.
+So, dKargo plans to operate partnerships program to reach the tipping point as early as possible.
+Thus, dKargo will allocate a special token pool for building partnerships. dKargo will use this
+special token pool to onboard main strategic partners who can contribute to dKargo platform.
+33
+
+8. Roadmap
+
+dKargo ultimately aims to build a flexible logistics platform enabling collaboration among various
+participants. However, a sudden change can cause a backlash from the market, so a step-
+by-step approach is needed. dKargo will establish a strategy focusing on linking information,
+logistics services, and logistics-related services at every step of its business development so
+that dKargo can smoothly launch its logistics services.
+
+1st step 2nd step 3rd step
+Linkage of =] In I Input information on —) Input real-time status
+— put freight status . , . .
+i qi Fee each status via logistics information via loT device
+information (eX via user feedback service participants
+linkaaetof Connect with the most Local and global connection Ly * Connect opital route
+we g . optimized international through existing logistics | > based on the extended
+logistics services delivery service provider service providers “ logistics network
+i Link lated ST
+Logistics -related (3, UnscereleEo me cay Link services related Se FV] Link all kinds of
+j, co) second-han 7 logistics-services together
+services ee) trading transportation Pry 9 9
+34
+
+9, Timeline
+
+2019 —
+
+Whitepaper ver 1.0 Official Release
+
+@ H2
+
+dKargo Platform Alpha ver. Release
+
+2020 —
+
+e a@i
+dKargo Explorer Closed test / TGE
+
+e@ @Q2
+
+dKargo Explorer Release
+
+e@ @Q3
+
+dKargo Platform Beta ver. Closed Test
+
+Q4
+
+dKargo Platform Beta ver. Release
+
+Decentra
+
+zed and Cooperative Protocol for Next Generation Logistics
+
+35
+
+2021 —
+
+e Qi
+
+Local Expansion
+e@ @2
+
+Data Marketplace Beta ver. Closed Test
+e@ @Q3
+
+Data Marketplace Beta ver. Release
+
+e@ Q4
+
+dKargo Platform Integration Test
+
+e Qi
+dKargo B2B / C2C Expansion
+e@ @2
+
+Global Expansion
+
+Decentralized and C
+
+eration Logistics
+36
+
+10. Team & Advisors
+
+10.1 Team
+
+Jinho Lee
+CEO
+
++ B.S. in Chemical & Biological Engineering
+Seoul National University
+
++ CEO at Easygo
+
++ COO at Deleo
+
++ Manager at A.T. Kearney
+
++ Engineer at SK Energy
+
+Seungho Yeom
+
+Business Development - Lead
+
+- Business Development Team Lead at dKargo
+- BD Director at Cobak
+
+- Manager at Huobi Korea
+
+- Manager at Samsung Electronics
+
+Jean Kim
+
+IT Planning Manager
+
+- IT Planning Manager at Deleo- Software
+
+. Engineer at Balance Hero India Pvt Ltd
+
+. Europe & M/E Territory Manager at LG
+Chemistry
+
+Jungwon Yang
+cso
+
++ B.A. in Business Administration
+Seoul National University
+
++ CSO at Deleo
+
++ Senior Manager at SK gas
+
++ CSO at Terasquare
+
++ Consultant at Arthur D. Little
+
+ae
+Jonghyun Hong
+
+Lead Developer
+
+- IT Team Lead at dKargo
+- IT Team Lead at SOOM Tech Inc.
+« Senior Research Engineer at Solid
+Wintech, Inc
+
+Jihoo Nam
+Global Business Dev
+
++ B.A. in Economics New York University
+
++ E-commerce Team Manager at Deleo
+
++ Business Dev. at CJ Logistics(USA)
+
+- Business Analyst at Standard Chartered
+PRIVATE EQUITY
+
+Donghoon Seong
+
+cTo
+
+- CTO at Deleo
+- Deputy General Manager at UCS System
+
+Daeho Oh
+
+Developer
+
++ B.S. in Computer Science
+Yongin University
+
++ IT Team Manager at Deleo
+
++ SW Engineer at Aveapp
+
+Wan Heo
+Platform Manager
+
+- B.A. in Business Administration
+University of Southern California
+- Platform Team Manager at Deleo
+- Director at SM Global Shop(USA)
+
++ Director at WOM Inc.(USA)
+
+Cooperative Protocol for Next
+
+eneration Lo
+
+37
+
+Myunghun Song
+Logistics Team - Lead
+
+- B.A. in Business administration
+Korea National Open University
+
+- Logistics Team Lead at deleo
+
+- Head of Logistics Center(Backam)
+
+Hyoin Kim
+Logistics Team - Manager
+
+- B.C. in Accounting & Finance
+Monash University
+
++ Logistics Team Manager at deleo
+
+- Oversea Sales Manager at
+Unicell Paper Pte.Ltd
+
+Jinyoung Hwang
+UI/UX Designer
+
++ B.A. Industrial design
+Konkuk University
+
++ UI/UX Designer at deleo
+
++ Desinger at Cogul Planet
+
++ Desinger at Bluewell
+38
+
+10.2 Advisor
+
+David Hyunbin Eun
+
++ Founder/CEO at deleo
+
++ President of USA at Simplex internet(Café 24)
++ Co-founder at Goshen/E-Tree/BNA Global
+
++ GE Lab Marketing
+
+Kwanhoon Lee
+
+- Advising Counselor at CJ
++ CEO at CJ (Acquiring CJ Logistics)
++ CEO at CJ media / CJ E&M
+
++ CEO at CJ Hellovision
+
++ Director of CJ Oshopping
+
+Hussein Hachem
+
+Global CEO at Aramex
+
+39
+
+11. Legal Disclaimer
+
+This whitepaper (“Whitepaper”) is written for those who are interested in dKargo to provide
+information only in relation to dKargo’s team and its projects. No information on this Whitepaper
+should be deemed to solicit readers to invest in dKargo’s team and its projects. The Whitepaper is
+completely irrelevant to investment. Furthermore, dKargo Tokens mentioned in this Whitepaper
+aren’t intended to constitute securities as a subject of investment nor should they be seen as
+investment value.
+
+This Whitepaper is, written “as-is”, to provide business plans and opinions of dKargo’s team and
+please note that the information on this Whitepaper may change if need be during the course of
+the business development.
+
+Henceforth, when using or referring to this Whitepaper, decisions on participating in the project
+should be made according to your own judgment. You are solely and legally responsible for the
+results of your own decisions regardless of profits or losses incurred.
+
+To the maximum extent permitted by the applicable laws, regulations, and rules, dKargo shall
+not be liable for any indirect, special, incidental, consequential or other losses of any kind, in
+tort, contract or otherwise (including but not limited to loss of revenue, income or profits, and
+loss of use or data), arising out of or in connection with any acceptance of or reliance on this
+Whitepaper or any part thereof by you.
+
+dKargo team does not guarantee that the Whitepaper (i) is based on legitimate rights and does
+not infringe on third-party right, (ii)is commercially valuable or useful, (iii) is suitable for achieving
+a specific agenda and there is no error in the content of the Whitepaper. Of course, the range of
+liability exemption is not limited to the aforementioned examples.
+40
+
+Reference
+
+1. https://www.pwe.com/sg/en/publications/assets/future-of-the-logistics-industry. pdf
+2. http://www. businessinsider.com/last-mile-delivery-shipping-explained
+
+3. http://globalbizresearch.org/files/6029_irrem_s-ramachandran-mayur-s-nakhava-
+kumar-pratik- 141856. pdf
+
+4. https://www.logisticsmgmt.com/article/asean _logistics_exploring_the_new_frontier

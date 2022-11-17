@@ -1,0 +1,1185 @@
+~ a.
+
+N.EXCHANGE
+
+A WHOLE ECO-SYSTEM
+
+Accommodate all of your crypto needs
+Under one roof
+
+Whitepaper | Last updated: 2018.06.19
+
+Abstract
+
+n.exchange is a multi-component ecosystem, designed to accommodate a wide variety of the
+cryptocurrency community’s needs.
+
+While solutions for those needs exist individually, across many platforms, they are not always
+implemented to perfection, and are often unreliable, non-transparent or hard to use.
+
+The five main components of the system are the Exchanges: HybriDEX multi-chain dex and
+n.exchange INSTANT, MultiPick multi-mining pool, EasyMerchant solution, and a line of comple-
+mentary services including high quality content, the various utilities that leverage our open API,
+coin capitalisation and portfolio trackers and liquidity-sourcing services.
+
+By aggregating those components into one platform, we enhance user experience and eliminate
+redundancy, fees and funds transition time.
+
+Our goal is to maximise each one of the components individually, by providing an outstanding
+service with a sharp edge, for low fees; thus, becoming the industry’s first regulated, transparent,
+high-liquidity A-Book broker.
+
+We are sourcing liquidity to traditional financial institutions and blue-chip companies.
+The definition of genius is taking the
+complex and making it simple.
+
+3. Albert Einstein
+‘] a
+Company vision and commitment - letter from CEO
+1. Terms Of Services (TOS)
+
+2. Ecosystem Chart
+
+3. Quantifiable Value Proposition (QVM)
+
+4. Estimated Technical Roadmap
+
+5. Token Economy
+
+5.1. Token Usage
+
+5.2. Buy Back
+
+5.3. Buy Back Notification
+
+5.4. Token Distribution
+
+5.5. Pledged Funds Distribution
+
+5.6. Special Perks for Large Stakeholders
+
+6. Product Specs
+
+6.1. Instant Exchange
+
+6.2. White-Labelling and Service-Based Services
+6.3. Merchant Solution
+
+6.4. Mining Pool
+
+6.5. Decentralised Exchange
+
+6.6. Software Licensing
+
+7. Growth strategy
+
+7.1. Organic Growth Engine - Referrals, Affiliate Program
+7.2. Growth-Hacking
+
+7.3. White Labelling & Liquidity Sourcing
+
+7.4. API integrations, labs
+
+7.5. Inbound Marketing
+
+7.6. Partnerships
+
+7.7. Paid Traffic
+
+8. Team
+
+8.1. Team
+8.2. Advisors
+
+22
+23
+Dear customers and crowdsale participants,
+
+We founded n.exchange after seeing a pressing need in the market, first-hand.
+
+From the very beginning, the idea behind n.exchange has been to establish a platform that cus-
+
+tomers can fully trust. One that is designed to have no conflict o
+
+f interest with the client, and
+
+which has the potential to become the first regulated A-Book broker in the crypto sphere.
+
+We have designed our solution to have the smallest
+to take no custody of customer funds, whatsoever.
+
+We work hard to build a relationship of trust and tra
+
+system trust-free wherever possible n.exchange insta
+
+In cases where the custody of user funds is inevitab
+
+possible attac
+
+nsparency wi
+
+e, we make s
+
+surface and, where possible,
+
+h our customers, we keep the
+
+nt as our beach-head product.
+
+ure that we follow the correct
+
+regulations to do it legally, with the correct security measures to avoid disaster, and the correct
+insurance coverage to recover from it, if it still strikes.
+
+We strongly believe that in order for this sphere to prosper, one of the key principles of the new-
+ly-minted crypto economy, decentralisation, must prevail.
+
+Therefore, we encourage every customer to take custody of their own funds, and to use the vari-
+ety of services we offer to exchange cryptocurrency, fiat or goods, using the merchant solution;
+to mine or remit cryptocurrency, all under one roof - securely, transparently, and with zero trans-
+
+mission time.
+
+Oleg Belousov,
+CEO.
+
+1. Terms Of Services (TOS)
+
+The purchase of NEX tokens does not grant share capital, voting rights, or any other
+1. legal rights in regards to CRYPTO NEXCHANGE LTD, YOA LTD or any other legal entity
+associated with n.exchange.
+
+NEX tokens are not available in countries where local geo-political restrictions apply.
+2. These geo-political restrictions include, but are not limited to, bans, regulations, re-
+gional court verdicts, court orders.
+
+These regions include, but are not limited to:
+
+® South Korea
+@ All US states and territories, including US citizens staying abroad*
+
+“Except accredited investors
+
+Our services in the cryptocurrency industry, which are described in this white-paper,
+
+carry similar, though less extensive restrictions in:
+® South Korea
+® Washington State
+@® Nyc
+® Any other country, state or territory that requires specific,
+local, licensing for the services we render
+US investors from other states are also banned from participating in the crowdsale,
+except for accredited investors.
+4 n.exchange reserves the right to alter these TOS. The updated TOS can be found at any
+
+time under n.exchange/ICO
+
+Risk Disclaimer
+
+ford to !0se.
+
+y funds you can
+
+fe J ]
+
+their and their loved ones emotional and
+
+nnancial
+
+2. Ecosystem Chart
+
+The n.exchange ecosystem consists of five main components as seen below. These components
+are interconnected on several verticals, and share the same liquidity pool to enable instant and
+free remittance across the ecosystem.
+
+Index:
+
+IN PROJECT / PLANNED
+PARTIALLY IMPLEMENTED
+@ @ FULLY IMPLEMENTED
+
+DECENTRALISED EXCHANGE X
+MINING POOL
+MERCHANT SOLUTION
+
+WHITE-LABELLING, API,
+LIQUIDITY SERVICES
+
+INSTANT EXCHANGE
+
+3. Quantifiable Value Proposition (QVM)
+
+Localisation remark:
+
+All products will be 100% device portable, with i18n support for the most common languages.
+
+N.EXCHANGE INSTANT
+
+1. n.exchange features a modern, crisp and easy-to-use instant exchange.
+With n.exchange you can trade any listed cryptocurrency asset directly between your
+wallets or purchase cryptocurrency, with fiat, directly to your wallet.
+All of the above is accomplished simply, transparently, and efficiently.
+With n.exchange you receive a final quote for your trade prior to completing the
+transaction. This quote will include all fees and will be valid for 15 minutes after being
+issued, at no additional charge.
+This is such a unique feature that we are still Unsure how to quantify it - especially
+since it is well-known that the cryptocurrency market can move very quickly within
+this period of time.
+Additionally, all fees in n.exchange’s INSTANT for major pairs are fixed at 0.5%. This is,
+on average, two to three times less than our direct competitors charge. In other words,
+an average of 1 BTC of fees is saved for every 100 BTC traded.
+This service is a great market-taker liquidity provider for the decentralised exchange
+described below.
+N.EXCHANGE HYBRIDEX
+
+2.
+
+n.exchange features a zero maker fee from the very first transaction. This means that
+our customers directly save 250 BTC every few hours (or 100 O00 BTC in volume)
+based on a flat fee of 0.25%.
+
+Whereas some might perceive this as an aggressive move, we see it as a necessity in
+this highly competitive market, where ‘liquidity and market-depth’ is the name of the
+game.
+
+n.exchange as no minimum order size. Every trade is a trade; it is not our intention to
+exclude anyone from the market. Furthermore, with our robust and seamlessly scal-
+able infrastructure, there is no reason for any limitation, as such.
+n.exchange offers 12 decimal point precision on every traded pair, regardless of its
+liquidity or popularity. Our goal is to be the native platform for HFT traders, featuring
+a comprehensive API, the lowest response times, and the highest precision.
+
+n.exchange supports decentralised p2p exchanges natively on the Ethereum smart-
+chain. This means that both Ethers and ERC20 tokens are supported, out of the box.
+Additionally, multi-chain transactions are possible, against an Ether or ERC20
+collateral.
+
+N.EXCHANGE EASYCOMMERCE
+
+Merchant transactions are executed as taker trades on one or more markets (pairs),
+depending on whether the merchant had chosen to be paid in fiat, cryptocurrency or
+any other combination of currencies.
+
+The service incurs a nominal fixed fee per payout only, which saves merchants and
+end clients at least 1% of turnover, amounting to $10 000 USD for every 1 000 000
+of turnover.
+
+N.EXCHANGE MULTIPICK
+
+The mining pool, which is already active within a private alpha, supports all major
+algorithms (SHA256d, Scrypt, X11, X13, X15), as well as merge-mining and multi-min-
+ing. The proposed edge offers a profitability of more than 20%-30% per every valid
+hash, by dynamically looking for ‘arbitrage’ (coins with actual low difficulty and rela-
+tively high market demand).
+
+In addition, we are currently experimenting with merge-mining. This concept allows
+the pool to use the same hashes for N different coins, provided they share the same
+algorithm and difficulty d, < d.,
+
+Once a block is mined, it is sold immediately, depending on the pay-out preferences of
+the miners that hold the shares for mining this block.
+
+Trading of supported pairs happens on the n.exchange native market; therefore, elim-
+inating latency, redundant fees and other fees and overheads.
+
+ZEROBALANCE
+
+n.exchange strives to perform all exchange operations in a decentralised manner and
+with minimum custody of customer funds. The system is designed to encourage cus-
+tomers to take custody of their own funds, and only to deposit those funds, into the
+hands of the exchange, when they intend do so, in full conscience.
+
+This proposed approach is in complete contrast to the industry’s current (common)
+practice, where customers are led to deposit their funds by default, and where with-
+drawing those funds is made as difficult as possible.
+This is one of our strongest product principles - we call it ZeroBalance.
+
+Although ZeroBalance is quantifiable to only O, we strongly believe that this principle
+is one of our strongest value propositions. We also believe that it will protect the dig-
+ital wealth of our customers, far beyond anything our competitors can offer.
+
+SINGLE BALANCE
+
+n the event a user chooses to leave their funds on the platform, those funds will be
+easily accessible from any component of the platform: easily, freely, and with no re-
+strictions. Funds can be moved freely from the mining pool and the merchant solution
+o the exchange (through a self-managed wallet).
+
+n fact, the term “moving” is not appropriate, as those funds are credited to a single
+edger, in the first place, and governed exclusively by the user.
+
+4. Estimated Technical Roadmap
+
+With a significant and successful 2-year track record behind us, we are now facing the even
+greater opportunities that are still ahead.
+
+API Development, Product Launch -
+
+Stealth mode
+
+private beta Product Hunt TOP10
+
+$500 000 USD Turnover
+Websummit ALPHA, within 2 weeks after
+shortlist, most hyped list launch - cashflow positive
+from day 1
+
+500 BTC daily revenue
+
+Fiat Rollout in partnership Fiat selling support,
+: : 12 supported assets,
+
+with a major UK payment 483 markets OTC market
+
+institution (USD, EUR, GBP) EasyCommerce Beta
+
+2018 2018 2018
+Q2
+
+Multi Pick Beta,
+
+4 EasyCommerce Rollout,
+HybriDEX Launch
+
+HybriDEX Beta Mobile apps
+
+2019 2018 2018
+
+Multi Pick Launch, FCA licence, A-Book broker,
+Margin & Options trading,
+
+Institutional liquidity provider
+
+EMI licence, n.exchange
+debit card
+
+Iterative Customer
+Feedback implementation
+
+2019 2019 2019
+Q2 Q3 Q4+
+5. Token Economy
+
+5.1. Token Usage
+
+During the first year of its lifetime, you can use your token to cover up to 100% of your
+trading costs.
+
+Additionally, you can use token to:
+
+@ cover up to 50% of your mining pool.n.exchange fees for 2 years;
+
+@ obtain a discount, of up to 10% on merchant services powered by merchant.n.exchange, during the 3
+years following the crowdsale end - limited to 10% of the total token supply per year.
+
+It is as simple as signing an additional transaction with MetaMask when trading, withdrawing
+funds from the mining pool, or purchasing goods or services with the merchant solution.
+
+5.2. Buy Back
+
+At end of each Quarter, we will dedicate up to 50% of our profits to starting a large, organised,
+token buy-back, powered by smart contract.
+
+The smart contract will receive our designated profit-share continuously, through each quarter.
+This will allow token holder to exit their stake easily and seamlessly, simply by sending NEX to-
+kens to the address of the contract on the first calendar week of the next quarter as following:
+
+1st - 7th 1st - 7th 1st - 7th 1st - 7th
+
+JANUARY APRIL JUNE SEPTEMBER
+
+Repurchase is carried out on a first-come-first-served basis, and is limited to one calendar week.
+
+The price is defined by an oracle, which provides the weighted average price of NEX tokens on
+he market.
+
+We reserve the right to use the remaining funds in the contract at the end of each repurchase
+period, as well any other part of the funds, for direct market making.
+
+This move is designed to allow anyone, who wishes to sell their stake in the token, to do so; push-
+ing out the “weak hands”, while maintaining the transparent and fully auditable product.
+
+All re-purchased tokens will be burned immediately and automatically, by the smart contract.
+Note: for transparency purposes, all data, including all available cold and warm reserves, as Well as
+turnovers, found blocks, and commenced merchant turnover are available for the public to view and
+
+audit.
+
+https://nexchange2.docs.apiary.io/
+
+5.3. Buy back notification
+
+n.exchange will send an email reminder, about the relevant buy-back to all subscribers according
+to the following schedule:
+
+7 24
+DAYS HOURS
+
+3 24
+
+DAYS HOURS
+before before into the before
+buy-back starts buy-back starts buy-back buy-back ends
+
+5.4. Token Distribution
+
+TOTAL SUPPLY: 200 000 000
+
+e PUBLIC SALE HARD CAP (NO VESTING)
+
+@ _Founpine Team (2 YEARS VESTING)
+
+100 000 000
+
+ANGEL INVESTORS (3 MONTHS VESTING)
+
+@
+65 000 000 © Bounties
+@
+
+AIRDROP (3M COMMUNITY, 2M RICH LIST)
+
+5.5. Pledged Funds Distribution
+
+30%
+
+Licensing, Regulation & insur- Development Fund Committed to reserves
+ance for funds in custody (Escrowed) (Public hot and cold
+addresses)
+
+5.6. Special Perks for Large Stakeholders
+
+100 000 @ Free personal trading, for the first year, on proof of balance
+NEX
+1 000 000 @ Free personal trading, for the first year, on proof of balance
+NEX @ Free commercial trading, for the first year, on proof of balance
+@ Free personal trading, for the first year, on proof of balance
+10 000 000 @ Free commercial trading, for the first year, on proof of balance
+NEX @ Free stand-alone white label (Normally $100 000 USD for setup)
+
+and 1 year of free maintenance ($2500 USD monthly)
+
+10
+6. Product Specs
+6.1. Instant exchange (FULLY IMPLEMENTED)
+
+—— Liquidity capacity
+
+The instant exchange is capable of processing unlimited volume is present in our ho
+
+wallets, ina
+
+single order, in addition to exchange reserves (when they are immediately accessible, both finan-
+
+cially and technologically).
+
+Our hot-wallet reserve, for each coin, is limited to 5 BTC of equivalent value, thus, thi
+
+imum value of a single order.
+
+That being said, once the DEX component is ready, we plan to integrate it as a direct
+vider for our instant exchange, thus, increasing the maximum order capacity with
+risk.
+
+—— Assets
+
+Currently supported assets:
+
+$ € £ oT
+
+USD EUR GBP USDT
+© ¢ Mi
+BCH ETH LTC XMR
+
+y oe >) @
+
+XVG NANO DOGE OMG
+“a se
+
+Bos Vv \ %
+
+BNB KCS KNC BNT
+
+s is the max-
+
+iquidity pro-
+no additional
+
+BTC
+
+ZEC
+
+EOS
+
+An updated and comprehensive list of supported assets can be obtained, at any time, at:
+
+https://api.n.exchange/en/api/v1/currency
+
+Overall 483 Pairs and growing!
+
+11
+—— Fees
+
+The fees, in the instant exchange, are as follows:
+
+@ 0.5% on major pairs (e.g. ETHBTC, BCHBTC);
+@ 1% on minor pairs (e.g. XVGNANO, DOGEOMG):
+
+@ 1% on highly non-liquid and/or exotic pairs (e.g. BDGEOS);
+
+@ 0.5%-3% for fiat pairs - apart from the payment processor fee (depending on the
+
+payment method).
+
+An updated and comprehensive list of supported pairs can be obtained at any time at:
+https://api.n.exchange/en/api/v1/pair/
+
+—— Compliance
+
+n.exchange applies the strictest and most precise compliance policies, in accordance with the rel-
+evant AML/AFT regulations and the GDPR.
+
+All orders, involving fiat, require the user to submit KYC documents that meet the following
+
+guidelines:
+
+TIER 1
+
+$0 - $999 USD
+30 DAYS TURNOVER
+
+TIER 2
+
+$1000 - $1999 USD
+30 DAYS TURNOVER
+
+TIER 3
+
+$2000 - $4999 USD
+30 DAYS TURNOVER
+
+TIER 4
+
+$5000+ USD
+30 DAYS TURNOVER
+
+@ National ID or driver's license
+
+@ Ascan/photo of a physical utility bill from a known service provider,
+delivered to a fiscal address
+@ In case of doubt, we would request a note to be added to
+
+n.exchange and the current date to be added to the photograph of
+either of the documents
+
+@ In case there is still doubt, after the user has fulfilled the above
+steps, a “selfie” photo will be required, as described in [TIER 2]
+
+A “selfie” photograph of the user holding the ID and the credit card
+@ that was used for the purchase (if applicable) in one hand, and an A4
+
+note saying “n.exchange” and the current date in the other
+
+@ Tier 1 and Tier 2 requirements and a “selfie” or photograph of
+yourself, taken from the front, and clearly showing you holding an
+A4 note saying ‘n.exchange’, with the current date, and “My BTC
+withdraw address is: 1A1zP1eP5QGefi2ZDMPTfTLS5SLmv7DivfNa’”
+marked, for every currency you would like to purchase.
+
+@ Once the user reaches this turnover, they will be flagged for an ad-
+ditional review, to be conducted by the compliance officer, and who
+will summon them to a personal video interview, if appropriate.
+
+12
+—— Unique properties
+
+@ The current process is time-consuming and exhausting, comprising: the deposit of funds into a custodi-
+al exchange; the wait for them to confirm; the subsequent placement of a limit order; the wait for it to
+execute; the addition of a withdrawal address, and its confirmation by email; and the completion of a
+withdrawal request (and its approval by email). We shorten this into two steps:
+
+@ Open a trade with your desired withdrawal address
+
+@ Pay it into a unique deposit address
+That leaves you free to get on with the more important things in life.
+
+@ Complex conversions, which would normally require a combination of two or more trades over one or
+more markets, are immediately possible and seamless
+
+@ The exchange lets you know the final rate, for your transaction, before sending any funds
+
+@ The exchange automatically recalculates a trade, if the order expires because of a delayed deposit (due
+o market conditions or third party fault)
+
+@ The exchange lets you to assign an address as ‘re-usable’, hence, any funds deposited to that address will
+be automatically converted to the same asset as the original order, and at the latest market price
+
+@ The exchange sends an optional notification for every order or KYC status change, for better tracking,
+accountability and auditability
+
+@ The exchange is completely transparent (whole order, deposit, withdrawal and pricing history are visible
+under our API)
+
+Docs: https://nexchange2.docs.apiary.io/
+
+@ The frontend of the exchange is completely open-source, and has an active community behind it.
+https://github.com/onitsoft/nexchange-open-client-react
+
+6.2. White-Labelling and Service-Based Services
+
+The API is accessible to anyone, at any time, without the need for authentication (aside from fiat
+conversions, as specified in the n.exchange INSTANT specs - compliance section and restricted
+geo-political areas as per the TOS).
+
+A simple order can be created by [POST] to https://api.n.exchange/en/api/v1/orders/.
+This order will be executed following exactly the same logic as is described in the n.exchange
+INSTANT specs.
+
+All in accordance with our detailed API specs that can be found, at any time, under
+
+https://nexchange2.docs.apiary.io/
+
+In the long-term, we intend to direct n.exchange HybriDEX features and liquidity through this
+API, in order to allow institutional and other non-decentralised clients to enjoy our services.
+
+It is possible to receive affiliate payouts for each transaction, regardless of the extent to which
+you use the API, as described in detail in Organic Growth Engine - Affiliate Program.
+
+13
+—— oAuth2
+
+In addition to the basic use, described above, it is possible to gain access to advanced future (order
+history, referral stats, user settings, reusable addresses) using oAuth2 authentication. Your oAuth2
+token would also grant you access to some basic, non-personal information about the trades of
+users whom you have referred. All in accordance with our API docs.
+
+—— Hosted Services
+
+n.exchange offers an easy, hosted solution based on our open source frontend
+https://github.com/onitsoft/nexchange-open-client-react
+
+Anyone is free to use the frontend, in order to operate a subsidiary exchange freely, as long as
+the following conditions are fulfilled:
+
+@ A sufficient level of design and UX is maintained
+
+® Credits to the n.exchange are displayed in both the footer and the TOS
+
+@ Source repo is open-source and has both NOTICE and LICENSE files in their original form
+® Backend interaction is made exclusively with our official api at api.n.exchange
+
+We will charge a fee of $10 000 USD and a $500 USD monthly maintenance fee, to remove any
+of the above restrictions.
+
+We will charge a fee of $50 000 USD and a $2000 USD monthly maintenance fee for a fiat-en-
+abled white label with managed KYC.
+
+99
+
+Tauschkrypto.de benefits a lot from the hands on support of n.exchange, as well as
+the remarkable in-house expertise Oleg and his team has to offer.
+
+From setup to maintenance up to further developing the business, we are con-
+
+stantly experiencing great work as well as integrity, honest interest in our needs
+and goals, and communication skills.
+
+4 Michael Cernischi
+—— Independent Services
+
+In some cases, when the customer requires it, we would provide a completely stand-alone ver-
+sion of our services, including a full stand-alone backend, where applicable.
+
+The base cost of this service, for the instant exchange, is $100 000 USD.A basic maintenance
+
+package, which includes infrastructure, basic customisation, support, and managed KYC is $2000
+USD. 5 monthly developer hours could be added for $1000 USD additionally.
+
+6.3. Merchant solution
+
+—— Assets
+
+As a Starting point, the merchant solution supports all the assets in (Instant Exchange supported
+assets illustration).
+
+Once out of Beta, the support will be extended to top 100 liquid Ether tokens, and top 100 non
+ether-assets.
+
+This means that our solution will be by far the product with the most wide asset support on the
+market.
+
+Any supported asset is available both to the end-client, as well as to the merchant, for the pur-
+pose of receiving payments.
+
+—— Fees
+
+EasyCommerce features a flat fee structure, all purchases result in an order(or several orders)
+using our API (which then sources it to the DEX a market trade).
+
+This means that the price remains fixed for 15 minutes, and there are not additional fees, nor a
+‘transparent’ markup which is used by some competitors to increase their margins.
+
+With n.exchange EasyCommerce, what you see is what you get!
+
+Additional fees:
+
+A transaction fee for withdrawing EasyCommerce balance would be applied, as with all other
+components of the ecosystem.
+
+Transaction fee info can be viewed via our API at https://api.n.exchange/en/api/vi/currency
+
+— Payouts
+
+Any incoming payments are converted immediately, according to the merchant’s payout prefer-
+ences, in a matter that carries no additional risk for the merchant.
+
+A merchant payout can be divided into an unlimited number of supported currencies, as long as
+the payout in each currency meets the minimal requirements specified by our API, and the sum
+of each currency does not exceed the available balance.
+
+All payouts occur automatically, both in crypto and in fiat, once the minimal balance, as defined
+by our API is reached.
+This minimal balance can be adjusted according to the user’s preference.
+
+For a payout to occur, a withdraw address for the desired address needs to be pre-defined by
+the customer.
+
+If no such address is present, the funds will remain on the ecosystem’s SingleBalance, available
+to withdraw, to trade via HybriDEX, or to be used as collateral.
+
+Reference: https://api.n.exchange/en/api/v1/currency
+
+—— BITools
+
+n.exchange easy commerce provides a variety of actionable BI metrics to enhance the custom-
+er’s experience.
+
+Starting from simple data such as revenue per coin and through with a cross reference of vol-
+umes, traded pairs, referrals codes, source web-addresses and a timeline.
+
+—— Unique properties
+
+Aside the trivial advantages of large amount of supported assets, zero markup conversion and
+a several seamless integrations for the leading e-commerce platforms, there are several other
+points worth noting.
+
+Firstly, we would like to emphasise not only crypto-to-fiat conversion, but also crypto-business-
+es wishing to integrate payments in different coins.
+
+A typical example use case would be ICO/TGE crowd sales, and the industry giants, such as local-
+bitcoins and paxful would be the perspective clients, for an easy gateway to integrate seamless
+support in deposits and payouts in currencies which are not natively supported on their plat-
+forms.
+
+— Advance API Usage
+
+While the easiest integration for our solution would be by using one of our pre-pared payment
+pages or widgets, the entire functionality is available via a REST API fso you can implement your
+customer’s experience on your own, if needed.
+
+6.4. Mining Pool
+—— Supported Assets
+The mining pool supports the following algorithms:
+
+® scrypt - Litecoin, Verge, Doge, DigitByte (and more)
+@ sha256 - Bitcoin, Bitcoin-Cash, PeerCoin DigiByte (and more)
+
+@ x11, x13, x15 - Dash, FuturoCoin, Boson (and more)
+
+We support all the altcoins that use those algorithms and are currently trading!
+—— Fees
+
+All mined blocks and collected transaction fees are subject to a 1% PPLNS/PPS fee (5 times lower
+than our main competitor - ProHashing).
+
+For the first two years, 100% of this fe
+economy section.
+
+—— Unique properties
+
+MULTI-MINING
+
+e can be paid using NEX tokens, as specified in token
+
+1. The poo! will monitor the asset prices on our internal market, where applicable, as well
+as on other rival-exchanges, in order to find those supported cryptocurrencies with
+
+the highest price-to-difficu
+rent market value).
+
+Ity ratio (ideally, the easiest to mine and with highest cur-
+
+The poo! will then, dynamically shift the hashing power to those coins, until an amount
+
+(of Blocks) is mined that co
+
+uld affect the market price, or the difficulty, in any way.
+
+Multi-mining is optional, and the user can opt for mining a single coin at any given time.
+
+MERGE-MINING
+
+n principle, since a hash t
+
+is lower than the difficulty
+chain has the highest diffic
+
+actual full-node software o
+
+hat is valid for a certain algorithm could be valid for any
+
+cryptocurrency that implements this algorithm; theoretically, one miner can mine up
+o N currencies. This is provided the difficulty of currency in position N in the chain
+
+of currency in position N-1 (first coin in the merge-mined
+ulty).
+
+This requires quite a lot of mining-software customisation, as well as support from the
+
+f the currency.
+
+Although we made our proof of concept, using LTC and DOGE, we still plan to maxi-
+
+mise the number of coins t
+profits.
+
+Merge mining is optional, ar
+
+iS
+merge-mining for any reaso
+
+DYNAMIC PAYOUTS
+
+All payouts can be split to
+
+We allow our users to recei
+
+hat support this technique, and thus, use it to optimise our
+
+id can be turned off if the user prefers not to participate in
+n.
+
+ve their payouts in any supported currency, including fiat.
+any portfolio of different currencies, by percentages. If an
+
+owed payout is smaller than the minimal payout amount, it will be Kept on the pool’s
+balance, until the minimal threshold is reached.
+
+17
+6.5. Decentralised exchange
+
+—— Matching engine
+
+Due to the redundancy and speed-limitations imposed by using an on-chain matching engine, we
+
+have made the decision to use a cryptographically-provable, off-chain matching mechanism.
+
+own
+
+The logic b
+an order.
+
+used to log
+
+ince we are committed to product simplicity and the highest standards of honesty and transpar-
+ncy towards our clients, we would only allow limit orders, for the first version of HybridDEX.
+
+ehind it is simple: a user will Know in advance how much they are going to spend on
+
+into
+
+otwithstanding this, we would also be able to prove, cryptographically, that the User had placed
+this specific ord
+
+er, for a certain quantity of a certain asset, at a given time and a desired price, by
+
+the HybriDEX.
+
+signing this concatenated data with the user’s private key, which belongs to the wallet the user
+
+This is in line with our product definition as a HFT-native high liquidity exchange and does not
+e the provable integrity of the system, which was designed to provide an alternative
+to the artificial slippage that is so common on the market these-days.
+
+compromis
+
+In a later release, we will include market orders, as well as othe
+
+r advanced order types, but we
+
+would always allow the user to determine the maximal slippage he is willing to pay (in percent-
+ages, or by price), above which, the rest of the order will go to the order book as a regular-limit
+
+order.
+
+We will continue employing the great tools that cryptography gives us, to make the process as
+transparent and provably-fair as possible; while simultaneously pursuing the traditional methods
+of assuring traders’ financial security, such as regulation.
+
+—— Assets
+
+As a startin
+
+which are not E
+
+We use ad
+and will im
+
+For non-co
+
+ecen
+plem
+
+g poi
+
+hereum-native currently supported by n.exchange.
+
+ralised wallet to wallet exchange, for Ethereum-native assets (e
+ent atomic swaps and multi-chain transitions where possible.
+
+mpat
+
+ible chains, we use our HybriDEX solution which is described be
+
+—— Fees, Compliance
+
+@ n.exchange features a O maker fee from the very first satoshi
+@ Taker trades are subject to a flat 0.25% fee
+
+@ Institutional traders and other large-scale customers may negotiate an individual deal
+
+nt, we will support Ether, the top liquid Ether tokens, and all of the leading assets
+
+her and ERC20),
+
+ow.
+
+@ Once out of beta, the fee-schedule will become tier-based, where 0.25% is the maximal fee
+
+18
+—— Unique properties
+
+@ n.exchange allows a single sign-on, Using MEW, MetaMask or any of the leading hardware wallets (Trezor,
+Nano).
+
+No direct private-key authentication will be allowed, because we see it as a major security flaw.
+
+@ n.exchange HybriDEX aggregates all funds across the ecosystem under a single account, with a single,
+immediately tradable balance.
+
+@ n.exchange HybriDEX allows the user to trade any cryptocurrency pair (including non-smart chains) and
+withdraw it immediately, using the user’s tokens and ethers as collateral.
+
+An immediate withdrawal of the purchased tokens is allowed, given sufficient collateral is present.
+
+The position is then maintained via a 1x (or more) leveraged trade, with no extra costs, up to the first
+rollover (8 hours).
+
+@ n.exchange HybriDEX allows margin trading against real-life, existent assets in an auditable and prov-
+ably fair way.
+
+The providers of the margin could be users within our eco-system, or literally anyone who is willing to
+borrow money, for the purposes of margin-trading via a dedicated smart contract for smart chains, or by
+using our API for non-smart chains.
+
+@ Institutional trading features
+
+As part of our vision at n.exchange, we believe that the biggest potential lies in the future, and more
+specifically, in the institutional investment sphere.
+
+To benefit from this vision, we provide enterprise-grade reporting with easy integration for filing both
+corporate and personal tax returns; traditional API-bridge for the DEX, for companies that cannot use a
+dex, yet, because of their internal policies; insurance for funds in custody; and the possibility to receive
+notarised/apostilled documents confirming balances, deposits, withdrawals, trades, fees and any other
+ledger entries.
+
+In addition to the whole eco-system of n.exchange HybriDEX, another key feature is the possibility to
+source liquidity to other platforms. Industry giants or small companies in the beginning of your journey
+- we will gladly include your liquidity needs into our highly liquid, HFT-ready order book.
+
+6.6. Software licensing
+
+Copyright 2017, YOA LTD Licensed under the Apache License, Version 2.0 (the “License”); you may
+not use this file except in compliance with the License. You may obtain a copy of the License at
+http://www.apache.org/licenses/LICENSE-2.0
+
+You may freely use and alter our open source software free of charge as long as you:
+
+@ Open-source the altered code
+@ Include original license and notice in your open-source
+@ Include a credit with a link to n.exchange at the footer, about us and FAQ sections
+
+19
+7. Growth strategy
+
+7.1. Organic Growth Engine - Referrals, Affiliate Program
+
+We acknowledge the fact that cryptocurrency trading is a low margin business, and thus, in addi-
+tion to the means of generating organic traffic noted above, we focus heavily on organic growth
+and referrals.
+
+Because of this every user that trades on the platform is asked to spread the word directly at
+the order page, in order to gain ‘free’ coins directly and instantly, sent to his order’s withdrawal
+address.
+
+For more professional affiliates, we offer multiple referral codes, with customisation, and per-code
+segment analysis, as well as several other business intelligence (BI) tools that are offered in our
+simple yet powerful affiliates panel.
+
+7.2. Growth-Hacking
+
+We are constantly looking to innovate an achieve a competitive edge over our competition.
+
+AS part as those efforts we have enabled the trading of all competitor-exchange tokens, to attract
+original crow-sale participants as well as secondary market buyers, to our platform and ICO, which
+operates under similar, enhanced principles.
+
+We target high-quality exchange aggregators, specifically those capable of API integrations from
+which to source traffic. Aggregator operators, as well as their customers, find merit in our compet-
+itive rates, robust and comprehensive API and guaranteed, fixed price.
+
+Additionally, we support fiat purchasing of any coin that is supported by our platform, this helps
+us source free traffic from the communities of those coins.
+
+Whilst those are only two examples, we pride ourselves in being able to generate the industry's
+top ratio of traction-pre-buck, one that we plan to keep improving after completing this round of
+funding.
+
+7.3. White Labelling & Liquidity Sourcing
+
+At present, n.exchange already operates more than a dozen white-labels worldwide. To qualify as
+a white label a partner needs to demonstrate a certain competitive edge over the original product,
+as a means for a better adaptation/localisation to a geographic/demographic or any other market
+segment which n.exchange does not target directly.
+
+We are working on several verticals to increase our liquidity, as well as to obtain official regula-
+tory compliance and thus, to source our liquidity to blue-chip financial institutions interested in
+crypto-liquidity.
+
+20
+7.4. API integrations, labs
+
+n.exchange encourages the community to take part in developing integrations for our API. For
+this purpose we have open-sourced our frontend under the Apache 2.0 license, and implemented
+several example to possible use cases to our API, such as the unique crypstor.com trading chat-bot.
+
+Whilst our internet use cases on the API are quite straight forward, the only limit on what can be
+
+implemented, with your multi-purpose API, is your imagination.
+
+To provide an additional incentive for the community to participate in our development process,
+
+we would dedicate 15% of our development fund to the community:
+
+@ 10% via labs.n.exchange, a community-based accelerator
+
+@ 5% via hackathons, other events and grants
+
+7.5. Inbound Marketing
+
+In conjunction with our exchanges, liquidity services, mining pool and merchant solution, we offer
+a line of complementary services to bring added value to our customers and generate constant,
+
+recurring, high-quality and zero-cost inbound traffic.
+
+Those complementary services include, among others:
+
+@ A blog with selected high quality content
+
+@ An objective cryptocurrency capitalisation tracker, taking into consideration the bids on the
+various markets, rather than just the last price multiplied by supply (which is inflated)
+
+@ An integrated portfolio tracker that uses our API for liquidity, and is compatible with the
+rest of our components, but can be used either manually by entering balances or addresses
+to monitor, or via the API of the industry’s leading services
+
+7.6. Partnerships
+Companies are inclined to partner-up with n.exchange for several main reasons:
+
+@ Wide support and instant liquidity for popular assets that, at times are not traded
+elsewhere (Such as tokens of other exchanges)
+
+@ An easy gateway for purchasing any of the supported coins with fiat, via credit card
+
+@ Our robust API provides a comprehensive toolbox for creating payment services based
+on crypto
+
+The above incentives help us partner up with new leading coins every week, and to source free
+
+traffic from their social networks via partnership announcements, status shares, and retweets.
+
+21
+7.7. Paid Traffic
+
+Considering all of the above, and as with any product in the industry, more than 50% of our traffic
+is paid. However, the variety of our services and our enhanced purchasing power allows us to ne-
+gotiate custom deals with various industry-specific display networks, thus reducing the Customer
+Acquisition Cost (CAC) and increasing the margin between it and the Customer Lifetime Value (CLV).
+
+8. Team
+
+8.1. Team
+
+Oleg Belousov _ in
+
+Multidisciplinary coder. Aspiring innovator with a deep passion for open
+source and making the world better, step by step, every single day.
+
+Sartnas Azna in
+
+Backend developer and physicist. Animation fan, cryptocurrencies enthusi-
+ast and plays the saxophone.
+
+Karolis Ramanauskas _ in
+
+Full-stack developer. Entrepreneur by heart. Enjoys bringing products to life
+through code.
+
+Justas Viténas in
+
+User exeperience specialist with 7 years of experience. Worked with plenty
+of successful projects in the block-chain, crypto, startup, e-commerce indus-
+tries.
+
+Justas AZna in
+
+DevOps orchestrator. Shuffling Docker, Swarm & Kubernetes. Proponent for
+micro-component design and seamless scalability.
+
+22
+8.2. Advisors
+
+Paulina Baginska in
+Product management magician. Loves to build and improve product usabil-
+
+ity. Blockchain novice. Women in tech supporter and recreational weight
+lifter.
+
+Cyrus Ghazanfar in
+
+Learn how to teach, teach how to learn. Passionate about programming, as-
+tronomy and recently decentralised and distributed systems.
+
+Alejandro Ponce © in
+Seasoned global investor, founder of Nexus Group, TON Ventures, O1Labs
+
+and 01Ventures. In 2013 named one of the Top 50 most influential people
+in Latin American private equity by Private Equity World.
+
+Vincenzo Roberti _ in
+
+Serial entrepreneur, experienced in creating and building global technology
+businesses within Broadcasting, Media and Security industries.
+
+Charles Cunningham _ in
+
+Senior software engineer and IT architect with nearly 40 years of industry
+experience. Currently working with blockchain technology to develop high
+capacity rate solutions.
+
+Vit Jedli¢ka in
+
+President of the Free Republic of Liberland. Former Czech politician, publi-
+cist and activist.
+
+23

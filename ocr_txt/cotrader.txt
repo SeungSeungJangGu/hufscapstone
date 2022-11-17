@@ -1,0 +1,956 @@
+CoTrader Whitepaper
+
+Financial Freedom: Decentralizing the $85 trillion global
+investment funds industry with blockchain. First live platform to enable
+investors in non-custodial smart funds can maintain complete control
+over their assets, with transparent proof of fund performance onchain.
+
+Satoshi
+about.cotrader.com
+Email us at team at site
+
+First Major Revision: October 2017.
+Latest significant updates from March 2020, October 2019, August 2019.
+
+CoTrader COT Token Address: 0x5c872500c00565505f3624.ab435c222e558e9ff8
+
+Executive Summary
+
+WHY, WHAT, HOW: CoTrader’s goal is to provide users with financial freedom by optimizing
+investments in minimal time for everyone, with the world’s first live social investment fund
+marketplace on the blockchain.
+
+To offer on-chain fund managers the best investment options, CoTrader pulls together
+collaborative Decentralized Finance (DeFi) dapp such as Decentralized Exchanges (DEXs like
+Kybre, Bancor, and Uniswap), DEX aggregators like Totle, on-chain lending and borrowing DAI
+(eg Compound, MakerDAO), tokenized assets (synthetix) and more. We have already
+integrated Kyber and will be integrating Compound and others Q3 2019.
+
+OVERVIEW: CoTrader solves the complexity problem of investment management. It aims to
+become the world’s open protocol for investment funds marketplaces by democratizing the $85
+trillion global funds industry. For the first time in history, investors, now powered by CoTrader’s
+blockchain platform, can have their investments managed with complete transparency, control of
+assets, and proof of a fund’s past returns-on-investments (ROI). CoTrader’s MVP already
+supports cryptos, and is live on the Ethereum mainnet at mainnet.cotrader.com.
+
+CoTrader © White paper Version 1.111.0.0
+Copyright CoTrader © 2017-2018 - All Rights Reserved - page 1 of 27
+PROBLEM: Investing in cryptos and DeFi can be very complicated and time consuming. Most
+people lack the time and resources to do it properly, and instead may even lose money in bull
+markets on bad projects with emotional or hasty trading. Investors are overwhelmed by the
+1000s of cryptos and new growing projects. Even spending 24 hours per day wouldn't be
+enough time for seasoned investors with deep technical, investing and other skills to properly
+assess the entire crypto market.
+
+SOLUTION: SMART FUNDS: CoTrader solves the complexity problems of investing by finding
+the best performing fund managers to follow, with “Smart Funds”. These are blockchain smart
+contracts powered investment funds that provides proof of past ROI performance, and
+assurance that investors can always withdraw assets from any fund at any time. Anyone can
+join or create Smart Funds with the click of a button, and are geared for supporting the long tail
+of investment funds.
+
+INCENTIVES: Smart Funds fund managers trade fund assets on the blockchain. Successful
+fund managers receive a percentage of the profits they have made for their investors. Investors
+remain in control of their money and are able to deposit and withdraw from any fund at any time.
+Since investments and trades are done on-chain, smart contracts ensure each user that only
+they can pull out their funds and that fund managers can only take an agreed upon performance
+fee from the earnings.
+
+NETWORK EFFECTS: Both influencers and high performance fund managers are incentivized
+to do their best for their CoTraders (platform users who invest in fund managers), because top
+fund managers can multiply their gains enormously. For example, a top fund manager managing
+1000 times her own money, and charging a 10% performance fee from what she earns her
+cotrader, would multiply her own gains by 100x (10% of 1000x). If the same fund manager
+would earn 2x in a good month on their own, with CoTrader, she would earn 200x (100x times
+the 2x she would have made). CoTraders will likely only use the best fund managers per sector.
+
+Fund managers will be able to trade using CoTrader’s Super-DEX hybrid infrastructure, which
+pools together both centralized exchanges and multiple DEXs including Bancor, Kyber, Ox,
+CoTrader’s own DEX, and other future DEXs for maximum liquidity and power. Other platforms
+can utilize and extend CoTrader’s infrastructure.
+
+Contests are an additional engaging way to onboard users, with token prizes. An MVP to check
+user engagement is at contests.cotrader.com. We are now working with partners to turn such
+crowd wisdom into investable funds, even via FIAT. The main focus however, is to move
+contests on-chain at our smart funds here mainnet.cotrader.com which will automatically award
+tokens to winners. This functions as a user onboarding and growth strategy.
+
+TOKEN ECONOMICS: Tokens can be staked on smart contract for guaranteed COT bonuses,
+depending on locking period. To keep this available, the platform revenues are automatically
+
+CoTrader © White paper Version 1.111.0.0
+Copyright CoTrader © 2017-2018 - All Rights Reserved - page 2 of 27
+used to buy back COT tokens to place back into the staking contract reserves. Tokens may be
+used to automatically stake 5-10% of each fund’s value to redirect and earn platform fees.
+
+ROADMAP FEATURES
+
+All Assets
+
+The CoTrader protocol can support all tradable assets, starting with cryptos, in major centralized
+exchanges, from Binance to Ameritrade, with a safe decentralized access point, i.e., a smart
+escrow exchange point. The smart escrow would only release funds to a broker on centralized
+exchanges after the broker sends the cryptos to the buyer. This smart escrow can also be used
+to support any tradable non-tokenized asset such as stocks, options, and other derivatives. In
+effect, CoTrader can tokenize entire exchanges in this way.
+
+In the future as more assets are tokenized by other crypto projects, these tokenized assets
+could be tradable on CoTrader. This includes tokenized stocks, financial instruments, real-estate
+and more.
+
+Some projects are already tokenizing other cryptos like Bitcoin on, for example, Ethereum.
+Unlike off-chain assets such as dollars in Tether, it’s easier to prove that the correct number of
+Bitcoins are bought and sold each and every Ethereum trade. Meanwhile, cross-blockchain
+atomic swaps technology, developed by other projects, is another avenue for broad asset
+support.
+
+IDOs
+
+CoTrader is set to be the world’s first “IDO futures” marketplace, that doesn’t require trust in
+lOUs, driven by smart-contracts. Fund managers will be empowered to enter IDOs as part of
+their portfolios to take advantage of early group-buy discounts that many IDOs offer. This is
+possible because CoTrader Smart Funds that are, by smart-contract, to receive future unlocked
+IDO tokens are themselves tradable. CoTrader’s own DEX supports trading these Smart Fund
+shares since each fund has its own tradable tokens. This means that if a fund manager takes
+investors into an IDO position and some investors want to liquidate their shares that include the
+future IDO tokens, they can trade away their token shares within the fund.
+
+Privacy
+
+CoTrader’s patent-pending privacy preserving smart funds algorithms can hide trades and fund
+managers’ trading strategies while still publicly proving the returns of their anonymous funds on
+the blockchain. CoTrader’s protocol is agnostic about the underlying mechanism used such as
+various zero-knowledge-proofs (ZKP) as long as these support privacy-preserving
+smart-contracts.
+
+OPPORTUNITY: CoTrader can become the world’s largest investment funds and trading
+marketplace. CoTrader token voters can set and adjust platform fees to gain e.g. 20% from fund
+managers earnings, and small fees such as 0.1% per trade for some services. To get some idea
+
+CoTrader © White paper Version 1.111.0.0
+Copyright CoTrader © 2017-2018 - All Rights Reserved - page 3 of 27
+of the market size for relevant industries, consider that global fund management is an $85 trillion
+industry, and, by some estimates, total global asset trading amount to more than a quadrillion
+dollars per year. Crypto trading alone amounts to over $10 billion dollars per day. These
+industries are growing rapidly.
+
+MISSION: Through the CoTrader platform we are democratizing funds and reinventing how they
+can be used for a digital world. Our goal is to help people maximize returns in minimal time and
+realize greater financial freedom together. We do this through connecting investors from both
+sides of the expertise spectrum and providing them tools to quickly and easily make powerful
+financial decisions to better their lives.
+
+Disclaimer - This project is a work in progress, and is subject to significant change. With that
+said, any changes are meant to improve the project and/or prices for buyers. All figures are
+brought as examples and are used for for explanation purposes only. While we make every
+effort to ensure that all information in this whitepaper is correct, the information herein may be
+out of date, incomplete, inconsistent, and/or inaccurate, and in no way implies a contractual
+relationship. The material is not professional, financial or investment advice.
+
+CoTrader © White paper Version 1.111.0.0
+Copyright CoTrader © 2017-2018 - All Rights Reserved - page 4 of 27
+Table of Contents
+
+Executive Summary
+Contests
+
+Smart Funds
+Token Usage
+Fund Creation
+Performance Fees
+Investing
+Fund Managers
+CoTrader SuperDExX Infrastructure
+Tokenized Assets
+Calculating Fund Values
+Protecting Smart Fund Investors
+IDO Funds
+Smart Shares DEX
+
+Cryptographic Trader Privacy
+Privacy Preserving Smart Contracts Protocol
+
+CoTrader Smart Escrow Exchanges
+Tokenize All Assets on Any Exchange
+Trading Tools Marketplace
+
+Product is Live in Beta
+
+Competition
+
+Roadmap
+
+Team
+
+Token Distribution
+
+Projected Use of Token Sales
+
+Product Summary
+
+=
+
+- COCO OO WAN NNDD OD
+
+ow wo NY =| @=@ @& &@& & 2 mw om =a 3
+=- oS O&O NN ODO We NY NY DY |= FF =
+
+CoTrader © White paper Version 1.111.0.0
+Copyright CoTrader © 2017-2018 - All Rights Reserved - page 5 of 27
+Contests
+
+Before delving into the core of the CoTrader blockchain platform, which center around our Smart
+Funds, we make a brief mention of our new contests. CoTrader Contests are a gamified way to
+onboard new users, with token prizes at contests.cotrader.com. CoTrader is working with
+potential partners (TBD) to turns this crowd wisdom into investable funds, even coming from
+FIAT.
+
+The main focus however, is to move contests on-chain to use our Smart Funds, live on
+Ethereum at mainnet.cotrader.com.
+
+Smart Funds
+
+Smart funds are live on mainnet.cotrader.com, and make up the core of the CoTrader platform.
+Asmart fund is an Ethereum smart contract that has a fund manager, investors, and shares that
+can be traded. Each investor that invests in the fund is awarded a certain number of shares
+representing his total ownership of the fund. The fund manager is able to trade the assets
+invested into the fund with the aim of making himself and his investors a profit. The fund
+manager receives a performance fee for any profits he makes his investors.
+
+Investors remain in control of their investments and have the ability to deposit and withdraw
+their money at will.
+
+Smart funds implement the ERC20 token interface which means smart fund shares can be
+traded on exchanges in the same way as any other ERC20 token.
+
+One can invest in a smart fund by depositing CoTrader (COT) token into the fund.
+
+Token Usage
+
+Tokens can be staked on smart contract for guaranteed COT bonuses, depending on locking
+period. To keep this available, the platform revenues are automatically used to buy back COT
+tokens to place back into the staking contract reserves. Tokens may be used to automatically
+stake 5-10% of each fund’s value to redirect and earn platform fees.
+
+CoTrader © White paper Version 1.111.0.0
+Copyright CoTrader © 2017-2018 - All Rights Reserved - page 6 of 27
+Fund Creation
+
+Anyone can create a smart fund on the CoTrader platform and deposit tokens into the fund. The
+creator can choose a name for the fund as well as set his performance fee which is the
+percentage of profits he will earn, typically around 20%.
+
+Performance Fees
+
+Instead of paying performance fees from CoTraders, performance fees will be paid from the
+protocol’s emission revenue in the selling of new tokens in the DAIDO3 model explained below.
+
+Investing
+
+Each smart fund consists of shares representing the percentage ownership of each member of
+the fund. When an investor invests in a smart fund, new shares are minted to represent his
+holding of the fund based on the total amount he invested and the current value of the fund’s
+holdings.
+
+When an investor withdraws from the fund, shares are burnt accordingly decreasing the total
+number of shares.
+
+Mathematically, upon joining a fund with a total of Scurrent shares and a value of Vcurrent COT
+(CoTrader Token), a user that deposits Vdeposit COT into the fund will be awarded Sdeposit
+shares:
+
+Sdeposit / Scurrent = Udeposit / Veurrent
+Sdeposit = Udeposit * Scurrent/Ucurrent
+
+For example, if an investor deposits 100 COT into a fund that has a value of 900 COT anda
+total of 1800 shares. The new investor will receive the following number of shares:
+
+100 « 1800/900 = 200 shares
+
+The new fund value is now 900 + 100 = 1000 COT and the fund now has a total of
+1800 + 200 = 2000 shares. So the new investor owns 200/2000 = 10% of the fund and the old
+
+investors own 1800/2000 = 90% of the fund. The value of the new investor’s shares is
+10% « 1000 = 100 COT and the value of the original investors’ shares is
+90% *« 1000 = 900 COT, as expected.
+
+CoTrader © White paper Version 1.111.0.0
+Copyright CoTrader © 2017-2018 - All Rights Reserved - page 7 of 27
+When an investor withdraws from a fund, he receives his portion of the fund minus the
+performance fee for any profit the fund manager has made for him. His shares are destroyed,
+decreasing the total number of shares in the fund.
+
+For example, if an investor that owns 200 shares of a total of 2000 shares in the fund, and the
+fund has a value of 1000 COT, then 1000 « 200/2000 = 100 COT worth of tokens will be
+withdrawn from the fund and sent to the investor’s address (minus the fund manager
+performance fee which will be discussed further below). The investors shares will be burnt so
+the new fund will have a new total of 1800 shares.
+
+Since Smart Funds are also ERC20 tokens they can be transferred between accounts like any
+other cryptos. When shares are transferred in this way, no new shares are issued, nor are any
+burnt.
+
+Fund Managers
+
+Anyone is able to become a fund manager using the CoTrader registry smart contract. The only
+fee to do so is a minimal one time gas fee for the transaction (paid to the Ethereum miners).
+
+For example, if a fund makes a profit of 2000 COT for his investors and has set a 20%
+performance fee, the performance fee will be 2000 * 20% = 400 COT. Of this 20% fee, 16% will
+go to the fund manager and 4% to the CoTrader platform. So the fund manager will earn 320
+COT and CoTrader will receive 80 COT.
+
+A fund manager typically starts trading with his own funds to build up ROI history. It may also
+please investors to see that he has even more skin in the game, beyond any valuable reputation
+and ROI history his fund may have built up over a long period of time.
+
+CoTrader SuperDEX Infrastructure
+
+Fund managers can trade assets on decentralized exchanges (DEXs). CoTrader provides a
+SuperDEX infrastructure that pools other DEXs together for maximum the liquidity and power.
+The initial integrations into the CoTrader platform will use Bancor', Kyber? and 0x? exchanges.
+Further DEXs will be added over time as well as a native CoTrader DEX.
+
+This will be done on the fund manager dashboard which will also provide tooling and charts to
+make the best decisions for the fund.
+
+/ Bancor: https://about.bancor.network/static/bancor_protocol_whitepaper_en.pdf
+? Kyber: https://kr.kyber.network/assets/KyberNetworkWhitepaper.pdf
+Ox protocol: https://Oxproject.com/pdfs/0x_white_paper.pdf
+
+3
+
+CoTrader © White paper Version 1.111.0.0
+Copyright CoTrader © 2017-2018 - All Rights Reserved - page 8 of 27
+Tokenized Assets
+
+Initially fund managers will only be able to trade Ethereum and ERC20 tokens on the platform.
+In the future as more assets are tokenized, fund managers will also be able to include these
+assets in their portfolios. This will include other cryptocurrencies such as Bitcoin as well as other
+assets such as the US dollar, gold, oil, S&P 500 stocks and even tokenized real-estate and
+novel asset classes. Many of these items will rely on other projects successfully tokenizing real
+world assets, creating trusted and liquid tokens for these assets on the blockchain.
+
+Calculating Fund Values
+
+Investors will deposit into funds using the CoTrader token (COT). To calculate the number of
+shares the new investor will receive we need to know the value of the Smart Fund at the time of
+the investment. This is trivial when the fund only contains COT in it, but becomes more complex
+when the fund is holding multiple different tokens which will usually be the case.
+
+Our initial integrations with decentralized exchanges are with Bancor and Kyber and both offer
+the ability to request the price of a token on chain. Connecting to the Bancor and Kyber smart
+contracts, the Smart Fund can automatically calculate its value at the time of deposit.
+
+Protecting Smart Fund Investors
+
+One of the fundamental selling points of blockchain technology is its decentralized, peer-to-peer
+doesn’t require trust. Users are able to transfer crypto assets to a friend without a middleman or
+having to trust anyone along the way.
+
+Using decentralized exchanges provides a significant security advantage in that users aren’t
+required to entrust their funds with a third party exchange that may be dishonest or susceptible
+to hacking.
+
+CoTrader Smart Funds offer the same advantages as cryptocurrencies and decentralized
+exchanges, putting users in full control of their assets. Users have the ability to withdraw their
+portions of a smart fund at any time with no one else having the ability to do so.
+
+CoTrader fund managers can only trade on decentralized exchanges where the same prices are
+available to everyone and is unable to make a direct trade with a personal address. The
+decentralized exchanges currently integrated into the CoTrader platform are Bancor and Kyber
+that fulfil the above criteria and the CoTrader team will carefully integrate decentralized
+exchanges in the future to ensure full security for our users.
+
+CoTrader © White paper Version 1.111.0.0
+Copyright CoTrader © 2017-2018 - All Rights Reserved - page 9 of 27
+Fund managers are also financially incentivized to perform well for their investors. A fund with a
+positive ROI will attract many investors to invest and earn the fund manager a big profit if he
+continues to trade profitably. It is in the fund manager’s best interest for the fund to continue
+performing well.
+
+A fund manager will also have the option to verify their account thereby also putting their
+reputation on the line.
+
+As we integrate new decentralized exchanges into the platform, care will be taken to make sure
+that only trusted exchanges will be added as trading options. CoTrader may also make use of
+oracles that hold a list of token prices to make sure no dishonest trades are happening. As we
+add more exchanges to the platform, an investor will always be given a 30 day period to
+withdraw his money from smart funds before the fund manager can make any trades with this
+newly added exchange. The investor may choose to do this if unhappy with a newly added
+exchange. The 30 day grace period will be built into the smart fund contract code so an investor
+is able to see the exact terms of any investment he makes.
+
+IDO Funds
+
+IDOs are Initial DEX Offerings, similar to IEOs, but offered on DEXs. An IDO fund is a special
+type of fund that may only contain IDO tokens. Investors that pool their funds together can
+receive group discounts for IDOs and the purpose of an IDO fund is to do exactly that. IDOs
+offer tremendous upside with investors sometimes seeing 100x+ returns in a short period of
+time, but come with commensurate risk. Receiving a large discount as a pool investor heavily
+increases your potential for a large profit.
+
+IDO funds have a single period to buy in to the fund after which no new shares will be issued.
+Only once the fund has received its tokens and from the IDO and these tokens have been
+unlocked, can investors withdraw from the fund.
+
+The added benefit of IDO funds is that since a fund is also an ERC20 token, fund share tokens
+can be traded even before the IDO has finished, or before the tokens have been unlocked. This
+creates liquidity for unavailable or locked tokens. We call this IDO and presale futures trading.
+
+Since CoTrader smart funds mint their own shares tokens, even IDO tokens that have not yet
+been sent from the IDO to the smart fund (or have been sent, but are still locked) can be
+effectively traded via the shares’ tokens. This may be the world’s first platform to enable trading
+future IDO tokens via smart contracts.
+
+Investors can pre-whitelist their accounts so they need not be KYC’d for each new IDO
+investment the fund manager makes.
+
+CoTrader © White paper Version 1.111.0.0
+Copyright CoTrader © 2017-2018 - All Rights Reserved - page 10 of 27
+Smart Shares DEX
+
+As more features are added to Smart Funds and this financial tool becomes more complex and
+capable of a wider range of use cases, some funds may be more difficult to invest in than
+others. This can be due to the nature of IDO funds, minimum deposits, deposit cap, etc. When
+these types of features are introduced it may not be possible for some investors to directly
+deposit into specific funds. To solve this problem we will be introducing a smart shares DEX.
+Any smart share can be traded on this DEX against COT. This DEX will be built into CoTrader’s
+Smart Fund platform, giving users insights into all available data for the funds they are
+interested in purchasing shares in.
+
+Cryptographic Trader Privacy
+
+Last but not least, the CoTrader platform will provide trade secrecy for fund managers. Fund
+managers can hide their strategies, at least in the short term, and choose to display them later.
+If their strategies were public at all times, they may have trouble commanding significant
+success-fees for public information. Any top traders on other platforms not offering hidden trade
+strategies would be incentivized to move to CoTrader where they can multiply their ROI.
+
+Privacy Preserving Smart Contracts Protocol
+
+CoTrader is agnostic about the underlying privacy-preserving smart contract mechanisms such
+as zero-knowledge-proofs (ZKP). The public ROI calculation can be done and proven to be
+correct without exposing the private inputs to the calculation function - namely, the secret trades.
+More about this sensitive IP will be released in various yellow-paper addendums and code
+releases at a later stage.
+
+CoTrader Smart Escrow Exchanges
+
+This provides the liquidity and variety of any centralized exchange with the safety and
+transparency of decentralized exchanges. Traders will deposit funds for trading into a
+smart-escrow. While the money is held by this smart contract, traders will be able to make
+instant trades on any supported centralized exchange, from Binance to Ameritrade. When the
+smart-escrow’s oracle detects that the purchased assets have been sent to the user, it releases
+the escrow funds to the party doing the buy for them, which we might call the asset owner.
+
+To prevent abuse or “race conditions” where for example the trader withdraws while the owner is
+sending the assets from the exchange, there would be a series of locks. The owner would lock
+the smart escrow funds from being withdrawn while sending pulling them off of the exchange, to
+the smart escrow, where it'd then get forwarded to the trader. An oracle would read an open
+
+CoTrader © White paper Version 1.111.0.0
+Copyright CoTrader © 2017-2018 - All Rights Reserved - page 11 of 27
+exchange read API and/or the blockchain and detect that this transfer is in progress, and would
+disallow the trader from withdrawing the funds. The trader can request to further trade to other
+assets on the exchange, before requesting to withdraw any assets. In the case that both the
+trader and owner submit to the same block, the default can be that trader’s operation is acted
+upon.
+
+Tokenize All Assets on Any Exchange
+
+As mentioned, when assets such as real estate, cars, stocks, etc, become tokenized, of course
+any DEX can treat the tokens like any crypto. CoTrader, however, can even support non
+tokenized assets. By using the smart-escrow exchange method in the section above, CoTrader
+can support non crypto assets just the same. That is, a master account can hold stocks,
+options, or any representation of tradable items, while an onchain smart escrow smart contract
+can record investors operations and owed assets. In this way, CoTrader can offer a large
+measure of security and proof of performance in this space.
+
+Tokenization typically involves a broken buying and selling an individual underlying asset.
+CoTrader’s Master Account and Smart Escrow mechanism does this for all tradable assets
+available on any trading platform, and therefore achieves automatic tokenization for entire
+exchanges - entire classes of assets - such as the stock and derivatives market enbulk.
+
+Trading Tools Marketplace
+
+Traders often search for convenient technical tools to research and be alerted of changes
+across many exchanges and markets. CoTrader will provide a platform and marketplace to
+develop, buy and sell such tools. Paying for these tools in COT will reduce platform fees.
+
+At first the CoTrader team will provide basic tools. In the future, an open marketplace will be
+developed to support 3rd party trading tool plugins and APIs that can interface with the
+CoTrader platform. Some planned tools include trade triggers from simple price points to alerts
+for combinations of more sophisticated indicators such as MACD divergence, Fibonacci
+retracement, candlestick patterns, Bollinger Bands, advanced signal tools, and beyond.
+
+Product is Live in Beta
+
+The CoTrader beta is live on mainnet at https://mainnet.cotrader.com and an older version is on
+the Ropsten testnet at testnet.cotrader.com. The platform allows users to create smart funds
+and invest in them using Ropsten test ether. The CoTrader team continues to make
+improvements on the product for its production launch planned for August 2018. The smart
+contracts will undergo heavy auditing before then as well as fixing any known bugs.
+
+CoTrader © White paper Version 1.111.0.0
+Copyright CoTrader © 2017-2018 - All Rights Reserved - page 12 of 27
+Competition
+
+There are existing platforms that offer copy trading and fund management in a centralized
+manner. CoTrader’s decentralized version isn’t a competitor, but, rather, addresses a different
+set of users, markets, assets, and regulatory environments. Centralized systems can have
+upsides, but here are some of the limitations:
+
+1. Regulations dictate who is allowed to use the system (must be rich and licensed)
+2. DeFi dapp integration isn’t possible without oracles
+
+3. Users are not in direct control of their money
+
+4. There’s no proof of performance or total actual fees
+
+eToro is a great and profitable company with millions users that pioneered copy trading. It was
+originally a place to copy trade stock investors and has done very well expanding to include
+cryptocurrencies. In March 2018, eToro closed a funding round of $100 million which shows the
+vast opportunities available in the social copy trading and fund management space at large.
+
+Covesting and other typical centralized copy trading platforms would require users to keep all of
+their copy trading funds, and API keys, with them or with multiple centralized exchanges, and
+keep (all) these funds there forever, as long as users wish to continue copy trading’. This is
+dangerous because centralized exchanges themselves aren't safe, especially for the long term.
+
+All these centralized platforms also do not offer proof on the public verifiable blockchain, nor the
+fund managers’ ROI performance.
+
+MelonPort is a decentralized project that aims to offer smart fund management on the
+blockchain. Development for this project has stalled and there has only been integration with
+one low volume decentralized exchange to date® and was not live on the mainnet when
+CoTrader went live.
+
+Iconomi offers index funds for crypto assets. These funds are not actively managed and the
+platform has a high degree of centralization®.
+
+Coinbase is also announcing its own index fund that will only contain the four currencies that
+can be currently traded on their platform: Bitcoin, Ethereum, Bitcoin Cash, and Litecoin.
+
+4
+5
+
+https://covesting.io/Covesting_ White _Paper.pdf
+https://bravenewcoin.com/assets/Whitepapers/melonprotocol.pdf
+
+§ https://coss.io/documents/white-papers/iconomi.pdf
+
+CoTrader © White paper Version 1.111.0.0
+Copyright CoTrader © 2017-2018 - All Rights Reserved - page 13 of 27
+Prism is based on Shapeshift and the community discussion laments its centralized nature’.
+
+Blockport would need to prove to be fully decentralized and still capable of making trades’.
+
+Other shortcomings and questions are represented in the table below.
+
+CoTrader stands out from the competition as being the only fully decentralized fund
+management platform, putting investors in complete control of their funds.
+
+The below table summarizes some of these distinguishing factors:
+
+7 https://decentralize.today/where-the-hell-is-my-decentralized-exchange-adafd87dc439
+§ https://www.blockport.nl/wp-content/uploads/2017/11/Blockport-Whitepaper-V1.0.3.pdf
+
+CoTrader © White paper Version 1.111.0.0
+Copyright CoTrader © 2017-2018 - All Rights Reserved - page 14 of 27
+CoTrader
+
+Has Working Product | Y
+
+<
+
+Supports Multiple
+Exchanges
+
+Copy-Trading /
+Fund-Mgmt
+
+Iconomi
+
+~<
+
+Covesting | Melonport | Prism | Blockport
+
+~<
+z
+
+Co-Trading
+(simultaneous)
+
+Users control assets
+
+Only user has keys
+Proof of ROI
+
+Fully Decentralized
+Option
+
+Can work without
+Oracles
+
+Zi iZij2|2Z
+<|~<|<|<
+
+Privacy
+Crypto Index Funds
+
+IDOs
+
+Y
+Y
+Y
+Y
+Y
+Y
+
+<
+
+Low Fees
+
+a | :
+ey .
+
+Zz
+Zz
+
+N/A N/A N/A
+
+Another major advantage of CoTrader smart funds is that they enable investors to co-trade
+rather than copy trade. The fundamental difference is that when copy trading the copiers always
+lag behind the lead trader, always receiving a worse price than the copied trader. When
+co-trading, all tokens are traded by a single entity giving the same price to all shareholders of
+the smart fund. CoTrader smart funds also enable IDO funds trading without requiring trust.
+
+CoTrader © White paper Version 1.111.0.0
+Copyright CoTrader © 2017-2018 - All Rights Reserved - page 15 of 27
+Roadmap
+
+The platform is live on mainnet (cotrader.com)
+We keep updating the roadmap in a Medium article found via this tweet:
+
+https://twitter.com/cotrader_com/status/1114781062356279297?s=20
+
+Team
+
+Satoshi
+
+See the cotrader.com website for detailed information.
+CoTrader Holding LLC is a Nevis Corporation.
+
+CoTrader © White paper Version 1.111.0.0
+Copyright CoTrader © 2017-2018 - All Rights Reserved - page 16 of 27
+CoTrader Business Model & Charts
+
+CoTrader aims to become the world’s largest investment funds and trading marketplace without
+
+custodianship, neither on the part of the CoTrader platform, nor traders (fund managers).
+
+CoTrader typically earns 4% of investment gains, or 20% from every 20% of traders’ typical
+performance fee (20%), and small fees such as 0.1% per trades on the CoTrader DEX and
+
+Smart Escrow Exchange for all assets. Tokens are bought back with profits. Tokens are needed
+to hide trading strategies. The current MVP deals only with this first category of Crypto Fund
+Management. CoTrader plans to enter the other markets (global funds management, and equity
+
+and derivatives trading) as seen further below.
+
+The total revenue that we are projecting for the coming four years are represented cumulatively
+
+on the following graph:
+
+All Products Revenues
+
+@ Global Derivatives Trading @ Global Equity Trading @ Global Fund Management
+@ Crypto Trading using Smart Escrow @ Crypto Fund Management
+
+$3B
+$ 2,310,912,704
+$2B
+$ A
+$1B
+
+$ 454,283,520,
+
+$ 868,000 $5,475,333 $39,741,867
+
+SOB
+2020 2021 2022 2023 2024 2025 2026
+
+Each of the five different investment offerings are explained in further detail below.
+
+CoTrader © White paper Version 1.111.0.0
+Copyright CoTrader © 2017-2018 - All Rights Reserved - page 17 of 27
+In order to reach these revenue numbers, we are also planning to spend significant resources
+on marketing and acquiring cotraders and traders. Our acquisition projections are based on an
+average spend of $75 per cotrader and $500 per trader. Potential trader talent could be lured to
+try their skill at trading for special rewards such as contests and specials.
+
+We expect to have large user growth. Our primary focus is on targeting good traders, who will
+help encourage more people to become cotraders. Each trader is intrinsically encouraged to
+add cotraders to their fund because the more money that is in their fund means more money for
+the traders to make through successful trades.
+
+The growth of traders and cotraders can be seen in the following graph where cotrader growth
+is in red and trader growth underneath in blue:
+
+User Growth
+
+@ Cotraders ™ Traders
+4,000,000
+
+3,000,000
+1,954,201
+
+2,000,000
+
+1,000,000
+
+8,680 43,803 238,451
+434 2,190 11,923,
+
+0
+2020 2022 2024 2026
+
+ABD O70 184|873
+
+CoTrader © White paper Version 1.111.0.0
+Copyright CoTrader © 2017-2018 - All Rights Reserved - page 18 of 27
+This will lead to steep growth in revenues and net income, which can be seen in the following
+graph showing our financial projections:
+
+Financial Projections
+
+1.25BN
+1.00BN
+0.75BN
+0.50BN
+
+0.25BN
+
+0.00BN
+
+2021 2022 2023 2024 2025 2026
+== Total Cost == TotalRevenue = Net Profit
+
+The Total revenue is a combination of our five investment options: Crypto Fund Management,
+Crypto Trading, Global Fund Management, Global Equity Trading, and Global Derivatives
+Trading. These investment options use CoTrader’s unique Smart Funds and Smart Escrow
+offerings. Smart Funds allow traders to trade cotraders’ funds on a decentralized exchange.
+Smart Escrow gives traders the advantages that come with a centralized exchange such as
+liquidity and variety with the safety and transparency of a decentralized exchange.
+
+CoTrader © White paper Version 1.111.0.0
+Copyright CoTrader © 2017-2018 - All Rights Reserved - page 19 of 27
+The breakdown in revenues from all of CoTrader’s investment products are as follows:
+Crypto Fund Management (support through CoTrader Smart Funds): $100 billion market
+
+CoTrader may keep 1% management fees. Every $100M managed means $1M/year in
+revenue, which would be used to buy COT tokens as a holding strategy.
+
+CoTrader may also keep 4% performance fee for managing altcoin funds.
+Every 1% market capture yields $419M/year revenue.
+
+Crypto Fund Management
+
+$400M
+$ 335,544,320
+$300M
+$200M
+$ 125,829,120
+$100M
+$ 39,321,600
+$300,000 $640,000 $4,096,000 $13,107,200 A
+SoM
+2020 2021 2022 2023 2024 2025 2026
+
+The above projections assume the crypto market will grow 40%/year to $4.2T (16x) by 2025 (7
+years)
+
+CoTrader © White paper Version 1.111.0.0
+Copyright CoTrader © 2017-2018 - All Rights Reserved - page 20 of 27
+Crypto Trading (via CoTrader Smart Escrow): $10 billion/day, 3.65T/year
+CoTrader keeps 0.1% per trade.
+Every 0.1% market capture yields $612M/year revenue.
+
+Crypto Trading using Smart Escrow
+
+$800M
+$ 612,368,384
+$600M
+$400M
+$ 229,638144
+$200M
+$71,761,920
+$182,500 $1,168,000 $7,475,200 $23,920,640
+SoM
+2020 2021 2022 2023 2024 2025 2026
+
+The above projections assumes the crypto market will grow 40%/year to $4.2T (16x) by 2025 (7
+years), with trading increasing proportionately.
+
+CoTrader © White paper Version 1.111.0.0
+Copyright CoTrader © 2017-2018 - All Rights Reserved - page 21 of 27
+Global Fund Management (via CoTrader Smart Escrow Exchange): $85 trillion market:
+CoTrader may keep 4% performance fee, or 0.2% for every 5% of growth.
+Every 0.1% market capture is $425M/year.
+
+Global Fund Management
+$500M
+$ 425,000,000
+
+$400M
+
+$300M $-255,000,000
+
+$200M
+$ 127,500,000
+
+$100M
+$212,500 $1,416,667 $11,333,333
+
+SoM
+2020 2021 2022 2023 2024 2025 2026
+
+$ 34,000,000.
+
+CoTrader © White paper Version 1.111.0.0
+Copyright CoTrader © 2017-2018 - All Rights Reserved - page 22 of 27
+Global Equity Trading (via CoTrader Smart Escrow): $100T/year market:
+CoTrader keeps 0.05% per trade.
+Every 0.1% market capture yields $500M/year revenue.
+
+W@ Global Equity Trading
+$800M
+
+600M
+° $ 500,000,000
+
+$400M
+
+$ 300,000,000
+
+$200M $ 150,000,000
+
+$ 40,000,000
+
+$100,000 $1,666,667 $13,333,333
+
+SOM
+2020 2021 2022 2023 2024 2025 2026
+
+CoTrader © White paper Version 1.111.0.0
+Copyright CoTrader © 2017-2018 - All Rights Reserved - page 23 of 27
+Global Derivatives Trading (via CoTrader Smart Escrow): ~$14.6 quadrillion/year market:
+CoTrader keeps 0.003% per trade.
+Every 0.001% market capture yields $1.46B/year revenue.
+
+Global Derivatives Trading
+
+$500M
+$400M
+
+$300M
+
+g $ 175,200,000
+200M
+
+$ 65,700,000
+
+$100M
+$73,000 $584,000
+
+SOM
+2020 2021 2022 2023 2024 2025 2026
+
+Disclaimer - This project is a work in progress, and is subject to significant change. With that
+said, any changes are meant to improve the project and/or prices for buyers. All figures are
+brought as examples and are used for for explanation purposes only. While we make every
+
+effort to ensure that all information in this whitepaper is correct, the information herein may be
+out of date, incomplete, inconsistent, and/or inaccurate, and in no way implies a contractual
+relationship. The material is not professional, financial or investment advice.
+
+CoTrader © White paper Version 1.111.0.0
+Copyright CoTrader © 2017-2018 - All Rights Reserved - page 24 of 27
+Token Distribution
+
+20B (decreased from 100B)
+
+Distribute 70% tokens circulating supply
+0.000001 ETH per COT
+
+Restricted: USA, N Korea, Iran
+
+Advisors
+2.0%
+
+Team
+8.0%
+Marketing
+
+Operations
+
+TGE + Airdrop
+
+5.0% 65.0%
+
+CoTrader © White paper Version 1.111.0.0
+Copyright CoTrader © 2017-2018 - All Rights Reserved - page 25 of 27
+Projected Use of Token Sales
+
+Join Venture
+10.0%
+
+Legal & Operations
+10.0%
+
+Development
+50.0%
+
+Marketing
+30.0%
+
+CoTrader © White paper Version 1.111.0.0
+Copyright CoTrader © 2017-2018 - All Rights Reserved - page 26 of 27
+Product Summary
+
+There have been many 100x returns in cryptos, IDOs and other investments. CoTrader is like
+the Uber of crypto hedge funds, enabling anyone to create or join an investment fund onchain.
+
+Top investors are enjoying phenomenal gains. Whether the market is going up or down, they
+outperform most people, who don’t have the time and resources to achieve these results with
+ease. There are 1000s of complicated cryptos and IDOs, and most people don’t know what to
+invest in, and when.
+
+CoTrader solves these common and critical problems to disrupt the $85 trillion global investment
+funds industry; CoTrader supports not just cryptos, but also IDOs, stocks, shorts, derivatives
+and more, as it tokenizes entire exchanges.
+
+CoTrader provides proof of investment fund performance and gives CoTraders control to pull out
+their assets from any fund, while still enabling fund managers to cryptographically hide their
+valuable trading strategies.
+
+All users automatically build up a performance history by simply trading through the platform.
+Top performing fund managers have tremendous incentive to use the platform and compete to
+earn their CoTraders the most money, because this multiplies their own earnings enormously.
+Influencers have a chance to do particularly well since they have many followers who they can
+turn into CoTraders. The best fund managers will survive and thrive in this new and transparent
+free market.
+
+CoTrader is the investments platform of the future, live now on the mainnet. Early adopters have
+a chance to top the charts. Start building up your performance history today.
+
+Whitelist now at cotrader.com
+Test the platform at testnet.cotrader.com
+
+Use the platform at mainnet.cotrader.com
+
+Email us at team at sitename
+
+CoTrader © White paper Version 1.111.0.0
+Copyright CoTrader © 2017-2018 - All Rights Reserved - page 27 of 27

@@ -1,0 +1,1062 @@
+November 27, 2020
+
+AIOZ Ple Ltd
+
+JMNOZ
+
+Whitepaper v0.8
+
+Decentralized Video Streaming
+
+Network
+
+https://aioz.network/
+
+Copyright © 2020 AIOZ, Inc. and Subsidiaries
+
+This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 license (CC BY-SA 3.0).
+All product names, logos, and brands used or cited in this document are property of their respective owners.
+All company, product, and service names used herein are for identification purposes only.
+
+Use of these names, logos, and brands does not imply endorsement.
+
+”)
+|
+=<
+Lil
+[=
+<=
+O
+O
+
+B. AIOZ STREAMING NETWORK.. 9
+== AIOZ NETWORK ARCHITECTURE...
+1. AlOZ Worker Node 9
+2. AIOZ HUB NOC. ee ccccccccsssssssssssnnsessscsssssssssssssssnsmsssssssesssssssssssssssnsussssssseseessssssssssssnussssessesesessessssssssssnssessess 10
+m= AIOZ NETWORK OPERATION ......c:ssssssssssssssessssessssesssessssesssssssesnssesssseseessesessesessssessssseesssesnssnsnsseesseeeseenes N
+1. SySteEM Workflow OVErVICW.......sssssssesescsssssssssssssssnsusssssssssssssssssssssuessessssssssssssssssssnuusiesssesessssssssssssnseee il]
+2. ProOf Of TTAMSCOCIING....-csssssssssssssssssesssssssssssssnsnsnnssnseeseeceesesessssssssssssessisssssssssssssnsnsesnseeeeeeeeeeeeseenesneneeeesenenenatt 13
+3. ProOf Of StOPAGC.....ccsssssssssssseeeesssssssssssssssssssnnnssssseeeeeeeessssssssessnsssusissssssssssssensnsnseeeaeeeeeeeeeesnesenesesssssseunnisssnsssss 16
+A. Proof Of DeLIVETY....csssssssssssssssssssssesssssessssssusutsssssssssssssnnssnessseeeseseeeeesssssessssusiussnsssssssssssssssnnnseeeeeeeeeecenensees 18
+m= BENEFITS OF AIOZ CDN... eeesessessesesssssssessssesseseesssssessssessssnssssnssessssessesessssscsssnssesessnsessnsecsnsseensseenssneensnes 20
+C.AIOZ BLOCKCHAIN NETWORK 21
+— Byzantine Fault Tolerance... 21
+— AIOZGBFT...... 22
+D. D-APPS ON TOP OF AIOZ STREAMING NETWORK............cccscssssssssscsssssseesssseeees 24
+E. FUTURE WORK..........ccccssssssssssssscsessssessssessssssssssssssessssssssssssssssseesesssssssesessssseeseesoasoes 26
+A. BACKGROUND
+
+— VIDEO STREAMING AND ITS DEVELOPMENT
+
+In today’s technological era, streaming, which is deemed an outstanding innovative technology,
+has become a norm to almost all people worldwide, both professionally and personally. For those who
+are confused with what ‘streaming’ really is, it is simply the activity of listening to or watching sounds
+or video directly from the Internet. Thanks to the streaming revolution, people can gain access to
+numerous online resources for entertaining at any time and from anywhere, with any devices as long
+as they have an Internet connection. Moreover, streaming technology enables people to overcome
+barriers in terms of geographical distance to build more connections as well as to widen their horizons.
+
+Chronologically, it is the music industry that streaming started with, then it has been transferring to
+movies, technologies and video games and, in the near future, VR and AR would be the following items.
+At the present time, ‘video streaming’ is the most popular area after witnessing a phenomenal growth
+in recent years.
+
+It is true that video streaming technology has nearly beaten obsolete broadcasting technologies
+such as cable and satellite because it offers viewers more significant benefits compared to traditional
+broadcasting services. For instance: video streaming provides people with a more diverse source of
+content; video streaming could be conducted on any electronic devices; we could enjoy high-quality
+videos whenever we want by streaming, and most importantly, through video streaming, anyone of us
+could become a content creator and earn more income. As per the ‘2019 Global Internet Phenomena
+Report’, video streaming accounts for the highest percentage of total global internet traffic, with the
+figures for 2018 and 2019 were 57.7% and 60.6%, respectively. According to the latest statistics, video is
+forecasted to account for 82% of total internet traffic by 2022. Meanwhile, revenue obtained from video
+streaming witnessed a continuous increase from 2017 to 2020 and is expected to reach US$28,] billion
+by 2023.
+
+Pn Tube}
+(B)scagem
+NETFLIX
+
+Google . You
+
+© wnatsapp Facebook
+I Watch
+
+«
+
++ Yugi
+& Gsm
+@iCloud
+
+£X snapchat
+
+> > 1
+> > ~@=e
+e
+
+facebook
+
+- Qe
+
+e
+
+You)
+(stem
+Google
+
+® whatsapp
+
+«
+
+Your
+a SnapChat
+
+facebook
+facebook i Google
+
+-_> >
+> o>
+
+«
+AIOZ Video Streaming Network
+
+wn
+an
+P=]
+S 30,000
+= ‘ 27,526 27,943 28,151
+E 26,549 ’
+_ 24,771
+25,000 22,919
+19,854
+20,000
+15,000
+10,000
+5,000
+0)
+2017 2018 2019 2020 2021 2022 2023
+Such rapid development of the video streaming market has led to an
+increase in the number of video streaming services. So far, a plurality of the
+available video streaming platforms, including the most popular ones such
+as Youtube, Netflix, Hulu, Twitch, are supported by only three predominant
+centralized content delivery networks* (CDN), which are CloudFlare, Amazon
+Web Services, Akamai. This imbalance makes the global demand for CDNs
+has risen exponentially within recent years.
+CDN is a highly-distributed platform of servers of which purpose is to provide faster
+content delivery with minimal delays in loading web page content by reducing
+physical geographical obstacles between servers and users.
+r- Authorization -------------
+1
+'
+1
+' : Request ,-------- ’
+Content Delivery é ¥
+'
+Content Bel messes Network
+Provider ~: “Pons User
+1
+- Deliver --------- :
+: 1
+1 '
+1 !
+. Source = §-~~- > o-oo ;
+
+Figure. Model of a typical CDN
+AIOZ Video Streaming Network 6
+
+— CENTRALIZED AND DECENTRALIZED NETWORKS
+
+Centralized network is built around a single server which is called a ‘Central server’,
+and a number of less powerful workstations (‘Client nodes’) directly connecting to the
+Central server. In such systems, Client nodes will send their requests to the Central
+server (the place performs all the core processing) - and receive the response.
+
+Decentralized network, on the other hand, is operated by several individual nodes
+without depending on a single central server. The final response is the total of the
+decisions of the individual nodes on processing requests.
+
+Centralized Decentralized
+
+Up to the present, conventional centralized networks are the major systems supporting streaming
+services globally due to their consistency and efficiency. Nonetheless, within the context that more and
+more video streaming platforms have been launching (demand increases), while owing to tremendous
+expenses on construction, operating and maintenance, only a small number of prestigious corporations
+such as Amazon Web Services, Microsoft and Google Cloud are wealthy enough to develop their own
+centralized network infrastructure (limited supply), the pros of centralized network systems have been
+progressively outweighed by cons. Main disadvantages of centralized network are as follows:
+
+= Centralized networks can be censored, controlled, or even shut down.
+
+Inmore detail, ifthe only central server were attacked by hackers, enterprises
+or governments AND/OR if client nodes lose connectivity due to some unique
+technical errors, abrupt failure of the entire system might take place.
+= Centralized networks have limited scaling possibilities.
+
+It is because these types of networks operate with 100% dependence on
+the only master server. The only way to scale the network is to supplement the
+server with more CPU/GPU cycles for more processing power, more space for
+storage and more Internet bandwidth. Nevertheless, after a certain threshold,
+even if you increase the resources of the server node, the performance will
+not rise correspondingly. As a result, this is not a cost effective measure in
+the long run.
+
+— The operation around only a single master can soon result in a
+bottleneck effect
+AIOZ Video Streaming Network 7
+
+especially within the context that the streaming services have been
+developing at a phenomenal rate. As a result, users’ experience on these
+services could be negatively impacted (e.g. poor video quality, slow loading,
+buffering problem). Without a doubt, negative feedback from users is not
+what businesses expect
+- Centralized networks offer less possibility of data backup.
+
+If the server node fails and there is no backup, data is lost straight away
+— Prices of services of centralized systems are high.
+
+Consequently, it might take clients a long time to turn a profit as a
+majority of their revenue is paid to corporations that provide cloud services.
+In addition, the revenue of content creators/streamers would significantly
+reduce as well. A clear illustration for the main disadvantage in terms of high
+cost is Youtube - the most popular streaming platform at present.
+
+Decentralized networks, by contrast, can fix all aforementioned issues and also offer a great deal of
+advantages over the traditional centralized network systems. Here are some benefits of decentralization:
+
+— There is no real single point of failure.
+
+This is attributable to the fact that in decentralized networks, individual
+nodes work independently whereas there is no single ‘Central server’ to
+control and handle all processes. As a result, it is impossible to shut down
+the entire network.
+= Decentralized networks can be infinitely scaled.
+
+The more individual nodes are added to the network, the more powerful
+the network would be because a lot of new connections would be established
+and the aggregate of resources including spare processor cycles, storage,
+Internet bandwidth would remarkably increase. Therefore, the probability
+that bottlenecks happen is extremely low.
+
+— Decentralized networks architecture offers higher privacy for users,
+
+as all information is processed by a well-designed algorithm without the
+need to pass it to any third parties. This makes decentralized networks highly
+censorship-resistant and and more secure against cyberattacks.
+
+— More autonomy and control over resources.
+
+As each node controls its own behavior, it will have better autonomy which
+leads to more control over resources.
+
+— Censorship is less likely to take place.
+
+It is more and more popular that governments shut down their citizens’
+access to social media sites due to some political reasons. All governments
+haveto dois stop traffic going to the social media’s central servers. By contrast,
+it is genuinely difficult for them to censor traffic on a peer to peer network,
+where every single outbound packet being sent could be communicating
+with another peer on the decentralized network, who can then forward that
+message along.
+AIOZ Video Streaming Network 8
+
+- There is potential for network ownership alignment.
+
+In decentralized networks, the people who contribute value will receive
+ownership or economic stake in the network, which becomes more valuable
+as the network grows.
+= Decentralized networks aremorelikely to be open development platforms.
+
+This means that anyone can build their own tools, products, and services
+on top of decentralized networks. When more great products and tools are
+built, the networks will be rapidly widened, and thus business opportunities
+provided for individuals and companies will rise correspondingly.
+
+Thanks to these various benefits, especially the cost advantage, decentralized networks have
+increasingly come to a lot of video streaming platforms/applications providers’ knowledge. More and
+more video streaming platforms/applications have been developed and run on a decentralized peer-
+to-peer network instead of conventional centralized servers. Such platforms/applications are known
+as ‘Decentralized Applications’ or as ‘DApps’. Currently, Dapps are still in their infancy, with more than
+3000 Dapps built on Ethereum. Nevertheless, they are forecasted to grow exponentially, with the market
+size being projected to reach USD 21,070.2 million by the end of 2025 - as per a study carried out by
+the Blockchain Examiner. The growth of Dapps will definitely give rise to the expansion of decentralized
+networks in the future.
+B. AIOZ STREAMING NETWORK
+
+— AlOZ NETWORK ARCHITECTURE
+
+‘AlOZ CDN’ is a decentralized peer-to-peer CDN built from the connection of different nodes by a
+pre-designed protocol of AIOZ team. Nodes in AIOZ CDN are categorized into HUB Node (a.k.a Satellite
+Node) and Worker Node.
+
+W :---> <----W
+Blockchain
+! 1
+Wi i----- + hem wl WE Ba a8 boncnnt w
+Ww Ww
+;
+' '
+i @----4
+r----> «----;
+! 1
+1 A 1 ! A !
+' 1 1 ! 1 '
+1 1 1 1 1 1
+! 1 1 ' 1 '
+i ' 1 1 ' I
+WwW WwW WwW WwW WwW WwW
+AlOZ NETWORK OVERVIEW
+= AIOZ Worker Node
+
+Worker Nodes are individual nodes with redundant resources and
+thus, they want to share these resources in exchange for AIOZ tokens. The
+monetization process will be determined based on two facets including the
+level of contribution and their commitment to our protocol. Worker Nodes
+are allowed to choose whichever HUB Node possessing high credibility to
+work with, and notably, they can select as many HUB Nodes as they want
+to gain more income sources. However, if Worker Nodes are detected to be
+AIOZ Video Streaming Network
+
+non-compliant with requirements listed in the contract by HUB Nodes, then
+based on the nature and levels of violation, their payments will be cut down
+partially/fully, or they can be permanently eliminated from AIOZ CDN.
+
+By installing AlOZ Worker Node Software, any PCs and laptops can become
+Worker Nodes of AlOZ CDN. Worker Nodes can opt for more than one task to
+handle among transcoding, storing and delivering.
+
+There are a lot of aspects that must be taken into consideration when
+selecting which worker nodes are suitable to store data, including: ping
+time, latency, throughput, bandwidth caps, sucient disk space, geographic
+location, uptime, history of responding accurately to audits, and so on. In
+addition, these nodes can be configured maximum allowed disk space and
+bandwidth usage by HUB Nodes. In particular, they will be monitored how
+much both of these resources remain whereas their invalid operations will
+be rejected.
+
+—- AlOZ HUB Node
+
+In AlOZ CDN, there are plenty of nodes that hold the responsibility of
+controlling, assessing and monitoring other Worker Nodes to ensure the
+smooth operation over the entire network. They are called HUB Nodes.
+
+The main tasks of HUB Nodes are to deal with Worker Nodes on the clients’
+behalf, randomly require Worker Nodes to provide Proof of Transcoding, Proof
+of Storage and Proof of Delivery in order to keep track of their compliance
+to contract's terms and conditions, reward Worker Nodes after finishing the
+tasks requested by clients, preserve data when the lack of resources takes
+place, store technical indexes of each Worker Node. Most importantly, HUB
+Nodes are simultaneously technical and video segment indexers who know
+exactly the locations of segments among a great deal of Worker Nodes
+as well as the information relating to the storage, bandwidth properties of
+Worker Nodes. To avoid duplication error, data controlled by one HUB Node
+will not be available in the remaining HUB Nodes, through multiple layers of
+ingress and egress are planned.
+
+Each HUB Node contains these core items:
+
+« A complete node discovery cache
+
+¢ A system managing and authorizing account
+
+¢ A system storing worker nodes’ reputation, statistics, and audit records
+
+* A service fixing data
+
+* A service fulfilling payment
+
+HUB Nodes are being developed and will be released as open software
+AIOZ Video Streaming Network il
+
+— AIOZ NETWORK OPERATION
+In AlOZ CDN, three major redundant resources that Worker Nodes share in exchange for tokens
+
+are CPU and/or GPU process cycles, Hard drive space and Internet bandwidth, which are used for
+Transcoding, Storing and Delivering video content (AIOZ CDN’s three main tasks), respectively.
+
+- Transcoding task: Transferring the original video resolution into different
+
+profile resolutions. It is because different types of electronic devices have
+
+their own requirements in terms of codec, colorspace and resolution; and
+
+video content can only be consumed if video properties satisfy all three
+
+above requirements.
+
+- Storing task: Storing video in different codecs, resolutions. Transcoded
+
+videos are then moved into storage to make room for other videos being
+
+encoded. As usual, videos uploaded on the Internet are encoded once and
+
+stored until there is a request from viewers.
+
+= Delivering task: Delivering video segments (a.k.a chunks) to users as
+
+requested.
+°
+| Cash
+IP Camera Camera Pc Audio propel
+'
+1
+!
+1
+'
+teen areeere ' (eee
+Ww Ha Ww v Ww
+
+Segmenting
+
+OG Encoding a
+
+>
+Ed
+>
+>
+
+VIDEO STREAMING INSFRACSTRURE WORKFLOW
+
+Aenea
+
+1
+'
+v
+
+OTT
+
+Computer
+
+Figure. Overall workflow of AlOZ CDN
+AIOZ Video Streaming Network ]2
+
+FCC cco coe X, .
+ah nh aie a
+GE Go Sc ‘
+
+[3] [3] Content Owner si
+
+[1]. HUB Assign Storage Task for Workers [4]. Viewers request HUB for workers that storing video chunks
+[2]. Workers approve & sign Storage Contract [5]. Viewers ask workers to deliver content
+
+[3]. Content Owner upload video segments to workers [3]. Viewers acknowledge delivery for HUB
+
+The detailed operation procedure of AIOZ CDN for video streaming is shown
+in Figure. , which undergoes these following steps:
+
+= Original video content holded by Content Owners (COs) is first splitted
+into multiple smaller segments, wherein the checksum of each segment is
+calculated by the AIOZ SDK.
+
+= Next, HUB Nodes will determine which Worker Nodes can satisfy COs’
+requests (about the type, size, relocation factor of files, duration to store files
+and COs’ budget) and connect qualified Worker Nodes to COs afterwards.
+= If COs and Worker Nodes reach a consensus on collaboration, a contract
+will be sent to AIOZ Blockchain.
+
+- Thereafter, COs upload their original video content segments to Worker
+Nodes for being transcoded.
+
+- The transcoded segments will then be checked for the accuracy and
+completeness compared to their original chunks by COs by running the
+Proof of Transcoding (PoT).
+AIOZ Video Streaming Network
+
+- All original and transcoded segments will be stored at Worker Nodes that
+handle the storing task if no errors in the transcoding process are detected.
+Otherwise, all the work will be reassigned to other Worker Nodes. By nature,
+video segments could be stored permanently unless they are deleted, which
+seems to be inconvenient and resource-wasting. Therefore, each video
+segment will be attached with a ‘lifespan time’ and automatically deleted
+after their expiration dates.
+
+- After finishing the storing task, Worker Nodes will provide a Proof of Storage
+(Pos).
+
+— When viewers have a request to view a certain video, HUB Nodes will lead
+them to Worker Nodes storing segments of that video to receive a complete
+content. Each segment can be stored in different Worker Nodes, however,
+HUB Nodes will only recommend to viewers the most optimal Worker Nodes
+in terms of geographical distance and price.
+
+— After content was delivered, a Proof of Delivery will be sent back to HUB
+Nodes for verifying that viewers already received content and thus, Worker
+Nodes can earn tokens.
+
+Please note that the term ‘Content Owners’ used in this section refers to providers of
+video streaming platforms that build their service on top of AlOZ CDN, and ‘Viewers’
+refers to those using the platform of the ‘Content Owners’ to watch videos.
+
+1. Proof of Transcoding
+
+As mentioned, transcoding is the process converting a digital source
+video file into different formats to match different device requirements. H265,
+H264, VP9, and VP8 are currently the most utilized codecs because they
+achieve high degrees of compression. High-quality compression is essential
+because it reduces video's sizes, while the quality of the video nearly remains
+constant. Smaller video files require less storage, which makes it easier to
+distribute them across many platforms, and makes the end-user playback
+experience seamless.
+AIOZ Video Streaming Network
+
+nalanlan a
+CoCo @ W
+co
+CONTENT OWNER HUB WORKER
+Deposit & Request Transcoding '
+1
+
+'
+!
+t
+!
+'
+t 1
+>
+' 1
+!
+!
+'
+t
+i
+t
+'
+1
+t
+
+'
+Run PoT
+'
+'
+
+PoT Failed
+
+1
+1
+f
+1
+i
+'
+
+Request Judgement
+Run PoT
+1
+PoT Failed
+’ Punish Worker
+
+1
+
+: Claim
+
+' AIOZ Reward for Transcoding
+1
+1
+1
+1
+
+This section will elaborately clarify how Worker Nodes receive the
+transcoding task and how to prevent them from cheating (Figure). To start
+with, COs who want to have their videos transcoded will send their request
+and payment to HUB Nodes of AIOZ CDN. Next, HUB Nodes assess which
+Worker Nodes can handle COs’ request and assign the task to them. Worker
+Nodes have the right to accept or to refuse the task assigned by HUB Nodes
+as well as to freely choose which video segments to handle.
+
+If they agree to carry out the task, COs will upload their video segments
+onto corresponding Worker Nodes and wait to get transcoded segments
+from Worker Nodes. After that, COs will run a PoT to check whether all original
+segments and their transcoded counterparts are similar in terms of content.
+In other words, PoT is an algorithm used to check whether all segments are
+precisely transcoded. To make it clearer, please see the following process,
+AIOZ Video Streaming Network
+
+which compares an original segment (V1) and its transcoded segment
+(V2) (Figure):
+
+- Firstly, N indexes (index is an numerical representation of a frame’s position
+ina video segment) are randomly selected (Indexes = {idxl, idx2..., idxN}, with
+N ranging from 0 to the total number of frames contained within V1 and V2)
+
+— Next, N frames from VI (FI variable) and N frames from V2 (F2 variable) of
+which positions match indexes determined at the previous step are picked out
+- Finally, each pair of frames selected from V1 and V2 is computed the S and
+Score. This could be displayed as:
+
+For iin (1..n):
+
+S = $n {ssim(FI[i], F2[i]) } (ssim stands for Structural Similarity Index)
+
+By SVM (Support Vector Machine) categorizing algorithmin, SSIM and
+other indexes are simultaneously used to evaluate the similarity between V1
+and V2
+
+Score = svm(§, size(v1), bitrate(v1), size(V2), bitrate(V2))
+
+SSIM
+
+I
+!
+!
+t
+!
+!
+!
+i
+i
+'
+'
+1
+i
+i
+i
+<-------->
+
+Frame 3
+
+Lob Video
+
+Pick Random
+Frame to Compare
+
+a
+
+Transcoded Video
+
+After COs run PoT, there are 2 cases that Worker Nodes will encounter:
+= If COs have no complaints in all segments, the entire payment from the
+escrow account will be automatically sent to Worker Nodes’ AIOZ wallet within
+a certain period of time after they return transcoded segments to COs.
+- If COs detect any flaws in any segments from running the PoT, COs must
+submit both unqualified/broken transcoded segments and the PoT to HUB
+AIOZ Video Streaming Network
+
+Nodes within a certain period of time after Worker Nodes return transcoded
+segments to COs in order for HUB Nodes to re-verify these flaws
+* If these flaws are judged to be the mistakes of Worker Nodes,
+Worker Nodes not only cannot receive the rewards for this
+task but also are given further punishments depending on the
+severity of flaws. For example, they would be assigned fewer
+tasks later on, their prestige on AlOZ CDN would decrease, or
+they might be kicked out from the network. Thereafter, the
+uncompleted tasks will be reallocated to other Worker Nodes
+* By contrast, Worker Nodes are still able to receive the whole
+payment from the escrow account
+
+2. Proof of Storage
+
+It is the fact that the process of storing data usually goes along with risks
+such as data loss, data hacking, data breach or broken data. This is also the
+case for the task of storing video segments handled by AlOZ CDN’s Worker
+Nodes, which might affect the entirety and accuracy of video content.
+Therefore, before delivering video content to viewers, HUB Nodes must check
+the entirety of each video segment stored by Worker Nodes to ensure input
+content and ready-to-be-delivered content are ubiquitously constant.
+
+In AIOZ CDN, the video segment verification process is designed based on
+the Merkle root tree principle and put under the supervision of HUB Nodes.
+Instead of checking all segments, Merkle root minimizes the amount of video
+segments being sent back and forth over the Internet by comparing the
+hashes of these segments. This is obviously a much faster, more resource-
+efficient and secure solution because hashes of files are much smaller than
+the actual files themselves. For instance, the hash of a 2,000,000-byte file is
+only around 544 bytes in size.
+
+A Merkle tree is a hash-based data structure that is a generalization of the
+hash list. It is a tree structure in which each leaf node is a hash of a block of
+data, and each non-leaf node is a hash of its children. Typically, Merkle trees
+have a branching factor of 2, meaning that each node has up to 2 children.
+Currently, their main uses are in peer-to-peer networks such as Tor, Bitcoin,
+and Git and of course, AlOZ CDN.
+AIOZ Video Streaming Network
+
+TOP HASH
+
+T1234 = hash(T12, T34)
+
+T12 = hash(TI, T2) T34 = hash(T3, T4)
+1 4 1 4
+1 i 1 i
+_ So Bo sess 1 i Boss sess 1
+Tl = hash(1, H1) T2 = hash(2, H2) T3 = hash(3, H3) T4 = hash(4, H4)
+1 1 1 1
+1 1 1 1
+H1 = hash(L1) H2 = hash(L2) H3 = hash(L3) H4 = hash(L4)
+1 1 1 1
+1 i 1 1
+Ll L2 L3 L4
+
+Data Blocks
+
+The illustration for a typical Merkle root in AIOZ CDN is shown in Figure.
+Instead of only 4 blocks shown in Figure, in reality, a video segment contains
+n blocks, which n is computed so that the size of each block ranges from
+32 to 64 bits. Via gradual pairing, we will finally achieve a TOP HASH, which
+is unique for one video segment. In other words, either any changes in any
+blocks or any block disorders of a video segment will lead to a totally different
+TOP HASH.
+
+Before assigning a task of storing a certain video segment to a Worker
+Node, HUB Node will first compute and then save the TOP HASH of that video
+segment into its memory. This TOP HASH is later used to check whether there
+is any discrepancy between the original and the stored video segment.
+
+However, if Worker Nodes compute TOP HASHES by themselves and send
+back to HUB Nodes for verifying, the verification process cannot ensure
+100% reliability. This is because Worker Nodes might compute and save the
+TOP HASHES as soon as they receive the video segments but then delete
+all segments or make some changes to these segments. Consequently, the
+video segments no longer stay the same although TOP HASHES are exactly
+the same. To avoid this risk, HUB Nodes will also take charge of computing
+TOP HASHES of stored video segments.
+AIOZ Video Streaming Network
+
+TOP HASH
+
+T1234 = hash(Tl2, T34)
+
+T12 = hash(TI, T2) 134 = hash(T3, T4)
+
+Tl = hash(1, H1) T2 = hash(2, H2) T3 = hash(3, H3) T4 = hash(4, H4)
+
+H1 = hash(L1) H2 = hash(L2) H3 = hash(L3) H4 = hash(L4)
+
+Ll
+
+L2 L3
+
+Data Blocks
+
+In AlOZ CDN, a complete merkle root tree of a video segment which is
+being stored in Worker Nodes could be constructed from different hashes,
+with one hash per level being sufficient (Figure). From this tree, HUB Node will
+get the final TOP HASH of which size is log2(X) (X is the number of nodes in
+the tree).
+
+To do this, HUB Nodes will challenge Worker Nodes by requesting them to
+providerandomhashes,with the blockindex and location of hashes requested
+may significantly vary. HUB Nodes’ request will be coupled with a deadline
+to eliminate the risk that Worker Nodes might delay or forget to submit their
+PoS. If Worker Nodes fail to submit the proof within the timeframe given, the
+storing contract will be cancelled and these nodes will be penalized.
+
+3. Proof of Delivery
+
+Delivering content to viewers is the final step in AlIOZ CDN. Theoretically,
+after video content was delivered to viewers, Worker Nodes will be rewarded
+with AIOZ tokens for completing assigned tasks. However, in reality, there
+might be some problems. For example, viewers do not inform HUB Nodes
+that they already received the video content and thus Worker Nodes are not
+rewarded; or Worker Nodes can cheat by creating unlimited fake viewers to
+earn digital tokens. As a result, it is vitally significant to strictly control this
+step by a Proof of Delivery.
+
+L4
+AIOZ Video Streaming Network
+
+W
+
+WORKER HUB VIEWER
+
+Request worker information to '
+download segment \
+
+!
+
+1
+
+'
+
+Response worker information
+
+ECDH Session
+
+Claim AlOZ Reward for Delivery
+using signature from Viewer
+
+The process of delivering content to viewers in AlOZ CDN is summarized
+in Figure . Initially, viewers have to send their requests to HUB Nodes. After
+viewers’ request being approved, HUB Nodes will help viewers to contact
+Worker Nodes storing the requested content. In order to get desired Worker
+Nodes, viewers have to continue sending their requests coupled with a digital
+signature to Worker Nodes. This signature acts as an evidence which Worker
+Nodes can base on to claim the money from HUB Nodes after delivering
+content to viewers.
+
+All transactions between viewers and Worker Nodes are conducted within
+the ECDH (Elliptic-curve Diffie-Hellman) session - a secure contact channel
+between 2 parties that absolutely avoids information leaking or hacking.
+Please note that ECDH sessions can be activated only if viewers are carrying
+a black box of AIOZ to ensure that they are real and trusted viewers. Via
+ECDH session, it is secure in knowledge that after receiving the video content,
+viewers will inform HUB Nodes and therefore, Worker Nodes can successfully
+claim AlOZ reward using the initial digital signature of viewers.
+AIOZ Video Streaming Network 20
+
+— BENEFITS OF AIOZ CDN
+— AIOZ CDN is cheaper than other centralized CDNs.
+
+It is because AIOZ CDN’s giant resources, by nature, are spare resources contributed by individual
+nodes in the network, while centralized CDNs have to spend an enormous amount of money building
+and maintaining their physical servers. Compared to centralized CDNs, the overhead cost of AlIOZ CDN
+is much more significantly lower, which consequently helps its clients alleviate their financial burden,
+or in other words, clients can earn additional revenue.
+
+— AIOZ CDN ensures high security and privacy.
+
+By distributing content segments to Worker Nodes within the network, with each node staying in their
+own location, the risk of losing the entire content is less likely to happen. Meanwhile, centralized CDNs
+have to encounter the single point of failure issue, as all the data is stored in a central entity.
+
+- AIOZ CDN supports smooth streaming for high-quality videos.
+
+With a high delivering speed, AIOZ CDN eliminates all barriers which usually serve as a deterrent to
+users while they enjoy 4K or 8K videos, such as poor video quality, slow loading, buffering
+— Anyone could earn more income by consenting to participate in AIOZ CDN.
+
+As a decentralized network, AIOZ CDN also works on the principle that individual nodes participating
+in the network (Worker Nodes) provide their spare resources to process, store or deliver video services;
+and thereafter, they will receive token reward for their contribution.
+C. AIOZ BLOCKCHAIN NETWORK
+
+— BYZANTINE FAULT TOLERANCE
+
+In any decentralized distributed systems, the participants often communicate with each other in
+an uncontrolled, open, and permission-less system. Their actions may vary based on their individual
+interests and can be malicious. Therefore, it is vitally necessary for participants in decentralized systems
+to reach consensus in order to minimize the risk of encountering Byzantine Generals Problem (BGP).
+This necessity gave birth to Byzantine Fault Tolerance (BFT) concept. So, what is BGP and BFT?
+
+The Byzantine Generals Problem was firstly defined by Leslie Lamport, Robert Shotak, and Marshall
+Pease in 1982. To be more understandable, let’s imagine that before a battle, a kingdom divides its
+national army into many different battalions, each of which is situated in different locations and
+commanded by a Byzantine general. The generals need to reach a consensus on either attacking or
+retreating to achieve victory. However, the communication among generals has to be conducted via
+messages delivered by couriers, which might lead to the different problems. For instance, the messages
+might be delayed, destroyed or lost, or there might be a possibility that some generals/couriers are
+traitors who choose to act maliciously or change the message content. As a result, the kingdom might
+face a risk of failure. If we apply the BGP to the context of blockchains, each network node will represent
+a general whereas couriers will be replaced by connections or messaging protocols. Likewise, network
+nodes also need to reach a secure and efficient consensus to avoid complete failure for the entire
+network.
+
+Meanwhile, the Byzantine Fault Tolerance is a property of a network that can still ensure the
+continuous operation even if up to ¥3; of the nodes in the network fail or act maliciously. In other words,
+a network is Byzantine fault tolerant when it can keep operating accurately as long as % of network
+nodes reaches consensus.
+
+There is more than one approach which could tackle the BGP problem before a true battle and
+similarly, in blockchain technology, there are many different consensus algorithms that could be built
+to achieve BFT. For instance, the consensus mechanisms applied to Bitcoin and Ethereum networks are
+Proof of Work and Proof of Stake.
+AIOZ Video Streaming Network
+
+— AIOZ DBFT
+
+AIOZ ABFT is the consensus algorithm developed for AlOZ Blockchain on top of Tendermint, wherein
+“ABFT” stands for “Delegated Byzantine Fault Tolerance”. In AlOZ Blockchain, there are an enormous
+number of micro-transactions, such as payment for Worker Nodes or viewers, concurrently taking
+place. Therefore, it might take validators a lot of time to come to a consensus on verifying all these
+transactions. Among different BFT protocols, dBFT is the algorithm which possesses the highest speed
+of processing micro-transactions. That is the reason why the AIOZ team decided to build AlOZ dBFT.
+
+In AIOZ ABFT, there are three major subjects including 21 “Validators” with an unlimited number of
+
+“AlOZ token holders” and “Witnesses”:
+
+Yes +2/3 agree
+pre-commit
+
+= Validators (also known as Delegates): Validators are a group of nodes
+taking charge of preserving AlOZ Blockchain data and validating all the
+transactions. They join the consensus procedure and vote to produce blocks.
+In more detail, validators will take turns proposing blocks of transactions and
+voting on them. The block is added to the blockchain if more than two-thirds
+of the validators reach a consensus and validate it. In AlOZ Blockchain, the
+fees are collected and equally allocated among all validators.
+
+- AIOZ token holders are those who have the right to vote for any validator
+candidates to become the official validators. These AIOZ token holders must
+stake token(s) to vote. The more money they stake, the greater their voting
+power/voting weight would be, which means that the candidate(s) that they
+voted for will have a higher probability to become the official validator(s).
+
+- Witnesses do not participate in the consensus procedure and blocks
+generation, but they (1) take care of the witness consensus process, (2) act
+as data replicas and help to spread the chain state across the network and
+(3) receive transactions and broadcast them to all other nodes. Witnesses
+could also be voted to become validators.
+
+Invalid block or not
+received in time
+
+Pre-vote Nil
+
+No +2/3 agree
+pre-commit
+
+wait for pre-votes
+from +2/3
+
+No +2/3 argree
+per-vote
+
+Pre-vote Nil
+
+Propose < Yes +2/3 agree
+
+pre-vote
+
+Propose ——=.——sSFT
+
+valid block
+
+Propose Block
+
+Wait for pre-votes
+
+from +2/3
+AIOZ Video Streaming Network 23
+
+The block proposing process is summarized in Figure : Validators take turns proposing blocks for
+the transaction and voting on the proposed blocks. The blocks are submitted to the chain with each
+block on the chain at each height. However, the block may also fail to submit. In this case, the protocol
+will select the next certifier to propose a new block at the same height and start voting again.
+
+In order to successfully submit a block, two stages of voting, called a pre-vote and a pre-commit
+must be undergone. When more than 2/3 of the certifiers pre-commit the same block in the same
+round, the block will be submitted.
+
+The algorithm that makes 21 validators rotate to propose blocks complies with the round-
+bin strategy. It is a deterministic non-blocking polling selection algorithm that chooses the block-
+proposing-validator based on the proportion of voting weights of the AlOZ token holders. The higher
+the voting power, the faster the validator moves to the front of the queue and becomes a block-
+proposing- Validator.
+
+Valid transactions are grouped into blocks of which structure is presented in Figure . The hashes for
+validation and transactions are merkle tree root hashes of the signatures and transaction data stored
+in the block. The state hash (in the header), is the merkle root hash of the persistent account state
+after applying the transactions of the block. Finally the block hash is computed by hashing the header,
+validation, and transactions hashes. A block is regarded to be valid if all the transactions in the block
+are valid and sufficient signatures are included in the validation.
+
+benenn =
+
+1
+1
+BlockchainID —_ Height ' BlockchainID —_ Height
+1
+Fee Time ' Time
+1
+1
+1
+
+Hi-1
+----> Header Hash
+
+Block;_; Validation 3 > Validation Hash H,
+
+Validator!’s Signature | 2 = > Block Data Hash Validator 1's Signature
+
+Validator 2's Signature
+
+Validator 2's Signature
+
+Block;-;Data = _iatstateielilte Block;-; Data
+
+PData PData
+
+J
+t
+J
+1
+!
+Validator 3’s Signature ! Validator 3’s Signature
+'
+1
+'
+1
+'
+LU
+
+Src Sre
+D D
+
+#Reads #Reads
+
+D. D-APPS ON TOP OF AIOZ STREAMING NETWORK
+
+a The AlOZ Tube Ecosystem
+
+Advertiser
+
+Content
+
+Creator Viewer
+or Publisher
+
+Any video streaming platforms/D-apps could be built on top of AIOZ CDN and become a part of
+the overall AlIOZ Ecosystem in company with ‘HUB Nodes’ and ‘Worker Nodes’. The goal of AlOZ CDN is
+to become an ‘all-win’ CDN, where individual nodes can earn tokens by completing assigned tasks
+timely and accurately, while video streaming platforms/D-apps’ providers and their partners (content
+creators, advertisers) as well as their users can benefit in different aspects which are as follows:
+
+= With AIOZ CDN, video streaming platforms/D-apps’ providers could
+alleviate their financial burden and increase their profit because AIOZ CDN
+is remarkably cheaper than commonly used CDNs these days. As the AIOZ
+CDN grows and expands (more ‘HUB Nodes’ and ‘Worker Nodes’ are added),
+the price would even more reduce.
+
+— Viewers can receive dual benefits while using online streaming platforms
+which are built on top of AIOZ CDN.
+
+In addition to the benefit that viewers will no longer face annoying
+experiences such as buffering, stuttering, low resolution videos or slow
+loading, they can also make money just by watching ads inserted into
+videos on streaming platforms who are AlOZ CDN’s partners. After finishing
+watching a full advertisement, viewers are automatically rewarded with an
+appropriate number of AIOZ tokens which are determined based on the
+property, the length, and the popularity of the advertisement.
+
+— Content creators can generate more income.
+
+It is a fact that the average salary of content creators is much lower than
+what they really deserve, because most of today’s popular streaming services
+pay a great amount of money to cloud services for processing raw videos
+and distributing content to consumers/viewers. This is definitely not the case
+for platforms collaborating with AlOZ CDN because services offered by AIOZ
+AIOZ Video Streaming Network 25
+
+CDN are inexpensive, as mentioned above. As a result, content creators will
+be more likely to have a higher salary.
+
+= Promoting on platforms built on top of AIOZ CDN is a cost-effective
+solution for advertisers.
+
+The way advertisers gain advantage from the low price of AlOZ CDN is
+similar to that for content creators. Furthermore, with the property that
+viewers can earn tokens by watching ads, we believe that the number of
+viewers who use platforms built on top of AIOZ CDN will exponentially increase
+in the near future. In brief, advertisers can not only approach their targeted
+audience effectively, but also save costs remarkably.
+
+Likewise, AIOZ CDN is a good choice for over-the-top (OTT) services (e.g. Netflix, Hulu,...) aiming to
+expand their business in remote areas or places with limited Internet bandwidth but still maintain the
+high quality (up to 4K or 8K) of videos delivered to viewers.
+
+AIOZ CDN additionally provides a low-cost clouding solution for a separating group of audience
+whose businesses are not specialized in streaming but they have the demand of storing video content.
+The group of audience being referred to are developers of social networking sites or applications such
+as Tiktok, Instagram, Tinder,..,OR developers of electronic newspapers.
+E. FUTURE WORK
+
+In the next few years, AIOZ will continue focusing on the research and development activities to
+increase the number of Worker Nodes and businesses deployed on top of AIOZ CDN. So far, all individual
+nodes wanting to become our network's Worker Nodes to earn tokens must open TCP/IP ports, which
+is a minus. To eliminate this disadvantage, AIOZ team will integrate the WebRTC into the Worker Node
+Software so that individual nodes could join us easily. AIOZ team will also apply Al technology into the
+content filtering tool to block obscene materials as well as illegal and violent content. The current PoT
+is not genuinely optimal, which necessitates further upgradation of the algorithm built for it. Finally,
+AIOZ team will build and implement a mechanism assessing the ‘Reputation Score’ of Worker Nodes.
+‘Reputation Score’ would be determined based on a set of different criterias consisting of Worker Nodes’
+working status/attitude, working history, number of tasks completed, duration of nodes’ participation in
+AIOZ CDN. The higher the ‘Reputation Score’ of Worker Nodes is, the more important tasks and rewards
+they would receive and vice versa.

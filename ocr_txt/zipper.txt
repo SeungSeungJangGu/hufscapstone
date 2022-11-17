@@ -1,0 +1,2697 @@
+WHITE PAPER
+
+Zipper is a next-generation blockchain ecosystem that provides
+secure, efficient and low-cost financial services. Zipper aims for
+financial compliance and interconnection!
+
+ZIPPER
+
+Copyright by ZipperFoundation 2019
+ZIPPER WHITE PAPER
+
+ABSTRACT 06
+
+CHAPTERI Analysis of pain points in the existing
+
+financial industry 09
+
+CHAPTER II Design principles 11
+CHAPTER III Distributed ledger Technology 13
+1.System Hierarchy ...--...-----------------2-------e0eeeecee eee eeece teens 13
+
+2.Consensus mechanism ----------------+--+2eee-eeereesec eee eeeeecc eset 14
+
+2.1 Operation mode -----------------2222eeeeeeoeo centre recente 16
+
+2.2 Status machine  -----------------++---++------222eeeeeeecccc eee reece 16
+
+2.3 CONSENSUS PIOCESS ----------------- 2-22-22 n eee een e eee eee enc ence 17
+
+3.Smart Contract  --------------------------2---n2e eee eccee nner 18
+
+3.1 Contract Calling and Execution --------------------------+-----+----------- 18
+
+3.2 Scalability .-------------------++-------++++----222e2--c essence ee reece eee ecco 19
+
+3.3 Standard Library ------------------+---rrecreco reece rc teec este enone cess c ences 19
+
+3.4 Multiple Virtual Machine Support ----------------------------------------= 20
+
+4.Data Storage Model -------------------------1--+++-s2eeeeseecceceeeeceeeeeees 21
+
+4.1 Index Storage --------------++---2+-25e-2eee ence ence eee e reece nec ee cee eens 22
+
+4.2 Merkel tree storage MOdel -----------------------222eeeeeeeeeeee eens ccccee 22
+
+CHAPTER IV _ Distributed trust framework 26
+1. DIDS Protocol -----------------------------:+--seeccccececceeee cee tetesetesces 26
+
+1.1 Identity declaration -------------------++++---+++-- 22sec 22+ sccc esses eeeecc essen 26
+
+1.2 Identity declaration document ------------------------------++----2-2-----" 26
+
+1.3 Anonymous identity --------------------------+-------2-- 22-2222 ee nec ee reece 29
+ZIPPER WHITE PAPER
+
+CHAPTER V
+
+CHAPTER VI
+
+CHAPTER VII
+
+2. Identity authentication .....--..------------------2-::-eeeeeeeeeeeeeeeee eee
+2.1 Distributed Authentication Service Model -------++++++++++++22++--- 04+
+2.2 Identity Authentication Protocol Description ---------------------------
+
+3.Decentralized Trusted Prophet Service -.--------------------------++-
+
+Distributed digital asset transaction and clearing
+and settlement ecosystem
+
+1.Ecological architecture ---------------------------:----ee:eecccccteteeeeeeeee
+2.Clearing Model and Basic Agreement -------------------------------
+
+3.Clearing ProCeSs ..-----------------.--22-eeeeeceeeeeee ce eeee ee eeceeceesecee eens
+
+Zipper extension module
+
+1.Parallel computing, multi-chain operation ---------------------------
+2.ZipperNet Switching Network .-----------------------------7++++eeeeeee
+3.Secure multi-party computing ..---------------------------+----seeeeeee
+3.1 Off-chain general MPC protocol «------------+--+-++2+0e+eseee reese erence ee
+3.2 Fair Secret Reconstruction Agreement ---------------------2-02--02202=
+4.Distributed Control Management ---------------------+------¢2000002200>
+4.1 Asset Mapping and Control Management -------------------------+--+-+
+4.2 Implementation of Distributed Control Management ----------------
+5.Blockchain Network Operation and Maintenance
+
+Components ..---------------++++++22 22 22eeeeeee eee eens
+
+Derivative scenarios
+
+1.Analysis of derivative application scenario pain points
+and related solutions --------------------+-+-+2+2-+:-22ereeeeeeeceseeee ete
+ZIPPER WHITE PAPER
+
+CHAPTER VIII
+
+CHAPTER IX
+
+CHAPTER X
+
+CHAPTER XI
+
+CHAPTER XII
+
+CHAPTER XIll
+
+Ecological construction
+
+1.Practicality of ZIP tokens. -----------------+---------+---0-s2e ee eereereen
+1.1 Media Currency .-.---------+--+---2----22eececeeeeceeeeeeeeeeeeeeees
+1.2 Prevent Evil .-.--------------2--------222ee2 ee eeee cece cee eects
+
+1.3 Transaction Fee Model --------------------------------- 22-22-22 ---
+2.Ecological Incentive .---...------------------:::-eeeereeeeeeeeee
+
+2.1 Consensus Node Supernode ------------------++-2++-¢22-"22-""-
+2.2 Economic Node Xnode -----------------------+ 2222220222202 2225
+
+2.3 Gateway Node .---------------2-<--+-2222--222e ee ee cece eee eeee eee
+
+Governance
+
+1.Consensus Committee and Community Committee
+
+Summary
+
+Roadmap
+
+Disclaimer
+
+Reference
+
+59
+
+59
+59
+60
+60
+
+62
+62
+63
+64
+
+66
+
+66
+
+69
+
+71
+
+73
+
+75
+ZIPPER WHITE PAPER ABSTRACT
+
+ABSTRACT
+ZIPPER WHITE PAPER ABSTRACT
+
+Abstract
+
+The financial industry is essential to the operation of modern society. Scientific and
+technological changes have rapidly transformed the global economy and society.
+However, these changes have also highlighted the shortcomings of the traditional
+financial system:
+
+The cost of financing and circulation is high, the business structure is cumbersome
+and complex, and regulatory pressure is increasing. Providing safe, efficient, and
+low-cost, cross-border, cross-asset transaction, and clearing services are difficult
+problems to solve in the global financial industry.
+
+The natural characteristics of blockchain technology are highly compatible with the
+previously mentioned goals. Since its start, blockchain has rapidly moved from the
+edge to the mainstream. Blockchain-based finance has become an unstoppable trend
+and blockchain has become the core technology in financial system innovation.
+
+At the same time, we also notice that at this stage, financial institutions such as banks
+have adopted a cautious attitude towards the application of blockchain technology.
+These institutions are concerned about issues such as safety, compliance, legitimacy,
+technical standardisation, etc. However, an increasing number of financial institutions
+have begun completing large numbers of digital asset transactions via blockchain.
+
+Digital finance represented by digital assets should not be isolated from the traditional
+financial system. Using blockchain technology for asset trading and association of
+blockchain technology with the global traditional financial network, while keeping busi-
+nesses legal and compliant is becoming the norm. The Zipper project came into being
+as a part of this major trend and is designed to create a compliant, efficient,
+cross-chain, and interoperable blockchain financial solution for global financial institu-
+tions.
+
+Based on this background, we will develop the Zipper blockchain distributed account-
+ing network for financial services. Our network will provide the necessary blockchain
+application services to build a new-generation of financial blockchain infrastructure.
+Zipper provides secure, efficient and low-cost services for various payment service
+providers, gateways, and financial institutions.
+ZIPPER WHITE PAPER ABSTRACT
+
+The high performance and features of the Zipper blockchain network will endue the
+financial industry with new possibilities and opportunities to achieve financial business
+and industrial upgrades.
+
+Using Zipper, anyone and any business entity can conduct cross-border fund collections and
+payments, B2B business, supply chain finance, loyalty programs, asset management, trad-
+ings and other financial transactions. In all these things Zipper will provide a decentralised
+system that is cheaper and faster than traditional methods. Zipper's high-performance distrib-
+uted accounting network and built-in decentralised exchange (DEX), while protecting the
+privacy of users and data, will allow fast transactions between centralised fiat currency and
+decentralised crypto currencies. Moreover, while not requiring any trusted gateways, the
+decentralised transactions between different blockchains can be performed directly.
+ZIPPER WHITE PAPER CHAPTER I
+
+ANALYSIS OF PAIN
+POINTS IN THE
+EXISTING FINANCIAL
+INDUSTRY
+ZIPPER WHITE PAPER CHAPTER I
+
+Analysis of pain points in the existing financial
+industry
+
+1 Cross-border finance
+(C| As the frequency of trade between China and other countries increases,
+
+in the context of centralised application and processes in the traditional
+financial system, many intermediate parties are needed to carry out
+cross-border settlement and cross-border remittance between financial
+institutions. This process often has a long arrival time and high cost,
+which makes it difficult for cross-border finance to meet the current
+market demand.
+
+@ 2 Digital assets
+With the continuous development of blockchain technology and related
+businesses, various digital assets have been generated. However, differ-
+ent blockchain systems are not interoperable, they are independent from
+each other, so information and data interaction cannot be performed.
+These problems limit the circulation and use of digital assets, it also
+affects the development of digital assets.
+
+(®) 3 Asset management
+At present, third-party intermediaries are mainly used to manage assets
+
+such as stocks, funds, bonds and notes. This leads to complex asset
+management processes, high transaction costs, and increases the risk
+of transaction certificate tampering and fraud.
+
+4 User identity authentication
+
+Since user data between financial institutions cannot be interworked,
+user identity is repeatedly authenticated by different organisations,
+which not only increases the cost, but also causes unified identity infor-
+mation and records, and brings the problem of user identity leakage.
+
+09
+ZIPPER WHITE PAPER CHAPTER II
+
+DESIGN PRINCIPLES
+ZIPPER WHITE PAPER CHAPTER II
+
+Design principles
+
+Zipper is a blockchain infrastructure which is used to build an ecosystem of cryp-
+tographic financial applications. It is a global blockchain open source community proj-
+ect. Zipper is designed in two layers: Layer1 and Layer2. Layer‘ is the basic chain of
+Zipper. Above Layer1 is Layer2, which is a functional implementation of the ZipperNet
+switching network. This layered design achieves logical isolation for the plug-in fea-
+ture.
+
+It proposes systematic and streamlined trust ecological construction methods to solid-
+ify the future of encryption finance. The underlying architecture design and modular-
+ization are carried out from multiple dimensions such as business adaptability, perfor-
+mance, security, policy, technical feasibility, operation and maintenance, governance,
+and cost. This is done in accordance with the requirements of the special business of
+financial institutions, the current state of technology, laws and regulations etc. The
+launch of Zipper will effectively reduce the development and use costs of financial ser-
+vices, and will promote the process of blockchain financial applications.
+
+11
+ZIPPER WHITE PAPER CHAPTER IIT
+
+DISTRIBUTED LEDGER
+TECHNOLOGY
+ZIPPER WHITE PAPER CHAPTER III
+
+Distributed ledger Technology
+
+1 System Hierarchy
+
+The blockchain system is usually a six-layer architecture model, from the bottom up
+the layers are data, network, consensus, incentive, contract, and application.
+Although many blockchain systems do not completely preserve this six-layer struc-
+ture, data, network, and consensus are indispensable elements for building all block-
+chain systems. Because the design structure is relatively simple, the aforementioned
+blockchain system mostly adopts a holistic design method, that is, the single program
+realizes all the functions of each layer of the blockchain. For example, P2P connec-
+tions, transaction data processing, and broadcasting, consensus achievement, specif-
+ic application function implementation, and so on. However, nowadays, due to the
+continuous development and renewal of blockchain technology, we can easily find
+that the design of single coupling has a lot of irrationalities code reusability is low
+which makes code management difficult. In order to solve this problem, Zipper will
+adopt Tendermint to decouple the different functional modules of each layer of the
+blockchain. This will separate the consensus mechanism, P2P, and other parts with
+different functions from the single blockchain application status details. Using Tender-
+mint will also allow Zipper to meet the needs of various upper-layer distributed finan-
+cial applications in the future.
+
+Application layer
+
+Blockchain Application layer
+
+Layer 6
+
+Layer 5 Contract layer
+algorithm Smart contract
+
+13
+ZIPPER WHITE PAPER CHAPTER III
+
+Layer 4 Incentive layer
+
+Issue mechanism
+
+Distribution mechanism
+
+|
+i
+
+Layer 3 Consensus layer
+Consensus algorithms, such as... etc
+Layer 2 Network layer
+
+‘
+( P2P networking ) (cata Verification Mechanism) fata dissemination mechanisy)
+
+Layer 1 Data Layer
+Block data Asymmetric encryption,
+
+Hierarchical Architecture of Blockchain System
+
+Tendermint consists of two main components, the blockchain consensus engine and
+a general application interface. The consensus engine is called Tendermint Core,
+which is used to ensure that the same transaction is recorded in the same order on
+different nodes. The general application interface is also referred to as the Application
+Blockchain Interface (ABCl), it allows transactions to be processed in any program-
+ming language. Tendermint's hierarchical execution logic interacts with the application
+layer through the ABCI interface for the Tendermint Core. Therefore, developers only
+
+2 Consensus mechanism
+
+Tendermint provides a high performance, highly consistent, and secure BFT consensus
+engine. Strict fork accountability ensures that the behavior of a perpetrator is controlled.
+
+14
+ZIPPER WHITE PAPER CHAPTER III
+
+In terms of blockchain consensus certainty, Tendermint achieves absolute determination. Any
+block that gets 2/3 or more of pre-voting and pre-submission will be finally determined and
+this process will continue indefinitely. When 1/3 of verifiers or more do not respond, the
+network will stop running. Therefore, Tendermint prefers consistency rather than usability,
+CAP theorem states that in the case of network partitioning, can only take one of consistency
+and availability in a distributed system. A system with consistency will stop running and will
+interrupt incorrect transactions, but a system with availability continues to run even if the
+incorrect transaction passes.
+
+In Zipper’s early financial ecosystem, we will be more focused on maintaining the con-
+sistency of the system. Tendermint consensus algorithm can effectively guarantee the
+correctness and robustness of the system. As an increasing number of decentralized
+financial applications launch on the Zipper platform, the status of system availability
+will be upgraded simultaneously. Therefore, the application of the penalty rules of
+rights and interests proof in the Tendermint consensus is the optimization of the Zipper
+ecosystem.
+
+Consistency Favoring
+network
+partition
+
+@
+@ @ =
+@ @
+
+Availability Favoring
+network
+partition
+
+seo oo
+@ @
+
+Impossible Triangle under CAP Theorem
+
+15
+ZIPPER WHITE PAPER
+
+CHAPTER III
+
+2.1 Operation mode
+
+The Operation model of the Tendermint consensus is similar to the circular voting
+mechanism. There are two main roles involved in the consensus process:
+
+WB Validator:
+
+A node in the network that can
+participate in voting in the consen-
+sus process. Different verifiers
+may have different voting power
+
+during the voting process.
+
+2.2 Status machine
+
+Hl Proposer:
+
+Tendermint uses a definitive non-
+blocking polling selection algo-
+
+rithm to select a proposer from the
+validators. The algorithm selects
+the proposer according to the
+proportion of the voting weight of
+
+the validators. The higher the voti-
+ng weight, the higher the frequen-
+
+cy of the validator selected as the
+
+proposer.
+
+The blockchain based on the Tendermint consensus is to determine the next block
+through a round-based mechanism. Each Round consists of three processes: pro-
+pose, prevote, precommit. Ideally, the block generation status on the chain is as
+
+follows:
+
+NewHeight (Propose > Prevote— Precommit) |. Commit Li NewHeight Ly we)
+
+Block Generation States under Tendermint Consensus Mechanism
+
+New Height indicates the latest block height, that is, the block height is increased after
+the block is accepted by the whole network. And Propose -> Pre-vote -> Pre-commit
+is one round, and the state of (Propose -> Prevote -> Pre-commit) means that submit-
+ting a block at a certain block height successfully may require multiple rounds. It
+means that one round may not be enough for one block to successfully submit in.
+
+16
+ZIPPER WHITE PAPER CHAPTER III
+
+2.3 Consensus process
+
+Assuming that the current blockchain is at a certain block height, in order to determine
+the next block, the system will enter the following consensus process.
+
+Propose
+
+Invalid block or
+not received
+in time
+
+Valid block
+
+New Round Prevote Nil Prevote Block
+
+no +2/3
+precommit Wait for
+
+for block prevotes from
+no +2/3 +2/3
+
+. prevote for
+Precommit block
+
+Wait for Nil 42/3
+precommits prevote for
+
+from +2/3 Precommit eats
+
+precommit
+for block
+
+Block
+
+Tendermint Consensus Process
+
+Propose Prevote
+
+At this stage, the proposer selected by the
+system proposes a transaction block as the
+next block on the chain and broadcasts the
+
+proposal.
+
+Precommit
+
+At this stage, if the validator receives more
+than 2/3 of prevote of the block, the validator
+will pre-commit the block; otherwise, the
+
+pre-commit is Nil.
+
+At this stage, for the block proposed by the
+proposer, if the validator verifies it as a valid
+block, the validator will prevote it; on the
+contrary, if it is an invalid block or the valida-
+tor does not receive the proposed block in
+
+time, validator’s prevote is Nil.
+
+©3 Decision
+
+A: this stage, each node needs to make a
+decision. If the node receives more than 2/3
+of the pre-commit, then the node enters the
+commit phase; otherwise, the node
+proceeds to the next round's proposed
+
+phase.
+
+17
+ZIPPER WHITE PAPER CHAPTER III
+
+3 Smart Contract
+
+Ethereum EVM defines a smart contract virtual machine that is simple, deterministic,
+lightweight, secure, capable of calculating contract operating costs, and can be run on
+Ethereum nodes in a public chain network. The existence of EVM allows developers
+to freely develop various decentralized applications. In the open source world, healthy
+communities and ecosystems have always been the key to the success of open
+source software. The ecological development of EVM has been valued and sought
+after by developers and enthusiasts. Many tools and frameworks have been created
+in this ecosystem, such as Truffle, Remix and web3.js. These tools reduce the devel-
+opment difficulty and cost of decentralized applications, so that acceptance is
+advanced and a virtuous circle is formed. Therefore, Zipper's virtual machine will pro-
+vide compatibility with EVM.
+
+3.1 Contract Calling and Execution
+
+In Ethereum, the bottom layer supports the calling and execution of contracts through
+the EVM module. When the calling is made, the code is obtained according to the con-
+tract address. After the environment is generated, it will be loaded into the EVM to
+run. Usually the development process of smart contracts is to write logic code with
+solidity, then compile the metadata through the compiler, and finally publish it to the
+Ethereum network.
+
+bytecode
+
+EVM
+
+Development Flow Diagram of Smart Contract
+
+18
+ZIPPER WHITE PAPER CHAPTER III
+
+However, the way that Ethereum's smart contracts are implemented makes EVM
+code and node code highly coupled. Zipper will complete code decoupling by support-
+ing contract execution through a protocol model. Zipper's smart contract engine can
+be based on the docker container. When a node deploys a smart contract, it will con-
+nect to the docker of the node host in a socket. It will also dynamically generate a
+docker container that can execute a smart contract language, which means that you
+can implement your own smart contract execution engine such as JVM, through inter-
+faces.
+
+3.2 Scalability
+
+In the Ethereum agreement, a transaction or message may affect the status of multi-
+ple accounts. For example, through a message calling, a contract calling transaction
+may be invoked to change the status of multiple contract accounts at the same time.
+These status changes either happen at the same time or none of them happens.
+Therefore, the transaction in Ethereum is a rigid transaction that satisfies the charac-
+teristics of ACID (Atomicity, Consistency, Isolation, Durability), which is an important
+reason for the lack of scalability of Ethereum.
+
+Based on the considerations of scalability and performance, Zipper will adopt a final
+consistency strategy that satisfies BASE (Basically Available, Soft state, Eventual
+consistency) semantics. Specifically, we designed Zipper as an Event-Driven Archi-
+tecture (EDA). Every smart contract is treated as an independent service, and mes-
+sages can be communicated between the contracts without sharing any state.
+
+Therefore, we need to disable the semantics of synchronous function callings across
+contracts in Zipper EVM, allowing only message communication between contracts.
+The affected EVM instructions are mainly CALL and STATICCALL. In the Zipper EVM,
+these two instructions are neither executed immediately nor return the result of the
+calling, it only generates a request transaction to be written to the ledger. Therefore,
+this instruction no longer has the semantics of function callings in Zipper, instead, a
+message is sent to an account.
+
+3.3 Standard Library
+
+19
+ZIPPER WHITE PAPER CHAPTER III
+
+Developers who develop smart contracts on Ethereum often suffer from Solidity's lack
+of standard libraries. For example, complex verification work must be performed out-
+side the chain. One of the important reasons is that Solidity does not provide float-
+ing-point arithmetic function, especially the n-th root of the floating-point number.
+
+In EVM, DELEGATECALL instruction can call a pre-deployed contract to implement
+library functions. Ethereum also provides several Precompiled Contracts, mainly
+Hash operations. But these features are too simple to meet complex application
+needs. Therefore, we will provide a series of standard libraries, such as: string pro-
+cessing, floating-point arithmetic, basic mathematical operations, containers, sorting,
+and so on. Considering performance, these standard libraries will be implemented as
+native extensions, with most of the computation built into Zipper local code. The
+method call is only done in the EVM code with the DELEGATECALL instruction.
+
+Standard libraries can be extended as needed, but because the state machine model
+of the entire system is deterministic, it still does not provide features like random num-
+bers.
+
+3.4 Multiple Virtual Machine Support
+
+In order to support developers of multiple programming languages to seamlessly
+access the Zipper financial ecosystem, Besides EVM, Zipper has independently
+developed ZVM which supports multiple programming languages. The ZVM has a
+highly cohesive, low-coupling design architecture that meet the design ideas of the
+theoretical “unlimited scalability” (scale up & scale off) and parallelised smart contract
+
+systems.
+ZVM has the following advantages:
+
+e Lightweight execution environment:
+in general, for the sake of security, smart contracts must run in isolated sandbox exe-
+
+cution environments. Every time a smart contract is called, it must start a new virtual
+machine or a new container, which not only consumes a lot of resources, but also
+limits the running efficiency. ZVM's smart contract system virtualizes containers. It has
+a fast startup time and high execution efficiency when solving the fragile isolation of
+the container. ZVM also will operate with high efficiency when a large number of con-
+tract threads are started and created (E.g. above 1000).
+
+20
+ZIPPER WHITE PAPER CHAPTER III
+
+e Pluggable execution environment architecture:
+ZVM's default execution environment does not provide persistent storage, so the
+
+default contract is a stateless function similar to microservices, which can be pro-
+cessed directly and concurrently. Only when the storage state is required, pluggable
+persistent storage modules are available. Such a virtual machine has only one CPU
+and stack by default and provides RAM or other storage space only when needed,
+which significantly reduces resource consumption.
+
+e Explicit calling relationship:
+This differentiates ZVM from Ethereum dynamic calling,only the function of static call-
+
+ing is provided by ZVM, so that the calling relationship of the program can be clarified
+before running. Once the calling path is clear, the state data that the contract may
+modify is also clear. Based on these explicit calling paths, real-time dynamic fragmen-
+tation can be used to improve the parallelism of contract execution.
+
+e Contract code that can be stored outside the chain:
+The hash value is stored in the routing table (DHT) through the chain, and the contract
+
+code can be stored outside the chain to realize the scalability of the storage space.
+
+e Low coupling design:
+ZVM guarantees low coupling between the contract language, execution environment
+
+and blockchain, and improves the versatility of the smart contract system.
+
+e Contract language:
+It is more friendly to developers than EVM, easy to use, and can be ported with Solidi-
+
+ty.
+
+4 Data Storage Model
+
+From a design philosophy point of view, the current blockchain and database adopt
+two different strategies to support general services. For traditional databases, the
+design philosophy is “business and data separation”, which means that the database
+is only responsible for data storage. By providing a flexible query language, applica-
+tions can directly access the database for addition, deletion, modification and query.
+Basically all business logic is defined by the application.
+
+21
+ZIPPER WHITE PAPER CHAPTER III
+
+However, for blockchain, it uses tightly coupled storage to deliver the business logic.
+In the blockchain, especially in the design philosophy of the public chain, due to
+untrustworthy nature of each storage node and application, most of the business logic
+needs to be highly customized on the protocol layer. A blockchain node not only needs
+to parse and encapsulate the protocol layer, but also be responsible for localizing the
+data to the disk and storage.
+
+Thus, although the blockchain can be viewed as a multi-live database at a high level,
+considering from a concrete implementation perspective, each blockchain node can't
+be simply regarded as a multi-living alternative to a traditional database. Instead, it is
+regarded as a set of applications that contain protocol parsing and some business
+logic.
+
+Zipper is committed to being a universal platform for financial encryption ecosystem.
+It is necessary to meet the need to store multiple types of data, so the log format and
+storage must be returned to the versatility of the database. The current ledger model
+works well for inter-account settlement, but it cannot be extended to a common busi-
+ness platform. Zipper will adopt two methods to optimize the storage model during the
+design and development process. The first method is to use the traditional account
+table and the flowchart mechanism to embody UTXO in a way of statement. The
+account snapshot is also saved periodically to avoid having to redo every transaction
+each time the database is rebuilt. The second method is to use the log combined with
+the user data storage mode to universally meet the general business needs.
+
+4.1 Index Storage
+
+Few blockchain projects now support custom indexing of user data. However, the cur-
+rent blockchain project structure has no reason to prove the loss of the ability to build
+a generic index on it, this includes B-tree indexing, bitmap indexing, full-text search.
+Therefore, Zipper will make up for the lack of indexing mechanism on the blockchain.
+
+4.2 Merkel tree storage model
+
+SPV (Simple Payment Verification) verification technology by constructing Merkel
+proof, ensures that the client only needs to synchronize the header information of the
+block.
+
+22
+ZIPPER WHITE PAPER CHAPTER III
+
+The aim of verifying transaction information is easily done, which greatly saves stor-
+age space and reduces the burden on end users and network transmission. In the
+Zipper network, the client needs to obtain information about its own account, identity
+information, etc. So, the design of the ledger needs to support the structure of the
+Merkel certificate.
+
+(1) Merkel hash tree
+
+In the process of data synchronization, it is necessary to verify that the data of the
+other node is added based on its own data. The Consistency of constructing Merkel
+can prove that this is the goal. For the Merkel tree MTH(D[n]) composed of the Merkel
+tree MTH(D[0:n]) and the first m leaf nodes of the tree, the consistency proves to con-
+struct a node list, which proves that the first m leaf nodes of the two trees are the
+same. The following algorithm can construct a consistent proof of the unique minimum
+number of nodes.
+
+Given an ordered list of n inputs D[n] = (d,, d,, ..., d,_,), for m+ 1 inputs d(m): 0 <m<
+n, which corresponds The Merkel audit path PATH (m, D[n]) is defined as follows:
+PATH(d,{d,})={}
+PATH(m, D[0:k]+MTH(D[k:n])) m<k
+PATH(m,D[n])=
+PATH(m-k, D[k:n]+MTH(D[0:k])) m>k
+
+Where + indicates two lists before and after the connection.
+
+The following image is an example of a Merkel consistency
+
+PROOF(3,D[7])is proved to be[c, d, g; I]
+
+Proof of Merkel consistency
+
+23
+ZIPPER WHITE PAPER CHAPTER III
+
+(2) Merkel-Patricia Tree
+
+In some scenarios of the Zipper network, we need to prove the final result of a certain
+entity immediately after multiple transactions are generated, such as proving the iden-
+tity status of an entity. When using Merkel certification, it needs to prove each histori-
+cal transaction one by one. Merkle Patricia Tree (MPT) greatly improves efficiency.
+
+MPT is a combination of Patricia tree and Merkel tree, including the mapping of key
+values. It provides a cryptographic-based, self-checking tamper-resistant data struc-
+ture which makes it deterministic, efficient, and secure:
+
+WY Deterministic
+
+When looking up data,
+the same key value will
+find the same result and
+
+have the same root hash.
+
+&> Efficient
+
+When the data changes,
+the new tree root can be
+quickly computed without
+recalculating the whole
+tree. The time complexity
+of inserting, searching
+and deleting data is
+under control in oog3),
+
+© Security
+
+When an attacker creates a
+huge number of transactions
+maliciously, such as initiating
+a DOS attack and attempting
+to manipulate the depth of
+the tree, the defined depth of
+the tree will make the attack
+impossible.
+
+24
+ZIPPER WHITE PAPER CHAPTER IV
+
+DISTRIBUTED TRUST
+FRAMEWORK
+ZIPPER WHITE PAPER CHAPTER IV
+
+Distributed trust framework
+
+1.DIDs Protocol
+
+Blockchain achieves efficient authentication mechanism of digital identity. Users who
+access the blockchain system to bear a special role identity will be reviewed and iden-
+tified by a unique public-private key pair or CA certificate, identity document, etc. This
+mechanism makes the identities of all those who conduct regulatory business on the
+chain recognizable and non-repudiable. Combining KYC and AML policy in the
+finance industry and relying on the result of customer due diligence, biometric technol-
+ogy, and customer credit data, customer’s identity themselves and can be assigned a
+unique identification on the blockchain. If necessary, information desensitization pro-
+cess or cryptographic algorithm would be implemented to protect the privacy of KYC
+information, which guarantees that customers have an accurate and legitimate identity
+on the chain and that their sensitive information is not leaked. Meanwhile, regulators
+can obtain sufficient information for control.
+
+Therefore, Zipper network will customize a decentralized identity mechanism to
+manage an entity’s identity in the network. Entity can register their identity, request
+and send certifications, manage their private key and data safely in Zipper network. It
+will also be compliant with the recent EU General Data Protection Regulations
+(GDPR) #! and modern safety standards.
+
+1.1 Identity declaration
+
+Identity declaration is used to prove certain attributes of entities. The declaration is
+formatted in JSON-LD, and the digital signature is added in accordance with the
+LD-Signature specification. It can be stored and transferred as a data unit and verified
+by any entity. Verifiable declarations mainly include metadata, declaration content and
+signature. In which, the declaration content can be arbitrary data.
+
+1.2 Identity declaration document
+
+The design of Zipper’s authentication protocol is referred to W3C Credentials Com-
+munity Group regarding Decentralized Identifiers and Identity Credentials ©.
+
+26
+ZIPPER WHITE PAPER CHAPTER IV
+
+The design of Zipper’s authentication protocol is referred to W3C Credentials Com-
+munity Group regarding Decentralized Identifiers and Identity Credentials [3]. Identity
+is identified by a distributed identifier (DID) and points to a DID document. Root record
+of the decentralized identifier is composed of the combination of DID and its associat-
+
+ed DID documents.
+DID generation methods that Zipper currently supports as follows:
+
+Zipper-did = "did:Zipper:"Zipper-specific-idstring
+Zipper-specific-idstring = network":" address
+network = "mainnet"/"bandari"/"sky"/"water"
+address = 40*HEXDIG
+
+The identity declaration document must be a single JSON object, whose format is
+specified in JSON-LD. JSON-LD is a specification for mapping JSON data to the RDF
+semantic web defined by [JSON-LD]. For example, an individual's basic identity decla-
+ration document is as follows:
+
+"@context": "https://Zipper.io/Zipper-did-v1.jsonld",
+
+"@id": "did:Zipper:mainnet:d278018404b0889326f1799 beecf8724b61d691e",
+"@type": "Person",
+
+"name": "Bob",
+"email": "bob@Zipper.io",
+"born": "1990-01-01",
+"credential": [!
+. "@graph": {
+10. "@context": "https://w3id.org/identity/v1",
+11. "@id": "http://example.gov/credentials/3732",
+12. "@type": ["Credential", "PassportCredential"],
+13. "name": "Passport",
+
+14. "issuer": "https://example.gov",
+
+15. "issued": "2010-01-01",
+
+16. "claim": {
+
+17. "@id": "did:ebfeb1f712ebc6flc276e12ec21",
+18. "name": "Alice Bobman",
+
+19. "birthDate": "1985-12-14",
+
+20. "gender": "female",
+
+21. "nationality": {
+
+22. "name": "United States"
+
+23. },
+
+24. "address": {
+
+25. "@type": "PostalAddress",
+
+26. "addressStreet": "372 Sumter Lane",
+
+27. "addressLocality": "Blackrock",
+
+28. "addressRegion": "Nevada",
+
+29. "postalCode": "237842",
+
+30. "addressCountry": "US"
+
+So ESS Ba Ba fe
+
+27
+ZIPPER WHITE PAPER CHAPTER IV
+
+31. },
+
+32. "passport": {
+
+33. "@type": "Passport",
+
+34. "name": "United States Passport",
+35. "documentid": "123-45-6789",
+
+36. "issuer": "https://example.gov",
+37. "issued": "2010-01-07T01:02:03Z",
+38. "expires": "2020-01-07T01:02:03Z"
+39. }
+
+40. },
+
+41. "signature": {
+
+42. "@type": "LinkedDataSignature2018",
+
+43. "creator": "https://example.gov/keys/27",
+
+44. "signature": "3780eyfh3qOfhhfiq3q9f8ahsidfhf29rhaish"
+45. }
+
+46. }
+
+47.}],
+
+48. "signature": {
+
+49. "@type": "EcdsaKoblitzSignature2016",
+
+50. "created": "2018-10-23T05:50:16Z",
+
+51. "creator": "ecdsa-koblitz-pubkey:020d79074ef137d4f338c2e6bef2a49c618109ec-
+cflcd01ccc3286634789baef4b",
+
+52. "signatureValue":"..."
+
+53.}
+
+54.}
+
+e Credential is a collection of digital certificates issued by third parties to verify digi-
+tal identity. See https://opencreds.org/specs/source/identity-credentials/.
+
+e Identity declaration document can attach Linked Data Signatures to ensure the
+correctness and integrity of the document. See https://w3c-dvcg.github.io/ld-signa-
+tures.
+
+The identity declaration document implements the SHA256 hash value as the file
+name, and the public key is encrypted before being stored on IPFS. The mapping
+relation between DID and identity declaration documents is stored on the Zipper
+
+blockchain. If an individual or organization conducts identity authentication and de-
+claration, it firstly creates identity and submits relevant data to complete identity
+
+authentication on Zipper. After authenticating an identity successfully, it obtains digi-
+tal certificate. Digital certificates are stored in identity declaration documents and
+can be used for identity certification in the future.
+
+28
+ZIPPER WHITE PAPER CHAPTER IV
+
+1.3 Anonymous identity
+
+Privacy information protection of entities (individuals and institutions) has been
+increasingly emphasized, while entities (individuals and institutions) are particularly
+sensitive to the relevant information in financial activities, and the demand for privacy
+protection has become stronger. In order to conform to financial supervision and pro-
+tect entity privacy more effectively, Zipper introduces the concept of user virtual identi-
+ty. Every entity can have a virtual identity in the system, which is one-to-one relation-
+ship with the declared real identity. It is impossible to get the real information of the
+
+entity using virtual identity without permission.
+The arbitration authority in Zipper system is trustworthy. Authentication of the real
+
+identity of entities is required to create virtual identities, Key Generation Center (KGC)
+will also issue private keys to the corresponding virtual identity of users. For example,
+when a user borrows encrypted currency from a lender node (the lender becomes a
+node in Zipper network), they need to provide the institution with a legitimate signature
+of their virtual identity. After the institution verifies, it is assumed that the user has com-
+pleted the trusted authentication declaration in the arbitration institution, the user's
+loan will then be granted in an instant. The protocol for this scenario is described in
+detail as follows:
+
+@ Registration.
+Firstly, user submits the real identity to the arbitration institution, and arbitration institu-
+
+tion verifies and stores it in the database. Then, the user applies to the arbitration insti-
+tution for a private key based on the identity signature (the arbitration institution
+cannot know the user's virtual identity information) and receives a corresponding
+private key {s,rP} for the virtual identity. Finally, the user selects the random number k
+and requests the arbitration institution to sign (JD, ||) blindly. The arbitration institution
+generates a blind signature Sig,(D, ||k) , records the intermediate results of the blind
+signatures and the real identity of the user, and returns Sig,UD,||&) to the user as identity
+license.
+
+@ Apply for a loan.
+
+Users submit to the lender (zp, ||) and Sig,(iD,||k) the amount of the loan w. After the
+lender verifies the vali-dity of the signature, the lender issues the loan
+
+M- Sig, (|| 2D, || CurDate) |
+
+29
+ZIPPER WHITE PAPER CHAPTER IV
+
+(1) Identity-based blind signature scheme
+
+Zipper adopts IBBS signature scheme"! to achieve anonymity. IBBS is generated by
+blinding the identity signature scheme IBECDSA. The detailed description of the
+scheme is given below:
+
+e IBECDSA signature scheme
+
+1) Initialization.
+
+KGC generates a security curve elliptic E whose exchange group prime order is a big
+prime number of n and base point p. KGC selects random number as the master-key.
+Finally, KGC publishes {E, n, P, aP, H(o)}, where aP represents the dot product opera-
+tion of elliptic curve and #:{0,1}' > Z; the safe hash function (SHA).
+
+2) Key extraction.
+
+@ KGC selects random number, given R=?7P to user.
+
+@ User selects random number, computesa' = rr=(x,,y.),x, =x modn, JIVE m7 =x,HUD)r' to
+KGC, where (x,,y,) represents the x and y coordinates of the points on the elliptic
+curve.
+
+@ Given x = am +t to user.
+
+@ Computes x= rx =tam + tr =ax,H(ID)+rz , and get private key:
+
+{x =ax,HUD)+rt,rtP}
+
+3) Signature.
+
+The signer generates random number z= kP, computes z = kP, s = ex + k,e=H(mllz).
+Finally, sends {m, e, s, r} to the verifier (m is a message to be signed).
+
+4) Signature verification.
+
+The verifier calculates trP = (x, We ) to get X,=x,modz . Then computes
+
+s'P=aH(UID)P and Zz =sP—ex,s “P+rtP) , where ID. is identity of the signer. Finally,
+verifies e= H(ml| z ) to determine if the signature is legitimate.
+
+e IBBS signature scheme
+
+1) Initialization. KGC generates a security curve elliptic E whose exchange group
+prime order is a big prime number of n and base point p. KGC selects random number
+as the master-key. Finally, KGC publishes {E, n, P, aP, H(o)}.
+
+30
+ZIPPER WHITE PAPER CHAPTER IV
+
+2) Key extraction. User submits ID to KGC and KGC computes x = aH(ID). Then select
+random number, computes R=rP=(x,,y.), returns {x=xx,+r,rP} to user as private key,
+where x, =x, modn.
+
+3) Signature.
+
+@ The signer selects random number, computes z = kP, sends z to signature
+requester.
+
+@ The signer randomly generates. Computes e= H(m||aP+zf)and m =ef-1, return
+m back to the signer.
+
+@ The signer computes s = m'+k to requester (x is private key)
+
+@ The requester computes s = Bs +a, sends {m, e, s, r} to the verifier (m is a mes-
+sage to be signed).
+
+4) Signature verification. The verifier calculates rP =(x,_,y,)to get x= x, mod . Then
+computes s'P=aH(ID,)Pand z =sP—e(x,s'P+rP) , where JD, is identity of the signer.
+Finally, verifies e= (mlz) to determine if the signature is legitimate.
+
+(2)Security Analysis Based on IBBS Signature Scheme
+
+First, we need to prove that a legitimate blind signature {m, e, s, rP} inevitably is a
+legitimate IBECDSA signature.
+
+IBECDSA signature scheme
+
+Proof
+
+z=sP —e(x,s'P +rP)
+= (fs +a)P-e(x,s'P+rP)
+= (B(xm +k)+ a@)P—e(x,s'P+rP)
+= (fxm + BK) P+ aP-e(x,s'P+rP)
+=exP+ PkP+ aP—ex,s° P+rP)
+= fz+aP
+
+Therefore, as long as e= H(m||z)= H(m|| 6z+@P) , the signature is valid.
+Second, it is proved that this signature scheme is not a forgery. Since it is not possible
+
+for KGC to know the user's private key, any IBBS signature must be a legitimate
+IBECDSA signature (which has been proved), so if the perpetrator forges the IBBS
+signature it is also able to forge the IBECDSA signature. However, IBECDSA is not
+forgeable, so the signature scheme has a non-forgery certificate.
+
+31
+ZIPPER WHITE PAPER CHAPTER IV
+
+2 Identity authentication
+
+2.1 Distributed Authentication Service Model
+
+Authentication service is one of the most important methods to assure system securi-
+ty. But for the distributed system, because of its openness and autonomy, it is no
+longer fit for the traditional centralized authentication service mode. Blockchain natu-
+rally belongs to the distributed system. If they only depend on sole CA service organi-
+zation, there may be a single point of failure (SPOF), which affects the availability.
+Therefore, we need to put forward a CA-oriented abstract implementation layer on the
+platform architecture so that it can support multiple CA certificates. This Abstract
+Layer focuses on the compatibility, availability, standardization, and security of CA
+certificates. Through the encapsulation and interface of the multi-CA abstraction layer,
+any different CA institutions can provide a unified view of the credit endorsement for
+the identity of the nodes (financial institutions, merchants, etc.) in the blockchain. If
+necessary, an institution in the one chain can use certificates from multiple CA institu-
+tions at the same time. Forming a “multi-center” certification pattern that enhances the
+credit rating of the blockchain system, improves the institution experience and system
+availability.
+
+2.2 Identity Authentication Protocol Description
+
+Zipper implements a distributed authentication service model based on elliptic curve
+digital signature and threshold key sharing to provide greater security for distributed
+systems. The algorithm used is based on the Shamir threshold key sharing scheme:
+
+a group of N members shares a SK by using a key polynomial /(). If f@)is a k-1 o-
+rder polynomial, any K members of the group can pass the Lagrange interpolates the
+
+recovery SK and any combination of less than K members in the group cannot recover
+the information of the SK, that is, the K threshold key sharing.
+
+(1) Private Key Sharing and Signature Authentication
+During the operation of the system, there is a temporary key management center that
+
+uses the elliptic curve digital signature algorithm to compute the CA system signature
+and authenticated key pair SK and PK, which is the private SK, in the form of SK=(m),
+where SK=(m) is PK= (p, q, E, A, B)
+
+32
+ZIPPER WHITE PAPER CHAPTER IV
+
+Then complete the sharing of the key. The Temporary Management Center selects a
+k -1 order polynomial f@=+ f*x+/,*"+--+f,,*x* randomly for generating the shadow
+of the key, where the shared SK is f(0) = m. Each entity v, =(i=1,2,--.N) has a shadow
+P, =({(v,)modq) of the system key. The SK of the system can be recovered through any
+K union of entity {v,,v,,--,v,}. Lagrange interpolation is expressed as
+
+m= >\(P, +1,(0)modq) =)" SK (modq) (1)
+
+Where:
+
+(x Vox vo Vig & v,)
+
+0, Yio, vO, Vv yn, —v,)
+
+1) (2)
+
+Each key shadow owner can calculate SK using Lagrange interpolation theorem, and
+SK can be calculated by m= >’ SK (modq) as formula (1). In order to improve system
+security, the signature of the certificate held by each entity is not directly signed by m
+which is generated by k union entities, but by using a multi-signature protocol. That is:
+
+Cert, = kK'(M/k+ SK,«r)modq (3)
+
+Cert = (Cert, + Cert, +--+ Cert,)modq
+=| k'(M/k+ SK, +r)+k'(M/k+SK, +r) +---+k'(M/k+SK, +r) |modq
+=| k(k' + M/k)+k'(SK, + SK, +---+SK,)+r |modq
+=k'(M+SK-+r)modq (4)
+
+In the above equation, M represents the information to be authenticated, that is, the
+certificate information to be authenticated, and M/k represents the information to be
+authenticated by each neighbor entity. In this scheme, each member provides a part
+of certificate Cert, instead of its SK, , which substantially optimizes the security of the
+system.
+
+(2) K-bounded coalition offsetting
+
+For equation (1), a certain definite t can always be found, so that 2 2,+/,(O)modg=tq+m |
+however, there is no mathematical proof that the result of the multi-signature is equal
+to SK the result of the signature:
+
+k'(M+(tqt+m)er)=k'(M+mer)+k eteqer#k'(M+mer)+0=k'(M +mer)(modq)
+
+33
+ZIPPER WHITE PAPER CHAPTER IV
+
+But for each >'(P,+/,(0))modq) , their values are somewhere in between 0 ~ q - 1, so that
+t the inequality 0<7< K is satisfied. (4+ m*r) can be found using the PK and the
+original information M, so K-bounded coalition offsetting algorithm is introduced to
+enable scalable multi-signature generation:
+
+Y= M(M+)°P, *] (0)modq = Ki(M + (iq+ m)*r)modq
+Step:
+
+1.Z=-kl*q*r mod q
+
+2.) =0, W=-- kl*q*r
+
+3.while | < Kdo
+
+4. Y=(Y+W) modq,W=(W+Z) modq
+5. ifver(M,(r,Y)) then
+
+6. success , break the loop ;
+
+7. end if
+
+8.end while
+
+Verification: ¥Y=k "(M+ m*r)\(modq)
+
+ver(x,(r,s)) is the signature's validation function r= A_modgq , where 4, is the X coor-
+dinates of the point A. In a P2P system, K is the number of neighbor nodes corre-
+sponding to an entity, so it is not so large. Therefore, the loop in the above algorithm
+can end after a certain reasonable number of times.
+
+(3) Identity Declaration Service and Life Cycle Management
+
+Essentially an identity declaration is also a certificate, which is an extension of a
+generic certificate. The certificate service system in distributed authentication system
+is similar to a public key infrastructure PKl-based system, including (identification)
+certificate management activities such as publishing, storing, displaying, updating and
+revoking. Note that in distributed authentication system, certificate authentication ser-
+vice is accomplished by the combination of distributed K entities.
+
+e Certificate issuance:
+
+The way an entity gains trust in the entire system is to issue a valid certificate. The
+validity of the certificate is achieved by signing with SK. Generally, the issuance of cer-
+tificates can be divided into three phases: (1) System formation phase; (2) Self initial-
+ization phase;
+
+34
+ZIPPER WHITE PAPER CHAPTER IV
+
+e Certificate storage:
+
+Certificates can be divided into public certificate and privacy certificate. The index of
+the public certificate can be stored in Zipper distributed ledger, and the content is
+stored in the IPFS network. The privacy certificate is usually stored in the client of the
+entity and managed by the entity itself.
+
+e Certificate presentation:
+
+The certificate owners can decide to whom they disclose the declaration, and the cer-
+tificate owner can choose to present part of the certi-ficate content or merge partial
+content of multiple certificates without affecting the verification of the certificate pre-
+sented.
+
+e Certificate verification:
+
+In Zipper network, there are many ways to verify certificates. The non-interactive veri-
+fication method is not required to interact with the issuer of the certificate, the issuer
+only needs to obtain the public key information from the distributed ledger of the
+Zipper network according to the DID of the certificate issuer, and then uses the public
+key to verify the digital signature in the declaration. After that the validity of the certifi-
+cate can be authenticated.
+
+e Certificate revocation:
+
+When the certificate issued by the verification system to an entity fails, we should
+revoke the certificate in time and release the binding relationship between the certifi-
+cate and the entity. Zipper uses the certificate revocation strategy adopted by the
+distributed authentication service model, which is divided into explicit certificate revo-
+cation and implicit certificate revocation.
+
+e Certificate Updating:
+
+Certificate is time-sensitive. Any certificate held by entity must be updated before they
+become invalid. The certificate is deterministic, and the entity must update the certifi-
+cate it holds if it has been modified. When an entity needs to update the certificate,
+other entities in the system will receive a request for certificate update. After receiving
+the request, the certificate is first verified for validity. The method is to verify in the light
+of PK and the system CRL linked list. After verification, decide whether to accept or
+reject the update request.
+
+35
+ZIPPER WHITE PAPER CHAPTER IV
+
+3 Decentralized Trusted Prophet Service
+
+The predictor is a bridge between the blockchain world and the real world. It provides
+an authoritative, accurate, tamper-resistant, stable, and auditable data query inter-
+face. The problem of predictor trustworthiness is essentially the problem that each
+node agrees on the result of the same API call in an open Byzantine network environ-
+ment. It is very similar to the consensus problem that needs to be solved in the block-
+chain, that is, in each round of consensus, we hope to achieve random leader election
+in a way that no one can easily monopolize resources. As long as most of the partici-
+pants are honest and trustworthy, the blockchain will reach a consensus in a probabi-
+
+listic sense. Therefore, we can transform the decentralized trusted predictor into a c-
+onsensus mechanism under the chain. The specific form is to take some nodes in the
+
+network for leader election. In each round of the chain consensus, a predictor service
+working group is randomly selected from all the authentication nodes. Then, in the
+randomly selected predictor working group, at (threshold) signature scheme is adopt-
+ed. As long as the t nodes are honestly following the protocol, the selected predictor
+service working group can reach consensus under the chain.
+
+The key to the consensus mechanism under the chain is the generation of equitable
+and even random numbers. We define the current round as the Byzantine Fault Toler-
+ance (BFT) consensus in the /-th round of chain, the random number r, — 1 generated
+in the previous round ( i— round) and published on the chain. Each registered group
+has the same group size (M) and for in the current round?, there are 7 registration
+groups "!. The specific links are detailed as follows:
+
+1) Group registration and reorganization:
+The newly registered node first enters the pending status. Once the pending pool
+
+accumulates enough pending nodes and waits for enough time, they will be randomly
+selected to form a new threshold group. In order to ensure that a large number of node
+registrations in a short period of time can still form a new working group with a majority
+of honest nodes in an unexpected scenario, we use the following solution: Randomly
+
+select k normally working groups to dismiss, form M undetermined nodes with
+(k+1)x M pending nodes, perform Fisher-Yates shuffling on them, form &+1 new work-
+
+ing group and register. In order to eliminate adaptive attacks of nodes, each group
+also defines a maturity period, such as a certain amount of days. The expired working
+group will no longer respond to new requests, and its members will be disabled con-
+verted into pending nodes.
+
+36
+ZIPPER WHITE PAPER CHAPTER IV
+
+2) Random group selection:
+The current round of random selection group will be: G =G[r,—1mod7] .
+
+3) Through (¢,7) threshold signature to generate intra-group consensus: each member
+j on the chain handles the data requests of the predictor and obtains the correspond-
+ing result Dj. Each member j uses the group private key fragments G7, to get signature
+fragments Fp, =sign(D,,G/,) for D, signature. And broadcast their signature fragments
+to other members in the same group while waiting for the signature fragments of other
+members in the group. Threshold (f,”) signature means that at least T honest nodes
+
+need to sign fragments of the same result D to form a legitimate set of signatures o, ,,
+that can be verified on the chain. At the same time, any combination of signature frag-
+
+ments of any of t honest nodes can be combined into the same and deterministic
+group signature @,,,, but less than t members cannot be combined into a valid group
+signature. The comprehensive evaluation shows that BLS threshold signature
+scheme is a good candidate because of its characteristics: uniqueness, deterministic,
+non-interactive generation and shortness of signature length, etc.
+
+4)The next round of randomness generation:
+Using the same threshold signature scheme as above, the member j of the G, group
+
+uses its group private key fragment G, to sign the previous round of random number
+r_, to obtain the signature fragment , ol] =sign(last _blockhash|| r Gi) and broadcast to
+the other nodes in the group.
+
+n
+t
+§ ‘System Contract on the chain
+
+le sign
+
+Private key fragment 1
+
+6 |< sign ' Combination
+=a =
+Private key fragment 2 :
+
+1g
+
+|< sign '
+6 Sshares
+
+Private key fragment 3
+
+é .
+
+Private key fragment 4
+
+gb.
+
+Private key fragment n
+
+Consensus of Prophet Group
+
+37
+ZIPPER WHITE PAPER CHAPTER V
+
+DISTRIBUTED DIGITAL
+ASSET TRANSACTION
+AND CLEARING AND
+SETTLEMENT
+ECOSYSTEM
+ZIPPER WHITE PAPER CHAPTER V
+
+Distributed digital asset transaction and
+clearing and settlement ecosystem
+
+When it comes to ensuring that data uniqueness and ownership cannot be tampered
+with, one of the advantages of the blockchain is in the sharing of information between
+multiple parties through cryptographic techniques such as digital signatures. Applica-
+tion scenarios such as cross-border payment, cross-border trade finance, and supply
+chain finance, which are coordinated among multiple independent financial institu-
+tions, have characteristics of “multi-party sharing”, “high-frequency repetition’, and
+“long transaction chain”. If the blockchain technology is applied in them, when used in
+these scenarios the costs of communication will be significantly reduced and trust in
+
+all parties will be increased, substantially improving system operation efficiency.
+
+Among all kinds of complex financial and payment businesses, the clearing and settle-
+ment of assets is the interweaving center of each business chain. From the central
+position Zipper will build an efficient distributed digital asset clearing and settlement
+ecosystem. We have carefully designed a multi-asset clearing and settlement bottom
+layer protocol, that will recast the infrastructure of digital asset trading through the
+decoupling of assets and transactions, and will empower token and authority to
+ensure the security and flexibility of the clearing ecosystem in many dimensions. This
+enables Zipper to serve the entire digital asset ecosystem, including the decentralized
+digital asset trading platform function, and makes a safer and more efficient distributed
+asset registration, clearing, and settlement business model possible.
+
+1.Ecological architecture
+
+Zipper's distributed digital asset trading, clearing and settlement ecosystem take opti-
+mizing and improving the upstream and downstream industrial structure. This covers
+the whole value service process from identity authentication, asset registration to
+asset clearing and settlement. In terms of technical architecture, we have layered
+trading, clearing, and trusteeship. This “multi-center” hierarchical ecological architec-
+ture is used to solve the limitations of the blockchain protocol itself, and to guarantee
+that the distributed network can interact with external information securely and credi-
+bly.
+
+39
+ZIPPER WHITE PAPER CHAPTER V
+
+The clearing center on the chain improves the credibility of the value transfer process
+of digital assets through secure and trustworthy mechanism of the blockchain itself,
+and the standardization-based clearing agreement can effectively support the open
+clearing ecology. In addition, based on the clearing market, we also subdivided the
+specific needs of identity authentication, registration mapping, exchange payment,
+and wealth management in the field of digital assets. Together with the identity authen-
+tication center, the registration and settlement center, it provides an infrastructure that
+is fully compatible with the existing transaction model, and supports clear-
+ing-as-a-Service solutions for future business development. In order to build a healthy
+trading ecosystem, Zipper will also expand the financial clearing scenario through
+stable and auditable smart contracts. In the clearing layer, the financial derivatives
+such as de-centralized digital assets, digital asset options, futures, and so on are
+added, this allows the open clearing system containing unlimited self-evolution space.
+
+Identity authen- Asset clear- Registration se-
+tication center ing center ttlement center
+
+Identity authe-
+. Y . _S— Clearing meme = Settlement
+ntication
+
+bees eee eee eee eee eee Exchange | Exchange wo nee ee eee eee eee eed
+
+| Service Center-APUSDK| Center-API/SDK
+
+Application- Infrastructu-
+Asset service
+service reservice
+
+Distributed clearing ecosystem architecture
+
+Risk manage-} Security se-
+
+rvice
+
+ment service
+
+2.Clearing Model and Basic Agreement
+
+At present, users’ digital assets are mainly managed and accounted for by digital
+asset wallets or trading platforms with different types and functional characteristics.
+Each tool completes the clearing and settlement of assets separately.
+
+40
+ZIPPER WHITE PAPER CHAPTER V
+
+At present, users' digital assets are mainly managed and accounted for by digital
+asset wallets or trading platforms with different types and functional characteristics.
+Each tool completes the clearing and settlement of assets separately. Decentralized
+public chain nodes or centralized operations entities are the responsible for informa-
+tion transparency and asset security. Cross-platform digital asset clearing, and settle-
+ment is also limited by business model and technical difficulties. Zipper solves the
+asset trust problem of centralized transactions through distributed clearing, combining
+the advantages of centralized and decentralized transactions respectively. It also pro-
+vides a complete set of systems and asset security in the digital asset trading industry
+for digital asset trading platforms and investors, which also give consideration to fair-
+ness, compliance and efficiency.
+
+Identity authentication . Registration settlement
+Asset clearing center
+center center
+
+Identity registration
+
+Clearing as a Service Asset Registration
+
+Certificate authority Issuance of digital asset | Cross-chain settlement
+
+Platform authentication Centralized clearing Delegation registration
+
+Trading platform , a - 7
+Identity authentication [Credit of enterprise clearing
+
+- Account clearing
+Certificate Management
+
+Individual credit clearing
+
+eEmasysi-avle- | Certificate Management
+Institution
+
+Identity authentication
+
+Distributed liquidation model
+
+Aunified business agreement is the basis for implementing a business paradigm such
+as clearing as a service. Zipper regulates the settlement of the saved business infor-
+mation domain and format, the business status generated in the business process,
+the triggering method and condition of the business status change, and the update
+information involved in the ledger by agreement. Since each participant signed a busi-
+ness agreement based on smart contract with the identity account, its implementation
+process was supported by the blockchain system endorsement objectively. This
+includes the agreement which is executed consistently on each node, that is,
+approved by the business entity. The implementation process of the agreement is
+accurately recorded, and the final result cannot be tampered with, that is, the busi-
+ness facts being executed are not deniable.
+
+41
+ZIPPER WHITE PAPER CHAPTER V
+
+Protocol specification
+
+Identity registration Account registration Account binding
+
+Trusteeship mapping Classification settlement
+
+Trusteeship settlement Credit clearing
+
+Basic Agreements on Ecology
+
+3.Clearing process
+
+The essence of Zipper distributed clearing ecology is to implement the layered system
+after the separation of transaction data and digital assets. Within architecture hierar-
+chy and data segmentation, the trading platform becomes a professional trading ser-
+vice organization. All digital assets are registered by the custodian institution, and the
+transaction settlement is guaranteed by the decentralized clearing chain. The basic
+business process of managed clearing is as follows:
+
+A . Distributed Clearing
+Trading Platform
+
+Regist
+‘egister
+
+Registration of clearing
+
+Accountcreation = $-4-----------f dee | L>
+Identity authentication --{-----------f Jee |>] Identity registration
+Digital Asset Registration }------------} fee eee > Asset mapping
+Sub-account creation --4|----------- - | Binding Platform Account |. - | - - - - - - --- --- >] Sub-account registration
+
+Asset transfer =
+
+Clearing account
+
+Platform Trading os >
+
+Release Trusteeship -[---------- Settlement account
+
+Distributed clearing process
+
+In order to ensure business continuity on the trading platform, the distributed clearing
+process can be divided into transaction-oriented trusteeship clearing and service-ori-
+ented credit liquidation, in which:
+
+e Trusteeship clearing is the main accounting method of distributed liquidation.
+
+e Credit clearing is an important form of clearing for future payment and exchange.
+
+e Credit clearing is not limited to the asset registration process, and there are certain
+requirements for the process of transaction risk management, credit rating and plat-
+form margin.
+
+42
+ZIPPER WHITE PAPER CHAPTER VI
+
+ZIPPER EXTENSION
+MODULE
+
+ZIPPER WHITE PAPER CHAPTER VI
+
+Zipper extension module
+
+1.Parallel computing, multi-chain operation
+
+Because of the different economic conditions and supporting facilities on the open net-
+work, there is a large difference between the hardware configuration and network con-
+ditions of each node. In order to minimize the use threshold of the blockchain network
+and guarantee a high degree of decentralization, the architectural design of the public
+chain usually has to be executed with reference to the minimum standard node config-
+uration and deployment environment. Therefore, the design space is significantly limit-
+ed. According to the CAP theorem, in a distributed system, usability and consistency
+cannot be achieved. Due to the high degree of decentralization of technology and gov-
+ernance, the public chain often lacks efficient and rapid coordination and intervention
+in emergencies, which inevitably causes losses. In order to circumvent this design
+blind spot, many public chains are designed with usability first, for which the guaran-
+tee of consistency, in the case of network partitioning, is sacrificed. For the purpose of
+avoiding this blind spot, many public chains prioritize usability and sacrifice the guar-
+antee of consistency in network partitioning. Apart from this, as the number of users of
+blockchain applications increases, the design of blockchains must meet the demand
+to support increasing transaction processing and transactional storage. Hence our
+system needs to be highly scalable while maintaining a high level of security. Scalabili-
+ty is the key to the success of blockchain applications, this is one of the most promi-
+nent technical difficulties in existing blockchain technology. It reflects that no matter
+how many nodes in the blockchain network, the processing power of the entire net-
+work is only equivalent to the processing power of a single node. There are only two
+options improving the processing power of the entire single-chain network:
+
+e Abandon global transaction verification with security assurance.
+
+e Scale up the processing power of a single node, using a powerful and expensive
+dedicated server.
+
+Thus, in order to apply to mass service scenarios, Zipper not only seeks to break
+through the dilemma under the single-chain architecture, but also by adopting the par-
+allel multi-chain design. The basic idea is that there are many groups in a blockchain
+network, each group is a complete blockchain network with independent software
+modules and hardware resources. It can independently complete the consensus
+between nodes and have independent data storage.
+
+44
+ZIPPER WHITE PAPER CHAPTER VI
+
+According to customizable router rules, all institutions and users involved in the block-
+chain network, as well as all types of transactions in the blockchain, can be brought
+into their respective groups. Each group has a clear division of labor, dealing with only
+certain specific transactions.When the number of institutions or users and the volume
+or type of transactions increases, Zipper can solve the problem of scalability by adding
+packets quickly, setting them in router strategy and assigning new traffic to new pack-
+ets. Parallel multi-chain architecture is similar to database sub-table or Internet ser-
+vice sub-SET model. Theoretically, as long as sufficient resources are invested, there
+will be no upper limit on the number of users and the amount of transactions that the
+system can handle. The entire blockchain network can have enough flexibility.
+
+2.ZipperNet Switching Network
+
+In the exploration of the application of blockchain to traditional services, Zipper adopt-
+ed a different design approach from Fabric. Fabric is a general blockchain design
+framework, and its application model is MVC-B mode. MVC is the "model-view-con-
+troller" design pattern in software design. B is blockchain logic, including chain code
+(e.g. smart contract) and transaction, this means the controller is strengthened with
+chain code and the model is strengthened with transaction. A guiding ideology is
+formed to directly integrate the blockchain into the original software design. In terms
+of architecture, fabric has designed three components: member management ser-
+vices, blockchain services, and chain code services. This framework tries to com-
+pletely change the original industry with blockchain. We know that the financial
+system is extremely complicated. If you follow the Fabric design idea and try to build
+an integral business system with it, project failure is likely. Therefore, Zipper proposes
+a way to return to the integration of blockchain system and original business system,
+that is, through ZipperNet. Business between financial institutions will have flexible
+interoperability.
+
+ZipperNet is a switching processing network that implements message communica-
+tion and transaction settlement across multiple blockchain networks, and between
+different financial institutions. ZipperNet is essentially a message communication pro-
+tocol based on blockchain network that can realize the abundant business support of
+financial assets on the blockchain to financial institutions, and connect traditional
+
+finance and blockchain at the application level through ZipperNet.
+ZipperNet will focus on the following features:
+
+45
+ZIPPER WHITE PAPER CHAPTER VI
+
+e Based on blockchain network, support real-time message communication between
+banks and point-to-point.
+
+e Provide a standardized interface for interaction between off-chain system and block-
+chain.
+
+e The blockchain system can actively invoke the service interface of the off-chain sys-
+tem.Technical features of ZipperNet:
+
+e In a point-to-point blockchain network topology, planning the node communication
+path to ensure that the message is reachable.
+
+eQuickly perceive node anomalies in the blockchain network and automatically switch
+
+path and resend messages.
+eEncryption technology is used during communication to ensure communication layer
+
+privacy.
+
+3.Secure multi-party computing
+
+In the financial technology business, technologies based on blockchain and big data
+are used to decentralize data links, confirmation, and authorization for financial credit
+and anti-fraud, so that demand for data generated value becomes more and more
+intense. Privacy data protection, especially financial data, is often reflected in secret
+sharing, confidential voting, and confidential data mining. Most of them use Secure
+Multiparty Computing (MPC) to solve such problems. In the process of using MPC to
+solve the problem of collaborative computing protection between a group of untrusted
+participants, how to ensure the fairness of secure MPC has become a key point and
+a difficult problem. In response to this problem, Zipper uses blockchain-based fair and
+
+secure multi-party computation protocol (BFSMPC)[7] to break through and optimize.
+BFSMPC builds a penalty mechanism based on smart contracts to achieve fairness.
+
+At the beginning of the agreement, all participants are required to pay a deposit to the
+smart contract, otherwise the agreement is terminated. BFSMPC consists mainly of
+two phases. In the first phase, an unfair universal MPC protocol based on the Genna-
+ro scheme is implemented under the participant chain. This protocol applies a verifi-
+able secret sharing (VSS) scheme, and secrets are shared in a t-order random poly-
+nomial, and finally n participants get their respective secret shares.
+
+In the second phase, the participants implement a fair secret reconstruction agree-
+ment. This phase requires multiple rounds of interaction with the smart contract, and
+the participants first announce their secret shares to other participants.
+
+46
+ZIPPER WHITE PAPER CHAPTER VI
+
+After the other participants verify, the verification result is fed back to the smart con-
+tract, and the smart contract determines the malicious party. Eventually, the malicious
+deposit will be split equally for the honest party. In the last phase, the honest party can
+recover the secret as long as it collects correct shares, and if the recovery fails, they
+will be compensated.
+
+3.1 Off-chain general MPC protocol
+
+In general, there are three main methods for constructing a generic secure MPC pro-
+tocol: A construction method based on Yao chaotic circuit, a construction method
+based on secret sharing, and a construction method based on homomorphic encryp-
+tion. In terms of privacy protection, the universal security MPC protocol based on
+secret sharing often has better performance and can be easily extended to cloud-as-
+sisted secure computing, which makes the MPC protocol more practical. Many
+common MPC protocols are based on semi-honest models. Although some scholars
+have proposed to use the compiler to convert the secure MPC protocol under the
+semi-honest model to the secure MPC protocol under the malicious model, in the
+output stage, the malicious party will terminate the protocol early after receiving the
+output. Honesty may not get the final output, so fairness is never guaranteed.
+
+To ensure fairness, BFSMPC builds a fair secret reconstruction protocol in the under-
+lying generic MPC protocol output phase. The secret sharing scheme is used in "Proc
+of the 23rd ACM Conference on Computer and Communications Security", and the
+commitment scheme is constructed using a one-way hash function. However, it can
+only guarantee that the share has not been tampered with, but cannot guarantee the
+correctness of the share. So during secret recovery, the participant cannot distinguish
+whether the recovery result is correct. To solve this problem, BFSMPC's underlying
+Universal Security MPC protocol combines the Gennaro VSS solution with the Peder-
+sen homomorphic commitment strategy to verify the correctness of the shares. The
+general MPC expresses the function y=f(x,,x,,...,x,) to be calculated into a directed
+graph composed of addition and multiplication, then implements arbitrary calculation
+by executing a corresponding addition protocol and multiplication protocol. The gener-
+al process of the protocol includes three stages:
+
+47
+ZIPPER WHITE PAPER CHAPTER VI
+
+Implementation process of MPC protocol based on VSS
+
+The first phase is the input phase, and each participant uses the VSS scheme to
+share their secret input among all participants. The second phase is the calculation
+phase, where participants perform the corresponding addition and multiplication pro-
+tocols. Inputs are secret shares, and these shares are verifiable. The calculation
+phase outputs the secret share required to reconstruct y, and each protocol participant
+P, gets the share y,. The third stage is the output stage, where participants announce
+their share y, and jointly restore y.
+
+3.2 Fair Secret Reconstruction Agreement
+
+After executing the off-chain general MPC protocol, all participants get their own
+shares and need to disclose their share to recover the secret. However, after a mali-
+cious participant obtains the secret share of others and successfully restores the
+secret, the agreement is terminated early without publicly disclosing its own share,
+which may result in some participants not getting the final result and undermining the
+fairness of the MPC.
+
+48
+ZIPPER WHITE PAPER CHAPTER VI
+
+Therefore, it is necessary to implement a fair secret reconstruction agreement, detect
+and punish malicious participants, and compensate the honest participants. Because
+of the existence of the punishment mechanism, rational participants will choose not to
+do evil.
+
+Using the penalty mechanism to build a fair MPC protocol solves the deposit storage
+problem. BFSMPC is based on smart contracts and there are two types of accounts
+in the agreement: external accounts and contract accounts. The external account is
+controlled by the user's personal private key, and the contract account is controlled by
+the contract code and is not controlled by anyone. It can be used as a trusted party to
+store the deposit. In BFSMPC, all participants send the deposit to the contract
+account, which is uniformly kept by the smart contract. The number of deposits paid is
+only one round, and the total deposit amount is O(N).
+
+BFSMPC includes the local protocol ConLocal and the smart contract ConContract.
+ConContract is written by a participant Pi. After all the participants agree on the con-
+tract content, Pi publishes it to the blockchain network and writes it to the blockchain
+after being verified by the miners. For ConLocal and ConContract, ConLocal is exe-
+cuted by the participants, specifying the calculations of the participants and the data
+sent to ConContract. ConContract is executed by the blockchain node. It is responsi-
+ble for keeping deposits and judging the behavior of participants during the secret
+reconstruction phase. Because in the blockchain network, the implementation results
+for smart contracts need to be agreed on. Therefore, in order to improve efficiency, the
+participants first verify the correctness of their respective shares. If the verification
+does not pass, then the participants pass their share to ConContract for verification.
+For the behavior of early termination of the agreement, ConContract uses the timeout
+to determine. If the party does not send a message to ConContract within the speci-
+fied time, it is considered a malicious party.
+
+BFSMPC enters the pre-preparation phase before execution. Participants agree on
+the number of deposits and other public parameters, generate public and private
+keys, and broadcast public information. It is assumed that the participants can use the
+secret communication channel and the broadcast channel, and the entire protocol
+operates in the synchronous network. The execution flow of BFSMPC is as follows.
+
+49
+ZIPPER WHITE PAPER CHAPTER VI
+
+© @ Release con contract
+a =
+Computational _—
+side node 5
+~
+i 8
+Mining my
+2.
+Reward =)
+
+© $dep
+
+Computational Computational
+side node side node
+@ <« > ® eo
+aa rv} @® Verification result
+
+(4) Perform calculation
+
+© Send commitment
+
+Request Verification Result Response
+Mutual verification,
+
+© Attempt to recover © Send the secret share
+Password Re >|
+
+e@ Attempt to
+a (2) Vi—; >|
+
+password @ Request Share Response
+Computational en |
+
+side node (©) Return of deposit and compensation
+
+BFSMPC execution process
+
+4.Distributed Control Management
+
+4.1 Asset Mapping and Control Management
+
+Distributed Control Rights Management (DCRM) [8] refers to the process of transfer-
+ring the control of digital assets in the hands of individuals or organizations to a decen-
+tralized blockchain. The key is distributed, which guarantees that no individual can
+access the complete private key. This means that there is no single point to obtain
+control of digital assets in the state of distributed control management. We call the
+process of generating the corresponding digitized asset accounting symbol on Zipper
+with the managed object, cryptoasset mapping. Tokens can be freely interacted with
+other mapped assets through mapping. The operations that implement and release
+distributed control are called Lock-in and Lock-out. Lock-in (Cryptoasset Lock-in) is
+the process of implementing distributed control management and asset mapping for
+all digital assets managed by keys.
+
+50
+ZIPPER WHITE PAPER CHAPTER VI
+
+Lock-out (Cryptoasset Lock-out) is a reverse operation of Lock-in. It consists of two
+parts: un-distributed control and un-algorithm mapping. After the lock-out is complet-
+ed, the control of the digital assets is returned to the owner, and the management of
+the overall storage and centralization of the keys is restored. Distributed management
+of digital assets has increased the security, liquidity and cryptographic financial appli-
+cation functions of existing digital assets, thereby further enhancing the value of digital
+assets.
+
+4.2 Implementation of Distributed Control Management
+
+Distributed control management includes two basic steps for digital assets Lock-in
+and Lock-out. In the process of implementing Lock-in, distributed control management
+completes asset mapping through atomic transaction. For Lock-out, the same is true
+for de-distributing control and disarming assets. Whether it is Lock-in or Lock-out, the
+core is how to achieve the safe and secure transfer of the original control of digital
+assets to a decentralized system, and to securely store and use private keys.
+
+In the implementation of Lock-in and Lock-out, by running the corresponding basic
+smart contract on Zipper, the target digital asset is handed over to the address that is
+generated by a distributed key generation algorithm, which achieves the transfer of
+control to decentralized management. After the distributed control transfer is complet-
+ed, the smart contract updates the status of the user's account on the Zipper to
+embody Lock-in or Lock-out. In fact, the billing process is issued by Zipper to the user
+account or to reclaim the tokens of the same number of digital assets. This completes
+the mapping of the digital assets to the Zipper or demapping of them. The mapping is
+transparent to the digital asset holder. Only the key for users to store their own digital
+assets uses key fragmentation and distributed storage, which is more secure than the
+original. And their digital assets can be more easily involved in various financial ser-
+vices.
+
+(1) Lock-in implementation process
+
+The user initiates a Lock-in request to the Zipper by calling the relevant program inter-
+face. Take Bitcoin as an example, the specific implementation steps are as follows:
+
+1) Initiate a Lock-in request. User A initiates 10 BTCs Lock-in requests to Zipper by
+calling the Lock-in program interface.
+
+51
+ZIPPER WHITE PAPER CHAPTER VI
+
+2) Initialize the private key. The request operation triggers a smart contract on the
+Zipper on Lock-in, which organizes the initialization of the private key. This process
+completes key fragmentation and distributed custody of the fragmentation key. The
+initialization of the private key lays the foundation for the storage and use of this key
+in the future.
+
+3) Hand over control to distributed management. Initialization of an address is com-
+pleted and generated on the bitcoin chain. User A initiates a transfer to that address.
+The user initiates the transfer operation to broadcast this Lock-in on Zipper via the
+interface. The Zipper node checks for the completion of the transfer. After receiving
+the transaction broadcast, the node on the Zipper chain queries the third-party inter-
+face to see if the transaction is confirmed on the Bitcoin main chain. The consensus
+result shows that the 10 BTCs successfully transfer to the address generated by
+Lock-in, which is regarded as the successful transfer of the distributed control man-
+agement.
+
+4) Digital asset mapping. After confirming the successful transfer of control, the
+smart contract completes the status update of User A's account on Zipper. The
+Lock-in record is packaged by the node into the Zipper's block. At this point, user A's
+10 BTC Lock-in requests are completed.
+
+(2) Lock-out implementation process
+
+Similarly, the user's Lock-out request is also initiated by calling the relevant program
+interface. Taking Bitcoin as an example, the specific implementation process is as
+follows:
+
+1) Initiate a Lock-out request. User A initiates a transaction that transfers funds to
+10 BTCs to the extra-chain bitcoin address, which is considered to be a user-initiated
+Lock-out request.
+
+2) Check, lock, and generate transactions. The transaction triggers a smart contract
+on Zipper's Lock-out. The contract first checks the assets status of user A on Zipper.
+When the transfer conditions are met, the user's 10 BTCs status in the Zipper account
+is locked and a band is generated. A transfer transaction with a destination address
+and a user signature.
+
+52
+ZIPPER WHITE PAPER CHAPTER VI
+
+3) Threshold signature. The nodes on the Zipper chain receive the transaction
+instructions and begin to calculate and match according to the saved key fragments.
+The successfully matched nodes will sign and broadcast the results. Each node then
+collects the signature at the same time. When the transaction signature reaches the
+threshold, the transaction is sent by the node to the Bitcoin main chain, and the trans-
+action of 10 BTCs is transferred to the address specified by User A.
+
+4) Release management of distributed control. The node on the Zipper will check
+whether the transaction is confirmed on the Bitcoin main chain through the interface
+corresponding to Bitcoin. When the consensus reaches the result of the transaction
+confirmation, User A's 10 BTCs will be released from the distributed control manage-
+ment.
+
+5) Release digital assets and destroy them. The smart contract synchronizes the
+status of the user's account on the Zipper and subtracts the locked 10 BTC mappings
+to complete the release and destruction of the mapping. At the same time, the
+Lock-out record is packaged into the Zipper's block. At this point, the user has com-
+pleted the Lock-out request.
+
+5.Blockchain Network Operation and Maintenance Components
+
+A blockchain network is an ecological governance network, so it needs a technical
+solution with a complete network governance mechanism, and it needs to avoid dam-
+aging the ecosystem caused by unknown errors due to blockchain technology at an
+early stage. For a long-term stable sustainable ecosystem, it is necessary to set some
+special role functions to combine with the distributed governance structure in the eco-
+system’s community. In the case of consensus outside the chain, the blockchain has
+emergency handling capabilities to solve unexpected situations such as malicious
+damage, software bugs, and hard forks. This will enable the operation and mainte-
+nance to be expressed in the process of blockchain ecology and community autono-
+my, that is, the ecological self-healing ability through parametric design.
+
+53
+ZIPPER WHITE PAPER CHAPTER VII
+
+DERIVATIVE
+SCENARIOS
+
+ZIPPER WHITE PAPER CHAPTER VII
+
+Derivative scenarios
+
+Traditional intermediary business refers to the business where commercial banks
+charge fees, by performing collection, payment, and other entrusted matters on behalf
+of customers. By relying on business, technology, institutions, reputation and other
+advantages, without using their own funds, banks act on behalf of clients to undertake
+collection, payment, other entrusted matters, and also provide various financial ser-
+vices. In all these matters banks charge fees for their services.
+
+The risks of traditional intermediate business:
+
+¢ High degree of freedom:
+Intermediate business can be carried out both on the floor and over-the-counter. Then
+
+the transaction can be concluded with the consent of both parties. Compared with
+asset and liability business, intermediary business is less affected by national financial
+regulations. Because most intermediate business does not need to prepare funds, a
+bank's self-operated intermediary business is likely to be too large, which brings cer-
+tain operational risks.
+
+* Poor transparency:
+Most of intermediary business will not be reflected in liability, and will not be reflected
+
+in financial statements. Shareholders, creditors and regulatory authorities are unable
+to evaluate their operating results through the business scope of a bank, and the
+decline in transparency has prevented the formation of effective supervision.
+
+¢ Risk dispersion:
+due to the involvement of credit, finance and accounting, funds, etc. in intermediary
+business, risk control and clear responsibilities are difficult.
+
+Through Zipper public chain, bank-related intermediary business can be carried out
+directly on the chain, and has the following advantages:
+
+* Consensus algorithms to solve trust problems;
+
+¢ Enhances transaction transparency and improves transaction efficiency;
+
+¢ Smart contracts to prevent risks, and reduce cooperation costs;
+
+¢ Improves the settlement efficiency of assets.
+
+55
+ZIPPER WHITE PAPER CHAPTER VII
+
+Cross-border collection and payment
+
+Reduce transaction rates and achieves fast arrival of cross-border
+collection, cross-border transfer, and other services.
+
+Transaction clearing and
+settlement
+
+Supply chain finance
+
+Consensus algorithm solves the trust problem;
+smart contract prevents contract performance
+risks; trust can be effectively transmitted along
+a supply chain; reduces cooperation costs and
+improve contract performance efficiency
+
+Improves the efficiency of transaction clearing
+and settlement processing among merchants,
+acquiring institutions, and financial platforms
+
+Insurance
+
+Restructuring the credit system to achieve true
+differential pricing; Optimising processes to
+effectively reduce channel costs; Applying
+smart contracts to improve claims efficiency
+
+Trade finance
+
+Improves the transparency of trade finance
+transactions; and strengthens the entire
+process of risk management.
+
+Other financial derivatives
+
+Various financial derivatives such as futures, options, wealth
+management, points, and cloud computing investments.
+
+Derivative Scenario Applications
+
+1.Analysis of derivative application scenario pain points and related
+solutions
+
+Derivative Solution
+
+Pain Points (Advantage)
+
+Application
+Scenario
+
+Cross-border
+collection and
+payment
+
+Transaction clearing
+
+and settlement
+
+Traditional cross-border payment and
+collecion business involves multiple parties.
+remittance institutions and banks, and among
+the intermediary banks needs to be confirmed
+step by step. Not only is it very time consum-
+ing, butitis also easy to lose information in the
+process.
+
+In the traditional clearing and
+settlement sector, different institutions have
+different basic business structures and
+procedures, plus many links require
+manual handling. As a result, the business
+costis high and fault tolerance is low.
+
+Zippers distributed ecosystem makes
+parallel information transactions possible.
+Without the participation of intermediaries,
+cost-effective. Moreover, the information on
+blockchain can achieve a high level of
+transparent supervision and risk control. As a
+result risk is reduced.
+
+Different financial institutions cary out
+business through Zipper Eco-Network and
+Zip Token. Every successful transaction
+and settlement can be done instantly. The
+media of transaction itself has asset value
+and does not require additional accounting,
+enterprise transfer and other manual
+processing links.
+
+56
+ZIPPER WHITE PAPER
+
+CHAPTER VII
+
+Derivative
+
+Application
+Scenario
+
+Trade financing
+
+Supply chain finance
+
+Insurance
+
+Other financial
+derivatives
+
+Pain Points
+
+The process of trade financing
+involves the transfer and approval of
+information among importers, correspon-
+dent banks, and exporters. The process is
+cumbersome, situations such as exporter
+invoice frauds and multiple repetitive
+financings are commonly seen. The
+cumbersome review process reduces the
+efficiency of payment and increases the
+delivery time of goods.
+
+Supply chain finance can help small
+and medium-sized enterprises solve
+financing problems. However, while there is
+great potential for development in this
+sector, there are also many problems:
+enterprises cannot prove their ability to
+repay, it is difficult to verify true and effective
+transactions, and the effective control of
+performance risk is hard to achieve.
+
+In the current insurance industry,
+based on individual circumstances of the
+insured, the method of differential pricing is
+difficult to achieve, the channel fees are
+high, and there is a delay in claims. This
+leads to poor customer experience and
+makes it difficult for the insurance industry to
+transform.
+
+In terms of asset management, the
+system mainly relies on third-party interme-
+diaries to carry out entrusted management
+of assets such as stocks, funds, bonds, and
+notes. Asset management processes are
+complex; transaction costs are usually very
+high. There is also the risk of falsification and
+fraud of transaction certificates.
+
+Solution
+(Advantage)
+
+Zipper Eco-Network simplifies the
+financing process, so that all the financing
+documents can be quickly approved. With
+the deintermediary features, the
+implementation of contract operations is
+replaced by smart contracts. This reduces
+the risk of falsification of certificates. With
+information on chain, the location and
+ownership of goods can be effectively
+traced, which increases convenience and
+efficiency.
+
+Utilizes the nontamperable and
+decentralised features of Zipper basic
+chain; utilizes the consensus algorithm to
+solve the trust problem for financing
+institutions; utilizes the smart contract for
+automatic execution to reduce the risk
+during execution; information on the
+blockchain can be checked in real time to
+improve performance efficiency.
+
+By utilising the Zipper Eco-network in
+the insurance product design process, a
+more complete trust system, can be
+established. Smart contracts will process
+insurance contract signings and claims, as
+a result, the entire system and process
+efficiency will be improved. Differential
+pricing and reduced expenditure can be
+achieved.
+
+Through Zipper Eco-network, asset
+transactions can be more open and
+transparent, transaction process can be
+simplified, and the risk of performance can
+be reduced.
+
+57
+ZIPPER WHITE PAPER CHAPTER VIII
+
+ECOLOGICAL
+CONSTRUCTION
+
+ZIPPER WHITE PAPER CHAPTER VIII
+
+Ecological construction
+
+1.Practicality of ZIP tokens
+
+The purpose of ZIP is to meet three major network functions - media currency, securi-
+ty, and ecological incentives. The total amount of ZIP is limited and will be gradually
+destroyed by mechanisms.
+
+1.1 Media Currency
+
+In the Zipper network, if two counterparties do not have a common currency and cor-
+responding gateway combination, then ZIP can be used as media currency without
+the risk of adversary. For example, if Alice is using US dollars and Bob is using Euros,
+the Zipper network will automatically seek the cheapest exchange path for both users.
+If the Zipper network can't find a suitable EUR to USD market maker to complete the
+transaction, and as each gateway will support the transaction pair of ZIP and gateway
+assets by default, the system will convert the fiat currency into ZIP to reduce transac-
+tion barriers and facilitate matching. Of course, ZIP is not a single media currency, but
+using ZIP in the Zipper network increases business efficiency.
+
+ZIP is the only native currency in the Zipper network, as such it is the basis for all
+Zipper network behaviours. However, Zipper users are not required to hold or redeem
+ZIP in order to complete transactions, and only need to pay a onetime fee to open an
+account. Once an account is created, Zipper can be used in cross-border collection
+and payment for business, or as a currency exchange for businesses. For example, a
+merchant that accesses Zipper does not need to receive a ZIP; Both parties of the
+transaction can directly use or collect their required fiat currency or digital assets, etc.
+These measures all aim to simplify the process, reduce user’s learning cost, and
+greatly increase the adaptability of the implementation of blockchain technology in
+traditional scenarios.
+
+As Zipper grows and becomes more involved in various gateways operated by finan-
+cial institutions, and increases in popularity. ZIP will gradually become an important
+means of value transfer.
+
+59
+ZIPPER WHITE PAPER CHAPTER VIII
+
+1.2 Prevent Evil
+
+The Zipper network is designed to provide users with convenient, highly efficient, and
+low-cost blockchain financial services that are almost free of charge. However, in
+order to deter malicious actors from creating large amounts of junk transactions with
+the intent of paralysing the network. In order to protect against the attacks of network
+junk traders, improve the network's own immunity, and improve the reliability of the
+network, ZIP will be used for account opening fees, transaction fees, etc. Before con-
+ducting business on the Zipper network each user needs to pay a small amount of ZIP
+to create an account. At present, the basic fee for opening an account is 1 ZIP. This
+requirement is negligible for normal use, but it can prevent attackers from creating a
+large number of fake accounts for the purpose of creating junk transactions in the net-
+work. When creating a Zipper account, the user will transfer the ZIP to their wallet for
+activation or pay by fiat currency through the gateway. In terms of transaction fees, for
+every transaction made in the Zipper network, the system will charge a minimum of
+0.01 ZIP as the default fee. As the network becomes congested, the system will
+dynamically increase the threshold of the fee. Transaction costs are negligible for gen-
+eral users, but if there is a large network load due to an attempt to attack the network,
+the increase will result in huge costs for the attacker. The higher the transaction fee,
+the higher the priority of the network to handle that transaction. The purpose of block-
+chain setting the transaction fee is to prevent a large number of invalid junk transac-
+tions, which is an immune response performed by the network itself. The specific
+transaction fee model is described later.
+
+1.3 Transaction Fee Model
+
+Business operation is based on the upper layer of the blockchain platform and is
+essentially a transaction operation after the abstraction of the blockchain bottom layer.
+The transaction fee model is designed to establish an intra-group behavioural model
+of a group formed by the Zipper network transaction broadcasters and consensus
+nodes. The transaction fee model design based on this behaviour model can be con-
+sidered mainly from availability (How long does it take to recover after a network
+failure and how long will it resume smooth operation after a network transaction
+blockage?) and economy (for network trade broadcasters, it is reflected in the eco-
+nomic applicability of the cost of a blockchain network transaction to the upper layer
+business operation represented by the transaction;
+
+60
+ZIPPER WHITE PAPER CHAPTER VIII
+
+For the consensus node, it is reflected that when a large number of network transac-
+tions occur, the hardware and network resource costs required to ensure the system
+still maintaining high performance can achieve break-even with the transaction pack-
+ing fee?), two dimensions.
+
+Therefore, in the gas model adopted by Zipper, the transaction fee charged by the
+abstract network transaction content calculation method can fully reflect the business
+operation complexity supported by the transaction. At the same time, the market attri-
+bute of gas Price adds dynamic adjustment properties to the business complexity in
+the time dimension.
+
+In short, for the user, if a transaction represents a high-priority business operation,
+when it encounters network congestion, payment of a relatively expensive transaction
+fee calculated based on the combination of two indicators, market attributes, and busi-
+ness complexity, will also be reasonable. In Zipper's entire gas model, "gas" is used
+as a unit for calculating the transaction fee. When a user initiates a transaction, in
+addition to deducting the transfer amount from the account, the usage fee of gasUsed
+* gasPrice is also paid. According to the content difference of each transaction, the
+transaction fee will be different.
+
+There are two main considerations in its calculation: calculation amount and storage
+amount. Transactions on the blockchain need to be re-executed by each consensus
+node as verification and occupy the hard disk space of each node, therefore, the more
+complex the business operations and the more capacity the transaction used, the
+higher the fees. However, with regard to gasPrice, it is determined by a dynamic
+market formed by the consensus nodes, but in order to prevent the consensus nodes
+from manipulating the price and leading to market regulation failure, we will supple-
+ment it by the way that “Agreement automatically determines the price”, so that this
+indirectly allows market regulated gasPrice to be placed in a reasonable unit price
+range.
+
+The concept that agreement determines the price is similar to the mining difficulty and
+is a mechanism that automatically determines the next status based on the previous
+status. It is built into the system protocol layer, and any node can check whether its
+numerical value is legal. Therefore, it is effective in deterring consensus nodes from
+manipulating the price. Because it can be known from the economic level analysis, the
+illegal high income will be denied by other nodes, and deliberately creating low returns
+is not good for oneself.
+
+61
+ZIPPER WHITE PAPER CHAPTER VIII
+
+Calculation model of agreement automatically determining the price:
+
+prevBlockGas 1
+
+curBlockFee= prevBlockFee* (1+ k*
+prevBlockMaxGas 2
+
+))
+
+Two dimensions of transaction calculations: calculation amount and storage amount.
+Zipper will release the corresponding calculation unit price comparison table when
+launching the smart contract platform function. In the storage amount calculation
+dimension, we will adopt a pricing method that constrains the "global status", i.e. One
+Byte status storage space per each ZIP token at the bottom chain, and is designed as
+a lease mode. The detail of such a model will be reflected in the detailed module
+design documentation.
+
+2. Ecological Incentive
+
+The block reward is designed to meet the needs of all users in the current and future
+Zipper ecosystem, i.e. to encourage consensus nodes to participate in maintaining
+the security of the entire network, and to grant the rights of platform use to all partici-
+pants in the Zipper ecosystem.
+
+In the Zipper system, 40% of total ZIP (40 billion ZIP) will be used as a reward pool.
+The ZIP reward pool will be divided into two parts as to reward nodes that contribute
+to the Zipper network. 40% of the reward pool (16 billion ZIP) is allocated for consen-
+sus node rewards, and the remaining 60% (24 billion ZIP) is allocated for economic
+node rewards.
+
+2.1 Consensus Node Supernode
+
+In the entire Zipper system, it is jointly maintained by several consensus nodes. When
+they act as producers of blocks, the tasks are collecting transaction information pub-
+lished by users, taking turns to conduct sequencing, arbitrating double spending, and
+packaging of these transactions. When they do not produce blocks, they will carry out
+pre-voting and voting on proposal blocks, which provide final certainty for transactions
+issued by users. In each round, the block-producing node will get 32 ZIPs as a block
+reward. After every 100,000,000 block height, the block reward is attenuated to 80%
+of the previous stage.
+
+62
+ZIPPER WHITE PAPER CHAPTER VIII
+
+2.2 Economic Node Xnode
+
+In order to promote the development of the Zipper ecosystem, we have given many
+benefits to all ZIP holders. In this, there will be extra benefits given to long-term value
+investors, which is intended to not only increase the stability of the Zipper project, but
+also to allow them to participate in the ecological construction of Zipper. The partici-
+pants will be pioneers in the creation and expansion of the community’s ecosystem.
+
+The total of all 24 billion ZIPs in the economic incentive pool will be distributed as
+incentives to Economic Nodes, the equal amount will be fully issued within 10 years.
+The Zipper system will support three levels of Economic Nodes, XO, X1, and X2
+respectively. Applying to become a node, one only need to deposit a certain number
+of ZIPs. When the deposited ZIP lasts for more than 24 hours, one can participate in
+the ranking of next maturity period of each node (the preset node maturity period is 24
+hours) before applying to unlock the deposited ZIP. When a node maturity period
+ends, the nodes are ranked according to the number of mortgaged ZIP at deadline,
+and the ranks of each Economic Node are determined. The mortgaged ZIP will be
+locked, at the same time, node rewards will start to generate.
+
+By the time of cutoff, the top 100 in the number of mortgaged ZIP will be determined
+to be X2 level Economic Nodes, and will equally share 25% of the economic reward
+pool for the day;
+
+By the time of cutoff, the top 101-400 in the number of mortgaged ZIP will be deter-
+mined to be X1 level Economic Nodes, and will equally share 35% of the economic
+reward pool for the day;
+
+By the time of cutoff, the top 401-1000 in the number of mortgaged ZIP will be deter-
+mined to be X0 level Economic Nodes, and will equally share 40% of the economic
+reward pool for the day;
+
+Finally, when Xnode proposes the unlocking application and releases the mortgage,
+the system will completely unlock after 1,296,000 blocks. At the same time, the ZIP
+during the application period does not participate in the ranking of node maturity
+period.
+
+63
+ZIPPER WHITE PAPER CHAPTER VIII
+
+2.3 Gateway Node
+
+When banks or other licensed financial institutions want to become third-party super
+gateways, they are required to hold a certain number of ZIP to be eligible to apply. The
+final interpretation of the exact quantity is maintained by the Zipper Foundation.
+
+64
+ZIPPER WHITE PAPER CHAPTER IX
+
+GOVERNANCE
+
+ZIPPER WHITE PAPER CHAPTER IX
+
+Governance
+
+As we all know, community organisations are the birthplace of blockchain technology.
+Whether it is the earliest bitcoin blockchain or a variety of public chains, it is run in as
+a community. This community is composed of many users who actively participate in
+and maintain the blockchain. Only when the entire network has reached a consensus,
+can the community modify the blockchain system, such as the blockchain accounting
+method.
+
+Because of the need to reach a thorough democratic consensus mechanism, the
+public chain usually does not have a final arbitrator. If the voting entrustment system
+is used alone, only the witness nodes will enjoy exclusive administrative and legisla-
+tive powers. In fact, this is a return to the classical mob system. We need a self-gov-
+erning committee similar to DAO with some adjustments.
+
+1. Consensus Committee and Community Committee
+
+The Consensus Committee is an administrative organisation composed of blockchain
+consensus nodes that jointly maintain the entire Zipper system. In addition, the Con-
+sensus Committee has the right to perform blockchain updates, add new features, or
+urgently fix dangerous security vulnerabilities.
+
+The Community Committee consists of all economic nodes above X71 level, which can
+indirectly affect the governance of the entire blockchain. Unlike Consensus Commit-
+tee which is composed of consensus nodes, the Community Committee has the larg-
+est authority in the entire Zipper ecosystem, and it has the right to formulate conven-
+tions. Any community committee member can propose a Zipper Improvement Propos-
+al, which will be sent to the system-level smart contract in the form of a transaction.
+This smart contract will initiate a Community Committee vote on this proposal. Once
+the vote is passed (with 2/3 majority), after a period of delay, the proposal will be rec-
+ognised by the community and executed by the development team and the Consen-
+sus Nodes. The content of the proposal includes but is not limited to the following
+
+66
+ZIPPER WHITE PAPER CHAPTER IX
+
+* Edit the content of the basic convention
+
+¢ Modify system parameters
+
+* Modify the protocol (such as updating the formula algorithm)
+
+¢ Add and upgrade system-level smart contracts
+
+* The Community Committee is supervised by all users, but it should be pointed out
+
+that the Community Committee may also breed evil members, and even form a “qua-
+si-collaborative organisation” to jointly propose, modify or pass proposals that are
+beneficial to them. We need to find a better way to circumvent this problem in the
+
+future.
+
+67
+ZIPPER WHITE PAPER CHAPTER X
+
+SUMMARY
+
+ZIPPER WHITE PAPER CHAPTER X
+
+Summary
+
+Zipper aims to revolutionise the traditional financial industry with blockchain technolo-
+gy, and will provide wallet and decentralised transaction network for all fiat currencies
+and white label cryptocurrencies, making isolated islands of financial networks no
+longer a problem. At present, although there are already several blockchain develop-
+ment projects that connect with financial institutions, such as Ripple, R3, etc, there are
+still serious obstacles to these projects at the actual implementation level. The
+common problems they face include: incompatibility with financial regulations, as such
+they cannot be implemented in many countries; business logic does not match the
+clearing and settlement logic of current financial institutions, resulting in inability to
+connect with financial institutions; customer privacy protection mechanisms are
+imperfect; business data is not secure; severe centralisation; non-public chain net-
+work and so on.
+
+In order to solve the cross-chain problems between heterogeneous blockchains and
+reduce the operational costs of interconnection between different financial institutions,
+Zipper came into being, which will create complete, low-cost, fully compliant, highly
+efficient, and cross-chain interoperable blockchain financial solutions for global finan-
+cial scenarios. The aim is to link the traditional financial industry with blockchain
+finance to create a completely new-generation financial system, which is in line with
+the development of technology and the times. Due to its unique features, such as
+friendly access and support for heterogeneous interoperability, Zipper ecosystem con-
+struction will have the ability to grow rapidly and become an indispensable part of
+blockchain innovation in global the financial system.
+
+At present, the Zipper Foundation has received strategic support from many famous
+investment institutions globally and is strategically cooperating with many banks and
+non-bank financial institutions worldwide.
+
+Zipper, a next generation blockchain ecosystem aiming for financial compliance and
+interconnection!
+
+69
+ZIPPER WHITE PAPER CHAPTER XI
+
+ROADMAP
+
+ZIPPER WHITE PAPER
+
+CHAPTER XI
+
+Roadmap
+
+Publish white paper
+
+online
+
+Apr.
+2019
+
+« Master node setup
+
+« Testing network
+goes online
+
+Main network goes (switching service)
+
+e Main chain update
+
+Capacity expansion,
+off-chain transaction
+plan
+
+* Gateway node
+operation
+
+Q4
+
+2019 2019 2020
+
+Q3 Ql
+2019 2020
+
+« Decentralised wallet . .
+Main chain update
+
+Zipper Ecosystem
+
+* Economic Node (identity system) Financial derivatives
+
+goes online
+
+Roadmap
+
+71
+ZIPPER WHITE PAPER CHAPTER XII
+
+DISCLAIMER
+
+ZIPPER WHITE PAPER CHAPTER XII
+
+Disclaimer
+
+This document is for the sole purpose of conveying information and does not consti-
+tute any investment advice, investment intention or relevant opinions on the sale and
+purchase of this project. Any conduct related to this white paper shall not be consid-
+ered a participation in the exchange, including a request for a copy of this white paper
+or a sharing of the white paper to others.
+
+The Zipper team will continue to make reasonable attempts to build a financial eco-
+system based on encryption technology, as much as possible to ensure that the infor-
+mation in this white paper is true and accurate. During the development process, the
+platform may be adjusted and updated, including Zipper public chain bottom layer
+protocol development, public chain ecological perimeter development, DApp develop-
+ment, and compliance document release. This document does not constitute or to be
+construed as an operational recommendation for any sale and purchase, nor is it a
+contract or commitment of any kind. The user with related intention needs to define
+the risk of the project. Once the investor participates in the investment, he or she
+understands and accepts the risk of the project, and is willing to personally bear all the
+corresponding results or consequences. The operation team does not bear any direct
+or indirect losses caused by participation in the project.
+
+73
+ZIPPER WHITE PAPER CHAPTER XIII
+
+REFERENCE
+ZIPPER WHITE PAPER CHAPTER XIII
+
+Reference
+
+[1] Ethereum White Paper [EB/OL].
+https://github.com/etherum/wiki/wiki/White-Paper
+
+[2] Wikipedia - Data Protection Directive [EB/OL].
+https://en.wikipedia.org/wiki/Data_Protection_Directive.
+
+[3] Drummond, R., Manu, S., Dave, L., Christopher, A., Ryan, G., Markus, S(2019).
+Decentralised Identifiers Data Model and Syntaxes for Decentralised Identifiers
+(DIDs). Draft Community Group Report 30 March 2019.
+
+[4] Zhao Yong; Liu Jigiang; Han Wei. (2007). Application of identity-based blind
+signature in mobile electronic payment. Journal of Beijing Jiaotong University, 31(5),
+82-86.
+
+[5] Liu Lingiang, Xu Qiaozhi, Song Rushun (2005); A Distributed Authentication
+Service Model for P2P Systems [J]; Computer Engineering; 31(21), 135-137.
+
+[6] DOS Network: A Decentralised Oracle Service boosting blockchain usability with
+off-chain data & verifiable computing power. [EB/OL] .https://dos.network
+
+[7] Huang Jianhua, Jiang Yahui, Li Zhongcheng. Building a fair and secure
+multiparty calculation using blockchain.
+
+[8] Fusion: Creating the Future of Modern Finance. [EB/OL].
+http://fusion-main.oss-ap-southeast-1.aliyuncs.com/FUSION%20Whitepaper. pdf.
+
+[9] DAEX: A Distributed Digital Asset Clearing Ecosystem. [EB/OL].
+https://www.daex.io/pdf/DAEX(EN)-TechnicalWhitepaper-V0.6.1.pdf.
+
+[10] FISCO BCOS: Financial blockchain infrastructure and practice samples.
+
+[EB/OL] .https://github.com/FISCO-BCOS/whitepaper/blob/master/
+FISCO%20BCOS%20Whitepaper.pdf.
+
+[11] Ontology White Paper. [EB/OL].
+https://ontio. github.io/documentation/wp_download_zh.html.
+
+[12] Ripple White Paper. [EB/OL] . https://ripple.com/consensus-whitepaper
+
+75
+WHITE PAPER
+
+ZIPPER
+
+Copyright by ZipperFoundation 2019

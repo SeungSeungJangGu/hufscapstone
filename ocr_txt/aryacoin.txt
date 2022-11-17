@@ -1,0 +1,168 @@
+Aryacoin : A Peer-to-Peer Electronic Cash System
+sales@aryacoin.io
+Aryacoin.io
+
+1. Introduction
+
+The launch of Bitcoin was revolutionary, allowing people to transfer money anytime and anywhere with very
+low transaction fees. With no third party involved in transactions, involving only the sender and receiver, it was
+the perfect model for decentralization. All transactions are verified computationally and accounts are protected
+with strong encryption practically impossible to break. Along with this the base algorithm that governs Bitcoin
+known as Proof Of Work allows enforcing decentralization.
+
+Bitcoin was created so that it would not be controlled or regulated. However, exchanges and governments are
+now increasingly regulating Bitcoin and other cryptocurrencies.
+
+Aryacoin was developed to overcome these restrictions on a free currency. Along with this, the Proof of Work
+algorithm which governs transactions and blocks in Bitcoin like coins also enables attacks like 51% attacks
+which still follows the principles of decentralization but allows an attacker to revert legit transactions if the
+attacker gains a significant share of mining power on the network, this attack on Bitcoin chain is nearly
+impossible to achieve due to the sheer amount of mining power working to enforce POW, to prevent such
+attacks on Aryacoin, AYA uses Delayed Proof Of Work.
+
+2. No Restrictions
+
+The coin is similar to Bitcoin and Litecoin, except for the usage in the real world and how it will be traded
+and exchanged by the users. The users can buy and sell the coin without restrictions and without
+verifications as there would be sales platforms that will be set up in locations where people can just go in
+and trade the coins without restrictions. This enables the coin to be truly anonymous and gives it usage in
+real life. Along with these Aryacoin provides users with platforms to use and trade AYA and another
+crypto freely and without restrictions.
+3. Transactions
+
+The coin is defined by a chain of digital signatures, each transaction sent to any receiver needs to be
+signed by the sender using the sender’s private key and is sent to the receiver's public key. Once the
+transaction confirms on the blockchain the “owner” of the coin changes from the sender to the receiver.
+Now the new owner(receiver) of the coins can sign the transactions using their own private key to spend
+the received coins. This approach also allows users to send the same coins to multiple multiple receivers as
+the receiver cannot verify if the sender double spent the coins. This is prevented by using nodes that are
+responsible to keep a track of all the transactions on the current active chain. This enables users to identify
+the legit transactions as this enforces ownership of the coins and hence once a transaction is confirmed by
+the nodes, all the double-spend transactions from the sender are rejected by the nodes and there is only one
+active chain with no double-spent transactions.
+
+4. Delayed Proof-of-Work
+
+Standard Proof-of-Work:
+
+The standard proof of work allows “miners” to use CPU and GPU computational power to solve and
+verify SHA256 cryptographic hashes for each block, this enables the chain to be secure and any tampering
+with the chain doesn't work as the hashes would not match. This also follows the “Longest chain rule”
+which enables the nodes to only use and keep the longest POW verified chain in existence, this is also the
+main feature that allows attackers to do 51% attacks.
+
+Delayed Proof-of-Work:
+
+Delayed proof of work provides another layer of security over the traditional POW algorithm. DPOW
+enables the blockchain to be more secure against 51% attacks by keeping a log of all the blocks on the
+bitcoin chain, this enables Aryacoin to use the high mining power that bitcoin uses to secure transactions.
+
+As every new block needs to be written on the Bitcoin chain enabling all invalid and other isolated chains
+which are used to replace the legitimate chain used for 51% attacks to be invalid when compared to log on
+Bitcoin blockchain, this also comes at a disadvantage as chain validation is dependent on Bitcoin, if
+Bitcoin is to get attacked by a 51% attack this would make this practice useless but as 51% attack on
+Bitcoin is very unlikely due to the cost and complex nature of such attacks.
+
+DPOW uses 64 Notary Nodes which are responsible to keep coin logs on the Bitcoin chain, these notary
+nodes are elected every year and are operated independently. All the blocks gain 1 confirmation as soon as
+they get 1 POW confirmation. Further confirmations are based on the notarization of that particular block.
+Due to this safe confirmation, the limit is kept 2+ for all transactions.
+
+5. Network
+
+The steps to run the network are as follows:
+
+1) New transactions are broadcast to all nodes.
+
+2) Each node collects new transactions into a block.
+
+3) Each node works on finding a difficult proof-of-work for its block.
+
+4) When a node finds a proof-of-work, it broadcasts the block to all nodes.
+
+5) Each block is broadcasted to multiple Notary Nodes which writes the block hash on the main BTC
+chain , whenever a new block is received by a node, it must be newer than the previous notarized block or
+else is rejected by the nodes.
+
+6. Incentive
+
+Aryacoin started with providing 1.5 AYA to the miners with every block that is mined. The miners also
+receive the incentive as the coins used as “Transaction fees” for transactions. So the more the transactions
+on-chain, the more incentive for the miners to mine each block. The block reward is halved after some
+time to keep the flow of coins constant and to keep on rewarding the miners.
+
+7. Anonymity
+
+The coin provides a decent level of anonymity for all its users. The users can send their transactions to any
+of the public nodes to be broadcasted, the transaction sent to the nodes should be signed by the private key
+of the sender address. This allows the users to use the coin anywhere at any time, sending transactions
+directly to the node allows users from any place and country. The transactions can be even signed offline
+and then transmitted by any public or private node. Along with these multiple users can participate in
+CoinJoins which allow their transactions to be more private and secure.
+
+8. Real Life Usage
+
+Our team is continuously developing new and innovative ways to use the coins and we are currently
+developing exchanges where the users can exchange the coins without any fees and any restrictions. Along
+with the exchange, we are currently developing other innovative technologies that would allow users to
+
+spend our coins everywhere and anywhere.
+
+9. Offline Exchanges
+
+We are also working with different offline vendors which would enable us to buy and sell the coins
+directly to our users on a fixed and variable price. This would allow easy buy/sell directly using cash and
+allow the coins to be accessible to users without any restrictions which most of the online exchanges have.
+It would also increase the value and number of users along with new ways to spend the coin. This would
+increase the anonymity level of the coin and introduce new users into the crypto market and technologies.
+
+10. Transactions Privacy
+
+Our transactions are similar to Bitcoin transactions. A transaction is divided into inputs and outputs
+containing two outputs at most - one for payment and one to return change. The number of inputs could be
+one or more and it could be one input with large value or could be many small inputs with small amounts.
+Transactions can be signed and sent directly to the nodes to keep anonymity and privacy. Transactions
+allow transferring huge amounts with very low fees and low difficulty, allowing faster confirmations.
+
+11. Conclusion
+
+Aryacoin is a coin that can be used by anyone looking to use cryptocurrency which allows them to keep
+their privacy even when buying and selling the coin whilst using the coin during transactions. Proof of
+work and cryptographic hashes enable transactions to be verified. Delayed Proof of Work enables the
+chain to be more secure against attacks.
+
+Along with using computing power for transaction verification and providing the miners a reward,
+exchanges and offline vendors permit users to use the coin without any restrictions. Cryptographic
+signatures allow users to send transactions directly to nodes, maintaining user privacy along with keeping
+the integrity of the data during the transactions.
+References
+
+[1] W. Dai, "b-money," http://www.weidai.com/bmoney.txt, 1998.
+
+[2] H. Massias, X.S. Avila, and J.-J. Quisquater, "Design of a secure timestamping service with
+minimal trust requirements," In 20th Symposium on Information Theory in the Benelux, May 1999.
+
+[3] S. Haber, W.S. Stornetta, "How to time-stamp a digital document," In Journal of Cryptology, vol 3,
+no
+
+2, pages 99-111,
+
+1991.
+
+4] D. Bayer, S. Haber, W.S. Stornetta, "Improving the efficiency and reliability of digital
+time-stamping," In Sequences I: Methods in Communication, Security and Computer Science, pages
+329-334, 1993.
+
+5] S. Haber, W.S. Stornetta, "Secure names for bit-strings," In Proceedings of the 4th ACM Conference
+on Computer and Communications Security, pages 28-35, April 1997.
+
+6] A. Back, "Hashcash - a denial of service counter-measure,"
+http://www.hashcash.org/papers/hashcash.pdf, 2002.
+
+7] R.C. Merkle, "Protocols for public key cryptosystems," In Proc. 1980 Symposium on Security and
+Privacy, EEE Computer Society, pages 122-133, April 1980.
+
+8] W. Feller, "An introduction to probability theory and its applications," 1957.
+
+9] Satoshi Nakamoto, “Bitcoin: A Peer-to-Peer Electronic Cash System’”,2008
+

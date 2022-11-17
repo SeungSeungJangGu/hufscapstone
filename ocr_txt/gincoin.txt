@@ -1,0 +1,479 @@
+GINcoin
+
+the turnkey masternode coin
+
+-
+
+\ ih ft th
+
+Por aa
+
+QP
+94 oh
+\ Sie,
+GINcoin Overview
+
+GINcoin, with its GUI-based Masternode deployment platform enables
+crypto investors to set up their own Masternodes regardless of their
+technical skills and experience in working with servers and programming
+languages.
+Foreword
+
+About GINcoin, cryptocurrencies
+and Masternodes
+Foreword
+
+What is a cryptocurrency?
+
+Acryptocurrency (or crypto currency) is a digital asset
+designed to work as a medium of exchange.
+Cryptocurrencies use cryptography (hence the name)
+to secure transactions, control the creation of
+additional units, and verify the transfer of assets.
+
+The control mechanisms of cryptocurrencies are
+decentralized and managed through a blockchain (a
+form of public transaction database) that works as a
+distributed ledger.
+
+The decentralisation aspect is what sets them apart
+the most from most other types of currencies
+(especially fiat currencies).
+
+What are Masternodes?
+
+From a technical point of view, a masternode is a
+computer (server) with a publicly available IP address.
+
+A Masternode is simply a cryptocurrency full node or
+computer wallet that keeps the full copy of the
+blockchain in real-time.
+
+Masternodes are active members in a coin’s
+transaction network that meet certain criteria, the
+most important of which is a set amount of collateral
+capital locked in a dedicated wallet.
+Foreword - What are Masternodes?
+
+Wallets
+
+There are 2 types of wallets that
+can be used:
+
+Hot wallets
+
+Hot wallets are stored on the
+server itself and are connected to
+the internet. This makes them
+more susceptible to being broken
+into than cold wallets.
+
+Cold wallets
+
+If a wallet is stored on a computer
+that’s not always connected to the
+internet (or on a storage device like
+
+the Ledger Nano)
+
+Similarities to savings
+accounts
+
+Throughout their short history,
+masternodes have been compared
+to savings accounts - they play an
+important role in the coin network
+and those who create and
+maintain them get rewarded for
+their efforts - much like a bank
+offers savings with varying interest
+rates to encourage people to hold
+their money with it.
+
+Nodes vs Masternodes
+
+Masternodes are considerably
+different in their functionality than
+normal nodes.
+
+Apart from keeping a copy of the
+full blockchain in real-time and
+relaying blocks/transactions, just
+like a full node does on the Bitcoin
+network, Masternodes fulfill other
+functions as well:
+
+Increase the privacy of
+transactions
+
+Enable users to instantly
+send funds to one another
+Participate in governance/
+voting
+
+Some serve the role of a
+treasury in some coin
+networks
+Foreword - Why are Masternodes good for Crypto?
+
+Increased decentralisation
+
+Through the functions mentioned
+above, Masternodes ensure
+cryptocurrencies remain as
+decentralised as possible,
+counterbalancing the inherent
+centralisation mining pools
+introduce. At the same time,
+Masternodes help increase the
+scalability of the network and can
+be used as a means of voting ona
+coin’s developmental decisions -
+much like what happens in your
+usual corporation when
+shareholders are asked to weigh in
+on policy or direction changes.
+
+Decreased energy costs
+
+On top of all of this, Masternodes
+are useful because they
+compensate for proof of work’s
+(POW) limitations and ensure a
+network’s security with much
+lower energy costs. In a sense, a
+POW-based coin that supports
+Masternodes is a mixed breed
+between a pure POW one anda
+POS (proof of stake) coin.
+
+Better security
+
+Because Masternodes require
+capital to be deployed, their
+owners are directly interested in
+keeping the network as secure as
+possible. As such, Masternodes are
+designed to keep miners in line -
+for instance, Dash Masternodes
+keep a close eye on the POW
+network (the miners) and reject/
+orphan blocks if they don’t match
+the current version of Dash or if
+they detect reward tampering.
+State of affairs
+
+Market caps & growing interest
+State of affairs - market status and size
+
+Global Charts
+
+Total Market Capitalization
+
+Zoom 1d 7d Im 3m ly YTD ALL From | Apr 28,2013 | To | Mar8,2018 | ==
+
+Fa 1008
+3
+&
+3 108
+=
+1B
+s
+> 100M
+is
+x
+10K
+oe ole ele wese lee ies wis celie ined fag sdice’ che wt dee ele
+a q
+: 2014 201s 2016 2017 2018
+cy ,
+
+‘
+
+—MarketCap @ 24h Vol
+
+Linear Scale | Log Seale
+
+After a bumpy start of the year, the cryptocurrency market sits at USD 407,868,000,000 according to CoinMarketCap.
+State of affairs - market status and size
+(Masternode-ready coins)
+
+018 02-23-2018 02-24-2018 02-25-2018 02-26-2018 02-27-2018 02-28-2018 03-01-2018 03-02-2018. 03-03-2018 03-04-2018 03-05-2018 034
+
+At the time of writing, MasterNodes.online estimates placed the total worth of existing MasterNodes around
+USD 3,059,849,565 and a marketcap of USD 5,708,184,848 after a very recent drop of roughly 16%.
+State of affairs - interest in Masternodes
+
+Interest over time
+
+At the time of writing, MasterNodes.online estimates placed the total worth of existing MasterNodes around
+USD 3,059,849,565 and a marketcap of USD 5,708,184,848 after a very recent drop of roughly 16%.
+
+10
+The problem(s)
+
+Masternodes and people are
+complex machines
+The problem(s)
+
+GINcoin aims to solve two big issues that are currently
+holding Masternode coins back and impeding their
+rightful ascent:
+
+Deploying and running a Masternode requires
+significant technology know-how:
+Deep understanding of the blockchain
+Launching & maintaining a server
+Setting up of masternode software
+Setting up a Masternode requires considerable
+financial efforts (and, as detailed below, trust)
+
+The two problems force investors to rely on Shared
+Masternode groups and schemes, usually lead by a
+developer willing to do the work in exchange for a
+
+share of the Masternode (or its generated rewards).
+
+This forces a trustless-system to work ina
+trust-dependent way, and not few are the cases where
+ill-intentioned individuals scam investors and keep the
+collateral for themselves.
+
+12
+GINcoin
+
+Trustless, Codeless Masternode
+Deployment
+GINcoin - Trustless, Codeless Masternode Deployment
+
+Overview
+
+GINcoin was built as a direct
+consequence of the problems
+stated before. With its GUI-based
+Masternode setup, the only hurdle
+investors may be faced with when
+looking to own a Masternode
+remains the financial one -
+securing enough collateral to
+actually deploy the node. However,
+not even that will remain a valid
+problem for much longer - our
+roadmap includes shared
+Masternode support for all partner
+coins.
+
+GINcoin is a peer-to-peer
+cryptocurrency that, on top of
+Bitcoin's features, supports instant
+transactions (InstantSend), private
+transactions (PrivateSend) and
+Masternodes. It is based on Dash.
+
+Masternodes
+
+Similar to Dash, GINcoin uses a
+two-tiered network - miners, the
+first tier, handle creating new
+blocks, whereas the PrivateSend,
+InstantSend and Governance
+functions are handled by the
+second tier network made up of
+Masternodes.
+
+Masternodes require 1,000 GIN as
+collateral to prevent sybil attacks
+(wherein a peer-to-peer network’s
+reputation system is compromised
+by entities with forged identities).
+The collateral can be spent at any
+time, but that subsequently
+eliminates the masternode from
+the network.
+
+PrivateSend
+
+At its core, PrivateSend is a service
+that mixes users coins with others’
+coins before sending them to a
+wallet, to ensure their anonymity.
+It is based on CoinJoin, to which it
+adds multiple modifications such
+as relying on masternodes rather
+than ona single website, chaining
+by mixing with multiple
+masternodes and restricting the
+mixing to only accept certain
+
+denominations, and passive mode.
+
+The maximum allowed for a
+PrivateSend transaction is 1000
+GIN (just like with Dash).
+
+14
+GINcoin - Trustless, Codeless Masternode Deployment
+
+InstantSend
+
+Reliant on the Masternode network, InstantSend is
+allows for near-instant transactions - through it, inputs
+can be locked to specific transactions and verified by
+consensus of the masternode network. Conflicting
+transactions and blocks are rejected. If a consensus
+cannot be reached, validation of the transaction
+occurs through standard block confirmation.
+InstantSend solves the double-spending problem
+without the longer confirmation times of other
+cryptocurrencies (e,g,: Bitcoin).
+
+Blockchain technical information
+
+Mining algo.
+
+Block time
+
+Block reward 20 GIN
+
+Masternode collateral
+
+Total supply
+
+Neoscrypt (ASIC
+resistant)
+
+2min
+
+50% MasterNodes / 50%
+miners
+
+1,000 GIN
+
+10.5M GIN (2040)
+
+15
+GINcoin - Trustless, Codeless Masternode Deployment
+
+A GUI-based
+Masternode Deployment Platform
+
+The coin itself is a close sibling of Dash’s. Where GINcoin truly shines is its codeless masternode deployment platform.
+The platform itself is web-based and relies on open source technologies such as Docker, Kubernetes, Node.js, Angular.js
+and Linux.
+
+Setting up a Masternode is simple and straightforward, as shown in the screenshots below, which cover the first two
+steps.
+
+16
+Create Masternode
+
+Blockchain
+
+Hosting payment option
+
+Bitcoin Cash (lower fees, confirms faster than BTC)
+
+Masternode: -
+Masternode is building (status: Waiting payment).
+
+Server payment
+
+A payment is required for starting up your masternode. Use the details below to send your payment, the process will continue automatically after the
+payment is detected in the mempool (usually instant)
+
+Hosting period 28 days starting at the payment confirmation
+
+Payment method etc
+
+Address ———- — —
+
+Amount 0,00113058 - use exactly this amount, no more, no less
+
+17
+Internal economy
+
+Self-sustaining
+
+The coin itself will derive value from the platform that
+it maintains. Aside from free trades on exchanges, GIN
+will be used by our community to cover:
+
+Masternode hosting fees
+Masternode setup fees
+Shared masternode setup fees
+
+Beneficial to other coins
+
+As such, GIN not only relies on other
+Masternode-compatible coins, but also helps them
+grow faster by enabling investors from all walks of life
+to create, maintain and invest in Masternodes.
+
+18
+Roadmap for GIN
+
+your masternode assistant
+
+Just 2 weeks after its
+official launch, GINcoin
+
+has already covered
+most of its
+
+core-features roadmap.
+GINcoin
+Masternodes Y
+
+The GIN network is the first
+implementing our one-click
+masternode setup technology
+
+Feb 2018
+Platform and
+User Interface Y
+
+Online graphical UI for creating,
+managing and monitoring MNs for
+the different supported coins.
+
+Mar 2018
+3rd party
+Masternodes VW
+
+Other blockchains with
+masternode technology will be
+welcomed on-board
+
+Mar 2018
+Daily
+Rollouts
+
+Start of Daily rollouts of new
+Masternode coins
+
+Mar 2018
+Shared Masternode
+support
+
+Platform support for shared
+masternodes setup facilitating
+participation in expensive
+masternodes (e.g. Dash)
+
+Aug 2018 .
+Our Mission & Vision
+
+GINcoin aims to provide cryptocurrency investors with an easy way of creating and deploying their own masternode(s) =
+regardless of their technical abilities.
+
+Our ultimate goal is to democratise the way masternodes are created and, as an effect, prove crypto is here to stay - by
+making it more secure and more user-friendly than paper money.
+
+25
+Let's do this!
+
+You can find us on:
+
+contact@gincoin.io
+https://discord.gg/RTgVNXxR
+https://twitter.com/gincoin_crypto

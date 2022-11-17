@@ -1,0 +1,1203 @@
+s@.
+{@ GreenPower
+
+GreenPower
+
+The Global Rewards Currency
+
+Michael Mathias
+Version 1.1
+
+vil
+
+Index
+
+Abstract
+Introduction
+Architecture
+Blockchain
+Graphene
+Consensus
+Blockchain Elements
+Reaching Consensus
+Proof-of-Work Consensus (PoW)
+Proof-of-Stake Consensus (PoS)
+Delegated Proof-of-Stake Consensus (DPoS)
+Proof-of-Authority Consensus (PoA)
+Hybrid Consensus Mechanism
+Initial Distribution
+System Elements
+Transactions
+Networking
+Performance and Scalability
+Protocol
+System Principles
+Utility
+Use Cases
+Rewards
+Security
+Convenience
+Efficiency
+Sustainability
+Transparency
+Authenticity
+Privacy
+Simplicity
+Trust
+System On-Boarding
+Digital Wallet Partner
+Blockchain Exchange
+Partner Exchanges
+Network Elements
+Master Nodes
+Ledger Nodes
+Consortium Structure
+Board of Directors
+Chain Authorities
+Chain Operations
+Overall System Efficiency
+Long-Term Sustainability
+Conclusion
+References
+
+June 14th 2019
+
+AMNNNAVAHVAUNUNUMHUARW
+
+a
+
+ONNADDAGHARKRARARRERRWAWDWADWAWNWWAWNSDTAS
+
+vid June 14th 2019
+
+Abstract
+
+Green is commonly used to represent growth, health and sustainability.
+GreenPower is a hybrid cryptocurrency that encompasses all of these
+qualities. GreenPower has been designed to reach mainstream levels of global
+growth, has been structured to maintain optimal systemic health and has
+been built to deliver long-term operational sustainability. The focus of
+GreenPower is on achieving unprecedented levels of utility, liquidity and
+efficiency within the realm of blockchain technology. GreenPower serves the
+global marketplace as the featured rewards currency in a universal customer
+loyalty program hosted by merchants throughout the world.
+
+GreenPower was developed on world-class blockchain technology (Graphene)
+and features a unique hybrid consensus mechanism and a highly-efficient
+consortium-based network configuration. The resulting mutual distributed
+ledger system, known as the Powerchain, confirms transactions in just three
+seconds and has the capacity to process over 100,000 transactions per second.
+GreenPower has a fixed supply of coins that were fully distributed during the
+past two years to approximately 150,000 account holders in over 180 countries,
+all of whom received their coins only after having verifiably contributed time
+and considerable value to the system.
+
+At its core, GreenPower is a hybrid cryptocurrency that combines the best
+qualities of decentralized systems with the strongest elements of centralized
+systems while eliminating their respective weaknesses. The unique structure
+of GreenPower gives it strategic advantages over its competitors that can
+deliver superior levels of utility, liquidity and efficiency.
+vid June 14th 2019
+
+Introduction
+GreenPower has been designed to answer three important questions:
+1) How will the global mainstream adopt blockchain technology?
+
+2) How cana cryptocurrency achieve optimal levels of systemic
+health?
+
+3) How to create a blockchain with enduring operational efficiency?
+
+The starting point for developing answers to these questions was a digital
+currency that successfully delivered superior performance through greater
+operational efficiency, increased transaction capacity, wider distribution,
+better governance and enhanced regulatory compliances. GreenPower was
+created from a hard fork of that system (DasCoin 2.0), which in turn had been
+created from a hard fork of BitShares 2.0 using the Graphene Toolkit.
+
+GreenPower is a convertible “store-of-value” unit at the center of a global
+
+digital asset system. This system was developed and launched without an
+initial coin offering (ICO) and without outside investment capital, and has
+been operating successfully for nearly three years.
+
+GreenPower is at the center of an ecosystem of companies (the Green
+Ecosystem), each of which works synergistically to enhance the overall value
+of the system for its participants. The system seeks to redefine how incentives
+can be used in the emerging economy as well as improve the quality and
+efficiency of the exchange of value between individuals, businesses, financial
+institutions, cooperatives, and merchants. Propelled by the power of its hybrid
+structure and benefitting from its streamlined operational model,
+GreenPower is well positioned to become the world’s first mainstream digital
+
+currency.
+vid June 14th 2019
+
+Architecture
+
+Blockchain
+
+The foundational technology on which GreenPower has been created is called
+BitShares. The BitShares Blockchain makes use of a lesser-known consensus
+mechanism called Delegated Proof-of-Stake (DPoS) that was developed
+specifically to replace the wasteful “mining” process, increase throughput and
+reduce reaction times of the blockchain. It also offers tremendous reductions
+
+in the consumption of electricity.
+
+G6 6: 6
+
+Transaction is requested A block that represents that The Block is sent to every
+transaction is created node in the network
+L Nodes receive Nodes validate .
+The block is added to the The transaction is
+existing blockchain complete
+
+Graphene is a software platform designed for deploying third-generation
+cryptographically-secure decentralized ledgers, also known as “blockchains”.
+Graphene is a toolkit for real-time blockchains. Graphene-based systems have
+orders-of-magnitude better performance than first-generation
+Bitcoin-derived systems or even the second-generation “Bitcoin 2.0” systems
+that constitute its current closest competitors. Graphene-based systems are
+ideally suited for transaction-intensive use cases and offer a broad range of
+built-in features and services distinguished by their transparency and intrinsic
+incorruptibility.
+vid June 14th 2019
+
+Graphene
+
+Graphene is a prominent blockchain technology that works in a more
+effective way of transmitting blocks efficiently across the network. It uses
+bloom filters like compact blocks which consist transmitting transaction IDs
+of the selective blocks and all these emerging technologies are using bloom
+filters to perform a quick and rapid transaction. Bloom filter is a compact way
+of determining data for example, ‘ABC’ is a transaction having larger data but
+the requirement is of ‘B’ only then Mempool efficiently select ‘B’ and transmit
+it through the network. Graphene proficiently reduces the size of data
+transaction and is far superior for a thin block and the core’s compact blocks
+as well. Delegated Proof-of-Stake (DPoS) is a known method that achieves the
+high transactions-per-second capacity by using short block time, and it is
+beneficial for those who make the block and have a smaller subset of block
+creator.
+
+Consensus
+
+Bitcoin and Ethereum are based on a Proof-of-Work (PoW) consensus
+mechanism, where all the nodes can participate in the competition of adding
+blocks to the blockchain. The POW mechanism seems completely
+decentralized on paper, but in reality, with increasing load on the system - it
+outgrows the computational power needed to mine these blocks. At a certain
+point, it becomes nearly impossible for a person with a desktop computer to
+add any value to the system. In such scenarios, only huge mining rigs and
+pools are able to mine and add blocks.
+
+PoW-based blockchains are facing a major backlash, due to the amount of
+power being used in the mining process. The Bitcoin network alone
+consumes more electricity than 159 individual countries. With these
+drawbacks, there was always a growing need for less power-hungry and more
+decentralized consensus mechanism. This is what led to the creation of DPoS.
+vid June 14th 2019
+
+Blockchain Elements
+
+Reaching Consensus
+
+Consensus mechanisms are protocols that make sure all nodes (servers in the
+network that maintain the blockchain and sometimes process transactions)
+are synchronized with each other and agree on which transactions are
+legitimate and should be added to the blockchain.
+
+By providing the system with a reliable way to reach decisions, consensus
+mechanisms enable a blockchain to function properly. Multiple nodes can
+submit transactions to be added to the blockchain, so it’s necessary that all
+transactions are constantly checked and that the blockchain is constantly
+audited and this is most efficiently accomplished by the nodes themselves.
+Without a solid consensus mechanism, the blockchains are at risk of various
+attacks.
+
+Following are popular consensus mechanisms:
+
+Proof-of-Work Consensus (PoW)
+
+The Proof-of-Work process is Known as mining and the nodes are known as
+miners. Miners solve complex mathematical puzzles which require a lot of
+computational power. The first one to solve the puzzle gets to create a block
+and receives a reward for creating a block. These mathematical puzzles have
+some interesting properties. This process ensures that in order to create a
+block, one will need a lot of computational power to solve the puzzle first.
+
+Miners can mine blocks using a range of different hardware:
+
+e CPU Mining: Using a normal computer's CPU to validate transactions in
+a proof of work consensus protocol.
+
+e GPU Mining: This is not dissimilar to CPU mining however, in this case,
+a graphics card is used. Graphics cards are more powerful whilst
+relatively using less electricity.
+
+e Mining Pools: To increase the likelihood of successfully mining a block
+miners pool together their resources and shares potential rewards
+depending on how much each miner contributes.
+
+e Cloud Mining: Some miners rent out their processing power to other
+miners for an allotted period of time.
+vid June 14th 2019
+
+e FPGA Mining: Otherwise known as “Field Programmable Gate Array
+mining”, an FPGA is a circuit tailored for a specific computing task,
+making them several times faster at mining than normal processors.
+
+e ASIC Mining: This refers to an “Application-Specific Integrated Circuit”, a
+circuit customized for a particular use. ASICs easily outperform CPUs,
+GPUs and FPGAs in both speed and efficiency, they are generally used
+
+for Bitcoin mining.
+
+Limitation: There is a major drawback to this consensus mechanism.
+Proof-of-Work uses a lot of resources and is said to be unsustainable in the
+future, which is why some blockchains are moving to different consensus
+
+mechanisms.
+
+Proof-of-Stake Consensus (PoS)
+
+Proof-of-Stake is based on the premise that those who own the majority of
+coins in a network have a vested interest in keeping the network maintained
+and the value of its coins high. It is a randomized process used to determine
+who gets to produce the next block. Users can stake their tokens to become a
+validator (which enables them to produce blocks). In most PoS systems, this
+requires the user to lock their tokens up for a certain period of time. After
+doing so, they are eligible to produce blocks. The process that decides who
+gets to produce the next block takes a couple of factors into account, and
+what these factors depend on the design of the blockchain, but in general, the
+person with the largest stake has the highest chance to produce a block.
+Another factor that can influence the likelihood of producing the next block is
+
+the duration that the staked coins have been held.
+
+Validators are also rewarded for their work, with the reward that validators
+receive for creating the next block depending on the design of the blockchain.
+Usually, they either receive all or part of the transaction fees of all the
+transactions in the block they created, or they receive a fixed amount of coins
+
+(generated through inflation).
+
+Proof-of-Stake is not only much more energy efficient than Proof-of-Work
+systems, but it also has another major distinction. In a Proof-of-Work system, a
+miner may not own any of the coins they are mining, meaning they only seek
+to maximize their profits without actually improving the network. Ina
+Proof-of-Stake system, validators have a much bigger incentive to maintain
+the network as they actually hold the coins of the blockchain on which they
+
+are validating.
+vid June 14th 2019
+
+Delegated Proof-of-Stake Consensus (DPoS)
+
+The Graphene blockchain is based on the Delegated Proof-of-Stake (DPoS)
+consensus mechanism, where ‘N’ number of witnesses are selected via
+continuous voting by stakeholders to produce blocks. This ‘N’ is an odd
+number, only for those whose witnesses producing the blocks in their
+respective time slots until the next maintenance interval. After the
+maintenance interval, the algorithm chooses the next set of witnesses based
+on the voting results.
+
+It is important to understand that:
+e Only stakeholders can participate in the voting process.
+e One stakeholder can only vote for one witness.
+
+Apart from witnesses, the stakeholders also elect delegates who have the
+privilege of proposing changes to the network parameters. These changes
+range from something as simple as transaction fees — to the number of
+elected witnesses. A particular majority of delegates approve the proposed
+changes; post this, a two-week period is given to the stakeholders, during
+which, they may vote out the delegates and veto the proposed changes (note
+that these network changes aren't very likely to be proposed). Thus, under
+DPoS it is safe to assume that the administrative authority rests in the hands
+of the users, just like a democracy. But unlike witnesses, the delegates are not
+compensated for retaining their positions.
+
+Proof-of-Authority Consensus (PoA)
+
+Proof-of-Authority is a modified form of Proof-of-Stake where instead of stake
+with monetary value, a validator’s identity performs the role of stake. In
+PoA-based networks, transactions and blocks are validated by approved
+nodes, usually known as validators. Validators run software allowing them to
+put transactions in blocks. The process is automated and does not require the
+validators to do active monitoring. However, it does require maintaining
+authority node(s) without interruption. PoA requires whitelisting for node
+communication from emerging nodes on an established network.
+
+With PoA, individuals earn the right to become validators, so there is an
+incentive to retain the position that they have gained. By attaching a
+reputation to identity, validators are incentivized to uphold the transaction
+process, as they do not wish to have their identities attached to a negative
+vid June 14th 2019
+
+reputation. Some consider this consensus mechanism to be more robust for
+
+the following reasons:
+
+e In PoS, the same size stake can be valued differently by different
+participants. While a stake between two parties may be equivalent, this
+does not take into account each party's total holdings, which means
+that the incentives can be unbalanced.
+
+e Meanwhile, PoW uses an enormous amount of computing power,
+which, in itself lowers incentive. It is also vulnerable to attack, as a
+potential attacker would only need to have 51% of the mining resources
+
+(hash rate) to control a network, although this is not easy to achieve.
+
+On the other hand, PoA only allows non-consecutive block approval from any
+one validator, meaning that the risk of serious damage is centralized to
+
+authority nodes.
+
+POA is suited for both private networks and public networks where trust is
+distributed. The PoA consensus algorithm leverages the value of identities,
+which means that block validators are not staking coins but their own
+
+reputation instead.
+
+Hybrid Consensus Mechanism
+
+Within Powerchain, the consensus is reached using a modified version of
+Proof-of-Authority (PoA) that is facilitated through the Delegated
+Proof-of-Stake (DPoS) mechanism that is native to Graphene. In the
+Powerchain model, the licensing of Master Nodes acts as the authority
+mechanism rather than the reputation of the validator. In the Powerchain
+consensus mechanism, an array of licensed Master Nodes serve as both block
+producers and validators. Each Master Node’s IP address is white-listed within
+the system in order to enable it to communicate with the network and
+participate in the random rotation of block production. When not writing an
+individual block, Master Nodes validate each block produced. The entire block
+production process is reinforced by the second group of licensed nodes. These
+are called Ledger Nodes and they record each block produced, but do not
+write or validate individual blocks. Each Ledger Node contains a complete
+record of every transaction generated on the Powerchain.
+vid June 14th 2019
+
+Master Nodes and Ledger Nodes are operated by companies that are either
+part of the Green Ecosystem or are participating exchanges that list
+GreenPower and other digital assets derived from the Powerchain. The
+incentive to maintain these nodes is the enhancement of the associated core
+business models rather than participation in a systematic transaction fee
+(which seems to be the more common incentive model for node
+
+maintenance).
+
+Initial Distribution
+
+Distribution of initial units/coins is one of the most critical factors in setting
+the foundation for the ultimate value of a cryptocurrency. However too often
+within the blockchain industry, initial distribution has been either
+underanalyzed or overlooked. Problems have been created within many
+cryptocurrencies due to the dynamics of their initial distribution strategies.
+Even successful cryptocurrencies have had serious issues to contend within
+this realm. For example, it’s well known that 20% of Ripple’s XRP currency was
+distributed from the beginning to founders and developers. While this seems
+reasonable in the case of equity of a private startup company, when seen in
+the context of currencies, it seems misaligned and disproportionate that 20%
+of a global currency would be distributed from the start to insiders.
+
+There are several basic but highly important questions to answer at the start
+of every new coin offering:
+
+e Who is receiving units?
+e How many units are they receiving?
+e Why are they receiving those units?
+
+Every currency and token must answer these questions from the start, though
+due to the self-interest of the controlling parties, rarely is this distribution
+dilemma talked about publicly.
+
+As a hard fork of DasCoin 2.0 and the supported store-of-value currency within
+the Green Ecosystem, GreenPower inherited the initial coin distribution of
+DasCoin. This was a highly unique coin distribution method since it featured a
+time-intensive “minting” process as well as incorporated a factor of
+risk/reward. In this minting model, participants contributed value into the
+vid June 14th 2019
+
+system and received a certain number of Cycles (a utility token) based on their
+respective level of contribution.
+
+Cycles were designed to serve two purposes:
+
+e They could be exchanged within the system for blockchain services
+
+e They could be converted into coins by submitting the Cycles into a
+“minting” process.
+
+To initiate the second option, Cycles would be submitted to a minting queue
+(comprised of the submitted Cycles). Then every ten minutes, a certain
+number of Cycles were converted or “minted” into a certain number of new
+coins, and distributed directly to the vault of the party who submitted the
+Cycles. The exact conversion factor (which was called “Frequency”) increased
+every two weeks based on the amount of value that had been collectively
+contributed to the system during the preceding two-week period. This
+conversion factor was designed to correlate with the changing dynamics of
+the inherent risk/reward relationship of the entire system. As more value was
+contributed to the system, there would be more resources to build out the
+ecosystem and its applications, and the overall risks were proportionately
+lowered, thereby reducing the potential reward, which in the system was
+represented by the issuance of “minting” of coins.
+
+The conversion factor (Frequency) was the control mechanism within the
+minting process, and because it went up every two weeks, it took increasingly
+more Cycles (the value of which remained constant during this process) to
+mint an identical amount of coins. The resulting dynamic rewarded the high
+risk taken by the earliest adopters (when it took just 2.5 Cycles to mint one
+coin and there were very few people who had contributed value to the
+system) with proportionally more coins for the same amount of contributed
+value versus those who contributed value during the last stage of growth of
+the system (when 20 Cycles were required to mint one coin).
+
+The minting process systematically introduced a risk/reward factor into initial
+coin distribution. It was a unique solution that proved to be an effective
+mechanism for initial coin distribution, as it resulted in the initial 3,.294,166,501
+coins being distributed to approximately 150,000 accounts in over 180
+countries. Each of these accounts contributed a minimum of €100 of value
+(and as much as €25,000 in some cases) to the system. All coins in the system
+
+were created through this minting process, and therefore there were no coins
+vid June 14th 2019
+
+distributed for free to anyone (including the ecosystem company founders
+and the initial development team).
+
+Company founders contributed value for their respective Cycles in the same
+manner as other minting participants (in many cases they did benefit from
+the lowest Frequency rate, though the risk at the time of their contributions
+was at its highest level). Members of the development team made their
+contributions in the form of the services they performed, and it’s important to
+note that the value of those services was calibrated using the same scale as
+the contributions made by standard participants (not using a raw number of
+coins or a percentage of the entire coin base). This is a major difference when
+compared to virtually every other cryptocurrency and token project. There
+was no “percentage of coins” distributed to the founders and developers.
+There were no freebies, no air drops, and no gifts. Very simply stated, there
+were no free coins ever distributed within the system. All participants first
+contributed a standardized-calibrated amount of value to secure Cycles and
+then submitted those Cycles to the minting process, which generally took
+about three months from the date of submission to the minting of coins over
+the course of the two years that the minting process was in place.
+
+After two soft forks (that occurred prior to the hard fork of DasCoin v2.0 that
+resulted in GreenPower), the minting process was permanently terminated.
+Consequently, the supply of GreenPower is fixed at 3,294,166,501 and all these
+coins have been distributed. Ecosystem company founders have set aside one
+vault address to fortify the long-term operation of the ecosystem. Apart from
+this address (1.2.27), which can be tracked on GRNexplorer.io and contains
+coins that are held in the trust for the ecosystem, all other GreenPower coins
+are in circulation.
+vid June 14th 2019
+
+System Elements
+
+Transactions
+
+When users want to interact with any blockchain, they construct so-called
+transactions and transmit to the network. These present messages contain
+instructions about what particular operation(s) a user wants to use. A
+common operation is the simple transfer operation that comes with
+transfer-specific instructions that provide the necessary information for this
+action (such as the sender, receiver, the amount to transfer as well as an
+optionally encrypted memo). To allow multiple operations to take place
+subsequently, multiple operations can be bundled into a single transaction.
+To identify within the system, transactions are cryptographically signed by the
+users. These signatures authenticate a user and provide authorization for the
+operations in the transaction.
+
+Networking
+
+A blockchain merely defines a means of storage and can be used ina
+non-distributed, single-participant fashion as well as in a distributed
+internet-based mesh network often referred to as Peer-2-Peer (P2P) network.
+In the latter case, multiple parties are connected with each other in a way that
+incoming transactions are forwarded to every other connected participant. A
+transaction ultimately reaches a so-called block producer. A block producer
+verifies incoming transactions against a hard-coded protocol and bundles
+them into a single block that is added to the existing blockchain. At this point,
+a transaction is considered confirmed and executed. The effects of an
+executed operation on the current state are defined in the blockchain
+protocol.
+
+Performance and Scalability
+
+The Powerchain is an extremely high-performance blockchain, confirming
+transactions within three seconds and having the capacity to process
+100,000+ transactions per second on a distributed network. Even higher levels
+of performance achievable with relatively straightforward improvements to
+
+server configuration and communication protocols.
+The following are key points for high performance reflected in the system:
+e Keep everything in memory.
+
+e Keep the core business logic in a single thread.
+vid June 14th 2019
+
+e Keep cryptographic operations (hashes and signatures) out of the core
+
+business logic.
+e Divide validation into state-dependent and state-independent checks.
+e Use an object-oriented data model.
+
+Protocol
+
+The Blockchain protocol is the most essential part of blockchain technologies.
+It defines the behavior of the entire system including consequences and
+side-effects when processing transactions. Users utilize particular features by
+crafting a transaction that contains a particular letter-of-interest.
+
+Blockchain only stores incremental changes (e.g. transactions). The final
+balance of each account together with other information needs to be tracked
+separately in the so- called “current state.” It is important to note that the
+protocol is deterministic in the sense that the very same state is generated
+when applying the same sequence of operations. This makes blockchain
+
+technologies more secure and auditable.
+
+System Principles
+
+The Powerchain was developed with the following principles in mind:
+
+Utility
+The primary objective of the Powerchain system is utility. The system has
+
+been designed to facilitate mainstream levels of utility through various
+
+applications using the services of the system’s blockchain.
+
+Rewards
+
+Rather than compete solely as a direct payment solution, GreenPower can
+also be used as a reward for customer loyalty and as an incentive to
+encourage purchases at participating merchants. There are many problems
+with the existing customer loyalty solutions. These programs can be valuable
+but are scattered and lack standardization, making it very difficult for
+consumers to track their progress and manage their rewards. The rewards of
+one program are generally not honored by other programs, so it can be
+difficult to redeem rewards from certain programs. The lack of interoperability
+also makes it difficult to gauge the intrinsic value of the rewards. Consumers
+vid June 14th 2019
+
+also must contend with expirations and other control factors in the
+redemption process.
+
+There are also considerable problems with customer loyalty programs when
+seen from the merchant perspective. First of all, it’s a competitive marketplace
+and merchants must compete successfully for customer loyalty to thrive in
+today’s market. This can make loyalty programs expensive and
+time-consuming to manage. The management and administration of these
+programs can present staff training challenges. For merchants who do not
+currently offer a rewards program, the learning curve can be significant. These
+programs are usually customized and require time and upfront investment
+before they can be deployed. Loyalty solutions in today’s marketplace are
+generally not plug-and-play and not intended for cross-border collection or
+redemption.
+
+GreenPower, the native store-of-value unit of the Powerchain, is designed to
+serve as a global rewards currency. It offers a number of advantages over
+other forms of rewards, including that it can be easily redeemed for goods
+and services, and converted/exchanged into other forms of digital or fiat value.
+Unlike most rewards, GreenPower is not pegged to a particular fiat currency. It
+is a free-trading store-of-value unit that can increase or decrease in value
+based on marketplace dynamics.
+
+There are specific applications that further support this use case:
+
+e GreenRewards.com: This is a universal customer loyalty
+program that uses GreenPower as its primary rewards currency.
+The participants in this program, who are either free or paid
+members, actively collect GreenPower as a rebate on purchases
+at a variety of online retailers.
+
+e Traveleum.com: This is a discount travel membership that
+provides crypto-back rewards on various travel services,
+including hotels, flights, car rentals, condo stays, and cruises.
+Participants in this program, who are either free or paid
+members, collect crypto-back rewards and receive double
+rewards if they select to receive GreenPower.
+
+Other Use Cases
+
+The unique combination of hybridized features makes the Powerchain an
+ideal system for a number of additional use cases. The Powerchain enables
+the creation of new solutions that significantly enhance applications that had
+vid June 14th 2019
+
+previously used more centralized traditional formats. Several of these new
+applications are already in development, including:
+
+Stable Coins & Tokenized Assets: The Powerchain is well suited for the
+operation of collateralized stable coins and tokenized assets (e.g., precious
+metals, real estate, artwork). Tokens that are collateralized or backed by
+commodities or other real assets inherently have centralized repositories
+where the underlying value is being held. Integrating the necessary control
+and security protocols to manage these arrangements on a blockchain makes
+the Powerchain a natural choice for these types of applications.
+
+Real-Time Crypto Payments Gateway: Using the Powerchain’s native
+exchange, a payment gateway can be created that would enable real-time
+conversion of digital assets from one variety to another. When applied to the
+realm of payments, this type of gateway would make it possible to use
+GreenPower as well as other cryptocurrencies (provided each has adequate
+liquidity) for payment mechanisms.
+
+Mediated Crowdsourcing Platform: Since the development of a derivative
+token involves an inherent level of centralization, the management of various
+types of token offerings can take place on the Powerchain. Specialized
+formats of tokens, such as the premium token, which distributes value to
+token holders based on the achievement of agreed-upon Key Performance
+Indicators (KPIs), can be easily developed and managed using built-in features
+of the Powerchain.
+
+Real-Time Crypto Payment By Debit Card: While there have been a number
+of debit cards that enable users to sweep over fiat currency proceeds from a
+previous sale of crypto assets for use in card purchases, a better solution
+involves the automated real-time conversion of a crypto asset at the time of
+the purchase decision. Over the past nine months, a proof-of-concept of this
+solution has been deployed to a test group of approximately 500 users that
+have successfully completed more than 5,000 transactions in 33 currencies
+and in over 50 countries.
+
+Hybrid Escrow Service: Escrow services have historically always been highly
+centralized. With an inherent need for dispute resolution, which is nearly
+impossible to do within decentralized systems, the Powerchain offers
+compelling features that support the operation of various escrow services. A
+peer-to-peer escrow exchange is the first use case that will make use of the
+Powerchain’s built-in escrow capabilities.
+vid June 14th 2019
+
+Security
+
+Security is of paramount importance within the system. The system is
+protected through a combination of factors including the systemic defense of
+its unique consensus model which features peer-to-peer communication
+between nodes using white-listed IP addresses as well as a series of
+operational security protocols for use in the key management of critical
+
+elements of the system.
+
+Convenience
+
+Wherever possible, the system incorporates features that improve
+convenience and ease of use. Security and convenience are often
+diametrically opposed, but the system has been designed to optimize the
+balance of these two important characteristics.
+
+Efficiency
+
+The Powerchain was developed to operate efficiently, increase throughput
+and speed-up transactions. Bitshares is the core of the Powerchain’s
+processing engine and benefits from the efficiencies of DPoS and Graphene
+toolkit elements to facilitate an extremely high transaction capacity.
+
+Sustainability
+
+A prime objective of the entire system has been long-term sustainability. The
+system was conceived to reliably and efficiently operate for decades into the
+future. Decisions were made in the architecture of the system that was in
+alignment with that goal.
+
+Transparency
+
+Data is available publicly and anyone can access it to check the balances and
+transactions on Powerchain’s Block Explorer (www.grnexplorer.io) and this
+maintains the transparency and data integrity among the users.
+
+Authenticity
+
+The transaction and the flow of data are not held by any single entity and can
+be accessed by the participants of the Powerchain system. The actions
+performed by the participants within this network are verified by the nodes
+which maintain the authenticity of the system.
+
+Privacy
+The system was designed to preserve the privacy of individuals without the
+need for anonymity. Transparency is maintained, without any compromise to
+vid June 14th 2019
+
+either the system security or the preservation of the privacy of network
+participants.
+
+Simplicity
+An overarching goal is to keep the system as simple as possible, particularly
+related to all user interactions.
+
+Trust
+
+A prime objective is to use the infrastructure of a digital asset system to build
+an effective network of trust, enabling all participants and stakeholders to
+share a common goal of increasing the value of the network and cultivating
+its growth. The network will achieve this by granting trust to certain roles
+(such as the Board and chain authorities) to perform chain management and
+maximize the efficiency and utility of the network, programmatically ensuring
+that each trusted role is well defined and does not overstep the boundaries of
+its authority.
+
+The system provides an inherent incentive to behave within the common
+interest of the network, and makes sure that any misbehaving authority is
+shut off from the network and liable to be punished for breaking the rules. The
+accuracy and level of operations of the blockchain are verified by qualified
+third parties, providing a high degree of transparency while also ensuring that
+the privacy of all participants of the system is well preserved.
+
+System On-Boarding
+
+Digital Wallet Partner
+
+The Green Ecosystem has licensed a Singapore company to provide its native
+digital wallet service. The company also conducts Know Your Customer (KYC)
+information about each client, follows Anti-Money Laundering (AML)
+procedures, and provides a number of services in support of participants who
+choose to access GreenPower within the ecosystem’s associated wallet
+system. This digital wallet system requires the use of a hardware device (either
+a branded Validator or a Ledger Nano S/X) to transact higher thresholds of
+activity.
+
+Blockchain Exchange
+The Powerchain incorporates a decentralized exchange that trades, settles
+and clears GreenPower over its blockchain autonomously.
+vid June 14th 2019
+
+Partner Exchanges
+
+Additional access points for handling GreenPower and other digital assets
+derived from the Powerchain include several public cryptocurrency
+exchanges. Trading under the symbol of GRN, GreenPower can be purchased,
+sold and held in accounts through these exchanges, which include CoinBene,
+CoinFalcon, IDAX, BTC-Alpha and EUBX.
+
+Network Elements
+
+The node network supporting GreenPower has a permissioned structure
+which incorporates "chain authorities" and Board management to streamline
+control, enable better performance, assure sustainability, facilitate faster
+iterations and ultimately support more innovative applications.
+
+There are several unique elements to the network deployment of the
+Powerchain.
+
+Master Nodes
+
+The role of the Master Node is to aggregate transactions with the intention to
+produce Blocks. Only Master Nodes have the authority to write transactions
+into the Blockchain ledger history. Each Master Node is aware of the other
+and they must have been voted in by the governing system. Master Nodes are
+novel in that their authority is represented with cryptographic keys. This
+means that each Master Node must have registered its Public Key and will
+sign with its Private Key during the time of Block Production. Therefore, it is
+
+possible to hold any one particular Master Node accountable for its actions.
+
+Ledger Nodes
+
+Ledger Nodes are non-authoritative maintainers of the Powerchain. In other
+words, Ledger Nodes do not produce blocks, yet they aggregate transactions
+and pass them to the Master Nodes for Block inclusion. Ledger Nodes are able
+to verify transactions are therefore useful for both increasing the footprint of
+the GreenPower Consensus Network and permitting connectivity to reach
+farther without requiring the need to assign authority to the node.
+
+Transaction propagation is accelerated because of Ledger Nodes.
+
+Consortium Structure
+
+There are always trade-offs in configuring a blockchain system. No system can
+offer all the best aspects in one configuration. Certain factors must be
+balanced, as an increase in one leads to a decrease in another. Nonetheless,
+
+19
+vid June 14th 2019
+
+while the consortium structure features a lower number of nodes and is less
+decentralized, it is able to deliver the high security of law latency finality, and
+the high scalability that accompanies reduced overhead. Overall, this
+consortium approach delivers what is arguably the best combination of
+characteristics.
+
+Low Latency Finality
+Low Overhead
+Small Number of Nodes
+
+Low Latency Finality High Latency Finality
+High Overhead Low Overhead
+Large Number of Nodes Large Number of Nodes
+
+Low latency finality provides high security. A large number of nodes provides high decentralization. A low
+overhead provides high scalability. You cannot obtain highs for all three, as there are tradeoffs to each metric.
+
+Board of Directors
+
+The Powerchain enables a governing board to regulate the parameters of the
+network. The Board is comprised of members nominated and appointed by
+the Chairman. Mr. Michael Mathias currently serves as the Chairman of the
+Board of Directors.
+
+e The role of the Board is to propose and modify chain parameters, to
+support the normal functioning and growth of the network.
+
+e The Chain Executive performs certain delegate actions to check the
+power of said executive with the ability to terminate their access to the
+network to avoid the risk probability.
+
+e The Board itself has no control on the state of the database or the
+construction of the blockchain and is programmatically prevented from
+
+making any changes to it.
+
+e The network itself manages and maintains the state of the transaction
+ledger, as it is the only way for making any undesired changes to
+
+20
+vid June 14th 2019
+
+subvert the majority of Master Nodes without any interference of the
+Board.
+
+e An Executive Director who works on the Board is responsible for
+ensuring all its decisions and initiatives that are enacted and enforced
+for completing the management of the network.
+
+The Executive Director is responsible for directly overseeing all Chain
+Authorities and can attend all Board meetings but is not permitted to vote,
+unless during a crisis when an additional vote is required in order to satisfy the
+condition of three votes.
+
+Chain Authorities
+
+Chain authority roles exist to handle smooth inputs to the Powerchain of user
+data that exists outside of the system. The problem with fully decentralized
+systems is the fact that they cannot have reliable inputs, for example, Bitcoin
+is created internally in the Bitcoin blockchain and is merely transferred
+around. In order for a system to have reliable inputs, there must be the
+certainty that value has been contributed to the network. Value cannot exist
+without an independent observer and so the only way to verify that the user
+has submitted the value to the system is to maintain an impartial observer.
+
+Each authority role is set up in such a way that:
+
+e There is no way for the authority to make a meaningful unwanted
+impact on the state of the network as the network can fall back toa
+failsafe state.
+
+e The actions of the authority are checked by a separate authentication
+authority and there are programmed measures to assure there is
+minimal chance of collusion.
+
+e There are incentives to perform in the best interest of the network.
+
+e Any malicious action by the chain authority is transparent and will lead
+to that account being marked as untrustworthy, shut off from the
+network and penalized.
+
+Chain Operations
+The Board sets the procedures and ensures the proper execution of the
+following:
+
+e The authorization of Master Nodes and Ledger Nodes within the
+Powerchain network infrastructure.
+
+2)
+vid June 14th 2019
+
+e Intervention at times of crisis,
+e Execution of all Board Parameters
+
+The Executive Director oversees the performance of all chain authorities,
+manages the flow of proposals for the Board to consider, and facilitates
+referendums. Provided proper procedures have been followed and necessary
+thresholds have been surpassed, the Executive Director is responsible for
+enforcing all Board initiatives and decisions, and is fully accountable to the
+Board for all operations within the system.
+
+Overall System Efficiency
+
+The Powerchain system relies on a shared chain state in the memory
+database of stateful objects related to user data such as account balances of
+GreenPower (and other digital assets). Blockchain state is fully reproducible by
+applying the transactions in order. The blockchain nodes form the state by
+applying transactions from the previous blocks, however, the state consensus
+is reached by following the longest chain of blocks that node can see.
+
+One of the main goals of the Powerchain is a high capacity of fast
+transactions. Because each node stores the shared state in memory,
+transactions can be quickly validated across the network. This significantly
+increases the number of transactions that can be included in a block and
+thereby increases the overall throughput of the network. There is no
+
+demanding Proof-of-Work required to sign a block, each witness can quickly
+
+collect and verify transactions against the global state to form a block of valid
+transactions, or sign them with their block signing key and transmit the
+signed block to the rest of the network. Nodes can also quickly roll back
+transactions in case of consensus failure, both in case the block being rejected
+
+due to being on a shorter fork during fork resolution) or due to the
+
+transaction expiring without being included in any blocks.
+
+Long-Term Sustainability
+
+There are inherent efficiencies to the Proof-of-Authority and Delegated
+Proof-of-Stake consensus models. Rather than incur the financial burden of
+protecting an openly-configured network of peer-to-peer servers, these
+methods of reaching consensus employ significantly more efficient means for
+reaching consensus.
+
+22
+vid June 14th 2019
+
+By balancing aspects of centralization with elements of decentralization, the
+system is capable of managing itself through a sufficiently randomized but
+highly-efficient consensus method. By incorporating closed-system
+architecture in the operation of its consortium of network nodes, while
+preserving open-system dynamics in other aspects of the system, the
+Powerchain is able to benefit from the advantages of blockchain protocol
+without the burden of the inefficiencies associated with decentralized
+open-system architecture and with reduced security challenges versus those
+associated with centralized systems. Together, these dynamics create a
+blockchain system that features high security, high scalability and is
+extremely sustainable over the long term.
+
+Growth Dynamics of the Ecosystem
+
+The ecosystem is a vital part of the growth strategy that leads to mainstream
+adoption of GreenPower. The different components of the ecosystem work
+together to build grow the scale of the overall system and increase utility and
+liquidity.
+
+Stage 1 - Foundation: The first stage of the ecosystem involved establishing
+the fundamental components of the ecosystem, including the blockchain, the
+network, the digital wallet system and the initial distribution of the
+store-of-value units, as well as connecting to a number of exchanges. This
+period lasted 3 years from June 2016 to May 2019. There is now a fixed number
+of GreenPower units and all have been distributed.
+
+Stage 2 - Momentum: With all units of GreenPower fully distributed, the focus
+is now on increasing the utility of the coins. GreenPower is meant to be used
+by merchants as an incentive for purchase and a reward for loyalty.
+GreenRewards is the universal reward program that enables any merchant in
+the world to quickly and easily offer customers a world-class customer loyalty
+program. Traveleum is a prime example that shows how a company can
+integrate GreenPower into its business. Traveleum offers GRN as
+“crypto-back” rewards on the purchase of travel services and also pays its
+affiliate marketers in GRN each time a VIP membership is sold.
+
+As a reward and incentive for customers, GreenPower needs to be easily
+redeemable for a wide range of products and services. The range of
+
+23
+vid June 14th 2019
+
+redemption possibilities can be significantly increased through GRN-enabled
+payment solutions (e.g., GreenRewards card, AlliancePay cards and the
+next-generation closed-loop payment system) and the proliferation of our
+proprietary payment gateway (which enables GRN to be integrated into many
+
+existing payment systems).
+
+As a universal unit of reward for customer loyalty, GreenPower must be easily
+collectible at a wide spectrum of merchants, both online and offline, in
+countries throughout the world. Merchants will be added by professional
+affiliates who stand to gain long-term residual streams of rewards for each
+
+merchant added to the system. These affiliates receive ongoing rewards
+through the wallet’s affiliate program as compensation for connecting both
+
+consumers and merchants to the wallet solutions.
+
+The affiliates offer merchants an innovative closed-loop payment system that
+offers savings, automated rewards and added security for in-system transfers
+where both consumer and merchant are part of the digital wallet system) of a
+variety of fiat and cryptocurrencies. The system also facilitates payments from
+the full spectrum of traditional providers, such as Mastercard, Visa, and PayPal.
+t also offers the merchant a way to offer a customized loyalty program for
+
+their customer base that rewards and incentivizes with GreenPower.
+
+The wallet is the heart of the ecosystem. Many of the benefits of the
+ecosystem are accessed directly through the wallet, including access to
+exchanges, marketplace, and payment products. The wallet is the center for
+the consumer as well as for the merchant. As more and more consumers
+collects rewards through the wallet, and as more and more merchants reward
+their customers through the wallet, there will be increasing demand for
+GreenPower. Since GreenPower is of a fixed quantity and is already fully
+distributed, the added demand is likely to increase the price of GreenPower.
+The greater the growth of users (collecting and rewarding), the stronger the
+demand will be on the limited supply of GreenPower. If this happens ona
+global basis in a strong enough manner, GreenPower can establish itself as
+
+the definitive rewards currency for the world.
+
+24
+vid June 14th 2019
+
+Ecosystem Roadmap
+
+The following is a roadmap of upcoming product launches and new releases
+scheduled for the second half of 2019:
+
+July 3 New digital wallet launch
+
+July 5 OREAO beta website launch
+
+July 6 Traveleum beta website launch
+
+July 15 AlliancePay white paper to be released
+July 22 GreenRewards beta website launch
+July 31 DasMarket beta launch
+
+Aug 14 Automated marketing system launch
+Aug 21 Wallet affiliate program launch
+
+Aug 28 First GreenRewards cards to be released
+Sep 18 New Das33 Project
+
+Sep 25 First AlliancePay cards to be released
+Sep 30 Closed-loop payment system launch
+Oct 30 First asset-backed tokens to be released
+Nov 15 Trade finance service launch
+
+Dec 6 Blockchain services company launch
+
+25
+vid June 14th 2019
+
+Conclusion
+
+The strength of GreenPower is its global utility, the structure of the
+Powerchain and the alliance of companies, known as the Green Ecosystem,
+that supports it.
+
+Mainstream Utility: GreenPower has been designed to address the issues
+that have prevented digital currencies from being adopted by mainstream
+users. Rather than compete with fiat currencies as a primary payment
+mechanism, GreenPower is instead positioned to serve as a global rewards
+currency that can be offered as an incentive by merchants, collected easily by
+consumers and effortlessly redeemed for a wide range of goods and services.
+This system of digitally-stored value is capable of solving many of the
+problems associated with traditional customer loyalty programs. As the
+rewards currency for one of the world’s first universal customer loyalty
+programs, GreenPower is well positioned to attract a critical mass of
+mainstream users throughout the world.
+
+Optimal Liquidity: The health of any asset can be defined by the difference
+between the “buy” price and the “sell” price. The lower the spread, the
+healthier the market environment, and the stronger the asset. The quality of
+the fundamentals of the asset combined with the awareness of the market
+determines the level of the spread. The fundamentals of any cryptocurrency
+begin with its structure and are heavily influenced by the quality of the initial
+distribution, its utility, performance, capacity, ability to scale and the ability for
+the system to sustain itself. GreenPower’s fundamentals are extremely strong,
+starting with the quality of its initial distribution, building on the potential
+impact of its primary use case and its many additional use cases, and finishing
+with the soundness of its network architecture and the long-term viability of
+its operations model. All of these factors can work together to enhance the
+quality of GreenPower’s liquidity. Consequently, as the market better
+understands the strength of GreenPower’s fundamentals, its liquidity is likely
+to increasingly approach optimal levels.
+
+Enduring Efficiency: In the past, there wasn’t enough emphasis on the
+infrastructure requirements of blockchain deployments, specifically the
+elements that relate to reliability, availability, scalability and maintainability.
+These are crucial factors to ensuring that the blockchain can play a viable role
+in the financial lives of mainstream users. An entire level of quality assurance
+has been omitted from the realm of blockchain technology mainly due to the
+
+26
+vid June 14th 2019
+
+inherent limitations of the decentralized nature of most blockchain
+technology. The Powerchain provides this missing element through its
+“hybrid” structure, combining the strongest elements of decentralized
+systems with certain advantages of more centralized systems. The
+Powerchain’'s structure enables the network supporting GreenPower to
+deliver world-class performance, seamless scalability and long-term efficiency.
+
+By adapting trust to the digital paradigm, the Green Ecosystem is uniquely
+structured to provide its participants with the benefits of mainstream utility,
+optimal liquidity and enduring efficiency. By fulfilling its immense potential,
+GreenPower is positioned to unlock unprecedented levels of prosperity
+throughout the world.
+
+27
+vil
+
+R
+
+June 14th 2019
+
+eferences
+
+GreenPower:
+
+ht
+
+tos://grnpower.io/
+
+GreenExplorer:
+
+ht
+
+tps://grnexplorer.io/
+
+GreenPower GitHub:
+
+ht
+
+tps://github.com/green-powerchain-Itd
+
+BitShares Documentation:
+
+ht
+
+tps://now.bitshares.works/en/master/index.htm!
+
+Graphene:
+
+ht
+
+tos://www.steem.center/index.php?title=Graphene
+
+Consensus Mechanisms:
+
+ht
+c3
+
+Pr
+ht
+
+Pr
+ht
+
+tps://nackernoon.com/different-blockchain-consensus-mechanisms-d19ea6
+bcd6
+
+‘oof-of-Work (PoW):
+tps://en.bitcoin.it/wiki/Proof_of_work
+
+oof-of-Stake (PoS):
+tps://en.wikipedia.org/wiki/Proof-of-stake
+
+Delegated Proof-of-Stake Consensus (DPoS):
+
+ht
+
+Pr
+ht
+
+tps://now.bitshares.works/en/master/technology/dpos.html
+
+oof-of-Authority Consensus (PoA):
+tps://medium.com/poa-network/proof-of-authority-consensus-model-with-i
+
+dentity-at-stake-d5bd15463256
+
+ThePowerchain Ltd Suite 407, 4/F, Tower A, New Mandarin Plaza, 14 Science Museum Road,
+
+Tsim Sha Tsui, Kowloon Hong Kong
+
+28

@@ -1,0 +1,481 @@
+S5
+
+Unistake”
+
+Join liquidity pools and stake at the same time
+
+LITE PAPER
+
+Executive Summary
+
+Unistake empowers DeFi projects in their quest for liquidity by
+providing new incentives for their Supporters to create Uniswap
+liquidity pools. Communities can contribute to a tokens liquidity
+in new ways that include guaranteed returns, reduced risk of
+impermanent loss, and single sided liquidity provision.
+
+Problem
+
+For DeFi Users
+
+Many DeFi users looking to make returns on their tokens are
+torn between providing liquidity to earn Uniswap trading fees,
+or staking their tokens to earn a yield. Although staking tokens
+often results in a predictable yield, it provides little tangible
+value to the token being staked. Although temporarily removing
+tokens from circulation has short term benefits for the token
+value, the yield is often generated in a non-sustainable way
+which can result in the price of the token being worth much
+less at the end of the stake than at the beginning.
+
+Providing liquidity, however, is the cornerstone of the Uniswap
+ecosystem, and every token needs it to maintain a successful
+swap environment. Liquidity providers are extremely important
+to the value and stability of the token, but the incentives to
+become a liquidity provider do not come with the predictable
+yields offered by staking. Liquidity providers also run the risk
+of losing their own value when they join a pool as the
+proportions of the tokens in the pool change. This loss of
+value is Known as impermanent loss and it is a very real
+possibility, especially in smaller pools from new projects.
+
+The unpredictable returns and the risks of impermanent loss
+are often a defining factor that prevent token holders from
+becoming liquidity providers and making the contributions
+the project really needs.
+Solution
+
+For DeFi Users
+
+Unistake takes the predictable returns of staking and the
+important act of providing liquidity and merges them into one.
+This allows DeFi users to provide true value to the project
+who's tokens they hold while ensuring they get a predictable
+return on investment that they are comfortable with. This Is
+made possible by introducing Staking Bonuses, which are
+guaranteed by the Unistake smart contracts at the time the
+liquidity is provided.
+
+Once joining a Uniswap pool via the Unistake platform, the LP
+tokens minted by Uniswap are automatically staked in the
+Unistake smart contracts for the period of time selected by
+the provider. Depending on the pool, the Staking Bonuses a
+liquidity provider receives can be in either one token or both
+tokens of the pair, and during the staking period the liquidity
+provider can withdraw its returns at any time. Unistake, of
+course, has no control of what price the tokens will be worth
+in relation to each other, but the additional yield received
+through Staking Bonuses can help reduce the risk of
+impermanent loss.
+
+Unistake also introduces contracts that can totally eliminate the
+posibility of impermanent loss between the two tokens of the
+pair.
+Problem
+
+For Projects
+
+Liquidity is arguably the most import thing for any DeFi project
+intending to use an automatic market marker like Uniswap; this
+is because, without significant liquidity, a token has no value
+that can be realised. The larger a liquidity pool is, the more
+resistant it is to volatility and the more comfortable people will
+be adding it to their portfolio.
+
+Although liquidity is so important to projects, there is not much
+incentive for people to become liquidity providers, especially for
+new projects and ones with small pools. Even projects with
+dedicated communities have difficulty converting their token
+holders into becoming liquidity providers, and only a small
+amount ever contribute to the pool. This is the case, even for
+larger projects.
+
+Therefore, attracting liquidity providers and keeping them in the
+pool is a difficult and continuous task for any project looking to
+grow. This often results in projects either investing in marketing
+to attract providers with a low return on investment due to the
+low incentives, or just concentrating on building their project
+without any thought about building their pools, in hopes that
+once their project reaches enough people it will, in turn, result
+in more liquidity providers.
+
+Neither of these solutions are good for the short or long-term
+sustainability of the project as a low pool volume often puts off
+buyers and even keeps out other liquidity providers for fears of
+impermanent loss or low trade volume.
+Solution
+
+For Projects
+
+Unistake makes it possible for projects to begin attracting
+liquidity providers with all the objections of the potential
+provider being addressed. Project owners can set up their
+pools with pre-set goals on how much liquidity they wish
+to attract and for how long they wish people to provide the
+liquidity for.
+
+Projects have full control of their pool parameters and, once
+deployed, they can change their offerings based on market
+conditions or their own particular circumstances. The pools
+run autonomously, based on the parameters and budget the
+project decided on and, once filled, projects can accurately
+determine what the minimum pool size will be at any time,
+allowing them to concentrate on the fundamentals of their
+project rather than wondering about the health of their
+liquidity pool.
+
+Attracting providers, which is usually targeted to a very small
+percentage of token holders who are already familiar with
+liquidity providing, can now be more broadly promoted to
+
+the project's community as the introduction of incentives made
+possible by Unistake makes It a more viable option for many.
+
+Projects can even ask their most dedicated community
+members to donate to the Staking Bonuses of new providers
+to further increase the amount of liquidity that can be attracted.
+How It Works
+
+The Tech
+
+Unistake is a decentralized app (dApp) built and deployed on
+the Ethereum blockchain to work specifically with the Uniswap
+decentralised exchange. The immutable smart contracts work in
+conjunction with the unistake.com website allowing anyone with
+an internet connection to be able to interact with it and benefit
+from its capabilities.
+
+The smart contracts are open source and audited by security
+experts. This enables users to be assured that the smart contract
+will perform the functions it is programmed to do, and gives them
+peace of mind that their funds are safe and not in the control of
+any third party.
+
+Using Unistake
+
+Unistake is designed with simplicity in mind and provides a
+seamless link between the Uniswap exchange and the projects
+using Unistake to attract liquidity providers.
+
+The platform allows users to provide liquidity to Uniswap in their
+chosen pair without leaving the Unistake website. Liquidity providers
+can withdraw Staking Bonuses at any time during their term and,
+once the term has ended, they can withdraw their liquidity and
+Uniswap trading fees, restake their LPs for another term, or remove
+their LP tokens from the contract to continue providing liquidity as
+they would have, had they provided liquidity to Uniswap directly.
+The Interface
+
+Connected Aires A ee
+_} commons atten wi () Unistake “9
+Available Staking Bonuses
+“sD 100.
+
+The Unistake interface provides an intuitive way for community
+members to find and provide liquidity to their favourite tokens, as
+well as discover new trending projects offering staking opportunities
+to increase their Uniswap liquidity.
+
+First Products To™kaunch
+
+An optional side contract used when
+providing liquidity to increase Staking
+Bonuses and lock up UNISTAKE.
+
+Standard 2 token Uniswap liquidity
+model, but with the additional benefit
+from revenues streams from staking.
+
+A way to provide liquidity with only
+one token of the pair, while the
+project provides the other.
+
+When entering a Uniswap liquidity pool via Unistake, users receive
+their Uniswap trading fees as usual, but the LP tokens minted by
+Uniswap are automatically staked in the Unistake contracts for the
+period of time selected when entering.
+
+Multiolier
+
+Input Desired Lock Period In Days
+
+0 Unistake Multiplier is an optional
+side product and token utility that
+works in conjunction with other
+
+Multiplier Balance
+
+100 *’ UNISTAKE
+products on the Unistake platform.
+“ By using Multiplier users can
+"00 ay increase the perceived value of
+dete Lot Peto the liquidity they provide to
+00d 00h oom maximise staking bonus returns
+
+provided by the project.
+
+Poolstake
+
+Providing liquidity with the se ana
+
+Input
+* 1.000021 MAX @ ETH
+
+PoolStake option follows zoom UNSTAKE
+the same two token model | }-——
+
+100 “s UNISTAKE + 100 @ TH
+
+as Uniswap, but with the
+added option of staking LP
+tokens to earn a return from
+one or both of the tokens
+being provided in the pool.
+
+PoolMatch
+
+Ble: 10002 PoolMatch is an adaptation on a
+
+1.000021 wae @ ETH concept often seen in companies
+Matched By Project who match an employee’s felelarciiiela
+100 “s UNISTAKE into a charity or pension fund. It
+
+Pace and shre of oo works in a similar way by allowing
+projects the ability to put up tokens
+into the contract, allowing their
+communities to benefit from single
+token liquidity provision with a 100%
+
+(Prva return on what they provide.
+Token Utility
+
+Unistake Is designed to make
+
+192.124 1 0.06%
+Example PerETH ETH PerEXAMPLE Share Of Pool
+
+Staking Period
+
+365 Days
+
+attracting and providing Uniswap | D
+liquidity easier and more profitable
+
+than with Uniswap alone. Any project a)
+
+can utilise the tools offered to attract
+
+the liquidity they need, and anyone q
+
+looking to provide liquidity can increase
+
+their returns by using Unistake to join
+
+those pools. To take advantage of these
+
+benefits, projects and liquidity providers both require the Unistake
+token (UNISTAKE) to do so. In order to use Unistake to attract
+liquidity providers, projects will need to have a Uniswap pair with
+their token and UNISTAKE. If an existing pair does not exist, the
+project will need to create the pair and lock up a certain number
+of tokens to gain access to the platform. For liquidity providers
+using the platform, profits derived from liquidity provision attract no
+fees by Unistake, but a 10% fee paid in UNISTAKE is required to
+withdraw the profits made possible by the platform.
+Attracting Liquidity
+
+Creating Pools
+
+Projects looking to attract liquidity
+providers can create short or
+long-term staking opportunities
+via Unistake. This can be planned
+ahead of launch or at any point in
+the life of the project.
+
+Projects wishing to use Unistake
+ahead of their launch can actually
+program their smart contracts to
+interact with Unistake on a
+permanent basis or for a set
+period of time.
+
+Projects who have already launched
+
+can allocate tokens from their
+marketing fund, team fund or other
+tokens set aside to build and grow
+their project.
+
+Create Pool
+
+Balance: 635.00028
+Input
+
+200 MAX @ EXAMPLE
+Set Daily Rate
+
+Percentage Offered
+0.07%
+
+Set Monthly Rate
+
+Percentage Offered
+2.5%
+
+Set Yearly Rate
+
+Percentage Offered
+36%
+
+Estimate liquidity based on current token price.
+
+$11,100,877
+
+Project Provided PoolMatches
+
+Projects can also add their tokens to a PoolMatch to incentivise
+people to provide liquidity, even if they do not hold any tokens.
+PoolMatch can be used at any stage by a project but it is an
+especially good option for brand new projects who have just
+started building their liquidity. This is because it can essentially
+be used as a type of offering where the participants get to
+keep their initial investment and receive tokens for providing
+the liquidity that projects need to get started.
+Launch Contracts
+
+Summary
+
+Unistake realises that, for a project
+
+to begin building liquidity, it must first
+build trust within tts community. This
+
+is why we planned our token launch
+
+to be decentralised. In addition to using
+Unistake, using our Launch Contracts
+for our own platform, the smart contracts
+
+are freely accessible to new projects nl Coo
+who plan on using Unistake to grow
+
+their liquidity pools.
+
+The Unistake Launch Contracts are a set of audited smart contracts
+that automate the process of launching a new token that include
+token sale, Uniswap listing and timed token distribution. The token
+contracts used by Unistake in August 2020 also provide exclusive
+staking benefits to participants that incentivise them to hold their
+tokens in the contract while a project is in development.
+
+Launching Projects
+
+Although our launch contracts are ready
+
+for deployment and were used for our own
+project launch, the team will be concentrating
+on the development and growth of the
+Unistake platform before actively seeking to
+assist other projects with their launches.
+
+Token & Supply
+
+The Unistake token (UNISTAKE) is an ERC-20 token with a max
+supply of 280 million. The token was launched through our token
+sale contract (ISO) which stands for Initial Stake Offering.
+
+Maximum Supply
+
+e,8
+
+o
+230M
+
+Available On Launch Staked In ISO Liquidity Fund Team
+
+120M 120M SoM OM
+
+The ISO contract automatically staked all tokens purchased by
+participants and incentivised them not to withdraw them while
+the platform was being developed. Participants could withdraw
+them at any time during the initial develooment phase which
+was set to 180 days; however, if they did so, they would lose
+the total amount of tokens they could have received if they
+waited the entire term. The tokens forfeited by people withdrawing
+their tokens were shared equally between two places. The first
+place is the other participants of the ISO whose tokens remain
+staked and the other Is the platfiorm staking contract which is
+used to create Staking Bonuses on the platform.
+
+Through Staking Bonuses, people who waited the full 180 days
+received 100% more tokens than participants who withdrew early.
+Team Allocation
+
+The Unistake team is taking a modest share of the total supply,
+which will be locked up into the Timed Distribution Contract.
+The term of the vest follows the same schedule as the ISO
+staking term of 180 days, which is split quarterly. However,
+
+the team’s tokens do not receive any staking bonuses and
+cannot be withdrawn early under any circumstances.
+
+AMOUNT PERCENT
+
+al ated e,8
+
+« &
+OM 1./8%
+
+Accessing Unistake
+
+The Unistake platform will be available through the Unistake.com
+website in conjunction with Meta Mask or any Web3 Wallet.
+
+A fully decentralised version will also be available through IPFS,
+(UnstoppableDomains) via unistake.crypto and unistake.eth
+The Unistake Team
+
+The Unistake team is made up of a small decentralised group of
+senior level blockchain developers and innovators. Between
+
+January 2020 and August 2020, the founding team worked part
+time on the project, and full time since the completion of the ISO.
+
+The Choice Behind Anonymity
+
+The decision behind the Unistake team being anonymous is more
+
+of a necessity to protect creative freedom and the long-term viability
+of the project, rather than a choice to be hidden. This is due to the
+constantly changing rules and regulations surrounding cryptocurrency
+laws world-wide. As with most DeFi and many CeFi crypto projects,
+there are aspects that simply do not comply with all countries’ rules.
+By remaining anonymous, the project protects its right to operate
+unencumbered and not be at risk or having to cease operations
+
+due to regulatory changes.
+
+The main objection with anonymity is that it is difficult to trust or
+know the team’s intentions; however, within the industry, there have
+been far more exit Scams or disappearing projects from public
+teams than anonymous ones. We do of course understand people's
+reservations with anonymity in traditional crypto projects; however, in
+true DeFi, it should be far less of a concern. This is not just because
+of the reasons explained above, but also because DeFi requires alll
+functions to be performed by trustless smart contracts. Of course, It
+is very possible for smart contracts to be hacked by third parties or
+malicious code to be left in by the developers, but this is why we
+make sure all of our contracts are audited by third-party security
+professionals before releasing them to the public. It is Our opinion
+that, when given the choice to trust people or to trust code, Code
+will always be seen as the most trusted of the two.
+
+Thank you
+Join Us
+
+e,®
+
+Unistake”
+
+www.unistake.com

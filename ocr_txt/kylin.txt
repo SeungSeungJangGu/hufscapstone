@@ -1,0 +1,837 @@
+Kylin Network Token Economy Whitepaper
+
+Kylin Labs
+contact @kylin.network
+
+Version 1.0.0
+
+Kylin Network aims to Build a Cross-chain Platform Powering the Data Economy on Polkadot.
+It will be the Data Infrastructure for DeFi and Web 3.0 Powered by Polkadot.
+
+The Open API and SDK of Kylin Network offers any applications and blockchains (such as
+parachains and parathreads) instantaneous but transparent, reliable and valid on/off-chain market
+data and social data sources by leveraging the power of Polkadot/Substrate Framework on open
+networks. Kylin Network represents extensibility and a synergetic increase to the off-chain workers
+capability as it will provide not only access, management, insights, coordination to a greater array of
+data sources, but bolster validity and decentralization of the data sources themselves. We believe
+that it is only via Polkadot/Substrate Framework that we can ensure a cost effective solution
+that data consumers and Dapp Builders will actually use over centralized sources. Kylin Network,
+
+therefore, hopes to achieve complementarity and synergy with Substrate Framework while providing
+
+valid, reliable, secure, cost effective and easily-coordinated data sourcing and data analytics.
+
+The architecture of Kylin Network includes the below four major components:
+
+e Kylin Data Analytics is a combination of analytic tools designed for data warehouses. It
+extracts meaningful data findings, patterns, interpretation, and finally implements low-cost
+commercialization functionalities for the public. It also provides a query engine and RESTful
+API for third-party applications (Dapps, Networks, etc.) or external analytics tools (BI tools,
+
+Machine Learning, etc).
+
+e Kylin Data Oracle is an advanced decentralized data feeding protocol powered by Polkadot
+offering multiple, real-time data sources with much lower cost. With complementarity to and
+synergy with off-chain workers (OCW) as one kind of Oracle Node implementations, it can
+better guarantee the security and accuracy of external data by verifying the data integrity
+
+and the validity that Oracle Node provided.
+
+e Kylin Data Marketplace is an open platform for data exchange and pricing. Dapps built on
+Polkadot can easily and efficiently collect both off-chain and on-chain data, only paying a very
+
+competitive fee. Kylin seeks to extend the data provisional resources across all possible data
+
+types/sources including but not limited to things like social media posts, flight information,
+
+exchange rates, weather reporting, etc.
+e Kylin Token KYL is the native token of Kylin Network which will play the role of gov-
+ernance and other utilities. KYL is necessary to secure and power the decentralized data
+
+network.
+
+KYL is the native token of Kylin Network with 1 billion total supply, and its distribution would
+
+be completed via ERC20 and testnet before the mainnet launches.
+
+Token Allocation | % Vesting
+
+Seed Sale 7.5% 6.25% unlocked on TGE, then monthly vesting over 12
+months
+
+Private Sale 9% 20% unlocked on TGE, then monthly vesting over 9 months
+
+Public Sale 1.5% 100% unlocked on TGE
+
+Team 9% 0% unlocked for 12 months, then monthly vesting over 24
+months
+
+Advisors 3% 0% unlocked for 4 months, then monthly vesting over 18
+months
+
+Parachain Bond | 15% 0% unlocked on TGE, tokens under Foundation control
+
+Funding o be used to pay for the DOTs required for the Kylin
+parachain slot in years 1-6
+
+Ecosystem and | 5% 0% unlocked on TGE, then monthly vesting over 36
+
+Community months
+
+Foundation Reserve | 10% 0% unlocked on TGE, then monthly vesting over 36
+months
+
+Mining Incentive 40% 0-year vesting period starting from the Mainnet launch
+
+I. Consensus Mechanism
+
+1.1 NPoS consensus algorithm
+
+Kylin protocol, which is based on Substrate technology, adopts the NPoS (Nominated Proof-of-
+Stake) consensus algorithm. There are two parties engaged in the maintenance and security mech-
+anism of the chain: validators and nominators. Validators run nodes that are responsible for the
+production and confirmation of blocks, while Nominators, by Staking their tokens, are entitled to
+nominate trusted validators to obtain Staking rewards.
+
+As for the operation of the NPoS consensus, Kylin is considering two solutions: 1) Becoming a
+parachain on Polkadot by participating in Polkadot’s card slot auction; 2) Recruiting validators to
+run an independent chain.
+
+Both solutions have their pros and cons, but we prefer the former, as it will take us a step
+further to our goal of building a cross-chain oracle.
+
+As a proviso, Kylin is in general working with a dynamic and cutting-edge context, so what
+
+may seem best practice today, may not be best practice tomorrow, and as such we must inform
+that some of the details and perhaps even fundamentals of what we lay out may be subject to
+
+fine-tuning and change.
+
+1.2 Inflation rate
+
+Under the NPoS consensus mechanism, the rewards for validators and nominators mainly come
+from the further issuance of tokens, which is also the main reason that underlies the inflation. The
+inflation rate cannot be adjusted by any party, except by the automatic algorithm. The formula of
+
+the NPoS inflation model is as below:
+
+. I
+In tx (édeat _ 2) for 0 <a < Xideal
+
+Inpos(x) = , and
+
+Tp + (Jideat * Xideat — Io) + 20%¢8'—)/4 for Xidead <@ <1
+i(x) = Inpos/2.
+
+In the formula, yideq is the expected, or ideal staking rate of the Kylin network; Iigeqi is the
+
+expected annualized rate of return, which represents the annual return(APR) that a nominator
+
+can enjoy when the ideal Staking rate is in place; Ro represents the inflation rate when the Staking
+rate is 0, which is literally the default inflation rate; and d represents the attenuation rate of the
+inflation rate.
+
+Kylin Network regards the ideal Staking rate as 60%. If it is too high, the circulation and use
+
+of KYL tokens will be restrained. If too high, only limited tokens will be used for real utility. If too
+
+low, the security of the chain cannot be guaranteed. On top of that, when the Staking rate reaches
+60%, the annualized rate of return will be 12%, which is a reasonable figure, striking a balance
+between the inflation rate and the Staking incentives.
+
+Therefore, the parameters of the above formula is set as below:
+
+e Expected Staking rate: xideal = 0.6
+e Expected annualized rate of return: Ijgeqy = 0.12
+e The inflation rate when the Staking rate is 0: Ro = 0.025
+
+e Attenuation rate d = 0.02
+
+A balanced dynamics of staking rate and staking APR can be achieved when the parameters
+
+are set as above:
+
+e When the Staking rate is less than 60%, the average annualized RoR of Staking is greater
+
+than 12%, so more tokens will be Staked.
+
+e When the Staking rate is equal to 60%, the average annualized rate of return of Staking is
+12%.
+e When the Staking rate is greater than 60%, and the average annualized return rate is lower
+
+than 12%, then redemption instead of staking is encouraged by the system.
+
+The following figure shows the relationship between the simulated inflation rate, Staking rate,
+
+and annualized rate of return:
+
+In the figure above, the X-axis is the Staking rate, the blue line is the annual inflation rate, and
+
+the green line is the annualized rate of return.
+
+1.3 Block rewards
+
+Every time a block is produced on the Kylin mainnet, the system will issue a certain amount
+of KYL tokens as rewards. The reward size is determined by the real-time inflation rate of the
+network. The inflation rate is determined by a formula, and so it is not a dynamic value affected
+by the Staking rate of the network.
+
+Block rewards are distributed by the following rules:
+
+e 80% to validators and nominators.
+
+e 20% stored in the Kylin Treasury, which will fund community growth, project development,
+
+incentives, etc.
+1.4 Block slash
+
+When a validator commits malicious behavior, such as off-line, double-signing, etc., they will be
+punished in the form of the confiscation of certain amounts of KYL from Staked tokens and nomi-
+nators’ assets.
+
+The amount of Slash penalties is affected by the status of the network. For example, if the
+off-line rate of the entire network is high, then the corresponding Slash for a single validator will
+be graver, too. The case is the same in terms of double-signing as well.
+
+In extreme cases, for example, when more than one-third of validators have double-signed, then
+100% of the Staked tokens will be Slashed.
+
+1.5 Treasury
+
+In order to ensure the sustainable development and decentralization of the protocol, Kylin has
+set up a Treasury to motivate individuals or teams to contribute to the project. Any use of the
+Treasury must be approved through online governance, and developers can publicize their proposals
+to the public. Once a proposal is passed by voters, it will be financially supported by the Treasury.
+
+In the early stage of Kylin, Treasury will mainly support in the following aspects:
+
+e Project Development - Motivating data providers, oracle contract developers and product
+
+testers, etc.
+
+e On-chain governance - Encouraging the development of on-chain development tools, the com-
+
+munity participation in on-chain voting governance, etc.
+
+e Developer incentives - For example, Kylin can delegate to the community the development of
+
+block explorers, dashboards, data oracles, and contributors can be supported by the Treasury.
+
+e Kylin Ecosystem Establishment - Incentivizing behaviors that make Kylin’s ecosystem more
+flourishing, such as short-term incentives when accessing different DeFi protocols, technical
+
+research, or publicity around the future development of Kylin, etc.
+
+The revenue sources of Treasury mainly come from the following two aspects:
+
+1. Part of the data usage fee: When users use Kylin data services, 20% of the service fee will be
+
+added to the Treasury.
+
+2. Part of the block reward: 20% of the block reward will be added to Treasury.
+
+1.6 On-chain governance
+
+Any decision regarding the use of Treasury funds will be made by Kylin’s on-chain governance forum
+in the future. That is to say, the community can vote with their KYL tokens on the governance
+
+of the Treasury. However, in the early stage of Kylin, the team believes that it may disappoint
+everyone if we blindly pursue decentralized governance. Therefore, during the early phase, the
+Treasury governance will be led by the foundation, which is represented by the Kylin team, and
+
+assisted by the community.
+
+II. System Overview
+
+Kylin Network will be divided into two parts: chain and application. The chain mainly protects the
+security and consensus mechanism of the network, while the application refers to the decentralized
+cross-chain data service.
+
+Two roles are involved in the chain part: Validators and Nominators.
+
+1) If you connect to the Polkadot parachain, the rewards issued by the system will be given
+to the Validators in the Polkadot ecosystem, and Nominators will participate in nominating Kylin
+Network through the Polkadot chain.
+
+2) If you build the mainnet by yourself, Kylin will recruit Validator nodes from the community
+and distribute the block rewards to the recruited Validators. Nominators will participate in the
+
+nomination of Validators through Kylin’s mainnet.
+
+Either way, Stakers are required to pledge KYL tokens and use the NPoS algorithm to calculate
+the inflation rate based on the Staking rate.
+As for the application part, the main challenge for Kylin is to establish a secure and decentralized
+
+cross-chain data service. The business logic will be introduced in the following passages.
+
+III. Data Ecosystem
+
+3.1 Main participants of the network
+1) Oracle Programmer
+
+Oracle Programmer (OP) is responsible for establishing a data index algorithm on Kylin, which
+is responsible for publishing Oracle Script. Oracle Script is an executable program that tells the
+Miner what and how to index, as well as how to create and output the results. OP can publish any
+Oracle Script that is considered valuable on the Kylin network. For example, if an OP is interested
+in the price of cryptocurrencies, it can publish a data index algorithm on how to index prices and
+provide quotes. Another OP, who believes that the Oracle Script of the New York weather forecast
+will have great value, can publish information on how to index weather updates and output a fair
+
+value.
+
+2) Consumers
+
+Consumers are the demanders of Kylin’s data services. They can select and consume, with KYL
+
+tokens, the data service through various Oracle Scripts published by OP on Kylin.
+3) Miners
+
+Miners are responsible for running the index algorithm according to the Oracle Script selected by
+the user. They encode the original data and continuously provide data to the Oracle center, and
+finally aggregate an on-chain data package that will be provided to the Consumer. Miners will be
+
+randomly selected from the Validator whitelist.
+
+4) Arbitrators
+
+When a Miner provides data to the Oracle center, it needs to be verified by Arbitrators first. Only
+the data that is verified will become valid quotation data. Arbitrators will be served by members
+of the governance committee in the Kylin network. If a Miner is found to be engaging in malicious
+
+behaviour, its deposits will be counterfeited and then distributed to Arbitrators.
+
+5) Data Providers
+
+The data providers are the source of the most primitive data, such as CoinGecko and Coinmarketcap
+in the quotation oracle, or the New York weather station in weather forecast oracle. Anyone with
+data can become a Data Provider and obtain query income.
+
+3.2 Proposal overview
+
+The overview of Kylin’s oracle data business is shown in the figure below, which can be divided
+
+into 5 steps:
+
+Consumer
+Pick Oracle Script Return
+And ask for data Result
+
+Oracle Programmer Fue | Kylin Network Faas saerasa ificati weer Arbitrator
+| Oracle Programmer Frpermng Kylin Network Pxsemmenmen Verification Maree
+
+Script
+| Choose at
+
+Random
+
+Execute
+Oracle Script
+
+Verified according to VRF
+1) Step 1: A Consumer chooses Oracle Script(s)
+
+A Consumer can choose one or more Oracle Scripts through the Oracle Script Market of the Kylin
+Network client, and make payment in KYL tokens to request to query a certain data value.
+
+In the early stage, the Kylin team will release the Oracle Script on quotes of cryptocurrencies,
+because this is the first application scenario for Kylin. Later, we will open the permission to publish
+Oracle Script to the community, which will publish any Oracle Script that it considers valuable. A
+user who publishes Oracle Script is called an Oracle Programmer. Once a user publishes an Oracle
+
+Script, the Oracle Programmer will have the opportunity to earn from the user’s query fee.
+
+2) Step 2: Assign Miners
+
+After receiving the Consumer’s query request, the Kylin Oracle Center will immediately code
+different validators on the chain according to the VRF random algorithm, and then select them
+through random number generation. The selected ones will become the Miners who execute the
+Oracle Script.
+
+The system will tend to give priority to validators with more popular nominations and code for
+them, because they have a larger number of locked KYL tokens. For them, the cost of performing
+malicious acts is high. However, we will ensure that every validator stands a chance to be selected
+
+as a Miner.
+
+3) Step 3: Miners execute the query task
+
+Miners execute the Oracle Script algorithm contract, querying multiple Data Sources indexed by
+the Script algorithm for raw data, request random numbers according to the Verifiable Random
+Function (VRF) algorithm, and then finally quote to Kylin’s oracle center. The VRF algorithm
+ensures that Miner will not engage in malicious actions collectively to paralyze the quotation system.
+
+More details will be shown below.
+
+4) Step 4: Data verification
+
+The Arbitrators in the Kylin network will verify the random number uploaded by each Miner. Only
+the data provided by the verified Miner is considered valid. Miners who upload invalid data will
+
+have their Staked KYL tokens confiscated and collected by the Reward pool.
+
+5) Step 5: Data aggregation and uploading
+
+The off-chain module of Kylin oracle packs the final data result through the aggregation algorithm
+based on the index data provided by each Miner from various data sources. Thereafter, the final
+result will be uploaded to the Kylin Oracle center and stored permanently there. Consumers can
+
+have access to this data.
+At the same time, the system will generate a data proof for the data query result, which contains
+the data result, upload time, corresponding Oracle Script hash, and other information. The proof
+will be recorded on the Kylin Network chain for future queries.
+
+Regarding the aggregation algorithm, Kylin will enable user customization on aggregation meth-
+ods. For example, you can choose the average, the median, or the weighted average value. Currently,
+Kylin’s algorithm will first eliminate outliers, such as data fluctuations of more than 20% in the
+
+same event, in order to ensure data security.
+
+3.3 Network incentives
+
+In the network, KYL tokens play a very important role. There are two token distribution modules
+
+in the system.
+
+<__ Kylin Block Reward 0% Reward ae
+
+| 70% Reward
+20% Nominate KYL
+
+<—e 7
+a Send KYL
+15%
+Consumer fies Kylin Oracle al Oracle Programmer
+
+Pay KYL to 0%
+
+Get Data SS
+& Data Provider
+
+1) Consensus mechanism module with block reward as the core
+
+In this module, major participants are Validators, Arbitrators and Nominators. The block reward
+
+distribution ratio is as follows:
+
+e The nominators who nominate the Validator by Staking KYL will be distributed 70% of the
+
+block reward.
+
+e Arbitrators will obtain 10% block reward through the verification service of Miner for the
+
+Kylin chain.
+
+e The remaining 20% block rewards will be transferred to the Treasury for project development.
+2) Business module with data service fees as its core
+
+A Consumer needs to pay KYL tokens for query services. The main participants are Miner, Oracle
+
+Programmer, Data Provider, Team, and Treasury. The distribution ratio is as follows:
+
+e Miners undertake a large amount of data indexing and calculation work, and will receive 45%
+
+rewards from the KYL tokens paid by Consumers.
+
+e Oracle Programmer is the creator of the data index algorithm used when users query data,
+
+and will receive 15% of the rewards.
+
+e As the source of data, Data Provider will receive a 10% query fee as an incentive to provide
+
+high-quality data source.
+e The Treasury will collect 20% of the rewards for the continuous development of the project.
+
+e As the promoter of the project, the Kylin team will get 10% of the rewards as an incentive.
+
+The distribution method in the above framework can be adjusted through community gover-
+
+nance in the future.
+
+IV. Security Mechanism
+
+4.1 Decentralized data source
+
+It is an important prerequisite for the network security of Kylin oracle to ensure the decentralization
+and data security of data providers. Kylin Network will first invite some well-known Data Providers,
+such as Coinmarketcap, CoinGecko, Coinbase, etc. At the same time, anyone can apply to become
+a Data Provider through its registration page where all info will be reviewed. For data providers
+that have passed the review, the data they publish will be officially released on Kylin Network for
+the Miners to index.
+
+For the same Oracle Script, we will guarantee at least 3 high-quality Data Providers to ensure
+
+the decentralization of data sources.
+
+4.2 VRF algorithm using verifiable random function
+
+An essential part of Kylin’s oracle system is the assignment of random numbers to Miners, ensuring
+
+their absolute randomness and effectiveness. Only if absolute randomness and fairness are guar-
+
+anteed will the data uploaded by Miners be considered as not being malicious. Assuming that the
+random number generator used by Kylin is compromised or can be predicted, the malicious nodes
+can be elected as Miners that account for most of the panel by predicting the random numbers or
+controlling the random number generator. In the worst cases, the oracle will be totally occupied.
+Therefore, how the security and unpredictability of the random number generator is ensured is of
+
+great significance for ensuring the security of data.
+In order to avoid the collective fraudulent behaviour of Miners, Kylin will use the Verifiable
+Random Function (VRF) algorithm to ensure the absolute security and verification of the random
+number generation process. In the VRF algorithm, elliptic curve encryption and zero-knowledge
+proof algorithms are used to ensure the verifiability, uniqueness and randomness of random number
+generation.
+
+VRE algorithm can be divided into three parts:
+
+1) Function G that generates public and private key pairs
+
+Assuming that the base point of the elliptic curve is O and the order is n, the public-private key
+pair generation algorithm is as follows:
+Al: Choose a random number
+k= [1,n-]
+
+A2: Generate a pair of elliptic curve keys, where the private key is k and the public key is
+Y =kO
+
+2) Function F that generates random number and proof
+
+Input: message m, private key k.
+Output: random number v, proof.
+Bl: Choose a random number
+r=([ln-J
+
+B2: Use the hash function h1 to calculate H=h1(m), and map the message m to a point H on
+the elliptic curve.
+B3: Calculate rH, rO.
+
+B4: Use the function h2 to encode the input into an integer s, and
+s = (rH,rO)
+B5: calculation
+t=(r—sx*xk) modn
+
+B6: calculation
+V=kH
+
+B7: Use the function h3 to encode the point on the elliptic curve into an integer, obtain the
+
+random number value=h3(V), and prove that the proof is (V;t;s).
+
+3) Verification function V
+
+Input: message m’, proof proof’
+Output: legitimacy (valid or invalid)
+C1: Use the hash function hl to map the message m’ to a point H’ on the elliptic curve.
+C2: calculation
+
+U, =t'H'+s8'v'
+
+U2=tO0+s8'Y
+
+C3: Calculation
+= h2(U1, U2)
+
+C4: If s = s’, it indicates that the random number is valid and the verification is passed, and
+the output is valid; otherwise, it indicates that the random number is invalid and the verification
+is not passed, and the output is invalid.
+
+In Kylin’s VRF algorithm, the system requires the Miner’s private key as the input value k
+used to request the random number. kH can be calculated through the elliptic algorithm formula,
+and be encoded into an integer Value as the final output random number. The process guarantees
+the uniqueness of the private key of the Miner. Meanwhile, the elliptic algorithm function has the
+features of hash functions, ensuring the uniqueness and randomness of the random integer Value.
+
+The random number verification requires Miners to submit proof. Even if a certain Miner is
+compromised, the result of the data output won’t be manipulated or affected, because it cannot
+pass the encryption verification on the chain. When the Miner fails to submit Proof during the
+verification process, it will be arbitrated by Arbitrators in the network, and the Staked KYL tokens
+
+will be confiscated. The failed Miner’s credentials will also be recorded in the network.
+
+4.3 On-chain arbitration mechanism
+
+Kylin’s VRF algorithm contract can be divided into three parts: the public and private key gen-
+eration contract, the random number and proof contract, and the verification contract, as given
+
+below:
+
+e Keygen(r) + (VK,SK). The key generation algorithm generates a pair of verification
+public key VK and private key SK from a random input.
+
+e Evaluate(SK,X) — (Y,p). The evaluation algorithm takes the private key SK and mes-
+
+sage X as input, and outputs a pseudo-random string Y and evidence p.
+
+e Verify(VK,X,Y,p) — 0/1. The verification algorithm will verify the public key VK,
+message X, output Y, and evidence p as input. If and only if it verifies that Y is the output
+
+generated from the input SK and X by the evaluation algorithm will the output be 1.
+
+In order to ensure that the VRF contract is decentralized and not controlled by a single point,
+we will select a group of special validators as Arbitrators, who will be responsible for running the
+VRF algorithm contract and verifying the random number, which is uploaded by the Miner, and
+the Proof.
+When a Miner’s random number cannot be verified, or a Miner cannot submit the random
+number and Proof within a specific period, Arbitrators will initiate a Challenge, which will be
+recorded on the Kylin blockchain and will be tamper-proof. This is to maintain the traceability of
+the system.
+
+When Arbitrators challenge a Miner, the Kylin system will automatically calculate the number
+of Miners in the Challenge state and the Challenge history of that Miner. The number of KYL
+
+tokens that will be confiscated is determined by the above factors.
+
+Miners who have not been verified will be blacklisted and permanently removed from the Miner
+whitelist. In the future, they will not be able to participate in the Kylin network or receive rewards.
+4.4 Security deposits
+1) Miners
+
+Validators whose Self-bond amount exceeds 100,000 KYL tokens can apply to join the Miner
+whitelist. Arbitrators will check the data uploaded by the Miner. If malicious acts are found,
+
+the Staked KYL tokens will be fined. The fines will be calculated by the following formula:
+min ((3k/n)?, 1)
+
+n is the total number of Miners, and k is the number of challenged miners in an Era. If the
+number of evil miners in the current network exceeds 1/3 of the total, all nodes’ Staked KYL tokens
+
+will be Slashed. Slashed KYL tokens will become Arbitrators’ reward.
+
+2) Arbitrators
+
+In order to ensure fairness for all Arbitrators, Kylin will initially designate 21 reputable nodes to
+serve as Arbitrators, whose information will be released to the public. There are two ways to recruit
+
+Arbitrators:
+
+e We can randomly choose from validators, but we have already done that for miners, which
+
+stands the opposite side of arbitrators.
+
+e We can choose some certain nodes to run it, so it is better for some notable institutions to
+
+join in, which has a slight chance to do evil things.
+
+After these foundational nodes are established, we will begin our 100 validators program, and
+iterate to the 1000 validators program. The details for these will be released later.
+
+Each Arbitrator needs to Stake at least a number of KYL tokens (e.g. 500,000) in the Kylin
+Network contract. While running the VRF algorithm contract, Arbitrators can obtain rewards by
+verifying and Challenging Miners.
+
+However, due to the margin system and strict Slash policy, Miners’ malicious behavior may
+
+happen in extremely rare cases and the Arbitrators may not be fully incentivized. So, Kylin will
+add 10% of the block reward to the Arbitrator’s rewards pool, and calculate the basic reward based
+on the proportion of KYL tokens deposited by Arbitrators.
+
+In addition, we will also establish an online evaluation system to score the performance of
+Arbitrators, evaluating their online duration, the number of challenges initiated, etc. Those factors
+will translate into the Arbitrator’s income (in the form of KYL tokens). If an extreme event occurs,
+such as the online duration being less than 1/3 of the requirement, the Arbitrator’s Staked KYL
+
+token will be deducted and it will be disqualified.
+
+V. Governance Structure
+
+Kylin Network is about addressing the needs of demanding users. This means delivering quality,
+security, speed, predictability and transparency.
+
+Considerations for Governance Priorities
+
+e Maximise participation
+
+Prevent dominance by single parties
+
+Provide decentralised security
+
+Facilitate cohesion in order to prevent forking
+
+Stability of the protocol
+
+Facilitate inclusion in decision-making
+
+Perception of all above.
+
+The Kylin Network Board is supervised by the third-party authorities, with a clear purpose
+defined in its Public Deed. The Board is tasked with ensuring that the Kylin Network protocol
+continues to develop and remain relevant to the needs of users within the parameters of the project’s
+
+purpose.
+
+$KYL Stakeholders will assume a central role in suggesting and determining the priorities of
+Kylin Network through the Governance Committee, whilst the Board will act as guarantor that the
+Kylin Network principles of privacy with accountability and the Public Deed of the Kylin Network
+Project are adhered to.
+
+The Project Board will retain the role as supreme body of the Project after full decentralization,
+
+but key functions will be delegated to the Governance Committee. Decentralisation is in five steps:
+
+e Pre-mainnet
+
+The Kylin Network Board will appoint a Governance Committee with five members to oversee
+the governance decentralization process, on-chain governance mechanisms, tokenomics & inflation.
+
+Governance Committee 100% appointed by Kylin Network Board
+e Stable mainnet +1 year
+
+$KYL Stakeholders appoint two members of the Governance Committee by on-chain vote,
+expanding the Committee from five to seven members. The Governance Committee can propose
+changes to the protocol on-chain. 28,6% of the Governance Committee is appointed by the $KYL
+Stakeholders.
+
+e Stable mainnet +2 years
+
+$KYL Stakeholders appoint two further members of the Governance Committee by on-chain
+vote, expanding the Committee from seven to nine members. Stakeholders can propose changes
+to the protocol and vote for the changes on-chain. The Governance Committee will oversee the
+implementation and ordering of decisions made by the Stakeholders. 44,4% of the Governance
+
+Committee is appointed by $KYL Stakeholders.
+
+e Stable mainnet +3 years
+
+$KYL Stakeholders appoint two members of the Governance Committee by on-chain vote,
+replacing two of the initial five Committee members. Committee total membership remains at
+nine members, with two seats up for election every year. $KYL Stakeholders can implement
+changes to the protocol. The Governance Committee acts as the executor of decisions passed by
+the Stakeholders. 66,6% of the Governance Committee is appointed by $KYL Stakeholders.
+
+e Stable mainnet +4 years
+
+100% of the Governance Committee will be appointed by $KYL Stakeholders.
+
+VI. Token Value Captured
+
+6.1 Utilities of KYL token
+
+The Kylin Network native token KYL is necessary to secure and power the decentralized data
+
+network. The use-cases and utility of KYL include but not limited to:
+
+e Stake to be a Miner or Arbitrator: All miners are required to stake KYL with a higher
+
+stake equating in a high probability of being selected to fulfill data requests.
+
+e Intermediary of Exchange: KYL token will be used to pay as a transaction, query fee,
+
+and also for data access behind paywall (private APIs).
+
+e On-chain Governance: KYL token holders are able to vote for the protocol upgrades and
+
+parameter changes on Kylin Network.
+
+e Purchase Data Services: KYL token can be used for a contract-based data exchange
+
+infrastructure for data feeding, data querying and data analytics.
+6.2 Value captured by KYL token
+
+The value captured by KYL is the increase of data economy contributed by Kylin Network com-
+
+ponents.
+
+e Decentralization and security of data services
+e Off-chain and on-chain data resources
+
+e Insights and added value from Data Exchange
+
+Besides, the core value captured based on smart contracts is trustless and permissionless for
+
+any participants.
+
+6.3 Ecosystem resources
+
+e On-chain Data: It will display a comprehensive range of on-chain metrics, from the basic
+on-chain dormant, active, hyperactive addresses, block heights, block size, and fees to the
+
+different types of UTXO values and transactions.
+
+e Off-chain Data: Off-chain data is any non-transactional data that does not exist in the
+blockchain, or requires the ability to be changed or deleted. It includes but is not limited to
+things like social media posts, flight information, exchange rates, stock market price, weather
+
+reporting, etc.
+
+e Data Services: It handles a variety of services including data virtualization, analysis,
+pattern-forming. It centralizes and monitors metrics for management, reuse of data types,
+
+and enforce data visibility and access rules.
+
+e Data Exchange: Data exchange encompasses services from pricing, offering medium of
+
+exchange, creating a marketplace to the final change hands and communication of data.
+
+6.4 Application scenarios
+
+e Decentralized Insurance Automatic Payment: Through the Kylin Network to obtain
+timely and reliable events outside the insured chain, blockchain-based decentralized insurance
+
+can realize automatic payment of insurance such as flight delay insurance.
+
+e Stable Coins and Crypto Derivatives: Stablecoins and encrypted derivatives need to
+frequently obtain off-chain real-time price data. Kylin Network can obtain reliable data in
+
+multiple scenarios in real time and efficiently.
+
+e Crypto Asset Lending Platform: Kylin Network can provide real-time and reliable cur-
+rency prices and borrower’s social media information, providing strong support for the dy-
+
+namic determination of loan interest rates.
+e Cross-chain Decentralized Exchange: The lightweight Kylin Network interface that can
+be deployed on multiple chains provides the possibility for decentralized exchanges to realize
+
+cross-chain atomic transactions.
+
+e Decentralized Casinos and Games: On-chain decentralized casinos and games often
+require safe and reliable random injection. Kylin Network random number engine provides
+
+unpredictable and verifiable random number generation.
+
+e Blockchain Computing Market: Commercial computing such as machine learning train-
+ing models and 3D rendering needs to complete a variety of complex computing tasks. The
+
+off-chain computing market provides verifiable and unlimited off-chain computing capabilities.
+
+VII. Community Engagement
+Kylin’s current community engagement strategies include:
+
+e Exposure on Leading Media Channels: We will release additional articles on Forbes,
+
+The Block, CoinDesk, CoinTelegraph and many other leading media channels.
+
+e Ecosystem Development Lead Program: We will launch an Ecosystem Development
+Lead Program to recruit and get more technology and development contributors involved
+
+into our project.
+
+e Promotion of Online and Offline Events: We will publish an article on medium upon
+the progress of this project. Meanwhile, we will join Polkadot related off-line events and do
+
+online AMA sessions to promote the project to the Polkadot community.
+Kylin’s future community engagement strategies include:
+
+e Bounty Program for General Community: We will reward users who contribute pos-
+itively to community building and content creation through an Ambassador Program. The
+community management team will be available 24/7 to answer questions and facilitate dis-
+
+cussions in community channels.
+
+e Incentive Program for Dapp Developers: Kylin Network focuses on giving developer
+support through both offline and online channels. Developers can integrate the data with only
+a few lines of code. The simplicity of integrating this project makes it easy for any developer
+
+to experiment.
+
+e Mining Program for Node Runners: Kylin Network is targeting a global pool of 100
+nodes upon the completed rollout of Kylin Network to achieve the highest degree of decen-
+tralization as possible. Gradually, reputable and trusted public nodes will be onboard onto
+
+this project to ensure the stability of the network.
+e Incentive Program for Data Providers: After the main functions are completed, we
+will set up an incentive program to encourage more market data and social data sources as
+
+premium data providers for Kylin Network.
+
+e IPO during Parachain Auction for Community Members: Kylin Network may hold
+
+an Initial Parachain Offering (IPO) and reward users for helping our auction with KYL tokens.

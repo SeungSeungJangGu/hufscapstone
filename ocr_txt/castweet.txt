@@ -1,0 +1,1671 @@
+WHITEPAPER V 2.0
+
+il | CQSTWEET
+
+A Multi-broadcast Platform Based-on Blockchain Incentives
+for Everyone
+
+Authors : Castweet Team September 2019
+1. ADStraCt ccc EEE nr 03
+2. Live-Streaming Market ccc ei 06
+21. Project Target (overview) nnn 06
+2.2. Live-stream Market Status occccccccrtttrttttt teeter terete tet eee eeees 09
+2.3. Issues of the Live-streaming Market ccc ie 13
+2.3.1. Issues of Streaming Platforms crete ects e eee e eee eee eee e eee eee ener ene as 13
+2.3.2. Issues of Live-streaming Content Creators cirtittrter tit ee teeter eee eee ee erence ee eee eines 15
+2.4. Castweet’s Solutions for Creating Coin Utility fee eee e eee eeeeeeeeeeteeteneee tenes 18
+3. Ecosystem Summary nay oe
+3.1. Main Target Sana 13) >) 6: ee 21
+3.2. Ecosystem (@)17=141/(2\)\ ce 23
+3.2.1. Two Reward Structure: CTB/CTT vir t rt irt  iri  irrri 24
+3.2.2. CTB Viewer Gain & US@ ir es 26
+3.2.3. CTB Creator Gain & US@ cit es 28
+3.2.4. In-platform CTB Cycle (2 Example Cases) teen eee eee e eee eeeeeee tee teteee eee ees 29
+3.3. P2P Marketing System & Bounty Campaigns fee eee e eee eeeeeeeeeeteeteneee tenes 32
+83.4. Revenue Streams cr i rire 34
+4. Platform Components nay 36
+4.1.User Level System nas 37
+4.2. Abuse Prevention & Detection System eee eee eee e renee ee eset atten tenet tee e eee 37
+4.3. Future Blockchain Development Initiatives ccrretrtrete rete teeters 38
+5. Token Distribution ccc es 41
+6. Roadmap Tene EE EE EEE EEE E EEE E EE EEE EEE EE EEE EEE E ERED DEES SG ESSE ESE EEE EEE EEE EEE EEE EEE EEE EES 42
+
+7. Notice and Disclaimer eee eee ee eee eee errr 43
+A Multi-broadcast Platform based on Blockchain Incentives for Everyone * CASTWEET
+
+1. Abstract
+
+Nowadays, the growth of the multi-broadcasting or livestreaming market has
+moved beyond what anyone could have previously anticipated a few years ago. As the
+rate of cord-cutting, or the choice of most users to cancel their cable TV subscription,
+has continued to expand, more and more users are opting to only subscribe and use
+
+livestreaming as their main source of entertainment.
+
+In addition to this, the possession of smartphones has become the norm for people
+of all ages. It has become the norm instead of the exception to see children as young
+as elementary school with their own smartphone that they use for entertainment
+and to view on-demand content from Youtube, Netflix, and Twitch. As our portable
+devices take a greater percentage of our leisure time, live-streaming as the de-facto
+
+choice for entertainment will continue to expand.
+
+Beyond just entertainment, e-commerce is making the transition into the live-
+streaming as well. Consumers, always weary of the over-commercialization and
+increasingly lack of trust with corporations, are looking more to trusted sources to
+purchase their items. The live-streaming e-commerce market has been undergoing
+incredible growth within Asian markets and is primed to expand globally. Live-
+streamed e-commerce allows anyone from farmers to professional makeup artists
+to exhibit products and engage directly with their potential customers, creating a
+
+greater trust in the products themselves.
+
+However, at the heart of this issue, is how to equitably share the revenue generated
+from these different platforms. In the current environment, most of the revenue is
+concentrated within the platform itself and the content creators who provide the
+viewing options to consumers. However, this unequal share of revenue has left the
+
+viewers, who actually generate the revenue by viewing ads, purchasing in-app items,
+A Multi-broadcast Platform based on Blockchain Incentives for Everyone * CASTWEET
+
+and subscribing to their favorite channels wholly uncompensated for their actions.
+
+In order to address this, Castweet is creating a revenue model with blockchain-
+based incentives that shares a portion of the revenue with the viewers themselves.
+Our goal is to create a platform that viewers prefer over other live-streaming
+competitors as their participation is both compensated and motivated. With this
+viewer-centric approach, viewers are motivated to not only view, but also engage,
+share, and shape the development of the platform. Our goal is to create a system of “if
+you build it, they will come," where the large viewer base actively motivates content
+
+creators to participate and engage on the platform.
+
+At the same time, the revenue model provides creators with a comparable revenue
+split to traditional platforms in order to motivate adoption and create the streams
+for the viewers to join. By rewarding the viewers with points in which to support
+their favored content creators, content creators can generate more overall revenue
+without requiring their viewers to directly pay with their own money. Besides just
+providing a platform for entertainment, Castweet aims to support the new class of
+internet entrepreneurs who use live-streaming for e-commerce to promote and sell
+
+products directly to consumers.
+
+Overall, the Castweet project supports and compensates the following groups :
+
+- Viewers who are currently uncompensated for their views while creating the actual
+revenue for the platform.
+
+- Content creators who generate content for the viewers to join but have a difficulty
+in monetizing their content effectively across different platforms.
+
+- Live-streaming sellers who are looking for a platform to promote and sell their
+products with an in-platform payment system and access to stock from established
+brands.
+
+- Advertisers and established brands who want to reach users within different
+A Multi-broadcast Platform based on Blockchain Incentives for Everyone * CASTWEET
+
+demographics and interests across genre types or provide stock to allow internet
+
+entrepreneurs to do the selling for the brand.
+
+By developing a decentralized solution that uses blockchain-based incentives to
+both users and content creators, we believe that our platform can allow a more fair
+and circulated distribution of rewards while also creating a new model that values the
+
+contributions provided by the viewers.
+A Multi-broadcast Platform based on Blockchain Incentives for Everyone * CASTWEET
+
+2. Live—Streaming Market
+
+2.1. Project Target (overview)
+
+Our current viewing habits are in an ever-changing dynamic. Users are spending a
+majority of their leisure time engaging with the content they love across the various
+genres, whether it be gaming, lifestyle, food, or beauty content. The ability for any
+viewer to find a broadcast related to whatever niche they happen to be interested in
+is taken for granted by the billions of monthly viewers. When in the past they had to
+wait for their desired program to be broadcast, now they can instantly connect to a
+
+live-stream or view a VOD their preferred live-streamers database.
+
+With these changes, comes a need to rethink the model of compensation that we
+use to reward both viewers and content creators. The current markets largely ignore
+the viewers themselves, mainly focusing on compensating content creators and
+using the power of their contents to drive the users to the platform itself. However,
+by reimagining and upending this content creator model, viewers can be motivated
+to use a platform and then bring in more and more content creators. By using a
+viewer-centric model, many of the problems with platform growth can be addressed
+
+and lead to a favorable and engaging cycle.
+
+In addition, adding blockchain-based incentives can provide the clarity and
+transparency that many users would like to see. As each transaction is recorded into
+the blockchain, users can clearly see how their rewards are being dispensed and can
+
+create a greater trust in the platform itself.
+A Multi-broadcast Platform based on Blockchain Incentives for Everyone * CASTWEET
+
+Viewers
+
+Amateur Streamers
+
+Streamers/
+Influencers
+
+Professional
+Creators
+
+<Figure 1: Castweet Target Groups>
+
+The target groups of the Castweet model can be thought of in this way :
+
+Addressing the issues of these different groups is vital to creating a thriving and
+active live-streaming platform that both promote content creators and viewers to
+engage on the platform. Looking at each group's needs and understanding their
+
+motivations for participation are essential for the health of the platform.
+
+Professional Content Creators are any creators that come from the traditional
+media industry, whether they are a celebrity, news, company or any type of
+content you would consider to be of the highest level and quality. These groups are
+constantly looking for more ways to engage with their fandoms and provide their
+content and information to the largest amount of viewers. By addressing their needs
+and promoting viewers to spend more time engaging and sharing the content, their
+
+needs can be met.
+
+The Streamer/Influencer group is the popular content creators broadcasting on
+
+the established platforms such as Twitch or Youtube. This group can have anywhere
+A Multi-broadcast Platform based on Blockchain Incentives for Everyone * CASTWEET
+
+from tens of thousands to millions of followers and subscribers that engage with
+their created contents and streams. While many groups are already providing
+platforms for them to upload and share their content, they could benefit from more
+income directly from the viewers themselves. By providing viewers with a means
+to compensate content creators without directly investing their own funds, the
+streamer/influencer group can improve their overall compensation. Also included
+within this group are internet entrepreneurs looking to sell their own products
+
+directly via live-stream. This group can be supported by providing an in-platform
+
+payment system and ability to promote their own streams to maximize their reach.
+
+The Indie or Amateur streamer group is any streamer who currently broadcasts
+but hasn't quite hit the critical mass to be full-time without another source of
+income. This group desperately would like to increase their viewer count and seeks
+more additional revenue sources to allow them to become a full-time streamer. By
+increasing discoverability and providing automatic monetization, this group can be
+
+supported further on the Castweet Platform.
+
+Finally, the viewer groups are completely uncompensated across the various
+available platforms. By providing blockchain-based incentives to this group,
+which is our primary target, we believe that we can further their engagement and
+consumption habits within the platform. Additionally, giving them with a free way to
+support their preferred content creators motivates further participation within the
+
+platform.
+A Multi-broadcast Platform based on Blockchain Incentives for Everyone * CASTWEET
+
+2.2. Live—stream Market Status
+
+These days, the number of multi-broadcast users is continuing to expand at rapid
+pace. According to Statistica, Youtube is generating more than $116 billion dollars
+in advertising revenue per year within the platform. However, the viewers that are
+helping support this revenue-generating machine are wholly uncompensated for
+
+their value provided on that platform.
+
+FBO nnn nnn nnneinninieeiininnnininniaiiniansnnnsneninnsnitnsinininnennninennenn
+
+0 ——_
+
+Advertising revenue in billion U.S. dollars
+o Oo o Oo o
+°
+co}
+~
+oO
+8
+iS
+8
+mi:
+R
+oa
+3S
+~“
+mS
+is
+ive}
+*
+a
+&
+&
+a -
+N
+i.
+CO
+8
+tw
+3
+iN
+iN
+w
+3
+a
+3
+R
+&
+ron
+oO
+By
+6
+~“
+w
+S
+oa
+ig
+: o : :
+~ : :
+a : ;
+| | ©: | |
+/ / ae /
+oOo : :
+oD ;
+: : OS :
+: : : :o : :
+aFFTrrrrt—“(CteCi
+2 : : : od : :
+> : : : : : ;
+oO
+
+<Figure 2: : Youtube Advertising Revenue>
+
+In addition, the imbalance between viewers and creators can readily be seen by looking
+at the number of creators channels vs. viewers. On Youtube alone, only 1% of channels
+will ever upload a video and have the ability to earn from their uploaded contents. This
+shows that the other 99% of the people engaging on the platform, the viewers, are
+actually generating the value for the platform itself. Also, the Adsense revenue is split
+with 55% of the advertising revenue going to the creator and 45% taken by the Youtube
+platform itself. This ratio also ignores the viewers with the platform taking much more
+
+revenue than is actually required to maintain the platform itself.
+A Multi-broadcast Platform based on Blockchain Incentives for Everyone * CASTWEET
+
+© YouTube
+
+1% 55%
+
+CREATOR Creator Channels ADSENSE Creator
+& REVENUE
+VIEWERS 99% SPLIT 45%
+Only Viewers Youtube
+*source : Statistica, 2019.1 *source : Investopedia, 2018.10
+
+<Figure 3 : Youtube Creators/Viewers & Revenue Split>
+
+Focusing on the live-streaming market directly, the platform Twitch.tv, which
+is the largest streaming platform with a major focus on gaming content, has
+an overwhelming number of active streamers. Partners, or high-tier streamers,
+had reached over 27,000 by the end of 2017 and their second-tier of monetized
+streamers, Affiliates, is now more than 150,000 monthly streamers. These streamers
+often spend long hours each day providing contents in a never-ending cycle of
+streaming. Due to the need to constantly be streaming and innovating on their
+content, the amount of hours these streamers spend daily is often more than the
+
+average 40 hour work week seen in traditional jobs.
+
+To Twitch now has 27K+ Partners and x
+—_] 150K+ Affiliates making money from
+Disrupt SF 2019 their videos
+
+Sarah Perez Kst y qQ
+
+<Figure 4: Twitch Partners & Affiliates>
+A Multi-broadcast Platform based on Blockchain Incentives for Everyone * CASTWEET
+
+In addition to the ever-increasing number of live-streamers active within the
+platforms, the influence of mega-streamers can also have a profound impact on
+alternative streaming options. Previously the top streamer on the Twitch platform
+with 14 million followers, Ninja announced his move in early August 2019 to Mixer, a
+live-streaming platform owned by Microsoft, and was able reach more than 1 million
+subscribers within only one week. Similarly, PewDiePie, the top individual creator
+channel on Youtube, moved his live-streaming exclusively over to DLive due a more
+favorable compensation model and caused the platform to experience 67% monthly
+user growth within only one month of joining the platform. These two cases of top
+end creators show that current streamers are dissatisfied with the current offerings
+
+and are flexible on moving to a new platform if the environment is right.
+
+Ninja became the first Mixer streamer to reach 1 million
+subscribers, less than a week after announcing he was
+ditching Twitch for Microsoft
+
+SAMSUNG ~~
+
+PewDiePie joining DLive gives the company a
+massive 67% in monthly growth
+
+<Figure 5: Large-streamers Effect on Alternative Platforms>
+
+On top of providing viewers with entertainment, live-streaming is rapidly becoming
+a source for long-established brands, new startups, and entrepreneurs to engage
+directly with consumers in order to sell products. In 2018, the Chinese platform
+Taobao Live reported sales of over $14.93 billion dollars in 2018, and was growing
+at a rate of 400% annually. During these live-streams, the streamer can show off
+goods and talk directly with the chat to sell their products, creating a greater amount
+of trust between the buyer and seller. This direct contact with consumers built upon
+
+the previous success of traditional broadcast sales, such as QVC in the United States,
+
+11
+A Multi-broadcast Platform based on Blockchain Incentives for Everyone * CASTWEET
+
+while providing the benefits of the latest technology. As more and more consumers
+have started to distrust overly commercial connections, a direct sales line to
+
+consumers will continue to become more important for all products and industries.
+
+The popularity of live-streaming is spread throughout the globe with each target
+market having their own preferences for viewing and posting contents. Within Korea,
+a survey of thousands of Korean elementary school students showed that Youtuber
+had become the top 5 job most desired by current students for the first time.
+Interestingly, this new addition to the top 10 had removed scientist from the top
+jobs for the first time since this national survey was started. This shows that the jobs
+of the future are in a shift, where content creator is becoming a more central and
+desirable job for the upcoming generation. As this shift continues to further move
+towards content creators, the live-streaming market will become more competitive
+and compensation models and alternative choices outside of the top existing
+
+platforms will be more in demand.
+
+"| The Korea Herald
+
+NATIONAL
+
+Socal Afters
+
+rhe
+
+YouTuber now among top 10 occupations desired
+by elementary students: survey
+
+<Figure 6: Youtuber a Top 10 Job in Korea>
+A Multi-broadcast Platform based on Blockchain Incentives for Everyone * CASTWEET
+
+2.3. Issues of the Live—streaming Market
+
+The current status of the live-streaming market has issues facing each section of
+the market structure. Beyond the fact that viewers are not compensated for their
+activity and time spent on the platform, there are two main divisions that have
+inherent limitations for the live-streaming industry as a whole. The live-streaming
+platforms themselves have issues that are preventing further engagement and
+growth of the platform as well as issues faced by the content creators who are left
+dissatisfied with their existing choices, By addressing both of these problems in one
+platform, Castweet can offer up solutions that improve upon the issues of streaming
+
+platforms and help solve problems found by the content creators.
+2.3.1. Issues of Streaming Platforms
+
+While the top platforms for streaming, Youtube and Twitch, have a large majority
+of the active streamers, the streaming platforms themselves are not without issues
+that affect satisfaction and performance. Some of the main issues seen on these
+
+platforms can be seen below :
+
+Users gain no tangible reward for Viewing & Engaging
+
+Live-streaming platforms have become a medium for commercial advertisements,
+a place for communication, entertainment, and sharing of information. Consequently,
+there has been a rise in consumer dissatisfaction as well as damages occurred from
+the use of these platforms. According to the Korea Consumer Agency, out of 500
+consumers, 63.8% have answered "experienced dissatisfaction" from the use of live-
+streaming platforms and 82.4% of such dissatisfaction was caused by "excessive
+amount of commercial posts."
+
+Further, as seen in the above charts, a case in which a platform provider returning
+
+massive profits generated through marketing back to its users is extremely rare. A
+A Multi-broadcast Platform based on Blockchain Incentives for Everyone * CASTWEET
+
+monopoly on profits by platform providers is also a prevalent problem in the live-
+streaming market. Due to an increase in advertisement exposure frequency, platform
+provider's profit increases. However, ironically, the user's usage environment is
+
+becoming increasingly worse.
+
+Centralized Systems and a Lack of Transparent Data Usage
+
+With Facebook's user information leakage incident which lead to the EU to bring
+GDPR into effect, social media's information leakage is done opposed to a user
+agreement and beyond agreed limits. Platform providers monopolize user's personal
+information and monetize it in order to make profits through advertisements and
+selling of user data. In that process, transparency is inhibited, questioning the
+platform provider's ethical and legal responsibility. This is a problem caused when
+centralized services undertakes excessive business activities and allow individual's
+private information to be shared with companies, regardless of the actual wishes or
+
+preference of the users themselves.
+
+Discoverability
+Current platforms are incentivized to promote only the top performing streamers
+
+on their homepage by their current revenue model. Since large streamers have
+been proven to be successful at driving engagement, the organization of promoted
+content on all streaming platforms favors only the largest 1% of streamers while
+ignoring the other 99% of streamers who could possibly be creating equally as
+engaging content. This misconception that only proven live-streams should be
+promoted as left dissatisfaction felt by the streamers who are trying to move from a
+
+part-time to full-time streamer and has limited their livelinoods greatly.
+
+In addition, the new class of internet entrepreneurs using live-streaming for sales
+find it difficult to attract attention to their live-streams. This directly affects their
+
+ability to sell and ultimately can “make or break” the success of their business. By
+
+14
+A Multi-broadcast Platform based on Blockchain Incentives for Everyone * CASTWEET
+
+allowing them to promote their own streams and invest directly into the reach of
+
+their business, they can improve access to consumers.
+
+Copyright Infringement
+
+Since anyone can simply upload content onto a platform and claim it as their
+original content, many issues have arisen on the most popular streaming sites
+related to unlawful use of copyrighted material. Beyond the expected reposting
+of popular media from traditional broadcast outlets, many users upload content
+created by other smaller content creators and try to pass that content off as their
+own creations. The expansion of “freebooting,” or repurposing the content that
+another creator has created as your own, has caused a loss of revenue for original
+creators and further incentivized this growing phenomenon. As some famous
+freebooting channels have gained millions of followers without creating any original
+content, the original creators are left without any share of the earnings, effectively
+lowering their motivation for further creations and lowering the quality and variety of
+
+entertainment options for viewers.
+
+2.3.2. Issues of Live-streaming Content Creators
+
+Beyond problems with the platform themselves, many content creators are highly
+dissatisfied with the current choices and ability to perform well on the existing
+platforms. By using their primary concerns as a basis for the streaming platform,
+the Castweet platform will provide more incentives and better motivations for these
+streamers to use our platform.
+
+Many streamers in the amateur or indie tier levels feel the current platforms do not
+help support their ability to grow. As mentioned, most platforms feature on the top
+streamers on the main page and completely ignore streamers at any of the lower
+levels, regardless of the quality of the content that they are producing. This creates
+
+a negative feedback loop, where producing more content has been no incentive and
+
+15
+A Multi-broadcast Platform based on Blockchain Incentives for Everyone * CASTWEET
+
+further lowers the amount of streams available to users. Especially, streamers in the
+amateur tier often find it difficult to market their own stream within platform, relying
+only on networking with more famous streamers or using aggressive social media
+
+campaigns to try and build up their following.
+
+=
+Twitch gets transparent about how it wants to
+boost discovery
+
+EWwiECA
+
+<Figure 7: Twitch Discoverability Issue>
+
+Similarly, the need to constantly follow the newest trends or most popular
+streaming categories has lowered the overall quality of available streams. As one
+game or social phenomenon becomes popular, streamers of all levels are incentivized
+to move over to that genre or game. This forces streamers to constantly innovate
+their content while trying to adjust to the newest fads. At the same time, the
+streamers themselves can do nothing to promote their stream within that new fad,
+and lower-level streamers are unable to reach the front page and viewers have no
+motivation to seek out those streams with a lower number of followers. Without
+an incentive structure that promotes viewers to search for new and entertaining
+streams, the growth of an individual stream is left solely on luck and their own
+
+marketing skills.
+
+This issue is especially severe in those streamers who are within the indie creator
+
+16
+A Multi-broadcast Platform based on Blockchain Incentives for Everyone * CASTWEET
+
+community that do not generate enough revenue to change their live-streaming
+from an additional revenue stream to their main occupation. While many inventive
+and passionate creators have a motivation to create high quality content, the
+incentive structure favors the lowest common denominator and punishes any
+unique or original content that is outside the norm. By providing new models and
+incentivizing a variety of content, some of these issues hurting streamers as a whole
+
+can be addressed.
+A Multi-broadcast Platform based on Blockchain Incentives for Everyone * CASTWEET
+
+2.4. Castweet's Solutions for Creating Coin Utility
+
+Even among cryptocurrency enthusiasts, most people view cryptocurrency as more
+of a speculative investment product rather than as a means of exchange. Because of
+this, 2018 became both the birth and death of utility tokens, cryptocurrencies that
+promised to provide viable working products in which the coins themselves had both
+a monetary value and use case within a platform. However, the majority of utility coin
+ICOs was merely a whitepaper and a dream idea and spent most of their financial
+backing on marketing a platform that never came to fruition. This caused even most
+of their ardent supporters to move onto security tokens or to keep their investments
+
+within the top 100 coins by market cap.
+
+So what caused this failure and how can we move beyond it to increase the
+actual adoption and usage of cryptocurrencies? For cryptocurrency and blockchain
+technology to reach every day users, a blockchain-powered platform needs 3 main
+characteristics: familiarity to an average person, ability to earn tokens, and a valuable
+use case. Castweet meets all 3 of these requirements through providing a live-
+
+streaming platform that can drive engagement.
+
+Addressing issue one, what is more familiar around the world than broadcasting
+
+platforms? Youtube boasts more than 1.5 billion monthly active viewers. Many
+
+<
+
+iewers spend more than 4 hours a day watching their favorite streams, engaging
+with the live-streamer, and sharing the contents that they enjoy. When you are
+spending a large portion of your waking hours on a platform, familiarity is to be
+
+expected. In this way, the easiest way to reach the average person is to adopt
+
+blockchain and cryptocurrency into a live-streaming platform, creating an easy
+method to onboard new users. While cryptocurrency enthusiasts can get interested
+in the TPS of a coin, the average person has no interest about the technological
+
+superiority of one over another.
+A Multi-broadcast Platform based on Blockchain Incentives for Everyone * CASTWEET
+
+For Castweet, we provide a seamless live-streaming experience that a user of
+any of the current offerings would be familiar. From the UI to basic functionality, an
+average user can use Castweet and participate as if they had been on the platform
+for years. Using the established familiarity and adding in cryptocurrency will allow
+average users to get their first taste of the technology and holdings, without having
+
+to go through the daunting task of purchasing off of an exchange.
+
+Concerning issue number 2, there is a growing dissatisfaction among content
+creators with the current compensation models across broadcasting platforms. As it
+stands, monetization is not readily and directly available to most content creators on
+their broadcasting platform of choice. Youtube users are forced to take more brand
+deals, some content creators have flocked to Patreon to earn from their creations,
+and, even though Youtube creators can monetize their content, the lion's share of
+
+advertising revenue goes to the company.
+
+Castweet's means of solving this issue is to allow all actions, from viewing to
+sharing, to have a tangible benefit to the user. Each received CTB points can be
+directly converted into CTT tokens with none of the proceeds being taken by the
+platform itself. Average users, indie creators, and professional live-streamers can
+benefit through our direct compensation model that inspires and rewards great
+content uploaded on the platform. We hope to reimagine what it means to participate
+on a live-broadcasting platform, turning on its head the notion that content itself
+does not have a monetary value and helping to empower visual creators and viewers
+of all kinds.
+
+Finally, issue three resides at the heart of what utility tokens set out to do in the
+first place: how do you provide utility and a use case for those tokens? The company
+must create value through the platform itself, using their tokens as a means of both
+
+exchange for goods or services and as a reward to those that are actively using the
+
+19
+A Multi-broadcast Platform based on Blockchain Incentives for Everyone * CASTWEET
+
+coins. You can see this dichotomy established in “investment coins” which have high
+purchase rates but low use rates due to future price speculation. For utility coins,
+a vibrant ecosystem which promotes the usage of the coins on platform has to be
+
+provided in order to ensure their value.
+
+Within the Castweet platform, the ecosystem was created from the ground up to
+promote the usage of the tokens. Tokens can be used within the platform for digital
+purchases, our innovative P2P marketing system, tipping creators, or one of the
+various other functions in our pipeline. While cryptocurrency traditionalists might be
+motivated to hold tokens for future potential gains, average live-stream viewers can
+see them as redeemable and directly usable. In this way, the utility of CTT is realized.
+
+The main goal for the platform: blockchain in the back, live-streaming platform in
+
+the front.
+
+20
+A Multi-broadcast Platform based on Blockchain Incentives for Everyone * CASTWEET
+
+3. Ecosystem Summary
+
+The Castweet ecosystem combines live-streamed contents sharing with
+blockchain technology, thus creating an ecosystem that rewards everyone. Not only
+will streamers be rewarded, but also the users who participate on the platform.
+Additionally, the Castweet project provides real use cases based on the actual
+behavior of current live-stream viewers and creators in order to incentivize the use
+of the tokens within the platform. By combining the platform use cases itself, with
+traditional revenue streams in fiat or cryptocurrency from advertisers, the Castweet
+project can both improve the value of the CTT token while gaining fiat to help fund
+the project. In this way, a healthy ecosystem can be created that prevent the issue of
+
+coin drain and provides sufficient revenue stream for the platform to be maintained.
+
+3.1. Main Target — Users
+
+As our main focus is adding compensation to live-stream viewers, a look at what
+motivates users to participate and drives their engagement on a platform is essential.
+Participants on live-streaming platform can be divided into four main groups based
+on their level of activity and participation within a platform: Spectators, Engaged
+
+Viewers, Highly-active users, and the Content Creators.
+
+These users only watch videos
+and do not do any further
+engagement on platforms. Most
+live-stream viewers fall into this
+category.
+
+These users participate in
+chat, actively subscribe, tip
+creators and provide a high-
+value to the platform.
+
+These users actively participate
+in live-broadcast chats and
+occasionally purchase platform
+items.
+
+These users provide the
+value to the platform by
+producing contents that can
+increase viewer count.
+
+<Figure 8: User Participation Rates>
+
+21
+A Multi-broadcast Platform based on Blockchain Incentives for Everyone * CASTWEET
+
+Use Group A: Spectators
+
+Comprising about 52% of the users of live-streaming platforms, these users are
+merely spectators to the content that they enjoy. They rarely, if ever, do any activity
+beyond viewing live-streams for entertainment. In the current model, there is no
+motivation for them to participate more actively on the platform themselves, as
+
+current compensation models do not reward them for further engagement.
+
+Use Group B: Engaged viewers
+
+At 30% of the participants on live-streaming platforms, the Engaged viewers
+take on a more active role within the platform itself. They will often chat during live-
+streams, share the contents they enjoy with others, and occasionally use their own
+money to help support their favorite content creators, While their additional activity
+within the platform increases the engagement of a live-stream and creates a more
+enjoyable platform environment, their participation is limited by the amount of their
+own money they would like to use to further support content creators. By providing
+them with additional ways to earn within the platform, these users can be promoted
+
+to engage further and take on a more active role.
+
+Use Group C: Highly-engaged Users
+
+Constituting 16% of all the users within a platform, the highly-engaged users
+often function as the “Whales” of the live-streaming industry. They actively invest
+heir own money to subscribe to various channels across the platform, can provide
+ips to creators that can be over $100,000 dollars, and normally actively engage
+with the chat and community as a whole. These users are highly motivated by the
+eeling they gain after sharing their support in the chat and can help turn an amateur
+
+streamer into a full-time streaming professional. Providing this group with incentives
+
+o even further support streamers, and rewarding them for the activity they are
+already created within our level system can push them to increase their value for the
+
+platform as a whole.
+
+22
+A Multi-broadcast Platform based on Blockchain Incentives for Everyone * CASTWEET
+
+Use Group D: Content Creators
+
+Making up the final 2% of all the participants on a live-streaming platform, the
+content creators themselves provide the viewers with the content that they enjoy
+viewing. This group can be further divided into different categories based on their
+level of earning and participation: amateurs streaming just for entertainment, indie
+or second tier streamers who are working to supplement the income from their
+traditional jobs, and professional or full-time streamers who derive all of their income
+from their live-streaming activities. On the current existing streaming platforms,
+all of the revenue earned from their streams is converted into fiat and used off-
+platform. However, by providing real use cases for their earnings within the platform
+and additional motivations to use those earnings, a more beneficial ecosystem can
+
+be created within the platform.
+
+3.2 Ecosystem Overview
+
+The main objective of the Castweet Ecosystem is to create a cycle of use within the
+platform by providing real use cases within the platform for both the viewers and
+content creators. Many previous blockchain-based incentive ecosystems focused
+more on the compensation side, providing a way for creators/users to earn, while
+ignoring the ability to create real use cases for the tokens within the ecosystem itself.
+By providing users with motivation to use their earned rewards within the platform,
+the problem of “Token Drain,” or excessive amounts of the tokens being withdrawn
+
+from the platform to an exchange can be solved.
+
+Additionally, by creating more use cases within the platform, both viewers and
+creators are also motivated to purchase tokens from the exchange and move them
+into the platform for use. Compared to other platforms that limit user registration
+(ie: Steemit) or platforms (ie: Dlive, Gifto) that focus heavily on motivating viewers to
+
+purchase tokens to use as tips for their preferred content creators, our system will
+
+23
+A Multi-broadcast Platform based on Blockchain Incentives for Everyone * CASTWEET
+
+allow us to create a more open system while providing adequate rewards and uses to
+
+increase user activity.
+
+TOKEN ECOSYSTEM
+
+wea fr
+; CASTWEET <———_ > XJ
+- View
+Revi CTT Token Exchange
+- Review
+- Comment
+- Share **adjustable** — - Like/Comment
+- Curate - Paid Subscription
+- Bounty - Tips
+om ~—— CTB —— + AM
+Viewer/Fan (Platform Activity Reward) Crestor
+
+| (Smart Contract=Confirms to Blockchain)
+
+SiG. Pep srockcoan » Pp pe ge ges
+
+<Figure 9: Castweet Token Ecosystem>
+
+3.2.1. Two Reward Structure: CTB/CTT
+
+Within the platform, there is a dual reward structure utilizing CTB and CTT. As users
+participate on the platform, they are rewarded with CTB tokens, CTB tokens are the
+means of exchange and purchase within the platform. These CTB tokens can also
+be exchanged for CTT token that can be withdrawn and sent to a cryptocurrency
+exchange to sell on the secondary coin market. Additionally, CTT tokens can be
+transferred to their in-app wallet and exchanged for CTB tokens in order to be used
+
+for purchases for the in-app ecosystem.
+
+24
+A Multi-broadcast Platform based on Blockchain Incentives for Everyone * CASTWEET
+
+CTB / CTT
+
+CTB/CTT creates an in-platform Ecosytem that can control abuse
+and be adjusted
+
+SO -- SO
+
+Points earned on Platform by CTB can be exchanged to CTT in-
+viewing, sharing, commenting, platform. The exchange rate is
+and streaming. adjustable
+
+<Figure 10: CTB & CTT Exchange>
+
+The separation of in-app points (CTB) and the cryptocurrency tokens (CTT) has a
+
+variety of advantages that can help create a healthier and active ecosystem including :
+
+1) Abstraction of Coin Value - CTB value is separated from the value of CTT when
+
+viewed within the platform. Users are more readily motivated to use the CTB that
+they earn as it is not connected to the monetary value. As the value of CTT increases,
+
+the CTB/CTT exchange rate can be adjusted to maintain the health of the ecosystem.
+
+2) Motivation to purchase Tokens on Cryptocurrency Exchange - Similar to how
+users purchase in-app currency in games, users will need to purchase CTT tokens
+and exchange them to CTB within the app to make purchases. This improves the
+health of the CTT token economy as users will move more tokens into the in-app
+
+ecosystem, effectively doing a token buyback for the company itself.
+
+25
+A Multi-broadcast Platform based on Blockchain Incentives for Everyone * CASTWEET
+
+3) Limitation of Exchange/Withdraw based on User Level - Users will be limited
+on the amount of CTB to CTT that they can exchange or withdraw daily. As their
+user level increases, their maximum amount they can exchange can be expanded
+as higher level users are less likely to be abuse accounts taking advantage of the
+
+compensation system.
+
+3.2.2. CTB Viewer Gain & Use
+
+As our main objective and differentiation point is to provide viewers with
+compensation, the following table shows the ways in which users can earn or use
+
+CTB tokens within the platform itself as well as some explanation of the motivations
+
+Type Activity From To
+
+View (time) Platfor Viewer
+Review Platfor Viewer
+Comment Platfor Viewer
+Share Platfor Viewer
+
+Gain CTB
+Curate Platfor Viewer
+Bounty (participate) Platfor Viewer
+Daily Quest Platfor Viewer
+Monthly Quest Platfor Viewer
+Tip Viewer Creator/Platform
+Subscription to Creator Viewer Creator/Platform
+Purchase Goods Viewer Creator/Platform
+Loot Box Viewer Platfor
+
+Use CTB
+Level Up Booster Viewer Platfor
+Create Bounty Campaign Viewer Platfor
+Profile Promotion Viewer Platfor
+Emoticon Purchase Viewer Platfor
+
+26
+A Multi-broadcast Platform based on Blockchain Incentives for Everyone * CASTWEET
+
+for these systems :
+
+Some key features of this system are explained below :
+
+1. Promote more Engagement/Activity of Viewers - Users are encouraged to
+participate beyond just viewing the content. By chatting, reviewing, commenting,
+and sharing contents they can earn additional CTB awards. This can help improve the
+overall activity on the platform and make it more engaging and entertaining for other
+users. Additionally, viewers can track their gain of CTB and eventually earn enough
+
+CTB by viewing to help support their preferred content creators.
+
+2. Daily & Monthly Quest System - Based on gamification systems seen in free-
+to-play games, users are motivated to accomplish different tasks in order to help
+level up their account and gain additional CTB rewards. Examples of quest types
+are: accumulate X hours of view time, spend X hours watching a streamer with less
+than 100 followers, watch X advertisements, tip X different live-broadcasters, rate X
+videos etc. These types of quests are meant to meet a variety of the features of the
+platform such as increasing discoverability, increase advertisement watch time, and
+
+improve the circulation of CTB within the platform.
+
+3. Reward directly to Creator - In order to promote our viewers to use their CTB
+within the platform instead of exchanging to CTT and selling on an exchange, users
+are provided ways to support their favorite creators. By sending CTB in the form of
+tips or paying a monthly amount of CTB to subscribe to content creators, users are
+incentivized to use CTB more actively. Also, our expected earning rate would allow
+users to subscribe to multiple content creators per month so that they can earn the
+
+subscription rewards (special emoticons, chat badge for the creator in chat, etc).
+
+4. In-app purchases - Users can use their earned or exchanged CTB to purchase
+
+special emotions or open loot boxes. These value of these specialized emoticons
+
+27
+A Multi-broadcast Platform based on Blockchain Incentives for Everyone * CASTWEET
+
+are created in ways to promote constant purchase such as limited quantity, special-
+occasions, collectable and various other mechanisms. Additionally, users can
+purchase loot boxes similar to those seen in mobile apps or games which would
+contain random rewards at different rates such as additional emoticions, specialized
+user badges, and other use exclusive rewards. The mechanics of randomized rewards
+promote users to purchase multiple items in order to gain their desired reward as
+
+each reward is not guaranteed.
+
+5. E-commerce - Users can participate in live-streaming e-commerce to purchase
+any products directly through the platform. Any earned CTB points can be converted
+into CTT and then used to make purchases for off-line goods that can be shipped
+
+directly to the viewer.
+
+3.2.3. CTB Creator Gain & Use
+
+In order to provide content creators with compensation and motivate them to use
+
+the platform, the following table shows the ways in which live-streamers can earn or
+
+Target Type Activity From To
+View Count (run time) Platform Viewer
+Engagement (Like/comment/share) Platform Viewer
+Gain Run Advertising Platform Viewer
+CTBT ps from User Platform Viewer
+onthly Subscription from User Platform Viewer
+Creator Goods Purchase Platform Viewer
+Create Bounty Campaign Platform Viewer
+P2P Advertising Platform Viewer
+coe Create Subscriber Emote Viewer Creator/Platform
+Useful tools/filters/special effects Viewer Creator/Platform
+Open Chat Loot Box Viewer Creator/Platform
+
+28
+A Multi-broadcast Platform based on Blockchain Incentives for Everyone * CASTWEET
+
+use CTB tokens within the platform itself :
+
+1. Provide Revenue through CTB/CTT - Content creators need to be rewarded for
+creating the content that entertains the viewers. By providing rewards based on the
+blockchain, their compensation and earnings can be both tracked and provide them
+with a means to monetize their creations. Their revenue can be given by the platform
+based on their view count, engagement by users, and advertising that they run on
+the channel itself. This allows a reliable and steady amount of earnings based on
+their channel activity. Additionally, Castweet provides a way for users to tip and give a
+
+monthly subscription to their preferred channels.
+
+2. Increase Discoverability - One of the main goals is to increase the discoverability for
+new channels or established channels to gain more viewers. By running specialized
+bounty campaigns or engaging in our P2P advertising system, content creators can
+boost their channel or incentivize other users to view their content by providing
+direct rewards. This especially creates a system where lower level streamers can
+market their channel directly and can increase the value of CTT tokens as the means
+
+to pay for the service.
+
+3. Provide value to their subscribers - Additionally, by creating subscriber emoticons,
+purchasing specialized filters to apply to the stream, or by opening a loot box that
+rewards chat viewers, the content creators is further motivated to user their earned
+
+CTB within the platform itself.
+
+3.2.4. In—-platform CTB Cycle (2 Example Cases)
+
+The ultimate goal of the Castweet platform is to provide both viewers and users
+with enough utility and use cases to use their token within the platform. In order to
+
+accomplish this, we have created an ecosystem that interlocks, with both users and
+
+29
+A Multi-broadcast Platform based on Blockchain Incentives for Everyone * CASTWEET
+
+creators having use cases to reward each other as well as ways in which the used
+CTB or CTT will be sent to the platform itself. By creating a flowing system, an active
+ecosystem can be maintained and motivate users to purchase CTT off an exchange
+for in-app usage. Below are a few use cases to explain in detail our token flow within
+
+the ecosystem.
+
+TOKEN CIRCULATION
+
+Viewer
+
+The user gains CTB for their
+viewing, participation, and
+sharing of a livestream.
+
+CTB Supply
+
+The company CTB supply
+is provided to viewers or
+content creators for their
+activity on the platform.
+
+Content Creator
+
+The Creator receives CTB
+as a tip or as a monthly
+subscription fee from the
+viewer
+
+P2P Promotion
+
+Using our P2P promotion
+system, the Content
+
+Creator can further boost
+their contents to increase
+ranking on the main feed.
+
+<Figure 11: Token Circulation within the platform>
+
+Example Case 1:
+This user has earned enough CTB through accumulating more than 10 hours of
+view time so the platform provides the CTB to the user. The User then gives a tip
+
+to the Creator with 70% going to the creator and 30% going to the platform itself.
+
+30
+A Multi-broadcast Platform based on Blockchain Incentives for Everyone * CASTWEET
+
+10 Hours
+View P2P
+Time Tip Marketing
+Platform User Creator
+
+<Figure 12: Use Case 1>
+
+Platform
+
+The creator wants to use their tip to run a P2P marketing campaign and the whole
+
+original tip amount is back in the platform wallet.
+
+Example Use Case 2:
+
+A new creator wants to be able to build their current following on the platform.
+
+Because they do not have enough earned CTB on the platform to run a bounty
+
+campaign, they purchase 1000 CTT on a cryptocurrency exchange. After transferring
+
+to the in-app wallet, they exchange their CTT to CTB. With this CTB, they create a
+
+bounty campaign to motivate users to watch their stream and that amount is sent
+
+to the platform wallet. Once a user has viewed the required time, they are rewarded
+
+with CTB until the amount of the bounty has been used.
+
+Purchase CTT Create
+& Bounty 30% to
+Exchange CTB Campaign Viewers
+
+—m
+ii” &= mad
+
+Exchange Creator Platform
+
+<Figure 13: Use Case 2>
+
+User
+
+31
+A Multi-broadcast Platform based on Blockchain Incentives for Everyone * CASTWEET
+
+3.3. P2P Marketing System & Bounty Campaigns
+
+To increase discoverability on the platform, there are two innovative marketing
+solutions that will allow live-streamers to run their own marketing within the
+platform. Each system users different mechanics but has the same goal of driving
+engagement and views to the creators content. Below is an explanation of these two
+
+unique in-app advertising campaigns :
+
+P2P Marketing System
+
+Castweet has created a user-driven P2P marketing system to solve some of the
+issues with discoverability with live-streaming platforms. In the platform, content
+creators or live-streaming sellers will be able to create a P2P marketing campaign
+in order to feature their stream on a variety of locations within the application itself.
+They will have the option to set their desired featured location either on the main
+home screen, under the promoted streams tab, or within their stream genre category
+(new, gaming, lifestyle, etc.). After choosing the location for their stream, they will
+set a budget to run the campaign. Within each target location, a bidding system will
+be implemented in which the highest set budget will be featured in that location. If
+they have set the highest budget, their campaign will be activated and they will be
+
+featured in their P2P location.
+
+This feature allows the platform itself to add an additional revenue stream and
+promotes new content creators to purchase CTT to use within the platform.
+Additionally, it should increase discoverability as some locations will be limited by the
+streamer level so that high-level streamers cannot out-pay lower level streamers.
+Viewers that opt to view streams promoted in the “New Streamer” category will gain
+
+CTB at an increased rate when compared to other streams. Live-streamers focusing
+on sales will be able to invest in promoting their stream to increase potential sales. By
+
+providing a direct P2P marketing system, the goal of discoverability can be improved
+
+32
+A Multi-broadcast Platform based on Blockchain Incentives for Everyone * CASTWEET
+
+while increasing the value of CTT.
+
+Benefits of the P2P Marketing System:
+@ Ability for any streamer to market their stream directly within the platform.
+@ New Streamers will be able to feature their stream in special sections.
+@ Sliding-scale payment based on streamer level to prevent over-bidding by
+established streamers.
+@ Various locations for streamers to bid on to feature their content.
+@ Providing additional use-cases for CTT within the platform to improve the token
+
+economy.
+
+Bounty Campaign
+
+In another marketing system, both creators and users can create a bounty
+campaign to promote their own or favorite live-streamers broadcast. In this
+marketing system, users will set a budget for how many new viewers they would like
+to gain. Additionally, they can set the amount of compensation for each new viewer
+that watches the minimum required viewing time of 1 hour. Their CTB will be sent to
+the platform wallet and, if a new viewer watches their stream for the required time,
+
+30% of the CTB paid into the platform will be paid to the user.
+
+This system further creates a way for viewers to both discover new live-streams
+while also earning them with CTB. For the content creators, it incentivizes them
+to use CTB in order to promote their stream and gain new views or followers. For
+the platform, it creates another revenue stream that can help maintain the healthy
+
+ecosystem and help fund the platform itself.
+
+Benefits of the bounty campaigns :
+@ Streamers can directly market their stream to new viewers within the platform.
+
+@ Streamers will be able to create a bounty program just from their viewing/
+
+33
+A Multi-broadcast Platform based on Blockchain Incentives for Everyone * CASTWEET
+
+streaming rewards.
+@ Preferential featuring for streamers at lower-levels will increase discoverability.
+@ Viewers will be rewarded for engaging in content they would otherwise ignore.
+@ Competition between bounty budgets will improve the overall CTT ecosystem
+and motivate exchange purchases of CTT tokens.
+@ Abuse prevention system will prevent low level viewers from abusing the
+
+compensation model.
+
+3.4. Revenue Streams
+
+The Castweet project goal is to create multiple revenue streams utilizing both the
+CTT token and fiat. By having advertising revenue that is agnostic to the CTT price,
+the platform can have more stable revenue and greater access to advertisers that
+are not willing to purchase CTT or engage with cryptocurrency exchange purchases.
+
+In order to accomplish this, our revenue streams are expected to be as follows :
+
+CTT Revenue Streams
+
+1. In-app purchases - Users use CTT & CTB to make in-app purchases (emoticons,
+digital items, P2P marketing etc.). 100% of the purchase amount is returned to the
+platform wallet.
+
+2. In-app Product Sales - Users who make an off-line goods purchase within the
+platform will be charged a transaction fee to process the payment.
+
+3. In-app CTB Fee - Castweet will charge a % fee on some activities done within the
+
+platform (bounty campaign, tip creator, etc.)
+
+4. CTT purchased advertising - Advertisers will have the option to pay for their
+
+advertising campaign with CTT purchased off an exchange and paid into the platform
+
+wallet. This will be at a discounted rate to promote the CTT token price to increase.
+
+34
+A Multi-broadcast Platform based on Blockchain Incentives for Everyone * CASTWEET
+
+Fiat Revenue Streams
+
+1. Traditional Advertising - After developing a larger user base, CTT will allow
+traditional advertisers to pay for advertising campaigns in fiat (at an increased rate
+compared to CTT advertising price). Our platform will feature banner advertising and
+video advertising (pre-roll, mid-roll, broadcast “ad break”).
+
+2. Online Product Sales - Companies wishing to promote and sell their products
+within the platform can create a sales campaign. This campaign will provide a set
+of stock that live-streamers can sell within the platform. Providing this stock to
+
+streamers as an option for sales will be charged a nominal fee.
+
+35
+A Multi-broadcast Platform based on Blockchain Incentives for Everyone * CASTWEET
+
+4. Platform Components
+
+The Castweet platform has four main components that all interact with each other
+to maintain the platform. At the core, is the main Broadcast System which allows
+content creators to broadcast their live-streams and viewers to enteract and view
+content. Interacting with this, the Reward System provides both the viewers and
+content creators to earn from their engagement. While the Reward System provides
+compensation for engagement, the User Level System adjusts and controls at what
+rate the viewers or content creators can gain from this engagement and also provide
+additional benefits to the users, Lastly, the Abuse Detection System measures user
+activity to ensure fair compensation and prevent abuse of the overall system to
+maintain the health of the overall Castweet Ecosystem. Each component and their
+
+interaction is essential to the proper functioning of Castweet.
+
+User Level
+System
+
+Abuse
+Detection
+System
+
+Reward
+System
+
+Broadcast
+System
+
+<Figure 15: Castweet User System>
+
+36
+A Multi-broadcast Platform based on Blockchain Incentives for Everyone * CASTWEET
+
+4.1 Castweet Broadcast System
+
+The Castweet creator tool and Castweet user timeline page provide an optimized
+broadcast environment for a web browser and performance through the Unity 3D
+engine and Web GL framework. Cross-compiled using the Web GL platform and web
+assembly, the Castweet platform is designed to make it easy for users to access the
+platform in any environment where a web browser can operate, regardless of the
+platform's configuration and hardware, such as a PC, tablet or any mobile device.
+The Castweet platform, which is composed of rather heavy development engines, is
+compiled into a simple binary format by using web assembly. Implanting client server
+and applications of the Castweet platform into a web browser, memory usage is
+
+reduced with faster performance.
+
+4.2 User Level System
+
+As users engage more on the platform, they will be able to increase their user level.
+This conveys additional advantages to both viewers and content creators depending
+on their level. During the Alpha and Beta test, a fair level system will be created
+by benchmarking user activity rates and making adjustments to ensure users can
+level at an acceptable rate while encouraging action. In order to “level up” within the
+
+system, users will need to reach milestones related to :
+
+1. Total view/broadcast time
+
+2. Engagement activity (sharing, commenting, rating content, etc.)
+3. Completion of Daily/Weekly Viewing Quests
+
+4. Amount of CTB spent within the system
+
+5, Use of “Level-Boost" Items to increase their level gain.
+
+6. Users introduced through Referral codes to expand the platform
+
+37
+A Multi-broadcast Platform based on Blockchain Incentives for Everyone * CASTWEET
+
+Additionally, as a user level increases, various bonuses and advantages to be
+conferred onto that user. The following are some of the expected advantages for
+
+increasing user level :
+
+1. Increase of Daily CTB to CTT Conversion
+
+2. Increase of rate of gain for CTB from activity
+
+3. Additional value to streams watched: a higher level user offers more
+compensation to content creators for their views than a Level 1 user.
+
+4. Specialized level-based emoticons and user badges
+
+5. Free monthly subscription to a content creator of their choice
+**Note: The exact requirements for each level and the ways to increase level will
+
+be set following Alpha & Beta test benchmarking. This information is subject to be
+
+changed or updated**
+
+4.3 Abuse Prevention & Detection System
+
+As seen with previous blockchain-based incentive schemes, the importance of
+
+detection and prevention of abuse accounts is essential to creating a powerful
+
+ecosystem. The Castweet Platform utilizes lessons learned from the first-wave
+
+adaptations of blockchain compensation systems (Steemit, Gifto, etc...) and aims to
+
+solve some of the issues seen with these platforms. Weaknesses in the development
+
+of their ecosystem and prevention systems led to various abuse issues with users
+
+finding loopholes in which to maximize their gain while damaging the ecosystem
+
+developed on the platform.
+
+38
+A Multi-broadcast Platform based on Blockchain Incentives for Everyone * CASTWEET
+
+The key features of the system are as follows :
+
+Real-user activity benchmarking - During Alpha and Beta tests, normal user
+activity will be measured according to activity (average viewing time, comment
+amount, engagement). This data will be used to create a benchmark of normal
+usage rates. After setting the rates of normal platform usage, accounts that greatly
+
+surpass average usage will be suspended/banned after account review.
+
+CTB & CTT Exchange System - Ability to adjust the CTB to CTT exchange ratio to
+
+maintain fair bonuses as well as keeping the ecosystem healthy.
+
+User Level System - Low level users will have a limited ability to convert CTB to
+CTT and have limitations on daily withdrawal amounts. This prevents issues about
+creating multiple accounts in an effort to maximize their rewards. As user level
+
+increases, their value to broadcasters is also increased.
+
+4.4 Castweet Wallet
+
+Castweet will also create a multi-functional cryptocurrency wallet d-App that will
+allow users to manage their CTB and CTT. Users can connect their Castweet account
+to the associated Castweet wallet d-App and can convert their earned CTB into CTT
+depending on their user level. Additionally, users can use the d-App to send and
+receive CTT tokens between any valid CTT wallet address. This functionality will allow
+users to make payments for purchased items or e-commerce goods directly within
+the platform to facilitate a smooth, instant, and at a low-cost. After benchmarking
+CTB gains during the alpha/beta test, the Castweet wallet will allow us to adjust the
+appropriate exchange rate for the tokens as well as limit withdraw based on user
+
+level to prevent abuse of the platform.
+
+39
+A Multi-broadcast Platform based on Blockchain Incentives for Everyone * CASTWEET
+
+4.5 Future Blockchain Development Initiatives
+
+Our initial priority is the development of the CTT Platform and creating an effective
+blockchain ecosystem with our CTT token. After the main platform is developed,
+future blockchain initiatives are planned to further integrate and expand the
+functionality of the platform. These are future blockchain features planned to
+
+implement within the CTT Platform System :
+
+1. CTT Network 2.0 - Development of a decentralized network of node creation
+and P2P sharing to lower the overall server costs of the platform. In addition, the
+development of a CDIS/RNN neural network can expand upon the platform and
+
+improve functionality.
+
+2. Blockchain-tracked Data Usage - Creating a blockchain-based mechanism that
+tracks the user activity and records it into the blockchain. This will allow user data to
+be tracked more transparently and users can see how their data is being transferred
+
+to third party partners.
+
+3. Content Analysis and Copyright Detection - As the platform grows, the demands
+of controlling unlicensed and copyright abuse are expected to become more
+important. To aid in this, we aim to create a copyright detection system based on the
+blockchain. This system would analyze and hash the contents of creations and write
+it into the blockchain. If a user tried to rebroadcast previously uploaded content, it
+
+would be rejected, thus allowing the copyright to be tracked across the platform.
+
+40
+A Multi-broadcast Platform based on Blockchain Incentives for Everyone * CASTWEET
+
+5. Token Distribution
+
+Information about CTT token / ERC20
+
+GH Castweet operation 45%
+
+MM Business development 25%
+cTt Marketing and other 12%
+
+Allocation J) Legal advice 8%
+
+HB Team distribution 6%
+
+HN Advisors and partners 4%
+
+<Figure 15: Castweet User System>
+
+41
+A Multi-broadcast Platform based on Blockchain Incentives for Everyone * CASTWEET
+
+Design Prototypes & Early White Papers
+
+Development of a smart contract for CTT token release
+CTT-Token listing on Crypto Exchange
+
+Ecosystem partnership continuation
+
+Ecosystem Partnership continuation
+Continue the development of the CTT platform
+Development of underlying architecture completion
+
+CTT platform incentive and related system completion
+Ecosystem partnership continuation
+
+iOS Mobile App alpha version launch
+Android Mobile App alpha Version launch
+Development of CTT Vietnam version
+
+Addition of platform wallet and payment system
+continue the development of the CTT platform
+Development of the CTT platform Thai version
+
+iOS Mobile App Beta version launch
+Android mobile app beta version launch
+
+CTT platform Launch
+
+foo)
+pS)
+fe)
+©
+a.
+3
+©
+Ke)
+
+<Figure 17 : Loadmap>
+
+**Certain items in the above roadmap may be completed before expected, meaning
+other schedules may consequently be carried on earlier. On the other hand, the tasks
+found more difficult than expected may take longer. This roadmap will be adjusted
+quarterly, and we will establish new goals as we complete certain objectives and
+
+intended plans.**
+
+42
+A Multi-broadcast Platform based on Blockchain Incentives for Everyone * CASTWEET
+
+7. Notice and Disclaimer
+
+This whitepaper may be amended from time to time without notice. This whitepaper
+is intended to provide general information and is not meant to be exhaustive,
+comprehensive, or authoritative. Castweet accepts no liability in relation to the
+Whitepaper, or any reliance on the Whitepaper, and does not warrant the accuracy or
+
+completeness of the Whitepaper
+
+Castweet tokens may only be purchased pursuant to the Castweet Token Sale -
+
+Terms of Sale.
+
+The risks described below, and or other additional risks presently regarded to be
+immaterial actually materialize the commercial viability of the Castweet project and/
+or the Castweet Ecosystem may be materially and adversely affected. These risks
+could result in the failure of the Token sale, the destruction of the Tokens and/
+or termination of the development or operation of the Castweet project and/or
+
+Castweet Ecosystem.
+
+Risks associated with the development and operation of the Castweet project and/
+
+or the Castweet Ecosystem:
+
+The Castweet project and/or the Castweet Ecosystem are still under development
+and may undergo significant changes before they are released or implemented.
+While Castweet intends for the tokes and the Castweet Ecosystem to function
+as described in the Whitepaper, Castweet may have to make changes to various
+
+features of specifications of the tokens or the Castweet Ecosystem.
+
+The Castweet ecosystem may fail to be adequately developed or maintained or may
+
+encounter difficulties during development or operation, including financial, resourcing
+
+43
+A Multi-broadcast Platform based on Blockchain Incentives for Everyone * CASTWEET
+
+and technical difficulties. This may create the risk that the tokens or the Castweet
+Ecosystem may not meet your expectations at the time of the Payment and may
+negatively impact the Castweet Ecosystem and the Tokens, and the potential utility
+
+of the tokens.
+
+Since the Services involve the use, purchase or sale of broadcasted videos, this is
+applicable to intellectual property laws and may create the risk of infringing other
+person's intellectual property rights. This may negatively impact the Castweet
+
+Ecosystem and the Tokens, and the utility of the Tokens.
+
+Risks arising from no governance rights: The Tokens confer no governance rights
+of any kind with respect to the Castweet project, the Castweet Ecosystem and/or
+Castweet. Accordingly, all decisions involving the Castweet project, the Castweet
+Ecosystem and/or Castweet will be made by Castweet at its sole discretion, including
+decisions to discontinue the Castweet's products or services, the Castweet project
+and/or the Castweet Ecosystem, or to sell or liquidate Castweet. These decisions
+could adversely affect the Castweet project and/or the Castweet Ecosystem and
+the utility of the Tokens that you own, including the Tokens utility for obtaining the
+
+services.
+
+Risk of failure, abandonment or delay of the Castweet project: The creation of
+the Tokens and the development of the Castweet project and/or the Castweet
+Ecosystem may fail, be abandoned or delayed for a number of reasons, including
+lack of interest from the public, lack of funding, or lack of commercial success or
+
+prospects (e.g. caused by competing projects).
+
+Risks associated with the Ethereum blockchain: The Tokens, the Token Sale
+and/or the Castweet Ecosystem are based on the Ethereum blockchain which is
+
+still in development stage and unproven. Any malfunction, flaws, breakdown or
+
+44
+A Multi-broadcast Platform based on Blockchain Incentives for Everyone * CASTWEET
+
+abandonment of the Ethereum blockchain may have a material adverse effect on the
+Tokens, the Token Sale and/or the Castweet Ecosystem. Furthermore, developments
+in cryptographic technologies and techniques or changes in the consensus protocol
+or algorithms could present risks to the Tokens, the Token sale and/or the Castweet
+Ecosystem, including the utility of the Tokens for obtaining the Services, by rendering
+ineffective the cryptographic consensus mechanism that underpins the Ethereum
+
+blockchain.
+
+Risk of Ethereum mining attacks: As with other cryptocurrencies, the Ethereum
+blockchain is susceptible to mining attacks, including double-spend attacks, majority
+mining power attacks, "selfish-mining" attacks, and race condition attacks. Any
+successful attacks present a risk to the Tokens, the Token Sale, and/or the Castweet
+Ecosystem, including proper execution and sequencing of transactions involving the
+
+tokens.
+
+Risk of theft: The Ethereum blockchain may be exposed to attacks by hackers or
+other individuals that could result in the theft or loss of ETH, or the tokens, impacting
+
+the ability to develop the Castweet Ecosystem.
+
+Regulatory risks: It is possible that certain jurisdictions will apply existing
+regulations on, or introduce new regulations addressing, blockchain technology,
+which may be contrary to the Token and/or the Castweet Ecosystem and which may,
+inter alia, result in substantial modifications of the Castweet Ecosystem and/or the
+
+Castweet project, including termination and the loss of Tokens.
+Risk associated with other applications: The Castweet project may give rise to other
+
+alternative projects promoted by unaffiliated third parties, under which the Tokens
+
+will have no intrinsic value.
+
+45
+A Multi-broadcast Platform based on Blockchain Incentives for Everyone * CASTWEET
+
+Risk or loss of private key: The Tokens may be accessed with a combination of
+private key and password. The private key is encrypted with a password. Loss of
+requisite private key(s) associated with your digital wallet or vault storing the Tokens
+
+will result in loss of such Tokens which will be unrecoverable and permanently lost.
+
+Risks of hacking and security weakness: The tokens, the Token Sale, the Castweet
+Ecosystem (if and when developed) and Castweet may be targeted by hackers or
+malicious groups of organizations which may attempt to interfere with the Castweet
+Ecosystem or the Tokens and/or the Token Sale or steal the Tokens in various
+ways, including malware attacks, distributed denial of service, consensus-based
+attacks, Sybil attacks, phishing, smurfing and hacking. Furthermore, there is a risk
+that a third party or a member of Castweet may intentionally or unintentionally
+introduce weakness into the core infrastructure of the Castweet Ecosystem, which
+could negatively affect the Castweet Ecosystem, the Tokens and/or the Token Sale,
+
+including the utility of the Tokens for obtaining Services,
+
+Risks associated with taxation: The tax treatment and accounting of the Tokens
+is uncertain and may vary amongst jurisdictions. You must seek independent tax
+advice in connection with purchasing the Tokens, which may result in adverse tax
+
+consequences to you.
+
+Risks associated with volatility of ETH/BTC: The value of ETH/BTC may fluctuate
+significantly over a short period of time as a result of various factors including market
+dynamics, regulatory changes, technical advancements, and economic and political
+factors. Due to such volatility, Castweet may not be able to fund the development of
+the Castweet Ecosystem, or may not be able to maintain the Castweet Ecosystem in
+
+the manner that is intended.
+
+Technology risks: The Tokens are intended to represent a new capability on
+
+46
+A Multi-broadcast Platform based on Blockchain Incentives for Everyone * CASTWEET
+
+emerging technology that is not fully proven in use. As the technology matures, new
+capabilities may dramatically after the usefulness of the Tokens or the ability to use
+or sell them. The functionality of the Tokens is complex, will require enhancements
+and product support over time, and full functionality may take longer than expected.
+The full functionality of the Tokens is not yet complete and no assurance can be
+
+provided of such completion.
+
+47
+A Multi-broadcast Platform based on Blockchain Incentives for Everyone * CASTWEET
+
+8. References
+
+1, https://www.statista.com/study/15475/youtube-statista-dossier/
+
+2. https://www.statista.com/statistics/761122/average-number-viewers-on-
+youtube-gaming-live-and-twitch/
+
+3. https://www.investopedia.com/articles/personal-finance/032615/how-youtube-
+ad-revenue-works.asp
+
+4. https://en.portal.santandertrade.com/analyse-markets/south-korea/reaching-
+the-consumers
+
+5. https://techcrunch.com/2018/02/06/twitch-now-has-27k-partners-and-150k-
+affiliates-making-money-from-their-videos/
+
+6. https://www.businessinsider.com/ninja-mixer-top-streamer-one-million-
+followers-2019-8
+
+7. https://reclaimthenet.org/pewdiepie-dlive-increased-viewership/
+
+8. http://www.chinadaily.com.cn/a/201903/31/WS5ca0bb1ea3104842260b383b.
+html
+
+9.
+
+10. http://www.koreaherald.com/view.php?ud=201 81213000748
+
+11. https://www.reddit.com/r/Twitch/comments/bqn1 qf/issues_with_twitch_brief_
+feedback_following_1/
+
+12. https://venturebeat.com/2018/06/27/twitch-gets-transparent-about-how-it-
+
+wants-to-boost-discovery/
+
+48

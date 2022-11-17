@@ -1,0 +1,1359 @@
+LITEX
+
+The First Decentralized Instant
+Cryptocurrency Payment Solution
+
+2018
+Table of Contents
+
+TL. SUMMARY.........ccccsccssessessessensensensensensesscscssessesscssessesseseesscsecssessensessesscssensessenseneeneees 4
+2. BACKGROUND ............ccsscsssscessecsssscssescsssessssssesesseseessessesessessssseeseesessessesseeseesesseneens
+2.1. Current State of Cryptocurrency
+2.2. Challenges in Micropayment - The Bitcoin Example ............cccscsesessesseseeneeee 7
+2.3. The Dawn of Bitcoin - Lightning Network............:.sscssessseeeseeseeeeseetsceeeaeeeeees 9
+3. A DEEP DIVE ...........ccccccscsssceseeccsesssssceseesessesesssecseesessescsssessessensesesssecseesenseseessseeess 12
+A. EVOLUTION OF SOLUTIONS. ...........c:ccecscssescesssesssssseusesseesessesseesenseusensenseseesessensonee 14
+4.1. Stage 1: Centralization Solution - BitPay...........csscessssecesecereceeeteeeteeeneeneeeee 15
+4.2. Stage 2: Semi - Centralization Solution - TenX..........:csccescceseceseeseeeteeeseeeeeeee 16
+4.3. Stage 3: Decentralization Solution - LITEX.........c ccc cceeecesceseeseeseeseeseeeeees 17
+4.4, Final Stage: Cryptocurrency Circulation ...........::cssccsccesecesecsseceeeeseeeseesneeeeeaes 18
+5. DECENTRALIZED PAYMENT SOLUTION - LITEX............::ccccsscsssssesccssesessessessesssesseeesenes 19
+5.1. Definition oo... ee eceeseseeeeseeecseeeeseeecseesesesscsecseseesceecaceecseeaeaseassesaseeaeeeaseeaes 19
+5.2. The Design ..........sscssccesccssecsseeseeeseessecsceeseessecesecseeeaeesseccecseeeseeeaeceeeseeeaeenaees 20
+5.2.1. LITEX Architecture .......ccc ccc esses cescsscssesscssesscsscssssessesssssssseseeeseeaeeaees 20
+5.2.2. LTIXN Overview.......ccccccscccscesscssecsscssecssssseessscssscssssseessssseesssseseesseseeeeseees 22
+5.3. Technology Innovation............sccsscsscsseeseessecesecseeeseeeseceeececeseesseceeeseeeaeenaees 24
+5.3.1. Compound Decision Lightning Network..........ccccsssesessesseesesseseeseeseeaees 24
+5.3.2. Matching Engine............cscescescescesecssecsseeseeeeeeseceeeeseesseeeaeeeeeeeeeseseneeneees 24
+5.3.3. Smart Routing .........c cc cescccesccsseeesseeeseceseeessesessecessesessesesseesseesessesesaeeeaees 25
+5.3.4. Light Node wo... cece cscs csscescsscsscsscsscscessessssseessseesssssessssseeseeseeaeeaees 25
+5.3.5. Further Plan... ccc csesscsscsscsscsscsececsscscsesssssessseesssssessssseessesseaeeaees 26
+6. THE USE CASE.............ccccsccssssscessssecesessecesesseesesesseesseeseesesseseeseeeesseessensessseesseeseeneees 27
+7. TOKEN DESIGN ..00......ccccecccscencesseeeessssseusesssusessssseesesseusensessessessesseusesseesassesseasonsages 29
+7.1. Name and Purpose........ccceccccececsscesceseeseescsecsscescesceseeesescescessessesseeseeeeees 29
+7.2. LXT System .....ccecceccecescesecsscssesscessesssceeessessssessssseessesessesssssessssseeseseseeesas 29
+7.3. LXT Distribution Plan ........ccececccecseeseescescescescsscesceeceecessescescessnsseeseeseeeneee 30
+8. ROADMAP...........ccccccssscssecessecsseeesseecessesssescssescessesssesossesceseesssesessessessessseeessesoeseeees 31
+9. ORGANIZATION STRUCTURE............:ccccsscsccssssessssseesesssesensesseesessssseusesesssssensessonsenes 32
+9.1. Litex Foundation... cee ccccececesceseeseesceecsecseceseesceecescesseeseesessesseeseeeeeee 32
+9.2. LITEX Lab 0.0... eeeeecescceceesecseeeseceeeseessecenecseceaeesececessecesecsaeceesaeeeseeaeeeesaes 33
+
+9.3. Key Investors & AdViSOrs .......c.ccccecceeeeeeeeseescescescesceeceeceeceeceeceeseecesensseeeeeee 34
+9.4. Key Investing Institutions .............::ccccccesscessscceseeeeseeesseecesseesseecessecsseeesaeeenees
+
+10. RISK STATEMENT
+
+10.1. Risk Warning... ccc ceeceeccecesesscsscssctsceecsscescesssscssscssessesssssssssssseseesegs
+10.2. Disclaimer ..........ccccecescceseceesecesseceeeeeesaeceeueeceseeeeaeceeaeeceseeeeseeeeseeceseeeneeenaees
+LITEX - The First Decentralized Instant
+Cryptocurrency Payment Solution
+
+1. Summary
+
+The proliferation of cryptocurrencies and the associated high market capitalizations in recent years have
+drawn worldwide attention. However, practical usage is still very limited. Long confirmation time and high
+transaction fees are two prominent obstacles in making cryptocurrency micropayment a reality. Volatile
+prices in cryptocurrency markets (a 50% loss of value could happen in a matter of few days) also make it
+much less desirable a payment medium comparing to fiat money. On top of that, the high level of relevant
+background knowledge required to fully understand cryptocurrency has limited the number of potential
+
+merchants.
+
+Currently, the only practical way to adopt cryptocurrency in micropayment is to settle instantly with
+merchants using fiat money to avoid high entry barrier and price volatility. The key, though, is to ensure
+decentralization of the crypto-to-fiat conversion for settlement, which otherwise could be easily achieved
+
+by a centralized solution.
+
+We firmly believe in the core value of decentralization inherent in cryptocurrency and blockchain
+technology and think any centralization would significantly impact the crypto-ecosystem’s healthy growth
+in the long run. Just as there’s no official institution to run Bitcoin, there should not be a centralized
+organization to convert cryptocurrency to fiat money in the settlement process of any cryptocurrency
+
+micropayment solution.
+
+The rapid increase in transaction volume has crowded the mainnets of the major cryptocurrencies and
+resulted in long transaction time with high transaction fees. An interim idea of branching out new chains
+with either larger blocks or shortened block generation time was proposed, but it cannot solve the problem
+fundamentally: First, to ensure there are enough independent miners that can afford storage and connection
+speed requirements, there must be limitations on block size and generation time. Otherwise, when only
+large conglomerates can satisfy these requirements, the decentralized architecture is undermined; Second,
+with the exponential growth in transaction volume, the limit of block size and generation time will soon be
+
+reached, which leaves no toom for further change.
+
+It is likely that most of the future transactions will be micropayments, which could not bear the high
+transaction fees and long confirmation time. If these micropayments could happen off-chain in a secure
+environment, using on-chain only for confirming the final results, the solution can adapt to the growing
+
+transaction volume and offer lower transaction fees.
+Lightning Network is a technical solution, through RSMC and HTLC in BOLT protocol, that ensures the
+security of off-chain transactions are equivalent to those on-chain ones. Its design also guarantees faster
+
+speed and lower fees, which makes Lightning Network currently the most promising solution.
+
+Following the activation of SegWit, Bitcoin’s Lightning Network has been developing rapidly. There are
+several payment solution proposals, but few of them incorporates fiat money settlement. For those that do,
+they plan to use self-built capital pools to draw cash ftom the secondary market and settle with merchants
+through corporate accounts, essentially a centralized solution in the crypto-to-fiat exchange area. Both
+
+BitPay, the largest Bitcoin payment gateway, and TenX, the ex-partner of Visa, are in this category.
+
+Let’s take a closer look at these centralized solutions: First, the exchanges are vulnerable to single point of
+failure threat events such as attacks from hackers and accidental crashes. Solutions dependent on the
+exchanges will be negatively affected, and the assets in those exchanges are under the tisk of complete loss
+upon these accidents; Second, the settlement with merchants through corporate accounts creates a single
+solid link between an organization and the payment solution, which exposes the exchange to single point
+of failure threat events brought by the solvency and reliability of the organization. Therefore, a stable and
+long-lasting cryptocurrency payment solution must provide decentralized solution in fiat money settlement
+
+process.
+
+LITEX is a completely decentralized payment ecosystem for cryptocurrency. Built on the business model
+of YeePay’s star product (the non-bankcard payment solution) along with the BOLT protocol, the LTXN
+
+(LITEX Network) enables crypto-purchasets to pay fiat money to merchants on behalf of customers for
+products and services, and the customers repay ctyptocurrency to the purchasers. The whole process is
+
+insured by smart contracts, no centralized organization is involved.
+
+There are two layers in LTXN’s architecture. The first layer is an upper-layer decision-making network that
+matches the payment requests and the fiat money requests. The second layer is a lower-layer lightning
+network that builds highly efficient and secure payment channels to transfer the cryptocurrency. The
+merchants receive fiat money payments from cryptocurtency purchasers through the acquirers. LTXN also
+implements an incentive strategy in the upper-layer decision-making network to reduce the potential
+
+centralization in the lower-layer lightning network.
+
+Advantages:
+
+- Decentralized ecosystem: With fiat money provided by crypto-purchasers, there is no capital pool
+for fiat money and official operator is not necessary at all, as a result, LITEX is not exposed to single
+
+point of failure risks.
+
+- High performance, low costs: With the growth of nodes, LITEX can handle millions of payments
+
+per second which can meet the requirement of timeliness in every-day payment scenarios. Meanwhile
+the mechanism of sharing the transaction fee by all participants in one transaction make it extremely
+
+low.
+
+- Stabilized settlement: With deep payment industry experience by Litex Foundation and its partners,
+LITEX has the ability and social capital to sign up acquirers from all over the world via profit sharing
+
+so that the risks of cooperating with bankcard companies can be avoided.
+
+- Merchant accessibility: With fiat money settlement, LITEX merchants do not need to make any
+changes in their current payment gateway. The process of using LITEX to collect money is exactly the
+
+same. There’s no tisk in bearing the volatility of cryptocurrency price.
+
+- Fund security: With payment channels built on smart contract of pre-defined strict rules, balances
+
+on LITEX are stored in the payment channel. No capital loss would occur even if it is attacked.
+
+Even though fiat money is still the dominant form of payment in today’s economy, the age of
+ctyptocurrency is on the horizon. With platforms such as Ethereum, people other than pure currency
+speculators have started to recognize the practical value of cryptocurrency and are willing to use
+cryptocurrencies like LITEX Tokens directly to purchase merchandises or services. In addition, the LITEX
+system has the potential to connect the vast population in the developing world (that are not able to
+participate in banking services or receive charity) to local merchants and international non-profit
+
+organizations.
+
+LITEX provides a foundational payment structure for the future digital world.
+2. Background
+
+2.1. Current State of Cryptocurrency
+
+It was merely 9 years ago, when Satoshi first came up with the concept of Bitcoin, yet according to multiple
+ctyptocurrency tracking sites, the total number of cryptocurrencies listed on exchanges have exceeded 1600
+as of April 2018. These cryptocurrencies include “currency” cryptocurrencies that compete with Bitcoins
+(e.g. Litecoin), “utility” cryptocurrencies that create an infrastructure to be leveraged to build on top of (e.g.
+Ethereum or Filecoin) , and various “Application/Platform” cryptocurrencies also called tokens that are
+intended to provide functionality to consumers (e.g. tokens generated by DApp on Ethereum). The
+proliferation of cryptocurrency reflects the high recognition and expectation of the blockchain technology
+
+from the tech industry and beyond.
+
+However, practical application of cryptocurrency is still quite limited. With the exponential growth of
+market cap and number of cryptocurrencies, high price volatility becomes a norm. Circulation of
+ctyptocurrencies is mainly from exchange transactions for trading purposes. Comparing to fiat money,
+ctyptocurrency can only be treated as a type of asset that holds value, not in real life payment circulation.
+The overheated speculative crypto capital market does bring visibility to the blockchain technology, but at
+the end of the day, the true benefit of the technology and the maximum value of cryptocurrency can only
+be realized when the consumets s use ctyptocurrency in daily payment scenarios. Merchants accept
+ctyptocurrency for goods and services, and the whole society urns into cryptocurrency for myriad of
+
+functions other than speculative trading.
+
+Though external factors such as lack of general understanding from the society and impediment from
+traditional interest groups contribute to limited applications of cryptocurrencies, internal factors are more
+
+to blame at this stage. The blockchain technology needs to be further refined, and the development
+
+community needs to reach consensus on major solution proposals. For example, Bitcoin, the starting point
+and cornerstone of global cryptocurrencies, due to its insufficient design capacity, slow processing speed
+and increasingly impairment of anonymity, still cannot be used as a circulation currency. As of now, 9 years
+
+after its inception, Bitcoin still has no not entered into our daily life.
+
+2.2. Challenges in Micropayment - The Bitcoin Example
+
+A qualified currency in circulation shall have the capability for micropayment and instant payment. By
+design, cryptocurrency has inherent advantages over fiat money. However, after 9 years, the mainstream
+cryptocurrencies are gradually losing their ability to process micropayment promptly. Bitcoin, for example,
+
+by implementation and evolution of an architecture design that sacrifices efficiency to guarantee consistency
+and stability of its distributed ledger system, becomes a type of value asset and a channel for transferring
+
+large value, just like gold in the past.
+
+Originally, a distributed ledger system was designed to make sure the non-repudiation of the transaction
+and increase the attacking cost of evil nodes, the ledger system stores data in the chain structure after
+packing data, and it guarantees that all nodes in the net reach a consensus spontaneously at all time via a
+POW (Proof of Work) system. An asymmetric cryptographic algorithm is adopted for each data package
+called ‘Block’ to make sure transactions recorded cannot be modified. This is known as the blockchain
+
+technology today.
+
+Blockchain technology has become an advanced technology researched and developed by commercial
+giants and various sovereign governments. This technology contents immense potential value. But Bitcoin,
+intended by design to be used as a currency, is greatly limited by its own blockchain technology features.
+Firstly, to guarantee the safety & stability and storage efficiency of the system, the upper limit of one block
+size is only 1MB. Secondly, to balance the earnings among miners, the system is equipped with a dynamic
+
+difficulty adjusting mechanism to keep a speed of verifying block at a 10-minute interval.
+
+With the average transaction size being 226B, the constant processing speed of the BTC transactions is
+about 7 transactions per second. The resulting fact is that the actual transaction size often reaches to 500B
+and the processing capacity of BTC system reduces to 3 transactions per second. Furthermore, congestion
+of BTC mainnet is increasingly severe along with the increase in the number of BTC transactions. The
+
+following figure is a real-time data cited from blockchain.info on January 16th, 2018.
+
+180157 Unconfirmed Transactions
+
+7 |Unconfirmed Transactions Live updating list of new bitcoin transactions
+
+FABLE 02018 GS(2011)6020  HEARSRAR
+‘Summary Status: Connected
+Total Fees 41,900.17374317 BTC
+Total Size 573615.93 (KB)
+
+Tra
+
+81
+
+It is observed that the average number of transactions generated by the mainnet per second reaches 81.47,
+nearly 11 times of processing speed. The total unconfirmed transactions reach 0.18 million. The system still
+needs 6 more hours to deal with those transactions even if all new transactions stop coming in immediately.
+
+All of the evidence shows that the BTC main net is indeed very crowded.
+Congestion of Bitcoin mainnet delays the confirmation of micropayment even more. As the transaction fee
+offered by micropayment is not competitive comparing to payment involving large amount, miners will
+first verify the transaction with high transaction fee in order to gain higher profit. As a result, the priority
+of micropayment transactions is always lower. Currently, some micropayments may be ignored in the
+system for 24 hours, which means, if you want to buy a cup of latte in Starbucks with your Bitcoin directly,
+
+you may have to wait until the next day to get your coffee.
+
+Besides, BTC system set limit for micropayment. In 2013, BT'C’s core team modified the system with
+‘Dedusting Patch’ to forbid BTC transaction under certain amount in order to relieve mainnet’s congestion.
+At present, the “dust threshold” is 5.46uBTC, which is 14 cents in USD. Transactions lower than the
+threshold will be ignored (won’t be relayed, won’t be mined). Transactions lower than 14 cents are actually
+not uncommon in some parts of the world. These transactions, however, are unsupported as ‘uneconomic
+
+dust’ in BTC system.
+
+Even for the ones that are above the “dust threshold”, high transaction fees of Bitcoin hindered
+micropayment as well. By rising to 1000u/byte in December 2017, fee for one transaction reached up to
+16 dollars (assuming transaction volume is 226 bytes and current price of 1 Bitcoin8000 USD.) Obviously,
+
+this is not what micro consumption could afford.
+
+In conclusion, Bitcoin network cannot meet the instant and low transaction fee requirements for
+micropayments. Therefore, Bitcoin cannot expand its application to daily consumption, which severely
+
+restricts its potential as a currency.
+
+2.3. The Dawn of Bitcoin - Lightning Network
+
+Since the Bitcoin advocator Gavin Andresen voiced out the urgency of scaling up the mainnet in 2015, the
+Bitcoin core team and the entite community have been debating on where the future of Bitcoin is. One
+proposal is to directly expand the block size (2MB, 8MB or even no upper limit). This will be at the cost of
+sacrificing the stability of system, as the Bitcoin network will be inevitably weakened by a hard fork. Another
+proposal insisted that Block size should remain unchanged, meanwhile the capacity and malleability
+problems should be solved with off-chain methods in the long run through a soft fork. After a fierce
+
+debating process, the SegWit2x hard fork program, originally scheduled in November 2017 (block height
+
+494,784), came to an end. While SegWit, featuring soft fork, successfully activated 3 months ago, was
+
+determined as a smooth and sustainable solution for Bitcoin eventually.
+
+The principle of SegWit is to move the storage area of the witness information (about 40% of the
+transaction capacity, used to verify the transaction in the block). When verifying the block size, the nodes
+do not have to calculate this part of the data in a block. The effective block size subsequently scales up to
+
+about 2MB while the logical block scale is still under 1MB. Moreover, SegWit perfectly solved the
+Transaction Malleability problem, where a transaction ID (I'xID) is changeable by a third party before final
+confirmation. Although Transaction Malleability will not cause systemic consequence, its resolution paved
+
+the way for the most anticipated upgrade of Bitcoin — the Lightning Network.
+
+The Lightning Network is a system of smart contracts (RSMC and HTLC) built on top of the base Bitcoin
+blockchain that is intended to allow for fast, cheap payments directly between two patties. instantaneously
+send/receive payments and reduce transaction fees by keeping them off the main network. These two
+
+contracts ensure off-chain transactions using bitcoin is as safe as the on-chain transactions.
+The Lightning Network has the following advantages in solving the bitcoin challenges:
+
+- Funds security: Users can close the trading channel at any time and apply for withdrawals. The process
+
+is protected by smart contracts.
+
+- Fast: Both parties only need to submit one transaction request to main network when they open or
+close the channel. When the channel is open, all transactions are conducted off the mainnet. Each
+transaction can be completed in milliseconds regardless of the amount, the system processing speed
+
+can reach to several millions per second.
+
+- Low transaction fee: While the mainnet relies on professional miners to record transactions via the
+time/resource consuming mining process, every node in the Lightning Network can function as a hub
+without the mining process, fully automated and guaranteed by smart contracts. This means that
+
+transactions can pass quickly in lightning network with a very tiny amount of transaction fee.
+
+- Privacy protection: Since the transaction information in the channel is not recorded on the mainnet,
+each node on the main net can only obtain the data of its upstream and downstream nodes. The node
+cannot have the access to the details of the transactions conducted in the Lightning Network (such as
+
+payee, payer, total amount of transactions), which protects the privacy of both parties.
+
+The Lightning Network still at the early stage of development, far away from deployment. Given the
+
+context of a successful micropayment system, the Lighting Network still needs to solve the following issues:
+
+-  Cross-chain channel: Needs mainnets of the other major cryptocurrencies to join the effort and be
+compatible. The more compatible mainnets there are, the more influential the Lightning Network will
+
+be.
+
+- Smart routing: The upper limit of the payment channel is determined by the smallest link in the
+
+channel. Each transaction needs to find a channel with a higher limit than the transaction amount.
+
+- Complete anonymity: Needs additional encryption protocol to achieve complete anonymity.
+- Light node: Each node on the Lightning Network must run a full bitcoin node, which will
+undoubtedly limit the applicability of lightning network. Hence, a light node which can run on the
+
+mobile device is required to meet day to day use requirement.
+
+- Centralization tendency: Since the channel capacity varies in sizes, and It costs a certain amount of
+service fee to open and close the lightning network channels, there exists the risk of node centralization.
+Some mechanisms such as feedback regulation can be added by customizing the protocol to maintain
+a healthy and decentralized network topology by using adaptive algorithms. (On this note, LITEX uses a
+two-layer network architecture that enables self-adiustment for complex routing and network, health, minimizing the risk
+
+of centralization, which we will discuss in detail in a later section)
+
+The Lightning Network is currently the most promising evolution of Bitcoin and usefully drew some
+investment in its R&D effort. Blockstream recently announced that the Lightning Network RC1 was
+successfully tested on the mainnet. We can expect more resources joining in this effort to improve the
+
+cryptocurrency eco-system.
+3. A Deep Dive
+
+Based on the current challenges, merchants will be unwilling to accept cryptocurrency directly as payment
+for quite some time. Not only do they need a deep understanding of the technology which is beyond their
+ability and willingness, the price volatility of cryptocurrencies also make the cryptocurrencies hard to be
+incorporated into the cost-benefit analysis in day-to-day business transactions. Therefore, the key issue in
+ctyptocurrency payment solution is how to convert cryptocurrency into fiat money in real time and to settle
+
+with merchants efficiently with low tisk.
+
+The first necessary step is the cryptocurrency fiat money exchange process. Currently, cryptocurrency is
+converted to fiat money in an Exchange, a completely centralized institution. The risk of losing the fund
+along with the low effectiveness of transaction processing restricts the possibility of directly linking the
+Exchange’s API as part of the payment solution. Some Exchange based solutions introduced a self-
+financing capital pool, but this approach also brought new problems, such as pool capacity and price
+
+volatility.
+
+The secondly and more important step is the settlement process. Fiat money settlement requires
+coordination among many payment patties, while the merchants bear the full cost (the international average
+fee is 2% to 3% of the transaction amount). The figure below illustrates the collaboration flows of the
+
+participating patties :
+
+Put order
+
+Bankcard
+Association
+
+In the payment industry, "Acquirer " represents an industrial ecosystem composed of an acquiring bank, a
+payment processor and a service provider. The acquiring bank refers to the bank where the merchant has
+an account to receive money. The payment processor refers to a company with a third-party payment
+
+license, such as YeePay, WeChat payment, Alipay, etc. They work directly with the banks process
+transactions and execute other agreements as well as perform risk control. The service provider refers to
+the service company that assists the acquiring banks to equip the merchants with software and hardware
+systems, such as POS, which mainly involves interacting directly with consumers, merchants and
+
+maintaining merchant relationships.
+
+As illustrated in the figure above, the easiest way to join this process is to cooperate with bankcard
+organizations directly to tap into their vast network of cooperating global issuing banks and acquiring banks.
+However, the cryptocurrency borderless payment solution is in direct competition with bankcard
+organization’s cross-border settlement business which is their main income source. That means the
+
+bankcard organizations are unlikely to be supportive of cryptocurrency.
+
+Recently, Visa formally announced the any cryptocurrency co-branded cards, and publicly criticized
+Bitcoin, stating that they would neither recognize Bitcoin as a currency nor provide Bitcoin payment and
+exchange services. MasterCard followed suit. Since most of the existing cryptocurrency payment solutions
+relied on the services rendered by bankcard organizations, they now must find another way. The solutions
+purely relying on bankcard organizations to complete crypto-fiat settlement is not stable, sustainable or
+
+long term viable.
+
+LITEX team, with deep background in the payment industry, is committed to independently cooperate
+with local payment processors all over the world, LITEX is also looking forward to competing with
+bankcard organizations, and dethrone them one day with the power of technology. LITEX will make the
+convenient, speedy, low cost and secure cryptocurrency micropayment solution a new norm on the world
+
+economic stage.
+4. Evolution of Solutions
+
+To make cryptocurrency micropayment a reality, a qualified solution shall be able to solve these basic
+
+problems:
+
+- Long confirmation time
+
+- High transaction fees
+
+- Low adoption from merchants
+
+The best way to solve the first two problems is to avoid transactions in the main chain, which, inevitably,
+
+introduces the security issue. The last problem is solved if merchants can receive fiat currency directly.
+
+However, not all solutions are the same, to what extent the solution upholds decentralization, the core
+
+value of cryptocurrency, determines its long term viability.
+
+According to this standard, we define the current solutions into three categories: centralized, semi-
+centralized and decentralized. We will discuss each of them in detail, we will also discuss the ultimate
+
+solution when cryptocurrency is in day-to-day circulation without the help of fiat money.
+4.1. Stage 1: Centralization Solution - BitPay
+
+Stage 1
+Centralized
+
+Known as the PayPal in the crypto world, BitPay is currently world's largest cryptocurtency (mainly Bitcoin)
+payment solution. It encourages merchants to accept Bitcoin payment by providing a way for merchants to
+settle in fiat money. Since its inception in 2014, BitPay has already signed up tens of thousands of merchants
+
+worldwide.
+
+The BitPay service model — “merchants transfer their Bitcoins to BitPay, BitPay then converts the Bitcoins
+received to fiat money’, is out of date. The increasing high transaction fees have crowded out Bitcoin users,
+which forces BitPay raising the merchants’ minimum withdrawal threshold to $100. In order to reduce
+setvice fees, users tend to transfer a large amount of Bitcoins to BitPay wallet, while merchants could only
+withdraw money over the threshold. Besides, BitPay’s fully centralized model cannot protect the security
+
+of the funds. If BitPay is hacked, users and merchants will lose their assets.
+4.2. Stage 2: Semi - Centralization Solution - TenX
+
+iz H
+
+FOUN Ceniraizedl —
+
+Stage 2 fey _O- (arn 3) & © im
+
+Semi-centralized Network J ——_ ————* toe
+= TenxX
+
+After the successful deployment of SegWit, many solutions are being built based on the Lightning Network,
+
+its prospect is growing brighter. TenX, an outstanding team, has raised 100,000 ETH within 36 hours of
+
+ICO, which reflected the industry's great expectations in the Lightning Network.
+
+By leveraging the Lightning Network to transfer cryptocurrencies, TenX avoids the single point of failure
+tisk caused by storing assets centrally in their official account - even when TenX is attacked, users can still
+withdraw their money back to their own wallet on the main chain guaranteed by the use of RSMC smart
+contract without worrying about losing them. But that is only half the equation in the full payment process,
+the cryptocurrency still needs to convert to fiat money for settlement. For this, TenX chooses to cooperate
+with Visa to issue a co-branded credit card. Since Visa has officially exited the crypto-fiat exchange business,
+the exchanges are executed by the issuer or its administrator through an encrypted program, which means
+Visa is just a settlement channel. Moreover, its so-called promotion of cryptocurrency consumption is very
+
+similar to a reward points system, it does not involve any crypto-fiat exchanges, so TenX can only finalize
+
+the transactions with the help of centralized exchange centers.
+
+Besides, settling with merchants through bankcard organizations like Visa means entrusting half of its core
+business to its partner. As a cryptocurrency payment solution, TenX will grow into a competitor of Visa,
+which will lead to an unstable relationship. On January 6 2018, Visa announced the ending of its
+cooperation with Wave Crest, a debit card supplier. Wave Crest has issued cryptocurrency co-branded cards
+with TenX, CryptoPay, Bitwala, Wirex, which leads to debit cards jointly issued by TenX and Visa cannot
+
+be used anymore.
+4.3. Stage 3: Decentralization Solution - LITEX
+
+“7 “2 F (a) Acquirer
+
+me age Oo —
+Stage 3 0 |: — J
+Deconvelized gz g \\ -g i =
+
+bo.
+NS
+
+Network
+
+Both BitPay and TenX are highly dependent on either centralized bankcard organizations like Visa or
+centralized processes to exchange cryptocurrency to fiat money, which have brought potential risks to their
+business model. This problem can only be solved by a fully decentralized payment model, and LITEX is
+
+exactly such a solution.
+
+The LITEX framework does not reply on any centralized partners or processes. Both the cryptocurrency
+
+transfer and the fiat money conversion and settlement are done independently and coordinated by LTXN
+independent user nodes, carried out by LITEX Network (LTXN) nodes via a complex matching model
+and a routing algorithm. During this process, customers complete payment with cryptocurrency
+immediately even if the amount is small; merchants receive the priced fiat money for the setvice/goods
+rendered, without being restricted by minimum withdrawal threshold; coin purchasers also get
+
+ctyptocurrencies they need at low cost, which can be used for consumption or any other purpose.
+
+On top of solving the long confirmation time and high cost problems in cryptocurrency payment, LITEX
+also guarantees security of the consumers’ and merchants! funds. During the aforementioned transaction
+ptocess , if any problem happen to a node, the transaction can be switched to another path to continue
+seamlessly; if most of the nodes are paralyzed and failed the transaction, the funds will be withdrawn
+automatically back to the account in the main chain or refunded to the fiat money account in accordance
+
+with RSMC protocol.
+4.4. Final Stage: Cryptocurrency Circulation
+
+O ™m
+|
+
+Final Stage g
+
+Network
+
+Consumers pay with cryptocurrency, merchants settle with cryptocurrency, the demand of exchange
+between fiat money and cryptocurrency is greatly reduced or even vanished in the future, all of which is the
+new ctyptocurrency payment ecosystem in our vision. LITEX will play a very important role on this journey
+
+towards this new ecosystem, and our value is beyond the current transition stage.
+
+In a completely cryptocurrency trading scenario, the large-scale and fully-connected LITEX has gain
+advantages in this field and LITEX will still be the most efficient and economic payment channel to use
+with minimal to no adaptation. The first-mover advantage help to maintain users, making LITEX still
+
+consumers’ first and best payment choice.
+5.
+
+5.1.
+
+Decentralized Payment Solution - LITEX
+
+Definition
+
+LTXN (LITEX Network): The foundational network of LITEX ecosystem. Modified and improved
+based on BOLT protocol, LTXN can auto match payments and coin purchases via intelligent routing.
+Through a set of smart contracts, LTXN can achieve compound game theory with good throughput
+rate and high response speed, while reduce the tendency of nodes centralization. LTXN’s network
+
+topology is more balanced and efficient.
+
+Customer: Users that pay with cryptocurrency.
+
+Exchanger: Users that exchange fiat money to cryptocurrency.
+
+Nodes: Professional user that provides connection service to other uses to gain profits
+
+Acquirer: An institution responsible of settlements between charging exchangers and paying
+
+merchants
+5.2. The Design
+
+5.2.1. LITEX Architecture
+
+Merchant
+
+Customer
+
+: 4 '
+gi
+a LITEX
+eR © Archi
+cr rchitecture ‘A
+a ! ' ;
+an en
+EF \ ' © vy
+g pout \, We ------------ {aaa
+TAN nen ener errr -
+ig r---"-7"""" payRequest
+\ / Exchanger
+LITEX
+Network
+
+The diagram above illustrates the overall architecture of LITEX. The solid lines represent the flow of the
+tangible elements of transaction, like currency and products; the dotted lines represent the flow of
+transactional data and system information in LITEX. R is called preimage which is equivalent as a secret
+code. Users with this code can ask for cryptocurrency from their upstream party in the payment flow. The
+
+mechanism of HTLC smart contract can guarantee the automatic transactions in the whole flow.
+
+The operation of LITEX consists mainly of two processes. The main process is the process that a consumer
+purchases goods/services using cryptocurrency, it flows counterclockwise in the diagram mentioned above.
+The sub-process is the process of an exchanger (coin purchaser) changes fiat money into cryptocurrency,
+
+it follows clockwise in the diagram above. Coordinated by LTXN, these two processes work collaboratively
+
+to meet the demand in different case scenarios.
+In the main process, an acquirer set a QR code or NFC equipment like Apple Pay at the merchant’s in
+advance, a consumer will send a pay request through an App Wallet that is compatible with LITEX. The
+request will be broadcasted to LTXN, and gets a pay route through the matching engine. The pay route will
+deliver the consumer’s pay request to the best matched exchanger (into the sub-process), the exchanger
+will pay fiat money to the merchant. The acquirer will send a code R to the exchanger once it confirms that
+fiat money is received. The exchanger will get corresponding amount of cryptocurrency as soon as they
+send the R code to LX'IN. In the end, R is sent back to the consumer through LTXN. Consumers then
+verify code R and then send the cryptocurrency to the matching downstream node in LXTN. The entire
+
+transaction process is then finished.
+The system is designed with the following priorities:
+
+1. Fund security
+
+Ensuring the security of fund is the prerequisite of any off-chain transactions. An off-chain transaction
+solution is viable only if it can eliminate the single point of failure risk brought by centralization. Based on
+lightning network technology, LTXN ensures fund security through two types of smart contract: RSMC
+and HTLC. When LITEX’s nodes are attacked, LIXN can automatically submit users’ funds to the main
+chain for withdraw based on smart contracts after a certain period, the funds will return to users' digital
+
+wallets safe and sound.
+
+2. Payment and settlement experience
+
+In micropayment case scenarios, consumers need the services/goods right away and the merchants need
+to get the settlements quickly and smoothly. Due to cryptocurrency’s extremely high price volatility, if the
+product is priced at cryptocurrency, both consumers and merchants will suffer from high fluctuation of
+price. Users could input prices in fiat money on LITEX App, and determine the corresponding
+ctyptocurrency price with the assistance of smart matching engine. Therefore, consumers only need to
+know that they have paid a fiat currency price using cryptocurrency. At the merchant's end, merchants can
+choose to settle with fiat money in real time. Therefore, their user experience is no different to other
+traditional payment gateways (such as Visa), may even be better for because of less time and transaction
+
+fee.
+
+3. Exchange efficiency
+
+The system provides corresponding product proposals to accommodate different exchange demands,
+exchangers can choose a different option every time to fit his/her needs. If an exchanger’s demand for
+ctyptocurrency exchange is not urgent (for example, they can wait for the cryptocurrency to arrive one day
+or even one week later, and bear the volatility risk), the system can meet this demand with relatively low
+service charge. If an exchanger has a very urgent demand, the system can also match the corresponding
+order at a higher priority through matching engine, but the exchanger may need to pay a slightly higher
+
+setvice fee.
+5.2.2. LIXN Overview
+
+= ¢ o— P —
+Customer Node |———| Node —&
+
+Node a
+
+Exchanger
+
+——
+© Node g
+
+——— pay channel ——> pay route
+
+=———_ pay channel too thin to pass payment node reaches max traffic limit
+
+The diagram above shows the routing of a transaction passing through LXT'N between a consumer and an
+
+exchanger.
+
+In the classic Lighting Network, each node by default maintains the records of a full node corresponding
+to a ctyptocurrency. With HTLC's design, when a transaction passes through, all nodes in the payment
+
+channel must proactively sign for the transaction.
+
+However, in the real world, ordinary users can neither maintain a full node for small payments nor do they
+have the bandwidth or will to manually sign each transaction that passes through their own channels. A
+more realistic approach is that the users sign their payment through a mobile application (on a smartphone,
+which cannot be a full node), and disconnect from the payment network until the next transaction is
+
+initiated.
+
+Since it is unrealistic to rely on ordinary users for passing transactions. LTXN designs a professional user
+role — Node, it functions as the same as miners in other public chains, to relay transactions in a payment
+route. Bitcoin miners earn mining incentives and transaction fees by recording transactions. Similarly,
+Nodes in LTXN earn payment and exchange commissions by providing services such as maintaining full
+nodes, establishing transaction channels, auto-signing, and maintaining nodes-online-rate. The Price Oracle
+
+machine ensures that LX’T commissions are lower than other local exchanges.
+
+To ensure Nodes’ stable service and reduce the centralization tendency, Nodes need to deposit a certain
+
+number of Tokens via smart contracts ([oken design is explained in detail in section 7) to obtain the
+corresponding amount of transaction processing rights. During the transaction process, tokens will
+continue to be consumed, and then automatically distributed to consumers, exchangers and other ecological
+parties by smart contracts. Since the number of Tokens pledged by Nodes are different, their ability to
+process transactions are different. In the diagram above, the red Node cannot carry the transaction because
+it reaches the upper limit of the transfer amount limited by the tokens it pledged, so it is bypassed by the
+
+smart routing algorithm.
+
+Based on RSMC, the payment channels have different upper limit, the differences are shown by distance
+between the double-lines in the diagram. If the transaction amount exceeds the upper limit that can be
+transmitted by the current channel, the path will be abandoned (it won’t become a route). In the diagram,
+the red double-line indicates the channel that the transaction cannot pass because the amount exceeds the
+
+limit.
+
+To balance efficiency, stability, cost, and network topology, LTXN has many unique designs, the pledge
+system and game strategy are just two of them. To optimize the process, we also think there is a need to
+customize and optimize the BOLT protocol. We will articulate our detailed technical designs in the Yellow
+
+Book.
+5.3. Technology Innovation
+
+A
+gow a
+Customer ere -
+
+a:
+sh,
+~~ Ge,
+
+1 ~ QU, Exchanger
+
+5.3.1. Compound Decision Lightning Network
+Lightning Network is a common name of distributed network based on BOLT protocol. The classic
+lightning network can only accommodate off-chain point-to-point transaction and transfer of
+cryptocurtrency, not any combination of crypto and fiat currency. LTXN designs and develops the "complex
+decision lightning network", it aims to merge a decision network layer and lightning network layer into the
+same distributed system, which can share the nodes and achieve more sophisticated routings. As a result,
+the lightning network will be more intelligent. Advanced routing functions such as matching the exchange
+requests and payment requests can be achieved. It also makes the whole network topology efficient and
+
+reduce the nodes centralization tendency by design.
+
+5.3.2. Matching Engine
+
+Matching engine is the collection of a series of distributed intelligent algorithms, which is the most complex
+core component of LTXN. The following example is based on a simple business case, it neither involves
+the specific data structure nor discusses how the core strategy - "non-bank card payment business logic” is
+
+applied to complex business processing to enhance system stability.
+
+Suppose there are many payment requests and exchange requests in LIXN system at the same time.
+Payment requests have relatively small amount and high urgency, while the exchange requests vary. To
+enjoy lower exchange costs, some exchangers would accept an exchange to be done in a longer period of
+time, they can even just set an upper limit to end the exchange at a specific time. Other exchangers, who
+would like to obtain cryptocurrency immediately, can choose to pay a higher exchange service charge to
+complete the exchange in a very short time. In real time, most exchanges fall somewhere in between, thus,
+
+in the design, the time / cost ratio required by exchangers are somewhere between the ratios calculated in
+the two situations mentioned above. We will find a way to quantify the preference of exchangers to serve
+
+as the reference data for the matching engine.
+
+In addition to time / cost matching for exchangers, the matching of the consumer-exchanger amount is
+also very important. It is very common that the amount of an exchange request is much greater than that
+of a payment request. LTXN needs to match multiple requests in the whole network to meet the
+requirement so the Nodes form the optimal solution route. The factors that need to be considered include,
+but are not limited to, currency type, amount, channel open time cost, channel usage cost. If the payment
+demand is higher than the exchange demand, it could result in the amount of payment requests larger than
+that of the exchange requests. In this situation, in addition to the above-mentioned factors, the timeliness
+and cost of the mainnet should also be considered. If the amount is too big, consumers are advised to make
+
+the payment through the mainnet.
+
+Finally, the matching strategy also needs to consider the cost of connectivity. If the two parties of payment
+and collection are in two separate disconnected networks (no known connected channels), the cost of
+establishing cross-network channels needs to be considered. That part is discussed in the smart routing
+
+section below.
+
+5.3.3. Smart Routing
+
+On-chain transaction is required for both the open and closure of a lightning network channel, which would
+result in higher cost and longer time, resulting in no direct channel between a consumer and an exchanger
+in most cases. The transaction is usually conducted through an intermediate node or multiple nodes that
+are directly interconnected according to the HTLC contract. To find the shortest path (or path with the
+lowest cost) quickly, each node of LTXN has a set of independent negotiation algorithm and the cache of
+last synchronized node information, together they help to find the path and complete the transaction as
+
+soon the demand is generated.
+
+The payment channels must be closed for the withdraw operation in lightning network, which makes the
+topology of the whole network keep changing all the time. On one hand, since the channels may be closed
+ot opened at any time, some transactions may be denied accidentally if the original channel is closed, a new
+channel needs to be found immediately. On the other hand, due to the different demands of payment, the
+channel capacity (like the diameter of a tube) between nodes could also be different. In addition to the
+
+consideration of the channel capacity in the initial routing phase, it may be necessary to split and merge
+
+payment in a new process. This business logic requires what’s beyond the traditional routing algorithm, the
+
+strategy and algorithm need to be further developed.
+
+5.3.4. Light Node
+
+Base on BOLT protocol, the lightning network nodes are designed as complete Bitcoin network nodes,
+
+which means that users joining the network must maintain a complete data backup with a volume of dozens
+of GB. But this is unrealistic in practice. LIXN nodes are designed based on Simplified Payment
+Verification (SPV), only some part of the data records needed by business are added. This way, LTXN
+nodes neither need to be a full node, nor to store all users' transactions in the whole network. It only needs
+to store the related transactions over the channels where this node is part of. Once the channel is closed
+and the transaction is confirmed in the main chain, the balance of the nodes at both ends of the channel
+would be submitted to the main chain, at this point, users can choose to delete the previous transaction
+data to optimize the storage space. The optimized LTXN nodes would not require too much storage space,
+
+which could fully function on a smartphone.
+
+5.3.5. Further Plan
+To realize the design of LTXN and meet the demand for instant cryptocurrency micropayment, LITEX
+Lab continues to dive deeper into the lightning network topology design to develop a more efficient routing
+
+mechanism by improving the BOLT protocol.
+
+At present, LITEX Lab is working on the preparation of the LITEX Yellow Paper (Technical White Paper).
+With the continuous research and development, our technical solution will continue to improve, to ensure
+
+a stable yet rapid development of the LITEX ecosystem.
+6. The Use Case
+
+In the classic use case of Alice use cryptocurrency to purchase a cup of coffee from Bob, the café owner,
+
+let’s see the difference between scenarios with and without LITEX.
+First, let’s discuss the use case scenatio without LITEX.
+
+Alice only has Bitcoin and wants to buy a cup of coffee from Bob, who, on the other hand, is just an
+ordinary businessman who does not know much about cryptocurrency technology and has no Bitcoins nor
+crypto wallets. This means that Alice won’t be able to pay Bob unless she converts her Bitcoin into fiat
+money. In this case scenario, Alice logs in to a cryptocurrency exchange to sell her Bitcoin, to get the fiat
+money as soon as possible (Bob have started grinding coffee beans), she accepts a relatively lower price
+and pays a relatively high transaction charge, and. since the transaction amount is small, the settlement time
+
+could be as long as a few hours even if she sells her Bitcoin successfully. The coffee would be cold by then.
+
+After the last failed try, Bob has learned something about Bitcoin. He starts to understand and appreciates
+the concept of Bitcoin, but he does not want to bear the risk of price volatility by accepting Bitcoin payment.
+To solve this problem, he signs up with a Bitcoin payment gateway, this way, when someone pays him
+Bitcoin, what he receives in the end is fiat money exchanged by the payment processor. Things look much
+more promising now. Meanwhile, Alice also learned a lesson (the mainnet transaction requires higher
+service charge and longer time). She charges in advance with the payment gateway. The Bitcoin payment
+experience is satisfactory, Alice gets her freshly made coffee. Bob logs in to the payment gateway application
+to withdraw the $5 he just received. But it turns out that the payment gateway has raised the withdrawal
+threshold to $100! Bob has to wait for the withdrawal when Alice buys 20 cups of coffee, which would take
+at least 20 days---providing that Alice comes every day. On the 19th day, Bob finds out that the payment
+gateway has lost a lot of Bitcoins and fiat currency because of a hacker attack and has declared bankruptcy
+(single point of failure risk due to centralization). Consequently, the $95 he fails to withdraw is gone. Alice
+
+also complains to Bob that the Bitcoins that she has not used is stolen by the hackers.
+
+Now let us introduce LITEX into this use case, illustrate the smooth and secure payment experience
+
+brought by a decentralized payment network.
+
+Bob suffered a loss, but he has not given up on Bitcoin. He was introduced to LITEX, a brand-new
+solution. The installation process is the same as other payment gateways (such as Visa), it has gone
+smoothly. Bob tells Alice that he can accept Bitcoin payment again. After another lesson learned, Alice has
+also become a LITEX user and sets up her own payment channel to avoid the risk brought by centralization.
+She opens LITEX's App and scans Bob's receipt QR code, and then directly inputs $5 in fiat money, clicks
+‘Pay’, one second later, Bob's cashier App asks him to confirm a $5 of payment. After clicking the
+confirmation button, Bob finds that the $5 has entered directly in his account. Alice's phone also alerts her
+
+that the payment has completed and the Bitcoin equivalent to $5 has been deducted from the channel
+balance with no service charge. With the help of LITEX, Alice buys a cup of coffee easily with Bitcoin and
+pays no service charge; Bob, on the other side, receives the fiat money converted from Bitcoin immediately.
+He finally can accept Bitcoin payments. Even if LITEX is attacked and some nodes are lost, other nodes
+via established LTXN can still fulfill Alice's payment demand; even if most nodes are damaged and the
+
+transaction fails to be executed, both Alice and Bob's existing funds ate still intact.
+7. Token Design
+
+7.1. Name and Purpose
+
+As an ecosystem built with many parties, LITEX needs a series of incentive strategies to redistribute the
+values generated by the ecosystem to all the participants to ensure a healthy operation and to stimulate
+
+rapid development. LITEX has designed an encrypted token, LITEX Token (LXT as symbol) to carry this
+
+function.
+
+7.2. LXT System
+
+7.2.1. Generation and Annihilation of LXT
+
+LXT is generated based on ERC20 standard of Ethereum Smart Contract with the total number of 2 billion
+(2,000,000,000). It is configured by the system only once. There will never be additional issuance and LXT
+
+has no annihilation mechanism.
+
+7.2.2. Supply and Demand
+
+Supply: LXT is dropped to consumers, exchangers and other participating parties in the ecosystem
+
+according to the transaction amount.
+
+Demand
+
+- Nodes pledge certain amount of LXT to the LXN system to obtain the corresponding volume of
+management rights. The LXN system continuously supplements the consumption of LXT in the
+
+transaction process, and consumes patt of it as a source of supply
+- Users who uses LXT get discount (transaction fee discount or free of charge)
+
+The above diagram approximately illustrates the flow of LXT in the ecosystem. The data is for illustration
+
+X Base x
+
+Contract
+
+—— wots) 2 _- (pose) 2 - Cvose © 2g
+1 0.99 0.98 0.97
+
+Customer Exchanger
+
+purposes only and does not represent actual values.
+The transaction fees, LXT consumption and the proportion of drops will vary in each country and region
+due to the difference of local legislative and regulatory requirements (tax laws etc.) and other operational
+
+factors such as the parameters provided by the price oracle machine.
+
+As an ERC20 Token, LXT is bound to incur costs in during the distribution process, however as a system
+
+with positive returns, LITEX can fully bear this cost, and further reduce costs through proper design.
+
+7.3. LXT Distribution Plan
+
+Amount Percentage Detail
+
+700,000,000 35% For institutional investors and future usage in
+LITEX project’s research and development,
+recruitment, market promotion and so on.
+The use of this part of fund will be disclosed
+petiodically.
+
+300,000,000 Ecosystem For the launch of the ecosystem such as airdrops
+
+Development and node incentives.
+
+600,000,000 30% Development For the development of team and partners.
+Fund The use of this part of the funds requires
+foundation resolutions and public announcements
+
+in advance.
+
+300,000,000 Founding For the research and development of the founding
+Team team in the field of cryptocurrency and the
+management and operating efforts of LITEX
+related products in the future.
+This portion will be locked by a smart contract
+
+when the tokens are issued. It will be unlocked
+
+after 1 month, with 1/36 every subsequent month,
+
+and fully unlocked in 36 months.
+
+100,000,000 Advisors and For various organizations and advisors that
+
+Collaborators provide collaboration.
+
+8. Roadmap
+
+Stage Time Plan
+
+Stage One 2017Q4-2018Q1 Design the system architecture;
+
+Test basic functions of the BOLT protocol.
+
+Consult with acquiring parties
+
+Stage Two 2018Q2-2018Q4 Launch LITEX payment APP .
+Complete the LTXN architecture and test the theories.
+
+Connect the acquiring parties and service providers to test.
+
+Stage Three 2019Q1-2019Q3 Launch the Alpha version of LTXN.
+Launch the official LITEX payment APP.
+
+Connect the merchants for testing.
+Expand the network of acquiring parties
+
+Transactions pilot
+
+Stage Four 2019Q4-2020Q2 Launch the Beta version o
+Complete the safety test.
+Rollout of LITEX's official payments Software
+
+Development Kit.
+
+Expand the network of acquiring parties
+
+Stage Five 2020Q3-2020Q4 APP, SDK and LTXN upgrade
+increase real use cases
+Merchants are connected in large scale;
+Continuous expanding the network of acquiring parties,
+
+enhance service stability
+
+9. Organization Structure
+
+9.1. Litex Foundation
+
+Established in Singapore, Litex Foundation is the legal entity of the LITEX community, responsible for
+technology development, business operation and market promotion. It assumes all the legal liability of
+
+LITEX.
+Executive departments:
+
+- Technical department
+Mainly responsible for the work related to technical strategy, use case selection, architecture design, project
+development and management, Github codebase update and maintenance of the open source project of
+
+the LITEX community.
+
+- Operation department
+Mainly responsible for operation and management of the LITEX user community, including community
+
+activity planning, activities execution and carrying out community incentive plan, etc.
+
+- Market department
+Mainly responsible for the brand communication and business expansion of the community, and
+
+improvement the community eco-system.
+
+- Human resoutces and financial department
+Mainly responsible for recruiting volunteers for the LITEX foundation, and daily managing finance affairs
+
+of the foundation members.
+9.2. LITEX Lab
+
+XU, Guanghong
+
+Bachelor’s degree, mathematics, Peking University, Master’s Degree in cryptography, applied mathematics
+and computer science, Illinois Institute of Technology. Research interests include the PKI encryption
+system. Worked on digital certification at VeriSign. Served as a risk strategy and information security
+consultant at Deloitte. Participated in payment information encryption compliance certification for VISA’s
+IPO in the United States and other top global projects such as information encryption and digital
+certification systems for companies such as Apple, Electronic Arts (EA), Broadcom, etc. Currently Kaiser’s
+Director of Corporate Risk Strategy, she has extensive cryptography and commercial application
+
+experience.
+
+WANG, Shuobin
+
+Bachelor’s (2003-2007) and master’s (2007-2010) degrees in Computer Science of Peking University.
+Former product operation director of the star product "Non-bank card payment" of Yeepay. Serial
+entrepreneur. Executive director of CEO club in Peking University. Revivalist and practitioner of
+
+blockchain technology.
+
+ZHANG, Huaqiang
+
+Bachelor’s degree (2003-2007) and master’s degree (2007-2010) in Computer Science of Peking University,
+expert in blockchain and network security, full stack engineer, designer of the "Composite decision
+lightning network" model, previously worked as a senior research and development engineer in platforms
+
+such as IBM and Sina Weibo.
+
+LOU, Huanqing
+Bachelor’s (2007-2011) and master’s (2011-2014) degrees in computer science, Peking University. Expert
+in blockchain, project structure engineer, full stack engineer, with abundant project experience, good at
+
+designing solutions by combining product demands and cutting-edge technology.
+
+CHU, Tianshu
+
+Bachelor’s and master’s degrees in computer science and technology, Beijing University of Aeronautics and
+Astronautics. Founding partner and vice president of Duolabao (a leading domestic offline payment and
+marketing enterprise, one of the top three WeChat payment service providers, with payment transactions
+exceeding two million per day). Former product operation director of the non-bank card payment project
+
+of YeePay. Former product manager of the founding team of Baidu Shenbian
+9.3. Key Investors & Advisors
+
+YU, Chen - Investor
+
+Bachelor’s degree, computer science, Peking University; master’s degree, computer science, Illinois Institute
+of Technology. Co-founder and the president of YeePay. Twenty years of experience in Internet, E-
+commerce and software. Awarded the “100 most influential people in the Mobile Phone Circle” in China
+and the “100 outstanding E-commerce marketers of 2013 in China’. Additionally, he is the author of the
+
+best-selling book “Into the Future: Internet Makers and their World”.
+
+CHANG, Dawei - Investor
+
+Bachelor’s degree, physics, Beijing University; master’s degree, computer engineering, Maryland University.
+Founder and CEO of Duolabao. Co-founder and former CTO of YeePay. Senior software engineer for
+Riverside Company in Silicon Valley. Member of the Association of Ethnic Chinese Engineers in the United
+
+States.
+
+CHEN, Bin - Counselor
+
+Former architect of PayPal. Master’s degree, Jilin University, 1989. Director of integration for Hitachi U.S.
+system. Chief architect of Abacus. Chief engineer of the Nokia U.S. network application, with extensive
+oversea experiences including years of experience in architecture of payments industry. He has translated
+and published many works such as “The Architecture and Its Future”, “Scripture of Architecture”, and
+
+“Big Data Is the Future - Road of King”. Practitioner and evangelist of cutting-edge network technology.
+9.4. Key Investing Institutions
+
+Sparkling Star Capital
+
+SPARKLING STAR CAPITAL
+
+Node Capital
+
+NODE CAPITAL
+Ti Hi
+
+Double Spend Capital
+
+SO
+OJLAB
+
+Lightning Capital
+
+Gg eS, CAPITAL
+1) Ha
+10. Risk Statement
+
+10.1. Risk Warning
+
+Litex Foundation believes that there are many risks in the process of LITEX’s development, maintenance
+and operation, most of which will exceed the control of Litex Foundation. Each LXT token participator
+shall read carefully, understand and consider the following risks, then determine prudently whether to
+participate in the token exchange program. Once involved in the program, participants will be deemed to
+
+have had full knowledge of the following risks and agreed to take them.
+
+e Risks of legal policy and regulation
+
+Encrypted tokens are being or may be supervised by competent authorities of different countries. In
+different countries, LXT is likely to be defined as virtual good, digital property, or even security and
+currency at any time. Therefore, in some countries, according to the local supervision requirements, Litex
+Foundation may be ordered to suspend or end all token exchange programs. If the competent authorities
+adopt relevant regulations, the development, marketing, advertising and other aspects of the LITEX are
+
+potentially badly affected, hindered and ended. For the regulatory policy is changeable at any time, existing
+
+regulatory approval and tolerance of LITEX or the open sell plans in any country are temporary. If this
+LXT public exchange program is canceled in advance, only part of the amount paid will be refunded to
+
+holders due to the fluctuation of the tokens price and the expenditure of Litex Foundation.
+
+e Risks of team and project
+
+Currently, there are many teams and projects in the field of blockchain technology, making the market
+competition rather intensified and the project operation pressured. Whether the LITEX project is capable
+of standing out among other excellent ones and widely recognized, it is not only related to its team capability
+and vision planning, but is also affected by the market competition, including the probable vicious one.
+Core members of the LITEX community has many years of technological accumulation in the insurance
+industry and blockchain, which can help to rally more talents in blockchain and insurance industry to join
+the community, but it can’t rule out the possibility that the overall project will be negatively affected due to
+
+the leaving of core members and internal conflicts.
+
+e Risks of Technology
+Computer technology is keeping developing, and cryptography is in constantly progressing. There is no
+guarantee on absolute security at any time, which may lead to stolen, lost, destroyed, or devalued of LXT
+
+of the holders.
+
+Although Litex Foundation will try to protect the security of the LITEX network, it does not guarantee
+
+that LITEX has no weakness or authority. While any person may intentionally or unintentionally take
+weakness ot defect into LITEX’s core infrastructure factors, Litex Foundation cannot solve these
+
+weaknesses or defects by taking safety measures to prevent or make up.
+
+This may eventually lead to the loss of participant’s LITEX or other crypto tokens. In addition, LITEX's
+source code may have some flaws, errors, defects, and vulnerabilities, which may prevent users from using
+specific features, expose users’ information or create other problems. If such a defect exists, it will damage
+LITEX's usability, stability and security, and thus adversely affect the value of LITEX. Transparency is the
+
+basis of the open source code, to promote the identification and problem solving of code in the community.
+
+The LITEX foundation will work closely with the LITEX community for the continuous improvement,
+optimization and perfection of LITEX's source code. The rapid development of LITEX will be
+
+accompanied by sharp increase in transaction and demand for processing capacity. If the demand for
+
+processing capacity exceeds the load provided by the nodes in the network, the LITEX network may be
+
+paralyzed or stagnant, and may produce wrong transaction.
+
+In the worst-case scenario, anyone’s LXT may lose. This will damage LITEX's usability, stability and
+security, and the value of LXT. In addition, LITEX is still in the development stage. Due to the technical
+complexity of LITEX system, the Litex Foundation may sometimes face difficulties that cannot be
+predicted or overcome. Therefore, the development of LITEX may fail or be given up at any time for any
+reason (e.g., lack of funds). Failure to develop or waiving will cause LXT unable to deliver to the participants
+
+in this exchange plan.
+
+e Risks of Security
+
+The external attack may bring negative effects, stagnation, paralysis, and even calculation error to the
+LITEX system, thus leading to the delay of transaction and even temporary failure to perform, and it may
+also lead to the error, breakdown and missing of data, damage the availability, reliability and security of
+LITEX and the value of LXT. In addition, there may someone attempted to steal the funds from public
+sales of the LITEX foundation (including the parts that have been converted into legal currency). Such
+
+theft or attempt of theft might affect the LITEX foundation's ability to fund LXT's development. Although
+
+the LITEX foundation will take measures to protect the safety of crowdfunding, theft is still hard to stop.
+
+e Other possible risks.
+
+oO The tisk of source code upgrade
+LITEX's source code is open and may be updated, modified, or modified by any member of the LITEX
+community from time to time. No one can predict or guarantee the exact result of an upgrade, amendment,
+modification or change. Therefore, any updating, correction, modification, or change may result in
+unforeseen or unintended consequences, which will have a significant negative impact on the operation of
+
+LITEX ot the value of LXT.
+
+oO. The tisk of unauthorized claim of LXT
+Any person who has access to registered email or registered account by decrypting or decrypting LXT
+holder's password will be able to maliciously obtain the LXT token of the LXT holder. Accordingly, holder's
+LXT token may be sent to the LXT address of someone else, which is irrevocable and irreversible. Each
+LXT holder shall take measures such as the following to properly maintain the security of his/her registered
+
+email or account: (i) use complex and high security password; (ii) do not open or reply to any fraudulent
+
+mail; (iii) strictly keep secret from personal information and other related security measures.
+
+o- Market risk
+The value of LXT is largely determined by the market development and uset’s acceptance of the LITEX
+
+platform. LITEX is not expected to be popular or be widely used within a short period of time. In the
+
+worst-case scenario, LITEX may even be marginalized over a long term, attracting only a small number of
+
+users. In contrast, a large part of the LXT demand may be speculative. The lack of users may lead to the
+
+increase of price fluctuation in LXT market, which will affect the long-term development of LITEX. When
+such price fluctuation occurs, LITEX does not have the responsibility to stabilize or influence the market
+
+ptice of LXT.
+
+© Liquidity risk
+LXT is not a currency issued by any individual, entity, central bank or national organization, and it does
+not have any hard asset or gets support from other credit. LXT's circulation and trading in the market is
+not the responsibility or pursuit of the Litex Foundation. LXT transaction is based only on the consensus
+reached by relevant market participants on their value. No one is obligated to exchange any LXT from
+LXT holders, and no one can guarantee the liquidity or market price of LXT at any time. If LXT holders
+want to transfer LXT, they need to find one or several interested persons to exchange. The process can be
+costly, time-consuming and ultimately unsuccessful. In addition, there may be no encrypted token exchange
+
+or other market LXT for public transactions.
+
+© Risk of price fluctuation
+When trading in an open market, the price of encrypted tokens usually fluctuates wildly. Price shocks often
+occur in short term. The price is likely to be calculated in Bitcoins, ether, dollars, or other legal currencies.
+Such price fluctuation may be caused by market forces (including speculation), regulatory policy changes,
+technological innovation, availability of exchanges and other objective factors, which also reflects the
+changes in the balance between supply and demand. Whether there is a secondary market for the LXT
+transaction or not, the Litex Foundation does not take responsibility for LXT transaction of any secondary
+market and does not have the obligation to stabilize the price fluctuation of LXT, and it does not care about
+
+it. LXT traders shall bear the risk involved in the LXT transaction price.
+
+© Competition risk
+The underlying protocol of or LITEX is based on open source computer software. No one claims copyright
+
+or other intellectual property rights to the source code. Therefore, any person can legally copy, remake,
+design, modify, upgrade and improve, recode, reprogram or use LITEX source or the underlying protocol
+in otherwise ways to develop competitive protocol, software, system, virtual platform, virtual machine or
+smart to compete with LITEX contract, or even surpass or replace LITEX, which cannot be controlled by
+the Litex Foundation. The Litex Foundation is unlikely to eliminate, prevent, limit or reduce such
+
+competitive efforts aimed at competing with LITEX or replacing LITEX under any circumstances.
+
+oO Risk of insufficient information disclosure
+By the publication date of this white paper, LITEX is still in the development stage, whose technical details
+and parameters such as philosophy, consensus mechanism, algorithm and code may be updated and
+changed frequently. Although this white paper contains the latest key information of LITEX, it is not
+absolutely complete and will still be adjusted and updated from time to time by Litex Foundation for
+specific purposes. Litex Foundation has no ability no obligation at any time to inform participants of
+
+LITEX development in every detail (including its progress and expected milestone, whether delay or not),
+
+so it will make the holder fail to be timely and fully exposed to the new information of Litex Foundation.
+
+The sufficiency of information disclosure is avoidable and reasonable.
+
+10.2. Disclaimer
+
+This white paper is for informational transmission only, and the contents of this document are for reference
+only, which do not constitute any investment advice, solicitation or invitation to sell digital goods, shares
+ot securities. Such invitations must be made in the form of confidential memo, and shall meet the relevant
+securities laws and other laws. The contents of this document may not be explained as compelled to
+participate in the exchange. No behavior related to this white paper may be considered as participation in
+the exchange, including the requirement to obtain a copy of this white paper or to share this white paper
+with others. Participation in the exchange means that the participants have reached the age criteria and have
+
+complete civil capacity, and the contract signed with Litex Foundation is true and valid. All participants
+
+voluntarily sign the contract and have a clear and necessary understanding of LITEX prior to signing the
+
+contract.
+
+Litex Foundation will continue to make reasonable efforts to ensure that the information in this white
+paper is true and accurate. During the development process, the platform may be updated, including but
+
+not limited to platform mechanisms, tokens and their mechanisms, token distribution. Part of the document
+
+content may be adjusted as the project progress in the new white paper, and Litex Foundation will make
+the updates available n forms of announcements or new white papers on the website. Participant shall be
+sure to obtain the latest white paper, and make timely adjustments to their own decisions based on the
+updates. Litex Foundation disclaims all liability resulting from participants: (i) reliance on the contents of
+
+this document, (ii) inaccuracies of the information in this document, and (iii) any loss actions caused by any
+action due to this document. Litex Foundation will spare no efforts to achieve the goals mentioned in the
+
+document, but cannot fully promise to complete due to the existence of force majeure.
+
+LXT is an important tool for platform to function, not an investment product. Having LXT does not imply
+owner’s ownership, control, or decision-making rights to LITEX platform. As an encrypted token LXT
+does not fall into the following categories: (a) currency of any kind; (b) securities; (c) shares of legal entities;
+
+(d) stocks, bonds, notes, warrants, certificates or other files granting any right.
+
+Whether LXT appreciate or not depends on the laws of the market and the demand after application is
+implemented, which may not have any value. Litex Foundation does not promise its appreciation, and is
+not responsible for the consequences due to the increase or decrease of its value. To the maximum extent
+permitted by applicable law, Litex Foundation is not responsible for the damage and risk arising from the
+participation in the exchange, including but not limited to direct or indirect personal damage, loss of
+
+business profits, loss of business information, or any other economic loss. LITEX platform complies with
+
+any regulations and self-declaration of the industry conducive to the healthy development of industry.
+
+Participants’ participation implies that they fully accept and abide by such inspection. At the same time, all
+information disclosed by participants to accomplish such inspection must be complete and accurate.
+LITEX platform expressly informs participants with the possible risks. Once participants participate in the
+exchange, it means that they acknowledge and understand the terms and conditions in the rules, accept the
+
+potential risks of this platform, and bear the consequences.

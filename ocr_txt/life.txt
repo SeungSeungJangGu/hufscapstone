@@ -1,0 +1,905 @@
+labs.io
+
+White paper
+
+token
+
+“Simply for Everyday People”
+
+ENTERPRISE
+ETHEREUM HitBTC
+
+ALLIANCE
+WW October 19th 2017
+Revision 1.03
+Contents
+
+Legal disclaimer
+
+Risk statement
+
+Restricted areas
+Introduction
+
+About LIFElabs.io
+
+LIFE team
+
+LIFE advisory team
+
+LIFE Ecosystem
+
+LIFEtoken
+
+Smart democracy
+Distribution of LIFE
+
+LIFE adopters
+
+LIFEwallet
+
+LIFEcard
+
+How LIFEcard works
+
+LIFE Foundation and Charities
+LIFE liquidity position
+Ethereum Enterprise Alliance
+
+Where to get LIFE
+Legal Disclaimer
+
+Please read the following notice carefully before proceeding to read this white paper document issued by
+LIFElabs.io (hereinafter - “Distributor”). This notice applies to all persons who read this document. Please note
+this notice may be altered or updated at any time.
+
+The white paper does not constitute any relations between you (hereinafter “you” or “Holder”) and the
+Distributor. LIFEtokens can only be acquired after accepting these Terms (hereinafter - “T&Cs"). Acquisition of
+LIFEtokens does not present an exchange of cryptocurrencies for any form of ordinary shares of the Distributor
+and a Holder of LIFEtokens is not entitled to any guaranteed form of dividend, Holders of LIFEtokens are only
+entitled to certain rights within the T&Cs.
+
+LIFEtokens are not intended to constitute securities in any jurisdiction. This white paper does not constitute a
+prospectus or offer document of any sort, and is not intended to constitute an offer of securities or a solicitation
+or investments in securities in any jurisdiction.
+
+This white paper is for information purposes only. The contents of this white paper are not a financial
+promotion. Therefore, none of its contents of this white paper serves as an invitation or inducement to engage
+in any sort of investment activity.
+
+Prospective acquirers of LIFEtokens should carefully consider and evaluate all risks and uncertainties associated
+with the cryptocurrencies, LIFElabs.io and their respective businesses and operations and LIFEtokens. Familiarise
+yourself with all the information set out in this white paper, Risk statement and the T&Cs prior to any purchase
+of LIFEtokens.
+
+Ensure that you are aware of all of the potential risks prior to obtaining LIFE. The Risk statement details some,
+but not all, of the potential risks that you should consider.
+
+You must consider risks that are both controlled and not controlled by LIFElabs.io, including changes in third
+party providers’ T&Cs, such as card providers, banks and other suppliers.
+
+We recommend that you seek out independent financial advice before engaging in any sort of business
+endeavour.
+Risk statement
+
+No regulatory authority has examined or approved any of the information set out in this white paper. No
+
+such action has been or will be taken under the laws, regulatory requirements or rules of any jurisdiction. The
+publication, distribution or dissemination of this white paper does not imply that the applicable laws, regulatory
+requirements, or rules have been complied.
+
+To the maximum extent permitted by the applicable laws, regulations and rules, LIFElabs.io and its affiliates and
+their respective officers, employees or agents will, in relation to the website and LIFEtokens, not be liable for any
+damages of any kind, including, but not limited to, direct, consequential, incidental, special or indirect damages
+(including but not limited to lost profits, loss of revenue or third party loss whether foreseeable or otherwise,
+trading losses or damages that result from use or loss of use of the website and LIFEtokens).
+
+For the avoidance of doubt, the distributor expressly disclaims any and all responsibility for any direct or
+consequential loss or damage of any kind whatsoever arising directly or indirectly from: (i) reliance on any
+information contained in this document, (ii) any error, omission or inaccuracy in any such information, (iii) any
+action resulting therefrom, or (iv) usage or acquisition of products, available through the website.
+
+You acknowledge and agree that you are not purchasing LIFEtokens for purposes of investment, speculation,
+
+as some type of arbitrage strategy, for immediate resale or other financial purposes. Some of the statements
+
+in the white paper include forward-looking statements which reflect the distributor's current views with respect
+to execution roadmap, financial performance, business strategy and future plans, both with respect to the
+distributor and the sectors and industries in which the distributor operates. Statements which include the words
+“expects”, “plans”, “believes”, “projects”, “anticipates”, “will”, “aims”, “may”, “would”, “could”, “continue” and similar
+statements are of a future or forward-looking nature. All forward-looking statements address matters that
+involve risks and uncertainties.
+
+Accordingly, there are or will be important factors that could cause the distributor's actual results to differ
+materially from those indicated in these statements. These factors include but are not limited to those described
+in the T&Cs, which should be read in conjunction with other cautionary statements in the T&Cs.
+
+Any forward-looking statements in the white paper reflect the distributor's current views with respect to future
+events and are subject to these and other risks, uncertainties and assumptions relating to the distributor's
+operations, results of operations and growth strategy. These forward-looking statements speak only as of the
+date of the white paper.
+
+Prospective buyers of LIFEtokens should specifically consider the factors identified in the white paper and T&C
+which could cause actual results to differ before making a purchase decision. No statement in the white paper
+
+is intended as a profit forecast and no statement in the white paper should be interpreted to mean that the
+earnings of the Distributor for the current or future years would be as may be implied in this white paper.
+
+Restricted areas
+
+This white paper, or any part thereof, as well as any copies, must not be taken or transmitted to any country
+where distribution or dissemination of this white paper is prohibited or restricted.
+
+UK Government: The Office of Financial Sanctions Implementation (OFSI) helps to ensure that financial sanctions
+are properly understood, implemented and enforced in the United Kingdom.
+
+Please visit: https://www.gov.uk/government/organisations/office-of-financial-sanctions-implementation
+Introduction
+
+This white paper or LIFE paper sets out the vision for LIFE. With LIFE we aim to build a stable transactional
+and reward mechanism that bridges the gap between blockchain and its wide spread adoption. The economic
+growth potential for ordinary people adopting cryptocurrency and blockchain based tech is immense.
+
+Our objective is to bring LIFE to the mainstream public by making it accessible and user friendly. Ultimately a
+user doesn't really worry how something works they are more concerned that it does work and enables use in
+everyday life.
+
+The purpose of this white paper is to provide a written outline of how we anticipate the growth of LIFE, our high
+level roadmap and the technical aspects of LIFE.
+
+In keeping with the premise of LIFE ‘Simply, for everyday people’, we aim to make LIFEtoken accessible to the
+widest possible market, through adoption and transactional uses.
+
+About LIFElabs.io
+
+We are on the cusp of a ground-breaking digital currency revolution with a seismic shift in technology impacting
+every facet of our lives. Blockchain is an increasingly key and beneficial part of this process and we at LIFElabs.io
+will bring together the benefits by developing all facets of blockchain to change people's lives.
+
+The LIFElabs.io team and advisers brings together an impressive range of skills and experience and drive to use
+and develop existing blockchain based technologies.
+LIFE team
+
+An investor and entrepreneur, lain is an avid proponent of emerging disruptive
+technology, having been involved with blockchain and cryptocurrencies since the
+
+~ early days. He is involved with Proptech, Fintech, loT and developing open source
+technologies to benefit the everyday user. He is passionate about bringing LIFE to the
+masses and building a model that involves blockchain-based services to change every
+aspect of daily life.
+
+Fully immersed in the crypto revolution and extolling its virtues to everyone he
+
+lain Stewart-Bridges meet, lain is a true believer in changing the world and ensuring
+everyone has a chance to benefit.
+
+lain Stewart-Bridges
+
+Co founder,
+Chief Technical Officer and
+FINTECH evangelist
+
+Alistair has a love of all things new and innovative. After studying design and
+technology at university, he went on to teach in schools, imparting his knowledge.
+
+He supports the LIFE vision and leads on all things ‘creative’. He has considerable senior
+leadership experience dealing with complex operational processes, bringing weight to
+LIFElabs.io operational and compliance infrastructure.
+
+Alistair has excellent communication skills, and enjoys family days out, dog in tow and
+mountain biking trails across the country/Europe when time allows.
+
+at
+
+Alistair Hammond
+
+Co founder and Creative
+FINTECH explorer
+
+An expert multitasker and highly adaptable, Karl has a background in sales, IT, design
+* and website development. He has set up numerous businesses in services, marketing
+and been involved in aviation simulation/VR design and production.
+
+” After working as an executive assistant in the commercial sector, he was given
+
+the opportunity to involve himself in FINTECH. He finds the versatility exciting and
+challenging and is committed to bringing cryptocurrency to everday people.
+
+Lt Flying is Karl’s special interest and as a private pilot he enjoys travelling to different
+Karl Higbee countries, immersing himself in a variety of situations and new experiences.
+
+Co founder and digital
+
+governance
+
+Darren is an experienced business leader. A former Army officer, he has significant
+experience in leading teams and solving complex operational and logistical issues.
+Never one to stay in his comfort zone, Darren is passionate about pursuing the path
+less travelled, delivering innovative solutions to everyday people. When not asking
+awkward questions, Darren can be found either on his houseboat, being walked by his
+dog or undertaking another ultra-endurance cycling event.
+
+Darren Talbot
+Co founder and compliance
+
+A visionary entrepreneur and philanthropist at heart, Jonathan is an advisor to LIFElabs
+He is the current Chief Executive of Pure Living Homes, the first adopters of the LIFE
+reward scheme, whereby tenants receive tokens in return for paying on time, length of
+tenure and loyalty.
+
+A private company looking to give back to its customers is paramount and Jonathan
+will be assisting other landlords to adopt the coin from registered providers Jonathan
+Bushnell (social housing landlords) to private landlords across the UK and Europe.
+
+Jonathan Bushnell
+Co founder and CEO at
+Pure Living Homes
+LIFE advisory team
+
+os y
+f Sam Volkering is editor and investment advisor at Port Phillip Publishing and
+
+Southbank Investment Research. He's spent over seven years directly involved in
+cryptocurrency and over a decade in private investment advice. He is one of the UK and
+Australia’s leading accredited financial experts on cryptocurrencies and stock market
+investing.
+
+Perhaps most notably Sam is the author of Crypto Revolution: Bitcoin, Cryptocurrency and
+the Future of Money, a book written for the everyday person to help get them involved
+
+in the opportunity he describes as “the single biggest revolution in finance since the
+development of ‘money’ itself...”
+
+a
+
+Sam Volkering
+
+Cryptocurrency journalist
+and advisor
+
+Graham has over 30 years experience at board and group Chief Executive level in the
+residential property sector. An advisor to LIFElabs, he is also the chair of Pure Living
+Homes - the first adopters of the LIFE reward scheme. Graham has mentored over 30
+current CEOs in the Social Housing Sector and still offers support at board level across
+the North of England.
+
+Graham Eades
+Strategic Advisor
+
+Stephen has worked in the design industry for over 13 years, specialising in the design
+and development of websites and other information systems, and providing online
+identity and marketing advice to a broad range of clients.
+
+A pixel-perfectionist at heart, Stephen has a keen eye for detail and impeccable design,
+carefully crafting logical, efficient, consistent, user-centered systems and experiences.
+Stephen has joined LIFElabs to manage the design and development of our websites
+and internal systems, and to support the growth of our presence online.
+
+And he occasionally bakes.
+
+Stephen Moon
+Developer and digital creative
+
+Julie has been working in the internet marketing industry for more than 20 years.
+With a wealth of experience across different business models, she is adept at spotting
+opportunities, maximising sales and minimising costs.
+
+A perfectionist with an eye for detail, she is comfortable managing large advertising
+budgets, and has a proven track record in helping both large and small clients
+significantly improve their online presence and profitability.
+
+A mum of four, she is passionate about helping the world benefit from LIFE.
+
+Julie Thompson
+Digital marketing
+
+As a founder of Only Red Marketing, Hema’s expertise lies in maximising profits
+
+through developing sales and marketing strategies for multicultural and mainstream
+
+brands.
+
+She is especially adept at helping clients to identify opportunities, build brand
+
+reputation and leading a team to provide valuable and measurable results.
+
+: With a zest for adding value to peoples lives through marketing communication - what
+
+a a better alliance than being a part of LIFE’s advisory team aligning the latest FINTECH
+
+Hema Patel phenomenons and adding incremental value to the LIFE of everyday people.
+
+Managing Director at
+Only Red
+LIFE Ecosystem
+
+Since the creation and meteoric rise to fame of Bitcoin (BTC) and subsequent development of Ethereum (ETH),
+development of smart contracts, additional blockchains (albeit subsets of the original), bearish investment and
+speculative trade has taken place between a relatively small group of investors (some of these being the original
+founding community). This has led to speculators moving into the cryptocurrency sphere.
+
+The technical nature of the language used and the perceived complexity of cryptocurrency, has, intentionally or
+otherwise, excluded most of the general population from the cryptocurrency community.
+
+Recent articles, both on and offline and the movement by mainstream hedge funds and institutional investors
+and their professional advisors into the cryptocurrency sphere have increased the interest of the general
+population in this area.
+
+Wide spread adoption of blockchain based business and technology will bring the technology and all its benefits
+‘0 the everyday users.
+
+Mainstream adoption benefits not only the newcomers to the crypto sphere, but also the existing
+cryptocurrency economy and its current users. Social responsibility and sharing the exposure and benefits. New
+erms are coined by members of the political community all the time however with regards to social change
+
+but we are yet to witness anything of substance. LIFE will give everyone the opportunity to change their life for
+he better. If an individual can collect 1 LIFE token, they are then part of the crypto sphere. This then gives that
+individual an opportunity to gain by further immersing themselves in this brave new world!
+
+LIFE is blockchain based social and financial liberation.
+LIFEtoken
+
+token
+
+Overview
+
+LIFE is an ERC20 compliant token on the Ethereum Blockchain. Ethereum offers incredible growth for LIFE and
+will enable the token to continue to grow without hinderance.
+
+Supply
+
+The total supply of LIFE is 100 billion tokens. Whilst this appears to be a significantly higher number compared
+to the majority of other coin and token issuances, LIFE has many facets.
+
+Fe Supply Infographic
+
+PURE
+LIVING 5
+HOMES
+
+bn
+
+FOUNDERS CIRCLE,
+
+DEVELOPMENT AND
+15.1 bn ADVISORS
+(ESCROW)
+
+MONEY
+MINDFUL
+
+1b
+5bn
+
+FURTHER
+20.25 bn apoption
+
+Total Supply 100 bn Circulating Supply 57.5 bn
+
+Smart Bank and blockchain driven user democracy
+
+We aim to build a true people’s bank where the the holder is in control of the token. Every holder of
+LIFE can take part in the vote to issue more tokens. Whilst people may question why this is not smart
+contract driven, it is simply down to user interaction.
+
+In addition to the ‘token’, LIFE will evolve into a true people's bank providing instant FIAT to crypto
+and crypto to FIAT. LIFE bank will not offer loans or overdrafts but will simply allow users to hold their
+currency and earn interest. We have a diverse mix of adopters, including a Landlord, a Medical Research
+company, a FIAT Exchange and a financial education website. We have agreed to work closely with these
+companies as we view them as market leaders in their areas - and they will assist with our vision of bringing
+cryptocurrency to everyday people.
+Distribution of LIFE
+
+To ensure the longevity of our LIFE project the founders believe that transparency is paramount. We will give
+LIFE stakeholders confidence that our integrity is vital and we have set out the allocations and contractual
+restrictions below.
+
+Pre-sales (allocation 4.9%)
+
+Purchasers of LIFE during the pre-sale can of course trade LIFE on the open market and trade LIFE on
+Cryptosaurus.cc.
+
+Adopters (allocation 35.2%)
+
+The adoption of LIFE by many companies as a reward scheme will allow tokens to be drip fed into the open
+market by those who have been rewarded with LIFE.
+
+Cryptosaurus 2%
+Moneymindful 1%
+Tarian PLC 2%
+Pure Living Homes 5%
+Fuudel.com 5%
+Adopters to be announced 22% (they will announce through their own marketing time line)
+
+Owners and senior management of the adopting entities cannot sell or benefit from the token allocation.
+
+LIFE Foundation and Charity (allocation 2.9% in 2017)
+
+Charities allocated LIFE will be able to draw down token on case by case basis.
+
+LIFE Team and Advisors (allocation 12%)
+
+The team and advisors have been allocated 12% of the total supply. In line with LIFElabs company policy,
+
+no beneficiary of the LIFE token can sell more than 100,000 LIFE at any given time. All stakeholders wallets,
+whether in cold storage or not, will be constantly monitored for the overall beneficiaries of LIFE token holders.
+LIFE reserved for development and future projects (allocation 3.11%)
+
+This sum is reserved for all normal costs associated with running a company.
+
+A full breakdown of the token allocation can be found on page 14.
+LIFE Adopters
+
+We have a diverse mix of adopters, including a Landlord, a Medical Research company, a FIAT Exchange and a
+financial education website. We have agreed to work closely with these companies as we view them as market
+leaders in their areas - and they will assist with our vision of bringing cryptocurrency to everyday people!
+
+Pure Living Homes Limited
+
+“We are pleased to be adopting LIFE as a tokenised reward for our tenants. We always try
+to be different than your average landlord and we look forward to our tenants benefitting
+from the blockchain. We are not going to be the only landlord in the UK to adopt LIFE but
+we are the first. All our tenants will be rewarded when they; Pay on time, Length of tenure
+(how long they have lived with is) and how they look after their home! All tenants will be
+given LIFE monthly and we are delighted with the feedback so far.
+
+Money Mindful
+
+Money Mindful is the UK's first free website subscriber site that brings together experts
+from around the country (and the world) to help each of us to learn about money; how to
+make it, manage it, spend it, pass it on; even what we should be teaching our kids about it.
+Money Mindful publishes articles, videos, tips, training and techniques from a selection
+
+of the Nation’s best and brightest experts in the world of Financial Planning, Business
+Leadership, Entrepreneurial Creativity, Legal and Tax Advice and Self-Development.
+
+In addition. We will feature the latest time and money-saving ideas, investment
+opportunities, and technological advancements designed to make your journey to financial
+independence understandable, straightforward and enjoyable.
+
+All our writers are experts in their own field. Their combined business experience can be
+measured in millennia.
+
+Cryptosaurus
+
+We are the first “fiat exchange” site in the UK to adopt a cryptocurrency (LIFE) as an
+international payment system. Whilst we will remain a site for fiat, we had customers
+from parts of the world where their payments did not reach us for 26 days - this is the
+most efficient and speedy way of transacting with our customers. In a perfect world we
+would like to move away from Fiat - but cryptocurrency is still in its embryotic years and
+therefore this is a move in the right direction. Also customer buying with LIFE will not pay
+commission! Why? Because it will not cost us ridiculous banking fees.
+
+Tarian PLC
+
+At Tarian, we believe we have the world’s first efficacious Alzheimer’s Disease medication.
+Of similar importance, is our decade long track record of absolute safety in treating
+individuals
+
+which provides patients with a level of reassurance as yet unheard of in alternative
+potential therapies.
+
+Having witnessed first-hand the slowing, stabilising and, in some cases, reversal of
+symptoms in Alzheimer’s Disease patients, our primary objective is to make the treatment
+available to every individual who is suffering with this relentless condition.
+
+The 50 million sufferers who have received a diagnosis is expected to double over the next
+20 years.
+
+Fuudel.com*
+
+What's your craving? We are an online ordering app and more and delighted to able to
+provide our end users with LIFE. Why will we be the biggest app out there? Favourite foods
+just a click away: You can order takeaways to be delivered to the comfort of your own home
+and use our real-time tracking service so you'll never miss the doorbell!
+
+*subject to integration and platform testing
+
+& Pure
+Living
+
+making a house your home!
+
+ld
+
+money mindful
+
+TARIAN
+
+biotechnology
+
+10
+wallet
+
+LIFEwallet
+
+© SOW Secure D htps://www wallet ielabsio
+
+vate:
+
+1.00000000
+
+£2434.06
+
+NEW WALLET SEND
+
+SEND TO WALLET ADDRESS
+
+VIEW WALLET
+
+= SETTINGS g
+
+BTC WALLET - DffwOBn3235fnoDEsA228qR
+
+2017 05 07 18:03,
+
+C
+
+>) C) oaty snr ttoa
+
+AMOUNT
+
+2017 05 06 17:00
+
+2017 05 06 14:45,
+
+TX FEE
+
+LIFEapp
+
+LIFEapp Available
+on both iOS and Android.
+The intention is for the
+
+app to be really user
+friendly. First-time users
+can access a riange of
+Helpful FAQs.
+
+Ud
+
+ee¢oree
+
+Online wallet
+
+Carrier > 14:15 PM
+
+= Q water
+gee
+
+1.00000000
+
+£2434.06
+
+SEND
+2017 05 07 13:03
+2017 05 07 11:00
+
+2017 05 06 17:00
+
+2017 05 05 15:37
+
+¥
+t
+¥
+¥v
+
+2017 05 05 11:23
+
+TRANSACTIONS
+
+= 0.07364964
+
++ 0,87624523
+
+-  1.27860023
+
+= 2,00000000
+
++ 3.46300034
+
++ 0,01000430
+
+0.07364964
+
+0.87624523
+
+1.27560023
+
+2.00000000
+
+3.46300034
+
+0.01000430
+
+To simplify the entry into the cryptocurrency world for inexperienced users, we are developing the LIFEwallet
+that has simplicity at its heart. It will have an easyto-understand interface, together with video and text-based
+guides to setting up and using the wallet. The timescale for this is currently Q1 2018.
+
+11
+card
+
+LIFEcard
+
+To aid the adoption of cryptocurrency into the mainstream, we need to make the processes of using both FIAT
+and Cryptocurrency indistinguishable from each other. To assist with this, the LIFEcard will be a contactless
+debit card that carries out crypto-FIAT transactions on, making the process of spending LIFE and other
+supported ERC20 compatible currencies indistinguishable from the use of FIAT currency. Our cards are due for
+circulation Q1 2018.
+
+The LIFEcard can also be used to reward customers and staff. By loading tokens onto the LIFE card, employers
+and businesses can reward good performance, customer loyalty or similar with LIFE. These can then be spent
+directly off the card, held or traded as normal cryptocurrency. In addition to this the card will support both
+Bitcoin and Ethereum, tripling its utility and optioning to the market.
+
+card
+
+Card 1-Green
+
+a Load limit 200 per day
+wT) COE AS Cost TBC LIFE/BTC/ETH
+
+ony) 1720
+
+Card 1-Blue
+Load limit 5000 per day
+Cost TBC LIFE/BTC/ETH
+
+VALID
+row O1/19 a
+MR L CARD
+
+Card 1-Black
+Load limit 20000 per day
+Cost TBC LIFE/BTC/ETH
+
+VALID UNTIL
+rou O1/17 END
+
+MR L CARD
+
+How the LIFEcard works
+
+LIFEcard PROVIDER
+CARRIES OUT LIFE/BTC/
+ETH TO FIAT TRANSACTION
+AND DEBITS TOKENS FROM
+LIFEwallet
+
+THIRD PARTY CARD
+PAYMENT PROCESSOR
+LINKED TO SELLER. POS
+PROCESSES PAYMENT
+
+LIFEcard HOLDER MERCHANT PROCESSES
+PURCHASES GOODS USING ORDER AS USUAL FOR DEBIT
+LIFEcard CARDS
+
+O-
+
+0000 oot
+
+LIFEcard HOLDER SEES
+LIFEcard HOLDER TOPS NO DIFFERENCE BETWEEN
+UP LIFEcard/LIFEwallet FIAT AND TRANSACTION VERIFIED
+
+MERCHANT RELEASES
+
+ONLINE/LIFEapp CRYPTOCURRENCY Goews
+
+TRANSACTIONS
+
+NFC based payment method
+Integration with Samsung Pay, Android Pay and Apple NFC devices.
+As Android Pay, Apple Pay, Samsung Pay are becoming increasingly popular methods of payment, we envisage
+
+integrating the LIFEcard with those services and therefore by association any compatible tokens into NFC
+devices. The timescale for this is not yet confirmed.
+
+Card Eligibility
+
+Restrictions will apply to certain locations and will be subject to the standard identification, KYC and AML
+legislation applicable to the area of issuance.
+
+ID and Securit
+y e e
+We will integrate Civic secure identity platform into our
+wallet, card and charity voting portal. Doing this will
+allow us to utilise another Blockchain based multi-factor
+
+authentication service for the benefit of our customers
+and users.
+
+13
+LIFE Foundation and Charities
+
+A total of 2.929 bn of the total supply of LIFE has been reserved in escrow. These tokens will be released to
+nominated charities through smart democracy. Each charity or charitable cause will be driven by its own smart
+contract. LIFE users can vote on the nominated charities every three months, with the LIFE allocation dispersed
+accordingly.
+
+Through an online voting form, holders of LIFE will be able to propose and then vote on registered charities
+to receive a donation of LIFE. This will be a community-guided approach; the only stipulation being that the
+charities must be apolitical and humanitarian in nature. Please see page 14 for charities that will be supported.
+
+We will support community projects improving global well-being, education and welfare. There are many stand-
+alone projects across the world, some set up as charities, others as not-for-profit social enterprises. We will
+
+identify and support several of these each year and upload blogs by both our staff and guest bloggers, showing
+the positive impact that LIFE and its community is having on our global community.
+
+Future LIFE
+
+LIFE is all about the future and sustainability, both economically and for the benefit of mankind.
+We will, where we see sustainable projects that fit with our ethos, look to invest in research into
+
+mega-projects of the future, such as space elevators, the Alcubierre drive and other such projects that will have
+a major and lasting impact on people's lives.
+
+14
+LIFElabs liquidity position
+November 2016-October 2017
+
+Description
+
+Token Details
+
+Total supply 100,000,000,000
+Circulating supply 57,492,000,000
+Pre-Sales
+
+Individual purchases “fiat” 23,000,000
+Individual purchases “BTC”
+
+Individual purchases “ETH”
+
+Private Investors '2,150,000,000
+Person of significance (allowance) "750,000,000
+funding options to third parties 2,000,000,000
+‘(Adopters
+
+Cryptosaurus 2,000,000,000
+Moneymindful 1,000,000,000
+Tarian PLC 2,000,000,000
+Pure Living Homes (Worcester SPV) 5,000,000,000
+Fuudel.com 5,000,000,000
+6th Adopter (to be announced) 10,000,000,000
+7th Adopter (to be announced) 5,000,000,000
+8th Adopter (to be announced) 5,000,000,000
+9th Adopter (to be announced) 250,000,000
+
+Total adoption supply
+
+Charities
+Care4humanity
+Action for Children
+
+Kent Special Educational Needs Trust (20 schools-5,000 employees)
+
+Fly to Help
+
+Water Aid
+
+Santisitationfirst.org
+
+Voting System Quarterly Allowance [2018]
+January 2018 [2017 last quarter] allowance
+April 2018
+
+July 2018
+
+October 2018
+
+January 2019 (Dec 2018)
+
+2019 - 2025 allocation “reserved”
+2026-2040 “Escrow”
+
+40,190,000,000
+
+250,000,000
+250,000,000
+400,000,000
+250,000,000
+500,000,000
+500,000,000
+
+100,000,000
+80,000,000
+60,000,000
+48,000,000
+41,000,000
+
+500,000,000
+
+2,100,000,000
+
+Total Charity “Gift” 2017-2025
+Development of LIFE
+
+LIFE to Fiat Wallet and application
+Visa/MasterCard “prepaid liquidity”
+Design/build card/ “contactless tech”
+Marketing to October 2018
+
+Human Resource
+
+Founders (Restrictions on selling)
+Accountancy
+
+Legal
+
+Staff Costs June 2017 - October 2018
+Infrastructure Costs including growth
+Developers/Fees
+
+5,079,000,000
+
+12,000,000,000
+1,900,000
+58,000,000
+751,100,000
+1,800,000,000
+500,000,000
+
+Total human costs
+
+‘Price per token 0.00500 - not completed until January 2018
+"Price per token 0.00875 - completion set for Q2 2018
+
+“Adopters will be given tokens but will be regulated by us as to the dispersion of the tokens and senior management within those
+
+15,111,000,000
+
+201,250
+83,300
+8,906
+10,062,500
+6,562,500
+
+360,000
+3,500,000
+60,000
+780,000
+
+49
+
+organisations cannot benefit personally from any allocation. All adopters’ wallets are monitored throughout the relationship.
+
+15
+
+61
+Enterprise Ethereum Alliance
+
+TERPRISE
+HEREUM
+LIANCE
+
+‘4
+
+The Enterprise Ethereum Alliance connects Fortune 500 enterprises, startups, academics, and technology
+vendors with Ethereum subject matter experts. Together, we will learn from and build upon the only smart
+contract supporting blockchain currently running in real-world production - Ethereum - to define enterprise-
+grade software capable of handling the most complex, highly demanding applications at the speed of business.
+
+LIFELabs.io is hugely excited to be a member of the Enterprise Ethereum Alliance. We are focussed on bringing
+Fintech to the mass population, by demystifying the world of blockchain and cryptocurrencies. We believe that
+
+the flexibility and future proofing of the Ethereum blockchain will allow us to simplify an otherwise daunting
+technical process and enable adoption of Fintech by the general population.
+
+Where can you buy LIFE?
+
+HitBTC
+
+16
+“Life is 10% what
+happens to you
+and 90% of how
+
+/}
+
+you react to It.
+
+Charles Swindol!
+

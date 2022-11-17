@@ -1,0 +1,752 @@
+Decentralized Document Authentication Platform
+
+White Paper
+XBC Technologies PTE. LTD.
+
+Introduction
+1.1. Abstract
+1.2 Background
+1.3 Vision
+1.4 Our Mission
+
+Aston
+2.1 Definition of Aston
+2.2 What to Expect from Aston
+- Market Overview
+2.3 Current Projects & Achievements
+2.4 Near Future
+
+5 Why Aston
+\ Table of Contents 3.1. X.Blockchain
+3.2 Smart-Pass-On
+
+Roadmap
+4.1 Overall Roadmap
+
+Token Sale
+5.1 Abstract
+- Schedule
+- ATC Token
+5.2. Token Allocation
+
+- Use of Proceeds
+
+Who we are
+6.1 The Team
+
+Introduction
+
+1.1 Abstract
+
+Most electronic documents are heavily exposed to vulnerabilities. Unauthorized agents may intercept
+sensitive documents and forge or modify them, altering their original purpose. However, there are very
+few services that provide reliable and secure electronic document authentication. Recently, blockchain
+has been offered up as a solution for more reliable and secure electronic document authentication,
+distribution, and management. While the current blockchain platform is capable of facilitating
+document delivery and execution, it is ill-equipped to handle the storage and circulation of regularly
+updated electronic documents at scale.
+
+At ASTON, we provide a decentralized platform for the authentication of documents. Our technology is
+developed using the existing blockchain platform, with enhancements that result in a cutting-edge
+security solution. The X-chain technology developed by ASTON resolves the various problems present
+in existing blockchain systems. We replace the traditional linear blockchain storage method with a
+multi-dimensional blockchain structure, which makes digital document authentication significantly
+more scalable. Moreover, the security authentication solution (Smart-PassOn) based on the public key
+infrastructure (PKI) and the biometric signature authentication (FIDO) ensures an even higher level of
+document security for users.
+
+Currently, ASTON works with business enterprises and large hospitals in Korea to pilot its secure
+electronic document authentication platform. In the near future, we plan to roll out a commercial
+service for companies and organizations in all sectors. Our X.Blockchain technology will also have broad
+applications in diversified fields globally because of its ability to outperform existing blockchain
+technology.
+
+The ATX issued by the sale of ASTON tokens will be used as the means for payment of usage of the
+ASTON platform (including the platform usage fee, fee for issuance of documents, fee for storage of
+documents, and so on). Furthermore, ASTON tokens can later be traded freely on cryptocurrency
+exchanges around the world including Coinlink.
+1.2 Background
+
+To confirm the credibility of documents, generally a trusted third-party institution is involved.
+Government agencies validate birth/death certificates. Hospital databases are used to verify
+prescriptions for medicine. Business enterprises have a paper trail for every employment offer and
+every employee resignation. Now, blockchain technology is well-positioned to replace the formerly
+indispensable traditional third-party trust structure with its distributed ledger. In the 1990s,
+innovation came when individuals and businesses could begin to create, store, share, and process all of
+their documents electronically. The move from analog to digital was a major milestone in document
+management. At the end of the 2000s decade, cloud systems made information storage and
+processing available anywhere around the world, at infinite scale. Today, blockchain technology leads
+the latest wave of innovation for digital documents, ensuring the credibility and validity of data
+distributed on its platform. This removes user reliance on trusted third-party institutions to certify
+documents, and its secure applications may mark a paradigm shift in the global trust structure.
+
+As consumers and businesses increasingly adopt the use and circulation of electronic documents,
+related services arose too, such as cloud document storage and online notarization. However, several
+vulnerabilities remained including fraud and unauthorized modification. At ASTON, we recognized
+these limitations and have been successful in developing a sophisticated platform that addresses
+these issues and satisfies all users.
+
+(— >)
+
+/
+/
+
+OD
+s
+
+Se FR SBE
+EE NERC Ns B e/
+
+Befor 2005 Today 2025 and beyond
+Close and Centralized Open access Computing Network, Distributed & Decentralized
+Computing Networks Centralized Cloud Computing Networks
+
+[Evolution of Decentralized Computing Network]
+
+Ne
+
+1.3 Vision
+
+These days, important information is well-documented but it isn't always securely managed or stored.
+Documents have evolved from their analog, hard copy forms to digital, soft copy formats. Of course, as
+convenience rose in reproduction, storage, and movement, electronic documents came to assume
+risks including fraud and unauthorized modification. Although online authentication and notarization
+services cropped up to resolve these issues, they still reinforce the traditional trusted third-party
+institution structure which most modern documents are tethered to.
+TThe world we hope to create through the technology we build at ASTON is one whereby all
+participants become active authentication agents rather than the simple users of blockchain
+platforms. We empower our users to validate the credibility of the electronic agreements and
+documents they use independently, eliminating the need to utilize services from trusted third-party
+institutions. We do this by combining public and private blockchains. We intend to create a world in
+which everybody can contribute and participate as a node of the blockchain.
+
+1.4 Mission
+
+In the near future, the certified hard copies of documents we have long relied on (e.g., school:
+certificate of graduation, transcripts, certificate of registration and others; medical institutions:
+waiting number ticket, receipt for medical treatment, prescription of medicines, record of treatment
+and others; government agencies: certificate of birth, certificates of family/individual resident
+registration, certificate of family relationship and others; private enterprises: all types of legal
+contracts, certificate of employment, payroll schedules and others) will no longer be necessary. When
+a visit is made to the hospital for medical treatment, when an interview is completed for employment,
+and when a report is submitted for a newborn baby, users will no longer need to prepare anything to
+verify the corresponding information. The corresponding information will already be available in the
+ASTON platform, and the data can be accessed using simple authentication through ASTON. All these
+requirements will be processed in ASTON, the platform predicated on X.Blockchain technology, and
+each node will come to freely access, use, or change the information without geographical or
+technological restrictions. This means the X.Blockchain technology we build can be expanded to
+globally. Furthermore, this technology can be utilized in a more practical way in all types of industries
+where a mutual trust relationship is required; the immediate application is possible without a
+third-party intermediary. In the near future, people everywhere will live their lives within the ecosystem
+created by ASTON and we will continue to innovate to provide more valuable solutions and tools for our
+users.
+
+(— »)
+
+[Global Ecosystem for Circulation of Electronic Assets]
+
+2.1 Definition of Aston
+
+ASTON is a platform for the authentication of documents based on blockchain technology. Though
+many different types of electronic documents exist, they are generally authenticated offline. If linear
+blockchains are used, online authentication is theoretically possible but may be impractical in reality.
+Online authentication would require the storage of large amounts of data, which can be difficult to
+support for many users, Perfect decentralization with linear blockchains is impossible with a limited
+number of devices and low storage capacity. To create a better user experience in which documents
+can be authenticated without the intervention of a trusted third-party institution, the platform we
+develop must make documents easy to execute on all desktop, tablet, and mobile devices.
+
+The X.Blockchain we apply revolutionize the way documents are managed and information is stored. In
+order to reach the agreement regarding the information contained in a new block, consensus is
+necessary only with the relevant blocks but not all blocks leading to a significant reduction in the
+capacity and speed required for data processing. The result is a grand innovation in the series of
+processes related to the storage, reference, issuance, and movement of documents. Furthermore, this
+can be very easily applied for commercial and consumer purposes.
+
+The use of X.Blockchain is crucial in the document distribution infrastructure, and to accurately and
+easily verify new information inputs, we have created the Smart-Pass-On solution, a biometric
+signature authentication security technology based on PKI. This helps to expedite the authorization
+process for digital documents.
+
+Once the ASTON platform is completely developed, users can easily access ASTON through their
+personal computers and mobile devices. Large enterprises will be able to access ASTON through their
+ERP, groupware, or cloud systems to deliver and authenticate their documents. The ASTON platform
+will also carefully connect to each of the nodes without synchronizing the data across the entire
+blockchain.
+
+( >
+Service Utilization — Service Offer
+
+oe | | ys i
+
+ip EE! gE + ge OH ag
+
+{ [Aston Ecosystem]
+Ne
+
+The user who uses the Aston finally completed in its development based on the above components can
+use all services of Aston by way of the smart device (smart phones, tablet PCs, smart watches and etc.)
+owned by oneself and this will typically be the enterprise or the government agency which has the need
+to render the service through the Aston platform. The enterprise or government agency will access
+Aston through their system currently in use such as ERP, groupware, cloud and other systems to
+provide/authenticate the documents as required. In this way, the credibility of the documents existing
+within Aston can be established by the consensus of the nodes directly related to the corresponding
+information.
+2.2 What to expect from Aston
+
+Market Overview
+
+Survey data from reputable research firms suggest market demand for the ASTON platform will grow
+rapidly in the coming years. According to the Electronic Access Control Systems Market report by
+ReportsnReports.com, the global market for electronic authentication management systems
+experienced an annual growth rate of 7% over the past 5 years and reached USD 16.3 billion in 2017.
+
+( >)
+=| 7% average growth every year
+
+16.3 billion
+
+11.6 billion
+
+2012 2017
+
+| [Market Forecast 1]
+Ne
+
+Additionally, research from Tractica’s biometrics market forecast suggests the global market for
+biometric signature authentication (FIDO) is expected to grow 22.9% annually from USD 2.5 billion in
+2016 to USD 15.1 billion in 2025.
+
+cr *)
+15.1 billion
+
+2.5 billion
+
+a —
+Cee) \
+' 1@ | (@)
+\ ES |
+\ / . = 4
+\ 2016 yA
+Ne 2025
+22.9% average growth every year [Market Forecast 2]
+
+a Dd
+2.3 Current Projects & Achievement
+
+ASTON development is in charge of Xblocksystems. XBC Technologies will maintain a close relationship
+with Xblocksystems which has the state-of-the-art technology, and will ensure that ASTON
+development and management are in order. Xblocksystems's blockchain technologies have already
+been completed. (The Project history and Developer introduction listed below, Roadmap includes
+Xblocksystems's work detailing the core contents of ASTON.)
+
+2.3.1 Doorian
+
+With its development completed in November 2016, the Doorian service automatically creates and
+stores debt bonds in the blockchain network through the digital signature of electronic documents
+when the funds are remitted between participants through the platform. This program was completed
+in partnership with the FinTech Innovation Center at NH Nonghyup. The organization also provided us
+with special access to its financial API called NH Open Platform. Doorian is the first mobile platform for
+the authentication of documents in Korea utilizing blockchain technology, which provides users with a
+high level of convenience and security. Soon, we will be able to expand the use of the Doorian’s
+inderlying technology for broader commercial purposes.
+
+(— >»)
+
+| [Doorian App]
+Ne
+
+2.3.2 Medical Certification Service
+
+At large hospitals, more than one million sensitive medical documents are printed each month for
+check-ups, hospital discharges, and medicine prescriptions. However, most people fail to properly
+dispose of all these printed materials effectively, leaving the personal information inside vulnerable. In
+a move to resolve this problem, we enabled hospitals to issue and confirm medical certificate
+documents electronically. Hospitals ask patients to use their smartphones to fill out, share, and
+retrieve their personal information and medical records. By distributing this information on our
+blockchain platform instead of on hard copy documents, we minimize risks associated with the
+storage, management, and transfer of sensitive personal and medical information.
+Currently, we partner with more than 90 large hospitals in Korea that use our pilot medical certification
+service. We also plan to commercialize the industry's first medical certification service later this year
+allowing us to place our technology in more hospitals and other major medical institutions in Korea.
+
+go! ay
+
+Hospital Insurance
+
+Hospital Patient Insurance
+
+Patient
+
+[User Experience]
+
+XX
+
+2.3.3. Mobile Smart Platform for Biometric Authentication
+
+Xblocksystems's blockchain-based mobile security authentication service is being developed together
+with LGU+, one of the top three mobile telecommunication companies in Korea. In the future, our plan
+is to expand this solution to all domestic mobile telecommunication companies too. At the moment,
+when users enroll in a new telecommunications service, they have to present a series of materials that
+verify their identity and authenticate their enrollment. This cumbersome process happens each time
+they subscribe to a new service. Once we roll out our blockchain-based mobile authentication service,
+LGU+ users can sign up for all LGU+ services seamlessly after they have completed their initial
+registration and authentication. Soon, users will be able to use our mobile smart platform for
+documents beyond LGU+ instances, opening the door for broader application of this technology too.
+
+a >
+
+aoe ;
++——_ ——> 1
+208 28
+Customer Service Provider
+
+Blockchain
+
+[Fido Flow] |
+\ TS
+2.3.4 Coinlink (Exchange of Cryptocurrency)
+
+Coinlink is an ultra-secure global cryptocurrency exchange. When we introduced our beta 1.0 service
+in September 2017, we saw a wide range of coins being traded on the exchange. We plan to launch our
+global 2.0 service during the first quarter of 2018 and will add support for HTS and APP. Coinlink plans
+to operate the business through subsidiary companies or alliance companies in different countries
+around the world.
+
+a >
+
+{
+
+[Coinlink Web]
+
+2.4 Near Future
+
+Our current dependence on trusted third-party institutions to certify and validate documents creates
+headaches for users. Of course, we at ASTON are eager to provide a permanent solution to that
+problem. Document management, including preparation, issuance, submission, and delivery, will
+become significantly easier once we have fully developed our platform for wide commercial use. Our
+technology will streamline the document execution process too, saving users time since documents
+are often delayed during the notarization process,
+
+This type of innovation is made possible because of the decentralized ecosystem for document
+circulation through X.Blockchain. This will also help individuals and enterprises save money because it
+minimizes costs associated with data administration and security. Since these changes can be applied
+to all service categories and industries such as medicine, telecommunications, legal, logistics, and
+education, it won't be long before we can witness a future shaped by ASTON.
+
+To bring ASTON to market and to develop its ecosystem, we need to focus on building infrastructure
+such as a perfectly decentralized network and middlewares to connect all the gateways. Also, we will
+develop decentralized applications (dApps) that can handle the full lifecycle of digital documents
+hosted on ASTON. These functions include document creation, distribution, authorization, and so on.
+We are developing infrastructure and dApps simultaneously to quickly bring our product to market. We
+also anticipate standalone companies being built that will specialize in the development of dApps in the
+ASTON ecosystem.
+
+(— ~
+
+[Cross Device between Aston]
+
+NX
+
+2.4.1 dApps
+
+1) Aston Wallet
+
+The ASTON Wallet application enables individual users to authenticate their identity using their own
+smart devices, to easily confirm or request the documents they need, and to investigate the activity
+logs of the documents related to them. This app will be the primary one used among the general
+population. Its core functions will include authentication of users, issuance of documents, and
+notifications. Furthermore, it will enable users to create and dispatch the documents. This application
+is scheduled to be completed during the first half of 2019.
+
+(— >»)
+
+[For Individuals]
+
+a Dd
+2) Aston Business Wallet
+
+The ASTON Business Wallet will serve as our enterprise-level application for businesses and other
+institutions. Its purpose is to provide the government and enterprise users with a convenient way to
+access the ASTON Gate ERP software. It will also be accompanied by a diverse array of applications
+customized to fit the user's particular needs. Its major functions include the authentication of
+documents, and the dispatch and receipt of documents. This application is also scheduled to be
+completed during the first half of 2019.
+
+(— >»)
+
+[For companies]
+
+a D
+
+3) Aston Vote
+
+The ASTON Vote app allows users to accurately and quickly cast their vote in situations that require
+rational and trustworthy decision making. Since votes can be shared simply and safely through smart
+contracts based on X.Blockchain, the application can be conveniently utilized in diverse areas requiring
+fast decision making. When paired with the ASTON Wallet app, The ASTON Vote application enables
+everybody to participate in a ballot easily and rapidly. Currently, ASTON is securing partnerships with
+democratic countries around the world and is finalizing customer contracts with international
+companies. The development of this application is scheduled to be completed during the second
+juarter of 2019.
+
+(— >)
+
+[For Organizations]
+
+a D
+
+2.4.2 Infrastructure
+
+1) Aston Gate (Aston Management Solution)
+
+This is a software solution that collects information recorded in the DBs of institutions and enterprises
+and stores it in ASTON. ASTON Gate will be compatible with Windows and Mac OS platforms and will be
+designed to allow easy use in the cloud. Companies will be able to use ASTON Gate to capture, manage,
+and review the data it receives. The solution is malleable, and can be customized to accommodate
+thepecific needs of our customers in different industries and categories.
+
+2) Aston Factory (Blockchain AP! host service)
+
+This serves as the API access tool to enable users such as enterprises and government agencies to
+mutually share documents and to access important information. Our solution aims to establish a
+one-stop service that manages everything from verification of information to billing. As big data has
+exploded, the API industry has also experienced rapid growth. However, due to their security
+vulnerabilities, APIs are seldom used. ASTON Factory is the premier verification and billing tool to
+overcome the restrictions and risks prevalent among APIs today. ASTON Factory allows businesses to
+securely handle sensitive personal information from its users.
+
+3) Aston ITP (International Trade Protocol)
+
+At ASTON, we will develop our own standard protocols to ensure documents in our system are
+received, processed, and executed in a consistent manner, especially internationally. Although the
+language for monetary transfers is meant to be standardized, we still see a wide variety of terms used
+between financial institutions and platforms. This inconsistency can complicate and delay the funds
+transfer process. The goal of ASTON ITP is to be able to securely handle digital documents and provide
+users with a seamless experience. With ASTON ITP, we can easily imagine a borderless world where
+your local, neighborhood shoemaker can export his goods to overseas to customers in Argentina,
+Cambodia, and even South Africa.
+Why Aston
+
+3.1 X.Blockchain
+
+The size of blockchains in which the details of all transactions are recorded is bound to grow as the
+cumulative number of transactions grows. In other words, as time passes, the network will expand to a
+point when it becomes impossible for all participants in the network to store and manage all the existing
+blockchains. That is, the systems (nodes) with the capacity capable of the storage and administration of
+the whole blockchains will progressively diminish in their number. As a result, there is a high possibility
+that a relatively small group of oversize nodes will form over time. This leads to centralization. In this
+case, whole blockchains are managed by a relatively small group of nodes; consequently, the credibility
+of transactions in those blockchains are reliant on that centralized group of nodes. This compromises
+the fundamental concept of blockchains: decentralization.
+
+( >)
+
+Neem Aoi Mise Aoz2 | Bor | Ao3 | Boz | Bos MM@@em Aos | Coi | Coz | ———— Bo7 | Cos | Co9 |} Aos | Aog
+
+[Blockchain of the Linear Structure]
+
+XX
+
+(The information about the document created and the history of reference, modification, approval, and
+more is organized serially in a chronological order to form the blockchain. While in possession of the
+whole blockchain from AOO~A09, the document administrator B has to check all blocks subsequent to
+A04 except for BO2 in order to verify the integrity of BO2.)
+
+(— >
+v Sub Chain
+- mad Ho md M1 mad H2 mad H3 p> ——>|  HN-1
+t=) pel be) J ple) pl pie)
+Ho | Hi | Hz |= H3 | H4 | HN
+\ J \ J \ \ , \ J
+[ Ho j¢ H2 J H3 | He | [| HN j¢
+>—— 4 {TN
+{Hot | Hai | | H31_ } | Ha | LHNt |
+Ho1 < H31 | { Ha \«
+Hoz | H32. J Haz
+\ ) \ )
+Ho2 | H32 | 4 >| HNM
+>— >——~
+Ho3 H33 | HNM
+
+[Format of a Blockchain with 2 dimensions]
+
+a D
+In reflection of the characteristics of the electronic documents mentioned previously, the X.Blockchain
+categorizes the records (transactions) related to a document based on the ‘document’ or the other
+equivalent criteria rather than linking them in a single linear structure. And by implementing multiple
+chains based on the same criteria, the multidimensional blockchain is conceived. For example, when the
+document is used as the criteria, the ‘first creation’ of each document is recorded in the blockchain
+(main-chain) of the same linear structure as the existing blockchains. However, the additional records
+(transactions) which occurred to the specific documents recorded already in the main-chain such as the
+modifications are recorded in the sub-chains which are the other blockchains created on the basis of the
+related block in the main-chain as a genesis block rather than in the main-chain.
+
+( >»
+
+SS)
+
+juUUuU
+
+J) iL)
+
+J
+
+[Format of an X.Blockchain of a Multidimensional Structure]
+
+XX
+
+The full nodes responsible for mining the new blocks in the X.Blockchain still collect information about all
+blocks. However, when clients just want to evaluate the validity of a document rather than the mining of
+it, they shouldn't have to observe the whole block. Each user can verify the credibility of the target
+document to a sufficient level by only acquiring the sub-chain containing the document that requires
+verification and the main-chain at the next higher level without the need of a trusted third-party
+institution. Here, the full nodes only undertake the role for mining rather than as the trusted third-party
+institution to confirm the credibility of the documents. (For details, please refer to the X-chain white
+paper posted in the homepage. https://aston.company) ASTON currently holds 2 domestic patents on
+X.Blockchain, and the PCT international patent is pending.
+
+Patent 1. The Method to Manage the Data by Utilizing the Blockchain System and the Blockchains
+Patent-2017-0059270 (PCT/KR2017/010017)
+
+Patent 2. The Method for Creation of Blockchain System and the Blockchains
+Patent-2017-0059276 (PCT/KR2017/010020)
+3.2 Smart-Pass-On
+
+The Smart-Pass-On feature is a solution aimed to provide an easy and convenient security
+authentication solution. Our target customer is FinTech businesses. The Smart-Pass-On is implemented
+using PKI private authentication, biometric signature authentication (FIDO), and blockchains. When the
+Smart-Pass-On solution is utilized, the diverse solutions for authentication, identification, security, and
+data administration are consolidated. Enterprise users will no longer have to implement each solution
+individually and, instead, can access all of the Smart-Pass-On features in a bundled package for a
+readymade out of the box solution.
+
+Major Features
+
+1. Biometric Signature Authentication (FIDO)
+
+The API is provided to enable the implementation of an identity authentication service by utilizing the
+biometric information unique to individuals such as the fingerprint, iris, face, voice, and more for identity
+confirmation.
+
+2. Identity Verification for Registration/Identity Authentication after Registration The API is provided
+which is necessary for electronic authentication by utilizing the private certificates and the
+authentication institutions based on the public key infrastructure for the identity verification of
+individuals for registration necessary when they use the service for the first time, and the identity
+authentication of individuals after registration
+
+3. Operation and Administration of Electronic Documents
+
+All of the APIs provided are needed for the operation and administration of the electronic documents
+and the interface to corroborate the format of the electronic documents. These facilitate encryption,
+data compression, and more for rendering documents that require digital security and authentication.
+4. Blockchain System
+
+Our system converts existing blockchain technology to formulate a new paradigm for the storage of
+information electronically.
+
+( )
+
+identity authentication
+
+U
+
+data management
+
+identity verification
+
+v
+
+biometrics authentication input data/save
+
+<Smart-Pass-On Solution Architecture>
+Roadmap
+
+4.1 Overall Roadmap
+
+\
+@ 2016 3Q 2016 Signed agreement to develop FIDO solutions with Samsung SDS.
+4Q Completed development of Doorian.
+
+@ 2017 1Q Opened the FIDO Open API Platform 1.0.
+2Q Filed for two patents in Korea for X.Blockchain.
+4Q Launched pilot service for certifying medical documents with 2 large scale hospitals.
+4Q Aston Token Sale
+4Q Began development on a medical proof certification blockchain.
+platform with two general hospitals.
+
+1Q Plan to launch Coinlink’s Asia Service | Launch HTS / App.
+
+(@
+4,
+N
+S
+oo
+
+1Q Commenced the development of infra tools based on X.Blockchain.
+2Q Expand medical proof certification service to wider range of hospitals.
+3Q Commercialize smart biometric authentication platform.
+
+4Q Plan to launch pilot service for public document proof certification.
+
+1Q Plan to launch Aston Southeast Asia.
+
+1Q Begin development of the Aston Wallet and the Aston Business Wallet.
+2Q Plan to launch Aston Global.
+2Q Completed the development of the ASTON Factory and the ASTON ITP.
+
+Token Sale
+
+5.1 Abstract
+
+Schedule
+
+Pre-sale : 6 December 03:00 UTC ~ 10 December 15:00 UTC
+Crowdsale : 11 December 03:00 ~ 17 December 15:00 UTC
+
+If the target amount is not attained during the period of the crowdsale, the additional crowdsales (the
+period for each crowdsale is restricted to a maximum of 1 week) can be carried out up to 7 times and the
+particulars are planned to be announced through the homepage (https://aston.company) 24 hours
+before each of the starting dates.
+
+ATX Token Sale
+
+A total of 1,000,000,000 ATX tokens are issued through the pre-sale as well as the crowdsale and
+
+20,000 ATX tokens are planned to be issued for each unit of Ethereum. However, if 10,000 ETH is not
+collected after the maximum 7 times of crowdsales, the Ethereum collected will be returned in full.
+
+Participation in the ATX token sale is restricted to use of Ethereum only. The distributed ATX tokens are
+delivered directly to your individual wallets.
+
+The ATX tokens issued through the ATX token sale cannot be in the form of equity or debt securities and
+do not guarantee any type of income to the contributors either.
+
+Under the current circumstances whereby international attention is raised regarding ICOs, there is a
+possibility that the regulations on ICOs may appear abruptly in each country. If any damages are
+expected to be caused to the participants due to the ICO regulations during the period of ATC token sale,
+the refund procedure will commence for the participants from the corresponding countries after posting
+the announcement through the ASTON website.
+
+XBC Technologies PTE. LTD. is a corporation established in accordance with the Singapore law and has
+complied with the legitimate ICO procedure by Singapore law. However, regulations on ICOs differ from
+country to country, and individual regulations may be applied depending on the country of the
+participant. Residents or nationals of the United States, China or other countries may not participate in
+the ASTON Token Sale in order to remove the illegal elements according to the nationality of the
+participants. Residents or nationals of other countries are obliged to comply with the laws and
+regulations of their respective countries.
+
+In addition, if ICO regulations can be abruptly enforced, and if there is a possibility that ICO will not be
+able to proceed objectively due to the regulation, or that the participants may be harmed, XBC
+Technologies PTE. LTD. will notify the details through the website (https://aston.company) You can then
+stop the ICO. This information will also be sent individually to the e-mail address that was filled in when
+participated in ICO, and the procedure for returning the ETH paid will proceed without delay.
+
+Token Holder's Benefit
+
+ATX will be used as the means for payment for all services provided by ASTON and it will not be supplied
+any more after the completion of the crowdsale. To issue additional ATX, an agreement must be made
+by the owners of ATX and there must be a 70% or higher consensus.
+
+Bonus Policy
+
+Pre-sale : 30%
+Crowdsale : 15%
+
+If additional crowdsales up to the seventh are in progress, bonuses for each period are as follows. (The
+ETH amount is based on the Tx Hash.)
+
+Less than Less than Less than Less than More than
+
+Token Sale
+300 ETH 6,000 ETH 8,000 ETH 10,000 ETH 10,000 ETH
+
+Pre-Sale 30%
+Crowdsale 15% 20% 25%
+1st additional sale 10% 15% 20%
+2nd additional sale 5% 10% 5%
+3nd additional sale 0% 5% 0% 25% 30%
+4nd additional sale 0% 5% 0%
+5nd additional sale 0% 5% 0%
+6nd additional sale 0% 5% 0%
+7nd additional sale 0% 5% 10%
+
+Since ATX is issued as a verifiable cryptocurrency, the ATX holder aims to have ATX own value.
+Therefore, ATX holders have no right to demand equity or obligation to XBC Technologies PTE. LTD. and
+third parties for their token holdings, and the value of ATX after the ATC has been sold and distributed,
+except when the initial sale of crowd sale is restricted. You may not claim to return ATX to XBC
+Technologies PTE. LTD. in cash or other cryptocurrency for any reason, including ATX price fluctuations
+
+5.2 Token Allocation
+
+Pre & Crowd Sale" 70%
+Marketing 10%
+
+The Team” 10%
+
+Early investor & Advisor 10%
+
+Total 100%
+
+1) Pre-sale is only available to institutional investors and Angel investors in consultation with Aston.
+Bonus rates can be set up to 50% through individual contracts.
+
+2) The following prohibition period of sales will be applied to the ATX’s distributed to the Team.
+Within 6 months - 20% of the quantity of token distributed can be sold.
+
+After 6 months ~ within 1 year - 30% of the quantity of token distributed can be sold.
+
+After 1 year ~ within 2 years - 50% of the quantity of token distributed can be sold.
+
+5.3 Use of Proceeds
+
+Use of proceeds Percentage
+
+Explanation
+
+Development 50% System and infrastructure development expenses
+Marketing & Promotion 30% Marketing & Promotions expenses for our services
+Operation 20% Operation expenses including legal
+
+Who We Are
+
+6.1 The Team
+
+)) CEO | Seungki Kim
+
+| CEO at Xblocksystems and Givtech
+
+Board member of Korean Blockchain Association
+Blockchain Committee member in Minjoo Party
+
+CEO | Kyungok Park
+CEO at Xblocksystems
+CFO at Senex Technology
+
+Chung-Ang University, Business School
+
+CTO | Yongseok Kwon
+
+CTO at Xblocksystems, X-Chain Architect
+
+CTO at Givtech, Head of Blockchain R&D Center
+SW engineer at Samsung Electronics R&D Center
+
+CSO | Youngjun Cho
+
+CSO at Xblocksystems
+
+CEO at Changjaeso, Fintech startup company builder
+System Engineer at IBM and NHN
+
+AS TOn
+
+Be a part of Auto Doc Ecosystem Now!
+
+Disclaimer
+
+This white paper is intended for general informational purposes only and the specific terms and
+conditions of sale of the ATX will be governed by the separate contract or purchase terms. Nothing in
+this whitepaper shall be construed to define the terms and conditions of a particular company or
+individual, and XBC Technologies PTE. LTD. assumes no liability for any third party conduct (such as third
+party transactions) that does not form a legal relationship with XBC Technologies PTE. LTD.

@@ -1,0 +1,1396 @@
+APIS
+MASTERNODE MEDIATION
+
+2017 (C) Oxchild Corp.
+All Rights Reserved
+
+APIS
+Contents
+
+0. Abstract
+1. Introduction and Problem Statement —----) s+. eee eee e teres 02
+2. What is a Masternode —--:e.ee ieee eee teeteeeeerer etter: Q2
+
+2.1 Definition
+2.2 Proof-ofWork(POW) and Proof-of-Stake(POS)
+2.3 Masternode using POS method
+2.4 Advantages and Limitations of a Masternode
+2.4.1 Masternode’s Advantages
+2.4.2 Masternode’s Limitations
+2.5 Opportunities
+3. The APIS Masternode Mediation Platform (—...............0ccccc cece cece cetceectseeetteeeeneea 05
+3.1 Business Model
+3.2 Platform Overview
+3.3 Platform Configuration
+3.3.1 Masternode Core
+3.3.2 Masternode Hub
+3.3.3 APIS Core
+3.4 Platform Accessibility and Security
+3.5 Platform Operating System
+3.5.1 How to get an APIS coin
+3.5.2 The APIS Core - PC
+3.5.3 The APIS Core - Mobile
+3.5.4 Reward Distribution
+3.5.5 APIS Coin
+3.5.5.1 APIS Specifications
+3.5.5.2 Features of APIS
+3.5.5.3 Benefits for APIS Users
+3.5.5.4 APIS Vision and Platform Scalability
+A. Token Sale oo..ccccccccccccccecccceecseeseeeeeeceeeeceecseeetescecsecsecevisvsstestececsetststsstetstsetesseee 19
+
+4.1 Private Offering Stage
+4.2 Presale Stage
+
+4.3 Crowd Sale Stage
+5. Budget Allocation SESS SEES SEES SSOSECCSSSOSSOOOOSSOOOOSOOOOOOSSCOCOOOOSOOOOOSIOOOSOONSY 5 Er
+CoP SCS 6 [1a] © EES SEES SSESSSSOSSOCOSSOOOSOOOS 21
+0. Abstract
+
+The APIS is building a “Masternode Mediation Platform”
+to familiarize the term “masternode” to a larger range of
+people and let them enjoy the advantages and benefits of
+a masternode. This paper is intended to give an overview
+of our approach in attaining this goal from explaining the
+concept of a masternode to elucidating how we will make
+
+this unfamiliar concept known to wider variety of people.
+
+1. Introduction and Problem Statement
+
+The APIS is a masternode mediation platform that
+enables the entire spectrum of users to have easy access
+to the two-tier incentivized network, also known as the
+“Masternode Network”. Masternodes refer to nodes in
+the cryptocurrency market that fulfill a specific function
+beyond simply relaying transactions (Its definition will
+be further developed in the paragraphs to follow). A
+masternode’s most distinctive feature is that any investor
+
+investing in a masternode can acquire stable and almost
+
+guaranteed profit just by locking up his/her money in
+the masternode for a fixed amount of time. However,
+despite its attractive characteristic, hosting a masternode
+is quite out of reach for most individual investors since
+most masternodes require substantial capital and intricate
+software engineering to set up.
+
+By aiding these average individuals come together to
+form a whole masternode, we will be able to encourage
+more people to participate in masternode investments
+as well as provide them with a much safer investment
+channel rather than investing in the exchange market
+
+without adequate knowledge.
+
+2. What is a Masternode?
+2.1. Definition
+Masternodes are “servers” in the cryptocurrencies
+
+network that relay transactions and sometimes also process
+
+other specific functions. The most distinctive characteristic
+of a masternode is that the users can deposit their money
+in a “masternode product” and earn a portion of the block
+rewards in the form of the cryptocurrency they invested
+in. The yield varies primarily according to the masternode
+count and each coin might have different payout periods.
+This makes masternode a means to generate “passive
+income” from cryptocurrencies without having to run
+expensive mining equipment or having to actively invest
+in exchanges. To create a masternode, a user only needs
+to lock in a specific amount of coin. Users can then either
+set up a server to host the masternode or ask a service
+
+provider to do so on their behalf.
+
+2.2. Proof-of-Work(POW) and Proof-of-Stake(POS)
+Coin mining can be divided into two different methods:
+POW (Proof-of-Work) and POS (Proof-of-Stake). POW is a
+system in which the higher the hash reserve is, the more
+blocks one can find for more coins. There is also the
+concept of “difficulty” in order to keep the block-generation
+time constant. The difficulty increases as the total hash
+
+increases and more hashes are required for finding
+
+more blocks along with the increased difficulty, which
+consequently leads the block generation time to remain
+
+constant. However, this POW method has some limitations.
+
+On the economic side, there are cost problems such as
+high electricity consumption, high costs of expensive
+mining equipment (ASIC, GPU, etc) and their maintenance,
+as well as security and centralization issues regarding hash
+monopolization. For most coins, the POW method had
+been chosen in the past and the most typical examples are
+Bitcoin, Litecoin and Ethereum.
+POS is a method designed to solve the biggest
+drawbacks of POW, namely security issues caused by
+
+hash monopolization and high cost for the purchase of
+
+equipment and their maintenance. For POS, the higher the
+stake proportion for the entire coin supply, the higher the
+acquisition amount for the additional coins issued. In other
+words, the role of “hash” in the POW method is equivalent
+to the role of “stake” in the POS method. More simply,
+it can be conceived as being similar to bank interest. In
+
+addition, the POS method can also achieve strong security
+
+just by linking multiple wallets that keep coins inside. In
+
+recent years, coins based on the POS method have been
+
+increasing and existing coins are also changing from
+
+the POW method to POS method. Ethereum is a perfect
+
+example of this.
+
+2.3. Masternode using POS method
+
+Masternodes include mining through the POS method. In
+the case of mining, block generation time varies according
+to mining difficulty, and the mining output also changes
+according to the number of masternodes formed in the
+blockchain. In general, masternode coins are hybrid in the
+sense that they consist of both POW and POS methods.
+They will follow the POW method up to a specific block and
+
+‘o the POS method after that.
+
+subsequently change
+
+2.4. Advantages and Limitations of a Masternode
+2.4.1. Masternode’s Advantages
+
+PIVX USD Coin
+onthly Income 217.80 10.7422
+Yealy Income 2,649.98 560.129
+ROI(Annual) 5.60%
+DASH USD Coin
+onthly Income 5,339.98 6.753
+Yealy Income 64,969.78 82.1615
+ROI(Annual) 8.22%
+
+Stable profit as the biggest advantage
+* As of December 12, 2017
+
+MEME USD Coin
+Monthly Income 940.30 709.674
+Yealy Income 11,440 8634.367
+RO|(Annual) 57.56%
+
+KORE USD Coin
+Monthly Income 50.322 11.91
+Yealy Income 612.26 144.905
+RO|(Annual) 28.98%
+
+A masternode guarantees stable Return On Investment
+(ROI), the profit gained from an investment. High ROI
+signifies that the investment was successful and cost-
+efficient. In other words, ROI is a financial term used to
+measure the efficiency of investments and investment
+methods.
+
+For example, 1,000 DASH coins, a typical masternode coin,
+purchased as exchange a year ago at USD 8.82 (December
+1, 2016) would have generated an ROI this year of about
+9040% as DASH prices soared from USD 8.82 to USD 806.18
+as of December 1, 2017, but the number of DASH coins
+
+possessed would still remain the same at 1,000.
+However, the calculation would be significantly different
+if one bought 1,000 DASH coins a year ago and formed
+
+a masternode instead of buying them as exchange. The
+
+number of coins one would have this year would have risen
+to 1,088 and the RO! would have risen to 9844%; needless
+to say that if the coin price increases continuously, the ROI
+would be even greater. What is more interesting is that even
+if the coin price declined, one would still be able to manage
+one’s risks since the investor could still earn additional
+coins generated from the masternode regardless of price
+
+fluctuation.
+2.4.2. Masternode’s Limitations
+
+Amount of money/coins required for the formation of each masternode
+
+Coin / detail Price Change Volume Marketcap ROI Nodes #required Mn Worth
+SIBcoin (SIB) $2.4898 | 25.14% | $5,777,790.000 | $39,699,846.00 8.42% 7,484 ,000 $2,489.75
+Dash (DASH) $761.456 | -0.05% |$179,460,000.00 | $5,889,854,116.00 | 8.63& 4,085 ,000 $761,456.00
+Chaincoin (CHC) $0.5095 | 43.45% 98,033.00 7,208,127.00 | 54.77& | 2,356 ,000 $509.48
+Crown SN (CRW-SN) 1.6151 | 8.92% $237,427.00 | $26,301,331.00 | 40.41% | 2,229 500 $807.53
+PIVX (PIVX) $5,3692 | 1.71% | $4.156,010.00 |$295,627,784.00] 5.75% 2,115 10,000 $53,692.00
+ArcticCoin(ARC) 0.0534 | -4.25% 26,568.70 1,312,748.00 | 18.05% | 1,684 ,000 $53.42
+PURA (PURA) $0.6333 | 8.23% $593,478.00 108,903,009.00 1.93% 1,022 100,000 $63,330.80
+Crown (CRW) 1.6151 | 8.92% $237,427.00 | $26,301,331.00 | 23.00% 979 10,000 $16,150.50
+MonacoCoin(XMCC) | $0.5255 | 75.60 18,237.40 1,379,848.00 | 66.78% 763 ,000 $525.49
+Innova (INN) 4.1425 | -0.52% 86,670.80 3,647,433.00 |37451%| 614 ,000 $4,142.51
+
+A source“ hitp//masternodes.online
+However, the problem that most people face when forming a masternode is that in order to form a masternode, there is
+
+a minimum number of coins that inves'
+
+‘ors need to possess, which often exceeds
+
+For example, the minimum amount required to form a DASH masternode is 1,000
+
+the capacity of most ordinary investors.
+
+DASH coins (equivalent to USD 760,000).
+
+Another example is STRATIS coin, which requires 25,000 coins (equivalent to USD 1,700,000) to form a masternode.
+
+System build-up and maintenance that require professional knowledge is another problem that deters most small
+
+investors. For example, a well-known masternode coin, DASH, requires both 1,000 DASH coins to form a single masternode
+
+and 24 hours of non-stop servers and related programs for stable operation.
+
+2.5. Opportunities
+
+Volatility Asset Classes
+
+~~ —= Volatility MSCI World AC Index
+— Volatility Golobal Treasuries
+
+co, Volatility Gold
+Volatility USD/EURO
+— Volatility Bitcoin
+100% ~ .
+
+Bitcoin volatility means “more regulation” of cryptocurrency is on the way. As can be inferred from the graph above,
+Bitcoin's price volatility outstrips all other assets. High volatility implies high risk and this is the main reason why many
+people regard investment in cryptocurrency as “speculation”, thus bringing about various regulation. This misconception
+has become an obstacle to the development of cryptocurrency, in a further sense, blockchain.
+
+However, with the introduction of masternode investments, ordinary investors can now minimize their risk taking and
+still generate sizable earnings. Moreover, now that many investors are seeking to find a reliable place to invest their money,
+
+it is high time that we start focusing more on masternode platforms rather than existing exchange markets.
+Scope / content Cointry Addition information
+
+China Banks and payment systems prohibited from dealing in bitcoins. Individuals free to trade.
+Prohibition Russia Bitcoins cannot be used by citizens legal entities.
+
+Iceland Foreign exchange activities with Bitcoin illegal.
+Prohibition df ATMs Taiwan Approval For bitcoin ATMs refused.
+Protection from Singapore {nace nlermediaries verufy the indentities of their customers and report suspicious
+money Laundering & Fansaction.
+nck activities USA Bitcoin exchanges and most miners obliged to collect information on potentially suspicius
+inancing transactions and report these to the federal government
+
+USA The sale, exchange or use of Bitcoin for payment in a real-world economy transaction may
+
+result in tax liability.
+Japan The tax will cover gains from trading Bitcoin, purchases made with Bitcoin and revenues
+
+Taxing Bitcoin from transctions. Banks and securities firms will be prohibites from Bitcoin trades.
+
+Rules on taxation of capital gains apply when profits are made from transfer to another
+
+Finland
+currency. increase in value in Bitcoin after it was obtained as payment is also taxable.
+
+Germany Profits from mining or trading subject to capital gains tax unless hoarded for at least one year.
+
+3. The APIS Masternode Mediation Platform
+3.1. Business Model
+
+Cryptocurrency, which has emerged with the development of blockchain that opened up with the Fourth Industrial
+Revolution, is characterized by decentralization, anonymity, and reliability and is now attracting new investors from various
+fields. Nevertheless, large price fluctuation is making cryptocurrency investment seem “speculative” and is raising fears of
+becoming a social problem.
+
+The APIS Masternode Mediation Platform will provide both investors with a steady income with minimized risk and the
+market with reliability, accessibility and price stability. Ultimately, APIS aims to become the first key currency of masternode
+
+coins and will ensure complete anonymity.
+
+3.2. Platform Overview
+
+The APIS Platform (also called “The APIS Core”) is a Ethereum public-chain based masternode mediation platform that
+aims to help individual and corporate investors invest in desired masternodes easily and effectively. It supports both PC
+(personal computer) and mobile devices, thereby providing users with the chance to make stable profit and enjoy more
+cryptocurrency’s benefits conveniently. This section explains the importance of the APIS Core along with the usefulness
+and innovativeness of its official coin “APIS (Advanced Property Investment System)”, named after the ancient Egyptian
+bull deity.
+Typical Way of Masternode @ $s $3 ® @
+2
+
+Investment 2 2 2 2
+BTDX APIS MEME DASH DMD
+Masternode Masternode Masternode Masternode Masternode
+The APIS Masternode
+Mediation Platform oT
+APIS. Masternode
+Masternode Wy
+X MEME
+eS Masternode
+APIS <
+MASTERNODE
+= DASH
+MEDIATION ~~ Masternode
+PLATFORM
+»
+DMD
+Masternode
+
+In the case of existing masternode coins such as DASH, MEME and others, not only maintaining a certain amount of
+coins on the software wallet but also implementing them on a Linux server that can be operated 24 hours stably is also
+very crucial. However, these conditions are problematic for most people as they are not familiar with IT and resolving
+maintenance problems inherent in hardware management, software update and security assurance. One purpose of our
+platform is to deal with such inconveniences and let non-professional investors who wish to form a masternode take part
+just by becoming a member of the APIS Platform without having to consider any of the annoying complications such as
+
+hardware or software manipulation.
+
+3.3. Platform Configuration
+3.3.1. Masternode Core
+
+A masternode core is a distributed database consisting of cutting-edge encryption technology to manage APIS
+Masternode user reports, shares and trading records on the platform. Individual participants’ wallet information is securely
+stored in the form of a Ethereum-based blockchain that also ensures system stability and asset protection through
+systemic data backup and restoration. Masternode information that is already incorporated on the platform will be
+accessible in the future through API and SDK that will be provided and all data communication will be encrypted as well.
+
+Through this process, we can strengthen the scalability of the APIS mediation platform.
+3.3.2. Masternode Hub
+
+Masternode Hub composes and manages various coins such as DASH, MEME and BTDX's masternodes systematically.
+When a masternode is newly formed from investor participation, the masternode hub automatically creates VPS
+(Virtual Private Server) for each masternode, prepares required up-to-date software and operates the masternode by
+depositing designated amount of cryptocurrency in the wallet through the masternode core. All processes are carried out
+automatically and the investors are informed with a push-message every time there is progress in the procedure such as
+
+the building of VPS, installation of software and creation of wallet.
+
+Masternode Hub constantly reports rewards obtained from the running of each masternode to the masternode core
+
+and allows investors to clearly track their interests through the APIS Core. Masternode Hub's hardware operates 24 hours
+
+by our highly-experienced management team.
+
+3.3.3. APIS Core
+
+APIS Core manages user information as well as APIS assets and provides all core functions that correlate with the
+masternode core. APIS Core is an EVM (Ethereum Virtual Machine)-based blockchain program that can be connected with
+various platforms such as Ethereum or Qtum and it makes use of POS methods. APIS Core supports multiple Operating
+Systems (OS) such as Windows, Linux, Mac, Android and iOS.
+
+3.4. Platform Accessibility and Security
+
+Distributed Network of APIS
+
+Distributed Denial of Service(DDoS) attacks aimed at cryptocurrency are increasing these days. Cryptocurrency network
+at its incipient stage is very vulnerable to attacks owing to its small number of nodes. Moreover, if nodes consisting a
+network are regionally concentrated or disproportionately dispersed, there is a high chance that the transaction signals
+might decrease in their efficiency.
+
+In order to prevent this from happening, we will distribute our networks and evenly provide signals to different places.
+For this purpose, APIS will build its system servers all around the world distributed and these servers will be located in
+
+main IDCs worldwide, operating multiple servers.
+3.5. Platform Operating System
+
+te
+
+/
+<S
+D&O,
+
+DASH KORE
+
+Masternode Masternode ARIS oi
+
+Masternode Corporate
+
+Profit
+°f
+
+Payment through converted APIS value
+
+() Distribution through APIS : No fee
+Minimum amount needed to form a Masternode
+Distribution through Other Coins : Small fee
+
+Profit Distribution
+
+When users transfer other cryptocurrency(such as Bitcoin or Ethereum) to the APIS Core, they receive APIS coins of the
+same value converted, which means all investments on this platform are carried out in APIS coinage and are ready for
+investment in desired masternodes through a function in the APIS Core.
+
+Once the investment terminates, investors can receive their rewards according to their share/contribution. 5% of the
+company’s interest generated from the APIS masternode mediation platform will be donated to related foundations of
+
+blockchain programming and development to improve current poor development condition.
+3.5.1. How to get an APIS coin
+
+APIS Cryptocurrency Ss a
+“ ee wy
+
+APIS Core
+
+(user wallet) APIS Wallet
+Bitcoin 670
+Ethereum 17,400
+API S Dash 41,000
+4,800,000 Litecoin 180,000
+Ripple 89,568,241
+
+Monero 624,000
+
+Converted value BTC: 142/ ETH: 4000
+
+a) APIS coin can be purchased at other exchange platforms(to be listed)
+
+b) APIS coin can be purchased in the APIS Core by sending other cryptocurrencies such as Bitcoin
+and Ethereum to the APIS
+(Wallet in the APIS Core(Cryptocurrencies sent will be automatically converted to APIS of equal value)
+
+c) APIS coin can be purchased in our webpage using Paypal or other cryptocurrencies.
+3.5.2. The APIS Core -PC
+
+—_@
+Select a Coin
+
+DASH KORE APIS
+Masternode Masternode Masternode
+
+————_—
+APIS Core Check
+
+Masternode Status Board
+
+APIS Core Dash Masternode
+(User Wallet) (APIS wallet)
+
+APIS APIS APIS
+
+4,800,000 —————> 4,000,000
+
+(Before) (After) _ Send 800,000
+
+APIS
+Minimum amount needed to form a Masternode
+Converted RC (Required coin): 15,000,000 /
+vaine BTC: 142 / ETH : 4000 CC (Current coin): 7,378,000
+
+The APIS core is a proprietary program that supports investment in masternodes of various cryptocurrencies, investment
+in the APIS masternode, APIS coin charges, APIS coin deposit and APIS coin withdrawal.
+
+The role of the "masternode selection" function is to let users identify the conditions of a certain masternode such as
+ROI, technology and price needed to form its masternode. Once the user selects a masternode to invest from the list in the
+
+APIS Core, the user can send any amount of his/her APIS coins to the desired masternode.
+
+Example) Kevin wants to form a DASH masternode to make stable income, but he can only afford 100 DASH coins whereas
+
+the minimum number of DASH coins needed to form a DASH masternode is 1,000. Kevin is aware that he can use the APIS
+Core to form a DASH masternode with only 100 DASH coins. Once the designated time for investment ends, Kevin will
+
+receive 1/10 of the total reward gained, which includes both principal and the total reward gained.
+
+10
+3.5.3. The APIS Core - Mobile
+
+| 2:06 PM
+
+| TotalAPIS 1000
+
+Deposit
+
+Withdrawal
+
+Masternode
+
+My Activities
+
+Py 2:06 PM
+
+Deposit
+Recipient's Information
+Desired Currency ws
+
+Recipient's Address 4A303xtZ552033
+
+Deposit Details
+‘Sender Serial No. 3198331120129
+Deposit Amount 205 APIS
+
+Send tothe aceaunt above and submit this form
+
+“a SCOBPM
+
+rotatais 1000
+
+APISAvailable 300
+‘APIS in installment 700
+
+Deposit
+
+Withdrawal
+
+P
+
+Withdrawal
+Total APIS
+
+5564366
+
+APIS Available for Withdrawal
+
+5564366 APIS
+Recipient's Address
+SAd0Ee05ccc0.
+
+Withdrawal Amount
+
+30000
+
+MAIN
+
+A. My Account
+- Shows Total APIS, APIS Available, APIS in Installment
+B. Masternode
+- Used when checking and joining masternode installment products
+C. Deposit
+- Used for depositing APIS coin
+D. Withdrawal
+- Used for transferring APIS to other accounts or platforms
+E. My Activities
+- Displays all the activities conducted by the user
+
+My Account
+
+A. APIS Logo
+B. APIS Balance
+- ‘APIS Core’, namely, shows the total amount of APIS in APIS Wallet,
+APIS available and APIS in installment
+C. My ID Number
+- Show the user’s serial number
+D. Deposit
+- Used for depositing APIS in APIS core. Upon clicking, connects
+to the
+internet browser. The user gets to transfer cryptocurrency to
+our APIS
+Wallet (“My ID No.” required)
+E. Withdrawal
+- Used for transferring own APIS to other accounts or platforms
+
+1) Deposit
+
+A. Recipient's Information
+-User gets to select the currency he/she wants to send
+-Deposit address generated according to the currency that
+the user intends to send
+B. Deposit Details
+-Sender’s Serial Number
+-Amount of currency to deposit
+-Desired deposit amount will be automatically converted to
+APIS value real-time
+-Transfer the currency to our company’s wallet and submit
+a form with user’s serial number on it
+
+2) Withdrawal
+
+A. Total APIS
+-Total APIS including the ones in installment
+B. Withdrawable APIS
+-Usable APIS excluding the ones in installment
+C. Recipient’s Address
+-Write down the recipient’s APIS blockchain address
+D. Withdrawal Amount
+-Amount to be withdrawn(in APIS)
+
+11
+Masternode
+
+A. Status Board
+- Shows all the POS-based and ongoing masternode products
+- Shows each masternode coin’s information such as interest rate,
+
+Pivx minimum APIS required to form a masternode and installment period
+| oes - If any of the coins seems reasonable, then one can ‘select’ and start
+PL vecinstentogh on the installment
+Status Board B. Registered Product
+cone Interest period duration - Lists all the masternode products that the user currently is registered in
+- By clicking on the product names, the user can see the details
+Tor perodraton real-time
+
+DASH
+
+interest / period{duration)
+
+Status Board Example
+
+Registered Products
+
+A. Lists all the coins that are available for masternode installment
+B. Lists information such as coin’s name/current price/minimum
+requirement/installment period
+
+1) Registered Masternode
+
+zal ¥ A. Ongoing
+OM vy activites - Products that the user is now in and is currently ongoing
+- Shows details such as installment time left and interest
+B. Completed
+- Lists the ones that the user had participated and are
+completed
+
+Masternode
+
+‘Ongoing
+
+‘Onhold
+
+Deposit/Withdrawl reports 2) My Activities
+
+A. Masternode
+
+- Shows all the masternode products that the user had
+participated in
+
+B. Deposit/Withdrawal records
+
+-Shows all the deposit/withdrawal records of the user
+
+Completed
+
+12
+3.5.4. Reward Distribution
+
+APIS Masternode
+
+(APIS wallet)
+
+APIS
+
+ROI (Interest from
+
+Masternode Installment)
+
+TypeA
+
+1. If rewared with APIS :
+Masternode Mediation Fee : None
+
+TypeB
+
+oP
+
+2. If rewarded with coins other than APIS:
+Masternode Mediation Fee : Small Fee
+
+If the user chooses to receive the interest in the from of the paritcular coin he/she invested, a small fee applies.
+
+Conversely, if the user chooses to receive the interest in APIS, there will be vo fee charged.
+
+3.5.5. APIS Coin
+
+3.5.5.1. APIS Specifications
+
+Types BTC ETH APIS
+Coins Issued About 16.5 milion About 96 milion 9.52 bilion
+Decentralization Middle Low High
+Stability Middle Middle High
+Transaction Fee 0.0005 BTC 0.01 ETH 0.005 APIS
+Method POW POW POS
+
+Governance Model
+
+Distributes Opensource
+governance
+
+Centralized opensource
+governance
+
+Decentralized Opensource
+governance
+
+- Total amount of coins issued : 9,520,000,000
+
+- Block Time : 120 second
+
+S
+
+- BLock Reward : Decrease by 11.37% per year
+
+- Minimum Number of APIS needed to form its masternode :
+
+- Anonymity : Kept through “APIS Private Send”
+
+50,000APIS
+
+13
+3.5.5.2. Features of APIS
+
+1) Comlpete Anonymity
+
+APIS Core
+(user wallet)
+
+<>
+ag
+
+APIS Masternode Cross Section
+
+Dash Masternode
+(APIS wallet)
+
+Dash Masternode
+user (APIS wallet) user
+
+Input
+APIS
+
+(A, B, C, D, E, F ...)
+
+On the APIS Core, every time a user makes a transac
+automatically, making it impossible to track where the cu
+Breeze Wallet’s Tumblebit function. However, APIS goes a
+
+the currency used for investment; the same rule applies w
+
+Output
+APIS
+
+*Impossible to Know whose APIS coin is
+
+withdrawn among different APIS investors
+
+ion, the currency sent is pooled with other users’ currencies
+rrency originated from. This function is similar to that of Stratis
+step further as users can freely exchange their APIS coins with
+
+hen getting the interest back. This function is particularly useful
+
+for individuals or corporations that do not want to leave any trace of their transactions behind. The APIS Protocol is the
+
+one that processes all these in the APIS Core. Users can send their currencies confidentially and anonymously through
+
+the “APIS Private Send” function. This ensures that all mas
+
+ernodes on the network provide this anonymization service, so
+
+there is no centralized party to attack or interrupt the transaction.
+
+2) Atomic Swap and Lightning Network
+
+A technology scheduled to be applied in Q4 2018, Atomic Swap refers to the direct transaction between two different
+
+coins operated on separate blockchains. The distinguishing trait of this technology is that there is no third-person or party
+
+involved in the middle. Once applied, it will make it greatly easier for investors to buy cryptocurrencies, as no further
+
+complicated maneuvering of any kind is required. Once commercialized, users will be able to buy coins directly from their
+
+wallets without having to go through separate platforms.
+
+In the APIS platform, we are planning to apply this technology
+
+in masternode formation in the sense that users’ APIS will be automatically converted to specific coins that they want to
+
+invest in through Atomic Swap.
+
+14
+3) Lightning Network
+
+Just like Atomic Swap, Lightning Network is also a
+technology that makes use of "hash time lock contract”.
+The only difference between the two is that when Atomic
+Swap connects blockchains, Lightning Network connects
+each payment channel.
+
+If A and B have a payment channel and B and C have a
+payment channel, A and C can trade through B even if A
+does not trust C personally. For example, Rachel, who only
+
+has 1 Litecoin intends to buy Jack's car that Jack labeled
+
+"
+
+fay
+
+Bitcoin" as the price. Rachel and Robert already have
+
+a Litecoin channel open, and Jack already has a Bitcoin
+
+channel open with Robert. Rachel sends 200 Litecoins
+
+to Robert and Robert sends 1 Bitcoin to Jack. All these
+
+transactions are carried out by hash time lock contracts
+
+and Robert functions as the payment conduit that does
+
+not require trust between Rachel and Robert in these
+
+transactions.
+
+Rachel and Jack had both their Litecoin and Bitcoin
+
+channels open with Robert, they would have been able
+
+‘0 exchange their coins via this platform called "Robert".
+f Rachel sends 200 Litecoins to Robert, then Robert
+ransmits these directly to Jack. Similarly, the 1 Bitcoin that
+Jack sends to Robert will be forwarded directly to Rachel.
+hash
+
+These transactions are also made possible throug
+ime lock contracts and Robert in this case, functions as an
+altcoin exchanger that does not require any degree or form
+
+of trust between the two entities involved. Robert's role in
+
+his case, is what our masternode mediation platform, the
+
+APIS Core, would undertake.
+
+However, in order for the successful launch of lightning
+network, we first have to deal with service DoS problems.
+Even though Lightning Network itself is already devised to
+
+deter malicious individuals from stealing coins, someone
+
+in the middle (Robert in the case above) can postpone or
+
+block the transaction. Such concerns can be resolved
+
+by closing out channels with uncooperative participants.
+By doing so, uncooperative participants that still want
+channels open can be ruled out, taking part in service DoS
+
+attacks.
+
+However, in order to ensure that all the uncooperative
+channels are closed and attackers ruled out, each
+participant in the payment chain should be able to
+monitor all the participants. There is also the problem
+of six individuals having to keep track of transactions
+with Litecoin, even if only 2 people in the chain use a
+
+Litecoin channel, in order to prevent possible blockage
+
+of the channel. This problem, however, can also be easily
+
+resolved if our platform performs the role of middleman.
+
+15
+3.5.5.3. Benefits for APIS Users
+
+We are aiming for a differentiated operating policy from existing masternode coins. In the case of APIS, we adopt a
+
+hierarchical operation system by differentiating rewarding rates according to the amount of investment made in the
+
+APIS masternode. Moreover, by applying Parallel Masternodes Technology, POS Algorithm, we will realize 1 PC - Multi
+
+Masternodes, but not 1 PC - 1 Masternode.
+
+Level 3: Private
+Profit : +20%
+
+Level 2: Major
+Profit : + 5%
+
+Level 1: General
+
+500,000 APIS
+
+Cryptocurrency Plant Masternode Hierarchy
+
+Grade No. of APIS Bounce
+1 (General) 50,000 N/A
+
+2 (Major) 200,000 +5%
+
+3 (Private) 500,000 +20%
+
+3.5.5.4. APIS Vision and Platform Scalability
+The ultimate goal of APIS is to “lower the entry barrier of
+cryptocurrency for everybody to join”. In order to make this
+
+possible, we will start by achieving the followings:
+
+1) Smart Contract on Canvas
+As bitcoin’s simple script is evolving into smart
+contract with Ethereum, the use of cryptocurrency is also
+expanding into various areas including ICO funding, token
+issuance, identity verification, and cloud storage service.
+However, most “smart contracts” are not so
+smart; they are heavily developer focused and
+
+often neglect much needed user interface for
+
+16
+
+everyday users. As a result, deployed smart
+contracts are hardly user friendly, if usable at all.
+
+Smart contract end-users are also forced to utilize
+the user interface provided by the core program of the
+respective cryptocurrency or web-based application,
+so a smart contract may have more than one correct
+use case, which could further confuse its already
+perplexed users. As a result, users often have to refer
+to technical manual for the smart contract they are
+using or get help from experienced individuals. This is
+counterintuitive to the whole concept of smart contract,
+
+which is to make cryptocurrency accessible to many users.
+APIS p
+
+ans to solve this problem by
+implementing so-called “smart contract on canvas.”
+
+Smart Contract made smarter Developers can register
+UI elements(the canvas)written in HTML when they
+deploy their coded smart contract on the blockchain.
+Canvas consists of a single HTML file and can include
+CSS, javascript, and image. Javascript code included in
+the contract can be obfuscated, but it is recommended
+that obfuscation is not conducted in order to provide
+transparent data processing mechanism to the contract
+
+users. Image files can be registered to the document
+
+through Base64 encoding. SmartContracts element
+
+implemented in javascript can be called within a canvas.
+The HTML file that functions as canvas cannot be
+saved on the blockchain, so developers must provide an
+
+environment in which canvas files can be accessed through
+
+web addresses. Theses addresses could be allocated
+through creation of CanvasLocation variable within the
+
+smart contract. In addition, the entire canvas code must
+
+be hashed with Keccak-256 and saved on the CanvasHash
+variable in its respective smart contract to prevent
+secretive, unannounced changes. Through these measures,
+
+applications can decide on the existence of a canvas,
+
+organized a GUI, and verify immutability of the canvas used.
+
+2) Address Masking
+
+The use of Public and Private Key in cryptocurrency
+is innovative in the security perspective, but the actual
+written addresses such as hexadecimal address is
+near impossible to use without copy and pasting, not
+to mention memorizing. It’s not an overstatement to
+say that user convenience was not among the highest
+priorities when cryptocurrency addresses were developed.
+
+For blockchain technology to go mainstream, however,
+complex address such as the ones used now must also be
+simplified like phone numbers or email addresses in order
+
+to be used by the masses. APIS aims to bring “address
+
+masking” concept to the reality for this particular reason.
+
+Through the APIS core program, anyone can register
+a simplified address that gets rerouted to their original
+hexadecimal address. The simplified address consists
+of a name identifier, @, and a domain name. Such
+easily identifiable, simplified address can increase
+user recognition of each address and resolve issues
+arising from sending and receiving complex address.
+
+To prevent uncontrolled creation of address and
+their abuse by random individuals, public use
+addresses and authorization-requiring addresses
+are distinguished. Open domain addresses that
+may be owned by any individual are limited to the
+following, but can be added through user requests:
+
+Me(personal wallet), edu(educational facility),
+
+com(company), org(organization and group)
+
+The owner of a domain has the authority to mask
+the given address and can transfer that authority to
+another person through ownership validation. Owner
+of a masked address can also change the original
+wallet address linked to that masked address through
+ownership validation in the form of a wallet private key.
+In case of a dispute regarding a masked address
+or a domain, their ownership may be changed or
+even terminated in accordance with the decisions
+made by the country-level settling authority.
+
+In order to deter uncontrolled address creation, there will
+
+be a certain fee associated with masking an address.
+
+3) Mineral System
+
+Most cryptocurrencies present in the market today has a
+small fee for using the resources required for transfer of the
+currency or smart contract initiation. This fee is provided
+to the node creating a new block as block reward, thereby
+giving incentive to people running nodes to continue running
+
+them. However, most cryptocurrency users are seldom
+
+17
+involved with block rewards, so the fee typically comes off as
+a burden of cryptocurrency use, not advantage. Although the
+‘ee is small, each and every transaction necessitates a fee. This
+is rather cumbersome and inefficient, particularly in countries
+where domestic bank wire to the same bank does not require a
+‘ee. Cryptocurrency use fees may therefore be a major barrier to
+entry for people who wish to use the currency in a daily basis.
+APIS aims to improve this fee system by introducing the
+
+ineral system. To use smart contract on APIS or transfer APIS
+
+‘o another wallet, a separate currency called Mineral must be
+used. APIS users may purchase Mineral through APIS whenever
+required, and the APIS tokens spent on such transactions will be
+distributed as block rewards. Mineral could also be obtained as
+
+interest to APIS tokens placed in a personal wallet. Mineral will
+
+be distributed proportional to the amount of APIS tokens held
+in the wallet. The upper limit of Minerals receivable as interest
+can also be adjusted depending on the level of contributions
+a wallet has made to APIS network(such as APIS transactions),
+
+so the most active APIS user can receive the most Minerals.
+
+Of note, Minerals can only be used as transaction fees,
+they cannot be sent to another wallet or user and cannot
+be exchanged into APIS. Mineral still provides almost no-fee
+environment to active APIS users, so a significant increase in
+user transactions is expected as users attempt to minimize
+their fees. Mineral system will therefore help real-world use of
+
+APIS ecosystem.means a greater “fee” for them. To improve this
+
+disincentive, APIS will do the following.
+1) Mineral will automatically accumulate according to the
+amount of APIS stored in the wallet.
+2) Mineral can be purchased with APIS, but Mineral cannot
+be converted to APIS.
+3) Mineral cannot be sent to other addresses, but can only be
+created and burned.
+By creating this new Mineral system, we intend to contribute
+to the popularization of the cryptocurrency market by enabling
+faithful users of APIS to carry out several transactions without
+
+any fee.
+
+18
+4. Token Sale
+Our APIS Token Sale amount this time is 5,236,000,000 APIS, which is 55% of the total APIS valued at 1,000,000 QTUM.
+35% of APIS shareholding(equivalent to 45% of total APIS) will be locked-up for an year after listing and 10% will be used
+
+as liquid asset. All stage's unsold token will be burned. Our sale this time will be divided into 3 main stages.
+
+4.1. Private Offering Stage
+Coins Allocated : 1,380,000,000 APIS / 240,000 QTUM
+
+Many leaders in related fields, companies and angel investors contributed to the establishment and development of the
+APIS platform. In return, we are providing a bonus of 15%. In other words, 1QTUM = 5,750 APIS Total capitalization for this
+stage is 240,000 QTUM.
+
+All the APIS tokens sold in Private Sale will be locked up for 3months after listing.
+
+4.2. Pre-sale Stage
+Coins Allocated : 756,000,000 APIS / 140,000 QTUM
+As a means of appreciation for APIS early investors, we are planning to sell APIS through Qtum Smart Contract before the
+actual crowd sale begins. There will be a 8% bonus given.
+1QTUM = 5,400 APIS
+Total capitalization for this stage is 140,000 QTUM.
+
+4.3. Crowd Sale Stage
+Coins Allocated : 3,100,000,000 APIS / 620,000 QTUM
+In this stage, we are planning to sell APIS through Ethereum/Qtum Smart Contract. 1QTUM=5,000APIS.
+The Total Cap for this stage is 620,000 QTUM
+In this stage, we will set-up global communities and attract investments from the general public(except US and China)
+for the development of the APIS Platform.
+-Currency Supported : QTUM, ETH
+
+-Participation Routes : Official Website, Platforms in countries like Singapore, England, Russia, Japan, Canada and Thailand.
+
+Token Sale
+APIS Sales Plan Private Pre-Sale Crowd Sale
+Total Sale Amount 5,236,000,000
+Sale Amount 1,380,000,000 756,000,000 3,100,000,000
+Token Bonus 15% 8% -
+APIS per QTUM 5,750 5,400 5,000
+ETH/QTUM ratio will be
+APIS per ETH - - announced 2 hours before the
+sale and will follow CMC
+
+* ETH/QTUM ratio will be announced at Website.
+
+19
+5. Budget Allocation
+
+The APIS Platform will be developed by QTUM, ETH financed through crowd funding. The fund will be used for six years.
+
+10%
+Team Building \.
+
+20% —
+Platform Maintenance
+
+10%
+Compliance and Legal
+
+1) Development
+
+APIS team will spend most of the fund raised in
+developing the system and reinforcing members such
+as the Development Team, Production, Operation and
+Maintenance Team, Android/ios team, APIS and Web
+Community Team, Test/Management/Maintenance Team,
+Big Data Statistics Team and the Design Team. Through
+this, we will ensure our platforms’:
+~ Security
+- Scalable design with easy maintenance
+
+- Highly reliable professional operation and maintenance team
+
+2) Platform operating costs
+
+Good products come from good operation. The APIS
+team uses 20% of the funds to build professional products,
+operations and customer service teams. We will handle
+customer issues in a timely manner, actively respond to
+the needs of the local community and continue to remedy
+
+products promptly.
+
+20
+
+40%
+Development
+
+\
+20%
+
+Marketing
+
+3) Market and Marketing Costs
+
+In this Internet era, a good application can never do
+without market promotion, reasonable marketing, and
+business cooperation. The APIS team will use 20% of the
+funds for market and marketing activities and will strive to
+promote and disseminate APIS worldwide.
+
+The APIS social networks will support eight different
+languages: English, Japanese, Korean, Simplified Chinese,
+Traditional Chinese, Russian, Spanish, German and Thai.
+More languages are planned in the future and we are
+positive that through reasonable market and marketing
+
+budgets as the basis, APIS will become the most widely
+
+used currency worldwide. Moreover, in order for users to
+
+better understand the APIS platform, we will actively take
+
+part in various blockchain activities for global promotion
+
+and marketing.
+6. Roadmap
+
+2017.12
+
+Publish of White paper
+Final copy published after
+feedback and suggestions
+
+2018. 05
+APIS testnet run
+Listing
+
+2018. 07
+
+Launch of APIS mainnet
+
+APIS token swap
+
+APIS web wallet release
+Launch of Masternode platform
+Snapshot
+
+2016. 11 - 2017.12
+
+Market Research
+
+Research on the feasibility of Masternode platform
+n the cryplocurrency market
+
+2018. 02 - 2018. 04
+Token crowdsale
+Private, Pre, Crowd sale - 55% of APIS
+
+2018. 06
+Masternode platform closed Beta -
+To fulfill Scalability
+
+(address masking, smart contract on canvas, mineral system)
+
+2018 Q3
+PC APIS wallet release
+Mobile APIS wallet release
+
+Launch of APIS ECO website
+2018 Q4
+Mobile app release
+Test on atomic swap, breeze wallet, tumblebit
+APIS dApp ECO
+2018. 05 2018. 07 2018. Q4
+- APIS testnet run - Launch of mainnet - Mobile app release
+- Listing - APIS token swap - Test on atomic swap,breeze wallet,
+- APIS web wallet release tumblebit
+- Launch of Masternode platform - APIS dApp ECO
+2018. 06 - Snapshot
+
+- Masternode platform closed
+Beta
+- Implementation on services
+
+(address masking, smart contract
+on canvas, mineral system
+
+2018. Q3
+
+- PC APIS wallet release
+- Mobile APIS wallet release
+- Launch of APIS ECO website
+
+21
+8. Disclaimer
+
+The information provided in this whitepaper and
+accompanying material is for informational purposes only.
+It should not be considered legal or financial advice. You
+should consult with an attorney or other professional to
+determine what may be best for your individual needs.
+
+APIS and the APIS Team do not make any guarantee or
+other promise as to any results that may be obtained from
+
+using our currency or content. No one should make any
+
+investment decision without first consulting his or her own
+financial advisor and conducting his or her own research
+and due diligence. To the maximum extent permitted by
+law, APIS disclaims any and all liability in the event any
+information, commentary, analysis, opinions, advice and/
+or recommendations prove to be inaccurate, incomplete or
+unreliable, or result in any investment or other losses.
+Content contained on or made available through our
+website or affiliated websites or social media channels
+is not intended to and does not constitute legal advice
+or investment advice and no attorney-client relationship
+is formed. Your use of the information on the website or
+
+materials linked from the Web is at your own risk.
+
+Legal issues of tokens crowd sale:
+
+1. As a digital asset, most tokens are directly sold by the
+team. The sale of the APIS at the pre-ICO stage will be
+conducted in private, and will allow qualified investors in
+the United States and China to participate. It will not be
+administered by the Securities Act and does not violate
+relevant requirements of China's regulators. The remaining
+tokens will inhibit American and Chinese citizens to
+
+participate.
+
+2. Regulations: after a wide range of legal verification and
+continuous focus on the development and legal structure
+of digital currency, the team believes that caution regarding
+
+the sale of tokens is advisable. Therefore, with the advent
+
+22
+
+of crowd-sales, we will constantly adjust the sale strategy
+of tokens, and avoid relevant legal risks to the largest
+
+extent;
+
+3. American investors: in accordance with law, we will
+screen investors based on a series of conditions (e.g.,
+American citizens having over $200,000 in annual income
+or whose spouse has over $300,000 annual income can
+participate in crowd-selling) to guarantee that American
+citizens participating in the crowd-sale are "Accredited
+investors." Those not screened cannot participate in the
+
+project’s crowd-sale;
+
+4. Non-American investors: in terms of technology,
+applying the same standard to non-American investors is
+unnecessary. However, as American legal requirements
+are stricter, the legal team requests us to apply the legal
+restrictions that accord with American laws to non-
+
+American investors.
+References
+
+1) AM ANTONOPOULOS. Mastering bitcoins, 2014
+
+2) Mukoli’c The quest for scalable blockchain fabric:
+Proof-of-work vs. bft replication. International Workshop
+on Open Problems in Network Security,pages 112~125.
+Spriger, 2015
+3) A peertopeer electronic cash system (2008)
+
+4) O.Bussmann. The Future of Finance : FinTech, Tech
+
+Disruption, and Orchestrating Innovation, pages 472~485.
+Springer International Publishing, Cham, 2017
+
+5) P Vasin. Blackcoina A-Z's proof-of stake protocol v2, 2014
+6) C.Cachin. Architecture of the hyperledger blockchain
+fabric. InWorkshop on Distributed Cryptocurrencies and
+Consensus Ledgers, 2016
+
+7) Prootof-stake, 2 January 2018. https://en.wikipedia.org/
+wiki/Proof-of-stake
+
+8) PoS 2.0 Whitepaper, 2014. http://blackcoin.co/blackcoin-
+pos-protocol-v2-whitepaper-cn.pdf
+
+9) What Is A Masternode, March 7, 2017. https://themerkle.
+com/what-is-a-masternode/
+
+0) Proof of Stake (PoS), May 15, 2017. https://www.
+investopedia.com/terms/p/proof-stake-pos.asp
+
+1) Distributed Applications (BApps), May 15, 2017. https://
+www.investopedia.com/terms/d/distributed-applications-
+apps.asp
+2) Smart-Contract Value-Transfer Protocols on a
+Distributed Mobile Application Platform 2017
+https://qtum.org /en/white-papers
+
+3) NIST hash function competition, 20 November,
+2017. http://en.wikipedia.org/wiki/NIST_hash_function_
+
+competition#Finalists
+
+23

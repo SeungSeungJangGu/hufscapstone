@@ -1,0 +1,1117 @@
+My Neighbor Alice
+
+Whitepaper
+
+VERSION 1.0.1.
+
+Se
+iM, Cc h rom ia ereouive
+Table of contents
+
+Table of contents
+Abstract
+
+Introducing My Neighbor Alice
+Game overview
+Business objectives, market and target audience
+Market
+Target audience
+Inspiration
+Creative inspiration
+Commercial Inspiration
+What sets this project apart?
+Goals
+Millions of users
+Current Status: Game MVP Ready
+Competition
+
+Key game features
+Marketplace
+Virtual islands
+Avatars
+In-game assets
+Reputation system
+Shared Quests and Community events
+On-chain forum for discussion
+
+Blockchain Features
+Game currency, The ALICE token
+ERC-20 compatibility
+Game Assets
+Collectibles and scarcity
+
+a 2p a a
+BPOWOWDOADAWDANDAAAAVDHHA aT NY
+
+ee ee er
+WWWWNNN DN
+
+14
+Fully decentralized assets
+Marketplaces and trading
+In-game marketplace
+
+External marketplaces on Chromia
+Marketplaces on other blockchains
+
+Marketplace on Steam
+
+A game controlled by players
+Community Council, or DAO
+Free and open source
+Logic on chain
+
+An ever-expanding world
+NFT Creator
+Game Creator
+
+Technology
+System architecture
+
+Game Core
+Backend: Chromia
+Frontend: Unity
+
+Game Economy
+Backend: Chromia
+Frontend: Web and Unity
+Integrations: ERC20 and Steam
+
+Governance DAO
+Backend: Chromia
+Frontend: Web
+Integrations: Chromunity
+
+Token model
+ALICE Token
+Token utilities
+Allocation
+Economics Structure
+Revenue
+
+DeFi component
+Staking Yield and Earnings
+Staking yield
+NFT collateral
+Renting NFT:s
+
+Governance by the Players - Community Council
+
+Introduction
+Membership 25
+Juridical entities 26
+Roadmap 26
+Team 28
+Antler Interactive 28
+Partners 28
+Chromia 28
+ChromaWay 28
+
+We reserve the right to update, change or replace any part of this Whitepaper without prior notice. It is the users’
+responsibility to check this document periodically for changes. Your continued use of or access to the Whitepaper following
+the posting of any changes constitutes acceptance of those changes.
+Abstract
+
+My Neighbor Alice is a multiplayer builder game, where anyone can buy and own virtual islands,
+collect and build exciting items and meet new friends. Inspired by successful games, such as
+Animal Crossing, the game combines the best of the two worlds - a fun narrative for regular
+players who want to enjoy the gameplay experience as well as an ecosystem for players who
+want to collect and trade NFT:s, even if they have no idea what an NFT is.
+
+My Neighbor Alice is not just a game for blockchain players. But it’s a game that could
+introduce blockchain to millions of players.
+
+The game is aimed at the diverse gaming community which can get easily onboarded from
+regular platforms. Our main line of comparison lies within the traditional gaming market with the
+same players being targeted as our audience. We are innovating a new unobtrusive way of
+connecting an exciting game narrative to blockchain features. My Neighbor Alice has the
+potential to attract millions of gamers, and an associated greater opportunity for revenues.
+
+The game is designed in a way to allow players to “own the game” by exercising power over the
+platform. Players also enjoy the democratic governance model based on a liquid democracy
+and real-world inspiration rules over a DAO (Decentralized Autonomous Organization).
+
+My Neighbor Alice is the brainchild of Antler Interactive, an interactive game studio known for its
+gaming innovations. Being a pioneer in VR gaming, the studio is experimenting with Augmented
+Reality (AR) to bring gaming to a new qualitative level. In my Neighbor Alice Antler Interactive
+leverages the Chromia platform, enabling advanced blockchain and in-game DeFi features.
+
+My Neighbor Alice has a first version that runs and plays well, and proves that the technology
+behind it works. The intent now is to fund this team as a new company, connected to a
+non-profit and foundation, developing My Neighbor Alice so it becomes a commercial success
+introducing millions of players to blockchain.
+Introducing My Neighbor Alice
+
+Game Overview
+
+Welcome to the Alice world - a large island complex located in the Lummelunda archipelago. It
+is a place where animals and humans share space, make friends and work together. Anyone
+can join Alice’s neighborhood by buying a piece of land and performing various activities such
+as fishing, bug catching and beekeeping, among other things. By interacting with neighbors and
+helping Alice with her duties and daily activities, players earn a reward which can be exchanged
+for in-game items that they can use on their lands.
+
+After buying a piece of land, players will be able to design and decorate their property to make it
+as unique and special as they want. For that, users can experiment with the landscape, use
+in-game assets, like NFT:s, which are available in the form of vegetation, furniture, buildings or
+animals, perform daily activities and participate in competitions and quests to earn more
+rewards.
+
+My Neighbor Alice is the first attempt to create a truly public application with an exciting plot that
+would attract first ordinary players, secondly blockchain enthusiasts and DeFi nerds. It has a
+light and intuitive interface with a variety of features to explore. In My Neighbor Alice, only you
+will decide on how much you want to be involved in the game's decentralised features and DeFi.
+Moreover, we designed the game in a way to make it “live forever” with a narrative that never
+becomes boring.
+
+Business Objectives, Market and Target audience
+
+My Neighbor Alice is not to be seen as a game for blockchain players. It is first a game for a
+large global audience of players in general. Absolutely no prior knowledge about
+cryptocurrencies is needed. Because of that, we compare mainly with the normal game market,
+and target the same players. A much bigger audience than previously seen in the field of
+blockchain gaming, and an associated larger opportunity for revenues.
+
+Market
+
+Target audience
+
+We have made an analysis of the target market of the Inspiration games such as Animal
+Crossing. The conclusions are summarized in the table below. What is interesting is that we are
+competing in an underserved market. There are many female gamers, but relatively few games
+specifically made for them.
+
+This is what is said about Animal Crossing:
+“What | find interesting is that the 3DS core users consist of 69% male and 31%
+female, but when | look at the numbers of people that bought Animal Crossing: New
+Leaf and the 3DS handheld together recently, | see 44% male and 56% female
+users. It’s quite an astonishing figure..”
+
+Age My Neighbor Alice has a wide appeal, but primarily targeted towards
+18 to 39 years old.
+Geography My Neighbor Alice is expected to have the most users in North
+
+America, Europe and East Asia.
+
+Gender 60% Female and 40% Male.
+Gamer Type Casual 50% / Core 50% / Hardcore 0%
+Social Class My Neighbor Alice appeals to a wide range of social classes, although
+
+probably upper and middle class because of the in-game monetization
+and economy system you need to contribute to.
+
+Lifestyle Adults who spend a lot of time indoors on technology such as games
+consoles, computers or phones.
+
+Taste All the different modes on My Neighbor Alice mean that it can appeal
+to a lot of tastes, there is a sandbox mode for creative people, chat
+and communication for social gathering. There are even educational
+features to learn economy and software development.
+
+Ethnicity and | Ethnicity and religion have no bearing on My Neighbor Alice appeal.
+Religion
+Age Rating The game is rated? PEGI7 for violence and PEGI12 as for gambling
+
+and the use of crypto.
+
+Inspiration
+
+By looking at what inspires the game, as well as what similar games are out there, we can see
+the commercial opportunities.
+
+‘ https:/Awww.siliconera.com/satoru-iwata-on-animal-crossing-sales-56-of-players-are-female/
+? https://pegi.info/what-do-the-labels-mean
+Creative inspiration
+Here is what the creative designer mentions as inspiration for the game itself, gameplay and art.
+
+<Game> Animal Crossing
+
+The game takes inspiration from animal crossing island ownership. The ability to socialize with
+friends and express creative freedom. Also daily tasks and activities such as fishing and
+farming.
+
+<Game> Minecraft
+Inspiration from building mechanics, farming and other activities within the game.
+
+<Medium> Stardew Valley
+The freedom of choice, and open-ended gameplay, where the player chooses what they want to
+do. Optional side quests.
+
+<Game & Television> Pettson och Findus
+
+The playful art and music from Pettson and Findus, as well as some of the “mini-games”
+presented in the game. Pettson and Findus is a series of children's books written and illustrated
+by Swedish author Sven Nordqvist, portraying a countryside. The books have worldwide book
+sales of over 15 million and have been translated into 55 languages.
+
+<Medium> Townscraper by Oskar Stalberg
+The technicalities of procedural island building and the minimalistic graphical style.
+
+Commercial Inspiration
+
+We have observed a great success of creative games, of builder games, of cute games, of
+farming games, of multiplayer games. Also the ideas for My Neighbor Alice is prime on the spot
+with the trends. The Economist explains it like this:
+
+AMID THE economic devastation wrought by covid-19, video games are a rare bright
+spot. This year, the shares of Electronic Arts and Activision Blizzard, two big games
+publishers, have risen by 33% and 42%, respectively. Capcom, a Japanese
+video-game maker, is up by 75%. It is little wonder that the sector is so hot. Video
+games—especially live multiplayer ones that can be replayed endlessly—are great for
+staving off boredom. They are an increasingly popular way to connect with friends,
+too. During the pandemic, some enthusiasts have even used social games such as
+“Animal Crossing” to stage weddings, concerts and nightly talk shows.*
+
+So we believe in a fantastic potential. Here are some benchmarks:
+
+3
+
+https://www.economist.com/graphic-detail/2020/08/21/gamers-are-logging-millions-of-hours-a-day-on-robl
+Ox
+
+Animal Crossing
+
+Creative Inspiration, by Nintendo
+
+Animal Crossing: New
+Horizons: 26 million copies*.
+The whole saga sold more
+than 56 million copies®
+
+Minecraft
+
+The biggest game ever,
+Swedish neighbors Mojang
+
+by our
+
+200 million copies. 126
+million monthly average
+users®
+
+Stardew valley
+
+Creative Inspiration
+
+Stardew Valley has sold over
+10 million copies across all
+platforms.”
+
+Farmville — tradition,
+neighbor Supercell
+
+by our Finnish
+
+Roblox Game builder, social games 164 million monthly average
+users , thousands of games
+developed on the platform.®
+
+Hay Day Successful farming game in_ the | $400 million yearly revenues
+
+in 2013, assuming HayDay is
+50% of the revenues
+mentioned in this article’.
+
+Take some time to look at the benchmark numbers in the right column.
+
+What sets this project apart?
+
+e Weare ina very interesting time period where procedural building games start trending.
+
+e There are very few interesting building games that incorporate blockchain technology.
+
+e The style can be uniquely identified. The game philosophy is memorable. |.e, we use
+“Alice” as a central figure in the game to connect the users to a “fantasized
+neighborhood”. Human psychology likes relatability. Cute sells.
+
+e The blockchain infrastructure is “hidden” for players who are not interested in the
+underlying technology. They will use it without seeing complex wallets or long sequences
+
+4 https://www.nintendo.co.jp/ir/en/finance/software/index.htm|
+
+5
+
+we iki/Animal_C .
+® https://www.theverge.com/2020/5/18/21262045/minecraft-sales-monthly-players-statistics-youtube
+
+T https://www.vg247.com/2020/01/23/stardew-valley-sold-10-million-copies-worldwide/
+
+8
+
+https://blog.rtrack. live/index.php/2020/08/02/roblox-continues-upward-ascent-with-164-million-monthly-act
+
+° https://www. ibtimes.co.uk/supercell-earns-30m-month-clash-clans-hay-day-1436122
+
+10
+
+of meaningless text. We want to attract regular players who want to enjoy the gameplay
+experience. But for those interested in diving deeper into the game, there is a space for
+blockchain enthusiasts as well.
+
+e Rich NFT DeFi functionalities as mentioned in this document, among others
+collateralized NFT and collateral based loans.
+
+e@ The governance model and the DAO aspects are interesting not only to players and
+investors, but can also be interesting to mainstream media.
+
+Goals
+
+Given the data from inspiration games mentioned, the unique attractive graphic style, and the
+novel ideas we add from blockchain thinking, and PR-friendly and user friendly governance
+model, we set these goals:
+
+Millions of users
+
+With the unique style and large interest in these kinds of games, as well as the unique element
+we bring, we think the game can compete in the market and share similar numbers as the other
+games, reaching millions of users.
+
+Mainly, as no previous experience or interest in blockchain or cryptocurrencies is required, we
+aim at fully developing the potential of blockchain economy, while abstracting its complexity
+from the users.
+
+Antler Interactive has with their previous games Krystopia (1 and 2) sold around half a million
+copies, and sales are still increasing, so we do have some experience already to launch games
+that have potential in millions of users.
+
+Current Status: Game MVP Ready
+
+My Neighbor Alice has been developed during 2020, and now has several key components
+done. See this demo to see what we have: a multiplayer, blockchain enabled game with
+landscape editor, chat, dialogues, map and really cute cows. If you react to the hexadecimal
+public keys shown, the game will soon have a completely different onboarding process, this is
+only for the demo. Besides that, if we only can make those cows stop rolling around, then we
+can launch.
+11
+
+https://drive.google.com/file/d/1xSkUcrObcZZ6-5c6S 1 XKiu2LwFbxUJ8E/view?usp=sharing
+
+Competition
+
+My Neighbor Alice is a game with several dimensions:
+
+Blockchain, Multiplayer, Social
+
+Blockchain games in this segment includes:
+
+Decentraland: An open 3d world, like a second life on blockchain.
+
+Sandbox: Also an open 3d world, inspired by minecraft.
+
+Axis Infinity: A game with cute graphics, but with a different gameplay that is more about
+collecting, breeding and battling. It also intends to not only be for blockchain experts. And we
+are happy that Axis Infinity shares similar goals in letting users be part of controlling the games
+
+development.
+
+But My Neighbor Alice is unique in that it is an open world game with a strong visual identity
+based on positive images and cuteness, intended for non-blockchain skilled players as the
+12
+
+primary target group. Also catering for an underserved market, women, who are a large base of
+players but with less purposely created content.
+
+Additionally, My neighbor Alice will use Chromia blockchain, which has proved to be a flexible
+blockchain, focused on decentralized games, with the peculiarity of abstracting the blockchain
+complexity from the gameplay and the user experience.
+
+Key game features
+
+Marketplace
+
+One of the game’s main features is a virtual marketplace where players can buy and sell their
+land and other in-game items, such as houses, fences, animals and plants, which will help them
+to decorate their land in their own creative way.
+
+Virtual islands
+
+In the game, players could either purchase virtual
+plots from Alice or in the marketplace. There is a
+scarce supply of plots in the universe and each
+piece of land is represented in the form of NFT
+tokens. After the plot has been purchased, players
+can change the form of the terrain and decorate it
+with various in-game items such as houses, lakes,
+decorations, animals, plants and other things that
+can be purchased additionally.
+
+The team is evaluating to run a land presale for the early investors.
+
+Avatars
+
+Each player is represented by an avatar in the game, and players could
+interact with others through the avatar. Players could also modify the avatar by
+installing different assets to it.
+
+In-game assets
+
+There are in-game assets that can be deployed into the game and they
+can be bought on the marketplace. Among them - houses, animals,
+veggies, decorations or cosmetic items for the player's avatar. In
+addition, platform users can create assets using the NFT creator and
+monetize their design skills! DeFi capabilities will be added to the
+in-game assets.
+
+Reputation system
+
+“My neighbor Alice” will have a reputation system that rewards players as good citizens with
+increasing benefits (up to participating in the Community Council).
+
+As an example: a three-tier reputation system, in which players can upgrade their status
+by purchasing virtual islands or NFT:s. Each new tier grants access to new cosmetic
+items, rare NFT:s, interesting competitions and other tools which will help players to make
+their land truly unique and exciting.
+
+Shared Quests and Community events
+
+One of our key values in the game is to create the atmosphere of friendship and common
+interests. The ultimate purpose in My Neighbor Alice is to create an alternative beautiful world
+where anyone can play, find friends and work together. Thus, My Neighbor Alice will enable
+various possibilities for players to work on a shared goal and join resources to complete fun
+activities. The game will also have community-created events where players will be able to
+create and participate in activities.
+
+On-chain forum for discussion
+
+My neighbor Alice will also enable a decentralised forum, where users will be able to discuss the
+game activities, figure out the upcoming votings schedule within the Decentralized Organization,
+search for new friends, etc.
+
+An example of such a forum can be found here https://testnet.chromunity.com/.
+
+Blockchain Features
+
+Game currency, The ALICE token
+
+ALICE token is the native currency in the game, as well as mirrored as an ERC20 token. It
+allows token holders to play, invest and also be part of the game. There is a fixed supply of
+ALICE tokens.
+
+There are several utilities of the token.:
+e lItcan be used for payments between players.
+e NFT and land can be purchased from the system using ALICE tokens.
+e ALICE staking can offer reward to users.
+e Game can reward ALICE tokens for completing tasks and winning competitions.
+
+ERC-20 compatibility
+
+The Chromia blockchain can also function as a Layer Two to other blockchains, and has
+features for moving tokens between for example Ethereum and Chromia. An example of this is
+the Hedget decentralized options trading platform.
+
+There will be a mechanism to move the ALICE token back and forth between the Chromia and
+the Ethereum network, and thus users are able to use exchanges on ethereum to ensure
+liquidity.
+
+Game Assets
+
+Collectibles and scarcity
+
+In gaming, the element of scarcity and collectible items have been around since even before
+computers. Also in My Neighbor Alice, there will be limited editions, scarce items. In addition to
+items designed by the game developers, there will be user-generated content.
+
+The openness of a blockchain provides information about how many of an item exists, how
+large is a limited edition. The additional openness of My Neighbor Alice's novel “decentralized
+assets” explained below improves on this further, as you can openly inspect similarity of items.
+
+Scarcity in My Neighbor Alice exists on different levels:
+
+e Fixed supply of land
+
+e Limited editions of items
+
+e Scarcity limits of user-generated content. Users acquire rights to generate items,
+these rights stipulate the max number of copies, thus enforcing scarcity
+requirements.
+Fully decentralized assets
+
+In mainstream blockchain games, NFT consists of a small amount of binary data that represents
+ownership of an asset. But there are many more elements needed to actually having full control
+of an asset:
+
+e How it looks
+
+e Non-physical characteristics (strength of a sword, speed of a car)
+
+e Game logic implementing the asset: Swinging a sword, driving a car
+
+So far, in most blockchain games, this information is often stored elsewhere, not under the
+control of the player and instead under the full control of the game company.
+
+In My Neighbor Alice, we strive to improve on this as much as possible. So far blockchain
+games have been an emperor without clothes, we aim to dress him up with something cute.
+
+My Neighbor Alice stores much more data about items on-chain, using the Chromia originals
+protocol, a standard for asset definitions. Also, the logic of items will be defined in a
+free/libre/open-source game, running on-chain and being under the ultimate control of the
+players, see the chapter on Community Council DAO.
+
+Marketplaces and trading
+
+One advantage of decentralized ownership is that they can be traded on marketplaces outside
+of the game companies' influence. This can increase financial incentives for gamers to purchase
+and create items in the game. Naturally, this feature will be available with My Neighbor Alice.
+
+Items can be traded in several marketplaces:
+Chromia 1} planetary v
+
+In-game marketplace cue
+
+A great casual experience in the graphic style of My
+
+Neighbor Alice. We believe this will be the first choice aa Sun Moon Earth
+
+for a vast majority of the players, most of them come
+
+for the game itself more than for the blockchain
+
+elements, and they might not even know the T-Shirta
+
+difference. Note that this marketplace will also be
+
+blockchain based and ownership be with the players.
+
+Head Accessories
+
+Details
+
+External marketplaces on Chromia
+
+Items can also be read by the Chromia-developed
+marketplace. Note on the picture how the Chromia
+Market allows you to search for items based on data
+
+16
+
+about assets, such as color and item-category. This is due to the fact that more data about
+assets are stored directly on the blockchain compared to many other blockchains.
+
+Marketplaces on other blockchains
+
+The Alice token is interchangeable with an ERC-20 Ethereum token, but also items and item
+ownership might be transferred to other blockchains like binance smart chain.
+
+In My Neighbor Alice, we strive to make items and item ownership interchangeable with other
+relevant blockchains. This is a way to increase interest and potentially liquidity, and can also be
+used for marketing purposes. The target group for My Neighbor Alice is however not primarily
+blockchain gamers, so this feature has a “minor” priority. The Chromia project, who support My
+Neighbor Alice, will fund and do this development as part of the Chromia platform. Also, we
+emphasize once more that Chromia Originals is richer in data compared to normal NFT:s, and
+the scope of interoperability will primarily target ownership rather than full asset data. In addition
+to Ethereum, other more gaming focused platforms are potential targets for interoperability
+development.
+
+Marketplace on Steam
+
+My Neighbor Alice will use the existing game platforms, such as Steam, to sell items, in
+particular first hand items collections and in-game currencies. This is important for onboarding of
+non-cryptocurrency users. We believe that we have a strategy to make this comply with the
+terms of service.
+
+A game controlled by players
+
+Imagine a game that can not be shut down, lives forever, where players control the project. A
+new way to implement games, challenging old models of doing business.
+
+My Neighbor Alice will push the boundaries of blockchain gaming by letting the users control the
+game and development. A public democratic application, with formal control by players and
+other stakeholders such as investors.
+
+Community Council, or DAO
+
+My Neighbor Alice will be a decentralized organization called Community Council, a digital
+democracy and mini-universe. This could not have been possible without blockchain, since we
+now can implement rules that govern what source code is running. This is an embodiment of the
+Chromia vision of public applications.
+Free and open source
+
+The source code will have an open source license so users can control and ultimately fork the
+application. Note that this game depends on Unity, which is a non-free platform.
+
+Logic on chain
+
+The running game will be on the blockchain, as much as possible, thus avoiding the situation
+where a single entity controls the server.
+
+An ever-expanding world
+
+NFT Creator
+
+Chromia Originals
+
+NFT Creator is a unique tool enabled by Chromia Originals which allows players to create and
+design their own in-game assets based on certain constraints defined by a blueprint. Depending
+on the rarity of a blueprint, a set amount of materials can be used in the creation of an object.
+The more rare the blueprint, the more materials can be used to craft an object.
+
+In order to prevent abuse, game developers reserve a right to impose constraining rules and
+review steps for NFT:s creation. This process will be later handed over to the Community
+Council DAO.
+
+We anticipate that the NFT creator will be gradually rolled out to users, either through
+competitions, or by selling the feature for Alice tokens.
+
+Created by Eve
+50 ALICE
+
+Game Creator
+
+Allowing users to create their own mini-games, quests, competition and even full games is in the
+vision of having My Neighborhood Alice evolve.
+
+Terrain
+
+Here is a word you may not know: Obby. On the successful game platform Roblox, an Obby is
+an obstacle course. They can be made without programming, by positioning items in a terrain.
+This is a fantastic hit among players and content creators as well.
+
+Similarly, even in the first version, creative individuals will be able to create their own mazes,
+obstacle courses by building and making use of terrain features.
+
+Community created events
+
+Mazes, racetracks, dancehalls, parties. All these things can be done by the community in the
+first version. You can make lotteries and competitions that require in-game assets to participate,
+or you can ask for tickets to your events. There are opportunities for monetization here, just like
+in the real world.
+
+Programmer interface and scripting
+
+We are exploring to make the game extensible by exposing an API to developers and
+integrating a scripting language. This could open up creative possibilities for players within My
+Neighbor Alice, as well as developers. By making an easy to use platform for development,
+Roblox now has 345.000 developers on their platform.
+
+A super simple programming language, focused on ease of use, with an in-game development
+environment using familiar graphics. We want to go even further than Roblox simplifying the
+
+experience.
+
+We believe it can be a fantastic introduction to programming for millions of people.
+Technology
+
+System architecture
+
+Game Core | Game Economy | Governance DAO
+Web |
+Chromia
+Integrations
+Game Core
+
+Backend: Chromia
+
+The first layer to this project is the game backend infrastructure. The project was created on the
+fundamental idea that it will operate exclusively on the chromia platform, with a few exceptions
+mentioned in this document.
+
+The backend is a chromia relational blockchain database that is used in conjunction with Unity
+to operate accounts, token transfers, relational data and user progress, among many other
+things. It’s meant to follow the development of cross chain playability and interaction with NFT:s.
+The unique database aspects of chromia gives the ability to do complex backend logic directly
+on the blockchain without spending much development time.
+20
+
+Frontend: Unity
+
+The second layer to the project is the client, developed in unity. The largest part is the
+procedural building system. It's essential that it is fun, feels great and is on par with other
+building games on the market.
+
+Second biggest is the focus on gameplay loops and daily activities with player retention in
+consideration. We also work on connecting the backend with frontend, login-registration edge
+cases, and multiplayer scalability & stability.
+
+Game Economy
+
+The third area in the project is the economic infrastructure. “Property/Plot” auctioning, asset
+trading, token transactions.
+
+Backend: Chromia
+
+Gaming, marketplace and auction logic is done on the Chromia blockchain
+
+Frontend: Web and Unity
+
+The frontend to marketplaces and auctions can be done as a web application embedded into
+the game. Parts of the UX might also be done directly in Unity.
+
+Integrations: ERC20 and Steam
+
+The ALICE token will be transferable between ERC20 and native Chromia token. This bridge is
+developed by Chromia outside of this project.
+
+The Steam marketplace and sales there will have an integration code connecting to Chromia.
+
+Governance DAO
+
+This project will not only create a game, but code for a decentralized autonomous organisation
+called Community Council.
+
+The DAO implementation should be handed out to an external company, we identified
+ChromaWay as the initial partner.
+21
+
+Backend: Chromia
+
+Voting and rules of governance can be implemented in Chromia. Being a relational database,
+this is comparatively easier than with other blockchains.
+
+Frontend: Web
+The DAO interface will be a web application, outside of the My Neighbor Alice game.
+
+Integrations: Chromunity
+
+The Chromunity"® project done by Chromia, is a forum with moderation and voting features.
+Chromunity is also used by other projects such as the Hedget"' DeFI application. By integrating
+the Chromunity open source code, developing the Community Council (DAO) will be easier.
+
+Token model
+
+ALICE Token
+
+ALICE token is the native currency in the game. It allows token holders to play, invest and also
+be part of the game. There is a fixed supply of ALICE tokens.
+
+Token utilities
+
+Payments ALICE is the game currency that players use to purchase assets and land in
+the game.
+
+DeFi Staking is a way to lend a currency, and receive interest in return. Token
+holders could participate in staking and earn rewards as a certain percentage
+of platform revenues will be given out as staking rewards.
+
+For instance, the gaming platform would have revenues from plot sales, asset
+sales, transaction fees etc. and that a fixed proportion would be distributed to
+the staking pool.
+
+NFT:s will also have DeFi features such as collateralization and buybacks (as
+described in this document)
+
+Governance | Owning Alice enables the player to participate in the governance process
+through a decentralized organisation, with proposals and voting structures.
+There are issues related to the platform operations and development that could
+
+'° https://testnet.chromunity.com/
+"' https://hedget.com/proposals/
+22
+
+for voters.
+
+be decided based on the preference of the token holders. In order to
+encourage users to participate in the voting process, there will also be rewards
+
+Play to earn | There are a proportion of the tokens reserved for user incentives. By
+completing quests in the game, players could earn ALICE tokens. This design
+is to encourage user participation in the game and to maintain traction.
+
+Allocation
+
+Token Distribution Plan
+
+User Incentive
+
+5,0%
+
+Ecosystem
+16,0%
+
+Reserve
+20,0%
+
+Platform reward
+
+8,0%
+
+Allocation type
+
+Token sale
+
+21,0%
+
+Team and Advisor
+
+15,0%
+
+Community & Marketing
+
+Token amount
+
+15,0%
+
+Token sale 21 000 000
+Team and Advisor 15 000 000
+Community & Marketing 15 000 000
+Platform reward 8 000 000
+
+Reserve 20 000 000
+Ecosystem 16 000 000
+
+23
+
+User Incentive 5 000 000
+
+Total 100 000 000
+
+- Team and Advisors. These tokens are allocated to founding and non-founding members
+of My Neighbour Alice.
+
+- Reserve. These tokens will be used for staking rewards. Any network participant can
+stake tokens to earn rewards and reduce the supply in the ecosystem.
+
+- Platform rewards. These tokens will be used to incentivize those players who earn
+tokens by participating in competitions and other activities in the game. This design is to
+encourage user participation in the game and to maintain traction.
+
+- Community and Marketing. These tokens will be used for various ecosystem-building
+initiatives, including marketing, bounties, incentive programs, and more.
+
+- Ecosystem. Game development.
+
+- User incentive.
+
+- Token sale. These tokens will be reserved for a private sale.
+
+Economics Structure
+Stage | (0-24 months)
+
+Traditional sales
+Steam and app-stores
+Packages of NFT:s
+Issuance _ Bundin
+Alice Foundation. risen naire
+Minting and issuance is done by Alice Foundation to
+start and fund the project. In-game sales
+Sold for Alice to players
+ai Packages
+NFT:s
+Other Sources i
+(our a caer, Scarier Premium content
+Reserve, Communty and Revenue
+Marketing, User incentive, Token
+Staking
+
+Decentralised Autonomous Organization
+
+Gaming
+
+|
+
+Play to earn Development
+(Only used for
+limited events)
+
+During 0-24 months, the allocation of tokens is managed by the Alice Foundation, which
+controls and issues (mints) token funds according to the schedule. The Foundation distributes
+
+24
+
+token funds among the following categories: staking rewards, play-to-earn, gaming, and other
+sources foreseen by the token distribution model (Team and Advisors, Ecosystem, Reserve,
+Community and Marketing, User incentive, Token sale, etc).
+
+Revenue
+
+Before the DAO is launched, all revenue will go to a special account which will lock the funds.
+The DAO will manage revenues and spend it on game growth and development. With this
+model DAO will be able to employ more developers to increase the market size. It will also
+control how much funds will be locked. Initially at least 75% of net revenue (revenue minus
+transaction and platform service fees) will be locked in reserves attached to land and NFT:s,
+thus we expect that the TLV (Total Locked Value) to grow when more land, NFT:s and other
+game assets are purchased.
+
+Stage Il (24+ months)
+
+The team will research and consult, both with experts and the community, deciding on the best
+legal set up for the Community Council legal body to which it will hand the game “My neighbor
+Alice’.
+
+Players are incentivized to contribute to the game development by playing, inviting friends,
+purchasing in-game items and so on. Thus, there are different ways to get rewarded.
+
+DeFi component
+
+Staking Yield and Earnings
+
+One of our strategic visions within My Neighbor Alice is to create monetary incentives for the
+most committed and motivated players.
+
+Staking yield
+
+Based on our staking and reward projections, we will allocate a fair amount of tokens on staking
+rewards. This will incentivize stakers to hold their tokens during the early stage of the game
+development while some significant game features will still be under development.
+
+Staking will progressively decrease as new features will be released.
+
+NFT collateral
+
+When a user buys NFT from the system, a percentage of the purchase price might go into a
+special collateral account associated with NFT. User then has an option to sell it back to the
+system (i.e. destroy the NFT) for the price equivalent to the locked collateral (or a percentage of
+it). This guarantees that the value of NFT cannot go below a certain threshold.
+
+This feature will also allow a user to take a loan using NFT as a collateral.
+25
+
+Renting NFT:s
+
+NFT:s, including land, can be rented to other players. The smart contract will make sure that the
+borrower cannot resell or destroy the object, and makes sure that object returns to the owner
+when the rent period ends.
+
+Governance by the Players - Community Council
+
+Introduction
+
+In line with an exciting plot and “the cutest cows in the world”, “My neighbor Alice” also aims to
+become a truly user-owned game with its own Decentralized organization called Community
+Council governed by the community. Thus, we also integrated a concept of DAO, which over
+time can take over the majority of decision-making powers within the game. Community Council
+will be a crucial element of the game ecosystem which will address both in-game issues as well
+as the proposals connected to game development and future funding.
+
+Membership
+
+In principle, every ALICE token holder can become a member of the Decentralised Organization
+and get the right to vote on proposals. At the same time, we understand that a certain number of
+players will be primarily interested in gaming and enjoying the “Alice world”. We respect their
+decision, so membership in the Community Council will be optional.
+
+Community Council principles
+
+Designed as a consumer cooperative and a platform cooperative, the organization follows the
+universal principles:
+e Voluntary membership, i.e. membership in Community Council is optional and fully
+depends on a player
+e Democratic member control, i.e. Community Council has adopted liquid democracy as a
+model of participation
+e Autonomy and independence, i.e. Community Council is expected to overtake the
+majority of in-game decision-making powers and stay free from third-party interference
+and control
+e Education and information, i.e. one of our key goals in game is to educate our players on
+political and economic models that were inspired by a real world
+e Community cooperation, i.e. many activities in game require a mutual effort, cooperation
+and communication which makes the bonds between players even stronger
+More information on the Community Council is available in the appendix.
+26
+
+Juridical entities
+
+It is vital to be able to map the ideas around governance into proper legal frameworks and
+structures, and clear responsibilities among participants in the ecosystem.
+
+Roadmap
+
+1.0 January 2021: Playtest
+Steam playtest release to Alice holders only.
+- Buy plot
+- Plot trading: sell a plot
+- Social feature: chatting, visiting each other's plot
+- Acquisition of assets
+- Introduction quests
+
+- Building and Landscaping
+- Multiplayer
+
+Note: the goal of playtest is to demonstrate and test certain mechanics of the game, it won’t
+offer full experience or work with real valuable assets.
+
+1.1 July 2021: Early Access
+Steam early access release
+Add DeFi component
+Multiple monetary incentive
+More advanced decentralised component:
+
+More quests and gameplay activities that reward tokens
+
+Additional gameplay content
+- Fishing
+- Quests
+1.2 September 2021: Release for Community Council (alpha)
+
+Community Council (DAO)
+
+Decision-making power for players within the game:
+27
+
+- Choose the name of your neighbourhood
+1.3 September 2021: Release, Auction and NPCs
+
+In-game auctioning of NFT assets
+
+- Improve the trading UX
+
+Addition of characters and NPC
+
+- New trading NPC
+- Additional Avatars for players
+
+1.4 December 2021: Release, Farm and Craft
+
+More quests and gameplay activities that reward tokens
+
+Additional gameplay content
+
+- Farming
+- NFT Crafting
+
+1.5 December 2021: Release, community-created events
+
+Community-created events
+
+- Create activities that require in-game assets to participate, or you can ask for tickets to
+your events. : Mazes, racetracks, dancehalls, parties
+
+1.6 February 2022: Release, scripting
+
+Programmer interface and scripting
+
+- Asimple programming language with an in-game development environment.
+
+More quests and gameplay activities that reward tokens
+
+- Collecting minerals that are part of the NFT ecosystem
+
+Team
+
+Antler Interactive
+
+Antler Interactive is an interactive mobile game studio, located in central Stockholm, Sweden.
+Established with the idea of making great games for new tech, we design games that introduce
+players to new ways of interacting with emerging technologies. Conceived from and previously
+28
+
+known as SVRVIVE Studios, a pioneer in VR with globally best selling and award winning titles.
+Antler Interactive is a revival of our passion for immersive experiences and a transition into a
+focus on mobile tech and games. In 2019, ChromaWay acquired Antler Interactive in order to
+stimulate blockchain gaming on Chromia.
+
+Previous releases from Antler Interactive include SVRVIVE: The Deus Helix, Kartong - Death by
+Cardboard, Krystal Kart AR, Krystopia: A Puzzle Journey, Krystopia and Nova’s Journey. In
+addition Antler Interactive has completed a work-for-hire project with augmented reality in
+collaboration with a Swedish well-known cruising company and have received two grants from
+the Swedish Innovation Agency for an empathy project in gaming.
+
+Partners
+
+Chromia
+
+Chroma is a decentralized public blockchain, a project started and maintained by ChromaWay.
+The Chromia project aims to make blockchain performant and easy to use by users as well as
+developers. The unique technical architecture,combining relational databases with blockchain,
+is perfect for complex game design with logic on-chain.
+
+ChromaWay
+
+Is a true pioneer of blockchain. Already in 2012, the CTO of ChromaWay created the world's
+first source code to issue user generated tokens. His “colored-coins” project 2012-2014 was
+inspiration to many projects, and education for many that are now in our industry. Among the
+people involved in the project were Esteban Ordano of Decentraland, and Vitalik Buterin of
+Ethereum. ChromaWay moved away from the first colored-coins protocol apps on blockchain in
+2014, such as a stable coin for LHV Bank, to do innovative new technologies for enterprises and
+governments, which ultimately lead up to Chromia. Several known cases have been in
+land-registration, with the Swedish state from 2016 to the InterAmerican Development Bank in
+South America 2020. And now, with My Neighbor Alice, they take the step from real land to
+imaginary land.

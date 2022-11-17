@@ -1,0 +1,914 @@
+English
+
+Blockchain-based Distributed
+Supercomputing Platform
+
+CONUN WHITEPAPER
+
+CONUN
+
+Distributed Supercomputing Platform
+
+CONUN Distributed Supercomputing Platform
+
+CONTNETS
+
+1. Background
+2. Introduction
+
+3. Technology
+
+3.1 Foundation, Vision, Goal
+3.2 Architecture
+3.3 Application of Blockchain Technologies
+3.4 Application case
+4. Blockchain Token
+5. Development Roadmap
+
+6. Safety and Security
+
+7. Service Plan
+
+8. Disclaimer
+
+9. References
+CONUN Distributed Supercomputing Platform
+
+]. Background
+
+Today, when an individual or enterprise is performing computing tasks that require high-performance computing
+resources, they rely on centralized cloud computing service providers such as Amazon, Google, Microsoft, IBM, etc.,
+(such as a closed-in network, proprietary billing policies, and a way to allocate premeditated resources) or
+separately purchase and use expensive, high-performance workstation computers. In particular, the scientific and
+industrial worlds that are implementing big data applications or developing machine learning models are increasing
+the demand for high-performance computing power to run large amounts of applications and process large
+
+amounts of data.
+
+In recent years, however, personal computers with remarkably high performance have been continuously
+introduced due to rapid technological advancement, and big data analysis and machine learning have become
+possible on personal computers. However, most of the work done with these high-performance computers is
+usually in the form of Internet browsing, simple documentation and computer games, and most personal computer
+
+resources are idle.
+
+Therefore, we believe that we need a new form of distributed computing platform that recognizes this problem
+
+and utilizes the resources of many personal computers to enable high-performance computing at low cost.
+CONUN Distributed Supercomputing Platform
+
+On the other hand, we are seeing new technologies that provide a new approach to running distributed
+applications such as Ethereum. In particular, Ethereum enables developers to create smart contracts that run in the
+structure of a block-chain. It creates many use cases for designing and implementing services such as forecasting
+
+markets, cloud funding, web hosting, general contracts, financial services, and distributed data processing.
+
+Based on these advanced technologies, we developed a platform for building a horizontally distributed desktop
+computing system where projects (applications) that require high-performance computing resources can be
+performed at low cost by sharing idle processing resources of personal computers, through this way, we will create
+an open structure that shares the distributed computing power through interpersonal interaction without
+proprietary intermediaries, and build an ecosystem that enables individuals to earn money according to the
+
+contribution of the participants.
+
+Furthermore, we are noticing that smartphones are getting more powerful and perform better than previous high-
+
+end workstations, and are becoming more popular than PCs worldwide, we want to build platform that includes
+
+smartphone's computing performance as ad-hoc cluster in our distributed computing network.
+CONUN Distributed Supercomputing Platform
+
+2. Introduction
+
+CONUN is a platform for building a horizontally distributed desktop computing system that can share the idle
+
+processing resources of personal com
+computing resources. The platform inc!
+
+that individuals carry.
+
+CONUN connects a personal computer
+of an application that requires high
+
+computer of the person or group (the “
+
+puters to handle multiple projects (tasks) that require high performance
+
+udes not only personal computers but also the resources of smartphones
+
+‘© a peer-to-peer (P2P) network from the Internet, the owner ("Requestor")
+
+performance computing power leases some compute power from the
+
+Provider") that wants to share their computing resources. This configuration
+
+can be useful for projects that typically require large amounts of work and long processing times.
+
+CONUN implements a method for or}
+
+ganizing the necessary processes from the requestor's applications and
+
+effectively executing them on distributed computing resources. This approach replaces costly cloud computing
+
+services, reducing computing time and making complex applications such as scientific calculations and machine
+
+learning easier to use at lower cost.
+
+CONUN does not have to pay for usi
+
+ng existing cloud computing because it builds high computing power by
+
+collecting and sharing resources of personal desktop computers. In addition, because of the distributed computing
+
+architecture, certain groups do not have a single control authority to monopolize and regulate resources.
+CONUN Distributed Supercomputing Platform
+
+We will use our own tokens based on the Ethereum block-chain to provide value to distributed desktop computing
+to requesters and suppliers and investors participating in the platform to operate the platform ecosystem. . The
+token acts as a payment medium for processing the distributed computing services of the platform ecosystem. The
+requester and the supplier can use tokens to compensate for the use of computer resources. This means that a
+person who requires high performance computing power can pay using tokens to solve their computing
+performance problems, and a provider connected to the Internet can directly benefit from providing their
+
+computing resources.
+Therefore, CONUN provides a horizontal distributed computing power sharing platform in which both a computing
+resource provider and all application requesters and operators that require that computing power are free to
+
+participate, we are also confident that CONUN will build a future-oriented computing power-sharing ecosystem by
+
+providing a crypto-currency for all participants to conveniently trade.
+
+Distributed Computing
+
+Saving the money while you sleep
+
+CONUN Distributed Supercomputing Platform
+
+3. Technology
+
+3.1 Foundation, Vision, Goal
+
+n recent years, we know from many sources that there is a growing demand for high-performance computing
+applications such as high-level applications such as scientific calculations and deep learning of artificial intelligence,
+and high-performance computing power to handle big data.
+
+However, a common way to accommodate these needs is to utilize cloud computing services or build and use their
+
+own high-performance computer infrastructure.
+
+n particular, the infrastructure of high-performance computers is complex and expensive, requiring expertise to
+operate them and separate human resources for management operations. In particular, the infrastructure of high-
+performance computers is complex and expensive, requiring expertise to operate them and separate human
+
+resources for management operations. In addition, traditional cloud computing is a closed-network, proprietary
+
+billing policy, and a pre-planned allocation of resources that cannot be deployed in a fully distributed infrastructure.
+
+To solve these problems, we need to implement a breakthrough distributed computing resource sharing
+architecture that enables computing resource management and lowers computer infrastructure costs by using
+
+blockchain technology. Our system uses blockchain driven distributed applications (DApps) to automatically
+
+discover and deploy applications, data and compute processes, and costs to assist with the proper computing
+
+resources. Distributed application approach is now widely used, reliable and flexible enough to reduce the time and
+
+cost of implementing a block-chain platform.
+CONUN Distributed Supercomputing Platform
+
+Distributed Computing is a distributed processing model that takes advantage of the processing power of multiple
+computers connected to the Internet to solve huge computational problems. Distributed computing can take
+advantage of multiple computer networks, each performing part of an overall task to get results much faster than
+using one computer. The idea to utilize the processing resources of these idle personal computers appeared when
+ARPANET, also known as the introduction of the Internet, appeared in the early 1970s. In overseas, projects are
+being carried out on various applications such as bio, weather, artificial intelligence, mathematics, and cryptography.
+We refer to projects such as SETI @ Home, distributed.net, Berkeley Open Infrastructure for Network Computing
+
+(BOINC), and Folding @ home. These projects are being conducted by nonprofit organizations to run large parallel
+
+applications at low cost using idle computing resources through desktop computers.
+
+QZ
+AN
+
+CONUN Distributed Supercomputing Platform
+
+We also develop a model for distributed computing processing using personal computers by referring to desktop
+grid computing technology and we will use the solution as a base architecture to build an infrastructure that shares
+
+computing resources across existing high-performance workstation and personal desktop computers.
+
+Grid computing is a distributed architecture that tries to build a virtual supercomputer by combining the
+computational power of many computers to solve complex problems such as high computation and high capacity
+processing. In a grid computing model, a server or personal computer runs independent tasks and is connected to
+the Internet or a network, however, in distributed computing different systems within the same network share one
+
+or more resources.
+
+The advantage of grid computing is that it provides transparent access to resources to improve user productivity
+so that tasks can be completed more quickly and it also supports scalability and flexibility to deliver compute power
+where it's needed most, allowing the grid to seamlessly scale over time, consolidating thousands of processors into
+
+a single cluster.
+
+We refer to the Desktop Grid open source platform (XtremWeb), which can apply the technology of grid computing
+to desktop computers. This open source platform is designed to build your own grid based on a voluntary resource
+PC on a desktop PC, university, enterprise or Internet and XtremWeb development is also used in scientific
+
+calculations and high-level application processing based on Desktop Grid, Global Computing and Peer-To-Peer
+
+distributed systems. Like other large-scale distributed systems, the platform uses remote resources (PCs,
+
+workstations, and servers) connected to the Internet and uses internal network pools (LAN, PC, workstation, server)
+
+to enable participants on the platform to collaborate by providing their idle computing resources.
+CONUN Distributed Supercomputing Platform
+
+We will look at the possibilities of using mobile devices such as smartphones and tablets in grid computing/
+distributed computing, and we will configure how to apply the above technologies to mobile devices. The
+performance of the latest smartphones is growing fast and steadily, and the fact that they are always on will be a
+
+major reason for making smartphones a distributed computing platform.
+
+n general, distributed applications must be abstract enough from the underlying platform to target different
+mobile platforms and different network topologies. The deployment work will be to implement platform-specific
+
+algorithm efficiencies and create different versions for each platform so that they can be performed in cross-
+
+platform technologies such as Java using abstracted virtual machines. In order to efficiently deploy work to multiple
+mobile devices and use it as a computing node, we will develop our system with reference to the University of
+Amsterdam's Java-based open source high performance distributed computing platform, University of Virginia
+
+OGSI.NET, Architecture and technology framework already developed and in use, and BOINC, and Folding@Home
+
+mobile platforms as well.
+
+Load
+Applications
+
+oO) Search
+
+resources
+
+(2) Request service
+
+@® Process ® Pay&reward
+Completion
+
+S
+
+user
+
+10
+CONUN Distributed Supercomputing Platform
+
+CONUN allows the requester to run the application on the computer that joined the platform. Workers connected
+to the Internet simply create an environment where they can automatically participate in the project after
+downloading and installing the executable program and registering the account. This program uses only idle time
+
+on your computer, so you can adjust it to have a minimal impact on your actual computer usage.
+
+CONUN will support devices that can provide more value to multiple platform participants to handle block-chain
+computing resources at a lower cost. To do this, we disclose supplier reliability so that suppliers can provide
+services transparently and in order to ensure a high level of service, it will be designed so that appropriate
+compensation can be achieved through transparent quality control according to the contribution of various
+
+suppliers and requesters.
+
+ll
+CONUN Distributed Supercomputing Platform
+
+3.2 Architecture
+
+We will design a computing node that controls the components of the personal computer, such as CPU, GPU,
+memory, and storage, and configure the way that each node is modularized to process the application. Each node
+is operated in a virtual machine environment and is implemented so that it can run separately from the operating
+system of the computer based on the container operation method of Docker. And storage devices (disk drives)
+that store application data will be implemented with reference to distributed data storage solutions such as IPFS,
+Storj, and Sia, etc. The computers of each node can be run by remotely downloading and storing applications and
+
+data for service operations.
+
+CONUN configures each node's computers to operate on a horizontally distributed network. This means that there
+is no centralized control over the aggregation of nodes. As the concept of the block-chain implies, each node will
+
+autonomously access the service and configure the platform ecosystem while controlling its own process control.
+
+CONUN implements a separate resource scheduling algorithm that can manage multiple resources so that
+applications can be reliably and efficiently processed on multiple computer nodes.
+This will essentially be a complex program model that can handle the security, management, and restoration of
+
+data.
+
+12
+CONUN Distributed Supercomputing Platform
+
+< Platform Architecture >
+
+* Grid Computing Core
+Distributed computing core functionality that uses computing resources to address computing tasks
++ Virtual Machine (Docker Container)
+An independent virtual processing system that deploys and automatically runs applications on each
+compute node without interference from individual operating systems
++ Hybrid Peer-to-Peer Network System
+All computers in the network act as clients and servers without distinction between types of computers
++ Ethereum smart contracts
+
+A system that transparently and securely exchanges transactions, agreements and payments without
+
+intermediary services
+
+Grid Applications Grid Collective Grid Connectivity Grid Fabric Layer
+Layer Layer Layer
+
+Distributed Resource
+
+atl Job Management Management service Local Infrastructure
+Applicatins stocks service Security Management | Management Service
+
+service
+
+Virtual Machine
+
+Hybrid Peer to Peer
+
+Ethereum smart contracts
+
+13
+CONUN Distributed Supercomputing Platform
+
+< Base Architecture (Layered Grid Architecture) >
+
+1 Infrastructure Management Fabric Layer
+
+All computational resources,
+processors, disk storage,
+operating systems and software
+
+2 Security Management Connectivity Layer
+
+3 Resource Management Resource Layer
+
+4 Job Management Collective Layer
+
+5 Application Management Application Layer
+
+Applications
+
+Collective Layer
+
+Performs authentication and
+authorization of users
+
+Secure access to resources and
+services
+
+Resource monitoring, allocation
+and management
+
+Access resources and Job
+scheduling of various jobs
+
+Actual Applications and tools
+
+Connectivity Layer Resource Layer
+
+CONUN Distributed Supercomputing Platform
+
+1. Fabric Layer
+
+Y__ Provides an interface to local resources at a specific site.
+Y__ The interface is tailored to share resources within the virtual organization.
+Y Provides the ability to query the status and functionality of a resource, along with features for
+
+managing real resources. Such as storage systems, clusters, networks, network caches, and so on.
+
+2. Connectivity Layer
+
+Y_ Consists of a communication protocol to support grid transactions that span the scope of use of
+multiple resources, includes security protocols for authenticating users and resources such as
+
+communication, service discovery (DNS), authentication, authorization, delegation, and so on.
+
+3. Resource Layer
+
+¥ Manage a single resource. Uses the functionality provided by the connection layer and directly calls the
+interfaces available in the fabric layer. Because it is responsible for access control, it relies on
+authentication performed as part of the connection layer such as data access, computer access,
+
+network performance data access, etc.
+
+A. Collective Layer
+
+Y_ Handles access to multiple resources. It is a service consisting of resource discovery, task allocation and
+scheduling for multiple resources, and data replication. This can be configured for a variety of uses and
+a variety of protocols, reflecting the wide range of services that can be provided to a virtual
+organization.
+
+Y_ (App) consistency control, replication selection, job management, virtual data catalog, virtual data code
+catalog. (Generic) Replication Catalog, Replication Management, Co-Allocation, Certification Authorities,
+
+Metadata Catalog
+5. Application Layer
+
+Y Consists of applications that operate within a virtual organization and use a grid computing
+
+environment. (Discipline Specific Data Grid Application)
+
+15
+CONUN Distributed Supercomputing Platform
+
+3.3 Application of Blockchain Technologies
+
+The blockchain is designed based on cryptographic algorithms such as existing public and private keys on a P2P-
+based horizontal network, and a distributed ledger technology, provides a way to maintain the integrity of the
+books by verifying the trustworthiness of the transactions by the consensus of the participants without an
+
+administrator.
+
+CONUN is implemented using block chaining technology to record all metadata related to computing power
+requestor's application processing and to manage work transaction through it. This provides a consistent and
+
+reliable environment because none of the contributors to the work can arbitrarily manipulate their work.
+In addition, CONUN develops its own tokens based on the Ethereum blockchain in terms of providing value to
+
+distributed computing for users and investors, it is used by providers and requesters to compensate for application
+
+and computing resource usage as a media role for platform participants to request and exchange services.
+
+16
+CONUN Distributed Supercomputing Platform
+
+3.4 Application Case
+
+We understand the benefits and needs of distributed computing systems. Rather than processing the resources
+required by users from one computer to another, it is important to be able to process these distributed computers
+faster and more efficiently. This makes it possible to use an environment with high computation speed, easy
+system expandability, high availability and reliability; best of all, you can take advantage of the price-performance
+
+benefits.
+
+This environment can be used to perform more common tasks as well as existing special scientific computing
+
+projects.
+
+1. Ascientific calculation project
+CONUN can be used to perform scientific computing tasks that require complex and fast computing
+performance. In general, scientific calculations are mainly used to understand mathematical models
+using computers and to understand the research subjects and to derive results. For example, there are
+areas of academic research such as physics, biology, and chemical informatics, or social research
+purposes such as drug development, social statistics, climate prediction, and cryptanalysis, all of which
+
+require large-scale computing capabilities.
+
+2. Deep Learning Model project
+In recent years, deep learning has been one of the most active and rapidly evolving fields of artificial
+intelligence and machine learning. We have seen the need for a large-scale computing infrastructure to
+develop and implement a deep learning model, as we have seen in the case of AlphaGo. CONUN uses
+this distributed computing power to implement a multi-process environment capable of learning deep
+
+learning algorithms such as convolutional neural networks (CNN), circular neural networks (RNN),
+
+reinforcement learning, and used to quickly create a user-designed deep-running model. We are also
+considering developing a solution (API) to enable Tensorflow, Theano, and Caffe, which are currently
+
+active used deep-learning frameworks, in our distributed computing environment.
+
+17
+CONUN Distributed Supercomputing Platform
+
+4.
+
+Big Data Analysis project
+
+Big Data is a technology that extracts value from data, including large amounts of structured or
+
+unstructured data sets beyond the capabilities of existing database management tools, and analyzes
+
+and predicts results. Big Data has been highlighted for several years because of its potential to provide
+
+valuable information across all areas such as politics, society, economy, culture, and science and
+
+technology.
+
+This requires a computing infrastructure that quickly computes and processes large amounts of data,
+
+such as in the case of deep learning. Most big data analysis techniques and methods are data mining,
+
+machine learning, natural language processing, pattern recognition, etc., which were used in existing
+
+statistics and computer science, it is required a computing infrastructure that quickly computes and
+
+n computer graphics, com
+
+used on computers is constan
+
+performance is required. CO
+
+businesses and individuals wi
+
+processes large amounts of data, such as in the case of deep learning.
+
+Computer Graphic Processing Project
+
+puter generated images (CGI)
+
+ly evolving and becoming easier
+
+content. However, this is also a limitation that high-per
+
+computing environment so that users can run projects quickly and
+
+Life Science Research projec
+
+Biological research for improving existing therapies and deve
+
+diseases is one of the areas
+
+hat utilize distributed computing.
+
+Especially, due to the increase of unstructured data such as social media, text mining, Opinion mining,
+
+social network analysis and cluster analysis are widely used in the public; and NoSQL technology is
+
+leveraging Hadoop, a distributed data-processing solution, for flexible and faster processing of data.
+
+are movies, television programs,
+
+advertisements, simulators, simulations, and three-dimensional computer graphics. The CGI software
+
+0 use, making it possible for midsize
+
+thout specialists to produce professional-quality computer graphics
+
+ormance GPU-equipped computer
+
+UN is configured for computer graphics processing in a distributed
+
+cheaply.
+
+loping new treatments for treating
+
+There are several types of biology
+
+projects currently active through BOINC. Among them, GPUGRID.net is a nonprofit, distributed
+
+computing project that conducts biomedical research through a
+
+omic biological molecular simulation.
+
+They are performing tricky tasks that require supercomputer-class computing power consisting of a
+
+large number of graphics cards (GPUs). These researches have become a necessary research field not
+
+only in university research institutes but also in bio industry. For this research, distributed computing
+
+environment will become an essential computing infrastructure.
+
+18
+CONUN Distributed Supercomputing Platform
+
+A Blockchain Token
+
+CONUN uses its own tokens based on the Ethel
+
+reum blockchain in terms of providing value to distributed
+
+computing for users and investors. The token acts as a medium for platform participants to request and exchange
+
+services for processing. Tokens are used by providers and requesters to compensate for application and computer
+
+resource usage. Tokens are also required to process other processes after the application registry and transaction
+
+framework is implemented.
+
+As mentioned in the application examples, almost any application requiring high capacity / high performance
+
+computing power, such as scientific calculation, deep learning, and big data analysis, can use the CONUN platform
+
+to handle their projects. Any person or organizatio
+solve their own computing power problems, and all
+
+money directly or indirectly.
+
+The CONUN token is a token issued based on the E
+
+implementation standard already adopted in many p
+
+n connected to the Internet can use their CONUN tokens to
+
+nternet users who provide their computing resources can earn
+
+hereum blockchain. The design of the token follows the token
+
+aces, and the creation of the CONUN token is performed using
+
+the Ethereum smart contract feature. Applicants wishing to participate in the CONUN platform may purchase and
+
+retain tokens during pre-sale or cloud funding periods.
+
+We will proceed with token pre-sale and provide tokens to the participants first.
+
+Tokens supplied via pre-sales are converted to CONUN default tokens safely after ICO.
+
+19
+CONUN Distributed Supercomputing Platform
+
+5. Development Roadmap
+
+We plan to develop a step-by-step plan to build a horizontally distributed desktop computing system platform.
+CONUN would be a highly complex project as it would require the development of a newly constructed
+
+architecture based on the currently developed open-source solution.
+We will add and distribute newly configured functions at every stage of development, and will initially test network
+
+services to test the project. Initial work is done independently of the ICO and may be faster, depending on the level
+
+of ICO in the future.
+a Phase 1: Platform Development (Late 2018)
+
+CONUN development is the research and development of the technology that defines the platform
+base at the beginning. At the same time, we develop the blockchain core and token development of
+
+CONUN, Ethereum Smart Contract for token storage and transaction management. $fL|Cf.
+
+A. Define work on the foundation of the platform and establish a framework and plan for each step.
+
+(Base platform definition)
+
+B. Implements a key part of an ethereum-based blockchain token and a Smart Contract core that
+
+manages transactions.
+
+C. Implement the user electronic wallet core and mining algorithm. (Wallet core & Mining Algorithm)
+
+20
+CONUN Distributed Supercomputing Platform
+
+D. Implement a virtual machine system for the application to work on a personal computer. (Virtual
+
+Machine base on Docker container)
+
+E. Work on the user interface for the application. (Application UI / UX)
+
+Phase 2: Alpha Version Deployment (Early 2019)
+
+This step implements a desktop grid system that can be the core of the CONUN platform. Develop an
+
+initial platform to implement deployed versions of user applications and run services through a test
+
+network.
+
+A. Design and implement the core of the desktop grid system. (Desktop Grid Platform)
+
+B. The peer-to-peer
+
+designed like a des
+
+Cc. File transportation
+
+for storing distribu
+
+D. The smart contrac
+
+E. Implementation of
+
+added to the distributed co
+
+related tasks are implemen
+
+networ'
+
+top grid
+
+architecture is the foundation of the desktop grid system. It is
+
+& Distributed data storage managemen
+
+system. (P2P Network Architecture)
+
+: Design and implement a core point
+
+ed data to transfer and manage data from applications.
+
+applica
+
+authen
+
+ion implemented in phase 1 imp
+
+ed. (Authentication & Security)
+
+ements additional extensions that are
+
+mputing processing environment.(Ethereum Smart Contract - Phase 2)
+
+ication schemes for CONUN application use and information security
+
+F. Implement the application interface that the user application needs to define to be used on the
+
+platform (CONUN Task API).
+
+Phase 3: Market version Deployment (Mid 2020)
+
+In this phase, you configure a live network environment in which the CONUN platform can actually
+
+operate, and implement a deployment version that can leverage tokens to handle your distributed
+
+computing requests. The live network is for everyone in the industry, including individuals and research
+
+21
+CONUN Distributed Supercomputing Platform
+
+organizations and businesses. This phase can be broken down into several detailed steps depending on
+
+the class
+
+ication of the project that will actually be applied to the platform. This is to avoid many of the
+
+risks that may arise if multiple large application projects are running simultaneously.
+
+A. Application category management by category (step-by-step), perhaps the start will be in the
+
+areas of scientific computing and deep learning. (Application Category Management)
+
+B. Supports community activities by strengthening the authentication and information security level
+
+of CONUN and by implementing a system that manages whether the platform works effectively
+
+according to the level of user participation. (Security & Reputation Management)
+
+Cc. Establish a management system that can monitor user activity and job processing status of
+
+CONUN. (Resource Monitoring)
+
+D. CONUN Supports network services where communities can be created and operated. (Community
+
+Network)
+
+a Phase 4: Mobile Cluster (2022)
+
+By developing mobile grid system architectures and frameworks that enable distributed computing
+work on mobile devices, they also form a single network that is integrated with existing desktop grid
+
+platforms.
+
+A. Develop an architecture and framework for deploying tasks to multiple mobile devices and using
+
+them as compute nodes.
+B. Build mobile application governance and develop user interface.
+Cc. Integrate the desktop grid system with the mobile grid system.
+
+D. Now an environment is in place in which individuals can leverage computing resources from their
+
+desktop and mobile devices.
+
+22
+CONUN Distributed Supercomputing Platform
+
+6. Safety and Security
+
+A distributed computing environment is a complex structure that allows remote access to computing resources
+such as desktop computers, mobile devices, and workstations over the Internet. These environments, as well as
+
+others, can be exposed to security risks from malicious threats.
+
+We know that we have to do risk management. This means that every activity on the CONUN platform must create
+a responsible security culture that can be done safely and transparently. This is to ensure that the computers of
+individual computing resource providers are secure and that the data and information of application users are
+
+protected by security threats.
+
+We will design and operate systems to implement anti-fraud policies and systems for risk management and to
+protect systems from malicious hackers. This is accomplished by properly performing security policies,
+authorization and authentication operations that can detect, disassociate, block, and exit dishonest nodes from al
+
+nodes participating in the platform and keep private information private.
+
+The security system basically applies password-based authentication & authentication systems that operate based
+on password-based authentication and tickets to ensure the integrity and confidentiality of data processed in the
+
+platform, and apply VO Level Systems, which provides integrated authorization services for virtual organizations,
+
+and Resource Level Systems authentication system, to grant access to resource sets. And in the execution area o
+the application, it will protect the user area by implementing a safe and isolated execution environment based on
+
+the sandboxed virtual system.
+
+takes a lot of steps to provide a secure, distributed computing environment for users, and building an
+
+environment where trusted external applications can run on desktop computers is a very important part. We are
+
+deeply aware of the importance of safety and security that we are concerned with and we will continue our
+
+research and development efforts regardless of each stage of development.
+
+23
+CONUN Distributed Supercomputing Platform
+
+7. Blockchain Token
+
+Our core service area will be a horizontally distributed desktop computing system platform that will serve the
+ecosystem to perform all applications requiring high performance computing at low cost, as shown in our
+application examples. We are also planning a related service that will enable us to create a second added value by
+
+leveraging our CONUN platform.
+
+= Cryptocurrency Exchange, Continuing profit-making business for long-term business
+
+of CONUN, and additional service of the exchange with CONUN token.
+
+=» Commerce using CONUN's crypto token in a large online/offline designated shopping
+
+mall.
+
+= Services that can attract advertisers to interact with platform members and earn
+
+revenue by viewing and participating in advertisements.
+
+= Services that allow members to earn additional revenue by participating in surveys for
+
+research and development purposes.
+
+24
+CONUN Distributed Supercomputing Platform
+
+8. Disclaimer
+
+This document is intended only as a guide to provide information to help those interested in using the
+CONUN platform service. The contents of this document are irrelevant to any investment proposal or
+investment advisory purpose and cannot be construed as a contract for the sale or purchase of any of the
+CONUN tokens. If necessary, users are strongly recommended to seek advice from a legal or financial
+
+expert.
+
+The statements, estimates, and conclusions set forth in this document may cause inconsistent results to be
+expected, and there may be technical inaccuracies or typographical errors, so nothing posted will guarantee
+accuracy. This document may be updated or revised and the latest version of the document will replace the
+
+contents of the previous version, and we are under no obligation to notify any changes or revises.
+
+The users are responsible for purchasing, receiving and retaining the CONUN token at users’ own
+
+discretion, deciding whether to use or resell it through the Service, and shall be exclusively
+
+responsible for the benefits, losses, and tax related assessment..
+
+25
+CONUN Distributed Supercomputing Platform
+
+9. References
+
+[1] Real World Use Cases for Ethereum - https://blokt.com/guides/ethereum- guides/eth-use-cases)
+
+[2] Distributed Computing - http://distributedcomputing.info/index.html
+SETI@Home - https://setiathome. berkeley.edu/
+distributed.net - http://www.distributed.net/Main_Page
+
+3] Desktop Grid's open source software developed by CNRS and INRIA Institute, Grid computing, Wikipedia,
+https://en.wikipedia.org/wiki/Grid_computing
+
+A] Introduction to XtremWeb - http://xtremweb.gforge inria.fr/introduction.html
+
+5] BOINC - https://boinc.berkeley.edu/
+Folding@Home - http://folding.stanford.edu/
+
+6] IPFS - https://ipfs.io/
+Storj(Open source Cloud storage) - https://storj.io/
+
+7] Layered Grid Architecture - http://www.csus.edu/indiv/c/chingr/mis270/architecture.pdf
+
+8] Blockchain & Ethereum - https://www.ethereum.org/
+
+9] Grid Computing and Security Issues - http://www. ijsrp.org/research-paper-0813/ijsrp-p2094. pdf
+
+10] Contributions to Desktop Grid Computing - https://hal.inria.fr/tel-O1158462v2/document
+
+26
+<4
+
+a
+
+Fa
+
+oO
+
+Qa
+
+9
+
+:
+:é uf
+ic
+
+eZ
+
+io}
+
+z
+
+ot
+
+g
+
+3

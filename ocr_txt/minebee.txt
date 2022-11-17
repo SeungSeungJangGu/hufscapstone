@@ -1,0 +1,2388 @@
+a! MineBee
+
+Boog
+i
+Of .
+a
+Tena ag he
+onan "aay, "aq."
+"Coa,
+
+Xi MineBee
+
+Table of Contents
+
+1 Executive Summary
+
+2 Market Overview
+
+2.1 Financial Challenges
+2.2 Informational Challenges
+2.2.1 Mining Data
+2.2.2 Marketplace Data
+2.3 Safety Challenges
+
+3 MineBee Service Stack
+
+3.1 Overview
+3.1.1 MineBee Solution
+3.1.2 MineBee Contract
+3.1.3 MineBee Open Market
+3.1.4 MiningCom App
+
+4 Business Model
+4.1 Expansion Strategy
+4.2 Competitor Analysis
+4.3 Revenue
+
+9
+
+Token Model
+
+5.1 Sale Structure
+5.2 Token Distribution
+5.3 Use of Funds
+
+Timeline
+
+6.1 Current Status
+6.2 Roadmap
+
+Team & Partners
+7.1 The MineBee Team
+7.2 The Advisory Board
+7.3 Partnerships
+7.3.1 MiningCom
+7.3.2 Other Partners
+
+Glossary of Terms and
+Abbreviations
+
+Closing Statements
+
+10 Bibliography and
+
+Further Reading
+
+11 Disclaimer - Legal and Risks
+
+JAi MineBee
+
+1 Executive Summary Xi MineBee
+
+Data is the fuel that drives the cryptocurrency economy. In an industry formed around virtual
+currencies that are created and traded in digital form, participants are dependant upon
+accurate, real-time data from an array of sources. The binary and hexadecimal data that
+constitutes wallet addresses, private keys and blockchain headers, as well as that pertaining
+to network hashrate, coin velocity, UTXOs and a host of other metrics, is ripe for analysis.
+
+The data derived from public blockchains is immensely valuable to entities that operate in
+multiple industry verticals. Valuable insights can be extrapolated from processed data and
+used to determine trading decisions, fee estimation, investment strategies, and to gauge
+everything from market cycles to the behavior of major ecosystem players such as
+cryptocurrency exchanges and so-called “whales”.
+
+As the quality and scope of crypto-analytical tools has increased, so has the role played by
+data as a driver of key business strategies. Not every area of the cryptoconomy has been
+served by the growth in analytical services, with one sector in particular starved of
+high-quality data-driven insights - the mining industry.
+
+The tools available to cryptocurrency miners are largely unrefined, supplying little more than
+generic information regarding network hashrate, coin profitability, and hardware
+performance. The most valuable data of all - the sort that has the potential to eke out greater
+efficiencies and to ease loss-making mining operations into profit - lies deeper below the
+surface. Extracting this data and drawing actionable outcomes from it is a complex but
+lucrative task that has proven beyond the reach of mining service providers.
+
+MineBee intends to change that. Through the use of big data, accrued with the aid of its
+mining rig management partners, MineBee will deliver valuable insights that will be licensed
+as technology support. From overclocking to temperature regulation and from coin selection
+to hardware optimization, MineBee will help to refine every last facet of the cryptocurrency
+mining business. The result will be less downtime, fewer performance-related hazards,
+greater hashrate, and ultimately greater profits.
+
+.
+wee EOrary ry a
+ueuneneee nite —
+an
+Tae, ey
+pe@uSHSttanng » "a "a, "2
+"aay ay "e,
+ay tay te
+a Wy ay
+
+1 Executive Summary Xi MineBee
+
+Miners who access MineBee’s vast trove of data, delivered via its industry partners, will hold
+a significant competitive edge. Miners are reliant on multiple data points to maximize profits
+while ensuring their equipment remains within safe operating parameters.
+
+Modest refinements can be the difference between profit and loss. As a result, access to
+accurate data in real-time is not just desirable - it is essential.
+
+MineBee Solution will instantly be able to tap into a large community of miners through its
+links to key business partners. In this way, MineBee will overcome the inherent challenges of
+building its own community and ecosystem from scratch. Through focusing on B2B licensing,
+MineBee will quickly begin generating revenue without attempting community acquisition,
+one of the main causes of failed ICOs.
+
+In addition to providing an advanced data analysis service, MineBee is developing a market to
+facilitate the buying and selling of new and second-hand mining equipment. MineBee Open
+Market will enable new entrants to begin mining by removing the cost barriers which
+currently exist and allow established miners to offset the costs of upgrading through the sale
+of old equipment. With new equipment from leading manufacturers also showcased, the
+marketplace will provide vendors with greater exposure and increased sales.
+
+From inception, the market will be supported by MineBee Contract, a secure, fast and
+cost-effective smart contract that will facilitate cryptocurrency payments. The contract will
+offer payment in MineBee’s native MB token as well as Bitcoin and Ethereum. Functionality
+will include the monitoring and automatic validation of wallet addresses and user accounts,
+transaction amounts, the number of transactions being processed, transaction throughput
+and transaction status. Once escrow functionality has been rolled out, MineBee Contract will
+form a standalone system capable of facilitating trustless transactions for a range of
+purposes, both within MineBee Open Market and for third parties that have integrated the
+MineBee Contract payment module. MineBee will be available as an open API for payment
+integration in a range of industries, including those that operate outside of the cryptocurrency
+space.
+
+.
+wee EOrary ry a
+ueuneneee nite —
+an
+Tae, ey
+ey SOC | » "a "a, 8
+"aay ay ",
+ay tay te
+a Wy ay
+
+1 Executive Summary Xi MineBee
+
+The MB token will entitle holders to a range of benefits including a discount on premium
+MineBee services. This includes tools for fully optimizing mining equipment and coin selection
+to maximize revenue, allowing miners to derive greater efficiencies and keep their machines
+running profitability, even when others have been forced to power down. By improving the
+overall efficiency and profitability of cryptocurrency mining, MineBee will increase the
+industry’s appeal, causing greater demand for hardware as more miners enter the ecosystem.
+This, in turn, will improve network security and the stability of the Proof of Work (PoW) coins
+being mined.
+
+The scope, accuracy and real-time relevancy of its data will position MineBee as the industry’s
+premier provider of mining analytics. Proof of MineBee’s efficacy will be evident in the
+enhanced performance levels witnessed by miners who connect to its service stack to
+transmit their operational data and receiving actionable information in return. Together with
+its partners, MineBee will attract and nurture a large community whose input will be
+instrumental in ensuring the project’s success from day one. MineBee’s turnkey solution will
+supply value to a growing global network of cryptocurrency miners and other ecosystem
+participants.
+
+.
+wee EOray ry a
+uenneneee nite —
+an
+Tay, ey
+pn@eSHSttanag » "a "a,
+"aay Tay ",
+ay tay te
+a Wy ay
+
+JAi MineBee
+
+ea
+
+~~
+
+sg “*
+
+2 Market Overview <i MineBee
+
+Cryptocurrency mining is the backbone of Proof of Work coins. Miners compete to add blocks
+to a public ledger, with the first miner to find the correct hash function within a desired range
+entitled to the block reward plus any fees attached to the transactions contained within it.
+This process of work and reward incentivizes miners to produce the cryptographic proofs that
+secure the network and ensure its continued stability, which in turn supplies users with the
+confidence to adopt and invest in these protocols. Since miners are financially motivated to
+validate transactions, and their remuneration is directly proportional to the hashrate they
+contribute to the network, they welcome any and every means by which their operation can
+be refined.
+
+Miners can make significant profits depending on market conditions, hashrate, network
+difficulty, and other factors, but their fortunes can swing wildly. In early 2017, for example,
+thousands of solo miners purchased GPUs and began mining Ethereum, which was rising
+rapidly in value at the time. Many Ethereum miners realized significant profits before
+increased competition raised the network hashrate and eroded economic incentives for
+small-scale operators.
+
+While 2017 saw record growth throughout the cryptocurrency industry, this was followed by
+an extremely testing 2018 that left miners struggling. Since late 2017, the value of bitcoin has
+dropped by 75% while ethereum has fallen by around 90%, making it increasingly challenging
+to derive a profit from cryptocurrency mining. Most altcoins have suffered even more
+dramatic losses during this timeframe, in some cases shedding over 90% from their peak
+value. With crypto assets trading at significantly reduced prices, many miners have found
+their business model to be no longer viable.
+
+In November 2018, a number of major Chinese cryptocurrency miners were found to be
+dumping their equipment as the economic climate made it no longer cost-effective to
+continue. By this point, the solo miners who first supported the growth of the major
+blockchains had already bowed out since they could no longer afford to keep their equipment
+running. As Diar observed in October 2018, “mining has, at least for now, and most likely in
+the future, moved into the court of bigger players with deep pockets.
+
+BER EEEESae =
+"ea, «
+TrPPCL Li, ®ay "ey
+js@uceebenonag . ag, fe
+"an we, e
+aay Tay
+ae, aye
+a a @,
+
+2 Market Overview Xi MineBee
+
+It is not just smaller and independent miners who have been forced to cease operations in this
+tougher prevailing climate, with large-scale mining businesses also stretched. GMO Internet,
+for example, who allocated around 10% of the firm’s capital and resources to a coin mining
+venture in June of 2018, reported losses of $320 million in Q4 of 2018 and officially ceased all
+mining. In November 2018, the North American mining company Giga Watt went bankrupt,
+leaving creditors out of pocket to the tune of millions of dollars. Despite the recent market
+downturn, however, the industry continues to innovate and to attract new entrants.
+
+Market size
+
+The hashrate of a cryptocurrency network provides a broad indicator of the number of miners
+connected to it. For example, the steady rise in hashpower on the BTC network from January
+to October 2018 indicates that despite declining coin values, the number of miners joining the
+network was steadily increasing (see figure 1). This was followed by a significant drop in
+hashpower from November to December, indicating that miners began ceasing operations in
+high numbers. Despite Bitcoin’s hashrate having partially recovered since late December,
+
+it remains approximately 30% below its peak of 60 EH/s set in mid-2018.
+
+Hashrate
+
+The estimated number of tera hashes per second (trillions of hashes per second) the Bitcoin network is performing.
+
+65.000.000 — --—-—-—-—-—-—--~—~—~—~—~~—~—~ ~~ ~~~ ~~ ~~ ie
+60.00.9000 — —-—-—-—-—-—~-~—~—~—~~~-~-~—~-~-----—
+
+5.000.000 — --—-—-—-—--—-—----~--~-~-~-~---~-
+
+50.000.000 — -—-—-—-—-—---~—--~--~-~-----—
+
+45.000.000 — -—-—-—-—-—---—---------=
+
+40.000.000 — --—-—-—-—--------—
+
+35.000.000 — — —~-~-—--~-~->7\—
+
+Hash Rate TH/s
+
+30.000.000 — -— —~ — —
+
+25.000.000 walk
+20.000.000 — — ~—-—--—--->->- > - > F- FFF FFF Fr rrr rr rr rr rrr
+
+15.000.000 — — —~—-—--—--—-7->- > >>> FFF FFF rrr rrr Fr rrr rrr
+
+Feb*18 Mar 18 Apr°18 May 18 Jun*18 Jul‘18 Aug’18 Sep°18 Oct*18 Nov'18 Dec18 Jan‘19
+
+Bitcoin network hashrate growth 2018-2019
+
+Eee eee *
+1) Tage,
+_s@uSReesanny . "a,
+LT \ wr aed
+"age
+May tala,
+
+2 Market Overview Xi MineBee
+
+Over the same period, Ethereum showed a similar pattern of growth, retreat, and growth,
+mirroring the hashrate of Bitcoin.
+
+Ethereum Network Hashrate Growth Chart
+
+Hash Rate (CH/s)
+
+oKO O- O- O- O- O- O- O- O- O- O- O-
+
+Jan*18 Feb*18 Mar‘18 Apr18 May°18 Jun‘18 Jul'18 Aug'18 Sep*18 Oct‘18 Nov18 Dec‘18 Jan*19
+
+Ethereum network hashrate growth 2018-2019
+
+Crypto mining stats - per year
+
+© 114 countries
+
+~100,000 miners 0.13% of all the electricity consumed
+
+~$2 bin — GPU cards producers’ profit
+~$2 bin — big ASIC miners manufacturers* profit
+
+$4.1 bin — miners revenue 9,965 nodes
+
+EN
+aa
+©
+Ad
+
+Ou ee,
+
+10
+
+2 Market Overview ii MineBee
+
+2.1 Financial Challenges
+
+The financial viability of cryptocurrency mining is dependant upon keeping operating costs at
+a minimum while maximizing output. Miners face a constant battle to drive down production
+costs, amid increased competition posed by new miners and new mining equipment joining
+the network. Electricity costs, power consumption, cooling, hashrate, and overclocking
+settings - as well as market prices - affect the profits that miners are able to realize through
+selling the cryptocurrencies they earn as block rewards and transaction fees.
+
+25 -t--Lb
+
+15 fob
+
+Mining profitability. USD / day for 1 THash /s ————_____>
+
+Jan Feb Mar = Apr May = Jun Jul Aug Sep Oct Nov Dec
+
+Figure 2: 2018’s decline in mining profitability
+
+In both bear and bull markets, miners are driven to seek cost savings and performance
+enhancements. Miners have no control over coin prices, but they can still maximize profits by
+setting optimal hashing and overclocking values, choosing the most profitable coins to mine,
+and reducing overheads by sourcing cheap electricity.
+
+we Oar:
+
+11
+
+12
+
+2 Market Overview Xi MineBee
+
+The average electricity cost of mining most PoW coins still exceeds their market value by a
+significant margin. As of January 14, 2019, Cryptocompare indicates an 81% daily loss on
+mining Bitcoin and a 44% daily loss on mining Ether.
+
+Miners intent on profiting from their profession must constantly monitor and adjust their
+equipment to maximize revenue and remain competitive. Every miner has a break-even point,
+a threshold below which it is no longer economically viable to maintain operations. When the
+cost of mining coins falls below the profit to be derived from selling them, miners are faced
+with the prospect of having to disband and sell their equipment at a loss, or wait for more
+favorable market conditions to return, while still paying rent and other fixed costs.
+
+2018 : Miners Paying Retail Electricity Prices Now Unprofitable...
+
+M™) Revenues (USD) (§§ of which est. profits
+
+1.2Bn
+
+1Bn
+
+Jan Feb Mar Apr May Jun Jul Aug Sep
+
+Notes : Profit Estimates Using Sg Miners & $0.1/kWh. No Pool Fees or Hardware
+costs. The chart illustrates profits if all miners paid retail electricity prices.
+
+Mining at retail electricity prices became unprofitable in 2018
+
+suBRBSRRonee
+eOUnEeeee
+weEeS Oy
+
+s@uceebtsanng a
+"tony "ay “a,
+Taye
+ae s a,
+
+13
+
+2 Market Overview Xi MineBee
+
+Deferring or preferably avoiding reaching the break-even point will allow miners to maintain
+“skin in the game” and to continue production until fairer market conditions return. For
+miners who have dropped out altogether by that point and divested themselves of their
+equipment, resuming operations will not be feasible. Mining is essentially about survival,
+therefore, with the victors claiming the bulk of the hashrate and the spoils.
+
+Cryptocurrency mining is an adversarial environment by design, with miners not only
+competing with one another to find blocks but also subjected to difficulty adjustments and
+reduced block rewards that have been programmed into the protocol. This forces miners into
+an arms race in which equipment must be regularly optimized in a bid to offset increased
+difficulty, or replaced by newer, more powerful hardware. From a financial perspective,
+boosting the output of existing equipment is preferable to upgrading it, which is why miners
+push their rigs to the limit.
+
+2.2 Informational Challenges
+
+There are numerous ways in which miners can reduce their expenditure and operating costs
+while increasing output, but this quest is hampered by an absence of accurate information.
+To make informed choices, miners require up-to-date information, both at the point of sale
+and in the day-to-day running of their operations.
+
+2.2.1 Mining Data
+
+Miners cannot simply plug in their machines and start profiting from mining PoW coins.
+Optimal hash and overclock values are required to mine efficiently and profitably. The only
+way to identify the optimal values for any coin is to pool and analyze data from many mining
+machines. Modern big data techniques can produce insights regarding the most efficient
+mining values for the benefit of all participants.
+
+Although such insights have the potential to optimize mining operations, big data analytics
+methods are reliant on having access to vast data pools. Very little live mining data is made
+
+seUSeeeee
+eeeeeeeeee
+TrPPTL Li,
+
+yr Yee te ,
+"ay Feats,
+"ag, *e
+
+14
+
+2 Market Overview ii MineBee
+
+publically accessible since few solo miners have any reason to collect and publish data on
+their own operations. The data of large numbers of miners is available to mining monitoring
+and management services, but these entities currently have no incentive to share this data.
+
+In order to implement performance enhancements, mining and monitoring services must be
+incentivized to collect and share anonymized user data, and users of these services must be
+incentivized to share their data.
+
+2.2.2 Marketplace Data
+
+At present, the manufacture of mining rigs is highly centralized with a handful of businesses
+dominating the sector. The result is a market which is uncompetitive, with detrimental knock-
+on effects, particularly in terms of price. Consumers are faced with a limited number of
+options when deciding which equipment to purchase, and manufacturers remain free to
+maintain high hardware prices. This problem is further exacerbated at the point of sale where
+the market has no price comparison site, nor is there a place to easily purchase second-hand
+hardware.
+
+For established miners who wish to sell their used equipment, there is no widely-adopted
+platform on which they can advertise the inventory. Most existing e-commerce marketplaces
+levy high fees to list items for sale, to set a safety reserve and to add special qualifications to a
+sale. Further, they typically charge a minimum of 10% on the total value of the sale in fees.
+These charges can render the sale of second-hand mining equipment financially non-viable,
+leading to perfectly functional mining hardware languishing in storage, or simply being
+scrapped altogether.
+
+2.3 Safety Challenges
+To date, no comprehensive study has been conducted on the dangers of leaving mining
+
+equipment unattended. However, a number of reported incidents of fires caused by mining
+hardware demonstrate the hazards posed. In 2014, a fire at a bitcoin mining facility in Thailand
+
+sRUSeeeee
+eneeeeeee
+jpn eRe
+
+ry Yee te ,
+"ay Feats,
+"ag, *e
+
+15
+
+2 Market Overview Xi MineBee
+
+caused significant damage, with 2,000 mining rigs destroyed in the blaze. In February 2018,
+a fire engulfed the upper floor of a Russian apartment complex, destroying eight flats in
+the process.
+
+In addition to the anecdotal evidence that attests to the dangers of leaving highly powered rigs
+unattended, there is the threat of mining rigs shutting down due to overheating, or complete
+burnout. From a financial perspective, the threat this presents to miners is almost as severe,
+given that their income is reliant on equipment performing optimally and running 24/7.
+
+Miners must counter the need to operate equipment within safe parameters with the need to
+overclock their machines and push them beyond their recommended limits in order to
+maximize revenue. Excess overclocking, exacerbated by the heat build-up from having dozens
+of GPUs or ASICs connected in parallel, can prove just as costly as underclocking. Coaxing
+greater output from cryptocurrency miners without jeopardizing hardware or premises is a
+delicate balancing act.
+
+With lives to lead and other tasks to attend to, miners are forced to make tough choices.
+They can either:
+
+1. Leave mining equipment to operate unattended at the risk of technical breakdown or
+potential fire risk.
+
+2. Power down equipment when unattended, resulting in a loss of revenue.
+
+3. Physically attend to machinery around the clock at great personal cost in terms of time,
+or as a financial burden in the form of hired labor.
+
+Since each of these options is sub-optimal, there is a clear case for a solution which allows
+miners to safely maximize their mining performance and uptime while minimizing risks.
+
+.
+wee EOray ry a
+uenneneee nite —
+an
+Tae, ey
+pe@uSHeettanng » "a ®a,
+"aay Tay ",
+ay tay te
+a Wy ay
+
+JAi MineBee
+
+16
+17
+
+3 MineBee Service Stack Xi MineBee
+
+3.1 Overview
+
+MineBee is developing a turnkey solution that will address the mining industry’s multi-faceted
+problems and supply participants with real-time network analysis. The MineBee service stack
+will collect and analyze data through all stages of the mining cycle and leverage it to drive
+efficiencies across the board. The MineBee stack comprises the following components:
+
+@ MineBee Solution: A data management and analysis tool that processes the data of all
+miners connected to its mining rig management partners and uses it to develop
+actionable insights. These findings are then shared with the same entities for
+performance enhancement purposes.
+
+@ MineBee Contract: A smart contract-controlled payment module that facilitates a peer-
+to-peer purchase of equipment as well as payment for MineBee partners’ premium
+services with escrow functionality. Payment can be made using the native MB token and
+ETH, with BTC to be added later. The MineBee Contract will also be made available to
+other industries as an Open API.
+
+@ MineBee Open Market: A marketplace for pricing, buying and selling second-hand
+mining equipment and for providing price comparisons of new equipment. Open Market
+will be licensed exclusively to MiningCom for its broad user base to access.
+
+@ MineBee Token: An ERC20 token and the primary currency within the MineBee ecosystem.
+The MineBee Token (MB) can be used to purchase MineBee services at a discounted rate
+and for trading and escrow on MineBee Open Market.
+
+@ MiningCom App: A mobile and desktop application, developed in conjunction with
+MiningCom, for remotely monitoring and controlling mining equipment.
+
+MineBee’s all-in-one solution is designed for mining companies and agencies, solo miners and
+mining pools. It is also suited to mining consultants, equipment manufacturers, and third-
+party crypto market data services.
+
+seUSe eee
+eneeeeeoee
+jpn OPP Renee
+
+_s@uS Ree sanny a ae
+"ana, Tay “a,
+ay tet
+a «
+
+3 MineBee Service Stack Xi MineBee
+
+APPLICATION
+
+MiningCom Management App
+MineBee Open Market
+
+LL
+SERVICE
+
+a | MineBee Database and API
+
+_~G DATA
+
+a _l MineBee Data Analytics
+BLOCKCHAIN
+
+MineBee Contract + MB Token
+
+Escrow /
+Open API
+
+Client
+
+User / .
+Partner MB Solution
+
+19
+
+3 MineBee Service Stack Xi MineBee
+
+3.1.1 MineBee Solution
+
+Big data is defined as “extremely large data sets that may be analyzed computationally to
+reveal patterns, trends, and associations.” Through such big data analyses, MineBee Solution
+will yield value-generating insights. As Peter Sondergaard, Senior Vice President of Gartner
+puts it, "Information is the oil of the 21st century, and analytics is the combustion engine.”
+
+In its raw extracted state, mining data is of limited value, but once it has been subjected to
+MineBee’s deep pattern analysis, it gains a range of monetizable applications which can then
+be licensed to business partners.
+
+MineBee obtains data streams from its mining monitoring and management partners, who in
+turn collect it from the miners who connect to their system. MineBee Solution integrates with
+mining management systems through an API to collect data on mining operations of all sizes.
+MineBee’s “combustion engine” processes this data to extract revenue-generating insights
+regarding overclocking, cooling, and optimal hashing and coin selection. Mining companies
+that license MineBee Solution will be granted access to this trove of processed data in real-time.
+
+MineBee Solution will draw its data points from a wide range of inputs including:
+
+Hashrate per GPU
+
+Total GPU hashrate per rig
+GPU temperatures
+
+Full miner log archives
+Error log archives
+
+Reboot rate
+
+MineBee Solution will also provide detailed hashing information for all popular PoW coins
+including information pertaining to:
+
+@ = Average and maximum hashrate for each coin
+@ Maximum theoretical overclock according to VGA series, OS, and coin type
+@ = Overclock information regarding memory (Mhz), fan speed, voltage, memory voltage etc
+
+2
+Pr ‘te -
+ane 1. «
+1) "any te,
+_s@uSBRbesanny » ". "a, 4
+"aay Tay "e,
+ay tay te
+a a @,
+
+20
+
+3 MineBee Service Stack Xi MineBee
+
+Finally, MineBee Solution will contribute to the development of mining pool ID monitoring.
+This provision enables mining management companies to determine whether miners are
+changing to different pool IDs. Observation of this trend can give miners an indication of where
+profits are being made and facilitate automated switching to maximize revenue.
+
+1c
+
+££ @ a -Jbu @® &
+
+Mining Overclock GPU Error Revenue
+DATA Capacity Value Temperature Occurrence per coin
+
+MB Solution <P>
+hw
+
+Clients
+
+PROCESSED DATA
+
+2A
+
+2E 2D 2c 2B
+Oo Qe ae Fee he
+
+Maximum Display each Stable mining Select coin Analysis of overall
+Rate of Return hash amount to mine market flow
+
+As overclocking and operational settings are improved, so is the likelihood if the miner
+successfully solving a block hash and claiming the reward. The same information can also
+
+reduce the risks associated with mining by identifying the maximal safe overclocking values for
+different types of rigs.
+
+Overclocking a mining rig beyond the levels recommended by the manufacturer could result in
+systems outage, overheating, power overload damage, or may simply degrade the hardware
+prematurely. MineBee Solution can identify these risks and suggest optimal overclocking
+settings that are precisely configured for the system in question.
+
+pune
+
+21
+
+3 MineBee Service Stack Xi MineBee
+
+MineBee Solution creates value for a range of industry participants by increasing the efficiency,
+safety, and profitability of mining operations. It achieves this by:
+
+@ Providing real-time data processing tools that produce key insights on hashing data of
+both coins and hardware, overclocking data, the profitability of mining certain coins,
+and so on. Such insights may significantly improve the overall efficiency and value of
+the mining industry.
+
+@ Providing sophisticated performance analysis tools to partners who, in turn, provide
+users with reliable remote monitoring and management services which negate the need
+for constant physical monitoring. This will drastically reduce labor costs.
+
+@ Rendering mining profitable by bringing new miners into the space and allowing
+established miners to upgrade and expand their operations.
+
+MineBee Solution provides incentives for new miners to get started and allows all miners to
+improve the efficiency of their operations. It facilitates the entrance of new miners into the
+industry by offering information, via third-party mining management services, that gives
+prospective miners confidence their operations will be maximally efficient and profitable from
+the outset.
+
+Network effects
+
+The more miners who connect to the MineBee ecosystem, the greater the dataset that can be
+utilized, and the more valuable these performance-enhancing insights become. This creates a
+positive feedback loop. The network effects of miners joining the MineBee network via
+MineBee partners and submitting their mining performance data for analysis will drive even
+greater efficiencies.
+
+When used in conjunction with the MiningCom app, MineBee Solution provides mining
+companies with unparalleled client management capabilities through its innovative sub ID
+management solution. This enables users to update multiple mining rigs simultaneously and
+to adjust hashrate, coin selection, and hashing algorithm.
+
+TrPPCL Li,
+
+,p@ucetnnneneg te t
+"aay Feats,
+"ag, *e
+
+22
+
+3 MineBee Service Stack Xi MineBee
+
+MineBee Solution supports most major operating systems, including Windows and Linux and
+all current and future GPU and ASIC rigs will be compatible.
+
+Proof of Stake
+
+In the future, MineBee will look to expand its data analysis solution to the Proof of Stake
+market. MineBee Solution POS will build upon the considerable experience MineBee has
+garnered from generating insights for PoW operations, and apply that knowledge to new data
+models.
+
+MineBee Solution POS will deliver information pertaining to:
+
+Minimum coin staking requirements for masternode establishment
+Correct technical configuration for setting up a masternode
+
+@
+
+@
+
+@ Information pertaining to hosting a server
+
+@ = Setting wallet addresses for individual computers
+@
+
+Return on investment per coin
+
+Establishing a masternode can be a complex task which acts as a deterrent to entry-level
+participants. With MineBee Solution POS, comparing fees and dividend distributions before
+proceeding with masternode setup will become possible for a new wave of proof of stake
+participants.
+
+.
+wee EOL ry a
+ueneeneee nite —
+an
+Tae, ey
+pe@uSHSttenag » ". "a,
+"aay Tay "e,
+ay tay te
+a Wy ay
+
+23
+
+3 MineBee Service Stack Xi MineBee
+
+3.1.2 MineBee Contract
+
+CS . ; COMPLETE WITHDRAWAL
+
+Coin Deposit
+v : v
+MB Contract
+<F> Pending and Success
+. confirmation .
+Client % Hh Client
+
+Verify wallet address
+-~ and user account
+
+a
+
++ COMPLETE DEPOSIT tee tees = @ eieialatahatete
+
+Coin Withdrawal
+
+MineBee Contract is a secure, fast, and cost-effective smart contract-enabled payment module.
+The default payment method with MineBee Contract will be the MB token, which will offer
+users a discount on premium services, but the contract will also be capable of connecting to
+the Ethereum and Bitcoin blockchains for processing payments in ETH and BTC. MineBee
+Contract monitors and automatically validates wallet addresses and user accounts,
+transaction amounts, the number of transactions being processed, transaction throughput,
+transaction status, and other metrics while providing the transacting parties with real-time
+status reports and updates.
+
+During the initial stage of deployment, users will be able to perform transactions using
+MineBee’s native MB token as well as ETH and later BTC. The second generation version of
+MineBee Contract will feature an escrow function to facilitate entirely trustless transactions on
+MineBee Open Market and elsewhere. MineBee Contract will also be available as an open API,
+making it suited for deployment as a versatile payment module. This will allow MineBee
+
+my LOCC | "a i a
+. a
+"aay ay ee,
+May tala,
+
+3 MineBee Service Stack Xi MineBee
+
+Contract to operate in a similar fashion to online payment gateway services such as PayPal or
+Stripe. Businesses that wish to process cryptocurrency payments, including mining services,
+P2P platforms, and decentralized marketplaces can easily integrate MineBee Contract and
+utilize its smart contract to query and interact with the Ethereum and Bitcoin blockchains.
+
+40.000.000
+35.000.000
+30.000.000
+25.000.000
+20.000.000
+15.000.000
+10.000.000
+
+5.000.000
+
+Number of blockchain wallet users
+
+0
+
+Quis
+Q2°15
+Q3°15
+Q41s
+Qu16
+Q2°16
+Q3°16
+Q4 16
+qui7
+Q2°17
+Q3°17
+Q417
+Quis
+Q218
+Q3°18
+Qa 18
+
+Growth in blockchain wallet users
+
+The growth of blockchain wallet users illustrates the huge potential of a versatile payment
+module such as MineBee Contract. There is compelling evidence to suggest there is strong
+interest in cryptocurrency deployment at point of sale, provided the technical challenges can
+be overcome. A survey of 100 retailers with annual revenue of over $100,000 found that 60%
+would be amenable to accepting cryptocurrency, while another survey found that 75% of
+consumers would be open to using cryptocurrency in point of sale transactions.
+
+Retailers outside of the blockchain sector who wish to tap into the growing number of
+cryptocurrency users will be drawn to MineBee Contract as a way of enabling crypto payments
+for their business. MineBee Contract will position itself as a payment solution with low fees,
+strong security, and transparency. The superior developer support documentation, UX, and
+
+25
+
+3 MineBee Service Stack Xi MineBee
+
+ease of installation compared to alternative payment modules will make MineBee Contract a
+firm favorite with merchants and platform providers that choose to integrate it.
+
+MINEBEE . MINEBEE . MINEBEE
+soLuTion °| © @@> * contract * OPEN MARKET”
+
+BTC
+BLOCKCHAIN
+
+ETH MINEBEE (®)
+V/ BLOCKCHAIN BLOCKCHAIN
+
+3.1.3 MineBee Open Market
+
+MineBee Open Market is designed to fulfill the needs of cryptocurrency miners everywhere.
+As a globally accessible open market, it allows users to trade a range of hardware for the
+purpose of establishing, growing or diversifying their mining operations. Over time, MineBee
+Open Market will become a nexus for anyone who wishes to buy or sell a variety of mining-
+related hardware.
+
+MineBee’s licensed equipment marketplace will provide cost-effective solutions in the sale,
+purchase, and pricing of hardware. MineBee Open Market allows new players to enter the
+mining ecosystem, established miners to upgrade their existing operations, and hardware
+manufacturers to gain exposure for their products.
+
+The open market will immediately facilitate more informed purchasing decisions, which can
+be completed in a shorter time. Prospective buyers can browse a range of new and used
+hardware from multiple vendors, swiftly comparing specifications, offers, and prices. Using a
+
+Oui:
+
+s
+
+oot te get ce <
+
+gnnet™ cot oth aoe "
+snoooeee of oh? get oie
+
+s
+BPP TTL Laer Lae Soeeet
+aot oe get
+
+s
+ant
+sonnnnn@® weet
+26
+
+3 MineBee Service Stack <i MineBee
+
+range of criteria to filter their searches by manufacturer, model, price, hashrate, and seller
+location, buyers will quickly identify the correct equipment and best deal for them.
+
+Additional features on MineBee Open Market will include a search function for global
+electricity costs, with filters enabling users to search by country, region, or state.
+
+For those making their first foray into cryptocurrency mining, complete GPU starter kits will
+be among the packages available. These will include all of the hardware required to establish
+a GPU mining rig such as graphics cards, motherboard and power supply. Whether buying
+new equipment or used, comparisons between similar devices will become simpler, helping
+to drive healthy competition in the sector.
+
+Once established, the secondhand market will also deliver net benefits for cryptocurrency
+mining as a whole, lowering the barriers to entry for new miners. Since high-end equipment is
+regularly priced in the thousands of dollars, a cheaper alternative can help to onboard
+participants who can progressively trade up as they begin to make a profit. Established
+miners also benefit, offsetting some of the cost of their own purchases by selling their used
+hardware. This mutually beneficial ecosystem will make upgrading a more cost-effective
+process and create “liquidity” for used mining rigs.
+
+As miners trade up and look to improve the profitability of their mining activities, it is
+expected this will fuel an increased demand for advanced, high-performance hardware.
+Detailed data analysis from MineBee Solution will encourage established miners to upgrade
+when the evidence shows a compelling economic benefit to doing so.
+
+Manufacturers who advertise on MineBee Open Market will enjoy significant exposure to
+potential buyers. The marketplace will see high traffic due to its ease of use, convenience, and
+competitive prices.
+
+The open market will also allow manufacturers to closely liaise with their customers and
+solicit feedback on how their products could be improved, for the benefit of all parties.
+
+For manufacturers, vendors and users alike, MineBee Open Market will facilitate frictionless
+trading with low fees and transactions quickly settled with MineBee contract.
+
+er Ou
+
+s
+. s . s* wt
+Trt . aoee ote at wee .
+soe o* . s
+Boneouee Lage SaSe Se Pri oe
+
+s
+pone neneneee’ sate ott os
+ast ot get
+
+27
+
+3 MineBee Service Stack Xi MineBee
+
+MineBee Open Market will be licensed exclusively to MiningCom, who will operate the service
+for the benefit of its substantial user base of miners and other industry participants.
+
+Making a purchase on MineBee Open Market
+Exploring MineBee Open Market:
+
+@ Browse and search with key-terms, by location and price point.
+@ If necessary, further refine searches with search filters.
+
+@ Identify a suitable product and click on the “purchase” link.
+Making a purchase:
+
+@ Follow the prompt and deposit the appropriate amount into the MineBee Contract.
+The MineBee Contract then performs a transaction check to verify the details of the
+wallet addresses and user accounts are correct. The user then receives a notification of
+success or failure.
+
+@ = Where the transaction fails, advice will be given to resolve the matter.
+
+@ Where the transaction succeeds, the seller will be prompted to dispatch the purchased
+item.
+
+Receipt and review:
+
+@ = After the item is delivered, confirm the receipt so the seller can retrieve the coins held in
+the smart contract.
+
+@ If desired, leave a review of the condition of the product and the interaction with the
+seller.
+
+seUSeeeee
+Poe P Peery
+jpn eRe
+
+-s@ucuenunanag . ry a
+"aay Wea te,
+Mag tata,
+
+3 MineBee Service Stack ii MineBee
+
+1 3 2
+
+El & B&B
+
+Product Registration vw v Coin Deposit Product Purchase
+Requisition
+
+MB Contract
+
+Pending and Success
+confirmation
+& 4K Verify wallet address
+and user account Buyer
+
+Coin securement in.
+a hot wallet ara
+
+Seller
+
+6 5
+
+4
+Complete payment to seller in coins Confirmation of arrival
+
+#
+
+Dispatch Product
+
+Making a sale on MineBee Open Market
+
+Listing a product for sale:
+@ Register the product for sale in MineBee Open Market.
+
+@ Write a detailed and accurate description of the condition, specifications, and age of the
+product.
+
+Making the sale:
+@ Receive a purchase request and accept the buyer’s offer.
+
+@ Once accepted, wait for confirmation of a deposit of funds into MineBee Contract.
+
+Despatching the product:
+@ Ensure the item is properly packaged and protected.
+Dispatch the item to the buyer’s address.
+
+@
+@ = Await receipt of goods from the buyer.
+@
+
+Receive payment from MineBee contract into a specified wallet.
+
+29
+
+3 MineBee Service Stack Xi MineBee
+
+3.1.4 MiningCom App
+
+MineBee is working in partnership with MiningCom on the production and development of a
+multifunctional and intuitive management app. This will allow users to remotely monitor and
+control their mining operations remotely 24/7. The desktop version of the application, which
+will be available for Windows, Linux, and macOS, will provide a single point of access to the
+MiningCom platform as powered by MineBee solution.
+
+App users will have access to pertinent mining-related data, as well as being able to monitor
+the performance of their hardware in real time. The app’s remote management and
+configuration system will allow users to control hardware temperatures, initiate machine
+reboots, trigger file backups, and updates, and carry out a range of other operations that will
+keep equipment optimized and operating within safe parameters.
+
+The MiningCom app will also employ real-time messaging alerts to warn users of any critical
+issues the moment they arise. This will allow swift action to be taken to remedy the matter.
+Warnings can be triggered by such events such as hash rate decreasing, GPU temperature
+rising or mining rig stoppages. With the aid of insights provided by MineBee Solution, miners
+can customize settings with confidence, prioritize events that require their immediate
+attention and calibrate software accordingly.
+
+In the case that a mining device stops, the user can quickly and easily reboot the rig.
+Alternatively, with the aid of an in-app diagnostic, it will be possible to troubleshoot the cause
+of failure before determining the best course of action. The user can then decide whether to
+reset the miner or to leave equipment powered down, pending inspection.
+
+The MiningCom app will feature a range of free and premium services. Free services include:
+
+@ Hashing information for a range of cryptocurrencies.
+@ Market information including crypto asset prices and trading volume.
+
+@ Marketplace information including equipment prices and spec such as hashrate, power,
+energy consumption, regional availability.
+
+jpn eee een
+
+-p@ucetbnnenag te t
+"aay Feats,
+"ag, *e
+
+3 MineBee Service Stack Xi MineBee
+
+@ Mining information on hashing algorithms, network hashrates and difficulty levels for
+all major PoW coins.
+
+Premium users will have access to:
+
+@ Techniques and advanced setting for increased rates of return.
+@ Optimum overclocking values power by MineBee Solution.
+
+@ Enhanced data analytics for PoW coins, networks and equipment.
+
+The MiningCom app will allow users to optimize their mining operations, avert problems
+before they occur and reduce costly downtime.
+
+JAi MineBee
+
+31
+32
+
+4 Business Model <i MineBee
+
+MineBee has established a number of mutually beneficial relationships with high-profile
+partners in the mining rig monitoring and management industry. These partners will provide
+MineBee with raw data collected from their extensive user base. MineBee will analyze this data
+to improve the efficiency and safety of mining operations and license this information in order
+to generate revenues for the company. Insights provided by MineBee Solution will offer the
+users of MineBee partners a significant competitive advantage.
+
+A high percentage of blockchain-based projects fail due to low user uptake. According to
+research by ICOrating.com, in Q3 of 2018 “64% of all |COs failed to complete their
+crowdfunding.” This can occur for anumber of reasons. The project may have an insufficient
+addressable market, poor customer acquisition costs, or a subpar marketing strategy. With
+such a high rate of failure, it is understandable that many teams expend huge amounts of
+energy and resources building a platform and marketing in the hope of attracting users and
+establishing a community to support their projects.
+
+As a consequence, teams often become focused on user acquisition at the expense of
+fundamental logistical implementation. Even those projects that successfully meet their
+hardcap often fail further down the line. A 2018 Boston College study estimated that 55.8% of
+all cryptocurrency related startups fail within 120 days of completion of their ICO.
+
+To circumvent these issues, MineBee will license its software suite to established partners in
+the mining industry. In doing so, MineBee will gain immediate access to a wide user base and
+will enjoy strong support from launch. MineBee will onboard a substantial number of users
+thanks to its partnership with MiningCom, a leading provider of rig management software.
+The agreement will give MineBee access to an established community of users in exchange for
+licensing its technology.
+
+MineBee will also enjoy two other sources of revenue in the form of MineBee Contract and
+MineBee Open Market. As a specialist market for new and used mining equipment, MineBee
+Open Market will become an essential destination for anyone who wishes to trade in mining
+equipment.
+
+.
+TRC ELOrigy ry a
+ueuneneee nite —
+an
+Tae, ley
+pe@uSHSttanag » ". "a,
+"aay Tay "e,
+ay tay te
+a Wy ay
+
+4 Business Model Xi MineBee
+
+Profit Share
+
+Fee
+
+Miniqgcom
+MB Open
+Market
+
+Open API Profit Share
+
+Raw Data Processed Data
+
+Raw Data | Processed
+Data
+
+4.1 Expansion Strategy
+
+MineBee’s research team has constructed a strategic marketing program that is backed by
+market-specific analyses that will progressively expand MineBee’s operations on a region-by-
+region basis. The MineBee team will actively work to develop the project through dual
+marketing strategies that will run in parallel.
+
+Commercial marketing campaign
+
+In the first quarter of 2019, MineBee will initiate its commercial marketing campaign in Asia.
+Its purpose will be to raise general awareness of the MineBee platform and its capabilities, to
+
+34
+
+4 Business Model Xi MineBee
+
+improve overall utility, to increase data collection capacities, and to extend the MineBee
+network. MineBee will extend its commercial marketing campaign globally in the fourth
+quarter of 2019.
+
+Partnership expansion campaign
+
+In the second and third quarters of 2019, MineBee will initiate a partnership expansion
+campaign in Asia. The primary focus of this initiative will be to raise corporate awareness of
+MineBee in the Asian mining industry, to attract new business partners, to forge further
+mutually beneficial relationships with mining monitoring and management companies, and to
+establish MineBee as the market leader for cryptocurrency mining analytics. The MineBee
+team will initiate a global partnership expansion campaign upon the fulfillment of its Asian
+strategic goals. This will likely occur sometime in the third quarter of 2019.
+
+ee @eiee.,
+
+PCL LLL "aay,
+Pou “tay,
+Terre ty '. . -
+SUPPER Roney "wag 8s a
+2
+@ucctterarnegy yy, . "., s
+ua a a
+a a s
+ay tee . oon sont ee ty,
+nooonasee® oe gee ee oe
+bd aanee” coh geht lot
+copmeee at oot s
+oF ae
+.
+
+35
+
+4 Business Model Xi MineBee
+
+4.2 Competitor Analysis
+
+MineBee’s in-depth analysis of mining metrics will furnish cryptocurrency miners with an array
+of performance-enhancing recommendations. Through intelligent analysis of big data,
+MineBee will supply evidence-based optimizations that facilitate improvements above and
+beyond anything supplied by existing mining management services. As a multi-faceted project
+that straddles multiple sectors of the mining industry, MineBee’s competitors are equally
+diverse, ranging from traditional marketplaces to mining management software developers.
+
+Awesome Miner
+
+Awesome Miner is a well-established provider of rig management software that shares some
+functions with the MiningCom app. In particular, Awesome Miner is used to monitor the
+progress, temperature and current status of mining rigs, and can also be used to control them.
+Awesome Miner uses real-time data to determine which coin or mining pool may offer the best
+profitability, but this information is supplied by third-party sources rather than being derived
+directly.
+
+eBay
+
+Cryptocurrency miners are frequently bought and sold on eBay. However, as a non-specialist
+market, is challenging to filter searches appropriately when dealing with highly technical
+products such as mining rigs on eBay. Meanwhile, sellers are confronted by a basic selling fee
+of at least 10% from the list value. This figure can rise with additional charges for reserve
+pricing, and other auction types. eBay does not accept cryptocurrency, obliging miners to
+liquidate their coins and convert into fiat before they can make a purchase.
+
+GetMinera
+
+GetMinera is a web-based front-end for mining operations, functioning as a mining controller
+and data analysis tool. With system monitoring, notifications and controls, GetMinera has
+certain similarities to the MiningCom app. GetMinera also offers guided system settings for its
+users, assisting them in optimizing their operations. GetMinera is limited in scope, however,
+existing as a bitcoin-only mining solution on Linux OS.
+
+jpn OPP Renee
+
+js@ucetenneneg te t,
+"aay Feats,
+"ag, *e
+
+36
+
+4 Business Model Xi MineBee
+
+easyMINE
+
+easyMine is a self-contained software platform that offers detailed real-time performance
+monitoring and multiple mining engines. From one dashboard, multiple rigs can be analyzed
+and monitored, including GPUs and ASICs. EasyMine is the only competitor to have its own
+native token, but does not provide MineBee Solution-style data analysis.
+
+CryptoGlance
+
+CryptoGlance is an open-source coin mining operations monitoring and management webapp.
+CryptoGlance provides users with detailed monitoring statistics and allows them to remotely
+manage core functions, switch mining pools, reset components, track pool information, and
+check wallet balances. Although CryptoGlance does feature remote monitoring functionality,
+it lacks advanced big data driven analytics and, as such, lacks the value and efficiency-
+generating insights provided by MineBee Solution.
+
+While there are various platforms whose services overlap with MineBee, no other company
+provides an all-in-one solution that enables miners to operate entirely within the
+cryptocurrency ecosystem. The feature-rich and user-friendly components that make up the
+MineBee service stack are suitable for beginners as well as more experienced miners and do
+not require advanced knowledge to master.
+
+oe MineBee w/ . .
+
+Monitoring MiningCom Awesome Miner GetMinera Easy MINE CryptoGlance
+GPU hashrate (2) ® ()) o) 2)
+GPU temperature ® (2) ) © (2)
+Total hashrate ® ® @ 3) )
+Machine reboots ® ® ® (2) (2)
+Mining pool ID monitoring ® © ® (2) ))
+
+Wee Cee) tars te,
+nueeoneeee ay - a
+
+(pe R Re rete, -
+
+(p@USEMEtBanag "nee? outta,
+
+Fatal te,
+
+4 Business Model Xi MineBee
+
+cee ge MineBee w/ . .
+
+Notifications MiningCom Awesome Miner GetMinera Easy MINE CryptoGlance
+
+Hashrate decrease © © © © ()
+
+Miner stoppage © © () (o) ()
+
+Miner errors ® ® ® ® (3)
+
+Miner reboot times ®
+
+GPU temperature rise ® ® ® ® ®
+
+Operations MineBee w/ Awesome Miner GetMinera Easy MINE CryptoGlance
+P MiningCom
+
+Miner reboot ® ® (2) ® ®
+
+Change overclock value (2) ® ® ® ®
+
+Control multiple rigs at once ® ® ® ® ®
+
+Advanced Big Data MineBee w/ . .
+
+a +e Awesome Miner GetMinera Easy MINE CryptoGlance
+Optimization MiningCom y yp
+Sharing data and data analysis © ©
+Overclock value based on big data ©
+Stolen hash rate prevention ©
+Peer-to-peer hardware marketplace ®
+Smart contract payments ©
+In-built payment wallet ®
+
+Payment module comparison
+
+Traditional Standard crypto
+payment gateway payment gateway MB Contract
+
+Crypto-crypto payments (3) (d) (d)
+Payment settlement time Slow in certain cases Fast Fast
+Dual blockchain compatibility N/A Not generally @
+API for merchant integration O) @ @
+Open source ® (2) (2)
+Decentralized ® @ @
+User-friendly developer
+
+documentation ) c) 0)
+Ease of merchant integration Complex Complex Easy
+
+Fee structure High Low Low
+
+4 Business Model Xi MineBee
+
+4.3 Revenue
+
+MineBee will tap into a number of revenue streams that will support the profitability of the
+business.
+
+@ MineBee will license MineBee Solution to its partners who will pass this information on
+to miners. MineBee and its partners will share the revenue collected from the miners.
+
+@ MineBee Contract will be supplied as an open API, allowing it to be used for any industry.
+Users of the MineBee Contract payment module will be charged a fee for the use of this
+service.
+
+@ MineBee Open Market will be exclusively licensed to MineBee’s business partner
+MiningCom using MineBee Contract as a payment module. MineBee will receive revenue
+from users of MineBee Contract, in the form of transaction fees, while profit generated
+by MineBee Open Market will be split between MineBee and MiningCom.
+
+MB Open
+
+MB Contract Market
+
+Service Fee y Shared Profit
+
+MB Solution
+
+s@uScnnnnanag . 4
+"ana, Tay “a,
+ey a, te
+a ay "ay
+
+38
+
+JAi MineBee
+
+39
+5 Token Model Xi MineBee
+
+The MB token is a dual discount and medium of exchange token used for purchasing services
+from MineBee Solution. It also enables payments for P2P and B2C trades on MineBee Open
+Market. A total of 5 billion ERC20 tokens will be minted in MineBee’s token generation event
+(TGE).
+
+When used as a payment token for MineBee Partners’ services, the MB token offers users a
+discount on additional fees. With the option to purchase MineBee partners’ premium services
+at reduced rates, users will have a strong incentive to acquire and use the MB token.
+
+The strong network effects that will be exerted as the MineBee ecosystem grows will increase
+demand for the MB token. This will be heightened by the increased mining efficiencies
+demonstrated by MineBee Solution. The proven savings that MineBee’s insights can yield will
+incentivize miners to purchase premium MineBee Solution services through MineBee’s partners.
+
+While miners are at liberty to make purchases within the MineBee ecosystem using alternative
+cryptocurrencies in the form of BTC and ETH, the significant discount bestowed by the
+MB token will ensure it is the dominant cryptocurrency, particularly for MineBee Solution.
+
+The mechanics of supply and demand mean that interest in the MB token can be expected to
+rise, aided by the fact that there will be no additional tokens minted in future. MB’s fixed supply,
+coupled with a steady influx of new users, will serve to accelerate interest in the token as the
+sole mechanism for acquiring discounted access to MineBee Solution. This will also help to
+reduce the token velocity problem which occurs in systems where participants have no
+incentive to hold the token.
+
+Since the MB token will provide discounted access to MineBee services, via its partners, in
+perpetuity, holders will have strong economic incentives to retain and use the token for its
+intended purpose. Given these factors, sustained transaction volume can be anticipated, while
+the discount granted by MB will further mitigate velocity by giving the token intrinsic value in
+the form of cash flows.
+
+Once acquired by the community, tokens may be traded, exchanged, locked up or burned over
+time. As MB enters general circulation, the token will become available via exchanges, or as
+payment for products and services.
+
+.
+
+cnoooeene® asst
+aneee he yet ost
+
+noon nee ete os
+
+st
+ot
+PTE oe weet
+Ou:
+
+41
+
+5 Token Model Xi MineBee
+
+5.1 Sale Structure
+
+MineBee held a private sale in the last quarter of 2018. A total of 1.62 billion tokens were sold
+to accredited investors, venture capital firms, and MineBee’s partners.
+
+5.2 Token Distribution
+
+Total token supply: 5,000,000,000
+Token private sale: 1,620,000,000
+
+Private sale terms:
+
+@ 30% (486,000,000) no lock-up
+@ 30% (486,000,000), 3-month lock-up
+@ 40% (648,000,000), 6-month lock-up
+
+Remaining token allocation
+
+Burn reserve: 1,500,000,000 (Indefinite lock-up - in the event that anticipated demand is not
+met within one year of the ICO, two thirds of these tokens [1,000,000,000] will
+be burned)
+
+Company: 500,000,000 (1-year lock-up)
+Team: 130,000,000 (1-year lock-up)
+Advisors: 80,000,000 (6-month lock-up)
+
+Marketing: — 1,170,000,000 (tokens will be disbursed on an ad hoc basis, with a slow release
+curve that will not affect market prices)
+
+juseseeeeenenenay
+s
+weP eee Leer
+
+5 Token Model Xi MineBee
+
+Token Distribution
+
+Token Sale
+
+Team and Advisors
+
+Marketing
+
+Burn Reserve
+
+Burn Reserve @@ TokenSale (§§ Teamand Advisors {)) Marketing
+
+@ Token private sale price confidential.
+@ = Soft cap $1.5 million, Hard cap $15 million.
+@ Payments for MB tokens will be accepted in both BTC and ETH.
+
+5.3 Use of Funds
+
+The MineBee team has solid plans in place to execute its vision in any financial scenario. Funds
+will be well allocated to achieving the project’s goals regardless of the token sale outcome,
+with a focus on enhancing the MineBee network. Funds will be utilized to continuously
+develop MineBee technology and to provide better connectivity and user experience. The
+capital raised will also allow MineBee to expand and commercialize its operations globally.
+
+we @uais
+
+s
+comememeee, ge
+1 s
+cooum ee eeee got got aot
+42 ett et
+s
+o8
+comamns@ee” ate
+43
+
+5 Token Model
+
+MineBee Service Marketing
+
+Business Development
+(partners & infrastructure)
+
+Business Development
+(partners & infrastructure
+
+Funds will be used as follows:
+
+MineBee Technology Deve
+
+Legal: 5%
+
+we @ueie
+
+Xi MineBee
+
+Use of Fund
+
+MineBee Technology
+Development
+
+Contingency (reserve)
+
+Legal: 5%
+
+MineBee Technology
+Development
+
+) e MineBee Service Marketing @
+
+Contingency (reserve) Legal
+
+MineBee Service Marketing: 35%
+
+Business Development (partners & infrastructure): 30%
+
+lopment: 20%
+
+Contingency (reserve): 10%
+
+.
+
+cooooeene® asst
+aneee he yet ost
+
+onon8 pate gett ae
+
+st
+ot
+cuunens@e® weet”
+cAi MineBee
+
+44
+6 Timeline Xi MineBee
+
+6.1 Current Status
+
+Over the course of the past year, the MineBee team has nurtured a single goal: to build a
+service capable of making coin mining more profitable, and cultivated that idea into a
+sophisticated, multi-faceted and functional product.
+
+To further those efforts, MineBee has established a mutually beneficial partnership with
+MiningCom, a leading mining rig monitoring, and management solution. Through this
+partnership, MineBee will be granted access to monitoring data from MiningCom’s users.
+
+Through MiningCom, MineBee will also have access to one of the largest and most successful
+mining companies in South Korea. MiningCom’s partner will also contribute mining and
+monitoring user data to be processed by MineBee Solution.
+
+6.2 Roadmap
+
+The MineBee team has created an extensive roadmap that lays out key developmental
+milestones for the next two years.
+
+2017 Q4
+
+@ Experienced members meet and form MineBee.
+
+@ =‘ Team successfully conceptualizes the MineBee project.
+
+2018 Q1-Q2
+@ MineBee establish MINEONE LTD in Malta to initiate MineBee project.
+
+@ MineBee project launches.
+
+@ Establishment of MineBee-MiningCom partnership.
+
+we @ernn:
+
+46
+
+6 Timeline Xi MineBee
+
+2018 Q3
+@ = The MineBee service stack is fully developed.
+
+@ MineBee Solution private beta version implemented.
+@ Initiation of mining data supply from MiningCom.
+
+@ First insights returned to selected partners.
+
+2018 Q4
+
+@ MB token private sale successfully completed.
+
+2019 Q1
+@ Operations with MiningCom commence.
+
+@ MineBee service stack becomes publicly available through MiningCom.
+@ Suppliers to populate MineBee Open Market.
+
+@ MineBee begins commercial marketing campaign in Asia.
+
+2019 Q2 - 2019 Q3
+
+@ MB token will be listed on exchanges.
+
+@ Release MineBee contract version two with escrow service.
+@ MineBee begins partnership expansion campaign in Asia.
+
+@ MineBee begins global partnership expansion campaign.
+
+2019 Q4
+
+@ MineBee begins commercial marketing campaign globally.
+
+2020
+
+@ MineBee strives to become the global leader in cryptocurrency mining industry.
+
+6 Timelines — | &iMineBee
+
+@ MineBee establish MINEONE LTD in Malta to initiate
+2018 Ql MineBee project.
+
+-Q2 @ MineBee project launches.
+@ Establishment of MineBee-MiningCom partnership.
+
+@ The MineBee service stack is fully developed.
+
+@ MineBee Solution private beta version implemented.
+@ Initiation of mining data supply from MiningCom.
+
+@ First insights returned to selected clients.
+
+2018 Q3
+
+2018 Q4 @ MB token private sale successfully completed.
+
+@ MineBee strives to
+become the global
+
+2020 Q1 leader in
+-Q4 cryptocurrency mining
+industry.
+
+@ Experienced members meet and form MineBee.
+@ Team successfully conceptualizes the MineBee project.
+
+@ Operations:
+
+@ MineBee service
+
+@ Suppliers to populate
+@ MineBee begins comme
+
+@ MB token will be listed on exchang
+
+2019 Q2 @ Release MineBee contract version two
+-Q3 @ MineBee begins partnership expansion campa
+@ MineBee begins global partnership expansion campaign.
+
+2019 Q4 @ MineBee begins commercial marketing campaign globally.
+cAi MineBee
+
+48
+49
+
+7 Team & Partners <i MineBee
+
+\k-kwon Bae Chief Executive Officer
+
+@ CEO of MineBee
+
+@ Partner of Blockchain Governance Consensus & Committee (BGCC)
+
+@ Partner of Anse Accounting Co.
+
+@ Member of Taxpayer Protection Committee of Seongdong Tax Offices
+
+7.1 The MineBee Team
+@ CPAat KPMG
+@ M.B.A. Candidate in Seoul National University
+
+@ B.S. in Economics, Seoul National University
+lsaac Choi Business Development Manager
+@ Senior Consulting Analyst at Accenture
+@ Strong experience in development of business and operations
+@ B.S. in Security and Risk Analysis, Penn State Uni
+s
+
+Ha Chun Business Development Manager
+
+@ Data Analyst at CMI Media
+@ 8+ years of experience in Data Analytics and Operations
+@ B.S. in Media Arts and Animation, The Art Institute of York - Pennsylvania
+
+Najin Kim Business Development Manager
+
+@ Special Consultant at Berkeley Research Group LLC
+
+@ Project Leader in various fields of projects
+
+@ Venture Capital Analyst at Imperial Investment International
+
+@ B.A. in Sustainable Development/Architecture (Dual Degree), Columbia Uni. in the City of NY
+
+Kristine Kim Marketing Manager
+
+@ Strategy Specialist at Samsung Electronics, CA
+
+@ Strong experience in market research, visual communication, and strategic operations
+@ Researcher - Brand PR/Advertising/Movie at UC Berkeley
+
+@ B.A. in Media Studies/PR/Pre-Law, UC Berkeley
+7 Team & Partners
+
+Xi MineBee
+
+Ji Ho Park Marketing Manager
+
+@ Worked in Embassy of the Rep. of Korea in Italy
+
+@ Global Market Researcher in Italy
+
+@ Strong language background of Korean/English/Italian/Spanish
+
+@ B.S./M.S. in Social Science, Pontifical Gregorian Uni.
+
+@ Ph.D. in Social Communication, Pontifical Uni. of St. Thomas Aquinas
+
+Taehun Kim Research & Development Manager
+
+@ Software Engineer at Assurance
+
+@ Specialist in the United States Army Reserve
+
+@ Co-Founder of Culling Enterprise (Mining Pool)
+
+@ Software Engineer at NBC Sports Engine
+
+@ B.S. in Computer Science, University of Minnesota-Twin Cities
+
+Young Paik Research & Development Manager
+
+@ Research Associate at SEEGENE Inc.
+
+@ Researcher at UCLA
+
+@ M.S. in Bioengineering and Biomedical Engineering, UCLA
+@ B.S. in Bioengineering and Biomedical Engineering, UCSD
+
+John Kim Supply Chain Coordinator
+
+@ Material Associate at LG Electronics in the U.S
+
+@ Logistics Coordinator at Annie International Inc.
+
+@ Strong background in Inventory Management and Logistics
+
+@ B.B.A. in Logistics, Materials, Supply Chain Management, Penn State Uni.
+
+7.2 The Advisory Board
+
+50
+
+Christopher Haag
+
+@ Founder & CEO at C-Block
+
+@ C00 at Genesis Technology
+
+@ Data Center Operator of Genesis Mining
+
+@ 16+ years of experience in IT Technology
+
+@ B.S. in 1.T./Computer Science/Business Administration and Management, Colorado State Uni.
+7 Team & Partners
+
+Xi MineBee
+
+Harshana Jayaweera
+
+@ Director at ADSS Investment Banking
+
+@ Vice President of International Wealth Management Division at Credit Suisse
+@ Country Manager at UAE, Bank ABC
+
+@ Senior Credit Analyst at Emirates NBD
+
+@ Relationship Executive at Nations Trust Bank PLC
+
+@ Junior Executive at Sampath Bank
+
+@ Executive Program at Stanford University and National University of Singapore
+@ M.B.A. from University of Leicester, Finance
+
+Mohammed Wassim Khayata
+
+@ Managing Director at CAPM Investment
+
+@ Board Member of Insurance House (PJSC) and Islamic Finance House (Pvt.JSC)
+@ Board Member of Paramount Computer Systems
+
+@ Head of Retail Banking at Abu Dhabi Islamic Bank
+
+@ Head of Operations at First Gulf Bank
+
+@ Executive Program at Harvard Business School
+
+@ M.B.A. from the University of Hull, Banking and Finance
+
+@ B.Com., Economics at Damascus University
+
+Mitsutaka Hamada
+
+@ Principal of Opt Ventures, Inc
+@ Owner of PlayMined,Inc
+@ B.A. in Business Administration and Management, Pepperdine University
+
+Jon Head
+
+@ Central Europe Sales Director at Ripple
+
+@ European Payment Sales Manager at Integrated Research
+
+@ Senior Account Manager at Larsen & Toubro Infotech
+
+@ Senior Business Consultant at Pegasystem
+
+@ 20+ years of global experience in Financial Services sales professional
+@ B.A. in Philosophy, The University of Sheffield
+
+@ B.A. in Math, University of York
+
+7 Team & Partners
+
+Joe Nuzzolo
+
+@ Principal at Essex Advisory Group, LLC
+
+@ Managing Director at KPMG Corporate Finance, LLC
+
+@ Managing Director at PwC
+
+@ Director at Merrill Lynch & Co.
+
+@ Senior Associate at J.P. Morgan Chase & Co.
+
+@ M.B.A. in Financial Management, Massachusetts Institution of Technology
+@ M.S. in Chemical Engineering, University of California, Los Angeles
+
+@ B.S. in Chemical Engineering, Tufts University
+
+Phillip Liu
+
+@ C00 at Bitmain
+
+@ President/Managing Director at MegaFund
+
+@ CEO at Rock China Investment
+
+@ M.A. in Economics, University of Pennsylvania
+
+@ B.S. in Chemical Engineering, Tsinghua University
+
+Marcelo Spina
+
+@ Global Head of Partnerships at ForexTime
+
+@ Senior Director at Saxo Markets
+
+@ Senior Vice President/Head of Partnerships at Gain Capital
+@ Vice President of Sales at FXCM
+
+@ Associate at Morgan Stanley
+
+@ B.A. in Economics, University of Chicago
+
+Daniel Rufini
+
+@ Marketing Director at Crypto Capital
+
+@ CMO at Coinchase
+
+@ Corporate Communication Director at BitForex
+
+@ Marketing & Communications Specialist at Merryll Lynch Realty
+
+@ 9+ years of experience in Foreign Exchange
+
+@ M.A. in International Business/Trade/Commerce, University of Liverpool
+
+Xi MineBee
+7 Team & Partners Xi MineBee
+
+7.3 Partnerships
+
+7.3.1 MiningCom
+
+»’ MiningCom
+
+MiningCom is a globally recognized mining rig management company based in Seoul, South
+Korea. The company operates a management tool that enables users to remotely control their
+mining rigs. MineBee will work in partnership with MiningCom to further refine and develop
+this functionality and to deliver increasingly powerful insights to MiningCom users.
+
+MineBee’s in-depth analysis of mining metrics as licensed to MiningCom will offer
+optimizations beyond anything supplied by existing mining management services. This will
+hand the MineBee-MiningCom partnership a competitive edge. MiningCom’s easy-to-use
+graphical user interface will allow users to monitor a range of parameters including:
+
+@ Hashrate and temperature of GPUs.
+@ Total hashrate of entire operations.
+
+@ Miner full log archives and miner error log archives (these archives will be stored on
+MiningCom servers).
+
+@ Records of mining machine reboots.
+
+MiningCom users will receive real-time notifications of any significant changes in the
+performance of their mining equipment such as:
+
+@ Decrease in hashrate.
+@ = Miner stoppage.
+@ Hardware failure error.
+
+@  GPUtemperature rise.
+
+jueeeeneene
+sGoueneoee
+WEE
+
+54
+
+7 Team & Partners Xi MineBee
+
+MiningCom’s remote management functionality allows miners to ensure that their equipment
+is always operational, safe, and maximally efficient. Users can respond to changes in mining
+parameters by altering specific settings via their desktop or smartphone including:
+
+@ = Rebooting rigs.
+@ = Changing overclock values.
+
+@ = Adjusting settings on multiple rigs simultaneously.
+
+Users can also authorize MiningCom to implement changes automatically to actively improve
+efficiency.
+
+MiningCom users also have access to:
+
+Mining pool ID monitoring.
+Insights into the composition of selected mining rigs.
+Optimizational data provided via MineBee solution.
+
+Access to MineBee Open Market.
+
+Fast and secure transactions via MineBee Contract.
+
+7.3.2 Other Partners
+
+Through MiningCom, MineBee will have access to one of the largest mining companies in South
+Korea. This association will provide MineBee with the mining data of its considerable user base.
+With the use of this sizeable initial data set, MineBee will be capable of offering actionable
+insights from the outset. In the future, MineBee will continue working to identify and develop
+new partnerships for the benefit of the company and for the users of MineBee products.
+
+junneuneone
+SoU RU
+pone U Renna "Tea, "a,
+
+JAi MineBee
+
+eal we : a —
+4\1™ 7 —~
+Ma ad
+a ab
+
+Glossary of Terps moat
+oe de o iL
+
+55
+8 Glossary of Terms and Abbreviations Xi MineBee
+
+Oui:
+
+56
+
+Hashing: using a mathematical function to derive a fixed length numeric or alphanumeric
+string from a piece of data of any length.
+
+Hashrate: a hashrate is the speed at which a computer can solve a hashing problem. The
+probability of a miner successfully mining a block before anyone else is partially
+determined by the hashrate of their mining operations.
+
+Overclocking: overclocking is the process of increasing the working speed of a computer
+or component beyond its original clock frequency specifications. This is typically
+achieved by modifying system parameters or operating voltages. Overclocking is
+typically performed by coin miners to improve the hashrate of their mining operations.
+
+API: application programming interface.
+
+Open API: publicly available application programming interface for third-parties to
+integrate the MineBee Contract payment module.
+
+ASIC: application-specific integrated circuit. A microchip designed specifically for
+cryptocurrency mining.
+
+GPU: graphics processing unit.
+GUI: graphical user interface.
+MOU: memorandum of understanding.
+
+VGA: video graphics array.
+
+s
+ooee ge get ay <
+ene Bh™ oh oat! ot "
+conmeoee® wt oh? get Pr ioe
+
+s
+PPT TT LL tt ae Lae
+ast ot get
+
+cAi MineBee
+
+heer <r *
+
+57
+58
+
+9 Closing Statement Xi MineBee
+
+The mining industry lacks a universal analytics and monitoring system. While other industries
+have thrived on the insights that big data can supply, crypto miners have been deprived.
+Inaccurate or insufficient data has prevented miners from optimizing their operations to
+squeeze out greater efficiencies and from acquiring equipment at the best possible price.
+
+MineBee’s complete solution will give cryptocurrency miners the tools they need to safely
+increase hashrate and maximize uptime. As a result, GPU and ASIC miners will keep working
+for longer, because their operations will be profitable for longer. During testing market
+conditions, MineBee will be the difference between profit and loss, while in favorable
+conditions, MineBee’s technology will significantly boost revenue. Smarter analysis begets
+smarter mining.
+
+As the number of miners sharing their performance data with MiningCom grows, the dataset
+under analysis will increase commensurately. This will grant MineBee the ability to derive
+improved insights on performance optimization and to facilitate new breakthroughs in
+mining efficiency.
+
+The MB token will grant discounted access to MineBee’s premium services, which will enable
+miners to further increase their output. These optimizations will provide a clear cutting edge
+from the moment they’re implemented. The MB token will also serve as the primary unit of
+account on MineBee Open Market, enabling new and used equipment to be purchased
+quickly and at competitive prices. The marketplace will provide a convenient entry and exit
+strategy for miners to realize profits and then sell their equipment to the next wave of crypto
+miners.
+
+MineBee Open Market will also be supported by MineBee Contract, whose open API will
+provide a payment solution suitable for all industries and businesses, including those
+currently outside of the cryptocurrency space. This will further increase MineBee’s exposure
+while yielding benefits for the broader cryptocurrency ecosystem.
+
+Good data doesn’t lie and MineBee’s analytical approach to cryptocurrency mining will
+provide the formula for success. Every new miner, mining pool, and mining management
+service that connects to the MineBee ecosystem will further validate its data-driven model.
+
+-n@usnBennnag tee ty
+@y rei.
+Way ay ay
+
+59
+
+9 Closing Statement Xi MineBee
+
+Proof of Work cryptocurrencies are widely regarded as the most secure means of validating
+and decentralizing blockchains. The work that miners expend on confirming new
+transactions and validating new blocks makes the cryptocurrency ecosystem stronger and
+more valuable for everyone. MineBee and its partners are laying the framework for a data-
+driven solution in which every participant prospers.
+
+.
+ey te
+ZO) "tag
+Mag tata,
+
+JAi MineBee
+
+Patter RRaery ’
+
+SP se.
+
+60
+61
+
+10 Bibliography and Further Reading Xi MineBee
+
+https://www.awesomeminer.com/home
+
+https://www.blockchain.com/en/charts/hash-rate
+https://cardstack.com/assets/media/cardstack-white-paper-v1.0.4.pdf
+https://cdn.crowdfundinsider.com/wp-content/uploads/2018/07/SSRN-id3182169.pdf
+https://cointelegraph.com/news/how-crypto-market-fall-influences-mining-hardware-sales-
+and-producers-revenues
+https://cointelegraph.com/news/overview-of-the-crypto-mining-industry-in-2018-will-the-
+struggles-extend-to-2019
+https://cointelegraph.com/news/proof-of-burn-bitcoin-mining-company-in-thailand-
+destroyed-by-fire
+
+https://www.cryptocompare.com/mining/calculator/btc? HashingPower=4730&HashingUnit=
+GH%2Fs&PowerConsumption=1293&CostPerkWh=0.12&MiningPoolFee=1
+https://www.cryptocompare.com/mining/calculator/eth? HashingPower=20&HashingUnit=
+MH%2Fs&PowerConsumption=140&CostPerkWh=0.12&MiningPoolFee=1
+http://cryptoglance.info
+
+https://diar.co/volume-2-issue-40/
+
+https://miningcom.net
+
+https://easymine.io
+
+https://www.ebay.co.uk
+
+https://etherscan.io/chart/hashrate
+https://www.express.co.uk/news/world/916617/bitcoin-mining-fire-russia-Artem-Vladivostok
+https://www.gartner.com/newsroom/id/1824919
+
+https://getminera.com
+https://icorating.com/pdf/74/1/8TuF3swJWq8J8204CnGI6dyEn3GQYhw9qdKTAE7U. pdf
+https://www.igi-global.com/dictionary/data-knowledge-and-intelligence/39008
+https://news.bitcoin.com/mining-closures-reveal-recurring-bitcoin-bear-market-trend/
+https://www.scmp.com/tech/start-ups/article/2174388/bitcoin-prices-fall-mining-
+cryptocurrencies-no-longer-profitable-many
+https://steemit.com/cryptocurrency/@endpoint/crypto-whales-and-how-they-manipulate-
+the-price
+
+ot Oui,
+
+cAi MineBee
+
+~
+
+Disclainher pore rat Ny
+
+aa
+
+=
+Je a
+
+62
+63
+
+11 Disclaimer - Legal and Risks Xi MineBee
+
+11.1
+
+Please read this disclaimer notice carefully. Kindly note that the disclaimer set out below may
+be altered or updated, at any time in whole or in part at the sole discretion of the Company.
+Disclaimer should be read it in full each time you visit the site. All information is provided
+without any warranties/guarantees of any kind and the Company and its advisors make no
+representations and disclaim all express and implied warranties/guarantees and conditions of
+any kind, including, without limitation, representations, warranties or conditions regarding
+accuracy, timeliness, completeness, non-infringement, suitability of the Tokens for any
+prospective contributor, and the Company and its employees, officers or professional advisors
+assume no responsibility to you or any third party for the consequence of errors or omissions.
+
+11.2
+
+The Rulebook of the VFA Act or any other applicable regulations. Chapter 2 of the Rulebook of
+the VFA Act or under any other applicable law and regulations. This White Paper is just a draft
+and investors should-reassess the final White Paper at some time. Release of the final White
+Paper will not be notified and it is up to the investors to manually check each time an
+individual visit Company website. This White Paper has not been reviewed or reviewed by any
+regulator. No regulatory authority has examined or approved of any of the information set out
+in this White Paper. No such action has been or will be taken under the laws, regulatory
+requirements or rules of any jurisdiction. The publication, distribution or dissemination of this
+White Paper does not imply that the applicable laws, regulatory requirements or rules have
+been complied with.
+
+11.3
+
+Cautionary note on Forward Looking Statements, this White Paper may contain certain forward-
+looking statements including, but not limited to, statements as to future operating results and
+plans that involve risks and uncertainties. We use words such as “"aim", "anticipate", "believe",
+"consider", "continue", "could", "estimate", "expect", "intend", "may", "plan", "potential",
+"predict", "project", "purpose", "seek", "shall", "should", "will", "would", the negative of these
+terms and similar expressions to identify forward looking statements. Such forward-looking
+
+2
+Pr ‘te -
+ane 1. «
+1) "any te,
+_s@uSeReesanny » . "a,
+"any Tay ",
+ay tay te
+"a a @,
+
+64
+
+11 Disclaimer - Legal and Risks Xi MineBee
+
+statements involve known and unknown risks, uncertainties and other factors which may
+cause the actual results, performance or achievements of the MB token and/or the MineBee
+technology to differ materially from any future results, performance or achievements
+expressed or implied by those projected in the forward-looking statements for any reason.
+
+11.4
+
+Exclusion of liability to the maximum extent permitted by the applicable laws, regulations and
+rules, MB token shall not be liable for any indirect, special, incidental, consequential or other
+losses of any kind, in tort, contract or otherwise (including but not limited to loss of revenue,
+income or profits, and loss of use or data), arising out of or in connection with any acceptance
+of or reliance on this White Paper or any part thereof by you. No legal, regulatory, tax advice No
+information in this White Paper should be considered as business, legal, financial or tax advice
+regarding the MB token, the MineBee technology, MineBee service, and the sale of MB tokens.
+You should consult your own legal, financial, tax or other professional adviser regarding
+
+MB token and 94 their respective businesses and operations, the MB tokens, and the sale of the
+Token. You should be aware that you may be required to bear the financial risk of any purchase
+of MB tokens for an indefinite period of time. The tax characterization of the MB tokens is
+uncertain, and each investor must seek its own tax advice in connection with the acquisition of
+the MB tokens. The acquisition of MB tokens pursuant to the Token Sale, Exchange or P2P may
+result in adverse tax consequences to investors, including withholding taxes, income taxes and
+tax reporting requirements. Each person acquiring MB tokens should consult with and must
+rely upon the advice of its own professional tax advisors with respect to the tax treatment of an
+acquisition of the MB tokens. You should consult with your own advisor regarding your legal,
+regulator, and tax position.
+
+11.5
+
+Prohibition of distribution and dissemination in restricted jurisdictions. The distribution or
+dissemination of this White Paper or any part thereof may be prohibited or restricted by the
+laws, regulatory requirements and rules of any jurisdiction. In the case where any restriction
+applies, you are to inform yourself about, and to observe, any restrictions which are applicable
+
+2
+Pr ‘te -
+ane 1. «
+1) "any te,
+wy DOP | . 2 "a, 4
+"any ay hy
+a, Me
+May tala,
+
+65
+
+11 Disclaimer - Legal and Risks Xi MineBee
+
+to your possession of this White Paper such part thereof (as the case may be) at your own
+expense and without liability to MineBee. Persons to whom a copy of this White Paper has
+been distributed or disseminated, provided access to or who otherwise have the White Paper
+in their possession shall not circulate it to any other persons, reproduce or otherwise
+distribute this White Paper or any information contained herein for any purpose whatsoever
+not permit or cause the same to occur. The regulatory regime governing the blockchain
+technologies, cryptocurrencies, tokens and token offerings such as MineBee technology and
+the MB tokens is uncertain, and new regulations or policies may materially adversely affect the
+development of the MineBee technology and the utility of the MB tokens. Regulation of tokens
+(including the MB tokens) and token offerings such as this, cryptocurrencies, blockchain
+technologies, and cryptocurrency exchanges currently is undeveloped and likely to rapidly
+evolve, varies significantly among international, federal, state and local jurisdictions and is
+subject to significant uncertainty. Various legislative and executive bodies in the United States
+and in other countries may in the future, adopt laws, regulations, guidance, or other actions,
+which may severely impact the development and growth of the MineBee technology and the
+adoption and utility of the MB tokens. Failure by MineBee or certain users of the MineBee
+technology to comply with any laws, rules and regulations, some of which may not exist yet or
+are subject to interpretation and may be subject to change, could result in a variety of adverse
+consequences, including civil penalties and fines.
+
+11.6
+
+Blockchain networks also face an uncertain regulatory landscape in many non-U.S.
+jurisdictions such as the European Union, China and Russia. Various non-U.S. jurisdictions
+may, in the near future, adopt laws, regulations or directives that affect the MineBee
+technology. Such laws, regulations or directives may conflict with those of the U.S. or may
+directly and negatively impact the MineBee business. The effect of any future regulatory
+change is impossible to predict, but such change could be substantial and materially adverse
+to the development and growth of the MineBee technology and the adoption and utility of the
+MB tokens. New or changing laws and regulations or interpretations of existing laws and
+
+2
+Pr ‘te -
+ane 1. «
+1) "aay te,
+_s@uSReesanny » ". fa, 4
+"aay Tay "e,
+ay tay te
+a a @,
+
+11 Disclaimer - Legal and Risks Xi MineBee
+
+regulations, in the U.S. and other jurisdictions, may materially and adversely impact the value
+of the ETH and BTC virtual currency or Fiat used to acquire MB tokens and otherwise materially
+and adversely affect the structure or MB tokens and the rights of the holders of MB tokens.
+Issuance of MB tokens May Constitute the Issuance of a “Security” Under U.S. Federal
+Securities Laws 95 The MB token is a utility token that has a specific consumptive use - i.e., it
+allows participants in the MineBee service to receive and pay value for data sharing by
+individuals and entities, and make data available, on a distributed or non-distributed network
+with significant advantages over current data sharing solutions. Due to the nature of the MB
+tokens and the manner, in which they are being offered, we do not think they should be
+considered “securities”, as that term is defined in the Securities Act of 1933, as amended
+
+(the "Securities Act"). MB tokens might only be distributed to “accredited investors” as
+defined in US securities laws and to not more than 150 non-qualified investors under the EU
+Prospectus Regulation.
+
+.
+we PEOragy ry a
+ueneeneee nite —
+an
+Tae, ey
+pe@uSHSeteanag » "a "a,
+"any Tay "e,
+ay tay te
+a Wy ay
+
+66
+

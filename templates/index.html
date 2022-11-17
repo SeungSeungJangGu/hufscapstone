@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>가상화폐 백서 표절 검사 사이트</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <style>
+        /* page-loading */
+      #loading {
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          position: fixed;
+          display: block;
+          opacity: 0.6;
+          background: #e4e4e4;
+          z-index: 99;
+          text-align: center;
+      }
+    
+      #loading > img {
+          position: absolute;
+          top: 36%;
+          left: 45%;
+          z-index: 100;
+      }
+       #loading > p {
+            position: absolute;
+            top: 54%;
+            left: 48%;
+            z-index: 101;
+        }
+    </style>
+    <body>
+        <!-- Responsive navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container px-lg-5">
+                <a class="navbar-brand" href="#!">가상화폐 백서 표절검사</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="/">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#!">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#!">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Header-->
+        <header class="py-5">
+            <div class="container px-lg-5">
+                <div class="p-4 p-lg-5 bg-light rounded-3 text-center">
+                    <div class="m-4 m-lg-5">
+                        <h3 class="display-5 fw-bold">백서 입력</h3>
+                        <form action="/view" method="POST" enctype="multipart/form-data">
+                        <input class="btn btn-primary btn-lg" type="file" name="file"/>
+                        <button type="submit" class="btn btn-primary btn-lg" >Submit</button>
+                        
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Page Content-->
+        <section class="pt-4">
+            <div class="container px-lg-5">
+                <!-- Page Features-->
+                <div class="row gx-lg-5">
+                    <div class="col-lg-6 col-xxl-4 mb-5">
+                        <div class="card bg-light border-0 h-100">
+                            <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+                                <div class="feature text-white rounded-3 mb-4 mt-n4"><img src="{{ url_for('static', filename='icon/traum2.png') }}" style="max-width: 118px; height: 56px ;"></div>
+                                <h2 class="fs-4 fw-bold">TraumInfoTech</h2>
+                                <p class="mb-0">TraumInfotech means dream IT technology, and is a tech platform pioneering the blockchain and trading market.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xxl-4 mb-5">
+                        <div class="card bg-light border-0 h-100">
+                            <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+                                <div img class="feature rounded-3 mb-4 mt-n4"><img src="{{ url_for('static', filename='icon/hufs_icon.gif') }}" style="max-width: 64px; height: 64px ;"></div>
+                                <h2 class="fs-4 fw-bold">HUFS</h2>
+                                <p class="mb-0">Come to HUFS, Meet the World!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xxl-4 mb-5">
+                        <div class="card bg-light border-0 h-100">
+                            <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+                                <div img class="feature text-white rounded-3 mb-4 mt-n4"><img src="{{ url_for('static', filename='icon/logo2.gif') }}" style="max-width: 118px; height: 56px ;"></div>
+                                <h2 class="fs-4 fw-bold">Capstone Design</h2>
+                                <p class="mb-0">Capstone Design is described as a 'creative comprehensive design' and can be seen as an educational program to train engineers.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xxl-4 mb-5">
+                        <div class="card bg-light border-0 h-100">
+                            <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+                                <div class="feature text-white rounded-3 mb-4 mt-n4"><img src="{{ url_for('static', filename='icon/sung.png') }}" style="max-width: 64px; height: 64px ;"></div>
+                                <h2 class="fs-4 fw-bold">Park Sung Jun</h2>
+                                <p class="mb-0">Team Leader, 17학번 컴퓨터공학부 재학, 유사도 알고리즘 개발</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xxl-4 mb-5">
+                        <div class="card bg-light border-0 h-100">
+                            <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+                                <div class="feature text-white rounded-3 mb-4 mt-n4"><img src="{{ url_for('static', filename='icon/in.png') }}" style="max-width: 64px; height: 64px ;"></div>
+                                <h2 class="fs-4 fw-bold">Park In cheol</h2>
+                                <p class="mb-0">Teammate, 16학번 컴퓨터공학부 재학, 유사도 알고리즘 개발</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xxl-4 mb-5">
+                        <div class="card bg-light border-0 h-100">
+                            <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+                                <div class="feature text-white rounded-3 mb-4 mt-n4"><img src="{{ url_for('static', filename='icon/choi.png') }}" style="max-width: 64px; height: 64px ;"></div>
+                                <h2 class="fs-4 fw-bold">Choi Seung Gu</h2>
+                                <p class="mb-0">Teammate, 17학번 컴퓨터공학부 재학, 백엔드, 프론트엔드 개발</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="py-5 bg-dark">
+            <div class="container"><p class="m-0 text-center text-white">Copyright &copy;HUFS Capstone Design 2022</p></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
+<script>
+    $(document).ready(function() {
+    $('#loading').hide();
+    $('#loadingBtn').click(function(){
+        $('#loading').show();
+        return true;
+        });
+    });
+</script>

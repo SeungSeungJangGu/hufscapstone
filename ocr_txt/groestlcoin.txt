@@ -1,0 +1,1108 @@
+Grgstl Implementation Guide
+
+Krystian Matusiewicz!, Martin Schlaffer?, and Sren S. Thomsen?
+
+Intel Technology Poland
+“TAIK, Graz University of Technology
+3DTU Mathematics, Technical University of Denmark
+
+March 9, 2012
+
+The current version can be downloaded from
+
+http: //www.groestl.info/groest1-implementation-guide. pdf
+
+Abstract
+
+The Grgst1 hash function is a finalist in the SHA-3 competition organized by NIST. In this paper,
+we describe a number of implementation techniques and tricks for Grgstl. They allow us to develop a
+range of efficient implementations for various platforms, from 8-bit microcontrollers to modern desktop
+processors using 256-bit AVX instructions. These results demonstrate the implementation flexibility
+of the algorithm and we hope will inspire further optimizations and ports to other platforms. The
+information in this paper will also be useful for developers planning to implement Gr¢gst1 efficiently on
+the platform of their choice. Furthermore, we believe also hardware implementations may benefit from
+the optimization techniques presented in this paper.
+
+1 Introduction
+
+The hash function Grgst1 was designed in 2008 as a candidate for the SHA-3 competition , organized
+by the National Institute of Standards and Technology (NIST). In 2010, Grgst1 was selected as one of five
+finalists in the competition.
+
+Grgstl borrows components from the AES block cipher, which became a United States federal government
+standard in 2001 . The AES is known for its good performance on a wide variety of platforms, which is
+due to a large amount of flexibility in the choice of implementation methods. Recently, Intel introduced an
+instruction set extension for computing AES rounds 9) which makes encryption using the AES on CPUs
+implementing this instruction set very efficient.
+
+Although several underlying components in Grgst1 differ from the ones used in the AES, Gr¢st1 stil
+enjoys many of the same implementation benefits as the AES. Even the AES instruction set extension can be
+used to significantly speed up Grgstl. In this paper, we describe various software implementation techniques
+for Grgst1 suitable for platforms ranging from 8-bit microcontrollers to processors with SIMD and AES
+
+instruction set extensions. All these implementations can be downloaded from|http: //www.groest1.info/|
+
+2 Description of Grgst1
+
+The Grgst1 hash function iterates an underlying compression function in a variant of the Merkle-Damgar
+construction where the size of the state (or chaining value) passed on from one iteration to the nex
+is at least tw! s large as the final hash value. The final hash value is computed from the last chaining
+value using an output transformation. Hence, Grgst1 is known as a wide pipe design.
+
+The compression function and the output transformation are based on permutations using round trans-
+formations similar to those of the AES For the final round of the competition, Grgst1 was tweaked in
+
+order to increase its security margin. The initial submission is called Grgst1-0. In the following, we describe
+the components of the (tweaked) Grgst1 hash function in more detail.
+
+2.1 The Hash Function
+
+Grgst1 comes in several variants with different output sizes. We denote by n the number of bits in the
+output, and the variant returning n bits is denoted Grgstl-n. Here, we focus on Grgst1-256 and Grgst1-
+512. Variants returning less than 256 bits differ from Grgst1-256 only in the initial value and in the final
+truncation to produce the hash value. Similarly, variants returning more than 256 bits differ from Grgst1-512
+in the same two respects.
+
+The input message MW is padded and split into blocks M), M2,..., M; of @ bits with ¢ = 512 for Grgst1-
+256, and ¢ = 1024 for Grgst1-512. The initial value IV, the intermediate hash values H;, and the permuta-
+tions P and Q are of size ¢ bits as well. (The exact definition of the IV can be found in [8)). The message
+blocks are processed via the compression function f(Hj—1, Mj), which accepts two ¢-bit inputs and outputs
+an ¢-bit value. After all t message blocks have been processed, an output transformation ((H;) is applied
+which outputs the final n-bit hash value h:
+
+Hy =1IV
+A, = f(Hi-1,M;) forl<i<t
+h=QH,).
+
+For all variants, ¢ is at least twice as large as n.
+
+2.2 The Compression Function
+
+The compression function f is based on two ¢-bit permutations P and Q. The compression function is
+defined as follows:
+
+f(Hi-1, Mi) = P(Hi-1 © Mi) ® Q(M;) © Hi-1-
+The construction of the compression function of Grgst1 is shown in Figure [I]
+
+Figure 1: The compression function f of Grgstl. The permutations P and Q are of size £ > 2n bits.
+
+2.3. The Output Transformation
+
+After the last call to the compression function, an output transformation 2 is applied to H; to give the final
+hash value of size n:
+Q(A;) = trunc,(P(H:) ® Ht),
+
+where trunc,,(x) discards all but the least significant n bits of . The output transformation is also shown
+
+in Figure [2]
+
+Figure 2: The output transformation 2 of Grgstl. The permutation P is of size ¢ > 2n bits and only the
+last n bits are returned.
+
+2.4 The Permutations
+
+Two permutations P and Q are defined for Grgstl. To distinguish between the permutations of Grgst1-256
+and Grgst1-512 we sometimes write P, or Q¢ where £ is the size of the permutations. In each permutation, the
+four AES-like round transformations AddRoundConstant (AC), SubBytes (SB), ShiftBytes (SH), and MixBytes
+(MB) are applied to the state in the given order. The permutations differ only in the constants used in
+AddRoundConstant and ShiftBytes, and in their number of rounds.
+
+Grgst1-256 has 10 rounds and the 512-bit state of permutation Ps12 and Qs12 is viewed as an 8 x 8 matrix
+of bytes. One round of one permutation of Grgst1-256 is shown in Figure 3} For Grgst1-512, 14 rounds are
+used and the 1024-bit state of the two permutations Pi924 and Qio24 is viewed as an 8 x 16 matrix of bytes.
+
+AC AC
+SB SB
+SH SH
+MB MB
+(a) Grgst1-256 (b) Grgst1-512
+Figure 3: One round of one permutation of the Grgst1-256 and Grgst1-512 hash function.
+
+2.4.1 AddRoundConstant
+
+The AddRoundConstant (AC) transformation XORs a round-dependent constant to one row of the state. The
+constant and the row is different for P and Q. Additionally, a round-independent constant ff is XORed to
+every byte in Q (we denote hexadecimal byte values by two-character values in sans serif font). The XOR
+constants for round i (where i is viewed as a hexadecimal digit and i denotes the bit-wise complement of i)
+are shown in Figure
+
+2.4.2 SubBytes
+
+The SubBytes (SB) transformation applies the AES S-box to each byte of the state. The definition of this
+S-box can be found in (8).
+
+2.4.3  ShiftBytes
+
+ShiftBytes (SH) cyclically rotates the bytes of row r to the left by o[r] positions with different values for P
+and Q in Grgst1-256 and Grgst1-512. We have the following rotation values:
+
+o = {0,1,2,3,4,5,6,7} for P in Grgst1-256
+o = {1,3,5,7,0,2,4,6} for Q in Grgst1-256
+o = {0,1,2,3,4,5,6,11} for P in Grgst1-512
+o = {1,3,5,11,0,2,4,6} for Q in Grgst1-512
+(c) Qs12 (d) Qio24
+
+Figure 4: The XOR constants added by the AddRoundConstant transformation.
+
+>[S(x)
+
+Figure 5: SubBytes substitutes each byte of the state using the AES S-box.
+
+2.4.4 MixBytes
+
+MixBytes (MB) is a linear diffusion layer, which multiplies each column A of the state with a constant,
+circulant 8 x 8 matrix B:
+At+B-A
+
+where
+02 02 03 04 05 03 05 07
+07 02 02 03 04 05 03 05
+05 07 02 02 03 04 05 03
+03 05 07 02 02 03 04 05
+05 03 05 07 02 02 03 04
+04 05 03 05 07 02 02 03
+03 04 05 03 05 07 02 02
+02 03 04 05 03 05 07 02
+
+In this matrix B, constants are elements in the finite field GF(2°) defined by the polynomial 6° © 64 @
+6° 601. An 8-bit value x with binary representation
+
+x a7 2 +26 -2% 445-2 +44: 22+ 23-22 + 29-2? t a1: 2' +29 -2°
+
+is then represented by the following polynomial in the finite field GF (2°):
+
+P(x) tO +46: Oo +25 -0 +24-0' +23 -0 429-0? +21 -0' +29
+
+The multiplication x-y in the field GF(2°) is defined by a polynomial multiplication modulo the polynomial
+defining the field:
+xz-y = P(x): P(y) mod (6° 6646 6° 6601)
+
+Section [4.4] describes how the multiplications in this field are carried out efficiently in practice.
+(c) Qs12 (d) Qio24
+
+Figure 6: The shift values used by the ShiftBytes transformation.
+
+Figure 7: The MixBytes transformation multiplies each column of the state by a constant matrix B.
+
+3 Introduction to Efficient Implementation Techniques
+
+In this section we give a high-level overview on common efficient implementation techniques for Grgstl.
+Since Grgstl is an AES-based hash function, most implementation techniques developed for AES can be
+applied to Grgst1 as well. The main implementation techniques for Grgst1 are the T-table implementation,
+bit slicing, and byte slicing. In a parallel byte slice implementation, either the Intel AES-NI instruction or
+the vperm technique can be used to compute the AES S-box.
+
+In Table[I] we list some benchmark results of Grgst1 on current desktop processors. For details on more
+processors we refer to eBASH 3]. Additionally, the byte slice implementation technique has also been used
+to get efficient 8-bit implementations of Grgst1. Table | hows some time-memory trade-offs for 8-bit AVR
+implementations.
+
+3.1 T-Table Implementation
+
+Daemen and Rijmen have presented a table-based approach for AES in [6), which efficiently computes
+the combined SubBytes and MixColumns transformation. The same approach can be applied to Grgstl.
+Using this technique, at least one table lookup is needed for each S-box. The MixBytes transformation is
+computed in parallel for rows of the state and can be combined with the S-box lookup. This approach is
+most efficient if the column size matches the register size. This is the case on 32-bit platforms for AES and
+on 64-bits platforms for Grgstl. Since many current and future small-scale 32-bit processors also provide
+64-bit instructions (MMX, NEON), Gr¢gst1 can be implemented very efficiently on these platforms using the
+T-table approach.
+
+In T-table implementations, the state of Grgstl is stored in 64-bit registers in column ordering (see
+Figure [8). The AddRoundConstant transformation can be computed separately using 64-bit XORs. The
+computation of the SubBytes, ShiftBytes and MixBytes transformations are combined to efficiently compute
+
+Table 1: Grgstl software performance on current desktop processors sorted by their speed in cycles/byte
+(c/b). The byte slice implementations using AES-NI or vperm outperform table-based implementations on
+processors with 128-bit registers.
+
+Hash function Processor Speed (c/b) Technique
+Intel Core i7-2600K 11.5 AES-NI
+AMD Phenom II X6 19.4 T-tables
+Grgst1-256 | Intel Core2 Duo L9400 | 20.4 (22.5) | vperm (T-tables)
+Intel Core i7 620LM 23.3 (24.0) | vperm (T-tables)
+Intel Pentium M 38.8 T-tables
+Grgst1-0-256 | Intel Core2 Duo L9400 29.7 bit slicing
+Intel Core i7-2600K 15.6 AES-NI
+Intel Core2 Duo L9400 | 28.9 (37.4) | vperm (T-tables)
+Grgst1-512 AMD Phenom II X6 31.7 T-tables
+Intel Core i7 620LM 33.4 (37.7) | vperm (T-tables)
+Intel Pentium M 76. T-tables
+Table 2: Speed of three different Grgst1-256 8-bit AVR implementations in cycles/byte on ATMegal63.
+
+HighSpeed | Balanced | LowMem
+Grgstl 469 530 -
+Grgst1-0 456 517 738
+RAM 994 226 164
+
+one 64-bit column (e.g., column 0) of Grgst1 as follows:
+
+boo r 02 02 03 04 05 03 05 077 [ S(aoo)
+bio 07 02 02 03 04 05 03 05 S(ai)
+boo 05 07 02 02 03 04 05 03 S(az2)
+bso | _ | 03 05 07 02 02 03 04 05 S(as3)
+bio | | 05 03 05 07 02 02 03 04] | S(aaa)
+bso 04 05 03 05 07 02 02 03 S(as5)
+beo 03 04 05 03 05 07 02 02 S(aee)
+b70 L02 03 04 05 03 05 07 02 L S(a7z7)
+where bo = [boo, bi0,+*: . bro]7 is the resulting 64-bit value of the first column computation. The input bytes
+aij are extracted from the state according to the ShiftBytes transformation and the S-box S() is applied to
+these bytes prior to the matrix multiplication of MixBytes. Expanding the matrix multiplication then gives:
+r boo f 02-S(aoo) 7 f 02-S(ai1) 7 f 03-S(az2) 7 f 04-S(a33) 7
+bio 07 - S(aoo) 02 - S(ai1) 02 - S(a22) 03 - S(a33)
+b20 05 - S(ao0) 07 - S(ai1) 02 - S(a22) 02 - S(azz)
+bso | _ | 03- S(ao0) ® 05 - S(ai1) ® 07 - S(az22) ® 02 - S(a3a) ®
+bao | | 05- S(aoo) 03 - S(ai1) 05 - S(az22) 07 - S(a3z)
+bs0 04 - S(aoo) 05 - S(ai1) 03 - S(az22) 05 - S(a3a)
+be6o 03 - S(aoo) 04- S(ai1) 05 - S(a22) 03 - S(a3z)
+L bo L 02-S(aoo) J L 03-S(ai1) J L 04-S(az2) J L 05: S(a33) J
+[ 05-S(asa) J [ 03-S(as5) J [ 05: S(ae6) ] [ 07-S(az7) J
+04 - S(aas) 05 - S(ass) 03 - $(aoa) 05 - S(az7)
+03 - S(aaa) 04 - S(ass) 05 - S(aee) 03 - S(az7)
+02 - S(asa) © 03 - S(as5) ® 04 - S(aee) 0 05 - S(az7)
+02 - S(a44) 02 - S(ass) 03 - S(aee) 04 - S(az7)
+07 S(aas) 02 - S(ass) 02 - $(ao0) 03 - S(az7)
+05 - S(aaa) 07 - S(ass) 02 - S(aee) 02 - S(az7)
+L 03-S(a44) J L 05-S(ass) J L 07-S(aes) J L 02: S(az77) J
+
+which simplifies to
+
+bp =To(ao0)
+
+Ti (ai1)
+
+T>(a22)
+
+where the tables y = T;(x) contain 8 to 64-
+
+Figure 8: For the T-
+
+MixBytes. For example, for the
+
+To(x) = 02- S(er) |
+
+P
+
+T3(a33) ® Ts(a4a) © Ts(a55) © Te (a6)
+
+Q
+
+able approach,
+
+07 - S(a) || 05 - S(x)
+
+he Grgst1-256 state is stored co
+
+first table Ty we get:
+
+T;(a77)
+
+bit lookups of the S-box together with the 8 multipliers of
+
+umn-wise in 64-bit registers.
+
+| 03 S(x) || 05 - S(a) |] 04- S(a) || 03 - 9x) || 02- $(x)
+
+Extracting a single byte from a word can be implemented using a bit-shift and a masking (logical and)
+
+instruction. Then, the computa‘
+
+1 XOR for AC), 8 SHIFT and 8 AND instruc
+
+G10,+-+5 a70|7 at no cost. In this case, we can save (some of) the SHIFT
+
+from 64-bit column words
+and AND instructions.
+The same T-table ap,
+case, we split up the com
+one table T/ storing the w
+
+of the MixBytes transformation matrix, the tal
+
+aj = [ao0,
+
+ion of one column consists of only 8 table lookups, 8 XOR (7 XOR for MB,
+ions. On some platforms, single bytes a;; can be extracted
+
+roach can also be used for efficient implementations on 32-bit processors. In this
+utation into an upper part and lower part. We need to split up the tables T; into
+
+pper 32 bi
+
+. a ald
+have Tj’ = Tita) mod 8°
+
+Hence, we get
+
+s and one
+
+able Tj’ storing the lower 32 bits. Due
+les T/ can be reused to lookup also the
+
+o the cyclic structure
+lower 32 bits since we
+
+Ti(a11)
+
+T3(a22)
+
+T3(a33) ® Ty(a44) © T5(a55) © Ty (a6)
+
+T;(a77)
+
+b6 T}(a00)
+bj =T}(a00)
+
+T3(a11)
+
+Ty (a22)
+
+T;(a33) © Ty(aaa) © Tj (a55) © T(a6s)
+
+T;(a77)
+
+with bp = bh||bY.
+
+3.2 Byte Slice Implementation
+
+Another option to implement Grgst1 is a byte-wise parallel computation of columns. All round transforma-
+tions except ShiftBytes and AddRoundConstant apply exactly the same computation to each column of the
+Grgst1 state independently. Therefore, we can use a Single Instruction Multiple Data (SIMD) approach to
+compute these identical operations on more than one column at the same time. We call this a byte slice
+
+implementation
+
+since the Grgstl state is cut into column slices of bytes. The state is stored in row
+
+ordering. Using w-bit registers, w/8 columns can be computed in parallel (see Figure J). This approach is
+most efficient for small (8-bit) and large register sizes (128-bit and more).
+
+A requirement for this approach to be efficient is that all round transformations of Grgstl can be
+
+parallelised using only a few w-bit SIMD instructions. AddRoundConstant and MixBytes can be computed
+in parallel simply using basic ALU instructions. For ShiftBytes we need a byte shuffling instruction or some
+mask and rotate instructions. The most difficult round transformation to parallelise is the 8-bit table lookup
+of SubBytes. However, using the Intel AES New Instructions extension (AES-NI) or the vector-permute
+
+xmm0
+
+[ xmm1
+
+xmm2
+
+[ xmm3
+
+[ xmm4
+
+[ xmm5
+
+xmm6
+xmm7
+
+Figure 9: For the SIMD implementation, the Grgst1-256 state is stored row-wise in xmm registers to compute
+each column 16 times in parallel.
+
+(vperm) approach of Hamburg {10}, parallel AES S-box table lookups can be performed efficiently. Moreover,
+the fastest Grgstl implementation |3] is a byte slice implementation using AES-NI. For further details, on
+how the round transformations can be implemented, we refer to Section [4]
+
+In a byte slice implementation, we need to use a row-ordering of the Grgst1 state. However, the input
+bytes of the message are mapped to the Grgst1 state in column-ordering. The column-ordering is a benefit
+for T-table based implementations but a drawback for byte slice implementations. To reduce the state
+transformation costs, the internal state is kept in row-ordering throughout the whole computation. Then,
+we only need to transform each input message block and the hash function output at the end (the IV can
+be stored already in row-ordering). Transforming the input message from column-ordering into row-ordering
+corresponds to transposing the state matrix of the input message block. Many algorithms for transposing a
+matrix are known and a square matrix can be transposed using only a few instructions.
+
+3.3. Bit Slice Implementation
+
+The fastest AES software implementations are bit slice implementations running at 7.6 cycles/byte on an
+Intel Core2 if multiple blocks are encrypted in parallel in counter moc Also the hash function Whirlpool
+which shares some similarities to Grgst1 has been implemented efficiently using bit slicing techniques in {20}.
+Preliminary assembly implementations of Grgst1-0 show a speed of 29.7 cycles/byte on an Intel Core2 Duo
+processor for the computation of the hash of a single message Additionally, bit slice implementations
+
+shed in parallel fa).
+
+of Grgst1-0 get even more efficient if two or more messages are
+
+4 Implementing Grgstl Round Transformations
+
+In this Section we list common techniques to efficiently implement the individual Grgst1 round transforma-
+tions. The listed techniques can be used on various platforms using different word sizes, as well as in hardware
+and in software. In most cases also special optimization techniques which combine round transformations
+may lead to better results on some platforms (also see Sections
+
+4.1 AddRoundConstant
+
+The AddRoundConstant transformation consists of XORs of bytes in the state with constants. In most cases,
+these constants will be stored using the same data structures and ordering conventions as the state itself, in
+which case the XORs are simply carried out word by word.
+
+One may exploit the fact that the constants used in Q correspond to a complementation of each byte,
+followed by an XOR with the same constants as those used in P. Note, however, that in Q, these constants
+are XORed to the bottom row instead of the top row (as in P).
+
+4.2  SubBytes
+
+The SubBytes transformation is most simply implemented as an 8-bit table lookup.
+However, since the transformation corresponds to an inversion in the finite field GF(2°) followed by an
+affine transformation, in some scenarios it is more efficient to implement it via a computation. The most
+efficient known way to compute the AES S-box is using the formulas of Canright [5]. Originally developed
+for compact hardware implementations, Canright’s formulas can also be used for the efficient computation
+of the AES S-box in software. The fastest known AES implementation uses these formulas to compute the
+S-box in bit slice mode
+A second efficient method to compute the AES S-box has been proposed by Hamburg in {10}. In this
+approach, the inverse in GF(2°) of the AES S-box is computed using small log tables of the finite field
+GF(2*). Small log tables can efficiently be implemented using byte shuffling instructions. Using registers
+containing 16 bytes, a 4-to-8 bit table lookup can be performed. For more details on this implementation
+we refer to the original publication {10}.
+
+The third possibility to compute SubBytes is using the Intel AES New Instructions extension (AES-NIT)
+to the x86 instruction set (9. This extension includes a number of instructions for computing AES rounds.
+The instruction AESENCLAST, as an example, computes the last round of AES (without any key additions),
+which means it computes the transformations SubBytes and ShiftRows. Hence, if this instruction is available,
+it can be used to compute parallel AES S-box lookups. To reduce the number of byte shuffling instructions,
+the computation of ShiftRows in AESENCLAST can be combined with the computation of ShiftBytes.
+
+4.3 ShiftBytes
+
+The ShiftBytes transformation simply moves bytes around within a row. Hence, this transformation can
+often be computed implicitly by simply changing the addressing of bytes. An implementation on a modern
+desktop processor might store rows of the state as a 64-bit or 128-bit word. In this case, the ShiftBytes
+transformation can be implemented via a simple byte shuffling instruction.
+
+4.4 MixBytes
+
+MixBytes consists of a multiplication of each column in the state by a constant 8 x 8 matrix B. All multi-
+plications and additions needed to compute this transformation are done in the finite field GF(2°) defined
+by the polynomial 6° @ 64 63 @ 6 @ 1 (11b in hexadecimal notation). There are many ways to compute
+MixBytes and it depends on the hardware and CPU features which variant is most efficient. In the following,
+we explain the most important techniques.
+
+4.4.1 Table-based Implementation
+
+The most efficient way to implement MixBytes is using precomputed T-tables (also see Section[5). Especially
+since in this case, the table lookups for MixBytes can also be combined with those of the S-box. In the
+T-table approach, the effect of each state byte on one column (8 bytes) is precomputed and stored in a table
+of 256 64-bit entries. For each input byte of one column, we need a separate table. Then, e.g. the first
+column can be computed as follows:
+
+bo = To(ao0) ® Ti (a1) ® To(a22) ® T3(a33) ® T1(as4) ® Ts (a55) ® Te(a66) & T7(a77)
+
+where the tables y = T;(#) contain 8 to 64-bit lookups of the S-box together with the 8 multipliers of
+MixBytes. Table Tp is precomputed as follows:
+
+T(x) = 02+ S(ax) || 07 - S(x) || 05» S(x) |] 03+ S(x) || 05 - S(x) || 04- S(x) |] 03 - S(x) || 02- S(x)
+
+Using this method, one column of MixBytes including one column of SubBytes can be computed using only
+8 table-lookups and 7 64-bit XOR operations.
+
+However, we need more instructions for ShiftBytes since byte values have to be extracted from 64-bit
+words. Furthermore, the T-table approach is not resistant against cache-timing and table lookups are still
+the bottleneck on most current processors.
+4.4.2 Using Double-and-Add
+
+MixBytes can also be computed using repeated double-and-add operations. Then, we only need to XOR
+and efficiently multiply by 02 (see Section |4 . For example, the multiplication by 05 can then be carried
+out by performing 02 - (02-2) +a. Using only double-and-add operations, we get the following formulas to
+compute each output byte b; given the input bytes a; of a single column:
+
+b; = 02 - (02: (aj43 ® ai44 © Gi46 O Ai47) © 4; © Aig1 © Gi42 O Aj45 © Ai47) (2)
+Ai42 DO dips D Ai45 © Gite O Gi47
+where i = 0,...,7 and all the indices are taken modulo 8. Simply implementing this formula would require
+
+8-2 = 16 multiplications by 02 and 8-13 = 104 XORs. However, the number of XORs can be significantly
+reduced to at least 48 (see Section |4 and Section
+
+4.4.3 The Multiplication by 02
+
+n the finite field GF'(2°), the doubling operation 02-2 (where x is an 8-bit value) can be implemented using
+a left shift of x by one, followed by a conditional XOR using the irreducible polynomial 11b if an overflow
+occurs. When operating on bytes, the MSB is usually discarded by the shift. Hence, we first check whether
+he MSB is set and conditionally XOR the constant 1b after the shift. It is worth to note that in some cases
+he condition can also be checked efficiently by treating the byte as a signed value and comparing it to zero.
+f two’s complement representation is used, the most significant bit is only set if the value x is negative.
+
+4.4.4 Minimising the Number of XORs
+
+By taking a look at Equatio we can observe that there are many terms of the form a;@a;+1. By repeatedly
+computing temporary results in a tree-based form, we get an optimised way of computing MixBytes using
+he following set of formulas:
+
+X= a; © Aint,
+
+Yi = TO Vi43,
+
+%= Uj; OUXi42 D9 Ai+6,
+
+b; = 02- (02: yin3 ® Zi47) B Zi4a -
+These formulas contain a minimum number of 16 multiplications by 02 and only 8-6 = 48 XOR operations.
+Furthermore, the computations are more independent, which allows a better parallelism on superscalar
+
+CPUs. For example, computing x; is independent from any other x; where i # j and the same is true for
+the remaining temporary and final values.
+
+4.4.5 Computing the Multiplication by 02 First
+
+Sometimes (see Section |6.3), it can be more efficient to first compute the multiplication by 02 and 04 of all
+input values a;:
+
+bj = Ai42 B dita @ Ait5 O ait6 O ai47
+02 - a; © 02 - aj41 P02 - aj4o P02 - aj45 B02 - aj47H (4)
+04 - ai43 8 04- aj44 B04: ang P04 - ai47
+
+In this case, the previous optimization cannot be applied. However, it is still possible to minimize the number
+of XOR operations in this case as well. Since many terms (a;,02- a;,04-a;) in the computation are added
+to more than one result, we can save XORs by computing temporary results again. For example, the term
+
+t = 02-day @02- ay Pas G04 - a7 Gaz (5)
+
+is added to bo, b; and bs. We can save many XOR operations by computing such temporary results first.
+In the reuse of such temporary results has been optimized (see Table 3). These equations result in 16
+multiplications by 02 and 58 XOR operations.
+
+10
+Table 3: MixBytes computation with 58 XORs. A “e” denotes those inputs (a;, 02 - a;, 04+ a;) which are
+added to get the results b;. Superscripts denote the order in which the temporary results are computed (1
+corresponds to the temporary results of Equation
+
+4.4.6 Other Possible Optimisations
+
+Another possibility to reduce the computation costs of MixBytes is to use a different basis of multipliers.
+Instead of (01,02, 04), Calik used in his implementation the basis (03, 05, 07) In this case, the Hamming
+weight of the multiplication constants reduces significantly. Unfortunately, this basis does not result in less
+than 58 XORs and needs 16 multiplications by 02 as well.
+
+In platforms where many registers are available and multiplications by 02 are cheap, it can be of an
+advantage to compute the results of each multiplier separately [i]. In this case, the results b;,; of multiplier
+01 can be reused to compute those for multiplier 02 since b;,2 = 02: bj43 mod 8,1 (see Tabl . For multipliers
+01 and 04 (bj,4) temporary results are used to further minimize the number of XORs. This approach results
+in 24 multiplications by 2 and 48 XORs.
+
+5 T-Table Implementations
+
+In this section we present some example implementations which use the T-table approach for Grgst1l. This
+implementation technique is most efficient on 64-bit platforms. On 32-bit platforms, the number of necessary
+
+instructions double. In the following listing, we provide an unoptimized C code segment for the computation
+of one round of permutation P of Grgst1-256:
+// AC bi “= Ti[(ai>>16) & Oxff]; (a3>>48) & Oxff];
+aQ = bO * cO; bi “= T2[(a2>>24) & Oxff]; (a4>>56) & Oxff];
+al =bi~* ci; bi 7“= T3[(a3>>32) & Oxff]; (a5>>0 ) & Oxff];
+a2 = b2 7 c2; bi 7= T4[(a4>>40) & Oxff]; b3 “= T6[(a6>>8 ) & Oxff];
+a3 = b3 7 c3; bi 7“= T5[(a5>>48) & Oxff]; b3 “= T7[(a7>>16) & Oxff];
+a4 = b4 ~ cA; bi “= T6[(a6>>56) & Oxff]; // SB+SH+MB (column 4 of P)
+a5 = b5 7 c5; bi “= T7[(a7>>0 ) & Oxff]; = TO[(a0>>32) & Oxff];
+a6 = b6 * c6; // SB+SH+MB (column 2 of P) Til(ai>>40) & Oxff];
+a7 = b7 7 c7; b2 = TO[(a0>>16) & Oxff]; T2[(a2>>48) & Oxff];
+// SB+SH+MB (column 0 of P) b2 “= Til[(ai>>24) & Oxff]; T3[(a3>>56) & Oxff];
+pO = TO[(aO>>0 ) & Oxff]; b2 “= T2[(a2>>32) & Oxff]; T4[(a4>>0 ) & Oxff];
+pO “= Til(al>>8 ) & Oxff]; b2 “= T3[(a3>>40) & Oxff]; T5[(a5>>8 ) & Oxff];
+pO “= T2[(a2>>16) & Oxff]; b2 “= T4[(a4>>48) & Oxff]; T6[(a6>>16) & Oxff];
+bO “= T3[(a3>>24) & Oxff]; b2 “= T5[(a5>>56) & Oxff]; T7([(a7>>24) & Oxff];
+bO “= T4[(a4>>32) & Oxff]; b2 “= T6[(a6>>0 ) & Oxff]; // SB+SH+MB (column 5 of P)
+bO “= T5[(a5>>40) & Oxff]; b2 “= T7[(a7>>8 ) & Oxff]; b5 = TOL(a0>>40) & Oxff];
+bO “= T6[(a6>>48) & Oxff]; // SB+SH+MB (column 3 of P) bS “= Ti[(al>>48) & Oxff];
+bO “= T7[(a7>>56) & Oxff]; b3 = TO[(a0>>24) & Oxff]; bS “= T2[(a2>>56) & Oxff];
+// SB+SH+MB (column 1 of P) b3 7*= Til[(ai>>32) & Oxff]; T3([(a3>>0 ) & Oxff];
+b1 = TO[(a0>>8 ) & Oxff]; b3 7*= T2[(a2>>40) & Oxff]; T4[(a4>>8 ) & Oxff];
+
+11
+bd5 “= T5[(a5>>16) & Oxff]; b6 “= T3[(a3>>8 ) & Oxff]; b7 “= T1i[(ai>>O ) & Oxff];
+bd5 “= T6[(a6>>24) & Oxff]; b6 “= T4[(a4>>16) & Oxff]; b7 “= T2[(a2>>8 ) & Oxff];
+bd5 “= T7[(a7>>32) & Oxff]; b6 “= T5[(a5>>24) & Oxff]; b7 “= T3[(a3>>16) & Oxff];
+// SB+SH+MB (column 6 of P) b6 “= T6[(a6>>32) & Oxff]; b7 “= T4[(a4>>24) & Oxff];
+b6 = TO[(a0>>48) & Oxff]; b6 “= T7[(a7>>40) & Oxff]; b7 “= T5[(a5>>32) & Oxff];
+b6 “= Ti[(al>>56) & Oxff]; // SB+SH+MB (column 7 of P) b7 “= T6[(a6>>40) & Oxff];
+b6 “= T2[(a2>>0 ) & Oxff]; b7 = TO[(a0>>56) & Oxff]; b7 “= T7[(a7>>48) & Oxff];
+A number of optimized C implementations have been published for Grgst1. The most important ones are
+the implementations submitted to NIST by the designers |8) and the crypto library sphlib3.0 {19}. Although
+sphlib is not fully optimized (e.g. the round constants are added byte-by-byte), it has a good performance
+
+on many constrained (32-bit) devices. In the following, we present optimized assembly implementations on
+a few example platforms which can serve as a reference for further T-table optimizations.
+
+5.1 64-bit Processors
+
+A T-table implementation of Grgst1 on 64-bit processors needs 8 table lookups, 8 XOR, and at most 8 SHIFT
+and 8 AND instructions per column computation (see Section 5). However, on x86 CPUs, we can reduce the
+ALU instructions to 8 XOR, 8 MOV and 3 SHIFT instructions per column as follows.
+
+Let rax contain column 0, where the least significant 8 bits correspond to the top byte. Now, the following
+two instructions each extract one byte out of rax:
+
+movzbl edi, al ; put least sig. byte (row 0) in edi
+movzbl esi, ah } put second-least sig. byte (row 1) in esi
+
+After this, edi is used as index to lookup table Tp, esi is used as index to lookup table T; (since ShiftBytes
+will move it to column 7). The results are stored in (or XORed to, for subsequent bytes) the new columns
+0 and 7. Then, the register rax is shifted 16 bits to the right. Hence, next time we carry out the above two
+instructions again, edi will contain the byte in row 2, and esi will contain the byte in row 3. Note that we
+work on two columns at the same time in order to maximize instruction level parallelism.
+
+Intel desktop processors prior to the Sandy Bridge architecture have one memory load and one store
+units and up to three arithmetic logic units (ALUs). This implies that the load instructions are dominant,
+and the maximal throughput is 1 cycle/byte for each round of Grgst1l. This results in 20 cycles/byte for
+Grgst1-256 and 28 cycles/byte for Grgst1-512. The results given in Table [1]show that the speed of Grgst1
+is very close to this bound on the Intel Core2 Duo processor.
+
+Since AMD Opteron and Intel Sandy Bridge processors have two memory load units, up to two parallel
+able lookups are possible within each CPU cycle. Assuming that single bytes can be extracted efficiently
+using one instruction, we get 0.5 cycles/byte for the loads and (8 + 8 + 3)/8/3 = 0.79 cycles/byte for the
+ALU instructions. Hence, the ALU instructions are dominant and we get a lower bound of 15.8 cycles/byte
+for Grgst1-256 and 22.1 cycles/byte for Grgst1-512. However, these ideal results are difficult to achieve in
+practice and our implementations are not approaching the theoretical lower bounds yet (see Table ip.
+
+5.2 32-bit Processors
+
+Since the number of table lookups and XORs double for the 32-bit T-table implementation, we get a lower
+ound of 40 cycles/byte for Grgst1-256 and 56 cycles/byte for Grgst1-512 if no parallel table lookups are
+possible. However, many current and future 32-bit processors have 64-bit instruction set extensions such as
+MMxX for Intel/AMD processors and NEON for ARM processors {2}. Using these extended instructions,
+we can get a speed close to 20 cycles/byte also on 32-bit x86 CPUs. A similar improvement can be expected
+from new NEON implementations.
+
+6 SIMD-based Byte Slicing Implementations
+
+In this section we describe a few concrete examples of the byte slicing implementation of Grgst1. We chose
+to present an implementation on an Intel-64 platform with SSSE3 instruction set as an example of popular,
+
+12
+modern desktop-class CPU. We show an implementation taking advantage of the AES-NI instruction set
+present in Intel Core iX and Sandy Bridge processors. Byte sliced implementation with AES-NI instructions
+is currently the fastest Grgst1 implementation on Intel platforms.
+
+We also discuss the vperm implementation, an alternative for processors not equipped with AES-NI
+instructions. In this case, the SubBytes transformation can still be implemented efficiently using only generic
+SSSE3 instructions.
+
+6.1 Transposing the Input Message
+
+Transforming the input message from column-ordering into row-ordering corresponds to transposing the
+input message block. Many algorithms for transposing a matrix are known and a square matrix can be
+transposed using only a few PUNPCK instructions . If we store the whole Grgst1-256 state (P and Q) in
+128-bit registers, we get an 8x16 rectangular matrix. Hence, additional byte shuffling (PSHUFB) and move
+(MOV) instructions are needed to transpose the input message [i].
+
+6.2. Using AES-NI
+
+In this section we describe the details of the fastest known Grgst1 implementation using the Intel AES-NI
+extension. Together with Intel AVX instructions a speed of less than 10 cycles/byte can be reached.
+// AC // MB (t_i = a_i + a_{i+1}) pxor xmm4, xmm7");
+pxor xmm0, [CONSTO: pxor xmmO, xmmi"); pxor xmm5, xmm8");
+pxor xmmi, [CONST1 pxor xmm1, xmm2"); pxor xmm6, xmm9");
+pxor xmm2, [CONST2: pxor xmm2, xmm3") ; pxor xmm7, [TMP_T2]");
+pxor xmm3, [CONST3 pxor xmm3, xmm4"); // MB (z_i = 02 * x_i)
+pxor xmm4, [CONST4 pxor xmm4, xmm5"); movaps xmm9, [ALL_1B]");
+pxor xmm5, [CONSTS5: pxor xmm5, xmm6"); MUL2(a0, bO, b1);
+pxor xmm6, [CONST6: pxor xmm6, xmm7"); MUL2(ai, bO, b1);
+pxor xmm7, [CONST7. pxor xmm7, xmm14"); MUL2(a2, bO, b1);
+// SH (with AES ShiftRowsInv) // MB (y_i = a_{it6} + t_i) MUL2(a3, bO, b1);
+pshufb xmm0, [SIGMAO: pxor xmm8, xmm4"); MUL2(a4, bO, b1);
+pshufb xmm1, [SIGMA1 pxor xmm9, xmm5"); MUL2(a5, bO, b1);
+pshufb xmm2, [SIGMA2 pxor xmmi0, xmm6"); MUL2(a6, bO, b1);
+pshufb xmm3, [SIGMA3. pxor xmmi1, xmm7"); MUL2(a7, bO, b1);
+pshufb xmm4, [SIGMA4 pxor xmmi2, xmm0"); // MB (wi = z_i + y_{i+4})
+pshufb xmm5, [SIGMAS5. pxor xmmi3, xmmi"); pxor xmmO0, [TMP_Y4]");
+pshufb xmm6, [SIGMA6: pxor xmmi4, xmm2"); pxor xmmi, [TMP_Y5]");
+pshufb xmm7, [SIGMA7. pxor xmmi5, xmm3"); pxor xmm2, xmm10");
+// SB (with AES ShiftRows) // MB (y_i = y_i + t_{it+2}) pxor xmm3, xmmii");
+pxor xmm8, xmm8 pxor xmmi4, xmm4"); pxor xmm4, xmm12");
+aesenclast xmm0, xmm8 pxor xmmi5, xmm5"); pxor xmm5, xmm13");
+aesenclast xmmi, xmm8 pxor xmm8, xmm6") ; pxor xmm6, xmm14");
+aesenclast xmm2, xmm8 pxor xmm9, xmm7") ; pxor xmm7, xmm15");
+aesenclast xmm3, xmm8 pxor xmmi0, xmm0"); // MB (w_i = 02 * w_i)
+aesenclast xmm4, xmm8 pxor xmmi1, xmmi"); MUL2(a0, bO, b1);
+aesenclast xmm5, xmm8 pxor xmmi2, xmm2"); MUL2(ai, bO, b1);
+aesenclast xmm6, xmm8 pxor xmmi3, xmm3"); MUL2(a2, bO, b1);
+aesenclast xmm7, xmm8 movaps [TMP_Y4], xmm8"); MUL2(a5, bO, b1);
+// MB (y_i = a_{i+6}) movaps [TMP_Y5], xmm9"); MUL2(a6, bO, bi);
+movdga xmmi4, xmm0"); // MB (x_i = t_i + t_{i+3}) MUL2(a7, bO, b1);
+movdga xmm15, xmm1"); movdgqa xmm8, xmm0"); MUL2(a3, bO, bi);
+movdga xmm8, xmm2") ; movdgqa xmm9, xmm1"); MUL2(a4, bO, bi);
+movdgqa xmm9, xmm3") ; movaps [TMP_T2], xmm2"); // MB (b_i = v_{it3} + y_{i+4})
+movdga xmm10, xmm4") ; pxor xmmO, xmm3") ; pxor xmm13, xmm0");
+movdga xmmi1, xmm5"); pxor xmmi, xmm4"); pxor xmmi4, xmmi");
+movdga xmm12, xmm6"); pxor xmm2, xmm5"); pxor xmmi5, xmm2");
+movdga xmm13, xmm7"); pxor xmm3, xmm6"); pxor xmmi0, xmm5");
+
+13
+pxor xmmi1, xmm6"); movaps xmm8, [TMP_Y4]"
+pxor xmm12, xmm7"); movaps xmm9, [TMP_Y5]"
+
+6.2.1 AddRoundConstant
+
+d; pxor xmm8, xmm3");
+d; pxor xmm9, xmm4");
+
+The AddRoundConstant transformation XORs a round-dependent row-wise constant to the first row in P and
+the last row in Q, and a round-independent constant to each row of Q. Since the Grgst1 state is stored in
+row-ordering, these constants can be added efficiently in parallel to each column of the state. For example,
+
+the constants of Grgst1-256 are added as follows:
+
+movaps xmm8, [Oxffffffffffffff££0000000000000000]
+pxor xmm0, [ROUND_CONST_PO]
+
+pxor xmmi, xmm8
+
+pxor xmm2, xmm8&
+
+pxor xmm3, xmm8
+
+pxor xmm4, xmm8
+
+pxor xmm5, xmm8
+
+pxor xmm6, xmm8
+
+pxor xmm7, [ROUND_CONST_Q7]
+
+6.2.2 SubBytes
+
+SubBytes is usually the most difficult transformation to implement efficiently in a byte slice implementation.
+
+As already mentioned, for w-bit registers we need an efficient
+lookups. This results in only one (parallel) table lookup in
+
+method to compute w/8 parallel AES S-box
+the case of 8-bit implementations (w = 8).
+
+Unfortunately, for larger register sizes, parallel table lookups are usually non-trivial.
+
+Although Grgst1 does not use the same MDS matrix as
+the Intel AES New Instructions extension (AES-NI). Since no
+
+he AES, Gr¢gst1 can still take advantage of
+MixColumns transformation is applied in the
+
+last round of the AES, Intel also provides an AESENCLAST instruction. This instruction is able to compute
+
+16 AES S-boxes in parallel with a throughput of one cycle a
+of the AESENCLAST instruction can be combined with an ext
+transformation of Grgst1 (see Sectio
+
+6.2.3 ShiftBytes
+
+Since ShiftBytes just moves bytes within one row of Grgst1, t
+
+nd a latency of 4 cycles. The byte shuffling
+ra byte shuffling to perform the ShiftBytes
+
+his transformation can be implemented using
+
+only byte shuffling instructions. If AESENCLAST is used to compute the S-box lookups, we need to take the
+
+ShiftRows transformation of the last round in AES into accoun
+
+. Note that any ShiftBytes rotation constants
+
+can be used for P and Q at no additional cost. The resulting instructions for the combined SubBytes and
+
+ShiftBytes transformation of Grgst1-256 is given below:
+
+pxor xmm8, xmm8
+pshufb xmm0, [03060a0d080205090c0f0104070b0e00
+aesenclast xmm0, xmm8
+pshufb xmm1, [04070c0£0a03060b0e090205000d0801
+aesenclast xmm1, xmm8
+pshufb xmm2, [05000e090c04070d080b0306010£0a02
+aesenclast xmm2, xmm8
+pshufb xmm3, [0601080b0e05000£0a0d040702090c03
+aesenclast xmm3, xmm8
+pshufb xmm4, [0702090c0£0601080b0e0500030a0d04
+aesenclast xmm4, xmm8
+pshufb xmm5, [00030b0e0907020a0d080601040c0f05
+aesenclast xmm5, xmm8
+pshufb xmm6, [01040d080b00030c0f0a0702050e0906
+aesenclast xmm6, xmm8
+pshufb xmm7, [02050£0a0d01040e090c000306080b07
+
+aesenclast xmm7, xmm8
+
+14
+6.2.4 MixBytes
+
+The MixBytes transformation is the most costly transformation in a byte sliced implementation of Grgstl.
+We need to combine the 8 rows of the Grgst1 state according to the MixBytes matrix multiplication. For
+processors that can execute more than one SIMD instruction in parallel, a MixBytes computation with the
+minimum number of instructions does not necessarily result in the fastest implementation. For example,
+modern desktop CPUs can compute three independent SIMD XORs in parallel. However, when the MixBytes
+computation contains many long chains of dependencies, the ALU parallelism cannot be fully utilised.
+
+To compute MixBytes using SIMD instructions, we use the formulas of Section This variant
+contains the minimal possible number of 16 multiplications and 48 XORs, and the computations are also
+mostly independent. To illustrate this approach in details, we consider the implementation of MixBytes using
+equations on Intel-64 architecture with SSE2 instructions. In order to closer reflect the constraints of the
+assembler code, we rewrite the last equation to contain only one type of operation in each pass. This yields
+the following sequential formulas:
+
+t; = a; @ aga,
+Yi = +6 O ti,
+Yi = Yi Otiza,
+
+a= tj Btiz3, (6)
+2, = 02-2;,
+
+Wi = % OD Yi+4,
+
+vu; = 02- wi,
+
+bi = Vie3 B Yip4-
+
+The main challenge is to minimise the number of register spills when performing the computation in 16
+xmm registers and reorder instructions in a way ensuring maximal instruction throughput. The algorithm
+shown in Table [4] achieves this with only four spills that are not on a critical path and therefore can be
+masked by other operations. We start with ao,...,a7 in registers xmmO,..., xmm7 and keep building bo,... , b7
+
+in xmm8,...,xmm15. The byte-wise multiplication by 02 of the content of xmm{i} is done by the sequence of
+five instructions
+
+pxor xmm{j}, xmm{j} ; clear register
+
+pempgtb xmm{j}, xmmfi} ; comparing with 0 sets Oxff in bytes that correspond to MSB bits set
+paddb xmm{i}, xmm{i} ; byte-wise shift left by one position
+
+pand xmm{j}, xmm{k} ; pick only those Oxib that correspond to MSB bit set in xmm{i}
+
+pxor xmm{i}, xmm{j} ; and XOR reduction polynomial to the result where necessary
+
+that requires an extra register xmm{j} as a scratch space and xmm{k} containing the constant reduction value
+of 1b1b...1b. To get those extra registers, we can temporarily spill xmm8, xmm9 since they hold the values ya,
+ys which will not be used in a critical path of the computation.
+
+When AVX instructions are available (starting from Intel Sandy Bridge) we can use three-operand in-
+structions to reduce the number of instructions required by the multiplication to four, but the advantage is
+smaller than one instruction since Sandy Bridge cores recognize XORing to clear register and do not issue
+jiops in that case anyway.
+
+6.3 Using Vperm
+
+Even if no AES-NI are available, we can still implement Grgst1 efficiently using SIMD instructions. We
+just need a different method to parallelize the S-box lookups in SubBytes. One such method has been
+proposed by Hamburg and uses vector permute (vperm) instructions to compute the inversion and affine
+transformation of the AES S-box.
+
+In the following, we describe a Grgst1 implementation using the vperm idea. The resulting implemen-
+tation needs at least SSSE3 instructions and thus, also runs on the NIST reference platform. The resulting
+speed is comparable with the T-table implementation.
+Table 4: Optimised computation of MixBytes on a Intel-64 machine with SSE2 instructions. Each row de-
+scribes eight operations for i = 0,...,7. Left columns show the content of two banks of registers with updated
+values shown in bold and the rightmost column describes the performed operation. MUL2(xmma,xmmb,xmmc)
+doubles the content of xmma using xmmb as scratch and assuming xmmc contains 1b..1b.
+
+xmmO ...xmm7 xmm8 ...xmm15 operation equation
+apa, ...a7 —
+aga, ...a7 ag ag...ay movdga xmm{i+8}, xmm{(i +2) mod 8}
+tot, ...t7 @z 03... 04 pxor xmm{i}, xmm{(i + 1) mod 8} t, = a; PB aj41
+pxor xmm{i+8}, xmm{(i+ 4) mod 8} Yi = Gite Oti
+tot, ...t7 yays..-Y3 pxor xmm{i+8}, xmm{(i +6) mod 8} Yi = Yi @ tite
+spill to, t1,t2 to memory in this computation:
+XoX1...X7 Ya Y5---Y3 pxor xmm{i}, xmm{(i+ 3) mod 8} a, =ti Otiss
+ya 1b..1b yg ...y3 | spill xmm8, xmm9 to memory, xmm9+¢ Ox1b...1b
+ZoZ1...Z7 — 1b..1b yg... yz | MUL2(xmm{i}, xmm8, xmm9) 2 = 02-2;
+WoW,...W7 | — 1b..1b yg ...y3 | pxor xmm{i}, xmm{(i+ 8)}, ys, ys from memory | w; = 2; © yi44
+Vov1...V7 — 1b..1b yg... yg; | MUL2(xmm{i}, xmm8, xmm9) vi, = 02- wi
+VOU, ...U7 ya Ys Yo---Y3 reload ys, ys back to xmm8, xmm9
+VoU1 ...U7 bo by... bz pxor xmm{i +8}, xmm{(i +3) mod 8} b; = Vie3 O Yit4
+The state is stored in row-ordering and hence, the input transformation of the message block can be per-
+formed as described in Section|6.1] In the following, the computation of SubBytes and MixBytes are somewhat
+
+merged. Therefore, we swap the order of AddRoundConstant and ShiftBytes for an easier description.
+
+6.3.1 AddRoundConstant
+
+The AddRoundConstant implementation can be implemented exactly using the same instructions as in the
+AES-NI implementation. However, since the vperm implementation uses a different basis, the constants need
+to be transformed to this basis as well. The resulting constants can be precomputed and stored in memory
+as well. For the specific constants, we refer to the actual vperm implementation of Grgst1.
+
+6.3.2 ShiftBytes
+
+ShiftBytes is computed using single byte shuffle instructions for each row of P and Q. For example, the used
+rotation constants for the PSHUFB instruction of Grgst1-256 are given in the following assembly code listing:
+
+pshufb xmm0, [0x080f0e0d0c0b0a090706050403020100
+pshufb xmm1, [0x0a09080£0e0d0c0b0007060504030201
+pshufb xmm2, [0x0c0b0a09080£0e0d0100070605040302
+pshufb xmm3, [0x0e0d0c0b0a09080f0201000706050403
+pshufb xmm4, [0x0f0e0d0c0b0a09080302010007060504
+pshufb xmm5, [0x09080£0e0d0c0b0a0403020100070605
+pshufb xmm6, [0x0b0a09080£0e0d0c0504030201000706
+pshufb xmm7, [0x0d0c0b0a09080f0e0605040302010007
+
+6.3.3 SubBytes
+
+In the vperm implementation, the inverse in GF (2°) of the AES S-box is computed using small log tables
+of the finite field GF(2*). To efficiently compute these log tables, the 128-bit PSHUFB instruction of SSSE3
+is used as a 4-to-8 bit lookup table. For more details, we refer to the original paper . The first vperm
+implementation has been published by Calik |4] which served as a reference for our optimized implementation.
+
+Using the vperm implementation, 16 AES S-boxes can be computed in parallel within less than 10 cycles.
+An additional advantage of this implementation is that we can multiply the resulting outputs by constants in
+
+16
+GF(28) almost without no additional cost. Hence, the vperm implementation of SubBytes actually returns
+the values S(a;), 02-S(x;) and 04-$(x;) for each of the 16 input bytes z;.
+
+6.3.4 MixBytes
+
+Since the multiplication by 02 and 04 of the input bytes to MixBytes are already computed in SubBytes, the
+
+formulas resulting in only 48 XORs of Section cannot be used. However, we can use the method of
+Section 5] which minimizes the number of XORs once the multiplications have already been performed.
+
+Note that this approach is still more efficient since the 16 multiplications by 02 are much more expensive if
+computed using 5 instructions each (see Sec ion (6.2.4) than the additional 18 XORs.
+
+7 Conclusions
+
+In this paper, we have shown the details of the currently best known Grgst1 implementations. Using AES-
+NI extensions and AVX instructions, we are able to implement Grgst1-256 with close to 10 cycles/byte.
+Furthermore, the design of Grgst1 also provides many possibilities for efficient implementation techniques.
+We have presented the most important methods and hope that they will serve as an inspiration for further
+optimizations. Especially the vperm implementation has some room for improvements, on x86 CPUs as well
+as on new platforms. For example, NEON byte permute instructions can be used to speed-up Grgst1 on
+new ARM platforms.
+
+References
+
+1] K. Aoki, G. Roland, Y. Sasaki, and M. Schlaffer. Byte Slicing Grgstl — Optimized Intel AES-NI and
+8-bit Implementations of the SHA-3 Finalist Grgstl. In J. Lopez and P. Samarati, editors, SECRYPT
+2011, Proceedings, pages 124-133. SciTePress, 2011.
+
+2] ARM Limited. NEON, March 2011. Available online: http: //www.arm.com/products/processors/
+technologies/neon. php
+
+3] D. J. Bernstein and T. Lange. eBASH: ECRYPT Benchmarking of All Submitted Hashes, January
+2011. Available online: |http://bench.cr.yp.to/ebash. html
+
+4] C. Calik. Multi-stream and Constant-time SHA-3 Implementations. NIST hash function mailing list,
+
+December 2010. Retrieved May 03, 2010, from http://www.metu.edu.tr/~ccalik/software.html#
+
+5] D. Canright. A Very Compact S-Box for AES. In J. R. Rao and B. Sunar, editors, CHES, volume 3659
+of LNCS, pages 441-455. Springer, 2005.
+
+6] J. Daemen and V. Rijmen. AES Proposal: Rijndael. NIST AES Algorithm Submission, September
+1999. Available online: http://csrc.nist .gov/archive/aes/rijndael/Rijndael-ammended. pdf
+
+7| I. Damgard. A Design Principle for Hash Functions. In G. Brassard, editor, Advances in Cryptology —
+
+CRYPTO ’89, Proceedings, volume 435 of Lecture Notes in Computer Science, pages 416-427. Springer,
+1990.
+
+8] P. Gauravaram, L. R. Knudsen, K. Matusiewicz, F. Mendel, C. Rechberger, M. Schlaffer, and S. S.
+Thomsen. Grgstl — a SHA-3 candidate. Submission to NIST (Round 3), 2011. Available:
+7 foww..groestl. info) (2011/11/25)
+
+9] S. Gueron and Intel Corp. Intel® Advanced Encryption Standard (AES) Instructions Set,
+
+2010. Retrieved December 21, 2010, from http://software.intel.com/en-us/articles/
+
+|intel-advanced- encryption-standard-aes-instructions-set/
+
+[10] M. Hamburg. Accelerating AES with Vector Permute Instructions. In C. Clavier and K. Gaj, editors,
+CHES, volume 5747 of LNCS, pages 18-32. Springer, 2009.
+
+17
+11
+
+12
+
+13
+
+14
+
+15
+
+16
+
+17
+
+18
+
+19
+
+20
+
+21
+
+Intel Corporation. Using MMX Instructions to Transpose a Matrix, 1996. Available online:
+//download. intel.com/ids/mmx/MMX_App_Transpose_Matrix. pdt|
+
+Intel Corporation. Intel Advanced Encryption Standard Instructions (AES-NI),
+
+March ~— 2011. Available online: http://software.intel.com/en-us/articles/
+intel-advanced-encryption-standard-instructions-aes-ni/
+
+Intel Corporation. Pentium Processors with MMX Technology, March 2011. Available online:
+//edc.intel.com/Platforms/Previous/Processors/Pent ium—MMX/
+
+E. Kasper and P. Schwabe. Faster and Timing-Attack Resistant AES-GCM. In C. Clavier and K. Gaj,
+editors, CHES, volume 5747 of LNCS, pages 1-17. Springer, 2009.
+
+R. C. Merkle. One Way Hash Functions and DES. In G. Brassard, editor, Advances in Cryptology —
+CRYPTO ’89, Proceedings, volume 435 of Lecture Notes in Computer Science, pages 428-446. Springer,
+1990.
+
+National Institute of Standards and Technology. FIPS PUB 197: Advanced Encryption Standard.
+Federal Information Processing Standards Publication 197, U.S. Department of Commerce, November
+
+2001. Available online: |http://www.it1.nist.gov/fipspubs
+
+National Institute of Standards and Technology. FIPS PUB 197, Advanced Encryption Standard (AES).
+Federal Information Processing Standards Publication 197, U.S. Department of Commerce, November
+2001.
+
+National Institute of Standards and Technology. Cryptographic Hash Project, 2007. Available online
+
+at http://www.nist.gov/hash-competition
+T. Pornin.  sphlib 3.0. Available: (http://www.saphir2.com/sphlib/files/sphlib-3.0.zip
+
+(2011/11/25).
+K. Scheibelhofer. A Bit-Slice Implementation of the Whirlpool Hash Function. In M. Abe, editor,
+CT-RSA, volume 4377 of LNCS, pages 385-401. Springer, 2007.
+
+S. Tillich. Personal communication, 2008.
+
+Another MixBytes Computation Variant
+
+18
+Table 5: The MixBytes computation separated for factors 01, 02 and 04. a; denote the input bytes and
+b; = bi,1 @bi,2 @bi,4 are the output bytes. A “e” marks those inputs (a;, 02-a;, 04-a;) which are added to get
+the intermediate results b;,;. Superscripts denote the order in which temporary values are computed. The
+results for factor 02 are computed by multiplying the results of factor 01 by 02 where b; 2 = 02 - bi+3 moa 8,1:
+
+Ol-ao | 01-a, | 01-ag | 01-agz | O1-ay4 | O1-as5 | 01-ag | 01- a7
+
+boa - - 0 - Od 0 oe .
+bia et = = eo = . ot .
+bo1 oe °° _ _ 2 _ oe a
+b3,1 | 0? 3 ey = = oa - 3
+baa e ° ° eo — = ot =
+b5,1 - 8 . . . _ -
+b61 eo - 0 ot . 0 - -
+b71 - . = e ° . eo -
+02-ap | 02- ay | 02-azg | 02-az3 | 02-a4 | 02-a5 | 02-ag | 02-a7 =
+bo,2 . . . - - . - ° 02-631
+b12 . . . . - - ° - 02- bai
+b2,2 - . . . . - - ° 02-b5.4
+63,2 e = . e . ° - - 02 - bei
+ba,2 = . = e . . ° - 02-b71
+bs,2 = = . = . . e . 02 - boi
+6,2 . - - . - . . ° 02- bia
+b7,2 . . - - . - ° ° 02 - b21
+
+bal — = ey oe = ey et
+bia |e = = = oe 2 = et
+boa | 02 Ag = = = 2 fo —
+i341 — fg a = = = fa of
+baa Od - of oe = _ ef
+bsa | 0 25 = 2 FG = = =
+bal — 25 a = FG Au = =
+bral — = a ey - Au ey =
+
+19

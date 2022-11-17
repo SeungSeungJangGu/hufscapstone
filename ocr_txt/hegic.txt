@@ -1,0 +1,1162 @@
+Hegic: On-chain Options Trading Protocol on Ethereum
+Powered by Hedge Contracts and Liquidity Pools
+
+Molly Wintermute
+molly.wintermute@protonmail.com
+
+20/02/2020
+
+Abstract
+
+Options are one of the most popular derivatives in the traditional financial markets [1].
+
+Global Options Volume
+Based on the number of contracts traded and/or cleared at 80 exchanges worldwide.
+
+Jan-Dec 2019 Vol Jan-Dec 2018 Vol Vol % Change 2019 December OI 2018 December OI OI % Change
+
+Options 15 234 055 390 13 132 378918 16,0% 652 117 410 599 662 516 8,7%
+
+Source: The Futures Industry Association. https://fia.org/file/9841/download?token=y22pyjll
+
+A call option contract gives the buyer (holder) the right to buy the underlying asset at a specified
+price for a certain, fixed period. A put option contract gives the buyer (holder) the right to sell
+the underlying asset at a specified price for a certain, fixed period. The trader who sells an option
+contract (call or cut) to earn premium is a writer.
+
+This paper describes the Hegic protocol and introduces the concept of a hedge contract: a system
+of Ethereum contracts that accumulate and hold liquidity in a non-custodial way, write (sell) hedge
+contracts to the holders, accumulate and distribute premiums between the liquidity providers
+(writers) and conduct on-chain settlement of the contracts. In the traditional financial markets,
+The Options Clearing Corporation (OCC) [2], the world's largest equity derivatives clearing
+organization, plays an important role in the options markets. In Hegic protocol, there is no need for
+a centralized clearing organization. Hedge contracts are created, maintained and settled
+in a decentralized way. Exercising of hedge contracts is guaranteed by the liquidity allocated and
+locked on them, timestamps and Ethereum Virtual Machine (EVM) that executes the code.
+
+Holders can potentially benefit from using hedge contracts for protecting their assets’ value from
+the downside during a certain period. A hedge contract is similar to insurance in a way that it
+protects the owner from the potential price downside of an asset. There is no risk distribution in
+the options trading on the traditional financial markets; this is why options sellers’ (writers’) losses
+are theoretically unlimited [3]. Writers can potentially benefit from the fact that in hedge contracts
+the risk is transferred from one particular person to the whole group of liquidity providers. Besides,
+the returns on selling (writing) hedge contracts can potentially beat the on-chain lending returns
+because the premiums paid by holders should be higher to cover the risk of losses for writers. Both
+buyers (holders) and sellers (writers) of hedge contracts benefit from the transparency of contract
+pricing and on-chain settlement. Therefore, hedge contracts on Hegic can be considered as
+a non-custodial, trustless and censorship-resistant alternative to options contracts.
+
+1
+
+L. TMtroduction ....eescsssssssssesssseessesssssnssssesesseesssssssuessseessessssssssusssseessessssssssussseseesessesssssuaseseeeeesesssssussueseeeessessessassusseceeesensenss 3
+2. HOW He gic WOFKS...cecsssssccsssssstssssssesessssssessssssessssssessssusessssssessssssesssssusesssssusesssssusesssssusessssuusessssuueessssuueaeess 5
+3. Hedge Contracts Terms and ParameterS...ssucssssussssssuesssssssessssssessssssesssssesessssssessssseesssssesessssueeses 6
+4. Opening (Buying) a Put Hedge Contract...
+
+5. Writing (Selling) a Put Hedge Contract .......sssssssssssssssssssssssseesesssssssssssessessessssssssusseseesessssssssusseesessssssssuese 8
+6. The Pricing Model for Put Hedge Contract ...ccccssssssssssssssssesesssssssssssessessessssssssusssseesessssssssessseeseesssssssueee 9
+7. Price Comparison: Hedge Contracts on Hegic vs. Options on Deribit ui ssesseneseessseesssssee 12
+8. Liquidity Pools
+
+9. HEGIC Token...
+
+10. CONCIUSION veesccssssessssssseessssseseesssssssunsssesssessesssssusssssessessesssssussseseesessosssssussusseesessesssssussussessessesssssnssunseceeesessessnssuseeseeneesenes 25
+11. References vccscsssssssssesssesssssessssssessssssssssesessesssssssssesssssessessesscssessessesssssesssssssscssessessesesencsecsneeeceeeeeee 26
+1. Introduction
+
+Hegic is a protocol for trustless creating, maintaining and settling of hedge contracts.
+Hedge contract is an options*-like on-chain contract that gives the holder (buyer) a right
+to buy or to sell an asset at a certain price (strike) as well as imposes the obligation
+on the writer (seller) to buy or to sell an asset during a certain period. It can be useful for the market
+participants who want to protect their assets from the price downside and for the liquidity
+providers who might find the returns on writing hedge contracts attractive enough to allocate some
+of their capital on the liquidity pool contract. On the traditional (CBOE, CME, etc.) or crypto-assets
+(Deribit, FTX, etc.) options exchanges holders and writers are individual agents (retail or
+institutional). It means that while trading options, their capital is exposed to independent risks and
+returns, and their trading results have nothing do to with the other market participants’ profits or
+losses. On the sellers (writers) side, Hegic liquidity pool contracts accumulate liquidity from many
+market participants simultaneously. This approach reduces the risks of losing capital (potential
+downside) while providing liquidity providers with the returns.
+
+Example: a writer sells an option contract and a hedge contract to compare the risks and returns
+between these two instruments. They sell one put option contract on the options trading platform
+and one put hedge contract on Hegic. The strike (execution) price is the same in both cases: $200. In
+other words, the writer now has an obligation to buy an asset for $200 at any given moment until the
+expiration date of an option contract and a hedge contract. At this stage, the goal is to compare the
+downside of these two instruments, not the returns. That is why in this example the premium for
+writing both an option contract and a hedge contract is zero.
+
+After writing a put option contract and a put hedge contract, the price of a hypothetical asset
+dropped from $200 to $150 before the expiration date. Because the writer has an obligation to buy
+the asset for $200 and the current price is $150, they will suffer losses. However, in the case of
+selling a hedge contract, the writer was one of the twenty independent liquidity providers and the
+risks were distributed among all of them. The hypothetical results can now be compared:
+
+Writing (Selling) a Put Option Contract vs. Writing (Selling) a Put Hedge Contract
+
+Option Hedge Contract
+Writer Individual Independent liquidity providers
+Number of agents 1 20
+Action Selling a put option contract Selling a put hedge contract
+with a strike price: $200 with a strike price: $200
+Current Price $150 $150
+Losses -$50 -$2.5 per liquidity provider
+Table 1: Comparison of writing a put option contract with writing a put hedge contract.
+
+*Options are financial instruments that are derivatives based on the value of underlying securities such as
+stocks. An options contract offers the buyer the opportunity to buy or sell—depending on the type of contract
+they hold—the underlying asset. Unlike futures, the holder is not required to buy or sell the asset if they
+choose not to. Source: https://www.investopedia.com/terms/o/option.asp
+
+3
+
+Three more parameters can be added to the example.
+
+Expiration date: the day on which an option contract or a hedge contract becomes void. Hegic uses
+timestamps for setting the period for a hedge contract.
+
+Rate: predefined cost of opening a hedge contract that influences the premium (the price of a hedge
+contract). More information on the pricing can be found in the Pricing Model section of this paper.
+
+Premium: the price of an option contract, which the buyer of the option pays to the option writer
+for the rights conveyed by the option contract. On Hegic, the function of the premium is the same:
+a financial reward for the hedge contract writers (sellers) for taking the risks.
+
+The hypothetical results of a situation in which the price of an asset goes in a direction that leads to
+losses for the writer were compared above. Now the potential returns for an option writer and
+a hedge contract writer with the new parameters included can be compared. The example below is
+similar to the previous one: a writer sells both a put option contract and a put hedge contract
+to compare the risks and returns. They sell one put option contract on the options trading platform
+and one put hedge contract on Hegic. The strike price is the same in both cases: $200. However,
+in this example, the price of an asset rises to $250. The writer will not suffer losses and will earn
+the premium that was paid by the holder of an option contract and a hedge contract.
+
+Writing (Selling) a Put Option Contract vs. Writing (Selling) a Put Hedge Contract
+
+Option Hedge Contract
+Writer Individual Independent liquidity providers
+Number of agents 1 20
+Action Selling a put option contract Selling a put hedge contract
+with a strike price: $200 with a strike price: $200
+Current Price $250 $250
+Expiration Date 1 week 1 week
+Rate 2% 2%
+Premium $4 $4
+Net Premium $4 $0.2 per liquidity provider
+Table 2: Comparison of writing a put option contract with writing a put hedge contract.
+
+In the case of Hegic, the premium is distributed between all the liquidity providers. This leads to
+a situation in which their net premium is lower if to compare it to an individual option writer’s
+premium. An important thing to mention is that in contrast to an individual options trader, liquidity
+providers’ funds can be allocated on many hedge contracts simultaneously. It diversifies
+the liquidity allocation and makes capital work in an efficient way. The assumption is that in
+the long-run, liquidity providers’ returns could beat the returns of a solo options writer.
+
+2. How Hegic Works
+
+Writers
+
+Liquidity Liquidity Liquidity
+Provider Provider Provider
+
+DAI | | writeDAI
+
+Pool size
+
+Liquidity pool
+
+Liquidity is locked for a holder
+for a certain period (end timestamp)
+
+f | 4
+
+HEGIC
+
+Hedge contract Tokenholders
+
+If the strike price < market price during a certain period,
+then the holder can release the liquidity from the hedge contract:
+send their asset and receive stablecoins (> asset's market value)
+
+Pr off
+
+Premium Settlement fee
+
+a
+
+Parameters
+
+Holder's address Amount Price Strike Period Rate End Timestamp
+
+Holders
+
+Diagram 1: The initial implementation of the Hegic protocol.
+3. Hedge Contracts Terms and Parameters
+
+Holder: the buyer of a hedge contract.
+
+Writer: the seller (or several sellers, in case of Hegic) of a hedge contract.
+
+Holder’s Address: Ethereum-address that the buyer uses for activating a hedge contract.
+Writer’s (s) Address (es): Ethereum-address (es) that is (are) used for writing a hedge contract.
+
+Put Hedge Contract: an on-chain contract that gives the buyer (holder) the right to sell the
+underlying asset at a specified price for a certain, fixed period, as well as imposes the obligation
+on the writer (seller) to buy an asset during this period.
+
+Call Hedge Contract: an on-chain contract that gives the buyer (holder) the right to buy the
+underlying asset at a specified price for a certain, fixed period, as well as imposes the obligation
+on the writer (seller) to sell an asset during this period.
+
+Amount: the size of a hedge contract (for example, 1 ETH).
+
+Price: current market price of an asset (for example, 1 ETH = $200).
+
+Strike: the exercise price of a hedge contract (for example, $200).
+
+Period: the time during which the hedge contract is valid.
+
+Rate: the predefined percent for opening a hedge contract that influences the premium.
+Premium: the cost of holding the hedge contract for a certain period.
+
+Settlement Fee: the cost of executing a hedge contract that is paid in advance by the holder.
+Break-even Price: the break-even price of a hedge contract.
+
+Pool Size: the total amount of funds available for holding and executing hedge contracts.
+End Timestamp: end block of an active hedge contract.
+
+Release: the function that enables the swap of an asset to the liquidity on a hedge contract.
+Intrinsic Value: the difference between the underlying asset’s price and the strike price.
+
+Time Value: the premium (the cost of a hedge contract) minus its intrinsic value.
+4. Opening (Buying) a Put Hedge Contract
+
+In this section, a process of opening a hedge contract is described from a holder’s (buyer’s)
+perspective. ETH used as an asset that the holder wishes to hold a hedge contract for. The holder
+intends to protect their ETH from the price downside for the next two weeks. To have such
+protection, they could buy a put hedge contract on Hegic. Buying a put hedge contract provides
+a holder with a right to swap ETH to DAI [7] stablecoin at a certain price (strike) at any given
+moment until the expiration. If the price of ETH falls, the holder will be able to swap ETH to DAI ata
+strike price (higher) even though the market price of ETH can be lower.
+
+Note that only a put hedge contract’s logic is described in this section. Initial implementations of
+Hegic will allow the opening of put hedge contracts only. Call hedge contracts will be added as well.
+
+To open a hedge contract the holder chooses the desired parameters. In this example, the amount
+of ETH that they want to buy a hedge contract for is 1 ETH. The desired hedge period is 2 weeks.
+The current market price of ETH is $200. Chainlink [6] oracles are used to track ETH/USD pair and
+use it as a price feed data for evaluating the price of ETH in real-time. Note that this is the only part
+of the Hegic system that uses oracles to work with the external price feeds. Maintenance and
+execution of hedge contracts do not depend on the external price feeds. Such an approach is used for
+guaranteeing the security of active hedge contracts and for preventing attacks and exploits
+of oracles from price attacks. Thus, active hedge contracts are safe from the oracles’ manipulations.
+
+For a hedge contract of 1 ETH with a period of 2 weeks, the holder chooses the $200 strike price
+(an at-the-money hedge contract; the market price of ETH is $200). The price of such a hedge
+contract is $10. $8 is a 4% rate of the 2-weeks ETH put hedge contract and $2 is a1% settlement fee
+of the at-the-money put hedge contract. To activate it, the holder should pay $10 for the hedge
+contract. The payment is considered as a processed, once miners confirm the transaction.
+
+The holder sends the equivalent of $10 (the price of a hedge contract with the parameters chosen by
+the holder) in ETH, as the possible payment method in the initial implementations of Hegic.
+
+In the example, the holder chooses to pay $10 in ETH and sends 0.05 ETH to activate a hedge
+contract. After the payment is received, the contract checks the amount. If the price was paid right
+($10), the hedge contract will be activated. If the holder sent a lower amount (<$10),
+the transaction will be rejected by the hedge contract and the amount will be returned to the
+holder’s ETH-address. If the amount that was sent is more than it should be (>$10), then the hedge
+contract will be activated and the odd money will be returned to the holder’s ETH-address.
+
+During the hedge contract activation, an “end timestamp” will be created. In the example, the hedge
+contract has a period of 2 weeks. It means that the “end timestamp” will be created for 2 weeks
+after receiving the payment. Now the holder has a right to swap ETH to 200 DAI before the hedge
+contract expiration. To do that they need to use the “release” function of the hedge contract: send
+ETH to the hedge contract and automatically receive 200 DAI. It can be done at any given moment
+during the hedge period. A hedge contract cannot be executed partly. To execute it the holder needs
+to send 1 ETH and they will receive 200 DAI. Note that the ETH-address for executing a hedge
+contract (swapping ETH to DAI) should be the same that was used for paying to activate it.
+5. Writing (Selling) a Put Hedge Contract
+
+In this section, a process of writing a hedge contract is described from a writer’s (seller’s)
+perspective. Put hedge contracts writers (sellers) are liquidity providers who allocate DAI,
+USDC [8], USDT [9] or other stablecoins on the liquidity pool contracts.
+
+Liquidity pools on Hegic are non-custodial. No one has access to writers’ funds, but the holders for
+whom they can be locked by the hedge contract for a certain period. The incentive for the writers to
+provide liquidity is earning premiums that the holders (buyers) are paying to protect their crypto-
+assets from the price downside. In the initial implementations of Hegic, the rate for holding a hedge
+contract varies from 0.5% up to 2.0% per week. Theoretical yearly returns for hedge contracts
+writers (sellers) are in between from +27% up to +108% APR on DAI, USDC or USDT. Rates depend
+on the hedge contracts period and strike price that each holder chooses individually.
+
+Example: after providing DAI stablecoins to the liquidity pool contract, the writer receives writeDAI
+tokens (ERC20) that are automatically minted and give the writer a share in the liquidity pool
+premiums that are distributed between all the liquidity providers. When the writer wishes
+to receive their DAI back, they can send writeDAI tokens to the liquidity pool contract and use the
+“purn” function. DAI will be automatically sent to the writer’s ETH-address.
+
+The example from the previous section can be used to describe the hedge contract writing process.
+For a put hedge contract of 1 ETH with a period of 2 weeks, the holder chooses the $200 strike price
+(at-the-money; market price of ETH is $200). The price of such a put hedge contract is $10. In this
+example, the holder chooses to pay $10 in ETH and sends 0.05 ETH to activate the hedge contract.
+0.05 ETH (premium) will be automatically swapped to DAI stablecoin using the Uniswap [10]
+decentralized exchange. The returns for writers are denominated in DAI. The premium in DAI will be
+added to the liquidity pool after the successful swap. Liquidity providers receive the premium in
+advance so that they can withdraw it at any given moment. They should not wait for a hedge
+contract to expire to be able to withdraw the premium in DAI. After the premium is received, the
+liquidity in DAI will be locked for a period of a hedge contract that the holder has paid for. Some
+portion of the liquidity should always be unlocked to let the liquidity providers claim their DAI that
+they have provided to the liquidity pool before. Initial implementations of Hegic will allow 80%
+of the total amount of DAI in the pool to be locked in active hedge contracts. The other 20% are
+always unlocked and can be used by those who would like to withdraw the liquidity from the pool.
+
+If the amount of unlocked DAI in the liquidity pool is not enough for the writer to swap their
+writeDAI to DAI, they will have to wait for the active hedge contracts’ expiration. If the writer
+wishes to withdraw the liquidity from the pool, but the amount of unlocked DAI is not enough, they
+send a request to swap their writeDAI to DAI as soon as the liquidity will be unlocked. Their
+requests are aggregated in queues. Premiums in DAI will be distributed between the liquidity
+providers in the proportions of DAI that they have allocated in the liquidity pool.
+
+If four independent liquidity providers have provided 200000 DAI to the pool:
+
+Provider 1: 100000 DAI; Provider 2: 50000 DAI; Provider 3: 25000 DAI; Provider 4: 25000 DAI; then
+all the premiums will be distributed in such a way: Provider 1: 50%; Provider 2: 25%; Provider 3:
+12.5%; Provider 4: 12.5%. The same distribution will be for the losses that may occur
+if the hedge contracts holders swap their ETH to DAI after the price drop. ETH that the holders send
+to the liquidity pool while executing a hedge contract will be automatically swapped to DAI using the
+Uniswap decentralized exchange. The potential losses for writers are also denominated in DAI.
+
+8
+6. The Pricing Model for Put Hedge Contracts
+
+In this section, the pricing model for put hedge contracts on Hegic will be described. The holder
+can choose a hedge contract with one of the strike prices that are predefined on Hegic. The strike is
+the exercise price of a hedge contract. If the holder (buyer) chooses a hedge contract with a $200
+strike price, then during the hedge period they will be able to sell the asset for that price, no matter
+what is the market price of an asset. The strike prices on Hegic are always differing in a range
+of 5% (multiplier) from the current (market) price of an asset:
+
+Put Hedge Contract Strike Price
+Out-of-the-money Market Price * Multiplier 0.9 $180
+Out-of-the-money Market Price * Multiplier 0.95 $190
+At-the-money Market Price $200
+In-the-money Market Price * Multiplier 1.05 $210
+In-the-money Market Price * Multiplier 1.1 $220
+Table 3: Strike prices and multipliers of put hedge contracts on Hegic.
+
+Similar to a put option contract logic, a put hedge contract is at-the-money if the strike price of the
+contract is equal to the market price of the underlying asset; in-the-money if the asset’s value is
+above the strike price; and out-of-the-money if the strike price is less than the market price of the
+underlying asset. Each put hedge contract has a rate that depends on the strike and period:
+
+Put Hedge Contract Hedge Contract Periods and Rates
+Strike Price 1 week 2 weeks 3 weeks 1 month 2 months
+Out-of-the-money $180 0.5% 1% 1.5% 2% 4%
+Out-of-the-money $190 1% 2% 3% 4% 8%
+At-the-money $200 2% 4% 6% 8% 16%
+In-the-money $210 1% 2% 3% 4% 8%
+In-the-money $220 0.5% 1% 1.5% 2% 4%
+
+Table 4: Rates of put hedge contracts with different strike prices and periods on Hegic.
+
+For the sake of simplicity, the pricing model for hedge contracts differs from the traditional
+financial markets options pricing models such as a Black-Sholes mathematical model [4] for the
+dynamics of a financial market containing derivative investment instruments. The rate on Hegic is
+a predefined percent of the asset’s value that depends on the period of a hedge contract. The cost of
+holding a put hedge contract for a certain period is called the premium.
+
+Put Hedge Contract Hedge Contract Periods and Premiums
+Strike Price 1 week 2 weeks 3 weeks 4 weeks 8 weeks
+
+Out-of-the-money $180 $0.9 $1.8 $2.7 $3.6 $7.2
+Out-of-the-money $190 $1.9 $3.8 $5.7 $7.6 $15.2
+At-the-money $200 $4 $8 $12 $16 $32
+In-the-money $210 $12.1 $14.2 $16.3 $18.4 $26.8
+In-the-money $220 $21.1 $22.2 $23.3 $24.4 $28.8
+
+Table 5: Calculated premiums for hedge contracts with different strike prices and periods on Hegic.
+
+9
+
+The formula for calculating the rate of an at-the-money (ATM) put hedge contract is:
+S*R=ATMR,
+
+where S - Strike Price; R - Predefined Rate (%); ATMR - ATM Rate (put contract).
+
+For example, the rate for holding a put hedge contract with a strike price of $200 and a period of
+2 weeks is 4%. Using the formula above, we can calculate the rate:
+
+$200 * 4% = $8
+
+The formula for calculating the rate of an in-the-money (ITM) put hedge contract is:
+S*R+(S—M) =ITMR,
+
+where S - Strike Price; R - Predefined Rate (%); M - Market Price; ITMR - ITM Rate (put contract).
+
+For example, the rate for holding a put hedge contract with a strike price of $220 (in-the-money)
+and a period of 1 month is 2%. It is lower than in the previous case. However, the rate of an in-the-
+money hedge contract includes the difference between the strike and market prices. Using the
+formula above, we can calculate the value of the premium for an ITM hedge contract:
+
+$220 * 2% + ($220 - $200) = $24.4
+
+The formula for calculating the rate of an out-of-the-money (OTM) put hedge contract is:
+S*R = OTMR,
+
+where S - Strike Price; R - Predefined Rate (%); OTMR - OTM Rate (put contract).
+
+The value of a put hedge contract consists of both intrinsic value and time value. The greater the
+amount of time until a put hedge contract expires, the more time value it has. As you have might
+notice, out-of-the-money and at-the-money rates formulas are the same. However, the in-the-
+money rate is calculated differently, because OTM and ATM hedge contracts have only a time-value,
+but ITM hedge contracts also have an intrinsic value. The holder could exercise its right under
+the put hedge contract and sell the underlying asset for more than its current value. It means the
+ITM put hedge contract has intrinsic value. There is also a settlement fee that is should be paid by
+the holders to activate a hedge contract. The settlement fee can be calculated using these formulas:
+
+Ax* P «0.5% = OTMSF,
+where A - Amount; P - Price; Predefined Rate (0.5%); OTMSF - OTM Settlement Fee (put contract).
+A*P*1%= ATMSF,
+where A - Amount; P - Price; Predefined Rate (1%); ATMSF - ATM Settlement Fee (put contract).
+A*P*0.5% = ITMSF,
+
+where A - Amount; P - Price; Predefined Rate (0.5%); ITMSF - ITM Settlement Fee (put contract).
+
+10
+For example, if the amount of an asset that the holder wishes to buy an ATM hedge contract for is 1
+and the market price is $200, then the settlement fee will be $2 (1 * $200 * 1% = $2). For opening
+a hedge contract, the holder should pay the premium (rate plus fee) forward. The formulas are:
+
+OTMR + OTMSF = OTMP,
+where OTMR - OTM Rate; OTMSF — OTM Settlement Fee; OTMP - OTM Premium.
+ATMR + ATMSF = ATMP,
+where ATMR - ATM Rate; ATMSF — ATM Settlement Fee; ATMP - ATM Premium.
+ITMR + ITMSF = ITMP,
+
+where ITMR - ITM Rate; ITMSF — ITM Settlement Fee; ITMP - ITM Premium.
+
+11
+7. Price Comparison: Hedge Contracts on Hegic vs. Options on Deribit
+
+In this section, the prices of ETH put options contracts that are traded on the crypto exchange
+Deribit [5] will be compared with the prices of ETH put hedge contracts on Hegic. This analysis
+makes sense because the functionality of these two instruments is relatively similar, as well as the
+value for the holders (buyers) from using them. Hedge contracts on Hegic can be considered as
+a non-custodial, trustless and censorship-resistant alternative to options contracts.
+
+Options contract prices are volatile. To make this comparison as representative as possible, four
+different contracts with periods (expirations) of one, two, four and eight weeks will be compared.
+The strike prices of the two compared contracts (a put option contract and a put hedge contract)
+should the same, or at least as close as possible. Reference options contracts used for the price
+comparison are ETH options contracts on Deribit options exchange.
+
+The first of them is a put option contract on ETH with an expiration date of February 7, 2020. This
+price analysis was conducted on January 31, 2020, with the expiration of the contract at the time
+of comparison: 6 days 20 hours 52 minutes. At the snapshot minute of all the reference contract
+prices, the market price of ETH was $180 ($180.05 - $180.30).
+
+ETH-7FEB20 Put Option Contract Prices (Deribit):
+
+Put Option Contract on Deribit ETH-7FEB20 Contract Period (Expiration) and Prices
+ETH Price: $180 Strike Price 1 week
+
+Bid Ask Average
+
+Out-of-the-money $160 $0.90 $1.27 $1.08
+Out-of-the-money $170 $1.99 $2.53 $2.26
+At-the-money $180 $5.42 $6.51 $5.96
+In-the-money $190 $11.57 $12.84 $12.20
+In-the-money $200 $19.89 $21.16 $20.52
+
+Table 6: Put Option Contract (ETH-7FEB20) Prices on Deribit as of January 31, 2020.
+
+1-week ETH Put Hedge Contract Prices (Hegic):
+Put Hedge Contract on Hegic Hedge Contract Period (Expiration) and Prices
+
+ETH Price: $180 Strike Price 1 week
+Out-of-the-money $162 $0.81
+Out-of-the-money $171 $1.71
+At-the-money $180 $3.60
+In-the-money $189 $10.89
+In-the-money $198 $18.99
+
+Table 7: 1-week ETH Put Hedge Contract Prices on Hegic as of January 31, 2020.
+
+12
+
+It is now possible to compare the option contract prices on Deribit with the put hedge contracts
+prices on Hegic. In this example, the market price of ETH is $180. Note that the strikes on Hegic can
+differ (be higher or lower) from the strikes on Deribit because on Hegic they differ in a range of 5%
+(multiplier) from the current (market) price of an asset. The strike prices difference on Deribit
+for ETH-7FEB20 contract is fixed: $10.
+
+At-the-money (ATM) is a put option contract or a put hedge contract with a strike price of $180
+(equal to the market price).
+
+Put option contract’s (ETH7FEB-2020) strike price is $180 (at-the-money).
+The ATM option contract for 1 ETH with 1-week expiration has a price of $5.96 on Deribit
+ETH put hedge contract’s strike price is $180 (at-the-money).
+
+The ATM hedge contract for 1 ETH with 1-week expiration has a price of $3.60 on Hegic.
+
+In-the-money is a put option contract or a put hedge contract with a strike price greater than $180
+(the asset’s value is above the strike price).
+
+Put option contract’s (ETH7FEB-2020) strike price is $190 (in-the-money).
+
+The ITM option contract for 1 ETH with 1-week expiration has a price of $12.20 on Deribit.
+ETH put hedge contract’s strike price is $189 (in-the-money).
+
+The ITM hedge contract for 1 ETH with 1-week expiration has a price of $10.89 on Hegic.
+Put option contract’s (ETH7FEB-2020) strike price is $200 (in-the-money).
+
+The ITM option contract for 1 ETH with 1-week expiration has a price of $20.52 on Deribit.
+ETH put hedge contract’s strike price is $198 (in-the-money).
+
+The ITM hedge contract for 1 ETH with 1-week expiration has a price of $18.99 on Hegic.
+
+Out-of-the-money is a put option contract or a put hedge contract with a strike price lower than
+$180 (the asset’s value is below the strike price).
+
+Put options contract’s (ETH7FEB-2020) strike price is $170 (out-of-the-money).
+
+The OTM option contract for 1 ETH with 1-week expiration has a price of $2.26 on Deribit
+ETH put hedge contract’s strike price is $171 (out-of-the-money).
+
+The OTM hedge contract for 1 ETH with 1-week expiration has a price of $1.71 on Hegic.
+Put options contract’s (ETH7FEB-2020) strike price is $160 (out-of-the-money).
+
+The OTM option contract for 1 ETH with 1-week expiration has a price of $1.08 on Deribit
+ETH put hedge contract’s strike price is $162 (out-of-the-money).
+
+The OTM hedge contract for 1 ETH with 1-week expiration has a price of $0.81 on Hegic.
+
+13
+The second reference contract is a put option contract on ETH with an expiration date of February
+14, 2020. This price analysis was conducted on January 31, 2020, with the expiration of the contract
+at the time of comparison: 13 days 20 hours 52 minutes.
+
+ETH-14FEB20 Put Option Contract Prices (Deribit):
+
+Put Option Contract on Deribit Contract Period (Expiration) and Prices
+ETH Price: $180 Strike Price 2 weeks
+
+Bid Ask Average
+Out-of-the-money $160 $2.36 $2.90 $2.63
+Out-of-the-money $170 $4.54 $5.26 $4.90
+At-the-money $180 $8.35 $9.44 $8.89
+In-the-money $190 $14.15 $15.42 $14.78
+In-the-money $200 $21.60 $22.87 $22.23
+
+Table 8: Put Option Contract (ETH-14FEB20) Prices on Deribit as of January 31, 2020.
+
+2-weeks ETH Put Hedge Contract Prices (Hegic):
+
+Put Hedge Contract on Hegic Hedge Contract Period (Expiration) and Prices
+ETH Price: $180 Strike Price 2 weeks
+Out-of-the-money $162 $1.62
+Out-of-the-money $171 $3.42
+At-the-money $180 $7.20
+In-the-money $189 $12.78
+In-the-money $198 $19.98
+
+Table 9: 2-weeks ETH Put Hedge Contract Prices on Hegic as of January 31, 2020.
+
+Put options contract’s (ETH14FEB-2020) strike price is $180 (at-the-money).
+
+The ATM option contract for 1 ETH with 2-weeks expiration has a price of $8.89 on Deribit.
+ETH put hedge contract’s strike price is $180 (at-the-money).
+
+The ATM hedge contract for 1 ETH with 2-weeks expiration has a price of $7.20 on Hegic.
+Put options contract’s (ETH14FEB-2020) strike price is $190 (in-the-money).
+
+The ITM option contract for 1 ETH with 2-weeks expiration has a price of $14.78 on Deribit.
+
+ETH put hedge contract’s strike price is $189 (in-the-money).
+
+The ITM hedge contract for 1 ETH with 2-weeks expiration has a price of $12.78 on Hegic.
+
+14
+
+Put options contract’s (ETH14FEB-2020) strike price is $200 (in-the-money).
+The ITM option contract for 1 ETH with 2-weeks expiration has a price of $22.23 on Deribit.
+ETH put hedge contract’s strike price is $198 (in-the-money).
+
+The ITM hedge contract for 1 ETH with 2-weeks expiration has a price of $19.98 on Hegic.
+
+Put options contract’s (ETH14FEB-2020) strike price is $170 (out-of-the-money).
+The OTM option contract for 1 ETH with 2-weeks expiration has a price of $4.90 on Deribit
+ETH put hedge contract’s strike price is $171 (out-of-the-money).
+
+The ITM hedge contract for 1 ETH with 2-weeks expiration has a price of $3.42 on Hegic.
+
+Put options contract’s (ETH14FEB-2020) strike price is $160 (out-of-the-money).
+The OTM option contract for 1 ETH with 1-week expiration has a price of $2.58 on Deribit
+ETH put hedge contract’s strike price is $162 (out-of-the-money).
+
+The ITM hedge contract for 1 ETH with 1-week expiration has a price of $1.62 on Hegic.
+
+The third reference contract is a put option contract on ETH with an expiration date of February 28,
+2020. This price analysis was conducted on January 31, 2020, with the expiration of the contract at
+the time of comparison: 27 days 20 hours 51 minutes.
+
+ETH-28FEB20 Put Option Contract Prices (Deribit):
+
+Put Option Contract on Deribit Contract Period (Expiration) and Prices
+ETH Price: $180 Strike Price 4 weeks
+
+Bid Ask Average
+Out-of-the-money $160 $5.12 $5.85 $5.48
+Out-of-the-money $170 $8.22 $9.13 $8.67
+At-the-money $180 $12.60 $13.70 $13.15
+In-the-money $190 $18.27 $19.37 $18.82
+In-the-money $200 $25.04 $26.13 $25.58
+
+Table 10: Put Option Contract (ETH-28FEB20) Prices on Deribit as of January 31, 2020.
+
+15
+
+4-weeks ETH Put Hedge Contract Prices (Hegic):
+
+Put Hedge Contract on Hegic Hedge Contract Period (Expiration) and Prices
+ETH Price: $180 Strike Price 4 weeks
+Out-of-the-money $162 $3.24
+Out-of-the-money $171 $6.84
+At-the-money $180 $14.40
+In-the-money $189 $16.56
+In-the-money $198 $21.96
+
+Table 11: 4-weeks ETH Put Hedge Contract Prices on Hegic as of January 31, 2020.
+
+Put option contract’s (ETH28FEB-2020) strike price is $180 (at-the-money).
+The ATM option contract for 1 ETH with 4-weeks expiration has a price of $13.15 on Deribit.
+ETH put hedge contract’s strike price is $180 (at-the-money).
+
+The ATM hedge contract for 1 ETH with 4-weeks expiration has a price of $14.40 on Hegic.
+
+Put option contract’s (ETH28FEB-2020) strike price is $190 (in-the-money).
+
+The ITM option contract for 1 ETH with 4-weeks expiration has a price of $18.82 on Deribit.
+ETH put hedge contract’s strike price is $189 (in-the-money).
+
+The ITM hedge contract for 1 ETH with 4-weeks expiration has a price of $16.56 on Hegic.
+Put options contract’s (ETH28FEB-2020) strike price is $200 (in-the-money).
+
+The ITM option contract for 1 ETH with 4-weeks expiration has a price of $25.58 on Deribit.
+
+ETH put hedge contract’s strike price is $198 (in-the-money).
+
+The ITM hedge contract for 1 ETH with 4-weeks expiration has a price of $21.96 on Hegic.
+
+Put options contract’s (ETH28FEB-2020) strike price is $170 (out-of-the-money).
+
+The OTM option contract for 1 ETH with 4-weeks expiration has a price of $8.67 on Deribit
+ETH put hedge contract’s strike price is $171 (out-of-the-money).
+
+The ITM hedge contract for 1 ETH with 4-weeks expiration has a price of $6.84 on Hegic.
+Put options contract’s (ETH28FEB-2020) strike price is $160 (out-of-the-money).
+
+The OTM option contract for 1 ETH with 4-weeks expiration has a price of $5.48 on Deribit
+
+ETH put hedge contract’s strike price is $162 (out-of-the-money).
+
+The ITM hedge contract for 1 ETH with 4-weeks expiration has a price of $3.24 on Hegic.
+16
+
+The fourth reference contract is an option contract on ETH with an expiration date of March 27,
+2020. This price analysis was conducted on January 31, 2020, with the expiration of the contract
+at the time of comparison: 55 days 20 hours 50 minutes.
+
+ETH-27MAR20 Put Options Contract Prices (Deribit):
+
+Put Option Contract on Deribit Contract Period (Expiration) and Prices
+ETH Price: $180 Strike Price 8 weeks
+Bid Ask Average
+Out-of-the-money $160 $9.99 $11.29 $10.64
+At-the-money $180 $18.88 $20.55 $19.71
+In-the-money $200 $30.72 $32.76 $31.74
+
+Table 12: Put Option Contract (ETH-27MAR20) Prices on Deribit as of January 31, 2020.
+
+8-weeks ETH Put Hedge Contract Prices (Hegic):
+
+Put Hedge Contract on Hegic Hedge Contract Period (Expiration) and Prices
+ETH Price: $180 Strike Price 8 weeks
+Out-of-the-money $162 $6.48
+At-the-money $180 $28.80
+In-the-money $198 $25.92
+
+Table 13: 8-weeks ETH Put Hedge Contract Prices on Hegic as of January 31, 2020.
+Put option contract’s (ETH27MAR-2020) strike price is $180 (at-the-money).
+
+The ATM option contract for 1 ETH with 8-weeks expiration has a price of $19.71 on Deribit
+
+ETH put hedge contract’s strike price is $180 (at-the-money).
+The ATM hedge contract for 1 ETH with 8-weeks expiration has a price of $28.80 on Hegic
+
+Put option contract’s (ETH28FEB-2020) strike price is $200 (in-the-money).
+The ITM option contract for 1 ETH with 8-weeks expiration has a price of $31.74 on Deribit
+
+ETH put hedge contract’s strike price is $198 (in-the-money).
+The ITM hedge contract for 1 ETH with 8-weeks expiration has a price of $25.92 on Hegic.
+
+Put option contract’s (ETH28FEB-2020) strike price is $160 (out-of-the-money).
+The OTM option contract for 1 ETH with 4-weeks expiration has a price of $10.64 on Deribit.
+
+ETH put hedge contract’s strike price is $162 (out-of-the-money).
+The ITM hedge contract for 1 ETH with 4-weeks expiration has a price of $6.48 on Hegic.
+17
+
+In most cases put hedge contracts prices on Hegic are lower than put options contracts prices
+on Deribit. However, the goal of Hegic is not to offer the cheapest options-like instrument, but to
+introduce a new kind of a non-custodial, trustless and censorship-resistant contract with on-chain
+settlement. Hegic uses a dynamic strike price determination approach, which influences the rate
+and the premium of hedge contracts. Because of that, market participants might find and use
+arbitrage opportunities between hedge contracts on Hegic and options contracts on the options
+exchanges (e.g. Deribit).
+
+Note that only the premiums were compared in this section. Options fees and delivery (settlement
+at expiration) on Deribit, as well as the settlement fee on Hegic, were excluded from the final price
+comparison. Holders should be aware that a put hedge contract or a put option contract both have
+a break-even price. It can be calculated in such a way:
+
+S—P-—F=BE,
+
+where S - Strike Price; P - Premium Paid; F - Fees Paid; BE - Break-even Price.
+
+For example, if the holder bought a put hedge contract with a $200 strike that they have paid $8
+in premium and $2 in settlement fee for, then the break-even price for such a hedge contract is:
+
+$200 - $8 - $2 = $190
+
+Break-even price is a level at which the holder can execute the hedge contract and earn profits that
+cover the premium and settlement fee that have been paid for activating the hedge contract. In the
+example above, if the strike price of a put hedge contract is $200 and the market price of an asset is
+$190, then executing the hedge contract (selling an asset for $200 when its market price is $190)
+will create $10 in profits that cover $8 premium and $2 settlement fee.
+
+On Hegic, the holder has a right to execute a hedge contract at any time, even if it has not reached the
+break-even price. However, it is important to understand the basic principles behind put options
+contracts and put hedge contracts to use these instruments properly.
+
+Initial implementations of Hegic will enable holders to buy hedge contracts without an ability to
+resell it to other holders before the expiration. Community members and developers can create
+secondary markets and decentralized exchanges for hedge contracts. It is planned to add
+a decentralized exchange functionality and markets for trading hedge contracts on Hegic.
+
+Early versions of hedge contracts and their pricing model consider the probability that the holders
+will start using them as insurance from the assets’ price downside. With the time and additional
+functionality, speculating on hedge contracts prices will become possible. Future versions of Hegic
+will be close to the current implementations of cryptocurrency options exchanges such as Deribit,
+FTX and others in terms of functionality. However, the development efforts will preserve the goal of
+creating a trustless, decentralized and non-custodial system of hedge contracts.
+
+To make the price comparison as representative as possible, the prices of two more put options
+contracts with other expiration dates will be compared with the prices of put hedge contracts.
+
+The first of them is an option contract on ETH with an expiration date of February 14, 2020. This
+price analysis was conducted on February 7, 2020, with the expiration of the contract at the time of
+comparison: 6 days 23 hours 54 minutes. At the snapshot minute of all the reference contract prices,
+the market price of ETH was $219 ($218.78 - $219.05).
+
+18
+ETH-14FEB20 Put Options Contract Prices (Deribit):
+
+Put Option Contract on Deribit ETH-14FEB20 Contract Period (Expiration) and Prices
+ETH Price: $219 Strike Price 1 week
+Bid Ask Average
+Out-of-the-money $210 $5.05 $5.49 $5.27
+At-the-money $220 $9.23 $10.11 $9.67
+In-the-money $230 $15.38 $16.92 $16.15
+
+Table 14: Put Option Contract (ETH-14FEB20) Prices on Deribit as of February 7, 2020.
+
+1-week ETH Put Hedge Contract Prices (Hegic):
+
+Put Hedge Contract on Hegic Hedge Contract Period (Expiration) and Prices
+ETH Price: $219 Strike Price 1 week
+Out-of-the-money $209 $2.09
+At-the-money $220 $4.40
+In-the-money $231 $13.31
+
+Table 15: 1-week ETH Put Hedge Contract Prices on Hegic as of February 7, 2020.
+
+Put options contract’s (ETH14FEB-2020) strike price is $220 (at-the-money).
+The ATM option contract for 1 ETH with 1-week expiration has a price of $9.67 on Deribit.
+
+ETH put hedge contract’s strike price is $220 (at-the-money).
+The ATM hedge contract for 1 ETH with 1-week expiration has a price of $4.40 on Hegic.
+
+Put options contract’s (ETH14FEB-2020) strike price is $230 (in-the-money).
+The ITM option contract for 1 ETH with 1-week expiration has a price of $16.15 on Deribit.
+
+ETH put hedge contract’s strike price is $231 (in-the-money).
+The ITM hedge contract for 1 ETH with 1-week expiration has a price of $13.31 on Hegic.
+
+Put options contract’s (ETH14FEB-2020) strike price is $210 (out-of-the-money).
+The OTM option contract for 1 ETH with 1-weeks expiration has a price of $5.27 on Deribit.
+
+ETH put hedge contract’s strike price is $209 (out-of-the-money).
+The ITM hedge contract for 1 ETH with 1-weeks expiration has a price of $2.09 on Hegic.
+
+19
+
+The second reference contract is an option contract on ETH with an expiration date of February 14,
+2020. This price analysis was conducted on February 7, 2020, with the expiration of the contract at
+the time of comparison: 13 days 23 hours 54 minutes.
+
+ETH-21FEB20 Put Options Contract Prices (Deribit):
+
+Put Option Contract on Deribit ETH-21FEB20 Contract Period (Expiration) and Prices
+ETH Price: $219 Strike Price 2 weeks
+Bid Ask Average
+Out-of-the-money $210 $8.39 $9.71 $9.05
+At-the-money $220 $12.80 $14.34 $13.57
+In-the-money $230 $18.77 $20.31 $19.54
+
+Table 16: Put Option Contract (ETH-21FEB20) Prices on Deribit as of February 7, 2020.
+
+2-weeks ETH Put Hedge Contract Prices (Hegic):
+
+Put Hedge Contract on Hegic Hedge Contract Period (Expiration) and Prices
+ETH Price: $219 Strike Price 2 weeks
+Out-of-the-money $209 $4.18
+At-the-money $220 $8.80
+In-the-money $231 $15.62
+
+Table 17: 2-weeks ETH Put Hedge Contract Prices on Hegic as of February 7, 2020.
+
+Put options contract’s (ETH14FEB-2020) strike price is $220 (at-the-money).
+The ATM option contract for 1 ETH with 2-weeks expiration has a price of $13.57 on Deribit.
+
+ETH put hedge contract strike price is $220 (at-the-money).
+The ATM hedge contract for 1 ETH with 2-weeks expiration has a price of $8.80 on Hegic.
+
+Put options contract’s (ETH14FEB-2020) strike price is $230 (in-the-money).
+The ITM option contract for 1 ETH with 2-week expiration has a price of $19.54 on Deribit.
+
+ETH put hedge contract’s strike price is $231 (in-the-money).
+The ITM hedge contract for 1 ETH with 2-week expiration has a price of $15.62 on Hegic.
+
+Put options contract’s (ETH14FEB-2020) strike price is $210 (out-of-the-money).
+The OTM option contract for 1 ETH with 2-weeks expiration has a price of $9.05 on Deribit.
+
+ETH put hedge contract’s strike price is $209 (out-of-the-money).
+The ITM hedge contract for 1 ETH with 2-weeks expiration has a price of $4.18 on Hegic.
+
+20
+
+8. Liquidity Pools
+
+After providing DAI, USDC, USDT or other stablecoins to the liquidity pool, writeASSET tokens
+will be minted and sent to the provider’s ETH-address. The formula for minting writeDAI tokens is:
+
+W * AP
+AW = ,
+P
+
+where AW - the amount of writeDAI tokens that a liquidity provider will receive;
+AP - the amount of DAI tokens that a liquidity provider provides to the pool;
+
+W - the total amount of writeDAI tokens that were already distributed;
+
+P - the total amount of DAI tokens that were provided to the pool.
+
+After providing liquidity, the writers will start to receive premiums. After joining the pool, they will
+start earning the writing returns starting from the next holder who will pay for activating
+a hedge contract. The premiums or losses from writing hedge contracts that were activated before
+a new liquidity provider joined a pool will not be distributed to this new liquidity provider. The
+liquidity that is allocated on the pool contract is automatically converted into CHAI [11]. CHAI is
+ERC20 token that earns interest on DAI without requiring it to be locked in the contract.
+
+While allocating DAI token in the pool on Hegic, liquidity providers will be simultaneously earning
+DSR (DAI Savings Rate) [12]. Allocating DAI in the liquidity pool provides writers with the returns on
+DAI paid by MakerDAO’s DSR plus the premiums that are paid by hedge contracts holders.
+
+On-chain lending protocols provide users with the returns that are paid in real-time. Hedge
+contracts writing returns that liquidity providers are earning on Hegic cannot guarantee the same
+stability and predictability, because they depend on the market volatility of the assets that the
+hedge contracts are held for. However, the theoretical returns on writing hedge contracts can be
+higher than the yields paid by on-chain lending protocols. Writing hedge contracts, as
+an instrument, has different risk and return profile and cannot be compared with on-chain lending.
+The differences between these two instruments in terms of expected returns can be plotted. One
+should remember that it is not a comparison of two competitive instruments, because, as it was
+described in this section, hedge contracts writers are also earning DSR and these on-chain lending
+returns should be added to the expected returns of writing hedge contracts.
+
+wR
+
+t - time; IR - lending returns. t - time; IR - lending returns; wR - writing returns.
+
+21
+9. HEGIC Token [the first liquidity offering is planned for 05/05/2020]
+
+HEGIC is an ERC20 token that is used for distribution of the settlement fees between the token
+holders as well as in the protocol on-chain governance. Settlement fees that accrue on Hegic are
+distributed between all the HEGIC token holders every quarter. Therefore, HEGIC token combines
+the collective fractional ownership, utility and governance functions.
+
+HEGIC token’s value proposition for holders is better rates for holding hedge contracts. To use the
+discount, holders have to hold HEGIC tokens on their ETH-address that they use to activate hedge
+contracts. The market value of HEGIC tokens on the holder’s ETH-address should be the same or
+higher than the strike price of the hedge contract to have a lower rate. Initial implementations of
+Hegic will give the HEGIC token holders a 30% discount for the rates (excluding a settlement fee).
+
+Example: for a hedge contract of 1 ETH with a period of 2 weeks the holder chooses the $200 strike
+price (at-the-money; market price of ETH is $200). The price of such a hedge contract is $10. $8 is
+a 4% rate of the 2-weeks ETH hedge contract and $2 is a 1% settlement fee of the at-the-money
+hedge contract. The holder also holds $250 in HEGIC tokens on their ETH-address. The value of
+HEGIC tokens is higher than the strike price of a hedge contract. That gives the holder a right to use
+a 30% discount on the rate. Instead of $8, the holder should only pay $5.6 as a rate for holding
+a 2-weeks hedge contract plus a $2 settlement fee. To activate it, the holder should pay $7.6 in total
+for holding the hedge contract instead of $10.
+
+HEGIC token’s value proposition for writers is no delay, priority unlocks of their liquidity. To have
+a priority for liquidity unlock, the writers have to hold HEGIC tokens on their ETH-address that they
+use to provide the liquidity to the pool. The market value of HEGIC tokens on the writer’s ETH-
+address should be the same or higher than the liquidity provided to the pool to have a no delay,
+priority unlock.
+
+Example: if the amount of unlocked DAI in the liquidity pool is not enough for the writer to swap
+their writeDAI to DAI, they will have to wait for the active hedge contract’s expiration. If the writer
+wishes to withdraw the liquidity from the pool, but the amount of unlocked DAI is not enough, they
+send a request to swap their writeDAI to DAI as soon as the liquidity will be unlocked. Their
+requests are aggregated in queues. However, if the writer holds HEGIC tokens and their market
+value is the same or higher than the liquidity that they have provided to the pool, they can send
+their writeDAI and instantly receive the amount of DAI. Liquidity from the Hegic Development Fund
+(HDF) will be used to swap the writer’s writeDAI to DAI immediately.
+
+HEGIC token is used in HIPs (Hegic Improvement Proposal) for governance purposes. HEGIC token
+holders can vote for changing hedge contracts rates, settlement fee size, strike price multipliers,
+assets supported by hedge contracts and more. The governance mechanism will be implemented as
+soon as the Hegic protocol will have the traction and at least 100 monthly active holders and
+writers. HEGIC has a fixed supply of 3012009 HEGIC tokens. Tokens will be unlocked with the time
+after the particular goals are reached by the Hegic protocol.
+
+In the First Epoch, 10% of the HEGIC total supply will be unlocked and offered on one of the
+decentralized exchanges with the purpose of the first liquidity offering of HEGIC tokens. 301200,90
+HEGIC tokens will be offered at a fixed price of $0.332. All the funds from the first liquidity offering
+will be allocated in the Hegic Development Fund (HDF). The funds will be proceeded for conducting
+the security audits of the Hegic contracts and for continuing the development of the protocol.
+
+22
+The transition to a new epoch will only be activated, if the market capitalization of HEGIC reaches
+a new milestone. These milestones require a ten-time growth level of the market capitalization.
+When a new milestone is reached, 15% of the total supply will be offered a fixed price as new
+liquidity at on one of the decentralized exchanges. The funds attracted during the liquidity offerings
+will be distributed between all the HEGIC token holders (90% - 95%) and the Hegic Development
+Fund (HDF) (5% - 10%).
+
+Amount Unlock Price Capitalization | Distribution Purpose
+
+100% - Initial capital
+First Epoch 301200,90 10% $0.332 $1M ~$100K allocation in the Hegic
+Development Fund.
+
+Liquidity offering;
+Second Epoch | 451801,35 15% $3.32 $10M ~$1.5M 90% to HEGIC
+holders, 10% to HDF.
+
+Liquidity offering;
+Third Epoch 451801,35 15% $33.20 $100M ~$15M 91% to HEGIC
+holders, 9% to HDF.
+
+Liquidity offering;
+Fourth Epoch | 451801,35 15% $332.00 $1B ~$150M 92% to HEGIC
+holders, 8% to HDF.
+
+Liquidity offering;
+Fifth Epoch 451801,35 15% $3320.00 $10B ~$1.5B 93% to HEGIC
+holders, 7% to HDF.
+
+Liquidity offering;
+Sixth Epoch 451801,35 15% $33200.00 $100B ~$15B 94% to HEGIC
+holders, 6% to HDF.
+
+Liquidity offering;
+Seventh Epoch | 451801,35 15% $332000.00 $1T ~$150B 95% to HEGIC
+holders, 5% to HDF.
+
+Total Supply | 3012009 | 100%
+
+Table 18: Planned liquidity offerings and funds distribution between the HEGIC token holders per epoch.
+
+In the First Epoch, 100% of the unlocked HEGIC tokens (301200,90 HEGIC, 10% of total supply)
+will be offered at a fixed price of $0.332 / HEGIC. 100% of the funds received (~$100K) will be used
+to create the initial Hegic Development Fund (HDF).
+
+In the Second Epoch, 100% of the unlocked HEGIC tokens (451801,35 HEGIC, 15% of total supply)
+will be offered at a fixed price of $3.32 / HEGIC. The transition to the Second Epoch will only be
+activated if the market capitalization of Hegic reaches $10M. 90% of the funds received from the
+liquidity offering (~$1.5M) will be distributed between all the HEGIC token holders (only those
+who held HEGIC tokens before the Second Epoch snapshot) and 10% of the funds received will be
+allocated in the Hegic Development Fund.
+
+23
+
+In the Third Epoch, 100% of the unlocked HEGIC tokens (451801,35 HEGIC, 15% of total supply)
+will be offered at a fixed price of $33.20 / HEGIC. The transition to the Third Epoch will only be
+activated if the market capitalization of Hegic reaches $100M. 91% of the funds received from the
+liquidity offering (~$15M) will be distributed between all the HEGIC token holders (only those who
+held HEGIC tokens before the Third Epoch snapshot) and 9% of the funds received will be allocated
+in the Hegic Development Fund.
+
+In the Fourth Epoch, 100% of the unlocked HEGIC tokens (451801,35 HEGIC, 15% of total supply)
+will be offered at a fixed price of $332.00 / HEGIC. The transition to the Fourth Epoch will only be
+activated if the market capitalization of Hegic reaches $1B. 92% of the funds received from the
+liquidity offering (~$150M) will be distributed between all the HEGIC token holders (only those
+who held HEGIC tokens before the Fourth Epoch snapshot) and 8% of the funds received will be
+allocated in the Hegic Development Fund.
+
+In the Fifth Epoch, 100% of the unlocked HEGIC tokens (451801,35 HEGIC, 15% of total supply)
+will be offered at a fixed price of $3320.00 / HEGIC. The transition to the Fifth Epoch will only be
+activated if the market capitalization of Hegic reaches $10B. 93% of the funds received from the
+liquidity offering (~$1.5B) will be distributed between all the HEGIC token holders (only those who
+held HEGIC tokens before the Fifth Epoch snapshot) and 7% of the funds received will be allocated
+in the Hegic Development Fund.
+
+In the Sixth Epoch, 100% of the unlocked HEGIC tokens (451801,35 HEGIC, 15% of total supply)
+will be offered at a fixed price of $33200.00 / HEGIC. The transition to the Sixth Epoch will only be
+activated if the market capitalization of Hegic reaches $100B. 94% of the funds received from the
+liquidity offering (~$15B) will be distributed between all the HEGIC token holders (only those who
+held HEGIC tokens before the Sixth Epoch snapshot) and 6% of the funds received will be allocated
+in the Hegic Development Fund.
+
+In the Seventh Epoch, 100% of the unlocked HEGIC tokens (451801,35 HEGIC, 15% of total supply)
+will be offered at a fixed price of $332000.00 / HEGIC. The transition to the Seventh Epoch will only
+be activated if the market capitalization of Hegic reaches $1T. 95% of the funds received from the
+liquidity offering (~$150B) will be distributed between all the HEGIC token holders (only those
+who held HEGIC tokens before the Seventh Epoch snapshot) and 5% of the funds received will be
+allocated in the Hegic Development Fund.
+
+For a transition to a new epoch to be activated, the first requirement is that the historical trading
+volume of HEGIC token on decentralized exchanges should not be less than 10% of the new
+capitalization level that has been reached (to eliminate the HEGIC token price manipulations to
+unlock new tokens). The second requirement is that the total amount of historical turnover of active
+hedge contracts should not be less than 10% of the new capitalization level (to align the demand for
+hedge contracts and the adoption pace of the protocol with future liquidity offerings).
+
+Capitalization Required Volume Required Turnover
+
+First Epoch $1M - -
+
+Second Epoch $10M $1M+ $1M+
+
+Third Epoch $100M $10M+ $10M+
+Fourth Epoch $1B $100M+ $100M+
+Fifth Epoch $10B $1B+ $1B+
+
+Sixth Epoch $100B $10B+ $10B+
+Seventh Epoch $1T $100B+ $100B+
+
+Table 19: Required historical volume of the HEGIC token and turnover of active hedge contracts.
+
+24
+
+10. Conclusion
+
+In this paper, the Hegic protocol and the concept of a hedge contract were described. Hedge
+contract is an options-like on-chain contract that gives the holder (buyer) a right to buy or to sell
+an asset at a certain price (strike) as well as imposes the obligation on the writer (seller) to buy or
+to sell an asset during a certain period. Hedge contracts can be considered as a non-custodial,
+trustless and censorship-resistant alternative to options contracts. On Hegic, liquidity providers’
+(writers’) funds can be distributed between many hedge contracts simultaneously. It diversifies
+the liquidity allocation and makes capital work in an efficient way. The assumption is that in the
+long-run, liquidity providers’ returns could beat the returns of a solo options writer.
+
+The initial implementations of Hegic will enable holders to buy put hedge contracts that will give
+them a right to swap ETH to DAI stablecoin at a certain price (strike) at any given moment until the
+expiration. Hegic uses a dynamic strike price determination approach, which influences the rate
+and the premium of hedge contracts. Maintenance and execution of hedge contracts do not depend
+on the external price feeds.
+
+Liquidity pools are non-custodial. In the initial implementations of Hegic, the rate for holding
+a hedge contract varies from 0.5% up to 2.0% per week. Theoretical yearly returns for hedge
+contracts writers (sellers) are in between from +27% up to +108% APR on DAI, USDC or USDT.
+While allocating DAI token in the pool on Hegic, liquidity providers will be simultaneously earning
+DSR (DAI Savings Rate). Allocating DAI in the liquidity pool provides writers with the returns
+on DAI paid by MakerDAO’s DSR plus the premiums that are paid by hedge contracts holders.
+
+HEGIC an ERC20 token that is used for distribution of 100% of the settlement fees between all the
+token holders and in the protocol on-chain governance purposes. HEGIC token combines
+the collective fractional ownership, utility and governance functions. HEGIC has a fixed supply of
+3012009 HEGIC tokens, which will be unlocked with the time after the particular goals are reached
+by the Hegic protocol.
+
+Hegic protocol is live on Ethereum mainnet: https://www.hegic.co
+
+Open source code of the Hegic protocol: https://github.com/hegic
+
+Hegic ETH Put Hedge Contract (Ethereum mainnet):
+https://etherscan.io/address/0x27b6125328ca57d5d96baaa4f9ca8cSedbafe016
+
+Hegic DAI Liquidity Pool Contract (Ethereum mainnet):
+https://etherscan.io/address/0x009c216b7e86e5c38af14fcd8c07aab3a2e7888e
+
+Discord: https://discord.gg/znjdj8q
+
+Telegram: https://t.me/HegicOptions
+
+Twitter: https://twitter.com/HegicOptions
+
+Contact: molly.wintermute@protonmail.com
+
+The first liquidity offering of HEGIC tokens is planned for 05/05/2020.
+
+This paper was originally published and uploaded to IPFS on 20/02/2020.
+
+25
+11. References
+
+[1] The Futures Industry Association. Global Futures and Options Trading Volumes in 2019.
+https://fia.org/articles/global-futures-and-options-trading-reaches-record-level-2019
+
+[2] OCC. The Options Clearing Corporation Website. https://www.theocc.com
+
+[3] Investopedia. Types of Options Positions That Create Unlimited Liability.
+https://www.investopedia.com/ask/answers/050115/what-types-options-positions-create-
+
+unlimited-liability.asp
+
+[4] Black Fischer and Myron Scholes. The Pricing of Options and Corporate Liabilities:
+https://www.cs.princeton.edu/courses /archive/fall09/cos323/papers/black_scholes73.pdf
+
+[5] Deribit. Cryptocurrency Futures and Options Exchange. https://www.deribit.com
+
+[6] Chainlink. Oracle Network for Smart Contracts Real World Data. https://chain.link
+
+[7] Dai (DAI) Stablecoin by MakerDAO. https://makerdao.com/en
+
+[8] USD Coin (USDC) Stablecoin by Circle. https://www.circle.com/en/usdc
+
+[9] Tether (USDT) Stable digital cash. https://tether.to
+
+[10] Uniswap Exchange Protocol Docs. https://docs.uniswap.io
+
+[11] Chai. A simple ERC20 wrapper over the Dai Savings Rate. https://chai.money/about.html
+
+[12] Dai Stability Rate. https://community-development.makerdao.com/makerdao-mcd-
+
+faqs/faqs/dsr
+
+Proofs of Reference Contracts Used in the Price Comparison Section:
+
+ETH-7FEB20 Put Option Contract Prices (Deribit):
+https://ipfs.io /ipfs/QmZ2QBh93BA9f1m3D KpgqjK9]jY5M2jBGbbcGZsyYuAnkDG
+
+ETH-14FEB20 Put Option Contract Prices (Deribit):
+https://ipfs.io /ipfs/QmQSQpHLNmX9Luea9EuysrkgRA1Af8Ubfow|pvY3mNYq8z
+
+ETH-28FEB20 Put Option Contract Prices (Deribit):
+https://ipfs.io /ipfs/QmPqNKifKRrXLGQ48fTue]Pwx7AU4XVoEotzH3SX6hHUyv
+
+ETH-27MAR20 Put Options Contract Prices (Deribit):
+https://ipfs.io /ipfs/QmUr2C2PMzvYFR6qNnFCjbfcfCfqp2KghVxP DirVXcZMxL
+
+ETH-14FEB20 Put Options Contract Prices (Deribit):
+https://ipfs.io /ipfs/QmQVt4gvkDeZxCCvVmBLD9T7XBfXSV2B3aamy8AbXZgm87
+
+ETH-21FEB20 Put Options Contract Prices (Deribit):
+https://ipfs.io /ipfs/QmVnmNZUDcBE3daujm5ubnrPktRQ1Q68uKV5KC3RcgRuFX
+
+26

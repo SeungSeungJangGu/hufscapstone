@@ -1,0 +1,1688 @@
+Powered by
+
+VITAL-HINT | ow 827
+
+Food Intelligence
+
+The Food Protocol
+
+HINTchain
+
+Platform connecting consumers
+and food companies
+
+Whitepaper
+Ver 1.7.1 (20180915)
+
+hintchain.io
+1 Intro
+
+1.1 Structural Problem of Existing Food Market
+1.2 Era of Food Profile
+
+2 Mission
+
+3 Food Profile
+3_1 Standards of Food Profile
+3_2 Components of Food Profile
+
+3_3 Operating Method
+
+4 Architecture
+4.1 Data Layer (On-chain)
+4 2 Platform Layer (Off-chain)
+4.3 Application Layer
+
+4_4 Component and Technical Consideration of Hintchain Platform
+
+5 Token Economy
+5.1 Hint Token
+5_2 Hint Power
+
+6 Value Proposition
+6_1 Consumer (Customer)
+6_2 Food Related Companies
+
+6_3 Business Use Case
+
+7 Partner
+71 Food Meta DB Partner
+7.2 Behavior / Review Data Partner
+7.3 Purchase Data Partner
+
+7_A Other Partners
+
+8 Token Generation Event
+8_1 Token Allocation Plan
+8_2 TGE Participation Process
+8_3 Use of Fund
+
+9 Road Map
+
+10 Hintchain Team
+11 Hintchain Advisor
+12 Hintchain Partner
+13 VitalHint Partner
+
+14 Disclaimer .
+
+01~ 02
+
+03
+
+04 ~ 08
+
+09 ~ 13
+
+14 ~ 16
+
+17 ~ 23
+
+24~ 25
+
+26 ~ 29
+
+30
+31~ 32
+33 ~ 34
+35
+36
+37 ~ 38
+
+The Food Protocol Hintchain White Paper
+
+1, Intro
+
+Food industry is a vast industry, covering from basic food goods to systematic economic actions such as
+manufacture, storage, and distribution of food goods, Size of food market is bigger than IT and vehicle markets
+
+combined together. It is the most general field where customers’ consumption activities occur most frequently.
+
+os? June, 2017 GlobalData (consumer.globaldata.com)
+December, 2017 Markline (www.marketline.com)
+5,000 4 GlobalData - Marketline: British research & consulting firm
+
+(Unit: US $1 billion / Estimates for 2016-2020)
+
+a4
+—_—ooo OOo @ Global Food Market
+
+1,000]
+, @ Global Vehicle Market
+Global IT Market
+io) Global Steel Market
+
+1.1 Structural Problem of Existing Food Market
+
+Modern food value chain has longer and more complicated structure, not like in the past, Process from producer
+to food manufacturer, distribution, and consumers became more complicated than ever. As a result, from the
+perspective of manufacturer who have been disconnected from consumers due to distribution channel and
+marketing, it is difficult to reflect actual needs in food planning and manufacturing process, From the perspective
+of supplier, putting a lot of cost into infrastructure investment and material, it is painful to manufacture without
+
+knowing accurate needs of customers.
+
+ah ]
+
+?
+
+A B ie D E lF | \
+Company ROA _ O_O _” Consumer
+Consumption of food is expressed more diversely. Modern food is not only to just simply resolve hunger, but
+is consumed as one of the cultures. Consumers encounter new food through various food contents broadcasting,
+learn various recipes through recipes of every kind, and even consume other people's action of eating through
+food porn contents. Various consumer needs occur during these processes, but it is not easier than ever for the
+information to be exchanged with producer or food manufacturer.
+
+Asymmetric information, from both sides of supplier and consumer, occurs. Supplier cannot understand
+the sudden consumption increase of a specific food. When customer wants to consume food he / she encountered
+
+through broadcasting or contents, it takes a long time for the food to be available in the market.
+
+-~@ ae aw
+
+Company Information Information Consumer
+
+1.2 Era of Food Profile
+(The Rise and Value of Consumer-centered Historical Data with Blockchain Technology)
+
+As Blockchain technology started from Bitcoin and smart contract of Ethereum was combined full scale in 2013,
+new approach to solve various problems across society became available. Hintchain will utilize representative
+technologies of smart contract and Blockchain technology to solve food industry problems mentioned earlier.
+Hintchain will structuralize individual food data of consumers, and provide it to suppliers to match needs of both sides.
+
+Hintchain plans to analyze individual's food data of consumers and inversely provide to suppliers, from traditional
+food value chain structure of supplier providing based on market prediction. Through this, Supplier can resolve
+
+issue of excess and deficiency of supply and customers can consume food they want when they want.
+
+@
+a
+
+Consumer
+
+Company
+
+#8
+
+Data Structured Smart Contract
+
+The Food Protocol Hintchain White Paper
+
+2, Mission
+
+As everyone has different taste in food, individualized solution is necessary. Individual food data must be
+collected in individual unit and structuralized, However, current food related data is distributed over not only
+
+individuals but also various service platform businesses.
+What if customers can directly manage their own diet data and personal history?
+
+This is to structuralize food preference, eating habit, personal history, and others as food profile, and store as
+data block. Stored data can be connected to supplier through Blockchain with consent from the individual.
+Also, data from Blockchain can be provided back to customers as customized food solution, individually specialized
+through analysis solution of Hintchain, Through this process, supplier can secure profit and efficient production, and
+customers can manage reward of value and analyzed individual food profile. One-way structure from supplier to
+
+customer in the past will be restructured as both-way structure based on food profile through Blockchain technology.
+We propose 3 missions as below, utilizing Blockchain technology.
+
+1. Build personal food profile containing data of what food industry customers see, eat, and purchase, and
+
+data of personal history consists of series of food behavior of individuals.
+
+2. Allow customer to have control over all data of his/her own behavior and consumption related to food,
+
+and eating habit. Provide compensation and data utilization if consented.
+
+3. Help customers with matter of choice during food consumption process through analysis of 'habit' and ‘desire'
+
+based on food profile. Provide a window of possible demand prediction based on food profile to companies.
+
+In order to achieve these missions, we propose Hintchain platform. Hintchain platform is a business protocol that
+ecosystem participation partners will use together and we will do our best for data centric food industry innovation
+by cooperating with various partners, Hintchain team will comply with regulations of Hintchain and create Blockchain
+
+platform not only used in Asia, but in global food market, with partners that will grow the platform together.
+The Food Protocol Hintchain White Paper
+
+3, Food Profile
+
+The core of Hintchain platform is (personal) food profile. Food profile is data block to restructure food
+industry to be consumer centric.
+
+Food profile is data block that individualized data of customer’s food related (1) body-identity, (2) taste,
+(3) habit-behavior, Customers can recover his / her data ownership by directly managing the data, They can
+
+gain benefits as below by using food profile.
+
+A. Analysis of own food profile
+
+Food profile is customized data set analyzed reflecting characteristic of individuals. Therefore, if own food profile
+can be linked with services, use of service and discovery of products that are more suitable to the one will be available.
+This data set, depending on individual's activity, will be continuously updated and have value as customized
+information of higher level.
+B. Reward acquisition
+
+Reward can be acquired through inputting data that is necessary for food profile, Until now, data on food
+consumption and preference of consumers has not been properly managed or analyzed. They were distributed
+on various service platforms, but did not have any value as data. Through Hintchain, value can be given to these
+
+data. Data with value can be utilized, and customers will be granted with reward for it.
+
+3.1 Standards of Food Profile
+
+Food profile includes the whole data such as body information, taste, and preference of an individual. This
+refers not only health information inputted by an individual, but also all data Hintchain can structuralize such as
+
+food contents and products consumed online. Data standards are categorized as below.
+
+- Identity & health condition data: Health information such as height, weight, history, and nutritional status.
+- Three dimensional data across the diet information including basic meal of customer and others must be loaded on
+food profile. For individual components necessary for food profile, Hintchain team will continue studying and
+
+developing with academic and industrial experts and food profile professional advisory group.
+- Taste data : For food recommendation, taste information such as data of usual food consumption, and actual diet
+review is needed. Also, for convenience, diet and lifestyle information such as preferred receipt, meal pattern,
+
+actual meal time, and place are required.
+3.2 Components of Food Profile
+
+3.2.1 Hint ID
+Data block with health information and identity that distinguish individuals (on-chain)
+
+Hint ID is a distinct identification value to compose food profile and each customer is given one Hint ID.
+When customers register to service of Hintchain protocol, they input basic personal information such as gender and
+age. This personal information is inputted into hash function with temporary code by Hintchain and converted into
+hash value called Hint ID. Information of body and health is also converted into hash value with the basic personal
+
+information, encrypted, and stored in Hint ID.
+
+Hint ID creation process
+
+f_hash (Distinct value by Hintchain Ox2BD2--- + Coded age 12cd.. + Coded gender 8k23c:::)
+= Hash_ID #21k32---
+
+This Hint ID plays a role of identifier that connects health data and taste data of food profile with individuals of
+customers. Through Hint ID, various data can be linked with individual's profile. If there is no distinct identification
+value, we cannot know if various data is linked with individual’s profile.
+
+In other words, Hint ID, depending on identity each customer creates, can understand customer's diet information
+
+in three dimensions by managing food data synthetically.
+
+@ 3.2.2 Hint IQ
+Data block with personal taste information and quantitative numerical score (on-chain)
+
+Hint IQ is data block of quantitative numerical score using algorithm to quantify information of taste and
+eating habit. It quantifies and records data block by systematizing food data created by customers in various
+services of Hintchain protocol.
+
+Hint |Q categorizes customer's various input data into standards of health, taste and others. It re-divides
+
+these into more detailed standards such as salty, sweet, allergy, and vegetarian preference. Here, Food Meta DB
+
+is used as core DB for categorizing process.
+3.2.2.1 Input DB : Input data by customers that is required for Food IQ calculation
+
+Input DB (database) is a bundle and history of data inputted by customers. It is consisted of purchase,
+
+behavior, and review data.
+
+(1) Purchase data
+
+This refers to customer's purchase history data of food related products. The purpose of purchase data is to
+monitor series of the flow of in what context the purchase was made. Therefore, instead of analyzing purchase
+data fragmentarily, it should be recorded with various situational data through linking with behavior data mentioned
+previously. Customer's purchase data is a core data used to predict further actions based on customer's routine
+
+and provide better service.
+
+(2) Behavior data
+
+This refers to data that customers leave in food contents community. Many customers leave behavior data
+before and after purchasing products. Behavior data includes various activities such as contents creation, voting,
+sharing, and scrap. By analyzing this behavior data, we can understand customer's three dimensional behaviors
+and predict potential desire.
+
+For example, if a customer who purchases junk food every day, recently shares health related contents,
+we can predict his / her desire towards healthy food service. In food market where customer's taste rapidly
+changes, collection of behavior data will greatly contribute in market trend prediction and increase of
+
+efficiency.
+
+(3) Review Data
+
+This refers to review data in contents community that customers left on food they consumed. Review (on
+food product, restaurants, and services) data is important in the fields where individuals’ reviews are divided
+subjectively, like food industry. Not only detailed review data about food, but also diet data on what was
+consumed can be considered as review data. Accumulated log data, different perspective than purchase
+history, can be a component to understand and predict customers more three dimensionally through analyzing
+
+diet pattern.
+3.2.2.2. Output DB : Classification data and numerical value actually stored in Food 1Q
+Based on input DB, Food IQ categorizes taste data and health data and quantifies quantitatively. For example,
+
+customer's liking of spiciness is defined as 10 and if a customer frequently purchases spicy food product,
+
+score of 9 is given. It is classified as below.
+(1) Health data
+Health data is to know health information of customer. Information such as BMI, medical history, and
+nutrition status is available, so we can learn about food that he/she cannot consume and consumed nutrient
+
+during a specific period.
+
+(2) Taste data
+Taste data is to know taste and food consumption habit of customer. We can learn about taste, diet, simplicity
+
+(meal consumption time), purchase pattern, and preferred nationality of food.
+
+3.2.3 Hint Score
+Data block to calculate correlation between each food profile and food service (off-chain)
+
+Hint Score is data block to calculate and store correlation between each food profile and food service. It is an
+element used to recommend optimized service to customers. This data must be continuously recalculated as
+new food service or product occurs, it has attributes of temporary data. Therefore, it is meaningless to store
+
+all data on Blockchain network, so it is stored in off block chain.
+Process of recommendation service based on Hint Score is as grounds mentioned below.
+
+(1) Compare and decided on correlation between product and Hint IQ (food profile) and understand in numeric
+value how suitable the product is to user’s food profile. Then save calculated Hint Score. Method is as follows.
+Take metadata of the product and send inquiry to Food Meta DB. Calculate basic Hint Score of the product,
+compare, and decide on Hint IQ of food profile. Calculate suitability of the product, then finally calculate and
+
+store Hint Score of suitability between customer and the product.
+
+(2) From the process of (1), take Hint Score, suitability score of each product, based on several product
+information. In the order of highest suitability score, the products will be recommended to customers. Detailed
+
+recommendation method or numbers can be changed in app of food profile.
+
+(3) If customer’s food profile has been updated through various behaviors and reviews, Hint Score of each
+product will be recalculated. In other words, even product that was recommended to customer before was
+
+encountered, new recommendation based on customer's changed tendency is provided.
+The Food Protocol Hintchain White Paper
+
+3.2.4. Food Meta DB - Official database of original form information of food
+
+Food Meta DB is database of metadata standardized basic attribute of food. According to food engineering
+and food and nutrition, food composes database of ‘ingredient’ centric data. Food Meta DB is standardized
+database of information such as nutrition, content, calories of each ingredient, and categories of taste and
+food type. It is used to quantify customer's input data into Food |Q, and is an essential element used to calculate
+
+correlation with service as Food Score.
+
+Personal On Blockchain Off Blockchain
+information
+v
+Individual
+ene . = 0
+aaa” 70
+| Review Data
+. - Hint Score
+Hint ID Hint 1Q Matching
+Identifiable Information Creation Quantification of Food Preference Food Profile Standard Recommendation
+3.3 Operating Method
+
+Composition of food profile starts from when Hint ID is given to customers participating Hintchain ecosystem.
+Various input data of customer linked and accumulated on Hint ID is quantified and stored in Hint 1Q through
+data analyzing algorithm. Created food profile can be used and accessed to data block after proper verification
+of an app of Hintchain protocol. However, Hintchain will provide 2 service API mentioned in below for enterprise
+
+participants of ecosystem to actively apply food profile to their services.
+
+(1) Hint ID based login service and various API
+To freely apply to own service through Hint ID based login service and API, food profile layers will be abstracted
+
+and provided. Enterprise participants can access each data value (Food IQ) of food profile through this API.
+
+(2) Hint Score API
+
+Hint Score API, that provides suitable service to customer by automatically calculating correlation between
+food profile and relevant service, will be provided. Enterprise participants can understand customers more
+three dimensionally through Hint ID based login service and various API, and deploy efficient service and
+
+business through Hint Score API.
+The Food Protocol Hintchain White Paper
+
+4, Architecture
+
+Hintchain is composed of 3 layers: Data layer, platform layer, and application layer.
+
+Application Layer
+
+All application service programs and businesses
+
+Platform Layer off-chain
+
+Platform database and various data access API
+Discovery API of Hintchain
+
+Data Layer on-chain
+
+Hintchain data storage / Hintchain smart contract
+Hint ID & Hint IQ
+
+4.1 Data Layer (On-chain)
+
+Data layer is data network of Hintchain to store food profile data, and is a layer to perform data access using
+Blockchain technology. Data layer is the most important layer of Hintchain and it operates token economy and
+
+builds food profile using Blockchain technology.
+
+For Hint ID, Hint 1Q, and input DB, core data block of building food profile, hash value of contents and
+commerce data, not the whole data, are included in Blockchain network, For contents / commerce data, it is
+stored in the database of platform layer due to capacity issue, and uses the latest encryption technology for
+
+security maintenance.
+
+Data layers are divided into the following :
+4.1.1 Data storage of Hintchain
+
+Data storage of Hintchain is a virtual database in Blockchain network that includes food profile created in
+Hintchain. Data storage grants high reliability to individual food profile and stores safely using Blockchain
+technology. This food profile, only with consent from individual, receives personal information protection
+management and high level of security of selective inquiry and use through API of platform layer that connects
+
+data layer.
+4.1.2 Hintchain Smart Contract
+
+Hintchain smart contract helps utilization and issuance of Hint power and Hint token. Smart contract
+becomes basis of regulation for platform ecosystem participants to work token economy based and utilize
+
+for ecosystem activation.
+
+4.2 Platform Layer (Off-chain)
+
+Platform layer is a layer that connects application layer and data layer of Hintchain. It collects various data not
+included in Blockchain network in encrypted storage and provides in database format. It also provides various
+
+functions to build service on Hintchain in API format.
+4.2.1 Platform Database
+
+Hintchain minimizes data stored in Blockchain network other than smart contract and food profile to increase
+scalability and use speed and reduce platform operational cost. Platform database stores data of activities in
+
+ecosystem of users with food profile and metadata value of relevant data.
+
+Platform database can be classified into three depending on storage data type and we plan to build it
+
+using decentralized storage.
+
+(1) Contents community database
+
+Contents community database is a space for storage of contents in community. It builds data field that
+contents community applications can record and inquire contents data itself, and allows other applications to
+utilize this data. Data stored in relevant field includes metadata such as contents type and attribute, and data
+
+of various formats such as video, photo, and music applicable for the actual contents.
+(2) Solution usage behavior database
+
+Metadata such as purchased products of Hintchain customers, basic attribute information, and additional
+information and related solution information that other ecosystem participants can reference in future are
+stored in relevant field. Based on this data, holistic food solution use behavior (purchase of ingredients,
+
+product purchase, restaurant information, diet management service, and etc.) is provided.
+
+(3) Food information dictionary database (Food Meta DB)
+Food information is base metadata that shows what attributes compose relevant food contents (product or
+solution in commerce or O20). Various atypical database structures such as suitability between relevant food and
+
+situation and relation with other food occur. Up until now, food related industry professionals have been building
+
+this information into different structures. Hintchain will build common food information dictionary database and,
+
+enhance, and standardize. Participants who contribute in this food information dictionary will be rewarded.
+4.2.2 API of Hintchain
+
+Hintchain provides 5 types of API in platform layer that solution service businesses who are participating in
+ecosystem can use. In future, Hintchain will open interface of relevant API to public to create environment
+where Hintchain participants can freely take parts. Hintchain will build ecosystem with various participants,
+
+and focus on protocol development, the core regulation of ecosystem.
+
+(1) Food discovery API
+
+This is API that allows enterprise participants to find customers satisfying specific conditions based on
+food profile. Also, food profile discovery API provides context based recommendation API that provides solution
+suitable for specific business context of ecosystem participants. For example, there are targets that require
+fulfill ment of special conditions such as customers wanting food solution in a very busy situation and customers
+requiring food service relevant for specific health condition. Through this API base, enterprise participants can
+easily spot target customers and quickly test products. This allows reduction of overall overhead in food industry
+
+and efficient business.
+
+(2) Solution discovery API (Hint Score API for on/offline commerce player)
+
+Solution discovery API is for developers or commerce enterprise participants who want to find and provide
+appropriate solution to specific customers. It is one of Hint Score API mentioned previously in food profile
+field. It is API that calculates correlation score based on correlation between food profile, product, and service,
+and finds appropriate service based on the calculation.
+
+Solution discovery API also does not stop at simple search and exploration API, but provides business contex
+
+S
+recommendation API. For example, it can find commerce and O20 service provider applicable for specific
+situation. Then, it can build provided service to user or other enterprise participants as relevant API based,
+
+and utilize potential of Hintchain ecosystem.
+
+(3) Contents discovery API (Hint Score API for content player)
+
+Contents discovery API is for developers / enterprise participants who want to build contents community
+service on Hintchain platform. This is one of Hint Score API mentioned previously in food profile field. It operates
+by calculating correlation score based on correlation between food profile and contents and searching relevant
+contents based on the calculation.
+
+This API also provides context based recommendation API that ecosystem participants can utilize. For example,
+enterprise participant can collect contents of high relevance to own food ingredient product, and expose
+with own solution. Contents discovery API will be able to maximize service / business utilization of many
+
+contents linked in Hintchain.
+
+(4) Hint ID Login API
+
+Hintchain provides login service in API form for various ecosystem participants to smoothly use food profile
+based service. Through this, food profile data input and utilization can be easier.
+
+Hint ID applied services can easily use abundant functions that Hintchain provides as protocol, and better
+
+understand customers with food profile base.
+
+(5) Wallet API
+
+Wallet API supports various wallet app to support Hint protocol. It supports customers to manage Hintchain
+
+and payment function. It also supports management functions for customers to consent or allow information
+
+exposure on purchase data that is part of food profile.
+4.3 Application Layer
+
+All solutions that manage and utilize food profile through Hintchain are included here. Applications of all
+from running on mobile, app, and web are also included here. These applications can access data within platform
+through platform layer. By using API provided in platform layer, various applications that can be linked with
+Hintchain can be easily developed and commercialized. Representative useful applications that can be developed
+
+of Hintchain base are as follows.
+
+- Food contents community that rewards participants and producer
+
+@)
+- Individualized food commerce service
+- Individualized food 020 service
+
+- Food profile based diet management service
+
+4.4 Component and Technical Consideration of Hintchain Platform
+
+Hintchain is developed EVM (Ethereum Virtual Machine) based. From perspective of time, cost, versatility,
+and reliability, implementing EVM based is more efficient than composing own Blockchain network. Hintchain
+being developed as EVM based means that it can be operated not only on Ethereum (ETH), but also on various
+Blockchain platforms such as Quantum (QTUM) supporting EVM or EOS. Hintchain will select Blockchain
+platform for its operation by analyzing market situation and technical completeness of Blockchain platforms.
+If there is no platform suitable for Hintchain implementation among existing Blockchain platforms or if it is
+
+estimated that own mainnet implementation is more efficient, we will internally develop our own mainnet.
+The Food Protocol Hintchain White Paper
+
+5, Token Economy
+
+¢
+g
+~
+S
+N
+
+Token
+Pool
+
+v
+ANVIL
+‘
+
+x 7
+7 | s
+¢
+
+TITANS
+
+s
+~
+-
+
+Conversion factor applied
+
+Hintchain is business protocol that connects consumers and companies by building food profile of personal
+food data based. Therefore, Token Economy of Hintchain is designed as token to be used in ecosystem of
+data accumulation reward and its base.
+
+5.1 Hint Token
+
+S
+
+ate
+why
+
+ry v eS MY
+s ¢ SL
+——— ae m_: ¢ >
+> 1 S trys
+os s me
+
+4, AN
+
+1
+
+g
+
+Hint Power Hint Token Fiat Money
+
+Hint Token is an important medium of economic activity in and out of Hintchain platform. Purchase activity
+of consumer is an important activity that connects consumer and company. So, Hintchain supports purchase
+system of Hint Token based.
+
+Hint Token can be acquired through conversion from cryptocurrency exchange or Hint Power. Conversion
+factor will be applied here and it will be separately announced in future.
+
+Consumers can use their Hint Token to pay for product purchase at cafe, convenience store, or supermarket,
+
+or use it for food related online service or commerce,
+5.2 Hint Power
+
+“ ts
+
+Content community : : Body Data
+
+Data accumulation to build food profile is a core activity in ecosystem. Hint Power is a reward for this food
+
+ry
+i
+=
+
+e
+
+data accumulation. Hint Power reward is classified as contents community reward, purchase reward, and body
+
+data registration reward. How to receive Hint Power reward is as follows.
+5.2.1 Contents community reward
+
+Review data and behavior data are accumulated through contents activity in community. Hence, basic unit
+of reward is contents. Power amount provided for individual contents reward is composed of sum of power
+amount of contents creator and reaction towards the contents (contents consumers’ share/recommendation
+and etc.). Total power amount provided during certain period is fixed. Power provided as reward is given in
+differential distribution based on contents contribution scores. Calculation is done biweekly (may be changed).
+Aggregated contribution scores for the first calculation will have half life of 3 months starting from creation
+date (may be changed). Scores on activities such as share/recommendation after half life will be reflected
+
+during final score calculation
+
+Power Amount Calculation Formula Provided through Contents Reward
+
+* Power amount provided through contents reward = (ContentPoint 2/5" ContentPoint 2 )
+*ContentPoint , : Contents ‘a’ contribution score
+
+* ContentPoint , = CreatorPoint , + £4 (a) ViewerPoint ,
+
+* CreatorPoint , : Power retention amount of contents creator
+
+* (a) ViewerPoint, : Share / recommendation amount on contents ‘a’
+
+5.2.2 Purchase reward
+
+Purchase data is accumulated every time customer purchases product or service on on/offline commerce.
+
+Hence, basic unit of reward is purchasing activity.
+
+S
+The Food Protocol Hintchain White Paper
+
+Calculation Formula of Reward Provided through Purchasing Activity
+
+Purchasing activity 'a' reward = (Purchprice,) x 0.01
+
+* Purchprice , : a = Purchasing price
+
+5.2.3 Personal information and body data of individual food profile registration reward
+
+It is possible to automatically update food profile on Blockchain network through user log analysis of
+community and commerce activities, However, individual body data must go through the process of direct input.
+To induce such action, Hint Power of proper level is rewarded. Overall quality improvement of food profile
+
+can be achieved through this.
+The Food Protocol Hintchain White Paper
+
+6, Value Proposition
+
+6.1 Consumer (Customer)
+
+Customer is a core participant of Hintchain who consumes food related contents, purchase, and use related
+
+precuts. They benefit from grounds mentioned below.
+
+(1) Customer can easily receive food product and service corresponding to own food profile. Companies
+participating in Hintchain provide in the most suitable way set for situation and purpose the customer wants.
+
+Through taste, objective, and history of food profile, minimize unnecessarily wasted time and cost.
+
+(2) If not satisfied with food service recommendation suitable for food profile, customer can search, compare
+and decide relevant food product and service through reliable review contents and minimize trial and error.
+
+Food contents community of Hintchain provides reliable reviews through curating of community members.
+
+(3) Customer can be rewarded through updating food profile data, and purchase food product with cheaper
+price through this reward. Up until now, marketing companies such as advertisement fee took all consumer
+
+information and did not return the benefit back to customers, but now it is given back as proper reward.
+6.2 Food Related Companies
+
+Food related companies include food production, commerce, and O20. They provide food products or
+services, and will benefit from grounds mentioned below as core participants of Hintchain paid with cryptocurrency
+or legal tender.
+(1) Efficient targeting business deployment through food profile is available. By using food profile, companies
+
+can directly provide prepared products to target consumers. Unnecessary marketing cost or distribution cost
+
+can be saved. Also, by sampling partial users of target users, quick product / service test can be deployed.
+
+@)
+The Food Protocol Hintchain White Paper
+
+(2) Sensing of overall process of consumer behavior cycle through food profile is available. Aside from fragmentally
+understanding consumers through purchase data, overall process of 1) what consumers look for, 2) what
+process do they go through to make purchasing decision, 3) what review do they leave after purchase, and
+4) what diet pattern they actually form, can be detected through food profile. Furthermore, based on data
+insight, relationship building through close communication with community becomes possible through
+communication with customers on food contents community or sponsor food reviewer or contents creator.
+Understanding consumers and communicating with them based on trust are beneficial for brand strengthening
+
+of food companies.
+
+(3) Fast calculation period of product sales can be secured. Due to the nature of food with short expiry date,
+
+if food companies can secure quick circulation of products, efficiency will increase. Charge of sales process
+
+can be saved as there is no intermediary like payment agency.
+
+6.3 Business Use Case
+
+If Hintchain protocol is widely applied and activated, customers will be able to meet new food business in
+
+grounds mentioned below.
+
+6.3.1. Al based unmanned store that understands my taste and provides best service real time
+
+(Convenience store)
+
+6.3.2. Dining out navigator that recommends most suitable restaurants and menus for my taste and situation
+
+(Restaurant & cafe)
+
+6.3.3. Al based ingredient bundle purchase according to food profile
+
+(TV + supermarket)
+
+6.3.4. Product planning and diet based on food profile: individualized diet
+
+(Online commerce and PB)
+
+6.3.5. Personal nutritionist
+(Hospital & IOT linked)
+6.3.1, Al based unmanned store that understands my taste and provides best service real time
+
+(Convenience store)
+
+%
+=- =
+
+Food Review Scan DB Matching
+Community
+v
+v
+4 > ae * ee Fael
+Hint Power Consumer Food Profile Convenience Store
+witta,
+iL:
+2-7:
+Th
+Hint Token
+
+Paul has Hint Wallet with food profile.
+
+@ Paul goes to convenience store for a simple breakfast.
+
+@ Convenience store explores Paul's food profile and recommends simple bento box and functional beverage
+that Paul wants and can eat like and healthy.
+
+(During this process, convenience store compares the latest product DB with Paul's food profile and finishes preparing
+the most optimized recommendation through own Al system.)
+
+© Paul checks recommended bento box and beverage, and makes payment with Hint Power on Hint Wallet.
+
+@ Paul receives bento box and beverage from convenience store.
+
+(all these processes finishes within 1 to 2 minutes after Paul opens the door of convenience store).
+
+@ After finishing eating, Paul leaves review and scores on each item through dAPP of Hintchain.
+
+(This review will be updated on Paul's food profile).
+
+@ Al system of convenience store can learn how much Paul and other customers with similar food profile as
+Paul enjoyed purchased products based on this.
+
+@ With learned information, convenience store can adjust next production and distribution schedule,
+and reference reviews of customers including Paul for the next new product planning.
+6.3.2 . Dining out navigator that recommends most suitable restaurants and menus for my taste and situation
+
+(Restaurant / Cafe)
+
+S
+
+Food Profile DB Matching
+
+!
+a -B
+
+Consumer Food Profile dApp Restaurant
+
+I
+
+@
+
+Food Profile
+
+Elly wants to lose weight. She wants to know low calorie diet, so inquires and scraps diet food related images.
+
+@ Elly is going out with friends to downtown.
+
+@ Elly activates dAPP of Hintchain that recommends nice restaurants.
+(In the relevant dAPP, the fact that Elly prefers diet menu is already reflected through her food profile.)
+
+© dAPP considers tendency of Elly and her friends and recommends the most optimized Italian restaurant nearby.
+(Elly’s friends already have shared their food profiles with Elly.)
+
+@ Elly makes a reservation and pays with Hint Token after the meal.
+
+@ Elly wants to buy drinks for her friends. She takes out dAPP and finishes ordering.
+
+(Based on each food profile, customized menus that friends prefer are selected and paid in the cafe)
+
+@ Elly stops by the café and picks up drinks for her friends.
+
+@ Restaurant can acquire data real time on preferred menu of customers with similar tendency with Elly.
+Expected customers per time can be predicted, so it can be reflected on operational schedule like reservations.
+
+@ Without other separate PR, restaurant can obtain trust as preferred restaurants between users of
+similar food tendency, and can learn tendency of customers near restaurants or by location.
+6.3.3 Al based ingredient bundle purchase according to food profile (TV + supermarket)
+
+Consumer TV
+
+Food Profile
+
+Commerce Food Mart Scan DB Matching
+
+Sophia is thinking about what to cook for the family over the weekend while watching TV.
+
+@ A famous chef is introducing special party food on TV.
+
+@ Sophia activates dAPP of Hintchain on smart TV. Detailed information on food from TV program is
+displayed and Sophia selects food menu she likes.
+
+(Sophia and her family have already registered their food profile on dAPP.)
+
+© dAPP recognizes situational information based on food profiles of Sophia’s family,
+and lists ingredients or simple meals in order.
+
+© Sophia checks the list and pays with Hint Token.
+
+© Ordered ingredients are prepared at nearby supermarket and delivered to Sophia on the day.
+
+@ Supermarket can reflect customer's preference on food ingredient selection and display to
+increase purchase, and expand opportunity of active exposure of products in various media.
+
+@ Overall process from customer's selection to actual purchase and distribution can be monitored
+and unnecessary distribution or marketing can be reduced.
+6.3.4 Product planning and diet based on food profile: individualized diet (online commerce and PB)
+
+f=
+[FI
+Sean
+
+New product
+
+S-@+ mm
+
+Consumer Food Profile Food menu provider Food factory
+
+Plan a meal
+
+James is worried about his atopic dermatitis. The doctor has recommended diet to ease the symptoms.
+
+@ Based on his food profile James shares his requirements to professional meal company registered on Hintchain.
+
+@ A Food meal company proposes diet suitable for James’ symptoms by analyzing his food profile.
+
+© While consuming diet suitable for his physical constitution, James can be provided
+
+with more delicious and various diet.
+
+@ As requests from customers with similar food profile with James increases, production line can be expanded
+and new business can be planed targeting customers with similar tendency.
+
+@ Meal company obtains awareness as professional meal provider for atopic dermatitis patients,
+and can increase business variety through continuous development of customized meal plans.
+
+@ Factory connected with A Food can easily understand amount of ingredients to provide,
+and secure stable production and supply through regular delivery.
+The Food Protocol Hintchain White Paper
+
+6.3.5 Personal nutritionist (Hospital & IOT linked)
+
+7
+
+Plan a meal
+
+= 2—@
+
+Food Recipe Food Profile Hospital
+
+Susan is worried about the growth of her son, John, who is 9 years old.
+The hospital recommended to manage daily diet as certain nutrition is lacking.
+
+@ Susan decided to subscribe to paid service of Hintchain dAPP, connected with the hospital,
+which provides diet management service.
+
+@ She connects John’s food profile with Al system of the hospital.
+She also connects diet management service of dAPP with smart scale and smart refrigerator at home.
+
+© Food profile connected with various |OT communicates with Al system of the hospital
+and recommends John’s diet.
+
+© Smart refrigerator at home recommends food in it based on this recommendation.
+
+@ Susan checks John’s diet at work and is relieved.
+
+@ Responsible hospital can check regular diet plan, and informs predictable disease or proposes precautions.
+
+@ Continuous research on correlation of diet and disease can be conducted,
+and cause of the disease can be variously understood through diet history registered in food profile.
+
+@)
+The Food Protocol Hintchain White Paper
+
+7, Partner
+
+All participants of Hintchain contribute in creation of food profile, which is a core operational entry of
+ecosystem. Therefore, it is important to secure enterprise participants who can provide data for food profile
+creation as ecosystem partner, Partner can be divided by composition data of food profile : 1) Food Meta DB
+
+partner, 2) purchase data partner, 3) behavior / review data partner, and 4) other partners.
+
+7.1 Food Meta DB Partner
+
+Food Meta DB partner refers to partner to reinforce Food Meta DB data, and partner to provide food
+engineering / food and nutrition based algorithm. Food Meta DB partner enhances data of existing food, ingredients,
+and nutrition, and executes continuous updates by adding newly created data. Companies with food nutrition DB
+and ingredients DB, research facilities, food engineering research institute, and data analyst can participate as
+food dictionary DB partners. By providing analysis algorithm based on food engineering, they can help processing
+accumulated raw data in Food Meta DB to be meaningful data for food profile composition.
+
+- Secure Strategy -
+
+Hintchain supports data accumulation and algorithm research by paying Hint Token for providing data and
+algorithm, Also, we will grant access to Food Meta DB to support shared research and development of partners
+to accelerate. As Hintchain ecosystem expands, data that Food Meta DB partners can research increases, it will be
+
+a driving force for partners to continuously contribute.
+
+7.2 Behavior / Review Data Partner
+
+Behavior / review data partners will provide behavior / review data that will be base for individual taste
+information in food profile. Partners who operate food related community such as service or review/comments
+of recipe and restaurant recommendation and food information, and cooking information can participate as
+behavior / review data partners, Partners apply Hintchain protocol to own service and provide service space
+
+where customers receive Hint Power as reward from Hintchain.
+- Secure Strategy -
+Hintchain will secure Haemuk Namnyeo, Misik Namnyeo, and Foodiest as first partners. First step is to apply
+food profile and token economy to successfully operate.
+At the same time, dAPP will be supported by paying Hint Token to other Hintchain protocol partners already secured.
+This cost is designed as ecosystem activation on token metrics. Hint Token payment is not only for initial stage, but
+there will be additional payment in future depending on whether Hintchain protocol is continuously updated,
+
+if protocol regulations are complied, and if service is activated, for protocol expansion and activation acceleration.
+
+7.3 Purchase Data Partner
+
+Purchase data partner provides purchase history data that customer's taste continued to actual purchase
+on food profile. Purchase data partner is an important partner to provide data to confirm how Hintchain
+customers’ food taste and consumption desire are continued to actual purchase.
+
+Distribution and production companies of food ingredient, processed food, and convenience food including
+meal kit and HMR can be purchase data partners. Offline commerce enterprises such as coffee shop, bakery,
+and restaurants can join as purchase data partners as well. Also, O20 enterprises that connect offline commerce
+enterprises with online / mobile can become partners.
+
+- Secure Strategy -
+
+Users of Hintchain are potential purchasing customers to purchase data partners. Relevant partners can secure
+delicate target marketing experience through food profile, and increase order conversion rate, repurchase rate, and
+long-term Life Time Value (LTV). Instead of inefficient marketing conducted in existing on/offline, food profile based
+delicate target marketing and contact service across lifecycle of customers can be provided. So, companies can
+
+reduce marketing and distribution cost, and focuses on providing optimized food product and service to customers.
+
+7.4 Other Partners
+
+Partners who produce or retain food porn, cooking show, and magazines can join Hintchain. They play a role
+of uploading contents of good quality to community services participating in ecosystem.
+- Inflow Strategy -
+
+Contents provider of good quality can receive Hint Power as reward of contents. A lot of food companies
+aiming for differentiated product production and distribution based on food profile are already participating
+in Hintchain ecosystem. They can create business model with synergy effect with contents providers.
+
+Hintchain can provide environment for this business deployment.
+
+@)
+The Food Protocol Hintchain White Paper
+
+8, Token Generation Event
+
+Hintchain issues Hint Token (HINT) for Hintchain development and Hintchain based ecosystem creation. Those
+
+who want to sponsor Hintchain can participate in Token Generation Even (TGE) through cryptocurrency transfer,
+
+Token exchange rate applicable for event participants and details of the event will be announced through
+
+official website (hintchain.io).
+
+8.1 Token Allocation Plan
+
+Total number of token issuance is planned to be a billion. 50% of issuance planed token will be provided
+to TGE participants. 20% of total issuance to ecosystem participants for ecosystem activation, 10% of total
+issuance to Hintchain team that most contributed in ecosystem creation such as Hintchain development and
+operation, 5% of total to initial external contributors like advisors, and 15% as reserved token for reserve
+
+fund purpose will be allocated.
+
+Enterprise participants can aim for business efficiency by using solution of Hintchain preferentially through
+
+participating in TGE.
+
+20% Ecosystem Activation
+10% TEAM
+
+50% Supporters(TGE Participants)
+5% Advisor
+
+15% Reserve
+
+The Food Protocol Hintchain White Paper
+
+Total Token Supply Amount : Cryptocurrency for Crowdsale :
+: ETH, BTC, BCH, LTC
+
+¢
+
+AVVEITs
+¢
+¢
+°
+-
+x
+‘
+TITANS
+
+7 N
+
+7 XN
+ca \
+yy
+
+1,000,000,000 HINT
+
+Total Crowdsale Amount : 500,000,000 HINT
+
+© Soft Cap 3 Million USD Hard Cap 22 Million USD e@
+
+Hard Cap achievement will be decided based on the price of Cryptocurrency at the point of TGE completion.
+
+If Hard Cap is achieved before Main TGE, Main TGE may not be executed.
+
+TGE decides on Hard Cap achievement by cumulative sum of each sale with Cryptocurrency/USD(or USDT)
+market price based. If Hard Cap is achieved before Main TGE, Main TGE may not be conducted.
+
+If Soft Cap is not reached, cryptocurrency used for even participation will be returned. If Hard Cap is achieved,
+any TGE participation after that point will be restored and cryptocurrency used for participation will be returned
+to participants, Soft Cap and Hard Cap will depend on market price volatility of cryptocurrency used in TGE
+(Ethereum) and there could be cases of not collecting enough funds or collecting funds more than needed.
+
+To prevent this, Hintchain project will calculate each Soft / Hard Cap in flat currency, USD.
+
+8.2 TGE Participation Process
+
+Hintchain TGE is composed through ERC-20 regulations based Ethereum Smart Contract.
+
+In accordance with this, participants will transfer Ethereum deposited in own electronic wallet to designated
+electronic wallet by Hintchain team and later Hint Token will be trasnfered to participants’ own wallet, Participants
+will acquire through the method of automatic transfer of Hint Token to above electronic wallet. Other TGE
+
+participation process and method details will be additionally announced to participants through official website.
+
+@)
+The Food Protocol Hintchain White Paper
+
+8.3 Use of Fund
+
+10%
+
+Reserve Fund
+
+30%
+
+Platform R&D
+
+20%
+
+Marketing
+
+20%
+
+Platform Research Development
+Operation and Commercialization
+
+20%
+Partnership and
+Base Business Infrastructure Building
+
+Secured fund from TGE will be used for Hintchain development and related ecosystem creation. Allocation
+
+of this fund may be adjusted for actual activation of Hintchain protocol in future.
+Below is a detailed description of where each funding is used.
+8.3.1 Platform Research Development 30%
+
+Hintchain is food profile based Blockchain platform to build food ecosystem, and continuously requires
+
+below 3 platform R&D and technology enhancement.
+
+(1) Research on standardization and structuralization of data
+In order to build food profile, a process of standardizing mixed atypical food data is necessary. In other words,
+analysis and research of standardizing and structuralizing various data such as food Meta DB like ingredients
+
+and component of food information, personal profile, and log data of eating habit must be continued.
+
+(2) Application algorithm study such as big data based analysis and recommendation
+
+As food taste data is enhanced, analysis and application scope of big data rapidly increases. There are various
+big data analysis and algorithm, but algorithm research focused on food field is lacking. Hintchain will apply
+existing various algorithm (such as machine learning) to standardized data, test, and build independent
+
+analytic system.
+(3) Common platform and API development enhancement
+Hintchain, as base protocol platform, will develop various API required by ecosystem participants to enhance
+
+and achieve service / business, and provide as common platform if necessary.
+8.3.2 Operation and Commercialization 20%
+
+To operate Hintchain, besides technical operation of the platform, various contributions from participants
+of ecosystem operations, users, are needed. We plan to use fund for this participation. In order to achieve business
+
+model proposed by Hintchain with partners, work in grounds mentioned below may be necessary.
+
+- Activation of food profile collection with token economy application
+- Business process consultation for Hintchain protocol application to commerce platform
+
+- Legal / financial / business consultation for Hintchain platform and participating partners
+8.3.3 Partnership and Base Business Infrastructure Building 20%
+
+To build partnership, certain fund of investment form is required. This is not only used as business deployment
+cost necessary to create value chain together with partner, but also needed to build on/offline business
+infrastructure required by partners. Hintchain will build food profile based total solution across value chain
+through building on / offline infrastructure.
+
+8.3.4 Marketing 20%
+
+For food market, users of existing platform have tendency of not moving easily until feeling certain usefulness.
+Therefore, Hintchain must secure above certain level of reliability as new platform, and conduct marketing in
+initial market entry state until users can feel usefulness and satisfaction above certain level.
+
+Marketing here does not refer to simple paid advertisement or promotion, but refers to inclusive ecosystem
+marketing such as support fund for ecosystem initial participants to make enough viral.
+
+8.3.5 Reserve Fund 10%
+
+In order to be prepared for unexpected variables or business changes, 10% has been secured as reserve fund.
+9, Road Map
+
+The Food Protocol Hintchain White Paper
+
+Basic component development will be conducted from Q2 to Q4, 2018, and the first protocol application
+
+service based test version will be launched in Q1, 2019. We target to have the whole ecosystem to operate
+
+smoothly in global market by Q1, 2020. In order for this, launch of various dAPP for protocol application and
+
+overall platform of Hintchain protocol will be provided to partners by Q4, 2019.
+
+2014 ¢
+
+3Q @
+
+2015 ¢
+30 ¢
+
+2016 ¢
+
+4Q
+
+2017 ¢
+20 ¢
+
+4Q 6
+
+- Built ingredients based food dictionary
+- Launch of healthy meal
+
+recommendation app, ‘Hint’
+
+- Launch of Haemuk Namnyeo (Korea)
+
+Selected as Google Play App of the Year
+
+- China & Hong Kong corporation establishment
+- Misik Namnyeo (China)
+
+Launch of Foodies (Southeast Asia)
+
+- Haemuk Namnyeo store opening
+
+(E-commerce BM)
+
+- Launch of Personal taste data based PB product
+
+(GS Retail : No.1 Food Retailer in KR)
+
+Secured 3.3 million users in Korea & China
+Selected as Google Play App of the Year
+
+Secured 460 thousand cases
+for ingredients based food dictionary
+
+2018 ¢
+10 ¢
+
+May @
+2Q @
+June~Sep @
+
+30 @
+
++ Hintchain White Paper 0.9
+- Al platform food data technical cooperation
+
+(KT : No.1 Broadband Platform)
+
+- Hintchain White Paper 1.0
+- Smart Contract development
+- Private TGE
+
+- Food dictionary for food profile enhancement
+
+and start of POC development
+
+- Pre TGE & Main TGE
+- Global partnership expansion
+
+- API spec and platform POC open
+- POC based cooperation with partners
+
+© - Alpha service : with the 1* dAPP on Hintchain protocol
+
+(Korea : Haemuk Namnyeo)
+
+- Closed beta service : With the 2 dAPP on Hintchain protocol
+
+(Great China Region : To be announced)
+
++ Official launch : With the 3’ dAPP on Hintchain protocol
+
+(Asia: To be announced)
+
+- Offline commerce partnership expansion
+
+- Launch of global version expansion :
+
+non-Asian countries
+The Food Protocol Hintchain White Paper
+
+10, Hintchain Team
+
+Supported by TEAM. OWA Ba
+
+Hintchain is a project developed and operated by following members, Most of members of Hintchain team
+are food tech industry professionals who led growth of Haemuk Namnyeo and Misik Namnyeo in VitalHint.
+Haemuk Namnyeo team of VitalHint, as the first partner and protocol application service, will closely help
+
+initial stabilization of Hintchain project.
+
+Paul, Chung
+
+CEO
+
+- CEO & Founder of VitalHint Korea
+
+- CTO of Reenbonz Korea
+
++ CEO & Founder of Club Venit
+
+- Samsung Electronics, Network Engineer
+
+- NCSoft, Data Platform Engineer
+
++ BA, Computer Science, Sogang University
+- 12yrs+ of relevant experiences
+
+Bin, Yoon
+Blockchain architect
+
++ Open Blockchain Forum Executive
+
+- Oracle Korea, Business Development
+
+- IBM Korea, SW Architect, Cloud Computing
++ Tmax Soft, Senior Consultant
+
++ 22yrs+ of relevant experiences
+
+ChristyAna Taveras
+
+Global Business Developer
+
+- Partner at ACT Ventures
+
++ Co-organizer Women in Blockchain PR
+
+- Colombia University in the City of New York
+
+.
+
+Sid, Lee
+cto
+
+- Kakao - Kakaotalk Messaging Server
+
++ NC Soft - Distributed File System
+
+- NHN - Naver Phone
+
+- Digito - NateOn 1.0&2.0
+
++ Expert of High Scalability Architecture.
+- T7yrs+ of relevant experiences
+
+Elly, Kang
+Hintchain Project Manager
+
+- Attorney at law
+- Writer & Legal Reviewer of White Paper
+- Yeungnam University LawSchool
+- 4 Years of E-commerce Business
+Operation Experience.
+- Founder & CEO of Fashion &
+Personalized Jewerly E-commerce Business.
+
+Isaac, Kim
+
+Global Business Developer
+- Vital Hint China
+
+B.A, Peking Univ. Poli. Sci.
+
+- M.A, UCSD Economics
+
+- Strategic Analysis Inc.
+Claire, Kang
+Ecosystem Architect
+‘VitalHint Korea, Strategic Planning Team
+
+Lucy, Yoon
+Platform Designer
+
+- VitalHint Korea, Design Team
+* Haemuk App / Web UX Design
+
+@ = Aiden, Bak
+
+Platform & Brand Specialist
+- VitalHint Korea, Design Team
+
+yy: CDR Associates, Branding Team leader
+- - POSCO, Dongbu Group
+
+Branding & Strategic planning
+
+Supported by
+
+Team. OWA
+The Food Protocol Hintchain White Paper
+
+11, Hintchain Advisor
+
+Hintchain is getting help from the following advisory group. The advisory group will help Hintchain ecosystem
+growth and contribute based on their abundant experience and network. The advisory group will be continuously
+updated. Especially global advisory group that will together make growth of Hintchain, global food protocol,
+
+will be continuously updated.
+
+=~ Will O’Brien > David Fragale
+
+Blockchain Advisor Blockchain Advisor
+
+- Director of PwC. Cryptocurrency
+and Blockchain SME
+- Advising Fortune 100 companies
+develop blockchain based business
+- MBA from MIT Sloan School of Management.
+
+- Former Founder & CEO of BitGo
+
++ Limited Partner & Advisor of Blockchain Capital
+
+- Advisor of Arrington XRP Capital
+
+Investor and advisor of Hub, Civic, Orchid, Akash,
+Nodle, Lottery.com, and Telegram
+
+- Executive of Keen IO, Big Fish Game, Tripay.
+
+- B.A. in Computer Science from Harvard University
+
+- MBA from MIT Sloan School of Management.
+
+>
+
+Sangwon, Moon ~~, SuYong, Park
+
+Technical Advisor / Distributed Computing . .
+Blockchain Advisor
+
+- Kakao, (No.1 Mobile company in Korea)
+- Early member of Kakao (up to 43M MAU) + Head of Al based BlockChain Center, Sogang Univ.
+
+7 Head of KakaoTalk Development Team _ - Professor, Computer Science, Sogang Univ.
+
+~ Loco (+t) Project Leader & Main Architect a - Former Head of NIPA (Goverment Agency runs
+- NC Soft, Distributed File System. by Korea Gov, operating $2B)
+
+- NHN, Naver Phone Backend "
+
+- Daum, Advertising Data Platform
+
+- Expert of High Scalability Architecture
+
+- 18yrs+ year of relevant experiences
+
+Kwang Keun, Lee _ TaeHyoung, Kim
+Food Profile Advisor Technology advisor
+- Head of Food Chemistry Laboratory, Dongguk Univ. : co or on
++ Head of STEP(Startup Support Center), Dongguk Univ. or
+. 7 . - CEO of Mobile Utility
+
+- Professor, Food Science and Biotechnology, Dongguk Univ.
+~ Ph.D, University of California-Davis, Dept. of Food Science CTO of CEMWare
+
+- BA, Mathematics, Sogang University
+
+- 12yrs+ of relevant experiences
+
+@)
+fn ChanSik, Ahn
+
+\ Legal Advisor
+
+- Partner, HMP Law(Choongjeong)
++ Cornell Law School (LL.M.)
+
++ Attorney at Law, Korea
+
+- Seoul National University (B.A.)
+
+- Tech & Comms, Foreign Exchange &
+Investment, Personal Information Protection
+
+A@i > HyunSeok, Choi
+
+| j Chef
+
++ (choi dot), Michelin Guide 2018, Owner Chef
+
+- ELBON the table, Master Chef
+
++ Seoul Hyundai Technical College visiting professor
++ Korean No.1 TV cooking show, main chef, etc.
+
+~~ HyunSu, Yoo
+
+Chef
+
+- Doore Yoo, Owner Chef
+- Embassy of the ROK(London, UK) Executive Chef
++ Korean No.1 TV cooking show, main chef, etc.
+
+= JinPyo, Kim
+
+F&B Marketing advisor
+, ~ CEO of Plating Co.
+
+~ CMO of ELBON International F&B
+y + CEO of DK Company
+
+pg — SeDeuk, Oh
+
+Chef
+
+- Restaurant OH-SE-DEUK, Owner Chef
++ July restaurant, Master Chef
+
+~ - Krorea Occupational Training College visiting professor
+
++ Korean No.1 TV cooking show, main chef, etc.
+The Food Protocol Hintchain White Paper
+
+12, Blockchain Partner
+
+Hintchain is with the following partners. The partners will be continuously updated. Especially global partner
+
+that will together make growth of Hintchain, global food protocol, will be continuously updated.
+
+- 1M+ TPS High Performing Blockchain Platform
+
+XX QuarkChain — - one of Best Performing ICO of 2018
+
+(Went 20x after First Listed on Binance)
+
+- Global id lockchai |
+BLOCKCHAIN ZG? —Goz"Cwsteinds slocchan aca
+
+| = MT oO ++ - Chinese BlockChain Accelerator
+- Incubator of QuarkChain
+
+The Future Is Now
+
+() SRStSEBI «= UNIFICATION §=—-— @ pic vata soc
+
+U unitalent eo PLATING O14 Tryus&Company
+
+company
+
+ee
+[Pe Humanscape DIM LAW e220 28
+
+@)
+The Food Protocol Hintchain White Paper
+
+13, Partner
+
+: Offline Retail Partner
+. - No.1 Convenience Store in Korea of 7B$ Revenue
+GS Retail csZ - Co-worked with Consumer-Data based Product Planning
+
+& Marketing
+
+- Al Platform Partner
+
+kt | ; - No.1 Broadband platform in Korea of 20B$ Revenue
+- Co-worked with Food Recommendation API
+
+based on Food Metadata
+
+) - Content Producing Partner
+1HO aia) - Top TV Show Production
+“ - Co-worked at Sik-sin Road season 3,
+
+Which is Top Food Review TV Show
+
+* Global e-C Part
+ISEBommerce | WIZWID |. on eomimerce rariner
+
+The First cross border ecommerce platform since 2001
+
+5 A Sik - Chinese Food Platform Partner
+KARIF - No.1 Food 020 Platform in China. 600M Member & 180M MAU. 30B$ Valuation Unicorn.
+RRLRES .
+- Contents & Data Partnership
+
+- Chinese Food Platform Partner
+
+LU] OF - Food 020 Platform of Alibaba Group in China. 9B$ Valuation Company Value.
+Koubei - Contents & Data Partnership
+
+#230 4) pisys Bram GS ante
+
+weibo.com
+tv.sohu.com AMERICA
+
+YOUKU NeLR © Wo @ /\18
+
+°k eR R Be
+
+Investor
+
+500 MIRAE £ ceey’ ? Tevesenent Partners wD frvestment
+il er
+
+startups OCHO FAM S $ Strong Ventures Primer
+The Food Protocol Hintchain White Paper
+
+14, Disclaimer
+
+Hintchain has created this white paper for reference purpose to provide information on platform, business
+model, related technology, and token of various purposes to the ones who are interested in Hint protocol.
+This white paper is not to suggest investment on Hintchain team or Hintchain protocol, and is not relevant
+
+at all. Hintchain team is providing this white paper based on the period it was written (as it).
+
+Contents of this white paper do not confine VitalHint (“the company’), and may be changed due to continuous
+research and development of Hintchain protocol. This white paper does not compose consultation related to
+investment, legal, taxation, regulations, financial, accounting, and others, and does not have a purpose of
+
+offering evaluation standards, Any part of this white paper cannot be regarded as suggestion of any kind.
+
+Hintchain does not guarantee accuracy or properness of any content including Hintchain project schedule
+of future roadmap and time you read this white paper, as well as achievement, and conclusion. Hintchain will
+not state or guarantee accuracy of any matter to the ones reading this white paper, and will not take any
+
+legal responsibilities.
+
+Hintchain team will not guarantee
+
+1) if the white paper is written based on legitimate right and does not violate right of the third party,
+
+2) if the white paper is commercially valuable or useful,
+
+3) if the white paper is suitable for you to achieve a specific purpose,
+
+4) if there is any error in the contents of the white paper, and
+5) if it is legitimately written, distributed under Hintchain team’s or your countries’ legislations, or if the contents
+
+have violated legislations of your countries.
+
+Responsibility waiver is not applicable for these examples.
+If you have used this white paper (including referencing this white paper and using it as basis, but is not
+limited to), for your decision making or actions, following results, regardless of profit or loss, it entirely up to
+your own decision. If damage such as loss or debt occurred by using this white paper, Hintchain team will not
+provide compensation or take responsibility. The white paper written in Korean is a main official source to
+provide project related information. Information of the white paper written in Korean can often be translated
+into other languages. During translation process, partial information from Korean white paper may be missed,
+changed, or wrongly translated. Accuracy of substituted communication cannot be guaranteed. If contradiction
+or discordance occurs between translation and official Korean white paper, Korean original white paper will
+
+be first applied.
+
+This white paper cannot be copied, used, leaked externally without consent from Hintchain team.
+
+The white paper will be updated in the future. So, please use this white paper only as reference and check
+
+official website (hintchain.io) for final contents.

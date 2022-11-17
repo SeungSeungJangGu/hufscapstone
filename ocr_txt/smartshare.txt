@@ -1,0 +1,1017 @@
+Smartshare Protocol Whitepaper
+
+Generating Value Through a Decentralized Sharing Economy
+
+S)
+
+smartshare
+
+V2.4 DEC, 2017
+Table of Contents
+
+Table of Contents
+Summary
+1. Origin of Smartshare
+1.1 Why build Smartshare
+
+2
+4
+5
+5
+1.2 Social value of Smartshare 6
+2. Blockchain Technology and Sharing Economy 7
+
+2.1 The Current State of the Sharing Economy 7
+
+2.2 The Value of A Sharing Economy 8
+
+2.3 How Blockchain enhances the value of Sharing Economy 10
+3. Smartshare Achieves loT value sharing 11
+
+3.1 Development And Current Status of The Internet of Things 11
+
+3.2 Blockchain Technology in loT 12
+
+3.3 Smartagent Ecosystem 13
+
+3.4 How Smartshare accelerates adoption of loT sharing 15
+
+4. Smartshare Operating Mechanism 16
+4.1 What is Smartshare 16
+
+4.2 Problems to be solved by Smartshare 16
+
+4.3 The Goal of Smartshare 17
+
+5. Smartshare Technical Background and Program 18
+5.1. Smartshare Protocol 18
+
+5.2. ShareAgent’s Smart Chip 19
+
+5.2.1 Node Authentication 20
+
+5.2.2 Node Asset Management 20
+
+5.2.3 Service Description 21
+
+5.2.4 Matching Transactions 21
+
+5.2.5 Service Measurement and Distribution Control 21
+
+5.2.6 Billing Settlement 21
+5.2.7 Example Description
+
+5.3. ShareAgent Technical Architecture
+6. Smartshare Application Scenarios
+
+6.1 Bandwidth Sharing Application
+
+6.2 Computational Power Sharing
+
+6.3 Storage Sharing
+
+6.4 Smart Weather Monitoring Terminal
+
+6.5 Other Scenarios
+7. Mining Mechanism
+
+7.1 How to mine
+
+7.2 Equipments compatible for mining
+8. Smartshare Road Map
+9. Smartshare Foundation
+
+9.1 Smartshare Foundation
+
+9.2 Smartshare Team
+10. Smartshare Private Sales
+11. Contact Us
+
+21
+
+23
+25
+25
+25
+26
+27
+28
+29
+29
+29
+30
+31
+
+31
+
+31
+
+34
+36
+Summary
+
+Smartshare Protocol is a distributed network protocol that uses blockchain
+technology and smart contracts to evaluate and quantify the substantive
+value of all sharable objects, which can realize the exchange of sharing
+
+value.
+
+The birth of Smartshare as a value sharing protocol will greatly promote
+the growth of popular industries such as the Internet of things (loT) and
+the sharing economy. One reason is the combination of intelligent loT
+devices and blockchain technology will accelerate technical change of
+smart loT application. The other is through the integration of idle products
+and service resource, sharing economy makes users get products and
+services. Our country encourages the development of sharing economy.
+However, many sharing models are centralized leasing models, existing
+some gaps with ideal decentralized sharing of idle products. Smartshare
+uses the blockchain technology to achieve the decentralization sharing of
+individual value, making the real shared entity become the network node.
+Smartshare will utilize blockchain to inject new energy into sharing
+
+economy, and all sharable products can obtain value return.
+
+Smartshare provides an open ssp-based smartshare protocol to apply in
+sharing economy. We are committed to make use of the sharing value of
+stipulated contract terminal to realize the value output of current smart
+
+terminal through sharing mechanism.
+1. Origin of Smartshare
+
+1.1 Why build Smartshare
+
+It needs to look at the roles of protocol in blockchain. Compare the model
+of Internet and blockchain, we can see that the sharing agreement of
+Internet such as TCP/IP, HTTP, SMTP, most of which are gained and
+rearranged in data form at the application layer. However, in terms of ROI,
+the return of the investment in protocol is far below than that of the
+application, and the return of TCP/IP is much less than that of Google,
+Facebook and Wechat. As for blockchain, the protocols and application
+performance are in contrast to Internet, for example, the assessed value
+of BTC and ETH is much higher than that of application, which mainly lies
+in that the Internet is developed from the decentralization to centralization,
+but the evolvement of blockchain is opposite with it. As most applications
+already existed in the development of blockchain, we not only need to
+utilize the protocol of blockchain to upgrade the existed applications, but
+also need to copy and store user’s data through the open-source and
+decentralization Internet, and lower the threshold of new participants, build
+an ecosystem to make the products and services related to the protocols
+
+more active and competitive.
+
+Despite the limited use cases, the utilization of blockchain technology in
+applications that focused on the sharing economy was already available
+before the birth of Smartshare. However, during the implementation
+process, these applications can only be applied in one industry, resulting
+in the well low promotion rate of protocol, therefore it is a centralized
+
+application in essence. Smarshare is to use open and decentralized
+network protocol to lower the threshold to join in the sharing economy,
+
+creating a sharing ecosystem across the category and region.
+
+1.2 Social value of Smartshare
+
+While resources are ubiquitous, the best use of them is not only an
+esteem foe us, but a crucial method to protect ourselves and the earth. At
+this present moment where resources are abundant, billions of terminal
+devices, including those under the cover of sharing platform, are not
+utilized optimally. Smartshare’s ideology is to promote cooperative
+sharing, where all terminals will be part of the sharing economy for both
+sharer and receiver to exchange value and benefit from it. The goal of
+Smartshare is to build a sharing community that is not only convenient for
+people, but can solve the problem of resource waste resulted by
+information asymmetry,. Smartshare uses technology to bring us into a
+
+virtuous circle of full utilization of resource.
+
+SmartShare sharing protocol uses the decentralized nature of blockchain
+to realize value sharing across society. By virtue of the protocol,
+
+everyone can enjoy the convenience and benefit from sharing resources,
+
+than social overhead capital will be reduced.
+2. Blockchain Technology and it’s Shared Economy
+
+2.1 The Current State of the Sharing Economy
+
+Smart living and smart manufacturing are the two main growth-driver of
+smart hardware industry. As technology, related infrastructure and
+application service get better over time, smart hardware now includes not
+only smartphones, but wearables, furnitures, in-car entertainment system,
+medical appliances, smart autonomous system and so on. The adoption of
+smart hardware in industrial, medical, automotive and agricultural
+industries has been accelerated due to the recent development of loT,
+
+“Internet+”, Artificial intelligence, Machine Learning, etc.
+
+The development of a sharing economy has created a new business
+model that maximizes the resources utilization and greatly facilitates
+people's daily lives. The primary benefits of sharing economy are reflected
+in the better allocation and circulation of resources, reducing wastage and
+benefiting all stakeholders in a sharing economy. Almost everything has
+shared value, but due to the shared value can’t be estimated and doesn’t
+
+have payment advantage, only a few commodities own it.
+
+In 2016, the size of sharing economy in China reached 39.45 trillion yuan,
+which is a increase of 76% on a year-on-year basis. It is estimated that the
+
+size of the sharing economy will exceed 10 trillion by 2020.
+Scale of Shared economies (trillion yuan)
+
+DAOQOO onressesseesseeseesseesersetnserseentenserneensetneenneneenseaneenseneetneeaseneemnenecaseaneneaet
+
+82500
+
+BBOOO wvresseessesseeseessersetseensetneeneeaseensen
+
+PE
+
+2014 2015 2016 2017 2018 2019 2020
+
+Prediction of upcoming trends for 2014 — 2021
+(Data obtained from The Chinese Academy of Industry Economy Research)
+
+2.2 Sharing Economy’s Value
+
+Sharing economy is broadly to assemble all distributed resources
+together, share value in a centralized way, use the distributed network to
+trade and exchange the resources that are not fully utilized, including
+assorted profit-driven and non profit-driven goods and services. Due to the
+vicious competition brought by the profit centralization in the current
+sharing economy, the waste of resources induced by the gimmicks of
+sharing economy model can be seen everywhere. It is not only the
+bottleneck of current shared economy, but the driving force of the
+
+revolution of blockchain.
+Compared with traditional sharing economy, the application of sharing
+resources can be characterized by two rights, two centralization and three
+roles. The two rights are the ownership and the right to use; the two
+models of centralization are decentralization and re-centralization; and the
+three roles it plays are the sharer, receiver and the sharing platform itself.
+In the sharing economy, the provider provides an idle resource that’s
+demanded by the receiver. Sharing means the right to use is shifted
+temporarily without any change to the right to ownership. Decentralization
+of the sharing economy allows the resource provider to break the tradition
+by approaching the receiver directly without any middleman. However,
+when large amount of decentralized sharing happens, a re-centralized
+platform will be required to form a sizable regulated market. All three
+parties (sharer, receiver, and sharing platform) are essential for sharing
+economy to work. The relationship between sharer and receiver can be,
+one-to-one, many-to-one or many-to-many. Given that both the early
+models of centralized and re-centralized sharing economy continues to
+exhibit bottleneck characteristics in form of destructive competition; and
+that the sharing economy remains incapable of pricing values, the team
+believes that the sharing economy should be based on a decentralised
+model to solve both issues. The sharing of WiFi can be a good use case
+for the adoption of blockchain technology in the sharing economy as each
+sharing WiFi unit acts as a node that allows for the data transfer. Based on
+a mining algorithm, mining rewards can be programmed to automatically
+distributed by the blockchain to incentivise adopters to utilise the
+ecosystem. This indirectly solves the issue of pricing for a shareable
+value. We believe that such use cases will be revolutionary and will bring
+
+about positive effects to the society as a whole.
+2.3 How Blockchain enhances the value of Sharing Economy
+
+Blockchain, is also known as the distributed ledger technology, an Internet
+database that is decentralized, open and transparent. It allows everyone
+on the blockchain to participate in record keeping. As the smart contracts
+mature, blockchain will naturally shift from the information recorder to the
+trading executor. One example is low-cost automated trading, which has
+greatly reduces the cost of value exchange. Combined with the
+unimaginable application scenarios developed by loT, for example, the
+current sharing economy is only available on products with high value.
+Once the transaction cost is significantly reduced, all thing can be shred in
+anyway, anytime and anywhere. With the appropriate terminal, an ideal
+
+sharing economy will come true.
+
+Through blockchain technology, Smartshare Protocol will build a smart,
+credible, open, decentralized data exchange for a sharing economy
+based on the current architecture of sharing economy. Smartshare aims to
+subvert the existing centralized sharing platform with blockchain
+technology, and use Smartshare Token to realize value quantification and
+circulation. At the same time, as a underlying protocol of blockchain
+sharing economy, Smartshare will conduct In-depth coverage and
+application in related industry of business, applying blockchain technology
+
+in new business.
+
+10
+3. Smartshare Achieves loT value sharing
+
+3.1. Internet of Things Development and Current Situation
+
+With the popularization of loT, the concept of interconnected networks is
+deeply rooted in our hearts. loT utilizes information sense devices to
+achieve interaction among products. In short, all your devices are
+
+implanted in chips, making intelligent network interaction possible.
+
+Each loT terminal can act as an independent business entity on the
+network and share their ability or resources with other terminals at low
+transaction cost. All loT devices are able to report their status, which
+creates a good condition for us to utilize the idle resources. At the same
+
+time, loT has also provided a transparent, fluid market for trading.
+
+In 2015, the global loT market reached 62.4 billion U.S. dollars, an
+increase of 29% over the same period of previous year. By 2018, the
+global loT device market is expected to reach 103.6 billion dollars, with a
+compound annual growth rate (CAGR) of 21% from 2013 to 2018. The
+amount of new loT devices will grow from 1.691 billion units in 2015 to
+3.054 billion units in 2019.
+
+40
+
+30
+
+20
+
+2013 2014 2015 2016 2017 2018 2019
+loT devices with access (billion units) Growth (%
+
+11
+The rapid development of loT has appeared a few prominent issues.
+Firstly, many loT infrastructures are not utilized optimally and are left idle.
+Many loT vendors and investors do not benefit from the loT data and
+terminals. Secondly, the global loT platform lacks a_ universal
+communication mechanism, which has made data collection and cross
+device connection difficult.For example, the industrial ecosystem of a
+traditional PC or mobile phone consists of the foundational processing
+chip, foundational software and core application. Smart hardware is based
+on smart technology and has its ecosystem processing chip, data,
+algorithm, development framework and application platform. The core
+factors are more intercoupled and complex. For example, differences in
+the hardware architecture and lack of common communication protocol
+and standard has resulted in difficulty of individual terminals
+
+communicating with each other.
+
+Present blockchain technology not only provides the right solution for
+recording data for all loT cells, but also ensures that recorded data can’t
+be amended. Therefore, Smartshare is using blockchain to solve the
+shortcomings of communication compatibility and resource idleness to
+
+enhance the value of loT.
+
+3.2 Blockchain Technology Used in loT
+
+While there are already a lot of loT applications, current technology is
+inadequate to realize ideal usage of loT in which everything is
+interconnected. The current loT framework is mainly closed. Although
+devices in a closed system can interconnect with each other, and even the
+Internet can transfer data, there’s still difficulties for devices using different
+
+systems to undertake valuable communication.
+
+12
+On the other hand, we need to use other loT equipment manufacturers
+terminals and networks for data transmission and storage. It is thus
+necessary to reach a multi-party agreement on the distribution of benefits.
+In other words, companies and individuals who provide basic loT devices
+and web services will be able to obtain reliable revenue more easily , such
+as charging fees based on the amount of data stored and transmitted.
+Under the present technical conditions, a cooperation agreement must be
+reached if different loT service providers are to share resources.
+Blockchain technology made point-to-point data transmission in loT
+possible. A big and centralized datacenter is not required anymore for data
+synchronization, management and control. Operations such as data
+acquisition, instruction sending, and software update can all be
+
+transmitted over the blockchain network.
+
+3.3 Eco-alliance Based on Smartagent
+
+Smartshare bridges the entire ecosystem through smart chips. Each
+Smartshare smart chip implanted in a smart terminal acts as an individual
+node. A Smartagent chip will be implanted in each loT terminal, then the
+terminal will be registered on the blockchain and have a digital identity. On
+this very note, Smartshare will use the smart contract ledger to record all
+information of this digital identity. The digital identity can be used for
+identity authentication, but more important, as the basis for identification in
+blockchain-based loT. Its goal is to achieve the direct communication and
+value delivery between objects. It will also acquire tokens automatically
+according to the shared value provided by devices during the sharing
+
+process.
+
+13
+SSP Ecosystem Smartshare loT’s Eco-union
+
+Data Collection lOT GW / sensor | Al Equipment 1OT System
+Benefits/ Compensation Business Cooperation Business Cooperation
+
+Smartshare will work closely with loT vendors to build an ecosystem with
+the aim of promoting terminal value. The following are the achievements
+
+acquired:
++ December 2017, we have entered a strategic partnership with
+Chainbox by China Binary Sale Technology Limited, which will be
+
+launched in January 2018.
+
++ January 2018, we have entered a strategic partnership with Mau Huan
+
+Health to bring Smart Health Products to the Smartshare ecosystem.
+
++ January 2018, we have entered a strategic partnership with the Yuan
+
+Zheng Data
+
+14
+Smartshare is committed in working with more loT vendors. It is estimated
+that by end of 2018, the number of alliance manufacturers will reach 10 or
+
+more.
+
+3.4 Smartshare Ability for loT’s Rapid Growth
+
+By using Smartshare, loT devices of different owners can transfer data
+through encrypted SSP protocol and calculate sharing value and acquire
+data through Smartagent. The fees for data transfer can be calculated by
+Smartagent too. SmartToken is the basic unit in Smartshare blockchain
+loT network. It will be used for payment, and as a reward for value
+sharing. As long as loT vendors provide blockchain technical support for
+devices, their devices would be able to share or exchange their value
+
+within the Smartshare network.
+
+Smartshare's vision is to create a sharing ecosystem with appropriate
+sharing mechanisms and reward schemes for the sharers in order to
+
+accelerate the growth of the sharing economy within the loT ecosystem.
+
+15
+4. Smartshare Operating Mechanism
+
+4.1 What is Smartshare
+
+Smartshare is a distributed network protocol that uses blockchain
+technology and digital identity to digitize assets. It uses smart contracts to
+transfer value to sharing entity, making all shareable objects realize the
+
+exchange of shared value.
+
+Through built-in encryption protocol and blockchain based Token
+rewarding mechanism, Smartshare makes billions of loT terminals get
+shared value and form a massive decentralized sharing network based on
+the algorithm of value sharing. It will be possible to share different types of
+smart terminal value, such as computing resources, network bandwidth,
+network quota, storage, rights to use other devices and even time through
+
+Smartshare protocol.
+
+4.2 Problems solved by Smartshare
+
+The irresistible decentralization age is only accelerated and made better
+by adoption of loT. Billions of people and devices are connected by loT in
+point-to-point manner, forming a massive sharing economy. loT not only
+allows everyone to be both producer and consumer at the same time,
+making each activity become a form of cooperation, but connects all
+people into a global community. In this way, the prosperity of social capital
+is unprecedented, all above conditions make the sharing economy
+
+possible.
+
+In the rapid growth of a sharing economy, the main issues for more
+
+universal and in-depth improvement are as follows:
+
+16
+(1) The shared value of smart terminals is hidden due to the lack of
+universal value standard and marketability, resulting in a waste of large
+amount of resources.
+
+(2) Lack of universal protocol. There has been attempt to use
+blockchain to solve the pain point of current sharing economy, however
+the lack of protocol between chains has resulted in the shared value
+nonnegotiable.
+
+(3) The shared value mechanism lacks flexibility. As different
+participants have diverse requirements on the sharing mechanism, the
+
+existing mechanism cannot be promoted universally.
+
+4.3 Smartshare's Goal
+
+Smartshare is a blockchain-based distributed database, utilizing the
+features of blockchain, such as decentralization, disintermediation,
+trustfree smart contract and timestamp to form the foundation of sharing
+economy by establishing a smart, trustable, open, decentralized protocol
+
+for value sharing.
+
+Smartshare is centered on the underlying shared general protocol, and is
+gradually connected with applications in sharing industry, such as shared
+trip, shared charge pal, shared digital products and homestay. At the
+same time, Smartshare uses loT, Al and big data to achieve the optimal
+usage of efficient resources, building the top-ranking decentralized sharing
+
+ecosphere.
+
+17
+5. Smartshare Technical Background and Program
+
+5.1. Smartshare Agreement
+
+Smartshare bridges the entire ecosystem through smart chips. Each
+Smartshare smart chip implanted in a smart device acts as an individual
+node. Through Smartshare, the nodes would be connected and be able to
+
+exchange and share value.
+
+Blockchain consensus is achieved through a very rigorous mechanism.
+Adding the next block in the blockchain requires multiple parties to
+compete and obtain block rewards or transaction fees. Bitcoin uses Proof
+of Work (POW) and Hash calculations for mining. Smartshare uses an
+original consensus mechanism, proof of share to ensure that mining is
+achieved through sharing. This sharing mechanism is based on multiple
+
+consensus mechanisms.
+
+Smartshare Platform
+
+a= Gp ==
+
+Smartshare Chain
+
+Smart Agent Smart Agent Smart Agent
+
+Intelligent Terminal, Storage, WIFI. Air Purifie, Router,etc
+
+A good use case for Smartshare is to mine by sharing computing power.
+Research from Berkeley Open Infrastructure for Network Computing
+(BOINC) has shown the viability of using an open protocol to reward users
+who contributed computing power. BOINC is an open protocol for scientific
+grid computing that allows participants to contribute their own spare
+computational power to conduct a series of scientific calculations.
+Smartshare uses BOINC as a computing platform to help conduct a
+variety of scientific research, which includes finding identities of
+
+individuals, simulating DNA data, etc.
+
+Another example is mining through resources sharing(storage, bandwidth,
+etc.), where the smart chip will communicate directly with the smart
+terminal to monitor the shared resources, and issue appropriate amount of
+
+tokens
+
+5.2. ShareAgent’s Smart Chip
+
+SmartShare bridges the entire ecosystem with ShareAgent. Each
+SmartShare node has only one ShareAgent (hereinafter referred to as SA)
+built on a dedicated smart chip. SA's core functions include: node
+authentication, node asset management, service metering, distribution
+control, service price assessment and service billing. SmartShare links
+these nodes through SA to achieve the sharing and exchange of value
+
+sharing.
+
+19
+5.2.1 Node Authentication
+
+SA certifies the legitimacy of each node. As an authenticated security unit
+of sharing network, SA has the basic legitimacy granted by the sharing
+network. At the same time, SA also undertakes the task to identify the
+legitimacy of electronic information devices and systems related to
+
+corresponding nodes.
+
+5.2.2 Node Asset Management
+
+SA is responsible for not only playing an role of electronic wallet by
+receiving, paying and storing digital currency assets, but managing other
+assets owned by the nodes in the shared network. For example, data
+asset information that nodes store in shared storage, and shared service
+
+information that is currently provided to external parties.
+
+20
+5.2.3 Service Description
+
+SA represents shared service information of sharing network provided by
+
+nodes, including service types and service definitions.
+
+5.2.4 Matching Transactions
+
+SA represents the node to provide the shared network with service price,
+including the supply and request price. Based on the price of both parties
+and fair rules, the transaction can be coordinated in the principle of
+
+benefiting our own.
+
+5.2.5 Service Measurement and Distribution Control
+
+SA cooperates with the sharing network to accurately measure the service
+provided externally or received by nodes, record unsettled service metrical
+information, and coordinate the progress and procedures of the service
+provided or accepted by this node. For example, the process of storage
+sharing service includes the coordination of data sending and
+
+confirmation, and daily health inspection of data stored in this node.
+
+5.2.6 Charge Settlement
+
+SA will manage payment and fund transfer based on pre-established
+
+smart contract for deposit, installment payment, and balance payment.
+
+5.2.7 Example Description
+
+SA verifies the service capability of associated storage service node, and
+
+periodically checks for updates according to the preset rules. Provide
+
+21
+storage service to obtain digital currency, and pay digital currency when
+you receive storage service. The actual turnover is calculated by the
+standard of matching transactions. Data storage service is defined by
+volume of data, writing speed, reading speed, layers of redundancy, etc.,
+(a clearly regular framework is required). The service demander and
+supplier will send out a request to the network with self-requirement and
+expected price. The transaction will be matched real-time by the network.
+It should be noted that each service unit is different from actual storage
+tasks seen by users. For example, a user can submit a 1GB data storage
+request through a node device and specifies a total bandwidth target and
+4 redundant copies. After SA interacts with the shared network, it divides
+the 1GB data into several data packets, indicating the specifications and
+expected price for public tender. Based on the bidding rules submitted by
+users (prices fluctuation principle), SA constantly seeks the best quotation
+for the node owners with a profitable way. After matching a transaction for
+a data packet, SA pays deposit to the service provider (if required),
+obtains the information required by data transmission, and both parties
+(may be multiple parties) begin to transfer data. Each node device reports
+the status of data transmission to SA. After successful completion, the
+demander pays the balance, and if the service fails, deposit will be
+returned (if any). Make appropriate compensation according to the
+established rules to(if available and as the service provider's
+responsibility). Once the service is completed, and the transmission and
+storage of all data packets is finished one by one. To simplify the overall
+design of storage service architecture, shared storage can be built
+
+according to object storage.
+
+22
+5.3. ShareAgent Technical Architecture
+
+SA is built on a dedicated security chip. Its structure is as follows:
+
+Sound networking mechanism: If the node device has sufficient
+networking capabilities, SA can use the node device to connect to
+the shared network. For node devices that do not have networking
+capabilities, SA can also connect to the shared network through the
+built-in NB-loT module.
+
+The SA is based on a dedicated security chip designed to provide better
+security, performance, power consumption, smaller form factor, and more
+conducive system integration. The hardware-level trusted computing
+system improves the trustworthiness level of the sharing network and
+
+provides a reliable basis for the development of the sharing network.
+
+SA is not only applicable to node devices that have networking
+capabilities, but also to node devices or virtual service nodes that are not
+
+connected to the Internet. The SA's built-in NB-loT not only provides the
+
+23
+basic networking capabilities required by shared network, but also makes
+
+the diverse and innovative applications on the network possible.
+
+24
+6. Smartshare Application Scenarios
+
+Smartshare will build a blockchain-based underlying communication
+protocol and a massive shared network to realize the exchange of sharing
+value, saving social resources such as bandwidth, storage, hotspot,
+power, energy, time, etc. In Smartshare network, the reward mechanism is
+based on smart contract. The Smartshare Foundation will form a shared
+cooperation alliance to support various hardware and software. The
+development protocol is open to to third-party development teams, and
+Smartshare protocol will be applied in more scenarios. Below are some of
+
+the settled product applications that will be implemented in Smartshare.
+
+6.1 Traffic Sharing Application
+
+The are currently billions of smart routers. After investing much capital, the
+profit margin of flow resource is not high. The Smartshare protocol
+supports different smart router to register, authenticate and transact on
+Smartshare terminal. Equipment users and owners can transfer the right
+
+of use through smart contract to achieve value transfer.
+
+Smartshare has built a protocol layer, supporting the quick access of
+common smart router, which can be upgraded to new sharing smart
+hardware. And users can share the idle bandwidth, storage space and
+
+computing power to exchange digital currency Token.
+
+6.2 Shared computing applications
+
+With the development and popularization of cloud computing, deep
+
+learning and blockchain technology, the demand of computing power
+
+25
+becomes more and more urgent. More and more enterprises increase
+
+their computing power by expanding their data centers horizontally.
+
+In fact, there is large amount of computing power around our daily lives
+that is usually wasted, which is from our personal computers, or even
+smartphone. These devices are not required to perform at their peak
+performance 90% time in use. If we can utilise the idle computing power, it
+
+would be a very powerful computing resources.
+
+Smartshare bridges the entire ecosystem through smart chips. Each
+Smartshare smart chip installed on a smart device acts as a stand-alone
+node. Through Smartshare, the nodes would be connected and be able to
+
+share or exchange value.
+
+6.3 Shared storage applications
+
+In Information age, data storage such as local storage is no stranger to us.
+Local storage refers to data physically stored in computer hard disk or
+removable hard disk; However, as data stored increases, the hard disk
+space will eventually be a limitation. Moreover, significant losses may be
+incurred if the physical hard drive is damaged, and hence comes the birth
+
+of professional cloud storage services.
+
+For businesses, while cloud storage alleviates the storage pressure, it also
+allows companies to be limited by third parties. Cloud storage is a
+centralized service, with service provider having full control over the
+server. Moreover, if the service provider terminates the contract, the stored
+data is not accessible anymore. In addition, cloud storage services are
+
+provided by professional data centers, where the cost is extremely high.
+
+26
+Even mere storage space can incur a high cost if a company needs to
+
+store big data.
+
+Smartshare allows all users' terminals to be part of the storage network.
+This storage network has its own unique consensus mechanism and
+incentive mechanism. Smartshare builds a shared network using
+authorized voting verification and storage verification. The blockchain is
+equivalent to the accounting system. When a file is stored, a encrypted
+private key is generated and provided only to the uploader. The user can
+only download the file with the right private key; the transaction generated
+by the entire storage network is fueled by the digital currency,
+ShareToken. Smartshare network distributes and issues tokens following
+the prespecified mechanism,and users can share storage space, share
+
+valuable documents, publish valuable documents to earn token rewards.
+
+6.4 Smart Weather Monitoring Terminal
+
+Smart weather monitoring device. The device has various spherical
+sensors built-in, such as temperature, humidity, light, air pressure and
+ultraviolet light sensors to monitor the surrounding real-time weather
+
+conditions.
+
+The users can start capturing image of real-time weather after purchase.
+What’s more, users can share the images through various social medial,
+and become the meteorologist among your friends. If you please, you'll be
+able to share the real-time weather status via WeChat, WeiBo or email
+very easily. The whole sharing process is simple.
+
+This type of resource sharing is mainly driven by pure interest, where the
+users spontaneously share the data obtained by the terminal. However,
+
+due to the lack of proper reward mechanism, the frequency and breadth of
+
+27
+data sharing is fairly low, and ideal sharing is not achieved. Smartshare
+plans to reach strategic cooperation with this equipment manufacturer,
+and quickly access to the smart meteorological equipment terminal
+through the protocol, as well as calculate the shared data value of users
+
+through smart contract to realize returns of Tokens.
+
+6.5 Other Scenarios
+
+With the sustainable development of sharing economy, the sharing of
+content delivery network (CDN), bandwidth, storage space, bicycle, power
+bank has grew significantly during the process of decentralization to
+centralization development. However, it’s only rental economy in disguise,
+and is not an ideal sharing economy. To make sharing economy back to
+the fully utilization of idle resources instead of rental system, decentralized
+nature of blockchain is required. In this way, It can not only extend the
+present sharing model to more entities and individuals, but also can be
+
+applied in more industries and scenarios.
+
+28
+7. Mining Mechanism
+
+7.1 How to mine
+
+The users can mine by using devices with ShareCore chips built-in. During
+the sharing process. According to shared values provided by devices,
+
+tokens can be acquired automatically through smart contract on the chain.
+
+7.2 Equipments compatible for mining
+
+In order to share the idle products and ensure the fairness of mining, you
+
+shall meet the following conditions:
+
+* Use devices developed and manufactured by vendors cooperating
+with the Smartshare Foundation
+* Devices implanted with ShareCore chip
+
+* Devices are shared as required
+
+29
+8.Smartshare Road Map
+
+2016.2 Blockchain research on Xinheyun Lab
+
+2017.11 Release of SSP Demo
+
+2017.12 Cooperation with ChainBox
+
+2018.1 SSP Token Sale
+
+2018.2 Release of SSP 1.0
+
+2018.2 Launch of Smartshare based product with Three PAPA
+2018.12 Launch of at least 10 Smartshare based product
+2019.12 Launch of at least 100 Smartshare based product
+
+SmartShare Development plan:
+
+- First phase (In June 2018)
+Cooperation with 4 companies (Partnership with at least 4 companies from
+
+2 different industry within 6 months)
+
++ Second Phase(By end of 2018)
+Launch of at least 10 Smartshare applications, and accumulate at least
+
+millions of users.
+
+- Third phase(By end of 2019)
+Launch of at least 100 Smartshare applications, and accumulate at least
+
+10 millions of users.
+
+30
+9. Smartshare Foundation
+
+9.1 Smartshare Foundation
+
+The Foundation of Smartshre(hereafter referred to as Foundation) was
+founded in Singapore, it is committed to the research, development and
+operation of the project and actively promote the sharing economy. The
+Foundation will manage the Smartshare ecology by developing a good
+governance system. The Foundation will announce the progress of the
+
+project every month, and release the audit report annually.
+
+The Smartshare Foundation is composed of the Policy Committee,
+Technology Department, Business Cooperation Department, Operations
+Department, Finance Department, Human Resources Department,
+
+Administration Department and Legal Department.
+
+9.2 Smartshare Team
+
+Frank Chen, Founder
+
+Smartshare Founder and co-founder, he graduated from University of
+Chinese Academy of Sciences(CAS) with a master of engineering.
+Former researcher in CAS and China Academy of Telecommunication
+Research(CATR). In 2008, as a core member, he created Qiandai,
+which is sold to MeiTuan in 2016. In 2015, he founded KuaiHui Wallet
+and is engaged in inclusive finance. He is also a Blockchain investor,
+
+the current founder of SmartShare Protocol.
+
+31
+Liang Yang, Co-founder
+
+Smartshare Co-founder, he graduated from Beijing University of Posts and
+Telecommunications with a major of communication engineering. He used
+to be the head of smart hardware products of Star Network Ruijie
+(SZ002396), a well-known data communication company in China. He has
+in-depth research and rich market experience in intelligent terminal
+products and now is committed to the blockchain technology applied in
+
+intelligent terminal industry research.
+
+Consultant Team
+
+Yuan LI
+
+Selfsell Founder
+
+Xiao Ying
+Former CEO of Qiandai
+
+Zhu Xuejiao
+
+Kcash Founder
+
+Huang Qisheng
+Al expert, Founder of Shenzhen Aobel Electronics Co., Ltd,
+
+"Shenzhen Highly Professionals" titled
+
+32
+Xu Jianfeng
+
+China Europe International Business School EMBA, Shanghai
+
+Quantum Charity, Foundation Sponsor, Vice Chairman
+
+Guo Xiaoming
+Yuan Zheng Data Chairman and CEO, Daxing District CPPCC
+
+members, Beijing Municipal Federation of Industry Standing Committee
+
+Peng Guanzhong
+Moxuan Health Founder, CEO, China Europe International Business
+
+School, AMP
+
+Dai Saiying
+Co Founder and CEO of Three Fathers
+
+Legal Advisor
+
+Liu Dayong
+
+Beijing Dacheng Law Firm, Partner Lawyer
+
+33
+10. Smartshare Private Sales
+
+10.1 Private Sales
+
+Smartshare Protocol's token name is SSP, with a total token supply of
+10 billion.
+
+Private Sales Start Date: January 16, 2018 20:00:00
+
+Private Sales Deadline: January 18, 2018 18:00:00
+
+Hard Cap: 2.5 billion SSP
+
+Private placement failure: Less than 1 billion SSPs Raised
+
+Proporti Distributio Details
+
+on n Plan
+
+25% Private For Smartshare development,
+equity promotion, project and
+
+foundation operations.
+This part of the funds is
+regularly publicized.
+
+20% Foundatio For subsequent development of the
+n Foundation. Lock up period of 24 months
+according to participation time and
+
+contributions.
+
+10% Founding The return team upholds
+Team Smartshare's technical and
+operational development
+efforts and will be paid SSPs
+in return. This part of the
+funds will be under smart
+contract for a lock up period of
+12 months.
+
+45% Mining For Smartshare eco-mining.
+10.2 Exchange Ratio
+
+Exchange Ratio
+
+1ETH 100000SSP
+
+Note: Please take note of the official announcement.
+
+35
+11. Contact Us
+
+Official website: www.smartshare.vip
+
+Email: ssp@smartshare.vip
+
+36
